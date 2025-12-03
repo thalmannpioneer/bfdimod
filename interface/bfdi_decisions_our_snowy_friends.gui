@@ -1,13 +1,13 @@
 guiTypes = {
 	containerWindowType = {
 		name = "our_snowy_friends_container"
-		position = { x = 0 y = 0 }
+		position = { x = 10 y = 0 }
 		size = { width = 500 height = 160 }
 		
 		iconType = {
 			name = "map"
 			spriteType = GFX_decisions_WGF_our_snowy_friends_map
-			position = { x = 0 y = -25 }
+			position = { x = 10 y = -25 }
 		}
 		
 		instantTextboxType = {
@@ -15,7 +15,7 @@ guiTypes = {
 			font = hoi_18mbs
 			text = "decisions_WGF_our_snowy_friends_desc"
 			maxWidth = 300
-			position = { x = 205 y = -10 }
+			position = { x = 215 y = -10 }
 		}
 	}
 }

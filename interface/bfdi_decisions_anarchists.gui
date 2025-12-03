@@ -7,55 +7,55 @@ guiTypes = {
 		iconType = {
 			name = "map_bg"
 			spriteType = GFX_decisions_GGR_map_bg
-			position = { x = 12 y = -22 }
+			position = { x = 22 y = -22 }
 		}
 		
 		iconType = {
 			name = "schneehorn_status"
 			spriteType = GFX_decisions_GGR_schneehorn_status
-			position = { x = 210 y = 50 }
+			position = { x = 220 y = 50 }
 		}
 		
 		iconType = {
 			name = "snowy_plains_status"
 			spriteType = GFX_decisions_GGR_snowy_plains_status
-			position = { x = 275 y = 0 }
+			position = { x = 285 y = 0 }
 		}
 		
 		iconType = {
 			name = "great_ridge_status"
 			spriteType = GFX_decisions_GGR_great_ridge_status
-			position = { x = 135 y = -3 }
+			position = { x = 145 y = -3 }
 		}
 		
 		iconType = {
 			name = "snowy_hills_status"
 			spriteType = GFX_decisions_GGR_snowy_hills_status
-			position = { x = 42 y = 55 }
+			position = { x = 52 y = 55 }
 		}
 		
 		iconType = {
 			name = "snowy_woods_status"
 			spriteType = GFX_decisions_GGR_snowy_woods_status
-			position = { x = 19 y = 167 }
+			position = { x = 29 y = 167 }
 		}
 		
 		iconType = {
 			name = "bottom_snowy_plateau_status"
 			spriteType = GFX_decisions_GGR_bottom_snowy_plateau_status
-			position = { x = 156 y = 157 }
+			position = { x = 166 y = 157 }
 		}
 		
 		iconType = {
 			name = "star"
 			spriteType = GFX_decisions_GGR_star
-			position = { x = 250 y = 80 }
+			position = { x = 260 y = 80 }
 		}
 		
 		containerWindowType = {
 			name = "stats_bg_container"
 			size = { width = 460 height = 180 }
-			position = { x = 17 y = 325 }
+			position = { x = 27 y = 325 }
 			
 			background = {
 				name = "stats_bg"
@@ -69,7 +69,7 @@ guiTypes = {
 			font = hoi_36header
 			format = centre
 			maxWidth = 500
-			position = { x = -3 y = 335 }
+			position = { x = 7 y = 335 }
 		}
 		
 		instantTextboxType = {
@@ -78,7 +78,7 @@ guiTypes = {
 			font = hoi_18mbs
 			format = left
 			maxWidth = 500
-			position = { x = 35 y = 382 }
+			position = { x = 45 y = 382 }
 		}
 		
 		instantTextboxType = {
@@ -87,7 +87,7 @@ guiTypes = {
 			font = hoi_18mbs
 			format = left
 			maxWidth = 500
-			position = { x = 35 y = 409 }
+			position = { x = 45 y = 409 }
 		}
 		
 		instantTextboxType = {
@@ -96,7 +96,7 @@ guiTypes = {
 			font = hoi_18mbs
 			format = left
 			maxWidth = 500
-			position = { x = 35 y = 436 }
+			position = { x = 45 y = 436 }
 		}
 		
 		instantTextboxType = {
@@ -105,41 +105,41 @@ guiTypes = {
 			font = hoi_18mbs
 			format = left
 			maxWidth = 500
-			position = { x = 35 y = 463 }
+			position = { x = 45 y = 463 }
 		}
 		
 		instantTextboxType = {
 			name = "1"
 			text = 1
 			font = hoi_36header
-			position = { x = 255 y = 70 }
+			position = { x = 265 y = 70 }
 		}
 		
 		instantTextboxType = {
 			name = "2"
 			text = 2
 			font = hoi_36header
-			position = { x = 370 y = 100 }
+			position = { x = 380 y = 100 }
 		}
 		
 		instantTextboxType = {
 			name = "3"
 			text = 3
 			font = hoi_36header
-			position = { x = 140 y = 140 }
+			position = { x = 150 y = 140 }
 		}
 		
 		instantTextboxType = {
 			name = "4"
 			text = 4
 			font = hoi_36header
-			position = { x = 290 y = 240 }
+			position = { x = 300 y = 240 }
 		}
 		
 		iconType = {
 			name = "snowy_medal"
 			spriteType = GFX_decisions_GGR_snowy_medal
-			position = { x = 390 y = 430 }
+			position = { x = 400 y = 430 }
 		}
 	}
 }

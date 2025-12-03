@@ -6,7 +6,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "title_bg_container"
-			position = { x = 108 y = -20 }
+			position = { x = 118 y = -20 }
 			size = { width = 270 height = 110 }
 			
 			background = {
@@ -18,12 +18,12 @@ guiTypes = {
 		iconType = {
 			name = "map"
 			spriteType = GFX_decisions_WGF_operation_coinflip
-			position = { x = -5 y = -30 }
+			position = { x = 5 y = -30 }
 		}
 		
 		containerWindowType = {
 			name = "separator_container"
-			position = { x = 10 y = 240 }
+			position = { x = 20 y = 240 }
 			size = { width = 470 height = 80 }
 			
 			background = {
@@ -37,7 +37,7 @@ guiTypes = {
 			font = hoi_20bs
 			text = "decisions_WGF_coinflip_desc"
 			maxWidth = 500
-			position = { x = -5 y = 250 }
+			position = { x = 5 y = 250 }
 			format = centre
 		}
 		
@@ -46,31 +46,31 @@ guiTypes = {
 			font = hoi_20bs
 			text = "decisions_WGF_coinflip_closeness"
 			maxWidth = 400
-			position = { x = 45 y = 290 }
+			position = { x = 55 y = 290 }
 			format = centre
 		}
 		
 		iconType = {
 			name = "progressbar"
 			spriteType = GFX_decisions_WGF_operation_coinflip_progressbar
-			position = { x = -3 y = 340 }
+			position = { x = 7 y = 340 }
 		}
 		
 		iconType = {
 			name = "coiny_icon"
 			spriteType = GFX_decisions_WGF_operation_coinflip_coiny
-			position = { x = 410 y = 310 }
+			position = { x = 420 y = 310 }
 		}
 		
 		iconType = {
 			name = "button_bg"
 			spriteType = GFX_decisions_WGF_operation_coinflip_button_bg
-			position = { x = 6 y = 400 }
+			position = { x = 16 y = 400 }
 		}
 		
 		buttonType = {
 			name = "button"
-			position = { x = 176 y = 432 }
+			position = { x = 186 y = 432 }
 			spriteType = GFX_decisions_WGF_operation_coinflip_button
 			clicksound = bfdi_button_press
 		}

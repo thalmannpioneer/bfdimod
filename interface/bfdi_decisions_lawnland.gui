@@ -7,13 +7,13 @@ guiTypes = {
 		
 		iconType = {
 			name = "header"
-			position = { x = -5 y = -20 }
+			position = { x = 5 y = -20 }
 			spriteType = GFX_decisions_GPG_lawnland_header
 		}
 		
 		containerWindowType = {
 			name = "bg_container"
-			position = { x = -4 y = 300 }
+			position = { x = 6 y = 300 }
 			size = { width = 500 height = 270 }
 			
 			background = {
@@ -24,7 +24,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "progressbar_negs_title"
-			position = { x = 5 y = 330 }
+			position = { x = 15 y = 330 }
 			font = hoi_33
 			format = centre
 			text = l_GPG_progressbar_negs_title
@@ -34,12 +34,12 @@ guiTypes = {
 		iconType = {
 			name = "progressbar_negs"
 			spriteType = GFX_decisions_GPG_lawnland_negs_progressbar
-			position = { x = 2 y = 340 }
+			position = { x = 12 y = 340 }
 		}
 		
 		instantTextboxType = {
 			name = "progressbar_war_title"
-			position = { x = 5 y = 440 }
+			position = { x = 15 y = 440 }
 			font = hoi_33
 			format = centre
 			text = l_GPG_progressbar_war_title
@@ -48,7 +48,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "progressbar_war_closeness"
-			position = { x = 5 y = 467 }
+			position = { x = 15 y = 467 }
 			font = hoi_33
 			format = centre
 			text = [GPG_LAWNLAND_WAR_CLOSENESS]
@@ -58,7 +58,7 @@ guiTypes = {
 		iconType = {
 			name = "progressbar_war"
 			spriteType = GFX_decisions_GPG_lawnland_war_progressbar
-			position = { x = 37 y = 500 }
+			position = { x = 47 y = 500 }
 		}
 	}
 }

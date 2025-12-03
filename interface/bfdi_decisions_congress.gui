@@ -8,7 +8,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "desc_frame_container"
 			
-			position = { x = -200 y = -23 }
+			position = { x = -190 y = -23 }
 			orientation = center
 			size = { width = 400 height = 100 }
 			
@@ -21,12 +21,12 @@ guiTypes = {
 		iconType = {
 			name = "header"
 			spriteType = GFX_decision_GDR_congress_header
-			position = { x = 0 y = -40 }
+			position = { x = 10 y = -40 }
 		}
 		
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = -200 y = -10 }
+			position = { x = -190 y = -10 }
 			text = l_GDR_congress_desc
 			font = hoi_18mbs
 			maxWidth = 400
@@ -36,7 +36,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "desc2"
-			position = { x = -203 y = 45 }
+			position = { x = -193 y = 45 }
 			text = l_GDR_congress_desc2
 			font = hoi_20bs
 			maxWidth = 400
@@ -47,7 +47,7 @@ guiTypes = {
 		iconType = {
 			name = "progressbar"
 			spriteType = GFX_decisions_GDR_democratic_congress_progressbar
-			position = { x = -4 y = 320 }
+			position = { x = 6 y = 320 }
 		}
 	}
 }

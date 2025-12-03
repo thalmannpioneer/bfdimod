@@ -181,7 +181,7 @@ d_spawn_3D_models = {
 		limit = {
 			NOT = { has_template = "Bersaglieri" }
 		}
-		division_template = { #TODO_Manu: Possibly not a real template in-game
+		division_template = {
 			name = "Bersaglieri" 
 			division_names_group = ITA_INF_01 
 			override_model = ITA_infantry_alt_0_entity
@@ -295,5 +295,46 @@ d_spawn_3D_models = {
 			owner = ROOT
 			count = 1
 		}
+	}
+}
+
+d_add_subsidies = {
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = support_equipment
+		seller_tags = {SWE FRA}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {SWE}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_trigger = is_democratic_seller_trigger
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {GER}
+	}
+}
+
+d_add_subsidies_second = {
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = infantry_equipment
+		seller_tags = {SWE FRA}
+	}
+
+	add_equipment_subsidy = {
+		cic = 100
+		equipment_type = support_equipment
+		seller_tags = {SWE FRA}
 	}
 }

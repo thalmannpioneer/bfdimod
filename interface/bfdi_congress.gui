@@ -10,7 +10,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "title"
 			text = l_decisions_congress_title
-			position = { x = 0 y = 90 }
+			position = { x = 10 y = 90 }
 			maxWidth = 500
 			format = centre
 			font = hoi_36header
@@ -19,7 +19,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "support"
 			text = l_decisions_congress_support
-			position = { x = 0 y = 130 }
+			position = { x = 10 y = 130 }
 			maxWidth = 500
 			format = centre
 			font = hoi_20bs
@@ -28,12 +28,12 @@ guiTypes = {
 		iconType = {
 			name ="congress_icon"
 			spriteType = "GFX_decisions_congress_icon"
-			position = { x = 0 y = 150 }
+			position = { x = 10 y = 150 }
 		}
 		
 		containerWindowType = {
 			name = "cabinet_bg_container"
-			position = { x = 3 y = 370 }
+			position = { x = 13 y = 370 }
 			size = { width = 95% height = 230 }
 			
 			background = {
@@ -45,7 +45,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "cabinet_title"
 			text = l_decisions_cabinet_title
-			position = { x = 75 y = 380 }
+			position = { x = 85 y = 380 }
 			maxWidth = 500
 			format = centre
 			font = hoi_36header
@@ -54,13 +54,13 @@ guiTypes = {
 		iconType = {
 			name ="cabinet_leader"
 			spriteType = "GFX_decisions_congress_cabinet_leaders"
-			position = { x = 20 y = 379 }
+			position = { x = 30 y = 379 }
 		}
 		
 		instantTextboxType = {
 			name = "cabinet_leader_text"
 			text = l_decisions_cabinet_leader
-			position = { x = 190 y = 440 }
+			position = { x = 200 y = 440 }
 			maxWidth = 500
 			format = left
 			font = hoi_20bs
@@ -69,7 +69,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "cabinet_leader_name"
 			text = [CABLEADER]
-			position = { x = 190 y = 460 }
+			position = { x = 200 y = 460 }
 			maxWidth = 500
 			format = left
 			font = hoi_20bs
@@ -78,7 +78,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "ruling_faction_text"
 			text = l_decisions_ruling_faction
-			position = { x = 190 y = 500 }
+			position = { x = 200 y = 500 }
 			maxWidth = 500
 			format = left
 			font = hoi_20bs
@@ -87,7 +87,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "ruling_faction_name"
 			text = [RULFACTION]
-			position = { x = 190 y = 520 }
+			position = { x = 200 y = 520 }
 			maxWidth = 500
 			format = left
 			font = hoi_20bs
@@ -96,13 +96,13 @@ guiTypes = {
 		iconType = {
 			name ="closed"
 			spriteType = "GFX_decisions_congress_closed"
-			position = { x = 0 y = 70 }
+			position = { x = 10 y = 70 }
 		}
 		
 		iconType = {
 			name = "header"
 			spriteType = "GFX_decision_congress_header"
-			position = { x = -4 y = -20 }
+			position = { x = 6 y = -20 }
 		}
 	}
 }
