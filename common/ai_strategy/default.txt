@@ -440,7 +440,7 @@ bba_support_boosts = {
 
 	enable = {
 		is_historical_focus_on = yes
-		date < 1939.1.1
+		date < 2015.1.1
 	}
 	abort_when_not_enabled = yes
 

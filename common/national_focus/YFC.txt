@@ -858,11 +858,11 @@ focus_tree = {
 		icon = GFX_focus_YFC_look_inward
 		available = {
 			hidden_trigger = {
-				#has_country_flag = Won_War_BUN
+				has_country_flag = Won_War_BUN
 			}
 		}
 		
-		#allow_branch = { has_country_flag = Won_War_BUN }
+		allow_branch = { has_country_flag = Won_War_BUN }
 		
 		cost = 2
 		completion_reward = {

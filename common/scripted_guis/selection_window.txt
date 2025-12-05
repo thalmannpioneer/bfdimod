@@ -199,6 +199,7 @@ scripted_gui = {
 					SGD = { load_oob = "SGD_2012" }
 					YFC = { load_oob = "YFC_2012" }
 					CRN = { load_oob = "CRN_2012" }
+					SOS = { load_oob = "SOS_2012" }
 					
 					set_global_flag = {
 						flag = game_started
@@ -317,6 +318,7 @@ scripted_gui = {
 				SGD = { load_oob = "SGD_2012" }
 				YFC = { load_oob = "YFC_2012" }
 				CRN = { load_oob = "CRN_2012" }
+				SOS = { load_oob = "SOS_2012" }
 					
 				set_global_flag = {
 					flag = game_started

@@ -50,6 +50,16 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = {tag = SOS}
+				capital_scope = {
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}	
+			}
 		}
 	}
 	
@@ -70,6 +80,15 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 20000
 			army_experience = 50
+			if = {
+				limit = {
+					OR = {
+						tag = SOS
+						tag = DAV
+					}
+				}
+				navy_experience = 50
+			}
 		}
 	}
 	

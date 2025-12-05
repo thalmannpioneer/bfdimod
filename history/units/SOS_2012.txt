@@ -1,0 +1,71 @@
+division_template = {
+    name = "Sailors"
+    regiments = {
+        marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+    name = "Territorial Unit"
+    regiments = {
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division= {
+        name = "Sailors"
+        location = 11102 # Saint-Objectburg Port
+        division_template = "Sailors"
+        start_experience_factor = 0.4
+        start_equipment_factor = 0.8
+    }
+	division= {
+        name = "1st Territorial Unit"
+        location = 11101 # Saint-Objectburg
+        division_template = "Territorial Unit"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.2
+    }
+	division= {
+        name = "2nd Territorial Unit"
+        location = 2044 # Recovery Center
+        division_template = "Territorial Unit"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.2
+    }
+
+    #To make naming the Goiky fleet more fun I want diffrent devs to add names to some of the ships cause why not 
+
+    fleet = {
+		name = "Goiky Navy"			
+		naval_base = 11102 # Objectburg Port
+		task_force = {
+			name = "Commercial Squadron"
+			location = 11102 # Objectburg Port
+
+            ship = { name = "HMAS Cruiser_Name_1" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } } }
+			ship = { name = "HMAS Cruiser_Name_2" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
+			ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+		}				
+	}
+}

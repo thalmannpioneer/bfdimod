@@ -13,10 +13,38 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_battery = 1
+	}
+
+	create_equipment_variant = {
+		name = "Destroyer" #PLEASE PUT A BETTER NAME HERE LATER ME OR SOMEONE ELSE
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}
+
+set_convoys = 65
+add_manpower = 30000 #Remove when DAV get's correct pop
 add_equipment_to_stockpile = {
     type = train_equipment_1
-    amount = 10
-    producer = GOI
+    amount = 3
+    producer = DAV
 }
 
 set_politics = {
@@ -32,6 +60,8 @@ set_popularities = {
 	neutrality = 61
 	communism = 1
 }
+
+oob = "DAV_2012"
 
 add_ideas = idea_DAV_the_thousand_year_throne
 

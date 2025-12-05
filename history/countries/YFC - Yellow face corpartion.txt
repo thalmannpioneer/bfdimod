@@ -54,9 +54,7 @@ set_popularities = {
  set_variable = {var = var_YFC_BUN_Anger value = 1 }
 
 recruit_character = YFC_yellow_face
-recruit_character = YFC_lewis
 recruit_character = YFC_david
-recruit_character = YFC_dora
 recruit_character = YFC_Coiny
 
 add_manpower = 10000

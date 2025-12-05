@@ -1,0 +1,93 @@
+division_template = {
+    name = "Rapid Mobile Response Royal Guard Division"
+    regiments = {
+        bicycle_battalion = { x = 0 y = 0 }
+        bicycle_battalion = { x = 0 y = 1 }
+        bicycle_battalion = { x = 1 y = 0 }
+        bicycle_battalion = { x = 1 y = 1 }
+    }
+    division_cap = 1
+	priority = 2
+}
+
+division_template = {
+    name = "Raised Levy"
+    regiments = {
+        irregular_infantry = { x = 0 y = 0 }
+        irregular_infantry = { x = 0 y = 1 }
+        irregular_infantry = { x = 1 y = 0 }
+    }
+    division_cap = 15
+	priority = 0
+}
+
+units = {
+	division= {
+        name = "Ever Great Majesty the King's and His Glorious Most Holy and Righteous Rapid Mobile Response Royal Guard Division"
+        location = 341 # Davidland
+        division_template = "Rapid Mobile Response Royal Guard Division"
+        start_experience_factor = 0.65
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "Aplla Levy"
+        location = 4111 # Aplla
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.05
+    }
+    division= {
+        name = "Compoño Levy"
+        location = 10143 # Compoño
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.05
+    }
+    division= {
+        name = "Longbridge Levy"
+        location = 4148 # Longbridge
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.05
+    }
+    division= {
+        name = "Erdinia Levy"
+        location = 4852 # Erdinia
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.01
+    }
+    division= {
+        name = "Santiago de Davidia Levy"
+        location = 9695 # Santiago de Davidia
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.05
+    }
+    division= {
+        name = "Pácala Levy"
+        location = 9275 # Pácala
+        division_template = "Raised Levy"
+        start_experience_factor = 0.01
+        start_equipment_factor = 0.05
+    }
+
+    #Same thing as SOS navy
+
+    fleet = {
+		name = "Royal David Navy"			
+		naval_base = 4391 # East Davidland
+		task_force = {
+			name = "David Fleet"
+			location = 4391 # East Davidland
+
+			ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+		}				
+	}
+}
