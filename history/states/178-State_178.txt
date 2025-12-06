@@ -5,22 +5,21 @@ state={
 	history={
 		owner = GOI
 		add_core_of = GOI
+		victory_points = {
+			5089 15
+		}
 		buildings = {
 			infrastructure = 2
 		}
 
 	}
 
-	resources={
-		steel=6
-		aluminium=4
-		oil=3
-	}
+
 	provinces={
 		200 321 342 1217 1487 2979 3819 4706 5089 5126 5988 11310 11329 11339 11356 11371 
 	}
-	manpower=125000
+	manpower=75732
 	buildings_max_level_factor=1
-	state_category=rural
+	state_category=town
 	local_supplies=0
 }

@@ -121,7 +121,7 @@ decision_BUN_raids_category = {
 	BUN_raid_state_217 = {
 		icon = GFX_decision_generic_confiscation
 		state_target = yes
-        targets = { state = 178 } #CHANGE 178 WHEN CRN STATES ARE ADDED!!!!!
+        targets = { state = 220 222 } 
         on_map_mode = map_only
         
 		visible = {
@@ -239,7 +239,7 @@ decision_BUN_raids_category = {
 	BUN_raid_state_218 = {
 		icon = GFX_decision_generic_confiscation
 		state_target = yes
-        targets = { state = 33 178 } #CHANGE 178 WHEN CRN STATES ARE ADDED!!!!!
+        targets = { state = 222 223 }
         on_map_mode = map_only
         
 		visible = {

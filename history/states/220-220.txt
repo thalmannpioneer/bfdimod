@@ -6,10 +6,10 @@ state={
 		owner = GOI
 		add_core_of = GOI
 		victory_points = {
-			
+			11327 5
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 
 	}
@@ -17,7 +17,8 @@ state={
 	provinces={
 		428 902 1526 1620 2628 2719 3088 3308 4210 4316 5000 6091 6182 11253 11296 11316 11327 11342 
 	}
-	manpower=0
+	manpower=8258
 	buildings_max_level_factor=1
+	state_category=rural
 	local_supplies=0
 }

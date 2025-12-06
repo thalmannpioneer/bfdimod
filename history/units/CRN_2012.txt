@@ -33,7 +33,7 @@ units = {
         start_equipment_factor = 0.8
     }
 	division= {
-        name = "Police Unit 1"
+        name = "Armed Police"
         location = 51 
         division_template = "Armed Police"
         start_experience_factor = 0.2

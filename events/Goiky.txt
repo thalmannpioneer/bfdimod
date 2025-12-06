@@ -765,6 +765,12 @@ country_event = {
             remove_state_core = 223
             remove_state_core = 224
         }
+		224 = {
+			add_victory_points = {
+				province = 51
+				value = 25
+			}
+		}
     }
 }
 
