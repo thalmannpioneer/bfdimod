@@ -23,7 +23,7 @@ if = {
 	}
 
 	create_equipment_variant = {
-		name = "Destroyer" #PLEASE PUT A BETTER NAME HERE LATER ME OR SOMEONE ELSE
+		name = "IV Fracturam Second Edition"
 		type = ship_hull_light_1
 		parent_version = 0
 		modules = {

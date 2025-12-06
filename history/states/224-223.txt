@@ -1,0 +1,23 @@
+state={
+	id=224
+	name="STATE_224"
+
+	history={
+		owner = GOI
+		add_core_of = GOI
+		victory_points = {
+			51 25
+		}
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+
+	provinces={
+		51 
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
