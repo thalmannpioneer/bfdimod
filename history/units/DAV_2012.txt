@@ -30,8 +30,8 @@ units = {
         start_equipment_factor = 0.95
     }
 	division= {
-        name = "Aplla Levy"
-        location = 4111 # Aplla
+        name = "Apalla Levy"
+        location = 4111 # Apalla
         division_template = "Raised Levy"
         start_experience_factor = 0.01
         start_equipment_factor = 0.05

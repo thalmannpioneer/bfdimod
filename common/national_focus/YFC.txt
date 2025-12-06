@@ -764,16 +764,7 @@ focus_tree = {
 		#gives an event about wanting to subjugate the crn, with the event starting an event chain, in which you have to make the right choices. 
 		#each event in the chain gives you the ability to choose between subjugation through violence or subjugation through diplomacy, and in a year the yfc either puppet them if you chose mainly diplomatic events, or declare war on them if you mainly chose violence
 		completion_reward = {
-			custom_effect_tooltip = l_YFC_CRN_Start
-			hidden_effect = {
-				CRN = {
-					country_event = {
-						id = YFC_CRN_Sub.5
-						days = 3
-						random_hours = 24
-					}
-				}	
-			}
+
 		}
 	}
 
