@@ -627,7 +627,7 @@
  YFC_event.1.a: "Better Dead Than Red!"
 
  YFC_event.2.t: "The Southern Bandits"
- YFC_event.2.desc: "Yesterday, Pipe, head of the Railing Sector, came all the way from our foreign investment project in Navgornyv to inform Yellow Face about a recent event. He claims that his employees were attacked by savage bandits, along with several thousands of funds, and dozens of galvanized steal bars, were stolen from the building they were operating in. He sadly informed us that profits will be down until they can recover. This incident, however, isn't isolated. Other countries, like the Southern Rail Road Administration, Goiky Technocratic Republic, and Numismatia, have all reported that they've had similar, and very brutal attacks take place on some of their facilities near their border with Eraser's Bunch. \nAdditionally, today, Yellow Face recieved a letter from Eraser himself, asking for the corporation to allow them to travel through our territory to gain wealth and stimulate the economy. Despite the fact that Eraser is obviously lying about his intentions, this does bring up a good point. Should we let Eraser's men travel through the country?"
+ YFC_event.2.desc: "Yesterday, Pipe, head of the Railing Sector, came all the way from our foreign investment project in Navgornyv to inform Yellow Face about a recent event. He claimed that his employees were attacked by savage bandits, and that several thousands of funds, as well as dozens of galvanized steal bars, were stolen from the building they were operating in. He sadly informed us that profits will be down until they can recover. This incident, however, wasn't isolated. Other countries, such as the Southern Rail Road Administration, Goiky Technocratic Republic, and Numismatia, have all reported that they've had similar, and very brutal attacks take place on some of their facilities near their border with Eraser's Bunch. \nAdditionally, today, Yellow Face recieved a letter from Eraser himself, asking for the Corporation to allow them to travel through our territory to gain wealth and stimulate the economy. Despite the fact that Eraser is obviously lying about his intentions, this does bring up a good point. Should we let Eraser's men travel through the country?"
  YFC_event.2.a: "If they want free passage, they can come and take it!"
  YFC_event.2.b: "We could allow them to travel through our territories... for a price."
 
@@ -646,9 +646,9 @@
  YFC_event.5.a: "The soldiers better not pocket it!"
 
  YFC_event.6.t: "Moment of opportunity"
- YFC_event.6.desc: "With our friends to the north fighting the anarchical bandits, we have a unique chance to ambush the raiders in the south to help the corporation. Our top generals and marshals have discussed with Credit Card, and we came to the conclusion that it may be the right time to join the war, and aid our friends… and take some 'wealth'."
+ YFC_event.6.desc: "With our friends to the north fighting the anarchical bandits, we have a unique chance to ambush the raiders in the south to help the corporation. Our top generals and marshals have discussed with Credit Card, and we came to the conclusion that it may be the right time to join the war, and aid our friends... and take some 'wealth'."
  YFC_event.6.a: "Send the telegram!"
- YFC_event.6.b: "Not worth it…"
+ YFC_event.6.b: "Not worth it..."
 
  YFC_event.7.t: "Stab in the back."
  YFC_event.7.desc: "After weeks of no response, it's clear that Yellow Face wishes for us to not enter the war. Maybe he thinks that the war should stay local or he only wants the wealth for himself. Either case, the generals are itching for a fight so it might be worth it to annoy our friends."
@@ -656,7 +656,7 @@
  YFC_event.7.b: "We'll stay."
 
  YFC_event.8.t: "INCIDENT #46"
- YFC_event.8.desc: "It had only been a week since checkpoint B had been set up along the 'supposed' borders between the Corporation and the Bandits. The day of the event was like any other, few refugees crossing, some arrests, and the random machine gun on an object. The day was wrapping up like any other... \n\nUntil, during the night, checkpoint B's guards spotted a mass amount of objects heading towards them. They claimed that there are 'open borders' and that the guards at the checkpoint had no real authority. After much heated shouting, a gunshot ran out which led to an open battle. They were not refugees, but were bandits. They tried to storm the checkpoint from the small number of guards protecting it. Despite all odds, the guards held the ground and made the Bandits pay for each step forward. Even after the checkpoint was taken, the guards fell back inland and kept the fight on. One interesting report was that a squad of 8 held up in a cabin, lead by Jonas Taylor, fought off a force of around 100 objects and only lost 3 objects in the five hours of fighting. \n\nNight became day with the engagements only heating up. With the help of reinforcements, the combined forces pushed back the Bandits back to the checkpoint. Only when nightfall arrived that the Bandits retreated from the checkpoint. The checkpoint was retaken the next day. Many of the Objects that took part in the engagement have earned medals for their bravery. The overall death toll is being accounted for, but both soldiers and civilians were harmed in the fighting. No response has come from anyone in the Bandit lands. "
+ YFC_event.8.desc: "It had only been a week since checkpoint B had been set up along the supposed 'border' between the Corporation and the Bandits. The day of the event was like any other, few refugees crossing, some arrests, and the random machine gun on an object. The day was wrapping up like any other... \n\nUntil, during the night, checkpoint B's guards spotted a mass amount of objects heading towards them. They claimed that there were 'open borders' and that the guards at the checkpoint had no real authority. After much heated shouting, a gunshot rang out which led to an open battle. They were not refugees, but were bandits. They tried to storm the checkpoint from the small number of guards protecting it. Despite all odds, the guards held the ground and made the Bandits pay for each step forward. Even after the checkpoint was taken, the guards fell back inland and kept the fight on. One interesting report was that a squad of eight held up in a cabin, lead by Vodka Bottle, fought off a force of around a hundred objects and only lost three objects in the five hours of fighting. \n\nNight became day with the engagements only heating up. With the help of reinforcements, the combined forces pushed the Bandits back to the checkpoint. Only when nightfall arrived did the Bandits retreat from the checkpoint. The checkpoint was retaken the next day. Many of the Objects that took part in the engagement have earned medals for their bravery. The overall death toll is still being counted, but both soldiers and civilians were harmed in the fighting. No response has come from anyone in the Bandit lands. "
  YFC_event.8.a: "Rapid Escalations..."
 
  YFC_event.9.t: "Rapid Reorganization"
@@ -684,9 +684,10 @@
  YFC_event.14.desc: "Out of many of the discussions that the sectorials and Yellow Face had, this one lasted only a few minutes. Who was going to stop us from 'relocating' their money? The air in our conference room? Besides, this wealth will have a much better use than laying around for anarchist use.\n\nA week after the very obvious outcome of the vote, Blocky entered the warehouse holding the money. He took one last look at all of it, as if a chapter of a story had ended and a new one started. Even though he should feel some sort of emotion..."
  YFC_event.14.a: "Nothing was felt...?" #800K Taken
 
- YFC_event.15.t: "YFC_focus_scope_out_sea_trade event"
- YFC_event.15.desc: "ZDubbz plz write"
- YFC_event.15.a: "Cough"
+ YFC_event.15.t: "Trade Routes Along the Sea"
+ YFC_event.15.desc: "It has come to our attention that, according to some of our denizens living farther east, the Eastern Sea is significantly closer than we previously thought. Seizing the opportunity to expand our trade roots by way of this sea, although it may be costly in the short run, could bring great profits. Obviously, we would need to have more educated individuals get a proper look at the area, as to determine which place would be best to set up a small port for the time being. \nThe easterners that contacted us did indeed say that they would be perfectly fine with conducting field assessments of the area. Are we sure that it would be wise to trust the people of Peoniele and Yoyleton to give accurate information on their own?"
+ YFC_event.15.a: "The people know their land, let them assess it."
+ YFC_event.15.b: "No barbarian could properly understand what is needed for trade."
 
  YFC_event.19.t: "New Face Of a New Bunch"
  YFC_event.19.desc: "ZDubbz plz write" #Cough
@@ -704,14 +705,14 @@
  YFC_event.22.t.a: "On the promotion of Peoniele"
  YFC_event.22.t.b: "Enlargement of Yoyleton, Yellow Face Corporation"
  YFC_event.22.desc.a: "Ah, Peoniele. \nHer flowers and meadows, tranquil and alone, have seen a small amount of trampling from the objects, moving lumber into the town square, and the vans, housing cement and other building goods. Peoniele's natural beauty is one of the things most treasured by the city's population, some of them are even protesting us building here at all. But, profits are to be made, and bigger buildings for more jobs certainly correlate with higher per capita incomes. Incomes which will be siphoned to us, of course. In the mean time, let us decide how big should we go here." 
- YFC_event.22.desc.b: "Strangely, Yoyleton's small teardropper population has been essential in helping us with our current tasks. We've been working on adding a couple of water features to the city, to attract tourism (we say it's to make life easier for them), and they've been giving great pointers to our engineers and architects who are... less versed... in building with water. Despite the pay cuts we need to issue, things seem to be going well. However, after we're done with the water features, how much bigger should this city be?" 
+ YFC_event.22.desc.b: "Strangely, Yoyleton's small teardropper population has been essential in helping us with our current tasks. We've been working on adding a couple of water features to the city, to attract tourism (we say it's to make life easier for them,) and they've been giving great pointers to our engineers and architects who are... less versed... in building with water. Despite the pay cuts we need to issue, things seem to be going well. However, after we're done with the water features, how much bigger should this city be?" 
  YFC_event.22.a: "It just needs a little bit extra." 
  YFC_event.22.b: "Let us flesh out this city more, it's feeble." 
  YFC_event.22.c: "Pure economic opportunity is in the palms of this city's planner. It shall be the YFC's largest." 
 
- YFC_event.23.t: "City outcome event text"
- YFC_event.23.desc: "ZDubbz plz write"
- YFC_event.23.a: "Cough"
+ YFC_event.23.t: "Peoniele, The Second City"
+ YFC_event.23.desc: "Following our large investments into the city of Peoniele, we have seen massive increases in profits.The pockets of our sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. Sure, the population of Peoniele herself haven't been the most enthusiastic about the large swaths of people moving to the city, but who cares for their opinions when profits have never been higher? Some environmentalist groups have formed in the city, who preech about 'keeping the beauty,' and what not, but what's more beautiful than the color green? An ignorant populace is easy to ignore, but what we have neglected to ensure the comencing of operations on the other development project we were seeing to, Yoyleton. It was in a great position for trade with the north, so it is a shame that we failed to take the opportunity. Regardless, the population there seems to care not, so at least they are good with what they have been given."
+ YFC_event.23.a: "Show me a money spread, Peoniele."
 
  YFC_event.24.t: "City outcome event text"
  YFC_event.24.desc: "ZDubbz plz write"
@@ -883,7 +884,7 @@
  YFC_BUN.22.a: "Crash the Company!"
 
  YFC_BUN.23.t: "Reeducation Camps"
- YFC_BUN.23.desc: "Some objects living in our occupation zone simply arent ready to face the reality that their ideology is stupid. Recently, Top Hat came to us with a suggestion. He said that we should make... education facilities... in various cities to clean the minds of any raiders. This is an excellent idea, and is sure to keep that ideology from festering! If we ignore any building codes, the ones we use for buildings where rich objects live, then we can get these facilities built at a price of nearly zero. Lets take this chance!"
+ YFC_BUN.23.desc: "Some objects living in our occupation zone simply arent ready to face the reality that their ideology is stupid. Recently, Top Hat came to us with a suggestion. He said that we should make... education facilities... in various cities to clean the minds of any raiders. This is an excellent idea, and is sure to keep that ideology from festering! If we ignore any building codes, the ones we use for buildings where rich objects live, then we can get these facilities built at a price of nearly zero. Lets take this chance!" #move to desc when you do loc please boy/enby i might transition soon 👀
  YFC_BUN.23.a: "They won't even remember being a Bunchivist..."
 
  YFC_BUN.24.t: "The 'Heart' of The Bunch"
