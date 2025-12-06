@@ -1,26 +1,26 @@
 state={
 	id=178
 	name="STATE_178"
-	provinces={
-		51 200 321 342 413 428 776 872 893 902 978 1083 1217 1372 1422 1487 1526 1620 1634 1942 1957 2628 2665 2714 2719 2979 3088 3230 3280 3308 3693 3707 3805 3819 3921 4053 4210 4282 4287 4316 4499 4706 4881 4902 5000 5089 5126 5988 6091 6182 11253 11296 11297 11310 11316 11327 11329 11339 11342 11344 11345 11351 11356 11366 11371 11373 11379 11393 11396 11438 
-	}
-	resources={
-		steel=6.000
-		aluminium=4.000
-		oil=3.000
-	}
+
 	history={
 		owner = GOI
 		add_core_of = GOI
-		victory_points = {
-			51 20
-		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
+
 	}
-	manpower=125000 #Proposed CRN Pop Amount
-	buildings_max_level_factor=1.000
+
+	resources={
+		steel=6
+		aluminium=4
+		oil=3
+	}
+	provinces={
+		200 321 342 1217 1487 2979 3819 4706 5089 5126 5988 11310 11329 11339 11356 11371 
+	}
+	manpower=125000
+	buildings_max_level_factor=1
 	state_category=rural
-	local_supplies=0.000
+	local_supplies=0
 }
