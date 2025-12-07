@@ -424,6 +424,28 @@ country_event = {
 
 	option = { 
 		name = YFC_event.15.a
+		hidden_effect = {
+			YFC = {
+				country_event = {
+					id = YFC_event.16
+					days = 85
+					random_hours = 48
+				}
+			}	
+		}
+	}
+	option = { 
+		name = YFC_event.15.b
+		#take some money
+		hidden_effect = {
+			YFC = {
+				country_event = {
+					id = YFC_event.16
+					days = 5
+					random_hours = 48
+				}
+			}	
+		}
 	}
 }
 
@@ -438,7 +460,16 @@ country_event = {
 
 	option = { 
 		name = YFC_event.16.a
-
+		custom_effect_tooltip = l_money_gain_700K
+		add_to_variable = { money_amount = 7 }
+		225 = {
+			if = {
+				limit = { is_owned_by = EMP }
+				add_core_of = YFC
+				transfer_state_to = YFC
+				remove_core_of = EMP
+			}
+		}
 	}
 }
 

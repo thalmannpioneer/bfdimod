@@ -670,9 +670,9 @@
  YFC_event.11.t: "How Much?"
  YFC_event.11.desc: "It is no surprise that the large sums of money that Eraser managed to stockpile in his months as a plunderer could be useful for our industrialization efforts, however, many of our sectorial leaders have been in open debate about the exact amount needed. In an attempt to ease the tensions between the sectorials, Yellow Face decided to step in and make a concrete decision. He stated that we will be..."
  YFC_event.11.a: "Taking None." #0 Taken, 0% Risk
- YFC_event.11.b: "Taking Some." #200K Taken, 25% Risk
- YFC_event.11.c: "Taking Half." #400K Taken, 50% Risk
- YFC_event.11.d: "Taking Most." #700K Taken, 75% Risk
+ YFC_event.11.b: "Taking Some." #500K Taken, 25% Risk
+ YFC_event.11.c: "Taking Half." #1.5M Taken, 50% Risk
+ YFC_event.11.d: "Taking Most." #2.8M Taken, 75% Risk
 
  YFC_event.13.t: "What to do with The Head?"
  YFC_event.13.desc: "It was a very, very long trial over Eraser's fate. The sectors had heated debates over the pros and cons of any of the options we could do. Honestly the amount of these 'heated' debates have been getting concerning. Anyways, a few hours ago most finally agreed on his fate. This said fate was read out to him in his cell, it said the following... \n\n'Eraser, leader of the defunct anarchist Bunch, you have been given the following sentence for your crimes against the Yellow Face Company and their allies...'"
@@ -684,21 +684,25 @@
  YFC_event.14.desc: "Out of many of the discussions that the sectorials and Yellow Face had, this one lasted only a few minutes. Who was going to stop us from 'relocating' their money? The air in our conference room? Besides, this wealth will have a much better use than laying around for anarchist use.\n\nA week after the very obvious outcome of the vote, Blocky entered the warehouse holding the money. He took one last look at all of it, as if a chapter of a story had ended and a new one started. Even though he should feel some sort of emotion..."
  YFC_event.14.a: "Nothing was felt...?" #800K Taken
 
- YFC_event.15.t: "Trade Routes Along the Sea"
+ YFC_event.15.t: "Trade Routes Along the Sea" #fires right after finishing YFC_focus_scope_out_sea_trade
  YFC_event.15.desc: "It has come to our attention that, according to some of our denizens living farther east, the Eastern Sea is significantly closer than we previously thought. Seizing the opportunity to expand our trade roots by way of this sea, although it may be costly in the short run, could bring great profits. Obviously, we would need to have more educated individuals get a proper look at the area, as to determine which place would be best to set up a small port for the time being. \nThe easterners that contacted us did indeed say that they would be perfectly fine with conducting field assessments of the area. Are we sure that it would be wise to trust the people of Peoniele and Yoyleton to give accurate information on their own?"
- YFC_event.15.a: "The people know their land, let them assess it."
- YFC_event.15.b: "No barbarian could properly understand what is needed for trade."
+ YFC_event.15.a: "The people know their land, let them assess it." #takes longer to get event 16
+ YFC_event.15.b: "No barbarian could properly understand what is needed for trade." #costs a bit of money
+
+ YFC_event.16.t: "RE: Trade Routes Along the Sea"
+ YFC_event.16.desc: "The small squadron we sent to examen the east has returned to us, showing their findings. It seems as if there are many locations that could become a small, profitable port. According to them, a couple of pieces of the east jut out into small peninsulas, with which shipping could be made easy. For now, we've ordered them to set up shop (literally) at the nearest spot they could, however, should we expand further, the east could become extroardinarily profitable. Unfortunately, it seems as if some sectorials aren't currently on board with this idea, citing that we wouldn't be able to properly devote our time to this endevour. They are likely right, sure, however this definitely would not hurt to attempt in the future."
+ YFC_event.16.a: "At least we have a good foothold!" #gives some money and state 225, setting the vp there to 12 instead of 1
 
  YFC_event.19.t: "New Face Of a New Bunch"
- YFC_event.19.desc: "ZDubbz plz write" #Cough
- YFC_event.19.a: "???"
+ YFC_event.19.desc: "Blocky sent a letter through the mail only a few days after the Bunch fell, stating he wished to work with us. Over the months, we kept this letter in mind, and today, he came to remind us of this offer. Numismatia has been really obsessed with the idea of the former anarchical lands 'democratically' 'electing' a new leader for themselves, however the cabinet doesn't really know what those words mean. Regardless, they told us to put forward a candidate on the same day that Blocky made his visit. He outlined big plans for the former anarchist lands, and profitable plans, at that. In all honesty, his willingness to work with us seems a bit strange. Though, who would we be if we didn't endorse his candidacy?" 
+ YFC_event.19.a: "We'd be fools, broke fools at that."
 
- YFC_event.20.t: "YFC_focus_bunchivist_new_deal event"
- YFC_event.20.desc: "ZDubbz plz write"
- YFC_event.20.a: "Cough"
+ YFC_event.20.t: "Blocky's Bunchivist 'New Deal'"
+ YFC_event.20.desc: "Though we've not really been paying close attention, it does seem as if the election has been going well. Blocky has been platforming on the idea of big reform, but until today, he hadn't really spoken about what he was planning. Recently, he visited Yellow Face and the sectorials, laying out his exact plans for the former terroristic nation of the Bunch. Blocky seems to intrinsically understand the very fabric of the nation from which he hails, seeing as his ideas for national unity work well with the ideas your average bunchivist already has. For starters, he wishes to make transportation between bunchivist settlements affordable, and efficient. He wants to make Podgornyv a real city, with real jobs, and do as such for most other settlements. He wants to allow former bunchivists, regardless of their criminalities, an easy path to freedom, so long as they act as any good capitalist would. Lastly, he seems have quite the 'chilled out' immigration policy, so to speak, which most bunchivists seem to love. \nIn short, Blocky is surprisingly not as stupid than we believed him to be; integrating these plans into his rallies and whatnot would surely win him the election. Why he asked for our permission, we don't know, because"
+ YFC_event.20.a: "It's very clear what our answer will be." #doing this focus makes blocky gain votes faster or something idfk
 
  YFC_event.21.t: "Compilations in the Military District!"
- YFC_event.21.desc: "With the current invasion of the rotten communists of our ally, Coiny has stated that all assistance will need to move back to defending his country. It's unfortunately a fair request which we cannot deny. The outcome of the war will be unknown, if even anyone will win. We could send aid to Coiny...\n\nThough, should we?"
+ YFC_event.21.desc: "Seeing as the rotten, filthy communists to the north have invaded our ally, Coiny has asked for us to return all assistance, as they will need to move back in order to defend his country. It's, unfortunately, a fair request which we cannot deny. The outcome of the war will be unknown, if anyone even will win. We could send aid to Coiny...\n\nThough, should we?"
  YFC_event.21.a: "Send Volunteers!"
  YFC_event.21.b: "Our hands are too tied at the moment..."
 
@@ -711,16 +715,16 @@
  YFC_event.22.c: "Pure economic opportunity is in the palms of this city's planner. It shall be the YFC's largest." 
 
  YFC_event.23.t: "Peoniele, The Second City"
- YFC_event.23.desc: "Following our large investments into the city of Peoniele, we have seen massive increases in profits.The pockets of our sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. Sure, the population of Peoniele herself haven't been the most enthusiastic about the large swaths of people moving to the city, but who cares for their opinions when profits have never been higher? Some environmentalist groups have formed in the city, who preech about 'keeping the beauty,' and what not, but what's more beautiful than the color green? An ignorant populace is easy to ignore, but what we have neglected to ensure the comencing of operations on the other development project we were seeing to, Yoyleton. It was in a great position for trade with the north, so it is a shame that we failed to take the opportunity. Regardless, the population there seems to care not, so at least they are good with what they have been given."
+ YFC_event.23.desc: "Following our large investments into the city of Peoniele, we have seen massive increases in profits. The pockets of our sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. Sure, the population of Peoniele herself haven't been the most enthusiastic about the large swaths of people moving to the city, but who cares for their opinions when profits have never been higher? Some environmentalist groups have formed in the city, who preech about 'keeping the beauty,' and what not, but what's more beautiful than the color green? An ignorant populace is easy to ignore, but what we have neglected to ensure the comencing of operations on the other development project we were seeing to, Yoyleton. It was in a great position for trade with the north, so it is a shame that we failed to take the opportunity. Regardless, the population there seems to care not, so at least they are good with what they have been given."
  YFC_event.23.a: "Show me a money spread, Peoniele."
 
- YFC_event.24.t: "City outcome event text"
- YFC_event.24.desc: "ZDubbz plz write"
- YFC_event.24.a: "Cough"
+ YFC_event.24.t: "Peoniele, The Second City"
+ YFC_event.24.desc: "Following our investments into the city of Peoniele, we have seen great increases in profits. The pockets of our sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. The existing populace seems to quite enjoy our changes too, so that's good too. Unfortunately, it seems as if we accidentally neglected so industrialize Yoyleton, which seemed like the promising location, all things considered. Regardless, we have a second stable source of money, and it seems to be growing by the day, seeing as Peoniele's population count has tripled."
+ YFC_event.24.a: "A great investment."
 
- YFC_event.25.t: "City outcome event text"
- YFC_event.25.desc: "ZDubbz plz write"
- YFC_event.25.a: "Cough"
+ YFC_event.25.t: "Beacons of the East"
+ YFC_event.25.desc: "Our investments into our eastern territories have born fruits beyond our wildest capitalistic dreams! Our returns have been, quite frankly, absurd. Every sectorial's pocket has been dashed more than sufficiently, and even the average menial laborer has seen a more than noticeable pay increase. Despite Peoniele's unsatisfactory growth, according to some of the architects who were designing the city, it seems to have become sort of a tourist attraction across Goiky, due to its natural beauty. Sure, 'natural beauty' isn't all that important, but everyone knows that a tourist is just a walking wallet. Yoyleton has become a bastion of Northern trade, with objects from all over paying visits just to buy and sell. Some independent companies have even started profiting up there, enspiring the competition needed to get our employees to work harder. Of course, these new companies still pay taxes, and who exactly do those tax dollars come back to?"
+ YFC_event.25.a: "Back to us!"
 
  YFC_event.26.t: "City outcome event text"
  YFC_event.26.desc: "ZDubbz plz write"
