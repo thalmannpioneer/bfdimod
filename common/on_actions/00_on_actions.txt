@@ -422,6 +422,7 @@ on_actions = {
                 set_temp_variable = { adding_amount = 0 }
                 set_temp_variable = { combined_modifer = 1 }
 
+                <<<<<<< Updated upstream
                 IF = {
                     limit = {is_ai = yes}
                     set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
@@ -433,11 +434,7 @@ on_actions = {
                 set_temp_variable = { stability = ROOT.stability }
                 multiply_temp_variable = {civ_count = stability}
                 add_to_temp_variable = { adding_amount = civ_count }
-
-                set_temp_variable = { population = ROOT.max_manpower_k }
-                divide_temp_variable = { population = 1000 }
-                add_to_temp_variable = { adding_amount = population }
-
+                =======
                 IF = {
                     limit = {
                         has_war = yes
@@ -510,50 +507,128 @@ on_actions = {
             }
         }
     }
+    >>>>>>> Stashed changes
 
-    on_join_faction = { #Join Faction
-        effect = {
-            IF = { #Musketeers
-                limit = {
-                    FROM = {has_country_flag = Allow_Musketeers}
-                }
-                set_country_flag = Allow_Musketeers
-                IF = {
-                    limit = {has_completed_focus = Musketeers_form_own}
-                    add_dynamic_modifier = {
-                        modifier = idea_Musketeers_OWN
+    set_temp_variable = { population = ROOT.max_manpower_k }
+    divide_temp_variable = { population = 1000 }
+    add_to_temp_variable = { adding_amount = population }
+
+    IF = {
+        limit = {
+            has_war = yes
+        }
+        multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
+    }
+    IF = {
+        limit = {
+            has_government = communism
+        }
+        multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
+    }
+
+    multiply_temp_variable = {adding_amount = combined_modifer}
+    add_to_variable = { money_amount = adding_amount }
+
+    BFDI_money_diplay_update = yes
+}
+}
+}
+
+on_weekly_GTR = { #PROJECT 1 MECHANIC
+    effect = {
+        if = {
+            limit = { has_country_flag = project1_mechanic_started }
+            if = {
+                limit = { NOT = { has_country_flag = stage1_done } }
+                add_to_variable = { var_GTR_progressbar_stage1 = var_GTR_weekly_progress_stage1 }
+                if = {
+                    limit = { check_variable = { var_GTR_progressbar_stage1 > 100 } }
+                    set_variable = { var_GTR_progressbar_stage1 = 100 }
+                    set_variable = { var_GTR_weekly_progress_stage1 = 0 }
+                    set_country_flag = stage1_done
+                    if = {
+                        limit = { has_country_flag = stage2_done }
+                        set_variable = { var_GTR_weekly_progress_stage3 = 10 }
                     }
+                    set_country_flag = project1_notif_enabled
                 }
-                IF = {
-                    limit = {has_completed_focus = Musketeers_form_udc}
-                    add_dynamic_modifier = {
-                        modifier = idea_Musketeers_UDC
+            }
+
+            if = {
+                limit = { NOT = { has_country_flag = stage2_done } }
+                add_to_variable = { var_GTR_progressbar_stage2 = var_GTR_weekly_progress_stage2 }
+                if = {
+                    limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
+                    set_variable = { var_GTR_progressbar_stage2 = 100 }
+                    set_variable = { var_GTR_weekly_progress_stage2 = 0 }
+                    set_country_flag = stage2_done
+                    if = {
+                        limit = { has_country_flag = stage1_done }
+                        set_variable = { var_GTR_weekly_progress_stage3 = 10 }
                     }
+                    set_country_flag = project1_notif_enabled
+                }
+            }
+
+            if = {
+                limit = { NOT = { has_country_flag = stage3_done } }
+                add_to_variable = { var_GTR_progressbar_stage3 = var_GTR_weekly_progress_stage3 }
+                if = {
+                    limit = { check_variable = { var_GTR_progressbar_stage3 > 100 } }
+                    set_variable = { var_GTR_progressbar_stage3 = 100 }
+                    set_variable = { var_GTR_weekly_progress_stage3 = 0 }
+                    set_country_flag = stage3_done
+                    set_country_flag = project1_notif_enabled
+                    country_event = GTR_event.9
                 }
             }
         }
     }
+}
 
-    on_leave_faction = { #Leave Faction
-        effect = {
-            IF = { #Musketeers
-                limit = {
-                    FROM = {has_country_flag = Allow_Musketeers}
+on_join_faction = { #Join Faction
+    effect = {
+        IF = { #Musketeers
+            limit = {
+                FROM = {has_country_flag = Allow_Musketeers}
+            }
+            set_country_flag = Allow_Musketeers
+            IF = {
+                limit = {has_completed_focus = Musketeers_form_own}
+                add_dynamic_modifier = {
+                    modifier = idea_Musketeers_OWN
                 }
-                clr_country_flag = Allow_Musketeers
-                IF = {
-                    limit = {has_completed_focus = Musketeers_form_own}
-                    remove_dynamic_modifier = {
-                        modifier = idea_Musketeers_OWN
-                    }
-                }
-                IF = {
-                    limit = {has_completed_focus = Musketeers_form_udc}
-                    remove_dynamic_modifier = {
-                        modifier = idea_Musketeers_UDC
-                    }
+            }
+            IF = {
+                limit = {has_completed_focus = Musketeers_form_udc}
+                add_dynamic_modifier = {
+                    modifier = idea_Musketeers_UDC
                 }
             }
         }
     }
+}
+
+on_leave_faction = { #Leave Faction
+    effect = {
+        IF = { #Musketeers
+            limit = {
+                FROM = {has_country_flag = Allow_Musketeers}
+            }
+            clr_country_flag = Allow_Musketeers
+            IF = {
+                limit = {has_completed_focus = Musketeers_form_own}
+                remove_dynamic_modifier = {
+                    modifier = idea_Musketeers_OWN
+                }
+            }
+            IF = {
+                limit = {has_completed_focus = Musketeers_form_udc}
+                remove_dynamic_modifier = {
+                    modifier = idea_Musketeers_UDC
+                }
+            }
+        }
+    }
+}
 }
