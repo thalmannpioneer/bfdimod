@@ -245,23 +245,6 @@ scripted_gui = {
 						}
 						country_lock_all_division_template = yes
 					}
-
-					every_possible_country = {
-						set_country_flag = has_money_system
-						IF = {
-							limit = {
-								tag = YFC
-							}
-							set_variable = { money_amount = 16.5 }
-						}
-						ELSE = {
-							set_variable_to_random = {
-								var = money_amount
-								min = -0.5
-								max = 2
-							}
-						}
-					}
 				}
 			}
 		}
@@ -363,23 +346,6 @@ scripted_gui = {
 						random_hours = 12
 					}
 					country_lock_all_division_template = yes
-				}
-
-				every_possible_country = {
-					set_country_flag = has_money_system
-					IF = {
-						limit = {
-							tag = YFC
-						}
-						set_variable = { money_amount = 16.5 }
-					}
-					ELSE = {
-						set_variable_to_random = {
-							var = money_amount
-							min = -0.5
-							max = 2
-						}
-					}
 				}
 			}
 			cancel_click = {

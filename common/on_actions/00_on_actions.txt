@@ -9,6 +9,21 @@ on_actions = {
 			set_global_flag = showwatermark
 			set_global_flag = welcome
 			set_global_flag = focus_take_prevention
+
+			every_possible_country = {
+				set_country_flag = has_money_system
+				IF = {
+					limit = {tag = YFC}
+					set_variable = { money_amount = 16.5 }
+				}
+				ELSE = {
+					set_variable_to_random = {
+						var = money_amount
+						min = -0.5
+						max = 2
+					}
+				}
+			}
 		}
 	}
 	

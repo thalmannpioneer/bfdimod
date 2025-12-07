@@ -405,6 +405,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_GDR_congress_campaign.dds"
 	}
 	
+	#YFC
+
+	spriteType = {
+		name = "GFX_decisions_YFC_cherry_mercenary"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_grape_mercenary"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_grape_mercenary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_unmanned_mercenary"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_unmanned_mercenary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_steal_coiny"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_steal_coiny.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_export_guns"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_export_guns.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_buy_tech"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_buy_tech.dds"
+	}
+
+	#GTR
+
 	spriteType = {
 		name = "GFX_decision_GTR_project_1_category"
 		textureFile = "gfx/interface/decisions/decision_category_project_1.dds"

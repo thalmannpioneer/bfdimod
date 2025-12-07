@@ -61,7 +61,7 @@ political_actions = {
 	}
 
 	yfc_mercenaries_normal = {
-		icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decisions_YFC_cherry_mercenary
 
 		visible = {
 			tag = YFC
@@ -115,7 +115,7 @@ political_actions = {
 	}
 
 	yfc_mercenaries_cav = {
-		icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decisions_YFC_grape_mercenary
 
 		visible = {
 			tag = YFC
@@ -169,7 +169,7 @@ political_actions = {
 	}
 
 	yfc_mercenaries_strong = {
-		icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decisions_YFC_unmanned_mercenary
 
 		visible = {
 			tag = YFC

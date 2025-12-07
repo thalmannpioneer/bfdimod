@@ -44,7 +44,7 @@ decision_YFC_trade_category= {
 	}
 
 	YFC_Trade_Tech = {
-		icon = GFX_decision_generic_research
+		icon = GFX_decisions_YFC_buy_tech
         
 		visible = {
 			has_completed_focus = YFC_focus_open_the_market
@@ -81,7 +81,7 @@ decision_YFC_trade_category= {
 	}
 
 	YFC_Trade_GMD_Guns = {
-		icon = GFX_decision_generic_industry
+		icon = GFX_decisions_YFC_steal_coiny
         
 		visible = {
 			has_completed_focus = YFC_focus_outsource_gun_production
@@ -128,7 +128,7 @@ decision_YFC_trade_category= {
 	}
 
 	YFC_Trade_BUN_Guns = {
-		icon = GFX_decision_generic_industry
+		icon = GFX_decisions_YFC_export_guns
         
 		visible = {
 			has_completed_focus = YFC_focus_sell_them_guns
