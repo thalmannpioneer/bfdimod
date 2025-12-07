@@ -853,7 +853,7 @@ focus_tree = {
 			}
 		}
 		
-		allow_branch = { has_country_flag = Won_War_BUN }
+		#allow_branch = { has_country_flag = Won_War_BUN }
 		
 		cost = 2
 		completion_reward = {
@@ -1087,14 +1087,11 @@ focus_tree = {
 		#gives event about sending people out to look at the eastern sea board, in 2 months you get another event abt what they found
 		#secretly helps with 3rd part of tree (eastern seaboard colonization)
 		completion_reward = {
-			add_political_power = 10 #Change later to money or something else
-			hidden_effect = {
-				country_event = {
-					id = YFC_event.15 
-					days = 55
-					random_days = 15
-					hours = 6
-				}
+			#add a tooltip saying that this helps with a future endeavour
+			country_event = {
+				id = YFC_event.15 
+				days = 1
+				hours = 6
 			}
 		}
 	}
@@ -1508,10 +1505,12 @@ focus_tree = {
 		#gives a bit extra passive income
 
 		#Idea: Increases influence of Hammer and Taser
+		#RE: sure
 
 		completion_reward = {
 			#300K Fine?
 			#ZDubbz
+			#RE: why not
 			add_political_power = 25
 		}
 	}
@@ -1569,6 +1568,7 @@ focus_tree = {
 		completion_reward = {
 			#What does this mean??
 			#ZDubbz
+			#RE: exactly what it says
 		}
 	}
 
@@ -1593,6 +1593,7 @@ focus_tree = {
 		completion_reward = {
 			#So I'll make it where the player gains 300K 
 			#ZDubbz
+			#RE: sounds good
 		}
 	}
 
