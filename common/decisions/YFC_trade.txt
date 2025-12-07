@@ -74,7 +74,7 @@ decision_YFC_trade_category= {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 10 }
+				check_variable = { money_amount > 20 }
 				add = 100
 			}
 		}

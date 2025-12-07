@@ -1,3 +1,34 @@
+BFDI_wait_tech = {
+	#Tell EVERY nation that unless they have more than 2 mils or it is past 2015 that Anti-Tank/Air IS NOT NEEDED.
+	enable = {
+		OR = {
+			date < 2015.1.1
+			num_of_military_factories < 3
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = research_weight_factor
+		id = interwar_antiair
+		value = -500
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = interwar_antitank
+		value = -500
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = anti_air_equipment
+		value = -100
+	}
+	ai_strategy = { 
+		type = equipment_production_surplus_management
+		id = anti_tank_equipment
+		value = -100
+	}
+}
+
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
@@ -439,8 +470,10 @@ bba_air_prod_1 = {
 bba_support_boosts = {
 
 	enable = {
-		is_historical_focus_on = yes
-		date < 2015.1.1
+		date > 2015.1.1
+	}
+	abort = {
+		date < 2020.1.1
 	}
 	abort_when_not_enabled = yes
 
