@@ -17,7 +17,12 @@ characters = {
 	}
 	GTR_tennis_ball = {
 		name = GTR_tennis_ball
-		portraits = { civilian = { small = GFX_idea_GTR_tennis_ball } }
+		portraits = { 
+			civilian = {
+				large = GFX_GTR_tennis_ball
+				small = GFX_idea_GTR_tennis_ball
+			}
+		}
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_GTR_tennis_ball

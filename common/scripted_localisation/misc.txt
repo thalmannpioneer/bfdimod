@@ -31,3 +31,37 @@ defined_text = {
 		localization_key = GPG_barf_bag
 	}
 }
+
+defined_text = {
+	name = MONEY_AMOUNT
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.display_state
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = l_money_thousands
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.display_state
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = l_money_millions
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.display_state
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = l_money_billions
+	}
+}

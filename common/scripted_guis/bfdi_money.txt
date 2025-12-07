@@ -1,0 +1,9 @@
+scripted_gui = {
+	BFDI_money_topbar = {
+		window_name = "money"
+	
+		parent_window_token = top_bar
+		
+		visible = { always = yes }
+	}
+}

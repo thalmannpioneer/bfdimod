@@ -61,3 +61,7 @@
  l_disclaimer_desc: "The content of this country may seem inappropriate to many people. Remember: §RThese are just objects!§!\n\nAll coincidences are random."
  l_disclaimer_button_agree: "Got it!"
  l_disclaimer_button_cancel: "Go back"
+ 
+ l_money_thousands: "[?display_money|.2+]K"
+ l_money_millions: "[?display_money|.2+]M"
+ l_money_billions: "[?display_money|.2+]B"

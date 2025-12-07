@@ -33,9 +33,11 @@ decision_GTR_project_1_category = {
 		available = { always = no }
 		selectable_mission = no
 		activation = {
-			has_country_flag = project1_mechanic_started
-			NOT = { has_country_flag = stage1_done }
-			check_variable = { var_GTR_weekly_progress_stage1 > 1 }
+			hidden_trigger = {
+				has_country_flag = project1_mechanic_started
+				NOT = { has_country_flag = stage1_done }
+				check_variable = { var_GTR_weekly_progress_stage1 > 1 }
+			}
 		}
 		
 		icon = GFX_decisions_GTR_project1_slowdown_stage1_mission
@@ -50,9 +52,11 @@ decision_GTR_project_1_category = {
 		available = { always = no }
 		selectable_mission = no
 		activation = {
-			has_country_flag = project1_mechanic_started
-			NOT = { has_country_flag = stage2_done }
-			check_variable = { var_GTR_weekly_progress_stage2 > 1 }
+			custom_trigger_tooltip = {
+				has_country_flag = project1_mechanic_started
+				NOT = { has_country_flag = stage2_done }
+				check_variable = { var_GTR_weekly_progress_stage2 > 1 }
+			}
 		}
 		
 		icon = GFX_decisions_GTR_project1_slowdown_stage2_mission
@@ -66,9 +70,11 @@ decision_GTR_project_1_category = {
 		available = { always = no }
 		selectable_mission = no
 		activation = {
-			has_country_flag = project1_mechanic_started
-			NOT = { has_country_flag = stage3_done }
-			check_variable = { var_GTR_weekly_progress_stage3 > 1 }
+			hidden_trigger = {
+				has_country_flag = project1_mechanic_started
+				NOT = { has_country_flag = stage3_done }
+				check_variable = { var_GTR_weekly_progress_stage3 > 1 }
+			}
 		}
 		
 		icon = GFX_decisions_GTR_project1_slowdown_stage3_mission

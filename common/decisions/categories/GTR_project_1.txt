@@ -4,8 +4,10 @@ decision_GTR_project_1_category = {
 	icon = GFX_decision_GTR_project_1_category
 	
 	available = {
-		has_country_flag = project1_mechanic_started
-		NOT = { has_country_flag = project_1_fail }
+		hidden_trigger = {
+			has_country_flag = project1_mechanic_started
+			NOT = { has_country_flag = project_1_fail }
+		}
 	}
 	visible = {
 		has_country_flag = project1_mechanic_started

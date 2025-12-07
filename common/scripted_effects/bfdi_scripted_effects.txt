@@ -186,3 +186,23 @@ GPG_on_lawnland_progressbar_change = {
 		country_event = GPG_event.37
 	}
 }
+
+BFDI_money_diplay_update = {
+	if = {
+		limit = { check_variable = { money_amount < 10} }
+		set_variable = { display_state = 1 }
+		set_variable = { display_money = money_amount }
+		multiply_variable = { display_money = 100 }
+	}
+	else_if = {
+		limit = { check_variable = { money_amount < 10000 } }
+		set_variable = { display_state = 2 }
+		set_variable = { display_money = money_amount }
+		divide_variable = { display_money = 10 }
+	}
+	else = {
+		set_variable = { display_state = 3 }
+		set_variable = { display_money = money_amount }
+		divide_variable = { display_money = 10000 }
+	}
+}

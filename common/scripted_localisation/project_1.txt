@@ -1,126 +1,130 @@
 defined_text = {
-	name = PROJECT1_STAGEIMAGE
-	text = {
-		trigger = { has_country_flag = GTR_stage1_selected }
-		localization_key = GFX_decisions_GTR_project_1_image_stage_1
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage2_selected }
-		localization_key = GFX_decisions_GTR_project_1_image_stage_2
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage3_selected }
-		localization_key = GFX_decisions_GTR_project_1_image_stage_3
-	}
+    name = PROJECT1_STAGEIMAGE
+    text = {
+        trigger = { has_country_flag = GTR_stage1_selected }
+        localization_key = GFX_decisions_GTR_project_1_image_stage_1
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage2_selected }
+        localization_key = GFX_decisions_GTR_project_1_image_stage_2
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage3_selected }
+        localization_key = GFX_decisions_GTR_project_1_image_stage_3
+    }
 }
 defined_text = {
-	name = PROJECT1_TITLE
-	text = {
-		trigger = { has_country_flag = GTR_stage1_selected }
-		localization_key = decisions_GTR_project1_stage1_title
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage2_selected }
-		localization_key = decisions_GTR_project1_stage2_title
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage3_selected }
-		localization_key = decisions_GTR_project1_stage3_title
-	}
+    name = PROJECT1_TITLE
+    text = {
+        trigger = { has_country_flag = GTR_stage1_selected }
+        localization_key = decisions_GTR_project1_stage1_title
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage2_selected }
+        localization_key = decisions_GTR_project1_stage2_title
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage3_selected }
+        localization_key = decisions_GTR_project1_stage3_title
+    }
 }
 defined_text = {
-	name = PROJECT1_DESC
-	text = {
-		trigger = { has_country_flag = GTR_stage1_selected }
-		localization_key = decisions_GTR_project1_stage1_desc
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage2_selected }
-		localization_key = decisions_GTR_project1_stage2_desc
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage3_selected }
-		localization_key = decisions_GTR_project1_stage3_desc
-	}
+    name = PROJECT1_DESC
+    text = {
+        trigger = { has_country_flag = GTR_stage1_selected }
+        localization_key = decisions_GTR_project1_stage1_desc
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage2_selected }
+        localization_key = decisions_GTR_project1_stage2_desc
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage3_selected }
+        localization_key = decisions_GTR_project1_stage3_desc
+    }
 }
 defined_text = {
-	name = PROJECT1_WP
-	text = {
-		trigger = { has_country_flag = GTR_stage1_selected }
-		localization_key = decisions_GTR_project1_stage1_progress_weekly
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage2_selected }
-		localization_key = decisions_GTR_project1_stage2_progress_weekly
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage3_selected }
-		localization_key = decisions_GTR_project1_stage3_progress_weekly
-	}
+    name = PROJECT1_WP
+    text = {
+        trigger = { has_country_flag = GTR_stage1_selected }
+        localization_key = decisions_GTR_project1_stage1_progress_weekly
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage2_selected }
+        localization_key = decisions_GTR_project1_stage2_progress_weekly
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage3_selected }
+        localization_key = decisions_GTR_project1_stage3_progress_weekly
+    }
 }
 defined_text = {
-	name = PROJECT1_PROGRESS_MADE
-	text = {
-		trigger = { has_country_flag = GTR_stage1_selected }
-		localization_key = [?var_GTR_progressbar_stage1]%
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage2_selected }
-		localization_key = [?var_GTR_progressbar_stage2]%
-	}
-	text = {
-		trigger = { has_country_flag = GTR_stage3_selected }
-		localization_key = [?var_GTR_progressbar_stage3]%
-	}
+    name = PROJECT1_PROGRESS_MADE
+    text = {
+        trigger = { has_country_flag = GTR_stage1_selected }
+        localization_key = [?var_GTR_progressbar_stage1]%
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage2_selected }
+        localization_key = [?var_GTR_progressbar_stage2]%
+    }
+    text = {
+        trigger = { has_country_flag = GTR_stage3_selected }
+        localization_key = [?var_GTR_progressbar_stage3]%
+    }
 }
 defined_text = {
-	name = PROJECT1_STAGE3_BUTTON_TT
-	text = {
-		trigger = {
-			NOT = {
-				AND = {
-					has_country_flag = stage1_done
-					has_country_flag = stage2_done
-				}
-			}
-		}
-		localization_key = decisions_GTR_project1_stage3_button_tt
-	}
+    name = PROJECT1_STAGE3_BUTTON_TT
+    text = {
+        trigger = {
+            NOT = {
+                AND = {
+                    has_country_flag = stage1_done
+                    has_country_flag = stage2_done
+                }
+            }
+        }
+        localization_key = decisions_GTR_project1_stage3_button_tt
+    }
 }
 defined_text = {
-	name = PROJECT1_BUTTON_STAGE1
-	text = {
-		trigger = { has_country_flag = stage1_done }
-		localization_key = decisions_GTR_project_1_button_stage_done
-	}
-	text = {
-		localization_key = decisions_GTR_project_1_button_stage_1
-	}
+    name = PROJECT1_BUTTON_STAGE1
+    text = {
+        trigger = { has_country_flag = stage1_done }
+        localization_key = decisions_GTR_project_1_button_stage_done
+    }
+    text = {
+        localization_key = decisions_GTR_project_1_button_stage_1
+    }
 }
 defined_text = {
-	name = PROJECT1_BUTTON_STAGE2
-	text = {
-		trigger = { has_country_flag = stage2_done }
-		localization_key = decisions_GTR_project_1_button_stage_done
-	}
-	text = {
-		localization_key = decisions_GTR_project_1_button_stage_2
-	}
+    name = PROJECT1_BUTTON_STAGE2
+    text = {
+        trigger = { has_country_flag = stage2_done }
+        localization_key = decisions_GTR_project_1_button_stage_done
+    }
+    text = {
+        localization_key = decisions_GTR_project_1_button_stage_2
+    }
 }
 defined_text = {
-	name = PROJECT1_BUTTON_STAGE3
-	text = {
-		trigger = {
-			NOT = {
-				AND = {
-					has_country_flag = stage1_done
-					has_country_flag = stage2_done
-				}
-			}
-		}
-		localization_key = decisions_GTR_project1_stage3_button_blocked
-	}
-	text = {
-		localization_key = decisions_GTR_project1_stage3_button
-	}
+    name = PROJECT1_BUTTON_STAGE3
+    text = {
+        trigger = {
+            NOT = {
+                AND = {
+                    has_country_flag = stage1_done
+                    has_country_flag = stage2_done
+                }
+            }
+        }
+        localization_key = decisions_GTR_project1_stage3_button_blocked
+    }
+    text = {
+        trigger = { has_country_flag = stage3_done }
+        localization_key = decisions_GTR_project_1_button_stage_done
+    }
+    text = {
+        localization_key = decisions_GTR_project1_stage3_button
+    }
 }

@@ -1,0 +1,30 @@
+focus_tree = {
+    id = GTR_secondtree_focus_tree
+
+    country = {
+        factor = 0
+    }
+
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = GTR_focus_tennis_ball_rise
+        x = 10
+        y = 0
+
+        icon = GFX_focus_GTR_tennis_ball_rise
+
+        available = { always = no }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+}

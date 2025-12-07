@@ -14,4 +14,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/agency_icon_GGR_scheeschutz.dds"
 		noOfFrames = 2
 	}
+	
+	spriteType = {
+		name = "GFX_topbar_money"
+		texturefile = "gfx/interface/topbar/GFX_topbar_money.dds"
+	}
 }

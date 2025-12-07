@@ -1644,4 +1644,14 @@ SpriteTypes = {
 		play_on_show = yes
 		allwaystransparent = yes
 	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_focus_GTR_tennis_ball_rise"
+		texturefile = "gfx/interface/goals/GFX_focus_GTR_tennis_ball_rise.dds"
+		noOfFrames = 10
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
 }
