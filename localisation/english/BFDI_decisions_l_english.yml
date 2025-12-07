@@ -1,6 +1,6 @@
 ﻿l_english:
  debug_battle_royale_desc: "§tWARNING!§! YOUR PC MIGHT EXPLODE FROM ALL THE WARS! MIGHT ALSO BREAK SOME OF THE FOCUSES SO GOOD LUCK!"
- debug_conquest_desc: "Unite Goiky with conquest! Might break stuff and lag so good luck Napoleon Bonaparte!"
+ debug_conquest_desc: "§tWARNING!§! YOUR PC MIGHT EXPLODE FROM ALL THE WARS! MIGHT ALSO BREAK SOME OF THE FOCUSES SO GOOD LUCK!"
  debug_nuke_everything_desc: "Do I really need to explain...?"
 
  invest_healthcare: "Subsidize Healthcare"
@@ -155,6 +155,8 @@
  decisions_YFC_trade_sells5: "Sells §gManpower§!."
  decisions_YFC_trade_sells6: "Sells a §YYellowface§!."
  YFC_Trade_Tech: "Purchase §4Foreign Scientists§!"
+ YFC_Trade_GMD_Guns: "Exploit §8Coiny's Factories§!"
+ YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
 
  yfc_mercenaries_normal: "Purchase §tCherry Company§!"
  yfc_mercenaries_cav: "Purchase §7Combined Grape Affiliation§!"

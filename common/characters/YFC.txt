@@ -55,14 +55,14 @@ characters = {
 				hidden_trigger = { 
 					has_completed_focus = YFC_focus_buy_defense_trainings 
 					GMD = {has_war = no}
-					country_event = GMD
+					country_exists = GMD
 				} 
 			}
 			visible = { 
 				hidden_trigger = { 
 					has_completed_focus = YFC_focus_buy_defense_trainings 
 					GMD = {has_war = no}
-					country_event = GMD
+					country_exists = GMD
 				} 
 			}
 		}

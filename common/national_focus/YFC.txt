@@ -252,38 +252,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = YFC_focus_military_restructuring
-		relative_position_id = YFC_focus_the_grapes_and_the_cherries
-		x = 0
-		y = 3
-		icon = GFX_focus_generic
-		
-		allow_branch = { has_completed_focus = YFC_focus_a_real_army }
-
-		available = {
-			hidden_trigger = {has_completed_focus = YFC_focus_a_real_army}
-		}
-
-		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
-		
-		cost = 8
-
-		select_effect = {
-			add_ideas = idea_YFC_military_restructuring
-		}
-
-		completion_reward = {
-			#Need to add tooltips explain this but I'm lazy and I'll come back to it when I start working on this
-
-			remove_ideas = idea_YFC_military_restructuring
-			add_ideas = idea_YFC_new_army
-			add_manpower = 5000
-			army_experience = 20
-			add_command_power = 25
-		}
-	}
-
  #MAIN PATH
 
 	focus = {
@@ -364,10 +332,13 @@ focus_tree = {
 			has_completed_focus = YFC_focus_money_arms_capital
 		}
 		#this and the following focus give you bonuses to the amount you can export in the trade decisions tab until war is declared on the bunch, though it costs a hit in the amount of research slots the GTR is willing to sell. also decreases mils by one
+		#NEW IDEA: Unlocks a decision to sell weapons to Bunch in exchange for money as I will be nerfing Bunch. Best part is that Bunch spends no money on this!!!!!!!
+		#It's free money!
+		#The trade itself would be 200 Guns = 300K (Risky for YFC as while you get free money you give up guns.)
 		cost = 5
 
 		completion_reward = {
-			
+			unlock_decision_tooltip = YFC_Trade_BUN_Guns
 		}
 
 		ai_will_do = {
@@ -582,9 +553,11 @@ focus_tree = {
 		
 		prerequisite = { focus = YFC_focus_coiny_cooperation }
 		#allows you to exploit coiny's military factories, selling coiny's guns instead of yours, so you dont lose military factories, in exchange, buffs from coiny are less potent
-		cost = 4
+		#NEW IDEA: Unlocks a decision to exploit coiny's military factories, granting you 2 offmap mils for 120 days. Coiny gets a increasing change to discover this and have a event on how to handle it.
+		#Coiny also get's hurt by YFC's trolling by losing production, so they have reason to talk it out. 
+		cost = 5
 		completion_reward = {
-
+			unlock_decision_tooltip = YFC_Trade_GMD_Guns
 		}
 	}
 

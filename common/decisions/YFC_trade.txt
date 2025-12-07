@@ -58,7 +58,7 @@ decision_YFC_trade_category= {
 		}
 
 		fire_only_once = no
-		cost = 25
+		cost = 10
 		days_remove = 150
 		days_re_enable = 30
 
@@ -76,6 +76,110 @@ decision_YFC_trade_category= {
 			modifier = {
 				check_variable = { money_amount > 20 }
 				add = 100
+			}
+		}
+	}
+
+	YFC_Trade_GMD_Guns = {
+		icon = GFX_decision_generic_industry
+        
+		visible = {
+			has_completed_focus = YFC_focus_outsource_gun_production
+			country_exists = GMD
+			GMD = {
+				has_war = no
+			}
+		}
+
+		fire_only_once = no
+		cost = 25
+		days_remove = 120
+		days_re_enable = 60
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 2 }
+			GMD = {
+				add_timed_idea = {
+					idea = idea_YFC_Stolen_Guns
+					days = 120
+				}
+			}
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = -2 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+				add = 1
+                has_equipment = {infantry_equipment < -100}
+			}
+			modifier = {
+				add = 20
+                has_equipment = {infantry_equipment < -1000}
+			}
+			modifier = {
+				add = 50
+                has_equipment = {infantry_equipment < -2000}
+			}
+		}
+	}
+
+	YFC_Trade_BUN_Guns = {
+		icon = GFX_decision_generic_industry
+        
+		visible = {
+			has_completed_focus = YFC_focus_sell_them_guns
+			NOT = {has_completed_focus = YFC_focus_money_arms_capital}
+			country_exists = BUN
+			BUN = {
+				NOT = {has_war_with = YFC}
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 60
+
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 199
+			}
+		}
+		custom_cost_text = decision_cost_ie_200
+
+		complete_effect = {
+			hidden_effect = {
+                add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -200
+				}
+            }
+		}
+
+		remove_effect = {
+			BUN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 200
+					producer = YFC
+				}
+			}
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+				add = 10
+                has_equipment = {infantry_equipment > 800}
+			}
+			modifier = {
+				add = -100
+                has_equipment = {infantry_equipment < 800}
 			}
 		}
 	}

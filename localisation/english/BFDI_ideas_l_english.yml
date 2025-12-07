@@ -168,11 +168,13 @@
  idea_YFC_anarchic_lands: "Anarchic Lands"
  idea_YFC_anarchic_lands_desc: "Due to us never really controlling the lands we “claim” we are §tunable to build buildings, have any starting research slots, and produce our own weapons without purchasing or 'acquiring' from others.§!"
  idea_YFC_United_Clash: "Defense Contractors"
+ idea_YFC_Stolen_Guns: "Unknown Production Issues"
+ idea_YFC_Stolen_Guns_desc: "It's unclear why, but we are only making a fraction of equipment we are supposed to be making. Investigations are being done to find the source of this issue but will take some time. For now, it will be eating at our military growth."
  idea_YFC_show_no_mercy: "Show No Mercy"
  idea_YFC_at_the_finish_line: "At the Finish Line"
- idea_YFC_operation_enforcement: "Operation Enforcement"
- idea_YFC_military_restructuring: "Military Restructuring"
- idea_YFC_new_army: "New Army"
+ idea_YFC_operation_enforcement: "Operation Enforcement" #Remove later
+ idea_YFC_military_restructuring: "Military Restructuring" #Remove later
+ idea_YFC_new_army: "New Army" #Remove later
 
  idea_Musketeers_OWN: "OWN"
  idea_Musketeers_UDC: "UDC"

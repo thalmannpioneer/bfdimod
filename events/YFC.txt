@@ -1,6 +1,5 @@
 add_namespace = YFC_event
 add_namespace = YFC_borderwars
-add_namespace = YFC_CRN_Sub
 add_namespace = YFC_BUN
 add_namespace = YFC_hidden_event
 
@@ -136,10 +135,6 @@ country_event = {
 		delete_unit_template_and_units = {
 			division_template = "Militia"
 			disband = no 
-		}
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 2000
 		}
 		complete_national_focus = YFC_focus_a_look_inward
 		add_war_support = 0.02
@@ -1513,10 +1508,6 @@ country_event = { #Annex Events 1
 		name = YFC_BUN.9.b
 		add_political_power = -25
 		add_manpower = 1000
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 250
-		}
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.10
@@ -1978,10 +1969,10 @@ country_event = { #Annex Events FINAL
         trigger = {
         	has_war_with = BUN
         }
-		add_manpower = 1000
+		add_manpower = 2500
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 1000
+			amount = 500
 		}
 	}
 

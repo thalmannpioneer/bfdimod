@@ -20,6 +20,16 @@ ideas = {
 			cancel = {NOT = {country_exists = BUN}}
 		}
 
+		idea_YFC_Stolen_Guns = {
+			picture = GTR_announcergrad_supplying_problems #If we have time then we can make a GFX for this
+			modifier = {
+				industrial_capacity_factory = -0.5
+			}
+			cancel = {NOT = {country_exists = YFC}}
+		}
+
+
+		#WILL BE REDONE
 		idea_YFC_show_no_mercy = {
 			picture = YFC_show_no_mercy
 			modifier = {
@@ -43,6 +53,7 @@ ideas = {
 			cancel = {country_exists = BUN}
 		}
 
+		#THIS WILL BE REMOVED I HAVE A BETTER IDEA
 		idea_YFC_operation_enforcement = { #Last ditch attack by YFC during revolt, ALL IN!!!!!. Given by choice in a event where a ceasefire could be made
 			picture = CZE_planning_bonus
 			targeted_modifier = {
@@ -65,6 +76,7 @@ ideas = {
 			}
 		}
 
+		#THIS WILL BE REMOVED
 		idea_YFC_military_restructuring = {
 			picture = CZE_planning_bonus
 			modifier = {
@@ -76,6 +88,7 @@ ideas = {
 			}
 		}
 
+		#THIS WILL BE REMOVED
 		idea_YFC_new_army = {
 			picture = CZE_planning_bonus
 			modifier = {

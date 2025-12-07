@@ -43,15 +43,7 @@ set_popularities = {
  set_variable = { var_idea_YFC_anarchic_lands_rail = 0 }
  set_variable = { var_idea_YFC_anarchic_lands_node = 0 }
 
-#Subjugation YFC Side
- set_variable = { var_idea_YFC_integration_YFC_army_attack_factor = 0 }
- set_variable = { var_idea_YFC_integration_YFC_army_defence_factor = 0}
- set_variable = { var_idea_YFC_integration_YFC_command_power_gain_mult = 0 }
- set_variable = { var_idea_YFC_integration_YFC_stability_factor = 0 }
- set_variable = { var_idea_YFC_integration_YFC_war_support_factor = 0 } 
- set_variable = { var_idea_YFC_integration_YFC_political_power_factor = 0 }  
-
- set_variable = {var = var_YFC_BUN_Anger value = 1 }
+ set_variable = {var = var_YFC_BUN_Anger value = 1 } #Useless but needed for killing Neo-Bunch
 
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david
@@ -59,8 +51,12 @@ recruit_character = YFC_Coiny
 
 add_manpower = 10000
 
-add_ideas = free_trade
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 1000
+}
 
+add_ideas = free_trade
 add_ideas = idea_YFC_no_more_advertisements_foundation
 add_dynamic_modifier = { modifier = idea_YFC_anarchic_lands }
 
