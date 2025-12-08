@@ -1149,6 +1149,33 @@
  GTR_focus_tennis_ball_rise: "§7Tennis Ball on the Rise§!"
  GTR_focus_tennis_ball_rise_desc: "Our situation is critical, only Tennis Ball knows how to save us all."
 
+ GTR_focus_excavate_the_ruins: "Excavate The Ruins"
+ GTR_focus_excavate_the_ruins_desc: "Cause is not yet lost! Perhaps something survived among the University. We must conduct immediate excavations and begin reforming our economy."
+
+ GTR_focus_accept_casland_refugees: "Casland Refugees"
+ GTR_focus_accept_casland_refugees_desc: "The news from the West isn't encouraging: the situation in the heart of Goiky is escalating, and civilian unrest is rising. A large number of refugees are moving to us from there, and we are obliged to accept these refugees."
+
+ GTR_focus_announcergrad_aid: "Help Announcergrad!"
+ GTR_focus_announcergrad_aid_desc: "Humanitarian aid must be sent immediately to the dying Announcergrad. We must scrape together everything we can and send a cry for help throughout all of Goiky."
+
+ GTR_focus_launch_industry: "Launch Industry"
+ GTR_focus_launch_industry_desc: "Due to a series of crises, Announcergrad's industry is idle while the objects desperately need food. These factories need to be restarted; it's a matter of our survival."
+
+ GTR_focus_city_assembly: "City Assembly"
+ GTR_focus_city_assembly_desc: "The Announcergrad administration today resembles a rotting corpse. It's essential to bring in capable objects to lead the administration and initiate political reforms."
+
+ GTR_focus_address_centralization: "Address Centralization Problem"
+ GTR_focus_address_centralization_desc: "The University Council has failed to govern alone. Some of the reins of power must be transferred to local authorities."
+
+ GTR_focus_bureaucracy_reform: "Bureaucracy Reform"
+ GTR_focus_bureaucracy_reform_desc: "The bureaucracy that exists today, if we assume it even exists, is dying. State power shall be reformed."
+
+ GTR_focus_rethinking_of_technocracy: "Digital Shine of Technocracy"
+ GTR_focus_rethinking_of_technocracy_desc: "One thing is clear: only technological progress can save Announcergrad from anarchy and plunder. This ideal will carry us through these difficult times."
+
+ GTR_focus_republic: "§2T H E R E P U B L I C§!"
+ GTR_focus_republic_desc: "The best intentions of the Announcergrad objects have found an outlet in the Technocratic Republic! Only together, with the help of technology, can we find a way out of this difficult situation."
+
  #generic
  generic_focus_industry: "Industry expansion"
  generic_focus_industry_desc: "Our industrial capacity is a rather bit low, innit?"

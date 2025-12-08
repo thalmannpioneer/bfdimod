@@ -2,1230 +2,1230 @@ add_namespace = bfdinews
 add_namespace = bfdinews_cities
 
 news_event = {
-	id = bfdinews.1
-	title = bfdinews.1.t
-	desc = bfdinews.1.desc
-	picture = GFX_bfdinews1
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.1.a
-	}
+    id = bfdinews.1
+    title = bfdinews.1.t
+    desc = bfdinews.1.desc
+    picture = GFX_bfdinews1
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.1.a
+    }
 }
 
 news_event = {
-	id = bfdinews.2
-	title = bfdinews.2.t
-	desc = bfdinews.2.desc
-	picture = GFX_bfdinews2
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.2.a
-	}
+    id = bfdinews.2
+    title = bfdinews.2.t
+    desc = bfdinews.2.desc
+    picture = GFX_bfdinews2
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.2.a
+    }
 }
 
 news_event = {
-	id = bfdinews.3
-	title = bfdinews.3.t
-	desc = bfdinews.3.desc
-	picture = GFX_bfdinews3
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.3.a
-	}
+    id = bfdinews.3
+    title = bfdinews.3.t
+    desc = bfdinews.3.desc
+    picture = GFX_bfdinews3
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.3.a
+    }
 }
 
 news_event = {
-	id = bfdinews.4
-	title = bfdinews.4.t
-	desc = bfdinews.4.desc
-	picture = GFX_bfdinews4
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.4.a
-		trigger = { NOT = { tag = WGF } }
-	}
-	
-	option = {
-		name = bfdinews.4.b
-		trigger = { tag = WGF }
-	}
+    id = bfdinews.4
+    title = bfdinews.4.t
+    desc = bfdinews.4.desc
+    picture = GFX_bfdinews4
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.4.a
+        trigger = { NOT = { tag = WGF } }
+    }
+
+    option = {
+        name = bfdinews.4.b
+        trigger = { tag = WGF }
+    }
 }
 
 news_event = {
-	id = bfdinews.5
-	title = bfdinews.5.t
-	desc = bfdinews.5.desc
-	picture = GFX_bfdinews5
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 80
-	}
-	
-	option = {
-		name = bfdinews.5.a
-	}
+    id = bfdinews.5
+    title = bfdinews.5.t
+    desc = bfdinews.5.desc
+    picture = GFX_bfdinews5
+
+    major = yes
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 80
+    }
+
+    option = {
+        name = bfdinews.5.a
+    }
 }
 
 news_event = {
-	id = bfdinews.6
-	title = bfdinews.6.t
-	desc = bfdinews.6.desc
-	picture = GFX_bfdinews6
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.6.a
-		if = {
-			limit = { WGF = { is_ai = no } }
-			set_variable = { var_demo_end = 1 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.6
+    title = bfdinews.6.t
+    desc = bfdinews.6.desc
+    picture = GFX_bfdinews6
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.6.a
+        if = {
+            limit = { WGF = { is_ai = no } }
+            set_variable = { var_demo_end = 1 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.7
-	title = bfdinews.7.t
-	desc = bfdinews.7.desc
-	picture = GFX_bfdinews7
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.7.a
-		if = {
-			limit = { SMG = { is_ai = no } }
-			set_variable = { var_demo_end = 2 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.7
+    title = bfdinews.7.t
+    desc = bfdinews.7.desc
+    picture = GFX_bfdinews7
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.7.a
+        if = {
+            limit = { SMG = { is_ai = no } }
+            set_variable = { var_demo_end = 2 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.8
-	title = bfdinews.8.t
-	desc = bfdinews.8.desc
-	picture = GFX_bfdinews8
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.8.a
-	}
+    id = bfdinews.8
+    title = bfdinews.8.t
+    desc = bfdinews.8.desc
+    picture = GFX_bfdinews8
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.8.a
+    }
 }
 
 news_event = {
-	id = bfdinews.9
-	title = bfdinews.9.t
-	desc = bfdinews.9.desc
-	picture = GFX_bfdinews7
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.9.a
-		if = {
-			limit = { GGR = { is_ai = no } }
-			set_variable = { var_demo_end = 3 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.9
+    title = bfdinews.9.t
+    desc = bfdinews.9.desc
+    picture = GFX_bfdinews7
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.9.a
+        if = {
+            limit = { GGR = { is_ai = no } }
+            set_variable = { var_demo_end = 3 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.10
-	title = bfdinews.10.t
-	desc = bfdinews.10.desc
-	picture = GFX_bfdinews10
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.10.a
-		trigger = {
-			OR = {
-				tag = GPG
-				has_government = neutrality
-			}
-		}
-	}
-	option = {
-		name = bfdinews.10.b
-		trigger = {
-			NOT = { tag = GPG }
-			has_government = communism
-		}
-	}
-	option = {
-		name = bfdinews.10.c
-		trigger = {
-			NOT = { tag = GPG }
-			has_government = fascism
-		}
-	}
-	option = {
-		name = bfdinews.10.d
-		trigger = {
-			tag = GPR
-		}
-	}
+    id = bfdinews.10
+    title = bfdinews.10.t
+    desc = bfdinews.10.desc
+    picture = GFX_bfdinews10
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.10.a
+        trigger = {
+            OR = {
+                tag = GPG
+                has_government = neutrality
+            }
+        }
+    }
+    option = {
+        name = bfdinews.10.b
+        trigger = {
+            NOT = { tag = GPG }
+            has_government = communism
+        }
+    }
+    option = {
+        name = bfdinews.10.c
+        trigger = {
+            NOT = { tag = GPG }
+            has_government = fascism
+        }
+    }
+    option = {
+        name = bfdinews.10.d
+        trigger = {
+            tag = GPR
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.11
-	title = bfdinews.11.t
-	desc = bfdinews.11.desc
-	picture = GFX_bfdinews11
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.11.a
-		trigger = {
-			tag = GPG
-		}
-	}
-	option = {
-		name = bfdinews.11.b
-		trigger = {
-			NOT = { tag = GPG }
-		}
-	}
+    id = bfdinews.11
+    title = bfdinews.11.t
+    desc = bfdinews.11.desc
+    picture = GFX_bfdinews11
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.11.a
+        trigger = {
+            tag = GPG
+        }
+    }
+    option = {
+        name = bfdinews.11.b
+        trigger = {
+            NOT = { tag = GPG }
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.12
-	title = bfdinews.12.t
-	desc = bfdinews.12.desc
-	picture = GFX_bfdinews12
-	
-	major = yes
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = bfdinews.12.a
-	}
+    id = bfdinews.12
+    title = bfdinews.12.t
+    desc = bfdinews.12.desc
+    picture = GFX_bfdinews12
+
+    major = yes
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.12.a
+    }
 }
 
 news_event = {
-	id = bfdinews.13
-	title = bfdinews.13.t
-	desc = bfdinews.13.desc
-	picture = GFX_bfdinews13
-	
-	major = yes
-	
-	trigger = {
-		date > 2011.12.21
-	}
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.13.a
-	}
+    id = bfdinews.13
+    title = bfdinews.13.t
+    desc = bfdinews.13.desc
+    picture = GFX_bfdinews13
+
+    major = yes
+
+    trigger = {
+        date > 2011.12.21
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.13.a
+    }
 }
 
 news_event = {
-	id = bfdinews.14
-	title = bfdinews.14.t
-	desc = bfdinews.14.desc
-	picture = GFX_bfdinews14
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.14.a
-		trigger = { has_government = communism }
-	}
-	option = {
-		name = bfdinews.14.b
-		trigger = { NOT = { has_government = communism } }
-	}
+    id = bfdinews.14
+    title = bfdinews.14.t
+    desc = bfdinews.14.desc
+    picture = GFX_bfdinews14
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.14.a
+        trigger = { has_government = communism }
+    }
+    option = {
+        name = bfdinews.14.b
+        trigger = { NOT = { has_government = communism } }
+    }
 }
 
 news_event = {
-	id = bfdinews.15
-	title = bfdinews.15.t
-	desc = bfdinews.15.desc
-	picture = GFX_bfdinews15
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "civil_war_event" }
-	}
-	
-	option = {
-		name = bfdinews.15.a
-	}
+    id = bfdinews.15
+    title = bfdinews.15.t
+    desc = bfdinews.15.desc
+    picture = GFX_bfdinews15
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "civil_war_event" }
+    }
+
+    option = {
+        name = bfdinews.15.a
+    }
 }
 
 news_event = {
-	id = bfdinews.16
-	title = bfdinews.16.t
-	desc = bfdinews.16.desc
-	picture = GFX_bfdinews16
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "GPG_cw_transgov_victory" }
-	}
-	
-	option = {
-		name = bfdinews.16.a
-	}
+    id = bfdinews.16
+    title = bfdinews.16.t
+    desc = bfdinews.16.desc
+    picture = GFX_bfdinews16
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "GPG_cw_transgov_victory" }
+    }
+
+    option = {
+        name = bfdinews.16.a
+    }
 }
 
 news_event = {
-	id = bfdinews.17
-	title = bfdinews.17.t
-	desc = bfdinews.17.desc
-	picture = GFX_bfdinews17
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "GPG_cw_democrats_victory" }
-	}
-	
-	option = {
-		name = bfdinews.17.a
-	}
+    id = bfdinews.17
+    title = bfdinews.17.t
+    desc = bfdinews.17.desc
+    picture = GFX_bfdinews17
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "GPG_cw_democrats_victory" }
+    }
+
+    option = {
+        name = bfdinews.17.a
+    }
 }
 
 news_event = {
-	id = bfdinews.18
-	title = bfdinews.18.t
-	desc = bfdinews.18.desc
-	picture = GFX_bfdinews18
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "GPG_cw_ruby_victory" }
-	}
-	
-	option = {
-		name = bfdinews.18.a
-	}
+    id = bfdinews.18
+    title = bfdinews.18.t
+    desc = bfdinews.18.desc
+    picture = GFX_bfdinews18
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "GPG_cw_ruby_victory" }
+    }
+
+    option = {
+        name = bfdinews.18.a
+    }
 }
 
 news_event = {
-	id = bfdinews.19
-	title = bfdinews.19.t
-	desc = bfdinews.19.desc
-	picture = GFX_bfdinews19
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "GPG_cw_ironhand_victory" }
-	}
-	
-	option = {
-		name = bfdinews.19.a
-	}
+    id = bfdinews.19
+    title = bfdinews.19.t
+    desc = bfdinews.19.desc
+    picture = GFX_bfdinews19
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "GPG_cw_ironhand_victory" }
+    }
+
+    option = {
+        name = bfdinews.19.a
+    }
 }
 
 news_event = {
-	id = bfdinews.20
-	title = bfdinews.20.t
-	desc = bfdinews.20.desc
-	picture = GFX_bfdinews20
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.20.a
-	}
+    id = bfdinews.20
+    title = bfdinews.20.t
+    desc = bfdinews.20.desc
+    picture = GFX_bfdinews20
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.20.a
+    }
 }
 
 news_event = {
-	id = bfdinews.21
-	title = bfdinews.21.t
-	desc = bfdinews.21.desc
-	picture = GFX_bfdinews21
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.21.a
-	}
+    id = bfdinews.21
+    title = bfdinews.21.t
+    desc = bfdinews.21.desc
+    picture = GFX_bfdinews21
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.21.a
+    }
 }
 
 news_event = {
-	id = bfdinews.22
-	title = bfdinews.22.t
-	desc = bfdinews.22.desc
-	picture = GFX_bfdinews22
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.22.a
-		if = {
-			limit = { GSR = { is_ai = no } }
-			set_variable = { var_demo_end = 6 }
-			set_global_flag = demo_ended
-		}
-		else_if = {
-			limit = { GFG = { is_ai = no } }
-			set_variable = { var_demo_end = 7 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.22
+    title = bfdinews.22.t
+    desc = bfdinews.22.desc
+    picture = GFX_bfdinews22
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.22.a
+        if = {
+            limit = { GSR = { is_ai = no } }
+            set_variable = { var_demo_end = 6 }
+            set_global_flag = demo_ended
+        }
+        else_if = {
+            limit = { GFG = { is_ai = no } }
+            set_variable = { var_demo_end = 7 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.23
-	title = bfdinews.23.t
-	desc = bfdinews.23.desc
-	picture = GFX_bfdinews23
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.23.a
-	}
+    id = bfdinews.23
+    title = bfdinews.23.t
+    desc = bfdinews.23.desc
+    picture = GFX_bfdinews23
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.23.a
+    }
 }
 
 news_event = {
-	id = bfdinews.24
-	title = bfdinews.24.t
-	desc = bfdinews.24.desc
-	picture = GFX_bfdinews24
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		hidden_effect = { play_song = "SOS_pin_coronation" }
-	}
-	
-	option = {
-		name = bfdinews.24.a
-	}
+    id = bfdinews.24
+    title = bfdinews.24.t
+    desc = bfdinews.24.desc
+    picture = GFX_bfdinews24
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "SOS_pin_coronation" }
+    }
+
+    option = {
+        name = bfdinews.24.a
+    }
 }
 
 news_event = {
-	id = bfdinews.25
-	title = bfdinews.25.t
-	desc = bfdinews.25.desc
-	picture = GFX_bfdinews25
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.25.a
-		if = {
-			limit = { GDR = { is_ai = no } }
-			set_variable = { var_demo_end = 8 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.25
+    title = bfdinews.25.t
+    desc = bfdinews.25.desc
+    picture = GFX_bfdinews25
+
+    major = yes
+
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.25.a
+        if = {
+            limit = { GDR = { is_ai = no } }
+            set_variable = { var_demo_end = 8 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	#Update picture!!!!!
-	id = bfdinews.26
-	title = bfdinews.26.t
-	desc = bfdinews.26.desc
-	picture = GFX_bfdinews25
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.26.a
-		trigger = {
-			tag = YFC
-		}
-	}
+    #Update picture!!!!!
+    id = bfdinews.26
+    title = bfdinews.26.t
+    desc = bfdinews.26.desc
+    picture = GFX_bfdinews25
 
-	option = {
-		name = bfdinews.26.b
-		trigger = {
-			tag = BUN
-		}
-	}
+    major = yes
 
-	option = {
-		name = bfdinews.26.c
-		trigger = {
-			NOT = {
-				OR = {
-					tag = BUN
-					tag = YFC
-				}
-			}
-		}
-	}
+    is_triggered_only = yes
+
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.26.a
+        trigger = {
+            tag = YFC
+        }
+    }
+
+    option = {
+        name = bfdinews.26.b
+        trigger = {
+            tag = BUN
+        }
+    }
+
+    option = {
+        name = bfdinews.26.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = BUN
+                    tag = YFC
+                }
+            }
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.27
-	title = bfdinews.27.t
-	desc = bfdinews.27.desc
-	picture = GFX_bfdinews27
-	
-	major = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.27.a
-		if = {
-			limit = { UGA = { is_ai = no } }
-			set_variable = { var_demo_end = 9 }
-			set_global_flag = demo_ended
-		}
-	}
+    id = bfdinews.27
+    title = bfdinews.27.t
+    desc = bfdinews.27.desc
+    picture = GFX_bfdinews27
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.27.a
+        if = {
+            limit = { UGA = { is_ai = no } }
+            set_variable = { var_demo_end = 9 }
+            set_global_flag = demo_ended
+        }
+    }
 }
 
 news_event = {
-	id = bfdinews.28
-	title = bfdinews.28.t
-	desc = bfdinews.28.desc
-	picture = GFX_bfdinews28
-	
-	major = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = bfdinews.28.a
-	}
+    id = bfdinews.28
+    title = bfdinews.28.t
+    desc = bfdinews.28.desc
+    picture = GFX_bfdinews28
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.28.a
+    }
 }
 
 #City Fall events#
 
 news_event = {
-	#Greenport
-	id = bfdinews_cities.1
-	title = bfdinews_cities.1.t
-	desc = bfdinews_cities.1.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GPR = {controls_province = 1891}
-		}	
-		193 = { is_owned_by = GPR }
-		NOT = { has_global_flag = fall_of_greenport }
-		GPR = {has_war = yes}
-	}
+    #Greenport
+    id = bfdinews_cities.1
+    title = bfdinews_cities.1.t
+    desc = bfdinews_cities.1.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_greenport
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GPR = {controls_province = 1891}
+        }
+        193 = { is_owned_by = GPR }
+        NOT = { has_global_flag = fall_of_greenport }
+        GPR = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_greenport
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.1.a
-		trigger = {
-			NOT = {TAG = GPR}
-			NOT = {controls_province = 1891}
+    option = {
+        name = bfdinews_cities.1.a
+        trigger = {
+            NOT = {TAG = GPR}
+            NOT = {controls_province = 1891}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.1.b
-		trigger = {
-			TAG = GPR
+    option = {
+        name = bfdinews_cities.1.b
+        trigger = {
+            TAG = GPR
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.1.c
-		trigger = {
-			controls_province = 1891
-			NOT = {TAG = GPR}
+    option = {
+        name = bfdinews_cities.1.c
+        trigger = {
+            controls_province = 1891
+            NOT = {TAG = GPR}
         }
-	}
+    }
 }
 
 news_event = {
-	#Podgornyv
-	id = bfdinews_cities.2
-	title = bfdinews_cities.2.t
-	desc = bfdinews_cities.2.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			BUN = {controls_province = 5679}
-		}	
-		85 = { is_owned_by = BUN }
-		NOT = { has_global_flag = fall_of_podgornyv }
-		BUN = {has_war = yes}
-	}
+    #Podgornyv
+    id = bfdinews_cities.2
+    title = bfdinews_cities.2.t
+    desc = bfdinews_cities.2.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_podgornyv
-		hidden_effect = {
-			IF = {
-				limit = {
-					NOT = {BUN = {has_cosmetic_tag = BUN_revolt}}
-				}
-				85 = {
-					create_unit = {
-						division = "name = \"Bandits\" division_template = \"Bandits\" start_equipment_factor = 0.15 start_experience_factor = 0.1"
-						owner = BUN
-						count = 1
-						allow_spawning_on_enemy_provs = no
-						prioritize_location = 4872
-						id = 10
-					}
-					create_unit = {
-						division = "name = \"Bandits\" division_template = \"Bandits\" start_equipment_factor = 0.15 start_experience_factor = 0.1"
-						owner = BUN
-						count = 1
-						allow_spawning_on_enemy_provs = no
-						prioritize_location = 11195
-						id = 11
-					}
-				}
-			}
-		}
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            BUN = {controls_province = 5679}
+        }
+        85 = { is_owned_by = BUN }
+        NOT = { has_global_flag = fall_of_podgornyv }
+        BUN = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_podgornyv
+        hidden_effect = {
+            IF = {
+                limit = {
+                    NOT = {BUN = {has_cosmetic_tag = BUN_revolt}}
+                }
+                85 = {
+                    create_unit = {
+                        division = "name = \"Bandits\" division_template = \"Bandits\" start_equipment_factor = 0.15 start_experience_factor = 0.1"
+                        owner = BUN
+                        count = 1
+                        allow_spawning_on_enemy_provs = no
+                        prioritize_location = 4872
+                        id = 10
+                    }
+                    create_unit = {
+                        division = "name = \"Bandits\" division_template = \"Bandits\" start_equipment_factor = 0.15 start_experience_factor = 0.1"
+                        owner = BUN
+                        count = 1
+                        allow_spawning_on_enemy_provs = no
+                        prioritize_location = 11195
+                        id = 11
+                    }
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.2.a
-		trigger = {
-			NOT = {TAG = BUN}
-			NOT = {controls_province = 5679}
+    option = {
+        name = bfdinews_cities.2.a
+        trigger = {
+            NOT = {TAG = BUN}
+            NOT = {controls_province = 5679}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.2.b
-		trigger = {
-			TAG = BUN
+    option = {
+        name = bfdinews_cities.2.b
+        trigger = {
+            TAG = BUN
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.2.c
-		trigger = {
-			controls_province = 5679
-			NOT = {TAG = BUN}
+    option = {
+        name = bfdinews_cities.2.c
+        trigger = {
+            controls_province = 5679
+            NOT = {TAG = BUN}
         }
-	}
+    }
 }
 
 news_event = {
-	#North-Goikyland
-	id = bfdinews_cities.3
-	title = bfdinews_cities.3.t
-	desc = bfdinews_cities.3.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			WGF = {controls_province = 2533}
-		}	
-		177 = { is_owned_by = WGF }
-		NOT = { has_global_flag = fall_of_northgoikyland }
-		WGF = {has_war = yes}
-	}
+    #North-Goikyland
+    id = bfdinews_cities.3
+    title = bfdinews_cities.3.t
+    desc = bfdinews_cities.3.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_northgoikyland
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            WGF = {controls_province = 2533}
+        }
+        177 = { is_owned_by = WGF }
+        NOT = { has_global_flag = fall_of_northgoikyland }
+        WGF = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_northgoikyland
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.3.a
-		trigger = {
-			NOT = {TAG = WGF}
-			NOT = {controls_province = 2533}
+    option = {
+        name = bfdinews_cities.3.a
+        trigger = {
+            NOT = {TAG = WGF}
+            NOT = {controls_province = 2533}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.3.b
-		trigger = {
-			TAG = WGF
+    option = {
+        name = bfdinews_cities.3.b
+        trigger = {
+            TAG = WGF
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.3.c
-		trigger = {
-			controls_province = 2533
-			NOT = {TAG = WGF}
+    option = {
+        name = bfdinews_cities.3.c
+        trigger = {
+            controls_province = 2533
+            NOT = {TAG = WGF}
         }
-	}
+    }
 }
 
 news_event = {
-	#Cary
-	id = bfdinews_cities.4
-	title = bfdinews_cities.4.t
-	desc = bfdinews_cities.4.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GMD = {controls_province = 5824}
-		}	
-		173 = { is_owned_by = GMD }
-		NOT = { has_global_flag = fall_of_cary}
-		GMD = {has_war = yes}
-	}
+    #Cary
+    id = bfdinews_cities.4
+    title = bfdinews_cities.4.t
+    desc = bfdinews_cities.4.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_cary
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GMD = {controls_province = 5824}
+        }
+        173 = { is_owned_by = GMD }
+        NOT = { has_global_flag = fall_of_cary}
+        GMD = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_cary
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.4.a
-		trigger = {
-			NOT = {TAG = GMD}
-			NOT = {controls_province = 5824}
+    option = {
+        name = bfdinews_cities.4.a
+        trigger = {
+            NOT = {TAG = GMD}
+            NOT = {controls_province = 5824}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.4.b
-		trigger = {
-			TAG = GMD
+    option = {
+        name = bfdinews_cities.4.b
+        trigger = {
+            TAG = GMD
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.4.c
-		trigger = {
-			controls_province = 5824
-			NOT = {TAG = GMD}
+    option = {
+        name = bfdinews_cities.4.c
+        trigger = {
+            controls_province = 5824
+            NOT = {TAG = GMD}
         }
-	}
+    }
 }
 
 news_event = {
-	#Gorge Town
-	id = bfdinews_cities.5
-	title = bfdinews_cities.5.t
-	desc = bfdinews_cities.5.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			FFT = {controls_province = 711}
-		}	
-		169 = { is_owned_by = FFT }
-		NOT = { has_global_flag = fall_of_gorgetown}
-		FFT = {has_war = yes}
-	}
+    #Gorge Town
+    id = bfdinews_cities.5
+    title = bfdinews_cities.5.t
+    desc = bfdinews_cities.5.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_gorgetown
-		hidden_effect = {
-			169 = {
-				damage_building = {
- 					type = infrastructure
-  					damage = 3
-				}
-				add_manpower = -2725
-				set_victory_points = {
-					province = 711
-					value = 5
-				}
-				set_province_name = { id = 711 name = "Gorge Town Ruins" }
-				add_compliance = -10
-				add_resistance = 55
-			}
+    major = yes
+    minor_flavor = yes
 
-		}
-	}
+    trigger = {
+        NOT = {
+            FFT = {controls_province = 711}
+        }
+        169 = { is_owned_by = FFT }
+        NOT = { has_global_flag = fall_of_gorgetown}
+        FFT = {has_war = yes}
+    }
 
-	mean_time_to_happen = {
+    immediate = {
+        set_global_flag = fall_of_gorgetown
+        hidden_effect = {
+            169 = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 3
+                }
+                add_manpower = -2725
+                set_victory_points = {
+                    province = 711
+                    value = 5
+                }
+                set_province_name = { id = 711 name = "Gorge Town Ruins" }
+                add_compliance = -10
+                add_resistance = 55
+            }
+
+        }
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.5.a
-		trigger = {
-			NOT = {TAG = FFT}
-			NOT = {controls_province = 711}
+    option = {
+        name = bfdinews_cities.5.a
+        trigger = {
+            NOT = {TAG = FFT}
+            NOT = {controls_province = 711}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.5.b
-		trigger = {
-			TAG = FFT
+    option = {
+        name = bfdinews_cities.5.b
+        trigger = {
+            TAG = FFT
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.5.c
-		trigger = {
-			controls_province = 711
-			NOT = {TAG = FFT}
+    option = {
+        name = bfdinews_cities.5.c
+        trigger = {
+            controls_province = 711
+            NOT = {TAG = FFT}
         }
-	}
+    }
 }
 
 news_event = {
-	#Faraway
-	id = bfdinews_cities.6
-	title = bfdinews_cities.6.t
-	desc = bfdinews_cities.6.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			AGG = {controls_province = 11304}
-		}	
-		183 = { is_owned_by = AGG }
-		NOT = { has_global_flag = fall_of_faraway}
-		AGG = {has_war = yes}
-	}
+    #Faraway
+    id = bfdinews_cities.6
+    title = bfdinews_cities.6.t
+    desc = bfdinews_cities.6.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_faraway
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            AGG = {controls_province = 11304}
+        }
+        183 = { is_owned_by = AGG }
+        NOT = { has_global_flag = fall_of_faraway}
+        AGG = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_faraway
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.6.a
-		trigger = {
-			NOT = {TAG = AGG}
-			NOT = {controls_province = 11304}
+    option = {
+        name = bfdinews_cities.6.a
+        trigger = {
+            NOT = {TAG = AGG}
+            NOT = {controls_province = 11304}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.6.b
-		trigger = {
-			TAG = AGG
+    option = {
+        name = bfdinews_cities.6.b
+        trigger = {
+            TAG = AGG
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.6.c
-		trigger = {
-			controls_province = 11304
-			NOT = {TAG = AGG}
+    option = {
+        name = bfdinews_cities.6.c
+        trigger = {
+            controls_province = 11304
+            NOT = {TAG = AGG}
         }
-	}
+    }
 }
 
 news_event = {
-	#CakeAtStakePlace
-	id = bfdinews_cities.7
-	title = bfdinews_cities.7.t
-	desc = bfdinews_cities.7.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			SGD = {controls_province = 3110}
-		}	
-		175 = { is_owned_by = SGD }
-		NOT = { has_global_flag = fall_of_cake}
-		SGD = {has_war = yes}
-	}
+    #CakeAtStakePlace
+    id = bfdinews_cities.7
+    title = bfdinews_cities.7.t
+    desc = bfdinews_cities.7.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_cake
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            SGD = {controls_province = 3110}
+        }
+        175 = { is_owned_by = SGD }
+        NOT = { has_global_flag = fall_of_cake}
+        SGD = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_cake
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.7.a
-		trigger = {
-			NOT = {TAG = SGD}
-			NOT = {controls_province = 3110}
+    option = {
+        name = bfdinews_cities.7.a
+        trigger = {
+            NOT = {TAG = SGD}
+            NOT = {controls_province = 3110}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.7.b
-		trigger = {
-			TAG = SGD
+    option = {
+        name = bfdinews_cities.7.b
+        trigger = {
+            TAG = SGD
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.7.c
-		trigger = {
-			controls_province = 3110
-			NOT = {TAG = SGD}
+    option = {
+        name = bfdinews_cities.7.c
+        trigger = {
+            controls_province = 3110
+            NOT = {TAG = SGD}
         }
-	}
+    }
 }
 
 news_event = {
-	#Casland - GPG
-	id = bfdinews_cities.8
-	title = bfdinews_cities.8.t
-	desc = bfdinews_cities.8.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GPG = {controls_province = 1061}
-		}	
-		206 = { is_owned_by = GPG }
-		NOT = { has_global_flag = fall_of_casland_GPG}
-		GPG = {has_war = yes}
-		AND = {
-			NOT = {country_exists = GSR}
-			NOT = {country_exists = GDR}
-			NOT = {country_exists = GFG}
-		}
-	}
+    #Casland - GPG
+    id = bfdinews_cities.8
+    title = bfdinews_cities.8.t
+    desc = bfdinews_cities.8.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_casland_GPG
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GPG = {controls_province = 1061}
+        }
+        206 = { is_owned_by = GPG }
+        NOT = { has_global_flag = fall_of_casland_GPG}
+        GPG = {has_war = yes}
+        AND = {
+            NOT = {country_exists = GSR}
+            NOT = {country_exists = GDR}
+            NOT = {country_exists = GFG}
+        }
+    }
+
+    immediate = {
+        set_global_flag = fall_of_casland_GPG
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.8.a
-		trigger = {
-			NOT = {TAG = GPG}
-			NOT = {controls_province = 1061}
+    option = {
+        name = bfdinews_cities.8.a
+        trigger = {
+            NOT = {TAG = GPG}
+            NOT = {controls_province = 1061}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.8.b
-		trigger = {
-			TAG = GPG
+    option = {
+        name = bfdinews_cities.8.b
+        trigger = {
+            TAG = GPG
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.8.c
-		trigger = {
-			controls_province = 1061
-			NOT = {TAG = GPG}
+    option = {
+        name = bfdinews_cities.8.c
+        trigger = {
+            controls_province = 1061
+            NOT = {TAG = GPG}
         }
-	}
+    }
 }
 
 news_event = {
-	#Casland - GSR
-	id = bfdinews_cities.9
-	title = bfdinews_cities.9.t
-	desc = bfdinews_cities.9.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GSR = {controls_province = 1061}
-		}	
-		206 = { is_owned_by = GSR }
-		NOT = { has_global_flag = fall_of_casland_GSR}
-		GSR = {has_war = yes}
-		AND = {
-			NOT = {country_exists = GPG}
-			NOT = {country_exists = GDR}
-			NOT = {country_exists = GFG}
-		}
-	}
+    #Casland - GSR
+    id = bfdinews_cities.9
+    title = bfdinews_cities.9.t
+    desc = bfdinews_cities.9.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_casland_GSR
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GSR = {controls_province = 1061}
+        }
+        206 = { is_owned_by = GSR }
+        NOT = { has_global_flag = fall_of_casland_GSR}
+        GSR = {has_war = yes}
+        AND = {
+            NOT = {country_exists = GPG}
+            NOT = {country_exists = GDR}
+            NOT = {country_exists = GFG}
+        }
+    }
+
+    immediate = {
+        set_global_flag = fall_of_casland_GSR
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.9.a
-		trigger = {
-			NOT = {TAG = GSR}
-			NOT = {controls_province = 1061}
+    option = {
+        name = bfdinews_cities.9.a
+        trigger = {
+            NOT = {TAG = GSR}
+            NOT = {controls_province = 1061}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.9.b
-		trigger = {
-			TAG = GSR
+    option = {
+        name = bfdinews_cities.9.b
+        trigger = {
+            TAG = GSR
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.9.c
-		trigger = {
-			controls_province = 1061
-			NOT = {TAG = GSR}
+    option = {
+        name = bfdinews_cities.9.c
+        trigger = {
+            controls_province = 1061
+            NOT = {TAG = GSR}
         }
-	}
+    }
 }
 
 news_event = {
-	#Casland - GFG
-	id = bfdinews_cities.10
-	title = bfdinews_cities.10.t
-	desc = bfdinews_cities.10.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GFG = {controls_province = 1061}
-		}	
-		206 = { is_owned_by = GFG }
-		NOT = { has_global_flag = fall_of_casland_GFG}
-		GFG = {has_war = yes}
-		AND = {
-			NOT = {country_exists = GPG}
-			NOT = {country_exists = GDR}
-			NOT = {country_exists = GSR}
-		}
-	}
+    #Casland - GFG
+    id = bfdinews_cities.10
+    title = bfdinews_cities.10.t
+    desc = bfdinews_cities.10.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_casland_GFG
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GFG = {controls_province = 1061}
+        }
+        206 = { is_owned_by = GFG }
+        NOT = { has_global_flag = fall_of_casland_GFG}
+        GFG = {has_war = yes}
+        AND = {
+            NOT = {country_exists = GPG}
+            NOT = {country_exists = GDR}
+            NOT = {country_exists = GSR}
+        }
+    }
+
+    immediate = {
+        set_global_flag = fall_of_casland_GFG
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.10.a
-		trigger = {
-			NOT = {TAG = GFG}
-			NOT = {controls_province = 1061}
+    option = {
+        name = bfdinews_cities.10.a
+        trigger = {
+            NOT = {TAG = GFG}
+            NOT = {controls_province = 1061}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.10.b
-		trigger = {
-			TAG = GFG
+    option = {
+        name = bfdinews_cities.10.b
+        trigger = {
+            TAG = GFG
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.10.c
-		trigger = {
-			controls_province = 1061
-			NOT = {TAG = GFG}
+    option = {
+        name = bfdinews_cities.10.c
+        trigger = {
+            controls_province = 1061
+            NOT = {TAG = GFG}
         }
-	}
+    }
 }
 
 news_event = {
-	#Casland - GDR
-	id = bfdinews_cities.11
-	title = bfdinews_cities.11.t
-	desc = bfdinews_cities.11.desc
-	picture = GFX_bfdinews_city
-	
-	major = yes
-	minor_flavor = yes	
-	
-	trigger = {
-		NOT = {
-			GDR = {controls_province = 1061}
-		}	
-		206 = { is_owned_by = GDR }
-		NOT = { has_global_flag = fall_of_casland_GDR}
-		GDR = {has_war = yes}
-		AND = {
-			NOT = {country_exists = GPG}
-			NOT = {country_exists = GFG}
-			NOT = {country_exists = GSR}
-		}
-	}
+    #Casland - GDR
+    id = bfdinews_cities.11
+    title = bfdinews_cities.11.t
+    desc = bfdinews_cities.11.desc
+    picture = GFX_bfdinews_city
 
-	immediate = {
-		set_global_flag = fall_of_casland_GDR
-	}
+    major = yes
+    minor_flavor = yes
 
-	mean_time_to_happen = {
+    trigger = {
+        NOT = {
+            GDR = {controls_province = 1061}
+        }
+        206 = { is_owned_by = GDR }
+        NOT = { has_global_flag = fall_of_casland_GDR}
+        GDR = {has_war = yes}
+        AND = {
+            NOT = {country_exists = GPG}
+            NOT = {country_exists = GFG}
+            NOT = {country_exists = GSR}
+        }
+    }
+
+    immediate = {
+        set_global_flag = fall_of_casland_GDR
+    }
+
+    mean_time_to_happen = {
         days = 3
     }
 
-	option = {
-		name = bfdinews_cities.11.a
-		trigger = {
-			NOT = {TAG = GDR}
-			NOT = {controls_province = 1061}
+    option = {
+        name = bfdinews_cities.11.a
+        trigger = {
+            NOT = {TAG = GDR}
+            NOT = {controls_province = 1061}
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.11.b
-		trigger = {
-			TAG = GDR
+    option = {
+        name = bfdinews_cities.11.b
+        trigger = {
+            TAG = GDR
         }
-	}
+    }
 
-	option = {
-		name = bfdinews_cities.11.c
-		trigger = {
-			controls_province = 1061
-			NOT = {TAG = GDR}
+    option = {
+        name = bfdinews_cities.11.c
+        trigger = {
+            controls_province = 1061
+            NOT = {TAG = GDR}
         }
-	}
+    }
 }

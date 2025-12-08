@@ -37,7 +37,7 @@ guiTypes = {
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= -90 y = -70 }
+			position = { x= -90 y = -130 }
 		}
 		
 	}
@@ -471,7 +471,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "discord_button"
-			position = { x=80 y=0 }
+			position = { x=80 y=50 }
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_DISCORD_TIG"
@@ -490,7 +490,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=115 y=0 } 
+			position = { x=115 y=50 } 
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"

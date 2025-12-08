@@ -27,4 +27,193 @@ focus_tree = {
 
         }
     }
+
+    focus = {
+        id = GTR_focus_excavate_the_ruins
+        relative_position_id = GTR_focus_tennis_ball_rise
+        x = -2
+        y = 1
+
+        icon = GFX_focus_GTR_excavate_the_ruins
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_tennis_ball_rise }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_accept_casland_refugees
+        relative_position_id = GTR_focus_excavate_the_ruins
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_accept_casland_refugees
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_excavate_the_ruins }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_announcergrad_aid
+        relative_position_id = GTR_focus_excavate_the_ruins
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_announcergrad_aid
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_excavate_the_ruins }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_launch_industry
+        relative_position_id = GTR_focus_excavate_the_ruins
+        y = 2
+
+        icon = GFX_focus_GTR_launch_industry
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_accept_casland_refugees }
+        prerequisite = { focus = GTR_focus_announcergrad_aid }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_city_assembly
+        relative_position_id = GTR_focus_tennis_ball_rise
+        x = 2
+        y = 1
+
+        icon = GFX_focus_GTR_city_assembly
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_tennis_ball_rise }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_address_centralization
+        relative_position_id = GTR_focus_city_assembly
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_address_centralization
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_city_assembly }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_bureaucracy_reform
+        relative_position_id = GTR_focus_city_assembly
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_bureaucracy_reform
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_city_assembly }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_rethinking_of_technocracy
+        relative_position_id = GTR_focus_city_assembly
+        y = 2
+
+        icon = GFX_focus_GTR_rethinking_of_technocracy
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_address_centralization }
+        prerequisite = { focus = GTR_focus_bureaucracy_reform }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GTR_focus_republic
+        relative_position_id = GTR_focus_tennis_ball_rise
+        y = 4
+
+        icon = GFX_focus_GTR_republic
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_launch_industry }
+        prerequisite = { focus = GTR_focus_rethinking_of_technocracy }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+
+        }
+    }
 }

@@ -17,16 +17,6 @@ on_actions = {
                     set_variable = { money_amount = 16.5 }
                     BFDI_money_diplay_update = yes
                 }
-				ELSE_IF = {
-					limit = {
-						OR = {
-							tag = GOI
-							tag = EMP
-						}
-					}
-                    set_variable = { money_amount = -5 }
-                    BFDI_money_diplay_update = yes
-				}
                 ELSE = {
                     set_variable_to_random = {
                         var = money_amount
@@ -421,58 +411,508 @@ on_actions = {
         }
     }
 
-	on_weekly = {
-		effect = {
-			IF = {
-				limit = {is_ai = no}
-				BFDI_money_diplay_update = yes #Updates the player's money faster while not lagging the game
-			}
-		}	
-	}
+    every_possible_country = {
+        set_country_flag = has_money_system
+        IF = {
+            limit = {tag = YFC}
+            set_variable = { money_amount = 16.5 }
+            BFDI_money_diplay_update = yes
+        }
+        ELSE_IF = {
+            limit = {
+                OR = {
+                    tag = GOI
+                    tag = EMP
+                }
+            }
+            set_variable = { money_amount = -5 }
+            BFDI_money_diplay_update = yes
+        }
+        ELSE = {
+            set_variable_to_random = {
+                var = money_amount
+                min = -0.5
+                max = 2
+            }
+            BFDI_money_diplay_update = yes
+        }
+    }
+}
+}
 
-
-    on_monthly = { #MONEY GAIN
-        effect = {
+on_capitulation_immediate = {
+    effect = {
+        #i stole that from TNO cause idk how to make it :D
+        FROM = {
+            save_global_event_target_as = winning_country
+        }
+        ROOT = {
+            save_global_event_target_as = losing_country
+        }
+        if = {
+            limit = {
+                FROM = { tag = WGF }
+                ROOT = { tag = GMD }
+            }
+            FROM = {
+                country_event = {
+                    id = WGF_event.15
+                    days = 3
+                    random_hours = 12
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_cary}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.4
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_cary
+            }
+            set_global_flag = cap_coiny
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = GMD }
+                ROOT = { tag = WGF }
+            }
+            set_global_flag = cap_firey
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_northgoikyland}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.3
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_northgoikyland
+            }
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = AGG }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_faraway}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.6
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_faraway
+            }
+            set_global_flag = cap_icy
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = SGD }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_cake}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.7
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_cake
+            }
+            set_global_flag = cap_flower
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = GGR }
+                ROOT = { tag = FFT }
+            }
+            set_global_flag = cap_rocky
+            GGR = {
+                news_event = {
+                    id = bfdinews.9
+                    days = 2
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_gorgetown}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.5
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_gorgetown
+            }
+        }
+        else_if = {
+            limit = {
+                FROM = { tag = FFT }
+                ROOT = { tag = GGR }
+            }
+            set_global_flag = cap_snowball
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = GDR }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_casland_GDR}
+                    AND = {
+                        NOT = {country_exists = GPG}
+                        NOT = {country_exists = GFG}
+                        NOT = {country_exists = GSR}
+                    }
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.11
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_casland_GDR
+            }
+            set_global_flag = cap_taco
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = GSR }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_casland_GSR}
+                    AND = {
+                        NOT = {country_exists = GPG}
+                        NOT = {country_exists = GDR}
+                        NOT = {country_exists = GFG}
+                    }
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.9
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_casland_GSR
+            }
+            set_global_flag = cap_ruby
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = GFG }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_casland_GFG}
+                    AND = {
+                        NOT = {country_exists = GPG}
+                        NOT = {country_exists = GDR}
+                        NOT = {country_exists = GSR}
+                    }
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.10
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_casland_GFG
+            }
+            set_global_flag = cap_fanny
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = GPG }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_casland_GPG}
+                    AND = {
+                        NOT = {country_exists = GSR}
+                        NOT = {country_exists = GDR}
+                        NOT = {country_exists = GFG}
+                    }
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.8
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_casland_GPG
+            }
+            set_global_flag = cap_republic
+        }
+        else_if = {
+            limit = {
+                ROOT = { tag = GPR }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_greenport}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.1
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_greenport
+            }
+            set_global_flag = cap_alliance
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    AND = {
+                        FROM = { tag = YFC }
+                        ROOT = { tag = BUN }
+                    }
+                    AND = {
+                        FROM = { tag = CRN }
+                        ROOT = { tag = BUN }
+                    }
+                }
+            }
+            YFC = {
+                IF = {
+                    limit = {
+                        NOT = {has_completed_focus = YFC_focus_a_look_inward}
+                    }
+                }
+                country_event = {
+                    id = YFC_event.5
+                    days = 5
+                    random_hours = 60
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_global_flag = fall_of_podgornyv}
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews_cities.2
+                        hour = 1
+                        random_hours = 6
+                    }
+                }
+                set_global_flag = fall_of_podgornyv
+            }
+            if = {
+                limit = {
+                    BUN = { is_ai = yes }
+                    NOT = {
+                        BUN = {
+                            has_dynamic_modifier = {
+                                modifier = idea_BUN_Ticking_Bomb
+                            }
+                        }
+                    }
+                    AND = {
+                        YFC = {has_war_with = BUN}
+                        CRN = {has_war_with = BUN}
+                    }
+                }
+                85 = {
+                    transfer_state_to = YFC
+                }
+                212 = {
+                    transfer_state_to = YFC
+                }
+                217 = {
+                    transfer_state_to = CRN
+                }
+                218 = {
+                    transfer_state_to = CRN
+                }
+            }
+            else_if = {
+                limit = {
+                    BUN = { is_ai = yes }
+                    BUN = {
+                        has_dynamic_modifier = {
+                            modifier = idea_BUN_Ticking_Bomb
+                        }
+                    }
+                }
+                85 = {
+                    add_compliance = 100
+                    add_dynamic_modifier = {
+                        modifier = BUN_lesser_state
+                    }
+                }
+                212 = {
+                    add_compliance = 100
+                    add_dynamic_modifier = {
+                        modifier = BUN_lesser_state
+                    }
+                }
+                217 = {add_compliance = 40}
+                218 = {add_compliance = 40}
+                IF = {
+                    limit = {YFC = {has_war_with = CRN}}
+                    CRN = {
+                        white_peace = YFC
+                        add_war_support = -0.25
+                        add_political_power = -50
+                    }
+                }
+            }
+            else = {
+                FROM = {
+                    white_peace = ROOT
+                }
+            }
+        }
+        FROM = {
+            annex_country = {
+                target = ROOT
+                transfer_troops = no
+            }
             IF = {
                 limit = {
                     has_country_flag = has_money_system
-                    country_exists = ROOT
-                }
-                #As 1 = 100K and 10 = 1M
-                set_temp_variable = { adding_amount = 0 }
-                set_temp_variable = { combined_modifer = 1 }
-
-                IF = {
-                    limit = {is_ai = yes}
-                    set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
-                    multiply_temp_variable = {civ_count = 0.2}
-                }
-                ELSE = {
-                    set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
-                }
-                set_temp_variable = { stability = ROOT.stability }
-                multiply_temp_variable = {civ_count = stability}
-                add_to_temp_variable = { adding_amount = civ_count }
-                IF = {
-                    limit = {
-                        has_war = yes
+                    ROOT = {has_country_flag = has_money_system}
+                    ROOT = {
+                        check_variable = {
+                            money_amount > 1
+                        }
                     }
-                    multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
                 }
-                IF = {
-                    limit = {
-                        has_government = communism
-                    }
-                    multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
-                }
-
-                multiply_temp_variable = {adding_amount = combined_modifer}
-                add_to_variable = { money_amount = adding_amount }
-
-                BFDI_money_diplay_update = yes
+                add_to_temp_variable = { stolen_amount = ROOT.money_amount } #Steals their money
+                multiply_temp_variable = {stolen_amount = 0.8}
+                add_to_variable = { money_amount = stolen_amount }
+                ROOT = {set_variable = {money_amount = 0}}
             }
         }
+        set_global_flag = capitulation
     }
+}
+
+on_weekly = {
+    effect = {
+        IF = {
+            limit = {
+                has_country_flag = has_money_system
+                country_exists = ROOT
+            }
+            #As 1 = 100K and 10 = 1M
+            set_temp_variable = { adding_amount = 0 }
+            set_temp_variable = { combined_modifer = 1 }
+
+            IF = {
+                limit = {is_ai = yes}
+                set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
+                multiply_temp_variable = {civ_count = 0.2}
+            }
+            ELSE = {
+                set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
+            }
+            set_temp_variable = { stability = ROOT.stability }
+            multiply_temp_variable = {civ_count = stability}
+            add_to_temp_variable = { adding_amount = civ_count }
+
+            set_temp_variable = { population = ROOT.max_manpower_k }
+            divide_temp_variable = { population = 1000 }
+            add_to_temp_variable = { adding_amount = population }
+
+            IF = {
+                limit = {
+                    has_war = yes
+                }
+                multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
+            }
+            IF = {
+                limit = {
+                    has_government = communism
+                }
+                multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
+            }
+
+            multiply_temp_variable = {adding_amount = combined_modifer}
+            add_to_variable = { money_amount = adding_amount }
+
+            BFDI_money_diplay_update = yes
+        }
+    }
+}
+
+
+on_monthly = { #MONEY GAIN
+    effect = {
+        IF = {
+            limit = {
+                has_country_flag = has_money_system
+                country_exists = ROOT
+            }
+            #As 1 = 100K and 10 = 1M
+            set_temp_variable = { adding_amount = 0 }
+            set_temp_variable = { combined_modifer = 1 }
+
+            IF = {
+                limit = {is_ai = yes}
+                set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
+                multiply_temp_variable = {civ_count = 0.2}
+            }
+            ELSE = {
+                set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
+            }
+            set_temp_variable = { stability = ROOT.stability }
+            multiply_temp_variable = {civ_count = stability}
+            add_to_temp_variable = { adding_amount = civ_count }
+            IF = {
+                limit = {
+                    has_war = yes
+                }
+                multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
+            }
+            IF = {
+                limit = {
+                    has_government = communism
+                }
+                multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
+            }
+
+            multiply_temp_variable = {adding_amount = combined_modifer}
+            add_to_variable = { money_amount = adding_amount }
+
+            BFDI_money_diplay_update = yes
+        }
+    }
+}
 }
 
 on_weekly_GTR = { #PROJECT 1 MECHANIC

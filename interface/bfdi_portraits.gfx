@@ -140,6 +140,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GTR/GTR_golfball.dds"
 	}
 	spriteType = {
+		name = "GFX_GTR_golfball_collapse"
+		textureFile = "gfx/leaders/GTR/GTR_golfball_collapse.dds"
+	}
+	spriteType = {
 		name = "GFX_GTR_calculator"
 		texturefile = "gfx/leaders/GTR/GTR_calculator.dds"
 	}

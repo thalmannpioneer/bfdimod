@@ -978,9 +978,13 @@
  GTR_event.10.desc: "We've lost contact with the University. An earthquake shook a twenty-miles radius of the campus, windows were blown out in Announcergrad. There are reports of a mushroom cloud of smoke visible for miles from the supposed explosion.."
  GTR_event.10.a: "THE HECK HAPPENED THERE?"
 
- GTR_event.11.t: "Apathy of the Rulership"
- GTR_event.11.desc: "Everything that Golfball was doing recently is blaming herself for mistakes and miscalculations, that led to this tragedy. Almost the entire Campus was destroyed, a lot of valuable technologies were lost, not even talking about dead. In this situation, when we need a strong leader, Golfball can't rule anymore."
- GTR_event.11.a: "Tennis Ball takes power."
+ GTR_event.11.t: "Negative delta"
+ GTR_event.11.desc: "Driving through the blackened fields of the campus into the university area, objects were met with a scene of horrific destruction. The road tar reminded the moon, and toxic clouds of dust covered the most of the alma mater's buildings, many of which were reduced to rubble."
+ GTR_event.11.a: "Let's try to find survivors."
+
+ GTR_event.12.t: "Apathy of the Rulership"
+ GTR_event.12.desc: "Everything that Golfball was doing recently is blaming herself for mistakes and miscalculations, that led to this tragedy. Almost the entire Campus was destroyed, a lot of valuable technologies were lost, not even talking about dead. In this situation, when we need a strong leader, Golfball can't rule anymore."
+ GTR_event.12.a: "Tennis Ball takes power."
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
