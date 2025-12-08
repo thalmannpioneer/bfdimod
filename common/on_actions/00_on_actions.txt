@@ -17,6 +17,16 @@ on_actions = {
                     set_variable = { money_amount = 16.5 }
                     BFDI_money_diplay_update = yes
                 }
+				ELSE_IF = {
+					limit = {
+						OR = {
+							tag = GOI
+							tag = EMP
+						}
+					}
+                    set_variable = { money_amount = -5 }
+                    BFDI_money_diplay_update = yes
+				}
                 ELSE = {
                     set_variable_to_random = {
                         var = money_amount
@@ -411,6 +421,16 @@ on_actions = {
         }
     }
 
+	on_weekly = {
+		effect = {
+			IF = {
+				limit = {is_ai = no}
+				BFDI_money_diplay_update = yes #Updates the player's money faster while not lagging the game
+			}
+		}	
+	}
+
+
     on_monthly = { #MONEY GAIN
         effect = {
             IF = {
@@ -422,7 +442,6 @@ on_actions = {
                 set_temp_variable = { adding_amount = 0 }
                 set_temp_variable = { combined_modifer = 1 }
 
-                <<<<<<< Updated upstream
                 IF = {
                     limit = {is_ai = yes}
                     set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
@@ -434,7 +453,6 @@ on_actions = {
                 set_temp_variable = { stability = ROOT.stability }
                 multiply_temp_variable = {civ_count = stability}
                 add_to_temp_variable = { adding_amount = civ_count }
-                =======
                 IF = {
                     limit = {
                         has_war = yes
@@ -455,83 +473,6 @@ on_actions = {
             }
         }
     }
-
-    on_weekly_GTR = { #PROJECT 1 MECHANIC
-        effect = {
-            if = {
-                limit = { has_country_flag = project1_mechanic_started }
-                if = {
-                    limit = { NOT = { has_country_flag = stage1_done } }
-                    add_to_variable = { var_GTR_progressbar_stage1 = var_GTR_weekly_progress_stage1 }
-                    if = {
-                        limit = { check_variable = { var_GTR_progressbar_stage1 > 100 } }
-                        set_variable = { var_GTR_progressbar_stage1 = 100 }
-                        set_variable = { var_GTR_weekly_progress_stage1 = 0 }
-                        set_country_flag = stage1_done
-                        if = {
-                            limit = { has_country_flag = stage2_done }
-                            set_variable = { var_GTR_weekly_progress_stage3 = 10 }
-                        }
-                        set_country_flag = project1_notif_enabled
-                    }
-                }
-
-                if = {
-                    limit = { NOT = { has_country_flag = stage2_done } }
-                    add_to_variable = { var_GTR_progressbar_stage2 = var_GTR_weekly_progress_stage2 }
-                    if = {
-                        limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
-                        set_variable = { var_GTR_progressbar_stage2 = 100 }
-                        set_variable = { var_GTR_weekly_progress_stage2 = 0 }
-                        set_country_flag = stage2_done
-                        if = {
-                            limit = { has_country_flag = stage1_done }
-                            set_variable = { var_GTR_weekly_progress_stage3 = 10 }
-                        }
-                        set_country_flag = project1_notif_enabled
-                    }
-                }
-
-                if = {
-                    limit = { NOT = { has_country_flag = stage3_done } }
-                    add_to_variable = { var_GTR_progressbar_stage3 = var_GTR_weekly_progress_stage3 }
-                    if = {
-                        limit = { check_variable = { var_GTR_progressbar_stage3 > 100 } }
-                        set_variable = { var_GTR_progressbar_stage3 = 100 }
-                        set_variable = { var_GTR_weekly_progress_stage3 = 0 }
-                        set_country_flag = stage3_done
-                        set_country_flag = project1_notif_enabled
-                        country_event = GTR_event.9
-                    }
-                }
-            }
-        }
-    }
-    >>>>>>> Stashed changes
-
-    set_temp_variable = { population = ROOT.max_manpower_k }
-    divide_temp_variable = { population = 1000 }
-    add_to_temp_variable = { adding_amount = population }
-
-    IF = {
-        limit = {
-            has_war = yes
-        }
-        multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
-    }
-    IF = {
-        limit = {
-            has_government = communism
-        }
-        multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
-    }
-
-    multiply_temp_variable = {adding_amount = combined_modifer}
-    add_to_variable = { money_amount = adding_amount }
-
-    BFDI_money_diplay_update = yes
-}
-}
 }
 
 on_weekly_GTR = { #PROJECT 1 MECHANIC
@@ -630,5 +571,4 @@ on_leave_faction = { #Leave Faction
             }
         }
     }
-}
 }

@@ -1246,7 +1246,7 @@ focus_tree = {
 					country_event = YFC_event.30
 				}
 				ELSE = {
-					#Pick the fallback event if somehow this breaks
+					#Pick the fallback event if somehow this breaks please
 				}
 			}
 		}
@@ -1371,8 +1371,7 @@ focus_tree = {
 		}
 
 		cost = 5
-		#removes one civ factory (100k dollars) from monthly income, to account for paying of policemen
-		#gives lots of stability, adds national idea that gives +0.5 political power
+
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_pp_gain
 			add_stability = 0.05
@@ -1475,16 +1474,11 @@ focus_tree = {
 		}
 
 		cost = 5
-		#gives a bit extra passive income
 
-		#Idea: Increases influence of Hammer and Taser
-		#RE: sure
-
+		#Increases influence of Hammer and Taser
 		completion_reward = {
-			#300K Fine?
-			#ZDubbz
-			#RE: why not
-			add_political_power = 25
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
 		}
 	}
 
@@ -1539,9 +1533,7 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			#What does this mean??
-			#ZDubbz
-			#RE: exactly what it says
+			#Okay So I'm just gonna add a descion that allows more investment into Bunch, costing money and increasing influence of Taser/Hammer 
 		}
 	}
 
@@ -1561,12 +1553,16 @@ focus_tree = {
 				country_exists = BUN
 			}
 		}
+		
+		available = {
+			has_political_power > 50
+		}
 
 		cost = 5
 		completion_reward = {
-			#So I'll make it where the player gains 300K 
-			#ZDubbz
-			#RE: sounds good
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
+			add_political_power = -50
 		}
 	}
 
@@ -1589,8 +1585,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			country_event = YFC_event.20
-			custom_effect_tooltip = l_YFC_BUN_foster_gain
-			add_to_variable = { var_foster_YFC_support = 3 }
+			add_stability = 0.01
 		}
 	}
 
@@ -1864,6 +1859,8 @@ focus_tree = {
 			#Maybe an event idk
 		}
 	}
+
+	#WARNING, BELOW IS BEING SHOT AND KILLED TO BE TURNED INTO SOMETHING BETTER
 
 	focus = {
 		id = YFC_focus_sectorial_squabbles

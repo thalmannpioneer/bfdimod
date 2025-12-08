@@ -92,7 +92,7 @@ decision_YFC_trade_category= {
 		}
 
 		fire_only_once = no
-		cost = 25
+		cost = 50
 		days_remove = 120
 		days_re_enable = 60
 

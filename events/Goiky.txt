@@ -620,6 +620,7 @@ country_event = {
 			remove_state_core = 202
 			remove_state_core = 210
 			remove_state_core = 27
+			remove_state_core = 214
 		}
 	}
 }
@@ -771,6 +772,10 @@ country_event = {
 				value = 25
 			}
 		}
+		set_province_name = {
+            id = 1957
+            name = VICTORY_POINTS_1957_New
+        }
     }
 }
 

@@ -375,7 +375,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #Eraser is hired into YFC BUT could be used by CRN if they are going against YFC
+	option = { #Eraser is hired into YFC though I'm dropping the defection part (Unless NEO-Bunch wins where they maybe get a mission to get him back)
 		#For what he is hired into idk
 		name = YFC_event.13.a
 		add_political_power = -50
@@ -414,7 +414,7 @@ country_event = {
 }
 
 country_event = {
-	#N/A
+	#Eastern Trade event
 	id = YFC_event.15
 	title = YFC_event.15.t
 	desc = YFC_event.15.desc
@@ -428,7 +428,7 @@ country_event = {
 			YFC = {
 				country_event = {
 					id = YFC_event.16
-					days = 85
+					days = 100 #
 					random_hours = 48
 				}
 			}	
@@ -436,7 +436,8 @@ country_event = {
 	}
 	option = { 
 		name = YFC_event.15.b
-		#take some money
+		custom_effect_tooltip = l_money_lose_500K
+		subtract_from_variable = { money_amount = 5 }
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -450,7 +451,7 @@ country_event = {
 }
 
 country_event = {
-	#N/A
+	#Portland is ours!!!
 	id = YFC_event.16
 	title = YFC_event.16.t
 	desc = YFC_event.16.desc
@@ -468,6 +469,10 @@ country_event = {
 				add_core_of = YFC
 				transfer_state_to = YFC
 				remove_core_of = EMP
+				add_victory_points = {
+					province = 10828
+					value = 1
+				}
 			}
 		}
 	}
@@ -527,6 +532,8 @@ country_event = {
 
 	option = { 
 		name = YFC_event.20.a
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 3 }
 	}
 }
 
@@ -598,17 +605,21 @@ country_event = {
 
 	is_triggered_only = yes
     
-    option = { #Small
+    option = { #Small, costs 300K
 		name = YFC_event.22.a
+		custom_effect_tooltip = l_money_lose_300K
+		subtract_from_variable = { money_amount = 3 }
+		add_political_power = -25
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 1 }
-			#How much is cost?
-			#ZDubbz
 		}
 	}
 
-	option = { #Medium
+	option = { #Medium, costs 600K
 		name = YFC_event.22.b
+		custom_effect_tooltip = l_money_lose_600K
+		subtract_from_variable = { money_amount = 6 }
+		add_political_power = -50
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 2 }
 			#How much is cost?
@@ -616,8 +627,11 @@ country_event = {
 		}
 	}
 
-	option = { #Large
+	option = { #Large, costs 900K
 		name = YFC_event.22.c
+		custom_effect_tooltip = l_money_lose_900K
+		subtract_from_variable = { money_amount = 9 }
+		add_political_power = -75
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 3 }
 			#How much is cost?

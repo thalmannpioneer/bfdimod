@@ -105,7 +105,7 @@ decision_YFC_BUN_category = {
 				compliance > 65
 			}
 		}
-		icon = GFX_decision_generic_civil_support  
+		icon = GFX_mission_YFC_BUN_growing  
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
@@ -146,7 +146,7 @@ decision_YFC_BUN_category = {
 				compliance > 65
 			}
 		}
-		icon = GFX_decision_generic_civil_support  
+		icon = GFX_mission_YFC_BUN_growing  
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
@@ -206,7 +206,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_85_Counter = {
-		icon = GFX_decision_generic_prepare_civil_war
+		icon = GFX_decisions_YFC_BUN_counter
 		state_target = yes
         targets = { state = 85 }
         on_map_mode = map_and_decisions_view
@@ -259,7 +259,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_212_Counter = {
-		icon = GFX_decision_generic_prepare_civil_war
+		icon = GFX_decisions_YFC_BUN_counter
 		state_target = yes
         targets = { state = 212 }
         on_map_mode = map_and_decisions_view
@@ -312,7 +312,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_85_Infrastructure = { #Would also cost money or something else
-		icon = GFX_decision_generic_construction
+		icon = GFX_decisions_YFC_BUN_infrastructure
 		state_target = yes
         targets = { state = 85 }
         on_map_mode = map_and_decisions_view
@@ -369,7 +369,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_212_Infrastructure = { #Would also cost money or something else
-		icon = GFX_decision_generic_construction
+		icon = GFX_decisions_YFC_BUN_infrastructure
 		state_target = yes
         targets = { state = 212 }
         on_map_mode = map_and_decisions_view
@@ -426,7 +426,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_85_Outposts = { #Would also cost money or something else
-		icon = GFX_decision_generic_fortification
+		icon = GFX_decisions_YFC_BUN_outposts
 		state_target = yes
         targets = { state = 85 }
         on_map_mode = map_and_decisions_view
@@ -491,7 +491,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_212_Outposts = { #Would also cost money or something else
-		icon = GFX_decision_generic_fortification
+		icon = GFX_decisions_YFC_BUN_outposts
 		state_target = yes
         targets = { state = 212 }
         on_map_mode = map_and_decisions_view

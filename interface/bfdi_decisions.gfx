@@ -437,6 +437,26 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_buy_tech.dds"
 	}
 
+	spriteType = {
+		name = "GFX_mission_YFC_BUN_growing"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_BUN_growing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_counter"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_counter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_infrastructure"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_infrastructure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_outposts"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_outposts.dds"
+	}
+
 	#GTR
 
 	spriteType = {

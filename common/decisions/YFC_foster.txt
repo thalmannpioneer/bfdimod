@@ -118,7 +118,7 @@ decision_YFC_foster_category = {
 	}
 
 	YFC_foster_Infrastructure = { #Would also cost money or something else
-		icon = GFX_decision_generic_construction
+		icon = GFX_decisions_YFC_BUN_infrastructure
 		state_target = yes
         targets = { 85 212 217 218 }
         on_map_mode = map_only
