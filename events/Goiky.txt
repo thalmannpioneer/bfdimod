@@ -6,9 +6,9 @@ country_event = {
     title = GOI_event.1.t
     desc = GOI_event.1.desc
     picture = GFX_GOI_event1
-	
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.1.a
     }
@@ -18,13 +18,13 @@ country_event = {
     id = GOI_event.2
     title = GOI_event.2.t
     desc = GOI_event.2.desc
-	picture = GFX_GOI_event2
-    
+    picture = GFX_GOI_event2
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.2.a
-		add_political_power = -25
+        add_political_power = -25
     }
 }
 
@@ -32,14 +32,14 @@ country_event = {
     id = GOI_event.3
     title = GOI_event.3.t
     desc = GOI_event.3.desc
-	picture = GFX_GOI_event3
-    
+    picture = GFX_GOI_event3
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.3.a
-		add_political_power = 10
-		complete_national_focus = GOI_focus_burning_results
+        add_political_power = 10
+        complete_national_focus = GOI_focus_burning_results
     }
 }
 
@@ -47,14 +47,14 @@ country_event = {
     id = GOI_event.4
     title = GOI_event.4.t
     desc = GOI_event.4.desc
-	picture = GFX_GOI_event4
-    
+    picture = GFX_GOI_event4
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.4.a
-		add_political_power = -50
-		add_stability = -0.1
+        add_political_power = -50
+        add_stability = -0.1
     }
 }
 
@@ -62,61 +62,61 @@ country_event = {
     id = GOI_event.5
     title = GOI_event.5.t
     desc = GOI_event.5.desc
-	picture = GFX_GOI_event5
-    
+    picture = GFX_GOI_event5
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.5.a
-		add_political_power = -1000
-		add_stability = -1
-		remove_ideas = idea_GOI_bfdi
-		hidden_effect = {
-			EMP = { 
-				transfer_state = 13
-				transfer_state = 181
-				add_state_core = 13
-				add_state_core = 181
-			}
-			GOI = {
-				remove_state_core = 13
-				remove_state_core = 181
-			}
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-						id = bfdinews.2
-						random_hours = 12
-				}
-			}
-			set_global_flag = island_dissapeared
-			set_victory_points = {
-				province = 3551
-				value = 0
-			}
-			set_victory_points = {
-				province = 10476
-				value = 0
-			}
-			set_victory_points = {
-				province = 3410
-				value = 0
-			}
-			set_victory_points = {
-				province = 10367
-				value = 0
-			}
-			set_victory_points = {
-				province = 10421
-				value = 0
-			}
-			country_event = {
-				id = GOI_event.6
-				days = 5
-				random_days = 5
-				random_hours = 12
-			}
-		}
+        add_political_power = -1000
+        add_stability = -1
+        remove_ideas = idea_GOI_bfdi
+        hidden_effect = {
+            EMP = {
+                transfer_state = 13
+                transfer_state = 181
+                add_state_core = 13
+                add_state_core = 181
+            }
+            GOI = {
+                remove_state_core = 13
+                remove_state_core = 181
+            }
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.2
+                    random_hours = 12
+                }
+            }
+            set_global_flag = island_dissapeared
+            set_victory_points = {
+                province = 3551
+                value = 0
+            }
+            set_victory_points = {
+                province = 10476
+                value = 0
+            }
+            set_victory_points = {
+                province = 3410
+                value = 0
+            }
+            set_victory_points = {
+                province = 10367
+                value = 0
+            }
+            set_victory_points = {
+                province = 10421
+                value = 0
+            }
+            country_event = {
+                id = GOI_event.6
+                days = 5
+                random_days = 5
+                random_hours = 12
+            }
+        }
     }
 }
 
@@ -124,21 +124,21 @@ country_event = {
     id = GOI_event.6
     title = GOI_event.6.t
     desc = GOI_event.6.desc
-	picture = GFX_GOI_event6
-    
+    picture = GFX_GOI_event6
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.6.a
-		custom_effect_tooltip = l_GOI_event6_ce
-		hidden_effect = {
-			every_owned_state = { set_demilitarized_zone = yes }
-			country_event = {
-				id = GOI_event.7
-				days = 10
-				random_hours = 12
-			}
-		}
+        custom_effect_tooltip = l_GOI_event6_ce
+        hidden_effect = {
+            every_owned_state = { set_demilitarized_zone = yes }
+            country_event = {
+                id = GOI_event.7
+                days = 10
+                random_hours = 12
+            }
+        }
     }
 }
 
@@ -146,103 +146,103 @@ country_event = {
     id = GOI_event.7
     title = GOI_event.7.t
     desc = GOI_event.7.desc
-	picture = GFX_GOI_event7
-    
+    picture = GFX_GOI_event7
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.7.a
-		custom_effect_tooltip = tt_GOI_event_7
-		hidden_effect = {
-			add_threat = 10
-			set_global_flag = superevent_dream_island_dissapear
-			country_event = superevent.1
-			set_cosmetic_tag = GOI_anarchy
-			206 = { add_manpower = -455123 }
-			158 = { add_manpower = -251020 }
-			203 = { add_manpower = -418001 }
-			205 = { add_manpower = -296120 }
-			193 = { add_manpower = -151033 }
-			177 = { add_manpower = 82516 }
-			167 = { add_manpower = 26222 }
-			11 = { add_manpower = 19511 }
-			173 = { add_manpower = 74922 }
-			15 = { add_manpower = 52916 }
-			209 = { add_manpower = 91555 }
-			85 = { add_manpower = 30020 }
-			country_event = {
-				id = GOI_hidden_event.1
-				days = 3
-			}
-			country_event = {
-				id = GOI_hidden_event.2
-				days = 7
-			}
-			country_event = {
-				id = GOI_hidden_event.3
-				days = 10
-			}
-			country_event = {
-				id = GOI_hidden_event.4
-				days = 4
-			}
-			country_event = {
-				id = GOI_hidden_event.5
-				days = 6
-			}
-			country_event = {
-				id = GOI_hidden_event.6
-				days = 5
-			}
-			country_event = {
-				id = GOI_hidden_event.7
-				days = 15
-			}
-			country_event = {
-				id = GOI_hidden_event.8
-				days = 13
-			}
-			country_event = {
-				id = GOI_hidden_event.9
-				days = 10
-			}
-			country_event = {
-				id = GOI_hidden_event.10
-				days = 12
-			}
-			country_event = {
-				id = GOI_hidden_event.11
-				days = 2
-			}
-			country_event = {
-				id = GOI_hidden_event.12
-				days = 14
-			}
-			country_event = {
-				id = GOI_hidden_event.13
-				days = 14
-			}
-			country_event = {
-				id = GOI_hidden_event.14
-				days = 9
-			}
-			country_event = {
-				id = GOI_hidden_event.15
-				days = 6
-			}
-			country_event = {
-				id = GOI_hidden_event.16
-				days = 4
-			}
-			country_event = {
-				id = GOI_hidden_event.17
-				days = 2
-			}
-			country_event = {
-				id = GOI_event.8
-				days = 20
-			}
-		}
+        custom_effect_tooltip = tt_GOI_event_7
+        hidden_effect = {
+            add_threat = 10
+            set_global_flag = superevent_dream_island_dissapear
+            country_event = superevent.1
+            set_cosmetic_tag = GOI_anarchy
+            206 = { add_manpower = -455123 }
+            158 = { add_manpower = -251020 }
+            203 = { add_manpower = -418001 }
+            205 = { add_manpower = -296120 }
+            193 = { add_manpower = -151033 }
+            177 = { add_manpower = 82516 }
+            167 = { add_manpower = 26222 }
+            11 = { add_manpower = 19511 }
+            173 = { add_manpower = 74922 }
+            15 = { add_manpower = 52916 }
+            209 = { add_manpower = 91555 }
+            85 = { add_manpower = 30020 }
+            country_event = {
+                id = GOI_hidden_event.1
+                days = 3
+            }
+            country_event = {
+                id = GOI_hidden_event.2
+                days = 7
+            }
+            country_event = {
+                id = GOI_hidden_event.3
+                days = 10
+            }
+            country_event = {
+                id = GOI_hidden_event.4
+                days = 4
+            }
+            country_event = {
+                id = GOI_hidden_event.5
+                days = 6
+            }
+            country_event = {
+                id = GOI_hidden_event.6
+                days = 5
+            }
+            country_event = {
+                id = GOI_hidden_event.7
+                days = 15
+            }
+            country_event = {
+                id = GOI_hidden_event.8
+                days = 13
+            }
+            country_event = {
+                id = GOI_hidden_event.9
+                days = 10
+            }
+            country_event = {
+                id = GOI_hidden_event.10
+                days = 12
+            }
+            country_event = {
+                id = GOI_hidden_event.11
+                days = 2
+            }
+            country_event = {
+                id = GOI_hidden_event.12
+                days = 14
+            }
+            country_event = {
+                id = GOI_hidden_event.13
+                days = 14
+            }
+            country_event = {
+                id = GOI_hidden_event.14
+                days = 9
+            }
+            country_event = {
+                id = GOI_hidden_event.15
+                days = 6
+            }
+            country_event = {
+                id = GOI_hidden_event.16
+                days = 4
+            }
+            country_event = {
+                id = GOI_hidden_event.17
+                days = 2
+            }
+            country_event = {
+                id = GOI_event.8
+                days = 20
+            }
+        }
     }
 }
 
@@ -250,480 +250,480 @@ country_event = {
     id = GOI_event.8
     title = GOI_event.8.t
     desc = GOI_event.8.desc
-	picture = GFX_GOI_event8
-    
+    picture = GFX_GOI_event8
+
     is_triggered_only = yes
-    
+
     option = {
         name = GOI_event.8.a
-		set_global_flag = game_started
-		custom_effect_tooltip = tt_GOI_event_8
-	}
+        set_global_flag = game_started
+        custom_effect_tooltip = tt_GOI_event_8
+    }
 }
 
 
 country_event = {
     id = GOI_hidden_event.1
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		WGF = {
-			transfer_state = 177
-			transfer_state = 167
-			transfer_state = 12
-			
-			add_state_core = 177
-			add_state_core = 167
-			add_state_core = 12
-			
-			177 = { set_demilitarized_zone = no }
-			167 = { set_demilitarized_zone = no }
-			12 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 177
-				remove_state_core = 167
-				remove_state_core = 12
-		}
-	}
+        WGF = {
+            transfer_state = 177
+            transfer_state = 167
+            transfer_state = 12
+
+            add_state_core = 177
+            add_state_core = 167
+            add_state_core = 12
+
+            177 = { set_demilitarized_zone = no }
+            167 = { set_demilitarized_zone = no }
+            12 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 177
+            remove_state_core = 167
+            remove_state_core = 12
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.2
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		DPZ = {
-			transfer_state = 186
-			transfer_state = 188
-			
-			add_state_core = 186
-			add_state_core = 188
-			
-			186 = { set_demilitarized_zone = no }
-			188 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 186
-				remove_state_core = 188
-		}
-	}
+        DPZ = {
+            transfer_state = 186
+            transfer_state = 188
+
+            add_state_core = 186
+            add_state_core = 188
+
+            186 = { set_demilitarized_zone = no }
+            188 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 186
+            remove_state_core = 188
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.3
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		SEC = {
-			transfer_state = 187
-			
-			add_state_core = 187
-			
-			187 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 187
-		}
-	}
+        SEC = {
+            transfer_state = 187
+
+            add_state_core = 187
+
+            187 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 187
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.4
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GMD = {
-			transfer_state = 182
-			transfer_state = 11
-			transfer_state = 173
-			
-			add_state_core = 182
-			add_state_core = 11
-			add_state_core = 173
-			
-			182 = { set_demilitarized_zone = no }
-			11 = { set_demilitarized_zone = no }
-			173 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 182
-				remove_state_core = 11
-				remove_state_core = 173
-		}
-	}
+        GMD = {
+            transfer_state = 182
+            transfer_state = 11
+            transfer_state = 173
+
+            add_state_core = 182
+            add_state_core = 11
+            add_state_core = 173
+
+            182 = { set_demilitarized_zone = no }
+            11 = { set_demilitarized_zone = no }
+            173 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 182
+            remove_state_core = 11
+            remove_state_core = 173
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.5
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GPR = {
-			transfer_state = 193
-			transfer_state = 203
-			
-			add_state_core = 193
-			add_state_core = 203
-			
-			193 = { set_demilitarized_zone = no }
-			203 = { set_demilitarized_zone = no }
-		}
-		
-		SOS = {
-			transfer_state = 204
-			transfer_state = 205
-			transfer_state = 207
-			
-			add_state_core = 204
-			add_state_core = 205
-			add_state_core = 207
-			
-			204 = { set_demilitarized_zone = no }
-			205 = { set_demilitarized_zone = no }
-			207 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 193
-				remove_state_core = 203
-				
-				remove_state_core = 204
-				remove_state_core = 205
-				remove_state_core = 207
-		}
-	}
+        GPR = {
+            transfer_state = 193
+            transfer_state = 203
+
+            add_state_core = 193
+            add_state_core = 203
+
+            193 = { set_demilitarized_zone = no }
+            203 = { set_demilitarized_zone = no }
+        }
+
+        SOS = {
+            transfer_state = 204
+            transfer_state = 205
+            transfer_state = 207
+
+            add_state_core = 204
+            add_state_core = 205
+            add_state_core = 207
+
+            204 = { set_demilitarized_zone = no }
+            205 = { set_demilitarized_zone = no }
+            207 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 193
+            remove_state_core = 203
+
+            remove_state_core = 204
+            remove_state_core = 205
+            remove_state_core = 207
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.6
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		TBT = {
-			transfer_state = 176
-			transfer_state = 168
-			transfer_state = 174
-			
-			add_state_core = 176
-			add_state_core = 168
-			add_state_core = 174
-			
-			176 = { set_demilitarized_zone = no }
-			168 = { set_demilitarized_zone = no }
-			174 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 176
-				remove_state_core = 168
-				remove_state_core = 174
-		}
-	}
+        TBT = {
+            transfer_state = 176
+            transfer_state = 168
+            transfer_state = 174
+
+            add_state_core = 176
+            add_state_core = 168
+            add_state_core = 174
+
+            176 = { set_demilitarized_zone = no }
+            168 = { set_demilitarized_zone = no }
+            174 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 176
+            remove_state_core = 168
+            remove_state_core = 174
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.7
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GPG = {
-			transfer_state = 206
-			transfer_state = 158
-			transfer_state = 10
-			transfer_state = 8
-			transfer_state = 145
-			transfer_state = 28
-			
-			add_state_core = 206
-			add_state_core = 158
-			add_state_core = 10
-			add_state_core = 8
-			add_state_core = 145
-			add_state_core = 28
-			
-			206 = { set_demilitarized_zone = yes }
-			158 = { set_demilitarized_zone = no }
-			10 = { set_demilitarized_zone = no }
-			8 = { set_demilitarized_zone = no }
-			145 = { set_demilitarized_zone = no }
-			28 = { set_demilitarized_zone = no }
-			
-			country_lock_all_division_template = yes
-		}
-		GOI = {
-			remove_state_core = 206
-			remove_state_core = 158
-			remove_state_core = 10
-			remove_state_core = 8
-			remove_state_core = 145
-			remove_state_core= 28
-		}
-	}
+        GPG = {
+            transfer_state = 206
+            transfer_state = 158
+            transfer_state = 10
+            transfer_state = 8
+            transfer_state = 145
+            transfer_state = 28
+
+            add_state_core = 206
+            add_state_core = 158
+            add_state_core = 10
+            add_state_core = 8
+            add_state_core = 145
+            add_state_core = 28
+
+            206 = { set_demilitarized_zone = yes }
+            158 = { set_demilitarized_zone = no }
+            10 = { set_demilitarized_zone = no }
+            8 = { set_demilitarized_zone = no }
+            145 = { set_demilitarized_zone = no }
+            28 = { set_demilitarized_zone = no }
+
+            country_lock_all_division_template = yes
+        }
+        GOI = {
+            remove_state_core = 206
+            remove_state_core = 158
+            remove_state_core = 10
+            remove_state_core = 8
+            remove_state_core = 145
+            remove_state_core= 28
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.8
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GTR = {
-			transfer_state = 89
-			transfer_state = 209
-			
-			add_state_core = 89
-			add_state_core = 209
-			
-			89 = { set_demilitarized_zone = no }
-			209 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 89
-			remove_state_core = 209
-		}
-	}
+        GTR = {
+            transfer_state = 89
+            transfer_state = 209
+
+            add_state_core = 89
+            add_state_core = 209
+
+            89 = { set_demilitarized_zone = no }
+            209 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 89
+            remove_state_core = 209
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.9
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GGR = {
-			transfer_state = 15
-			transfer_state = 16
-			transfer_state = 24
-			transfer_state = 33
-			transfer_state = 143
-			transfer_state = 172
-			transfer_state = 169
-			
-			add_state_core = 15
-			add_state_core = 16
-			add_state_core = 24
-			add_state_core = 33
-			add_state_core = 143
-			add_state_core = 172
-			add_state_core = 169
-			
-			15 = { set_demilitarized_zone = no }
-			16 = { set_demilitarized_zone = no }
-			24 = { set_demilitarized_zone = no }
-			33 = { set_demilitarized_zone = no }
-			143 = { set_demilitarized_zone = no }
-			172 = { set_demilitarized_zone = no }
-			169 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-				remove_state_core = 15
-				remove_state_core = 16
-				remove_state_core = 24
-				remove_state_core = 33
-				remove_state_core = 143
-				remove_state_core = 172
-				remove_state_core = 169
-		}
-	}
+        GGR = {
+            transfer_state = 15
+            transfer_state = 16
+            transfer_state = 24
+            transfer_state = 33
+            transfer_state = 143
+            transfer_state = 172
+            transfer_state = 169
+
+            add_state_core = 15
+            add_state_core = 16
+            add_state_core = 24
+            add_state_core = 33
+            add_state_core = 143
+            add_state_core = 172
+            add_state_core = 169
+
+            15 = { set_demilitarized_zone = no }
+            16 = { set_demilitarized_zone = no }
+            24 = { set_demilitarized_zone = no }
+            33 = { set_demilitarized_zone = no }
+            143 = { set_demilitarized_zone = no }
+            172 = { set_demilitarized_zone = no }
+            169 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 15
+            remove_state_core = 16
+            remove_state_core = 24
+            remove_state_core = 33
+            remove_state_core = 143
+            remove_state_core = 172
+            remove_state_core = 169
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.10
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		GGR = {
-			remove_state_core = 169
-			add_state_claim = 169
-		}
-		FFT = {
-			transfer_state = 169
-			
-			add_state_core = 169
-		}
-	}
+        GGR = {
+            remove_state_core = 169
+            add_state_claim = 169
+        }
+        FFT = {
+            transfer_state = 169
+
+            add_state_core = 169
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.11
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		BUN = {
-			transfer_state = 85
-			transfer_state = 212
-			transfer_state = 217
-			transfer_state = 218
-			
-			add_state_core = 85
-			add_state_core = 212
-			add_state_core = 217
-			add_state_core = 218
-			
-			85 = { set_demilitarized_zone = no }
-			212 = { set_demilitarized_zone = no }
-			217 = { set_demilitarized_zone = no }
-			218 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 85
-			remove_state_core = 212
-			remove_state_core = 217
-			remove_state_core = 218
-		}
-	}
+        BUN = {
+            transfer_state = 85
+            transfer_state = 212
+            transfer_state = 217
+            transfer_state = 218
+
+            add_state_core = 85
+            add_state_core = 212
+            add_state_core = 217
+            add_state_core = 218
+
+            85 = { set_demilitarized_zone = no }
+            212 = { set_demilitarized_zone = no }
+            217 = { set_demilitarized_zone = no }
+            218 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 85
+            remove_state_core = 212
+            remove_state_core = 217
+            remove_state_core = 218
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.12
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		SRR = {
-			transfer_state = 202
-			transfer_state = 210
-			transfer_state = 27
-			transfer_state = 214
-			
-			add_state_core = 202
-			add_state_core = 210
-			add_state_core = 27
-			add_state_core = 214
-			
-			202 = { set_demilitarized_zone = no }
-			210 = { set_demilitarized_zone = no }
-			27 = { set_demilitarized_zone = no }
-			214 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 202
-			remove_state_core = 210
-			remove_state_core = 27
-			remove_state_core = 214
-		}
-	}
+        SRR = {
+            transfer_state = 202
+            transfer_state = 210
+            transfer_state = 27
+            transfer_state = 214
+
+            add_state_core = 202
+            add_state_core = 210
+            add_state_core = 27
+            add_state_core = 214
+
+            202 = { set_demilitarized_zone = no }
+            210 = { set_demilitarized_zone = no }
+            27 = { set_demilitarized_zone = no }
+            214 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 202
+            remove_state_core = 210
+            remove_state_core = 27
+            remove_state_core = 214
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.13
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		NRR = {
-			transfer_state = 171
-			transfer_state = 170
-			
-			add_state_core = 171
-			add_state_core = 170
-			
-			171 = { set_demilitarized_zone = no }
-			170 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 171
-			remove_state_core = 170
-		}
-	}
+        NRR = {
+            transfer_state = 171
+            transfer_state = 170
+
+            add_state_core = 171
+            add_state_core = 170
+
+            171 = { set_demilitarized_zone = no }
+            170 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 171
+            remove_state_core = 170
+        }
+    }
 }
 
 country_event = {
     id = GOI_hidden_event.14
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		AGG = {
-			transfer_state = 183
-			
-			add_state_core = 183
-			add_state_core = 175
-			
-			183 = { set_demilitarized_zone = no }
-			
-			declare_war_on = {
+        AGG = {
+            transfer_state = 183
+
+            add_state_core = 183
+            add_state_core = 175
+
+            183 = { set_demilitarized_zone = no }
+
+            declare_war_on = {
                 target = SGD
                 type = annex_everything
-			}
-		}
-		GOI = {
-			remove_state_core = 183
-		}
-	}
+            }
+        }
+        GOI = {
+            remove_state_core = 183
+        }
+    }
 }
 country_event = {
     id = GOI_hidden_event.15
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		SGD = {
-			transfer_state = 175
-			
-			add_state_core = 175
-			add_state_core = 183
-			
-			175 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 175
-		}
-	}
+        SGD = {
+            transfer_state = 175
+
+            add_state_core = 175
+            add_state_core = 183
+
+            175 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 175
+        }
+    }
 }
 country_event = {
     id = GOI_hidden_event.16
-    
+
     is_triggered_only = yes
-	hidden = yes
-    
+    hidden = yes
+
     immediate = {
-		YFC = {
-			transfer_state = 196
-			transfer_state = 201
-			transfer_state = 215
-			transfer_state = 216
-			
-			add_state_core = 196
-			add_state_core = 201
-			add_state_core = 215
-			add_state_core = 216
-			
-			196 = { set_demilitarized_zone = no }
-			201 = { set_demilitarized_zone = no }
-			215 = { set_demilitarized_zone = no }
-			216 = { set_demilitarized_zone = no }
-		}
-		GOI = {
-			remove_state_core = 196
-			remove_state_core = 201
-			remove_state_core = 215
-			remove_state_core = 216
-		}
-	}
+        YFC = {
+            transfer_state = 196
+            transfer_state = 201
+            transfer_state = 215
+            transfer_state = 216
+
+            add_state_core = 196
+            add_state_core = 201
+            add_state_core = 215
+            add_state_core = 216
+
+            196 = { set_demilitarized_zone = no }
+            201 = { set_demilitarized_zone = no }
+            215 = { set_demilitarized_zone = no }
+            216 = { set_demilitarized_zone = no }
+        }
+        GOI = {
+            remove_state_core = 196
+            remove_state_core = 201
+            remove_state_core = 215
+            remove_state_core = 216
+        }
+    }
 }
 country_event = {
     id = GOI_hidden_event.17
@@ -766,124 +766,120 @@ country_event = {
             remove_state_core = 223
             remove_state_core = 224
         }
-		224 = {
-			add_victory_points = {
-				province = 51
-				value = 25
-			}
-		}
-		set_province_name = {
-            id = 1957
-            name = VICTORY_POINTS_1957_New
+        224 = {
+            add_victory_points = {
+                province = 51
+                value = 25
+            }
         }
     }
 }
 
 country_event = {
-	#Funny debug event
+    #Funny debug event
     id = GOI_event.69
     title = GOI_event.69.t
     desc = GOI_event.69.desc
     picture = GFX_GOI_event8
-	
+
     is_triggered_only = yes
-    
-	option = {
+
+    option = {
         name = GOI_event.69.a
     }
 
-	option = {
+    option = {
         name = GOI_event.69.b
-		every_other_country = {
-			limit = { 
-				NOT = {
-					tag = EMP
-				}
-				NOT = {
-					tag = GOI
-				}
-				NOT = {
-					is_ai = no
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 2000
-			}
-			add_manpower = 20000
-			army_experience = 125
-		}
+        every_other_country = {
+            limit = {
+                NOT = {
+                    tag = EMP
+                }
+                NOT = {
+                    tag = GOI
+                }
+                NOT = {
+                    is_ai = no
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+            }
+            add_manpower = 20000
+            army_experience = 125
+        }
     }
 
-	option = {
+    option = {
         name = GOI_event.69.c
-		every_other_country = {
-			limit = { 
-				NOT = {
-					tag = EMP
-				}
-				NOT = {
-					tag = GOI
-				}
-				NOT = {
-					is_ai = no
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 6000
-			}
-			add_manpower = 60000
-			add_offsite_building = { type = arms_factory level = 2 }
-			army_experience = 250
-		}
+        every_other_country = {
+            limit = {
+                NOT = {
+                    tag = EMP
+                }
+                NOT = {
+                    tag = GOI
+                }
+                NOT = {
+                    is_ai = no
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 6000
+            }
+            add_manpower = 60000
+            add_offsite_building = { type = arms_factory level = 2 }
+            army_experience = 250
+        }
     }
 
-	option = {
+    option = {
         name = GOI_event.69.d
-		every_other_country = {
-			limit = { 
-				NOT = {
-					tag = EMP
-				}
-				NOT = {
-					tag = GOI
-				}
-				NOT = {
-					is_ai = no
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 18000
-			}
-			add_manpower = 180000
-			add_offsite_building = { type = arms_factory level = 4 }
-			army_experience = 375
-		}
+        every_other_country = {
+            limit = {
+                NOT = {
+                    tag = EMP
+                }
+                NOT = {
+                    tag = GOI
+                }
+                NOT = {
+                    is_ai = no
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 18000
+            }
+            add_manpower = 180000
+            add_offsite_building = { type = arms_factory level = 4 }
+            army_experience = 375
+        }
     }
 
-	option = {
+    option = {
         name = GOI_event.69.e
-		every_other_country = {
-			limit = { 
-				NOT = {
-					tag = EMP
-				}
-				NOT = {
-					tag = GOI
-				}
-				NOT = {
-					is_ai = no
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 54000
-			}
-			add_manpower = 540000
-			add_offsite_building = { type = arms_factory level = 8 }
-			army_experience = 500
-		}
+        every_other_country = {
+            limit = {
+                NOT = {
+                    tag = EMP
+                }
+                NOT = {
+                    tag = GOI
+                }
+                NOT = {
+                    is_ai = no
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 54000
+            }
+            add_manpower = 540000
+            add_offsite_building = { type = arms_factory level = 8 }
+            army_experience = 500
+        }
     }
 }

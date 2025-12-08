@@ -380,6 +380,10 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_GTR_unsettled_government.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_destroyed_university
+		textureFile = gfx/interface/ideas/idea_GTR_destroyed_university.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}

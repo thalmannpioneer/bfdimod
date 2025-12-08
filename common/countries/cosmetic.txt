@@ -1,44 +1,48 @@
 GOI_anarchy = {
- color = rgb { 50 50 50 }
- color_ui = rgb { 50 50 50 }
+    color = rgb { 50 50 50 }
+    color_ui = rgb { 50 50 50 }
 }
 GPG_fries_cw = {
-	color = rgb { 147 167 204 }
-	color_ui = rgb { 147 167 204 }
+    color = rgb { 147 167 204 }
+    color_ui = rgb { 147 167 204 }
 }
 GDR_republic = {
-	color = rgb { 98 168 50 }
-	color_ui = rgb { 98 168 50 }
+    color = rgb { 98 168 50 }
+    color_ui = rgb { 98 168 50 }
 }
 GDR_federation = {
-	color = rgb { 98 168 50 }
-	color_ui = rgb { 98 168 50 }
+    color = rgb { 98 168 50 }
+    color_ui = rgb { 98 168 50 }
 }
 GSR_post_cw = {
-	color = rgb { 196 16 16 }
-	color_ui = rgb { 196 16 16 }
+    color = rgb { 196 16 16 }
+    color_ui = rgb { 196 16 16 }
 }
 GFG_government = {
-	color = rgb { 0 12 112 }
-	color_ui = rgb { 0 12 112 }
+    color = rgb { 0 12 112 }
+    color_ui = rgb { 0 12 112 }
 }
 GFG_goiky = {
-	color = rgb { 0 173 69 }
-	color_ui = rgb { 0 173 69 }
+    color = rgb { 0 173 69 }
+    color_ui = rgb { 0 173 69 }
 }
 GFG_esoteric = {
-	color = rgb { 53 0 102 }
-	color_ui = rgb { 53 0 102 }
+    color = rgb { 53 0 102 }
+    color_ui = rgb { 53 0 102 }
 }
 GSR_anarchist = {
-	color = rgb { 36 0 0 }
-	color_ui = rgb { 36 0 0 }
+    color = rgb { 36 0 0 }
+    color_ui = rgb { 36 0 0 }
 }
 YFC_raiders = {
-	color = rgb { 204 204 0 }
-	color_ui = rgb { 204 204 0 }
+    color = rgb { 204 204 0 }
+    color_ui = rgb { 204 204 0 }
 }
 BUN_revolt = {
-	color = rgb { 255 180 180 }
-	color_ui = rgb { 255 180 180 }
+    color = rgb { 255 180 180 }
+    color_ui = rgb { 255 180 180 }
+}
+GTR_collapse = {
+    color = rgb { 150 150 150 }
+    color_ui = rgb { 150 150 150 }
 }

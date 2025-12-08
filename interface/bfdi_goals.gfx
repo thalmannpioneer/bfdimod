@@ -1654,4 +1654,54 @@ SpriteTypes = {
 		play_on_show = yes
 		allwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_excavate_the_ruins"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_excavate_the_ruins.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_accept_casland_refugees"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_accept_casland_refugees.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_announcergrad_aid"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_announcergrad_aid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_launch_industry"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_launch_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_city_assembly"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_city_assembly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_address_centralization"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_address_centralization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_GTR_bureaucracy_reform"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_bureaucracy_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_rethinking_of_technocracy"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_rethinking_of_technocracy.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_focus_GTR_republic"
+		texturefile = "gfx/interface/goals/GFX_focus_GTR_republic.dds"
+		noOfFrames = 17
+		animation_rate_fps = 7
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
 }

@@ -209,14 +209,24 @@ country_event = {
     option = {
         name = GTR_event.10.a
         custom_effect_tooltip = l_GTR_nuclear_annihilation
+        swap_ideas = {
+            remove_idea = idea_GTR_goiky_university
+            add_idea = idea_GTR_destroyed_university
+        }
         hidden_effect = {
+            set_country_flag = ohh_thats_bad
+            set_country_flag = project_1_fails
             launch_nuke = {
                 province = 3545 #:sob:
+            }
+            set_province_name = {
+                id = 3545
+                name = UNIVERSITY_DESTROYED
             }
             goto_province = 3545
             country_event = {
                 id = GTR_event.11
-                days = 20
+                days = 10
                 random_hours = 12
             }
             every_possible_country = {
@@ -246,6 +256,35 @@ country_event = {
 
     option = {
         name = GTR_event.11.a
+        <<<<<<< Updated upstream
+        =======
+        custom_effect_tooltip = l_GTR_administration_collapse
+        hidden_effect = {
+            set_cosmetic_tag = GTR_collapse
+            set_country_leader_portrait = {
+                portrait = GFX_GTR_golfball_collapse
+            }
+            set_capital = { state = 209 }
+            country_event = {
+                id = GTR_event.12
+                days = 15
+                random_hours = 12
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.12
+    title = GTR_event.12.t
+    desc = GTR_event.12.desc
+    picture = GFX_GTR_event12
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.12.a
+        >>>>>>> Stashed changes
         retire_country_leader = yes
         custom_effect_tooltip = l_GTR_new_focus_tree
         hidden_effect = {
