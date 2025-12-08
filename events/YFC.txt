@@ -47,9 +47,9 @@ country_event = {
 
     option = {
 		name = YFC_event.3.a
-		custom_effect_tooltip = l_money_lose_1M
-		subtract_from_variable = { money_amount = 10 }
-		SRR = {add_to_variable = { money_amount = 10 }}
+		custom_effect_tooltip = l_money_lose_500K
+		subtract_from_variable = { money_amount = 5 }
+		SRR = {add_to_variable = { money_amount = 5 }}
 		214 = {
 			if = {
 				limit = { is_owned_by = SRR }
@@ -131,6 +131,18 @@ country_event = {
 			}
 			217 = {add_compliance = 10}
 			218 = {add_compliance = 10}
+			diplomatic_relation = {
+				country = CRN
+				relation = military_access
+				active = no
+			}
+			CRN = {
+				diplomatic_relation = {
+					country = YFC
+					relation = military_access
+					active = no
+				}
+			}
 		}
 		delete_unit_template_and_units = {
 			division_template = "Militia"
@@ -776,7 +788,79 @@ country_event = {
 	}
 }
 
-########RAIDS EVENTS########
+country_event = {
+	id = YFC_event.31 #Coiny finds out
+	title = YFC_event.31.t
+    desc = YFC_event.31.desc
+	picture = GFX_YFC_event31
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.31.a
+		add_war_support = -0.05
+	}
+	option = { 
+		name = YFC_event.31.b
+		add_political_power = 50
+		add_offsite_building = { type = arms_factory level = 1 }
+		YFC = {
+			country_event = {
+				id = YFC_event.32
+				days = 7
+				random_hours = 60
+			}
+		}
+		hidden_effect = { set_country_flag = GMD_Blocked_YFC_Trolling }
+	}
+	option = { 
+		name = YFC_event.31.c
+		YFC = {
+			country_event = {
+				id = YFC_event.33
+				days = 7
+				random_hours = 60
+			}
+		}
+		hidden_effect = { set_country_flag = GMD_Blocked_YFC_Trolling }
+	}
+}
+
+country_event = {
+	id = YFC_event.32 #YFC finds that Coiny is blocking this exploitation
+	title = YFC_event.32.t
+    desc = YFC_event.32.desc
+	picture = GFX_YFC_event31
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.32.a
+	}
+}
+
+country_event = {
+	id = YFC_event.33 #YFC finds that Coiny is willing to make a trade
+	title = YFC_event.33.t
+    desc = YFC_event.33.desc
+	picture = GFX_YFC_event31
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.33.a
+		custom_effect_tooltip = l_money_lose_2M
+		subtract_from_variable = { money_amount = 20 }
+		add_offsite_building = { type = arms_factory level = 1 }
+	}
+	option = { 
+		name = YFC_event.33.b
+	}
+}
+
+###############################################################################
+########RAIDS EVENTS###############################################################################
+###############################################################################
 
 country_event = {
 	#YFC wins view

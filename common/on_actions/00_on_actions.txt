@@ -463,7 +463,13 @@ on_actions = {
                     limit = {
                         has_government = communism
                     }
-                    multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
+                    multiply_temp_variable = {combined_modifer = 0.8}
+                }
+                IF = {
+                    limit = {
+                        has_idea = undisturbed_isolation
+                    }
+                    multiply_temp_variable = {combined_modifer = 0.05}
                 }
 
                 multiply_temp_variable = {adding_amount = combined_modifer}

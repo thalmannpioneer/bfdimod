@@ -35,6 +35,8 @@ set_popularities = {
 	neutrality = 89
 }
 
+set_variable = { var_GMD_YFC_Troll_Chance = 0 }
+
 add_ideas = idea_GMD_coinys_domain
 
 random = {

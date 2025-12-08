@@ -88,6 +88,7 @@ decision_YFC_trade_category= {
 			country_exists = GMD
 			GMD = {
 				has_war = no
+				NOT = {has_country_flag = GMD_Blocked_YFC_Trolling}
 			}
 		}
 
@@ -108,6 +109,23 @@ decision_YFC_trade_category= {
 
 		remove_effect = {
 			add_offsite_building = { type = arms_factory level = -2 }
+
+			hidden_effect = {
+				set_temp_variable_to_random = {
+					var = random_check
+					max = 100
+					min = 1
+				}
+				IF = {
+					limit = {
+						GMD = {check_variable = { var_GMD_YFC_Troll_Chance > random_check }}
+					}
+					GMD = {country_event = YFC_event.31}
+				}
+				ELSE = {
+					GMD = {add_to_variable = { var_GMD_YFC_Troll_Chance = 25 }}
+				}
+			}
         }
 
 		ai_will_do = {

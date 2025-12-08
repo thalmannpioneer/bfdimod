@@ -746,6 +746,21 @@
  YFC_event.30.desc: "ZDubbz plz write"
  YFC_event.30.a: "Cough"
 
+ YFC_event.31.t: "Interesting discovery."
+ YFC_event.31.desc: "After months of trying to figure out why production was being slowed, we found our answer. It seems that our agreements made with Yellow Face have a minor detail we were left out of. In the agreements of cooperation we made, they were given access to some of our factories. It seems that they were funneling weapons to them without us. While bad, we still need to maintain good relations with them. They have lots of money, so we can reach a deal with them."
+ YFC_event.31.a: "It's not that big of a deal for now."
+ YFC_event.31.b: "Let's just end these shenanigans."
+ YFC_event.31.c: "Maybe we could make a rearrangement."
+
+ YFC_event.32.t: "Coiny finds out!"
+ YFC_event.32.desc: "So, it seems that the hidden funneling of weapons was found out. It was expected sadly, as this loss of production to them was to be noticed. Nothing has been said from the district as of now. It seems that this will not be discussed on either side. For us, we will have to just sell and buy equipment until a new opportunity occurs."
+ YFC_event.32.a: "So be it."
+
+ YFC_event.33.t: "Deals with the District."
+ YFC_event.33.desc: "So, it seems that the hidden funneling of weapons was found out. It was expected sadly, as this loss of production to them was to be noticed. However, what is more interesting is that Coiny is willing to sell a permanent factory in exchange for a high price. Since we have to buy and sell equipment and can't make our own, this could bring long term profits and a better army. Though is the price worth it?"
+ YFC_event.33.a: "We'll buy it!"
+ YFC_event.33.b: "We'll pass."
+
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.5.a: "We cannot allow more raids to happen!"
