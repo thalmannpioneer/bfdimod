@@ -468,101 +468,100 @@ on_actions = {
             }
         }
     }
-}
 
-
-on_weekly_GTR = { #PROJECT 1 MECHANIC
-    effect = {
-        if = {
-            limit = { has_country_flag = project1_mechanic_started }
+    on_weekly_GTR = { #PROJECT 1 MECHANIC
+        effect = {
             if = {
-                limit = { NOT = { has_country_flag = stage1_done } }
-                add_to_variable = { var_GTR_progressbar_stage1 = var_GTR_weekly_progress_stage1 }
+                limit = { has_country_flag = project1_mechanic_started }
                 if = {
-                    limit = { check_variable = { var_GTR_progressbar_stage1 > 100 } }
-                    set_variable = { var_GTR_progressbar_stage1 = 100 }
-                    set_variable = { var_GTR_weekly_progress_stage1 = 0 }
-                    set_country_flag = stage1_done
+                    limit = { NOT = { has_country_flag = stage1_done } }
+                    add_to_variable = { var_GTR_progressbar_stage1 = var_GTR_weekly_progress_stage1 }
                     if = {
-                        limit = { has_country_flag = stage2_done }
-                        set_variable = { var_GTR_weekly_progress_stage3 = 10 }
+                        limit = { check_variable = { var_GTR_progressbar_stage1 > 100 } }
+                        set_variable = { var_GTR_progressbar_stage1 = 100 }
+                        set_variable = { var_GTR_weekly_progress_stage1 = 0 }
+                        set_country_flag = stage1_done
+                        if = {
+                            limit = { has_country_flag = stage2_done }
+                            set_variable = { var_GTR_weekly_progress_stage3 = 10 }
+                        }
+                        set_country_flag = project1_notif_enabled
                     }
-                    set_country_flag = project1_notif_enabled
                 }
-            }
 
-            if = {
-                limit = { NOT = { has_country_flag = stage2_done } }
-                add_to_variable = { var_GTR_progressbar_stage2 = var_GTR_weekly_progress_stage2 }
                 if = {
-                    limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
-                    set_variable = { var_GTR_progressbar_stage2 = 100 }
-                    set_variable = { var_GTR_weekly_progress_stage2 = 0 }
-                    set_country_flag = stage2_done
+                    limit = { NOT = { has_country_flag = stage2_done } }
+                    add_to_variable = { var_GTR_progressbar_stage2 = var_GTR_weekly_progress_stage2 }
                     if = {
-                        limit = { has_country_flag = stage1_done }
-                        set_variable = { var_GTR_weekly_progress_stage3 = 10 }
+                        limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
+                        set_variable = { var_GTR_progressbar_stage2 = 100 }
+                        set_variable = { var_GTR_weekly_progress_stage2 = 0 }
+                        set_country_flag = stage2_done
+                        if = {
+                            limit = { has_country_flag = stage1_done }
+                            set_variable = { var_GTR_weekly_progress_stage3 = 10 }
+                        }
+                        set_country_flag = project1_notif_enabled
                     }
-                    set_country_flag = project1_notif_enabled
                 }
-            }
 
-            if = {
-                limit = { NOT = { has_country_flag = stage3_done } }
-                add_to_variable = { var_GTR_progressbar_stage3 = var_GTR_weekly_progress_stage3 }
                 if = {
-                    limit = { check_variable = { var_GTR_progressbar_stage3 > 100 } }
-                    set_variable = { var_GTR_progressbar_stage3 = 100 }
-                    set_variable = { var_GTR_weekly_progress_stage3 = 0 }
-                    set_country_flag = stage3_done
-                    set_country_flag = project1_notif_enabled
-                    country_event = GTR_event.9
+                    limit = { NOT = { has_country_flag = stage3_done } }
+                    add_to_variable = { var_GTR_progressbar_stage3 = var_GTR_weekly_progress_stage3 }
+                    if = {
+                        limit = { check_variable = { var_GTR_progressbar_stage3 > 100 } }
+                        set_variable = { var_GTR_progressbar_stage3 = 100 }
+                        set_variable = { var_GTR_weekly_progress_stage3 = 0 }
+                        set_country_flag = stage3_done
+                        set_country_flag = project1_notif_enabled
+                        country_event = GTR_event.9
+                    }
                 }
             }
         }
     }
-}
 
-on_join_faction = { #Join Faction
-    effect = {
-        IF = { #Musketeers
-            limit = {
-                FROM = {has_country_flag = Allow_Musketeers}
-            }
-            set_country_flag = Allow_Musketeers
-            IF = {
-                limit = {has_completed_focus = Musketeers_form_own}
-                add_dynamic_modifier = {
-                    modifier = idea_Musketeers_OWN
+    on_join_faction = { #Join Faction
+        effect = {
+            IF = { #Musketeers
+                limit = {
+                    FROM = {has_country_flag = Allow_Musketeers}
                 }
-            }
-            IF = {
-                limit = {has_completed_focus = Musketeers_form_udc}
-                add_dynamic_modifier = {
-                    modifier = idea_Musketeers_UDC
+                set_country_flag = Allow_Musketeers
+                IF = {
+                    limit = {has_completed_focus = Musketeers_form_own}
+                    add_dynamic_modifier = {
+                        modifier = idea_Musketeers_OWN
+                    }
+                }
+                IF = {
+                    limit = {has_completed_focus = Musketeers_form_udc}
+                    add_dynamic_modifier = {
+                        modifier = idea_Musketeers_UDC
+                    }
                 }
             }
         }
     }
-}
 
-on_leave_faction = { #Leave Faction
-    effect = {
-        IF = { #Musketeers
-            limit = {
-                FROM = {has_country_flag = Allow_Musketeers}
-            }
-            clr_country_flag = Allow_Musketeers
-            IF = {
-                limit = {has_completed_focus = Musketeers_form_own}
-                remove_dynamic_modifier = {
-                    modifier = idea_Musketeers_OWN
+    on_leave_faction = { #Leave Faction
+        effect = {
+            IF = { #Musketeers
+                limit = {
+                    FROM = {has_country_flag = Allow_Musketeers}
                 }
-            }
-            IF = {
-                limit = {has_completed_focus = Musketeers_form_udc}
-                remove_dynamic_modifier = {
-                    modifier = idea_Musketeers_UDC
+                clr_country_flag = Allow_Musketeers
+                IF = {
+                    limit = {has_completed_focus = Musketeers_form_own}
+                    remove_dynamic_modifier = {
+                        modifier = idea_Musketeers_OWN
+                    }
+                }
+                IF = {
+                    limit = {has_completed_focus = Musketeers_form_udc}
+                    remove_dynamic_modifier = {
+                        modifier = idea_Musketeers_UDC
+                    }
                 }
             }
         }
