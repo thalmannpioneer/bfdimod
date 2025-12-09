@@ -42,6 +42,10 @@ BUN_revolt = {
     color = rgb { 255 180 180 }
     color_ui = rgb { 255 180 180 }
 }
+BUN_republic = {
+    color = rgb { 255 180 180 }
+    color_ui = rgb { 255 180 180 }
+}
 GTR_collapse = {
     color = rgb { 150 150 150 }
     color_ui = rgb { 150 150 150 }

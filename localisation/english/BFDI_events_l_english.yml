@@ -693,6 +693,16 @@
  YFC_event.16.desc: "The small squadron we sent to examen the east has returned to us, showing their findings. It seems as if there are many locations that could become a small, profitable port. According to them, a couple of pieces of the east jut out into small peninsulas, with which shipping could be made easy. For now, we've ordered them to set up shop (literally) at the nearest spot they could, however, should we expand further, the east could become extroardinarily profitable. Unfortunately, it seems as if some sectorials aren't currently on board with this idea, citing that we wouldn't be able to properly devote our time to this endevour. They are likely right, sure, however this definitely would not hurt to attempt in the future."
  YFC_event.16.a: "At least we have a good foothold!" #gives some money and state 225, setting the vp there to 12 instead of 1 (RE: Just gonna turn this into a VP, can be increased later)
 
+ YFC_event.17.t: "Question of the POWs"
+ YFC_event.17.desc: "In recent talks, Blocky brought up the great idea of releasing POWs from the war. We have had many jailed so far with very long prison sentences for the many crimes they had committed. However, releasing them would make Blocky look like a hero and boost his support. The Sectorials have repeatedly stated that they do not want many of them to be released. So then, what is the fate of the POWs?"
+ YFC_event.17.a: "Release only the non-combat role ones."
+ YFC_event.17.b: "Release mainly the lower ranks."
+ YFC_event.17.c: "Release nearly everyone."
+
+ YFC_event.18.t: "Upcoming Debate!"
+ YFC_event.18.desc: "With our campaigning in progress, Numismatia has sent us a planned debate happening in 2 months. The debate already has Eraser and Pen planned to come. Obviously we will have Blocky be part of this debate as well. This could be our chance to ensure victory in the polls."
+ YFC_event.18.a: " We'll be ready!"
+
  YFC_event.19.t: "New Face Of a New Bunch"
  YFC_event.19.desc: "Blocky sent a letter through the mail only a few days after the Bunch fell, stating he wished to work with us. Over the months, we kept this letter in mind, and today, he came to remind us of this offer. Numismatia has been really obsessed with the idea of the former anarchical lands 'democratically' 'electing' a new leader for themselves, however the cabinet doesn't really know what those words mean. Regardless, they told us to put forward a candidate on the same day that Blocky made his visit. He outlined big plans for the former anarchist lands, and profitable plans, at that. In all honesty, his willingness to work with us seems a bit strange. Though, who would we be if we didn't endorse his candidacy?" 
  YFC_event.19.a: "We'd be fools, broke fools at that."

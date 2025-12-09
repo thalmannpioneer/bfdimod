@@ -440,7 +440,7 @@ country_event = {
 			YFC = {
 				country_event = {
 					id = YFC_event.16
-					days = 100 #
+					days = 120 #Waiting is so cool
 					random_hours = 48
 				}
 			}	
@@ -491,7 +491,7 @@ country_event = {
 }
 
 country_event = {
-	#N/A
+	#POW Foster_Bunch event
 	id = YFC_event.17
 	title = YFC_event.17.t
 	desc = YFC_event.17.desc
@@ -499,14 +499,36 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { 
+	option = { #Have few be relased, low support gain but does not change sector cost 
 		name = YFC_event.17.a
-
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 0.5 }
+		hidden_effect = {
+			BUN = {add_manpower = 1000}
+		}
+	}
+	option = { #Have many be relased, mild support gain but changes sector cost 
+		name = YFC_event.17.b
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 1.5 }
+		add_political_power = -25
+		hidden_effect = {
+			BUN = {add_manpower = 5000}
+		}
+	}
+	option = { #Have most be relased, high support gain but highly changes sector cost 
+		name = YFC_event.17.c
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 2.5 }
+		add_political_power = -50
+		hidden_effect = {
+			BUN = {add_manpower = 7500}
+		}
 	}
 }
 
 country_event = {
-	#N/A
+	#Used to tell upcoming debate
 	id = YFC_event.18
 	title = YFC_event.18.t
 	desc = YFC_event.18.desc
@@ -516,6 +538,7 @@ country_event = {
 
 	option = { 
 		name = YFC_event.18.a
+		activate_mission = YFC_foster_Debate
 	}
 }
 
@@ -621,7 +644,6 @@ country_event = {
 		name = YFC_event.22.a
 		custom_effect_tooltip = l_money_lose_300K
 		subtract_from_variable = { money_amount = 3 }
-		add_political_power = -25
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 1 }
 		}
@@ -631,24 +653,24 @@ country_event = {
 		name = YFC_event.22.b
 		custom_effect_tooltip = l_money_lose_600K
 		subtract_from_variable = { money_amount = 6 }
-		add_political_power = -50
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 2 }
-			#How much is cost?
-			#ZDubbz
 		}
+		trigger = {
+            check_variable = { money_amount > 6 }
+        }
 	}
 
 	option = { #Large, costs 900K
 		name = YFC_event.22.c
 		custom_effect_tooltip = l_money_lose_900K
 		subtract_from_variable = { money_amount = 9 }
-		add_political_power = -75
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 3 }
-			#How much is cost?
-			#ZDubbz
 		}
+		trigger = {
+            check_variable = { money_amount > 9 }
+        }
 	}
 }
 
@@ -1060,7 +1082,8 @@ country_event = {
 	}
 }
 
-#There were NONE CRN events you were going CRAZY 
+#There were NO CRN events you were going CRAZY 
+#WAKE UP WAKE UP WAKE UP WAKE UP
 
 country_event = { 
 	id = YFC_BUN.1
@@ -1089,6 +1112,13 @@ country_event = {
 		custom_effect_tooltip = l_YFC_BUN_2
 		complete_national_focus = YFC_focus_foster_new_society
 		custom_effect_tooltip = l_GGR_anarchists_decisions_open
+		hidden_effect = {
+			country_event = {
+				id = YFC_event.18
+				days = 70
+				random_hours = 100
+			}
+		}
 	}
 }
 
@@ -2350,6 +2380,9 @@ country_event = { #Election BUN Wins!
 		name = YFC_BUN.25.a
 		complete_national_focus = YFC_focus_bunch_fostered
 		BUN = {
+			set_country_leader_ideology = centrism
+			set_cosmetic_tag = BUN_republic
+			remove_ideas = idea_BUN_criminal_state
 			transfer_state = 85
 			transfer_state = 212
 			transfer_state = 217
@@ -2370,6 +2403,15 @@ country_event = { #Election YFC Wins!
 		name = YFC_BUN.26.a
 		complete_national_focus = YFC_focus_bunch_fostered
 		BUN = {
+			add_country_leader_role = {
+                character = BUN_blocky
+                promote_leader = yes
+                country_leader = {
+                    ideology = moderatism
+                }
+            }
+			set_cosmetic_tag = BUN_republic
+			remove_ideas = idea_BUN_criminal_state
 			transfer_state = 85
 			transfer_state = 212
 			transfer_state = 217
@@ -2391,11 +2433,223 @@ country_event = { #Election CRN Wins!
 		name = YFC_BUN.27.a
 		complete_national_focus = YFC_focus_bunch_fostered
 		BUN = {
+			set_cosmetic_tag = BUN_republic
+			remove_ideas = idea_BUN_criminal_state
 			transfer_state = 85
 			transfer_state = 212
 			transfer_state = 217
 			transfer_state = 218
 		}
 		CRN = {puppet = BUN}
+	}
+}
+
+#ZDubbz here are the debate events
+
+country_event = { #Debate event #1
+	#Thoughts on the ecomony? 
+	id = YFC_BUN.28
+	title = YFC_BUN.28.t
+	desc = YFC_BUN.28.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = { #Command Economy is good for now! (Best for support, though the sectors hate this idea)
+		name = YFC_BUN.28.a
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 2 }
+		}
+		add_political_power = -30
+
+		country_event = {
+			id = YFC_BUN.29
+			hours = 1
+		}
+	}
+	option = { #The free market is great! (Small support)
+		name = YFC_BUN.28.b
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 1 }
+		}
+
+		country_event = {
+			id = YFC_BUN.29
+			hours = 1
+		}
+	}
+	option = { #YFC investing will skyrocket the nation! (Costs money but gives support)
+		name = YFC_BUN.28.c
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 3 }
+		}
+		custom_effect_tooltip = l_money_lose_300K
+		subtract_from_variable = { money_amount = 3 }
+		hidden_effect = {
+			BUN = {add_to_variable = { money_amount = 3 }}
+		}
+
+		country_event = {
+			id = YFC_BUN.29
+			hours = 1
+		}
+	}
+}
+
+country_event = { #Debate event #2
+	#Defence?
+	id = YFC_BUN.29
+	title = YFC_BUN.29.t
+	desc = YFC_BUN.29.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = { #Only use police forces (Mild Support but keeps a small army)
+		name = YFC_BUN.29.a
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 0.5 }
+		}
+
+		country_event = {
+			id = YFC_BUN.30
+			hours = 1
+		}
+	}
+	option = { #Reform the militray (Mild Support but keeps are lower stat army)
+		name = YFC_BUN.29.b
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 0.5 }
+		}
+
+		country_event = {
+			id = YFC_BUN.30
+			hours = 1
+		}
+	}
+	option = { #Rely on YFC/CRN! (Good for support but makes BUN have a REALLY trash army)
+		name = YFC_BUN.29.c
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 3 }
+		}
+
+		country_event = {
+			id = YFC_BUN.30
+			hours = 1
+		}
+	}
+}
+
+country_event = { #Debate event #3
+	#Thoughts about working with YFC/CRN?
+	id = YFC_BUN.30
+	title = YFC_BUN.30.t
+	desc = YFC_BUN.30.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = { #Greatest thing for the Bunch! (Not the greatest for support)
+		name = YFC_BUN.30.a
+
+		add_political_power = 50
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
+		hidden_effect = {
+			add_to_variable = { var_foster_BUN_support = 0.5 }
+			random = {
+				chance = 65
+				add_to_variable = { var_foster_BUN_support = 2 }
+			}
+			random = {
+				chance = 65
+				add_to_variable = { var_foster_CRN_support = 2 }
+			}
+		}
+
+		country_event = {
+			id = YFC_BUN.31
+			hours = 1
+		}
+	}
+	option = { #Both good and bad (Mixed)
+		name = YFC_BUN.30.b
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 1 }
+		}
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
+		hidden_effect = {
+			add_to_variable = { var_foster_BUN_support = 0.5 }
+			random = {
+				chance = 30
+				add_to_variable = { var_foster_BUN_support = 2 }
+			}
+			random = {
+				chance = 30
+				add_to_variable = { var_foster_CRN_support = 2 }
+			}
+		}
+
+		country_event = {
+			id = YFC_BUN.31
+			hours = 1
+		}
+	}
+	option = { #Must apologize for the actions. (Sectors and CRN hate but good support)
+		name = YFC_BUN.30.c
+
+		add_opinion_modifier = { target = CRN modifier = medium_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = CRN
+			add_opinion_modifier = { target = YFC modifier = medium_decrease }
+		}
+		add_political_power = -35
+		add_stability = -0.02
+		add_war_support = -0.01
+
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		hidden_effect = {
+			add_to_variable = { var_foster_YFC_support = 3 }
+		}
+
+		country_event = {
+			id = YFC_BUN.31
+			hours = 1
+		}
+	}
+}
+
+country_event = { #Debate event #4
+	#Blocky's message to the whole Bunch Nation
+	#This one you come up all three
+	id = YFC_BUN.31
+	title = YFC_BUN.31.t
+	desc = YFC_BUN.31.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_BUN.31.a
+	}
+	option = {
+		name = YFC_BUN.31.b
+	}
+	option = {
+		name = YFC_BUN.31.c
 	}
 }

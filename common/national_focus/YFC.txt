@@ -947,17 +947,27 @@ focus_tree = {
 			IF = {
 				limit = {
 					has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+					NOT = {has_completed_focus =  YFC_focus_fully_cored}
 				}
 				country_event = {
 					id = YFC_event.14
 					hours = 1
 				}
 			}
-			ELSE = {
+			ELSE_IF = {
+				limit = {
+					has_completed_focus = YFC_focus_foster_new_society
+					NOT = {has_completed_focus =  YFC_focus_bunch_fostered}
+				}
 				country_event = {
 					id = YFC_event.11
 					hours = 1
 				}
+			}
+			ELSE = {
+				custom_effect_tooltip = l_money_gain_800K
+				add_to_variable = { money_amount = 8 }
+				add_political_power = -100
 			}
 		}
 	}
@@ -1450,10 +1460,11 @@ focus_tree = {
 		}
 
 		cost = 5
-		#more stab less pp
-		#event that lets you choose how many pows to free, more pows, more stab, less pp
 		completion_reward = {
-			#I'll swap stab for influence with a hidden small amount also added to Bunch influence
+			country_event = {
+				id = YFC_BUN.28
+				hours = 1
+			}
 		}
 	}
 
@@ -1534,6 +1545,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			#Okay So I'm just gonna add a descion that allows more investment into Bunch, costing money and increasing influence of Taser/Hammer 
+			custom_effect_tooltip = l_YFC_BUN_foster
 		}
 	}
 
@@ -1632,7 +1644,10 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 			YFC = {
 				create_faction = "The Three Musketeers"
-				add_to_faction = BUN
+				IF = {
+					limit = {BUN = {is_puppet = no}}
+					add_to_faction = BUN
+				}
 				add_to_faction = CRN
 			}
 			hidden_effect = {
@@ -1648,6 +1663,8 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+
+	#Jumps back to the evil path 
 
 	focus = {
 		id = YFC_focus_trial_over_eraser

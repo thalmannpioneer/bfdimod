@@ -1,0 +1,68 @@
+#CRN AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+CRN_focus_erasers_stockpiles_hate_raiders = {
+    #Fuck them bandits >:(
+    allowed = {
+		original_tag = CRN
+	}
+	enable = {
+		country_exists = BUN
+		has_war = no
+		BUN = {
+			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
+		}
+	}
+
+	abort = {
+		OR = {
+            NOT = {country_exists = BUN}
+			has_war = yes
+			BUN = {
+				OR = {
+					has_cosmetic_tag = BUN_revolt
+					has_cosmetic_tag = BUN_republic
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = BUN
+        value = 2000
+    }
+}
+
+## DIPLOMACY ##
+
+CRN_friend_YFC = {
+    #Work with YFC unless they backstab you
+    allowed = {
+		original_tag = CRN
+	}
+	enable = {
+		YFC = {has_completed_focus = YFC_focus_CRN_cooperation}
+		NOT = {has_opinion_modifier = betrayed_alliance}
+	}
+
+	abort = {
+		has_opinion_modifier = betrayed_alliance
+		NOT = {YFC = {has_completed_focus = YFC_focus_united_by_profits}}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = YFC
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = YFC
+		value = 10
+	}
+}

@@ -25,6 +25,21 @@ decision_YFC_foster_category = {
 			}
 		}
 	}
+
+	YFC_foster_Debate = { 
+		available = {always = no}
+		icon = GFX_mission_YFC_foster_Countdown  
+		is_good = yes
+		days_mission_timeout = 60
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			country_event = {
+				id = YFC_BUN.28
+				hours = 1
+			}
+		}
+	}
 	
 	YFC_foster_gaining_support = { 
 		activation = {
@@ -77,7 +92,7 @@ decision_YFC_foster_category = {
 	}
 
 	YFC_foster_fund = { 
-		icon = GFX_decision_eng_propaganda_campaigns
+		icon = GFX_decisions_YFC_foster_fund
       
 		visible = {
 			has_completed_focus = YFC_focus_support_blocky
@@ -171,6 +186,87 @@ decision_YFC_foster_category = {
 			modifier = {
 				add = 100
 				check_variable = { money_amount > 5 }
+			}
+		}
+	}
+
+	YFC_foster_invest = { 
+		icon = GFX_decisions_YFC_foster_fund
+      
+		visible = {
+			has_completed_focus = YFC_focus_support_blocky
+			has_completed_focus = YFC_focus_foster_new_society
+			has_completed_focus = YFC_focus_banks_too_big_to_fail
+			NOT = {has_completed_focus = YFC_focus_bunch_fostered} 
+		}
+
+		fire_only_once = no
+		cost = 0
+		days_remove = 30
+		days_re_enable = 50
+
+		available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
+            }
+		}
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 5 }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_YFC_BUN_foster_gain
+			hidden_effect = {
+				add_to_variable = { var_foster_YFC_support = 3.5 }
+				BUN = {add_to_variable = { money_amount = 5 }}
+			}	
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 12
+				check_variable = { money_amount > 6 }
+			}
+		}
+	}
+
+	YFC_foster_ruin_everyone = { 
+		icon = GFX_decisions_YFC_foster_fund
+      
+		visible = {
+			has_completed_focus = YFC_focus_support_blocky
+			has_completed_focus = YFC_focus_foster_new_society
+			is_ai = no
+			check_variable = { var_foster_YFC_support > 40 }
+			check_variable = { var_foster_YFC_support > var_foster_BUN_support }
+			check_variable = { var_foster_YFC_support > var_foster_CRN_support }
+		}
+
+		available = {
+			hidden_trigger = {is_ai = no}
+		}
+
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		days_re_enable = 10
+
+		remove_effect = {
+			custom_effect_tooltip = l_YFC_BUN_foster_lower
+			hidden_effect = {
+				subtract_from_variable = { var_foster_BUN_support = 3 }
+				subtract_from_variable = { var_foster_CRN_support = 3 }
+			}	
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 12
+				has_political_power > 30
 			}
 		}
 	}

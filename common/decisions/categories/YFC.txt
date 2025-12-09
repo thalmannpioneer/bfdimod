@@ -9,10 +9,10 @@ decision_YFC_trade_category = {
 	scripted_gui = bfdi_corp_trade_scriptedgui
 }
 
-ecision_YFC_sector_category = { 
+decision_YFC_sector_category = { 
 	allowed = { tag = YFC }
 	visible = { 
-		always = yes
+		always = no
 	}
 	priority = 14
 	icon = decision_category_operation_coinflip
@@ -43,7 +43,7 @@ decision_YFC_BUN_category = {
 	}
 	priority = 10
 	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
-	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	icon = GFX_decision_category_break_bunch
 	visible_when_empty = yes
 }
 
@@ -57,6 +57,6 @@ decision_YFC_foster_category = {
 	}
 	priority = 10
 	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
-	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	icon = GFX_decision_category_build_bunch
 	visible_when_empty = yes
 }

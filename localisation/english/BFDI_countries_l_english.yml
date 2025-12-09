@@ -74,10 +74,12 @@
  BUN: "Eraser's Bunch"
  BUN_DEF: "Bunch"
  BUN_ADJ: "Raiders"
-
  BUN_revolt: "Neo-Bunch"
  BUN_revolt_DEF: "Neo-Bunch"
  BUN_revolt_ADJ: "Neo-Bunchivists"
+ BUN_republic: "Bunch Republic"
+ BUN_republic_DEF: "Bunch Republic"
+ BUN_republic_ADJ: "Bunchivists"
  
  SRR: "GGRR Administration - South"
  SRR_DEF: "GGRR - South"
@@ -110,7 +112,6 @@
  YFC: "Yellow Face Corporation"
  YFC_ADJ: "Corporate"
  YFC_DEF: "Corp"
-
  YFC_raiders: "Yellow Face Raiders"
  YFC_raiders_ADJ: "Scammer"
  YFC_raiders_DEF: "Scam"

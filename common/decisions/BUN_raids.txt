@@ -15,6 +15,7 @@ decision_BUN_raids_category = {
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
 		}
 
 		fire_only_once = no
@@ -133,6 +134,7 @@ decision_BUN_raids_category = {
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
 		}
 
 		fire_only_once = no
@@ -251,6 +253,7 @@ decision_BUN_raids_category = {
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
 		}
 
 		fire_only_once = no
@@ -369,6 +372,7 @@ decision_BUN_raids_category = {
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
 		}
 
 		fire_only_once = no

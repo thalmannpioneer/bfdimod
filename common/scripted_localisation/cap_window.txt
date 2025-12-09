@@ -41,7 +41,15 @@ defined_text = {
 		localization_key = cap_window_desc_republic
 	}
 	text = {
-		trigger = { has_global_flag = cap_republic }
+		trigger = { has_global_flag = cap_alliance }
 		localization_key = cap_window_desc_alliance
+	}
+	text = {
+		trigger = { has_global_flag = cap_eraser }
+		localization_key = cap_window_desc_eraser
+	}
+	text = {
+		trigger = { has_global_flag = cap_neobunch }
+		localization_key = cap_window_desc_neobunch
 	}
 }

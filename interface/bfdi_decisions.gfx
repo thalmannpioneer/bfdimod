@@ -438,6 +438,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_category_break_bunch"
+		textureFile = "gfx/interface/decisions/decision_category_break_bunch.dds"
+	}
+
+	spriteType = {
 		name = "GFX_mission_YFC_BUN_growing"
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_BUN_growing.dds"
 	}
@@ -482,24 +487,34 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_BUN_Nearing_Defeat.dds"
 	}
 
-		spriteType = {
+	spriteType = {
+		name = "GFX_decision_category_build_bunch"
+		textureFile = "gfx/interface/decisions/decision_category_build_bunch.dds"
+	}
+
+	spriteType = {
 		name = "GFX_mission_YFC_foster_Countdown"
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_Countdown.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_mission_YFC_foster_gaining_support"
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_gaining_support.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_decisions_YFC_foster_propaganda"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_propaganda.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decisions_YFC_foster_fund"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_fund.dds"
+	}
+
 	#BUN
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_mission_BUN_Victory"
 		textureFile = "gfx/interface/decisions/GFX_mission_BUN_Victory.dds"
 	}
