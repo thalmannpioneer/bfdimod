@@ -1,3 +1,5 @@
+#DO NOT MERGE ONLY UPDATE, PLEASE ENSURE EVERYTHING IS UNDER THE on_actions BLOCK!!!!!!
+
 on_actions = {
     on_startup = {
         effect = {
@@ -322,7 +324,6 @@ on_actions = {
                 }
                 if = {
                     limit = {
-                        BUN = { is_ai = yes }
                         NOT = {
                             BUN = {
                                 has_dynamic_modifier = {
@@ -357,20 +358,17 @@ on_actions = {
                             }
                         }
                     }
+                    YFC = {complete_national_focus = YFC_focus_fully_cored}
                     85 = {
-                        add_compliance = 100
                         add_dynamic_modifier = {
                             modifier = BUN_lesser_state
                         }
                     }
                     212 = {
-                        add_compliance = 100
                         add_dynamic_modifier = {
                             modifier = BUN_lesser_state
                         }
                     }
-                    217 = {add_compliance = 40}
-                    218 = {add_compliance = 40}
                     IF = {
                         limit = {YFC = {has_war_with = CRN}}
                         CRN = {
@@ -385,6 +383,13 @@ on_actions = {
                         white_peace = ROOT
                     }
                 }
+                if = {
+                    limit = {has_cosmetic_tag = BUN_revolt}
+                    set_global_flag = cap_neobunch
+                }
+                else = {
+                    set_global_flag = cap_eraser
+                }        
             }
             FROM = {
                 annex_country = {

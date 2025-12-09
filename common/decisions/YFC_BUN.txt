@@ -25,7 +25,7 @@ decision_YFC_BUN_category = {
 				resistance < 70
 			}
 		}
-		icon = GFX_decision_revolt  
+		icon = GFX_mission_YFC_BUN_Growing_Riots  
 		is_good = no
 		days_mission_timeout = 120
 		timeout_effect = {
@@ -80,7 +80,7 @@ decision_YFC_BUN_category = {
 				}
 			}
 		}
-		icon = GFX_decision_eng_puppet_usa  
+		icon = GFX_mission_YFC_BUN_Nearing_Defeat  
 		is_good = no
 		days_mission_timeout = 45
 		timeout_effect = {
@@ -171,7 +171,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_Ceasefire = {
-		icon = GFX_decision_generic_form_nation
+		icon = GFX_decisions_YFC_BUN_Surrender
     
 		visible = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
@@ -556,7 +556,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_85_intergate = {
-		icon = GFX_decision_generic_operation
+		icon = GFX_decisions_YFC_BUN_Intergrate
 		state_target = yes
         targets = { state = 85 }
         on_map_mode = map_and_decisions_view
@@ -594,7 +594,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_212_intergate = {
-		icon = GFX_decision_generic_operation
+		icon = GFX_decisions_YFC_BUN_Intergrate
 		state_target = yes
         targets = { state = 212 }
         on_map_mode = map_and_decisions_view
@@ -632,7 +632,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_Demand_Zone = { 
-		icon = GFX_decision_infiltrate_state
+		icon = GFX_decisions_YFC_BUN_Demand_Zone
       
 		visible = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism

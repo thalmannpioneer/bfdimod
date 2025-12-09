@@ -457,6 +457,53 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_outposts.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_Demand_Zone"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Demand_Zone.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_Intergrate"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Intergrate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_BUN_Surrender"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Surrender.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mission_YFC_BUN_Growing_Riots"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_BUN_Growing_Riots.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mission_YFC_BUN_Nearing_Defeat"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_BUN_Nearing_Defeat.dds"
+	}
+
+		spriteType = {
+		name = "GFX_mission_YFC_foster_Countdown"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_Countdown.dds"
+	}
+
+		spriteType = {
+		name = "GFX_mission_YFC_foster_gaining_support"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_gaining_support.dds"
+	}
+
+		spriteType = {
+		name = "GFX_decisions_YFC_foster_propaganda"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_propaganda.dds"
+	}
+
+	#BUN
+
+		spriteType = {
+		name = "GFX_mission_BUN_Victory"
+		textureFile = "gfx/interface/decisions/GFX_mission_BUN_Victory.dds"
+	}
+
 	#GTR
 
 	spriteType = {

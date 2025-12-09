@@ -176,6 +176,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_BUN_blocky"
+		texturefile = "gfx/leaders/BUN/BUN_blocky.dds"
+	}
+
+	spriteType = {
 		name = "GFX_BUN_shackles"
 		texturefile = "gfx/leaders/BUN/BUN_shackles.dds"
 	}

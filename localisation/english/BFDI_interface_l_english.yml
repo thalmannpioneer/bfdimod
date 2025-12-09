@@ -44,7 +44,7 @@
  cap_window_participiants: "[winning_country.GetNameWithFlag]   Won   [losing_country.GetNameWithFlag]   in the Battle for Goiky"
  
  cap_window_desc_coiny: "Firey is the winner, again."
- cap_window_desc_firey: "The final slap."
+ cap_window_desc_firey: "The fires of revolution were choked out."
  cap_window_desc_flower: "Flower got kicked on the start, again."
  cap_window_desc_icy: "Another reason for revenge."
  cap_window_desc_rocky: "Order has been established in the Snowy Plateau."
@@ -53,7 +53,9 @@
  cap_window_desc_ruby: "No more sweets for Ruby."
  cap_window_desc_fanny: "I HATE LOSING!"
  cap_window_desc_republic: "The sun will never rise again on Casland."
- cap_window_desc_alliance: "The pencil broke."
+ cap_window_desc_alliance: "United they stood, divided they fell."
+ cap_window_desc_eraser: "Raiding their neighbors was not the wisest."
+ cap_window_desc_neobunch: "Fought to the last object for a lost vision."
  
  cap_window_close_button: "Dark times."
  

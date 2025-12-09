@@ -9,7 +9,7 @@ characters = {
 		field_marshal = {
 			traits = { trait_reckless politically_connected guerilla_fighter }
 			skill = 2
-			attack_skill = 2
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
@@ -30,6 +30,19 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 2
 			traits = { irregulars_officer guerilla_fighter }
+		}
+	}
+
+	BUN_blocky = {
+		name = BUN_blocky
+		portraits = { civilian = { large = GFX_BUN_blocky } }
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { politically_connected cavalry_officer }
 		}
 	}
 }

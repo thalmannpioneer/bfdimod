@@ -76,9 +76,9 @@
  
  BUN_eraser: "Eraser"
  BUN_eraser_desc: "As Goiky entered it's dark era, crime became rampant. Eraser then saw an opportunity. He led his gang, which trades in raids, robberies, and terror."
-
  BUN_shackles: "Shackles"
  BUN_shackles_desc: "Once a general for Eraser, had survived the manhunts that targeted him after the collapse of the army. He now leads the Neo-Bunch as one of the few surviving commanders."
+ BUN_blocky: "Blocky"
  
  SRR_wrench: "Wrench"
  SRR_wrench_desc: "Many people say: 'You can be anything if you put your mind to it'. Wrench, perhaps, can serve as an excellent example of that principle. They dreamed big, and now they hold the highest position in the GGRR administration. However, now they are more concerned about keeping their section of the road under control and in good condition rather than the privileges of being in charge."
@@ -99,6 +99,7 @@
  YFC_dora: "Dora"
  YFC_Coiny: "Coiny"
  YFC_tophat: "Top Hat"
+ YFC_blocky: "Blocky"
  
  SMG_grassy: "Grassy"
  SMG_one_joke: "§RReichsfuhrer One§!"

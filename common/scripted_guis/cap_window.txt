@@ -55,6 +55,18 @@ scripted_gui = {
 					flag = cap_republic
 					value = 0
 				}
+				set_global_flag = {
+					flag = cap_alliance
+					value = 0
+				}
+				set_global_flag = {
+					flag = cap_eraser
+					value = 0
+				}
+				set_global_flag = {
+					flag = cap_neobunch
+					value = 0
+				}
 			}
 		}
 	}

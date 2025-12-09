@@ -771,6 +771,10 @@ country_event = {
                 province = 51
                 value = 25
             }
+            set_province_name = {
+                id = 1957
+                name = VICTORY_POINTS_1957_New
+            }  
         }
     }
 }

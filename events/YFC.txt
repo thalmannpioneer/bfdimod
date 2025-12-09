@@ -1382,6 +1382,7 @@ country_event = {
 				add_country_leader_trait = insurgent_leader
 				country_lock_all_division_template = yes
 				set_cosmetic_tag = BUN_revolt
+				retire_character = BUN_blocky
 			}
 			BUN = { change_tag_from = YFC }
 			goto_state = 85
@@ -1886,6 +1887,7 @@ country_event = { #Annex Events 5
 		add_political_power = 30
 		85 = {add_resistance = -2}
 		212 = {add_resistance = -2}
+		recruit_character = YFC_blocky
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.14
