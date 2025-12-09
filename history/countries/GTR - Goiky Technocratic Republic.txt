@@ -4,7 +4,7 @@ capital = 89
 
 set_variable = { var_YCF_tradeSell_index = 1 }
 
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.4
 set_war_support = 0.3
 
@@ -17,21 +17,21 @@ add_equipment_to_stockpile = {
 }
 
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+    neutrality = 100
 }
 
 set_country_flag = GTR_stage1_selected
@@ -41,6 +41,10 @@ set_variable = { var_GTR_progressbar_stage3 = 5 }
 set_variable = { var_GTR_weekly_progress_stage1 = 2 }
 set_variable = { var_GTR_weekly_progress_stage2 = 2 }
 set_variable = { var_GTR_weekly_progress_stage3 = 0 }
+
+set_variable = { var_GTR_humaid_sf = 0.02 }
+set_variable = { var_GTR_humaid_ppg = 0.05 }
+set_variable = { var_GTR_humaid_cgf = -0.01 }
 
 add_ideas = undisturbed_isolation
 add_ideas = disarmed_nation
@@ -52,6 +56,8 @@ add_ideas = idea_GTR_announcergrad_supplying_problems
 add_ideas = idea_GTR_unsettled_government
 
 recruit_character = GTR_golfball
+recruit_character = GTR_duumvirate
 recruit_character = GTR_tennis_ball
 recruit_character = GTR_test_tube
 recruit_character = GTR_calculator
+recruit_character = GTR_swappy

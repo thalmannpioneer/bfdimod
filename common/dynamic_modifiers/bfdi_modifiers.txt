@@ -1,221 +1,229 @@
 idea_WGF_red_army = {
-	icon = GFX_idea_WGF_red_army
-	
-	army_org_factor = 0.05
-	political_power_gain = 0.25
-	conscription = var_idea_WGF_red_army_conscription
+    icon = GFX_idea_WGF_red_army
+
+    army_org_factor = 0.05
+    political_power_gain = 0.25
+    conscription = var_idea_WGF_red_army_conscription
 }
 
 idea_WGF_economical_devastation = {
-	icon = GFX_idea_WGF_economical_devastation
-	
-	consumer_goods_factor = var_WGF_economical_devastation_cgf
-	production_speed_buildings_factor = var_WGF_economical_devastation_sbf
-	production_factory_efficiency_gain_factor = var_WGF_economical_devastation_egf
-	political_power_gain = -0.25
-	research_speed_factor = var_WGF_economical_devastation_rsf
+    icon = GFX_idea_WGF_economical_devastation
+
+    consumer_goods_factor = var_WGF_economical_devastation_cgf
+    production_speed_buildings_factor = var_WGF_economical_devastation_sbf
+    production_factory_efficiency_gain_factor = var_WGF_economical_devastation_egf
+    political_power_gain = -0.25
+    research_speed_factor = var_WGF_economical_devastation_rsf
 }
 
 idea_GGR_anarchist_resistance = {
-	icon = GFX_idea_GGR_anarchist_resistance
-	
-	stability_factor = var_GGR_anarchists_sf
-	political_power_gain = var_GGR_anarchists_ppg
-	production_speed_buildings_factor = var_GGR_anarchists_bf
-	party_popularity_stability_factor = var_GGR_anarchists_psf
+    icon = GFX_idea_GGR_anarchist_resistance
+
+    stability_factor = var_GGR_anarchists_sf
+    political_power_gain = var_GGR_anarchists_ppg
+    production_speed_buildings_factor = var_GGR_anarchists_bf
+    party_popularity_stability_factor = var_GGR_anarchists_psf
 }
 
 idea_GGR_snowy_industry = {
-	icon = GFX_idea_GGR_snowy_industry
-	
-	production_speed_buildings_factor = var_GGR_industry_bs
-	production_factory_efficiency_gain_factor = var_GGR_industry_ef
-	production_factory_max_efficiency_factor = var_GGR_industry_em
-	industry_free_repair_factor = var_GGR_industry_fr
-	consumer_goods_factor = var_GGR_industry_cg
-	research_speed_factor = var_GGR_industry_rs
+    icon = GFX_idea_GGR_snowy_industry
+
+    production_speed_buildings_factor = var_GGR_industry_bs
+    production_factory_efficiency_gain_factor = var_GGR_industry_ef
+    production_factory_max_efficiency_factor = var_GGR_industry_em
+    industry_free_repair_factor = var_GGR_industry_fr
+    consumer_goods_factor = var_GGR_industry_cg
+    research_speed_factor = var_GGR_industry_rs
 }
 
 idea_GGR_segregation = {
-	icon = GFX_idea_GGR_segregation
-	
-	production_speed_buildings_factor = var_GGR_segregation_bs
-	production_factory_efficiency_gain_factor = var_GGR_segregation_ef
-	production_factory_max_efficiency_factor = var_GGR_segregation_em
-	consumer_goods_factor = var_GGR_segregation_cg
-	production_lack_of_resource_penalty_factor = var_GGR_segregation_rp
-	monthly_population = var_GGR_segregation_mp
-	stability_factor = var_GGR_segregation_sf
+    icon = GFX_idea_GGR_segregation
+
+    production_speed_buildings_factor = var_GGR_segregation_bs
+    production_factory_efficiency_gain_factor = var_GGR_segregation_ef
+    production_factory_max_efficiency_factor = var_GGR_segregation_em
+    consumer_goods_factor = var_GGR_segregation_cg
+    production_lack_of_resource_penalty_factor = var_GGR_segregation_rp
+    monthly_population = var_GGR_segregation_mp
+    stability_factor = var_GGR_segregation_sf
 }
 
 idea_GGR_snowy_vexels = {
-	icon = GFX_idea_GGR_snowy_vexels
-	
-	production_speed_buildings_factor = 0.1
-	production_factory_efficiency_gain_factor = 0.1
-	consumer_goods_factor = -0.05
-	political_power_cost = var_GGR_vexels_pc
+    icon = GFX_idea_GGR_snowy_vexels
+
+    production_speed_buildings_factor = 0.1
+    production_factory_efficiency_gain_factor = 0.1
+    consumer_goods_factor = -0.05
+    political_power_cost = var_GGR_vexels_pc
 }
 
 idea_GGR_verschneitwehr = {
-	icon = GFX_idea_GGR_verschneitwehr
-	
-	experience_gain_army = var_GGR_vsnw_eg
-	conscription = var_GGR_vsnw_rp
-	terrain_penalty_reduction = var_GGR_vsnw_tp
-	army_armor_attack_factor = var_GGR_vsnw_aa
-	army_org_factor = var_GGR_vsnw_ao
-	army_attack_factor = var_GGR_vsnw_ra
+    icon = GFX_idea_GGR_verschneitwehr
+
+    experience_gain_army = var_GGR_vsnw_eg
+    conscription = var_GGR_vsnw_rp
+    terrain_penalty_reduction = var_GGR_vsnw_tp
+    army_armor_attack_factor = var_GGR_vsnw_aa
+    army_org_factor = var_GGR_vsnw_ao
+    army_attack_factor = var_GGR_vsnw_ra
 }
 
 
 idea_GPG_dream_island_trauma = {
-	icon = GFX_idea_GPG_dream_island_trauma
-	
-	stability_factor = var_GPG_dreamislandtrauma_sf
-	political_power_gain = var_GPG_dreamislandtrauma_pg
-	production_speed_buildings_factor = var_GPG_dreamislandtrauma_bf
+    icon = GFX_idea_GPG_dream_island_trauma
+
+    stability_factor = var_GPG_dreamislandtrauma_sf
+    political_power_gain = var_GPG_dreamislandtrauma_pg
+    production_speed_buildings_factor = var_GPG_dreamislandtrauma_bf
 }
 
 idea_GPG_post_cw_crisis = {
-	icon = GFX_idea_GPG_post_cw_crisis
-	
-	consumer_goods_factor = var_GPG_postcw_cg
-	production_speed_buildings_factor = var_GPG_postcw_bs
-	industrial_capacity_factory = var_GPG_postcw_fo
-	stability_factor = var_GPG_postcw_sf
-	political_power_gain = var_GPG_postcw_pp
+    icon = GFX_idea_GPG_post_cw_crisis
+
+    consumer_goods_factor = var_GPG_postcw_cg
+    production_speed_buildings_factor = var_GPG_postcw_bs
+    industrial_capacity_factory = var_GPG_postcw_fo
+    stability_factor = var_GPG_postcw_sf
+    political_power_gain = var_GPG_postcw_pp
 }
 
 idea_GPG_army_agony = {
-	icon = GFX_idea_GPG_army_agony
-	
-	army_attack_factor = var_GPG_armyagony_aa
-	army_defence_factor = var_GPG_armyagony_ad
-	army_org_factor = var_GPG_armyagony_ao
-	experience_gain_army_factor = var_GPG_armyagony_eg
+    icon = GFX_idea_GPG_army_agony
+
+    army_attack_factor = var_GPG_armyagony_aa
+    army_defence_factor = var_GPG_armyagony_ad
+    army_org_factor = var_GPG_armyagony_ao
+    experience_gain_army_factor = var_GPG_armyagony_eg
 }
 
 idea_GPG_recommended_characters_council = {
-	icon = GFX_idea_GPG_recommended_characters_council
-	
-	stability_factor = var_GPG_rcc_sf
-	political_power_gain = var_GPG_rcc_pg
-	war_support_factor = var_GPG_rcc_ws
+    icon = GFX_idea_GPG_recommended_characters_council
+
+    stability_factor = var_GPG_rcc_sf
+    political_power_gain = var_GPG_rcc_pg
+    war_support_factor = var_GPG_rcc_ws
 }
 
 idea_GSR_decentralization = {
-	icon = GFX_idea_GSR_decentralization
-	
-	surrender_limit = 0.5
-	non_core_manpower = 0.5
-	war_support_factor = var_GSR_decentralization_wsf
-	stability_factor = var_GSR_decentralization_sf
-	army_org_factor = var_GSR_decentralization_aof
-	army_attack_factor = var_GSR_decentralization_aaf
-	consumer_goods_factor = var_GSR_decentralization_cgf
-	production_speed_buildings_factor = var_GSR_decentralization_psbf
-	conscription = var_GSR_decentralization_cf
-	compliance_growth = var_GSR_decentralization_cg
-	neutrality_drift = var_GSR_decentralization_nd
+    icon = GFX_idea_GSR_decentralization
+
+    surrender_limit = 0.5
+    non_core_manpower = 0.5
+    war_support_factor = var_GSR_decentralization_wsf
+    stability_factor = var_GSR_decentralization_sf
+    army_org_factor = var_GSR_decentralization_aof
+    army_attack_factor = var_GSR_decentralization_aaf
+    consumer_goods_factor = var_GSR_decentralization_cgf
+    production_speed_buildings_factor = var_GSR_decentralization_psbf
+    conscription = var_GSR_decentralization_cf
+    compliance_growth = var_GSR_decentralization_cg
+    neutrality_drift = var_GSR_decentralization_nd
 }
 
 
 idea_GFG_post_civil_war_crisis = {
-	icon = GFX_idea_GFG_post_civil_war_crisis
-	
-	consumer_goods_factor = var_GFG_crisis_cgf
-	production_speed_buildings_factor = var_GFG_crisis_psf
-	production_factory_efficiency_gain_factor = var_GFG_crisis_pfegf
-	stability_factor = var_GFG_crisis_sf
+    icon = GFX_idea_GFG_post_civil_war_crisis
+
+    consumer_goods_factor = var_GFG_crisis_cgf
+    production_speed_buildings_factor = var_GFG_crisis_psf
+    production_factory_efficiency_gain_factor = var_GFG_crisis_pfegf
+    stability_factor = var_GFG_crisis_sf
 }
 
 idea_GFG_massive_resistance = {
-	icon = GFX_idea_GFG_massive_resistance
-	
-	stability_factor = var_GFG_resistance_sf
-	conscription_factor = var_GFG_resistance_cf
+    icon = GFX_idea_GFG_massive_resistance
+
+    stability_factor = var_GFG_resistance_sf
+    conscription_factor = var_GFG_resistance_cf
 }
 
 idea_GDR_instability = {
-	icon = GFX_idea_GDR_instability
-	
-	stability_factor = var_GDR_instability_sf
-	war_support_factor = -1
-	political_power_gain = -0.2
+    icon = GFX_idea_GDR_instability
+
+    stability_factor = var_GDR_instability_sf
+    war_support_factor = -1
+    political_power_gain = -0.2
 }
 
 idea_GDR_payments_to_gpr = {
-	icon = GFX_idea_GDR_payments_to_gpr
-	
-	consumer_goods_factor = var_GDR_payments_to_gpr_cgf
-	production_factory_efficiency_gain_factor = var_GDR_payments_to_gpr_pegf
-	production_speed_buildings_factor = var_GDR_payments_to_gpr_psbf
+    icon = GFX_idea_GDR_payments_to_gpr
+
+    consumer_goods_factor = var_GDR_payments_to_gpr_cgf
+    production_factory_efficiency_gain_factor = var_GDR_payments_to_gpr_pegf
+    production_speed_buildings_factor = var_GDR_payments_to_gpr_psbf
+}
+
+idea_GTR_humanitary_aid = {
+    icon = GFX_idea_GTR_humanitary_aid
+
+    stability_factor = var_GTR_humaid_sf
+    political_power_gain = var_GTR_humaid_ppg
+    consumer_goods_factor = var_GTR_humaid_cgf
 }
 
 idea_YFC_anarchic_lands = {
-	icon = GFX_idea_YFC_anarchic_lands
-	
-	political_power_gain = var_idea_YFC_anarchic_lands_PP
-	production_speed_buildings_factor = -5
-	industry_free_repair_factor = var_idea_YFC_anarchic_lands_repair
-	production_speed_rail_way_factor = var_idea_YFC_anarchic_lands_rail
-	production_speed_supply_node_factor = var_idea_YFC_anarchic_lands_node
-	mobilization_laws_cost_factor = 5
+    icon = GFX_idea_YFC_anarchic_lands
+
+    political_power_gain = var_idea_YFC_anarchic_lands_PP
+    production_speed_buildings_factor = -5
+    industry_free_repair_factor = var_idea_YFC_anarchic_lands_repair
+    production_speed_rail_way_factor = var_idea_YFC_anarchic_lands_rail
+    production_speed_supply_node_factor = var_idea_YFC_anarchic_lands_node
+    mobilization_laws_cost_factor = 5
 }
 
 idea_YFC_integration_YFC = { #YFC Buffs and nerfs in the deal. Given in YFC_focus_numismatian_subjugation
-	icon = GFX_idea_generic_constitutional_guarantees
+    icon = GFX_idea_generic_constitutional_guarantees
 
-	army_attack_factor = var_idea_YFC_integration_YFC_army_attack_factor
-	army_defence_factor = var_idea_YFC_integration_YFC_army_defence_factor
-	command_power_gain_mult = var_idea_YFC_integration_YFC_command_power_gain_mult
-	stability_factor = var_idea_YFC_integration_YFC_stability_factor
-	war_support_factor = var_idea_YFC_integration_YFC_war_support_factor 
-	political_power_factor = var_idea_YFC_integration_YFC_political_power_factor 
+    army_attack_factor = var_idea_YFC_integration_YFC_army_attack_factor
+    army_defence_factor = var_idea_YFC_integration_YFC_army_defence_factor
+    command_power_gain_mult = var_idea_YFC_integration_YFC_command_power_gain_mult
+    stability_factor = var_idea_YFC_integration_YFC_stability_factor
+    war_support_factor = var_idea_YFC_integration_YFC_war_support_factor
+    political_power_factor = var_idea_YFC_integration_YFC_political_power_factor
 }
 
 idea_CRN_integration_CRN = { #CRN Buffs and nerfs in the deal. Given in YFC_focus_numismatian_subjugation
-	icon = GFX_idea_generic_constitutional_guarantees
-	
-	army_attack_factor = var_idea_YFC_integration_CRN_army_attack_factor
-	army_defence_factor = var_idea_YFC_integration_CRN_army_defence_factor
-	command_power_gain_mult = var_idea_YFC_integration_CRN_command_power_gain_mult
-	stability_factor = var_idea_YFC_integration_CRN_stability_factor
-	war_support_factor = var_idea_YFC_integration_CRN_war_support_factor 
-	political_power_factor = var_idea_YFC_integration_CRN_political_power_factor
-	communism_drift = var_idea_YFC_integration_CRN_communism_drift
+    icon = GFX_idea_generic_constitutional_guarantees
+
+    army_attack_factor = var_idea_YFC_integration_CRN_army_attack_factor
+    army_defence_factor = var_idea_YFC_integration_CRN_army_defence_factor
+    command_power_gain_mult = var_idea_YFC_integration_CRN_command_power_gain_mult
+    stability_factor = var_idea_YFC_integration_CRN_stability_factor
+    war_support_factor = var_idea_YFC_integration_CRN_war_support_factor
+    political_power_factor = var_idea_YFC_integration_CRN_political_power_factor
+    communism_drift = var_idea_YFC_integration_CRN_communism_drift
 }
 
 idea_BUN_Ticking_Bomb = { #Bunch Revolt Idea
-	icon = GFX_idea_BUN_ticking_bomb
-	
-	stability_factor = var_idea_BUN_Ticking_Bomb_stability_factor
-	war_support_factor = var_idea_BUN_Ticking_Bomb_war_support_factor
-	army_core_attack_factor = var_idea_BUN_Ticking_Bomb_army_core_attack_factor
-	army_core_defence_factor = var_idea_BUN_Ticking_Bomb_army_core_defence_factor
-	surrender_limit = var_idea_BUN_Ticking_Bomb_surrender_limit 
-	ai_focus_aggressive_factor = var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor
+    icon = GFX_idea_BUN_ticking_bomb
+
+    stability_factor = var_idea_BUN_Ticking_Bomb_stability_factor
+    war_support_factor = var_idea_BUN_Ticking_Bomb_war_support_factor
+    army_core_attack_factor = var_idea_BUN_Ticking_Bomb_army_core_attack_factor
+    army_core_defence_factor = var_idea_BUN_Ticking_Bomb_army_core_defence_factor
+    surrender_limit = var_idea_BUN_Ticking_Bomb_surrender_limit
+    ai_focus_aggressive_factor = var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor
 }
 
 idea_Musketeers_OWN = { #Musketeers OWN
-	icon = GFX_idea_generic_constitutional_guarantees
-	
-	trade_opinion_factor = var_own_trade_opinion_factor
-	political_power_factor = var_own_political_power_factor
-	production_lack_of_resource = var_own_production_lack_of_resource
-	min_export = var_own_min_export
-	consumer_goods_factor = var_own_consumer_goods_factor
-	local_resources_factor = var_own_local_resources_factor
+    icon = GFX_idea_generic_constitutional_guarantees
+
+    trade_opinion_factor = var_own_trade_opinion_factor
+    political_power_factor = var_own_political_power_factor
+    production_lack_of_resource = var_own_production_lack_of_resource
+    min_export = var_own_min_export
+    consumer_goods_factor = var_own_consumer_goods_factor
+    local_resources_factor = var_own_local_resources_factor
 }
 
 idea_Musketeers_UDC = { #Musketeers UDC
-	icon = GFX_idea_generic_constitutional_guarantees
-	
-	army_org_factor = var_udc_army_org_factor
-	experience_gain_army_factor = var_udc_experience_gain_army_factor
-	training_time_factor = var_udc_training_time_factor
-	max_command_power = var_udc_max_command_power
-	command_power_gain_mult = var_udc_command_power_gain_mult
-	max_planning_factor = var_udc_max_planning_factor
+    icon = GFX_idea_generic_constitutional_guarantees
+
+    army_org_factor = var_udc_army_org_factor
+    experience_gain_army_factor = var_udc_experience_gain_army_factor
+    training_time_factor = var_udc_training_time_factor
+    max_command_power = var_udc_max_command_power
+    command_power_gain_mult = var_udc_command_power_gain_mult
+    max_planning_factor = var_udc_max_planning_factor
 }

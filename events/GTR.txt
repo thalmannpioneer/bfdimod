@@ -256,8 +256,6 @@ country_event = {
 
     option = {
         name = GTR_event.11.a
-        <<<<<<< Updated upstream
-        =======
         custom_effect_tooltip = l_GTR_administration_collapse
         hidden_effect = {
             set_cosmetic_tag = GTR_collapse
@@ -284,19 +282,174 @@ country_event = {
 
     option = {
         name = GTR_event.12.a
-        >>>>>>> Stashed changes
-        retire_country_leader = yes
+        add_advisor_role = {
+            character = GTR_tennis_ball
+            advisor = {
+                slot = political_advisor
+                idea_token = idea_GTR_tennis_ball
+                traits = { second_hand }
+            }
+        }
+        hidden_effect = {
+            country_event = {
+                id = GTR_event.13
+                days = 10
+                random_hours = 12
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.13
+    title = GTR_event.13.t
+    desc = GTR_event.13.desc
+    picture = GFX_GTR_event13
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.13.a
         custom_effect_tooltip = l_GTR_new_focus_tree
         hidden_effect = {
             load_focus_tree = GTR_secondtree_focus_tree
             complete_national_focus = GTR_focus_tennis_ball_rise
+            retire_country_leader = yes
             add_country_leader_role = {
-                character = GTR_tennis_ball
+                character = GTR_duumvirate
                 promote_leader = yes
                 country_leader = {
                     ideology = technocratism
-                    traits = { technocrat economist }
+                    traits = { abusive_relationships }
                 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.14
+    title = GTR_event.14.t
+    desc = GTR_event.14.desc
+    picture = GFX_GTR_event14
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.14.a
+        add_manpower = 320
+        add_timed_idea = {
+            idea = idea_GTR_saved_posessions
+            days = 180
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.15
+    title = GTR_event.15.t
+    desc = GTR_event.15.desc
+    picture = GFX_GTR_event15
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.15.a
+        add_advisor_role = {
+            character = GTR_swappy
+            advisor = {
+                slot = political_advisor
+                idea_token = idea_GTR_swappy
+                traits = { editor }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.16
+    title = GTR_event.16.t
+    desc = GTR_event.16.desc
+    picture = GFX_GTR_event16
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.16.a
+        ai_chance = {
+            base = 10
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+        }
+        add_political_power = -50
+        GTR = { country_event = GTR_event.17 }
+        add_opinion_modifier = {
+            target = GTR
+            modifier = medium_increase
+        }
+        GTR = {
+            add_opinion_modifier = {
+                target = PREV
+                modifier = medium_increase
+            }
+        }
+    }
+    option = {
+        name = GTR_event.16.b
+        ai_chance = { base = 10 }
+    }
+}
+
+country_event = {
+    id = GTR_event.17
+    title = GTR_event.17.t
+    desc = GTR_event.17.desc
+    picture = GFX_GTR_event17
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.17.a
+        custom_effect_tooltip = l_GTR_improves_humaid
+        add_to_variable = { var_GTR_humaid_sf = 0.02 }
+        add_to_variable = { var_GTR_humaid_ppg = 0.05 }
+        add_to_variable = { var_GTR_humaid_cgf = -0.01 }
+    }
+}
+
+country_event = {
+    id = GTR_event.18
+    title = GTR_event.18.t
+    desc = GTR_event.18.desc
+    picture = GFX_GTR_event18
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.18.a
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = GTR_event.19
+    title = GTR_event.19.t
+    desc = GTR_event.19.desc
+    picture = GFX_GTR_event19
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.19.a
+        set_cosmetic_tag = GTR_republic
+        custom_effect_tooltip = l_GTR_integrate_north
+        hidden_effect = {
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = bfdinews.29
+                play_song = "GTR_technocratic_republic"
             }
         }
     }

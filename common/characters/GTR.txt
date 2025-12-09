@@ -1,53 +1,56 @@
 characters = {
-	GTR_golfball = {
-		name = GTR_golfball
-		portraits = {
-			civilian = { large = GFX_GTR_golfball }
-		}
-		country_leader = {
-			ideology = technocratism
-			desc = GTR_golfball_desc
-		}
-		scientist = {
-			traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist }
-			skills = {
-				specialization_nuclear = 2
-			}
-		}
-	}
-	GTR_tennis_ball = {
-		name = GTR_tennis_ball
-		portraits = { 
-			civilian = {
-				large = GFX_GTR_tennis_ball
-				small = GFX_idea_GTR_tennis_ball
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = idea_GTR_tennis_ball
-			traits = { second_hand }
-		}
-	}
-	GTR_test_tube = {
-		name = GTR_test_tube
-		portraits = { civilian = { small = GFX_idea_GTR_test_tube } }
-		advisor = {
-			slot = political_advisor
-			idea_token = idea_GTR_test_tube
-			traits = { technocrat }
-		}
-	}
-	GTR_calculator = {
-		name = GTR_calculator
-		portraits = { army = { large = GFX_GTR_calculator } }
-		corps_commander = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
-			traits = { trait_cautious }
-		}
-	}
+    GTR_golfball = {
+        name = GTR_golfball
+        portraits = {
+            civilian = { large = GFX_GTR_golfball }
+        }
+        country_leader = {
+            ideology = technocratism
+            desc = GTR_golfball_desc
+        }
+        scientist = {
+            traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist }
+            skills = {
+                specialization_nuclear = 2
+            }
+        }
+    }
+    GTR_duumvirate = {
+        name = GTR_duumvirate
+        portraits = { civilian = { large = GFX_GTR_duumvirate } }
+    }
+    GTR_tennis_ball = {
+        name = GTR_tennis_ball
+        portraits = {
+            civilian = {
+                large = GFX_GTR_tennis_ball
+                small = GFX_idea_GTR_tennis_ball
+            }
+        }
+    }
+    GTR_test_tube = {
+        name = GTR_test_tube
+        portraits = { civilian = { small = GFX_idea_GTR_test_tube } }
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_GTR_test_tube
+            traits = { technocrat }
+        }
+    }
+    GTR_calculator = {
+        name = GTR_calculator
+        portraits = { army = { large = GFX_GTR_calculator } }
+        corps_commander = {
+            skill = 1
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+            traits = { trait_cautious }
+        }
+    }
+    GTR_swappy = {
+        name = GTR_swappy
+        portraits = { civilian = { small = GFX_idea_GTR_swappy } }
+    }
 }

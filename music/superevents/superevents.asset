@@ -45,4 +45,9 @@ music = {
 	file = "SOS_pin_coronation.ogg"
 	volume = 1
 }
+music = {
+	name = "GTR_technocratic_republic"
+	file = "GTR_technocratic_republic.ogg"
+	volume = 1
+}
 

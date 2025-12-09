@@ -1,161 +1,173 @@
 decision_GTR_project_1_category = {
-	GTR_project1_outbreak_mission = {
-		priority = 100
-		days_mission_timeout = 230
-		timeout_effect = {
-			custom_effect_tooltip = l_GTR_outbreak
-			hidden_effect = {
-				set_country_flag = project_1_fail
-				country_event = GTR_event.8
-			}
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = l_GTR_all_stages_done
-				has_country_flag = stage1_done
-				has_country_flag = stage2_done
-				has_country_flag = stage3_done
-			}
-		}
-		selectable_mission = no
-		activation = { always = no }
-		
-		icon = GFX_decisions_GTR_project1_outbreak_mission
-	}
-	
-	GTR_project1_slowdown_stage1_mission = {
-		priority = 90
-		days_mission_timeout = 18
-		timeout_effect = {
-			custom_effect_tooltip = l_GTR_slowdown_stage1
-			subtract_from_variable = { var_GTR_weekly_progress_stage1 = 1 }
-		}
-		available = { always = no }
-		selectable_mission = no
-		activation = {
-			hidden_trigger = {
-				has_country_flag = project1_mechanic_started
-				NOT = { has_country_flag = stage1_done }
-				check_variable = { var_GTR_weekly_progress_stage1 > 1 }
-			}
-		}
-		
-		icon = GFX_decisions_GTR_project1_slowdown_stage1_mission
-	}
-	GTR_project1_slowdown_stage2_mission = {
-		priority = 80
-		days_mission_timeout = 20
-		timeout_effect = {
-			custom_effect_tooltip = l_GTR_slowdown_stage2
-			subtract_from_variable = { var_GTR_weekly_progress_stage2 = 1 }
-		}
-		available = { always = no }
-		selectable_mission = no
-		activation = {
-			custom_trigger_tooltip = {
-				has_country_flag = project1_mechanic_started
-				NOT = { has_country_flag = stage2_done }
-				check_variable = { var_GTR_weekly_progress_stage2 > 1 }
-			}
-		}
-		
-		icon = GFX_decisions_GTR_project1_slowdown_stage2_mission
-	}
-	GTR_project1_slowdown_stage3_mission = {
-		days_mission_timeout = 22
-		timeout_effect = {
-			custom_effect_tooltip = l_GTR_slowdown_stage3
-			subtract_from_variable = { var_GTR_weekly_progress_stage3 = 1 }
-		}
-		available = { always = no }
-		selectable_mission = no
-		activation = {
-			hidden_trigger = {
-				has_country_flag = project1_mechanic_started
-				NOT = { has_country_flag = stage3_done }
-				check_variable = { var_GTR_weekly_progress_stage3 > 1 }
-			}
-		}
-		
-		icon = GFX_decisions_GTR_project1_slowdown_stage3_mission
-	}
-	
-	GTR_project1_resources_requisition = {
-		cost = 0
-		available = {
-			hidden_trigger = {
-				NOT = { has_country_flag = stage2_done }
-				has_completed_focus = GTR_focus_austerity_politics
-				has_country_flag = project1_mechanic_started
-				check_variable = { days_mission_timeout@GTR_project1_outbreak_mission > 10 } #scary dynamic variables D:
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				NOT = { has_country_flag = stage2_done }
-				has_completed_focus = GTR_focus_austerity_politics
-				has_country_flag = project1_mechanic_started
-			}
-		}
-		days_remove = 15
-		ai_will_do = {
-			base = 20
-			modifier = {
-				add = -20
-				check_variable = { days_mission_timeout@GTR_project1_outbreak_mission < 40 }
-			}
-		}
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = GTR_project1_outbreak_mission
-				days = -10
-			}
-			custom_effect_tooltip = l_GTR_resources_requisition
-			add_to_variable = { var_GTR_progressbar_stage2 = 15 }
-			if = {
-				limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
-				set_variable = { var_GTR_progressbar_stage2 = 100 }
-				set_variable = { var_GTR_weekly_progress_stage2 = 0 }
-				set_country_flag = stage2_done
-				if = {
-					limit = { has_country_flag = stage1_done }
-					set_variable = { var_GTR_weekly_progress_stage3 = 10 }
-				}
-				set_country_flag = project1_notif_enabled
-			}
-		}
-		
-		icon = GFX_decisions_GTR_project1_resources_requisition
-	}
-	
-	GTR_project1_research_reassignments = {
-		cost = 0
-		available = {
-			hidden_trigger = {
-				NOT = { has_country_flag = stage1_done }
-				has_country_flag = project1_mechanic_started
-			}
-		}
-		visible = {
-			hidden_trigger = {
-				NOT = { has_country_flag = stage1_done }
-				has_country_flag = project1_mechanic_started
-			}
-		}
-		ai_will_do = {
-			base = 20
-		}
-		modifier = {
+    GTR_project1_outbreak_mission = {
+        priority = 100
+        days_mission_timeout = 230
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_outbreak
+            hidden_effect = {
+                set_country_flag = project_1_fail
+                country_event = GTR_event.8
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_all_stages_done
+                has_country_flag = stage1_done
+                has_country_flag = stage2_done
+                has_country_flag = stage3_done
+            }
+        }
+        selectable_mission = no
+        activation = { always = no }
+
+        icon = GFX_decisions_GTR_project1_outbreak_mission
+    }
+
+    GTR_project1_slowdown_stage1_mission = {
+        priority = 90
+        days_mission_timeout = 18
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_slowdown_stage1
+            subtract_from_variable = { var_GTR_weekly_progress_stage1 = 1 }
+            if = {
+                limit = { check_variable = { var_GTR_weekly_progress_stage1 < 0 } }
+                set_variable = { var_GTR_weekly_progress_stage1 = 0 }
+            }
+        }
+        available = { always = no }
+        selectable_mission = no
+        activation = {
+            hidden_trigger = {
+                has_country_flag = project1_mechanic_started
+                NOT = { has_country_flag = stage1_done }
+                check_variable = { var_GTR_weekly_progress_stage1 > 1 }
+            }
+        }
+
+        icon = GFX_decisions_GTR_project1_slowdown_stage1_mission
+    }
+    GTR_project1_slowdown_stage2_mission = {
+        priority = 80
+        days_mission_timeout = 20
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_slowdown_stage2
+            subtract_from_variable = { var_GTR_weekly_progress_stage2 = 1 }
+            if = {
+                limit = { check_variable = { var_GTR_weekly_progress_stage2 < 0 } }
+                set_variable = { var_GTR_weekly_progress_stage2 = 0 }
+            }
+        }
+        available = { always = no }
+        selectable_mission = no
+        activation = {
+            custom_trigger_tooltip = {
+                has_country_flag = project1_mechanic_started
+                NOT = { has_country_flag = stage2_done }
+                check_variable = { var_GTR_weekly_progress_stage2 > 1 }
+            }
+        }
+
+        icon = GFX_decisions_GTR_project1_slowdown_stage2_mission
+    }
+    GTR_project1_slowdown_stage3_mission = {
+        days_mission_timeout = 22
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_slowdown_stage3
+            subtract_from_variable = { var_GTR_weekly_progress_stage3 = 1 }
+            if = {
+                limit = { check_variable = { var_GTR_weekly_progress_stage3 < 0 } }
+                set_variable = { var_GTR_weekly_progress_stage3 = 0 }
+            }
+        }
+        available = { always = no }
+        selectable_mission = no
+        activation = {
+            hidden_trigger = {
+                has_country_flag = project1_mechanic_started
+                NOT = { has_country_flag = stage3_done }
+                check_variable = { var_GTR_weekly_progress_stage3 > 1 }
+            }
+        }
+
+        icon = GFX_decisions_GTR_project1_slowdown_stage3_mission
+    }
+
+    GTR_project1_resources_requisition = {
+        cost = 0
+        available = {
+            hidden_trigger = {
+                NOT = { has_country_flag = stage2_done }
+                has_completed_focus = GTR_focus_austerity_politics
+                has_country_flag = project1_mechanic_started
+                check_variable = { days_mission_timeout@GTR_project1_outbreak_mission > 10 } #scary dynamic variables D:
+            }
+        }
+        visible = {
+            hidden_trigger = {
+                NOT = { has_country_flag = stage2_done }
+                has_completed_focus = GTR_focus_austerity_politics
+                has_country_flag = project1_mechanic_started
+            }
+        }
+        days_remove = 15
+        ai_will_do = {
+            base = 20
+            modifier = {
+                add = -20
+                check_variable = { days_mission_timeout@GTR_project1_outbreak_mission < 40 }
+            }
+        }
+        complete_effect = {
+            add_days_mission_timeout = {
+                mission = GTR_project1_outbreak_mission
+                days = -10
+            }
+            custom_effect_tooltip = l_GTR_resources_requisition
+            add_to_variable = { var_GTR_progressbar_stage2 = 15 }
+            if = {
+                limit = { check_variable = { var_GTR_progressbar_stage2 > 100 } }
+                set_variable = { var_GTR_progressbar_stage2 = 100 }
+                set_variable = { var_GTR_weekly_progress_stage2 = 0 }
+                set_country_flag = stage2_done
+                if = {
+                    limit = { has_country_flag = stage1_done }
+                    set_variable = { var_GTR_weekly_progress_stage3 = 10 }
+                }
+                set_country_flag = project1_notif_enabled
+            }
+        }
+
+        icon = GFX_decisions_GTR_project1_resources_requisition
+    }
+
+    GTR_project1_research_reassignments = {
+        cost = 0
+        available = {
+            hidden_trigger = {
+                NOT = { has_country_flag = stage1_done }
+                has_country_flag = project1_mechanic_started
+            }
+        }
+        visible = {
+            hidden_trigger = {
+                NOT = { has_country_flag = stage1_done }
+                has_country_flag = project1_mechanic_started
+            }
+        }
+        ai_will_do = {
+            base = 20
+        }
+        modifier = {
             research_speed_factor = -1
         }
-		days_remove = 50
-		complete_effect = {
-			custom_effect_tooltip = l_GTR_adds_progress_stage1
-			hidden_effect = {
-				add_to_variable = { var_GTR_weekly_progress_stage1 = 3 }
-			}
-		}
-		
-		icon = GFX_decisions_GTR_project1_research_reassignments
-	}
+        days_remove = 50
+        complete_effect = {
+            custom_effect_tooltip = l_GTR_adds_progress_stage1
+            hidden_effect = {
+                add_to_variable = { var_GTR_weekly_progress_stage1 = 3 }
+            }
+        }
+
+        icon = GFX_decisions_GTR_project1_research_reassignments
+    }
 }

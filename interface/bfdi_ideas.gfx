@@ -384,12 +384,32 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/idea_GTR_destroyed_university.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_saved_posessions
+		textureFile = gfx/interface/ideas/idea_GTR_saved_posessions.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_bottom_initiative
+		textureFile = gfx/interface/ideas/idea_GTR_bottom_initiative.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_functioning_bureaucracy
+		textureFile = gfx/interface/ideas/idea_GTR_functioning_bureaucracy.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_humanitary_aid
+		textureFile = gfx/interface/ideas/idea_GTR_humanitary_aid.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}
 	spriteType = {
 		name = GFX_idea_GTR_test_tube
-		texturefile = gfx/interface/ideas/idea_CRN_test_tube.dds
+		texturefile = gfx/interface/ideas/idea_GTR_test_tube.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_swappy
+		textureFile = gfx/interface/ideas/idea_GTR_swappy.dds
 	}
 	
 	spriteType = {

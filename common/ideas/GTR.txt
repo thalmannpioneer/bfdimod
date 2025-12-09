@@ -40,5 +40,25 @@ ideas = {
                 political_power_gain = -0.1
             }
         }
+        idea_GTR_saved_posessions = {
+            picture = GTR_saved_posessions
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        idea_GTR_bottom_initiative = {
+            picture = GTR_bottom_initiative
+            political_power_gain = 0.1
+            stability_factor = 0.05
+        }
+        idea_GTR_functioning_bureaucracy = {
+            picture = GTR_functioning_bureaucracy
+            modifier = {
+                consumer_goods_factor = 0.1
+                stability_factor = 0.05
+                war_support_factor = -0.1
+                political_power_gain = -0.5
+            }
+        }
     }
 }

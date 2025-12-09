@@ -50,3 +50,7 @@ GTR_collapse = {
     color = rgb { 150 150 150 }
     color_ui = rgb { 150 150 150 }
 }
+GTR_republic = {
+    color = rgb { 205 205 205 }
+    color_ui = rgb { 205 205 205 }
+}

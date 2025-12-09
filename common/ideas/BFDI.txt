@@ -1,0 +1,7 @@
+ideas = {
+	country = {
+		BUL_army_restrictions_aat = { #dummy to get rid of vanilla errors
+			modifier = { }
+		}
+	}
+}

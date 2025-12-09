@@ -60,7 +60,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.4
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -82,7 +82,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.3
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -101,7 +101,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.6
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -121,7 +121,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.7
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -149,7 +149,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.5
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -180,7 +180,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.11
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -205,7 +205,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.9
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -230,7 +230,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.10
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -255,7 +255,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.8
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -275,7 +275,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.1
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -316,7 +316,7 @@ on_actions = {
                         limit = { is_ai = no }
                         news_event = {
                             id = bfdinews_cities.2
-                            hour = 1
+                            hours = 1
                             random_hours = 6
                         }
                     }
@@ -389,7 +389,7 @@ on_actions = {
                 }
                 else = {
                     set_global_flag = cap_eraser
-                }        
+                }
             }
             FROM = {
                 annex_country = {
@@ -416,14 +416,63 @@ on_actions = {
         }
     }
 
-	on_weekly = {
-		effect = {
-			IF = {
-				limit = {is_ai = no}
-				BFDI_money_diplay_update = yes #Updates the player's money faster while not lagging the game
-			}
-		}	
-	}
+    on_weekly = {
+        effect = {
+            IF = {
+                limit = {is_ai = no}
+                BFDI_money_diplay_update = yes #Updates the player's money faster while not lagging the game
+            }
+        }
+    }
+
+    on_monthly = { #MONEY GAIN
+        effect = {
+            IF = {
+                limit = {
+                    has_country_flag = has_money_system
+                    country_exists = ROOT
+                }
+                #As 1 = 100K and 10 = 1M
+                set_temp_variable = { adding_amount = 0 }
+                set_temp_variable = { combined_modifer = 1 }
+
+                IF = {
+                    limit = {is_ai = yes}
+                    set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
+                    multiply_temp_variable = {civ_count = 0.2}
+                }
+                ELSE = {
+                    set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
+                }
+                set_temp_variable = { stability = ROOT.stability }
+                multiply_temp_variable = {civ_count = stability}
+                add_to_temp_variable = { adding_amount = civ_count }
+
+                set_temp_variable = { population = ROOT.max_manpower_k }
+                divide_temp_variable = { population = 1000 }
+                add_to_temp_variable = { adding_amount = population }
+
+                IF = {
+                    limit = {
+                        has_war = yes
+                    }
+                    multiply_temp_variable = {combined_modifer = 0.5} #War bad for the profits >:/
+                }
+                IF = {
+                    limit = {
+                        has_government = communism
+                    }
+                    multiply_temp_variable = {combined_modifer = 0.8} #I'll think on how to make the crashes work
+                }
+
+                multiply_temp_variable = {adding_amount = combined_modifer}
+                add_to_variable = { money_amount = adding_amount }
+
+                BFDI_money_diplay_update = yes
+            }
+        }
+    }
+
 
     on_monthly = { #MONEY GAIN
         effect = {

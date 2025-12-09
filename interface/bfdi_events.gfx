@@ -592,6 +592,30 @@ SpriteTypes = {
 		name = GFX_GTR_event12
 		texturefile = gfx/event_pictures/GTR_event12.dds
 	}
+	spriteType = {
+		name = GFX_GTR_event13
+		texturefile = gfx/event_pictures/GTR_event13.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event14
+		textureFile = gfx/event_pictures/GTR_event14.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event15
+		textureFile = gfx/event_pictures/GTR_event15.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event16
+		textureFile = gfx/event_pictures/GTR_event16.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event17
+		textureFile = gfx/event_pictures/GTR_event17.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event18
+		textureFile = gfx/event_pictures/GTR_event18.dds
+	}
 	
 	
 	spriteType = {
@@ -697,6 +721,15 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_bfdinews28
 		texturefile = gfx/event_pictures/bfdinews28.dds
+	}
+	frameAnimatedSpriteType = {
+		name = GFX_bfdinews29
+		textureFile = gfx/event_pictures/bfdinews29.dds
+		noOfFrames = 13
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
 	}
 	spriteType = {
 		name = GFX_bfdinews_city

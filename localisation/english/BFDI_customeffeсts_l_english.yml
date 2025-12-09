@@ -171,7 +171,9 @@
  l_GTR_testings: "§5Testings are starting...§!"
  l_GTR_nuclear_annihilation: "§tThat's bad...§!"
  l_GTR_administration_collapse: "§tSituation is unclear...§!"
- l_GTR_new_focus_tree: "§6Tennis Ball will take active measures!§!"
+ l_GTR_new_focus_tree: "§7Tennis Ball§! joins §YThe Government§!."
+ l_GTR_republic_creation: "§8Technocratic Republic rises from the ashes.§!"
+ l_GTR_integrate_north: "Opens §YNorth Integration Decisions§!!"
 
  l_money_gain_100K: "Gain §G100K Dollars§!"
  l_money_gain_200K: "Gain §G200K Dollars§!"

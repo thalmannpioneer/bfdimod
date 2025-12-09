@@ -1007,9 +1007,34 @@
  GTR_event.11.desc: "Driving through the blackened fields of the campus into the university area, objects were met with a scene of horrific destruction. The piles of ashes were remeniscent of the moon's dust, and toxic clouds of covered the most of the alma mater's buildings, many of which were reduced to rubble."
  GTR_event.11.a: "Let's try to find survivors."
 
- GTR_event.12.t: "Apathy of the Rulership"
- GTR_event.12.desc: "Everything that Golfball was doing recently is blaming herself for mistakes and miscalculations, that led to this tragedy. Almost the entire Campus was destroyed, a lot of valuable technologies were lost, not even talking about dead. In this situation, when we need a strong leader, Golfball can't rule anymore."
- GTR_event.12.a: "Tennis Ball takes power."
+ GTR_event.12.t: "At the right time, in the right place"
+ GTR_event.12.desc: "'Eraser's outposts must be not in the best condition, right?' the border guard asked ironically at the entrance to Announcergrad.\n\n'I have heard the news.' replied the ellipse-formed guest, who, however, was familiar to every object here.\n\n'Well, I suppose it has already reached Cary,' armed soldier answered calmly.\n'You know, I think you're just in time. There's a lot of things to sort out.'"
+ GTR_event.12.a: "Here's your pass."
+
+ GTR_event.13.t: "Arriving at the office"
+ GTR_event.13.desc: "Everything Golfball has done recently has been a reflection on its own failures and miscalculations. Almost the entire campus was destroyed, valuable technologies were lost, not to mention our lost objects. In this situation, when we need a strong leader, Golfball is no longer capable of ruling alone. But Tennis Ball's arrival has had an inspiring effect even on her, not to mention the other residents of Announcergrad. His fresh ideas and administrative talent, despite his somewhat reserved nature, may help us to endure these hard times."
+ GTR_event.13.a: "Tennis Ball can be trusted."
+
+ GTR_event.14.t: "Excavations"
+ GTR_event.14.desc: "During the rescue operations, we were able to retrieve numerous valuable technologies and locate some survivors, who were successfully transported to Announcergrad. This will somewhat improve our harsh situation."
+ GTR_event.14.a: "Worderful job everyone!"
+
+ GTR_event.15.t: "Political Refugees"
+ GTR_event.15.desc: "Some talented minds are fleeing from Casland, too. We shouldn't let their potential get lost. Only by our combined intellect, we can survive these harsh times."
+ GTR_event.15.a: "Welcome!"
+
+ GTR_event.16.t: "Aid for Announcergrad?"
+ GTR_event.16.desc: "We've heard news of a harsh situation in Announcergrad, even more harsh than the in rest of Goiky. Will we send some aid to those poor objects?"
+ GTR_event.16.a: "Fine."
+ GTR_event.16.b: "Not our jurisdiction."
+
+ GTR_event.17.t: "Aid arrived!"
+ GTR_event.17.desc: "We have received humanitarian aid from sympathetic objects from another land!"
+ GTR_event.17.a: "Excellent!"
+
+ GTR_event.18.t: "Discussion"
+ GTR_event.18.desc: "'Shut your filthy mouth!' - Golfball's anger found it's way out pretty easily.\n'I would rather die than let you cut finances for this project!'\n\nHeavy silence occupied the building.\nTennis Ball interrupted it.\n\n'Listen, Golfie, I think you are too harsh. This will not last forever, we will catch that up later! Besides, it's pretty harsh for us with resources. Maybe you can reconsider this offer?'"
+ GTR_event.18.a: "'Maybe, you are right.'"
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
@@ -1131,6 +1156,10 @@
  bfdinews.28.t: "Explosion in University!"
  bfdinews.28.desc: "Our correspondents from Central Goiky report on the aftermath of the accident that occurred near Announcergrad! A mushroom cloud of smoke several miles high was reportedly visible from the town to the south, and windows were blown out in the town. The number of casualties is unknown at this time, but we will continue to monitor the situation."
  bfdinews.28.a: "A lot of dead, it seems."
+
+ bfdinews.29.t: "Proclamation of the Technocratic Republic!"
+ bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, aссording to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
+ bfdinews.29.a: "Golfball actually did it?"
 
 
 #City fall events

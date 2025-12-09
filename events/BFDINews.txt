@@ -605,6 +605,21 @@ news_event = {
     }
 }
 
+news_event = {
+    id = bfdinews.29
+    title = bfdinews.29.t
+    desc = bfdinews.29.desc
+    picture = GFX_bfdinews29
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.29.a
+    }
+}
+
 #City Fall events#
 
 news_event = {

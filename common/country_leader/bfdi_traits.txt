@@ -1,112 +1,116 @@
 leader_traits = {
-	shy_civil_servant = {
-		sprite = 13
-		stability_factor = 0.1
-		political_power_gain = -0.25
+    shy_civil_servant = {
+        sprite = 13
+        stability_factor = 0.1
+        political_power_gain = -0.25
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	special_authorities = {
-		economy_cost_factor = -0.1
-		trade_laws_cost_factor = -0.1
-		mobilization_laws_cost_factor = -0.1
-		stability_factor = 0.05
-	}
-	
-	collective_authority = {
-		political_power_gain = 0.25
-		stability_factor = 0.05
-	}
-	
-	didnt_finished_gem_school = {
-		research_speed_factor = -0.1
-	}
-	
-	ruby_heart = {
-		economy_cost_factor = 0.1
-		trade_laws_cost_factor = 0.1
-		mobilization_laws_cost_factor = 0.1
-		stability_factor = 0.05
-	}
-	
-	staunch_liberal = {
-		stability_factor = 0.05
-		consumer_goods_factor = -0.05
-	}
-	
-	well_read = {
-		stability_factor = 0.05
-		research_speed_factor = 0.05
-	}
-	
-	conservative_trait = {
-		stability_factor = 0.1
-	}
+        ai_will_do = {
+            factor = 1
+        }
+    }
 
-	foreign_advisor = {
-		sprite = 13
+    special_authorities = {
+        economy_cost_factor = -0.1
+        trade_laws_cost_factor = -0.1
+        mobilization_laws_cost_factor = -0.1
+        stability_factor = 0.05
+    }
 
-		army_defence_factor = 0.1
-		breakthrough_factor = 0.1
-	}
+    collective_authority = {
+        political_power_gain = 0.25
+        stability_factor = 0.05
+    }
 
-	tax_reformer = {
-		sprite = 13
-	
-		stability_factor = 0.05
-		consumer_goods_factor = -0.1
-	}
+    didnt_finished_gem_school = {
+        research_speed_factor = -0.1
+    }
 
-	market_interventionist = {
-		sprite = 13
-	
-		production_speed_industrial_complex_factor = 0.10
-		production_factory_max_efficiency_factor = -0.05
-		line_change_production_efficiency_factor = 0.08
-		stability_factor = 0.1
-		political_power_gain = -0.1
-	}
+    ruby_heart = {
+        economy_cost_factor = 0.1
+        trade_laws_cost_factor = 0.1
+        mobilization_laws_cost_factor = 0.1
+        stability_factor = 0.05
+    }
 
-	free_market_proponent = {
-		sprite = 13
-	
-		consumer_goods_factor = 0.1
-		political_power_factor = -0.05
-		production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_factory = 0.10
-		conversion_cost_civ_to_mil_factor = 0.15
-	}
+    staunch_liberal = {
+        stability_factor = 0.05
+        consumer_goods_factor = -0.05
+    }
 
-	insurgent_leader = {
-		sprite = 13
-	
-		equipment_capture = 0.15
-		army_morale_factor = 0.1
-		army_speed_factor = 0.05
-		attrition = -0.25
-		ai_focus_aggressive_factor = 0.5
-	}
+    well_read = {
+        stability_factor = 0.05
+        research_speed_factor = 0.05
+    }
 
-	anarchist_annihilator = {
-		sprite = 13
-	
-		communism_drift = -0.01
-		communism_acceptance = -50
-		ai_focus_peaceful_factor = -0.5
-	}
+    conservative_trait = {
+        stability_factor = 0.1
+    }
 
-	skilled_military_staff = { #The great Iron Hand buff
-		army_org_factor = 0.1
-	}
-	
-	second_hand = {
-		sprite = 13
-	
-		stability_factor = 0.05
-		political_power_gain = 0.1
-		consumer_goods_factor = -0.05
-	}
+    abusive_relationships = {
+        stability_factor = -0.05
+    }
+
+    foreign_advisor = {
+        sprite = 13
+
+        army_defence_factor = 0.1
+        breakthrough_factor = 0.1
+    }
+
+    tax_reformer = {
+        sprite = 13
+
+        stability_factor = 0.05
+        consumer_goods_factor = -0.1
+    }
+
+    market_interventionist = {
+        sprite = 13
+
+        production_speed_industrial_complex_factor = 0.10
+        production_factory_max_efficiency_factor = -0.05
+        line_change_production_efficiency_factor = 0.08
+        stability_factor = 0.1
+        political_power_gain = -0.1
+    }
+
+    free_market_proponent = {
+        sprite = 13
+
+        consumer_goods_factor = 0.1
+        political_power_factor = -0.05
+        production_factory_max_efficiency_factor = 0.1
+        industrial_capacity_factory = 0.10
+        conversion_cost_civ_to_mil_factor = 0.15
+    }
+
+    insurgent_leader = {
+        sprite = 13
+
+        equipment_capture = 0.15
+        army_morale_factor = 0.1
+        army_speed_factor = 0.05
+        attrition = -0.25
+        ai_focus_aggressive_factor = 0.5
+    }
+
+    anarchist_annihilator = {
+        sprite = 13
+
+        communism_drift = -0.01
+        communism_acceptance = -50
+        ai_focus_peaceful_factor = -0.5
+    }
+
+    skilled_military_staff = { #The great Iron Hand buff
+        army_org_factor = 0.1
+    }
+
+    second_hand = {
+        sprite = 13
+
+        stability_factor = 0.05
+        political_power_gain = 0.1
+        consumer_goods_factor = -0.05
+    }
 }
