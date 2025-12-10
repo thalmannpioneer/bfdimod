@@ -483,7 +483,7 @@ country_event = {
 				remove_core_of = EMP
 				add_victory_points = {
 					province = 10828
-					value = 1
+					value = 3
 				}
 			}
 		}

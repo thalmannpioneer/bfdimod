@@ -693,15 +693,15 @@
  YFC_event.16.desc: "The small squadron we sent to examen the east has returned to us, showing their findings. It seems as if there are many locations that could become a small, profitable port. According to them, a couple of pieces of the east jut out into small peninsulas, with which shipping could be made easy. For now, we've ordered them to set up shop (literally) at the nearest spot they could, however, should we expand further, the east could become extroardinarily profitable. Unfortunately, it seems as if some sectorials aren't currently on board with this idea, citing that we wouldn't be able to properly devote our time to this endevour. They are likely right, sure, however this definitely would not hurt to attempt in the future."
  YFC_event.16.a: "At least we have a good foothold!" #gives some money and state 225, setting the vp there to 12 instead of 1 (RE: Just gonna turn this into a VP, can be increased later)
 
- YFC_event.17.t: "Question of the POWs"
- YFC_event.17.desc: "In recent talks, Blocky brought up the great idea of releasing POWs from the war. We have had many jailed so far with very long prison sentences for the many crimes they had committed. However, releasing them would make Blocky look like a hero and boost his support. The Sectorials have repeatedly stated that they do not want many of them to be released. So then, what is the fate of the POWs?"
+ YFC_event.17.t: "On the Prisoners of War"
+ YFC_event.17.desc: "In recent talks, Blocky brought up the idea of releasing the several extremists we took as prisoner during the war. We had indeed jailed many, giving them very long prison sentences for the many crimes they had committed. However, releasing them would make Blocky look like a hero, which would likely boost his suppport in the former Bunchivist lands. Everyone knows our populace to not really care for what may be happening elsewhere, so we have not to worry of their opinions in this deal. Though, the Sectorials have repeatedly stated that they do not want many of them to be released. Beaker specifically stating that we had 'no reason to appeal to those criminals,' and Top Hat agreeing, saying that 'the barbarians to our south deserve not our respect.' So then, what shall the fate of the POWs be?"
  YFC_event.17.a: "Release only the non-combat role ones."
  YFC_event.17.b: "Release mainly the lower ranks."
  YFC_event.17.c: "Release nearly everyone."
 
  YFC_event.18.t: "Upcoming Debate!"
- YFC_event.18.desc: "With our campaigning in progress, Numismatia has sent us a planned debate happening in 2 months. The debate already has Eraser and Pen planned to come. Obviously we will have Blocky be part of this debate as well. This could be our chance to ensure victory in the polls."
- YFC_event.18.a: " We'll be ready!"
+ YFC_event.18.desc: "The campaigning process of the last few weeks has been quite samey, some objects stating that they likely won't vote for any candidate. Numismatia abhors this reality, saying that it is 'imperative that the people vote,' for some reason. In order to make things more interesting for the common Bunchivist, Numismatia has decided to host a debate in Snowpath, between the candidates. Eraser and Pen have both already planned to attend, meaning that Blocky will likely want to follow suit. Obviously, we would want Blocky to be take part in this debate as well, seeing as this could be a good opportunity for him. This could be our chance to ensure victory in the polls. A profitable puppet is more than worth investing in."
+ YFC_event.18.a: "Can we bribe the judges?"
 
  YFC_event.19.t: "New Face Of a New Bunch"
  YFC_event.19.desc: "Blocky sent a letter through the mail only a few days after the Bunch fell, stating he wished to work with us. Over the months, we kept this letter in mind, and today, he came to remind us of this offer. Numismatia has been really obsessed with the idea of the former anarchical lands 'democratically' 'electing' a new leader for themselves, however the cabinet doesn't really know what those words mean. Regardless, they told us to put forward a candidate on the same day that Blocky made his visit. He outlined big plans for the former anarchist lands, and profitable plans, at that. In all honesty, his willingness to work with us seems a bit strange. Though, who would we be if we didn't endorse his candidacy?" 
@@ -932,6 +932,24 @@
  YFC_BUN.27.desc: "Despite our efforts in campaigning, it seems as the nominee preferred most by the Bunch's population was Pen. For some reason, Pen was the candidate Numismatia had funded. Why anyone would willingly ask for Pen to do anything is beyond nearly every corporate executive, however, we must still accept his victory. Pen still has quite the large amount of debt owed to us, however, Numismatia has been insistent on getting us to clear, or at least reduce the amount of debt. Hopefully, word of this campaign doesn't spread to the Bunchivist objects, the dollar knows we can't afford another war."
  YFC_BUN.27.a: "Bitch better have my money!"
 
+ YFC_BUN.28.t: "'So, how do you three feel about the economy?'"
+ YFC_BUN.28.desc: "A younger object from the crowd raised their hand, asking the aforementioned questioned. They looked to be about college aged, maybe older. Definitely a hardcore Bunchivist, though, seeing as they had brought with them the flag of what revolters call the 'Neo-Bunch.' Regardless, Eraser took it upon himself to answer the question first. He likely had no issues with the revolters, the nimrod.\n'I think a new Bunch Republic shouldn't have an economy at all. We already have a system made up; you make things, someone steals them, or you defend yourself. I guess, if I had to call it anything, it'd be an economy of strength.' The response gained some cheers from the crowd, but they were quickly quieted by Pen's incessant shushing. \nQuickly, he cobbled together a response, 'Uh, I think Eraser had some great points, but I... like capitalism. But like, with democracy! We could... Um, uh...' Pen's attempt at proving himself quickly fell apart as he attempted to continue speaking. Pitiful, but not worthy of such. The crowd didn't really react with much more than confusion. \nThinking on his feet, without any real plans to go off of besides the current audience reactions, Blocky realized he needed to talk about something that'd rile up the crowd. Quickly, he started with his on-the-spot plans about..."
+ YFC_BUN.28.a: "A command economy."
+ YFC_BUN.28.b: "A Numismatian style free market!"
+ YFC_BUN.28.c: "Yellow Facer investment, and the opportunities they bring!"
+
+ YFC_BUN.29.t: "'Ah, there's probably gonna be threats from other people, right? How do you plan on addressing those?'"
+ YFC_BUN.29.desc: ""
+ YFC_BUN.29.a: ""
+
+ YFC_BUN.30.t: "'Will us Bunchers be expected to work with Yellow Face or the Numismatians? If we are, how?'"
+ YFC_BUN.30.desc: ""
+ YFC_BUN.30.a: ""
+
+ YFC_BUN.31.t: "'This may come off as a 'stupid question,' but, what exactly do you aim to achieve?'"
+ YFC_BUN.31.desc: ""
+ YFC_BUN.31.a: ""
+
  BUN_YFC.1.t: "The Yellow Facer Ideology Crumbles." #if eraser is killed or working in the YFC's govt
  BUN_YFC.1.desc: "We're finally free! After our defeat in the war with the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Sadly, Eraser is nowhere to be found, and Pen's been killed. Blocky, that traitor, decided to side with the Corporation, so, there's no one directly in line to really head anything. We'll sort that out later, for now, we've gotta make sure this revolution doesn't die!"
  BUN_YFC.1.a: "The Bunch, forever and always!"
@@ -1158,7 +1176,7 @@
  bfdinews.28.a: "A lot of dead, it seems."
 
  bfdinews.29.t: "Proclamation of the Technocratic Republic!"
- bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, aссording to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
+ bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, according to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
  bfdinews.29.a: "Golfball actually did it?"
 
 
