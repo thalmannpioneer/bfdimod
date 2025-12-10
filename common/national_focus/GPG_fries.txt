@@ -1,659 +1,659 @@
 focus_tree = {
-	id = GPG_fries_focus_tree
-	
-	country = {
-		factor = 0
-	}
-	
-	default = no
-	reset_on_civilwar = no
-	
-	focus = {
-		id = GPG_focus_never_again
-		x = 17
-		y = 0
-		icon = GFX_focus_GPG_never_again
-		
-		cost = 2
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = 15
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_fries_no_more_factions
-		relative_position_id = GPG_focus_never_again
-		x = -2
-		y = 1
-		icon = GFX_focus_GPG_no_more_factions
-		
-		prerequisite = { focus = GPG_focus_never_again }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			country_event = GPG_event.32
-		}
-	}
+    id = GPG_fries_focus_tree
 
-	focus = {
-		id = GPG_focus_fries_constitution
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 1
-		icon = GFX_focus_GPG_constitution_2
-		
-		prerequisite = { focus = GPG_focus_never_again }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			country_event = GPG_event.33
-		}
-	}
+    country = {
+        factor = 0
+    }
 
-	focus = {
-		id = GPG_focus_unlimited_interruptions
-		relative_position_id = GPG_focus_never_again
-		x = 2
-		y = 1
-		icon = GFX_focus_GPG_unlimited_interruptions
-		
-		prerequisite = { focus = GPG_focus_never_again }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_fries_second_congress_end
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 2
-		icon = GFX_focus_GPG_second_congress_end_2
-		
-		prerequisite = { focus = GPG_focus_fries_no_more_factions }
-		prerequisite = { focus = GPG_focus_fries_constitution }
-		prerequisite = { focus = GPG_focus_unlimited_interruptions }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_congress_ended
-			add_stability = 0.05
-			set_country_flag = congress_ended
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_eternal_transition
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 4
-		icon = GFX_focus_GPG_eternal_transition
-		
-		prerequisite = { focus = GPG_focus_fries_second_congress_end }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GPG_status_quo
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_anti_crisis_measures
-		relative_position_id = GPG_focus_never_again
-		x = -7
-		y = 5
-		icon = GFX_focus_GPG_anti_crisis_measures
-		
-		prerequisite = { focus = GPG_focus_eternal_transition }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_restore_fabrics
-		relative_position_id = GPG_focus_never_again
-		x = -8
-		y = 6
-		icon = GFX_focus_GPG_restore_fabrics
-		
-		prerequisite = { focus = GPG_focus_anti_crisis_measures }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GPG_postcw_bs = 0.2 }
-			206 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = { arms_factory > 0 }
-					remove_building = {
-						type = arms_factory
-						level = 1
-					}
-				}
-				else_if = {
-					limit = { 8 = { arms_factory > 0 } }
-					8 = {
-						remove_building = {
-							type = arms_factory
-							level = 1
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_object_industry
-		relative_position_id = GPG_focus_never_again
-		x = -8
-		y = 7
-		icon = GFX_focus_GPG_object_industry
-		
-		prerequisite = { focus = GPG_focus_restore_fabrics }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GPG_postcw_bs = 0.1 }
-			add_to_variable = { var_GPG_postcw_cg = -0.2 }
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_ideas = idea_GPG_object_industry
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_cancel_military_law
-		relative_position_id = GPG_focus_never_again
-		x = -6
-		y = 6
-		icon = GFX_focus_GPG_cancel_military_law
-		
-		prerequisite = { focus = GPG_focus_anti_crisis_measures }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GPG_postcw_sf = 0.05 }
-			add_to_variable = { var_GPG_postcw_cg = -0.1 }
-			add_war_support = -0.05
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_careful_trading
-		relative_position_id = GPG_focus_never_again
-		x = -6
-		y = 7
-		icon = GFX_focus_GPG_careful_trading
-		
-		prerequisite = { focus = GPG_focus_cancel_military_law }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = limited_exports
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_heart_of_goiky
-		relative_position_id = GPG_focus_never_again
-		x = -7
-		y = 8
-		icon = GFX_focus_GPG_heart_of_goiky
-		
-		prerequisite = { focus = GPG_focus_object_industry }
-		prerequisite = { focus = GPG_focus_careful_trading }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			remove_dynamic_modifier = { modifier = idea_GPG_post_cw_crisis }
-			add_timed_idea = {
-				idea = idea_GPG_slow_recovery
-				days = 450
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_completed_focus = GPG_focus_eternal_chairman
-						has_completed_focus = GPG_focus_end_military_turmoil
-					}
-					country_event = {
-						id = GPG_event.46
-						days = 20
-						random_days = 10
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_power_for_fries
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 5
-		icon = GFX_focus_GPG_power_for_fries
-		
-		prerequisite = { focus = GPG_focus_eternal_transition }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_trait = {
-				character = GPG_fries
-				ideology = centrism
-				trait = special_authorities
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_announcers_example
-		relative_position_id = GPG_focus_never_again
-		x = -1
-		y = 6
-		icon = GFX_focus_GPG_announcers_example
-		
-		prerequisite = { focus = GPG_focus_power_for_fries }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GPG_great_manager
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_our_great_past
-		relative_position_id = GPG_focus_never_again
-		x = -1
-		y = 7
-		icon = GFX_focus_GPG_our_great_past
-		
-		prerequisite = { focus = GPG_focus_announcers_example }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_autocratic_cabinet
-		relative_position_id = GPG_focus_never_again
-		x = 1
-		y = 6
-		icon = GFX_focus_GPG_autocratic_cabinet
-		
-		prerequisite = { focus = GPG_focus_power_for_fries }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_puppet_congress
-		relative_position_id = GPG_focus_never_again
-		x = 1
-		y = 7
-		icon = GFX_focus_GPG_puppet_congress
-		
-		prerequisite = { focus = GPG_focus_autocratic_cabinet }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_eternal_chairman
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 8
-		icon = GFX_focus_GPG_eternal_chairman
-		
-		prerequisite = { focus = GPG_focus_puppet_congress }
-		prerequisite = { focus = GPG_focus_our_great_past }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = idea_GPG_status_quo
-				add_idea = idea_GPG_strong_government
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_completed_focus = GPG_focus_heart_of_goiky
-						has_completed_focus = GPG_focus_end_military_turmoil
-					}
-					country_event = {
-						id = GPG_event.46
-						days = 20
-						random_days = 10
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_army_reformation
-		relative_position_id = GPG_focus_never_again
-		x = 7
-		y = 5
-		icon = GFX_focus_GPG_army_reformation
-		
-		prerequisite = { focus = GPG_focus_eternal_transition }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			army_experience = 25
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_personnel_army
-		relative_position_id = GPG_focus_never_again
-		x = 6
-		y = 6
-		icon = GFX_focus_GPG_personnel_army
-		
-		prerequisite = { focus = GPG_focus_army_reformation }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_army
-			add_to_variable = { var_GPG_armyagony_ao = 0.05 }
-			add_to_variable = { var_GPG_armyagony_eg = 0.25 }
-			add_manpower = 20000
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_rearmament
-		relative_position_id = GPG_focus_never_again
-		x = 6
-		y = 7
-		icon = GFX_focus_GPG_rearmament
-		
-		prerequisite = { focus = GPG_focus_personnel_army }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_army
-			add_timed_idea = {
-				idea = idea_GPG_rearmament
-				days = 365
-			}
-			add_to_variable = { var_GPG_armyagony_aa = 0.1 }
-			add_to_variable = { var_GPG_armyagony_ad = 0.05 }
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_recharnd_military_academy
-		relative_position_id = GPG_focus_never_again
-		x = 8
-		y = 6
-		icon = GFX_focus_GPG_recharnd_military_academy
-		
-		prerequisite = { focus = GPG_focus_army_reformation }
-		
-		cost = 6
-		
-		ai_will_do = {
-        	base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_army
-			add_to_variable = { var_GPG_armyagony_eg = 0.25 }
-			army_experience = 10
-			IF = {
-				limit = {
-					has_character = GPG_nickel
-				}
-				GPG_nickel = {
-					add_skill_level = 1
-				}
-			}
-			IF = {
-				limit = {
-					has_character = GPG_Cloudy
-				}
-				GPG_Cloudy = {
-					add_skill_level = 1
-					add_advisor_role = {
-						advisor = {
-							slot = army_chief
-							idea_token = idea_GPG_cloudy
-							ledger = army
-							traits = { army_logistics_2 }
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_doctrine_development
-		relative_position_id = GPG_focus_never_again
-		x = 8
-		y = 7
-		icon = GFX_focus_GPG_doctrine_development
-		
-		prerequisite = { focus = GPG_focus_recharnd_military_academy }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_end_military_turmoil
-		relative_position_id = GPG_focus_never_again
-		x = 7
-		y = 8
-		icon = GFX_focus_GPG_end_military_turmoil
-		
-		prerequisite = { focus = GPG_focus_rearmament }
-		prerequisite = { focus = GPG_focus_doctrine_development }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_allows_divisions_training
-			remove_dynamic_modifier = { modifier = idea_GPG_army_agony }
-			country_lock_all_division_template = no
-			hidden_effect = {
-				if = {
-					limit = {
-						has_completed_focus = GPG_focus_heart_of_goiky
-						has_completed_focus = GPG_focus_eternal_chairman
-					}
-					country_event = {
-						id = GPG_event.46
-						days = 20
-						random_days = 10
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GPG_focus_lawnland_question
-		relative_position_id = GPG_focus_never_again
-		x = 0
-		y = 10
-		icon = GFX_focus_GPG_lawnland_question
-		
-		prerequisite = { focus = GPG_focus_heart_of_goiky }
-		prerequisite = { focus = GPG_focus_eternal_chairman }
-		prerequisite = { focus = GPG_focus_end_military_turmoil }
-		
-		allow_branch = {
-			has_country_flag = lawnland_decisions_opened
-		}
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_lawnland
-		}
-	}
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = GPG_focus_never_again
+        x = 17
+        y = 0
+        icon = GFX_focus_GPG_never_again
+
+        cost = 2
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = 15
+        }
+    }
+
+    focus = {
+        id = GPG_focus_fries_no_more_factions
+        relative_position_id = GPG_focus_never_again
+        x = -2
+        y = 1
+        icon = GFX_focus_GPG_no_more_factions
+
+        prerequisite = { focus = GPG_focus_never_again }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            country_event = GPG_event.32
+        }
+    }
+
+    focus = {
+        id = GPG_focus_fries_constitution
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 1
+        icon = GFX_focus_GPG_constitution_2
+
+        prerequisite = { focus = GPG_focus_never_again }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            country_event = GPG_event.33
+        }
+    }
+
+    focus = {
+        id = GPG_focus_unlimited_interruptions
+        relative_position_id = GPG_focus_never_again
+        x = 2
+        y = 1
+        icon = GFX_focus_GPG_unlimited_interruptions
+
+        prerequisite = { focus = GPG_focus_never_again }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GPG_focus_fries_second_congress_end
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 2
+        icon = GFX_focus_GPG_second_congress_end_2
+
+        prerequisite = { focus = GPG_focus_fries_no_more_factions }
+        prerequisite = { focus = GPG_focus_fries_constitution }
+        prerequisite = { focus = GPG_focus_unlimited_interruptions }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_congress_ended
+            add_stability = 0.05
+            set_country_flag = congress_ended
+        }
+    }
+
+    focus = {
+        id = GPG_focus_eternal_transition
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 4
+        icon = GFX_focus_GPG_eternal_transition
+
+        prerequisite = { focus = GPG_focus_fries_second_congress_end }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GPG_status_quo
+        }
+    }
+
+    focus = {
+        id = GPG_focus_anti_crisis_measures
+        relative_position_id = GPG_focus_never_again
+        x = -7
+        y = 5
+        icon = GFX_focus_GPG_anti_crisis_measures
+
+        prerequisite = { focus = GPG_focus_eternal_transition }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GPG_focus_restore_fabrics
+        relative_position_id = GPG_focus_never_again
+        x = -8
+        y = 6
+        icon = GFX_focus_GPG_restore_fabrics
+
+        prerequisite = { focus = GPG_focus_anti_crisis_measures }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GPG_postcw_bs = 0.2 }
+            206 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+                if = {
+                    limit = { arms_factory > 0 }
+                    remove_building = {
+                        type = arms_factory
+                        level = 1
+                    }
+                }
+                else_if = {
+                    limit = { 8 = { arms_factory > 0 } }
+                    8 = {
+                        remove_building = {
+                            type = arms_factory
+                            level = 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_object_industry
+        relative_position_id = GPG_focus_never_again
+        x = -8
+        y = 7
+        icon = GFX_focus_GPG_object_industry
+
+        prerequisite = { focus = GPG_focus_restore_fabrics }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GPG_postcw_bs = 0.1 }
+            add_to_variable = { var_GPG_postcw_cg = -0.2 }
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_ideas = idea_GPG_object_industry
+        }
+    }
+
+    focus = {
+        id = GPG_focus_cancel_military_law
+        relative_position_id = GPG_focus_never_again
+        x = -6
+        y = 6
+        icon = GFX_focus_GPG_cancel_military_law
+
+        prerequisite = { focus = GPG_focus_anti_crisis_measures }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GPG_postcw_sf = 0.05 }
+            add_to_variable = { var_GPG_postcw_cg = -0.1 }
+            add_war_support = -0.05
+        }
+    }
+
+    focus = {
+        id = GPG_focus_careful_trading
+        relative_position_id = GPG_focus_never_again
+        x = -6
+        y = 7
+        icon = GFX_focus_GPG_careful_trading
+
+        prerequisite = { focus = GPG_focus_cancel_military_law }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = limited_exports
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = GPG_focus_heart_of_goiky
+        relative_position_id = GPG_focus_never_again
+        x = -7
+        y = 8
+        icon = GFX_focus_GPG_heart_of_goiky
+
+        prerequisite = { focus = GPG_focus_object_industry }
+        prerequisite = { focus = GPG_focus_careful_trading }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            remove_dynamic_modifier = { modifier = idea_GPG_post_cw_crisis }
+            add_timed_idea = {
+                idea = idea_GPG_slow_recovery
+                days = 450
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = GPG_focus_eternal_chairman
+                        has_completed_focus = GPG_focus_end_military_turmoil
+                    }
+                    country_event = {
+                        id = GPG_event.46
+                        days = 20
+                        random_days = 10
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_power_for_fries
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 5
+        icon = GFX_focus_GPG_power_for_fries
+
+        prerequisite = { focus = GPG_focus_eternal_transition }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_trait = {
+                character = GPG_fries
+                ideology = centrism
+                trait = special_authorities
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_announcers_example
+        relative_position_id = GPG_focus_never_again
+        x = -1
+        y = 6
+        icon = GFX_focus_GPG_announcers_example
+
+        prerequisite = { focus = GPG_focus_power_for_fries }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GPG_great_manager
+        }
+    }
+
+    focus = {
+        id = GPG_focus_our_great_past
+        relative_position_id = GPG_focus_never_again
+        x = -1
+        y = 7
+        icon = GFX_focus_GPG_our_great_past
+
+        prerequisite = { focus = GPG_focus_announcers_example }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.05
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = GPG_focus_autocratic_cabinet
+        relative_position_id = GPG_focus_never_again
+        x = 1
+        y = 6
+        icon = GFX_focus_GPG_autocratic_cabinet
+
+        prerequisite = { focus = GPG_focus_power_for_fries }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GPG_focus_puppet_congress
+        relative_position_id = GPG_focus_never_again
+        x = 1
+        y = 7
+        icon = GFX_focus_GPG_puppet_congress
+
+        prerequisite = { focus = GPG_focus_autocratic_cabinet }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GPG_focus_eternal_chairman
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 8
+        icon = GFX_focus_GPG_eternal_chairman
+
+        prerequisite = { focus = GPG_focus_puppet_congress }
+        prerequisite = { focus = GPG_focus_our_great_past }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = idea_GPG_status_quo
+                add_idea = idea_GPG_strong_government
+            }
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = GPG_focus_heart_of_goiky
+                        has_completed_focus = GPG_focus_end_military_turmoil
+                    }
+                    country_event = {
+                        id = GPG_event.46
+                        days = 20
+                        random_days = 10
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_army_reformation
+        relative_position_id = GPG_focus_never_again
+        x = 7
+        y = 5
+        icon = GFX_focus_GPG_army_reformation
+
+        prerequisite = { focus = GPG_focus_eternal_transition }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            army_experience = 25
+        }
+    }
+
+    focus = {
+        id = GPG_focus_personnel_army
+        relative_position_id = GPG_focus_never_again
+        x = 6
+        y = 6
+        icon = GFX_focus_GPG_personnel_army
+
+        prerequisite = { focus = GPG_focus_army_reformation }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_army
+            add_to_variable = { var_GPG_armyagony_ao = 0.05 }
+            add_to_variable = { var_GPG_armyagony_eg = 0.25 }
+            add_manpower = 20000
+        }
+    }
+
+    focus = {
+        id = GPG_focus_rearmament
+        relative_position_id = GPG_focus_never_again
+        x = 6
+        y = 7
+        icon = GFX_focus_GPG_rearmament
+
+        prerequisite = { focus = GPG_focus_personnel_army }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_army
+            add_timed_idea = {
+                idea = idea_GPG_rearmament
+                days = 365
+            }
+            add_to_variable = { var_GPG_armyagony_aa = 0.1 }
+            add_to_variable = { var_GPG_armyagony_ad = 0.05 }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_recharnd_military_academy
+        relative_position_id = GPG_focus_never_again
+        x = 8
+        y = 6
+        icon = GFX_focus_GPG_recharnd_military_academy
+
+        prerequisite = { focus = GPG_focus_army_reformation }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_army
+            add_to_variable = { var_GPG_armyagony_eg = 0.25 }
+            army_experience = 10
+            IF = {
+                limit = {
+                    has_character = GPG_nickel
+                }
+                GPG_nickel = {
+                    add_skill_level = 1
+                }
+            }
+            IF = {
+                limit = {
+                    has_character = GPG_Cloudy
+                }
+                GPG_Cloudy = {
+                    add_skill_level = 1
+                    add_advisor_role = {
+                        advisor = {
+                            slot = army_chief
+                            idea_token = idea_GPG_cloudy
+                            ledger = army
+                            traits = { army_logistics_2 }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_doctrine_development
+        relative_position_id = GPG_focus_never_again
+        x = 8
+        y = 7
+        icon = GFX_focus_GPG_doctrine_development
+
+        prerequisite = { focus = GPG_focus_recharnd_military_academy }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_end_military_turmoil
+        relative_position_id = GPG_focus_never_again
+        x = 7
+        y = 8
+        icon = GFX_focus_GPG_end_military_turmoil
+
+        prerequisite = { focus = GPG_focus_rearmament }
+        prerequisite = { focus = GPG_focus_doctrine_development }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_allows_divisions_training
+            remove_dynamic_modifier = { modifier = idea_GPG_army_agony }
+            country_lock_all_division_template = no
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_completed_focus = GPG_focus_heart_of_goiky
+                        has_completed_focus = GPG_focus_eternal_chairman
+                    }
+                    country_event = {
+                        id = GPG_event.46
+                        days = 20
+                        random_days = 10
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GPG_focus_lawnland_question
+        relative_position_id = GPG_focus_never_again
+        x = 0
+        y = 10
+        icon = GFX_focus_GPG_lawnland_question
+
+        prerequisite = { focus = GPG_focus_heart_of_goiky }
+        prerequisite = { focus = GPG_focus_eternal_chairman }
+        prerequisite = { focus = GPG_focus_end_military_turmoil }
+
+        allow_branch = {
+            has_country_flag = lawnland_decisions_opened
+        }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_lawnland
+        }
+    }
 }

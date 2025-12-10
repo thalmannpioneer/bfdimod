@@ -1,19 +1,19 @@
 decision_GTR_project_1_category = {
-	allowed = { tag = GTR }
-	priority = 100
-	icon = GFX_decision_GTR_project_1_category
-	
-	available = {
-		hidden_trigger = {
-			has_country_flag = project1_mechanic_started
-			NOT = { has_country_flag = project_1_fail }
-		}
-	}
-	visible = {
-		has_country_flag = project1_mechanic_started
-		NOT = { has_country_flag = project_1_fail }
-	}
-	
-	visible_when_empty = yes
-	scripted_gui = decisions_GTR_project_1_scriptedgui
+    allowed = { tag = GTR }
+    priority = 100
+    icon = GFX_decision_GTR_project_1_category
+
+    available = {
+        hidden_trigger = {
+            has_country_flag = project1_mechanic_started
+            NOT = { has_country_flag = project_1_fail }
+        }
+    }
+    visible = {
+        has_country_flag = project1_mechanic_started
+        NOT = { has_country_flag = project_1_fail }
+    }
+
+    visible_when_empty = yes
+    scripted_gui = decisions_GTR_project_1_scriptedgui
 }

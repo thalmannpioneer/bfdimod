@@ -43,7 +43,7 @@ set_variable = { var_GTR_weekly_progress_stage2 = 2 }
 set_variable = { var_GTR_weekly_progress_stage3 = 0 }
 
 set_variable = { var_GTR_humaid_sf = 0.02 }
-set_variable = { var_GTR_humaid_ppg = 0.05 }
+set_variable = { var_GTR_humaid_rsf = 0.05 }
 set_variable = { var_GTR_humaid_cgf = -0.01 }
 
 add_ideas = undisturbed_isolation

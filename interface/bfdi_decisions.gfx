@@ -718,4 +718,24 @@ spriteTypes = {
 		name = "GFX_decisions_GTR_project1_research_reassignments"
 		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_project1_research_reassignments.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_cat_GTR_north_integration"
+		textureFile = "gfx/interface/decisions/decision_cat_GTR_north_integration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_integrate_north"
+		textureFile = "gfx/interface/decisions/decision_category_integrate_north.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_integrate_north_satoymin"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_integrate_north_satoymin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_integrate_north_wilopede"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_integrate_north_wilopede.dds"
+	}
 }

@@ -2,2168 +2,2168 @@ add_namespace = GPG_event
 add_namespace = GPG_hidden_event
 
 country_event = {
-	id = GPG_event.1
-	title = GPG_event.1.t
-	desc = GPG_event.1.desc
-	picture = GFX_GPG_event1
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.1.a
-		add_political_power = 25
-		hidden_effect = {
-			if = {
-				limit = { 
-					is_ai = yes
-					OR = {
-						is_historical_focus_on = no	
-						has_game_rule = { rule = GPG_ai_behavior option = RANDOM }
-					} 
-				}
-				random_list = {
-					30 = {
-						set_country_flag = stability_save_path
-					}
-					50 = {
-						set_country_flag = civil_war_path
-					}
-					20 = {
-						set_country_flag = fries_path
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					is_ai = yes
-					OR = {
-						has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
-						has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
-					}		
-				}
-				set_country_flag = stability_save_path
-			}
-			else_if = {
-				limit = {
-					is_ai = yes
-					OR = {
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FRIES }
-						has_game_rule = { rule = GPG_ai_behavior option = DEFAULT }			
-					}
-					is_historical_focus_on = yes	
-				}
-				set_country_flag = fries_path
-			}
-			else_if = {
-				limit = {
-					is_ai = yes
-					OR = {
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }	
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }	
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }
-						has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }			
-					}	
-				}
-				set_country_flag = civil_war_path
-			}
-			else = {
-				set_country_flag = civil_war_path
-			}
-		}
-	}
+    id = GPG_event.1
+    title = GPG_event.1.t
+    desc = GPG_event.1.desc
+    picture = GFX_GPG_event1
 
-	option = {
-		name = GPG_event.1.b
-		add_political_power = 25
-		country_event = GPG_event.2
-		hidden_effect = {
-			if = {
-				limit = { is_ai = yes }
-				random_list = {
-					30 = {
-						set_country_flag = stability_save_path
-					}
-					40 = {
-						set_country_flag = civil_war_path
-					}
-					30 = {
-						set_country_flag = fries_path
-					}
-				}
-			}
-		}
+    is_triggered_only = yes
 
-		ai_chance = {
-			base = 0
-		}
-	}
+    option = {
+        name = GPG_event.1.a
+        add_political_power = 25
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_ai = yes
+                    OR = {
+                        is_historical_focus_on = no
+                        has_game_rule = { rule = GPG_ai_behavior option = RANDOM }
+                    }
+                }
+                random_list = {
+                    30 = {
+                        set_country_flag = stability_save_path
+                    }
+                    50 = {
+                        set_country_flag = civil_war_path
+                    }
+                    20 = {
+                        set_country_flag = fries_path
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    is_ai = yes
+                    OR = {
+                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
+                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
+                    }
+                }
+                set_country_flag = stability_save_path
+            }
+            else_if = {
+                limit = {
+                    is_ai = yes
+                    OR = {
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FRIES }
+                        has_game_rule = { rule = GPG_ai_behavior option = DEFAULT }
+                    }
+                    is_historical_focus_on = yes
+                }
+                set_country_flag = fries_path
+            }
+            else_if = {
+                limit = {
+                    is_ai = yes
+                    OR = {
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }
+                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }
+                    }
+                }
+                set_country_flag = civil_war_path
+            }
+            else = {
+                set_country_flag = civil_war_path
+            }
+        }
+    }
+
+    option = {
+        name = GPG_event.1.b
+        add_political_power = 25
+        country_event = GPG_event.2
+        hidden_effect = {
+            if = {
+                limit = { is_ai = yes }
+                random_list = {
+                    30 = {
+                        set_country_flag = stability_save_path
+                    }
+                    40 = {
+                        set_country_flag = civil_war_path
+                    }
+                    30 = {
+                        set_country_flag = fries_path
+                    }
+                }
+            }
+        }
+
+        ai_chance = {
+            base = 0
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.2
-	title = GPG_event.2.t
-	desc = GPG_event.2.desc
-	picture = GFX_GPG_event2
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.2.a
-		country_event = GPG_event.3
-	}
+    id = GPG_event.2
+    title = GPG_event.2.t
+    desc = GPG_event.2.desc
+    picture = GFX_GPG_event2
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.2.a
+        country_event = GPG_event.3
+    }
 }
 
 country_event = {
-	id = GPG_event.3
-	title = GPG_event.3.t
-	desc = GPG_event.3.desc
-	picture = GFX_GPG_event3
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.3.a
-		country_event = GPG_event.4
-	}
+    id = GPG_event.3
+    title = GPG_event.3.t
+    desc = GPG_event.3.desc
+    picture = GFX_GPG_event3
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.3.a
+        country_event = GPG_event.4
+    }
 }
 
 country_event = {
-	id = GPG_event.4
-	title = GPG_event.4.t
-	desc = GPG_event.4.desc
-	picture = GFX_GPG_event4
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.4.a
-		country_event = GPG_event.5
-	}
+    id = GPG_event.4
+    title = GPG_event.4.t
+    desc = GPG_event.4.desc
+    picture = GFX_GPG_event4
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.4.a
+        country_event = GPG_event.5
+    }
 }
 
 country_event = {
-	id = GPG_event.5
-	title = GPG_event.5.t
-	desc = GPG_event.5.desc
-	picture = GFX_GPG_event5
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.5.a
-	}
+    id = GPG_event.5
+    title = GPG_event.5.t
+    desc = GPG_event.5.desc
+    picture = GFX_GPG_event5
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.5.a
+    }
 }
 
 country_event = {
-	id = GPG_event.6
-	title = GPG_event.6.t
-	desc = GPG_event.6.desc
-	picture = GFX_GPG_event6
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.6.a
-		custom_effect_tooltip = l_GPG_event6
-		add_stability = -0.1
-		add_political_power = -200
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.7
-				days = 20
-			}
-			add_threat = 2
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.10
-					days = 5
-					random_hours = 12
-				}
-			}
-			set_variable = { var_current_cabinet_leader = 2 }
-		}
-	}
+    id = GPG_event.6
+    title = GPG_event.6.t
+    desc = GPG_event.6.desc
+    picture = GFX_GPG_event6
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.6.a
+        custom_effect_tooltip = l_GPG_event6
+        add_stability = -0.1
+        add_political_power = -200
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.7
+                days = 20
+            }
+            add_threat = 2
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.10
+                    days = 5
+                    random_hours = 12
+                }
+            }
+            set_variable = { var_current_cabinet_leader = 2 }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.7
-	title = GPG_event.7.t
-	desc = GPG_event.7.desc
-	picture = GFX_GPG_event7
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.7.a
-		custom_effect_tooltip = l_GPG_event7
-		add_stability = -0.05
-		hidden_effect = {
-			set_country_flag = second_congress_started
-			mark_focus_tree_layout_dirty = yes
-			complete_national_focus = GPG_focus_second_congress
-			country_event = {
-				id = GPG_event.8
-				days = 5
-			}
-		}
-	}
+    id = GPG_event.7
+    title = GPG_event.7.t
+    desc = GPG_event.7.desc
+    picture = GFX_GPG_event7
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.7.a
+        custom_effect_tooltip = l_GPG_event7
+        add_stability = -0.05
+        hidden_effect = {
+            set_country_flag = second_congress_started
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GPG_focus_second_congress
+            country_event = {
+                id = GPG_event.8
+                days = 5
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.8
-	title = GPG_event.8.t
-	desc = GPG_event.8.desc
-	picture = GFX_GPG_event8
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.8.a
-		activate_mission = GPG_mission_second_congress
-		hidden_effect = {
-			set_variable = { var_add_to_congress = 2 }
-			country_event = {
-				id = GPG_event.9
-				days = 20
-			}
-		}
-	}
+    id = GPG_event.8
+    title = GPG_event.8.t
+    desc = GPG_event.8.desc
+    picture = GFX_GPG_event8
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.8.a
+        activate_mission = GPG_mission_second_congress
+        hidden_effect = {
+            set_variable = { var_add_to_congress = 2 }
+            country_event = {
+                id = GPG_event.9
+                days = 20
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.9
-	title = GPG_event.9.t
-	desc = GPG_event.9.desc
-	picture = GFX_GPG_event9
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.9.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = fries_path
-			}
-		}
-		custom_effect_tooltip = l_GPG_adds_support_in_congress
-		set_country_flag = first_question
-		set_country_flag = clock_accusation
-		mark_focus_tree_layout_dirty = yes
-		add_to_variable = { var_congress_support = var_add_to_congress }
-		add_to_variable = { var_congress_support_gui = var_add_to_congress }
-		hidden_effect = {
-			complete_national_focus = GPG_focus_clocks_dead
-			set_variable = { var_add_to_congress = 1 }
-			random = {
-				chance = 50
-				set_variable = { var_add_to_congress = 3 }
-				country_event = {
-					id = GPG_event.10
-					days = 7
-				}
-			}
-			country_event = {
-				id = GPG_event.11
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.9.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_country_flag = civil_war_path
-					has_country_flag = stability_save_path
-				}
-			}
-		}
-		set_country_flag = first_question
-		mark_focus_tree_layout_dirty = yes
-		add_stability = 0.05
-		set_variable = { var_add_to_congress = 1 }
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.11
-				days = 20
-			}
-			complete_national_focus = GPG_focus_clocks_dead
-		}
-	}
+    id = GPG_event.9
+    title = GPG_event.9.t
+    desc = GPG_event.9.desc
+    picture = GFX_GPG_event9
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.9.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = fries_path
+            }
+        }
+        custom_effect_tooltip = l_GPG_adds_support_in_congress
+        set_country_flag = first_question
+        set_country_flag = clock_accusation
+        mark_focus_tree_layout_dirty = yes
+        add_to_variable = { var_congress_support = var_add_to_congress }
+        add_to_variable = { var_congress_support_gui = var_add_to_congress }
+        hidden_effect = {
+            complete_national_focus = GPG_focus_clocks_dead
+            set_variable = { var_add_to_congress = 1 }
+            random = {
+                chance = 50
+                set_variable = { var_add_to_congress = 3 }
+                country_event = {
+                    id = GPG_event.10
+                    days = 7
+                }
+            }
+            country_event = {
+                id = GPG_event.11
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.9.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                OR = {
+                    has_country_flag = civil_war_path
+                    has_country_flag = stability_save_path
+                }
+            }
+        }
+        set_country_flag = first_question
+        mark_focus_tree_layout_dirty = yes
+        add_stability = 0.05
+        set_variable = { var_add_to_congress = 1 }
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.11
+                days = 20
+            }
+            complete_national_focus = GPG_focus_clocks_dead
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.10
-	title = GPG_event.10.t
-	desc = GPG_event.10.desc
-	picture = GFX_GPG_event10
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.10.a
-		set_country_flag = clock_accusation_failure
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		set_variable = { var_add_to_congress = 1 }
-	}
+    id = GPG_event.10
+    title = GPG_event.10.t
+    desc = GPG_event.10.desc
+    picture = GFX_GPG_event10
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.10.a
+        set_country_flag = clock_accusation_failure
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        set_variable = { var_add_to_congress = 1 }
+    }
 }
 
 country_event = {
-	id = GPG_event.11
-	title = GPG_event.11.t
-	desc = GPG_event.11.desc
-	picture = GFX_GPG_event11
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.11.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_country_flag = fries_path
-					has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
-				}
-			}
-		}
-		set_country_flag = second_question
-		set_country_flag = fries_triumph
-		add_stability = -0.05
-		set_variable = { var_current_cabinet_leader = 3 }
-		custom_effect_tooltip = l_GPG_event11
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_cabinet_head
-			set_variable = { var_current_cabinet_leader = 3 }
-			country_event = {
-				id = GPG_event.12
-				days = 20
-			}
-			set_variable = { var_add_to_congress = 2 }
-		}
-	}
-	option = {
-		name = GPG_event.11.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_country_flag = civil_war_path
-					has_country_flag = stability_save_path
-				}
-				NOT = {has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }}
-			}
-		}
-		set_country_flag = second_question
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		hidden_effect = {
-			complete_national_focus = GPG_focus_cabinet_head
-			country_event = {
-				id = GPG_event.12
-				days = 20
-			}
-			country_event = {
-				id = GPG_event.47
-				days = 10
-			}
-			set_variable = { var_add_to_congress = 2 }
-		}
-	}
+    id = GPG_event.11
+    title = GPG_event.11.t
+    desc = GPG_event.11.desc
+    picture = GFX_GPG_event11
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.11.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                OR = {
+                    has_country_flag = fries_path
+                    has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
+                }
+            }
+        }
+        set_country_flag = second_question
+        set_country_flag = fries_triumph
+        add_stability = -0.05
+        set_variable = { var_current_cabinet_leader = 3 }
+        custom_effect_tooltip = l_GPG_event11
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_cabinet_head
+            set_variable = { var_current_cabinet_leader = 3 }
+            country_event = {
+                id = GPG_event.12
+                days = 20
+            }
+            set_variable = { var_add_to_congress = 2 }
+        }
+    }
+    option = {
+        name = GPG_event.11.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                OR = {
+                    has_country_flag = civil_war_path
+                    has_country_flag = stability_save_path
+                }
+                NOT = {has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }}
+            }
+        }
+        set_country_flag = second_question
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        hidden_effect = {
+            complete_national_focus = GPG_focus_cabinet_head
+            country_event = {
+                id = GPG_event.12
+                days = 20
+            }
+            country_event = {
+                id = GPG_event.47
+                days = 10
+            }
+            set_variable = { var_add_to_congress = 2 }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.12
-	title = GPG_event.12.t
-	desc = GPG_event.12.desc
-	picture = GFX_GPG_event12
-	
-	immediate = {
-		set_variable = { var_add_to_congress_2 = 1 }
-	}
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.12.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = stability_save_path
-			}
-		}
-		set_country_flag = third_question
-		set_country_flag = compensation_accepted
-		custom_effect_tooltip = l_GPG_adds_support_in_congress_2
-		add_to_variable = { var_congress_support = var_add_to_congress_2 }
-		add_to_variable = { var_congress_support_gui = var_add_to_congress_2 }
-		remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
-		add_timed_idea = {
-			idea = idea_GPG_compensation
-			days = 300
-		}
-		add_stability = 0.05
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_compensation
-			country_event = {
-				id = GPG_event.13
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.12.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_country_flag = fries_path
-					has_country_flag = civil_war_path
-				}
-			}
-		}
-		set_country_flag = third_question
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		custom_effect_tooltip = l_GPG_improves_dream_island_trauma
-		add_to_variable = { var_GPG_dreamislandtrauma_pg = 0.25 }
-		add_to_variable = { var_GPG_dreamislandtrauma_bf = 0.25 }
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		add_stability = -0.05
-		hidden_effect = {
-			complete_national_focus = GPG_focus_compensation
-			country_event = {
-				id = GPG_event.13
-				days = 20
-			}
-		}
-	}
+    id = GPG_event.12
+    title = GPG_event.12.t
+    desc = GPG_event.12.desc
+    picture = GFX_GPG_event12
+
+    immediate = {
+        set_variable = { var_add_to_congress_2 = 1 }
+    }
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.12.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = stability_save_path
+            }
+        }
+        set_country_flag = third_question
+        set_country_flag = compensation_accepted
+        custom_effect_tooltip = l_GPG_adds_support_in_congress_2
+        add_to_variable = { var_congress_support = var_add_to_congress_2 }
+        add_to_variable = { var_congress_support_gui = var_add_to_congress_2 }
+        remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
+        add_timed_idea = {
+            idea = idea_GPG_compensation
+            days = 300
+        }
+        add_stability = 0.05
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_compensation
+            country_event = {
+                id = GPG_event.13
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.12.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                OR = {
+                    has_country_flag = fries_path
+                    has_country_flag = civil_war_path
+                }
+            }
+        }
+        set_country_flag = third_question
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        custom_effect_tooltip = l_GPG_improves_dream_island_trauma
+        add_to_variable = { var_GPG_dreamislandtrauma_pg = 0.25 }
+        add_to_variable = { var_GPG_dreamislandtrauma_bf = 0.25 }
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        add_stability = -0.05
+        hidden_effect = {
+            complete_national_focus = GPG_focus_compensation
+            country_event = {
+                id = GPG_event.13
+                days = 20
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.13
-	title = GPG_event.13.t
-	desc = GPG_event.13.desc
-	picture = GFX_GPG_event13
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { var_add_to_congress = 1 }
-	}
-	
-	option = {
-		name = GPG_event.13.a
-		custom_effect_tooltip = l_GPG_event13
-		set_country_flag = fourth_question
-		set_country_flag = defense_plan_blue
-		custom_effect_tooltip = l_GPG_adds_support_in_congress
-		add_to_variable = { var_congress_support = var_add_to_congress }
-		add_to_variable = { var_congress_support_gui = var_add_to_congress }
-		145 = {
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border_country = GPR
-				}
-			}
-			add_building_construction = {
-				type = bunker
-				level = 1
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border_country = SRR
-				}
-			}
-			add_building_construction = {
-				type = bunker
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_victory_point = yes
-				}
-			}
-		}
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_defense_plan
-			country_event = {
-				id = GPG_event.14
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.13.b
-		custom_effect_tooltip = l_GPG_event13
-		set_country_flag = fourth_question
-		set_country_flag = defense_plan_red
-		custom_effect_tooltip = l_GPG_adds_support_in_congress
-		add_to_variable = { var_congress_support = var_add_to_congress }
-		add_to_variable = { var_congress_support_gui = var_add_to_congress }
-		10 = {
-			add_building_construction = {
-				type = bunker
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border  = yes
-				}
-			}
-			add_building_construction = {
-				type = bunker
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_victory_point = yes
-				}
-			}
-		}
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_defense_plan
-			country_event = {
-				id = GPG_event.14
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.13.c
-		custom_effect_tooltip = l_GPG_event13
-		set_country_flag = fourth_question
-		set_country_flag = defense_plan_black
-		custom_effect_tooltip = l_GPG_adds_support_in_congress
-		add_to_variable = { var_congress_support = var_add_to_congress }
-		add_to_variable = { var_congress_support_gui = var_add_to_congress }
-		158 = {
-			add_building_construction = {
-				type = bunker
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_border  = yes
-				}
-			}
-			add_building_construction = {
-				type = bunker
-				level = 2
-				instant_build = yes
-				province = {
-					all_provinces = yes
-					limit_to_victory_point = yes
-				}
-			}
-		}
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_defense_plan
-			country_event = {
-				id = GPG_event.14
-				days = 20
-			}
-		}
-	}
+    id = GPG_event.13
+    title = GPG_event.13.t
+    desc = GPG_event.13.desc
+    picture = GFX_GPG_event13
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = { var_add_to_congress = 1 }
+    }
+
+    option = {
+        name = GPG_event.13.a
+        custom_effect_tooltip = l_GPG_event13
+        set_country_flag = fourth_question
+        set_country_flag = defense_plan_blue
+        custom_effect_tooltip = l_GPG_adds_support_in_congress
+        add_to_variable = { var_congress_support = var_add_to_congress }
+        add_to_variable = { var_congress_support_gui = var_add_to_congress }
+        145 = {
+            add_building_construction = {
+                type = bunker
+                level = 1
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border_country = GPR
+                }
+            }
+            add_building_construction = {
+                type = bunker
+                level = 1
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border_country = SRR
+                }
+            }
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_victory_point = yes
+                }
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_defense_plan
+            country_event = {
+                id = GPG_event.14
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.13.b
+        custom_effect_tooltip = l_GPG_event13
+        set_country_flag = fourth_question
+        set_country_flag = defense_plan_red
+        custom_effect_tooltip = l_GPG_adds_support_in_congress
+        add_to_variable = { var_congress_support = var_add_to_congress }
+        add_to_variable = { var_congress_support_gui = var_add_to_congress }
+        10 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border  = yes
+                }
+            }
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_victory_point = yes
+                }
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_defense_plan
+            country_event = {
+                id = GPG_event.14
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.13.c
+        custom_effect_tooltip = l_GPG_event13
+        set_country_flag = fourth_question
+        set_country_flag = defense_plan_black
+        custom_effect_tooltip = l_GPG_adds_support_in_congress
+        add_to_variable = { var_congress_support = var_add_to_congress }
+        add_to_variable = { var_congress_support_gui = var_add_to_congress }
+        158 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border  = yes
+                }
+            }
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_victory_point = yes
+                }
+            }
+        }
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_defense_plan
+            country_event = {
+                id = GPG_event.14
+                days = 20
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.14
-	title = GPG_event.14.t
-	desc = GPG_event.14.desc
-	picture = GFX_GPG_event14
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { var_add_to_congress = 2 }
-	}
-	
-	option = {
-		name = GPG_event.14.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = stability_save_path
-			}
-		}
-		set_country_flag = fifth_question
-		add_stability = 0.05
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_casland_remilitarization
-			country_event = {
-				id = GPG_event.15
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.14.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = fries_path
-			}
-		}
-		custom_effect_tooltip = l_GPG_event14
-		set_country_flag = fifth_question
-		set_country_flag = casland_remilitarization
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		add_stability = -0.05
-		206 = { set_demilitarized_zone = no }
-		hidden_effect = {
-			complete_national_focus = GPG_focus_casland_remilitarization
-			country_event = {
-				id = GPG_event.15
-				days = 20
-			}
-		}
-	}
+    id = GPG_event.14
+    title = GPG_event.14.t
+    desc = GPG_event.14.desc
+    picture = GFX_GPG_event14
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = { var_add_to_congress = 2 }
+    }
+
+    option = {
+        name = GPG_event.14.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = stability_save_path
+            }
+        }
+        set_country_flag = fifth_question
+        add_stability = 0.05
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_casland_remilitarization
+            country_event = {
+                id = GPG_event.15
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.14.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = fries_path
+            }
+        }
+        custom_effect_tooltip = l_GPG_event14
+        set_country_flag = fifth_question
+        set_country_flag = casland_remilitarization
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        add_stability = -0.05
+        206 = { set_demilitarized_zone = no }
+        hidden_effect = {
+            complete_national_focus = GPG_focus_casland_remilitarization
+            country_event = {
+                id = GPG_event.15
+                days = 20
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.15
-	title = GPG_event.15.t
-	desc = GPG_event.15.desc
-	picture = GFX_GPG_event15
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { var_add_to_congress = 3 }
-	}
-	
-	option = {
-		name = GPG_event.15.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = civil_war_path
-			}
-		}
-		set_country_flag = sixth_question
-		set_country_flag = mines_nationalization
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		mark_focus_tree_layout_dirty = yes
-		add_stability = 0.05
-		hidden_effect = {
-			complete_national_focus = GPG_focus_mines
-			country_event = {
-				id = GPG_event.16
-				days = 20
-			}
-		}
-	}
-	option = {
-		name = GPG_event.15.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = stability_save_path
-			}
-		}
-		set_country_flag = sixth_question
-		mark_focus_tree_layout_dirty = yes
-		10 = {
-			add_resource = {
-				type = steel
-				amount = -7
-			}
-		}
-		add_stability = -0.05
-		hidden_effect = {
-			complete_national_focus = GPG_focus_mines
-			country_event = {
-				id = GPG_event.16
-				days = 20
-			}
-		}
-	}
+    id = GPG_event.15
+    title = GPG_event.15.t
+    desc = GPG_event.15.desc
+    picture = GFX_GPG_event15
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = { var_add_to_congress = 3 }
+    }
+
+    option = {
+        name = GPG_event.15.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = civil_war_path
+            }
+        }
+        set_country_flag = sixth_question
+        set_country_flag = mines_nationalization
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        mark_focus_tree_layout_dirty = yes
+        add_stability = 0.05
+        hidden_effect = {
+            complete_national_focus = GPG_focus_mines
+            country_event = {
+                id = GPG_event.16
+                days = 20
+            }
+        }
+    }
+    option = {
+        name = GPG_event.15.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = stability_save_path
+            }
+        }
+        set_country_flag = sixth_question
+        mark_focus_tree_layout_dirty = yes
+        10 = {
+            add_resource = {
+                type = steel
+                amount = -7
+            }
+        }
+        add_stability = -0.05
+        hidden_effect = {
+            complete_national_focus = GPG_focus_mines
+            country_event = {
+                id = GPG_event.16
+                days = 20
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.16
-	title = GPG_event.16.t
-	desc = GPG_event.16.desc
-	picture = GFX_GPG_event16
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { var_add_to_congress = 3 }
-	}
-	
-	option = {
-		name = GPG_event.16.a
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = stability_save_path
-			}
-		}
-		set_country_flag = seventh_question
-		set_country_flag = constitution_accepted
-		add_stability = 0.05
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			complete_national_focus = GPG_focus_constitution
-			if = {
-				limit = { has_country_flag = casland_remilitarization }
-				country_event = {
-					id = GPG_event.21
-					days = 10
-					random_hours = 12
-				}
-			}
-			else_if = {
-				limit = { check_variable = { var_congress_support < 13 } }
-				country_event = {
-					id = GPG_event.22
-					days = 10
-					random_hours = 12
-				}
-			}
-			else = {
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.11
-						days = 5
-						random_hours = 12
-					}
-				}
-				country_event = {
-					id = GPG_event.23
-					days = 15
-					random_hours = 12
-				}
-				set_cosmetic_tag = GPG_republic
-			}
-		}
-	}
-	option = {
-		name = GPG_event.16.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				has_country_flag = fries_path
-			}
-		}
-		trigger = {
-			has_country_flag = fries_triumph
-			has_country_flag = casland_remilitarization
-		}
-		custom_effect_tooltip = l_GPG_event16
-		set_country_flag = seventh_question
-		set_country_flag = fries_dictatorship_path
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		add_stability = -0.05
-		hidden_effect = {
-			complete_national_focus = GPG_focus_constitution
-			country_event = {
-				id = GPG_event.17
-				days = 10
-			}
-		}
-	}
+    id = GPG_event.16
+    title = GPG_event.16.t
+    desc = GPG_event.16.desc
+    picture = GFX_GPG_event16
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = { var_add_to_congress = 3 }
+    }
+
+    option = {
+        name = GPG_event.16.a
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = stability_save_path
+            }
+        }
+        set_country_flag = seventh_question
+        set_country_flag = constitution_accepted
+        add_stability = 0.05
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            complete_national_focus = GPG_focus_constitution
+            if = {
+                limit = { has_country_flag = casland_remilitarization }
+                country_event = {
+                    id = GPG_event.21
+                    days = 10
+                    random_hours = 12
+                }
+            }
+            else_if = {
+                limit = { check_variable = { var_congress_support < 13 } }
+                country_event = {
+                    id = GPG_event.22
+                    days = 10
+                    random_hours = 12
+                }
+            }
+            else = {
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.11
+                        days = 5
+                        random_hours = 12
+                    }
+                }
+                country_event = {
+                    id = GPG_event.23
+                    days = 15
+                    random_hours = 12
+                }
+                set_cosmetic_tag = GPG_republic
+            }
+        }
+    }
+    option = {
+        name = GPG_event.16.b
+        ai_chance = {
+            base = 0
+            modifier = {
+                add = 10
+                has_country_flag = fries_path
+            }
+        }
+        trigger = {
+            has_country_flag = fries_triumph
+            has_country_flag = casland_remilitarization
+        }
+        custom_effect_tooltip = l_GPG_event16
+        set_country_flag = seventh_question
+        set_country_flag = fries_dictatorship_path
+        mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        add_stability = -0.05
+        hidden_effect = {
+            complete_national_focus = GPG_focus_constitution
+            country_event = {
+                id = GPG_event.17
+                days = 10
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.17
-	title = GPG_event.17.t
-	desc = GPG_event.17.desc
-	picture = GFX_GPG_event17
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_variable = { var_add_to_congress = 2 }
-	}
-	
-	option = {
-		name = GPG_event.17.a
-		custom_effect_tooltip = l_GPG_removes_support_in_congress
-		subtract_from_variable = { var_congress_support = var_add_to_congress }
-		subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
-		add_stability = -0.1
-		mark_focus_tree_layout_dirty = yes
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.18
-				days = 10
-			}
-		}
-	}
+    id = GPG_event.17
+    title = GPG_event.17.t
+    desc = GPG_event.17.desc
+    picture = GFX_GPG_event17
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_variable = { var_add_to_congress = 2 }
+    }
+
+    option = {
+        name = GPG_event.17.a
+        custom_effect_tooltip = l_GPG_removes_support_in_congress
+        subtract_from_variable = { var_congress_support = var_add_to_congress }
+        subtract_from_variable = { var_congress_support_gui = var_add_to_congress }
+        add_stability = -0.1
+        mark_focus_tree_layout_dirty = yes
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.18
+                days = 10
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.18
-	title = GPG_event.18.t
-	desc = GPG_event.18.desc
-	picture = GFX_GPG_event18
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.18.a
-		custom_effect_tooltip = l_GPG_event18
-		set_country_flag = congress_ended
-		set_country_flag = second_congress_badend
-		mark_focus_tree_layout_dirty = yes
-		remove_country_leader_role = {
-			character = GPG_recommended_characters_council
-			ideology = centrism
-		}
-		add_country_leader_role = {
-			character = GPG_fries
-			promote_leader = yes
-			country_leader = {
-				ideology = centrism
-			}
-		}
-		remove_mission = GPG_mission_second_congress
-		hidden_effect = {
-			set_country_flag = cw_first_variant
-			set_cosmetic_tag = GPG_fries_cw
-			complete_national_focus = GPG_focus_second_congress_end
-			remove_ideas = {
-				idea_GPG_questionable_future
-				idea_GPG_factionalism
-				idea_GPG_compensation
-			}
-			remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
-			add_ideas = idea_GPG_battle_for_casland
-			retire_character = GPG_pillow
-			retire_character = GPG_nickel
-			retire_character = GPG_taco
-			retire_character = GPG_barf_bag
-			retire_character = GPG_book
-			retire_character = GPG_saw
-			retire_character = GPG_firey_jr
-			retire_character = GPG_gelatin
-			retire_character = GPG_tree
-			retire_character = GPG_9ball
-			retire_character = GPG_income_tax_return_document
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.12
-					days = 3
-				}
-			}
-			country_event = {
-				id = GPG_event.19
-				days = 10
-			}
-		}
-	}
+    id = GPG_event.18
+    title = GPG_event.18.t
+    desc = GPG_event.18.desc
+    picture = GFX_GPG_event18
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.18.a
+        custom_effect_tooltip = l_GPG_event18
+        set_country_flag = congress_ended
+        set_country_flag = second_congress_badend
+        mark_focus_tree_layout_dirty = yes
+        remove_country_leader_role = {
+            character = GPG_recommended_characters_council
+            ideology = centrism
+        }
+        add_country_leader_role = {
+            character = GPG_fries
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+            }
+        }
+        remove_mission = GPG_mission_second_congress
+        hidden_effect = {
+            set_country_flag = cw_first_variant
+            set_cosmetic_tag = GPG_fries_cw
+            complete_national_focus = GPG_focus_second_congress_end
+            remove_ideas = {
+                idea_GPG_questionable_future
+                idea_GPG_factionalism
+                idea_GPG_compensation
+            }
+            remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
+            add_ideas = idea_GPG_battle_for_casland
+            retire_character = GPG_pillow
+            retire_character = GPG_nickel
+            retire_character = GPG_taco
+            retire_character = GPG_barf_bag
+            retire_character = GPG_book
+            retire_character = GPG_saw
+            retire_character = GPG_firey_jr
+            retire_character = GPG_gelatin
+            retire_character = GPG_tree
+            retire_character = GPG_9ball
+            retire_character = GPG_income_tax_return_document
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.12
+                    days = 3
+                }
+            }
+            country_event = {
+                id = GPG_event.19
+                days = 10
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.19
-	title = GPG_event.19.t
-	desc = GPG_event.19.desc
-	picture = GFX_GPG_event19
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.19.a
-		add_political_power = -200
-		add_ideas = civilian_economy
-		hidden_effect = {
-			add_threat = 2
-			country_event = {
-				id = GPG_event.20
-				days = 20
-			}
-			country_event = {
-				id = GPG_hidden_event.1
-				days = 5
-			}
-			country_event = {
-				id = GPG_hidden_event.2
-				days = 10
-			}
-			country_event = {
-				id = GPG_hidden_event.3
-				days = 13
-			}
-			country_event = {
-				id = GPG_hidden_event.4
-				days = 17
-			}
-		}
-	}
+    id = GPG_event.19
+    title = GPG_event.19.t
+    desc = GPG_event.19.desc
+    picture = GFX_GPG_event19
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.19.a
+        add_political_power = -200
+        add_ideas = civilian_economy
+        hidden_effect = {
+            add_threat = 2
+            country_event = {
+                id = GPG_event.20
+                days = 20
+            }
+            country_event = {
+                id = GPG_hidden_event.1
+                days = 5
+            }
+            country_event = {
+                id = GPG_hidden_event.2
+                days = 10
+            }
+            country_event = {
+                id = GPG_hidden_event.3
+                days = 13
+            }
+            country_event = {
+                id = GPG_hidden_event.4
+                days = 17
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.20
-	title = GPG_event.20.t
-	desc = GPG_event.20.desc
-	picture = GFX_GPG_event20
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.20.a
-		hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				GPG = {
-					add_manpower = 20000
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-					}
-				}
-			}
-			else = {
-				GPG = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-			}
-			gpg_civil_war = yes
-			goto_state = 8
-		}
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = 100
-				OR = {
-					has_country_flag = fries_path
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_NO_FRIES }
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FRIES }
-				}	
-			}
-		}
-	}
+    id = GPG_event.20
+    title = GPG_event.20.t
+    desc = GPG_event.20.desc
+    picture = GFX_GPG_event20
 
-	option = {
-		name = GPG_event.20.b
-		hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				GSR = {
-					add_manpower = 20000
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-					}
-				}
-			}
-			else = {
-				GSR = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-			}
-			GSR = { change_tag_from = GPG }
-			gpg_civil_war = yes
-			goto_state = 10 
-		}
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = 100
-				OR = {
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }
-				}	
-			}
-		}
-	}
+    is_triggered_only = yes
 
-	option = {
-		name = GPG_event.20.c
-		hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				GDR = {
-					add_manpower = 20000
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-					}
-				}
-			}
-			else = {
-				GDR = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-			}
-			GDR = { change_tag_from = GPG }
-			gpg_civil_war = yes
-			goto_state = 145
-		}
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = 100
-				has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }
-			}
-		}
-	}
+    option = {
+        name = GPG_event.20.a
+        hidden_effect = {
+            if = {
+                limit = {is_ai = yes}
+                GPG = {
+                    add_manpower = 20000
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 3000
+                    }
+                }
+            }
+            else = {
+                GPG = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 500
+                    }
+                }
+            }
+            gpg_civil_war = yes
+            goto_state = 8
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 100
+                OR = {
+                    has_country_flag = fries_path
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_NO_FRIES }
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FRIES }
+                }
+            }
+        }
+    }
 
-	option = {
-		name = GPG_event.20.d
-		hidden_effect = {
-			if = {
-				limit = {is_ai = yes}
-				GFG = {
-					add_manpower = 20000
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 3000
-					}
-				}
-			}
-			else = {
-				GFG = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-					}
-				}
-			}
-			GFG = { change_tag_from = GPG }
-			gpg_civil_war = yes
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = cw_second_variant
-					}
-				}
-				goto_state = 206
-			}
-			else = {
-				goto_state = 158
-			}
-		}
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = 100
-				OR = {
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }
-					has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }
-				}	
-			}
-		}
-	}
+    option = {
+        name = GPG_event.20.b
+        hidden_effect = {
+            if = {
+                limit = {is_ai = yes}
+                GSR = {
+                    add_manpower = 20000
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 3000
+                    }
+                }
+            }
+            else = {
+                GSR = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 500
+                    }
+                }
+            }
+            GSR = { change_tag_from = GPG }
+            gpg_civil_war = yes
+            goto_state = 10
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 100
+                OR = {
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = GPG_event.20.c
+        hidden_effect = {
+            if = {
+                limit = {is_ai = yes}
+                GDR = {
+                    add_manpower = 20000
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 3000
+                    }
+                }
+            }
+            else = {
+                GDR = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 500
+                    }
+                }
+            }
+            GDR = { change_tag_from = GPG }
+            gpg_civil_war = yes
+            goto_state = 145
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 100
+                has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }
+            }
+        }
+    }
+
+    option = {
+        name = GPG_event.20.d
+        hidden_effect = {
+            if = {
+                limit = {is_ai = yes}
+                GFG = {
+                    add_manpower = 20000
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 3000
+                    }
+                }
+            }
+            else = {
+                GFG = {
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 500
+                    }
+                }
+            }
+            GFG = { change_tag_from = GPG }
+            gpg_civil_war = yes
+            if = {
+                limit = {
+                    OR = {
+                        has_country_flag = cw_second_variant
+                    }
+                }
+                goto_state = 206
+            }
+            else = {
+                goto_state = 158
+            }
+        }
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 100
+                OR = {
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }
+                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.21
-	title = GPG_event.21.t
-	desc = GPG_event.21.desc
-	picture = GFX_GPG_event21
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.21.a
-		custom_effect_tooltip = l_GPG_event18
-		GPG = { set_country_flag = congress_ended }
-		set_country_flag = second_congress_badend
-		mark_focus_tree_layout_dirty = yes
-		206 = { set_demilitarized_zone = yes }
-		remove_mission = GPG_mission_second_congress
-		remove_country_leader_role = {
-			character = GPG_recommended_characters_council
-			ideology = centrism
-		}
-		add_country_leader_role = {
-			character = GPG_transitional_government
-			promote_leader = yes
-			country_leader = {
-				ideology = centrism
-			}
-		}
-		hidden_effect = {
-			set_cosmetic_tag = GPG_fries_cw
-			set_country_flag = cw_second_variant
-			complete_national_focus = GPG_focus_second_congress_end
-			remove_ideas = {
-				idea_GPG_questionable_future
-				idea_GPG_factionalism
-				idea_GPG_compensation
-			}
-			remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
-			add_ideas = idea_GPG_battle_for_casland
-			retire_character = GPG_pillow
-			retire_character = GPG_nickel
-			retire_character = GPG_taco
-			retire_character = GPG_barf_bag
-			retire_character = GPG_book
-			retire_character = GPG_saw
-			retire_character = GPG_firey_jr
-			retire_character = GPG_gelatin
-			retire_character = GPG_tree
-			retire_character = GPG_9ball
-			retire_character = GPG_income_tax_return_document
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.12
-					days = 5
-					random_hours = 12
-				}
-			}
-			country_event = {
-				id = GPG_event.19
-				days = 10
-			}
-		}
-	}
+    id = GPG_event.21
+    title = GPG_event.21.t
+    desc = GPG_event.21.desc
+    picture = GFX_GPG_event21
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.21.a
+        custom_effect_tooltip = l_GPG_event18
+        GPG = { set_country_flag = congress_ended }
+        set_country_flag = second_congress_badend
+        mark_focus_tree_layout_dirty = yes
+        206 = { set_demilitarized_zone = yes }
+        remove_mission = GPG_mission_second_congress
+        remove_country_leader_role = {
+            character = GPG_recommended_characters_council
+            ideology = centrism
+        }
+        add_country_leader_role = {
+            character = GPG_transitional_government
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+            }
+        }
+        hidden_effect = {
+            set_cosmetic_tag = GPG_fries_cw
+            set_country_flag = cw_second_variant
+            complete_national_focus = GPG_focus_second_congress_end
+            remove_ideas = {
+                idea_GPG_questionable_future
+                idea_GPG_factionalism
+                idea_GPG_compensation
+            }
+            remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
+            add_ideas = idea_GPG_battle_for_casland
+            retire_character = GPG_pillow
+            retire_character = GPG_nickel
+            retire_character = GPG_taco
+            retire_character = GPG_barf_bag
+            retire_character = GPG_book
+            retire_character = GPG_saw
+            retire_character = GPG_firey_jr
+            retire_character = GPG_gelatin
+            retire_character = GPG_tree
+            retire_character = GPG_9ball
+            retire_character = GPG_income_tax_return_document
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.12
+                    days = 5
+                    random_hours = 12
+                }
+            }
+            country_event = {
+                id = GPG_event.19
+                days = 10
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.22
-	title = GPG_event.22.t
-	desc = GPG_event.22.desc
-	picture = GFX_GPG_event22
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.22.a
-		custom_effect_tooltip = l_GPG_event18
-		GPG = { set_country_flag = congress_ended }
-		set_country_flag = second_congress_badend
-		mark_focus_tree_layout_dirty = yes
-		remove_mission = GPG_mission_second_congress
-		remove_country_leader_role = {
-			character = GPG_recommended_characters_council
-			ideology = centrism
-		}
-		add_country_leader_role = {
-			character = GPG_transitional_government
-			promote_leader = yes
-			country_leader = {
-				ideology = centrism
-			}
-		}
-		hidden_effect = {
-			set_cosmetic_tag = GPG_fries_cw
-			set_country_flag = cw_third_variant
-			complete_national_focus = GPG_focus_second_congress_end
-			remove_ideas = {
-				idea_GPG_questionable_future
-				idea_GPG_factionalism
-				idea_GPG_compensation
-			}
-			remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
-			add_ideas = idea_GPG_battle_for_casland
-			retire_character = GPG_pillow
-			retire_character = GPG_nickel
-			retire_character = GPG_taco
-			retire_character = GPG_barf_bag
-			retire_character = GPG_book
-			retire_character = GPG_saw
-			retire_character = GPG_firey_jr
-			retire_character = GPG_gelatin
-			retire_character = GPG_tree
-			retire_character = GPG_9ball
-			retire_character = GPG_income_tax_return_document
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.12
-					days = 5
-					random_hours = 12
-				}
-			}
-			country_event = {
-				id = GPG_event.19
-				days = 10
-			}
-		}
-	}
+    id = GPG_event.22
+    title = GPG_event.22.t
+    desc = GPG_event.22.desc
+    picture = GFX_GPG_event22
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.22.a
+        custom_effect_tooltip = l_GPG_event18
+        GPG = { set_country_flag = congress_ended }
+        set_country_flag = second_congress_badend
+        mark_focus_tree_layout_dirty = yes
+        remove_mission = GPG_mission_second_congress
+        remove_country_leader_role = {
+            character = GPG_recommended_characters_council
+            ideology = centrism
+        }
+        add_country_leader_role = {
+            character = GPG_transitional_government
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+            }
+        }
+        hidden_effect = {
+            set_cosmetic_tag = GPG_fries_cw
+            set_country_flag = cw_third_variant
+            complete_national_focus = GPG_focus_second_congress_end
+            remove_ideas = {
+                idea_GPG_questionable_future
+                idea_GPG_factionalism
+                idea_GPG_compensation
+            }
+            remove_dynamic_modifier = { modifier = idea_GPG_dream_island_trauma }
+            add_ideas = idea_GPG_battle_for_casland
+            retire_character = GPG_pillow
+            retire_character = GPG_nickel
+            retire_character = GPG_taco
+            retire_character = GPG_barf_bag
+            retire_character = GPG_book
+            retire_character = GPG_saw
+            retire_character = GPG_firey_jr
+            retire_character = GPG_gelatin
+            retire_character = GPG_tree
+            retire_character = GPG_9ball
+            retire_character = GPG_income_tax_return_document
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.12
+                    days = 5
+                    random_hours = 12
+                }
+            }
+            country_event = {
+                id = GPG_event.19
+                days = 10
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.23
-	title = GPG_event.23.t
-	desc = GPG_event.23.desc
-	picture = GFX_GPG_event23
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.23.a
-		custom_effect_tooltip = l_GPG_event18
-		remove_mission = GPG_mission_second_congress
-		GPG = { set_country_flag = congress_closed_gui }
-		add_ideas = civilian_economy
-		hidden_effect = {
-			complete_national_focus = GPG_focus_second_congress_end
-			mark_focus_tree_layout_dirty = yes
-			country_event = {
-				id = GPG_event.24
-				days = 10
-				random_hours = 12
-			}
-			country_event = {
-				id = GPG_event.31
-				days = 5
-				random_hours = 12
-			}
-			set_country_flag = congress_goodend
-		}
-	}
+    id = GPG_event.23
+    title = GPG_event.23.t
+    desc = GPG_event.23.desc
+    picture = GFX_GPG_event23
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.23.a
+        custom_effect_tooltip = l_GPG_event18
+        remove_mission = GPG_mission_second_congress
+        GPG = { set_country_flag = congress_closed_gui }
+        add_ideas = civilian_economy
+        hidden_effect = {
+            complete_national_focus = GPG_focus_second_congress_end
+            mark_focus_tree_layout_dirty = yes
+            country_event = {
+                id = GPG_event.24
+                days = 10
+                random_hours = 12
+            }
+            country_event = {
+                id = GPG_event.31
+                days = 5
+                random_hours = 12
+            }
+            set_country_flag = congress_goodend
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.24
-	title = GPG_event.24.t
-	desc = GPG_event.24.desc
-	picture = GFX_GPG_event24
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.24.a
-		add_political_power = 25
-		activate_mission = GPG_mission_deal_with_democrats
-		activate_mission = GPG_mission_deal_with_toilers_front
-		activate_mission = GPG_mission_deal_with_iron_hand
-		hidden_effect = {
-			set_country_flag = gpg_provgov_second_tree
-			mark_focus_tree_layout_dirty = yes
-			complete_national_focus = GPG_focus_cabinet_resisted
-			if = {
-				limit = {
-					is_ai = yes
-					OR = {
-						has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
-						has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
-					}	
-				}
-				add_political_power = 50
-				country_lock_all_division_template = no
-				complete_national_focus = GPG_focus_bake_taco
-				complete_national_focus = GPG_focus_break_up_the_brilliant
-				complete_national_focus = GPG_focus_yoylemetal_hand
-			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
+    id = GPG_event.24
+    title = GPG_event.24.t
+    desc = GPG_event.24.desc
+    picture = GFX_GPG_event24
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.24.a
+        add_political_power = 25
+        activate_mission = GPG_mission_deal_with_democrats
+        activate_mission = GPG_mission_deal_with_toilers_front
+        activate_mission = GPG_mission_deal_with_iron_hand
+        hidden_effect = {
+            set_country_flag = gpg_provgov_second_tree
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GPG_focus_cabinet_resisted
+            if = {
+                limit = {
+                    is_ai = yes
+                    OR = {
+                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
+                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
+                    }
+                }
+                add_political_power = 50
+                country_lock_all_division_template = no
+                complete_national_focus = GPG_focus_bake_taco
+                complete_national_focus = GPG_focus_break_up_the_brilliant
+                complete_national_focus = GPG_focus_yoylemetal_hand
+            }
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.25
-	title = GPG_event.25.t
-	desc = GPG_event.25.desc
-	picture = GFX_GPG_event25
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.25.a
-		country_event = {
-			id = GPG_event.26
-			days = 5
-		}
-		hidden_effect = {
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.14
-					days = 2
-				}
-			}
-		}
-	}
+    id = GPG_event.25
+    title = GPG_event.25.t
+    desc = GPG_event.25.desc
+    picture = GFX_GPG_event25
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.25.a
+        country_event = {
+            id = GPG_event.26
+            days = 5
+        }
+        hidden_effect = {
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.14
+                    days = 2
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.26
-	title = GPG_event.26.t
-	desc = GPG_event.26.desc
-	picture = GFX_GPG_event26
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.26.a
-		retire_character = GPG_ruby
-		retire_character = GPG_gelatin
-		retire_character = GPG_firey_jr
-		retire_character = GPG_tree
-		set_country_flag = recharnd_process
-	}
+    id = GPG_event.26
+    title = GPG_event.26.t
+    desc = GPG_event.26.desc
+    picture = GFX_GPG_event26
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.26.a
+        retire_character = GPG_ruby
+        retire_character = GPG_gelatin
+        retire_character = GPG_firey_jr
+        retire_character = GPG_tree
+        set_country_flag = recharnd_process
+    }
 }
 
 country_event = {
-	id = GPG_event.27
-	title = GPG_event.27.t
-	desc = GPG_event.27.desc
-	picture = GFX_GPG_event27
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.27.a
-		hidden_effect = {
-			145 = {
-				transfer_state_to = GDR
-				add_core_of = GDR
-			}
-			every_owned_state = { add_core_of = GDR }
-			declare_war_on = {
-				target = GDR
-				type = annex_everything
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.5
-			}
-			set_party_name = {
-				ideology = democratic
-				long_name = GPG_banned_party
-				name = GPG_banned_party
-			}
-			retire_character = GPG_taco
-			retire_character = GPG_barf_bag
-			retire_character = GPG_book
-			retire_character = GPG_9ball
-			retire_character = GPG_income_tax_return_document
-			GDR = { 
-				load_oob = GDR_CW
-				set_country_flag = casland_uprising
-				if = {
-					limit = { country_exists = GSR }
-					declare_war_on = {
-						target = GSR
-						type = annex_everything
-					}
-				}
-				if = {
-					limit = { country_exists = GFG }
-					declare_war_on = {
-						target = GFG
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
+    id = GPG_event.27
+    title = GPG_event.27.t
+    desc = GPG_event.27.desc
+    picture = GFX_GPG_event27
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.27.a
+        hidden_effect = {
+            145 = {
+                transfer_state_to = GDR
+                add_core_of = GDR
+            }
+            every_owned_state = { add_core_of = GDR }
+            declare_war_on = {
+                target = GDR
+                type = annex_everything
+            }
+            add_popularity = {
+                ideology = democratic
+                popularity = -0.5
+            }
+            set_party_name = {
+                ideology = democratic
+                long_name = GPG_banned_party
+                name = GPG_banned_party
+            }
+            retire_character = GPG_taco
+            retire_character = GPG_barf_bag
+            retire_character = GPG_book
+            retire_character = GPG_9ball
+            retire_character = GPG_income_tax_return_document
+            GDR = {
+                load_oob = GDR_CW
+                set_country_flag = casland_uprising
+                if = {
+                    limit = { country_exists = GSR }
+                    declare_war_on = {
+                        target = GSR
+                        type = annex_everything
+                    }
+                }
+                if = {
+                    limit = { country_exists = GFG }
+                    declare_war_on = {
+                        target = GFG
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.28
-	title = GPG_event.28.t
-	desc = GPG_event.28.desc
-	picture = GFX_GPG_event28
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.28.a
-		set_country_flag = disable_arson
-		hidden_effect = {
-			10 = {
-				transfer_state_to = GSR
-				add_core_of = GSR
-			}
-			every_owned_state = { add_core_of = GSR }
-			declare_war_on = {
-				target = GSR
-				type = annex_everything
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.5
-			}
-			set_party_name = {
-				ideology = communism
-				long_name = GPG_banned_party
-				name = GPG_banned_party
-			}
-			retire_character = GPG_ruby
-			retire_character = GPG_firey_jr
-			retire_character = GPG_tree
-			retire_character = GPG_gelatin
-			GSR = {
-				load_oob = GSR_CW
-				set_country_flag = casland_uprising
-				if = {
-					limit = { country_exists = GDR }
-					declare_war_on = {
-						target = GDR
-						type = annex_everything
-					}
-				}
-				if = {
-					limit = { country_exists = GFG }
-					declare_war_on = {
-						target = GFG
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
+    id = GPG_event.28
+    title = GPG_event.28.t
+    desc = GPG_event.28.desc
+    picture = GFX_GPG_event28
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.28.a
+        set_country_flag = disable_arson
+        hidden_effect = {
+            10 = {
+                transfer_state_to = GSR
+                add_core_of = GSR
+            }
+            every_owned_state = { add_core_of = GSR }
+            declare_war_on = {
+                target = GSR
+                type = annex_everything
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = -0.5
+            }
+            set_party_name = {
+                ideology = communism
+                long_name = GPG_banned_party
+                name = GPG_banned_party
+            }
+            retire_character = GPG_ruby
+            retire_character = GPG_firey_jr
+            retire_character = GPG_tree
+            retire_character = GPG_gelatin
+            GSR = {
+                load_oob = GSR_CW
+                set_country_flag = casland_uprising
+                if = {
+                    limit = { country_exists = GDR }
+                    declare_war_on = {
+                        target = GDR
+                        type = annex_everything
+                    }
+                }
+                if = {
+                    limit = { country_exists = GFG }
+                    declare_war_on = {
+                        target = GFG
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.29
-	title = GPG_event.29.t
-	desc = GPG_event.29.desc
-	picture = GFX_GPG_event29
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.29.a
-		hidden_effect = {
-			158 = {
-				transfer_state_to = GFG
-				add_core_of = GFG
-			}
-			every_owned_state = { add_core_of = GFG }
-			declare_war_on = {
-				target = GFG
-				type = annex_everything
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.5
-			}
-			add_popularity = {
-				ideology = radical_thoughts
-				popularity = -0.5
-			}
-			set_party_name = {
-				ideology = fascism
-				long_name = GPG_banned_party
-				name = GPG_banned_party
-			}
-			set_party_name = {
-				ideology = radical_thoughts
-				long_name = GPG_banned_party
-				name = GPG_banned_party
-			}
-			retire_character = GPG_saw
-			retire_character = GPG_pillow
-			if = {
-				limit = { has_country_flag = nickel_is_loyal }
-				GFG = { retire_character = GFG_nickel }
-			}
-			else = {
-				retire_character = GPG_nickel
-			}
-			GFG = {
-				load_oob = GFG_CW1
-				set_country_flag = casland_uprising
-				if = {
-					limit = { country_exists = GDR }
-					declare_war_on = {
-						target = GDR
-						type = annex_everything
-					}
-				}
-				if = {
-					limit = { country_exists = GSR }
-					declare_war_on = {
-						target = GSR
-						type = annex_everything
-					}
-				}
-			}
-		}
-	}
+    id = GPG_event.29
+    title = GPG_event.29.t
+    desc = GPG_event.29.desc
+    picture = GFX_GPG_event29
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.29.a
+        hidden_effect = {
+            158 = {
+                transfer_state_to = GFG
+                add_core_of = GFG
+            }
+            every_owned_state = { add_core_of = GFG }
+            declare_war_on = {
+                target = GFG
+                type = annex_everything
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = radical_thoughts
+                popularity = -0.5
+            }
+            set_party_name = {
+                ideology = fascism
+                long_name = GPG_banned_party
+                name = GPG_banned_party
+            }
+            set_party_name = {
+                ideology = radical_thoughts
+                long_name = GPG_banned_party
+                name = GPG_banned_party
+            }
+            retire_character = GPG_saw
+            retire_character = GPG_pillow
+            if = {
+                limit = { has_country_flag = nickel_is_loyal }
+                GFG = { retire_character = GFG_nickel }
+            }
+            else = {
+                retire_character = GPG_nickel
+            }
+            GFG = {
+                load_oob = GFG_CW1
+                set_country_flag = casland_uprising
+                if = {
+                    limit = { country_exists = GDR }
+                    declare_war_on = {
+                        target = GDR
+                        type = annex_everything
+                    }
+                }
+                if = {
+                    limit = { country_exists = GSR }
+                    declare_war_on = {
+                        target = GSR
+                        type = annex_everything
+                    }
+                }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.30
-	title = GPG_event.30.t
-	desc = GPG_event.30.desc
-	picture = GFX_GPG_event30
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.30.a
-		add_corps_commander_role = {
-			Character = GPG_fries
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
-			traits = { politically_connected harsh_leader infantry_officer }
-		}
-	}
+    id = GPG_event.30
+    title = GPG_event.30.t
+    desc = GPG_event.30.desc
+    picture = GFX_GPG_event30
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.30.a
+        add_corps_commander_role = {
+            Character = GPG_fries
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 1
+            traits = { politically_connected harsh_leader infantry_officer }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.31
-	title = GPG_event.31.t
-	desc = GPG_event.31.desc
-	picture = GFX_GPG_event31
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.31.a
-		add_stability = -0.05
-		add_war_support = 0.05
-		28 = {
-			transfer_state_to = GPR
-		}
-	}
+    id = GPG_event.31
+    title = GPG_event.31.t
+    desc = GPG_event.31.desc
+    picture = GFX_GPG_event31
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.31.a
+        add_stability = -0.05
+        add_war_support = 0.05
+        28 = {
+            transfer_state_to = GPR
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.32
-	title = GPG_event.32.t
-	desc = GPG_event.32.desc
-	picture = GFX_GPG_event24
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.32.a
-		add_political_power = 15
-	}
+    id = GPG_event.32
+    title = GPG_event.32.t
+    desc = GPG_event.32.desc
+    picture = GFX_GPG_event24
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.32.a
+        add_political_power = 15
+    }
 }
 
 country_event = {
-	id = GPG_event.33
-	title = GPG_event.33.t
-	desc = GPG_event.33.desc
-	picture = GFX_GPG_event33
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.33.a
-		add_political_power = 15
-	}
+    id = GPG_event.33
+    title = GPG_event.33.t
+    desc = GPG_event.33.desc
+    picture = GFX_GPG_event33
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.33.a
+        add_political_power = 15
+    }
 }
 
 country_event = {
-	id = GPG_event.34
-	title = GPG_event.34.t
-	desc = GPG_event.34.desc
-	picture = GFX_GPG_event34
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.34.a
-		if = {
-			limit = { tag = GPG }
-			activate_mission = GPG_lawnland_negs_mission
-			set_country_flag = lawnland_negotiations_started
-		}
-		else_if = {
-			limit = { tag = GSR }
-			activate_mission = GSR_lawnland_negs_mission
-			set_country_flag = lawnland_negotiations_started_socialist
-		}
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.43
-				days = 60
-				random_days = 20
-				random_hours = 12
-			}
-		}
-	}
+    id = GPG_event.34
+    title = GPG_event.34.t
+    desc = GPG_event.34.desc
+    picture = GFX_GPG_event34
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.34.a
+        if = {
+            limit = { tag = GPG }
+            activate_mission = GPG_lawnland_negs_mission
+            set_country_flag = lawnland_negotiations_started
+        }
+        else_if = {
+            limit = { tag = GSR }
+            activate_mission = GSR_lawnland_negs_mission
+            set_country_flag = lawnland_negotiations_started_socialist
+        }
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.43
+                days = 60
+                random_days = 20
+                random_hours = 12
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.35
-	title = GPG_event.35.t
-	desc = GPG_event.35.desc
-	picture = GFX_GPG_event35
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.35.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = 0.1
-		add_war_support = 0.1
-		add_political_power = 200
-		28 = {
-			transfer_state_to = ROOT
-		}
+    id = GPG_event.35
+    title = GPG_event.35.t
+    desc = GPG_event.35.desc
+    picture = GFX_GPG_event35
 
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.35.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = 0.1
+        add_war_support = 0.1
+        add_political_power = 200
+        28 = {
+            transfer_state_to = ROOT
+        }
+
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.36
-	title = GPG_event.36.t
-	desc = GPG_event.36.desc
-	picture = GFX_GPG_event35
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.36.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = -0.2
-		add_war_support = -0.5
-		add_political_power = -200
-		145 = { set_demilitarized_zone = yes }
-		8 = { set_demilitarized_zone = yes }
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
-	
-	option = {
-		name = GPG_event.36.b
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = -0.1
-		add_war_support = 0.1
-		declare_war_on = {
-			target = GPR
-			type = annex_everything
-		}
-		hidden_effect = {
-			add_threat = 2
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
+    id = GPG_event.36
+    title = GPG_event.36.t
+    desc = GPG_event.36.desc
+    picture = GFX_GPG_event35
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.36.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = -0.2
+        add_war_support = -0.5
+        add_political_power = -200
+        145 = { set_demilitarized_zone = yes }
+        8 = { set_demilitarized_zone = yes }
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
+
+    option = {
+        name = GPG_event.36.b
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = -0.1
+        add_war_support = 0.1
+        declare_war_on = {
+            target = GPR
+            type = annex_everything
+        }
+        hidden_effect = {
+            add_threat = 2
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.37
-	title = GPG_event.37.t
-	desc = GPG_event.37.desc
-	picture = GFX_GPG_event35
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.37.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = -0.1
-		add_war_support = 0.1
-		declare_war_on = {
-			target = GPR
-			type = annex_everything
-		}
-		hidden_effect = {
-			add_threat = 2
-			if = {
-				limit = {
-					tag = GSR
-					OR = {
-						country_exists = SGD
-						country_exists = AGG
-					}
-					OR = {
-						SGD = { has_war = no }
-						AGG = { has_war = no }
-					}
-				}
-				country_event = {
-					id = GSR_event.11
-					days = 25
-					random_days = 10
-					random_hours = 12
-				}
-			}
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
+    id = GPG_event.37
+    title = GPG_event.37.t
+    desc = GPG_event.37.desc
+    picture = GFX_GPG_event35
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.37.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = -0.1
+        add_war_support = 0.1
+        declare_war_on = {
+            target = GPR
+            type = annex_everything
+        }
+        hidden_effect = {
+            add_threat = 2
+            if = {
+                limit = {
+                    tag = GSR
+                    OR = {
+                        country_exists = SGD
+                        country_exists = AGG
+                    }
+                    OR = {
+                        SGD = { has_war = no }
+                        AGG = { has_war = no }
+                    }
+                }
+                country_event = {
+                    id = GSR_event.11
+                    days = 25
+                    random_days = 10
+                    random_hours = 12
+                }
+            }
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.38
-	title = GPG_event.38.t
-	desc = GPG_event.38.desc
-	picture = GFX_GPG_event35
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.38.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = -0.05
-		add_war_support = -0.05
-		add_political_power = 50
-		add_timed_idea = {
-			idea = idea_GPG_lawnland_compensation
-			days = 400
-		}
-		GPR = {
-			add_timed_idea = {
-				idea = idea_GPR_lawnland_compensation
-				days = 400
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
+    id = GPG_event.38
+    title = GPG_event.38.t
+    desc = GPG_event.38.desc
+    picture = GFX_GPG_event35
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.38.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = -0.05
+        add_war_support = -0.05
+        add_political_power = 50
+        add_timed_idea = {
+            idea = idea_GPG_lawnland_compensation
+            days = 400
+        }
+        GPR = {
+            add_timed_idea = {
+                idea = idea_GPR_lawnland_compensation
+                days = 400
+            }
+        }
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.39
-	title = GPG_event.39.t
-	desc = GPG_event.39.desc
-	picture = GFX_GPG_event35
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.39.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_negotiations_end
-			remove_mission = GPG_lawnland_negs_mission
-			remove_mission = GPG_republic_makes_move_mission
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_negotiations_end_socialist
-			remove_mission = GSR_lawnland_negs_mission
-			remove_mission = GSR_republic_makes_move_mission
-		}
-		add_stability = 0.05
-		add_political_power = 50
-		28 = {
-			transfer_state_to = ROOT
-			set_demilitarized_zone = yes
-		}
-		hidden_effect = {
-			country_event = {
-				id = GPG_event.40
-				days = 3
-			}
-		}
-	}
+    id = GPG_event.39
+    title = GPG_event.39.t
+    desc = GPG_event.39.desc
+    picture = GFX_GPG_event35
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.39.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_negotiations_end
+            remove_mission = GPG_lawnland_negs_mission
+            remove_mission = GPG_republic_makes_move_mission
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_negotiations_end_socialist
+            remove_mission = GSR_lawnland_negs_mission
+            remove_mission = GSR_republic_makes_move_mission
+        }
+        add_stability = 0.05
+        add_political_power = 50
+        28 = {
+            transfer_state_to = ROOT
+            set_demilitarized_zone = yes
+        }
+        hidden_effect = {
+            country_event = {
+                id = GPG_event.40
+                days = 3
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.40
-	title = GPG_event.40.t
-	desc = GPG_event.40.desc
-	picture = GFX_GPG_event40
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.40.a
-		set_global_flag = demo_ended
-		if = {
-			limit = { tag = GPG }
-			set_variable = { var_demo_end = 4 }
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_variable = { var_demo_end = 5 }
-		}
-	}
+    id = GPG_event.40
+    title = GPG_event.40.t
+    desc = GPG_event.40.desc
+    picture = GFX_GPG_event40
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.40.a
+        set_global_flag = demo_ended
+        if = {
+            limit = { tag = GPG }
+            set_variable = { var_demo_end = 4 }
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_variable = { var_demo_end = 5 }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.41
-	title = GPG_event.41.t
-	desc = GPG_event.41.desc
-	picture = GFX_GPG_event41
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.41.a
-		custom_effect_tooltip = l_GPG_lawnland_adds_10_progress
-		add_to_variable = { var_GPG_negs_progressbar = 10 }
-		GPG_on_lawnland_progressbar_change = yes
-		28 = { set_demilitarized_zone = yes }
-	}
+    id = GPG_event.41
+    title = GPG_event.41.t
+    desc = GPG_event.41.desc
+    picture = GFX_GPG_event41
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.41.a
+        custom_effect_tooltip = l_GPG_lawnland_adds_10_progress
+        add_to_variable = { var_GPG_negs_progressbar = 10 }
+        GPG_on_lawnland_progressbar_change = yes
+        28 = { set_demilitarized_zone = yes }
+    }
 }
 
 country_event = {
-	id = GPG_event.42
-	title = GPG_event.42.t
-	desc = GPG_event.42.desc
-	picture = GFX_GPG_event41
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.42.a
-		custom_effect_tooltip = l_GPG_lawnland_increases_10_escalation
-		add_to_variable = { var_GPG_war_progressbar = 10 }
-		GPG_on_lawnland_progressbar_change = yes
-	}
+    id = GPG_event.42
+    title = GPG_event.42.t
+    desc = GPG_event.42.desc
+    picture = GFX_GPG_event41
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.42.a
+        custom_effect_tooltip = l_GPG_lawnland_increases_10_escalation
+        add_to_variable = { var_GPG_war_progressbar = 10 }
+        GPG_on_lawnland_progressbar_change = yes
+    }
 }
 
 country_event = {
-	id = GPG_event.43
-	title = GPG_event.43.t
-	desc = GPG_event.43.desc
-	picture = GFX_GPG_event43
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.43.a
-		custom_effect_tooltip = l_GPG_lawnland_adds_5_progress
-		add_to_variable = { var_GPG_negs_progressbar = 5 }
-		add_stability = -0.05
-		hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
-	}
-	
-	option = {
-		name = GPG_event.43.b
-		add_political_power = -200
-		custom_effect_tooltip = l_GPG_lawnland_adds_10_progress
-		custom_effect_tooltip = l_GPG_lawnland_increases_10_escalation
-		add_to_variable = { var_GPG_negs_progressbar = 10 }
-		add_to_variable = { var_GPG_war_progressbar = 10 }
-		hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
-	}
+    id = GPG_event.43
+    title = GPG_event.43.t
+    desc = GPG_event.43.desc
+    picture = GFX_GPG_event43
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.43.a
+        custom_effect_tooltip = l_GPG_lawnland_adds_5_progress
+        add_to_variable = { var_GPG_negs_progressbar = 5 }
+        add_stability = -0.05
+        hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
+    }
+
+    option = {
+        name = GPG_event.43.b
+        add_political_power = -200
+        custom_effect_tooltip = l_GPG_lawnland_adds_10_progress
+        custom_effect_tooltip = l_GPG_lawnland_increases_10_escalation
+        add_to_variable = { var_GPG_negs_progressbar = 10 }
+        add_to_variable = { var_GPG_war_progressbar = 10 }
+        hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
+    }
 }
 
 country_event = {
-	id = GPG_event.44
-	title = GPG_event.44.t
-	desc = GPG_event.44.desc
-	picture = GFX_GPG_event34
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.44.a
-		retire_character = GPG_transitional_government
-		add_country_leader_role = {
-			character = GPG_recommended_characters_council
-			promote_leader = yes
-			country_leader = {
-				ideology = centrism
-				desc = GPG_recommended_characters_council_desc
-			}
-		}
-	}
+    id = GPG_event.44
+    title = GPG_event.44.t
+    desc = GPG_event.44.desc
+    picture = GFX_GPG_event34
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.44.a
+        retire_character = GPG_transitional_government
+        add_country_leader_role = {
+            character = GPG_recommended_characters_council
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+                desc = GPG_recommended_characters_council_desc
+            }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.45
-	title = GPG_event.45.t
-	desc = GPG_event.45.desc
-	picture = GFX_GPG_event45
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.45.a
-		add_political_power = 25
-	}
+    id = GPG_event.45
+    title = GPG_event.45.t
+    desc = GPG_event.45.desc
+    picture = GFX_GPG_event45
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.45.a
+        add_political_power = 25
+    }
 }
 
 country_event = {
-	id = GPG_event.46
-	title = GPG_event.46.t
-	desc = GPG_event.46.desc
-	picture = GFX_GPG_event46
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.46.a
-		if = {
-			limit = { tag = GPG }
-			set_country_flag = lawnland_decisions_opened
-			if = {
-				limit = { has_country_flag = fries_triumph }
-				complete_national_focus = GPG_focus_lawnland_question
-			}
-			else = {
-				complete_national_focus = GPG_focus_republic_lawnland_question
-			}
-		}
-		else_if = {
-			limit = { tag = GSR }
-			set_country_flag = lawnland_decisions_opened_socialist
-			complete_national_focus = GSR_focus_take_what_ours
-		}
-		hidden_effect = {
-			add_threat = 0.5
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.20
-					days = 3
-				}
-			}
-			country_event = {
-				id = GPG_event.34
-				days = 5
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
+    id = GPG_event.46
+    title = GPG_event.46.t
+    desc = GPG_event.46.desc
+    picture = GFX_GPG_event46
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.46.a
+        if = {
+            limit = { tag = GPG }
+            set_country_flag = lawnland_decisions_opened
+            if = {
+                limit = { has_country_flag = fries_triumph }
+                complete_national_focus = GPG_focus_lawnland_question
+            }
+            else = {
+                complete_national_focus = GPG_focus_republic_lawnland_question
+            }
+        }
+        else_if = {
+            limit = { tag = GSR }
+            set_country_flag = lawnland_decisions_opened_socialist
+            complete_national_focus = GSR_focus_take_what_ours
+        }
+        hidden_effect = {
+            add_threat = 0.5
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.20
+                    days = 3
+                }
+            }
+            country_event = {
+                id = GPG_event.34
+                days = 5
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
 }
 
 country_event = {
-	id = GPG_event.47
-	title = GPG_event.47.t
-	desc = GPG_event.47.desc
-	picture = GFX_WGF_event17
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GPG_event.47.a
-		retire_character = GPG_cloudy
-	}
+    id = GPG_event.47
+    title = GPG_event.47.t
+    desc = GPG_event.47.desc
+    picture = GFX_WGF_event17
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.47.a
+        retire_character = GPG_cloudy
+    }
 }
 
 country_event = {
-	id = GPG_hidden_event.1
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_country_division = { destroy_unit = yes }
-		if = {
-			limit = { has_country_flag = cw_first_variant }
-			158 = { set_demilitarized_zone = yes }
-		}
-		else_if = {
-			limit = { has_country_flag = cw_second_variant }
-			206 = { set_demilitarized_zone = yes }
-		}
-		else_if = {
-			limit = { has_country_flag = cw_third_variant }
-			206 = {
-				transfer_state_to = EMP 
-				add_core_of = EMP
-			}
-			158 = { set_demilitarized_zone = yes }
-		}
-	}
+    id = GPG_hidden_event.1
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        every_country_division = { destroy_unit = yes }
+        if = {
+            limit = { has_country_flag = cw_first_variant }
+            158 = { set_demilitarized_zone = yes }
+        }
+        else_if = {
+            limit = { has_country_flag = cw_second_variant }
+            206 = { set_demilitarized_zone = yes }
+        }
+        else_if = {
+            limit = { has_country_flag = cw_third_variant }
+            206 = {
+                transfer_state_to = EMP
+                add_core_of = EMP
+            }
+            158 = { set_demilitarized_zone = yes }
+        }
+    }
 }
 
 country_event = {
-	id = GPG_hidden_event.2
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		10 = {
-			set_demilitarized_zone = yes
-		}
-		145 = {
-			set_demilitarized_zone = yes
-		}
-		28 = {
-			set_demilitarized_zone = yes
-		}
-	}
+    id = GPG_hidden_event.2
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        10 = {
+            set_demilitarized_zone = yes
+        }
+        145 = {
+            set_demilitarized_zone = yes
+        }
+        28 = {
+            set_demilitarized_zone = yes
+        }
+    }
 }
 
 country_event = {
-	id = GPG_hidden_event.3
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_owned_state = {
-			add_core_of = GFG
-			add_core_of = GSR
-			add_core_of = GDR
-		}
-		if = {
-			limit = { 
-				OR = { 
-					has_country_flag = cw_first_variant
-					has_country_flag = cw_third_variant
-				}
-			}
-			158 = {
-				transfer_state_to = GFG
-				add_core_of = GFG
-				set_demilitarized_zone = no
-			}
-		}
-		else_if = {
-			limit = { has_country_flag = cw_second_variant }
-			206 = {
-				transfer_state_to = GFG
-				add_core_of = GFG
-				set_demilitarized_zone = no
-			}
-		}
-		GFG = { 
-			inherit_technology = GPG
-			country_lock_all_division_template = yes
-			add_ideas = idea_GPG_battle_for_casland
-		}
-	}
+    id = GPG_hidden_event.3
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        every_owned_state = {
+            add_core_of = GFG
+            add_core_of = GSR
+            add_core_of = GDR
+        }
+        if = {
+            limit = {
+                OR = {
+                    has_country_flag = cw_first_variant
+                    has_country_flag = cw_third_variant
+                }
+            }
+            158 = {
+                transfer_state_to = GFG
+                add_core_of = GFG
+                set_demilitarized_zone = no
+            }
+        }
+        else_if = {
+            limit = { has_country_flag = cw_second_variant }
+            206 = {
+                transfer_state_to = GFG
+                add_core_of = GFG
+                set_demilitarized_zone = no
+            }
+        }
+        GFG = {
+            inherit_technology = GPG
+            country_lock_all_division_template = yes
+            add_ideas = idea_GPG_battle_for_casland
+        }
+    }
 }
 
 country_event = {
-	id = GPG_hidden_event.4
-	hidden = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		10 = {
-			transfer_state_to = GSR
-			add_core_of = GSR
-			set_demilitarized_zone = no
-		}
-		145 = {
-			transfer_state_to = GDR
-			add_core_of = GDR
-			set_demilitarized_zone = no
-		}
-		28 = {
-			transfer_state_to = GPR
-			set_demilitarized_zone = no
-		}
-		GSR = { 
-			inherit_technology = GPG
-			country_lock_all_division_template = yes
-			add_ideas = idea_GPG_battle_for_casland
-		}
-		GDR = {
-			inherit_technology = GPG
-			country_lock_all_division_template = yes
-			add_ideas = idea_GPG_battle_for_casland
-		}
-	}
+    id = GPG_hidden_event.4
+    hidden = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        10 = {
+            transfer_state_to = GSR
+            add_core_of = GSR
+            set_demilitarized_zone = no
+        }
+        145 = {
+            transfer_state_to = GDR
+            add_core_of = GDR
+            set_demilitarized_zone = no
+        }
+        28 = {
+            transfer_state_to = GPR
+            set_demilitarized_zone = no
+        }
+        GSR = {
+            inherit_technology = GPG
+            country_lock_all_division_template = yes
+            add_ideas = idea_GPG_battle_for_casland
+        }
+        GDR = {
+            inherit_technology = GPG
+            country_lock_all_division_template = yes
+            add_ideas = idea_GPG_battle_for_casland
+        }
+    }
 }

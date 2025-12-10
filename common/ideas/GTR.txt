@@ -48,8 +48,10 @@ ideas = {
         }
         idea_GTR_bottom_initiative = {
             picture = GTR_bottom_initiative
-            political_power_gain = 0.1
-            stability_factor = 0.05
+            modifier = {
+                political_power_gain = 0.1
+                stability_factor = 0.05
+            }
         }
         idea_GTR_functioning_bureaucracy = {
             picture = GTR_functioning_bureaucracy

@@ -1,0 +1,33 @@
+decision_GTR_north_integration_category = {
+    GTR_north_intergration_satoymin = {
+        cost = 50
+        days_remove = 50
+        remove_effect = {
+            transfer_state = 82
+            82 = {
+                set_demilitarized_zone = no
+                add_core_of = GTR
+                remove_core_of = EMP
+            }
+        }
+        fire_only_once = yes
+
+        icon = GFX_decisions_GTR_integrate_north_satoymin
+    }
+
+    GTR_north_intergration_wilopede = {
+        cost = 50
+        days_remove = 50
+        remove_effect = {
+            transfer_state = 75
+            75 = {
+                set_demilitarized_zone = no
+                add_core_of = GTR
+                remove_core_of = EMP
+            }
+        }
+        fire_only_once = yes
+
+        icon = GFX_decisions_GTR_integrate_north_wilopede
+    }
+}

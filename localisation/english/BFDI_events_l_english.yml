@@ -1062,6 +1062,10 @@
  GTR_event.18.desc: "'Shut your filthy mouth!' - Golfball's anger found it's way out pretty easily.\n'I would rather die than let you cut finances for this project!'\n\nHeavy silence occupied the building.\nTennis Ball interrupted it.\n\n'Listen, Golfie, I think you are too harsh. This will not last forever, we will catch that up later! Besides, it's pretty harsh for us with resources. Maybe you can reconsider this offer?'"
  GTR_event.18.a: "'Maybe, you are right.'"
 
+ GTR_event.19.t: "Celebrations"
+ GTR_event.19.desc: "The unfurled banners with graphs of the logarithmic function on them filled Cappy with confidence in the future.\n'It's not that bad. Rations have increased, and the smog-bearing southern winds have died down.'\n\nThese thoughts made her soul warm.\nThe image of Grape came to mind.\n'He would be happy if he saw this.' - an unstoppable train of thought stopped at the same old station.\n\nA noisy rally on the street distracted her. Objects, joyful, loud, their irrepressible ardor is coloring the banners with a thunderous 'Republic!'.\n\nWe have all lost someone..."
+ GTR_event.19.a: "...but we shall move on."
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

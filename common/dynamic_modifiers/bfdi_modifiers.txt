@@ -157,7 +157,7 @@ idea_GTR_humanitary_aid = {
     icon = GFX_idea_GTR_humanitary_aid
 
     stability_factor = var_GTR_humaid_sf
-    political_power_gain = var_GTR_humaid_ppg
+    repair_speed_factor = var_GTR_humaid_rsf
     consumer_goods_factor = var_GTR_humaid_cgf
 }
 

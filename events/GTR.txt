@@ -215,7 +215,7 @@ country_event = {
         }
         hidden_effect = {
             set_country_flag = ohh_thats_bad
-            set_country_flag = project_1_fails
+            set_country_flag = project_1_fail
             launch_nuke = {
                 province = 3545 #:sob:
             }
@@ -223,6 +223,11 @@ country_event = {
                 id = 3545
                 name = UNIVERSITY_DESTROYED
             }
+            set_victory_points = {
+                province = 3545
+                value = 5
+            }
+            set_capital = { state = 209 }
             goto_province = 3545
             country_event = {
                 id = GTR_event.11
@@ -258,11 +263,11 @@ country_event = {
         name = GTR_event.11.a
         custom_effect_tooltip = l_GTR_administration_collapse
         hidden_effect = {
+            set_country_flag = project_1_fail
             set_cosmetic_tag = GTR_collapse
             set_country_leader_portrait = {
                 portrait = GFX_GTR_golfball_collapse
             }
-            set_capital = { state = 209 }
             country_event = {
                 id = GTR_event.12
                 days = 15
@@ -384,7 +389,13 @@ country_event = {
             }
         }
         add_political_power = -50
-        GTR = { country_event = GTR_event.17 }
+        GTR = {
+            country_event = {
+                id = GTR_event.17
+                random_days = 3
+                random_hours = 12
+            }
+        }
         add_opinion_modifier = {
             target = GTR
             modifier = medium_increase
@@ -414,7 +425,7 @@ country_event = {
         name = GTR_event.17.a
         custom_effect_tooltip = l_GTR_improves_humaid
         add_to_variable = { var_GTR_humaid_sf = 0.02 }
-        add_to_variable = { var_GTR_humaid_ppg = 0.05 }
+        add_to_variable = { var_GTR_humaid_rsf = 0.05 }
         add_to_variable = { var_GTR_humaid_cgf = -0.01 }
     }
 }
@@ -445,6 +456,7 @@ country_event = {
         name = GTR_event.19.a
         set_cosmetic_tag = GTR_republic
         custom_effect_tooltip = l_GTR_integrate_north
+        set_country_flag = GTR_integrate_north
         hidden_effect = {
             every_possible_country = {
                 limit = { is_ai = no }
