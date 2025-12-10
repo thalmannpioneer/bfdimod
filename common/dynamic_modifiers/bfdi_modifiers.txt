@@ -172,34 +172,10 @@ idea_YFC_anarchic_lands = {
     mobilization_laws_cost_factor = 5
 }
 
-idea_YFC_integration_YFC = { #YFC Buffs and nerfs in the deal. Given in YFC_focus_numismatian_subjugation
-    icon = GFX_idea_generic_constitutional_guarantees
-
-    army_attack_factor = var_idea_YFC_integration_YFC_army_attack_factor
-    army_defence_factor = var_idea_YFC_integration_YFC_army_defence_factor
-    command_power_gain_mult = var_idea_YFC_integration_YFC_command_power_gain_mult
-    stability_factor = var_idea_YFC_integration_YFC_stability_factor
-    war_support_factor = var_idea_YFC_integration_YFC_war_support_factor
-    political_power_factor = var_idea_YFC_integration_YFC_political_power_factor
-}
-
-idea_CRN_integration_CRN = { #CRN Buffs and nerfs in the deal. Given in YFC_focus_numismatian_subjugation
-    icon = GFX_idea_generic_constitutional_guarantees
-
-    army_attack_factor = var_idea_YFC_integration_CRN_army_attack_factor
-    army_defence_factor = var_idea_YFC_integration_CRN_army_defence_factor
-    command_power_gain_mult = var_idea_YFC_integration_CRN_command_power_gain_mult
-    stability_factor = var_idea_YFC_integration_CRN_stability_factor
-    war_support_factor = var_idea_YFC_integration_CRN_war_support_factor
-    political_power_factor = var_idea_YFC_integration_CRN_political_power_factor
-    communism_drift = var_idea_YFC_integration_CRN_communism_drift
-}
-
 idea_BUN_Ticking_Bomb = { #Bunch Revolt Idea
     icon = GFX_idea_BUN_ticking_bomb
 
     stability_factor = var_idea_BUN_Ticking_Bomb_stability_factor
-    war_support_factor = var_idea_BUN_Ticking_Bomb_war_support_factor
     army_core_attack_factor = var_idea_BUN_Ticking_Bomb_army_core_attack_factor
     army_core_defence_factor = var_idea_BUN_Ticking_Bomb_army_core_defence_factor
     surrender_limit = var_idea_BUN_Ticking_Bomb_surrender_limit

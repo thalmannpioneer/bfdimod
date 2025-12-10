@@ -17,9 +17,9 @@ decision_BUN_Revolt_category = {
 		cancel_trigger = {
             NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
 		}
-		icon = GFX_decision_SWI_consolidate_council_power  
+		icon = GFX_mission_BUN_Revolt_Ticking  
 		is_good = no
-		days_mission_timeout = 20 #Rework this later me please
+		days_mission_timeout = 45
 		timeout_effect = {
             custom_effect_tooltip = l_BUN_YFC_1
             hidden_effect = {
@@ -37,6 +37,7 @@ decision_BUN_Revolt_category = {
 						check_variable = {var_idea_BUN_Ticking_Bomb_surrender_limit < 0.24}
 					}
 					YFC = {country_event = BUN_YFC.7}
+					BUN = {country_event = BUN_YFC.8}
 				} 
             }    
         }
@@ -103,7 +104,7 @@ decision_BUN_Revolt_category = {
     }
 
 	BUN_Revolt_Recruit = { 
-		icon = GFX_decision_generic_protection
+		icon = GFX_decisions_BUN_Revolt_Recruit
       
 		visible = {
 			tag = BUN
@@ -163,7 +164,7 @@ decision_BUN_Revolt_category = {
 	}
 
 	BUN_Efforts_Workshops = { 
-		icon = GFX_decision_generic_forestry
+		icon = GFX_decisions_BUN_Efforts_Workshops
       
 		visible = {
 			tag = BUN
@@ -197,7 +198,7 @@ decision_BUN_Revolt_category = {
 	}
 
 	BUN_Efforts_Production = { 
-		icon = GFX_decision_ger_military_buildup
+		icon = GFX_decisions_BUN_Efforts_Production
       
 		visible = {
 			tag = BUN
@@ -215,7 +216,7 @@ decision_BUN_Revolt_category = {
 
 		modifier = {
 			industrial_capacity_factory = 0.1
-			production_factory_efficiency_gain_factor = 0.25
+			production_factory_efficiency_gain_factor = 0.35
 		}
 
 		cancel_trigger = {
@@ -232,7 +233,7 @@ decision_BUN_Revolt_category = {
 	}
 
 	BUN_Efforts_Defence = { 
-		icon = GFX_decision_generic_intelligence_operation
+		icon = GFX_decisions_BUN_Efforts_Defence
       
 		visible = {
 			tag = BUN
@@ -268,7 +269,7 @@ decision_BUN_Revolt_category = {
 	}
 
 	BUN_Efforts_Offense = { 
-		icon = GFX_decision_generic_intelligence_operation
+		icon = GFX_decisions_BUN_Efforts_Offense
       
 		visible = {
 			tag = BUN
@@ -304,7 +305,7 @@ decision_BUN_Revolt_category = {
 	}
 
 	BUN_Efforts_Scavenging = { 
-		icon = GFX_decision_generic_confiscation
+		icon = GFX_decisions_BUN_Efforts_Scavenging
       
 		visible = {
 			tag = BUN

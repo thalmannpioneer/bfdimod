@@ -17,10 +17,6 @@ country_event = {
 		add_stability = 0.05
 		country_lock_all_division_template = no
 		remove_country_leader_trait = insurgent_leader
-		delete_unit_template_and_units = {
-			division_template = "Armed Insurgents"
-			disband = no 
-		}
 		remove_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }
 		YFC = {
 			country_event = {
@@ -120,6 +116,10 @@ country_event = {
 		add_ideas = idea_BUN_victorious_in_blood
 		add_ideas = disarmed_nation
 		add_manpower = 5000
+		delete_unit_template_and_units = {
+			division_template = "Armed Insurgents"
+			disband = no 
+		}
 		hidden_effect = {
 			IF = {
 				limit = {
@@ -180,8 +180,8 @@ country_event = { #YFC sees this
 	option = {
 		name = BUN_YFC.6.a
 		white_peace = BUN
-		add_war_support = -0.05
-		add_political_power = -50
+		add_war_support = -0.10
+		add_political_power = -100
 		IF = {
 			limit = {
 				has_war_with = CRN
@@ -217,10 +217,6 @@ country_event = { #YFC sees this
 				subtract_from_variable = { money_amount = 10 }
 				country_lock_all_division_template = no
 				remove_country_leader_trait = insurgent_leader
-				delete_unit_template_and_units = {
-					division_template = "Armed Insurgents"
-					disband = no 
-				}
 				remove_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }
 				country_event = {
 					id = BUN_YFC.4
@@ -233,9 +229,8 @@ country_event = { #YFC sees this
 
 	option = {
 		name = BUN_YFC.6.b
-		add_war_support = 0.02
-		add_political_power = 25
-		#Would very much anger the sectors
+		add_war_support = -0.05
+		add_political_power = -50
 	}
 }
 
@@ -249,9 +244,11 @@ country_event = { #YFC sees this
 
 	option = {
 		name = BUN_YFC.7.a
+		custom_effect_tooltip = l_YFC_BUN_last_ditch
+		add_manpower = 5000
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 250
+			amount = 500
 		}
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
@@ -275,6 +272,47 @@ country_event = { #YFC sees this
 				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
 				count = 4
 				owner = YFC
+			}
+		}
+		hidden_effect = {
+			IF = {
+				limit = {YFC = {is_ai = yes}}
+				201 = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+						count = 2
+						owner = YFC
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = BUN_YFC.8
+	title = BUN_YFC.8.t
+	desc = BUN_YFC.8.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = BUN_YFC.8.a
+		custom_effect_tooltip = l_YFC_BUN_last_ditch
+		add_war_support = 0.05
+		add_manpower = 5000
+		hidden_effect = {
+			IF = {
+				limit = {BUN = {is_ai = yes}}
+				85 = {
+					create_unit = {
+						division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.05 start_experience_factor = 0.05"
+						owner = BUN
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
 			}
 		}
 	}

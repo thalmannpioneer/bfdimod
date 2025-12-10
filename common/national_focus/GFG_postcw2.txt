@@ -974,9 +974,15 @@ focus_tree = {
 		
 		cost = 5
 		
+
 		ai_will_do = {
-        base = 10
+			base = 0
+			modifier = {
+				add = 10
+				num_divisions > 20
+			}
 		}
+
 		
 		completion_reward = {
 			declare_war_on = {

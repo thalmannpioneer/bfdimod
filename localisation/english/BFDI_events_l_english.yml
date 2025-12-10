@@ -976,9 +976,17 @@
  BUN_YFC.5.b: "We'll chart our own course now."
 
  BUN_YFC.6.t: "A Ceasefire?" #YFC sees this
- BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to try and save face. The offer itself is simple, us losing all gained territory for them demilitarizing Snowpath and some resource rights. Every Sectorial wants to go through with this deal, as it still means we gain something for our efforts. Well, almost every Sectorial... Top Hat wants to put all our resources into one last offensive to end Neo-Bunch. No option here is good, but we have to choose. Shall we make peace while we can, or risk it all?"
- BUN_YFC.6.a: "Agree to the Ceasefire."
- BUN_YFC.6.b: "ALL IN!"
+ BUN_YFC.6.desc: "This is should be changed to where BUN offers a ceasefire but Sectors got something in the works to counter attack" #Zdubbz
+ BUN_YFC.6.a: "Agree to the Ceasefire." #Still the same
+ BUN_YFC.6.b: "ALL IN!" #YFC ingores the idea of a Ceasefire
+
+ BUN_YFC.7.t: "Something idk" #YFC sees this
+ BUN_YFC.7.desc: "This is the event to where the Sectors got a force ready to counterattack, the player has 60 days to win or they lose" #Zdubbz
+ BUN_YFC.7.a: "cool text" 
+
+ BUN_YFC.8.t: "The final battle is upon us!" #BUN sees this
+ BUN_YFC.8.desc: "Tells Neo-Bun that YFC is putting all effort in one last offensive, hold them off to win!" #Zdubbz
+ BUN_YFC.8.a: "cool text" 
 
  #GOIKY TECHNOCRATIC REPUBLIC
  GTR_event.1.t: "Gaudeamus Igitur"

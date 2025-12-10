@@ -1109,7 +1109,11 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        base = 5
+         	base = 1
+			modifier = {
+				factor = 10
+				num_divisions > 15
+			}
 		}
 		
 		completion_reward = {

@@ -39,11 +39,10 @@ set_popularities = {
 
 #Revolt BUN 
  set_variable = { var_idea_BUN_Ticking_Bomb_stability_factor = 1 }
- set_variable = { var_idea_BUN_Ticking_Bomb_war_support_factor = 2}
- set_variable = { var_idea_BUN_Ticking_Bomb_army_core_attack_factor = 1.5 }
- set_variable = { var_idea_BUN_Ticking_Bomb_army_core_defence_factor = 2 }
- set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 2.5 } 
- set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 3 } 
+ set_variable = { var_idea_BUN_Ticking_Bomb_army_core_attack_factor = 0.75 }
+ set_variable = { var_idea_BUN_Ticking_Bomb_army_core_defence_factor = 1.25 }
+ set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 1.25 } 
+ set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 1.5 } 
 
 set_variable = { var_currently_raiding = 0 }
 set_variable = { var_BUN_Bonus_Guns = 0 }

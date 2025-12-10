@@ -28,17 +28,18 @@ decision_YFC_foster_category = {
 
 	YFC_foster_Debate = { 
 		available = {always = no}
-		icon = GFX_mission_YFC_foster_Countdown  
+		icon = GFX_mission_YFC_foster_Debate  
 		is_good = yes
 		days_mission_timeout = 60
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
-			country_event = {
-				id = YFC_BUN.28
-				hours = 1
-			}
+			custom_effect_tooltip = l_YFC_BUN_foster_debate
 			hidden_effect = {
+				country_event = {
+					id = YFC_BUN.28
+					hours = 1
+				}
 				add_to_variable = { var_foster_BUN_support = 3 }
 			}
 		}

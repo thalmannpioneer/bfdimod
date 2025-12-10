@@ -1,6 +1,6 @@
 political_actions = {
     GGR_YFC_BUN_aid = { 
-		icon = GFX_decision_generic_protection
+		icon = GFX_decisions_GGR_YFC_BUN_aid
       
 		visible = {
             tag = GGR

@@ -188,6 +188,11 @@ spriteTypes = {
 		name = "GFX_decision_cat_GGR_industry"
 		textureFile = "gfx/interface/decisions/decision_cat_GGR_industry.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decisions_GGR_YFC_BUN_aid"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GGR_YFC_BUN_aid.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_decisions_congress_icon"
@@ -472,6 +477,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Intergrate.dds"
 	}
 
+		spriteType = {
+		name = "GFX_decisions_YFC_BUN_Conscript"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Conscript.dds"
+	}
+
 	spriteType = {
 		name = "GFX_decisions_YFC_BUN_Surrender"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Surrender.dds"
@@ -498,6 +508,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_mission_YFC_foster_Debate"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_Debate.dds"
+	}
+
+	spriteType = {
 		name = "GFX_mission_YFC_foster_gaining_support"
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_foster_gaining_support.dds"
 	}
@@ -512,12 +527,59 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_fund.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decisions_YFC_foster_invest"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_invest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_foster_ruin_everyone"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_ruin_everyone.dds"
+	}
+
+
 	#BUN
 
 	spriteType = {
 		name = "GFX_mission_BUN_Victory"
 		textureFile = "gfx/interface/decisions/GFX_mission_BUN_Victory.dds"
 	}
+
+	spriteType = {
+		name = "GFX_mission_BUN_Revolt_Ticking"
+		textureFile = "gfx/interface/decisions/GFX_mission_BUN_Revolt_Ticking.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Revolt_Recruit"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Revolt_Recruit.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Efforts_Workshops"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Efforts_Workshops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Efforts_Production"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Efforts_Production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Efforts_Defence"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Efforts_Defence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Efforts_Offense"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Efforts_Offense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_BUN_Efforts_Scavenging"
+		textureFile = "gfx/interface/decisions/GFX_decisions_BUN_Efforts_Scavenging.dds"
+	}
+
 
 	#GTR
 

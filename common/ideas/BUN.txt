@@ -10,6 +10,21 @@ ideas = {
 			}
 		}
 
+		idea_BUN_renewed_resolve = { #45 Day buff for Neo-Bunch
+			picture = generic_deal_with_the_devil2
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.25
+				war_support_factor = 0.25
+				ai_focus_aggressive_factor = 1
+			}
+			cancel = {
+				NOT = { country_exists = BUN }
+				NOT = { has_war_with = YFC }
+				NOT = { has_war_with = CRN }
+			}
+		}
+
 		idea_BUN_greenville_treaty = { #Deal with CRN, where BUN get's advisors. Given by CRN
 			picture = generic_deal_with_the_devil2
 			modifier = {
@@ -33,6 +48,7 @@ ideas = {
 				industrial_capacity_factory = -0.25
 				research_speed_factor = -0.75
 				local_resources_factor = -0.25	
+				monthly_population = -0.75
 			}
 		}
 
@@ -40,10 +56,11 @@ ideas = {
 			picture = BUN_armed_militia
 			modifier = {
 				resistance_target_on_our_occupied_states = 0.15
-				conscription = 0.1
-				army_org_factor = -0.2
-				experience_gain_army_factor = -0.75
+				conscription = 0.15
+				army_org_factor = -0.25
+				experience_gain_army_factor = -0.95
 				mobilization_speed = 2.5
+				military_leader_cost_factor = 1 
 			}
 			cancel = {
 				NOT = { has_war_with = YFC }

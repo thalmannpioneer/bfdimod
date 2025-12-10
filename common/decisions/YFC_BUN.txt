@@ -2,17 +2,22 @@ decision_YFC_BUN_category = {
 	YFC_BUN_Countdown = {
 		activation = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
-			controls_state = 85
-			85 = {
-				resistance > 80
-				compliance < 70
+			OR = {
+				AND = {
+					controls_state = 85
+					85 = {
+						resistance > 80
+						compliance < 65
+					}
+					controls_state = 212
+					212 = {
+						resistance > 80
+						compliance < 65
+					}	
+					NOT = {country_exists = BUN}
 				}
-			controls_state = 212
-			212 = {
-				resistance > 80
-				compliance < 70
-			}		
-			NOT = {country_exists = BUN}
+				country_exists = BUN
+			}
 		}
 		available = {
 			always = no
@@ -27,7 +32,7 @@ decision_YFC_BUN_category = {
 		}
 		icon = GFX_mission_YFC_BUN_Growing_Riots  
 		is_good = no
-		days_mission_timeout = 120
+		days_mission_timeout = 75
 		timeout_effect = {
 			country_event = {
 				id = YFC_BUN.8
@@ -673,7 +678,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_recruit_locals = { 
-		icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decisions_YFC_BUN_Conscript
       
 		visible = {
 			has_country_flag = has_YFC_BUN_recruit_locals
@@ -699,7 +704,7 @@ decision_YFC_BUN_category = {
 	}
 
 	YFC_BUN_mobilize_reserves = { 
-		icon = GFX_decision_SWE_set_army_budget
+		icon = GFX_decisions_YFC_BUN_Conscript
       
 		visible = {
 			country_exists = BUN
@@ -713,7 +718,7 @@ decision_YFC_BUN_category = {
 
 		fire_only_once = yes
 
-		cost = 35
+		cost = 75
 		days_remove = 50
 
 		modifier = {
