@@ -53,13 +53,12 @@ ideas = {
 			cancel = {country_exists = BUN}
 		}
 
-		#THIS WILL BE REMOVED I HAVE A BETTER IDEA
+
 		idea_YFC_operation_enforcement = { #Last ditch attack by YFC during revolt, ALL IN!!!!!. Given by choice in a event where a ceasefire could be made
 			picture = CZE_planning_bonus
 			targeted_modifier = {
 				tag = BUN
-				defense_bonus_against = 0.5
-				attack_bonus_against = 1
+				attack_bonus_against = 0.25
 			}
 			modifier = {
 				supply_consumption_factor = -0.1
@@ -72,6 +71,10 @@ ideas = {
 					BUN = {country_event = BUN_YFC.1}
 					add_war_support = -0.05
 					add_political_power = -100
+				}
+				delete_unit_template_and_units = {
+					division_template = "Militia"
+					disband = no 
 				}
 			}
 		}

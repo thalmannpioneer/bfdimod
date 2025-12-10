@@ -38,6 +38,9 @@ decision_YFC_foster_category = {
 				id = YFC_BUN.28
 				hours = 1
 			}
+			hidden_effect = {
+				add_to_variable = { var_foster_BUN_support = 3 }
+			}
 		}
 	}
 	
@@ -65,9 +68,12 @@ decision_YFC_foster_category = {
 		icon = GFX_decisions_YFC_foster_propaganda
       
 		visible = {
-			has_completed_focus = YFC_focus_support_blocky
 			has_completed_focus = YFC_focus_foster_new_society
 			NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+		}
+		
+		available = {
+			has_completed_focus = YFC_focus_support_blocky
 		}
 
 		fire_only_once = no
@@ -217,7 +223,7 @@ decision_YFC_foster_category = {
 		}
 
 		remove_effect = {
-			custom_effect_tooltip = l_YFC_BUN_foster_gain
+			custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
 			hidden_effect = {
 				add_to_variable = { var_foster_YFC_support = 3.5 }
 				BUN = {add_to_variable = { money_amount = 5 }}

@@ -22,13 +22,13 @@ country_event = {
 					} 
 				}
 				random_list = {
-					40 = {
+					30 = {
 						set_country_flag = stability_save_path
 					}
-					30 = {
+					50 = {
 						set_country_flag = civil_war_path
 					}
-					30 = {
+					20 = {
 						set_country_flag = fries_path
 					}
 				}

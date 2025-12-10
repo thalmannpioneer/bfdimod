@@ -52,4 +52,8 @@ defined_text = {
 		trigger = { has_global_flag = cap_neobunch }
 		localization_key = cap_window_desc_neobunch
 	}
+	text = {
+		trigger = { has_global_flag = cap_bunchrepublic }
+		localization_key = cap_window_desc_bunchrepublic
+	}
 }

@@ -19,7 +19,7 @@ decision_BUN_Revolt_category = {
 		}
 		icon = GFX_decision_SWI_consolidate_council_power  
 		is_good = no
-		days_mission_timeout = 25
+		days_mission_timeout = 20 #Rework this later me please
 		timeout_effect = {
             custom_effect_tooltip = l_BUN_YFC_1
             hidden_effect = {
@@ -31,6 +31,13 @@ decision_BUN_Revolt_category = {
                     add_to_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = -0.25 }
                     add_to_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = -0.25 }
                 }
+
+				IF = {
+					limit = {            
+						check_variable = {var_idea_BUN_Ticking_Bomb_surrender_limit < 0.24}
+					}
+					YFC = {country_event = BUN_YFC.7}
+				} 
             }    
         }
     }  
@@ -342,7 +349,7 @@ decision_BUN_Revolt_category = {
 			}
 			has_war_with = YFC
 			check_variable = {
-                var_idea_BUN_Ticking_Bomb_surrender_limit < 0.24
+                var_idea_BUN_Ticking_Bomb_surrender_limit < 0.51
             }
 			NOT = {has_active_mission = BUN_Revolt_Victory}
 		}

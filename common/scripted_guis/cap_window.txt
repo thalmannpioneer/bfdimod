@@ -67,6 +67,10 @@ scripted_gui = {
 					flag = cap_neobunch
 					value = 0
 				}
+				set_global_flag = {
+					flag = cap_bunchrepublic
+					value = 0
+				}
 			}
 		}
 	}

@@ -826,7 +826,7 @@ focus_tree = {
 			}
 		}
 		
-		#allow_branch = { has_country_flag = Won_War_BUN }
+		allow_branch = { has_country_flag = Won_War_BUN }
 		
 		cost = 2
 		completion_reward = {
@@ -1462,7 +1462,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			country_event = {
-				id = YFC_BUN.28
+				id = YFC_event.17
 				hours = 1
 			}
 		}

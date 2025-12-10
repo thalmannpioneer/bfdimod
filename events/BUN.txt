@@ -169,7 +169,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = { #YFC sees this
 	id = BUN_YFC.6
 	title = BUN_YFC.6.t
 	desc = BUN_YFC.6.desc
@@ -188,10 +188,17 @@ country_event = {
 			}
 			white_peace = CRN
 		}
+		custom_effect_tooltip = l_money_gain_1M
+		add_to_variable = { money_amount = 10 }
 		BUN = {
 			transfer_state = 212
 			transfer_state = 85
 			give_resource_rights = { receiver = YFC state = 85 }
+			diplomatic_relation = {
+				country = YFC
+				relation = non_aggression_pact
+				active = yes
+			}
 			IF = {
 				limit = {
 					CRN = {
@@ -204,10 +211,10 @@ country_event = {
 				transfer_state = 217
 				transfer_state = 218
 			}
-		}
-		212 = {set_demilitarized_zone = yes}	
+		}	
 		hidden_effect = {
 			BUN = {
+				subtract_from_variable = { money_amount = 10 }
 				country_lock_all_division_template = no
 				remove_country_leader_trait = insurgent_leader
 				delete_unit_template_and_units = {
@@ -226,14 +233,49 @@ country_event = {
 
 	option = {
 		name = BUN_YFC.6.b
-		add_manpower = 5000
+		add_war_support = 0.02
+		add_political_power = 25
+		#Would very much anger the sectors
+	}
+}
+
+country_event = { #YFC sees this
+	id = BUN_YFC.7
+	title = BUN_YFC.7.t
+	desc = BUN_YFC.7.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = {
+		name = BUN_YFC.7.a
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 2500
+			amount = 250
 		}
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
 			days = 60
+		}
+		division_template = {
+			name = "Militia"
+			is_locked = yes
+			division_cap = 4 
+			priority = 0
+			template_counter = 0
+			regiments = {
+				militia = { x = 0 y = 0 }
+				militia = { x = 0 y = 1 }
+				militia = { x = 1 y = 0 }
+				militia = { x = 1 y = 1 }
+			}
+		}
+		201 = {
+			create_unit = {
+				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				count = 4
+				owner = YFC
+			}
 		}
 	}
 }
@@ -283,8 +325,8 @@ country_event = {
 			}
 			finalize_border_war = {
 				attacker_win = no
-					attacker = 212
-					defender = 201
+				attacker = 212
+				defender = 201
 			}
 		}				
 		else_if = {

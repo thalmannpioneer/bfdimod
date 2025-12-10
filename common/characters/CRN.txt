@@ -10,6 +10,14 @@ characters={
 			ideology = conservatism #Ronald Reagan fr fr
 			desc = CRN_credit_card_desc
 		}
+		field_marshal = {
+			traits = { old_guard politically_connected war_hero defensive_doctrine }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+		}
 	}
 
 	CRN_mirror = {
