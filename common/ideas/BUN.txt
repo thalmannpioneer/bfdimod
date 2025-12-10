@@ -25,6 +25,42 @@ ideas = {
 			}
 		}
 
+		idea_BUN_adjusting_rebuilding = { #Rebuilding
+			picture = ARG_civilian_economy_boost
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_speed_industrial_complex_factor = -0.25 
+				neutrality_drift = 0.03
+				democratic_drift = 0.03
+				training_time_factor = 0.35
+				stability_weekly_factor = 0.005
+				political_power_gain = -1
+			}
+		}
+
+		idea_BUN_highlyfunded_army = { #Debate picks reforming army
+			picture = generic_war_preparation
+			modifier = {
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.25
+				army_org_factor = 0.1
+				training_time_factor = 0.5
+				experience_gain_army = 0.02
+			}
+		}
+
+		idea_BUN_unfunded_army = { #Debate picks YFC/CRN help
+			picture = generic_army_problems
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.3
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+				army_morale_factor = -0.15
+			}
+		}
+
 		idea_BUN_greenville_treaty = { #Deal with CRN, where BUN get's advisors. Given by CRN
 			picture = generic_deal_with_the_devil2
 			modifier = {

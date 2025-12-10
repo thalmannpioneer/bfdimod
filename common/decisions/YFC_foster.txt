@@ -247,7 +247,7 @@ decision_YFC_foster_category = {
 			has_completed_focus = YFC_focus_support_blocky
 			has_completed_focus = YFC_focus_foster_new_society
 			is_ai = no
-			check_variable = { var_foster_YFC_support > 40 }
+			check_variable = { var_foster_YFC_support > 35 }
 			check_variable = { var_foster_YFC_support > var_foster_BUN_support }
 			check_variable = { var_foster_YFC_support > var_foster_CRN_support }
 		}

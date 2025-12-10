@@ -1,5 +1,15 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10563;4713;sea;11570;-1;-1;-1;-1;;Dream-island-bridge
+4391;4148;sea;11778;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Longbridge)
+9875;11857;sea;11778;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Entown Beach to Mainland)
+11860;9890;sea;11492;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Random Island to Mainland)
+11860;11857;sea;11492;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Random Island to Entown Beach)
+10140;11864;sea;11604;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Mainland to Upper Hendailan Island)
+11878;11873;sea;11604;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Big Middle Hendailan Island to other Middle Hendailan Island)
+11871;11874;sea;11604;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (other Middle Hendailan Island to other other Middle Hendailan Island)
+11894;11893;sea;11743;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Lowest Lower Hendailan Island to Middle Lower Hendailan Island)
+11892;11888;sea;11743;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Middle Lower Hendailan Island to Isuk)
+11886;11885;sea;11743;-1;-1;-1;-1;;Dream-island-bridge #:Pray: (Isuk to Highest Lower Hendailan Island)
 3243;11176;impassable;-1;-1;-1;-1;-1;;Goiky-hills
 1256;11136;impassable;-1;-1;-1;-1;-1;;Goiky-hills
 1256;438;impassable;-1;-1;-1;-1;-1;;Goiky-hills

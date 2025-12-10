@@ -16,7 +16,13 @@ decision_YFC_BUN_category = {
 					}	
 					NOT = {country_exists = BUN}
 				}
-				country_exists = BUN
+				AND = {
+					country_exists = BUN
+					BUN = {
+						NOT = {has_dynamic_modifier = {modifier = idea_BUN_Ticking_Bomb}} 
+						NOT = {has_idea = idea_BUN_victorious_in_blood}
+					}	
+				}
 			}
 		}
 		available = {

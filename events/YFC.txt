@@ -2150,6 +2150,9 @@ country_event = { #Annex Events FINAL
 	}
 	desc = {
 		text = YFC_BUN.16.desc.c #Normal one
+		trigger = {
+			NOT = {has_war_with = BUN}
+		}
 	}
 
 	picture = GFX_Temp_event
@@ -2409,14 +2412,20 @@ country_event = { #Election BUN Wins!
 	option = {
 		name = YFC_BUN.25.a
 		complete_national_focus = YFC_focus_bunch_fostered
-		BUN = {
-			set_country_leader_ideology = centrism
-			set_cosmetic_tag = BUN_republic
-			remove_ideas = idea_BUN_criminal_state
-			transfer_state = 85
-			transfer_state = 212
-			transfer_state = 217
-			transfer_state = 218
+		hidden_effect = {
+			BUN = {
+				set_country_leader_ideology = centrism
+				set_cosmetic_tag = BUN_republic
+				remove_ideas = idea_BUN_criminal_state
+				add_timed_idea = {
+					idea = idea_BUN_adjusting_rebuilding
+					days = 500
+				}
+				transfer_state = 85
+				transfer_state = 212
+				transfer_state = 217
+				transfer_state = 218
+			}
 		}
 	}
 }
@@ -2432,22 +2441,28 @@ country_event = { #Election YFC Wins!
 	option = {
 		name = YFC_BUN.26.a
 		complete_national_focus = YFC_focus_bunch_fostered
-		BUN = {
-			add_country_leader_role = {
-                character = BUN_blocky
-                promote_leader = yes
-                country_leader = {
-                    ideology = moderatism
-                }
-            }
-			set_cosmetic_tag = BUN_republic
-			remove_ideas = idea_BUN_criminal_state
-			transfer_state = 85
-			transfer_state = 212
-			transfer_state = 217
-			transfer_state = 218
+		hidden_effect = {
+			BUN = {
+				add_country_leader_role = {
+					character = BUN_blocky
+					promote_leader = yes
+					country_leader = {
+						ideology = moderatism
+					}
+				}
+				add_timed_idea = {
+					idea = idea_BUN_adjusting_rebuilding
+					days = 500
+				}
+				set_cosmetic_tag = BUN_republic
+				remove_ideas = idea_BUN_criminal_state
+				transfer_state = 85
+				transfer_state = 212
+				transfer_state = 217
+				transfer_state = 218
+			}
+			YFC = {puppet = BUN}
 		}
-		YFC = {puppet = BUN}
 	}
 }
 
@@ -2462,15 +2477,21 @@ country_event = { #Election CRN Wins!
 	option = {
 		name = YFC_BUN.27.a
 		complete_national_focus = YFC_focus_bunch_fostered
-		BUN = {
-			set_cosmetic_tag = BUN_republic
-			remove_ideas = idea_BUN_criminal_state
-			transfer_state = 85
-			transfer_state = 212
-			transfer_state = 217
-			transfer_state = 218
+		hidden_effect = {
+			BUN = {
+				set_cosmetic_tag = BUN_republic
+				remove_ideas = idea_BUN_criminal_state
+				add_timed_idea = {
+					idea = idea_BUN_adjusting_rebuilding
+					days = 500
+				}
+				transfer_state = 85
+				transfer_state = 212
+				transfer_state = 217
+				transfer_state = 218
+			}
+			CRN = {puppet = BUN}
 		}
-		CRN = {puppet = BUN}
 	}
 }
 
