@@ -690,7 +690,7 @@
  YFC_event.15.b: "The costs are faster than the barbarians!" #Reworded so it tells the player that this is faster
 
  YFC_event.16.t: "RE: Trade Routes Along the Sea"
- YFC_event.16.desc: "The small squadron we sent to examen the east has returned to us, showing their findings. It seems as if there are many locations that could become a small, profitable port. According to them, a couple of pieces of the east jut out into small peninsulas, with which shipping could be made easy. For now, we've ordered them to set up shop (literally) at the nearest spot they could, however, should we expand further, the east could become extroardinarily profitable. Unfortunately, it seems as if some sectorials aren't currently on board with this idea, citing that we wouldn't be able to properly devote our time to this endevour. They are likely right, sure, however this definitely would not hurt to attempt in the future."
+ YFC_event.16.desc: "The small squadron we sent to examen the east has returned to us, showing their findings. It seems as if there are many locations that could become a small, profitable port. According to them, a couple of pieces of the east jut out into small peninsulas, with which shipping could be made easy. For now, we've ordered them to set up shop (literally) at the nearest spot they could, however, should we expand further, the east could become extraordinarily profitable. Unfortunately, it seems as if some sectorials aren't currently on board with this idea, citing that we wouldn't be able to properly devote our time to this endevour. They are likely right, sure, however this definitely would not hurt to attempt in the future."
  YFC_event.16.a: "At least we have a good foothold!" #gives some money and state 225, setting the vp there to 12 instead of 1 (RE: Just gonna turn this into a VP, can be increased later)
 
  YFC_event.17.t: "On the Prisoners of War"
@@ -933,7 +933,7 @@
  YFC_BUN.27.a: "Bitch better have my money!"
 
  YFC_BUN.28.t: "'So, how do you three feel about the economy?'"
- YFC_BUN.28.desc: "A younger object from the crowd raised their hand, asking the aforementioned questioned. They looked to be about college aged, maybe older. Definitely a hardcore Bunchivist, though, seeing as they had brought with them the flag of what revolters call the 'Neo-Bunch.' Regardless, Eraser took it upon himself to answer the question first. He likely had no issues with the revolters, the nimrod.\n'I think a new Bunch Republic shouldn't have an economy at all. We already have a system made up; you make things, someone steals them, or you defend yourself. I guess, if I had to call it anything, it'd be an economy of strength.' The response gained some cheers from the crowd, but they were quickly quieted by Pen's incessant shushing. \nQuickly, he cobbled together a response, 'Uh, I think Eraser had some great points, but I... like capitalism. But like, with democracy! We could... Um, uh...' Pen's attempt at proving himself quickly fell apart as he attempted to continue speaking. Pitiful, but not worthy of such. The crowd didn't really react with much more than confusion. \nThinking on his feet, without any real plans to go off of besides the current audience reactions, Blocky realized he needed to talk about something that'd rile up the crowd. Quickly, he started with his on-the-spot plans about..."
+ YFC_BUN.28.desc: "A younger object from the crowd raised their hand, asking the aforementioned questioned. They looked to be about college-aged, maybe older. Definitely a hardcore Bunchivist, though, seeing as they had brought with them the flag of what revolters called the 'Neo-Bunch.' Regardless, Eraser took it upon himself to answer the question first. He likely had no issues with the revolters, the nimrod.\n'I think a new Bunch Republic shouldn't have an economy at all. We already have a system made up; you make things, someone steals them, or you defend yourself... I guess, if I had to call it anything, it'd be an economy of strength.' The response gained some cheers from the crowd, but they were quickly quieted by Pen's incessant shushing. \nQuickly, he cobbled together a response, 'Uh, I think Eraser had a great point, but I... like capitalism! But like, with democracy! We could... Um, uh...' Pen's attempt at proving himself quickly fell apart as he attempted to continue speaking. Pitiful, but not worthy of such. The crowd didn't really react with much more than confusion. \nThinking on his feet, without any real plans to go off of besides the current audience reactions, Blocky realized he needed to talk about something that'd rile up the crowd. Quickly, he started with his on-the-spot plans about..."
  YFC_BUN.28.a: "A command economy."
  YFC_BUN.28.b: "A Numismatian style free market!"
  YFC_BUN.28.c: "Yellow Facer investment, and the opportunities they bring!"
@@ -973,20 +973,20 @@
  BUN_YFC.5.t: "Further United?"
  BUN_YFC.5.desc: "It's been a few weeks since our victory against our occupiers. Everything has still been pretty stable. Recently though, an interesting offer from our friends to the south showed up. It's an agreement to have our countries into an alliance, they call it the 'Southern Trading League', and it would allow for great trading deals to be implemented and improvements to our forces. It's definitely a good deal, however, we don't know exactly what motives the Numismatians have. We could try braving it alone, but nation building isn't a strong suit of any of the Bunch's leaders. After some thinking, we decided that.."
  BUN_YFC.5.a: "We're united till the end!"
- BUN_YFC.5.b: "We'll chart our own course now."
+ BUN_YFC.5.b: "We'll chart our own course for now."
 
  BUN_YFC.6.t: "A Ceasefire?" #YFC sees this
- BUN_YFC.6.desc: "This is should be changed to where BUN offers a ceasefire but Sectors got something in the works to counter attack" #Zdubbz
+ BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to attempt to 'save face,' as the kids say. The offer itself is simple, us losing all gained territory for them demilitarizing Snowpath and giving us some resource rights. Though it seems like quite the compromise, the sectorials believe the opposite. Top Hat says that 'diverting excess resources to the war could've led us to a quicker victory,' and that the 'incompetence of management' was to blame for this affair. The others agree with him, unfortunately. Frankly, we have not been devoting as much to this as possible, and Top Hat did indeed say he had a better plan for this war, but it would take a significant amount of resources and planning. Should we go through with the ceasefire, or wait for Top Hat to be able to enact his plan?"
  BUN_YFC.6.a: "Agree to the Ceasefire." #Still the same
- BUN_YFC.6.b: "ALL IN!" #YFC ingores the idea of a Ceasefire
+ BUN_YFC.6.b: "Let him try." #YFC ingores the idea of a Ceasefire
 
- BUN_YFC.7.t: "Something idk" #YFC sees this
- BUN_YFC.7.desc: "This is the event to where the Sectors got a force ready to counterattack, the player has 60 days to win or they lose" #Zdubbz
- BUN_YFC.7.a: "cool text" 
+ BUN_YFC.7.t: "RE: Corresponding on the Counterattack; Top Hat." #YFC sees this
+ BUN_YFC.7.desc: "Yellow Face,\nI write to you today as to inform you that I have completed all requirements for the counter attack. I have sufficient amounts of men, guns, will, motivation, courage, and of course, equity. This plan will involve bold and newfound strategy, the likes of which has not seen neither Southern nor Eastern Goiky. However, I can assure you of the obtusity of ignoring an opportunity such as this one. Simply from monitoring frontlines, and listening to conversations had between Bunchivists, my men and I have become certain that the Bunchivist rebels are entirely unaware of the plans that I have, and have no means of learning of them. We were also able to deduce that they are extraordinarily weak, and will likely crumble on the offensive. Given your status as CEO, I of course require permission before sending this power forward. If you could respond in due time, that would be marvelous.\nTop Hat, Yellow Face Corporation, Military Sectorial"
+ BUN_YFC.7.a: "Send in the big guns!" 
 
  BUN_YFC.8.t: "The final battle is upon us!" #BUN sees this
- BUN_YFC.8.desc: "Tells Neo-Bun that YFC is putting all effort in one last offensive, hold them off to win!" #Zdubbz
- BUN_YFC.8.a: "cool text" 
+ BUN_YFC.8.desc: "From some eavesdropping, we were able to figure out that the Yellow Facers are planning some type of large offensive. We'd say more, but the object who *was* eavesdropping got his arm exploded by a grenade shortly after, and isn't... doing to well, to say the least. Actually, saying the most here, he's probably gonna die. Anyways, we should probably stay alert and, like, fight good."
+ BUN_YFC.8.a: "Yeah" 
 
  #GOIKY TECHNOCRATIC REPUBLIC
  GTR_event.1.t: "Gaudeamus Igitur"
