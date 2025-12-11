@@ -392,6 +392,7 @@ country_event = {
         GTR = {
             country_event = {
                 id = GTR_event.17
+                days = 4
                 random_days = 3
                 random_hours = 12
             }
@@ -463,6 +464,28 @@ country_event = {
                 news_event = bfdinews.29
                 play_song = "GTR_technocratic_republic"
             }
+            country_event = {
+                id = GTR_event.20
+                days = 10
+                random_hours = 12
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.20
+    title = GTR_event.20.t
+    desc = GTR_event.20.desc
+    picture = GFX_GTR_event20
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.20.a
+        set_power_balance = {
+            id = GTR_power_balance
+            set_value = 0.1
         }
     }
 }

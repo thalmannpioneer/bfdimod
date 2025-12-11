@@ -100,9 +100,15 @@ focus_tree = {
                     AND = {
                         NOT = { has_government = radical_thoughts }
                         NOT = { tag = EMP }
+                        NOT = { has_war = yes }
                     }
                 }
-                country_event = GTR_event.16
+                country_event = {
+                    id = GTR_event.16
+                    days = 6
+                    random_days = 5
+                    random_hours = 12
+                }
             }
             add_dynamic_modifier = {
                 modifier = idea_GTR_humanitary_aid
