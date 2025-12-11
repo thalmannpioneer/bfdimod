@@ -738,4 +738,14 @@ spriteTypes = {
 		name = "GFX_decisions_GTR_integrate_north_wilopede"
 		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_integrate_north_wilopede.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_bop_invite_objects"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_invite_objects.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_GTR_bop_conduct_tests"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_conduct_tests.dds"
+	}
 }

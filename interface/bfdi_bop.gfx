@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_GTR_bop_tennis_ball_side"
+        textureFile = "gfx/interface/bop/GTR_bop_tennis_ball_side.dds"
+    }
+    spriteType = {
+        name = "GFX_GTR_bop_golfball_side"
+        textureFile = "gfx/interface/bop/GTR_bop_golfball_side.dds"
+    }
+}

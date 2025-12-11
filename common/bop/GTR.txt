@@ -1,0 +1,103 @@
+GTR_power_balance = {
+    initial_value = 0.0
+    left_side = GTR_bop_tennis_ball_side
+    right_side = GTR_bop_golfball_side
+    decision_category = decision_GTR_power_balance_category
+
+    side = {
+        id = GTR_bop_tennis_ball_side
+        icon = GFX_GTR_bop_tennis_ball_side
+        range = {
+            id = GTR_bop_range_slightly_republican
+            min = -0.3
+            max = 0
+            modifier = {
+                political_power_gain = 0.1
+                stability_factor = 0.05
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_arms_factory_factor = -0.1
+                consumer_goods_factor = 0.05
+                party_popularity_stability_factor = -0.1
+                offensive_war_stability_factor = -0.1
+            }
+        }
+        range = {
+            id = GTR_bop_range_moderate_republican
+            min = -0.7
+            max = -0.3
+            modifier = {
+                political_power_gain = 0.2
+                stability_factor = 0.1
+                production_speed_industrial_complex_factor = 0.2
+                production_speed_arms_factory_factor = -0.2
+                consumer_goods_factor = 0.1
+                party_popularity_stability_factor = -0.2
+                offensive_war_stability_factor = -0.2
+            }
+        }
+        range = {
+            id = GTR_bop_range_staunch_republican
+            min = -1
+            max = -0.7
+            modifier = {
+                political_power_gain = 0.5
+                stability_factor = 0.2
+                production_speed_industrial_complex_factor = 0.4
+                production_speed_arms_factory_factor = -0.4
+                consumer_goods_factor = 0.2
+                party_popularity_stability_factor = -0.4
+                offensive_war_stability_factor = -0.4
+            }
+        }
+    }
+
+    side = {
+        id = GTR_bop_golfball_side
+        icon = GFX_GTR_bop_golfball_side
+        range = {
+            id = GTR_bop_range_slight_noocracy
+            min = 0
+            max = 0.3
+            modifier = {
+                political_power_gain = -0.1
+                stability_factor = -0.05
+                production_speed_industrial_complex_factor = -0.1
+                production_speed_arms_factory_factor = 0.1
+                research_speed_factor = 0.05
+                consumer_goods_factor = -0.05
+                party_popularity_stability_factor = 0.1
+                offensive_war_stability_factor = 0.1
+            }
+        }
+        range = {
+            id = GTR_bop_range_moderate_noocracy
+            min = 0.3
+            max = 0.7
+            modifier = {
+                political_power_gain = -0.2
+                stability_factor = -0.1
+                production_speed_industrial_complex_factor = -0.2
+                production_speed_arms_factory_factor = 0.2
+                research_speed_factor = 0.1
+                consumer_goods_factor = -0.1
+                party_popularity_stability_factor = 0.2
+                offensive_war_stability_factor = 0.2
+            }
+        }
+        range = {
+            id = GTR_bop_range_strong_noocracy
+            min = 0.7
+            max = 1
+            modifier = {
+                political_power_gain = -0.5
+                stability_factor = -0.2
+                production_speed_industrial_complex_factor = -0.4
+                production_speed_arms_factory_factor = 0.4
+                research_speed_factor = 0.2
+                consumer_goods_factor = -0.2
+                party_popularity_stability_factor = 0.4
+                offensive_war_stability_factor = 0.4
+            }
+        }
+    }
+}
