@@ -674,6 +674,10 @@
  YFC_event.11.c: "Taking Half." #1.5M Taken, 50% Risk
  YFC_event.11.d: "Taking Most." #2.8M Taken, 75% Risk
 
+ YFC_event.12.t: "Brand new faces!" 
+ YFC_event.12.desc: "ZDbbuz put something here about teardroppers arriving in Yoyleton and that they bring profits and more people"
+ YFC_event.12.a: "Cough"
+
  YFC_event.13.t: "What to do with The Head?"
  YFC_event.13.desc: "It was a very, very long trial over Eraser's fate. The sectors had heated debates over the pros and cons of any of the options we could do. Honestly the amount of these 'heated' debates have been getting concerning. Anyways, a few hours ago most finally agreed on his fate. This said fate was read out to him in his cell, it said the following... \n\n'Eraser, leader of the defunct anarchist Bunch, you have been given the following sentence for your crimes against the Yellow Face Company and their allies...'"
  YFC_event.13.a: "Acquitted of all charges and will be able to join The Company!"

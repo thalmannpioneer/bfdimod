@@ -370,7 +370,7 @@ country_event = {
 }
 
 country_event = {
-	# YFC_focus_the_economic_issue event
+	#Now is being used to tell the player about teardrop pop in yoyleton
 	id = YFC_event.12
 	title = YFC_event.12.t
 	desc = YFC_event.12.desc
@@ -380,12 +380,12 @@ country_event = {
 
 	option = { 
 		name = YFC_event.12.a 
-		complete_national_focus = YFC_focus_industrialize_or_die
-		
-	}
-	option = { 
-		name = YFC_event.12.b
-		# complete_national_focus =
+		custom_effect_tooltip = l_money_gain_100K
+		add_to_variable = { money_amount = 1 }
+		add_stability = 0.01
+		216 = {
+			add_manpower = 13754
+		}
 	}
 }
 
@@ -695,10 +695,16 @@ country_event = {
     
     option = { 
 		name = YFC_event.23.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+
+		add_stability = -0.05
+		custom_effect_tooltip = l_money_gain_600K
+		add_to_variable = { money_amount = 6 }
+
+		set_temp_variable = { ADDPOP = 196.state_population_k }
+		multiply_temp_variable = {ADDPOP = 50} 
+		196 = {
+			add_manpower = ADDPOP
+		}
 	}
 }
 
@@ -712,10 +718,16 @@ country_event = {
     
     option = { 
 		name = YFC_event.24.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+
+		add_stability = -0.02
+		custom_effect_tooltip = l_money_gain_800K
+		add_to_variable = { money_amount = 8 }
+
+		set_temp_variable = { ADDPOP = 196.state_population_k }
+		multiply_temp_variable = {ADDPOP = 65} 
+		196 = {
+			add_manpower = ADDPOP
+		}
 	}
 }
 
@@ -729,10 +741,22 @@ country_event = {
     
     option = { 
 		name = YFC_event.25.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+
+		add_stability = 0.02
+		custom_effect_tooltip = l_money_gain_1M
+		add_to_variable = { money_amount = 10 }
+
+		set_temp_variable = { ADDPOP = 196.state_population_k }
+		multiply_temp_variable = {ADDPOP = 75} 
+		196 = {
+			add_manpower = ADDPOP
+		}
+
+		set_temp_variable = { ADDPOP2 = 216.state_population_k }
+		multiply_temp_variable = {ADDPOP2 = 75} 
+		216 = {
+			add_manpower = ADDPOP2
+		}
 	}
 }
 
@@ -746,10 +770,21 @@ country_event = {
     
     option = { 
 		name = YFC_event.26.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+
+		add_stability = 0.03
+		add_political_power = -50 #Change/Add later with sectors
+
+		set_temp_variable = { ADDPOP = 196.state_population_k }
+		multiply_temp_variable = {ADDPOP = 35} 
+		196 = {
+			add_manpower = ADDPOP
+		}
+
+		set_temp_variable = { ADDPOP2 = 216.state_population_k }
+		multiply_temp_variable = {ADDPOP2 = 35} 
+		216 = {
+			add_manpower = ADDPOP2
+		}
 	}
 }
 
