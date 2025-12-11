@@ -171,10 +171,12 @@
  decision_YFC_foster_category: "Fostering A New Bunch"
  decision_YFC_foster_category_desc: "Something bla bla I'll get an idea later xd \n\n§RCURRENT @BUN ERASER SUPPORT:§! [?var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?var_foster_CRN_support|Y1]"
  YFC_foster_Countdown: "§YUpcoming Election§!"
+ YFC_foster_Debate: "§YUpcoming Debate§!"
  YFC_foster_propaganda: "Create §GPro-Blocky Media§!"
  YFC_foster_gaining_support: "Growing §RPro-Eraser Support§!"
  YFC_foster_Infrastructure: "Build §GInfrastructure§!"
  YFC_foster_fund: "Fund §GCampaign Efforts§!"
+ YFC_foster_invest: "Invest into §GBunch§!"
  YFC_foster_ruin_everyone: "Criticize §GPen and Eraser§!"
 
  decision_YFC_BUN_category: "Breaking The Bunch"
@@ -229,6 +231,7 @@
  BUN_lesser_state: "Lesser State"
  BUN_autonomous_state: "Autonomous State"
  BUN_revolt_support: "Neo-Bunch Support"
+ BUN_rampant_raids: "Rampant Bunch Raids"
 
  decision_BUN_Revolt_category: "Breaking the Company"
  decision_BUN_Revolt_category_desc: "These capitalists under Yellow Face thought it was over? That we would just submit to their oppression? That they rule over our lands, homes, and objects?\n\n§RToo bad it's not over yet.§!"
@@ -277,6 +280,7 @@
  GTR_north_intergration_satoymin: "Intergrate §7Satoymin§!"
  GTR_north_intergration_wilopede: "Intergrate §5Wilopede§!"
  
-#Generic State Modifiers
- minor_population_boost: "Minor Population Growth"
- major_population_boost: "Major Population Growth"
+ #TBT State Modifiers 
+ TBT_low_pop: "Minor Teardroppers Population"
+ TBT_med_pop: "Moderate Teardroppers Population"
+ TBT_high_pop: "Major Teardroppers Population"

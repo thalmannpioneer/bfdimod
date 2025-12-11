@@ -28,13 +28,13 @@ ideas = {
 		idea_BUN_adjusting_rebuilding = { #Rebuilding
 			picture = ARG_civilian_economy_boost
 			modifier = {
-				consumer_goods_factor = 0.5
-				production_speed_industrial_complex_factor = -0.25 
+				consumer_goods_factor = 0.75
+				production_speed_buildings_factor = -0.25
 				neutrality_drift = 0.05
 				democratic_drift = 0.05
 				training_time_factor = 0.35
 				stability_weekly_factor = 0.005
-				political_power_gain = -1
+				political_power_gain = -1.5
 			}
 		}
 

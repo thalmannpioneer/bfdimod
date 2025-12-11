@@ -58,7 +58,29 @@ GGR_FFT_preparation_and_war = {
     }
 	ai_strategy = {
 		type = garrison
-		value = -75
+		value = -85
+	}
+}
+
+GGR_FFT_spy = {
+    #GGR will spy on FFT to gain more intel
+	allowed = {
+		original_tag = GGR
+	}
+	enable = {
+		country_exists = FFT
+	}
+
+	abort = {
+		NOT = { country_exists = FFT }
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		value = 50
+		state = 169
+		mission = build_intel_network
+		mission_target = FFT
 	}
 }
 
@@ -224,6 +246,15 @@ GGR_cheap_guns = {
 		type = equipment_variant_production_factor
 		id = artillery
 		value = -1000
+	}
+
+	ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
+		type = agency_ai_base_num_factories_factor
+		value = -50
+	}
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -50
 	}
 }
 

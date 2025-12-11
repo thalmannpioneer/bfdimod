@@ -732,28 +732,6 @@ decision_YFC_BUN_category = {
 			weekly_manpower = 750
 		}
 
-		timeout_effect = {
-			216 = {
-				create_unit = {
-					division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.65 start_experience_factor = 0.05"
-					owner = YFC
-					count = 1
-					id = 1967
-				}
-			}
-			IF = {
-				limit = {is_ai = yes}
-			}
-			216 = {
-				create_unit = {
-					division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.2 start_experience_factor = 0.05"
-					owner = YFC
-					count = 2
-					id = 1967
-				}
-			}
-		}
-
 		ai_will_do = {
 			base = 20
 			modifier = {

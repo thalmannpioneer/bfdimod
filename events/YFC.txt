@@ -26,14 +26,19 @@ country_event = {
     
     option = {
 		name = YFC_event.2.a
+		custom_effect_tooltip = l_money_lose_100K
+		subtract_from_variable = { money_amount = 1 }
 	}
 	option = {
 		name = YFC_event.2.b
-		give_military_access = BUN
-		custom_effect_tooltip = l_YFC_border_raiders_open
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
 		BUN = {subtract_from_variable = { money_amount = 3 }}
+		201 = {
+			add_dynamic_modifier = {
+				modifier = BUN_rampant_raids
+			}
+		}
 	}
 }
 
@@ -265,6 +270,12 @@ country_event = {
 		}
 
 		custom_effect_tooltip = l_YFC_border_defence
+
+		201 = {
+			remove_dynamic_modifier = {
+				modifier = BUN_rampant_raids
+			}
+		}
 
 		hidden_effect = {
 			201 = {
@@ -518,7 +529,7 @@ country_event = {
 	}
 	option = { #Have most be relased, high support gain but highly changes sector cost 
 		name = YFC_event.17.c
-		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
 		add_to_variable = { var_foster_YFC_support = 2.5 }
 		add_political_power = -50
 		hidden_effect = {
@@ -2585,6 +2596,7 @@ country_event = { #Debate event #2
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 0.5 }
+			BUN = {add_ideas = {idea = idea_BUN_highlyfunded_army}}
 		}
 
 		country_event = {
@@ -2598,6 +2610,7 @@ country_event = { #Debate event #2
 		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 3 }
+			BUN = {add_ideas = {idea = idea_BUN_unfunded_army}}
 		}
 
 		country_event = {

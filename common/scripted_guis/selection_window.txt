@@ -236,6 +236,15 @@ scripted_gui = {
 							random_hours = 12
 						}
 					}
+
+					TBT = {
+						country_event = {
+							id = TBT_hidden_event.1
+							days = 300
+							random_days = 30
+							random_hours = 24
+						}
+					}
 					
 					GTR = {
 						country_event = {
@@ -336,6 +345,15 @@ scripted_gui = {
 						days = 365
 						random_days = 20
 						random_hours = 12
+					}
+				}
+
+				TBT = {
+					country_event = {
+						id = TBT_hidden_event.1
+						days = 300
+						random_days = 30
+						random_hours = 24
 					}
 				}
 				

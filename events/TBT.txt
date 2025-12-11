@@ -1,0 +1,120 @@
+add_namespace = TBT_hidden_event
+
+#Remove all these hidden events when TBT gets stuff.
+
+country_event = {
+	id = TBT_hidden_event.1
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		180 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop
+				scope = TBT
+			}
+		}
+		country_event = {
+			id = TBT_hidden_event.2
+			days = 90
+			random_days = 10
+			random_hours = 24
+		}
+	}
+}
+
+country_event = {
+	id = TBT_hidden_event.2
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		216 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
+		country_event = {
+			id = TBT_hidden_event.3
+			days = 200
+			random_days = 10
+			random_hours = 24
+		}
+	}
+}
+
+country_event = {
+	id = TBT_hidden_event.3
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		180 = {
+			remove_dynamic_modifier = { modifier = TBT_low_pop }
+			add_dynamic_modifier = { 
+				modifier = TBT_med_pop 
+				scope = TBT
+			}
+		}
+		184 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
+		country_event = {
+			id = TBT_hidden_event.4
+			days = 200
+			random_days = 10
+			random_hours = 24
+		}
+	}
+}
+
+country_event = {
+	id = TBT_hidden_event.4
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		216 = {
+			remove_dynamic_modifier = { modifier = TBT_low_pop }
+			add_dynamic_modifier = { 
+				modifier = TBT_med_pop 
+				scope = TBT
+			}
+		}
+		country_event = {
+			id = TBT_hidden_event.5
+			days = 200
+			random_days = 10
+			random_hours = 24
+		}
+	}
+}
+
+country_event = {
+	id = TBT_hidden_event.5
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		192 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
+	}
+}
