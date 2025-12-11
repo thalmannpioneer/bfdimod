@@ -908,7 +908,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		limit = {
 			has_game_rule = {
 				rule = allow_war_goals
-				option = RULE_OPTION_BLOCKED
+				option = no
 			}
 		}
 		custom_trigger_tooltip = {

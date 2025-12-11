@@ -171,4 +171,30 @@ decisions_BFDI_debug = {
 			}	
         }
     }
+
+	debug_cool_diplo = {
+        icon = GFX_decision_generic_political_discourse
+        fire_only_once = yes
+		cost = 0
+		allowed = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			NOT = {
+				has_global_flag = game_started
+			}
+        }
+        complete_effect = {	
+			GOI = {add_threat = 100}
+			every_possible_country = {
+				add_ideas = {
+					idea = idea_debug_age_diplomacy
+				}
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+        }
+    }
 }

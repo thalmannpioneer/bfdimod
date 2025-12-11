@@ -51,5 +51,17 @@ ideas = {
 				ai_focus_aggressive_factor = 0.5
 			}
 		}
+
+		idea_debug_age_diplomacy  = {
+			picture = ARG_anti_british_sentiment
+			modifier = {
+				send_volunteer_divisions_required = -0.75
+				send_volunteers_tension = -1
+				request_lease_tension = -2
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.5
+				operative_slot = 2
+			}
+		}
 	}
 }
