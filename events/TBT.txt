@@ -45,6 +45,13 @@ country_event = {
 			random_days = 10
 			random_hours = 24
 		}
+		YFC = {
+			country_event = {
+				id = YFC_event.12
+				days = 2
+				random_hours = 60
+			}
+		}
 	}
 }
 

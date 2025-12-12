@@ -721,19 +721,10 @@ focus_tree = {
 		icon = GFX_focus_YFC_economic_issue
 		prerequisite = { focus = YFC_focus_a_look_inward }
 		cost = 8
-		#begins the process of dealing with internal economic stuff
-		#basically, the yfc is suffering because its country side isnt industrialized
-		#they could be making WAY more money if they had more cities and more citizens
-		#though... a good way to attract citizens is to liberalize
-		#get an event in which you chose whether to liberalize or industrialize
+
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_repair
 			add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.25 }
-			country_event = {
-				id = YFC_event.12 #This still needs text
-				hours = 1
-				random_hours = 2
-			}
 		}
 	}
 
@@ -743,13 +734,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		icon = GFX_focus_YFC_industrialize_or_die
-		allow_branch = { has_completed_focus = YFC_focus_industrialize_or_die }
+
 		prerequisite = { focus = YFC_focus_the_economic_issue }
 		cost = 5
-		#after an event you get from "the economic issue" if you choose to focus on industrializing, you get this branch
+
 		completion_reward = {
 			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
 				set_variable = { var_YFC_upgrade_level = 0 }
 			}
 		}
@@ -882,6 +872,14 @@ focus_tree = {
 				original_tag_to_check = TBT
 				add_opinion_modifier = { target = YFC modifier = medium_increase }
 			}	
+			custom_effect_tooltip = l_money_gain_400K
+			add_to_variable = { money_amount = 4 }
+			216 = {
+                add_resource = {
+                    type = steel
+                    amount = 8
+                }
+            }
 		}
 	}
 
@@ -1486,7 +1484,7 @@ focus_tree = {
 					mark_focus_tree_layout_dirty = yes
 				}
 			}
-			add_stability = 0.05
+			add_stability = 0.01
 		}
 	}
 

@@ -78,7 +78,7 @@ decision_YFC_foster_category = {
 		}
 
 		fire_only_once = no
-		cost = 40
+		cost = 35
 		days_remove = 20
 		days_re_enable = 15
 
@@ -162,7 +162,7 @@ decision_YFC_foster_category = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 10
 		days_remove = 60
 
 		complete_effect = {
