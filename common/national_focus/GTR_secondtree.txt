@@ -45,7 +45,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            country_event = GTR_event.14
+            country_event = GTR_event.15
         }
     }
 
@@ -74,7 +74,7 @@ focus_tree = {
                     value = 10
                 }
             }
-            country_event = GTR_event.15
+            country_event = GTR_event.16
         }
     }
 
@@ -104,7 +104,7 @@ focus_tree = {
                     }
                 }
                 country_event = {
-                    id = GTR_event.16
+                    id = GTR_event.17
                     days = 6
                     random_days = 5
                     random_hours = 12
@@ -170,7 +170,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            country_event = GTR_event.18
+            country_event = GTR_event.19
         }
     }
 
@@ -267,7 +267,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_GTR_republic_creation
             hidden_effect = {
-                country_event = GTR_event.19
+                country_event = GTR_event.20
             }
         }
     }
