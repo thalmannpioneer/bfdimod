@@ -2,7 +2,7 @@ state={
 	id=229
 	name="STATE_229"
 	provinces={
-		1294 3034 4135 
+		1368 1897 5153 10695 10751 4761 10672 10795
 	}
 	history={
 		owner = GOI
@@ -10,5 +10,6 @@ state={
 	}
 	manpower=0
 	buildings_max_level_factor=1
+	state_category=pastoral
 	local_supplies=0
 }
