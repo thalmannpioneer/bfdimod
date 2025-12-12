@@ -14,7 +14,7 @@ focus_tree = {
 
 	initial_show_position = { focus = YFC_focus_open_the_market }
 
- #STARTER PATH
+#STARTER PATH
 
 	focus = {
 		id = YFC_focus_consolidate_power
@@ -847,7 +847,7 @@ focus_tree = {
 			add_stability = 0.01
 		}
 	}
-
+	
 	focus = {
 		id = YFC_focus_military_industrial_complex
 		relative_position_id = YFC_focus_industrialize_or_die
@@ -979,10 +979,10 @@ focus_tree = {
 		#DONE1	develop peoniele -> peoniele the second city -> chose large dev (event about large profits but a slightly angry populace, and how yoyleton is still in ruins)
 		#DONE2	develop peoniele -> peoniele the second city -> chose medium or small dev (event about large profits and neglected yoyleton)
 		#DONE3	develop peoniele -> big yoyleton -> chose any large or medium dev (event on having a happy populace and big profits)
-		#4	develop peoniele -> big yoyleton -> chose small (event about cities not living up to expectations, upset sectorials, but still happy population)
+		#DONE4	develop peoniele -> big yoyleton -> chose small (event about cities not living up to expectations, upset sectorials, but still happy population)
 		#5	develop yoyleton -> big yoyleton -> chose large or medium dev (event about large profits, good trade with north, happy populace, but neglected peoniele)
 		#6	develop yoyleton -> big yoyleton -> chose small dev (event about not developing enough, neglected peoniele, angry sectorials)
-		#7	develop yoyleton -> peoniele the second city -> chose small dev (same event as #4)
+		#DONE7	develop yoyleton -> peoniele the second city -> chose small dev (same event as #4)
 		#8	develop yoyleton -> peoniele the second city -> chose medium dev (event about big profits, and happy population)
 		#9	develop yoyleton -> peoniele the second city -> chose large dev (event about large profits, happy sectorials, but mad peoniele populace)
 		completion_reward = {

@@ -1,0 +1,14 @@
+state={
+	id=230
+	name="STATE_230"
+	provinces={
+		1368 1897 5153 10695 10751 
+	}
+	history={
+		owner = GOI
+		add_core_of = GOI
+	}
+	manpower=0
+	buildings_max_level_factor=1
+	local_supplies=0
+}
