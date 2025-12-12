@@ -1,9 +1,11 @@
 decision_YFC_trade_category = {
 	allowed = { tag = YFC }
 	visible = { 
-		always = yes
+		YFC = {
+			has_completed_focus = YFC_focus_open_the_market
+		}
 	}
-	priority = 15
+	priority = 16
 	icon = decision_category_operation_coinflip
 	visible_when_empty = yes
 	scripted_gui = bfdi_corp_trade_scriptedgui
@@ -12,12 +14,14 @@ decision_YFC_trade_category = {
 decision_YFC_sector_category = { 
 	allowed = { tag = YFC }
 	visible = { 
-		always = no
+		YFC = {
+			has_completed_focus = YFC_focus_establish_sectorialism
+		}
 	}
 	priority = 14
 	icon = decision_category_operation_coinflip
 	visible_when_empty = yes
-	scripted_gui = bfdi_corp_trade_scriptedgui #Change later trust
+	scripted_gui = bfdi_decisions_crop_sector_scriptedgui
 }
 
 

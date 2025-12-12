@@ -71,6 +71,10 @@ country_event = {
                 set_country_flag = civil_war_path
             }
         }
+
+        ai_chance = {
+            base = 1
+        }
     }
 
     option = {
@@ -95,7 +99,7 @@ country_event = {
         }
 
         ai_chance = {
-            base = 0
+            base = -2
         }
     }
 }

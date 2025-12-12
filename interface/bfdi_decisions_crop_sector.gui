@@ -1,0 +1,35 @@
+#I TOOK IT FROM VANILLA
+#And I took it from GPG xd
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "corp_sector_container"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 610 }
+		
+		instantTextboxType = {
+			name = "title"
+			text = l_decisions_sector_title
+			position = { x = 10 y = 2 }
+			maxWidth = 500
+			format = centre
+			font = hoi_36header
+		}
+
+		iconType = {
+			name = "sector_military"
+			spriteType = "GFX_decisions_sector_military"
+			position = { x = 50 y = 45 }
+		}
+
+
+
+		
+		iconType = {
+			name = "sector_railways"
+			spriteType = "GFX_decisions_sector_military"
+			position = { x = 300 y = 45 }
+		}
+	}
+}

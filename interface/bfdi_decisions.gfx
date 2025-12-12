@@ -412,6 +412,12 @@ spriteTypes = {
 	
 	#YFC
 
+
+	spriteType = {
+		name = "GFX_decisions_sector_military"
+		textureFile = "gfx/interface/decisions/decisions_sector_military.dds"
+	}
+
 	spriteType = {
 		name = "GFX_decisions_YFC_cherry_mercenary"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"

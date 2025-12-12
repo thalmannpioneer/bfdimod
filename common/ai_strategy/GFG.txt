@@ -114,3 +114,28 @@ GFG_militarization = {
 		value = 30
 	}
 }
+
+GFG_huge_army = {
+    #Once GFG is at peace to have a large army ready
+	allowed = {
+		original_tag = GFG
+	}
+	enable = {
+		has_war = no
+		has_army_size = {
+            size < 25
+        }
+	}
+
+	abort = {
+		has_army_size = {
+            size > 25
+        }
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 250
+	}
+}

@@ -198,7 +198,7 @@ decision_YFC_foster_category = {
 	}
 
 	YFC_foster_invest = { 
-		icon = GFX_decisions_YFC_foster_fund
+		icon = GFX_decisions_YFC_foster_invest
       
 		visible = {
 			has_completed_focus = YFC_focus_support_blocky
@@ -241,7 +241,7 @@ decision_YFC_foster_category = {
 	}
 
 	YFC_foster_ruin_everyone = { 
-		icon = GFX_decisions_YFC_foster_fund
+		icon = GFX_decisions_YFC_foster_ruin_everyone
       
 		visible = {
 			has_completed_focus = YFC_focus_support_blocky

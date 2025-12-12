@@ -81,6 +81,7 @@ focus_tree = {
 		#Top Hat becomes a field marshal
 		#Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
 		completion_reward = {
+			add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
 			recruit_character = YFC_tophat
 			custom_effect_tooltip = l_YFC_allow_rails
 			add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }

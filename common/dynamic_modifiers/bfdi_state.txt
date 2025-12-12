@@ -73,8 +73,8 @@ TBT_low_pop = {
 
 	icon = GFX_decision_generic_protection
 	
-	army_attack_factor = 0.15
-	army_defence_factor = 0.15
+	army_attack_factor = 0.1
+	army_defence_factor = 0.1
 	supply_consumption_factor = -0.05
 	state_production_speed_buildings_factor = 0.05
 	local_manpower = 0.05
@@ -92,8 +92,8 @@ TBT_med_pop = {
 
 	icon = GFX_decision_generic_protection
 	
-	army_attack_factor = 0.3
-	army_defence_factor = 0.3
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
 	supply_consumption_factor = -0.1
 	state_production_speed_buildings_factor = 0.1
 	local_manpower = 0.1
@@ -112,8 +112,8 @@ TBT_high_pop = {
 
 	icon = GFX_decision_generic_protection
 	
-	army_attack_factor = 0.6
-	army_defence_factor = 0.6
+	army_attack_factor = 0.3
+	army_defence_factor = 0.3
 	supply_consumption_factor = -0.2
 	state_production_speed_buildings_factor = 0.25
 	local_manpower = 0.25

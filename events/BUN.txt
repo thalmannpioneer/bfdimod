@@ -353,101 +353,114 @@ country_event = {
 			type = infantry_equipment
 			amount = 100
 		}
-		set_variable = { var_currently_raiding = 0 }
 		if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 212
+					attacker = var_currently_raiding
 					defender = 201
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 212
+				attacker = var_currently_raiding
 				defender = 201
 			}
 		}				
 		else_if = {
 			limit = {
 					has_border_war_between = {
-						attacker = 85
+						attacker = var_currently_raiding
 						defender = 202
 					}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 85
+				attacker = var_currently_raiding
 				defender = 202
 			}
 		}
 		else_if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 217
+					attacker = var_currently_raiding
 					defender = 209
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 217
+				attacker = var_currently_raiding
 				defender = 209
 			}
 		}
 		else_if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 212
+					attacker = var_currently_raiding
 					defender = 24
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 212
+				attacker = var_currently_raiding
 				defender = 24
 			}
 		}
 		else_if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 218
-					defender = 178
+					attacker = var_currently_raiding
+					defender = 220
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 218
-				defender = 178
+				attacker = var_currently_raiding
+				defender = 220
 			}
 		}
 		else_if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 85
+					attacker = var_currently_raiding
+					defender = 222
+				}
+			}
+			finalize_border_war = {
+				attacker_win = no
+				attacker = var_currently_raiding
+				defender = 222
+			}
+		}
+		else_if = {
+			limit = {
+				has_border_war_between = {
+					attacker = var_currently_raiding
 					defender = 214
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 85
+				attacker = var_currently_raiding
 				defender = 214
 			}
 		}
 		else_if = {
 			limit = {
 				has_border_war_between = {
-					attacker = 218
+					attacker = var_currently_raiding
 					defender = 33
 				}
 			}
 			finalize_border_war = {
 				attacker_win = no
-				attacker = 218
+				attacker = var_currently_raiding
 				defender = 33
 			}
 		}
 		else = {
 			#Nothing ever happens
 		}
+		set_variable = { var_currently_raiding = 0 }
 	}
 }
 
@@ -466,6 +479,7 @@ country_event = {
 		name = BUN_borderwars.5.a
 		custom_effect_tooltip = l_YFC_raid_effect
 		hidden_effect = {
+			BUN = {add_to_variable = { money_amount = 1 }}
 			random_list = {
 				10 = {
 					add_equipment_to_stockpile = {

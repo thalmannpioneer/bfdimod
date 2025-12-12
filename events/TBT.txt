@@ -41,7 +41,7 @@ country_event = {
 		}
 		country_event = {
 			id = TBT_hidden_event.3
-			days = 200
+			days = 250
 			random_days = 10
 			random_hours = 24
 		}
@@ -78,7 +78,7 @@ country_event = {
 		}
 		country_event = {
 			id = TBT_hidden_event.4
-			days = 200
+			days = 250
 			random_days = 10
 			random_hours = 24
 		}
@@ -102,7 +102,7 @@ country_event = {
 		}
 		country_event = {
 			id = TBT_hidden_event.5
-			days = 200
+			days = 250
 			random_days = 10
 			random_hours = 24
 		}

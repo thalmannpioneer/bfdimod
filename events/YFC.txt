@@ -2460,6 +2460,7 @@ country_event = { #Election BUN Wins!
 		complete_national_focus = YFC_focus_bunch_fostered
 		hidden_effect = {
 			BUN = {
+				add_country_leader_trait = nationalist_symbol
 				set_country_leader_ideology = centrism
 				set_cosmetic_tag = BUN_republic
 				remove_ideas = idea_BUN_criminal_state

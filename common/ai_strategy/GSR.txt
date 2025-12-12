@@ -99,3 +99,32 @@ GSR_militarize = {
 		value = 300
 	}
 }
+
+GSR_huge_army = {
+    #Once GSR is at peace to have a large army ready
+	allowed = {
+		original_tag = GSR
+	}
+	enable = {
+		has_war = no
+		has_army_size = {
+            size < 30
+        }
+	}
+
+	abort = {
+		has_army_size = {
+            size > 30
+        }
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 250
+	}
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 25
+	}
+}

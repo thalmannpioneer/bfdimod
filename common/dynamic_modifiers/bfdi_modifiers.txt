@@ -172,6 +172,21 @@ idea_YFC_anarchic_lands = {
     mobilization_laws_cost_factor = 5
 }
 
+idea_YFC_our_benefactors  = {
+    icon = GFX_idea_PER_fund_state_intelligence_idea
+
+    army_org_factor = var_idea_YFC_sectors_TopHat_attack #TopHat
+    army_attack_factor = var_idea_YFC_sectors_TopHat_org #TopHat
+    production_speed_rail_way_factor = var_idea_YFC_sectors_Pipe_railway #Pipe
+    supply_consumption_factor = var_idea_YFC_sectors_Pipe_supply #Pipe
+    research_speed_factor = var_idea_YFC_sectors_Beaker_research #Beaker
+    experience_gain_army = var_idea_YFC_sectors_Beaker_experience #Beaker
+    production_speed_buildings_factor = var_idea_YFC_sectors_Hammer_construction #Hammer
+    industry_free_repair_factor = var_idea_YFC_sectors_Hammer_repair #Hammer
+    resistance_growth = var_idea_YFC_sectors_Taser_resistance #Taser
+    political_power_gain = var_idea_YFC_sectors_Taser_pp #Taser
+}
+
 idea_BUN_Ticking_Bomb = { #Bunch Revolt Idea
     icon = GFX_idea_BUN_ticking_bomb
 

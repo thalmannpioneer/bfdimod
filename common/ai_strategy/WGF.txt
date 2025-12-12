@@ -29,12 +29,7 @@ WGF_GMD_preparation = {
 	ai_strategy = {
         type = prepare_for_war
         id = GMD
-        value = 150
-    }
-    ai_strategy = {
-        type = front_unit_request
-        id = GMD
-        value = 200
+        value = 250
     }
 }
 
@@ -54,7 +49,7 @@ WGF_GMD_war = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = GMD
-		value = 300
+		value = 500
 	}
 }
 

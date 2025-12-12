@@ -82,6 +82,12 @@ GGR_FFT_spy = {
 		mission = build_intel_network
 		mission_target = FFT
 	}
+	ai_strategy = {
+		type = operative_mission
+		value = -5000
+		mission = build_intel_network
+		mission_target = EMP
+	}
 }
 
 ## INDUSTRY ##
@@ -250,11 +256,11 @@ GGR_cheap_guns = {
 
 	ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
 		type = agency_ai_base_num_factories_factor
-		value = -50
+		value = -90
 	}
 	ai_strategy = {
 		type = agency_ai_per_upgrade_factories_factor
-		value = -50
+		value = -90
 	}
 }
 

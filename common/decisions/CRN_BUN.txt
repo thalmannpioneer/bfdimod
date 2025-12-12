@@ -82,7 +82,10 @@ decision_CRN_BUN_category = {
 		remove_effect = {
 			85 = {add_resistance = 2}
 			hidden_effect = {
-				set_country_flag = CRN_BUN_Sent_Aid
+				if = {
+					limit = {NOT = {country_exists = BUN}}
+					set_country_flag = CRN_BUN_Sent_Aid
+				}		
 			}
         }
 
@@ -120,7 +123,10 @@ decision_CRN_BUN_category = {
 		remove_effect = {
 			212 = {add_resistance = 2}
 			hidden_effect = {
-				set_country_flag = CRN_BUN_Sent_Aid
+				if = {
+					limit = {NOT = {country_exists = BUN}}
+					set_country_flag = CRN_BUN_Sent_Aid
+				}
 			}
         }
 
@@ -229,7 +235,10 @@ decision_CRN_BUN_category = {
 					type = infantry_equipment
 					amount = -1000
 				}
-				set_country_flag = CRN_BUN_Sent_Aid
+				if = {
+					limit = {NOT = {country_exists = BUN}}
+					set_country_flag = CRN_BUN_Sent_Aid
+				}
             }
 		}
 
@@ -315,7 +324,10 @@ decision_CRN_BUN_category = {
 					type = infantry_equipment
 					amount = -1000
 				}
-				set_country_flag = CRN_BUN_Sent_Aid
+				if = {
+					limit = {NOT = {country_exists = BUN}}
+					set_country_flag = CRN_BUN_Sent_Aid
+				}
             }
 		}
 
@@ -430,7 +442,10 @@ decision_CRN_BUN_category = {
 					type = infantry_equipment
 					amount = -2000
 				}
-				set_country_flag = CRN_BUN_Sent_Aid
+				if = {
+					limit = {NOT = {country_exists = BUN}}
+					set_country_flag = CRN_BUN_Sent_Aid
+				}
             }
 		}
 
@@ -712,7 +727,7 @@ decision_CRN_BUN_category = {
 			base = 0
 			modifier = {
 				add = 100
-				BUN = {surrender_progress > 0.8}
+				BUN = {surrender_progress > 0.7}
 			}
 			modifier = {
 				add = 100

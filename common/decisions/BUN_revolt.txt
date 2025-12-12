@@ -19,7 +19,7 @@ decision_BUN_Revolt_category = {
 		}
 		icon = GFX_mission_BUN_Revolt_Ticking  
 		is_good = no
-		days_mission_timeout = 45
+		days_mission_timeout = 50
 		timeout_effect = {
             custom_effect_tooltip = l_BUN_YFC_1
             hidden_effect = {
