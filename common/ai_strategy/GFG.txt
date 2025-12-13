@@ -123,13 +123,13 @@ GFG_huge_army = {
 	enable = {
 		has_war = no
 		has_army_size = {
-            size < 25
+            size < 30
         }
 	}
 
 	abort = {
 		has_army_size = {
-            size > 25
+            size > 30
         }
 	}
 

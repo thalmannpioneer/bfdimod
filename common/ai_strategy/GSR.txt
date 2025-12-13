@@ -108,13 +108,13 @@ GSR_huge_army = {
 	enable = {
 		has_war = no
 		has_army_size = {
-            size < 30
+            size < 35
         }
 	}
 
 	abort = {
 		has_army_size = {
-            size > 30
+            size > 35
         }
 	}
 
@@ -126,5 +126,27 @@ GSR_huge_army = {
 	ai_strategy = {
 		type = ignore_army_incompetence
 		value = 25
+	}
+}
+
+GSR_focus_pp = {
+    #GSR needs pp for some things
+	allowed = {
+		original_tag = GSR
+	}
+	enable = {
+		has_completed_focus = GSR_focus_peoples_constitution
+		NOT = {has_completed_focus = GSR_focus_socialism_in_one_country}
+	}
+
+	abort = {
+		has_completed_focus = GSR_focus_peoples_constitution
+		has_completed_focus = GSR_focus_socialism_in_one_country
+	}
+
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 125
 	}
 }

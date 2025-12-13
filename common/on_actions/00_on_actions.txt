@@ -16,7 +16,20 @@ on_actions = {
                 set_country_flag = has_money_system
                 IF = {
                     limit = {tag = YFC}
-                    set_variable = { money_amount = 16.5 }
+                    set_variable = { money_amount = 22.6 } 
+                    BFDI_money_diplay_update = yes
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = {
+                            tag = GPG
+                            tag = GSR
+                            tag = GFG
+                            tag = GDR
+                        }
+                        
+                    }
+                    set_variable = { money_amount = -5.8 } 
                     BFDI_money_diplay_update = yes
                 }
                 ELSE = {
@@ -446,6 +459,11 @@ on_actions = {
                 set_temp_variable = { stability = ROOT.stability }
                 multiply_temp_variable = {civ_count = stability}
                 add_to_temp_variable = { adding_amount = civ_count }
+
+                set_temp_variable = { population = ROOT.max_manpower_k } #This was randomly removed xd
+                divide_temp_variable = { population = 1000 }
+                add_to_temp_variable = { adding_amount = population }
+
                 IF = {
                     limit = {
                         has_war = yes
