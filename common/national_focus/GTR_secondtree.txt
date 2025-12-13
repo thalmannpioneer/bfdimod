@@ -271,4 +271,581 @@ focus_tree = {
             }
         }
     }
+
+
+    #   ----- ----   -----  -----    |  |   -----
+    #     |   |   |  |      |       -|--|-       |
+    #     |   |---   |----  |----    |  |     ---
+    #     |   | \    |      |       -|--|-   |
+    #     |   |   \  |----  |----    |  |   |____
+
+    #politics tree
+    focus = {
+        id = GTR_focus_new_government
+        x = 30
+        y = 0
+
+        icon = GFX_focus_GTR_new_government
+
+        allow_branch = { has_country_flag = GTR_republic_formed }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #outer politics
+    focus = {
+        id = GTR_focus_looking_outside
+        relative_position_id = GTR_focus_new_government
+        x = -3
+        y = 1
+
+        icon = GFX_focus_GTR_looking_outside
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_new_government }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+            country_event = GTR_event.22
+        }
+    }
+
+
+    #if GPG or GDR exists
+    focus = {
+        id = GTR_focus_contacts_with_casland
+        relative_position_id = GTR_focus_looking_outside
+        y = 1
+
+        icon = GFX_focus_GTR_contacts_with_casland
+
+        prerequisite = { focus = GTR_focus_looking_outside }
+
+        allow_branch = { has_country_flag = GTR_befriend_GPG }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_collective_research
+        relative_position_id = GTR_focus_contacts_with_casland
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_collective_research
+
+        prerequisite = { focus = GTR_focus_contacts_with_casland }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_casland_industry
+        relative_position_id = GTR_focus_contacts_with_casland
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_casland_industry
+
+        prerequisite = { focus = GTR_focus_contacts_with_casland }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_open_borders
+        relative_position_id = GTR_focus_contacts_with_casland
+        y = 2
+
+        icon = GFX_focus_GTR_open_borders
+
+        prerequisite = { focus = GTR_focus_collective_research }
+        prerequisite = { focus = GTR_focus_casland_industry }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_mutual_protection
+        relative_position_id = GTR_focus_contacts_with_casland
+        y = 3
+
+        icon = GFX_focus_GTR_mutual_protection
+
+        prerequisite = { focus = GTR_focus_open_borders }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #if there's not GPG/GDR then fallback to GGRR
+    focus = {
+        id = GTR_focus_all_roads_to_centrogoiky
+        relative_position_id = GTR_focus_looking_outside
+        y = 1
+
+        icon = GFX_focus_GTR_roads_to_centrogoiky
+
+        prerequisite = { focus = GTR_focus_looking_outside }
+
+        allow_branch = { has_country_flag = GTR_befriend_GGRR }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_develop_railroad_tech
+        relative_position_id = GTR_focus_all_roads_to_centrogoiky
+        y = 1
+
+        icon = GFX_focus_GTR_roads_to_centrogoiky
+
+        prerequisite = { focus = GTR_focus_all_roads_to_centrogoiky }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_start_the_trains
+        relative_position_id = GTR_focus_all_roads_to_centrogoiky
+        x = -1
+        y = 2
+
+        icon = GFX_focus_GTR_start_the_trains
+
+        prerequisite = { focus = GTR_focus_develop_railroad_tech }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_aid_for_centrogoiky
+        relative_position_id = GTR_focus_all_roads_to_centrogoiky
+        x = 1
+        y = 2
+
+        icon = GFX_focus_GTR_aid_for_centrogoiky
+
+        prerequisite = { focus = GTR_focus_develop_railroad_tech }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_integrate_lofty
+        relative_position_id = GTR_focus_all_roads_to_centrogoiky
+        y = 3
+
+        icon = GFX_focus_GTR_integrate_lofty
+
+        prerequisite = { focus = GTR_focus_start_the_trains }
+        prerequisite = { focus = GTR_focus_aid_for_centrogoiky }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #isolation - Golfball
+    focus = {
+        id = GTR_focus_behind_steel_walls
+        relative_position_id = GTR_focus_looking_outside
+        y = 1
+
+        icon = GFX_focus_GTR_behind_steel_walls
+
+        allow_branch = { has_country_flag = GTR_isolation }
+
+        prerequisite = { focus = GTR_focus_looking_outside }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_heaven_for_research
+        relative_position_id = GTR_focus_behind_steel_walls
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_heaven_for_research
+
+        prerequisite = { focus = GTR_focus_behind_steel_walls }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_recruitment_campaign
+        relative_position_id = GTR_focus_behind_steel_walls
+        x = -1
+        y = 2
+
+        icon = GFX_focus_GTR_recruitment_campaign
+
+        prerequisite = { focus = GTR_focus_heaven_for_research }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_strict_border_control
+        relative_position_id = GTR_focus_behind_steel_walls
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_strict_border_control
+
+        prerequisite = { focus = GTR_focus_behind_steel_walls }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_privacy_of_innovation
+        relative_position_id = GTR_focus_behind_steel_walls
+        x = 1
+        y = 2
+
+        icon = GFX_focus_GTR_privacy_of_innovation
+
+        prerequisite = { focus = GTR_focus_strict_border_control }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_brain_of_goiky
+        relative_position_id = GTR_focus_behind_steel_walls
+        y = 3
+
+        icon = GFX_focus_GTR_brain_of_goiky
+
+        prerequisite = { focus = GTR_focus_recruitment_campaign }
+        prerequisite = { focus = GTR_focus_privacy_of_innovation }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #inner politics
+    focus = {
+        id = GTR_focus_republican_affairs
+        relative_position_id = GTR_focus_new_government
+        x = 3
+        y = 1
+
+        icon = GFX_focus_GTR_republican_affairs
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_new_government }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = {
+            country_event = GTR_event.23
+        }
+    }
+
+
+    #Tennis Ball brings peace and gum
+    focus = {
+        id = GTR_focus_democracy
+        relative_position_id = GTR_focus_republican_affairs
+        y = 1
+
+        icon = GFX_focus_GTR_democracy
+
+        cost = 5
+
+        allow_branch = { has_country_flag = GTR_democracy }
+
+        prerequisite = { focus = GTR_focus_republican_affairs }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_reform_rulership
+        relative_position_id = GTR_focus_democracy
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_reform_rulership
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_democracy }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_science_for_objects
+        relative_position_id = GTR_focus_democracy
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_science_for_objects
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_democracy }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_wide_ruling_horizontal
+        relative_position_id = GTR_focus_democracy
+        y = 2
+
+        icon = GFX_focus_GTR_ruling_horizontal
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_reform_rulership }
+        prerequisite = { focus = GTR_focus_science_for_objects }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_role_of_presidency
+        relative_position_id = GTR_focus_democracy
+        y = 3
+
+        icon = GFX_focus_GTR_role_of_presidency
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_wide_ruling_horizontal }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #ZIS IS GOLFBALL UND IM HERE TO SAY YOU MUST GIVE MORE OF YOUR RIGHTS AWAY
+    focus = {
+        id = GTR_focus_noocracy
+        relative_position_id = GTR_focus_republican_affairs
+        y = 1
+
+        icon = GFX_focus_GTR_noocracy
+
+        cost = 5
+
+        allow_branch = { has_country_flag = GTR_noocracy }
+
+        prerequisite = { focus = GTR_focus_republican_affairs }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_rule_of_smart
+        relative_position_id = GTR_focus_noocracy
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_rule_of_smart
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_noocracy }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_science_over_all
+        relative_position_id = GTR_focus_noocracy
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_science_over_all
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_noocracy }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_voting_cense
+        relative_position_id = GTR_focus_noocracy
+        y = 2
+
+        icon = GFX_focus_GTR_voting_cense
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_rule_of_smart }
+        prerequisite = { focus = GTR_focus_science_over_all }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_the_first_mind
+        relative_position_id = GTR_focus_noocracy
+        y = 3
+
+        icon = GFX_focus_GTR_the_first_mind
+
+        cost = 5
+
+        prerequisite = { focus = GTR_focus_voting_cense }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
 }

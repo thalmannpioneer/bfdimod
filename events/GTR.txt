@@ -311,7 +311,7 @@ country_event = {
         }
         hidden_effect = {
             country_event = {
-                id = GTR_event.13
+                id = GTR_event.14
                 days = 10
                 random_hours = 12
             }
@@ -472,6 +472,8 @@ country_event = {
         set_cosmetic_tag = GTR_republic
         custom_effect_tooltip = l_GTR_integrate_north
         set_country_flag = GTR_integrate_north
+        set_country_flag = GTR_republic_formed
+        complete_national_focus = GTR_focus_new_government
         hidden_effect = {
             every_possible_country = {
                 limit = { is_ai = no }
@@ -501,5 +503,68 @@ country_event = {
             id = GTR_power_balance
             set_value = 0.1
         }
+    }
+}
+
+country_event = {
+    id = GTR_event.22
+    title = GTR_event.22.t
+    desc = GTR_event.22.desc
+    picture = GFX_GTR_event22
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.22.a
+        if = {
+            limit = {
+                OR = {
+                    AND = {
+                        country_exists = GPG
+                        GPG = { has_war = no }
+                    }
+                    AND = {
+                        country_exists = GDR
+                        GDR = { has_war = no }
+                    }
+                }
+            }
+            set_country_flag = GTR_befriend_GPG
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GTR_focus_contacts_with_casland
+        }
+        else = {
+            set_country_flag = GTR_befriend_GGRR
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GTR_focus_all_roads_to_centrogoiky
+        }
+    }
+    option = {
+        name = GTR_event.22.b
+        set_country_flag = GTR_isolation
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_behind_steel_walls
+    }
+}
+
+country_event = {
+    id = GTR_event.23
+    title = GTR_event.23.t
+    desc = GTR_event.23.desc
+    picture = GFX_GTR_event23
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.23.a
+        set_country_flag = GTR_democracy
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_democracy
+    }
+    option = {
+        name = GTR_event.23.b
+        set_country_flag = GTR_noocracy
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_noocracy
     }
 }

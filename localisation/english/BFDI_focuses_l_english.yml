@@ -1176,6 +1176,93 @@
  GTR_focus_republic: "§2T H E R E P U B L I C§!"
  GTR_focus_republic_desc: "The best intentions of the Announcergrad objects have found an outlet in the Technocratic Republic! Only together, with the help of technology, can we find a way out of this difficult situation."
 
+ GTR_focus_new_government: "§gRaising The Flags§!"
+ GTR_focus_new_government_desc: "By our best efforts, a young Republic of Science is rising from the ruins of Goiky!"
+
+ GTR_focus_looking_outside: "Looking Outside"
+ GTR_focus_looking_outside_desc: "Isolation is striking the situation in Announcergrad pretty badly. Lacks of news and shortage of many goods are creating massive problems for the entire Republic. The Administration shall adress these problems."
+
+ GTR_focus_contacts_with_casland: "The Heart and The Brain"
+ GTR_focus_contacts_with_casland_desc: "The Casland governments has emerged from a difficult period of political turmoil and looks friendly enough to engage with. The University Administration has decided to establish a diplomatic relationships with them."
+
+ GTR_focus_collective_research: "Collective Research"
+ GTR_focus_collective_research_desc: "There's a lot of talented objects in Casland. We can combine our forces to achieve new heights of technological progress."
+
+ GTR_focus_casland_industry: "Casland Industry"
+ GTR_focus_casland_industry_desc: "By borrowing many of the manufacturing practices from Casland, we can significantly increase the efficiency of our own production."
+
+ GTR_focus_open_borders: "Open Borders"
+ GTR_focus_open_borders_desc: "As a sign of our countries' friendship, it's time to ease border controls in the West. Let the refugees return home."
+
+ GTR_focus_mutual_protection: "Mutual Protection"
+ GTR_focus_mutual_protection_desc: "Now that we possess a reasonable military forces, we are able to propose a mutual defense agreement to the Casland government. This will significantly strengthen our cooperation."
+
+ GTR_focus_all_roads_to_centrogoiky: "All roads to Centrogoiky"
+ GTR_focus_all_roads_to_centrogoiky_desc: "The Railway Administration is in an unclear position: substantial revenues from train tolls on the one hand, and growing political turmoil and problems with food supplies for basic needs on the other. Our cooperation would be greatly appreciated."
+
+ GTR_focus_develop_railroad_tech: "Improve Railroad Tech"
+ GTR_focus_develop_railroad_tech_desc: "Single-track railways and crumbling trains are crying out for a modernized railway infrastructure. With our technologies and production, we can achieve this."
+
+ GTR_focus_start_the_trains: "Start The Trains"
+ GTR_focus_start_the_trains_desc: "By establishing free communication between Announcergrad and Centrogoiky, we will be able to address numerous economic problems and contribute to the development of the entire region."
+
+ GTR_focus_aid_for_centrogoiky: "Aid For Centrogoiky"
+ GTR_focus_aid_for_centrogoiky_desc: "Objects of the cities of Railroad Administration are suffering from food shortages and supply disruptions. We must help them!"
+
+ GTR_focus_integrate_lofty: "Integrate Lofty"
+ GTR_focus_integrate_lofty_desc: "The Railways' overly stretched borders create numerous problems for the administration itself. If we integrate Lofty, we'll significantly reduce the burden on their administration."
+
+ GTR_focus_behind_steel_walls: "Behind The Steel Walls"
+ GTR_focus_behind_steel_walls_desc: "We must remain cool in the face of this dangerous environment, for the future of the University and all science of Goiky depends on us. No one dares interfere with us."
+
+ GTR_focus_heaven_for_research: "Heaven for Research"
+ GTR_focus_heaven_for_research_desc: "We must create good conditions for the development of science and attract researchers from all across the continent. It's time to restore Announcergrad and the University to their former glory!"
+
+ GTR_focus_recruitment_campaign: "Operation \"Paperclip\""
+ GTR_focus_recruitment_campaign_desc: "It's necessary to attract scientists from all over Goiky for further research. Even through espionage."
+
+ GTR_focus_strict_border_control: "Strict Border Control"
+ GTR_focus_strict_border_control_desc: "By expanding the border service and strengthening controls at outposts, we will limit the appearance of unwanted elements on our territory."
+
+ GTR_focus_privacy_of_innovation: "The Secret Of Tech"
+ GTR_focus_privacy_of_innovation_desc: "Only by keeping our scientific achievements secret from a hostile environment will we be able to maintain our advantage and independence. It's time to introduce strict penalties for disclosing research secrets."
+
+ GTR_focus_brain_of_goiky: "Brain Of Goiky"
+ GTR_focus_brain_of_goiky_desc: "Announcergrad is once again the heart of Goiky science! By maintaining this status and keeping our knowledge under lock and key, we can maintain our security and independence."
+
+ GTR_focus_republican_affairs: "Affairs of the Republic"
+ GTR_focus_republican_affairs_desc: "It is time to turn our attention to the internal problems of our young Technocracy and choose a further course of domestic policy."
+
+ GTR_focus_democracy: "§7Democracy§!"
+ GTR_focus_democracy_desc: "We must not forget that everything we do is done for the benefit of the Announcergrad objects. Everyone should receive their share of technological progress."
+
+ GTR_focus_reform_rulership: "Rulership Reform"
+ GTR_focus_reform_rulership_desc: "The University administration can no longer effectively govern the Republic alone. The time has come for a major reform of the supreme authority."
+
+ GTR_focus_science_for_objects: "Science for Objects"
+ GTR_focus_science_for_objects_desc: "The development of science is the Republic's primary goal. But science must serve our objects, not be an end in itself."
+
+ GTR_focus_wide_ruling_horizontal: "Wide Ruling Horizontal"
+ GTR_focus_wide_ruling_horizontal_desc: "We need to attract more talented objects to governance. This is the only way we can sustain the Republic."
+
+ GTR_focus_role_of_presidency: "§7The President§!"
+ GTR_focus_role_of_presidency_desc: "The time has come to introduce the position of President of the Republic."
+
+ GTR_focus_noocracy: "§2Noocracy§!"
+ GTR_focus_noocracy_desc: "Science moves ahead of social constructs! They merely impede its eternal progress. That's why only those objects dedicated to its growth should be in control."
+
+ GTR_focus_rule_of_smart: "Rule Of The Smartest"
+ GTR_focus_rule_of_smart_desc: "We must strengthen the institution of University Administration and keep it at the forefront of the republican model."
+
+ GTR_focus_science_over_all: "Science Over All!"
+ GTR_focus_science_over_all_desc: "The advancement of science is the primary goal of the Technocratic Republic. We are obligated to pursue it unconditionally!"
+
+ GTR_focus_voting_cense: "IQ Tests for Voting"
+ GTR_focus_voting_cense_desc: "Not everyone is capable of voting correctly. Therefore, it's time to introduce an intellectual qualification for stupid objects."
+
+ GTR_focus_the_first_mind: "§7The First Mind§!"
+ GTR_focus_the_first_mind_desc: "The Republic must be led by the smartest object! And, naturally, that's Golfball."
+
  #generic
  generic_focus_industry: "Industry expansion"
  generic_focus_industry_desc: "Our industrial capacity is a rather bit low, innit?"
