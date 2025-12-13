@@ -419,6 +419,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_sector_railway"
+		textureFile = "gfx/interface/decisions/decisions_sector_railway.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_cherry_mercenary"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
 	}

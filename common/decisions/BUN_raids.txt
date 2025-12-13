@@ -9,20 +9,26 @@ decision_BUN_raids_category = {
 		visible = {
 			controls_state = 85
 			NOT = {controls_state = FROM}
-			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = { has_military_access_to = controller}
+			NOT = {controller = {is_guaranteed_by = ROOT}}
 			NOT = {is_puppet = yes}
-			has_border_war = no
 			has_war = no
+			has_border_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
 			NOT = {has_cosmetic_tag = BUN_republic}
+			check_variable = {var_BUN_raiding < 1}
+		}
+
+		complete_effect = { 
+			set_variable = { var_BUN_raiding = 2 }
 		}
 
 		fire_only_once = no
-		cost = 70
-		days_re_enable = 200
+		days_remove = 10
+		cost = 35
+		days_re_enable = 300
+		war_with_on_remove = controller
 
-		complete_effect = {
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure
@@ -49,12 +55,7 @@ decision_BUN_raids_category = {
 				limit = {
 					is_ai = yes
 				}
-				set_variable = { var_currently_raiding = 85 }
-				country_event = {
-					id = BUN_borderwars.1
-					days = 40
-					random_hours = 48
-				}
+				add_manpower = 1000
 			}
 
 			IF = {
@@ -90,7 +91,7 @@ decision_BUN_raids_category = {
 						on_win = YFC_borderwars.1
 						on_lose = YFC_borderwars.2
 						modifier = 0.85	
-						terrain_factor = 0.5			
+						terrain_factor = -0.5			
 					}	
 					defender = {
 						state = FROM
@@ -101,6 +102,7 @@ decision_BUN_raids_category = {
 					}
 				}
 			}
+			set_variable = { var_BUN_raiding = 0 }
 		}
 
 		ai_will_do = {
@@ -129,19 +131,25 @@ decision_BUN_raids_category = {
 			controls_state = 217
 			NOT = {controls_state = FROM}
 			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = { has_military_access_to = controller}
 			NOT = {is_puppet = yes}
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
 			NOT = {has_cosmetic_tag = BUN_republic}
+			check_variable = {var_BUN_raiding < 1}
+		}
+
+		complete_effect = { 
+			set_variable = { var_BUN_raiding = 2 }
 		}
 
 		fire_only_once = no
-		cost = 70
-		days_re_enable = 200
+		days_remove = 10
+		cost = 35
+		days_re_enable = 400
+		war_with_on_remove = controller
 
-		complete_effect = {
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure
@@ -168,12 +176,7 @@ decision_BUN_raids_category = {
 				limit = {
 					is_ai = yes
 				}
-				set_variable = { var_currently_raiding = 217 }
-				country_event = {
-					id = BUN_borderwars.1
-					days = 40
-					random_hours = 48
-				}
+				add_manpower = 1000
 			}
 
 			IF = {
@@ -209,7 +212,7 @@ decision_BUN_raids_category = {
 						on_win = YFC_borderwars.1
 						on_lose = YFC_borderwars.2
 						modifier = 0.85	
-						terrain_factor = 0.5			
+						terrain_factor = -0.5			
 					}	
 					defender = {
 						state = FROM
@@ -220,6 +223,7 @@ decision_BUN_raids_category = {
 					}
 				}
 			}
+			set_variable = { var_BUN_raiding = 0 }
 		}
 
 		ai_will_do = {
@@ -248,19 +252,25 @@ decision_BUN_raids_category = {
 			controls_state = 218
 			NOT = {controls_state = FROM}
 			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = { has_military_access_to = controller}
 			NOT = {is_puppet = yes}
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
 			NOT = {has_cosmetic_tag = BUN_republic}
+			check_variable = {var_BUN_raiding < 1}
+		}
+
+		complete_effect = { 
+			set_variable = { var_BUN_raiding = 2 }
 		}
 
 		fire_only_once = no
-		cost = 70
-		days_re_enable = 200
+		days_remove = 10
+		cost = 35
+		days_re_enable = 400
+		war_with_on_remove = controller
 
-		complete_effect = {
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure
@@ -287,12 +297,7 @@ decision_BUN_raids_category = {
 				limit = {
 					is_ai = yes
 				}
-				set_variable = { var_currently_raiding = 218 }
-				country_event = {
-					id = BUN_borderwars.1
-					days = 40
-					random_hours = 48
-				}
+				add_manpower = 1000
 			}
 
 			IF = {
@@ -328,7 +333,7 @@ decision_BUN_raids_category = {
 						on_win = YFC_borderwars.1
 						on_lose = YFC_borderwars.2
 						modifier = 0.85	
-						terrain_factor = 0.5			
+						terrain_factor = -0.5			
 					}	
 					defender = {
 						state = FROM
@@ -339,6 +344,7 @@ decision_BUN_raids_category = {
 					}
 				}
 			}
+			set_variable = { var_BUN_raiding = 0 }
 		}
 
 		ai_will_do = {
@@ -367,19 +373,25 @@ decision_BUN_raids_category = {
 			controls_state = 212
 			NOT = {controls_state = FROM}
 			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = { has_military_access_to = controller}
 			NOT = {is_puppet = yes}
 			has_border_war = no
 			has_war = no
 			NOT = {has_cosmetic_tag = BUN_revolt}
 			NOT = {has_cosmetic_tag = BUN_republic}
+			check_variable = {var_BUN_raiding < 1}
+		}
+
+		complete_effect = { 
+			set_variable = { var_BUN_raiding = 2 }
 		}
 
 		fire_only_once = no
-		cost = 70
-		days_re_enable = 200
+		days_remove = 10
+		cost = 35
+		days_re_enable = 400
+		war_with_on_remove = controller
 
-		complete_effect = {
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure
@@ -406,12 +418,7 @@ decision_BUN_raids_category = {
 				limit = {
 					is_ai = yes
 				}
-				set_variable = { var_currently_raiding = 212 }
-				country_event = {
-					id = BUN_borderwars.1
-					days = 40
-					random_hours = 48
-				}
+				add_manpower = 1000
 			}
 
 			IF = {
@@ -447,7 +454,7 @@ decision_BUN_raids_category = {
 						on_win = YFC_borderwars.1
 						on_lose = YFC_borderwars.2
 						modifier = 0.85	
-						terrain_factor = 0.5			
+						terrain_factor = -0.5			
 					}	
 					defender = {
 						state = FROM
@@ -458,6 +465,7 @@ decision_BUN_raids_category = {
 					}
 				}
 			}
+			set_variable = { var_BUN_raiding = 0 }
 		}
 
 		ai_will_do = {

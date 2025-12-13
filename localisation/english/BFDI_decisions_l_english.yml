@@ -160,6 +160,8 @@
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
 
  l_decisions_sector_title: "§YOur Benefactors§!"
+ l_decisions_sector_military_title: "§RTop Hat§!"
+ l_decisions_sector_military_stats: "§GAttack:§! [?var_idea_YFC_sectors_TopHat_attack|%]\n§GOrganisation:§! [?var_idea_YFC_sectors_TopHat_org|%]\n§RCost:§! [?var_idea_YFC_TopHat_cost]K\n§RInfluence:§! [?var_idea_YFC_TopHat_influence]"
 
  yfc_mercenaries_normal: "Purchase §tCherry Company§!"
  yfc_mercenaries_cav: "Purchase §7Combined Grape Affiliation§!"

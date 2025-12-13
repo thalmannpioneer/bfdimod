@@ -362,6 +362,11 @@ ideas = {
                     has_war = no
                     is_in_faction = no
                 }
+                modifier = {
+                    factor = 3
+                    has_war = no
+                    has_idea = limited_exports
+                }
             }
         }
 
@@ -463,8 +468,8 @@ ideas = {
 
             cancel_if_invalid = no
 
-            ai_will_do = {
-                factor = 1
+            ai_will_do = { #The AI really has no reason to do this :sob:
+                factor = 0
 
                 modifier = {
                     factor = 0

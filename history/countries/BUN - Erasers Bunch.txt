@@ -44,7 +44,8 @@ set_popularities = {
  set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 1.25 } 
  set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 1.5 } 
 
-set_variable = { var_currently_raiding = 0 }
+set_variable = { var_BUN_raiding = 0 }
+
 set_variable = { var_BUN_Bonus_Guns = 0 }
 
 add_ideas = limited_conscription

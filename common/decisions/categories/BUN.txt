@@ -9,7 +9,7 @@ decision_BUN_raids_category = {
 				check_variable = {
 					var_currently_raiding = 0
 				}
-				has_manpower > 500
+				num_divisions > 2
 				has_army_size = {
 					size > 0
 				}

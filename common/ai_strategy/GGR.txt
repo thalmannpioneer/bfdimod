@@ -255,12 +255,8 @@ GGR_cheap_guns = {
 	}
 
 	ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
-		type = agency_ai_base_num_factories_factor
-		value = -90
-	}
-	ai_strategy = {
-		type = agency_ai_per_upgrade_factories_factor
-		value = -90
+		type = intelligence_agency_usable_factories
+		value = 10
 	}
 }
 

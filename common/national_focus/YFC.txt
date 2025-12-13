@@ -873,11 +873,13 @@ focus_tree = {
 				original_tag_to_check = TBT
 				add_opinion_modifier = { target = YFC modifier = medium_increase }
 			}	
-			custom_effect_tooltip = l_money_gain_400K
-			add_to_variable = { money_amount = 4 }
 			216 = {
                 add_resource = {
                     type = steel
+                    amount = 10
+                }
+				add_resource = {
+                    type = aluminium
                     amount = 8
                 }
             }

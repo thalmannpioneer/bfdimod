@@ -103,6 +103,7 @@
  l_GFG_everyone_dies_cry_emoji: "§YFries§! dies.\n§YPuffball§! dies.\n§YBasketball§! dies.\n§YRemote§! dies.\n§YPie§! dies."
  l_GFG_southern_agreement: "§7We'll go to Faraway to conclude a non-aggression pact.§!"
 
+ l_YFC_payment_sectors: "§YWe will pay§! §R[?var_sectors_combined_cost]K§! §YDollars to the Sectors.§!"
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YHires Coiny as an Army Chief!§!"
  l_YFC_raid_effect: "§YA random amount of equipment is stolen.§!"
@@ -133,23 +134,6 @@
  l_YFC_BUN_8: "Bunch Supporters will revolt against our rule.\n\n§RIf they capture all of their old victory points they will get their independence!§!\n\n§GHowever, they have limited strength, so if we are able to hold off their attacks they will be weakened to a point of no return!§!"
  l_YFC_BUN_8_O: "You will switch to Neo-Bunch as they will revolt against Yellow Face.\n\n§GIf we capture all of their old victory points they will get our independence!§!\n\n§RHowever, we have limited strength, so if we take too long we will be weakened to a point of no return!§!"
  l_YFC_BUN_last_ditch: "§YYellow Face has 60 days to destroy the Neo-Bunch rebels or the war is over with a Neo-Bunch victory and Yellow Face withdraws!§!"
-
- l_YFC_CRN_Start: "§YStarts a chain of events where we will try to subjugate Numismatia!§!"
- l_YFC_CRN_Start2: "§YWill start a series of events where demands will be made and given for future effects and modifiers!§!"
- l_YFC_CRN_UP: "§GIncreases the chance that Numismatia accepts submission.§!"
- l_YFC_CRN_DOWN: "§RDecreases the chance that Numismatia accepts submission.§!"
- l_YFC_7_YFC: "Adds the following into the deal we get if they agree:\n- §YArmy Attack: -5%§!\n- §YArmy Defence: -5%§!\n- §YCommand Power Gain: -10%§!"
- l_YFC_7_CRN: "Adds the following into the deal we get:\n- §Y+20 Army XP§!\n- §YArmy Attack: +5%§!\n- §YArmy Defence: -10%§!\n- §YCommand Power Gain: +10%§!"
- l_YFC_8_YFC: "Adds the following into the deal we get if they agree:\n- §Y+25 Army XP§!\n- §YArmy Attack: +5%§!\n- §YCommand Power Gain: +25%§!"
- l_YFC_8_CRN: "Adds the following into the deal we get:\n- §YArmy Attack: +5%§!\n- §YArmy Defence: -20%§!\n- §YCommand Power Gain: -25%§!"
- l_YFC_10_YFC: "Adds the following into the deal we get:\n- §Y-5% War Support§!\n- §YPolitical Power Gain: -10%§!"
- l_YFC_10_CRN: "Adds the following into the deal we get if they agree:\n- §Y+50 Political Power§!\n- §Y+5% Stability§!"
- l_YFC_11_YFC: "Adds the following into the deal we get:\n- §Y-5% War Support§!\n- §Y-100 Political Power§!\n- §YPolitical Power Gain: -15%§!"
- l_YFC_11_CRN: "Adds the following into the deal we get if they agree:\n- §Y+100 Political Power§!\n- §Y+10% Stability§!\n§Y+5% War Support§!"
- l_YFC_13_YFC: "Adds the following into the deal we get if they agree:\n- §Y-150 Political Power§!\n- §YPolitical Power Gain: -5%§!"
- l_YFC_13_CRN: "Adds the following into the deal we get:\n- §Y+5 Army XP§!\n- §Y-5% Communist Support§!\n- §Y+10% Stability§!"
- l_YFC_14_YFC: "Adds the following into the deal we get if they agree:\n- §Y+50 Political Power§!\n- §YPolitical Power Gain: 10%§!"
- l_YFC_14_CRN: "Adds the following into the deal we get:\n- §Y-10% Communist Support§!\n- §Y-0.01 Daily Communist Support§!\n- §Y-10% Stability§!\n- §YPolitical Power Gain: -10%§!"
 
  l_BUN_YFC_1: "Modifies §YOn a Ticking Timed Bomb§! National Spirit by:\n- §YAll Modifiers§! §R-25%§!"
 

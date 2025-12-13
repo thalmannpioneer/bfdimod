@@ -1,3 +1,54 @@
 decision_YFC_sector_category= { #Watermelon
+    YFC_sector_pay = {
+        is_good = yes
+        activation = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+        }
+        available = {
+            always = no
+        }
+        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        days_mission_timeout = 30
+        timeout_effect = {
+            #Money Taken
+            custom_effect_tooltip = l_YFC_payment_sectors
+            set_temp_variable = { paying_amount = var_sectors_combined_cost }
+            multiply_temp_variable = {paying_amount = 0.01}
+            subtract_from_variable = { money_amount = paying_amount }
+            
+            #Sector buff changes (TopHat)
+            set_temp_variable = { Level_TopHat = var_idea_YFC_TopHat_level }
+            multiply_temp_variable = {Level_TopHat = 0.05}
+            IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack < Level_TopHat}}
+                add_to_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+                add_to_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+            }
+            ELSE_IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}}
+                subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+                subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}}
+                    subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+                    subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                }
+            }
+        }
+	}
 
+    YFC_sector_issues = {
+        is_good = yes
+        activation = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+        }
+        available = {
+            always = no
+        }
+        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        days_mission_timeout = 90
+        timeout_effect = {
+        
+        }
+	}
 }

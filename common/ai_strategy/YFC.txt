@@ -32,3 +32,22 @@ YFC_focus_erasers_stockpiles_hate_raiders = {
     }
 }
 
+YFC_BUN_war = {
+    #Put all efforts into killing BUN
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		has_war_with = BUN
+	}
+
+	abort = {
+		NOT = { country_exists = BUN }
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BUN
+		value = 500
+	}
+}

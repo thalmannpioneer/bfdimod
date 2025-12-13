@@ -2,7 +2,6 @@
 #And I took it from GPG xd
 
 guiTypes = {
-
 	containerWindowType = {
 		name = "corp_sector_container"
 		position = { x = 0 y = 0 }
@@ -11,7 +10,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "title"
 			text = l_decisions_sector_title
-			position = { x = 10 y = 2 }
+			position = { x = 10 y = -5 }
 			maxWidth = 500
 			format = centre
 			font = hoi_36header
@@ -20,16 +19,47 @@ guiTypes = {
 		iconType = {
 			name = "sector_military"
 			spriteType = "GFX_decisions_sector_military"
-			position = { x = 50 y = 45 }
+			position = { x = 50 y = 60 }
 		}
 
+		instantTextboxType = {
+			name = "sector_military_title"
+			text = l_decisions_sector_military_title
+			position = { x = 5 y = 30 }
+			maxWidth = 250
+			format = centre
+			font = hoi_24header
+		}
+
+		instantTextboxType = {
+			name = "sector_military_stats"
+			text = l_decisions_sector_military_stats
+			position = { x = 5 y = 275 }
+			maxWidth = 250
+			format = centre
+			font = hoi_18header
+		}
+
+		buttonType = {
+			name = "button_military_increase"
+			position = { x = 70 y = 350 }
+			spriteType = GFX_decisions_WGF_operation_coinflip_button
+			clicksound = bfdi_button_press
+		}
+
+		buttonType = {
+			name = "button_military_decrease"
+			position = { x = 30 y = 350 }
+			spriteType = GFX_decisions_WGF_operation_coinflip_button
+			clicksound = bfdi_button_press
+		}
 
 
 		
 		iconType = {
-			name = "sector_railways"
-			spriteType = "GFX_decisions_sector_military"
-			position = { x = 300 y = 45 }
+			name = "sector_railway"
+			spriteType = "GFX_decisions_sector_railway"
+			position = { x = 300 y = 60 }
 		}
 	}
 }

@@ -177,7 +177,7 @@ country_event = {
                 id = GPG_event.7
                 days = 20
             }
-            add_threat = 2
+            add_threat = 2.5
             every_possible_country = {
                 limit = { is_ai = no }
                 news_event = {
@@ -916,7 +916,7 @@ country_event = {
         add_political_power = -200
         add_ideas = civilian_economy
         hidden_effect = {
-            add_threat = 2
+            add_threat = 5
             country_event = {
                 id = GPG_event.20
                 days = 20
@@ -1728,7 +1728,7 @@ country_event = {
             type = annex_everything
         }
         hidden_effect = {
-            add_threat = 2
+            add_threat = 2.5
             country_event = {
                 id = GPG_event.40
                 days = 3
@@ -1766,7 +1766,7 @@ country_event = {
             type = annex_everything
         }
         hidden_effect = {
-            add_threat = 2
+            add_threat = 2.5
             if = {
                 limit = {
                     tag = GSR
@@ -2020,7 +2020,7 @@ country_event = {
             complete_national_focus = GSR_focus_take_what_ours
         }
         hidden_effect = {
-            add_threat = 0.5
+            add_threat = 1
             every_possible_country = {
                 limit = { is_ai = no }
                 news_event = {

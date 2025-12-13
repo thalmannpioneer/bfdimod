@@ -146,6 +146,35 @@ scripted_gui = {
 		context_type = decision_category
 		parent_window_token = decision_tab
 		
+		triggers = { #For now the max level is 5 and min is 1. Granted this may change
+			button_military_increase_click_enabled = {
+				has_political_power > 10
+				check_variable = { var_idea_YFC_TopHat_level < 5 }
+			}
+			button_military_decrease_click_enabled = {
+				has_political_power > 10
+				check_variable = { var_idea_YFC_TopHat_level > 1 }
+			}
+		}
+
+		effects = {
+			button_military_increase_click = {
+				add_to_variable = { var_idea_YFC_TopHat_level = 1 }
+				add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
+				add_to_variable = { var_idea_YFC_TopHat_cost = 20 }
+				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_political_power = -10
+			}
+
+			button_military_decrease_click = {
+				add_to_variable = { var_idea_YFC_TopHat_level = -1 }
+				add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
+				add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
+				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_political_power = -10
+			}
+		}
+
 		properties = {	
 			#militray_sector = { frame = var_current_cabinet_leader } #Idk if I will need this yet
 		}
