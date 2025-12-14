@@ -422,6 +422,8 @@ country_event = {
             days = 300
         }
         add_stability = 0.05
+        custom_effect_tooltip = l_money_lose_300K
+		subtract_from_variable = { money_amount = 3 }
         mark_focus_tree_layout_dirty = yes
         hidden_effect = {
             complete_national_focus = GPG_focus_compensation
@@ -445,6 +447,8 @@ country_event = {
         }
         set_country_flag = third_question
         mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_money_gain_100K
+		add_to_variable = { money_amount = 1 }
         custom_effect_tooltip = l_GPG_removes_support_in_congress
         custom_effect_tooltip = l_GPG_improves_dream_island_trauma
         add_to_variable = { var_GPG_dreamislandtrauma_pg = 0.25 }
