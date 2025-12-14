@@ -249,7 +249,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
 				add = 5
 			}
 		}
@@ -288,7 +288,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
 				add = 5
 			}
 		}
@@ -327,7 +327,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
 				add = 5
 			}
 		}
@@ -365,7 +365,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
 				add = 5
 			}
 		}
@@ -403,7 +403,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
 				add = 5
 			}
 		}
@@ -450,7 +450,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
 				add = 5
 			}
 		}
@@ -493,8 +493,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
 				add = 5
+			}
+			modifier = {
+				has_war = yes
+				add = 100
 			}
 		}
 
@@ -639,7 +643,7 @@ propaganda_efforts = {
 				add = 10
 			}
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
 				add = 5
 			}
 		}

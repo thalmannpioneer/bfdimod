@@ -58,7 +58,7 @@ GGR_FFT_preparation_and_war = {
     }
 	ai_strategy = {
 		type = garrison
-		value = -85
+		value = -150
 	}
 }
 
@@ -200,7 +200,7 @@ GGR_huge_army = {
 
 	abort = {
 		has_army_size = {
-            size > 14
+            size > 15
         }
 	}
 
@@ -256,7 +256,7 @@ GGR_cheap_guns = {
 
 	ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
 		type = intelligence_agency_usable_factories
-		value = 10
+		value = 5
 	}
 }
 

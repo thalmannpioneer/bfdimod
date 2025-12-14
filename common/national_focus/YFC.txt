@@ -14,7 +14,7 @@ focus_tree = {
 
 	initial_show_position = { focus = YFC_focus_open_the_market }
 
-#STARTER PATH
+ #STARTER PATH
 
 	focus = {
 		id = YFC_focus_consolidate_power
@@ -383,7 +383,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 2
+			base = 0
 			modifier = {
 				factor = 100
 				has_country_flag = raiders_path
@@ -721,7 +721,7 @@ focus_tree = {
 		y = 1
 		icon = GFX_focus_YFC_economic_issue
 		prerequisite = { focus = YFC_focus_a_look_inward }
-		cost = 8
+		cost = 5
 
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_repair
@@ -740,6 +740,8 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
+			custom_effect_tooltip = l_money_gain_100K
+			add_to_variable = { money_amount = 1 }
 			hidden_effect = {
 				set_variable = { var_YFC_upgrade_level = 0 }
 			}
@@ -1566,6 +1568,12 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
+			85 = {
+				add_manpower = -2164
+			}
+			212 = {
+				add_manpower = -1274
+			}
 			country_event = {
 				id = YFC_BUN.23
 				hours = 1
@@ -1669,6 +1677,9 @@ focus_tree = {
 		available = {
 			85 = {compliance > 75}
 			212 = {compliance > 75}
+			hidden_trigger = {
+				NOT = {has_completed_focus = YFC_focus_stalled_plans}
+			}	
 		}
 
 		prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
@@ -1701,6 +1712,24 @@ focus_tree = {
 			}
 
 			#Maybe an event idk
+		}
+	}
+
+	focus = {
+		id = YFC_focus_stalled_plans
+		relative_position_id = YFC_focus_clamp_down_on_bunchivism
+		x = 3
+		y = 4
+		icon = GFX_focus_generic
+
+		allow_branch = { has_completed_focus = YFC_focus_stalled_plans }
+
+		prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
+		prerequisite = { focus = YFC_focus_ban_theft }
+		
+		cost = 5
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 

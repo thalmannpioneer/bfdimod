@@ -50,6 +50,7 @@ country_event = {
 		add_stability = -0.2
 		add_political_power = -300
 		white_peace = BUN
+		complete_national_focus = YFC_focus_stalled_plans
 		IF = {
 			limit = {
 				has_war_with = CRN
@@ -180,6 +181,7 @@ country_event = { #YFC sees this
 	option = {
 		name = BUN_YFC.6.a
 		white_peace = BUN
+		complete_national_focus = YFC_focus_stalled_plans
 		add_war_support = -0.10
 		add_political_power = -100
 		IF = {
@@ -245,10 +247,10 @@ country_event = { #YFC sees this
 	option = {
 		name = BUN_YFC.7.a
 		custom_effect_tooltip = l_YFC_BUN_last_ditch
-		add_manpower = 5000
+		add_manpower = 7500
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 500
+			amount = 750
 		}
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
@@ -269,7 +271,7 @@ country_event = { #YFC sees this
 		}
 		201 = {
 			create_unit = {
-				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.35"
 				count = 4
 				owner = YFC
 			}
@@ -279,7 +281,7 @@ country_event = { #YFC sees this
 				limit = {YFC = {is_ai = yes}}
 				201 = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.35"
 						count = 2
 						owner = YFC
 					}

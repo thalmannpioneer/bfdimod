@@ -82,7 +82,7 @@ recruit_character = YFC_yellow_face
 recruit_character = YFC_david
 recruit_character = YFC_Coiny
 
-add_manpower = 10000
+add_manpower = 5000
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment

@@ -867,6 +867,13 @@ country_event = {
     option = { 
 		name = YFC_event.31.a
 		add_war_support = -0.05
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_war_support > 0.5
+				add = 100
+		 	}
+		}
 	}
 	option = { 
 		name = YFC_event.31.b
@@ -880,6 +887,9 @@ country_event = {
 			}
 		}
 		hidden_effect = { set_country_flag = GMD_Blocked_YFC_Trolling }
+		ai_chance = {
+			base = 1
+		}
 	}
 	option = { 
 		name = YFC_event.31.c
@@ -891,6 +901,9 @@ country_event = {
 			}
 		}
 		hidden_effect = { set_country_flag = GMD_Blocked_YFC_Trolling }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
 
@@ -920,9 +933,20 @@ country_event = {
 		custom_effect_tooltip = l_money_lose_2M
 		subtract_from_variable = { money_amount = 20 }
 		add_offsite_building = { type = arms_factory level = 1 }
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = { money_amount > 25 } 
+				add = 10
+		 	}
+		}	
 	}
 	option = { 
 		name = YFC_event.33.b
+		ai_chance = {
+			base = 1
+		}	
 	}
 }
 
@@ -1497,7 +1521,6 @@ country_event = {
 				add_manpower = 10000
 				add_command_power = 50
 				add_war_support = 0.20
-				add_offsite_building = { type = arms_factory level = 1 }
 				add_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }
 				add_ideas = low_economic_mobilisation
 				add_ideas = extensive_conscription
@@ -1570,7 +1593,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -1582,11 +1605,19 @@ country_event = {
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
-					prioritize_location = 3944
+					prioritize_location = 11195
 					id = 1967
 				}
 				create_unit = {
 					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					owner = BUN
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 3944
+					id = 1967
+				}
+				create_unit = {
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2425,6 +2456,7 @@ country_event = {
 
 	option = {
 		name = YFC_BUN.23.a
+		add_stability = -0.01
 		add_political_power = 20
 		85 = {add_compliance = 2}
 		212 = {add_compliance = 2}

@@ -25,7 +25,7 @@ decision_BUN_raids_category = {
 		fire_only_once = no
 		days_remove = 10
 		cost = 35
-		days_re_enable = 300
+		days_re_enable = 450
 		war_with_on_remove = controller
 
 		remove_effect = {
@@ -146,7 +146,7 @@ decision_BUN_raids_category = {
 		fire_only_once = no
 		days_remove = 10
 		cost = 35
-		days_re_enable = 400
+		days_re_enable = 450
 		war_with_on_remove = controller
 
 		remove_effect = {
@@ -267,7 +267,7 @@ decision_BUN_raids_category = {
 		fire_only_once = no
 		days_remove = 10
 		cost = 35
-		days_re_enable = 400
+		days_re_enable = 450
 		war_with_on_remove = controller
 
 		remove_effect = {
@@ -388,7 +388,7 @@ decision_BUN_raids_category = {
 		fire_only_once = no
 		days_remove = 10
 		cost = 35
-		days_re_enable = 400
+		days_re_enable = 450
 		war_with_on_remove = controller
 
 		remove_effect = {

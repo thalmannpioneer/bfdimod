@@ -114,7 +114,7 @@ decision_BUN_Revolt_category = {
 			}
 			has_war_with = YFC
 			has_army_size = {
-				size < 9
+				size < 10
 			}
 		}
 

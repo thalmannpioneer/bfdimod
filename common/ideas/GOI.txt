@@ -59,7 +59,7 @@ ideas = {
 				send_volunteers_tension = -1
 				request_lease_tension = -2
 				generate_wargoal_tension = -1
-				justify_war_goal_time = -0.5
+				embargo_threshold_factor = -0.5
 				operative_slot = 2
 			}
 		}
