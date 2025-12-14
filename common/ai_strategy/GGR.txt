@@ -7,24 +7,24 @@
 GGR_protect_raiders = {
     #Tells GGR to defend from BUN till anarchists are done
     allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		has_army_size = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
             size < 7
         }
-	}
+    }
 
-	abort = {
-		OR = {
-			has_army_size = {
+    abort = {
+        OR = {
+            has_army_size = {
                 size > 7
             }
             NOT = {country_exists = BUN}
-		}
-	}
+        }
+    }
 
-	ai_strategy = {
+    ai_strategy = {
         type = prepare_for_war
         id = BUN
         value = 200
@@ -34,249 +34,249 @@ GGR_protect_raiders = {
 
 GGR_FFT_preparation_and_war = {
     #GGR sends troops to FFT
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		OR = {
-			focus_progress = {
-				focus = GGR_focus_partizan_war
-				progress > 0.01
-			}
-			has_war_with = FFT
-		}
-	}
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        OR = {
+            focus_progress = {
+                focus = GGR_focus_partizan_war
+                progress > 0.01
+            }
+            has_war_with = FFT
+        }
+    }
 
-	abort = {
-		NOT = { country_exists = FFT }
-	}
+    abort = {
+        NOT = { country_exists = FFT }
+    }
 
-	ai_strategy = {
+    ai_strategy = {
         type = prepare_for_war
         id = FFT
         value = 500
     }
-	ai_strategy = {
-		type = garrison
-		value = -150
-	}
+    ai_strategy = {
+        type = garrison
+        value = -150
+    }
 }
 
 GGR_FFT_spy = {
     #GGR will spy on FFT to gain more intel
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		country_exists = FFT
-	}
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        country_exists = FFT
+    }
 
-	abort = {
-		NOT = { country_exists = FFT }
-	}
+    abort = {
+        NOT = { country_exists = FFT }
+    }
 
-	ai_strategy = {
-		type = operative_mission
-		value = 50
-		state = 169
-		mission = build_intel_network
-		mission_target = FFT
-	}
-	ai_strategy = {
-		type = operative_mission
-		value = -5000
-		mission = build_intel_network
-		mission_target = EMP
-	}
+    ai_strategy = {
+        type = operative_mission
+        value = 50
+        state = 169
+        mission = build_intel_network
+        mission_target = FFT
+    }
+    ai_strategy = {
+        type = operative_mission
+        value = -5000
+        mission = build_intel_network
+        mission_target = EMP
+    }
 }
 
 ## INDUSTRY ##
 
 GGR_tanks = {
     #Once GGR has units and tank tech bonus it will try to make tanks for the rest of the game
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		NOT = {has_dlc = "No Step Back"}
-		has_army_size = {
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        NOT = {has_dlc = "No Step Back"}
+        has_army_size = {
             size > 8
         }
-		has_completed_focus = GGR_focus_forest_tanks
-	}
+        has_completed_focus = GGR_focus_forest_tanks
+    }
 
-	abort = {
-		has_army_size = {
-			size > 1
-			type = armor
-		}
-	}
+    abort = {
+        has_army_size = {
+            size > 1
+            type = armor
+        }
+    }
 
 
-	ai_strategy = {
-		type = build_army
-		id = armor
-		value = 1000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 75
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = gwtank
-		value = 1000
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = basic_light_tank
-		value = 750
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = tech_trucks
-		value = 100
-	}
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = armor
+        value = 75
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = gwtank
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = basic_light_tank
+        value = 750
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = tech_trucks
+        value = 100
+    }
 }
 
 GGR_tanks_NSB = {
     #NSB Version
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		has_dlc = "No Step Back"
-		has_army_size = {
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_dlc = "No Step Back"
+        has_army_size = {
             size > 8
         }
-		has_completed_focus = GGR_focus_forest_tanks
-	}
+        has_completed_focus = GGR_focus_forest_tanks
+    }
 
-	abort = {
-		has_army_size = {
-			size > 1
-			type = armor
-		}
-	}
+    abort = {
+        has_army_size = {
+            size > 1
+            type = armor
+        }
+    }
 
-	ai_strategy = {
-		type = build_army
-		id = armor
-		value = 1000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 75
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = gwtank_chassis
-		value = 1000
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = basic_light_tank_chassis
-		value = 750
-	}
-	ai_strategy = {
-		type = research_weight_factor
-		id = tech_trucks
-		value = 1000
-	}
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = armor
+        value = 75
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = gwtank_chassis
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = basic_light_tank_chassis
+        value = 750
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = tech_trucks
+        value = 1000
+    }
 }
 
 GGR_huge_army = {
-    #Once GGR can build divs it will try to build a large army quickly 
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		has_army_size = {
+    #Once GGR can build divs it will try to build a large army quickly
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
             size > 6
         }
-	}
+    }
 
-	abort = {
-		has_army_size = {
+    abort = {
+        has_army_size = {
             size > 15
         }
-	}
+    }
 
-	ai_strategy = {
-		type = build_army
-		id = infantry
-		value = 250
-	}
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 250
+    }
 }
 
 GGR_cheap_guns = {
     #Tells GGR to only care about amount of guns till anarchists are done
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		has_army_size = {
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
             size < 7
         }
-	}
+    }
 
-	abort = {
-		has_army_size = {
+    abort = {
+        has_army_size = {
             size > 7
         }
-	}
+    }
 
-	ai_strategy = {
-		type = production_upgrade_desire_offset
-		id = infantry_equipment_1
-		value = -1000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 10000
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = support_equipment
-		value = -1000
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = artillery
-		value = -1000
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = artillery
-		value = -1000
-	}
+    ai_strategy = {
+        type = production_upgrade_desire_offset
+        id = infantry_equipment_1
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = 10000
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = support_equipment
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = artillery
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = artillery
+        value = -1000
+    }
 
-	ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
-		type = intelligence_agency_usable_factories
-		value = 5
-	}
+    ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
+        type = intelligence_agency_usable_factories
+        value = 5
+    }
 }
 
 GGR_four_year = {
     #Tells GGR that when anarchists are done mass build civs
-	allowed = {
-		original_tag = GGR
-	}
-	enable = {
-		industrial_complex < 25
-		NOT = {country_exists = FFT}
-	}
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        industrial_complex < 25
+        NOT = {country_exists = FFT}
+    }
 
-	abort = {
-		industrial_complex > 25
-	}
+    abort = {
+        industrial_complex > 25
+    }
 
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 150
-	}
+    ai_strategy = {
+        type = building_target
+        id = industrial_complex
+        value = 150
+    }
 }

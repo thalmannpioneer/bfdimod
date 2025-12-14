@@ -474,6 +474,7 @@ country_event = {
         set_country_flag = GTR_integrate_north
         set_country_flag = GTR_republic_formed
         complete_national_focus = GTR_focus_new_government
+        mark_focus_tree_layout_dirty = yes
         hidden_effect = {
             every_possible_country = {
                 limit = { is_ai = no }
