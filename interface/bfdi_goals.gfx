@@ -1704,4 +1704,64 @@ SpriteTypes = {
 		play_on_show = yes
 		allwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_new_government"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_new_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_looking_outside"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_looking_outside.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_contacts_with_casland"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_contacts_with_casland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_collective_research"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_collective_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_casland_industry"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_casland_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_open_borders"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_open_borders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_mutual_protection"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_mutual_protection.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_all_roads_to_centrogoiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_all_roads_to_centrogoiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_develop_railroad_tech"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_develop_railroad_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_start_the_trains"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_start_the_trains.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_aid_for_centrogoiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_aid_for_centrogoiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_integrate_lofty"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_integrate_lofty.dds"
+	}
 }

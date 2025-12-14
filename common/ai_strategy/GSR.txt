@@ -128,3 +128,25 @@ GSR_huge_army = {
 		value = 25
 	}
 }
+
+GSR_focus_pp = {
+    #GSR needs pp for some things
+	allowed = {
+		original_tag = GSR
+	}
+	enable = {
+		has_completed_focus = GSR_focus_peoples_constitution
+		NOT = {has_completed_focus = GSR_focus_socialism_in_one_country}
+	}
+
+	abort = {
+		has_completed_focus = GSR_focus_peoples_constitution
+		has_completed_focus = GSR_focus_socialism_in_one_country
+	}
+
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 125
+	}
+}

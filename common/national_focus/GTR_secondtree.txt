@@ -425,7 +425,7 @@ focus_tree = {
         relative_position_id = GTR_focus_looking_outside
         y = 1
 
-        icon = GFX_focus_GTR_roads_to_centrogoiky
+        icon = GFX_focus_GTR_all_roads_to_centrogoiky
 
         prerequisite = { focus = GTR_focus_looking_outside }
 
@@ -445,7 +445,7 @@ focus_tree = {
         relative_position_id = GTR_focus_all_roads_to_centrogoiky
         y = 1
 
-        icon = GFX_focus_GTR_roads_to_centrogoiky
+        icon = GFX_focus_GTR_develop_railroad_tech
 
         prerequisite = { focus = GTR_focus_all_roads_to_centrogoiky }
 
