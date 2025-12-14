@@ -1739,7 +1739,6 @@ country_event = { #Annex Events 1
 		85 = {add_compliance = -5}
 		212 = {add_compliance = -5}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.10
 				days = 10
@@ -1753,7 +1752,6 @@ country_event = { #Annex Events 1
 		add_political_power = -25
 		add_manpower = 1000
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.10
 				days = 10
@@ -1769,7 +1767,6 @@ country_event = { #Annex Events 1
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.10
 				days = 10
@@ -1798,7 +1795,6 @@ country_event = { #Annex Events 2
 		85 = {add_compliance = -5}
 		212 = {add_compliance = -5}	
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.11
 				days = 15
@@ -1815,7 +1811,6 @@ country_event = { #Annex Events 2
 		#Would Minor Buff Sectors
 		#Would cost money when added
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.11
 				days = 15
@@ -1832,7 +1827,6 @@ country_event = { #Annex Events 2
 		212 = {add_compliance = 5}
 		#Would cost money when added
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.11
 				days = 15
@@ -1865,7 +1859,6 @@ country_event = { #Annex Events 3
 			add_resistance = -10
 		}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.12
 				days = 20
@@ -1882,7 +1875,6 @@ country_event = { #Annex Events 3
 		unlock_decision_tooltip = YFC_BUN_recruit_locals
 		hidden_effect = {
 			set_country_flag = has_YFC_BUN_recruit_locals
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.12
 				days = 20
@@ -1900,7 +1892,6 @@ country_event = { #Annex Events 3
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}	
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.12
 				days = 20
@@ -1932,7 +1923,6 @@ country_event = { #Annex Events 4
 		}
 		212 = {add_compliance = 10}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.13
 				days = 25
@@ -1956,7 +1946,6 @@ country_event = { #Annex Events 4
 			212 = {add_compliance = -2.5}
 		}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.13
 				days = 25
@@ -1975,7 +1964,6 @@ country_event = { #Annex Events 4
 			212 = {add_resistance = 7}
 		}
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.13
 				days = 25
@@ -1999,7 +1987,6 @@ country_event = { #Annex Events 5
 		#Modifers: IDK
 		add_political_power = 45
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			BUN = {retire_character = BUN_blocky}
 			country_event = {
 				id = YFC_BUN.14
@@ -2016,7 +2003,6 @@ country_event = { #Annex Events 5
 		212 = {add_resistance = -2}
 		recruit_character = YFC_blocky
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			BUN = {retire_character = BUN_blocky}
 			country_event = {
 				id = YFC_BUN.14
@@ -2031,7 +2017,6 @@ country_event = { #Annex Events 5
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}	
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			BUN = {retire_character = BUN_blocky}
 			set_country_flag = has_blocky_be_face
 			country_event = {
@@ -2072,7 +2057,6 @@ country_event = { #Annex Events 6
 		}
 		#Buff Top Hat and Hammer Sector	
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.15
 				days = 35
@@ -2088,7 +2072,6 @@ country_event = { #Annex Events 6
 		212 = {add_compliance = 5}
 		#Buff Beaker and Pipe Sector
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.15
 				days = 35
@@ -2114,7 +2097,6 @@ country_event = { #Annex Events 6
 		}
 		#Buff Taser Sector
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.15
 				days = 35
@@ -2146,7 +2128,6 @@ country_event = { #Annex Events 7
 		}
 		#Nerf Top Hat Sector
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.16
 				days = 90
@@ -2162,7 +2143,6 @@ country_event = { #Annex Events 7
 		212 = {add_compliance = 5}
 		#Would cost money
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
 			country_event = {
 				id = YFC_BUN.16
 				days = 90
@@ -2179,7 +2159,7 @@ country_event = { #Annex Events 7
 		#Buff Top Hat Sector
 		#Would give money
 		hidden_effect = {
-			CRN = {add_to_variable = { var_BUN_Bonus_Guns = 50 }}
+
 			country_event = {
 				id = YFC_BUN.16
 				days = 90
@@ -2285,9 +2265,18 @@ country_event = { #Annex Events FINAL
 			NOT = {85 = {compliance > 70}}	
         }
 		add_political_power = 50
-		add_timed_idea = {
-			idea = idea_YFC_at_the_finish_line
-			days = 210
+		IF = {
+			limit = {is_ai = yes}
+			add_timed_idea = {
+				idea = idea_YFC_at_the_finish_line
+				days = 360
+			}
+		}
+		ELSE = {
+			add_timed_idea = {
+				idea = idea_YFC_at_the_finish_line
+				days = 210
+			}
 		}
 	}
 }

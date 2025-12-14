@@ -1,6 +1,12 @@
 state={
 	id=231
 	name="STATE_231"
+
+	resources = {
+		steel = 3
+		coal = 4
+	}
+
 	provinces={
 		1909 3478 4308 6215 11089 11132 11151 
 	}
@@ -8,7 +14,7 @@ state={
 		owner = GOI
 		add_core_of = GOI
 	}
-	manpower=0
+	manpower = 784
 	buildings_max_level_factor=1
 	state_category=pastoral
 	local_supplies=0

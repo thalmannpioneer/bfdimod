@@ -48,7 +48,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GMD
-				attack_bonus_against = 1 #Rework this when GMD get's stuff!
+				attack_bonus_against = 0.75 #Rework this when GMD get's stuff!
 			}
 			on_remove = {
 				if = {

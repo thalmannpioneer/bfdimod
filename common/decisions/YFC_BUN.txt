@@ -107,6 +107,9 @@ decision_YFC_BUN_category = {
 				compliance < 65
 			}
 			NOT = {country_exists = BUN}
+			212 = {
+				compliance < 85
+			}
 		}
 		available = {
 			always = no
@@ -146,6 +149,9 @@ decision_YFC_BUN_category = {
 			controls_state = 212
 			212 = {
 				compliance < 65
+			}
+			85 = {
+				compliance < 85
 			}
 			NOT = {country_exists = BUN}
 		}

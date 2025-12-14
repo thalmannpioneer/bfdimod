@@ -43,7 +43,7 @@ set_popularities = {
 
 set_variable = { var_CRN_BUN_Support = 0 }  
 
-add_manpower = 15000
+add_manpower = 25000
 
 add_ideas = free_trade
 add_ideas = idea_CRN_city_on_a_shining_hill
