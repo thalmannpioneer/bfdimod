@@ -392,6 +392,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YFC_focus_establish_connection
+		relative_position_id = YFC_focus_YFC_funded_pillaging
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_YFC_funded_pillaging
+			}
+		}
+		
+		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = YFC_focus_open_foreign_policy
 		relative_position_id = YFC_focus_the_southern_bandits
 		x = 2
@@ -553,6 +574,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = YFC_focus_coiny_cooperation }
+		prerequisite = { focus = YFC_focus_open_foreign_policy }
 		#allows you to exploit coiny's military factories, selling coiny's guns instead of yours, so you dont lose military factories, in exchange, buffs from coiny are less potent
 		#NEW IDEA: Unlocks a decision to exploit coiny's military factories, granting you 2 offmap mils for 120 days. Coiny gets a increasing change to discover this and have a event on how to handle it.
 		#Coiny also get's hurt by YFC's trolling by losing production, so they have reason to talk it out. 
