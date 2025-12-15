@@ -16,12 +16,13 @@ on_actions = {
                 set_country_flag = has_money_system
                 IF = {
                     limit = {tag = YFC}
-                    set_variable = { money_amount = 22.6 } 
+                    set_variable = { money_amount = 22.6 }
                     BFDI_money_diplay_update = yes
                 }
                 ELSE_IF = {
+                    <<<<<<< Updated upstream
                     limit = { tag = GPG }
-                    set_variable = { money_amount = -10.32 } #Dream Island costs were very high :( 
+                    set_variable = { money_amount = -10.32 } #Dream Island costs were very high :(
                     BFDI_money_diplay_update = yes
                 }
                 ELSE_IF = {
@@ -30,13 +31,25 @@ on_actions = {
                             tag = GFG
                             tag = GSR
                             tag = GDR
-                        }   
+                        }
                     }
                     set_variable_to_random = {
                         var = money_amount
                         min = -9
                         max = -8
                     }
+                    =======
+                    limit = {
+                        OR = {
+                            tag = GPG
+                            tag = GSR
+                            tag = GFG
+                            tag = GDR
+                        }
+
+                    }
+                    set_variable = { money_amount = -5.8 }
+                    >>>>>>> Stashed changes
                     BFDI_money_diplay_update = yes
                 }
                 ELSE = {

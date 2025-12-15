@@ -1067,7 +1067,7 @@
  GTR_event.17.b: "Not our jurisdiction."
 
  GTR_event.18.t: "Aid arrived!"
- GTR_event.18.desc: "We have received humanitarian aid from the sympathetic objects in [FROM.GetName]!"
+ GTR_event.18.desc: "We have received humanitarian aid from sympathetic objects in [FROM.GetName]!"
  GTR_event.18.a: "Excellent!"
 
  GTR_event.19.t: "Discussion"
