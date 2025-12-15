@@ -1764,4 +1764,89 @@ SpriteTypes = {
 		name = "GFX_focus_GTR_integrate_lofty"
 		textureFile = "gfx/interface/goals/GFX_focus_GTR_integrate_lofty.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_behind_steel_walls"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_behind_steel_walls.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_heaven_for_research"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_heaven_for_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_recruitment_campaign"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_recruitment_campaign.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_strict_border_control"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_strict_border_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_privacy_of_innovation"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_privacy_of_innovation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_brain_of_goiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_brain_of_goiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_republican_affairs"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_republican_affairs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_democracy"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_reform_rulership"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_reform_rulership.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_science_for_objects"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_science_for_objects.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_GTR_wide_ruling_horizontal"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_wide_ruling_horizontal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_role_of_presidency"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_role_of_presidency.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_noocracy"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_noocracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_rule_of_smart"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_rule_of_smart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_science_over_all"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_science_over_all.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_voting_cense"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_voting_cense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_the_first_mind"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_the_first_mind.dds"
+	}
 }
