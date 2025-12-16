@@ -1618,6 +1618,14 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					owner = BUN
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 733
+					id = 1967
+				}
+				create_unit = {
 					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
@@ -1651,13 +1659,14 @@ country_event = {
 				}
 				add_dynamic_modifier = {
 					modifier = BUN_revolt_support
+					scope = YFC
 					days = 730
 				}
 			}
 			212 = {
 				add_resistance = -50
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -1682,6 +1691,7 @@ country_event = {
 				}
 				add_dynamic_modifier = {
 					modifier = BUN_revolt_support
+					scope = YFC
 					days = 730
 				}
 			}
@@ -1742,9 +1752,13 @@ country_event = { #Annex Events 1
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
 	option = { #Yellow Face
 		name = YFC_BUN.9.a
-		add_political_power = 100
+		add_political_power = 75
 		85 = {add_compliance = -5}
 		212 = {add_compliance = -5}
 		hidden_effect = {
@@ -1760,6 +1774,10 @@ country_event = { #Annex Events 1
 		name = YFC_BUN.9.b
 		add_political_power = -25
 		add_manpower = 1000
+		85 = {add_resistance = -10}
+		212 = {add_resistance = -10}
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.10
@@ -1768,11 +1786,12 @@ country_event = { #Annex Events 1
 				random_hours = 50
 			}
 		}	
-		#Would maybe buff militray sector when added
 	}
 	option = { #local offical BUT CRN could use if pro-Bunch
 		name = YFC_BUN.9.c
-		add_political_power = -75
+		custom_effect_tooltip = l_money_lose_200K
+		subtract_from_variable = { money_amount = 2 }
+		add_political_power = -50
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}
 		hidden_effect = {
@@ -1795,12 +1814,19 @@ country_event = { #Annex Events 2
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
 	option = { #Allow Monopolies
 		name = YFC_BUN.10.a
-		add_political_power = 50
-		add_stability = 0.02
-		#Would add money when added
-		#Would Buff Sectors
+		add_political_power = 30
+		custom_effect_tooltip = l_money_gain_300K
+		add_to_variable = { money_amount = 3 }
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		85 = {add_compliance = -5}
 		212 = {add_compliance = -5}	
 		hidden_effect = {
@@ -1814,11 +1840,12 @@ country_event = { #Annex Events 2
 	}
 	option = { #Integration
 		name = YFC_BUN.10.b
+		custom_effect_tooltip = l_money_gain_100K
+		add_to_variable = { money_amount = 1 }
 		add_political_power = -25
 		85 = {add_compliance = 2.5}
 		212 = {add_compliance = 2.5}
-		#Would Minor Buff Sectors
-		#Would cost money when added
+	
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.11
@@ -1830,8 +1857,8 @@ country_event = { #Annex Events 2
 	}
 	option = { #Do nothing
 		name = YFC_BUN.10.c
-		add_political_power = -50
-		add_stability = -0.01	
+		custom_effect_tooltip = l_money_lose_200K
+		subtract_from_variable = { money_amount = 2 }
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
 		#Would cost money when added
@@ -1854,7 +1881,9 @@ country_event = { #Annex Events 3
 
 	is_triggered_only = yes
 
-	#Would Buff Sectors
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
 
 	option = { #Top Hat security 
 		name = YFC_BUN.11.a
@@ -1867,6 +1896,8 @@ country_event = { #Annex Events 3
 			add_compliance = -5
 			add_resistance = -10
 		}
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.12
@@ -1882,6 +1913,8 @@ country_event = { #Annex Events 3
 		85 = {add_compliance = 1}
 		212 = {add_compliance = 1}
 		unlock_decision_tooltip = YFC_BUN_recruit_locals
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
 			set_country_flag = has_YFC_BUN_recruit_locals
 			country_event = {
@@ -1897,9 +1930,16 @@ country_event = { #Annex Events 3
 	}
 	option = { #Do nothing
 		name = YFC_BUN.11.c
-		add_political_power = 20
-		85 = {add_compliance = 5}
-		212 = {add_compliance = 5}	
+		85 = {
+			add_compliance = 5
+			add_resistance = 5
+		}
+		212 = {
+			add_compliance = 5
+			add_resistance = 5
+		}	
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.12
@@ -1919,12 +1959,26 @@ country_event = { #Annex Events 4
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 4 }
+		set_variable = { var_add_to_sector2 = 2 }
+    }
+
+
 	option = { #Give In
 		name = YFC_BUN.12.a
-		add_political_power = -50
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		85 = {
-			add_compliance = 40
-			add_resistance = -50
+			add_compliance = 45
 			set_demilitarized_zone = yes
 			add_dynamic_modifier = {
 				modifier = BUN_autonomous_state
@@ -1946,7 +2000,7 @@ country_event = { #Annex Events 4
 	}
 	option = { #Send Army
 		name = YFC_BUN.12.b
-		add_manpower = -500
+		add_manpower = -1000
 		85 = {add_resistance = -7.5}
 		212 = {add_resistance = -5}
 		random = {
@@ -1954,6 +2008,8 @@ country_event = { #Annex Events 4
 			85 = {add_compliance = -5}
 			212 = {add_compliance = -2.5}
 		}
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.13
@@ -1965,6 +2021,8 @@ country_event = { #Annex Events 4
 	}
 	option = { #Do nothing
 		name = YFC_BUN.12.c
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
+		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 		add_political_power = 75
 		add_stability = -0.01
 		random = {
@@ -2049,6 +2107,10 @@ country_event = { #Annex Events 6
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
 	option = { #Lesser State
 		name = YFC_BUN.14.a
 		add_political_power = 75
@@ -2064,7 +2126,10 @@ country_event = { #Annex Events 6
 				modifier = BUN_lesser_state
 			}
 		}
-		#Buff Top Hat and Hammer Sector	
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.15
@@ -2079,7 +2144,10 @@ country_event = { #Annex Events 6
 		add_political_power = 50
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
-		#Buff Beaker and Pipe Sector
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.15
@@ -2104,7 +2172,8 @@ country_event = { #Annex Events 6
 				modifier = BUN_autonomous_state
 			}
 		}
-		#Buff Taser Sector
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.15
@@ -2124,6 +2193,11 @@ country_event = { #Annex Events 7
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+		set_variable = { var_add_to_sector2 = 2 }
+    }
+
 	option = { #Blame Top Hat
 		name = YFC_BUN.15.a
 		add_political_power = 50
@@ -2135,7 +2209,8 @@ country_event = { #Annex Events 7
 			add_resistance = 15
 			add_compliance = 7.5
 		}
-		#Nerf Top Hat Sector
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
+		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.16
@@ -2150,7 +2225,8 @@ country_event = { #Annex Events 7
 		add_political_power = -25
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
-		#Would cost money
+		custom_effect_tooltip = l_money_lose_500K
+		subtract_from_variable = { money_amount = 5 }
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.16
@@ -2165,8 +2241,10 @@ country_event = { #Annex Events 7
 		add_political_power = 75
 		85 = {add_compliance = -1}
 		212 = {add_compliance = -1}
-		#Buff Top Hat Sector
-		#Would give money
+		custom_effect_tooltip = l_money_lose_200K
+		subtract_from_variable = { money_amount = 2 }
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
 
 			country_event = {
@@ -2284,7 +2362,7 @@ country_event = { #Annex Events FINAL
 		ELSE = {
 			add_timed_idea = {
 				idea = idea_YFC_at_the_finish_line
-				days = 210
+				days = 180
 			}
 		}
 	}
@@ -2389,7 +2467,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = { #They blew up stuff :(
 	id = YFC_BUN.20 
 	title = YFC_BUN.20.t
 	desc = YFC_BUN.20.desc

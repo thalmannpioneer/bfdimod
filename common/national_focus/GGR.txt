@@ -446,6 +446,12 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			hidden_effect = { #Used to push the AI into something that is not grand battleplan
+				IF = {
+					limit = {is_ai = yes}
+					set_grand_doctrine = new_mobile_warfare
+				}
+			}
 		}
 	}
 	

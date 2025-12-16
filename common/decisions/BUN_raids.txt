@@ -109,7 +109,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 70
+                has_political_power > 40
             }
             modifier = {
                 add = -10
@@ -230,7 +230,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 70
+                has_political_power > 40
             }
             modifier = {
                 add = -10
@@ -351,7 +351,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 70
+                has_political_power > 40
             }
             modifier = {
                 add = -10
@@ -472,7 +472,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 70
+                has_political_power > 40
             }
             modifier = {
                 add = -10

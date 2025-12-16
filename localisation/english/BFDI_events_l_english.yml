@@ -878,7 +878,7 @@
 
  YFC_BUN.16.t.a: "Rights of Defence." #IF revolt somehow already happened
  YFC_BUN.16.desc.a: "This was an, in hindsight, an easy mission. It shouldn't have taken any more than a couple of months to pacify the former, now neo, Bunchivist populations. But now, the Neo-Bunchivists are armed, even moreso than our forces. It has been much of a headache for us and the security forces fighting this revolt. At this rate, if things don't get better, we may have much more problems...\n\nThose were our thoughts this morning. \nThis afternoon, we discovered that some of the profit and expense numbers from one of our sectors were miscalculated, and that we have a surplus of funds waiting to be used."
- YFC_BUN.16.a: "THEN PUT EVERYTHING INTO CRUSHING THEM!"
+ YFC_BUN.16.a: "Then put everything into crushing them!" 
 
  YFC_BUN.16.t.b: "Fiddling some of the numbers." #IF already cored
  YFC_BUN.16.desc.b: "As with every month, we get a report on our profits and expenses. However, an hour after that report was handed to us one of our employees rushed into our discussion room. This act is very frowned upon and would normally cause a decrease in pay, but it came with great news! It turns out that some of the economic numbers were mismatched and we have a surplus of funds lying around to put into something. So what is that something we put our funds into?"

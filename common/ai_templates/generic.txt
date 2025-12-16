@@ -801,7 +801,7 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 4
+				infantry = 5
 				artillery_brigade = 2
 			}
 		}
@@ -929,7 +929,7 @@ infantry_big_generic = {
 			
 			regiments = {
 				infantry = 8
-				artillery_brigade = 4
+				artillery_brigade = 3
 			}
 		}
 		

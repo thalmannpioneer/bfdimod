@@ -47,8 +47,8 @@ ideas = {
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
 			picture = generic_morale_bonus
 			modifier = {
-				compliance_growth = 1.25
-				resistance_growth = 0.5
+				compliance_growth = 2
+				resistance_growth = 1
 			}
 			cancel = {country_exists = BUN}
 		}

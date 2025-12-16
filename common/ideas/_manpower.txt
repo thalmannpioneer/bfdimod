@@ -274,49 +274,12 @@ ideas = {
                     manpower_per_military_factory < 2000
                 }
                 modifier = {
-                    tag = ENG
-                    has_idea_with_trait = military_theorist
+                    #Prio if at peace
                     factor = 20
-                }
-                modifier = {
-                    tag = ENG
-                    AND = {
-                        is_historical_focus_on = yes
-                        has_game_rule = {
-                            rule = ENG_ai_behavior
-                            option = DEFAULT
-                        }
-                    }
-                    date > 1939.1.1
-                    date < 1939.9.1
+                    has_idea = all_adults_serve
+                    has_idea = scraping_the_barrel
                     has_war = no
-                    NOT = { has_guaranteed = POL }
-                    factor = 0
-                }
-                modifier = {
-                    tag = SOV
-                    threat > 0.8
-                    factor = 3
-                }
-                modifier = {
-                    tag = SOV
-                    is_historical_focus_on = yes
-                    date > 1939.1.1
-                    has_idea = volunteer_only
-                    factor = 201
-                }
-                modifier = {
-                    factor = 0
-                    NOT = { has_idea = volunteer_only }
-                }
-                modifier = {
-                    original_tag = JAP
-                    has_idea = volunteer_only
-                    OR = {
-                        has_active_mission = JAP_army_faction_demands_conscription_law_change
-                        has_active_mission = JAP_naval_faction_demands_conscription_law_change
-                    }
-                    factor = 10
+                    has_political_power > 750
                 }
             }
 
