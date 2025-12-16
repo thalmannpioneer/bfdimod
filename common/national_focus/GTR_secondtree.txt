@@ -282,7 +282,7 @@ focus_tree = {
     #politics tree
     focus = {
         id = GTR_focus_new_government
-        x = 30
+        x = 21
         y = 0
 
         icon = GFX_focus_GTR_new_government
@@ -303,7 +303,7 @@ focus_tree = {
     focus = {
         id = GTR_focus_looking_outside
         relative_position_id = GTR_focus_new_government
-        x = -3
+        x = -2
         y = 1
 
         icon = GFX_focus_GTR_looking_outside
@@ -841,6 +841,527 @@ focus_tree = {
         cost = 5
 
         prerequisite = { focus = GTR_focus_voting_cense }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #economics tree
+    focus = {
+        id = GTR_focus_economics
+        x = 32
+        y = 0
+
+        icon = GFX_focus_GTR_economics
+
+        allow_branch = { has_country_flag = GTR_republic_formed }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_announcergrad_modernization
+        relative_position_id = GTR_focus_economics
+        x = -2
+        y = 1
+
+        icon = GFX_focus_GTR_announcergrad_modernization
+
+        prerequisite = { focus = GTR_focus_economics }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_public_education
+        relative_position_id = GTR_focus_announcergrad_modernization
+        x = -3
+        y = 1
+
+        icon = GFX_focus_GTR_public_education
+
+        prerequisite = { focus = GTR_focus_republican_affairs }
+        prerequisite = { focus = GTR_focus_announcergrad_modernization }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_talents_of_our_time
+        relative_position_id = GTR_focus_announcergrad_modernization
+        x = -3
+        y = 2
+
+        icon = GFX_focus_GTR_talents_of_our_time
+
+        prerequisite = { focus = GTR_focus_public_education }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    #Tennis Ball industry
+    focus = {
+        id = GTR_focus_industry_for_objects
+        relative_position_id = GTR_focus_announcergrad_modernization
+        y = 1
+
+        icon = GFX_focus_GTR_industry_for_objects
+
+        prerequisite = { focus = GTR_focus_announcergrad_modernization }
+
+        allow_branch = { has_country_flag = GTR_eco_tb }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_consumer_factories
+        relative_position_id = GTR_focus_industry_for_objects
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_consumer_factories
+
+        prerequisite = { focus = GTR_focus_industry_for_objects }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_care_for_ecology
+        relative_position_id = GTR_focus_industry_for_objects
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_care_for_ecology
+
+        prerequisite = { focus = GTR_focus_industry_for_objects }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_wasteless_production
+        relative_position_id = GTR_focus_industry_for_objects
+        y = 2
+
+        icon = GFX_focus_GTR_wasteless_production
+
+        prerequisite = { focus = GTR_focus_consumer_factories }
+        prerequisite = { focus = GTR_focus_care_for_ecology }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    #Golfball eco101
+    focus = {
+        id = GTR_focus_industry_for_science
+        relative_position_id = GTR_focus_announcergrad_modernization
+        y = 1
+
+        icon = GFX_focus_GTR_industry_for_science
+
+        prerequisite = { focus = GTR_focus_announcergrad_modernization }
+
+        allow_branch = { has_country_flag = GTR_eco_gb }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_massive_factories
+        relative_position_id = GTR_focus_industry_for_science
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_massive_factories
+
+        prerequisite = { focus = GTR_focus_industry_for_science }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_experiments_with_planning
+        relative_position_id = GTR_focus_industry_for_science
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_experiments_with_planning
+
+        prerequisite = { focus = GTR_focus_industry_for_science }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_get_all_we_can
+        relative_position_id = GTR_focus_industry_for_science
+        y = 2
+
+        icon = GFX_focus_GTR_get_all_we_can
+
+        prerequisite = { focus = GTR_focus_massive_factories }
+        prerequisite = { focus = GTR_focus_experiments_with_planning }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    #University reconstruction
+    focus = {
+        id = GTR_focus_elephant_in_a_room
+        relative_position_id = GTR_focus_economics
+        x = 2
+        y = 1
+
+        icon = GFX_focus_GTR_elephant_in_a_room
+
+        prerequisite = { focus = GTR_focus_economics }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_making_blueprints
+        relative_position_id = GTR_focus_elephant_in_a_room
+        x = -1
+        y = 1
+
+        icon = GFX_focus_GTR_making_blueprints
+
+        prerequisite = { focus = GTR_focus_elephant_in_a_room }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_new_professors
+        relative_position_id = GTR_focus_elephant_in_a_room
+        x = 1
+        y = 1
+
+        icon = GFX_focus_GTR_new_professors
+
+        prerequisite = { focus = GTR_focus_elephant_in_a_room }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_start_building
+        relative_position_id = GTR_focus_elephant_in_a_room
+        y = 2
+
+        icon = GFX_focus_GTR_start_building
+
+        prerequisite = { focus = GTR_focus_making_blueprints }
+        prerequisite = { focus = GTR_focus_new_professors }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_even_better_now
+        relative_position_id = GTR_focus_elephant_in_a_room
+        y = 3
+
+        icon = GFX_focus_GTR_even_better_now
+
+        prerequisite = { focus = GTR_focus_start_building }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+
+    #ONE SMALL STEP FOR [AN] OBJECT...
+    focus = {
+        id = GTR_focus_military
+        x = 40
+        y = 0
+
+        icon = GFX_focus_GTR_military
+
+        allow_branch = { has_country_flag = GTR_republic_formed }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_defense_tech
+        relative_position_id = GTR_focus_military
+        x = -2
+        y = 1
+
+        icon = GFX_focus_GTR_defense_tech
+
+        prerequisite = { focus = GTR_focus_military }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_investigate_the_explosion
+        relative_position_id = GTR_focus_military
+        x = -3
+        y = 2
+
+        icon = GFX_focus_GTR_defense_tech
+
+        prerequisite = { focus = GTR_focus_defense_tech }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_power_of_yoylelite
+        relative_position_id = GTR_focus_military
+        x = -3
+        y = 3
+
+        icon = GFX_focus_GTR_power_of_yoylelite
+
+        prerequisite = { focus = GTR_focus_investigate_the_explosion }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_reform_defense_forces
+        relative_position_id = GTR_focus_military
+        x = 2
+        y = 1
+
+        icon = GFX_focus_GTR_reform_defense_forces
+
+        prerequisite = { focus = GTR_focus_military }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_modern_aircraft
+        relative_position_id = GTR_focus_military
+        y = 2
+
+        icon = GFX_focus_GTR_modern_aircraft
+
+        prerequisite = { focus = GTR_focus_defense_tech }
+        prerequisite = { focus = GTR_focus_reform_defense_forces }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_rockets_air_ground
+        relative_position_id = GTR_focus_military
+        x = -1
+        y = 3
+
+        icon = GFX_focus_GTR_rockets_air_ground
+
+        prerequisite = { focus = GTR_focus_modern_aircraft }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_the_secret_weapon
+        relative_position_id = GTR_focus_military
+        x = -2
+        y = 4
+
+        icon = GFX_focus_GTR_the_secret_weapon
+
+        prerequisite = { focus = GTR_focus_power_of_yoylelite }
+        prerequisite = { focus = GTR_focus_rockets_air_ground }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_final_frontier
+        relative_position_id = GTR_focus_military
+        x = 1
+        y = 3
+
+        icon = GFX_focus_GTR_final_frontier
+
+        prerequisite = { focus = GTR_focus_modern_aircraft }
+
+        cost = 0
+
+        ai_will_do = {
+            base = 5
+        }
+
+        completion_reward = { }
+    }
+
+    focus = {
+        id = GTR_focus_modern_army
+        relative_position_id = GTR_focus_military
+        x = 3
+        y = 2
+
+        icon = GFX_focus_GTR_modern_army
+
+        prerequisite = { focus = GTR_focus_reform_defense_forces }
+
+        cost = 0
 
         ai_will_do = {
             base = 5
