@@ -1317,6 +1317,87 @@
  GTR_focus_the_first_mind: "§2The First Mind§!"
  GTR_focus_the_first_mind_desc: "The Republic must be led by the smartest object! And, naturally, that's Golfball."
 
+ GTR_focus_economics: "Bread and Books"
+ GTR_focus_economics_desc: "The Technocratic Republic now has a serious material basis for full-fledged economic construction. With the scientific approach of our objects, we will be able to do this most effectively."
+
+ GTR_focus_announcergrad_modernization: "Announcergrad Modernization"
+ GTR_focus_announcergrad_modernization_desc: "Announcergrad is the most important city of the Republic right now, while the University Campus lies in ruins. At the moment, the city is at the level of development of an average regional center, but scientific progress shall definitely turn this situation for better."
+
+ GTR_focus_public_education: "Public Schools"
+ GTR_focus_public_education_desc: "Our Republic is based on science and knowledge. We are obliged to provide good education to all objects, because the future of the entire state depends on it."
+
+ GTR_focus_talents_of_our_time: "Talents Of Our Times"
+ GTR_focus_talents_of_our_time_desc: "A huge number of geniuses and great minds dissapear due to impassable walls, blocking ways to the top. We must give way to such objects, and then we will have no equal power to us."
+
+ GTR_focus_industry_for_objects: "§7Industry For Objects§!"
+ GTR_focus_industry_for_objects_desc: "We should not forget that, in the first place, our objects shall benefit from everything we do in our Republic. We must create a modern industry in harmony with the environment for the benefit of our people."
+
+ GTR_focus_consumer_factories: "Consumer Factories"
+ GTR_focus_consumer_factories_desc: "Objects of Announcergrad have been enduring a crisis and shortages for a long time already. That is the moment to expand the technological production of consumer goods and throw them on the market!"
+
+ GTR_focus_care_for_ecology: "Care for The Environment"
+ GTR_focus_care_for_ecology_desc: "We only have one planet! Goiky must not be turned into a landfill for industrial waste. It is necessary to deploy our technological potential to reduce the negative impact of industry on the environment."
+
+ GTR_focus_wasteless_production: "Wasteless Production"
+ GTR_focus_wasteless_production_desc: "Thanks to processing technologies and full-cycle production, we will be able to put into production all the resources available to us, without harming the life of simple objects and without harming the environment."
+
+ GTR_focus_industry_for_science: "§2Industry For Science§!"
+ GTR_focus_industry_for_science_desc: "It is necessary to launch large-scale production in the near future to support our industrial potential! Though it may damage the environment and the lives of normal objects, the independence of the Republic depends on it."
+
+ GTR_focus_massive_factories: "Large Factories"
+ GTR_focus_massive_factories_desc: "Our technological breakthrough allows us to deploy production sites of unprecedented scale. We must take advantage of this."
+
+ GTR_focus_experiments_with_planning: "Computers!"
+ GTR_focus_experiments_with_planning_desc: "The use of computers for economic development is an interesting innovation that can show good results. This will greatly reduce the burden on our bureaucracy!"
+
+ GTR_focus_get_all_we_can: "Get All We Can"
+ GTR_focus_get_all_we_can_desc: "Our hills and fields store a huge amount of resources that are so necessary for the Republic. We will have to destroy the balance of nature in the name of science and technology!"
+
+ GTR_focus_elephant_in_a_room: "Elephant In The Room"
+ GTR_focus_elephant_in_a_room_desc: "The University and Campus continue to lie in ruins, and we just sit with our hands folded? Now that we have the time and resources, it's time to begin rebuilding the continent's mighty alma mater!"
+
+ GTR_focus_making_blueprints: "Drawing Blueprints"
+ GTR_focus_making_blueprints_desc: "The reconstruction of the University is a large-scale project that requires careful planning. Let's gather a team of talented engineers and think through everything down to the smallest detail!"
+
+ GTR_focus_new_professors: "Young Professors"
+ GTR_focus_new_professors_desc: "Unfortunately, a huge scientific staff was lost during the disaster at the University. Replacing them with young and energetic objects, maybe not as experienced, will somewhat fill this terrible gap."
+
+ GTR_focus_start_building: "Time To Build!"
+ GTR_focus_start_building_desc: "The foundations have been laid. It's time to begin the practical implementation of the projects of the new University!"
+
+ GTR_focus_even_better_now: "§YEven Better Now!§!"
+ GTR_focus_even_better_now_desc: "After our restoration efforts, Goiky University rises above the soil even more majestic than before!\n\nLong Live the Technocratic Republic!"
+
+ GTR_focus_military: "Defense Of The Republic"
+ GTR_focus_military_desc: "After the disappearance of the Dream Island, Goiky fell apart into small fragments, which are not always friendly. In this dangerous environment, we need to create a modern military force based on our technology."
+
+ GTR_focus_defense_tech: "Weapons Development"
+ GTR_focus_defense_tech_desc: "Our main advantage is technological progress. By going ahead in the technological structure of our weapons, we will be able to repel any invaders and aggressors."
+
+ GTR_focus_investigate_the_explosion: "Investigate The Explosion"
+ GTR_focus_investigate_the_explosion_desc: "The explosion at the University obviously did not happen magically. Something, some element, reaction or chemical composition contributed to this. Although this is a terrible tragedy, we must use this experience to strengthen our defense capabilities."
+
+ GTR_focus_power_of_yoylelite: "Power Of Yoylelite"
+ GTR_focus_power_of_yoylelite_desc: "The recent meteorite that crashed onto Satoymin will allow us to study the properties of this material, and perhaps advance our research into weapons."
+
+ GTR_focus_reform_defense_forces: "Reform Lab Security"
+ GTR_focus_reform_defense_forces_desc: "Small militias of guards can no longer cover our defense needs. The time has come to begin army reform."
+
+ GTR_focus_modern_aircraft: "Modern Aircraft"
+ GTR_focus_modern_aircraft_desc: "The airplane is the ideal product of an engineering mind and ingenuity. We must actively work in the field of aircraft manufacturing. The development of this industry opens up wide areas of application for its creations."
+
+ GTR_focus_rockets_air_ground: "Air-to-Surface Missile"
+ GTR_focus_rockets_air_ground_desc: "It's time to apply our latest aviation developments in military affairs! By equipping fighters with missiles that can carry dangerous charges, we will bring terror to aggressors and invaders!"
+
+ GTR_focus_the_secret_weapon: "§gThe Secret Weapon§!"
+ GTR_focus_the_secret_weapon_desc: "Thanks to our efforts in the military field, we were able to obtain weapons of incredible power. It's time to try it out!"
+
+ GTR_focus_final_frontier: "§3Taste Of Space§!"
+ GTR_focus_final_frontier_desc: "Our interesting scientific developments in jet engines have created the possibility of sending into space! It was decided to send a team of brave objects on the ship."
+
+ GTR_focus_modern_army: "Modern Army"
+ GTR_focus_modern_army_desc: "A modern and small army will meet the needs of our defense and will demonstrate the strength of our technology to the entire hostile environment of The Technocratic Republic."
+
  #generic
  generic_focus_industry: "Industry expansion"
  generic_focus_industry_desc: "Our industrial capacity is a rather bit low, innit?"
