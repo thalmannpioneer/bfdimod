@@ -107,7 +107,7 @@ GGR_tanks = {
 
     abort = {
         has_army_size = {
-            size > 1
+            size > 2
             type = armor
         }
     }
@@ -136,8 +136,13 @@ GGR_tanks = {
     ai_strategy = {
         type = research_weight_factor
         id = tech_trucks
-        value = 100
+        value = 1000
     }
+    ai_strategy = {
+		type = research_weight_factor
+		id = motorised_infantry
+		value = 1000
+	}
 }
 
 GGR_tanks_NSB = {
@@ -155,7 +160,7 @@ GGR_tanks_NSB = {
 
     abort = {
         has_army_size = {
-            size > 1
+            size > 2
             type = armor
         }
     }
@@ -185,6 +190,11 @@ GGR_tanks_NSB = {
         id = tech_trucks
         value = 1000
     }
+    ai_strategy = {
+		type = research_weight_factor
+		id = motorised_infantry
+		value = 1000
+	}
 }
 
 GGR_huge_army = {

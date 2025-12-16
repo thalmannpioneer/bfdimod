@@ -97,6 +97,7 @@ ideas = {
 				experience_gain_army_factor = -0.95
 				mobilization_speed = 2.5
 				military_leader_cost_factor = 1 
+				max_command_power_mult = -0.5
 			}
 			cancel = {
 				NOT = { has_war_with = YFC }

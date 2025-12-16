@@ -77,3 +77,30 @@ GRR_Arm_01 = {
 	}
 }
 
+GGR_MOT_01 = {
+	name = "Motorized Divisions"
+
+	for_countries = { GGR }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized"  }
+
+	fallback_name = "%d. Objektinfantry-Divizion (mot)"
+
+	link_numbering_with = { GGR_Inf_01 }
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		22 = { "%d. Objektinfantry-Divizion (mot.)" }
+		25 = { "%d. Objektinfantry-Divizion (mot.)" }
+		28 = { "%d. Objektinfantry-Divizion (mot.)" }
+		29 = { "%d. Objektinfantry-Divizion (mot.)" }
+		33 = { "%d. Objektinfantry-Divizion (mot.)" }
+		36 = { "%d. Objektinfantry-Divizion (mot.)" }
+		38 = { "%d. Objektinfantry-Divizion (mot.)" }
+		43 = { "%d. Objektinfantry-Divizion (mot.)" }
+		44 = { "%d. Objektinfantry-Divizion (mot.)" }
+		48 = { "%d. Objektinfantry-Divizion (mot.)" }
+	}
+}

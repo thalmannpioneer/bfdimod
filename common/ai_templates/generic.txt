@@ -7,6 +7,8 @@ armor_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {
@@ -507,6 +509,8 @@ garrison_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 	
 	roles = {
@@ -588,7 +592,7 @@ garrison_generic = {
 			}
 			
 			regiments = {
-				infantry = 4
+				infantry = 3
 			}
 		}
 		
@@ -694,7 +698,7 @@ suppression_generic = {
 			}
 			
 			regiments = {
-				cavalry = 6
+				cavalry = 2
 			}
 		}
 		
@@ -714,6 +718,8 @@ infantry_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {
@@ -795,7 +801,7 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 7
+				infantry = 4
 				artillery_brigade = 2
 			}
 		}
@@ -823,6 +829,8 @@ infantry_big_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {
@@ -920,7 +928,7 @@ infantry_big_generic = {
 			}
 			
 			regiments = {
-				infantry = 14
+				infantry = 8
 				artillery_brigade = 4
 			}
 		}
@@ -949,6 +957,8 @@ mountaineers_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {
@@ -1058,6 +1068,8 @@ marines_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {
@@ -1251,6 +1263,8 @@ paratrooper_generic = {
 		GSR
 		GFG
 		GDR
+		YFC
+		GTR
 	}
 
 	roles = {

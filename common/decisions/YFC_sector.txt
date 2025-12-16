@@ -46,9 +46,57 @@ decision_YFC_sector_category= { #Watermelon
             always = no
         }
         icon = GFX_mission_YFC_BUN_Growing_Riots  
-        days_mission_timeout = 90
+        days_mission_timeout = 120
         timeout_effect = {
-        
+            hidden_effect = {
+                random_list = {
+                    1 = {
+                        country_event = YFC_sector.1
+                    }
+                    1 = {
+                        country_event = YFC_sector.2
+                    }
+                    1 = {
+                        country_event = YFC_sector.3
+                    }
+                    1 = {
+                        country_event = YFC_sector.4
+                    }
+                    1 = {
+                        country_event = YFC_sector.5
+                    }
+                    1 = {
+                        country_event = YFC_sector.6
+                    }
+                    1 = {
+                        country_event = YFC_sector.7
+                    }
+                    1 = {
+                        country_event = YFC_sector.8
+                    }
+                    1 = {
+                        country_event = YFC_sector.9
+                    }
+                    1 = {
+                        country_event = YFC_sector.10
+                    }
+                    1 = {
+                        country_event = YFC_sector.11
+                    }
+                    1 = {
+                        country_event = YFC_sector.12
+                    }
+                    1 = {
+                        country_event = YFC_sector.13
+                    }
+                    1 = {
+                        country_event = YFC_sector.14
+                    }
+                    1 = {
+                        country_event = YFC_sector.15
+                    }
+                }
+            }
         }
 	}
 }

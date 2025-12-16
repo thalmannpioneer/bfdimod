@@ -20,7 +20,6 @@ on_actions = {
                     BFDI_money_diplay_update = yes
                 }
                 ELSE_IF = {
-                    <<<<<<< Updated upstream
                     limit = { tag = GPG }
                     set_variable = { money_amount = -10.32 } #Dream Island costs were very high :(
                     BFDI_money_diplay_update = yes
@@ -38,18 +37,6 @@ on_actions = {
                         min = -9
                         max = -8
                     }
-                    =======
-                    limit = {
-                        OR = {
-                            tag = GPG
-                            tag = GSR
-                            tag = GFG
-                            tag = GDR
-                        }
-
-                    }
-                    set_variable = { money_amount = -5.8 }
-                    >>>>>>> Stashed changes
                     BFDI_money_diplay_update = yes
                 }
                 ELSE = {
@@ -476,12 +463,13 @@ on_actions = {
                 ELSE = {
                     set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
                 }
-                set_temp_variable = { stability = ROOT.stability }
-                multiply_temp_variable = {civ_count = stability}
+                set_temp_variable = { stability = ROOT.stability } #100% = 100% Gain
+                multiply_temp_variable = {civ_count = stability} 
                 add_to_temp_variable = { adding_amount = civ_count }
 
                 set_temp_variable = { population = ROOT.max_manpower_k } #This was randomly removed xd
-                divide_temp_variable = { population = 2000 } #2Mil Pop = 100K
+                divide_temp_variable = { population = 1000 } #1Mil Pop = 100K
+                multiply_temp_variable = {population = stability}
                 add_to_temp_variable = { adding_amount = population }
 
                 IF = {

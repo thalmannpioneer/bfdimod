@@ -557,7 +557,7 @@ decision_YFC_BUN_category = {
 					type = bunker
 					level = 1
 					instant_build = yes
-					province = 11153
+					province = 1146
 				}
 				add_resistance = -25
 			}

@@ -203,6 +203,41 @@ armored_GGR = {
 	}
 }
 
+motorized_GGR = {
+
+	available_for = {
+		GGR
+	}
+	
+	role = motorized
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			NOT = { ai_has_role_template = motorized }
+		}
+	}
+	
+	basic_motorized_infantry_GER = {
+		division_names_group = GGR_MOT_01
+		
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			support = {
+				artillery = 1
+			}
+			
+			regiments = {
+				motorized = 6
+			}
+		}
+	}
+}
 
 garrison_GGR = {
 	available_for = {

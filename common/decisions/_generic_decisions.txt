@@ -250,6 +250,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -289,6 +290,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -328,6 +330,11 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 40 }
+				OR = {
+					has_political_power > 150
+					has_stability < 0.5
+				}
+				
 				add = 5
 			}
 		}
@@ -366,6 +373,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 40 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -404,6 +412,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -451,6 +460,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -494,6 +504,7 @@ economy_decisions = {
 			base = 0
 			modifier = {
 				check_variable = { money_amount > 40 }
+				has_political_power > 150
 				add = 5
 			}
 			modifier = {
@@ -644,6 +655,7 @@ propaganda_efforts = {
 			}
 			modifier = {
 				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}

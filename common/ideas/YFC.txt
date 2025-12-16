@@ -58,10 +58,10 @@ ideas = {
 			picture = CZE_planning_bonus
 			targeted_modifier = {
 				tag = BUN
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.5
 			}
 			modifier = {
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.15
 				ai_focus_aggressive_factor = 2
 			}
 			cancel = {NOT = {country_exists = BUN}}

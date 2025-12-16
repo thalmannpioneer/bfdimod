@@ -39,7 +39,7 @@ BUN_revolt_support = {
 		country_exists = BUN
     }
 
-	attrition = 0.01
+	attrition = 0.02
 	local_factories = -0.5
 	local_manpower = -0.9
 	state_production_speed_buildings_factor = -0.5
