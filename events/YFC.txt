@@ -697,9 +697,9 @@ country_event = {
     option = { 
 		name = YFC_event.23.a
 
-		add_stability = -0.05
-		custom_effect_tooltip = l_money_gain_600K
-		add_to_variable = { money_amount = 6 }
+		add_stability = -0.06
+		custom_effect_tooltip = l_money_gain_1M
+		add_to_variable = { money_amount = 10 }
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 50} 
@@ -720,9 +720,9 @@ country_event = {
     option = { 
 		name = YFC_event.24.a
 
-		add_stability = -0.02
-		custom_effect_tooltip = l_money_gain_800K
-		add_to_variable = { money_amount = 8 }
+		add_stability = -0.03
+		custom_effect_tooltip = l_money_gain_700K
+		add_to_variable = { money_amount = 7 }
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 65} 
@@ -744,8 +744,8 @@ country_event = {
 		name = YFC_event.25.a
 
 		add_stability = 0.02
-		custom_effect_tooltip = l_money_gain_1M
-		add_to_variable = { money_amount = 10 }
+		custom_effect_tooltip = l_money_gain_900K
+		add_to_variable = { money_amount = 9 }
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 75} 
@@ -1758,7 +1758,7 @@ country_event = { #Annex Events 1
 
 	option = { #Yellow Face
 		name = YFC_BUN.9.a
-		add_political_power = 75
+		add_political_power = 100
 		85 = {add_compliance = -5}
 		212 = {add_compliance = -5}
 		hidden_effect = {
@@ -1787,11 +1787,11 @@ country_event = { #Annex Events 1
 			}
 		}	
 	}
-	option = { #local offical BUT CRN could use if pro-Bunch
+	option = { #local offical BUT CRN could use if pro-Bunch (Maybe will be added)
 		name = YFC_BUN.9.c
 		custom_effect_tooltip = l_money_lose_200K
 		subtract_from_variable = { money_amount = 2 }
-		add_political_power = -50
+		add_political_power = 25
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}
 		hidden_effect = {
@@ -1820,7 +1820,7 @@ country_event = { #Annex Events 2
 
 	option = { #Allow Monopolies
 		name = YFC_BUN.10.a
-		add_political_power = 30
+		add_political_power = 35
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
@@ -1930,6 +1930,7 @@ country_event = { #Annex Events 3
 	}
 	option = { #Do nothing
 		name = YFC_BUN.11.c
+		add_political_power = 25
 		85 = {
 			add_compliance = 5
 			add_resistance = 5
@@ -1960,7 +1961,7 @@ country_event = { #Annex Events 4
 	is_triggered_only = yes
 
 	immediate = {
-        set_variable = { var_add_to_sector = 4 }
+        set_variable = { var_add_to_sector = 5 }
 		set_variable = { var_add_to_sector2 = 2 }
     }
 
@@ -2024,7 +2025,7 @@ country_event = { #Annex Events 4
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 		add_political_power = 75
-		add_stability = -0.01
+		add_stability = -0.03
 		random = {
 			chance = 60
 			85 = {add_resistance = 10}
@@ -2530,12 +2531,18 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
 	option = {
 		name = YFC_BUN.23.a
 		add_stability = -0.01
 		add_political_power = 20
 		85 = {add_compliance = 2}
 		212 = {add_compliance = 2}
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 	}
 }
 

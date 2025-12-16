@@ -850,8 +850,8 @@ focus_tree = {
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_develop_peoniele focus = YFC_focus_develop_yoyleton }
 		cost = 5
-		#buff military sector (How so? Like cost, influence, or buffs)
 		completion_reward = {
+			remove_ideas = idea_YFC_neglectful_command
 			add_war_support = 0.01
 		}
 	}

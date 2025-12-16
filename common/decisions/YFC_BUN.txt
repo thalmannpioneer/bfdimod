@@ -104,7 +104,7 @@ decision_YFC_BUN_category = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
 			controls_state = 85
 			85 = {
-				compliance < 65
+				compliance < 70
 			}
 			NOT = {country_exists = BUN}
 			212 = {
@@ -116,7 +116,7 @@ decision_YFC_BUN_category = {
 		}
 		cancel_trigger = {
 			85 = {
-				compliance > 65
+				compliance > 70
 			}
 		}
 		icon = GFX_mission_YFC_BUN_growing  
@@ -148,7 +148,7 @@ decision_YFC_BUN_category = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
 			controls_state = 212
 			212 = {
-				compliance < 65
+				compliance < 70
 			}
 			85 = {
 				compliance < 85
@@ -160,7 +160,7 @@ decision_YFC_BUN_category = {
 		}
 		cancel_trigger = {
 			212 = {
-				compliance > 65
+				compliance > 70
 			}
 		}
 		icon = GFX_mission_YFC_BUN_growing  
@@ -665,7 +665,7 @@ decision_YFC_BUN_category = {
 
 		fire_only_once = yes
 
-		cost = 65
+		cost = 15
 		days_remove = 15
 
 		remove_effect = {
