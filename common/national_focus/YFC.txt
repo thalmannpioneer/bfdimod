@@ -553,7 +553,7 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = YFC_focus_coiny_cooperation }
-		#prerequisite = { focus = YFC_focus_open_foreign_policy } #There is zero point of this since you need to take YFC_focus_open_foreign_policy :sob:
+		prerequisite = { focus = YFC_focus_open_foreign_policy } #RE: itt makes the focus tree look slightly cooler tho
 		#allows you to exploit coiny's military factories, selling coiny's guns instead of yours, so you dont lose military factories, in exchange, buffs from coiny are less potent
 		#NEW IDEA: Unlocks a decision to exploit coiny's military factories, granting you 2 offmap mils for 120 days. Coiny gets a increasing change to discover this and have a event on how to handle it.
 		#Coiny also get's hurt by YFC's trolling by losing production, so they have reason to talk it out. 
@@ -1736,11 +1736,12 @@ focus_tree = {
 
 	#RIP old Raiding stuff here 2025-2025
 
- #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	#NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	focus = {
-		id = YFC_focus_establish_connection
+		id = YFC_focus_establish_formal_connection
 		relative_position_id = YFC_focus_YFC_funded_pillaging
+		x = 0
 		y = 1
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
@@ -1752,13 +1753,12 @@ focus_tree = {
 		}
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
-
+		
 		cost = 3
 		completion_reward = {
 			
 		}
 	}
-
 }
 
 
