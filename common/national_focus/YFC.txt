@@ -55,7 +55,7 @@ focus_tree = {
 		#opens the trade menu, in decisions tab
 		#basically, just lets you choose who to send resources to, what to send, and tells you what other countries want, and are offering in exchange
 		completion_reward = {
-
+			unlock_decision_category_tooltip = decision_YFC_trade_category
 		}
 	}
 
@@ -81,11 +81,14 @@ focus_tree = {
 		#Top Hat becomes a field marshal
 		#Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
 		completion_reward = {
-			add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+			unlock_decision_category_tooltip = decision_YFC_sector_category
 			recruit_character = YFC_tophat
 			custom_effect_tooltip = l_YFC_allow_rails
 			add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
 			add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+			}
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -542,7 +545,6 @@ focus_tree = {
 
 	focus = {
 		id = YFC_focus_outsource_gun_production
-		#Move it cause it broke and idk why
 		relative_position_id = YFC_focus_coiny_cooperation
 		x = 1
 		y = 1
@@ -553,10 +555,8 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = YFC_focus_coiny_cooperation }
-		prerequisite = { focus = YFC_focus_open_foreign_policy } #RE: itt makes the focus tree look slightly cooler tho
-		#allows you to exploit coiny's military factories, selling coiny's guns instead of yours, so you dont lose military factories, in exchange, buffs from coiny are less potent
-		#NEW IDEA: Unlocks a decision to exploit coiny's military factories, granting you 2 offmap mils for 120 days. Coiny gets a increasing change to discover this and have a event on how to handle it.
-		#Coiny also get's hurt by YFC's trolling by losing production, so they have reason to talk it out. 
+		#no.
+
 		cost = 5
 		completion_reward = {
 			unlock_decision_tooltip = YFC_Trade_GMD_Guns

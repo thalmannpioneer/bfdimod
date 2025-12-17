@@ -511,6 +511,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+
 	option = { #Have few be relased, low support gain but does not change sector cost 
 		name = YFC_event.17.a
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
@@ -523,7 +527,11 @@ country_event = {
 		name = YFC_event.17.b
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
 		add_to_variable = { var_foster_YFC_support = 1.5 }
-		add_political_power = -25
+		add_political_power = -20
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
 			BUN = {add_manpower = 5000}
 		}
@@ -531,8 +539,18 @@ country_event = {
 	option = { #Have most be relased, high support gain but highly changes sector cost 
 		name = YFC_event.17.c
 		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
-		add_to_variable = { var_foster_YFC_support = 2.5 }
-		add_political_power = -50
+		add_to_variable = { var_foster_YFC_support = 3 }
+		add_political_power = -35
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
 			BUN = {add_manpower = 7500}
 		}
@@ -577,10 +595,18 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
 	option = { 
 		name = YFC_event.20.a
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
 		add_to_variable = { var_foster_YFC_support = 3 }
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 	}
 }
 
@@ -1182,7 +1208,7 @@ country_event = {
 		name = YFC_BUN.1.b
 		custom_effect_tooltip = l_YFC_BUN_2
 		complete_national_focus = YFC_focus_foster_new_society
-		custom_effect_tooltip = l_GGR_anarchists_decisions_open
+		unlock_decision_category_tooltip = decision_YFC_foster_category
 		hidden_effect = {
 			country_event = {
 				id = YFC_event.18
@@ -1281,7 +1307,7 @@ country_event = {
 	option = { 
 		name = YFC_BUN.3.a
 		complete_national_focus = YFC_focus_clamp_down_on_bunchivism
-		custom_effect_tooltip = l_GGR_anarchists_decisions_open
+		unlock_decision_category_tooltip = decision_YFC_BUN_category
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.9
@@ -1529,12 +1555,6 @@ country_event = {
 				add_ideas = idea_BUN_collapsed_economy
 				add_ideas = idea_BUN_armed_militia
 				add_ideas = idea_BUN_unstable_future
-				set_equipment_fraction = 1
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = var_BUN_Bonus_Guns
-					producer = CRN
-				}
 				add_timed_idea = {
 					idea = idea_BUN_renewed_resolve
 					days = 45
@@ -2558,7 +2578,7 @@ country_event = { #YFC_focus_remove_oligarchical_sentiment
 		name = YFC_BUN.24.a
 		add_stability = -0.01
 		85 = {add_resistance = -5}
-		212 = {add_compliance = -5}
+		212 = {add_resistance = -5}
 	}
 }
 
@@ -2672,10 +2692,20 @@ country_event = { #Debate event #1
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+
 	option = { #Command Economy is good for now! (Best for support, though the sectors hate this idea)
 		name = YFC_BUN.28.a
 
-		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 2 }
 		}
@@ -2708,6 +2738,8 @@ country_event = { #Debate event #1
 		}
 		custom_effect_tooltip = l_money_lose_300K
 		subtract_from_variable = { money_amount = 3 }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
 		hidden_effect = {
 			BUN = {add_to_variable = { money_amount = 3 }}
 		}
@@ -2727,6 +2759,10 @@ country_event = { #Debate event #2
 	picture = GFX_Temp_event
 
 	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
 
 	option = { #Only use police forces (Mild Support but keeps a small army)
 		name = YFC_BUN.29.a
@@ -2759,6 +2795,13 @@ country_event = { #Debate event #2
 		name = YFC_BUN.29.c
 
 		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 3 }
 			BUN = {add_ideas = {idea = idea_BUN_unfunded_army}}
@@ -2779,6 +2822,10 @@ country_event = { #Debate event #3
 	picture = GFX_Temp_event
 
 	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
 
 	option = { #Greatest thing for the Bunch! (Not the greatest for support)
 		name = YFC_BUN.30.a
@@ -2831,16 +2878,25 @@ country_event = { #Debate event #3
 	option = { #Must apologize for the actions. (Sectors and CRN hate but good support)
 		name = YFC_BUN.30.c
 
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
 		add_opinion_modifier = { target = CRN modifier = medium_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = CRN
 			add_opinion_modifier = { target = YFC modifier = medium_decrease }
 		}
 		add_political_power = -35
-		add_stability = -0.02
-		add_war_support = -0.01
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 
-		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
+
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 3 }
 		}
@@ -3299,5 +3355,142 @@ country_event = { #Top Hat vs Hammer vs Beaker
 		name = YFC_sector.15.c
 		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
 		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+	}
+}
+
+country_event = { #Top Hat pranks you ;)
+	id = YFC_sector.16
+	title = YFC_sector.16.t
+    desc = YFC_sector.16.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_sector.16.a
+		add_timed_idea = {
+			idea = idea_YFC_Defiant_Top_Hat
+			days = 180
+		}
+		subtract_from_variable = { var_idea_YFC_TopHat_influence = 5 }
+	}
+}
+
+country_event = { #Pipe pranks you ;)
+	id = YFC_sector.17
+	title = YFC_sector.17.t
+    desc = YFC_sector.17.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_sector.17.a
+		add_timed_idea = {
+			idea = idea_YFC_Defiant_Pipe
+			days = 180
+		}
+		subtract_from_variable = { var_idea_YFC_Pipe_influence = 5 }
+	}
+}
+
+country_event = { #Beaker pranks you ;)
+	id = YFC_sector.18
+	title = YFC_sector.18.t
+    desc = YFC_sector.18.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_sector.18.a
+		add_timed_idea = {
+			idea = idea_YFC_Defiant_Beaker
+			days = 180
+		}
+		subtract_from_variable = { var_idea_YFC_Beaker_influence = 5 }
+	}
+}
+
+country_event = { #Hammer pranks you ;)
+	id = YFC_sector.19
+	title = YFC_sector.19.t
+    desc = YFC_sector.19.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_sector.19.a
+		add_timed_idea = {
+			idea = idea_YFC_Defiant_Hammer
+			days = 180
+		}
+		subtract_from_variable = { var_idea_YFC_Hammer_influence = 5 }
+	}
+}
+
+country_event = { #Taser pranks you ;)
+	id = YFC_sector.20
+	title = YFC_sector.20.t
+    desc = YFC_sector.20.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_sector.20.a
+		add_timed_idea = {
+			idea = idea_YFC_Defiant_Taser
+			days = 180
+		}
+		subtract_from_variable = { var_idea_YFC_Taser_influence = 5 }
+	}
+}
+
+country_event = { #Noo my money was taken by debt! :( 
+	id = YFC_sector.21
+	title = YFC_sector.21.t
+    desc = YFC_sector.21.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 7 }
+    }
+    
+    option = {
+		name = YFC_sector.21.a
+
+		add_ideas = { ideas = idea_YFC_Debt_Crisis}
+
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+
+		set_variable = { var_idea_YFC_TopHat_cost = 0 } 
+		set_variable = { var_idea_YFC_Pipe_cost = 0 }
+		set_variable = { var_idea_YFC_Beaker_cost = 0 }
+		set_variable = { var_idea_YFC_Hammer_cost = 0 }
+		set_variable = { var_idea_YFC_Taser_cost = 0 }
+
+		set_variable = { var_idea_YFC_sectors_TopHat_attack = -0.05 }
+ 		set_variable = { var_idea_YFC_sectors_TopHat_org = -0.05 }
+		set_variable = { var_idea_YFC_sectors_Pipe_railway = -0.1 }
+ 		set_variable = { var_idea_YFC_sectors_Pipe_supply = 0.05 }
+		set_variable = { var_idea_YFC_sectors_Beaker_research = -0.1 }
+ 		set_variable = { var_idea_YFC_sectors_Beaker_experience = -0.01 }
+		set_variable = { var_idea_YFC_sectors_Hammer_construction = -0.05 }
+ 		set_variable = { var_idea_YFC_sectors_Hammer_repair = -0.1 }
+		set_variable = { var_idea_YFC_sectors_Taser_resistance = 0.05 }
+ 		set_variable = { var_idea_YFC_sectors_Taser_pp = -0.1 }
 	}
 }

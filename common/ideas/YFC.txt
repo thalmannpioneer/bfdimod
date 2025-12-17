@@ -41,12 +41,20 @@ ideas = {
 		idea_YFC_Defiant_Top_Hat = {
 			picture = generic_army_problems #Replace later 
 			modifier = {
-				army_attack_factor = -0.25
-				army_org_factor = -0.3
+				conscription_factor = -0.25
+				resistance_growth = 0.5
 				army_morale_factor = -0.25
 				planning_speed = -0.2
 				political_power_factor = -0.25
 				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_TopHat_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_TopHat_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_TopHat_level = 1 }
+				set_variable = { var_idea_YFC_TopHat_cost = 30 }
 			}
 		}
 
@@ -59,6 +67,14 @@ ideas = {
 				political_power_factor = -0.5
 				stability_factor = -0.1
 			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Pipe_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Pipe_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Pipe_level = 1 }
+				set_variable = { var_idea_YFC_Pipe_cost = 30 }
+			}
 		}
 
 		idea_YFC_Defiant_Beaker = {
@@ -69,6 +85,14 @@ ideas = {
 				consumer_goods_factor = 0.75
 				political_power_factor = -0.5
 				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Beaker_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Beaker_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Beaker_level = 1 }
+				set_variable = { var_idea_YFC_Beaker_cost = 30 }
 			}
 		}
 
@@ -81,6 +105,14 @@ ideas = {
 				political_power_factor = -0.5
 				stability_factor = -0.1
 			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Hammer_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Hammer_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Hammer_level = 1 }
+				set_variable = { var_idea_YFC_Hammer_cost = 30 }
+			}
 		}
 
 		idea_YFC_Defiant_Taser = {
@@ -91,8 +123,40 @@ ideas = {
 				political_power_factor = -1
 				stability_factor = -0.2
 			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Taser_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Taser_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Taser_level = 1 }
+				set_variable = { var_idea_YFC_Taser_cost = 30 }
+			}
 		}
 
+		idea_YFC_Debt_Crisis = {
+			picture = generic_economic_crisis #Replace later 
+			modifier = {
+				political_power_factor = -0.75
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				training_time_factor = 5
+				conscription_factor = -0.85
+				consumer_goods_factor = 0.75
+			}
+			cancel = {check_variable = { money_amount > 0} }
+			on_remove = {
+				set_variable = { var_idea_YFC_TopHat_level = 1 }
+				set_variable = { var_idea_YFC_TopHat_cost = 30 }
+				set_variable = { var_idea_YFC_Pipe_level = 1 }
+				set_variable = { var_idea_YFC_Pipe_cost = 30 }
+				set_variable = { var_idea_YFC_Beaker_level = 1 }
+				set_variable = { var_idea_YFC_Beaker_cost = 30 }
+				set_variable = { var_idea_YFC_Hammer_level = 1 }
+				set_variable = { var_idea_YFC_Hammer_cost = 30 }
+				set_variable = { var_idea_YFC_Taser_level = 1 }
+				set_variable = { var_idea_YFC_Taser_cost = 30 }
+			}
+		}
 
 		#WILL BE REDONE
 		idea_YFC_show_no_mercy = {
@@ -112,7 +176,7 @@ ideas = {
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
 			picture = generic_morale_bonus
 			modifier = {
-				compliance_growth = 2
+				compliance_growth = 1.5
 				resistance_growth = 1
 			}
 			cancel = {country_exists = BUN}

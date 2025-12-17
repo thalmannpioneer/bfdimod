@@ -150,10 +150,12 @@ scripted_gui = {
 			button_military_increase_click_enabled = {
 				has_political_power > 10
 				check_variable = { var_idea_YFC_TopHat_level < 5 }
+				NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
 			}
 			button_military_decrease_click_enabled = {
 				has_political_power > 10
 				check_variable = { var_idea_YFC_TopHat_level > 1 }
+				NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
 			}
 		}
 
@@ -161,16 +163,16 @@ scripted_gui = {
 			button_military_increase_click = {
 				add_to_variable = { var_idea_YFC_TopHat_level = 1 }
 				add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
-				add_to_variable = { var_idea_YFC_TopHat_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_to_variable = { var_idea_YFC_TopHat_cost = 30 }
+				add_to_variable = { var_sectors_combined_cost = 30 }
 				add_political_power = -10
 			}
 
 			button_military_decrease_click = {
 				add_to_variable = { var_idea_YFC_TopHat_level = -1 }
 				add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
-				add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_to_variable = { var_idea_YFC_TopHat_cost = -30 }
+				add_to_variable = { var_sectors_combined_cost = -30 }
 				add_political_power = -10
 			}
 		}

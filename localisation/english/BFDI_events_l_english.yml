@@ -1038,6 +1038,30 @@
  YFC_sector.15.b: "Side with Hammer"
  YFC_sector.15.c: "Side with Beaker"
 
+ YFC_sector.16.t: "...Top Hat seizes some control!"
+ YFC_sector.16.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.16.a: "Curse them!"
+
+ YFC_sector.17.t: "...Pipe seizes some control!"
+ YFC_sector.17.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.17.a: "Curse them!"
+
+ YFC_sector.18.t: "...Beaker seizes some control!"
+ YFC_sector.18.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.18.a: "Curse them!"
+
+ YFC_sector.19.t: "...Hammer seizes some control!"
+ YFC_sector.19.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.19.a: "Curse them!"
+
+ YFC_sector.20.t: "...Taser seizes some control!"
+ YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.20.a: "Curse them!"
+
+ YFC_sector.21.t: "EMERGENCY"
+ YFC_sector.21.desc: "So YFC is now in debt. The sectors are not gonna work with us till this is fixed. So yeah the player should fix it or something"
+ YFC_sector.21.a: "An Unprecedented Disaster!"
+
  BUN_YFC.1.t: "The Yellow Facer Ideology Crumbles." #if eraser is killed or working in the YFC's govt
  BUN_YFC.1.desc: "We're finally free! After our defeat in the war with the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Sadly, Eraser is nowhere to be found, and Pen's been killed. Blocky, that traitor, decided to side with the Corporation, so, there's no one directly in line to really head anything. We'll sort that out later, for now, we've gotta make sure this revolution doesn't die!"
  BUN_YFC.1.a: "The Bunch, forever and always!"

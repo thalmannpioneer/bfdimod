@@ -3,13 +3,25 @@ decision_YFC_sector_category= { #Watermelon
         is_good = yes
         activation = {
             has_completed_focus = YFC_focus_establish_sectorialism
+            NOT = {has_idea = idea_YFC_Debt_Crisis}
         }
         available = {
             always = no
         }
+        cancel_trigger = {
+            hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
+		}
         icon = GFX_mission_YFC_BUN_Growing_Riots  
         days_mission_timeout = 30
         timeout_effect = {
+            #Reset the value
+            set_variable = { var_sectors_combined_cost = 0 } 
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_TopHat_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Pipe_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Beaker_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Hammer_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Taser_cost }
+
             #Money Taken
             custom_effect_tooltip = l_YFC_payment_sectors
             set_temp_variable = { paying_amount = var_sectors_combined_cost }
@@ -34,17 +46,118 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
                 }
             }
+            
+            #Now Check if the player sucks at management of the Sectors 
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+                        NOT = {has_idea = idea_YFC_Defiant_Pipe}
+                        NOT = {has_idea = idea_YFC_Defiant_Beaker}
+                        NOT = {has_idea = idea_YFC_Defiant_Hammer}
+                        NOT = {has_idea = idea_YFC_Defiant_Taser}
+                    }
+
+                    set_temp_variable = { var_Sector_Combined_Influence = 0 }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Pipe_influence}
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Beaker_influence}
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Hammer_influence}
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Taser_influence}
+
+                    subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence }
+                    IF = { #TopHat
+                        limit = {
+                            OR = {
+                                check_variable = { var_idea_YFC_TopHat_influence > var_Sector_Combined_Influence}
+                                check_variable = { var_idea_YFC_TopHat_influence > 10}
+                            }
+                        }
+                        random = {
+                            chance = 50
+                            country_event = YFC_sector.16
+                            set_temp_variable = { var_Sector_Combined_Influence = 1000000 }
+                        }
+                    }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence}
+                    subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Pipe_influence }
+                    IF = { #Pipe
+                        limit = {
+                            OR = {
+                                check_variable = { var_idea_YFC_Pipe_influence > var_Sector_Combined_Influence}
+                                check_variable = { var_idea_YFC_Pipe_influence > 10}
+                            }
+                        }
+                        random = {
+                            chance = 50
+                            country_event = YFC_sector.17
+                            set_temp_variable = { var_Sector_Combined_Influence = 1000000 }
+                        }
+                    }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Pipe_influence}
+                    subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Beaker_influence }
+                    IF = { #Beaker
+                        limit = {
+                            OR = {
+                                check_variable = { var_idea_YFC_Beaker_influence > var_Sector_Combined_Influence}
+                                check_variable = { var_idea_YFC_Beaker_influence > 10}
+                            }
+                        }
+                        random = {
+                            chance = 50
+                            country_event = YFC_sector.18
+                            set_temp_variable = { var_Sector_Combined_Influence = 1000000 }
+                        }
+                    }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Beaker_influence}
+                    subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Hammer_influence }
+                    IF = { #Hammer
+                        limit = {
+                            OR = {
+                                check_variable = { var_idea_YFC_Hammer_influence > var_Sector_Combined_Influence}
+                                check_variable = { var_idea_YFC_Hammer_influence > 10}
+                            }
+                        }
+                        random = {
+                            chance = 50
+                            country_event = YFC_sector.19
+                            set_temp_variable = { var_Sector_Combined_Influence = 1000000 }
+                        }
+                    }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Hammer_influence}
+                    subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Taser_influence }
+                    IF = { #Taser
+                        limit = {
+                            OR = {
+                                check_variable = { var_idea_YFC_Taser_influence > var_Sector_Combined_Influence}
+                                check_variable = { var_idea_YFC_Taser_influence > 10}
+                            }
+                        }
+                        random = {
+                            chance = 50
+                            country_event = YFC_sector.20
+                            set_temp_variable = { var_Sector_Combined_Influence = 1000000 }
+                        }
+                    }
+                }    
+            }
         }
 	}
+
+    #Such great code I have added :sob:^99
 
     YFC_sector_issues = {
         is_good = yes
         activation = {
             has_completed_focus = YFC_focus_establish_sectorialism
+            NOT = {has_idea = idea_YFC_Debt_Crisis}
         }
         available = {
             always = no
         }
+        cancel_trigger = {
+            hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
+		}
         icon = GFX_mission_YFC_BUN_Growing_Riots  
         days_mission_timeout = 120
         timeout_effect = {
@@ -97,6 +210,29 @@ decision_YFC_sector_category= { #Watermelon
                     }
                 }
             }
+        }
+	}
+
+    YFC_sector_failing_payments = {
+        is_good = no
+        activation = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+            check_variable = { money_amount < -1 }
+            NOT = {has_idea = idea_YFC_Debt_Crisis}  
+        }
+        cancel_trigger = {
+            check_variable = { money_amount > 0 }
+		}
+        available = {
+            always = no
+        }
+        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        days_mission_timeout = 60
+        timeout_effect = {
+            custom_effect_tooltip = l_YFC_sectors_Debt
+            hidden_effect = {
+                country_event = YFC_sector.21
+            }    
         }
 	}
 }
