@@ -1849,4 +1849,94 @@ SpriteTypes = {
 		name = "GFX_focus_GTR_the_first_mind"
 		textureFile = "gfx/interface/goals/GFX_focus_GTR_the_first_mind.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_economics"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_economics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_announcergrad_modernization"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_announcergrad_modernization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_public_education"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_public_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_talents_of_our_time"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_talents_of_our_time.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_industry_for_objects"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_industry_for_objects.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_consumer_factories"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_consumer_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_care_for_ecology"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_care_for_ecology.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_wasteless_production"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_wasteless_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_industry_for_science"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_industry_for_science.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_massive_factories"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_massive_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_experiments_with_planning"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_experiments_with_planning.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_focus_GTR_get_all_we_can"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_get_all_we_can.dds"
+		noOfFrames = 8
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_elephant_in_a_room"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_elephant_in_a_room.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_making_blueprints"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_making_blueprints.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_new_professors"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_new_professors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_start_building"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_start_building.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_even_better_now"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_even_better_now.dds"
+	}
 }
