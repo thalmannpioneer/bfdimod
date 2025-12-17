@@ -1,0 +1,105 @@
+infantry_YFC = {
+
+	available_for = {
+		YFC
+	}
+
+	role = infantry
+
+	upgrade_prio = {
+		base = 5
+
+		modifier = {
+			factor = 1
+		}
+	}
+
+	infantry_early_YFC = {
+		division_names_group = YFC_Cav_01
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_template = {	
+			regiments = {
+				cavalry = 2
+			}
+		}
+	}
+}
+
+suppression_YFC = {
+
+	role = suppression
+	available_for = {
+		YFC
+	}
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 20
+			has_war = yes
+		}
+	}
+
+	suppression_generic = {
+		division_names_group = YFC_Cav_01
+		reinforce_prio = 0
+		custom_icon = 13
+	
+		upgrade_prio = {
+			base = 2
+		}
+		
+		target_template = {
+			regiments = {
+				cavalry = 2
+			}
+		}
+	}
+}
+
+
+# Non-complete list of sub-units
+
+# REGIMENTS:
+# - infantry
+# - light_armor
+# - medium_armor
+# - heavy_armor
+# - super_heavy_armor
+# - modern_armor
+# - cavalry
+# - motorized
+# - mechanized
+# - marine
+# - mountaineers
+# - paratrooper
+# - artillery_brigade
+# - anti_air_brigade
+# - anti_tank_brigade
+# - light_tank_destroyer_brigade
+# - medium_tank_destroyer_brigade
+# - heavy_tank_destroyer_brigade
+# - super_heavy_tank_destroyer_brigade
+# - modern_tank_destroyer_brigade
+# - light_sp_anti_air_brigade
+# - light_sp_artillery_brigade
+
+# SUPPORT:
+# - engineer
+# - recon
+# - signal_company
+# - maintenance_company
+# - artillery
+# - anti_air
+# - anti_tank
+# - field_hospital
+# - logistics_company
+# - military_police
+# - rocket_artillery

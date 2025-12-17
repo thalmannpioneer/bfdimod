@@ -26,6 +26,8 @@
  
  decision_cost_ie_500_pp_50: "£infantry_equipment_text_icon §Y500§!  £pol_power  §Y50§!"
  decision_cost_ie_500_pp_50_blocked: "£infantry_equipment_text_icon §R500§!  £pol_power  §R50§!"
+ decision_cost_ie_200_pp_20: "£infantry_equipment_text_icon §Y200§!  £pol_power  §Y20§!"
+ decision_cost_ie_200_pp_20_blocked: "£infantry_equipment_text_icon §R200§!  £pol_power  §R20§!"
  decision_cost_ie_2000: "£infantry_equipment_text_icon §Y2000§!"
  decision_cost_ie_2000_blocked: "£infantry_equipment_text_icon §R2000§!"
  decision_cost_ie_1000: "£infantry_equipment_text_icon §Y1000§!"

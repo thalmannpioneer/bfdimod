@@ -114,6 +114,7 @@
  l_YFC_sectors_Hammer_Loss: "§YHammer's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Hammer
  l_YFC_sectors_Taser_Gain: "§YTaser's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Taser
  l_YFC_sectors_Taser_Loss: "§YTaser's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Taser
+ l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
  l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
 
 

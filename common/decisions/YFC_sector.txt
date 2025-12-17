@@ -46,6 +46,82 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
                 }
             }
+
+            #Sector buff changes (Pipe)
+            set_temp_variable = { Level_Pipe = var_idea_YFC_Pipe_level }
+            multiply_temp_variable = {Level_Pipe = 0.1}
+            IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Pipe_railway < Level_Pipe}}
+                add_to_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
+                add_to_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
+            }
+            ELSE_IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Pipe_railway > Level_Pipe}}
+                subtract_from_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
+                subtract_from_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_Pipe_railway > Level_Pipe}}
+                    subtract_from_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
+                    subtract_from_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
+                }
+            }
+
+            #Sector buff changes (Beaker)
+            set_temp_variable = { Level_Beaker = var_idea_YFC_Beaker_level }
+            multiply_temp_variable = {Level_Beaker = 0.1}
+            IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Beaker_research < Level_Beaker}}
+                add_to_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
+                add_to_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
+            }
+            ELSE_IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Beaker_research > Level_Beaker}}
+                subtract_from_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
+                subtract_from_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_Beaker_research > Level_Beaker}}
+                    subtract_from_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
+                    subtract_from_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
+                }
+            }
+
+            #Sector buff changes (Hammer)
+            set_temp_variable = { Level_Hammer = var_idea_YFC_Hammer_level }
+            multiply_temp_variable = {Level_Hammer = 0.05}
+            IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Hammer_construction < Level_Hammer}}
+                add_to_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 }
+                add_to_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
+            }
+            ELSE_IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Hammer_construction > Level_Hammer}}
+                subtract_from_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 }
+                subtract_from_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_Hammer_construction > Level_Hammer}}
+                    subtract_from_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 }
+                    subtract_from_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
+                }
+            }
+
+            #Sector buff changes (Taser)
+            set_temp_variable = { Level_Taser = var_idea_YFC_Taser_level }
+            multiply_temp_variable = {Level_Taser = -0.05}
+            IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Taser_resistance > Level_Taser}}
+                add_to_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
+                add_to_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
+            }
+            ELSE_IF = {
+                limit = {check_variable = { var_idea_YFC_sectors_Taser_resistance < Level_Taser}}
+                subtract_from_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
+                subtract_from_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_Taser_resistance < Level_Taser}}
+                    subtract_from_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
+                    subtract_from_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
+                }
+            }
             
             #Now Check if the player sucks at management of the Sectors 
             hidden_effect = {
@@ -234,5 +310,35 @@ decision_YFC_sector_category= { #Watermelon
                 country_event = YFC_sector.21
             }    
         }
+	}
+
+    YFC_sector_minor_payments = { #Small way for the player to get out of debt and not get softlocked 
+		icon = GFX_decisions_YFC_foster_propaganda
+      
+		visible = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+            has_idea = idea_YFC_Debt_Crisis
+		}
+		available = {
+			has_idea = idea_YFC_Debt_Crisis
+		}
+
+		fire_only_once = no
+		cost = 150
+		days_remove = 180
+		days_re_enable = 15
+
+        modifier = {
+			political_power_gain = -0.50
+		}
+
+		remove_effect = {
+            custom_effect_tooltip = l_money_gain_100K
+		    add_to_variable = { money_amount = 1 }
+        }
+
+		ai_will_do = {
+			base = 1000
+		}
 	}
 }

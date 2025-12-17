@@ -165,8 +165,9 @@ decision_YFC_trade_category= {
 			has_equipment = {
 				infantry_equipment > 199
 			}
+			has_political_power > 19
 		}
-		custom_cost_text = decision_cost_ie_200
+		custom_cost_text = decision_cost_ie_200_pp_20
 
 		complete_effect = {
 			hidden_effect = {
@@ -174,6 +175,7 @@ decision_YFC_trade_category= {
 					type = infantry_equipment
 					amount = -200
 				}
+				add_political_power = -20
             }
 		}
 

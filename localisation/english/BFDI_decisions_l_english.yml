@@ -177,6 +177,7 @@
  YFC_sector_issues: "§YSector Update§!"
  YFC_sector_failing_payments: "§RFailing Payments§!"
  YFC_sector_failing_payments_desc: "Reports have flooded us that we are running out of money! We need to fix this issue quickly or we will have much bigger issues in the future!"
+ YFC_sector_minor_payments: "Make Small Payments"
 
  yfc_mercenaries_normal: "Purchase §tCherry Company§!"
  yfc_mercenaries_cav: "Purchase §7Combined Grape Affiliation§!"

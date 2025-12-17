@@ -257,24 +257,14 @@ country_event = {
 		manpower = -261
 		add_war_support = 0.05
 
-		if = {
-			limit = {
-				gives_military_access_to = BUN
-			}
-			BUN = {
-				diplomatic_relation = {
-					country = YFC
-					relation = military_access
-					active = no
-				}
-			}
-		}
-
 		custom_effect_tooltip = l_YFC_border_defence
 
 		201 = {
-			remove_dynamic_modifier = {
-				modifier = BUN_rampant_raids
+			IF = {
+				limit = {has_dynamic_modifier = {modifier = BUN_rampant_raids}}
+				remove_dynamic_modifier = {
+					modifier = BUN_rampant_raids
+				}
 			}
 		}
 
@@ -495,7 +485,7 @@ country_event = {
 				remove_core_of = EMP
 				add_victory_points = {
 					province = 10828
-					value = 3
+					value = 2
 				}
 			}
 		}
@@ -1212,7 +1202,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = YFC_event.18
-				days = 70
+				days = 200
 				random_hours = 100
 			}
 		}
@@ -1472,7 +1462,7 @@ country_event = {
 					create_unit = {
 						division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
 						owner = YFC
-						count = 2
+						count = 1
 						id = 1967
 					}
 				}
@@ -3463,7 +3453,7 @@ country_event = { #Noo my money was taken by debt! :(
     option = {
 		name = YFC_sector.21.a
 
-		add_ideas = { ideas = idea_YFC_Debt_Crisis}
+		add_ideas = idea_YFC_Debt_Crisis
 
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain

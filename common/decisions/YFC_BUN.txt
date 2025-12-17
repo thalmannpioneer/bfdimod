@@ -102,6 +102,8 @@ decision_YFC_BUN_category = {
 	YFC_BUN_85_Growing = {
 		activation = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			NOT = {has_completed_focus = YFC_focus_fully_cored}
+			NOT = {has_completed_focus = YFC_focus_stalled_plans}
 			controls_state = 85
 			85 = {
 				compliance < 70
@@ -146,6 +148,8 @@ decision_YFC_BUN_category = {
 	YFC_BUN_212_Growing = {
 		activation = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			NOT = {has_completed_focus = YFC_focus_fully_cored}
+			NOT = {has_completed_focus = YFC_focus_stalled_plans}
 			controls_state = 212
 			212 = {
 				compliance < 70

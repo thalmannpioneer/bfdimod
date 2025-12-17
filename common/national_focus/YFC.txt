@@ -584,6 +584,7 @@ focus_tree = {
 			subtract_from_variable = { money_amount = 1 }
 			custom_effect_tooltip = l_YFC_foreign_advisor
 			add_ideas = idea_YFC_United_Clash
+			army_experience = 10
 		}
 
 		ai_will_do = {
@@ -852,6 +853,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			remove_ideas = idea_YFC_neglectful_command
+			add_manpower = 5000
 			add_war_support = 0.01
 		}
 	}
@@ -916,12 +918,16 @@ focus_tree = {
 		y = 1
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_military_industrial_complex }
-		cost = 6
-		#gives event about moving different sectors from footpathburg to other locations
-		#science goes to yoyleton, railroad goes to peoniele, rest stay
+		cost = 5
+		#Move the event about science goes to yoyleton, railroad goes to peoniele, rest stay to the description of the focus
 		completion_reward = {
-			#New: it can make them slightly more efficient
-			add_political_power = 25
+			custom_effect_tooltip = l_YFC_sectors_All_Lower
+			add_political_power = 35
+			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
 		}
 	}
 
@@ -1179,6 +1185,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_BUN_foster
 			country_event = YFC_event.19
+			add_political_power = 50
 		}
 	}
 
