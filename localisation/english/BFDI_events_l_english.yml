@@ -1190,6 +1190,30 @@
  GTR_event.21.desc: "'Tennis Ball, you are too herbivorous!' - Now Golfball is saying it out loud.\n\n'To survive, we need tougher measures! We need a clear plan and smart leadership, smart objects like ME!'\n\nGB's interrupting the awkward silence with a continuation.\n'We can't rely on these fools from the city, we need a strong government!'\n\nTennis Ball looked down at the table."
  GTR_event.21.a: "'Awwwww, okaaaaaaaaaaay'"
 
+ GTR_event.22.t: "Old Connections"
+ GTR_event.22.desc: "Entering Announcergrad, the Calsand parliamentarians saw an ordinary goikean town, as battered by crisis and devastation as their homeland. On the streets, they saw cheerful objects who believed in the future. There was reason to believe, as the situation had improved significantly over the past month. Things improved in Casland too: the noise of political unrest died down, and the streets stopped ringing with murders.\n\nFinding a small building with a sign reading \"Goiky University Administration\", three objects entered inside.\n\n\n...- \"HAVE YOU DECIDED TO SQUANDER ALL OUR BELONGINGS?!\"\nGolfball flared up with anger when she heard Tennis Ball agree to the parliamentarians' proposal.\n\n\"I think the Republic needs allies. You're just too biased!\" - Tennis Ball resisted."
+ GTR_event.22.a: "Let's make contacts with Casland."
+ GTR_event.22.b: "Send 'em back!"
+
+ GTR_event.23.t: "Rails and Sleepers"
+ GTR_event.23.desc: "There had been no trains running on the Lofty-Satoymin branch for several months. The young conductor, Pawny, dozing in his cab during a long shift, didn't notice that someone had reset the levers, and the mile-long, coal-filled train was rushing straight along the old branch.\n\nPawny woke to the sound of the border outpost's siren. Rapid movement, and the wheels sparked. Raised hands. Border guards' rifles.\n\n...\"There's gonna some problems for me at the depot.\""
+ GTR_event.23.a: "Why not reopen this old branch?"
+ GTR_event.23.b: "Confiscate the train."
+
+ GTR_event.24.t: "By ourselves"
+ GTR_event.24.desc: "There's not a single fragment of Goiky left around the Republic capable of constructive dialogue. Under these circumstances, surrounded by crazed radicals and thugs, the Republic is forced to remain cool in its foreign diplomacy and harden its heart to protect itself from potential aggression."
+ GTR_event.24.a: "We have nothing else to do."
+
+ GTR_event.25.t: "Our Path"
+ GTR_event.25.desc: "The Republic faces a difficult choice regarding its inner policy. Tennis Ball advocates for expanding the ruling circles and strengthening the role of democracy, while Golfball favors preserving the powers of the University Administration and strengthening the role of the intellect in governance for the further development of science.\n\nWhich path will the Republic take?"
+ GTR_event.25.a: "Democracy!"
+ GTR_event.25.b: "Noocracy!"
+
+ GTR_event.26.t: "Path of Our Industry"
+ GTR_event.26.desc: "Tennis Ball and Golfball are in dispute over the direction of industrial development. Tennis Ball favors small, technologically advanced, environmentally friendly factories scattered over a large area, while Golfball wants large-scale industry and is not particularly concerned about the environment.\n\nWhat plan will the Republic adopt?"
+ GTR_event.26.a: "Industry for Objects!"
+ GTR_event.26.b: "Industry for Science!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

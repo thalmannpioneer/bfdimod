@@ -1939,4 +1939,54 @@ SpriteTypes = {
 		name = "GFX_focus_GTR_even_better_now"
 		textureFile = "gfx/interface/goals/GFX_focus_GTR_even_better_now.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_military"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_defense_tech"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_defense_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_investigate_the_explosion"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_investigate_the_explosion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_power_of_yoylelite"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_power_of_yoylelite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_reform_defense_forces"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_reform_defense_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_modern_aircraft"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_modern_aircraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_rockets_air_ground"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_rockets_air_ground.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_secret_weapon"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_secret_weapon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_final_frontier"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_final_frontier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_modern_army"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_modern_army.dds"
+	}
 }
