@@ -1,0 +1,133 @@
+guiTypes = {
+	containerWindowType = {
+		name = "other_trade_container"
+		position = { x = 10 y = 0 }
+		size = { width = 100% height = 230 }
+		
+		background = {
+			name = "bg"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		instantTextboxType = { #I would like this updated at some point to look better
+			name = "title"
+			text = l_decisions_trade_title
+			position = { x = 0 y = -10 }
+			maxWidth = 500
+			format = centre
+			font = hoi_36header
+		}
+
+		iconType = {
+			name = "background_equipment_box_selling"
+			spriteType = "GFX_YFC_trade_unselected"
+			position = { x = 100 y = 40 }
+		}
+
+		buttonType = { #PLACEHOLDER
+			name = "PLACEHOLDERBUTTON"
+			position = { x = 100 y = 40 }
+			spriteType = GFX_decisions_WGF_operation_coinflip_button
+			clicksound = bfdi_button_press
+		}
+
+		iconType = {
+			name = "background_equipment_box_buying"
+			spriteType = "GFX_YFC_trade_unselected"
+			position = { x = 100 y = 130 }
+		}
+	}	
+}	
+
+guiTypes = {
+	containerWindowType = { #Picking Equipment
+		name = "picking_equipment_window"
+		position = { x=544 y=78}
+		show_position = { x=544 y =78 }
+		size = { width=375 height=560 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		containerWindowType = {
+			name = "equipments"
+			position = { x=0 y=59 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 14 bottom = 12}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_1b_border"
+			}
+
+			gridboxtype = {
+				name = "equipments_grid"
+				position = { x = 12 y = 5 }
+				size = { width = 120%% height = 100%% }
+				slotsize = { width = 335 height = 95 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+
+		iconType = {
+			name ="lend_lease_equip_header"
+			spriteType = "GFX_lend_lease_equip_header"
+			position = { x= 3 y = 42 }
+		}
+
+		instantTextboxType = {
+			name = "equipment_header"
+			position = {x=35 y=47}
+			font = "hoi_18mbs"
+			text = DIPLOMACY_LEND_LEASE_HEADER_EQUIPMENT
+			maxWidth = 300
+			maxHeight = 32
+			format = center
+		}
+
+		buttonType = {
+			name = "close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "other_trade_list_equipment_container"
+		
+		position = { x = 0 y = 1 }
+		size = { width = 335 height = 95 }
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"	
+		}
+
+		iconType = {
+			name = "background_equipment_box_background"
+			spriteType = "GFX_YFC_trade_unselected"
+			position = { x = 10 y = 10 }
+		}
+		iconType = {
+			name = "background_equipment_box_item"
+			position = { x = 85 y = 35 }
+		}
+		buttonType = {
+			name = "other_trade_list_equipment_button_select"
+			position = { x = 290 y = 30 }
+			quadTextureSprite = "GFX_naval_increase_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+	}
+}

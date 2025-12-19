@@ -29,3 +29,115 @@ scripted_gui = {
 		}
 	}
 }
+
+scripted_gui = {
+	bfdi_other_trade_scriptedgui = {
+		window_name = other_trade_container
+		context_type = decision_category
+		parent_window_token = decision_tab
+				
+		triggers = { 
+			picking_equipment_window_visible = {
+				OR = {
+					has_country_flag = Selling_Menu
+					has_country_flag = Buying_Menu
+				}
+            }
+		}
+
+		effects = {
+			PLACEHOLDERBUTTON_click = {
+				IF = {
+					limit = {has_country_flag = Selling_Menu}
+					clr_country_flag = Selling_Menu
+				}
+				ELSE = {
+					set_country_flag = Selling_Menu
+					clr_country_flag = Buying_Menu
+				}
+				clear_array = THIS.equipment_list
+				IF = {
+					limit = {has_equipment = {infantry_equipment_0 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_infantry_weapons_medium
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_1 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_infantry_weapons1_medium
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_2 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_improved_infantry_weapons_medium
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_3 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_advanced_infantry_weapons_medium
+					}
+				}
+				IF = {
+					limit = {has_equipment = {support_equipment_1 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_tech_support_medium
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_1 > 99}}
+					add_to_array = {
+						array = THIS.equipment_list
+						value = GFX_gw_artillery_medium
+					}
+				}
+
+			}
+			close_click = {
+				clr_country_flag = Selling_Menu
+				clr_country_flag = Buying_Menu
+			}
+		}
+	}
+}
+
+scripted_gui = {
+	bfdi_other_trade_scriptedgui = {
+		window_name = picking_equipment_window
+		context_type = player_context
+		
+		properties = {
+			background_equipment_box_item = { image = [?THIS.equipment_list^1] } #I'm dumb and I don't know what I am doing xd
+		}
+
+		visible = { 
+			OR = {
+				has_country_flag = Selling_Menu
+				has_country_flag = Buying_Menu
+			} 
+		}
+		
+		effects = {
+			close_click = {
+				clr_country_flag = Selling_Menu
+				clr_country_flag = Buying_Menu
+			}
+		}
+
+		dynamic_lists = {
+			equipments_grid = {
+				array = THIS.equipment_list
+				index = i
+				change_scope = yes
+				entry_container = other_trade_list_equipment_container
+			}
+		}
+	}
+}

@@ -412,6 +412,10 @@ spriteTypes = {
 	
 	#YFC
 
+	spriteType = {
+		name = "GFX_YFC_trade_unselected"
+		textureFile = "gfx/interface/YFC_trade_unselected.dds"
+	}
 
 	spriteType = {
 		name = "GFX_decisions_sector_military"
@@ -510,7 +514,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Intergrate.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_decisions_YFC_BUN_Conscript"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Conscript.dds"
 	}

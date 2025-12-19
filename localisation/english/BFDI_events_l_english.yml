@@ -1362,7 +1362,7 @@
 
  bfdinews_cities.8.t: "END OF CASLAND!"
  bfdinews_cities.8.desc: "Casland, the very heart of Goiky, had been taken by the flag of [206.controller.GetName] on [?global.date.GetDateStringNoHourLong]. [GPG.GetLeader] had held press statements before the battle that the city would be 'held at all costs'. The defenders had prepared to defend their homes with obstacles, strong points, and traps inside the city. The fighting was fierce and deadly with each house costing more blood to capture. However, the preparations were not enough to withstand the waves of attackers and were soon pushed into only a few key sections of the city. One of the last points to fall was the Recommended Characters Council, where the defenders fought to the very last object. The government itself is nowhere to be seen, but is believed to have fled."
- bfdinews_cities.8.a: "The very Heart, borken..."
+ bfdinews_cities.8.a: "The very Heart, broken..."
  bfdinews_cities.8.b: "Being the Heart of Goiky was not enough..."
  bfdinews_cities.8.c: "The Heart is now ours!"
 

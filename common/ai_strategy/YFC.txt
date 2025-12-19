@@ -51,3 +51,23 @@ YFC_BUN_war = {
 		value = 500
 	}
 }
+
+## INDUSTRY ##
+
+YFC_wait = {
+    #Unless we are really losing a war or we have the manpower do not make more divs
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		has_manpower < 15000
+		surrender_progress < 0.5
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -1000
+	}
+}
