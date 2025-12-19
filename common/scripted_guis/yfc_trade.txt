@@ -55,51 +55,53 @@ scripted_gui = {
 					set_country_flag = Selling_Menu
 					clr_country_flag = Buying_Menu
 				}
-				clear_array = THIS.equipment_list
+				clear_array = ROOT.equipment_list
 				IF = {
-					limit = {has_equipment = {infantry_equipment_0 > 99}}
+					limit = {has_equipment = {infantry_equipment_0 > 99}} #GFX_infantry_weapons_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_infantry_weapons_medium
+						array = ROOT.equipment_list
+						value = 0
 					}
 				}
 				IF = {
-					limit = {has_equipment = {infantry_equipment_1 > 99}}
+					limit = {has_equipment = {infantry_equipment_1 > 99}} #GFX_infantry_weapons1_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_infantry_weapons1_medium
+						array = ROOT.equipment_list
+						value = 1
 					}
 				}
 				IF = {
-					limit = {has_equipment = {infantry_equipment_2 > 99}}
+					limit = {has_equipment = {infantry_equipment_2 > 99}} #GFX_improved_infantry_weapons_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_improved_infantry_weapons_medium
+						array = ROOT.equipment_list
+						value = 2
 					}
 				}
 				IF = {
-					limit = {has_equipment = {infantry_equipment_3 > 99}}
+					limit = {has_equipment = {infantry_equipment_3 > 99}} #GFX_advanced_infantry_weapons_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_advanced_infantry_weapons_medium
+						array = ROOT.equipment_list
+						value = 3
 					}
 				}
 				IF = {
-					limit = {has_equipment = {support_equipment_1 > 99}}
+					limit = {has_equipment = {support_equipment_1 > 99}} #GFX_tech_support_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_tech_support_medium
+						array = ROOT.equipment_list
+						value = 4
 					}
 				}
 				IF = {
-					limit = {has_equipment = {artillery_equipment_1 > 99}}
+					limit = {has_equipment = {artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
 					add_to_array = {
-						array = THIS.equipment_list
-						value = GFX_gw_artillery_medium
+						array = ROOT.equipment_list
+						value = 5
 					}
 				}
 
 			}
+		}
+		effects = {
 			close_click = {
 				clr_country_flag = Selling_Menu
 				clr_country_flag = Buying_Menu
@@ -114,8 +116,8 @@ scripted_gui = {
 		context_type = player_context
 		
 		properties = {
-			background_equipment_box_item = { image = [?THIS.equipment_list^1] } #I'm dumb and I don't know what I am doing xd
-		}
+			background_equipment_box_item = { image = "[equipment_type]" }
+		}	
 
 		visible = { 
 			OR = {
@@ -133,7 +135,7 @@ scripted_gui = {
 
 		dynamic_lists = {
 			equipments_grid = {
-				array = THIS.equipment_list
+				array = ROOT.equipment_list
 				index = i
 				change_scope = yes
 				entry_container = other_trade_list_equipment_container

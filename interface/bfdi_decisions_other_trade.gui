@@ -120,7 +120,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "background_equipment_box_item"
-			position = { x = 85 y = 35 }
+			position = { x = 85 y = 30 }
 		}
 		buttonType = {
 			name = "other_trade_list_equipment_button_select"

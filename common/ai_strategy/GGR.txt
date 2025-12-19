@@ -54,11 +54,11 @@ GGR_FFT_preparation_and_war = {
     ai_strategy = {
         type = prepare_for_war
         id = FFT
-        value = 500
+        value = 750
     }
     ai_strategy = {
         type = garrison
-        value = -150
+        value = -200
     }
 }
 
