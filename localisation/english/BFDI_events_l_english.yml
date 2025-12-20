@@ -387,6 +387,22 @@
  GPG_event.47.t: "The Wind Changes Directions!"
  GPG_event.47.desc: "With Pie winning the vote it seems that not only were some of our council members unhappy, but one of our generals. Cloudy had submitted his resignation a few hours ago citing 'Disillusioned with the current government'. For now, it seems that he will not be with us in the upcoming days."
  GPG_event.47.a: "Interesting..."
+
+ GPG_event.48.t: "Industrial cooperation with Technocrats"
+ GPG_event.48.desc: "Announcergrad Government continues to expand its cooperation with us: they offer to send their scientific specialists in exchange for experience from our industry. This is a rather lucrative offer."
+ GPG_event.48.a: "Of Course!"
+
+ GPG_event.49.t: "Open Borders with Technocrats"
+ GPG_event.49.desc: "The government of Announcergrad has proposed a mutual easing of border controls between our countries. This will significantly increase trade between Announcergrad and Casland and generally improve communication between us."
+ GPG_event.49.a: "Great!"
+
+ GPG_event.50.t: "Mutual Assistance Pact with Announcergrad!"
+ GPG_event.50.desc: "We have been cooperating with the Technocratic Republic for quite some time now. This has resulted in a mutual defense agreement against aggressors and invaders! It is quite possible that this friendly action will lead to even greater cooperation between our countries in the future."
+ GPG_event.50.a: "Five fingers are a fist!"
+
+ GPG_event.51.t: "Relations with Announcergrad"
+ GPG_event.51.desc: "We recently sent negotiators to Announcergrad to establish relations with the local government. It appears they returned with good news: the technocratic government is quite willing to do business with us. Perhaps this marks the beginning of a long and fruitful partnership."
+ GPG_event.51.a: "Brain and Heart are friends again?"
  
  #GDR
  GDR_event.1.t: "Battle For Democracy"
@@ -1213,6 +1229,14 @@
  GTR_event.26.desc: "Tennis Ball and Golfball are in dispute over the direction of industrial development. Tennis Ball favors small, technologically advanced, environmentally friendly factories scattered over a large area, while Golfball wants large-scale industry and is not particularly concerned about the environment.\n\nWhat plan will the Republic adopt?"
  GTR_event.26.a: "Industry for Objects!"
  GTR_event.26.b: "Industry for Science!"
+
+ GTR_event.27.t: "Ivy League"
+ GTR_event.27.desc: "Thanks to the scientific collaboration between Casland and Announcergrad, a decision was made between the University of Goiky and Casland University to create a unified research community through which objects can share contemporary problems in the natural sciences and other disciplines. This will significantly strengthen cooperation between [?206.owner.GetName] and the Technocratic Republic."
+ GTR_event.27.a: "Glory to our Science!"
+
+ GTR_event.28.t: "Homesickness"
+ GTR_event.28.desc: "\"Hi, Mom.\n\nHow are you? Things are now better for you there, as I've heard. Dad read in the newspapers that you have electricity again at home.\nThings aren't easy here. Dad and the other adults had to build a house out of REAL TREES themselves! But at least we're safe here. I can go for walks as much as I want! You was always forbidding me this at home! Dad even made a swing set for me and my friends!\nDad feels better too, I can feel it. He was always so nervous in the city, but now he breathes easier. But he's worried about you.\nI'm worried about you too. We all want to go home as soon as possible!\n\nThey say we don't have to be afraid to return now. That the border has opened. Dad says the same. But he's always arguing with others. They say he's a traitor. But my Dad isn't a traitor! We just want to go home! How is that traitorous? :(\n\nIt's hard to send letters here, the mail doesn't come often, and Dad says the postman is a bostard. I don't know what that means, but it's probably bad.\n\nAnyway, Mom, wait for us, we'll be home soon!\nWe all hope you are fine!\""
+ GTR_event.28.a: "Good Luck, Little One!"
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"

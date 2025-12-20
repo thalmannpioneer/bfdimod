@@ -289,6 +289,8 @@ focus_tree = {
 
         allow_branch = { has_country_flag = GTR_republic_formed }
 
+        available = { always = no }
+
         cost = 0
 
         ai_will_do = {
@@ -308,7 +310,7 @@ focus_tree = {
 
         icon = GFX_focus_GTR_looking_outside
 
-        cost = 5
+        cost = 3
 
         prerequisite = { focus = GTR_focus_new_government }
 
@@ -360,7 +362,7 @@ focus_tree = {
 
         allow_branch = { has_country_flag = GTR_befriend_GPG }
 
-        cost = 5
+        cost = 0
 
         ai_will_do = {
             base = 5
@@ -379,13 +381,124 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_contacts_with_casland }
 
+        available = {
+            OR = {
+                AND = {
+                    country_exists = GPG
+                    GPG = { has_war = no }
+                }
+                AND = {
+                    country_exists = GDR
+                    GDR = { has_war = no }
+                }
+            }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = industry
+            }
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = electronics
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+            if = {
+                limit = {
+                    country_exists = GPG
+                }
+                GPG = {
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = industry
+                    }
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = electronics
+                    }
+                    add_opinion_modifier = {
+                        target = GTR
+                        modifier = small_increase
+                    }
+                }
+                add_opinion_modifier = {
+                    target = GDR
+                    modifier = small_increase
+                }
+            }
+            else = {
+                GDR = {
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = industry
+                    }
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = electronics
+                    }
+                    add_opinion_modifier = {
+                        target = GTR
+                        modifier = small_increase
+                    }
+                }
+                add_opinion_modifier = {
+                    target = GDR
+                    modifier = small_increase
+                }
+            }
+
+            hidden_effect = {
+                country_event = { #Ivy league
+                    id = GTR_event.27
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+                if = {
+                    limit = { country_exists = GPG }
+                    GPG = {
+                        country_event = {
+                            id = GTR_event.27
+                            days = 10
+                            random_days = 5
+                            random_hours = 12
+                        }
+                    }
+                }
+                else = {
+                    GDR = {
+                        country_event = {
+                            id = GTR_event.27
+                            days = 10
+                            random_days = 5
+                            random_hours = 12
+                        }
+                    }
+                }
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -398,13 +511,53 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_contacts_with_casland }
 
-        cost = 5
+        available = {
+            OR = {
+                AND = {
+                    country_exists = GPG
+                    GPG = { has_war = no }
+                }
+                AND = {
+                    country_exists = GDR
+                    GDR = { has_war = no }
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_timed_idea = {
+                idea = idea_GTR_casland_experience
+                days = 210
+            }
+            if = {
+                limit = { country_exists = GPG }
+                GPG = { country_event = GPG_event.48 }
+            }
+            else = { GDR = { country_event = GPG_event.48 } }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+
+            hidden_effect = {
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -417,13 +570,79 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_collective_research }
         prerequisite = { focus = GTR_focus_casland_industry }
 
+        available = {
+            OR = {
+                AND = {
+                    country_exists = GPG
+                    GPG = { has_war = no }
+                }
+                AND = {
+                    country_exists = GDR
+                    GDR = { has_war = no }
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_political_power = 50
+            add_ideas = idea_GTR_casland_trade
+            if = {
+                limit = { country_exists = GPG }
+                GPG = {
+                    country_event = GPG_event.49
+                    add_opinion_modifier = {
+                        target = GTR
+                        modifier = small_increase
+                    }
+                }
+                add_opinion_modifier = {
+                    target = GPG
+                    modifier = small_increase
+                }
+            }
+            else = {
+                GDR = {
+                    country_event = GPG_event.49
+                    add_opinion_modifier = {
+                        target = GTR
+                        modifier = small_increase
+                    }
+                }
+                add_opinion_modifier = {
+                    target = GDR
+                    modifier = small_increase
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+
+            hidden_effect = {
+                country_event = { #Casland refugees return home
+                    id = GTR_event.28
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -435,13 +654,52 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_open_borders }
 
+        available = {
+            OR = {
+                AND = {
+                    country_exists = GPG
+                    GPG = { has_war = no }
+                }
+                AND = {
+                    country_exists = GDR
+                    GDR = { has_war = no }
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+            num_divisions > 4
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            if = {
+                limit = { country_exists = GPG }
+                give_guarantee = GPG
+                GPG = {
+                    country_event = GPG_event.50
+                    give_guarantee = GTR
+                }
+            }
+            else = {
+                give_guarantee = GDR
+                GDR = {
+                    country_event = GPG_event.50
+                    give_guarantee = GTR
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+        }
     }
 
 

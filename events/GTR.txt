@@ -520,12 +520,27 @@ country_event = {
         set_country_flag = GTR_befriend_GPG
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_contacts_with_casland
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
+        hidden_effect = {
+            if = {
+                limit = { country_exists = GPG }
+                GPG = { country_event = GPG_event.51 }
+            }
+            else = { GDR = { country_event = GPG_event.51 } }
+        }
     }
     option = {
         name = GTR_event.22.b
         set_country_flag = GTR_isolation
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_behind_steel_walls
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
     }
 }
 
@@ -542,12 +557,25 @@ country_event = {
         set_country_flag = GTR_befriend_GGRR
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_all_roads_to_centrogoiky
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
     }
     option = {
         name = GTR_event.23.b
         set_country_flag = GTR_isolation
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_behind_steel_walls
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
+        add_equipment_to_stockpile = {
+            type = train_equipment_1
+            amount = 1
+            producer = SRR
+        }
     }
 }
 
@@ -564,6 +592,10 @@ country_event = {
         set_country_flag = GTR_isolation
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_behind_steel_walls
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
     }
 }
 
@@ -580,12 +612,20 @@ country_event = {
         set_country_flag = GTR_democracy
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_democracy
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
     }
     option = {
         name = GTR_event.25.b
         set_country_flag = GTR_noocracy
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_noocracy
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
     }
 }
 
@@ -602,11 +642,48 @@ country_event = {
         set_country_flag = GTR_eco_tb
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_industry_for_objects
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
     }
     option = {
         name = GTR_event.26.b
         set_country_flag = GTR_eco_gb
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_industry_for_science
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.27
+    title = GTR_event.27.t
+    desc = GTR_event.27.desc
+    picture = GFX_GTR_event27
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.27.a
+        add_ideas = idea_GTR_ivy_league
+    }
+}
+
+country_event = {
+    id = GTR_event.28
+    title = GTR_event.28.t
+    desc = GTR_event.28.desc
+    picture = GFX_GTR_event28
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.28.a
+        add_stability = 0.05
+        77 = { add_manpower = -7812 }
     }
 }

@@ -1,130 +1,138 @@
 ideas = {
-	country = {
-		idea_GPG_questionable_future = {
-			picture = GPG_questionable_future
-			modifier = {
-				political_power_gain = 0.25
-				drift_defence_factor = -0.1
-				stability_factor = -0.05
-			}
-		}
-		
-		idea_GPG_factionalism = {
-			picture = GPG_factionalism
-			modifier = {
-				political_power_gain = -0.5
-				stability_factor = -0.1
-				war_support_factor = -1
-			}
-		}
-		
-		idea_GPG_compensation = {
-			picture = GPG_compensation
-			modifier = {
-				consumer_goods_factor = 0.2
-				political_power_gain = -0.5
-			}
-		}
-		
-		idea_GPG_battle_for_casland = {
-			picture = GPG_battle_for_casland
-			modifier = {
-				surrender_limit = 0.2
-				consumer_goods_factor = -1
-				war_support_factor = 0.1
-				political_power_factor = -1
-			}
-		}
-		
-		idea_GPG_drawn_out_war = {
-			picture = GPG_battle_for_casland
-			modifier = {
-				weekly_manpower = -200
-				army_attack_factor = 0.3
-				army_defence_factor = -0.3
-				ai_focus_aggressive_factor = 5
-			}
-		}
-		
-		idea_GPG_anti_democratic_propaganda = {
-			picture = GPG_anti_democratic_campaign
-			modifier = {
-				democratic_drift = -0.1
-			}
-		}
-		
-		idea_GPG_anti_communist_propaganda = {
-			picture = GPG_anti_communist_campaign
-			modifier = {
-				communism_drift = -0.1
-			}
-		}
-		
-		idea_GPG_12_hours_working_day = {
-			picture = GPG_12_hours_working_day
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.1 #never gonna reach the cap
-			}
-		}
-		
-		idea_GPG_status_quo = {
-			picture = GPG_status_quo
-			modifier = {
-				stability_factor = -0.1
-				political_power_gain = 0.25
-			}
-		}
-		
-		idea_GPG_strong_government = {
-			picture = GPG_strong_government
-			modifier = {
-				political_power_gain = 0.25
-			}
-		}
-		
-		idea_GPG_object_industry = {
-			picture = GPG_object_industry
-			modifier = {
-				stability_factor = 0.05
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = -0.1
-				consumer_goods_factor = 0.1
-			}
-		}
-		
-		idea_GPG_slow_recovery = {
-			picture = GPG_slow_recovery
-			modifier = {
-				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = -0.1
-			}
-		}
-		
-		idea_GPG_great_manager = {
-			picture = GPG_great_manager
-			modifier = {
-				industrial_capacity_factory = 0.1
-				production_factory_max_efficiency_factor = 0.05
-			}
-		}
-		
-		idea_GPG_rearmament = {
-			picture = GPG_rearmament
-			modifier = {
-				consumer_goods_factor = 0.1
-			}
-			research_bonus = {
-				infantry_weapons = 0.2
-				artillery = 0.2
-			}
-		}
-		
-		idea_GPG_lawnland_compensation = {
-			picture = GPG_lawnland_compensation
-			modifier = {
-				consumer_goods_factor = -0.3
-			}
-		}
-	}
+    country = {
+        idea_GPG_questionable_future = {
+            picture = GPG_questionable_future
+            modifier = {
+                political_power_gain = 0.25
+                drift_defence_factor = -0.1
+                stability_factor = -0.05
+            }
+        }
+
+        idea_GPG_factionalism = {
+            picture = GPG_factionalism
+            modifier = {
+                political_power_gain = -0.5
+                stability_factor = -0.1
+                war_support_factor = -1
+            }
+        }
+
+        idea_GPG_compensation = {
+            picture = GPG_compensation
+            modifier = {
+                consumer_goods_factor = 0.2
+                political_power_gain = -0.5
+            }
+        }
+
+        idea_GPG_battle_for_casland = {
+            picture = GPG_battle_for_casland
+            modifier = {
+                surrender_limit = 0.2
+                consumer_goods_factor = -1
+                war_support_factor = 0.1
+                political_power_factor = -1
+            }
+        }
+
+        idea_GPG_drawn_out_war = {
+            picture = GPG_battle_for_casland
+            modifier = {
+                weekly_manpower = -200
+                army_attack_factor = 0.3
+                army_defence_factor = -0.3
+                ai_focus_aggressive_factor = 5
+            }
+        }
+
+        idea_GPG_anti_democratic_propaganda = {
+            picture = GPG_anti_democratic_campaign
+            modifier = {
+                democratic_drift = -0.1
+            }
+        }
+
+        idea_GPG_anti_communist_propaganda = {
+            picture = GPG_anti_communist_campaign
+            modifier = {
+                communism_drift = -0.1
+            }
+        }
+
+        idea_GPG_12_hours_working_day = {
+            picture = GPG_12_hours_working_day
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.1
+                industrial_capacity_factory = 0.1 #never gonna reach the cap
+            }
+        }
+
+        idea_GPG_status_quo = {
+            picture = GPG_status_quo
+            modifier = {
+                stability_factor = -0.1
+                political_power_gain = 0.25
+            }
+        }
+
+        idea_GPG_strong_government = {
+            picture = GPG_strong_government
+            modifier = {
+                political_power_gain = 0.25
+            }
+        }
+
+        idea_GPG_object_industry = {
+            picture = GPG_object_industry
+            modifier = {
+                stability_factor = 0.05
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_arms_factory_factor = -0.1
+                consumer_goods_factor = 0.1
+            }
+        }
+
+        idea_GPG_slow_recovery = {
+            picture = GPG_slow_recovery
+            modifier = {
+                consumer_goods_factor = 0.15
+                production_speed_buildings_factor = -0.1
+            }
+        }
+
+        idea_GPG_great_manager = {
+            picture = GPG_great_manager
+            modifier = {
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        idea_GPG_rearmament = {
+            picture = GPG_rearmament
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+            research_bonus = {
+                infantry_weapons = 0.2
+                artillery = 0.2
+            }
+        }
+
+        idea_GPG_lawnland_compensation = {
+            picture = GPG_lawnland_compensation
+            modifier = {
+                consumer_goods_factor = -0.3
+            }
+        }
+
+        idea_GPG_announcergrad_trade = {
+            picture = GTR_casland_trade
+            targeted_modifier = {
+                tag = GTR
+                trade_cost_for_target_factor = -0.2
+            }
+        }
+    }
 }
