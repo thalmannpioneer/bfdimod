@@ -36,6 +36,11 @@ scripted_gui = {
 		context_type = decision_category
 		parent_window_token = decision_tab
 				
+		properties = {
+			background_equipment_box_selling_item = { image = "[equipment_type_selling]" }
+			background_equipment_box_buying_item = { image = "[equipment_type_buying]" }
+		}	
+
 		triggers = { 
 			picking_equipment_window_visible = {
 				OR = {
@@ -43,19 +48,30 @@ scripted_gui = {
 					has_country_flag = Buying_Menu
 				}
             }
+
+			background_equipment_box_selling_item_visible = {
+				ROOT = { check_variable = { selling_item > -1 }}
+            }
+
+			background_equipment_box_buying_item_visible = {
+				ROOT = { check_variable = { buying_item > -1 }}
+            }
 		}
 
 		effects = {
-			PLACEHOLDERBUTTON_click = {
-				IF = {
-					limit = {has_country_flag = Selling_Menu}
-					clr_country_flag = Selling_Menu
+			Selling_Button_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						clr_country_flag = Selling_Menu
+					}
+					ELSE = {
+						set_country_flag = Selling_Menu
+						clr_country_flag = Buying_Menu
+					}
+					clear_array = ROOT.equipment_list
+					set_variable = { selling_item = -1 }
 				}
-				ELSE = {
-					set_country_flag = Selling_Menu
-					clr_country_flag = Buying_Menu
-				}
-				clear_array = ROOT.equipment_list
 				IF = {
 					limit = {has_equipment = {infantry_equipment_0 > 99}} #GFX_infantry_weapons_medium
 					add_to_array = {
@@ -92,19 +108,229 @@ scripted_gui = {
 					}
 				}
 				IF = {
-					limit = {has_equipment = {artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
+					limit = {has_equipment = {motorized_equipment_0 > 99}} #GFX_tech_trucks_medium
 					add_to_array = {
 						array = ROOT.equipment_list
 						value = 5
 					}
 				}
-
+				IF = {
+					limit = {has_equipment = {motorized_equipment_1 > 99}} #GFX_motorised_infantry_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 6
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 7
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_2 > 99}} #GFX_artillery1_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 8
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_3 > 99}} #GFX_artillery4_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 9
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_1 > 99}} #GFX_interwar_antiair_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 10
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_2 > 99}} #GFX_antiair2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 11
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_3 > 99}} #GFX_antiair5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 12
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_1 > 99}} #GFX_interwar_antitank_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 13
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_2 > 99}} #GFX_antitank2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 14
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_3 > 99}} #GFX_antitank5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 15
+					}
+				}
 			}
-		}
-		effects = {
+
+			Buying_Button_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Buying_Menu}
+						clr_country_flag = Buying_Menu
+					}
+					ELSE = {
+						set_country_flag = Buying_Menu
+						clr_country_flag = Selling_Menu
+					}
+					clear_array = ROOT.equipment_list
+					set_variable = { buying_item = -1 }
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_0 > 99}} #GFX_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 0
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_1 > 99}} #GFX_infantry_weapons1_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 1
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_2 > 99}} #GFX_improved_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 2
+					}
+				}
+				IF = {
+					limit = {has_equipment = {infantry_equipment_3 > 99}} #GFX_advanced_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 3
+					}
+				}
+				IF = {
+					limit = {has_equipment = {support_equipment_1 > 99}} #GFX_tech_support_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 4
+					}
+				}
+				IF = {
+					limit = {has_equipment = {motorized_equipment_0 > 99}} #GFX_tech_trucks_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 5
+					}
+				}
+				IF = {
+					limit = {has_equipment = {motorized_equipment_1 > 99}} #GFX_motorised_infantry_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 6
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 7
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_2 > 99}} #GFX_artillery1_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 8
+					}
+				}
+				IF = {
+					limit = {has_equipment = {artillery_equipment_3 > 99}} #GFX_artillery4_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 9
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_1 > 99}} #GFX_interwar_antiair_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 10
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_2 > 99}} #GFX_antiair2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 11
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_air_equipment_3 > 99}} #GFX_antiair5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 12
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_1 > 99}} #GFX_interwar_antitank_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 13
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_2 > 99}} #GFX_antitank2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 14
+					}
+				}
+				IF = {
+					limit = {has_equipment = {anti_tank_equipment_3 > 99}} #GFX_antitank5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 15
+					}
+				}
+			}
+
 			close_click = {
-				clr_country_flag = Selling_Menu
-				clr_country_flag = Buying_Menu
+				ROOT = { clr_country_flag = Selling_Menu }
+				ROOT = { clr_country_flag = Buying_Menu }
+			}
+			other_trade_list_equipment_button_select_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						set_variable = { selling_item = ROOT.equipment_list^i } 
+					}
+					ELSE_IF = {
+						limit = {has_country_flag = Buying_Menu}
+						set_variable = { buying_item = ROOT.equipment_list^i } 
+					}
+					clr_country_flag = Selling_Menu 
+					clr_country_flag = Buying_Menu 
+					clear_array = ROOT.equipment_list 
+				}
 			}
 		}
 	}
@@ -128,8 +354,23 @@ scripted_gui = {
 		
 		effects = {
 			close_click = {
-				clr_country_flag = Selling_Menu
-				clr_country_flag = Buying_Menu
+				ROOT = { clr_country_flag = Selling_Menu }
+				ROOT = { clr_country_flag = Buying_Menu }
+			}
+			other_trade_list_equipment_button_select_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						set_variable = { selling_item = ROOT.equipment_list^i } 
+					}
+					ELSE_IF = {
+						limit = {has_country_flag = Buying_Menu}
+						set_variable = { buying_item = ROOT.equipment_list^i } 
+					}
+					clr_country_flag = Selling_Menu 
+					clr_country_flag = Buying_Menu 
+					clear_array = ROOT.equipment_list 
+				}
 			}
 		}
 

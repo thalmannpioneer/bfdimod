@@ -18,23 +18,39 @@ guiTypes = {
 			font = hoi_36header
 		}
 
-		iconType = {
-			name = "background_equipment_box_selling"
-			spriteType = "GFX_YFC_trade_unselected"
-			position = { x = 100 y = 40 }
+		instantTextboxType = { #I would like this updated at some point to look better
+			name = "title"
+			text = l_decisions_trade_title
+			position = { x = 0 y = -10 }
+			maxWidth = 500
+			format = centre
+			font = hoi_36header
 		}
 
-		buttonType = { #PLACEHOLDER
-			name = "PLACEHOLDERBUTTON"
+		buttonType = { 
+			name = "Selling_Button"
 			position = { x = 100 y = 40 }
-			spriteType = GFX_decisions_WGF_operation_coinflip_button
+			spriteType = GFX_prod_land_equipment_item_large
 			clicksound = bfdi_button_press
 		}
 
 		iconType = {
-			name = "background_equipment_box_buying"
-			spriteType = "GFX_YFC_trade_unselected"
+			name = "background_equipment_box_selling_item"
+			position = { x = 180 y = 65 }
+			alwaystransparent = yes
+		}
+
+		buttonType = { 
+			name = "Buying_Button"
 			position = { x = 100 y = 130 }
+			spriteType = GFX_prod_land_equipment_item_large
+			clicksound = bfdi_button_press
+		}
+
+		iconType = {
+			name = "background_equipment_box_buying_item"
+			position = { x = 180 y = 155 }
+			alwaystransparent = yes
 		}
 	}	
 }	
@@ -120,7 +136,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "background_equipment_box_item"
-			position = { x = 85 y = 30 }
+			position = { x = 90 y = 30 }
 		}
 		buttonType = {
 			name = "other_trade_list_equipment_button_select"

@@ -60,7 +60,7 @@ GFG_rush_GPR = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = GPR
-		value = 300
+		value = 500
 	}
 }
 

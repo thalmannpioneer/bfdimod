@@ -47,6 +47,9 @@ on_actions = {
                     }
                     BFDI_money_diplay_update = yes
                 }
+
+                set_variable = { buying_item = -1 } #YFC trade other 
+                set_variable = { selling_item = -1 } #YFC trade other
             }
         }
     }
