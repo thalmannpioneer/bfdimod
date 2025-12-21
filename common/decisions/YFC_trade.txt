@@ -16,28 +16,34 @@ decision_YFC_trade_category= {
 		cost = 0
 
 		complete_effect = {
-			BUN = {
-				add_to_array = {
-					array = global.yfc_tradable_countries
-					value = THIS.id
-				}
-			}
-			GGR = {
-				add_to_array = {
-					array = global.yfc_tradable_countries
-					value = THIS.id
-				}
-			}
-			CRN = {
-				add_to_array = {
-					array = global.yfc_tradable_countries
-					value = THIS.id
-				}
-			}
-			GPG = {
-				add_to_array = {
-					array = global.yfc_tradable_countries
-					value = THIS.id
+			clear_array = YFC.equipment_list
+			clear_array = global.yfc_tradable_countries
+			every_country = { 
+				IF = {
+					limit = {
+						OR = {
+							check_variable = { THIS.selling_item > -1 }
+							check_variable = { THIS.buying_item > -1 }
+						}
+					}
+					add_to_array = {
+						array = global.yfc_tradable_countries
+						value = THIS.id
+					}	
+					IF = {
+						limit = {check_variable = { THIS.selling_item > -1 }}
+						add_to_array = {
+							array = YFC.equipment_list
+							value = THIS.selling_item
+						}
+					}
+					IF = {
+						limit = {check_variable = { THIS.buying_item > -1 }}
+						add_to_array = {
+							array = YFC.equipment_list
+							value = THIS.buying_item
+						}
+					}
 				}
 			}
 		}
