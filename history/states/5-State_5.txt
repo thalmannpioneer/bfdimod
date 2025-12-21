@@ -1,20 +1,20 @@
 state={
-	id=5
-	name="STATE_5"
-	provinces={
-		11861 11863 11864 11865 11866 11867 11868 11869 11870 11915 11901
-	}
-	history = {
-		owner = DAV
-		add_core_of = DAV
-		victory_points = { 11861 5 } 
-		buildings = {
+    id=5
+    name="STATE_5"
+    provinces={
+        11861 11863 11864 11865 11866 11867 11868 11869 11870 11901 11915
+    }
+    history = {
+        owner = DAV
+        add_core_of = DAV
+        victory_points = { 11861 5 }
+        buildings = {
             infrastructure = 1
-			11861 = { naval_base = 10 }
+            11861 = { naval_base = 10 }
         }
-	}
-	manpower = 23752
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+    }
+    manpower = 23752
+    buildings_max_level_factor=1.000
+    state_category=rural
+    local_supplies=0.000
 }

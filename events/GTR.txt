@@ -687,3 +687,35 @@ country_event = {
         77 = { add_manpower = -7812 }
     }
 }
+
+country_event = {
+    id = GTR_event.29
+    title = GTR_event.29.t
+    desc = GTR_event.29.desc
+    picture = GFX_GTR_event29
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.29.a
+        add_ideas = limited_exports
+    }
+}
+
+country_event = {
+    id = GTR_event.30
+    title = GTR_event.30.t
+    desc = GTR_event.30.desc
+    picture = GFX_GTR_event30
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.30.a
+        transfer_state = 27
+        27 = {
+            remove_core_of = SRR
+            add_core_of = GTR
+        }
+    }
+}

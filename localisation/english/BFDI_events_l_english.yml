@@ -1238,6 +1238,14 @@
  GTR_event.28.desc: "\"Hi, Mom.\n\nHow are you? Things are now better for you there, as I've heard. Dad read in the newspapers that you have electricity again at home.\nThings aren't easy here. Dad and the other adults had to build a house out of REAL TREES themselves! But at least we're safe here. I can go for walks as much as I want! You was always forbidding me this at home! Dad even made a swing set for me and my friends!\nDad feels better too, I can feel it. He was always so nervous in the city, but now he breathes easier. But he's worried about you.\nI'm worried about you too. We all want to go home as soon as possible!\n\nThey say we don't have to be afraid to return now. That the border has opened. Dad says the same. But he's always arguing with others. They say he's a traitor. But my Dad isn't a traitor! We just want to go home! How is that traitorous? :(\n\nIt's hard to send letters here, the mail doesn't come often, and Dad says the postman is a bostard. I don't know what that means, but it's probably bad.\n\nAnyway, Mom, wait for us, we'll be home soon!\nWe all hope you are fine!\""
  GTR_event.28.a: "Good Luck, Little One!"
 
+ GTR_event.29.t: "Gold Rush"
+ GTR_event.29.desc: "A backwater bar on the outskirts of Wilopede had been full of strangers the last few evenings. No one asked names, and why would they? Nobody really cares here. Most of the customers here now are profit hunters who have forgotten the concept of home, and just seeking for some profit.\n\n\"I'm telling you, this branch will be one of the most profitable in all of Goiky! Brother, have you heard about the artificial crystals from Announcergrad? And about the flowers in Greenheart?\nThis produt is crazy! Thugs will tear you apart for it if you decide to transport it across the northern plain. Now imagine the opportunities that the railway opens up!\"\n\nA drunk-ish Cotton traced his finger across the stained map, tracing the trajectory of the newly opened Lofty-Announcergrad line. Pebble hung on his every word, as if under a spell, and the other objects around him weren't above listening, either."
+ GTR_event.29.a: "\"Tell more, tell more!\""
+
+ GTR_event.30.t: "Lofty Intergration"
+ GTR_event.30.desc: "Thanks to our cooperation with [SRR.GetName] we managed to incorporate the city of Lofty! This will massively improve our position in the north and make our economical condition better."
+ GTR_event.30.a: "Wonderful!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

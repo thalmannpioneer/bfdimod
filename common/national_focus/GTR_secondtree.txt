@@ -437,7 +437,7 @@ focus_tree = {
                     }
                 }
                 add_opinion_modifier = {
-                    target = GDR
+                    target = GPG
                     modifier = small_increase
                 }
             }
@@ -581,6 +581,7 @@ focus_tree = {
                     GDR = { has_war = no }
                 }
             }
+            owns_state = 82
             custom_trigger_tooltip = {
                 tooltip = l_GTR_outer_politics_cd_tt
                 NOT = { has_country_flag = GTR_outer_politics_cd }
@@ -715,7 +716,7 @@ focus_tree = {
 
         allow_branch = { has_country_flag = GTR_befriend_GGRR }
 
-        cost = 5
+        cost = 0
 
         ai_will_do = {
             base = 5
@@ -733,13 +734,51 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_all_roads_to_centrogoiky }
 
-        cost = 5
+        available = {
+            country_exists = SRR
+            SRR = { has_war = no }
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = train_tech
+            }
+            SRR = {
+                add_tech_bonus = {
+                    bonus = 1
+                    uses = 2
+                    category = train_tech
+                }
+                add_opinion_modifier = {
+                    target = GTR
+                    modifier = small_increase
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+            add_opinion_modifier = {
+                target = SRR
+                modifier = small_increase
+            }
+            hidden_effect = {
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -752,13 +791,70 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_develop_railroad_tech }
 
+        available = {
+            country_exists = SRR
+            SRR = { has_war = no }
+            owns_state = 75
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = train_equipment_1
+                amount = 10
+                producer = SRR
+            }
+            75 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                build_railway = {
+                    level = 1
+                    path = { 2737 4174 5215 4431 3938 }
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+            add_opinion_modifier = {
+                target = SRR
+                modifier = small_increase
+            }
+            SRR = {
+                add_opinion_modifier = {
+                    target = GTR
+                    modifier = small_increase
+                }
+            }
+
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.29
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -771,13 +867,42 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_develop_railroad_tech }
 
-        cost = 5
+        available = {
+            country_exists = SRR
+            SRR = { has_war = no }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_timed_idea = {
+                idea = idea_GTR_centrogoiky_aid
+                days = 120
+            }
+            add_opinion_modifier = {
+                target = SRR
+                modifier = medium_increase
+            }
+            SRR = {
+                add_opinion_modifier = {
+                    target = GTR
+                    modifier = medium_increase
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+        }
     }
 
     focus = {
@@ -790,13 +915,26 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_start_the_trains }
         prerequisite = { focus = GTR_focus_aid_for_centrogoiky }
 
+        available = {
+            country_exists = SRR
+            SRR = { has_war = no }
+            NOT = { has_idea = idea_GTR_centrogoiky_aid }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.30
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+        }
     }
 
 

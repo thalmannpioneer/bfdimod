@@ -1,27 +1,24 @@
 
 state={
-	id=27
-	name="STATE_27"
-	resources={
-		coal = 4
-	}
-	history={
-		owner = GOI
-		add_core_of = GOI
-		victory_points = {
-			3938 10 
-		}
-		buildings = {
-			infrastructure = 3
+    id=27
+    name="STATE_27"
+    history={
+        owner = GOI
+        add_core_of = GOI
+        victory_points = {
+            3938 10
+        }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+        }
+    }
 
-		}
-	}
-
-	provinces={
-		560 1073 1509 1728 2490 2578 2686 3124 3137 3174 3845 3938 4199 4900 4929 5012 5266 5508 6054 6298 11004 11039 11069 11084 11098 11105 11108 11110 11119 11130 11131 11146 11155 11162 
-	}
-	manpower=44516
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+    provinces={
+        3938 11131 11155
+    }
+    manpower=44516
+    buildings_max_level_factor=1.000
+    state_category=city
+    local_supplies=0.000
 }

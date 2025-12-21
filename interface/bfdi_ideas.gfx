@@ -412,6 +412,10 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/idea_GTR_casland_trade.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_centrogoiky_aid
+		textureFile = gfx/interface/ideas/idea_GTR_centrogoiky_aid.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}

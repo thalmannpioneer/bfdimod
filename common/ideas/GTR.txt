@@ -82,5 +82,11 @@ ideas = {
                 trade_cost_for_target_factor = -0.2
             }
         }
+        idea_GTR_centrogoiky_aid = {
+            picture = GTR_centrogoiky_aid
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+        }
     }
 }
