@@ -22,7 +22,7 @@ guiTypes = {
 				name = "corp_trade_list_Entry_Flags"
 				position = { x = 0 y = 2 }
 				size = { width = 500 height = 345 }
-				slotsize = { width = 500 height = 310 }
+				slotsize = { width = 500 height = 305 }
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
@@ -77,7 +77,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "corp_trade_list_Entry_Flags_Entry_Info"
-			position = { x = 130 y = 15 }
+			position = { x = 130 y = 20 }
 			font = "hoi_30header"
 			text = [THIS.GetNameDefCap]
 			maxWidth = 300
@@ -90,7 +90,27 @@ guiTypes = {
 			name = "confirmDealButton"
 			position = { x = 175 y = 250 }
 			quadTextureSprite ="GFX_button_123x34"
-			buttonText = "Confirm?"
+			buttonText = "Confirm?" #UPDATE LATER
+			buttonFont = "hoi_18mbs"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "BuyingButton"
+			position = { x = 30 y = 95 }
+			quadTextureSprite ="GFX_icon_button_46x46"
+			buttonText = "Buy" #UPDATE LATER
+			buttonFont = "hoi_18mbs"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "SellingButton"
+			position = { x = 30 y = 185 }
+			quadTextureSprite ="GFX_icon_button_46x46"
+			buttonText = "Sell" #UPDATE LATER
 			buttonFont = "hoi_18mbs"
 			clicksound = click_ok
 			oversound = ui_menu_over
@@ -103,7 +123,7 @@ guiTypes = {
 		}	
 		iconType = {
 			name = "background_equipment_box_selling_item"
-			position = { x = 170 y = 95 }
+			position = { x = 170 y = 100 }
 			alwaystransparent = yes
 		}
 		iconType = {
@@ -113,8 +133,40 @@ guiTypes = {
 		}	
 		iconType = {
 			name = "background_equipment_box_buying_item"
-			position = { x = 170 y = 185 }
+			position = { x = 170 y = 190 }
 			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "buying_item_button_increase_X"
+			position = { x = 425 y = 125 }
+			quadTextureSprite = "GFX_naval_increase_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "buying_item_button_decrease_X"
+			position = { x = 385 y = 125 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "selling_item_button_increase_X"
+			position = { x = 425 y = 215 }
+			quadTextureSprite = "GFX_naval_increase_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "selling_item_button_decrease_X"
+			position = { x = 385 y = 215 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
 		}
 
 		}
