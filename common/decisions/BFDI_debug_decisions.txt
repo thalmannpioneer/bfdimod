@@ -181,22 +181,71 @@ decisions_BFDI_debug = {
 		}
 		available = {
 			is_ai = no
-			NOT = {
-				has_global_flag = game_started
-			}
         }
         complete_effect = {	
 			GOI = {add_threat = 100}
 			every_possible_country = {
-				add_ideas = {
-					idea = idea_debug_age_diplomacy
-				}
+				add_ideas = idea_debug_age_diplomacy
 				set_rule = {
 					can_send_volunteers = yes
 				}
 				set_rule = {
 					can_create_factions = yes
 				}
+			}
+        }
+    }
+
+	debug_cold_war = {
+        icon = GFX_decision_generic_political_discourse
+        fire_only_once = yes
+		cost = 0
+		allowed = {
+			is_debug = yes
+			has_dlc = "Gotterdammerung"
+		}
+		available = {
+			has_dlc = "Gotterdammerung"
+			is_ai = no
+        }
+        complete_effect = {	
+			every_country = {
+				IF = {
+					limit = {
+						NOT = {
+							tag = GOI
+							tag = EMP
+						}
+					}
+					set_technology = {
+						atomic_research = 1
+					}
+					set_technology = {
+						experimental_rockets = 1
+					}
+					enable_equipments = {
+						nuclear_missile_equipment_1
+					}
+					enable_equipments = {
+						nuclear_missile_equipment_2
+					}
+					complete_special_project = sp:sp_nuclear_warheads
+					complete_special_project = sp:sp_rockets_long_range_ballistic_missile
+					complete_special_project = sp:sp_nuclear_bomb
+					add_nuclear_bombs = 100
+					add_equipment_to_stockpile = {
+						type = nuclear_missile_equipment_2
+						amount = 100
+					}
+					capital_scope = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = rocket_site
+							level = 1
+							instant_build = yes
+						}
+					}
+				}		
 			}
         }
     }

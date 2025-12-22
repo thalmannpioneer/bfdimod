@@ -967,9 +967,251 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = YFC_event.34 #YFC trade other country said yes!
+	title = YFC_event.34.t
+    desc = YFC_event.34.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_event.34.a
+	}
+}
+
+country_event = {
+	id = YFC_event.35 #YFC trade other country said no!
+	title = YFC_event.35.t
+    desc = YFC_event.35.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = {
+		name = YFC_event.35.a
+	}
+}
+
+country_event = {
+	id = YFC_event.36 #YFC trade event other country POV selling
+	title = YFC_event.36.t
+    desc = YFC_event.36.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+	immediate = {
+        set_variable = { trade_cost_show_var = YFC.YFC_cost_var }
+		YFC = { divide_variable = { YFC_cost_var = 100 } }
+    }
+
+    option = { #Agree!
+		name = YFC_event.36.a
+
+        trigger = {
+			check_variable = {buying_item > -1}
+        }
+
+		IF = {
+			limit = {check_variable = {buying_item = 0}} 
+			YFC = {
+				send_equipment = {
+					equipment = infantry_equipment_0
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 1}} 
+			YFC = {
+				send_equipment = {
+					equipment = infantry_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 2}} 
+			YFC = {
+				send_equipment = {
+					equipment = infantry_equipment_2
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 3}} 
+			YFC = {
+				send_equipment = {
+					equipment = infantry_equipment_3
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 4}} 
+			YFC = {
+				send_equipment = {
+					equipment = support_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 5}} 
+			YFC = {
+				send_equipment = {
+					equipment = motorized_equipment_0
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 6}} 
+			YFC = {
+				send_equipment = {
+					equipment = motorized_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 7}} 
+			YFC = {
+				send_equipment = {
+					equipment = artillery_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 8}} 
+			YFC = {
+				send_equipment = {
+					equipment = artillery_equipment_2
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 9}} 
+			YFC = {
+				send_equipment = {
+					equipment = artillery_equipment_3
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 10}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_air_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 11}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_air_equipment_2
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 12}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_air_equipment_3
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 13}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_tank_equipment_1
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 14}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_tank_equipment_2
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 15}} 
+			YFC = {
+				send_equipment = {
+					equipment = anti_tank_equipment_3
+					amount = 100
+					target = ROOT
+				}
+			}
+		}
+
+		hidden_effect = {
+			subtract_from_variable = { money_amount = YFC.YFC_cost_var }
+			YFC = { 
+				add_to_variable = {money_amount = YFC.YFC_cost_var}
+				country_event = {
+					id = YFC_event.34
+					hours = 1
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = { money_amount > YFC.YFC_cost_var } 
+				add = 10
+		 	}
+		}	
+	}
+	option = { #Disagree!
+		name = YFC_event.36.b
+
+		hidden_effect = {
+			YFC = { 
+				country_event = {
+					id = YFC_event.35
+					hours = 1
+				}
+			}
+		}
+	}
+}
+
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################
+
 
 country_event = {
 	#YFC wins view

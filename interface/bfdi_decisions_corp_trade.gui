@@ -22,7 +22,7 @@ guiTypes = {
 				name = "corp_trade_list_Entry_Flags"
 				position = { x = 0 y = 2 }
 				size = { width = 500 height = 345 }
-				slotsize = { width = 500 height = 305 }
+				slotsize = { width = 500 height = 275 }
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
@@ -50,7 +50,7 @@ guiTypes = {
 		name = "bfdi_corp_tradeDeal_container"
 		
 		position = { x = 0 y = 0 }
-		size = { width = 475 height = 300 }
+		size = { width = 475 height = 270 }
 
 		background = {
 			name="bg_YFC_corpTradeDeal_bg"
@@ -84,16 +84,6 @@ guiTypes = {
 			format = left
 			orientation = "TOP_LEFT"
 			alwaystransparent = yes
-		}
-
-		buttonType = {
-			name = "confirmDealButton"
-			position = { x = 175 y = 250 }
-			quadTextureSprite ="GFX_button_123x34"
-			buttonText = "Confirm?" #UPDATE LATER
-			buttonFont = "hoi_18mbs"
-			clicksound = click_ok
-			oversound = ui_menu_over
 		}
 
 		buttonType = {
