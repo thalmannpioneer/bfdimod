@@ -1041,10 +1041,10 @@
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."
 
  YFC_focus_the_economic_issue: "The Economic Issue"
- YFC_focus_the_economic_issue_desc: "Stocks have dropped in everything except industry. Industrial stocks shot up over 300%. It's safe to say that the market is more than ready for new cities, and big ones at that. Though, a larger city would obviously require a new population, and currently, we simply don't have the people to have a fully populated city at the scale our investors wish for. We could certainly convince people to move over though, but how exactly should we do that? A change in policy might help, but it'd be time consuming, and we don't know what the long term effects might be."
+ YFC_focus_the_economic_issue_desc: "ZDubbz also change this one please :)"
 
  YFC_focus_industrialize_or_die: "Expanding Our Reach" #Or maybe 'Expanding Our Growth'
- YFC_focus_industrialize_or_die_desc: "ZDbbuz here is your work"
+ YFC_focus_industrialize_or_die_desc: "ZDubbz here is your work"
 
  YFC_focus_erasers_stockpiles: "Eraser's Stockpiles"
  YFC_focus_erasers_stockpiles_desc: "The large stash of money we found after taking the bunchivist capital is very much still there. Not in bunchivist land of course, we took it to our own capital, but besides that, the money has been untouched. While still technically property of Eraser, he's in jail, is he not? He most certainly wouldn't mind us... borrowing... some of that. He wouldn't even notice!"
@@ -1055,6 +1055,27 @@
  YFC_focus_develop_yoyleton: "Develop Yoyleton"
  YFC_focus_develop_yoyleton_desc: "Yoyleton is the most remote place in South Goiky, as of current. Having a small population, with lots of hard workers, that hick town has great potential. Strangely enough, it seems like some teardroppers live there as well. With the town being so far from the sea, it's a bit strange to see them, however, they mind their business, same as everyone else. Perhaps some water features should be in the works."
 
+ YFC_focus_military_industrial_complex: "Expanding Military Industrial Complex" 
+ YFC_focus_military_industrial_complex_desc: "ZDubbz cough cough cough" #So I came up with the idea that YFC officers are finally reformed to only be dealing with militray matters. This is my only idea has I really have no idea what to put here that makes any sense/balance
+
+ YFC_focus_expand_northern_trade: "Expand the Northern Trade"
+ YFC_focus_expand_northern_trade_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_scope_out_sea_trade: "Scope Out the Sea Trade"
+ YFC_focus_scope_out_sea_trade_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_spread_out_sectors: "Spread Out the Sectors"
+ YFC_focus_spread_out_sectors_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_peoniele_the_second_city: "Peoniele the Second City"
+ YFC_focus_peoniele_the_second_city_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_big_yoyleton: "Big Yoyleton"
+ YFC_focus_big_yoyleton_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_population_boom: "Population Boom"
+ YFC_focus_population_boom_desc: "ZDubbz cough cough cough"
+
  YFC_focus_clamp_down_on_bunchivism: "Clamp Down on Bunchivism"
  YFC_focus_clamp_down_on_bunchivism_desc: "The obvious choice. Bunchivism has been a plague to our trading partners since the dawn of Goikean nation states, no longer shall a raider be able to steal our profits and plunder our bretheren in capital. We shall never, under any circumstance, allow a free Bunch to persist, and anyone who believes otherwise is a traitor to the free market. Let Podgornyv's rioters burn with the power of our might!"
 
@@ -1063,6 +1084,24 @@
 
  YFC_focus_execute_pen: "Pen."
  YFC_focus_execute_pen_desc: "500 Million Vigintillion. A number so impossibly high, has somehow become owed to us. While the competition was still ongoing, Pen had promised to give his supporters a large sum of money. That amount, became debt, which he tried to pay off using a paper slip. Paper slips, made in the YFC of course, are not a 'real' currency, so the amount owed managed to transfer from his supporters, to us. We have no real interest in forcing him to pay that amount, but we do have an interest in making examples out of debt holders. He's a Bunchivist, was very close, too close, to Eraser, while vocally supporting efforts resisting our reign. The perfect example."
+
+ YFC_focus_reeducation: "Establish Reeducation Camps"
+ YFC_focus_reeducation_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_strengthen_the_law: "Strengthen the Law"
+ YFC_focus_strengthen_the_law_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_ban_theft: "Ban Theft"
+ YFC_focus_ban_theft_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_remove_oligarchical_sentiment: "Remove Oligarchical Sentiments"
+ YFC_focus_remove_oligarchical_sentiment_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_fully_cored: "Fully Cored"
+ YFC_focus_fully_cored_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_stalled_plans: "Stalled Plans"
+ YFC_focus_stalled_plans_desc: "ZDubbz cough cough cough"
 
  YFC_focus_foster_new_society: "Foster a New Society"
  YFC_focus_foster_new_society_desc: "Bunchivists are still people. And with people, there is profit. Obviously, we've lost quite a bit of money from having to deal with the raiders, but if we have their entire population under our thumb, we could make it back in no time! Facilitating a new, reformed Bunch should be easy, and well worth the cost. Oh, the civillians should be allowed to live free and stuff too. That's totally important to us."
@@ -1075,39 +1114,54 @@
 
  YFC_focus_blockys_offer: "Blocky's offer"
  YFC_focus_blockys_offer_desc: "Blocky is asking us if he can meet with Yellow Face to discuss his campaign. Or at least, we think? He wasn't the clearest in what he was asking for, besides a meeting to discuss things. Anyways, we can get it scheduled pretty soon."
+ 
+ YFC_focus_allow_people_enter: "Allow Immigration Into Bunch"
+ YFC_focus_allow_people_enter_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_banks_too_big_to_fail: "Expand the Banking"
+ YFC_focus_banks_too_big_to_fail_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_insentivize_employment: "Insentivize Employment"
+ YFC_focus_insentivize_employment_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_free_pows: "Free POWs"
+ YFC_focus_free_pows_desc: "ZDubbz cough cough cough"
 
  YFC_focus_bunchivist_new_deal: "The Bunchivist New Deal"
  YFC_focus_bunchivist_new_deal_desc: "Admittedly, attempting to convert the Bunchivist society into a less.. stupid one is quite challenging. We're a company, not a government. Well, I guess we are a government. Shit. Anyways, we've just started and already spent more money on this project than anticipated. We need to find a better way to generate money from the population, fast!"
- 
+
+ YFC_focus_bunch_fostered: "A Bunch Fostered"
+ YFC_focus_bunch_fostered_desc: "ZDubbz cough cough cough"
+
  Musketeers_three_musketeers: "Three Musketeers"
- Musketeers_three_musketeers_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"
 
  Musketeers_form_own: "Form OWN"
- Musketeers_form_own_desc: "OWN is 'Organization of the Wealth Nations' btw" #Placeholder I WILL come up with something
+ Musketeers_form_own_desc: "For us to ensure unity in our goals of profit we need a unified organization to manage and expand our trade and profit. So the Organization of the Wealth Nations, or just OWN, will be that organization. We will have representatives from each nation come and sign the documents needed to join. Given time, this will become the strongest economic deal in all of Goiky!"
 
  Musketeers_grant_drilling_subsidies: "Grant Drilling Subsidies"
- Musketeers_grant_drilling_subsidies_desc: "text holder" #Placeholder I WILL come up with something
+ Musketeers_grant_drilling_subsidies_desc: "One of the major centers of economic growth are resources. It has been on the rise ever since Goiky collapsed. There are some valuable resources in our own lands that can bring some profit. Let's invest into these drilling and mining efforts."
 
  Musketeers_unite_trading_deals: "Unite Trading Deals"
- Musketeers_unite_trading_deals_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_unite_trading_deals_desc: "Various nations are buying resources from other various nations that are not us. We will put more effort into getting objects into buying our products and resources."
 
  Musketeers_build_new_mines: "Build New Mines"
- Musketeers_build_new_mines_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_build_new_mines_desc: "Our mining efforts must not stop at a few new mines, we must expand ever further!" 
 
  Musketeers_gather_contracts: "Gather Contracts"
- Musketeers_gather_contracts_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_gather_contracts_desc: "We will take even more steps for more counties to buy our products!"
 
  Musketeers_form_udc: "FORM UDC"
- Musketeers_form_udc_desc: "UDC is United Defence Command btw" #Placeholder I WILL come up with something 
+ Musketeers_form_udc_desc: "We need to face the reality that around us are aggressive nations around us on every side. The same aggressive nations that merely view us as a treasure chest to be looted than a real threat. While we cannot from a massive army or have impactful reforms, we can unite our counties command structure. Thus, the United Defence Command, or UDC, will serve such a purpose."
 
  Musketeers_conduct_military_drills: "Conduct Military Drills"
- Musketeers_conduct_military_drills_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_conduct_military_drills_desc: "We need to ensure that everyone's army is at the same level of readiness and training. As such, we will organize monthly military drills to ensure these ideas."
 
  Musketeers_tighten_command: "Tighten Command"
- Musketeers_tighten_command_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_tighten_command_desc: "We need to further unite our command structure. Everyone still has elements of their army that are not under this powerful effort. Let us correct this issue with the remaining officers and generals."
 
  Musketeers_rules_of_war: "Learn the Rules of War"
- Musketeers_rules_of_war_desc: "text here" #Placeholder I WILL come up with something 
+ Musketeers_rules_of_war_desc: "War is changing from something that was really basic and simple into something of complexity. While we can't be the best, we must stay at the same pace as others. We will study the findings of past and current wars to be ready for the future ones."
 
  #GOIKY TECHNOCRATIC REPUBLIC
  GTR_focus_project_1: "Project #1"
@@ -1175,6 +1229,174 @@
 
  GTR_focus_republic: "§2T H E R E P U B L I C§!"
  GTR_focus_republic_desc: "The best intentions of the Announcergrad objects have found an outlet in the Technocratic Republic! Only together, with the help of technology, can we find a way out of this difficult situation."
+
+ GTR_focus_new_government: "§gRaising The Flags§!"
+ GTR_focus_new_government_desc: "By our best efforts, a young Republic of Science is rising from the ruins of Goiky!"
+
+ GTR_focus_looking_outside: "Looking Outside"
+ GTR_focus_looking_outside_desc: "Isolation is striking the situation in Announcergrad pretty badly. Lacks of news and shortage of many goods are creating massive problems for the entire Republic. The Administration shall adress these problems."
+
+ GTR_focus_contacts_with_casland: "The Heart and The Brain"
+ GTR_focus_contacts_with_casland_desc: "The Casland governments has emerged from a difficult period of political turmoil and looks friendly enough to engage with. The University Administration has decided to establish a diplomatic relationships with them."
+
+ GTR_focus_collective_research: "Collective Research"
+ GTR_focus_collective_research_desc: "There's a lot of talented objects in Casland. We can combine our forces to achieve new heights of technological progress."
+
+ GTR_focus_casland_industry: "Casland Industry"
+ GTR_focus_casland_industry_desc: "By borrowing many of the manufacturing practices from Casland, we can significantly increase the efficiency of our own production."
+
+ GTR_focus_open_borders: "Open Borders"
+ GTR_focus_open_borders_desc: "As a sign of our countries' friendship, it's time to ease border controls in the West. Let the refugees return home."
+
+ GTR_focus_mutual_protection: "Mutual Protection"
+ GTR_focus_mutual_protection_desc: "Now that we possess a reasonable military forces, we are able to propose a mutual defense agreement to the Casland government. This will significantly strengthen our cooperation."
+
+ GTR_focus_all_roads_to_centrogoiky: "All roads to Centrogoiky"
+ GTR_focus_all_roads_to_centrogoiky_desc: "The Railway Administration is in an unclear position: substantial revenues from train tolls on the one hand, and growing political turmoil and problems with food supplies for basic needs on the other. Our cooperation would be greatly appreciated."
+
+ GTR_focus_develop_railroad_tech: "Improve Railroad Tech"
+ GTR_focus_develop_railroad_tech_desc: "Single-track railways and crumbling trains are crying out for a modernized railway infrastructure. With our technologies and production, we can achieve this."
+
+ GTR_focus_start_the_trains: "Start The Trains"
+ GTR_focus_start_the_trains_desc: "By establishing free communication between Announcergrad and Centrogoiky, we will be able to address numerous economic problems and contribute to the development of the entire region."
+
+ GTR_focus_aid_for_centrogoiky: "Aid For Centrogoiky"
+ GTR_focus_aid_for_centrogoiky_desc: "Objects of the cities of Railroad Administration are suffering from food shortages and supply disruptions. We must help them!"
+
+ GTR_focus_integrate_lofty: "Integrate Lofty"
+ GTR_focus_integrate_lofty_desc: "The Railways' overly stretched borders create numerous problems for the administration itself. If we integrate Lofty, we'll significantly reduce the burden on their administration."
+
+ GTR_focus_behind_steel_walls: "Behind The Steel Walls"
+ GTR_focus_behind_steel_walls_desc: "We must remain cool in the face of this dangerous environment, for the future of the University and all science of Goiky depends on us. No one dares interfere with us."
+
+ GTR_focus_heaven_for_research: "Heaven for Research"
+ GTR_focus_heaven_for_research_desc: "We must create good conditions for the development of science and attract researchers from all across the continent. It's time to restore Announcergrad and the University to their former glory!"
+
+ GTR_focus_recruitment_campaign: "Operation \"Paperclip\""
+ GTR_focus_recruitment_campaign_desc: "It's necessary to attract scientists from all over Goiky for further research. Even through espionage."
+
+ GTR_focus_strict_border_control: "Strict Border Control"
+ GTR_focus_strict_border_control_desc: "By expanding the border service and strengthening controls at outposts, we will limit the appearance of unwanted elements on our territory."
+
+ GTR_focus_privacy_of_innovation: "The Secret Of Tech"
+ GTR_focus_privacy_of_innovation_desc: "Only by keeping our scientific achievements secret from a hostile environment will we be able to maintain our advantage and independence. It's time to introduce strict penalties for disclosing research secrets."
+
+ GTR_focus_brain_of_goiky: "Brain Of Goiky"
+ GTR_focus_brain_of_goiky_desc: "Announcergrad is once again the heart of Goiky science! By maintaining this status and keeping our knowledge under lock and key, we can maintain our security and independence."
+
+ GTR_focus_republican_affairs: "Affairs of the Republic"
+ GTR_focus_republican_affairs_desc: "It is time to turn our attention to the internal problems of our young Technocracy and choose a further course of domestic policy."
+
+ GTR_focus_democracy: "§7Democracy§!"
+ GTR_focus_democracy_desc: "We must not forget that everything we do is done for the benefit of the Announcergrad objects. Everyone should receive their share of technological progress."
+
+ GTR_focus_reform_rulership: "Rulership Reform"
+ GTR_focus_reform_rulership_desc: "The University administration can no longer effectively govern the Republic alone. The time has come for a major reform of the supreme authority."
+
+ GTR_focus_science_for_objects: "Science for Objects"
+ GTR_focus_science_for_objects_desc: "The development of science is the Republic's primary goal. But science must serve our objects, not be an end in itself."
+
+ GTR_focus_wide_ruling_horizontal: "Wide Ruling Horizontal"
+ GTR_focus_wide_ruling_horizontal_desc: "We need to attract more talented objects to governance. This is the only way we can sustain the Republic."
+
+ GTR_focus_role_of_presidency: "§7The President§!"
+ GTR_focus_role_of_presidency_desc: "The time has come to introduce the position of President of the Republic."
+
+ GTR_focus_noocracy: "§2Noocracy§!"
+ GTR_focus_noocracy_desc: "Science moves ahead of social constructs! They merely impede its eternal progress. That's why only those objects dedicated to its growth should be in control."
+
+ GTR_focus_rule_of_smart: "Rule Of The Smartest"
+ GTR_focus_rule_of_smart_desc: "We must strengthen the institution of University Administration and keep it at the forefront of the republican model."
+
+ GTR_focus_science_over_all: "Science Over All!"
+ GTR_focus_science_over_all_desc: "The advancement of science is the primary goal of the Technocratic Republic. We are obligated to pursue it unconditionally!"
+
+ GTR_focus_voting_cense: "IQ Tests for Voting"
+ GTR_focus_voting_cense_desc: "Not everyone is capable of voting correctly. Therefore, it's time to introduce an intellectual qualification for stupid objects."
+
+ GTR_focus_the_first_mind: "§2The First Mind§!"
+ GTR_focus_the_first_mind_desc: "The Republic must be led by the smartest object! And, naturally, that's Golfball."
+
+ GTR_focus_economics: "Bread and Books"
+ GTR_focus_economics_desc: "The Technocratic Republic now has a serious material basis for full-fledged economic construction. With the scientific approach of our objects, we will be able to do this most effectively."
+
+ GTR_focus_announcergrad_modernization: "Announcergrad Modernization"
+ GTR_focus_announcergrad_modernization_desc: "Announcergrad is the most important city of the Republic right now, while the University Campus lies in ruins. At the moment, the city is at the level of development of an average regional center, but scientific progress shall definitely turn this situation for better."
+
+ GTR_focus_public_education: "Public Schools"
+ GTR_focus_public_education_desc: "Our Republic is based on science and knowledge. We are obliged to provide good education to all objects, because the future of the entire state depends on it."
+
+ GTR_focus_talents_of_our_time: "Talents Of Our Times"
+ GTR_focus_talents_of_our_time_desc: "A huge number of geniuses and great minds dissapear due to impassable walls, blocking ways to the top. We must give way to such objects, and then we will have no equal power to us."
+
+ GTR_focus_industry_for_objects: "§7Industry For Objects§!"
+ GTR_focus_industry_for_objects_desc: "We should not forget that, in the first place, our objects shall benefit from everything we do in our Republic. We must create a modern industry in harmony with the environment for the benefit of our people."
+
+ GTR_focus_consumer_factories: "Consumer Factories"
+ GTR_focus_consumer_factories_desc: "Objects of Announcergrad have been enduring a crisis and shortages for a long time already. That is the moment to expand the technological production of consumer goods and throw them on the market!"
+
+ GTR_focus_care_for_ecology: "Care for The Environment"
+ GTR_focus_care_for_ecology_desc: "We only have one planet! Goiky must not be turned into a landfill for industrial waste. It is necessary to deploy our technological potential to reduce the negative impact of industry on the environment."
+
+ GTR_focus_wasteless_production: "Wasteless Production"
+ GTR_focus_wasteless_production_desc: "Thanks to processing technologies and full-cycle production, we will be able to put into production all the resources available to us, without harming the life of simple objects and without harming the environment."
+
+ GTR_focus_industry_for_science: "§2Industry For Science§!"
+ GTR_focus_industry_for_science_desc: "It is necessary to launch large-scale production in the near future to support our industrial potential! Though it may damage the environment and the lives of normal objects, the independence of the Republic depends on it."
+
+ GTR_focus_massive_factories: "Large Factories"
+ GTR_focus_massive_factories_desc: "Our technological breakthrough allows us to deploy production sites of unprecedented scale. We must take advantage of this."
+
+ GTR_focus_experiments_with_planning: "Computers!"
+ GTR_focus_experiments_with_planning_desc: "The use of computers for economic development is an interesting innovation that can show good results. This will greatly reduce the burden on our bureaucracy!"
+
+ GTR_focus_get_all_we_can: "Get All We Can"
+ GTR_focus_get_all_we_can_desc: "Our hills and fields store a huge amount of resources that are so necessary for the Republic. We will have to destroy the balance of nature in the name of science and technology!"
+
+ GTR_focus_elephant_in_a_room: "Elephant In The Room"
+ GTR_focus_elephant_in_a_room_desc: "The University and Campus continue to lie in ruins, and we just sit with our hands folded? Now that we have the time and resources, it's time to begin rebuilding the continent's mighty alma mater!"
+
+ GTR_focus_making_blueprints: "Drawing Blueprints"
+ GTR_focus_making_blueprints_desc: "The reconstruction of the University is a large-scale project that requires careful planning. Let's gather a team of talented engineers and think through everything down to the smallest detail!"
+
+ GTR_focus_new_professors: "Young Professors"
+ GTR_focus_new_professors_desc: "Unfortunately, a huge scientific staff was lost during the disaster at the University. Replacing them with young and energetic objects, maybe not as experienced, will somewhat fill this terrible gap."
+
+ GTR_focus_start_building: "Time To Build!"
+ GTR_focus_start_building_desc: "The foundations have been laid. It's time to begin the practical implementation of the projects of the new University!"
+
+ GTR_focus_even_better_now: "§7Even Better Now!§!"
+ GTR_focus_even_better_now_desc: "After our restoration efforts, Goiky University rises above the soil even more majestic than before!\n\nLong Live the Technocratic Republic!"
+
+ GTR_focus_military: "Defense Of The Republic"
+ GTR_focus_military_desc: "After the disappearance of the Dream Island, Goiky fell apart into small fragments, which are not always friendly. In this dangerous environment, we need to create a modern military force based on our technology."
+
+ GTR_focus_defense_tech: "Weapons Development"
+ GTR_focus_defense_tech_desc: "Our main advantage is technological progress. By going ahead in the technological structure of our weapons, we will be able to repel any invaders and aggressors."
+
+ GTR_focus_investigate_the_explosion: "Investigate The Explosion"
+ GTR_focus_investigate_the_explosion_desc: "The explosion at the University obviously did not happen magically. Something, some element, reaction or chemical composition contributed to this. Although this is a terrible tragedy, we must use this experience to strengthen our defense capabilities."
+
+ GTR_focus_power_of_yoylelite: "Power Of Yoylelite"
+ GTR_focus_power_of_yoylelite_desc: "The recent meteorite that crashed onto Satoymin will allow us to study the properties of this material, and perhaps advance our research into weapons."
+
+ GTR_focus_reform_defense_forces: "Reform Lab Security"
+ GTR_focus_reform_defense_forces_desc: "Small militias of guards can no longer cover our defense needs. The time has come to begin army reform."
+
+ GTR_focus_modern_aircraft: "Modern Aircraft"
+ GTR_focus_modern_aircraft_desc: "The airplane is the ideal product of an engineering mind and ingenuity. We must actively work in the field of aircraft manufacturing. The development of this industry opens up wide areas of application for its creations."
+
+ GTR_focus_rockets_air_ground: "Air-to-Surface Missile"
+ GTR_focus_rockets_air_ground_desc: "It's time to apply our latest aviation developments in military affairs! By equipping fighters with missiles that can carry dangerous charges, we will bring terror to aggressors and invaders!"
+
+ GTR_focus_secret_weapon: "§YThe Secret Weapon§!"
+ GTR_focus_secret_weapon_desc: "Thanks to our efforts in the military field, we were able to obtain weapons of incredible power. It's time to try it out!"
+
+ GTR_focus_final_frontier: "§3Taste Of Space§!"
+ GTR_focus_final_frontier_desc: "Our interesting scientific developments in jet engines have created the possibility of sending into space! It was decided to send a team of brave objects on the ship."
+
+ GTR_focus_modern_army: "Modern Army"
+ GTR_focus_modern_army_desc: "A modern and small army will meet the needs of our defense and will demonstrate the strength of our technology to the entire hostile environment of The Technocratic Republic."
 
  #generic
  generic_focus_industry: "Industry expansion"

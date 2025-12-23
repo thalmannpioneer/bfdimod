@@ -148,6 +148,8 @@ country_event = {
 	option = {
 		name = GDR_event.8.a
 		remove_dynamic_modifier = { modifier = idea_GDR_payments_to_gpr }
+		custom_effect_tooltip = l_money_gain_300K
+		add_to_variable = { money_amount = 3 }
 		add_timed_idea = {
 			idea = idea_GDR_greenport_agreement
 			days = 180

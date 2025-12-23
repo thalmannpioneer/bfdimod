@@ -1,486 +1,486 @@
 
 decision_BUN_raids_category = {
-	BUN_raid_state_85 = {
-		icon = GFX_decision_generic_confiscation
-		state_target = yes
+    BUN_raid_state_85 = {
+        icon = GFX_decision_generic_confiscation
+        state_target = yes
         targets = { state = 202 210 214 }
         on_map_mode = map_only
-        
-		visible = {
-			controls_state = 85
-			NOT = {controls_state = FROM}
-			NOT = {controller = {is_guaranteed_by = ROOT}}
-			NOT = {is_puppet = yes}
-			has_war = no
-			has_border_war = no
-			NOT = {has_cosmetic_tag = BUN_revolt}
-			NOT = {has_cosmetic_tag = BUN_republic}
-			check_variable = {var_BUN_raiding < 1}
-		}
 
-		complete_effect = { 
-			set_variable = { var_BUN_raiding = 2 }
-		}
+        visible = {
+            controls_state = 85
+            NOT = {controls_state = FROM}
+            NOT = {controller = {is_guaranteed_by = ROOT}}
+            NOT = {is_puppet = yes}
+            has_war = no
+            has_border_war = no
+            NOT = {has_cosmetic_tag = BUN_revolt}
+            NOT = {has_cosmetic_tag = BUN_republic}
+            check_variable = {var_BUN_raiding < 1}
+        }
 
-		fire_only_once = no
-		days_remove = 10
-		cost = 35
-		days_re_enable = 300
-		war_with_on_remove = controller
+        complete_effect = {
+            set_variable = { var_BUN_raiding = 2 }
+        }
 
-		remove_effect = {
-			FROM = {
-				damage_building = {
- 					type = infrastructure
-  					damage = 0.5
-				}
-				hidden_effect = {
-					IF = {
-						limit = {controller = {is_ai = yes}}						
-						random = {
-							chance = 15
-							controller = {
-								diplomatic_relation = {
-									country = BUN
-									relation = embargo
-									active = yes
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				add_manpower = 1000
-			}
+        fire_only_once = no
+        days_remove = 10
+        cost = 35
+        days_re_enable = 450
+        war_with_on_remove = controller
 
-			IF = {
-				limit = {
-					YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
-					YFC = {controls_state = FROM}
-				}
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 85
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.25
-						terrain_factor = 0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			ELSE = {
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 85
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.85	
-						terrain_factor = -0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			set_variable = { var_BUN_raiding = 0 }
-		}
+        remove_effect = {
+            FROM = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 0.5
+                }
+                hidden_effect = {
+                    IF = {
+                        limit = {controller = {is_ai = yes}}
+                        random = {
+                            chance = 15
+                            controller = {
+                                diplomatic_relation = {
+                                    country = BUN
+                                    relation = embargo
+                                    active = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 15
-				has_political_power > 70
-			}
-			modifier = {
-				add = -10
-				AND = {
-					FROM = {controller = {is_ai = no}}
-					FROM = {controller = {has_war = yes}}
-				}
-			}
-		}
-	}
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add_manpower = 1500
+            }
 
-	BUN_raid_state_217 = {
-		icon = GFX_decision_generic_confiscation
-		state_target = yes
-        targets = { state = 220 222 } 
+            IF = {
+                limit = {
+                    YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
+                    YFC = {controls_state = FROM}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 85
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.25
+                        terrain_factor = 0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            ELSE = {
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 85
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.85
+                        terrain_factor = -0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            set_variable = { var_BUN_raiding = 0 }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                has_political_power > 40
+            }
+            modifier = {
+                add = -10
+                AND = {
+                    FROM = {controller = {is_ai = no}}
+                    FROM = {controller = {has_war = yes}}
+                }
+            }
+        }
+    }
+
+    BUN_raid_state_217 = {
+        icon = GFX_decision_generic_confiscation
+        state_target = yes
+        targets = { state = 220 222 }
         on_map_mode = map_only
-        
-		visible = {
-			controls_state = 217
-			NOT = {controls_state = FROM}
-			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = {is_puppet = yes}
-			has_border_war = no
-			has_war = no
-			NOT = {has_cosmetic_tag = BUN_revolt}
-			NOT = {has_cosmetic_tag = BUN_republic}
-			check_variable = {var_BUN_raiding < 1}
-		}
 
-		complete_effect = { 
-			set_variable = { var_BUN_raiding = 2 }
-		}
+        visible = {
+            controls_state = 217
+            NOT = {controls_state = FROM}
+            NOT = { controller = {is_guaranteed_by = ROOT}}
+            NOT = {is_puppet = yes}
+            has_border_war = no
+            has_war = no
+            NOT = {has_cosmetic_tag = BUN_revolt}
+            NOT = {has_cosmetic_tag = BUN_republic}
+            check_variable = {var_BUN_raiding < 1}
+        }
 
-		fire_only_once = no
-		days_remove = 10
-		cost = 35
-		days_re_enable = 400
-		war_with_on_remove = controller
+        complete_effect = {
+            set_variable = { var_BUN_raiding = 2 }
+        }
 
-		remove_effect = {
-			FROM = {
-				damage_building = {
- 					type = infrastructure
-  					damage = 0.5
-				}
-				hidden_effect = {
-					IF = {
-						limit = {controller = {is_ai = yes}}						
-						random = {
-							chance = 15
-							controller = {
-								diplomatic_relation = {
-									country = BUN
-									relation = embargo
-									active = yes
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				add_manpower = 1000
-			}
+        fire_only_once = no
+        days_remove = 10
+        cost = 35
+        days_re_enable = 400
+        war_with_on_remove = controller
 
-			IF = {
-				limit = {
-					YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
-					YFC = {controls_state = FROM}
-				}
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 217
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.25
-						terrain_factor = 0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			ELSE = {
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 217
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.85	
-						terrain_factor = -0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			set_variable = { var_BUN_raiding = 0 }
-		}
+        remove_effect = {
+            FROM = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 0.5
+                }
+                hidden_effect = {
+                    IF = {
+                        limit = {controller = {is_ai = yes}}
+                        random = {
+                            chance = 15
+                            controller = {
+                                diplomatic_relation = {
+                                    country = BUN
+                                    relation = embargo
+                                    active = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 15
-				has_political_power > 70
-			}
-			modifier = {
-				add = -10
-				AND = {
-					FROM = {controller = {is_ai = no}}
-					FROM = {controller = {has_war = yes}}
-				}
-			}
-		}
-	}
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add_manpower = 1500
+            }
 
-	BUN_raid_state_218 = {
-		icon = GFX_decision_generic_confiscation
-		state_target = yes
+            IF = {
+                limit = {
+                    YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
+                    YFC = {controls_state = FROM}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 217
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.25
+                        terrain_factor = 0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            ELSE = {
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 217
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.85
+                        terrain_factor = -0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            set_variable = { var_BUN_raiding = 0 }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                has_political_power > 40
+            }
+            modifier = {
+                add = -10
+                AND = {
+                    FROM = {controller = {is_ai = no}}
+                    FROM = {controller = {has_war = yes}}
+                }
+            }
+        }
+    }
+
+    BUN_raid_state_218 = {
+        icon = GFX_decision_generic_confiscation
+        state_target = yes
         targets = { state = 222 223 }
         on_map_mode = map_only
-        
-		visible = {
-			controls_state = 218
-			NOT = {controls_state = FROM}
-			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = {is_puppet = yes}
-			has_border_war = no
-			has_war = no
-			NOT = {has_cosmetic_tag = BUN_revolt}
-			NOT = {has_cosmetic_tag = BUN_republic}
-			check_variable = {var_BUN_raiding < 1}
-		}
 
-		complete_effect = { 
-			set_variable = { var_BUN_raiding = 2 }
-		}
+        visible = {
+            controls_state = 218
+            NOT = {controls_state = FROM}
+            NOT = { controller = {is_guaranteed_by = ROOT}}
+            NOT = {is_puppet = yes}
+            has_border_war = no
+            has_war = no
+            NOT = {has_cosmetic_tag = BUN_revolt}
+            NOT = {has_cosmetic_tag = BUN_republic}
+            check_variable = {var_BUN_raiding < 1}
+        }
 
-		fire_only_once = no
-		days_remove = 10
-		cost = 35
-		days_re_enable = 400
-		war_with_on_remove = controller
+        complete_effect = {
+            set_variable = { var_BUN_raiding = 2 }
+        }
 
-		remove_effect = {
-			FROM = {
-				damage_building = {
- 					type = infrastructure
-  					damage = 0.5
-				}
-				hidden_effect = {
-					IF = {
-						limit = {controller = {is_ai = yes}}						
-						random = {
-							chance = 15
-							controller = {
-								diplomatic_relation = {
-									country = BUN
-									relation = embargo
-									active = yes
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				add_manpower = 1000
-			}
+        fire_only_once = no
+        days_remove = 10
+        cost = 35
+        days_re_enable = 400
+        war_with_on_remove = controller
 
-			IF = {
-				limit = {
-					YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
-					YFC = {controls_state = FROM}
-				}
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 218
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.25
-						terrain_factor = 0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			ELSE = {
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 218
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.85	
-						terrain_factor = -0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			set_variable = { var_BUN_raiding = 0 }
-		}
+        remove_effect = {
+            FROM = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 0.5
+                }
+                hidden_effect = {
+                    IF = {
+                        limit = {controller = {is_ai = yes}}
+                        random = {
+                            chance = 15
+                            controller = {
+                                diplomatic_relation = {
+                                    country = BUN
+                                    relation = embargo
+                                    active = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 15
-				has_political_power > 70
-			}
-			modifier = {
-				add = -10
-				AND = {
-					FROM = {controller = {is_ai = no}}
-					FROM = {controller = {has_war = yes}}
-				}
-			}
-		}
-	}
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add_manpower = 1500
+            }
 
-	BUN_raid_state_212 = {
-		icon = GFX_decision_generic_confiscation
-		state_target = yes
-        targets = { state = 24 201 } 
+            IF = {
+                limit = {
+                    YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
+                    YFC = {controls_state = FROM}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 218
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.25
+                        terrain_factor = 0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            ELSE = {
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 218
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.85
+                        terrain_factor = -0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            set_variable = { var_BUN_raiding = 0 }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                has_political_power > 40
+            }
+            modifier = {
+                add = -10
+                AND = {
+                    FROM = {controller = {is_ai = no}}
+                    FROM = {controller = {has_war = yes}}
+                }
+            }
+        }
+    }
+
+    BUN_raid_state_212 = {
+        icon = GFX_decision_generic_confiscation
+        state_target = yes
+        targets = { state = 24 201 }
         on_map_mode = map_only
-        
-		visible = {
-			controls_state = 212
-			NOT = {controls_state = FROM}
-			NOT = { controller = {is_guaranteed_by = ROOT}}
-			NOT = {is_puppet = yes}
-			has_border_war = no
-			has_war = no
-			NOT = {has_cosmetic_tag = BUN_revolt}
-			NOT = {has_cosmetic_tag = BUN_republic}
-			check_variable = {var_BUN_raiding < 1}
-		}
 
-		complete_effect = { 
-			set_variable = { var_BUN_raiding = 2 }
-		}
+        visible = {
+            controls_state = 212
+            NOT = {controls_state = FROM}
+            NOT = { controller = {is_guaranteed_by = ROOT}}
+            NOT = {is_puppet = yes}
+            has_border_war = no
+            has_war = no
+            NOT = {has_cosmetic_tag = BUN_revolt}
+            NOT = {has_cosmetic_tag = BUN_republic}
+            check_variable = {var_BUN_raiding < 1}
+        }
 
-		fire_only_once = no
-		days_remove = 10
-		cost = 35
-		days_re_enable = 400
-		war_with_on_remove = controller
+        complete_effect = {
+            set_variable = { var_BUN_raiding = 2 }
+        }
 
-		remove_effect = {
-			FROM = {
-				damage_building = {
- 					type = infrastructure
-  					damage = 0.5
-				}
-				hidden_effect = {
-					IF = {
-						limit = {controller = {is_ai = yes}}						
-						random = {
-							chance = 15
-							controller = {
-								diplomatic_relation = {
-									country = BUN
-									relation = embargo
-									active = yes
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				add_manpower = 1000
-			}
+        fire_only_once = no
+        days_remove = 10
+        cost = 35
+        days_re_enable = 400
+        war_with_on_remove = controller
 
-			IF = {
-				limit = {
-					YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
-					YFC = {controls_state = FROM}
-				}
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 212
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.25
-						terrain_factor = 0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			ELSE = {
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = 212
-						num_provinces = 1
-						on_win = YFC_borderwars.1
-						on_lose = YFC_borderwars.2
-						modifier = 0.85	
-						terrain_factor = -0.5			
-					}	
-					defender = {
-						state = FROM
-						num_provinces = 1
-						on_win = YFC_borderwars.3
-						on_lose = BUN_borderwars.5
-						dig_in_factor = 2
-					}
-				}
-			}
-			set_variable = { var_BUN_raiding = 0 }
-		}
+        remove_effect = {
+            FROM = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 0.5
+                }
+                hidden_effect = {
+                    IF = {
+                        limit = {controller = {is_ai = yes}}
+                        random = {
+                            chance = 15
+                            controller = {
+                                diplomatic_relation = {
+                                    country = BUN
+                                    relation = embargo
+                                    active = yes
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 15
-				has_political_power > 70
-			}
-			modifier = {
-				add = -10
-				AND = {
-					FROM = {controller = {is_ai = no}}
-					FROM = {controller = {has_war = yes}}
-				}
-			}
-		}
-	}
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add_manpower = 1500
+            }
+
+            IF = {
+                limit = {
+                    YFC = {has_completed_focus = YFC_focus_demand_end_pillage}
+                    YFC = {controls_state = FROM}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 212
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.25
+                        terrain_factor = 0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            ELSE = {
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 212
+                        num_provinces = 1
+                        on_win = YFC_borderwars.1
+                        on_lose = YFC_borderwars.2
+                        modifier = 0.85
+                        terrain_factor = -0.5
+                    }
+                    defender = {
+                        state = FROM
+                        num_provinces = 1
+                        on_win = YFC_borderwars.3
+                        on_lose = BUN_borderwars.5
+                        dig_in_factor = 2
+                    }
+                }
+            }
+            set_variable = { var_BUN_raiding = 0 }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 15
+                has_political_power > 40
+            }
+            modifier = {
+                add = -10
+                AND = {
+                    FROM = {controller = {is_ai = no}}
+                    FROM = {controller = {has_war = yes}}
+                }
+            }
+        }
+    }
 }

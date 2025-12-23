@@ -46,35 +46,35 @@ set_popularities = {
 #Sectors Idea (First two are for the idea and the last two are for the decisions)
  set_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
  set_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
- set_variable = { var_idea_YFC_TopHat_cost = 20 }
+ set_variable = { var_idea_YFC_TopHat_cost = 30 }
  set_variable = { var_idea_YFC_TopHat_influence = 1 }
  set_variable = { var_idea_YFC_TopHat_level = 1 }
 
  set_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
  set_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
- set_variable = { var_idea_YFC_Pipe_cost = 20 }
+ set_variable = { var_idea_YFC_Pipe_cost = 30 }
  set_variable = { var_idea_YFC_Pipe_influence = 1 }
  set_variable = { var_idea_YFC_Pipe_level = 1 }
 
  set_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
  set_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
- set_variable = { var_idea_YFC_Beaker_cost = 20 }
+ set_variable = { var_idea_YFC_Beaker_cost = 30 }
  set_variable = { var_idea_YFC_Beaker_influence = 1 }
  set_variable = { var_idea_YFC_Beaker_level = 1 }
 
  set_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 }
  set_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
- set_variable = { var_idea_YFC_Hammer_cost = 20 }
+ set_variable = { var_idea_YFC_Hammer_cost = 30 }
  set_variable = { var_idea_YFC_Hammer_influence = 1 }
  set_variable = { var_idea_YFC_Hammer_level = 1 }
 
  set_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
  set_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
- set_variable = { var_idea_YFC_Taser_cost = 20 }
+ set_variable = { var_idea_YFC_Taser_cost = 30 }
  set_variable = { var_idea_YFC_Taser_influence = 1 }
  set_variable = { var_idea_YFC_Taser_level = 1 }
 
- set_variable = { var_sectors_combined_cost = 100 }
+ set_variable = { var_sectors_combined_cost = 150 }
 
 set_variable = {var = var_YFC_BUN_Anger value = 1 } #Useless but needed for killing Neo-Bunch
 
@@ -82,7 +82,7 @@ recruit_character = YFC_yellow_face
 recruit_character = YFC_david
 recruit_character = YFC_Coiny
 
-add_manpower = 10000
+add_manpower = 5000
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment
@@ -92,6 +92,7 @@ add_equipment_to_stockpile = {
 add_ideas = free_trade
 add_ideas = idea_YFC_no_more_advertisements_foundation
 add_dynamic_modifier = { modifier = idea_YFC_anarchic_lands }
+add_ideas = idea_YFC_neglectful_command
 
 
 

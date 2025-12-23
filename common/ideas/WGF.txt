@@ -44,11 +44,11 @@ ideas = {
 		idea_WGF_coinflip = {
 			picture = WGF_coinflip
 			modifier = {
-				ai_focus_aggressive_factor = 1
+				ai_focus_aggressive_factor = 2.5
 			}
 			targeted_modifier = {
 				tag = GMD
-				attack_bonus_against = 1
+				attack_bonus_against = 0.75 #Rework this when GMD get's stuff!
 			}
 			on_remove = {
 				if = {

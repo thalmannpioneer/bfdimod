@@ -189,20 +189,26 @@ GPG_on_lawnland_progressbar_change = {
 
 BFDI_money_diplay_update = {
 	if = {
-		limit = { check_variable = { money_amount < 10} }
+		limit = { check_variable = { money_amount < -10} } #-1M
+		set_variable = { display_state = 2 }
+		set_variable = { display_money = money_amount }
+		divide_variable = { display_money = 10 }
+	}
+	else_if = {
+		limit = { check_variable = { money_amount < 10} } #100K
 		set_variable = { display_state = 1 }
 		set_variable = { display_money = money_amount }
 		multiply_variable = { display_money = 100 }
 	}
 	else_if = {
-		limit = { check_variable = { money_amount < 10000 } }
+		limit = { check_variable = { money_amount < 10000 } } #1M
 		set_variable = { display_state = 2 }
 		set_variable = { display_money = money_amount }
 		divide_variable = { display_money = 10 }
 	}
-	else = {
+	else = { #1B
 		set_variable = { display_state = 3 }
-		set_variable = { display_money = money_amount }
+		set_variable = { display_money = money_amount } 
 		divide_variable = { display_money = 10000 }
 	}
 }

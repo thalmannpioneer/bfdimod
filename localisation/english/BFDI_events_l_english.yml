@@ -387,6 +387,22 @@
  GPG_event.47.t: "The Wind Changes Directions!"
  GPG_event.47.desc: "With Pie winning the vote it seems that not only were some of our council members unhappy, but one of our generals. Cloudy had submitted his resignation a few hours ago citing 'Disillusioned with the current government'. For now, it seems that he will not be with us in the upcoming days."
  GPG_event.47.a: "Interesting..."
+
+ GPG_event.48.t: "Industrial cooperation with Technocrats"
+ GPG_event.48.desc: "Announcergrad Government continues to expand its cooperation with us: they offer to send their scientific specialists in exchange for experience from our industry. This is a rather lucrative offer."
+ GPG_event.48.a: "Of Course!"
+
+ GPG_event.49.t: "Open Borders with Technocrats"
+ GPG_event.49.desc: "The government of Announcergrad has proposed a mutual easing of border controls between our countries. This will significantly increase trade between Announcergrad and Casland and generally improve communication between us."
+ GPG_event.49.a: "Great!"
+
+ GPG_event.50.t: "Mutual Assistance Pact with Announcergrad!"
+ GPG_event.50.desc: "We have been cooperating with the Technocratic Republic for quite some time now. This has resulted in a mutual defense agreement against aggressors and invaders! It is quite possible that this friendly action will lead to even greater cooperation between our countries in the future."
+ GPG_event.50.a: "Five fingers are a fist!"
+
+ GPG_event.51.t: "Relations with Announcergrad"
+ GPG_event.51.desc: "We recently sent negotiators to Announcergrad to establish relations with the local government. It appears they returned with good news: the technocratic government is quite willing to do business with us. Perhaps this marks the beginning of a long and fruitful partnership."
+ GPG_event.51.a: "Brain and Heart are friends again?"
  
  #GDR
  GDR_event.1.t: "Battle For Democracy"
@@ -878,7 +894,7 @@
 
  YFC_BUN.16.t.a: "Rights of Defence." #IF revolt somehow already happened
  YFC_BUN.16.desc.a: "This was an, in hindsight, an easy mission. It shouldn't have taken any more than a couple of months to pacify the former, now neo, Bunchivist populations. But now, the Neo-Bunchivists are armed, even moreso than our forces. It has been much of a headache for us and the security forces fighting this revolt. At this rate, if things don't get better, we may have much more problems...\n\nThose were our thoughts this morning. \nThis afternoon, we discovered that some of the profit and expense numbers from one of our sectors were miscalculated, and that we have a surplus of funds waiting to be used."
- YFC_BUN.16.a: "THEN PUT EVERYTHING INTO CRUSHING THEM!"
+ YFC_BUN.16.a: "Then put everything into crushing them!" 
 
  YFC_BUN.16.t.b: "Fiddling some of the numbers." #IF already cored
  YFC_BUN.16.desc.b: "As with every month, we get a report on our profits and expenses. However, an hour after that report was handed to us one of our employees rushed into our discussion room. This act is very frowned upon and would normally cause a decrease in pay, but it came with great news! It turns out that some of the economic numbers were mismatched and we have a surplus of funds lying around to put into something. So what is that something we put our funds into?"
@@ -954,6 +970,114 @@
  YFC_BUN.31.desc: ""
  YFC_BUN.31.a: ""
 
+ #When you are done with a event put a "Sector Update" in the title!
+ #Also write is if that make sense if the event goes off a few times!
+ #ZDubbz
+
+ YFC_sector.1.t: "Top Hat vs Taser arguement"
+ YFC_sector.1.desc: "Both are fighting over Police contorl (Cost, placement, use)"
+ YFC_sector.1.a: "Side with Top Hat"
+ YFC_sector.1.b: "Side with Taser"
+
+ YFC_sector.2.t: "Hammer vs Pipe arguement"
+ YFC_sector.2.desc: "Both are fighting over some of the railways (Such as repairing and workers)"
+ YFC_sector.2.a: "Side with Hammer"
+ YFC_sector.2.b: "Side with Pipe"
+
+ YFC_sector.3.t: "Beaker vs Hammer arguement"
+ YFC_sector.3.desc: "Both are fighting over something idk (Maybe where to put funds/work)"
+ YFC_sector.3.a: "Side with Beaker"
+ YFC_sector.3.b: "Side with Hammer"
+
+ YFC_sector.4.t: "Taser vs Beaker arguement"
+ YFC_sector.4.desc: "Both are fighting over something idk (Maybe over Electronics usage or funds)"
+ YFC_sector.4.a: "Side with Taser"
+ YFC_sector.4.b: "Side with Beaker"
+
+ YFC_sector.5.t: "Top Hat vs Pipe arguement"
+ YFC_sector.5.desc: "Both are fighting over fighting resistance and/or useage of police/media"
+ YFC_sector.5.a: "Side with Top Hat"
+ YFC_sector.5.b: "Side with Pipe"
+
+ YFC_sector.6.t: "Top Hat Bribe"
+ YFC_sector.6.desc: "Top Hat wants to Bribe us"
+ YFC_sector.6.a: "Take the Bribe"
+ YFC_sector.6.b: "Decline the Bribe"
+
+ YFC_sector.7.t: "Pipe Bribe"
+ YFC_sector.7.desc: "Pipe wants to Bribe us"
+ YFC_sector.7.a: "Take the Bribe"
+ YFC_sector.7.b: "Decline the Bribe"
+
+ YFC_sector.8.t: "Beaker Bribe"
+ YFC_sector.8.desc: "Beaker wants to Bribe us"
+ YFC_sector.8.a: "Take the Bribe"
+ YFC_sector.8.b: "Decline the Bribe"
+
+ YFC_sector.9.t: "Hammer Bribe"
+ YFC_sector.9.desc: "Hammer wants to Bribe us"
+ YFC_sector.9.a: "Take the Bribe"
+ YFC_sector.9.b: "Decline the Bribe"
+
+ YFC_sector.10.t: "Taser Bribe"
+ YFC_sector.10.desc: "Taser wants to Bribe us"
+ YFC_sector.10.a: "Take the Bribe"
+ YFC_sector.10.b: "Decline the Bribe"
+
+ YFC_sector.11.t: "Pipe vs Hammer vs Taser arguement"
+ YFC_sector.11.desc: "They are fighting over something idk (Maybe construction/funds)"
+ YFC_sector.11.a: "Side with Pipe"
+ YFC_sector.11.b: "Side with Hammer"
+ YFC_sector.11.c: "Side with Taser"
+
+ YFC_sector.12.t: "Beaker vs Top Hat vs Taser arguement"
+ YFC_sector.12.desc: "They are fighting over something idk (Maybe something with police/army tech I really do not know)"
+ YFC_sector.12.a: "Side with Beaker"
+ YFC_sector.12.b: "Side with Top Hat"
+ YFC_sector.12.c: "Side with Taser"
+
+ YFC_sector.13.t: "Pipe vs Top Hat vs Taser arguement"
+ YFC_sector.13.desc: "They are fighting over something idk (Maybe something with police/army and/or supply)"
+ YFC_sector.13.a: "Side with Pipe"
+ YFC_sector.13.b: "Side with Top Hat"
+ YFC_sector.13.c: "Side with Taser"
+
+ YFC_sector.14.t: "Pipe vs Hammer vs Beaker arguement"
+ YFC_sector.14.desc: "They are fighting over something idk (Maybe something with building and/or tech over building)"
+ YFC_sector.14.a: "Side with Pipe"
+ YFC_sector.14.b: "Side with Hammer"
+ YFC_sector.14.c: "Side with Beaker"
+
+ YFC_sector.15.t: "Top Hat vs Hammer vs Beaker arguement"
+ YFC_sector.15.desc: "They are fighting over something idk (Maybe something over funds or something I really do not know)"
+ YFC_sector.15.a: "Side with Top Hat"
+ YFC_sector.15.b: "Side with Hammer"
+ YFC_sector.15.c: "Side with Beaker"
+
+ YFC_sector.16.t: "...Top Hat seizes some control!"
+ YFC_sector.16.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.16.a: "Curse them!"
+
+ YFC_sector.17.t: "...Pipe seizes some control!"
+ YFC_sector.17.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.17.a: "Curse them!"
+
+ YFC_sector.18.t: "...Beaker seizes some control!"
+ YFC_sector.18.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.18.a: "Curse them!"
+
+ YFC_sector.19.t: "...Hammer seizes some control!"
+ YFC_sector.19.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.19.a: "Curse them!"
+
+ YFC_sector.20.t: "...Taser seizes some control!"
+ YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.20.a: "Curse them!"
+
+ YFC_sector.21.t: "EMERGENCY"
+ YFC_sector.21.desc: "So YFC is now in debt. The sectors are not gonna work with us till this is fixed. So yeah the player should fix it or something"
+ YFC_sector.21.a: "An Unprecedented Disaster!"
+
  BUN_YFC.1.t: "The Yellow Facer Ideology Crumbles." #if eraser is killed or working in the YFC's govt
  BUN_YFC.1.desc: "We're finally free! After our defeat in the war with the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Sadly, Eraser is nowhere to be found, and Pen's been killed. Blocky, that traitor, decided to side with the Corporation, so, there's no one directly in line to really head anything. We'll sort that out later, for now, we've gotta make sure this revolution doesn't die!"
  BUN_YFC.1.a: "The Bunch, forever and always!"
@@ -980,9 +1104,9 @@
  BUN_YFC.5.b: "We'll chart our own course for now."
 
  BUN_YFC.6.t: "A Ceasefire?" #YFC sees this
- BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to attempt to 'save face,' as the kids say. The offer itself is simple, us losing all gained territory, in exchange for them demilitarizing Snowpath; giving us some resource rights; a large sum of money, and us both signing a pact of non-aggression. Though it seems like quite the compromise, the sectorials believe the opposite. Top Hat says that 'diverting excess resources to the war could've led us to a quicker victory,' and that the 'incompetence of management' was to blame for this affair. The others agree with him, unfortunately. Frankly, we have not been devoting as much to this as possible, and Top Hat did indeed say he had a better plan for this war, but it would take a significant amount of resources and planning. Should we go through with the ceasefire, or wait for Top Hat to be able to enact his plan?"
+ BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to attempt to 'save face,' as the kids say. The offer itself is simple, us losing all gained territory, in exchange for them giving us some resource rights; a large sum of money, and us both signing a pact of non-aggression. Though it seems like quite the compromise, the sectorials believe the opposite. Top Hat says that 'diverting excess resources to the war could've led us to a quicker victory,' and that the 'incompetence of management' was to blame for this affair. The others agree with him, unfortunately. Frankly, we have not been devoting as much to this as possible, and Top Hat did indeed say he had a better plan for this war, but it would take a significant amount of resources and planning. Should we go through with the ceasefire, or wait for Top Hat to be able to enact his plan?"
  BUN_YFC.6.a: "Agree to the Ceasefire." #Still the same
- BUN_YFC.6.b: "Let him try." #YFC ingores the idea of a Ceasefire
+ BUN_YFC.6.b: "Give Top Hat time." #YFC ingores the idea of a Ceasefire
 
  BUN_YFC.7.t: "RE: Corresponding on the Counterattack; Top Hat." #YFC sees this
  BUN_YFC.7.desc: "Yellow Face,\nI write to you today as to inform you that I have completed all requirements for the counter attack. I have sufficient amounts of men, guns, will, motivation, courage, and of course, equity. This plan will involve bold and newfound strategy, the likes of which has not seen neither Southern nor Eastern Goiky. However, I can assure you of the obtusity of ignoring an opportunity such as this one. Simply from monitoring frontlines, and listening to conversations had between Bunchivists, my men and I have become certain that the Bunchivist rebels are entirely unaware of the plans that I have, and have no means of learning of them. We were also able to deduce that they are extraordinarily weak, and will likely crumble on the offensive. Given your status as CEO, I of course require permission before sending this power forward. If you could respond in due time, that would be marvelous.\nTop Hat, Yellow Face Corporation, Military Sectorial"
@@ -990,11 +1114,11 @@
 
  BUN_YFC.8.t: "The final battle is upon us!" #BUN sees this
  BUN_YFC.8.desc: "From some eavesdropping, we were able to figure out that the Yellow Facers are planning some type of large offensive. We'd say more, but the object who *was* eavesdropping got his arm exploded by a grenade shortly after, and isn't... doing to well, to say the least. Actually, saying the most here, he's probably gonna die. Anyways, we should probably stay alert and, like, fight good."
- BUN_YFC.8.a: "Yeah" 
+ BUN_YFC.8.a: "Yeah! Hold the line!" 
 
  #GOIKY TECHNOCRATIC REPUBLIC
  GTR_event.1.t: "Gaudeamus Igitur"
- GTR_event.1.desc: "\"It's still not over!\" Golf Ball emotionally shouted in her characteristic voice. She was up late again, working on the Dream Island Restoration Project. Over the weeks, the former BFDI contestant had established a team at the university, with the intent of recreating the island. Tennis Ball's past words about state management from when they were together in the TLC continued to eat at her. His words about stupid things like 'bureaucracy' and 'proper suply lines,' rang through her head. Tennis Ball had likely been right about needing organized administration, but who the hell could concern themselves with that when the possibility of saving a whole civilization was at their fingertips?! We are on the verge of a breakthrough, we can't worry ourselves about governments!"
+ GTR_event.1.desc: "\"It's still not over!\" Golf Ball emotionally shouted in her characteristic voice. She was up late again, working on the Dream Island Restoration Project. Over the weeks, the former BFDI contestant had established a team at the university, with the intent of recreating the island. Tennis Ball's past words about state management from when they were together in the TLC continued to eat at her. His words about stupid things like 'bureaucracy' and 'proper supply lines,' rang through her head. Tennis Ball had likely been right about needing organized administration, but who the hell could concern themselves with that when the possibility of saving a whole civilization was at their fingertips?! We are on the verge of a breakthrough, we can't worry ourselves about governments!"
  GTR_event.1.a: "We can still save everything."
  
  GTR_event.2.t: "Blurred Microscope"
@@ -1042,19 +1166,23 @@
  GTR_event.12.a: "\"I- yeah! I can take you there. You, uh, need a pass for now, though.\""
 
  GTR_event.13.t: "At the right time, in the right place"
- GTR_event.13.desc: "\"Wait, so, you were with the raiders?\" Uranium asked. They had been driving to the ruins of the University for the last hour, having started nearly immediately after Uranium found Tennis Ball. The border guard had sent a message to his superiors, but they hadn't responded yet, likely due to the late hour. Uranium's truck was a little dirty, which he didn't feel embarrased by until Tennis Ball had entered the car, and he had to sweep aside some empty beer bottles.\nTennis Ball chuckled slightly, before responding again, \"Unfortunately. After Goiky had collapsed, I was trying to find the university. Golf Ball had always told me she'd move there after getting out of the TLC. I got a bit lost, ended up in Podgornyv, the Bunch's capital, and Pen convinced me to work with him. He told me it'd be temporary, but I guess Eraser and Blocky had other ideas. I was stuck there for months, they were always threatening and bribing me.\"\n For a short while after Tennis Ball's response, the truck remained silent. Just driving through endless green hills and meadows, passing by trees and small animals. Because, how could Uranium respond to that at all? Of course he had heard about the raiders, all their banditry. Even with the isolated nature of the University Administration, he had still heard much about them. The terror, the burning, the destruction, the death, the killing, the blood. Gosh, the blood. Those same people had kidnapped Tennis Ball, made him run until he couldn't feel his legs anymore, forced him silent for the first hour of the ride. Uranium could barely believe it. \nAttempting to break the tension, he attempted another, more lighthearted question, \"Must've, uh, sucked ass working with them, right?\"\nChuckling again, this time a bit louder, Tennis Ball responded again. \"Oh, they were the *worst.* I mean, you think the guys leading such a strong and loyal army would be smarter, but they didn't even know anything about the research they were forcing me to do. I mean, I don't think they could tell the Big Dipper from the Little if they tried.\"\n At that, Uranium laughed heartily. From then on, he felt as if he'd really never be able to understand why people disliked Tennis Ball's presence, during BFDI."
- GTR_event.13.a: "A good destressor after months of the Bunch!"
+ GTR_event.13.desc: "\"Wait, so, you were with the raiders?\" Uranium asked. They had been driving to the ruins of the University for the last hour, having started nearly immediately after Uranium found Tennis Ball. The border guard had sent a message to his superiors, but they hadn't responded yet, likely due to the late hour. Uranium's truck was a little dirty, which he didn't feel embarrased by until Tennis Ball had entered the car, and he had to sweep aside some empty beer bottles.\nTennis Ball chuckled slightly, before responding again, \"Unfortunately. After Goiky had collapsed, I was trying to find the university. Golf Ball had always told me she'd move there after getting out of the TLC. I got a bit lost, ended up in Podgornyv, the Bunch's capital, and Pen convinced me to work with him. He told me it'd be temporary, but I guess Eraser and Blocky had other ideas. I was stuck there for months, they were always threatening and bribing me.\"\n For a short while after Tennis Ball's response, the truck remained silent. Just driving through endless green hills and meadows, passing by trees and small animals. Because, how could Uranium respond to that at all? Of course he had heard about the raiders, all their banditry. Even with the isolated nature of the University Administration, he had still heard much about them. The terror, the burning, the destruction, the death, the killing, the blood. Gosh, the blood. Those same people had kidnapped Tennis Ball, made him run until he couldn't feel his legs anymore, forced him silent for the first hour of the ride. Uranium could barely believe it. \nAttempting to break the tension, he attempted another, more lighthearted question, \"Must've, uh, sucked ass working with them, right?\"\nChuckling again, this time a bit louder, Tennis Ball responded again. \"Oh, they were the *worst.* You'd think the guys leading such a strong and loyal army would be smarter, but they didn't even know anything about the research they were forcing me to do. I mean, I don't think they could tell the Big Dipper from the Little if they tried.\"\n At that, Uranium laughed heartily. From then on, he felt as if he'd really never be able to understand why people disliked Tennis Ball's presence, during BFDI."
+ GTR_event.13.a: "A good destressor after months of Bunchivist terror"
 
- GTR_event.14.t: "Arriving at the office"
- GTR_event.14.desc: "Everything Golfball has done recently has been a reflection on its own failures and miscalculations. Almost the entire campus was destroyed, valuable technologies were lost, not to mention our lost objects. In this situation, when we need a strong leader, Golfball is no longer capable of ruling alone. But Tennis Ball's arrival has had an inspiring effect even on her, not to mention the other residents of Announcergrad. His fresh ideas and administrative talent, despite his somewhat reserved nature, may help us to endure these hard times."
- GTR_event.14.a: "Tennis Ball can be trusted."
+ GTR_event.14.t: "Arriving at the office" #splitting event 14 into two events as well.....
+ GTR_event.14.desc: "Though the radient sun's shining should've made things much more 'upbeat,' the black, burnt debris of what was once the university's campus really put a damper on the mood of the ride. Uranium was nearly finished driving; just a couple more turns and he'd be sending Tennis Ball on his way. Though, honestly? He felt kind of bad about doing so. I mean, leaving someone alone in this wasteland was already bad enough, but leaving him with Golf Ball? Much worse. It wasn't as if Uranium didn't like Golf Ball, or anything--she was great--but everyone knew that she hadn't really been 'the same,' ever since the incident happened here. She'd been fervently blaming herself for nearly everything. The failure of the project, the explosion itself, the Announcergrad Famine, all of the lost technologoies, the deaths. She'd been blaming herself for the deaths a lot. Golf Ball wasn't as inspiring to be around has she had been when Uranium had first signed up to be a border guard. \nWait, speaking of him being a border guard, his shift technicaly hadn't even ended yet. He was three hours away from his post.\nWas he gonna get fired?\nLuckily, Golf Ball's Laboratory mangaged to survive. That's where the object spent most of her time, now. Wallowing in her own sadness. Speaking of the building, Uranium was approaching its entrance. He stopped the vehicle, \"Um, I think this is as far as I'm allowed to go. Golf Ball's in there most of the time now, not like there's anywhere else for her to be.\" He laughed awkwardly before stopping quickly. Maybe now wasn't the time to be making jokes.\nIn a monotone, Tennis Ball responded, \"Right. Thank you for driving me out here, I'll make sure someone hears about your kindness. Hopefully you can be compensated for all this.\" He waved with his foot, before stepping out of the truck, and starting down the steps that lead to his best friend."
+ GTR_event.14.a: "I wish you good luck, Tennis Ball"
+
+ GTR_event.14-1.t: "Friends"
+ GTR_event.14-1.desc: "Golf Ball had been intermittently conscious for what she had believed to be the past week. Neither the concept of 'going to sleep,' nor the concept of 'waking up,' held any significance, to her. Simply, she was. Whenever she was given the grace to think, the grace to reflect, the only thing that came to her were visions and memories of the mistakes she had made. Her mishandling of a population of individuals led to the deaths of thousands. Tens of thousands, even. And now? She didn't know what to do; she was scared of making the same decisions. Leading those who trusted her to a world so opposite of the word 'ideal.' She believed in the likelihood of her demise, and accepted it fully. For, after the deaths of thousands, what was one more to the world? Revenge.\nShe felt herself drifting again; she didn't enjoy being awake much these days. Maybe she'd have time to think back on her transgressions more in the future. She hoped not. Her eyelids began to feel heavy, and she rolled onto her back. She stared at the ceiling above her. The only reason she was alive now was because of it; because of this building rather. Her lab. The very lab she had prohibited objects from entering, regardless of circumstance.\n\nImagine Golf Ball's surprise when an object entered. She hadn't seen another object in weeks, and she definitely didn't expect to see one now, no less Tennis Ball. Tennis Ball looked to be quite concerned, by the time Golf Ball came to recognize his precense. He was all worn out from something. What that 'something,' had been, she didn't know. She noticed something about his tone of voice as he began speaking. \"Golfie? How've you been? Also, if you don't mind me asking... what happened out there?\" Was that concern? \nAfter a small amount of silence, Golf Ball sat up, remembering that she had to respond to people when they asked her questions. Speaking slowly, she replied, \"Hello, Tennis Ball. I'm doing horribly, and so is everything else here.\" \nA sort of calming quiet washed over the small room of the laboratory as Tennis Ball thought. He was choosing his words carefully, it seemed. His own thoughts gave Golf Ball more time to think as well, realizing that this was Tennis Ball. Her best friend, the other half of her only duo. He had come all the way from wherever he was before just to help her. She realized that people cared for her. Tennis Ball cut the silence, \"Well, can we make things better?\" And from that termination of quiet, the full weight of her own purpose fell onto her, all at once. Making things better was what she had always set out to do, why give it up? It would take her a while to fully realize the meaning of Tennis Ball's return, what he meant to her, but finally, she came to a conclusion."
+ GTR_event.14-1.a: "Tennis Ball can be trusted."
 
  GTR_event.15.t: "Excavations"
  GTR_event.15.desc: "During the rescue operations, we were able to retrieve numerous valuable technologies and locate some survivors, who were successfully transported to Announcergrad. This will somewhat improve our harsh situation."
  GTR_event.15.a: "Worderful job everyone!"
 
  GTR_event.16.t: "Political Refugees"
- GTR_event.16.desc: "Some talented minds are fleeing from Casland, too. We shouldn't let their potential get lost. Only by our combined intellect, we can survive these harsh times."
+ GTR_event.16.desc: "Some talented minds are fleeing from Casland, to our Administrative borders. We shouldn't let their potential go to waste! Only by our combined intellect, we can survive these harsh times, and possibly come out of them even stronger."
  GTR_event.16.a: "Welcome!"
 
  GTR_event.17.t: "Aid for Announcergrad?"
@@ -1063,20 +1191,60 @@
  GTR_event.17.b: "Not our jurisdiction."
 
  GTR_event.18.t: "Aid arrived!"
- GTR_event.18.desc: "We have received humanitarian aid from sympathetic objects from another land!"
+ GTR_event.18.desc: "We have received humanitarian aid from sympathetic objects in [FROM.GetName]!"
  GTR_event.18.a: "Excellent!"
 
  GTR_event.19.t: "Discussion"
- GTR_event.19.desc: "'Shut your filthy mouth!' - Golfball's anger found it's way out pretty easily.\n'I would rather die than let you cut finances for this project!'\n\nHeavy silence occupied the building.\nTennis Ball interrupted it.\n\n'Listen, Golfie, I think you are too harsh. This will not last forever, we will catch that up later! Besides, it's pretty harsh for us with resources. Maybe you can reconsider this offer?'"
- GTR_event.19.a: "'Maybe, you are right.'"
+ GTR_event.19.desc: "\"Do you not see how idiotic that suggestion is?\"On another late night in the Lab, Golf Ball once again found herself losing her temper, with Tennis Ball at the receiving end of her anger. Continuing her effuse, she added \"Diverting any resources from a project that has already been started is nothing short of irresponsible!\" She let her words hang in the air for a moment afterward, hoping that the terminatory tone she held would make her lab partner faulter. A silence fell over the room for a short while, as Tennis Ball began to think over his next words carefully.\nAfter a long moment, Tennis Ball took a small, yet noticeable breath in, before arguiing, \"I don't mean to be harsh, but, there's no backing to your claim at all. I just think you're being a bit too dismissive of the people out there. I mean, you're not just a scientist anymore, Golfie, you're a leader! Diverting resources to Announcergrad has no downsides for anyone but you.\" Tennis Ball felt a little uneasy after speaking, he didn't often confront Golf Ball in this way. Luckily, her response surprised him."
+ GTR_event.19.a: "\"... I suppose you are correct.\""
 
  GTR_event.20.t: "Celebrations"
- GTR_event.20.desc: "The unfurled banners with graphs of the logarithmic function on them filled Cappy with confidence in the future.\n'It's not that bad. Rations have increased, and the smog-bearing southern winds have died down.'\n\nThese thoughts made her soul warm.\nThe image of Grape came to mind.\n'He would be happy if he saw this.' - an unstoppable train of thought stopped at the same old station.\n\nA noisy rally on the street distracted her. Objects, joyful, loud, their irrepressible ardor is coloring the banners with a thunderous 'Republic!'.\n\nWe have all lost someone..."
- GTR_event.20.a: "...but we shall move on."
+ GTR_event.20.desc: "The celebrations in Announcergrad filled Cappy with a sense of national pride that she didn't think she'd ever have. From the balcony on which she stood, she watched in awe as the parades of flags and banners of University symbols and graphed mathematical functions alike soared through the newly paved streets of the city. Things were getting better, anyone could see that to be true. Rations were getting larger, actually satiating objects' hunger, the smog filled winds from the south had started thinning out, and management was starting to finally listen to the objects over which the presided. The image of an old friend from a while ago came to Cappy's mind. Grape, he was always much more into the idea of the University Administration than she. She felt her soul warm at the realization that he'd love this sight just as much as the city seemed to love making it, she just wished he could've been here with her. Her thoughs halted as she heard another noisy rally march near, holding flags and banners all the same. Objects, joyful, loud, irrepressibly filled with ardor, filled the city's afternoon streets with a thunderous roar of \"Republic!\"\nWe all may have lost someone..."
+ GTR_event.20.a: "...but we shall all move on."
 
- GTR_event.21.t: "Bossy Bot"
+ GTR_event.21.t: "Bossy Bot" #mejoraré
  GTR_event.21.desc: "'Tennis Ball, you are too herbivorous!' - Now Golfball is saying it out loud.\n\n'To survive, we need tougher measures! We need a clear plan and smart leadership, smart objects like ME!'\n\nGB's interrupting the awkward silence with a continuation.\n'We can't rely on these fools from the city, we need a strong government!'\n\nTennis Ball looked down at the table."
  GTR_event.21.a: "'Awwwww, okaaaaaaaaaaay'"
+
+ GTR_event.22.t: "Old Connections" #mejoraré
+ GTR_event.22.desc: "Entering Announcergrad, the Calsand parliamentarians saw an ordinary goikean town, as battered by crisis and devastation as their homeland. On the streets, they saw cheerful objects who believed in the future. There was reason to believe, as the situation had improved significantly over the past month. Things improved in Casland too: the noise of political unrest died down, and the streets stopped ringing with murders.\n\nFinding a small building with a sign reading \"Goiky University Administration\", three objects entered inside.\n\n\n...- \"HAVE YOU DECIDED TO SQUANDER ALL OUR BELONGINGS?!\"\nGolfball flared up with anger when she heard Tennis Ball agree to the parliamentarians' proposal.\n\n\"I think the Republic needs allies. You're just too biased!\" - Tennis Ball resisted."
+ GTR_event.22.a: "Let's make contacts with Casland."
+ GTR_event.22.b: "Send 'em back!"
+
+ GTR_event.23.t: "Rails and Sleepers"
+ GTR_event.23.desc: "There had been no trains running on the Lofty-Satoymin branch for several months. The young conductor, Pawny, dozing in his cab during a long shift, didn't notice that someone had reset the levers, and the mile-long, coal-filled train was rushing straight along the old branch.\n\nPawny woke to the sound of the border outpost's siren. Rapid movement, and the wheels sparked. Raised hands. Border guards' rifles.\n\n...\"There's gonna some problems for me at the depot.\""
+ GTR_event.23.a: "Why not reopen this old branch?"
+ GTR_event.23.b: "Confiscate the train."
+
+ GTR_event.24.t: "By ourselves"
+ GTR_event.24.desc: "There's not a single fragment of Goiky left around the Republic capable of constructive dialogue. Under these circumstances, surrounded by crazed radicals and thugs, the Republic is forced to remain cool in its foreign diplomacy and harden its heart to protect itself from potential aggression."
+ GTR_event.24.a: "We have nothing else to do."
+
+ GTR_event.25.t: "Our Path"
+ GTR_event.25.desc: "The Republic faces a difficult choice regarding its inner policy. Tennis Ball advocates for expanding the ruling circles and strengthening the role of democracy, while Golfball favors preserving the powers of the University Administration and strengthening the role of the intellect in governance for the further development of science.\n\nWhich path will the Republic take?"
+ GTR_event.25.a: "Democracy!"
+ GTR_event.25.b: "Noocracy!"
+
+ GTR_event.26.t: "Path of Our Industry"
+ GTR_event.26.desc: "Tennis Ball and Golfball are in dispute over the direction of industrial development. Tennis Ball favors small, technologically advanced, environmentally friendly factories scattered over a large area, while Golfball wants large-scale industry and is not particularly concerned about the environment.\n\nWhat plan will the Republic adopt?"
+ GTR_event.26.a: "Industry for Objects!"
+ GTR_event.26.b: "Industry for Science!"
+
+ GTR_event.27.t: "Ivy League"
+ GTR_event.27.desc: "Thanks to the scientific collaboration between Casland and Announcergrad, a decision was made between the University of Goiky and Casland University to create a unified research community through which objects can share contemporary problems in the natural sciences and other disciplines. This will significantly strengthen cooperation between [?206.owner.GetName] and the Technocratic Republic."
+ GTR_event.27.a: "Glory to our Science!"
+
+ GTR_event.28.t: "Homesickness" #mejoraré
+ GTR_event.28.desc: "\"Hi, Mom.\n\nHow are you? Things are now better for you there, as I've heard. Dad read in the newspapers that you have electricity again at home.\nThings aren't easy here. Dad and the other adults had to build a house out of REAL TREES themselves! But at least we're safe here. I can go for walks as much as I want! You was always forbidding me this at home! Dad even made a swing set for me and my friends!\nDad feels better too, I can feel it. He was always so nervous in the city, but now he breathes easier. But he's worried about you.\nI'm worried about you too. We all want to go home as soon as possible!\n\nThey say we don't have to be afraid to return now. That the border has opened. Dad says the same. But he's always arguing with others. They say he's a traitor. But my Dad isn't a traitor! We just want to go home! How is that traitorous? :(\n\nIt's hard to send letters here, the mail doesn't come often, and Dad says the postman is a bostard. I don't know what that means, but it's probably bad.\n\nAnyway, Mom, wait for us, we'll be home soon!\nWe all hope you are fine!\""
+ GTR_event.28.a: "Good Luck, Little One!"
+
+ GTR_event.29.t: "Gold Rush"
+ GTR_event.29.desc: "A backwater bar on the outskirts of Wilopede had been full of strangers the last few evenings. No one asked names, and why would they? Nobody really cares here. Most of the customers here now are profit hunters who have forgotten the concept of home, and just seeking for some profit.\n\n\"I'm telling you, this branch will be one of the most profitable in all of Goiky! Brother, have you heard about the artificial crystals from Announcergrad? And about the flowers in Greenheart?\nThis produt is crazy! Thugs will tear you apart for it if you decide to transport it across the northern plain. Now imagine the opportunities that the railway opens up!\"\n\nA drunk-ish Cotton traced his finger across the stained map, tracing the trajectory of the newly opened Lofty-Announcergrad line. Pebble hung on his every word, as if under a spell, and the other objects around him weren't above listening, either."
+ GTR_event.29.a: "\"Tell more, tell more!\""
+
+ GTR_event.30.t: "Lofty Intergration"
+ GTR_event.30.desc: "Thanks to our cooperation with [SRR.GetName] we managed to incorporate the city of Lofty! This will massively improve our position in the north and make our economical condition better."
+ GTR_event.30.a: "Wonderful!"
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
@@ -1250,7 +1418,7 @@
 
  bfdinews_cities.8.t: "END OF CASLAND!"
  bfdinews_cities.8.desc: "Casland, the very heart of Goiky, had been taken by the flag of [206.controller.GetName] on [?global.date.GetDateStringNoHourLong]. [GPG.GetLeader] had held press statements before the battle that the city would be 'held at all costs'. The defenders had prepared to defend their homes with obstacles, strong points, and traps inside the city. The fighting was fierce and deadly with each house costing more blood to capture. However, the preparations were not enough to withstand the waves of attackers and were soon pushed into only a few key sections of the city. One of the last points to fall was the Recommended Characters Council, where the defenders fought to the very last object. The government itself is nowhere to be seen, but is believed to have fled."
- bfdinews_cities.8.a: "The very Heart, borken..."
+ bfdinews_cities.8.a: "The very Heart, broken..."
  bfdinews_cities.8.b: "Being the Heart of Goiky was not enough..."
  bfdinews_cities.8.c: "The Heart is now ours!"
 

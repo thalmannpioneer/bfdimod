@@ -1704,4 +1704,289 @@ SpriteTypes = {
 		play_on_show = yes
 		allwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_new_government"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_new_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_looking_outside"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_looking_outside.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_contacts_with_casland"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_contacts_with_casland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_collective_research"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_collective_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_casland_industry"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_casland_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_open_borders"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_open_borders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_mutual_protection"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_mutual_protection.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_all_roads_to_centrogoiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_all_roads_to_centrogoiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_develop_railroad_tech"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_develop_railroad_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_start_the_trains"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_start_the_trains.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_aid_for_centrogoiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_aid_for_centrogoiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_integrate_lofty"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_integrate_lofty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_behind_steel_walls"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_behind_steel_walls.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_heaven_for_research"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_heaven_for_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_recruitment_campaign"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_recruitment_campaign.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_strict_border_control"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_strict_border_control.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_privacy_of_innovation"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_privacy_of_innovation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_brain_of_goiky"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_brain_of_goiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_republican_affairs"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_republican_affairs.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_democracy"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_democracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_reform_rulership"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_reform_rulership.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_science_for_objects"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_science_for_objects.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_GTR_wide_ruling_horizontal"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_wide_ruling_horizontal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_role_of_presidency"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_role_of_presidency.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_noocracy"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_noocracy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_rule_of_smart"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_rule_of_smart.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_science_over_all"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_science_over_all.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_voting_cense"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_voting_cense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_the_first_mind"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_the_first_mind.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_economics"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_economics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_announcergrad_modernization"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_announcergrad_modernization.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_public_education"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_public_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_talents_of_our_time"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_talents_of_our_time.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_industry_for_objects"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_industry_for_objects.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_consumer_factories"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_consumer_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_care_for_ecology"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_care_for_ecology.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_wasteless_production"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_wasteless_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_industry_for_science"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_industry_for_science.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_massive_factories"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_massive_factories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_experiments_with_planning"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_experiments_with_planning.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_focus_GTR_get_all_we_can"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_get_all_we_can.dds"
+		noOfFrames = 8
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_elephant_in_a_room"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_elephant_in_a_room.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_making_blueprints"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_making_blueprints.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_new_professors"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_new_professors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_start_building"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_start_building.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_even_better_now"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_even_better_now.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_military"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_military.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_defense_tech"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_defense_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_investigate_the_explosion"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_investigate_the_explosion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_power_of_yoylelite"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_power_of_yoylelite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_reform_defense_forces"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_reform_defense_forces.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_modern_aircraft"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_modern_aircraft.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_rockets_air_ground"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_rockets_air_ground.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_secret_weapon"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_secret_weapon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_final_frontier"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_final_frontier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_GTR_modern_army"
+		textureFile = "gfx/interface/goals/GFX_focus_GTR_modern_army.dds"
+	}
 }

@@ -102,18 +102,23 @@ decision_YFC_BUN_category = {
 	YFC_BUN_85_Growing = {
 		activation = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			NOT = {has_completed_focus = YFC_focus_fully_cored}
+			NOT = {has_completed_focus = YFC_focus_stalled_plans}
 			controls_state = 85
 			85 = {
-				compliance < 65
+				compliance < 70
 			}
 			NOT = {country_exists = BUN}
+			212 = {
+				compliance < 85
+			}
 		}
 		available = {
 			always = no
 		}
 		cancel_trigger = {
 			85 = {
-				compliance > 65
+				compliance > 70
 			}
 		}
 		icon = GFX_mission_YFC_BUN_growing  
@@ -143,9 +148,14 @@ decision_YFC_BUN_category = {
 	YFC_BUN_212_Growing = {
 		activation = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			NOT = {has_completed_focus = YFC_focus_fully_cored}
+			NOT = {has_completed_focus = YFC_focus_stalled_plans}
 			controls_state = 212
 			212 = {
-				compliance < 65
+				compliance < 70
+			}
+			85 = {
+				compliance < 85
 			}
 			NOT = {country_exists = BUN}
 		}
@@ -154,7 +164,7 @@ decision_YFC_BUN_category = {
 		}
 		cancel_trigger = {
 			212 = {
-				compliance > 65
+				compliance > 70
 			}
 		}
 		icon = GFX_mission_YFC_BUN_growing  
@@ -551,7 +561,7 @@ decision_YFC_BUN_category = {
 					type = bunker
 					level = 1
 					instant_build = yes
-					province = 11153
+					province = 1146
 				}
 				add_resistance = -25
 			}
@@ -659,7 +669,7 @@ decision_YFC_BUN_category = {
 
 		fire_only_once = yes
 
-		cost = 65
+		cost = 15
 		days_remove = 15
 
 		remove_effect = {

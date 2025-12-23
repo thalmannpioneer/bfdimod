@@ -62,5 +62,31 @@ ideas = {
                 political_power_gain = -0.5
             }
         }
+        idea_GTR_ivy_league = {
+            picture = GTR_ivy_league
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        idea_GTR_casland_experience = {
+            picture = GTR_casland_experience
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.1
+            }
+        }
+        idea_GTR_casland_trade = {
+            picture = GTR_casland_trade
+            targeted_modifier = {
+                tag = 206.owner
+                trade_cost_for_target_factor = -0.2
+            }
+        }
+        idea_GTR_centrogoiky_aid = {
+            picture = GTR_centrogoiky_aid
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+        }
     }
 }

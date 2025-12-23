@@ -249,7 +249,8 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -288,7 +289,8 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -327,7 +329,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
+				OR = {
+					has_political_power > 150
+					has_stability < 0.5
+				}
+				
 				add = 5
 			}
 		}
@@ -365,7 +372,8 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -403,7 +411,8 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -450,7 +459,8 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}
@@ -493,8 +503,13 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
+				has_political_power > 150
 				add = 5
+			}
+			modifier = {
+				has_war = yes
+				add = 100
 			}
 		}
 
@@ -505,6 +520,50 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+		}
+	}
+
+	invest_military_lessons = {
+		icon = GFX_decision_generic_intelligence_operation
+
+		visible = { 
+			has_country_flag = has_money_system
+		}
+
+		available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_2_5M
+                check_variable = { money_amount > 25 }
+            }
+
+        }
+
+		fire_only_once = no
+		days_re_enable = 720
+
+		cost = 35
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				check_variable = { money_amount > 40 }
+				has_political_power > 150
+				add = 5
+			}
+			modifier = {
+				check_variable = { money_amount > 30 }
+				has_army_experience < 25
+				add = 5
+			}
+			modifier = {
+				has_war = yes
+				add = 100
+			}
+		}
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 25 }
+			army_experience = 25
 		}
 	}
 
@@ -635,11 +694,17 @@ propaganda_efforts = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				check_variable = { money_amount < 40 }
+				tag = YFC
+				add = -100
+			}
+			modifier = {
 				has_manpower < 5000
 				add = 10
 			}
 			modifier = {
-				check_variable = { money_amount > 25 }
+				check_variable = { money_amount > 30 }
+				has_political_power > 150
 				add = 5
 			}
 		}

@@ -99,7 +99,7 @@ armored_GGR = {
 			base = 1
 
 			modifier = {
-				factor = 2
+				factor = 1.25
 			}
 		}
 		
@@ -130,7 +130,10 @@ armored_GGR = {
 			base = 1
 
 			modifier = {
-				factor = 1.5
+				modifier = {
+					factor = 3
+					has_tech = motorised_infantry
+				}
 			}
 		}
 		
@@ -163,7 +166,7 @@ armored_GGR = {
 			base = 1
 
 			modifier = {
-				factor = 4
+				factor = 5
 				OR = {
 					has_tech = basic_medium_tank
 					has_tech = basic_medium_tank_chassis
@@ -203,6 +206,41 @@ armored_GGR = {
 	}
 }
 
+motorized_GGR = {
+
+	available_for = {
+		GGR
+	}
+	
+	role = motorized
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			NOT = { ai_has_role_template = motorized }
+		}
+	}
+	
+	basic_motorized_infantry_GER = {
+		division_names_group = GGR_MOT_01
+		
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			support = {
+				artillery = 1
+			}
+			
+			regiments = {
+				motorized = 6
+			}
+		}
+	}
+}
 
 garrison_GGR = {
 	available_for = {

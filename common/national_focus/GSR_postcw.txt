@@ -610,7 +610,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
 		
-		available = { has_political_power > 100 }
+		available = { has_political_power > 50 }
 		
 		cost = 6
 		
@@ -619,7 +619,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			add_timed_idea = {
 				idea = idea_GSR_cultural_revolution
 				days = 180
@@ -642,7 +642,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GSR_focus_cultural_revolution }
 		
-		available = { has_political_power > 100 }
+		available = { has_political_power > 50 }
 		
 		cost = 6
 		
@@ -651,7 +651,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			add_ideas = idea_GSR_new_object
 		}
 	}
@@ -664,7 +664,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
 		
-		available = { has_political_power > 100 }
+		available = { has_political_power > 50 }
 		
 		cost = 6
 		
@@ -673,7 +673,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			country_event = GSR_event.10
 		}
 	}
@@ -686,7 +686,7 @@ focus_tree = {
 		
 		prerequisite = { focus = GSR_focus_the_only_right_way }
 		
-		available = { has_political_power > 100 }
+		available = { has_political_power > 50 }
 		
 		cost = 6
 		
@@ -695,7 +695,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			WGF = { country_event = WGF_event.20 }
 			add_opinion_modifier = {
 				target = WGF

@@ -37,6 +37,7 @@ decision_GPG_civilwar_category = {
 		fire_only_once = yes
 		complete_effect = {
 			custom_effect_tooltip = l_GPG_cw_victory_effect
+			subtract_from_variable = { money_amount = 5 }
 			hidden_effect = {
 				country_lock_all_division_template = no
 				if = {
@@ -78,7 +79,6 @@ decision_GPG_civilwar_category = {
 					}
 					
 					hidden_effect = {
-						add_threat = -0.5
 						every_possible_country = {
 							limit = { is_ai = no }
 							news_event = {
@@ -99,13 +99,13 @@ decision_GPG_civilwar_category = {
 					limit = { tag = GDR }
 					add_dynamic_modifier = { modifier = idea_GDR_instability }
 					add_dynamic_modifier = { modifier = idea_GDR_payments_to_gpr }
+					subtract_from_variable = { money_amount = 10 }
 					delete_units = {
 						division_template = "Volunteer forces"
 						disband = no
 					}
 					set_cosmetic_tag = GDR_republic
 					hidden_effect = {
-						add_threat = -0.5
 						country_lock_all_division_template = yes
 						every_possible_country = {
 							limit = { is_ai = no }
@@ -126,7 +126,7 @@ decision_GPG_civilwar_category = {
 						disband = no
 					}
 					set_cosmetic_tag = GSR_post_cw
-					add_threat = 1
+					add_threat = 2
 					hidden_effect = {
 						every_possible_country = {
 							limit = { is_ai = no }
@@ -148,7 +148,7 @@ decision_GPG_civilwar_category = {
 						disband = no
 					}
 					hidden_effect = {
-						add_threat = 1
+						add_threat = 2
 						country_lock_all_division_template = yes
 						every_possible_country = {
 							limit = { is_ai = no }

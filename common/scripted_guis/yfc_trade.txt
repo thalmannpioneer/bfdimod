@@ -8,10 +8,40 @@ scripted_gui = {
 			corp_trade_list_Entry_Flags_Entry_Flag = { image = [This.GetFlag] }
 			corp_trade_list_Entry_Flags_Entry_Flag2 = { image = [This.GetFlag] }
 			bfdi_corpTradeDeal_country_flag = { image = [This.GetFlag] }
-			#bfdi_corpTradeDeal_cost_progress = { 
-			#	frame = var_YFC_dealAmount
-			#}
+			background_equipment_box_selling_item = { image = "[equipment_type_selling]" }
+			background_equipment_box_buying_item = { image = "[equipment_type_buying]" }
 		}
+
+		triggers = { 
+			background_equipment_box_selling_item_visible = {
+				THIS = { check_variable = { selling_item > -1 }}
+            }
+			background_equipment_box_buying_item_visible = {
+				THIS = { check_variable = { buying_item > -1 }}
+            }
+		}
+
+		effects = {
+			BuyingButton_click = { #Do later xd
+				ROOT = { set_temp_variable = { cost_money_var = 50 } }
+				THIS = { 
+					country_event = {
+						id = YFC_event.36
+						hours = 1
+					}
+				}
+			}
+
+			SellingButton_click = {
+				ROOT = { set_variable = { YFC_cost_var = 50 } }
+				THIS = { 
+					country_event = {
+						id = YFC_event.36
+						hours = 1
+					}
+				}
+			}
+		}	
 
 		dynamic_lists = {
 			corp_trade_list_Entry_Flags = {
@@ -20,12 +50,410 @@ scripted_gui = {
 				change_scope = yes
 				entry_container = bfdi_corp_tradeDeal_container
 			}
-			corp_trade_list_sell_materials = {
-				array = THIS.YFC_sell_materials
-				index = i
-				change_scope = yes
-				entry_container = corp_trade_list_sell_materials_Entry
+		}
+	}
+}
+
+scripted_gui = {
+	bfdi_other_trade_scriptedgui = {
+		window_name = other_trade_container
+		context_type = decision_category
+		parent_window_token = decision_tab
+			
+        ai_enabled = {
+            always = yes
+        }
+
+		properties = {
+			background_equipment_box_selling_item = { image = "[equipment_type_selling]" }
+			background_equipment_box_buying_item = { image = "[equipment_type_buying]" }
+		}	
+
+		triggers = { 
+			picking_equipment_window_visible = {
+				OR = {
+					has_country_flag = Selling_Menu
+					has_country_flag = Buying_Menu
+				}
+            }
+
+			background_equipment_box_selling_item_visible = {
+				ROOT = { check_variable = { selling_item > -1 }}
+            }
+
+			background_equipment_box_buying_item_visible = {
+				ROOT = { check_variable = { buying_item > -1 }}
+            }
+		}
+
+		effects = {
+			Selling_Button_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						clr_country_flag = Selling_Menu
+					}
+					ELSE = {
+						set_country_flag = Selling_Menu
+						clr_country_flag = Buying_Menu
+					}
+					clear_array = ROOT.equipment_list
+					set_variable = { selling_item = -1 }
+				}
+				THIS = {
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@infantry_equipment_0 > 99}} #GFX_infantry_weapons_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 0
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@infantry_equipment_1 > 99}} #GFX_infantry_weapons1_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 1
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@infantry_equipment_2 > 99}} #GFX_improved_infantry_weapons_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 2
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@infantry_equipment_3 > 99}} #GFX_advanced_infantry_weapons_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 3
+						}
+					}
+					IF = {
+						limit = {has_equipment = {support_equipment_1 > 99}} #GFX_tech_support_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 4
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@motorized_equipment_0 > 99}} #GFX_tech_trucks_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 5
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@motorized_equipment_1 > 99}} #GFX_motorised_infantry_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 6
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 7
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@artillery_equipment_2 > 99}} #GFX_artillery1_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 8
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@artillery_equipment_3 > 99}} #GFX_artillery4_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 9
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_1 > 99}} #GFX_interwar_antiair_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 10
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_2 > 99}} #GFX_antiair2_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 11
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_3 > 99}} #GFX_antiair5_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 12
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_1 > 99}} #GFX_interwar_antitank_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 13
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_2 > 99}} #GFX_antitank2_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 14
+						}
+					}
+					IF = {
+						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_3 > 99}} #GFX_antitank5_medium
+						add_to_array = {
+							array = ROOT.equipment_list
+							value = 15
+						}
+					}
+				}	
+			}
+
+			Buying_Button_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Buying_Menu}
+						clr_country_flag = Buying_Menu
+					}
+					ELSE = {
+						set_country_flag = Buying_Menu
+						clr_country_flag = Selling_Menu
+					}
+					clear_array = ROOT.equipment_list
+					set_variable = { buying_item = -1 }
+				}
+				IF = {
+					limit = {has_tech = infantry_weapons} #GFX_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 0
+					}
+				}
+				IF = {
+					limit = {has_tech = infantry_weapons1} #GFX_infantry_weapons1_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 1
+					}
+				}
+				IF = {
+					limit = {has_tech = improved_infantry_weapons} #GFX_improved_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 2
+					}
+				}
+				IF = {
+					limit = {has_tech = advanced_infantry_weapons} #GFX_advanced_infantry_weapons_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 3
+					}
+				}
+				IF = {
+					limit = {has_tech = tech_support} #GFX_tech_support_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 4
+					}
+				}
+				IF = {
+					limit = {has_tech = tech_trucks} #GFX_tech_trucks_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 5
+					}
+				}
+				IF = {
+					limit = {has_tech = motorised_infantry} #GFX_motorised_infantry_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 6
+					}
+				}
+				IF = {
+					limit = {has_tech = gw_artillery} #GFX_gw_artillery_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 7
+					}
+				}
+				IF = {
+					limit = {has_tech = artillery1} #GFX_artillery1_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 8
+					}
+				}
+				IF = {
+					limit = {has_tech = artillery4} #GFX_artillery4_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 9
+					}
+				}
+				IF = {
+					limit = {has_tech = interwar_antiair} #GFX_interwar_antiair_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 10
+					}
+				}
+				IF = {
+					limit = {has_tech = antiair2} #GFX_antiair2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 11
+					}
+				}
+				IF = {
+					limit = {has_tech = antiair5} #GFX_antiair5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 12
+					}
+				}
+				IF = {
+					limit = {has_tech = interwar_antitank} #GFX_interwar_antitank_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 13
+					}
+				}
+				IF = {
+					limit = {has_tech = antitank2} #GFX_antitank2_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 14
+					}
+				}
+				IF = {
+					limit = {has_tech = antitank5} #GFX_antitank5_medium
+					add_to_array = {
+						array = ROOT.equipment_list
+						value = 15
+					}
+				}
+			}
+
+			close_click = {
+				ROOT = { clr_country_flag = Selling_Menu }
+				ROOT = { clr_country_flag = Buying_Menu }
+			}
+			other_trade_list_equipment_button_select_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						set_variable = { selling_item = THIS.equipment_list^i } 
+					}
+					ELSE_IF = {
+						limit = {has_country_flag = Buying_Menu}
+						set_variable = { buying_item = THIS.equipment_list^i } 
+					}
+					clr_country_flag = Selling_Menu 
+					clr_country_flag = Buying_Menu 
+					clear_array = ROOT.equipment_list 
+				}
 			}
 		}
+
+		ai_weights = {
+			Buying_Button_click = {
+				ai_will_do = {
+					base = 1
+					modifier = {
+						add = -2
+						OR = {
+							has_country_flag = Selling_Menu
+							has_country_flag = Buying_Menu
+						}
+						
+					}
+				}
+			}
+			other_trade_list_equipment_button_select_click = {
+				ai_will_do = {
+					base = 0
+
+					modifier = {
+						add = 2
+						check_variable = { THIS.equipment_list^i = 0 }
+					}
+				}
+			}
+		}	
+	}
+}
+
+scripted_gui = {
+	bfdi_other_trade_scriptedgui = {
+		window_name = picking_equipment_window
+		context_type = player_context
+		
+		properties = {
+			background_equipment_box_item = { image = "[equipment_type]" }
+		}	
+
+        ai_enabled = {
+            always = yes
+        }
+
+		visible = { 
+			OR = {
+				has_country_flag = Selling_Menu
+				has_country_flag = Buying_Menu
+			} 
+		}
+		
+		effects = {
+			close_click = {
+				ROOT = { clr_country_flag = Selling_Menu }
+				ROOT = { clr_country_flag = Buying_Menu }
+			}
+			other_trade_list_equipment_button_select_click = {
+				ROOT = {
+					IF = {
+						limit = {has_country_flag = Selling_Menu}
+						set_variable = { selling_item = THIS.equipment_list^i } 
+					}
+					ELSE_IF = {
+						limit = {has_country_flag = Buying_Menu}
+						set_variable = { buying_item = THIS.equipment_list^i } 
+					}
+					clr_country_flag = Selling_Menu 
+					clr_country_flag = Buying_Menu 
+					clear_array = ROOT.equipment_list 
+				}
+			}
+		}
+
+		dynamic_lists = {
+			equipments_grid = {
+				array = ROOT.equipment_list
+				index = i
+				change_scope = yes
+				entry_container = other_trade_list_equipment_container
+			}
+		}
+
+		ai_weights = {
+			other_trade_list_equipment_button_select_click = {
+				ai_will_do = {
+					base = 0
+
+					modifier = {
+						add = 2
+						check_variable = { THIS.equipment_list^i = 0 }
+					}
+				}
+			}
+		}	
 	}
 }

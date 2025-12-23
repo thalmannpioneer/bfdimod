@@ -422,6 +422,8 @@ country_event = {
             days = 300
         }
         add_stability = 0.05
+        custom_effect_tooltip = l_money_lose_300K
+        subtract_from_variable = { money_amount = 3 }
         mark_focus_tree_layout_dirty = yes
         hidden_effect = {
             complete_national_focus = GPG_focus_compensation
@@ -445,6 +447,8 @@ country_event = {
         }
         set_country_flag = third_question
         mark_focus_tree_layout_dirty = yes
+        custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
         custom_effect_tooltip = l_GPG_removes_support_in_congress
         custom_effect_tooltip = l_GPG_improves_dream_island_trauma
         add_to_variable = { var_GPG_dreamislandtrauma_pg = 0.25 }
@@ -1287,10 +1291,6 @@ country_event = {
             if = {
                 limit = {
                     is_ai = yes
-                    OR = {
-                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
-                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
-                    }
                 }
                 add_political_power = 50
                 country_lock_all_division_template = no
@@ -2048,6 +2048,65 @@ country_event = {
     option = {
         name = GPG_event.47.a
         retire_character = GPG_cloudy
+    }
+}
+
+country_event = {
+    id = GPG_event.48
+    title = GPG_event.48.t
+    desc = GPG_event.48.desc
+    picture = GFX_GTR_event26
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.48.a
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = industry
+        }
+    }
+}
+
+country_event = {
+    id = GPG_event.49
+    title = GPG_event.49.t
+    desc = GPG_event.49.desc
+    picture = GFX_GPG_event49
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.49.a
+        add_ideas = idea_GPG_announcergrad_trade
+    }
+}
+
+country_event = {
+    id = GPG_event.50
+    title = GPG_event.50.t
+    desc = GPG_event.50.desc
+    picture = GFX_GPG_event50
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.50.a
+        add_political_power = 25
+    }
+}
+
+country_event = {
+    id = GPG_event.51
+    title = GPG_event.51.t
+    desc = GPG_event.51.desc
+    picture = GFX_GPG_event51
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.51.a
     }
 }
 

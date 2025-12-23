@@ -1,14 +1,24 @@
 state={
 	id=226
 	name="STATE_226"
+
+	resources = {
+		tungsten = 4
+		steel = 5
+	}
+
 	provinces={
 		10948 10971 
 	}
 	history={
 		owner = GOI
 		add_core_of = GOI
+		victory_points = { 10948 1 }
+		buildings = {
+			infrastructure = 1
+		}
 	}
-	manpower=0
+	manpower = 2180
 	buildings_max_level_factor=1
 	state_category=pastoral
 	local_supplies=0

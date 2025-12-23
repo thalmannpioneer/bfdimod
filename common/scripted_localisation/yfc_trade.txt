@@ -1,0 +1,211 @@
+defined_text = {
+	name = equipment_type
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 0 } }
+		localization_key = GFX_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 1 } }
+		localization_key = GFX_infantry_weapons1_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 2 } }
+		localization_key = GFX_improved_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 3 } }
+		localization_key = GFX_advanced_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 4 } }
+		localization_key = GFX_tech_support_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 5 } }
+		localization_key = GFX_tech_trucks_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
+		localization_key = GFX_motorised_infantry_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 7 } }
+		localization_key = GFX_gw_artillery_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 8 } }
+		localization_key = GFX_artillery1_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 9 } }
+		localization_key = GFX_artillery4_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 10 } }
+		localization_key = GFX_interwar_antiair_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 11 } }
+		localization_key = GFX_antiair2_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 12 } }
+		localization_key = GFX_antiair5_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 13 } }
+		localization_key = GFX_interwar_antitank_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 14 } }
+		localization_key = GFX_antitank2_medium
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 15 } }
+		localization_key = GFX_antitank5_medium
+	}
+}
+
+defined_text = {
+	name = equipment_type_selling
+	text = {
+		trigger = { check_variable = { THIS.selling_item = -1 } }
+		localization_key = GFX_add_pol_idea_button
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 0 } }
+		localization_key = GFX_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 1 } }
+		localization_key = GFX_infantry_weapons1_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 2 } }
+		localization_key = GFX_improved_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 3 } }
+		localization_key = GFX_advanced_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 4 } }
+		localization_key = GFX_tech_support_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 5 } }
+		localization_key = GFX_tech_trucks_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 6 } }
+		localization_key = GFX_motorised_infantry_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 7 } }
+		localization_key = GFX_gw_artillery_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 8 } }
+		localization_key = GFX_artillery1_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 9 } }
+		localization_key = GFX_artillery4_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 10 } }
+		localization_key = GFX_interwar_antiair_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 11 } }
+		localization_key = GFX_antiair2_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 12 } }
+		localization_key = GFX_antiair5_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 13 } }
+		localization_key = GFX_interwar_antitank_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 14 } }
+		localization_key = GFX_antitank2_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.selling_item = 15 } }
+		localization_key = GFX_antitank5_medium
+	}
+}
+
+defined_text = {
+	name = equipment_type_buying
+	text = {
+		trigger = { check_variable = { THIS.buying_item = -1 } }
+		localization_key = GFX_add_pol_idea_button
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 0 } }
+		localization_key = GFX_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 1 } }
+		localization_key = GFX_infantry_weapons1_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 2 } }
+		localization_key = GFX_improved_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 3 } }
+		localization_key = GFX_advanced_infantry_weapons_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 4 } }
+		localization_key = GFX_tech_support_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 5 } }
+		localization_key = GFX_tech_trucks_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 6 } }
+		localization_key = GFX_motorised_infantry_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 7 } }
+		localization_key = GFX_gw_artillery_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 8 } }
+		localization_key = GFX_artillery1_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 9 } }
+		localization_key = GFX_artillery4_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 10 } }
+		localization_key = GFX_interwar_antiair_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 11 } }
+		localization_key = GFX_antiair2_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 12 } }
+		localization_key = GFX_antiair5_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 13 } }
+		localization_key = GFX_interwar_antitank_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 14 } }
+		localization_key = GFX_antitank2_medium
+	}
+	text = {
+		trigger = { check_variable = { THIS.buying_item = 15 } }
+		localization_key = GFX_antitank5_medium
+	}
+}

@@ -39,6 +39,12 @@ country_event = {
 				scope = TBT
 			}
 		}
+		229 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
 		country_event = {
 			id = TBT_hidden_event.3
 			days = 250
@@ -117,7 +123,43 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		192 = {
+		232 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
+		228 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+		}
+		country_event = {
+			id = TBT_hidden_event.6
+			days = 250
+			random_days = 10
+			random_hours = 24
+		}
+	}
+}
+
+country_event = {
+	id = TBT_hidden_event.6
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		229 = {
+			remove_dynamic_modifier = { modifier = TBT_low_pop }
+			add_dynamic_modifier = { 
+				modifier = TBT_med_pop 
+				scope = TBT
+			}
+		}
+		230 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT

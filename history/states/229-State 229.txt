@@ -8,7 +8,7 @@ state={
 		owner = GOI
 		add_core_of = GOI
 	}
-	manpower=0
+	manpower = 2782
 	buildings_max_level_factor=1
 	state_category=pastoral
 	local_supplies=0

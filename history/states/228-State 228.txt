@@ -1,6 +1,11 @@
 state={
 	id=228
 	name="STATE_228"
+
+	resources = {
+		tungsten = 2
+	}
+
 	provinces={
 		1294 3034 4135 
 	}
@@ -8,7 +13,7 @@ state={
 		owner = GOI
 		add_core_of = GOI
 	}
-	manpower=0
+	manpower = 523
 	buildings_max_level_factor=1
 	state_category=pastoral
 	local_supplies=0

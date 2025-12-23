@@ -1,15 +1,19 @@
 state={
-	id=83
-	name="STATE_83"
-	provinces={
-		151 291 358 405 614 697 1064 1299 1365 1745 1777 1841 2063 2067 2086 2108 2213 2384 2646 2657 2747 3223 3453 3568 3812 3965 4040 4072 4328 4397 4477 4859 4979 5169 5183 5682 5983 6038 6213 6241 7307 7393 7411 7450 7470 7484 7499 7538 7542 7583 7594 7622 7630 7635 7664 7678 7683 7706 7711 7721 7747 7751 7775 7785 7835 7849 7855 7870 7887 7891 7984 8026 
-	}
-	history = {
-		owner = EMP
-		add_core_of = EMP
-	}
-	manpower=10000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+    id=83
+    name="STATE_83"
+    provinces={
+        2490 3124 3845 5266 5508 6054 6298 11084 11105 11110 11146
+    }
+    history = {
+        owner = GOI
+        add_core_of = GOI
+        victory_points = { 3845 10 }
+        buildings = {
+            infrastructure = 2
+        }
+    }
+    manpower=21549
+    buildings_max_level_factor=1.000
+    state_category=town
+    local_supplies=0.000
 }

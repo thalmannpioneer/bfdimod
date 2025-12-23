@@ -103,7 +103,21 @@
  l_GFG_everyone_dies_cry_emoji: "§YFries§! dies.\n§YPuffball§! dies.\n§YBasketball§! dies.\n§YRemote§! dies.\n§YPie§! dies."
  l_GFG_southern_agreement: "§7We'll go to Faraway to conclude a non-aggression pact.§!"
 
- l_YFC_payment_sectors: "§YWe will pay§! §R[?var_sectors_combined_cost]K§! §YDollars to the Sectors.§!"
+ l_YFC_payment_sectors: "§YWe will pay§! §R[?var_sectors_combined_cost]K§! §YDollars to the Sectors.§!\n§GModifiers provided by the Sectors may change depending on changes by you.§!\n§RIf any Sectors' influence is higher than everyone else combined or is above 10 then they may begin to make their own decisions.§!"
+ l_YFC_sectors_TopHat_Gain: "§YTop Hat's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Top Hat
+ l_YFC_sectors_TopHat_Loss: "§YTop Hat's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Top Hat
+ l_YFC_sectors_Pipe_Gain: "§YPipe's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Pipe
+ l_YFC_sectors_Pipe_Loss: "§YPipe's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Pipe
+ l_YFC_sectors_Beaker_Gain: "§YBeaker's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Beaker
+ l_YFC_sectors_Beaker_Loss: "§YBeaker's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Beaker
+ l_YFC_sectors_Hammer_Gain: "§YHammer's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Hammer
+ l_YFC_sectors_Hammer_Loss: "§YHammer's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Hammer
+ l_YFC_sectors_Taser_Gain: "§YTaser's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Taser
+ l_YFC_sectors_Taser_Loss: "§YTaser's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Taser
+ l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
+ l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
+
+
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YHires Coiny as an Army Chief!§!"
  l_YFC_raid_effect: "§YA random amount of equipment is stolen.§!"
@@ -133,7 +147,7 @@
  l_YFC_BUN_5: "§RWe will not allow Yellow Face to annex their occupation zone and create a new Bunch state with the risk of breaking the uneasy alliance...§!"
  l_YFC_BUN_8: "Bunch Supporters will revolt against our rule.\n\n§RIf they capture all of their old victory points they will get their independence!§!\n\n§GHowever, they have limited strength, so if we are able to hold off their attacks they will be weakened to a point of no return!§!"
  l_YFC_BUN_8_O: "You will switch to Neo-Bunch as they will revolt against Yellow Face.\n\n§GIf we capture all of their old victory points they will get our independence!§!\n\n§RHowever, we have limited strength, so if we take too long we will be weakened to a point of no return!§!"
- l_YFC_BUN_last_ditch: "§YYellow Face has 60 days to destroy the Neo-Bunch rebels or the war is over with a Neo-Bunch victory and Yellow Face withdraws!§!"
+ l_YFC_BUN_last_ditch: "§YYellow Face has 90 days to destroy the Neo-Bunch rebels or the war is over with a Neo-Bunch victory and Yellow Face withdraws!§!"
 
  l_BUN_YFC_1: "Modifies §YOn a Ticking Timed Bomb§! National Spirit by:\n- §YAll Modifiers§! §R-25%§!"
 

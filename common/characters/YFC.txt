@@ -51,6 +51,7 @@ characters = {
 			idea_token = idea_YFC_Coiny
 			ledger = army
 			traits = { foreign_advisor }
+			cost = 100
 			available = { 
 				hidden_trigger = { 
 					has_completed_focus = YFC_focus_buy_defense_trainings 

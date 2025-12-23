@@ -412,6 +412,10 @@ spriteTypes = {
 	
 	#YFC
 
+	spriteType = {
+		name = "GFX_YFC_trade_unselected"
+		textureFile = "gfx/interface/YFC_trade_unselected.dds"
+	}
 
 	spriteType = {
 		name = "GFX_decisions_sector_military"
@@ -421,6 +425,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_sector_railway"
 		textureFile = "gfx/interface/decisions/decisions_sector_railway.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_sector_science"
+		textureFile = "gfx/interface/decisions/decisions_sector_science.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_sector_construction"
+		textureFile = "gfx/interface/decisions/decisions_sector_construction.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_decisions_sector_electronics"
+		texturefile = "gfx/interface/decisions/decisions_sector_electronics.dds"
+		noOfFrames = 12
+		loadType = "INGAME"
+		transparencecheck = no
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
 	}
 
 	spriteType = {
@@ -488,7 +514,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Intergrate.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_decisions_YFC_BUN_Conscript"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_BUN_Conscript.dds"
 	}

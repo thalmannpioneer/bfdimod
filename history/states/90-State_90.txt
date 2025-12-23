@@ -1,16 +1,23 @@
 
 state={
-	id=90
-	name="STATE_90"
-	provinces={
-		157 386 568 688 897 990 1078 1167 1408 1457 1827 2245 2276 2997 3098 3379 3716 3967 4010 4255 4533 4644 4656 5315 5563 5576 5651 6140 6440 7607 7621 7647 7648 7698 7726 7739 7789 7816 7844 7848 7903 7925 7931 7950 7983 8014 8038 8059 8071 8080 8108 8124 8159 8165 8176 8212 8219 8227 8232 8261 8271 8304 8322 8342 
-	}
-	history = {
-		owner = EMP
-		add_core_of = EMP
-	}
-	manpower=10000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+    id=90
+    name="STATE_90"
+    provinces={
+        560 1073 1509 1728 2578 2686 3137 3174 4199 4900 4929 5012 11004 11039 11069 11098 11108 11119 11130 11162
+    }
+    resources = {
+        coal = 6
+    }
+    history = {
+        owner = GOI
+        add_core_of = GOI
+        victory_points = { 4900 10 }
+        buildings = {
+            infrastructure = 2
+        }
+    }
+    manpower=24007
+    buildings_max_level_factor=1.000
+    state_category=rural
+    local_supplies=0.000
 }

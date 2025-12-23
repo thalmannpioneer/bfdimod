@@ -44,12 +44,17 @@ country_event = {
 	fire_only_once = no
 	is_triggered_only = yes
 
+	immediate = {
+		set_variable = { var_add_to_sector2 = 5 }
+    }
+
 	option = {
 		name = BUN_YFC.2.a
 		add_war_support = -0.1
 		add_stability = -0.2
 		add_political_power = -300
 		white_peace = BUN
+		complete_national_focus = YFC_focus_stalled_plans
 		IF = {
 			limit = {
 				has_war_with = CRN
@@ -72,6 +77,8 @@ country_event = {
 				transfer_state = 218
 			}
 		}	
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
+		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 	}
 }
 
@@ -98,6 +105,7 @@ country_event = {
 	option = {
 		name = BUN_YFC.3.a
 		add_war_support = 0.05
+		add_political_power = 25
 		custom_effect_tooltip = l_YFC_BLOCKY
 	}
 }
@@ -139,7 +147,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = { #Will be most likly moved to a diffrent event and this on would start their new tree or something
 	id = BUN_YFC.5
 	title = BUN_YFC.5.t
 	desc = BUN_YFC.5.desc
@@ -177,9 +185,14 @@ country_event = { #YFC sees this
 
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+
 	option = {
 		name = BUN_YFC.6.a
 		white_peace = BUN
+		complete_national_focus = YFC_focus_stalled_plans
 		add_war_support = -0.10
 		add_political_power = -100
 		IF = {
@@ -212,6 +225,14 @@ country_event = { #YFC sees this
 				transfer_state = 218
 			}
 		}	
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
 			BUN = {
 				subtract_from_variable = { money_amount = 10 }
@@ -229,8 +250,10 @@ country_event = { #YFC sees this
 
 	option = {
 		name = BUN_YFC.6.b
-		add_war_support = -0.05
-		add_political_power = -50
+		add_war_support = 0.01
+		add_stability = -0.05
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 	}
 }
 
@@ -245,14 +268,14 @@ country_event = { #YFC sees this
 	option = {
 		name = BUN_YFC.7.a
 		custom_effect_tooltip = l_YFC_BUN_last_ditch
-		add_manpower = 5000
+		add_manpower = 7500
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 500
+			amount = 750
 		}
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
-			days = 60
+			days = 90
 		}
 		division_template = {
 			name = "Militia"
@@ -269,7 +292,7 @@ country_event = { #YFC sees this
 		}
 		201 = {
 			create_unit = {
-				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+				division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.35"
 				count = 4
 				owner = YFC
 			}
@@ -279,7 +302,7 @@ country_event = { #YFC sees this
 				limit = {YFC = {is_ai = yes}}
 				201 = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.35"
 						count = 2
 						owner = YFC
 					}

@@ -8,6 +8,16 @@ ideas = {
 			}
 		}
 
+		idea_YFC_neglectful_command  = {
+			picture = chi_incompetent_officers
+			modifier = {
+				experience_gain_army_factor = -0.75
+				training_time_factor = 1
+				command_power_gain_mult = -0.25
+				max_command_power_mult = -0.20
+			}
+		}
+
 		idea_YFC_United_Clash = {
 			picture = YFC_United_Clash
 			targeted_modifier = {
@@ -28,6 +38,125 @@ ideas = {
 			cancel = {NOT = {country_exists = YFC}}
 		}
 
+		idea_YFC_Defiant_Top_Hat = {
+			picture = generic_army_problems #Replace later 
+			modifier = {
+				conscription_factor = -0.25
+				resistance_growth = 0.5
+				army_morale_factor = -0.25
+				planning_speed = -0.2
+				political_power_factor = -0.25
+				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_TopHat_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_TopHat_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_TopHat_level = 1 }
+				set_variable = { var_idea_YFC_TopHat_cost = 30 }
+			}
+		}
+
+		idea_YFC_Defiant_Pipe = {
+			picture = generic_railroads #Replace later 
+			modifier = {
+				army_speed_factor = -0.35
+				supply_consumption_factor = 0.3
+				consumer_goods_factor = 0.5
+				political_power_factor = -0.5
+				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Pipe_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Pipe_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Pipe_level = 1 }
+				set_variable = { var_idea_YFC_Pipe_cost = 30 }
+			}
+		}
+
+		idea_YFC_Defiant_Beaker = {
+			picture = jap_duplicate_research #Replace later 
+			modifier = {
+				experience_gain_army_factor = -0.95
+				research_speed_factor = -0.25
+				consumer_goods_factor = 0.75
+				political_power_factor = -0.5
+				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Beaker_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Beaker_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Beaker_level = 1 }
+				set_variable = { var_idea_YFC_Beaker_cost = 30 }
+			}
+		}
+
+		idea_YFC_Defiant_Hammer = {
+			picture = generic_devalue_currency #Replace later 
+			modifier = {
+				production_speed_buildings_factor = -0.75
+				monthly_population = -0.95
+				consumer_goods_factor = 0.5
+				political_power_factor = -0.5
+				stability_factor = -0.1
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Hammer_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Hammer_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Hammer_level = 1 }
+				set_variable = { var_idea_YFC_Hammer_cost = 30 }
+			}
+		}
+
+		idea_YFC_Defiant_Taser = {
+			picture = ast_classify_aliens #Replace later 
+			modifier = {
+				compliance_growth = -0.5
+				resistance_target = 0.1
+				political_power_factor = -1
+				stability_factor = -0.2
+			}
+			on_remove = {
+				if = {
+					limit = { check_variable = { var_idea_YFC_Taser_influence > 5} }
+					subtract_from_variable = { var_idea_YFC_Taser_influence = 5 }
+				}
+				set_variable = { var_idea_YFC_Taser_level = 1 }
+				set_variable = { var_idea_YFC_Taser_cost = 30 }
+			}
+		}
+
+		idea_YFC_Debt_Crisis = {
+			picture = generic_economic_crisis #Replace later 
+			modifier = {
+				political_power_factor = -0.75
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				training_time_factor = 5
+				conscription_factor = -0.85
+				consumer_goods_factor = 0.75
+			}
+			cancel = {check_variable = { money_amount > 0} }
+			on_remove = {
+				set_variable = { var_idea_YFC_TopHat_level = 1 }
+				set_variable = { var_idea_YFC_TopHat_cost = 30 }
+				set_variable = { var_idea_YFC_Pipe_level = 1 }
+				set_variable = { var_idea_YFC_Pipe_cost = 30 }
+				set_variable = { var_idea_YFC_Beaker_level = 1 }
+				set_variable = { var_idea_YFC_Beaker_cost = 30 }
+				set_variable = { var_idea_YFC_Hammer_level = 1 }
+				set_variable = { var_idea_YFC_Hammer_cost = 30 }
+				set_variable = { var_idea_YFC_Taser_level = 1 }
+				set_variable = { var_idea_YFC_Taser_cost = 30 }
+			}
+		}
 
 		#WILL BE REDONE
 		idea_YFC_show_no_mercy = {
@@ -47,8 +176,8 @@ ideas = {
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
 			picture = generic_morale_bonus
 			modifier = {
-				compliance_growth = 1
-				resistance_growth = 0.5
+				compliance_growth = 1.5
+				resistance_growth = 1
 			}
 			cancel = {country_exists = BUN}
 		}
@@ -58,10 +187,10 @@ ideas = {
 			picture = CZE_planning_bonus
 			targeted_modifier = {
 				tag = BUN
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.5
 			}
 			modifier = {
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.15
 				ai_focus_aggressive_factor = 2
 			}
 			cancel = {NOT = {country_exists = BUN}}
@@ -71,34 +200,12 @@ ideas = {
 					BUN = {country_event = BUN_YFC.1}
 					add_war_support = -0.05
 					add_political_power = -100
+					subtract_from_variable = { var_idea_YFC_TopHat_influence = 3 }
 				}
 				delete_unit_template_and_units = {
 					division_template = "Militia"
 					disband = no 
 				}
-			}
-		}
-
-		#THIS WILL BE REMOVED
-		idea_YFC_military_restructuring = {
-			picture = CZE_planning_bonus
-			modifier = {
-				training_time_army_factor = 0.5
-				army_org_factor = -0.25
-				army_attack_factor= -0.1
-				army_morale_factor = -0.15
-				command_power_gain_mult = -0.75
-			}
-		}
-
-		#THIS WILL BE REMOVED
-		idea_YFC_new_army = {
-			picture = CZE_planning_bonus
-			modifier = {
-				conscription = 0.02
-				army_org_factor = 0.15
-				army_morale = 0.1
-				command_power_gain_mult = 0.25
 			}
 		}
 	}
