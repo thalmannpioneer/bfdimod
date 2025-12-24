@@ -18,13 +18,92 @@ guiTypes = {
 			font = hoi_36header
 		}
 
-		instantTextboxType = { #I would like this updated at some point to look better
-			name = "title"
-			text = l_decisions_trade_title
-			position = { x = 0 y = -10 }
-			maxWidth = 500
+		buttonType = {
+			name = "Selling_Confirm_Button"
+			position = { x = 30 y = 60 }
+			quadTextureSprite ="GFX_icon_button_46x46"
+			buttonText = "Sell" #UPDATE LATER
+			buttonFont = "hoi_18mbs"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "Buying_Confirm_Button"
+			position = { x = 30 y = 150 }
+			quadTextureSprite ="GFX_icon_button_46x46"
+			buttonText = "Buy" #UPDATE LATER
+			buttonFont = "hoi_18mbs"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+
+		buttonType = {
+			name = "selling_item_button_increase_X"
+			position = { x = 450 y = 90 }
+			quadTextureSprite = "GFX_naval_increase_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "selling_item_button_decrease_X"
+			position = { x = 400 y = 90 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		instantTextboxType = { 
+			name = "selling_amount_text"
+			text = [?THIS.selling_amount|0]
+			position = { x = 390 y = 50 }
+			maxWidth = 100
 			format = centre
-			font = hoi_36header
+			font = hoi_30header
+		}
+
+		instantTextboxType = { 
+			name = "selling_amount_text_confirmed"
+			text = [?THIS.selling_amount|G0]
+			position = { x = 390 y = 50 }
+			maxWidth = 100
+			format = centre
+			font = hoi_30header
+		}
+
+		buttonType = {
+			name = "buying_item_button_increase_X"
+			position = { x = 450 y = 180 }
+			quadTextureSprite = "GFX_naval_increase_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "buying_item_button_decrease_X"
+			position = { x = 400 y = 180 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = ""
+			clicksound = click_default
+		}
+
+		instantTextboxType = { 
+			name = "buying_amount_text"
+			text = [?THIS.buying_amount|0]
+			position = { x = 390 y = 140 }
+			maxWidth = 100
+			format = centre
+			font = hoi_30header
+		}
+
+		instantTextboxType = { 
+			name = "buying_amount_text_confirmed"
+			text = [?THIS.buying_amount|G0]
+			position = { x = 390 y = 140 }
+			maxWidth = 100
+			format = centre
+			font = hoi_30header
 		}
 
 		buttonType = { 

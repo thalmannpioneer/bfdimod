@@ -1,4 +1,4 @@
-scripted_gui = {
+scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 	bfdi_corp_trade_scriptedgui = {
 		window_name = "bfdi_corp_trade_container"
 		context_type = decision_category
@@ -13,6 +13,12 @@ scripted_gui = {
 		}
 
 		triggers = { 
+			BuyingButton_click_enabled = {
+				THIS = {has_country_flag = Confirmed_Trade_Selling}
+			}
+			SellingButton_click_enabled = {
+				THIS = {has_country_flag = Confirmed_Trade_Buying}
+			}
 			background_equipment_box_selling_item_visible = {
 				THIS = { check_variable = { selling_item > -1 }}
             }
@@ -54,7 +60,7 @@ scripted_gui = {
 	}
 }
 
-scripted_gui = {
+scripted_gui = { #I AM SANE
 	bfdi_other_trade_scriptedgui = {
 		window_name = other_trade_container
 		context_type = decision_category
@@ -76,14 +82,48 @@ scripted_gui = {
 					has_country_flag = Buying_Menu
 				}
             }
-
 			background_equipment_box_selling_item_visible = {
 				ROOT = { check_variable = { selling_item > -1 }}
             }
-
 			background_equipment_box_buying_item_visible = {
 				ROOT = { check_variable = { buying_item > -1 }}
             }
+
+			selling_amount_text_visible = {
+				NOT = {has_country_flag = Confirmed_Trade_Selling}
+			}
+			selling_amount_text_confirmed_visible = {
+				has_country_flag = Confirmed_Trade_Selling
+			}
+
+			buying_amount_text_visible = {
+				NOT = {has_country_flag = Confirmed_Trade_Buying}
+			}
+			buying_amount_text_confirmed_visible = {
+				has_country_flag = Confirmed_Trade_Buying
+			}
+
+			Selling_Confirm_Button_click_enabled = {
+				NOT = {has_country_flag = Confirmed_Trade_Selling}
+				check_variable = { selling_item > -1  }
+			}
+			Buying_Confirm_Button_click_enabled = {
+				check_variable = { buying_item > -1  }
+				NOT = {has_country_flag = Confirmed_Trade_Buying}
+			}
+
+			selling_item_button_increase_X_click_enabled = {
+				check_variable = { selling_amount < 975  }
+			}
+			selling_item_button_decrease_X_click_enabled = {
+				check_variable = { selling_amount > 100  }
+			}
+			buying_item_button_increase_X_click_enabled = {
+				check_variable = { buying_amount < 975  }
+			}
+			buying_item_button_decrease_X_click_enabled = {
+				check_variable = { buying_amount > 100  }
+			}
 		}
 
 		effects = {
@@ -97,6 +137,7 @@ scripted_gui = {
 						set_country_flag = Selling_Menu
 						clr_country_flag = Buying_Menu
 					}
+					clr_country_flag = Confirmed_Trade_Selling
 					clear_array = ROOT.equipment_list
 					set_variable = { selling_item = -1 }
 				}
@@ -226,6 +267,7 @@ scripted_gui = {
 						set_country_flag = Buying_Menu
 						clr_country_flag = Selling_Menu
 					}
+					clr_country_flag = Confirmed_Trade_Buying
 					clear_array = ROOT.equipment_list
 					set_variable = { buying_item = -1 }
 				}
@@ -343,6 +385,30 @@ scripted_gui = {
 				}
 			}
 
+			selling_item_button_increase_X_click = {
+				add_to_variable = { selling_amount = 25 }
+				clr_country_flag = Confirmed_Trade_Selling
+			}
+			selling_item_button_decrease_X_click = {
+				subtract_from_variable = { selling_amount = 25 }
+				clr_country_flag = Confirmed_Trade_Selling
+			}
+			buying_item_button_increase_X_click = {
+				add_to_variable = { buying_amount = 25 }
+				clr_country_flag = Confirmed_Trade_Buying
+			}
+			buying_item_button_decrease_X_click = {
+				subtract_from_variable = { buying_amount = 25 }
+				clr_country_flag = Confirmed_Trade_Buying
+			}
+
+			Selling_Confirm_Button_click = {
+				set_country_flag = Confirmed_Trade_Selling
+			}
+			Buying_Confirm_Button_click = {
+				set_country_flag = Confirmed_Trade_Buying
+			}
+
 			close_click = {
 				ROOT = { clr_country_flag = Selling_Menu }
 				ROOT = { clr_country_flag = Buying_Menu }
@@ -392,7 +458,7 @@ scripted_gui = {
 	}
 }
 
-scripted_gui = {
+scripted_gui = { #THIS IS NOT HURTING MY BRAIN AT ALL
 	bfdi_other_trade_scriptedgui = {
 		window_name = picking_equipment_window
 		context_type = player_context

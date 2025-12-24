@@ -87,6 +87,8 @@ decisions_BFDI_debug = {
 					set_province_name = { id = 876 name = "Salty Springs" }
 					set_province_name = { id = 5107 name = "Retail Row" }
 					set_province_name = { id = 11209 name = "Greasy Grove" }
+					set_province_name = { id = 3938 name = "Loot Lake" }
+					set_province_name = { id = 4900 name = "Dusty Depot" }
 				}
 			}	
         }

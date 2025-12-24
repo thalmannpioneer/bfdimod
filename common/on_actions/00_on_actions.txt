@@ -50,6 +50,8 @@ on_actions = {
 
                 set_variable = { buying_item = -1 } #YFC trade other 
                 set_variable = { selling_item = -1 } #YFC trade other
+                set_variable = { buying_amount = 100 } #YFC trade other 
+                set_variable = { selling_amount = 100 } #YFC trade other
             }
         }
     }
