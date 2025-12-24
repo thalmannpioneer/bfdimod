@@ -643,11 +643,11 @@
  YFC_event.1.a: "Better Dead Than Red!"
 
  YFC_event.2.t: "The Southern Bandits"
- YFC_event.2.desc: "Yesterday, Pipe, head of the Railing Sector, came all the way from our foreign investment project in Navgornyv to inform Yellow Face about a recent event. He claimed that his employees were attacked by savage bandits, and that several thousands of funds, as well as dozens of galvanized steal bars, were stolen from the building they were operating in. He sadly informed us that profits will be down until they can recover. This incident, however, wasn't isolated. Other countries, such as the Southern Rail Road Administration, and Numismatia, have all reported that they've had similar, and very brutal attacks take place on some of their facilities near their border with Eraser's Bunch. \nAdditionally, today, Yellow Face recieved a letter from Eraser himself, asking for the Corporation to allow them to travel through our territory to gain wealth and stimulate the economy. Despite the fact that Eraser is obviously lying about his intentions, this does bring up a good point. Should we let Eraser's men travel through the country?"
+ YFC_event.2.desc: "Yesterday, Pipe, head of the Rail Road Sector, came all the way from our foreign investment project in Navgornyv to inform Yellow Face about a recent event. They claimed that their employees were attacked by savage bandits, and that several thousands of funds, as well as dozens of galvanized steal bars, were stolen from the building they had been operating in. They sadly informed us that profits would be down until they can recover. This incident, however, wasn't isolated. Other countries, such as the Southern Rail Road Administration, and Numismatia, have reported that they've had similar, and sometimes quite brutal attacks take place on some of their facilities near their border with Eraser's Bunch. \nAdditionally, today, Yellow Face recieved a letter from Eraser himself, asking for the Corporation to allow them to travel through our territory to 'gain wealth and stimulate the economy.' Despite the fact that Eraser is obviously lying about his intentions, this does bring up a good point. Should we let Eraser's men travel through the country?"
  YFC_event.2.a: "If they want free passage, they can come and take it!"
  YFC_event.2.b: "We could allow them to travel through our territories... for a price."
 
- YFC_event.3.t: "Message from South Railroad Administration"
+ YFC_event.3.t: "Message from South Rail Road Administration"
  YFC_event.3.desc: "Wrench, from the South Rail Road Administration, has recently sent corporate a message. They stated that they no longer wish to control the city of Navgornyv, due to its proximity to The Bunch. They have offered to sell this territory to us for very cheap. Wrench, in addition, stated that they also want to continue working with our Railing Sector, despite still not wanting to have official diplomatic relationships with any country. If we don't accept this offer, they will probably just keep the territory, and if they don't manage well, the city could fall under Bunch control."
  YFC_event.3.a: "Who the hell says no to cheap land?!"
  YFC_event.3.b: "They can pry my money out of my cold dead hands if they wish."
@@ -842,8 +842,8 @@
  YFC_BUN.6.a: "'They check their backs, but never their fronts.'"
 
  YFC_BUN.7.t: "Pen's Execution."
- YFC_BUN.7.desc: "He was on a train. He didn't even know they had those all the way in Greenville. Though, one 'Pipe' was the one driving it. Pipe was supposedly the leader of a 'RailRoad Sector', and they called themselves a 'Sectorial'.This meant nothing to Pen, except that they were with the Yellow Face Corporation.\nLast night, Pen entered Greenville and was greeted by Yellow Facer law inforcement. After putting him in cuffs, and threatening to shoot him if he made a single sound, they put him in a box and paraded him around town for a little while. The residents, some of which he'd spoken to personally, back when the Bunch was still a thing, didn't say anything. They watched him, with looks of fear and horror on their faces, some with complacency. The rest of the night was a haze. A rioter showing up, then more, then gunshots, blood. It was harder to remember last night than it was to listen to the sounds of the train moving along its tracks, so thats what he did instead.\n\nAfter around an hour, Pen got bored. \n'So, where are you taking me?' He didn't really expect a response. \nPipe looked back over their shoulder. 'Besides Podgornyv, I don't know. I'd tell you if I could.' The response shocked Pen. Not only was Pipe actually speaking to him, they were being respectful. Benevolent, even.\nPen decided to try his luck with another question. 'Why am I being hunted? I haven't even done much wrong, I swear!'. Pipe turned again, another quick response. 'Not only were you working closely, *very* closely with Eraser, you are some $500 Million Vigintillion in debt to us.' \nThe rest of Pen's train ride continued in silence. Of course this was about money.\n\nA few hours later, and they were back in Podgornyv. Pen had actually been sitting inside some waiting room for a while before now. They let him out just a little while ago, ushering him to some random location in the middle of the once beautiful, now ruined city. When they finished transporting him, he was standing on a stage. Three armed objects behind him, and a crowd in front. It felt like the whole world was standing around him, watching as he stood. The Podgornyv populace watched as Yellow Face read off a long, often repeating, list of crimes and accusations against Pen, many of which hadn't even been illegal in Old Goiky. There was assault, armed robbery, assault with a deadly weapon, treason -- against who he didn't know -- inciting a riot, attempting to evade arrest. Pen couldn't bring himself to care anymore, he knew he was going to die. \nIt's strange, really, how the red block behind him took a good look at his hands before shooting."
- YFC_BUN.7.a: "'You never amounted to anything anyways.'"
+ YFC_BUN.7.desc: "He was on a train. He didn't even know they had those all the way in Greenville. Though, one 'Pipe' was the object driving it. Pipe was supposedly the leader of a 'Rail Road Sector', and they called themselves a 'Sectorial.' This meant nothing to Pen, except that they were with the Yellow Face Corporation.\nLast night, Pen entered Greenville and was greeted by Yellow Facer law inforcement. After putting him in cuffs, and threatening to shoot him if he made a single sound, they put him in a box and paraded him around town for a little while. The residents, some of which he'd spoken to personally, back when the Bunch was still a thing, didn't say anything. They watched him, with looks of fear and horror on their faces, some with complacency. The rest of the night was a haze. A rioter showing up, then more, then gunshots, blood. It was harder to remember last night than it was to listen to the sounds of the train moving along its tracks, so thats what he did instead.\n\nAfter around an hour, Pen got bored. \n\"So, where are you taking me?\" He didn't really expect a response. \nPipe looked over their shoulder, facing Pen. \"Besides Podgornyv, I don't know. I'd tell you if I could.\" The response was honestly a little shocking, to Pen. Not only was Pipe actually speaking to him, they were being respectful. Benevolent, even.\nPen decided to try his luck with another question. \"Why am I being hunted? I haven't even done much wrong, I swear!.\" Pipe turned again, another quick response. \"Not only were you working closely, *very* closely with Eraser, you are some five hundred million vigintillion dollars in debt to us.\" \nThe rest of Pen's train ride continued in silence. Of course this was about money.\n\nA few hours later, and they were back in Podgornyv. Pen had actually been sitting inside some waiting room for a while before now. They let him out just a little while ago, ushering him to some random location in the middle of the once beautiful, now ruined city. When they finished transporting him, he was standing on a stage. Three armed objects behind him, and a crowd in front. It felt like the whole world was standing around him, watching as he stood. The Podgornyv populace watched as Yellow Face read off a long, often repeating, list of crimes and accusations against Pen, many of which hadn't even been illegal in Old Goiky. There was assault, armed robbery, assault with a deadly weapon, treason -- against who he didn't know -- inciting a riot, attempting to evade arrest. Pen couldn't bring himself to care anymore, he knew he was going to die. \nIt's strange, really, how the red block behind him took a good look at his hands before shooting."
+ YFC_BUN.7.a: "\"You never amounted to anything anyways.\""
 
  YFC_BUN.8.t: "A Rematch!"
  YFC_BUN.8.desc: "The riots got too large. Way larger than we could ever handle with a police force. Not even the military could push back the rioters at first, or the 'Neo-Bunchivists' as they call themselves. Not really 'neo' if your predecessor existed less than a few years ago. Regardless, They've taken control of the outskirts of Podgornyv, and, at this point, we can't hold them back with what we have. Additionally, Coiny and his men are dealing with larger events, and we won't be able to get ahold of them without large sums of money. Not to mention the travel times. So we'll have to rely on the Military Sector and our Mercenaries.\nThe Bandits, despite their combined efforts, aren't just attacking us, they're attacking the combined system of capitalism. If this is war, so be it, we'll win!"
@@ -881,7 +881,7 @@
  YFC_BUN.13.c: "The face of pro-annexation!"
 
  YFC_BUN.14.t: "An Equal?"
- YFC_BUN.14.desc: "'How would the occupation zone fit into our nation's structure?' asked Beaker in, you guessed it, another day of discussions and meetings. It was a good question, as the sectors wanted different things. Capitalism will likely die before all of our sectorials agree on something. Top Hat and Hammer wanted it to be more of a colony compared to the other cities and the like comprising our current nation, Beaker and Pipe wanted a fully integrated state, however, Beaker said that, despite its status of full integration, it should sitll be partfully autonomous. So what will it be...?"
+ YFC_BUN.14.desc: "\"How would the occupation zone fit into our nation's structure?\" asked Beaker in yet another day of discussions and meetings. It was a good question, seeing as we'd need to get to some sorth of consensus. Capitalism would likely die before all of our sectorials agree on something without prior discussions. Top Hat and Hammer wished for the zone to be similar to that of a colony, compared to the other cities and settlements comprising our current state. Beaker and Pipe preferred a fully integrated state, however, Beaker said that -- despite its status of full integration -- the zone should still be partially autonomous. So what should it be...?"
  YFC_BUN.14.a: "A colony!"
  YFC_BUN.14.b: "An integrated state!"
  YFC_BUN.14.c: "An autonomous state!"
@@ -974,15 +974,17 @@
  #Also write is if that make sense if the event goes off a few times!
  #ZDubbz
 
- YFC_sector.1.t: "Top Hat vs Taser arguement"
- YFC_sector.1.desc: "Both are fighting over Police contorl (Cost, placement, use)"
- YFC_sector.1.a: "Side with Top Hat"
- YFC_sector.1.b: "Side with Taser"
+# YFC_sector
+
+ YFC_sector.1.t: "Sector Update: An Argument Over Policing" #every ancap ever lmao
+ YFC_sector.1.desc: "During yesterday's discussions, a small scale argument between two sectorials, namely, Top Hat and Taser, became the central issue of the night. Top Hat had claimed that crime was running rampant in our less centralizeed, eastern territories, and that we should increase the precense of hired surveillancing services in these areas. Taser deflected the position, stating that, not only did Top Hat not have any proof, but that he was only attempting to expand his own influence in the areas. Taser instead suggested that we simpply keep the status quo, reasoning that it would keep the easterners happier, and would be less work on our end."
+ YFC_sector.1.a: "Top Hat's got the right idea."
+ YFC_sector.1.b: "Taser is the obvious choice."
 
  YFC_sector.2.t: "Hammer vs Pipe arguement"
- YFC_sector.2.desc: "Both are fighting over some of the railways (Such as repairing and workers)"
- YFC_sector.2.a: "Side with Hammer"
- YFC_sector.2.b: "Side with Pipe"
+ YFC_sector.2.desc: "During yesterday's discussions, a small scale argument between two sectorials, namely, Hammer and Pipe, became the central issue of the night. Some rail lines had been under performing, as of late, so Pipe, of the Rail Road Sector, decided it would be best for their sector that new ones be constructed. Having under-estimated the amount of labor necessary to execute their plans, they decided to hire some. Unfortunately for Hammer, the new contractors Pipe had hired just so happened to have been working on a project for the Construction Sector. Hammer had claimed that this purchase was 'unfair,' and that, as the leader of the Construction sector, he should've had a say in this dealing before it occurred. Who's side shall we take in this argument?"
+ YFC_sector.2.a: "It's the free market, why would we persecute Pipe for a purchase?"
+ YFC_sector.2.b: "It's Hammer's sector..."
 
  YFC_sector.3.t: "Beaker vs Hammer arguement"
  YFC_sector.3.desc: "Both are fighting over something idk (Maybe where to put funds/work)"
@@ -999,10 +1001,10 @@
  YFC_sector.5.a: "Side with Top Hat"
  YFC_sector.5.b: "Side with Pipe"
 
- YFC_sector.6.t: "Top Hat Bribe"
- YFC_sector.6.desc: "Top Hat wants to Bribe us"
- YFC_sector.6.a: "Take the Bribe"
- YFC_sector.6.b: "Decline the Bribe"
+ YFC_sector.6.t: "Purchasing the Government?"
+ YFC_sector.6.desc: "Top Hat came to Yellow Faces's office late last night, with a large briefcase. He said that he wanted a couple of laws passed lickity split, and opened the briefcase to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Now, some may say it to be unfair that we may undergo this dealing..."
+ YFC_sector.6.a: "However, we care not for the opinions of the poor."
+ YFC_sector.6.b: "And they are correct, for it would be highly dishonest."
 
  YFC_sector.7.t: "Pipe Bribe"
  YFC_sector.7.desc: "Pipe wants to Bribe us"
@@ -1074,9 +1076,11 @@
  YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.20.a: "Curse them!"
 
- YFC_sector.21.t: "EMERGENCY"
+ YFC_sector.21.t: "Economic Report: EMERGENCY!"
  YFC_sector.21.desc: "So YFC is now in debt. The sectors are not gonna work with us till this is fixed. So yeah the player should fix it or something"
  YFC_sector.21.a: "An Unprecedented Disaster!"
+
+# BUN_YFC
 
  BUN_YFC.1.t: "The Yellow Facer Ideology Crumbles." #if eraser is killed or working in the YFC's govt
  BUN_YFC.1.desc: "We're finally free! After our defeat in the war with the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Sadly, Eraser is nowhere to be found, and Pen's been killed. Blocky, that traitor, decided to side with the Corporation, so, there's no one directly in line to really head anything. We'll sort that out later, for now, we've gotta make sure this revolution doesn't die!"
@@ -1116,7 +1120,7 @@
  BUN_YFC.8.desc: "From some eavesdropping, we were able to figure out that the Yellow Facers are planning some type of large offensive. We'd say more, but the object who *was* eavesdropping got his arm exploded by a grenade shortly after, and isn't... doing to well, to say the least. Actually, saying the most here, he's probably gonna die. Anyways, we should probably stay alert and, like, fight good."
  BUN_YFC.8.a: "Yeah! Hold the line!" 
 
- #GOIKY TECHNOCRATIC REPUBLIC
+# GTR
  GTR_event.1.t: "Gaudeamus Igitur"
  GTR_event.1.desc: "\"It's still not over!\" Golf Ball emotionally shouted in her characteristic voice. She was up late again, working on the Dream Island Restoration Project. Over the weeks, the former BFDI contestant had established a team at the university, with the intent of recreating the island. Tennis Ball's past words about state management from when they were together in the TLC continued to eat at her. His words about stupid things like 'bureaucracy' and 'proper supply lines,' rang through her head. Tennis Ball had likely been right about needing organized administration, but who the hell could concern themselves with that when the possibility of saving a whole civilization was at their fingertips?! We are on the verge of a breakthrough, we can't worry ourselves about governments!"
  GTR_event.1.a: "We can still save everything."
@@ -1246,7 +1250,7 @@
  GTR_event.30.desc: "Thanks to our cooperation with [SRR.GetName] we managed to incorporate the city of Lofty! This will massively improve our position in the north and make our economical condition better."
  GTR_event.30.a: "Wonderful!"
 
-#NEWS
+# bfdinews
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."
  bfdinews.1.a: "Hate is popularity too."
@@ -1372,7 +1376,7 @@
  bfdinews.29.a: "Golfball actually did it?"
 
 
-#City fall events
+# bfdinews_cities
 
  bfdinews_cities.1.t: "GREENPORT OVERRUN!"
  bfdinews_cities.1.desc: "As of [?global.date.GetDateStringNoHourLong] reports from local civilians living inside Greenport, an important center of trade, have fallen under [193.controller.GetName] control. The invading forces went street by street clearing out the city and its defenders. The final stand of the defenders came around the port, where boats evacuated civilians, soldiers, and the government before being overrun. The sounds of battle have ended in the city, but a new flag has risen."
