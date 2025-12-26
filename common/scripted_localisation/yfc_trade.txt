@@ -67,6 +67,74 @@ defined_text = {
 }
 
 defined_text = {
+	name = equipment_cost_trade
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 0 } }
+		localization_key = "0.5K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 1 } }
+		localization_key = "0.6K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 2 } }
+		localization_key = "0.7K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 3 } }
+		localization_key = "0.8K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 4 } }
+		localization_key = "1K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 5 } }
+		localization_key = "0.6K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
+		localization_key = "0.75K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 7 } }
+		localization_key = "0.75K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 8 } }
+		localization_key = "0.9K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 9 } }
+		localization_key = "1.05K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 10 } }
+		localization_key = "1K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 11 } }
+		localization_key = "1.25K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 12 } }
+		localization_key = "1.5K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 13 } }
+		localization_key = "1K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 14 } }
+		localization_key = "1.25K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 15 } }
+		localization_key = "1.5K"
+	}
+}
+
+defined_text = {
 	name = equipment_type_selling
 	text = {
 		trigger = { check_variable = { THIS.selling_item = -1 } }

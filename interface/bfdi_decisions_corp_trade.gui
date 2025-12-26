@@ -88,7 +88,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "BuyingButton"
-			position = { x = 30 y = 95 }
+			position = { x = 20 y = 95 }
 			quadTextureSprite ="GFX_icon_button_46x46"
 			buttonText = "Buy" #UPDATE LATER
 			buttonFont = "hoi_18mbs"
@@ -98,7 +98,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "SellingButton"
-			position = { x = 30 y = 185 }
+			position = { x = 20 y = 185 }
 			quadTextureSprite ="GFX_icon_button_46x46"
 			buttonText = "Sell" #UPDATE LATER
 			buttonFont = "hoi_18mbs"
@@ -109,18 +109,18 @@ guiTypes = {
 		iconType = {
 			name = "background_equipment_box_selling"
 			spriteType = "GFX_YFC_trade_unselected"
-			position = { x = 90 y = 80 }
+			position = { x = 80 y = 80 }
 		}	
 		iconType = {
 			name = "background_equipment_box_selling_item"
-			position = { x = 160 y = 100 }
+			position = { x = 150 y = 100 }
 			alwaystransparent = yes
 		}
 
 		instantTextboxType = { 
 			name = "selling_amount_text"
 			text = [?THIS.selling_amount|Y0] 
-			position = { x = 290 y = 130 }
+			position = { x = 280 y = 130 }
 			maxWidth = 100
 			format = centre
 			font = hoi_24header
@@ -129,18 +129,18 @@ guiTypes = {
 		iconType = {
 			name = "background_equipment_box_buying"
 			spriteType = "GFX_YFC_trade_unselected"
-			position = { x = 90 y = 170 }
+			position = { x = 80 y = 170 }
 		}	
 		iconType = {
 			name = "background_equipment_box_buying_item"
-			position = { x = 160 y = 190 }
+			position = { x = 150 y = 190 }
 			alwaystransparent = yes
 		}
 
 		instantTextboxType = { 
 			name = "buying_amount_text"
 			text = [?THIS.buying_amount|Y0]
-			position = { x = 290 y = 220 }
+			position = { x = 280 y = 220 }
 			maxWidth = 100
 			format = centre
 			font = hoi_24header
@@ -148,7 +148,7 @@ guiTypes = {
 
 		instantTextboxType = { 
 			name = "buying_cost_text"
-			text = "$[?THIS.selling_amount|0]([?YFC.buying_X^global.yfc_tradable_countries^i|1])"
+			text = "$[?THIS.selling_amount|0]K([?ROOT.buying_X^i|1]x)"
 			position = { x = 315 y = 95 }
 			maxWidth = 200
 			format = centre
@@ -173,7 +173,7 @@ guiTypes = {
 
 		instantTextboxType = { 
 			name = "selling_cost_text"
-			text = "$[?THIS.selling_amount|0]([?YFC.selling_X^global.yfc_tradable_countries^i|1])" 
+			text = "$[?ROOT.selling_cost^i|0]K([?ROOT.selling_X^i|1]x)" 
 			position = { x = 315 y = 185 }
 			maxWidth = 200
 			format = centre

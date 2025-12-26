@@ -20,6 +20,7 @@ decision_YFC_trade_category= {
 			clear_array = global.yfc_tradable_countries
 			clear_array = YFC.selling_X
 			clear_array = YFC.buying_X
+			clear_array = YFC.selling_cost
 			every_country = { 
 				IF = {
 					limit = {
@@ -35,24 +36,14 @@ decision_YFC_trade_category= {
 					IF = {
 						limit = {check_variable = { THIS.selling_item > -1 }}
 						add_to_array = {
-							array = YFC.equipment_list
-							value = THIS.selling_item
-						}
-						add_to_array = {
-							array = YFC.selling_X
+							array = YFC.buying_X
 							value = 1
 						}
 					}
 					IF = {
 						limit = {check_variable = { THIS.buying_item > -1 }}
-						add_to_array = {
-							array = YFC.equipment_list
-							value = THIS.buying_item
-						}
-						add_to_array = {
-							array = YFC.buying_X
-							value = 1
-						}
+
+
 					}
 				}
 			}

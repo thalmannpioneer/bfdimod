@@ -13,6 +13,14 @@ decision_GTR_north_integration_category = {
         fire_only_once = yes
 
         icon = GFX_decisions_GTR_integrate_north_satoymin
+
+        ai_will_do = {
+			base = 1
+			modifier = {
+				has_political_power > 150
+				add = 5
+			}
+		}
     }
 
     GTR_north_intergration_wilopede = {
@@ -29,5 +37,13 @@ decision_GTR_north_integration_category = {
         fire_only_once = yes
 
         icon = GFX_decisions_GTR_integrate_north_wilopede
+
+        ai_will_do = {
+			base = 1
+			modifier = {
+				has_political_power > 150
+				add = 5
+			}
+		}
     }
 }
