@@ -205,7 +205,7 @@ decision_GTR_operation_paperclip_category = {
                 }
                 random = {
                     chance = pc_chance
-                    set_country_flag = GTR_paperclip_schneehorn
+                    set_country_flag = GTR_paperclip_greenport
                     country_event = GTR_event.33
                     GPR = {
                         country_event = GTR_event.34

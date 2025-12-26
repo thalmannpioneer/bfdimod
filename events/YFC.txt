@@ -1002,8 +1002,11 @@ country_event = {
 	is_triggered_only = yes
     
 	immediate = {
-        set_variable = { trade_cost_show_var = YFC.YFC_cost_var }
-		YFC = { divide_variable = { YFC_cost_var = 100 } }
+        set_variable = { trade_cost_show_var = YFC.selling_cost^YFC_trade_nation_pos_var }
+		divide_variable = { trade_cost_show_var = 100 }
+		set_country_flag = ongoing_trade_offer
+		clr_country_flag = Selling_Menu 
+		clr_country_flag = Buying_Menu
     }
 
     option = { #Agree!
@@ -1018,7 +1021,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = infantry_equipment_0
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1028,7 +1031,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = infantry_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1038,7 +1041,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = infantry_equipment_2
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1048,7 +1051,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = infantry_equipment_3
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1058,7 +1061,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = support_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1068,7 +1071,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = motorized_equipment_0
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1078,7 +1081,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = motorized_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1088,7 +1091,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = artillery_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1098,7 +1101,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = artillery_equipment_2
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1108,7 +1111,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = artillery_equipment_3
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1118,7 +1121,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_air_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1128,7 +1131,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_air_equipment_2
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1138,7 +1141,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_air_equipment_3
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1148,7 +1151,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_tank_equipment_1
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1158,7 +1161,7 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_tank_equipment_2
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
@@ -1168,16 +1171,16 @@ country_event = {
 			YFC = {
 				send_equipment = {
 					equipment = anti_tank_equipment_3
-					amount = 100
+					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
 		}
-
+		clr_country_flag = ongoing_trade_offer
 		hidden_effect = {
-			subtract_from_variable = { money_amount = YFC.YFC_cost_var }
+			subtract_from_variable = { money_amount = trade_cost_show_var }
 			YFC = { 
-				add_to_variable = {money_amount = YFC.YFC_cost_var}
+				add_to_variable = {money_amount = trade_cost_show_var}
 				country_event = {
 					id = YFC_event.34
 					hours = 1
@@ -1188,14 +1191,14 @@ country_event = {
 		ai_chance = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > YFC.YFC_cost_var } 
+				check_variable = { money_amount > trade_cost_show_var } 
 				add = 10
 		 	}
 		}	
 	}
 	option = { #Disagree!
 		name = YFC_event.36.b
-
+		clr_country_flag = ongoing_trade_offer
 		hidden_effect = {
 			YFC = { 
 				country_event = {

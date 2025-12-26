@@ -14,10 +14,84 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 
 		triggers = { 
 			BuyingButton_click_enabled = {
-				THIS = {has_country_flag = Confirmed_Trade_Selling}
+				THIS = {
+					has_country_flag = Confirmed_Trade_Selling
+					NOT = { has_country_flag = ongoing_trade_offer }
+				}
 			}
 			SellingButton_click_enabled = {
-				THIS = {has_country_flag = Confirmed_Trade_Buying}
+				THIS = {
+					has_country_flag = Confirmed_Trade_Buying
+					NOT = { has_country_flag = ongoing_trade_offer }
+				}
+				OR = {
+					AND = {
+						ROOT = { check_variable = {num_equipment@infantry_equipment_0 > buying_amount}}
+						THIS = { check_variable = { buying_item = 0 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@infantry_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 1 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@infantry_equipment_2 > buying_amount}}
+						THIS = { check_variable = { buying_item = 2 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@infantry_equipment_3 > buying_amount}}
+						THIS = { check_variable = { buying_item = 3 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@support_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 4 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@motorized_equipment_0 > buying_amount}}
+						THIS = { check_variable = { buying_item = 5 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@motorized_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 6 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@artillery_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 7 }}
+					}		
+					AND = {
+						ROOT = { check_variable = {num_equipment@artillery_equipment_2 > buying_amount}}
+						THIS = { check_variable = { buying_item = 8 }}
+					}	
+					AND = {
+						ROOT = { check_variable = {num_equipment@artillery_equipment_3 > buying_amount}}
+						THIS = { check_variable = { buying_item = 9 }}
+					}	
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_air_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 10 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_air_equipment_2 > buying_amount}}
+						THIS = { check_variable = { buying_item = 11 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_air_equipment_3 > buying_amount}}
+						THIS = { check_variable = { buying_item = 12 }}
+					}	
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_tank_equipment_1 > buying_amount}}
+						THIS = { check_variable = { buying_item = 13 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_tank_equipment_2 > buying_amount}}
+						THIS = { check_variable = { buying_item = 14 }}
+					}
+					AND = {
+						ROOT = { check_variable = {num_equipment@anti_tank_equipment_3 > buying_amount}}
+						THIS = { check_variable = { buying_item = 15 }}
+					}																																																													
+				}
+
+				
 			}
 			background_equipment_box_selling_item_visible = {
 				THIS = { check_variable = { selling_item > -1 }}
@@ -66,7 +140,8 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 			}
 			BuyingButton_click = { #Do later xd
 				ROOT = { set_temp_variable = { cost_money_var = 50 } }
-				THIS = { 
+				THIS = {
+					set_country_flag = ongoing_trade_offer
 					country_event = {
 						id = YFC_event.36
 						hours = 1
@@ -74,8 +149,8 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 				}
 			}
 			SellingButton_click = {
-				ROOT = { set_variable = { YFC_cost_var = 50 } }
 				THIS = { 
+					set_country_flag = ongoing_trade_offer
 					country_event = {
 						id = YFC_event.36
 						hours = 1
@@ -146,18 +221,28 @@ scripted_gui = { #I AM SANE
 				check_variable = { buying_item > -1  }
 				NOT = {has_country_flag = Confirmed_Trade_Buying}
 			}
+			Selling_Button_click_enabled = {
+				NOT = {has_country_flag = ongoing_trade_offer}
+			}
+			Buying_Button_click_enabled = {
+				NOT = {has_country_flag = ongoing_trade_offer}
+			}
 
 			selling_item_button_increase_X_click_enabled = {
-				check_variable = { selling_amount < 975  }
+				check_variable = { selling_amount < 1000 }
+				NOT = { has_country_flag = ongoing_trade_offer }
 			}
 			selling_item_button_decrease_X_click_enabled = {
-				check_variable = { selling_amount > 100  }
+				check_variable = { selling_amount > 100 }
+				NOT = { has_country_flag = ongoing_trade_offer }
 			}
 			buying_item_button_increase_X_click_enabled = {
-				check_variable = { buying_amount < 975  }
+				check_variable = { buying_amount < 1000 }
+				NOT = { has_country_flag = ongoing_trade_offer }
 			}
 			buying_item_button_decrease_X_click_enabled = {
-				check_variable = { buying_amount > 100  }
+				check_variable = { buying_amount > 100 }
+				NOT = { has_country_flag = ongoing_trade_offer }
 			}
 		}
 
