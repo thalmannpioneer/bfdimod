@@ -53,4 +53,13 @@ characters = {
         name = GTR_swappy
         portraits = { civilian = { small = GFX_idea_GTR_swappy } }
     }
+    GTR_dexter = {
+        name = GTR_dexter
+        portraits = {
+            civilian = {
+                large = GFX_GTR_dexter
+                small = GFX_idea_GTR_dexter
+            }
+        }
+    }
 }

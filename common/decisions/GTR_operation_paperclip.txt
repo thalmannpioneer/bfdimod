@@ -1,0 +1,219 @@
+decision_GTR_operation_paperclip_category = {
+    GTR_operation_paperclip_casland = {
+        cost = 50
+        days_remove = 30
+        visible = {
+            NOT = { has_country_flag = GTR_paperclip_casland }
+        }
+        available = {
+            NOT = { EMP = { owns_state = 206 } }
+            206 = {
+                owner = { has_war = no }
+            }
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                network_strength = {
+                    target = 206.owner
+                    value > 20
+                }
+            }
+            hidden_trigger = { NOT = { has_country_flag = GTR_paperclip_casland } }
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 206
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                custom_effect_tooltip = l_GTR_paperclip_lar_tt
+            }
+            hidden_effect = {
+                set_temp_variable = { pc_chance = 50 }
+                if = {
+                    limit = { has_dlc = "La Resistance" }
+                    add_to_temp_variable = { pc_chance = network_national_coverage@206.owner } #scary
+                    if = {
+                        limit = { check_variable = { pc_chance > 100 } }
+                        set_temp_variable = { pc_chance = 100 }
+                    }
+                    round_temp_variable = pc_chance
+                }
+                random = {
+                    chance = pc_chance
+                    set_country_flag = GTR_paperclip_casland
+                    country_event = GTR_event.33
+                    206 = {
+                        owner = { country_event = GTR_event.34 }
+                    }
+                }
+            }
+        }
+
+        icon = GFX_decisions_GTR_operation_paperclip_casland
+    }
+
+    GTR_operation_paperclip_north_goiky = {
+        cost = 50
+        days_remove = 30
+        visible = {
+            NOT = { has_country_flag = GTR_paperclip_north_goiky }
+            country_exists = WGF
+        }
+        available = {
+            country_exists = WGF
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                network_strength = {
+                    target = WGF
+                    value > 20
+                }
+            }
+            hidden_trigger = { NOT = { has_country_flag = GTR_paperclip_north_goiky } }
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 177
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                custom_effect_tooltip = l_GTR_paperclip_lar_tt
+            }
+            hidden_effect = {
+                set_temp_variable = { pc_chance = 50 }
+                if = {
+                    limit = { has_dlc = "La Resistance" }
+                    add_to_temp_variable = { pc_chance = network_national_coverage@WGF }
+                    if = {
+                        limit = { check_variable = { pc_chance > 100 } }
+                        set_temp_variable = { pc_chance = 100 }
+                    }
+                    round_temp_variable = pc_chance
+                }
+                random = {
+                    chance = pc_chance
+                    set_country_flag = GTR_paperclip_north_goiky
+                    country_event = GTR_event.33
+                    WGF = {
+                        country_event = GTR_event.34
+                    }
+                }
+            }
+        }
+
+        icon = GFX_decisions_GTR_operation_paperclip_north_goiky
+    }
+
+    GTR_operation_paperclip_schneehorn = {
+        cost = 50
+        days_remove = 30
+        visible = {
+            NOT = { has_country_flag = GTR_paperclip_schneehorn }
+            country_exists = GGR
+        }
+        available = {
+            country_exists = GGR
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                network_strength = {
+                    target = GGR
+                    value > 20
+                }
+            }
+            hidden_trigger = { NOT = { has_country_flag = GTR_paperclip_schneehorn } }
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 15
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                custom_effect_tooltip = l_GTR_paperclip_lar_tt
+            }
+            hidden_effect = {
+                set_temp_variable = { pc_chance = 50 }
+                if = {
+                    limit = { has_dlc = "La Resistance" }
+                    add_to_temp_variable = { pc_chance = network_national_coverage@GGR }
+                    if = {
+                        limit = { check_variable = { pc_chance > 100 } }
+                        set_temp_variable = { pc_chance = 100 }
+                    }
+                    round_temp_variable = pc_chance
+                }
+                random = {
+                    chance = pc_chance
+                    set_country_flag = GTR_paperclip_schneehorn
+                    country_event = GTR_event.33
+                    GGR = {
+                        country_event = GTR_event.34
+                    }
+                }
+            }
+        }
+
+        icon = GFX_decisions_GTR_operation_paperclip_schneehorn
+    }
+
+    GTR_operation_paperclip_greenport = {
+        cost = 50
+        days_remove = 30
+        visible = {
+            NOT = { has_country_flag = GTR_paperclip_greenport }
+            country_exists = GPR
+        }
+        available = {
+            country_exists = GPR
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                network_strength = {
+                    target = GPR
+                    value > 20
+                }
+            }
+            hidden_trigger = { NOT = { has_country_flag = GTR_paperclip_greenport } }
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 193
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                custom_effect_tooltip = l_GTR_paperclip_lar_tt
+            }
+            hidden_effect = {
+                set_temp_variable = { pc_chance = 50 }
+                if = {
+                    limit = { has_dlc = "La Resistance" }
+                    add_to_temp_variable = { pc_chance = network_national_coverage@GPR }
+                    if = {
+                        limit = { check_variable = { pc_chance > 100 } }
+                        set_temp_variable = { pc_chance = 100 }
+                    }
+                    round_temp_variable = pc_chance
+                }
+                random = {
+                    chance = pc_chance
+                    set_country_flag = GTR_paperclip_schneehorn
+                    country_event = GTR_event.33
+                    GPR = {
+                        country_event = GTR_event.34
+                    }
+                }
+            }
+        }
+
+        icon = GFX_decisions_GTR_operation_paperclip_greenport
+    }
+}

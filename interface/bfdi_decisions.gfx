@@ -785,4 +785,34 @@ spriteTypes = {
 		name = "GFX_decision_GTR_bop_conduct_tests"
 		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_conduct_tests.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_cat_GTR_operation_paperclip"
+		textureFile = "gfx/interface/decisions/decision_cat_GTR_operation_paperclip.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_operation_paperclip"
+		textureFile = "gfx/interface/decisions/decision_category_operation_paperclip.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_operation_paperclip_casland"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_operation_paperclip_casland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_operation_paperclip_north_goiky"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_operation_paperclip_north_goiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_operation_paperclip_schneehorn"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_operation_paperclip_schneehorn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_operation_paperclip_greenport"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_operation_paperclip_greenport.dds"
+	}
 }

@@ -161,6 +161,12 @@ idea_GTR_humanitary_aid = {
     consumer_goods_factor = var_GTR_humaid_cgf
 }
 
+idea_GTR_operation_paperclip = {
+
+    icon = GFX_idea_GTR_operation_paperclip
+    research_speed_factor = var_idea_GTR_paperclip_rs
+}
+
 idea_YFC_anarchic_lands = {
     icon = GFX_idea_YFC_anarchic_lands
 

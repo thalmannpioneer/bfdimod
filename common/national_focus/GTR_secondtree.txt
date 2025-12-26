@@ -950,7 +950,7 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_looking_outside }
 
-        cost = 5
+        cost = 0
 
         ai_will_do = {
             base = 5
@@ -969,13 +969,34 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_behind_steel_walls }
 
-        cost = 5
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_heaven_for_research
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+            hidden_effect = {
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -988,13 +1009,54 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_heaven_for_research }
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                create_intelligence_agency = {
+                    name = "N.E.R.D."
+                    icon = GFX_agency_icon_GTR_nerd
+                }
+            }
+            else = {
+                add_political_power = 50
+            }
+            add_dynamic_modifier = {
+                modifier = idea_GTR_operation_paperclip
+            }
+            custom_effect_tooltip = l_GTR_enables_sciencists_stealing
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.31
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+                set_country_flag = GTR_nerd_missions
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -1007,13 +1069,36 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_behind_steel_walls }
 
-        cost = 5
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+            owns_state = 82
+            owns_state = 75
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_isolationism
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+            hidden_effect = {
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -1026,13 +1111,40 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_strict_border_control }
 
-        cost = 5
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_secret_of_tech
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.32
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+                set_country_flag = {
+                    flag = GTR_outer_politics_cd
+                    days = 35
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -1045,13 +1157,37 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_recruitment_campaign }
         prerequisite = { focus = GTR_focus_privacy_of_innovation }
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = industry
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = electronics
+            }
+            add_ideas = civilian_economy
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+        }
     }
 
 
@@ -1064,7 +1200,7 @@ focus_tree = {
 
         icon = GFX_focus_GTR_republican_affairs
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_new_government }
 

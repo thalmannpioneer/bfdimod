@@ -416,6 +416,26 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/idea_GTR_centrogoiky_aid.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_heaven_for_research
+		textureFile = gfx/interface/ideas/idea_GTR_heaven_for_research.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_isolationism
+		textureFile = gfx/interface/ideas/idea_GTR_isolationism.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_secret_of_tech
+		textureFile = gfx/interface/ideas/idea_GTR_secret_of_tech.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_brain_drain
+		textureFile = gfx/interface/ideas/idea_GTR_brain_drain.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_operation_paperclip
+		textureFile = gfx/interface/ideas/idea_GTR_operation_paperclip.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}
@@ -426,6 +446,10 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_GTR_swappy
 		textureFile = gfx/interface/ideas/idea_GTR_swappy.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_dexter
+		textureFile = gfx/interface/ideas/idea_GTR_dexter.dds
 	}
 	
 	spriteType = {

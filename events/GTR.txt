@@ -719,3 +719,98 @@ country_event = {
         }
     }
 }
+
+
+country_event = {
+    id = GTR_event.31
+    title = GTR_event.31.t
+    desc = GTR_event.31.desc
+    picture = GFX_GTR_event31
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.31.a
+        if = {
+            limit = { has_dlc = "La Resistance" }
+            create_operative_leader = {
+                name = GTR_dexter
+                GFX = GFX_GTR_dexter
+                traits = { operative_infiltrator }
+                bypass_recruitment = yes
+                nationalities = { GTR }
+            }
+        }
+        else = {
+            add_advisor_role = {
+                character = GTR_dexter
+                activate = yes
+                advisor = {
+                    slot = theorist
+                    ledger = civilian
+                    cost = 100
+                    idea_token = idea_GTR_dexter
+                    traits = { ambitious_diplomat }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.32
+    title = GTR_event.32.t
+    desc = GTR_event.32.desc
+    picture = GFX_GTR_event32
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.32.a
+        every_other_country = {
+            limit = {
+                NOT = { tag = EMP }
+            }
+            add_opinion_modifier = {
+                target = GTR
+                modifier = medium_decrease
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.33
+    title = GTR_event.33.t
+    desc = GTR_event.33.desc
+    picture = GFX_GTR_event33
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.33.a
+        custom_effect_tooltip = l_GTR_improves_paperclip
+        add_to_variable = { var_idea_GTR_paperclip_rs = 0.05 }
+    }
+}
+
+country_event = {
+    id = GTR_event.34
+    title = GTR_event.34.t
+    desc = GTR_event.34.desc
+    picture = GFX_GTR_event34
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.34.a
+        add_opinion_modifier = {
+            target = GTR
+            modifier = medium_decrease
+        }
+        add_timed_idea = {
+            idea = idea_GTR_brain_drain
+            days = 180
+        }
+    }
+}

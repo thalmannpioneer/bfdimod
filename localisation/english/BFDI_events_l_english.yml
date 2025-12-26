@@ -1250,7 +1250,23 @@
  GTR_event.30.desc: "Thanks to our cooperation with [SRR.GetName] we managed to incorporate the city of Lofty! This will massively improve our position in the north and make our economical condition better."
  GTR_event.30.a: "Wonderful!"
 
-# bfdinews
+ GTR_event.31.t: "Professional Etiquette"
+ GTR_event.31.desc: "A gloomy rain pours down on the backstreets of the Announcergrad. A lone lamp shines through the thickly curtained windows of a nondescript gray building. \"Where the hell is he? The meeting's been going on for half an hour already.\"\nNotes glanced nervously at his watch, drumming his fingers on the table.\n\n\"Why do you even think we can trust him? Where did he even come from?\"\n\"I already told you he's from Casland, and that the subject is as trusted and reliable as a Greenport watch. He'll be here any minute.\"\n\nA rattling sound in the front hall. Everyone glanced at the entrance to the room, but saw nothing.\n\n\"Gentlemen, look a little lower. I am here.\""
+ GTR_event.31.a: "\"Told ya!\""
+
+ GTR_event.32.t: "Political Vacuum"
+ GTR_event.32.desc: "After the Republic government declared the Goiky University's technological developments private, many Goiky self-proclaimed governments reacted with serious negativity. We lost a fair number of diplomatic contacts, but that's all for science, right?"
+ GTR_event.32.a: "That should've been done."
+
+ GTR_event.33.t: "Successful Operation!"
+ GTR_event.33.desc: "The operation to lure scientists from another country was successful, and we were able to transfer these subjects to our country. This will undermine our relations with that country, but that's not really a big deal."
+ GTR_event.33.a: "Wonderful!"
+
+ GTR_event.34.t: "Scientists Flee!"
+ GTR_event.34.desc: "As a result of Technocrats' espionage activities in our country, many of our scientists fled to Announcergrad with the support of Golfball intelligence. This will seriously impact our scientific potential, and we will need time to fill the vacancies with new personnel."
+ GTR_event.34.a: "Stupid Bossy Bot!"
+
+#NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."
  bfdinews.1.a: "Hate is popularity too."

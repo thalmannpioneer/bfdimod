@@ -110,8 +110,8 @@
  GPG_mission_deal_with_iron_hand: "Deal with §LIron Hand§!"
  GPG_decision_organize_arson: "§ROrganize arson§!"
  
- decision_GPG_civilwar_category: "§YBattle for Goiky§!"
- GPG_mission_race_to_casland: "§RRace for Casland§!"
+ decision_GPG_civilwar_category: "§YBattle for Goiky§!"
+ GPG_mission_race_to_casland: "§RRace for Casland§!"
  GPG_mission_race_to_casland_desc: "Сasland is the Goikish heart. Holding it will determine our victory over our opponents."
  GPG_decision_declare_cw_victory: "§7Declare our victory§!"
  GPG_decision_declare_cw_victory_desc: "Our opponents are defeated! It's time to restore central authority to Casland."
@@ -304,6 +304,12 @@
  decision_GTR_power_balance_category: "§YNerdy Disputes§!"
  GTR_bop_invite_objects_decision: "Invite §7Talented Objects§!"
  GTR_bop_conduct_tests_decision: "Conduct §gIQ Tests§!"
+ decision_GTR_operation_paperclip_category: "§YOperation \"Paperclip\"§!"
+ decision_GTR_operation_paperclip_category_desc: "After the collapse of §7Goiky§!, many §Ytalented objects§! scattered across its various fragments. §gThe Technocratic Republic§! needs those brilliant minds to exist and function.\n\n§1Operation \"Paperclip\"§! was launched to lure scientists from other governments to ours using... various methods."
+ GTR_operation_paperclip_casland: "Get §3Casland§! Scientists"
+ GTR_operation_paperclip_north_goiky: "Get §tNorth-Goiky§! Sciencists"
+ GTR_operation_paperclip_schneehorn: "Get §gSchneehorn§! Scientists"
+ GTR_operation_paperclip_greenport: "Get §GGreenport§! Scientists"
  
  #TBT State Modifiers 
  TBT_low_pop: "Minor Teardroppers Population"

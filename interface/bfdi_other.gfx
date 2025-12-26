@@ -19,4 +19,10 @@ spriteTypes = {
 		name = "GFX_topbar_money"
 		texturefile = "gfx/interface/topbar/GFX_topbar_money.dds"
 	}
+
+	spriteType = {
+		name = "GFX_agency_icon_GTR_nerd"
+		texturefile = "gfx/interface/agency_icon_GTR_nerd.dds"
+		noOfFrames = 2
+	}
 }
