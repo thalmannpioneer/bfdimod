@@ -993,7 +993,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #YFC Sell
 	id = YFC_event.36 #YFC trade event other country POV selling
 	title = YFC_event.36.t
     desc = YFC_event.36.desc
@@ -1003,7 +1003,6 @@ country_event = {
     
 	immediate = {
         set_variable = { trade_cost_show_var = YFC.selling_cost^YFC_trade_nation_pos_var }
-		divide_variable = { trade_cost_show_var = 100 }
 		set_country_flag = ongoing_trade_offer
 		clr_country_flag = Selling_Menu 
 		clr_country_flag = Buying_Menu
@@ -1011,7 +1010,7 @@ country_event = {
 
     option = { #Agree!
 		name = YFC_event.36.a
-
+		custom_effect_tooltip = l_YFC_trade_buying
         trigger = {
 			check_variable = {buying_item > -1}
         }
@@ -1178,6 +1177,7 @@ country_event = {
 		}
 		clr_country_flag = ongoing_trade_offer
 		hidden_effect = {
+			divide_variable = { trade_cost_show_var = 100 }
 			subtract_from_variable = { money_amount = trade_cost_show_var }
 			YFC = { 
 				add_to_variable = {money_amount = trade_cost_show_var}
@@ -1210,6 +1210,222 @@ country_event = {
 	}
 }
 
+country_event = { #YFC Buy
+	id = YFC_event.37 #YFC trade event other country POV buying
+	title = YFC_event.37.t
+    desc = YFC_event.37.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+	immediate = {
+        set_variable = { trade_cost_show_var = YFC.buying_cost^YFC_trade_nation_pos_var }
+		set_country_flag = ongoing_trade_offer
+		clr_country_flag = Selling_Menu 
+		clr_country_flag = Buying_Menu
+    }
+
+    option = { #Agree!
+		name = YFC_event.37.a
+		custom_effect_tooltip = l_YFC_trade_selling
+        trigger = {
+			check_variable = {selling_item > -1}
+        }
+
+		IF = {
+			limit = {check_variable = {selling_item = 0}} 
+			ROOT = {
+				send_equipment = {
+					equipment = infantry_equipment_0
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 1}} 
+			ROOT = {
+				send_equipment = {
+					equipment = infantry_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 2}} 
+			ROOT = {
+				send_equipment = {
+					equipment = infantry_equipment_2
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 3}} 
+			ROOT = {
+				send_equipment = {
+					equipment = infantry_equipment_3
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 4}} 
+			ROOT = {
+				send_equipment = {
+					equipment = support_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 5}} 
+			ROOT = {
+				send_equipment = {
+					equipment = motorized_equipment_0
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 6}} 
+			ROOT = {
+				send_equipment = {
+					equipment = motorized_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 7}} 
+			ROOT = {
+				send_equipment = {
+					equipment = artillery_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 8}} 
+			ROOT = {
+				send_equipment = {
+					equipment = artillery_equipment_2
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 9}} 
+			ROOT = {
+				send_equipment = {
+					equipment = artillery_equipment_3
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 10}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_air_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 11}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_air_equipment_2
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 12}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_air_equipment_3
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 13}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_tank_equipment_1
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 14}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_tank_equipment_2
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {check_variable = {selling_item = 15}} 
+			ROOT = {
+				send_equipment = {
+					equipment = anti_tank_equipment_3
+					amount = ROOT.selling_amount
+					target = YFC
+				}
+			}
+		}
+		clr_country_flag = ongoing_trade_offer
+		hidden_effect = {
+			divide_variable = { trade_cost_show_var = 100 }
+			add_to_variable = {money_amount = trade_cost_show_var}
+			YFC = { 
+				subtract_from_variable = { money_amount = trade_cost_show_var }
+				country_event = {
+					id = YFC_event.34
+					hours = 1
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = { money_amount > trade_cost_show_var } 
+				add = 10
+		 	}
+		}	
+	}
+	option = { #Disagree!
+		name = YFC_event.37.b
+		clr_country_flag = ongoing_trade_offer
+		hidden_effect = {
+			YFC = { 
+				country_event = {
+					id = YFC_event.35
+					hours = 1
+				}
+			}
+		}
+	}
+}
 
 ###############################################################################
 ########RAIDS EVENTS###############################################################################

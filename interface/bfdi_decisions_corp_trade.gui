@@ -148,7 +148,7 @@ guiTypes = {
 
 		instantTextboxType = { 
 			name = "buying_cost_text"
-			text = "$[?THIS.selling_amount|0]K([?ROOT.buying_X^i|1]x)"
+			text = "$[?THIS.buying_cost^i|0]K([?ROOT.buying_X^i|1]x)"
 			position = { x = 315 y = 95 }
 			maxWidth = 200
 			format = centre

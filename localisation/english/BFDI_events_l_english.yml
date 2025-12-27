@@ -791,6 +791,25 @@
  YFC_event.33.a: "We'll buy it!"
  YFC_event.33.b: "We'll pass."
 
+
+ YFC_event.34.t: "[FROM.GetName] have accepted our deal!" #Don't rewrite
+ YFC_event.34.desc: ""
+ YFC_event.34.a: "Great!"
+
+ YFC_event.35.t: "[FROM.GetName] have denied our deal!" #Don't rewrite
+ YFC_event.35.desc: ""
+ YFC_event.35.a: "Huh."
+
+ YFC_event.36.t: "New Yellow Face Deal!" #Don't rewrite
+ YFC_event.36.desc: "Yellow Face is willing to sell [?ROOT.buying_amount] equipment that we have requested for [?trade_cost_show_var]K dollars. Should we take the deal?"
+ YFC_event.36.a: "Accept!"
+ YFC_event.36.b: "Deny!"
+
+ YFC_event.37.t: "New Yellow Face Deal!" #Don't rewrite
+ YFC_event.37.desc: "Yellow Face is willing to buy [?ROOT.selling_amount] equipment that we are selling for [?trade_cost_show_var]K dollars. Should we take the deal?"
+ YFC_event.37.a: "Accept!"
+ YFC_event.37.b: "Deny!"
+
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.5.a: "We cannot allow more raids to happen!"

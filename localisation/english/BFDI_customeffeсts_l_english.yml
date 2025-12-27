@@ -117,6 +117,8 @@
  l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
  l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
 
+ l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
+ l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YHires Coiny as an Army Chief!§!"

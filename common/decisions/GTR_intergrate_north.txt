@@ -15,10 +15,10 @@ decision_GTR_north_integration_category = {
         icon = GFX_decisions_GTR_integrate_north_satoymin
 
         ai_will_do = {
-			base = 1
+			base = 5
 			modifier = {
 				has_political_power > 150
-				add = 5
+				add = 10
 			}
 		}
     }
@@ -39,10 +39,10 @@ decision_GTR_north_integration_category = {
         icon = GFX_decisions_GTR_integrate_north_wilopede
 
         ai_will_do = {
-			base = 1
+			base = 2
 			modifier = {
 				has_political_power > 150
-				add = 5
+				add = 10
 			}
 		}
     }
