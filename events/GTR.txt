@@ -814,3 +814,49 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = GTR_event.35
+    title = GTR_event.35.t
+    desc = GTR_event.35.desc
+    picture = GFX_GTR_event35
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.35.a
+        set_party_name = {
+            ideology = neutrality
+            long_name = GTR_neutrality_party_announcergrad
+            name = GTR_neutrality_party_announcergrad
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.36
+    title = GTR_event.36.t
+    desc = GTR_event.36.desc
+    picture = GFX_GTR_event36
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.36.a
+        retire_character = GTR_duumvirate
+        add_country_leader_role = {
+            character = GTR_tennis_ball
+            promote_leader = yes
+            country_leader = {
+                ideology = technocratism
+                traits = { tennis_ball_vision }
+            }
+        }
+        remove_power_balance = { id = GTR_power_balance }
+    }
+
+    option = {
+        name = GTR_event.36.b
+        remove_power_balance = { id = GTR_power_balance }
+    }
+}

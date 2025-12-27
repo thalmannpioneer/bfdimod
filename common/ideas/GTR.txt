@@ -35,8 +35,8 @@ ideas = {
         idea_GTR_destroyed_university = {
             picture = GTR_destroyed_university
             modifier = {
-                research_speed_factor = -0.1
-                stability_factor = -0.1
+                research_speed_factor = -0.5
+                stability_factor = -0.3
                 political_power_gain = -0.1
             }
         }
@@ -117,6 +117,19 @@ ideas = {
             picture = GTR_brain_drain
             modifier = {
                 research_speed_factor = -0.15
+            }
+        }
+        idea_GTR_science_for_objects = {
+            picture = GTR_science_for_objects
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = -0.1
+            }
+            research_bonus = {
+                industry = 0.2
+                electronics = 0.2
+                artillery = -0.2
+                infantry_tech = -0.2
             }
         }
     }

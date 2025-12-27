@@ -19,6 +19,8 @@
  l_GTR_prev_stages_done: "§YПредыдущие стадии завершены§!"
  l_GTR_all_stages_done: "§YВсе приготовления завершены§!"
  l_GTR_outer_politics_cd_tt: "Последний §3Фокус Внешней Политики§! был завершён §Yболее 35 дней назад§!"
+ l_GTR_inner_politics_tree_cd: "Последний §7Фокус Внутренней Политики§! был завершён §Yболее 70 дней назад§!"
+ l_GTR_inner_politics_tree_cd_long: "Последний §7Фокус Внутренней Политики§! был завершён §Yболее 240 дней назад§!"
  
  decision_cost_ie_500_pp_50: "£infantry_equipment_text_icon §Y500§! £political_power"
  decision_cost_ie_500_pp_50_blocked: "£infantry_equipment_text_icon §R500§! £political_power"

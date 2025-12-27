@@ -114,6 +114,7 @@ focus_tree = {
                 modifier = idea_GTR_humanitary_aid
                 days = 210
             }
+            remove_ideas = idea_GTR_announcergrad_supplying_problems
         }
     }
 
@@ -1222,7 +1223,7 @@ focus_tree = {
 
         icon = GFX_focus_GTR_democracy
 
-        cost = 5
+        cost = 0
 
         allow_branch = { has_country_flag = GTR_democracy }
 
@@ -1243,15 +1244,34 @@ focus_tree = {
 
         icon = GFX_focus_GTR_reform_rulership
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_democracy }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.35
+            add_political_power = 50
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+            set_country_flag = {
+                flag = GTR_inner_politics_tree_cd
+                days = 70
+                value = 1
+            }
+        }
     }
 
     focus = {
@@ -1262,15 +1282,34 @@ focus_tree = {
 
         icon = GFX_focus_GTR_science_for_objects
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_democracy }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_science_for_objects
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+
+            set_country_flag = {
+                flag = GTR_inner_politics_tree_cd
+                days = 70
+                value = 1
+            }
+        }
     }
 
     focus = {
@@ -1280,16 +1319,64 @@ focus_tree = {
 
         icon = GFX_focus_GTR_wide_ruling_horizontal
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_reform_rulership }
         prerequisite = { focus = GTR_focus_science_for_objects }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            82 = {
+                add_dynamic_modifier = {
+                    modifier = modifier_GTR_city_council
+                }
+            }
+            75 = {
+                add_dynamic_modifier = {
+                    modifier = modifier_GTR_city_council
+                }
+            }
+            209 = {
+                add_dynamic_modifier = {
+                    modifier = modifier_GTR_city_council
+                }
+            }
+            77 = {
+                add_dynamic_modifier = {
+                    modifier = modifier_GTR_city_council
+                }
+            }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+
+            if = {
+                limit = { has_completed_focus = GTR_focus_science_for_objects }
+                set_country_flag = {
+                    flag = GTR_inner_politics_tree_cd_long
+                    days = 240
+                    value = 1
+                }
+            }
+            else = {
+                set_country_flag = {
+                    flag = GTR_inner_politics_tree_cd
+                    days = 70
+                    value = 1
+                }
+            }
+        }
     }
 
     focus = {
@@ -1303,11 +1390,24 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_wide_ruling_horizontal }
 
+        available = {
+            power_balance_value = {
+                id = GTR_power_balance
+                value < 0.2
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd_long
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd_long }
+            }
+        }
+
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.36
+        }
     }
 
 

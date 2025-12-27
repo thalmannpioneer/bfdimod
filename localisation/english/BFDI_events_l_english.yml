@@ -1278,12 +1278,21 @@
  GTR_event.32.a: "That should've been done."
 
  GTR_event.33.t: "Successful Operation!"
- GTR_event.33.desc: "The operation to lure scientists from another country was successful, and we were able to transfer these subjects to our country. This will undermine our relations with that country, but that's not really a big deal."
+ GTR_event.33.desc: "The operation to lure scientists from another country was successful, and we were able to transfer these objects to our country. This will undermine our relations with that country, but that's not really a big deal."
  GTR_event.33.a: "Wonderful!"
 
  GTR_event.34.t: "Scientists Flee!"
  GTR_event.34.desc: "As a result of Technocrats' espionage activities in our country, many of our scientists fled to Announcergrad with the support of Golfball intelligence. This will seriously impact our scientific potential, and we will need time to fill the vacancies with new personnel."
  GTR_event.34.a: "Stupid Bossy Bot!"
+
+ GTR_event.35.t: "Democratization"
+ GTR_event.35.desc: "\"Any Announcergrad object, regardless of gender, limbs, or mental abilities, has the right to vote, express dissent, run for office, and be elected to the Announcergrad Council. This right is unconditionally granted to all objects of the city.\"\n\nTennis Ball stands still in anticipation of the crowd's reaction."
+ GTR_event.35.a: "Roaring Applause."
+
+ GTR_event.36.t: "Presidency?"
+ GTR_event.36.desc: "Tennis Ball's political reforms were met with profound enthusiasm among Announcergrad's objects. But now the most important political question arises: governance. The Republic must be led by a president, or we can maintain a certain status quo between Golfball and Tennis Ball. It's time to decide."
+ GTR_event.36.a: "President!"
+ GTR_event.36.b: "Duumvirate!"
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"

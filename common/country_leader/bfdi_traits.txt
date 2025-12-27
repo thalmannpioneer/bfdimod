@@ -113,4 +113,13 @@ leader_traits = {
         political_power_gain = 0.1
         consumer_goods_factor = -0.05
     }
+
+    tennis_ball_vision = {
+        political_power_gain = 0.25
+        stability_factor = 0.1
+        war_support_factor = -0.1
+        production_speed_industrial_complex_factor = 0.2
+        production_speed_arms_factory_factor = -0.2
+        consumer_goods_factor = 0.1
+    }
 }
