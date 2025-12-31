@@ -1,0 +1,156 @@
+decision_other_trade_category = {
+	other_trade_AIUSE_BuyRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
+		icon = generic_research
+
+		available = { #Why is this code so evil and only partly working?
+			THIS = {
+				is_ai = yes
+				NOT = { has_country_flag = ongoing_trade_offer }
+			}
+		}
+
+		visible = {
+			THIS = {is_ai = yes}
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 0
+
+		complete_effect = {
+				IF = {
+					limit = {
+						is_in_array = {
+							array = global.yfc_tradable_countries
+							value = THIS.id
+						}
+					}
+					YFC = {
+						remove_from_array = {
+							array = YFC.selling_X
+							index = FROM.YFC_trade_nation_pos_var
+						}
+						add_to_array = {
+							array = YFC.selling_X
+							value = 1
+							index = FROM.YFC_trade_nation_pos_var
+						}
+						remove_from_array = {
+							array = YFC.selling_cost
+							index = FROM.YFC_trade_nation_pos_var
+						}
+					}
+				}
+				ELSE = {
+					set_variable = {YFC_trade_nation_pos_var = global.yfc_tradable_countries^num}
+					YFC = {
+						add_to_array = {
+							array = global.yfc_tradable_countries
+							value = FROM.id
+						}
+						add_to_array = {
+							array = YFC.selling_X
+							value = 1
+						}
+						add_to_array = {
+							array = YFC.buying_X
+							value = 1
+						}
+					}	
+				}			
+				IF = {
+					limit = {stockpile_ratio = {archetype = infantry_equipment ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					IF = {
+						limit = {has_tech = advanced_infantry_weapons}
+						set_variable = { ROOT.buying_item = 3 }
+						set_variable = { ROOT.buying_amount = 100 }
+						set_temp_variable = { MATH_COST_var = 0.8 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE_IF = {
+						limit = {has_tech = improved_infantry_weapons}
+						set_variable = { ROOT.buying_item = 2 }
+						set_variable = { ROOT.buying_amount = 100 }
+						set_temp_variable = { MATH_COST_var = 0.7 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE_IF = {
+						limit = {has_tech = infantry_weapons1}
+						set_variable = { ROOT.buying_item = 1 }
+						set_variable = { ROOT.buying_amount = 100 }
+						set_temp_variable = { MATH_COST_var = 0.6 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE = {
+						set_variable = { ROOT.buying_item = 0 }
+						set_variable = { ROOT.buying_amount = 100 }
+						set_temp_variable = { MATH_COST_var = 0.5 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+				}
+				ELSE_IF = {
+					limit = {stockpile_ratio = {archetype = support_equipment_1 ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = {THIS.buying_item = 4}
+				}
+				ELSE_IF = {
+					limit = {stockpile_ratio = {archetype = motorized_equipment ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = {THIS.buying_item = 5}
+				}
+				ELSE_IF = {
+					limit = {stockpile_ratio = {archetype = artillery_equipment ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = {THIS.buying_item = 7}
+				}
+				ELSE_IF = {
+					limit = {stockpile_ratio = {archetype = anti_air_equipment ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = {THIS.buying_item = 10}
+				}
+				ELSE_IF = {
+					limit = {stockpile_ratio = {archetype = anti_tank_equipment ratio < 1}}
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = {THIS.buying_item = 13}
+				}
+				ELSE = {
+					set_variable = {THIS.buying_item = -1}
+				}
+				add_political_power = THIS.buying_item
+		}
+
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+				add = 10
+				stockpile_ratio = {archetype = infantry_equipment ratio < 1}
+			}
+			modifier = {
+				add = 10
+				stockpile_ratio = {archetype = motorized_equipment ratio < 1}
+			}
+			modifier = {
+				add = 10
+				stockpile_ratio = {archetype = support_equipment_1 ratio < 1}
+			}
+			modifier = {
+				add = 10
+				stockpile_ratio = {archetype = artillery_equipment ratio < 1}
+			}
+			modifier = {
+				add = 10
+				stockpile_ratio = {archetype = anti_air_equipment ratio < 1}
+			}
+			modifier = {
+				add = 10
+				stockpile_ratio = {archetype = anti_tank_equipment ratio < 1}
+			}
+		}
+	}
+}

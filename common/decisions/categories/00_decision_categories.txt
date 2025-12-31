@@ -6,12 +6,6 @@ propaganda_efforts = {
 	}
 }
 
-SAF_anti_colonialist_crusade = {
-	allowed = {
-		original_tag = SAF
-	}
-}
-
 war_measures = {
 	icon = generic_propaganda
 
@@ -84,14 +78,7 @@ communism_on_the_rise = {
 	#}
 }
 
-crisis = {
-	icon = generic_crisis
-	priority = 100
 
-	visible = {
-		has_country_flag = crisis_in_progress
-	}
-}
 
 demobilization = {
 	icon = generic_crisis
@@ -122,4 +109,17 @@ special_projects = {
 	allowed = {
 		has_dlc = "Waking the Tiger"
 	}
+}
+
+decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
+	allowed = { 
+		NOT = {tag = YFC}	
+	}
+	visible = { 
+		YFC = {has_completed_focus = YFC_focus_open_the_market}
+	}
+	priority = 5
+	icon = decision_category_operation_coinflip
+	visible_when_empty = yes
+	scripted_gui = bfdi_other_trade_scriptedgui
 }
