@@ -178,7 +178,7 @@ scripted_gui = {
 				add_political_power = -25
 			}
 		}
-
+		#Fuck it i will make decision options for the AI I give up :sob:
 		properties = {	
 			#militray_sector = { frame = var_current_cabinet_leader } #Idk if I will need this yet
 		}

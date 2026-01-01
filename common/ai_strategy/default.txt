@@ -2018,6 +2018,10 @@ if_we_can_build_nuclear_missiles_we_want_nuclear_missiles = {
 
 
 your_mother_lol = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = pp_spend_priority
 		id = relation

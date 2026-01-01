@@ -129,7 +129,7 @@ ideas = {
                 industry = 0.2
                 electronics = 0.2
                 artillery = -0.2
-                infantry_tech = -0.2
+                infantry_weapons = -0.2
             }
         }
         idea_GTR_weapons_development = {

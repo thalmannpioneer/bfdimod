@@ -11,20 +11,6 @@ decision_YFC_trade_category = {
 	scripted_gui = bfdi_corp_trade_scriptedgui
 }
 
-decision_other_trade_category = {
-	allowed = { 
-		NOT = {tag = YFC}
-		YFC = {has_completed_focus = YFC_focus_open_the_market}
-	}
-	visible = { 
-		always = yes
-	}
-	priority = 5
-	icon = decision_category_operation_coinflip
-	visible_when_empty = yes
-	scripted_gui = bfdi_other_trade_scriptedgui
-}
-
 decision_YFC_sector_category = { 
 	allowed = { tag = YFC }
 	visible = { 
