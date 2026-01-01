@@ -444,6 +444,34 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/modifier_GTR_city_council.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_noocracy
+		textureFile = gfx/interface/ideas/idea_GTR_noocracy.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_weapons_development
+		textureFile = gfx/interface/ideas/idea_GTR_weapons_development.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_literacy_problem
+		textureFile = gfx/interface/ideas/idea_GTR_literacy_problem.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_wasteless_production
+		textureFile = gfx/interface/ideas/idea_GTR_wasteless_production.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_drawing_blueprints
+		textureFile = gfx/interface/ideas/idea_GTR_drawing_blueprints.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_collecting_personnel
+		textureFile = gfx/interface/ideas/idea_GTR_collecting_personnel.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_building
+		textureFile = gfx/interface/ideas/idea_GTR_building.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}
@@ -458,6 +486,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_GTR_dexter
 		textureFile = gfx/interface/ideas/idea_GTR_dexter.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_cali
+		textureFile = gfx/interface/ideas/idea_GTR_cali.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_titanknife
+		textureFile = gfx/interface/ideas/idea_GTR_titanknife.dds
 	}
 	
 	spriteType = {

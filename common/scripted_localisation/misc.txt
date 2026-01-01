@@ -1,67 +1,89 @@
 defined_text = {
-	name = GDR_GETLEADERNAME
-	text = {
-		trigger = {
-			GDR = { 
-				has_country_leader = {
-					character = GDR_taco
-				}
-			}
-		}
-		localization_key = GPG_taco
-	}
-	text = {
-		trigger = {
-			GDR = { 
-				has_country_leader = {
-					character = GDR_book
-				}
-			}
-		}
-		localization_key = GPG_book
-	}
-	text = {
-		trigger = {
-			GDR = { 
-				has_country_leader = {
-					character = GDR_barf_bag
-				}
-			}
-		}
-		localization_key = GPG_barf_bag
-	}
+    name = GDR_GETLEADERNAME
+    text = {
+        trigger = {
+            GDR = {
+                has_country_leader = {
+                    character = GDR_taco
+                }
+            }
+        }
+        localization_key = GPG_taco
+    }
+    text = {
+        trigger = {
+            GDR = {
+                has_country_leader = {
+                    character = GDR_book
+                }
+            }
+        }
+        localization_key = GPG_book
+    }
+    text = {
+        trigger = {
+            GDR = {
+                has_country_leader = {
+                    character = GDR_barf_bag
+                }
+            }
+        }
+        localization_key = GPG_barf_bag
+    }
 }
 
 defined_text = {
-	name = MONEY_AMOUNT
-	text = {
-		trigger = {
-			check_variable = {
-				var = THIS.display_state
-				value = 1
-				compare = equals
-			}
-		}
-		localization_key = l_money_thousands
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = THIS.display_state
-				value = 2
-				compare = equals
-			}
-		}
-		localization_key = l_money_millions
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = THIS.display_state
-				value = 3
-				compare = equals
-			}
-		}
-		localization_key = l_money_billions
-	}
+    name = MONEY_AMOUNT
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 1
+                compare = equals
+            }
+        }
+        localization_key = l_money_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 2
+                compare = equals
+            }
+        }
+        localization_key = l_money_millions
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 3
+                compare = equals
+            }
+        }
+        localization_key = l_money_billions
+    }
+}
+
+defined_text = {
+    name = BUILDING_MISSION
+    text = {
+        trigger = {
+            check_variable = { days_mission_timeout@GTR_university_reconstruction_building_mission < 100 }
+        }
+        localization_key = GTR_university_reconstruction_building_mission_3
+    }
+    text = {
+        trigger = {
+            check_variable = { days_mission_timeout@GTR_university_reconstruction_building_mission < 200 }
+        }
+        localization_key = GTR_university_reconstruction_building_mission_2
+    }
+    text = {
+        trigger = {
+            check_variable = { days_mission_timeout@GTR_university_reconstruction_building_mission < 300 }
+        }
+        localization_key = GTR_university_reconstruction_building_mission_1
+    }
 }

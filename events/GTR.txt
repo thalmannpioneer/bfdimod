@@ -333,7 +333,10 @@ country_event = {
         hidden_effect = {
             load_focus_tree = GTR_secondtree_focus_tree
             complete_national_focus = GTR_focus_tennis_ball_rise
-            retire_country_leader = yes
+            remove_country_leader_role = {
+                character = GTR_golfball
+                ideology = technocratism
+            }
             add_country_leader_role = {
                 character = GTR_duumvirate
                 promote_leader = yes
@@ -471,6 +474,7 @@ country_event = {
         name = GTR_event.20.a
         set_cosmetic_tag = GTR_republic
         custom_effect_tooltip = l_GTR_integrate_north
+        add_ideas = idea_GTR_literacy_problem
         set_country_flag = GTR_integrate_north
         set_country_flag = GTR_republic_formed
         complete_national_focus = GTR_focus_new_government
@@ -622,6 +626,9 @@ country_event = {
         set_country_flag = GTR_noocracy
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_noocracy
+        add_dynamic_modifier = {
+            modifier = idea_GTR_noocracy
+        }
         add_power_balance_value = {
             id = GTR_power_balance
             value = 0.05
@@ -858,5 +865,136 @@ country_event = {
     option = {
         name = GTR_event.36.b
         remove_power_balance = { id = GTR_power_balance }
+    }
+}
+
+country_event = {
+    id = GTR_event.37
+    title = GTR_event.37.t
+    desc = GTR_event.37.desc
+    picture = GFX_GTR_event37
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.37.a
+        add_ideas = idea_GTR_weapons_development
+    }
+}
+
+country_event = {
+    id = GTR_event.38
+    title = GTR_event.38.t
+    desc = GTR_event.38.desc
+    picture = GFX_GTR_event36
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.38.a
+        retire_character = GTR_duumvirate
+        set_portraits = {
+            character = GTR_golfball
+            civilian = { large = GFX_GTR_golfball_firstmind }
+        }
+        add_country_leader_role = {
+            character = GTR_golfball
+            promote_leader = yes
+            country_leader = {
+                ideology = technocratism
+                traits = { golfball_vision }
+            }
+        }
+        remove_power_balance = { id = GTR_power_balance }
+    }
+
+    option = {
+        name = GTR_event.38.b
+        remove_power_balance = { id = GTR_power_balance }
+    }
+}
+
+country_event = {
+    id = GTR_event.39
+    title = GTR_event.39.t
+    desc = GTR_event.39.desc
+    picture = GFX_GTR_event39
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.39.a
+        add_political_power = 50
+    }
+}
+
+country_event = {
+    id = GTR_event.40
+    title = GTR_event.40.t
+    desc = GTR_event.40.desc
+    picture = GFX_GTR_event40
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.40.a
+        remove_ideas = idea_GTR_making_blueprints
+    }
+}
+
+country_event = {
+    id = GTR_event.41
+    title = GTR_event.41.t
+    desc = GTR_event.41.desc
+    picture = GFX_GTR_event41
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.41.a
+        remove_ideas = idea_GTR_collecting_personnel
+    }
+}
+
+country_event = {
+    id = GTR_event.42
+    title = GTR_event.42.t
+    desc = GTR_event.42.desc
+    picture = GFX_GTR_event42
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.42.a
+        remove_ideas = idea_GTR_building
+    }
+}
+
+country_event = {
+    id = GTR_event.43
+    title = GTR_event.43.t
+    desc = GTR_event.43.desc
+    picture = GFX_GTR_event43
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.43.a
+        create_entity = {
+            entity = golfball_statue
+            x = 4
+            y = 4
+            z = 0
+            province = 3545
+            state = 89
+            rotation = 0.8
+            scale = 1
+            min_zoom = 200
+            visible = golfball_statue_trigger
+        }
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
     }
 }

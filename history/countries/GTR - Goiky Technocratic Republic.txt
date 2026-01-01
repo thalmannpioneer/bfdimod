@@ -48,6 +48,10 @@ set_variable = { var_GTR_humaid_cgf = -0.01 }
 
 set_variable = { var_idea_GTR_paperclip_rs = 0.05 }
 
+set_variable = { var_idea_GTR_noocracy_sf = -0.05 }
+set_variable = { var_idea_GTR_noocracy_ppg = 0.1 }
+set_variable = { var_idea_GTR_noocracy_rs = 0.05 }
+
 add_ideas = undisturbed_isolation
 add_ideas = disarmed_nation
 add_ideas = closed_economy
@@ -63,3 +67,4 @@ recruit_character = GTR_tennis_ball
 recruit_character = GTR_test_tube
 recruit_character = GTR_calculator
 recruit_character = GTR_swappy
+recruit_character = GTR_titanknife

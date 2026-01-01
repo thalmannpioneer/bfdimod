@@ -1393,7 +1393,7 @@ focus_tree = {
         available = {
             power_balance_value = {
                 id = GTR_power_balance
-                value < 0.2
+                value < -0.2
             }
             custom_trigger_tooltip = {
                 tooltip = l_GTR_inner_politics_tree_cd_long
@@ -1419,7 +1419,7 @@ focus_tree = {
 
         icon = GFX_focus_GTR_noocracy
 
-        cost = 5
+        cost = 0
 
         allow_branch = { has_country_flag = GTR_noocracy }
 
@@ -1440,15 +1440,37 @@ focus_tree = {
 
         icon = GFX_focus_GTR_rule_of_smart
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_noocracy }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            custom_effect_tooltip = l_GTR_changes_noocracy
+            add_to_variable = { var_idea_GTR_noocracy_sf = -0.05 }
+            add_to_variable = { var_idea_GTR_noocracy_ppg = 0.1 }
+            add_to_variable = { var_idea_GTR_noocracy_rs = 0.05 }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+
+            set_country_flag = {
+                flag = GTR_inner_politics_tree_cd
+                days = 70
+                value = 1
+            }
+        }
     }
 
     focus = {
@@ -1459,15 +1481,35 @@ focus_tree = {
 
         icon = GFX_focus_GTR_science_over_all
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_noocracy }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
+
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.37 #no moral restrictions
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+
+            set_country_flag = {
+                flag = GTR_inner_politics_tree_cd
+                days = 70
+                value = 1
+            }
+        }
     }
 
     focus = {
@@ -1477,16 +1519,38 @@ focus_tree = {
 
         icon = GFX_focus_GTR_voting_cense
 
-        cost = 5
+        cost = 4
 
         prerequisite = { focus = GTR_focus_rule_of_smart }
         prerequisite = { focus = GTR_focus_science_over_all }
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd }
+            }
+        }
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            custom_effect_tooltip = l_GTR_changes_noocracy
+            add_to_variable = { var_idea_GTR_noocracy_sf = -0.05 }
+            add_to_variable = { var_idea_GTR_noocracy_ppg = 0.1 }
+            add_to_variable = { var_idea_GTR_noocracy_rs = 0.05 }
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+
+            set_country_flag = {
+                flag = GTR_inner_politics_tree_cd_long
+                days = 240
+                value = 1
+            }
+        }
     }
 
     focus = {
@@ -1500,11 +1564,24 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_voting_cense }
 
+        available = {
+            power_balance_value = {
+                id = GTR_power_balance
+                value > 0.2
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_inner_politics_tree_cd_long
+                NOT = { has_country_flag = GTR_inner_politics_tree_cd_long }
+            }
+        }
+
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.38
+        }
     }
 
 
@@ -1518,13 +1595,15 @@ focus_tree = {
 
         allow_branch = { has_country_flag = GTR_republic_formed }
 
-        cost = 5
+        cost = 2
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.39
+        }
     }
 
     focus = {
@@ -1537,7 +1616,7 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_economics }
 
-        cost = 5
+        cost = 4
 
         ai_will_do = {
             base = 5
@@ -1565,7 +1644,9 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            remove_ideas = idea_GTR_literacy_problem
+        }
     }
 
     focus = {
@@ -1584,7 +1665,25 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_advisor_role = {
+                character = GTR_calculator
+                advisor = {
+                    slot = army_chief
+                    idea_token = idea_GTR_calculator
+                    traits = { army_chief_defensive_2 }
+                }
+            }
+            add_advisor_role = {
+                character = GTR_titanknife
+                advisor = {
+                    slot = high_command
+                    ledger = air
+                    idea_token = idea_GTR_titanknife
+                    traits = { air_air_superiority_2 }
+                }
+            }
+        }
     }
 
     #Tennis Ball industry
@@ -1624,7 +1723,17 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            random_owned_state = {
+                prioritize = { 82 75 77 }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
     }
 
     focus = {
@@ -1643,7 +1752,22 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            random_owned_state = {
+                prioritize = { 82 75 77 }
+                add_resource = {
+                    type = tungsten
+                    amount = 10
+                }
+            }
+            random_owned_state = {
+                prioritize = { 82 75 77 }
+                add_resource = {
+                    type = aluminium
+                    amount = 12
+                }
+            }
+        }
     }
 
     focus = {
@@ -1662,7 +1786,19 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_wasteless_production
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = dispersed_industry_category
+            }
+
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+        }
     }
 
     #Golfball eco101
@@ -1702,7 +1838,17 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            209 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+                add_manpower = -10930
+            }
+        }
     }
 
     focus = {
@@ -1721,7 +1867,18 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = concentrated_industry_category
+            }
+        }
     }
 
     focus = {
@@ -1740,7 +1897,24 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            random_owned_state = {
+                prioritize = { 82 75 77 }
+                add_resource = {
+                    type = tungsten
+                    amount = 15
+                }
+                add_manpower = -15221
+            }
+            random_owned_state = {
+                prioritize = { 82 75 77 }
+                add_resource = {
+                    type = aluminium
+                    amount = 20
+                }
+                add_manpower = -13812
+            }
+        }
     }
 
     #University reconstruction
@@ -1754,13 +1928,25 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_economics }
 
+        available = {
+            has_stability > 0.3
+        }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            custom_effect_tooltip = l_GTR_reconstruction_decisions
+            set_country_flag = GTR_university_reconstruction
+            activate_mission = GTR_university_reconstruction_making_blueprints_mission
+            activate_mission = GTR_university_reconstruction_collecting_personnel_mission
+            add_ideas = idea_GTR_making_blueprints
+            add_ideas = idea_GTR_collecting_personnel
+        }
     }
 
     focus = {
@@ -1773,13 +1959,22 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_elephant_in_a_room }
 
+        bypass = {
+            NOT = { has_active_mission = GTR_university_reconstruction_making_blueprints_mission }
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_days_mission_timeout = {
+                mission = GTR_university_reconstruction_making_blueprints_mission
+                days = -100
+            }
+        }
     }
 
     focus = {
@@ -1792,13 +1987,22 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_elephant_in_a_room }
 
+        bypass = {
+            NOT = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_days_mission_timeout = {
+                mission = GTR_university_reconstruction_collecting_personnel_mission
+                days = -100
+            }
+        }
     }
 
     focus = {
@@ -1811,13 +2015,29 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_making_blueprints }
         prerequisite = { focus = GTR_focus_new_professors }
 
+        available = {
+            NOT = { has_idea = idea_GTR_making_blueprints }
+            NOT = { has_idea = idea_GTR_collecting_personnel }
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            activate_mission = GTR_university_reconstruction_building_mission
+            add_ideas = idea_GTR_building
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.43
+                    days = 50
+                    random_days = 20
+                    random_hours = 12
+                }
+            }
+        }
     }
 
     focus = {
@@ -1828,6 +2048,10 @@ focus_tree = {
         icon = GFX_focus_GTR_even_better_now
 
         prerequisite = { focus = GTR_focus_start_building }
+
+        available = {
+            NOT = { has_idea = idea_GTR_building }
+        }
 
         cost = 5
 

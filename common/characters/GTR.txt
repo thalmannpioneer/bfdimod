@@ -39,7 +39,12 @@ characters = {
     }
     GTR_calculator = {
         name = GTR_calculator
-        portraits = { army = { large = GFX_GTR_calculator } }
+        portraits = {
+            army = {
+                large = GFX_GTR_calculator
+                small = GFX_idea_GTR_cali
+            }
+        }
         corps_commander = {
             skill = 1
             attack_skill = 1
@@ -61,5 +66,9 @@ characters = {
                 small = GFX_idea_GTR_dexter
             }
         }
+    }
+    GTR_titanknife = {
+        name = GTR_titanknife
+        portraits = { civilian = { small = GFX_idea_GTR_titanknife } }
     }
 }

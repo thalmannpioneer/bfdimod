@@ -1,0 +1,11 @@
+decision_GTR_university_reconstruction_category = {
+    allowed = { tag = GTR }
+    priority = 20
+    icon = GFX_decision_category_university_reconstruction
+
+    available = { hidden_trigger = { has_country_flag = GTR_university_reconstruction } }
+    visible = { has_country_flag = GTR_university_reconstruction }
+
+    visible_when_empty = yes
+    picture = GFX_decision_cat_GTR_university_reconstruction
+}

@@ -1,0 +1,6 @@
+objectTypes = {
+	pdxmesh = {
+		name = "golfball_statue_mesh"
+		file = "gfx/models/misc/golfball_statue.mesh"
+	}
+}

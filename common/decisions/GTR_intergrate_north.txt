@@ -1,28 +1,4 @@
 decision_GTR_north_integration_category = {
-    GTR_north_intergration_satoymin = {
-        cost = 50
-        days_remove = 50
-        remove_effect = {
-            transfer_state = 82
-            82 = {
-                set_demilitarized_zone = no
-                add_core_of = GTR
-                remove_core_of = EMP
-            }
-        }
-        fire_only_once = yes
-
-        icon = GFX_decisions_GTR_integrate_north_satoymin
-
-        ai_will_do = {
-			base = 5
-			modifier = {
-				has_political_power > 150
-				add = 10
-			}
-		}
-    }
-
     GTR_north_intergration_wilopede = {
         cost = 50
         days_remove = 50
@@ -36,14 +12,50 @@ decision_GTR_north_integration_category = {
         }
         fire_only_once = yes
 
+        highlight_states = {
+            highlight_state_targets = {
+                state = 75
+            }
+        }
+
         icon = GFX_decisions_GTR_integrate_north_wilopede
 
         ai_will_do = {
-			base = 2
-			modifier = {
-				has_political_power > 150
-				add = 10
-			}
-		}
+            base = 2
+            modifier = {
+                has_political_power > 150
+                add = 10
+            }
+        }
+    }
+
+    GTR_north_intergration_satoymin = {
+        cost = 50
+        days_remove = 50
+        remove_effect = {
+            transfer_state = 82
+            82 = {
+                set_demilitarized_zone = no
+                add_core_of = GTR
+                remove_core_of = EMP
+            }
+        }
+        fire_only_once = yes
+
+        highlight_states = {
+            highlight_state_targets = {
+                state = 82
+            }
+        }
+
+        icon = GFX_decisions_GTR_integrate_north_satoymin
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                has_political_power > 150
+                add = 10
+            }
+        }
     }
 }

@@ -1294,6 +1294,35 @@
  GTR_event.36.a: "President!"
  GTR_event.36.b: "Duumvirate!"
 
+ GTR_event.37.t: "Dead Weight of Morality"
+ GTR_event.37.desc: "Golfball was particularly nervous about her evening brainstorming today. The question made her shudder several times in her comfy office.\n\n\"NO ONE in the old Goiky did care about weapons development. That makes total sense. But why don't we want to do it NOW?\nWhat's stopping my scientists from now starting to develop weapons\"\n\nAnd, suddenly, thought pierced her brain.\nThe reluctance to kill and the feeling of responsibility for killing hinders the creation of new types of weapons.\nThis dead weight needs to be shed."
+ GTR_event.37.a: "Science is above these prejudices."
+
+ GTR_event.38.t: "The Leader"
+ GTR_event.38.desc: "Currently, the Technocratic Republic has no clearly established leader, but there is an unspoken dual power between Tennis Ball and Golfball.\nAs a result of successful reforms, Golfball has pulled ahead, but the future ruler of the Republic has not yet become clear.\n\nWill Golfball take power, or will the Duumvirate be preserved?"
+ GTR_event.38.a: "Bossy Bot Rules Alone!"
+ GTR_event.38.b: "Duumvirate Stays!"
+
+ GTR_event.39.t: "Stomach Question"
+ GTR_event.39.desc: "- \"Won't taking this junk. Give me real money, or get out!\"\n\nLife in Announcergrad revived after the Republic was declared. Transportation was restored, and numerous new businesses opened. They even began printing their own currency. But, unfortunately, growing pains are inevitable.\n\n- \"Knock-knock, four-eyes, you hear me?=\"\n- \"This is all I have. Please, I need to feed my daughter.\"\n\nThe family is struggling to survive on rations, even though they've expanded significantly in recent months. A black market is thriving in the back alleys of Announcergrad.\n\n- \"You don't understand?\"\nThe fist whistled through the air.\n\nProfessors are paid primarily in ration cards, but they are also given foreign currency. However, this is not yet in circulation.\n\n- \"I'll pay for them.\"\nAn object comes out of the queue.\n - \"Carton? My student?\""
+ GTR_event.39.a: "- \"Don't worry, professor Geocache.\""
+
+ GTR_event.40.t: "The Blueprints are Done!"
+ GTR_event.40.desc: "Work on the plans for the new University is largely complete. Soon we'll be able to bring these projects to life, and the University will rise above Goiky even more brilliantly than before!"
+ GTR_event.40.a: "Nice Job!"
+
+ GTR_event.41.t: "The Professors are Collected!"
+ GTR_event.41.desc: "We've managed to assemble the necessary personnel for the University's operations. Although they're young, few in number, and lacking the same experience as those died in the explosion, they have a bright future and will be able to make up for the losses of Goiky science!"
+ GTR_event.41.a: "Good Luck, colleagues!"
+
+ GTR_event.42.t: "The Construction is Done!"
+ GTR_event.42.desc: "The incredible plans for the new University have been accomplished! The modern, gleaming buildings cast a glimmer of sunlight onto the once-destroyed campus. Now, the aftermath of the horrific explosion has vanished. All that remains is the grand opening!"
+ GTR_event.42.a: "The Phoenix!"
+
+ GTR_event.43.t: "Golfball Statue?"
+ GTR_event.43.desc: "During the construction of the University, the idea arose among the engineers to glorify the First Mind of Goiky and place a statue of Golfball on the Campus. There are protests, but it is ultimately up to the government to resolve this issue.\n\nWhat will we decide?"
+ GTR_event.43.a: "Let the project live!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

@@ -132,5 +132,59 @@ ideas = {
                 infantry_tech = -0.2
             }
         }
+        idea_GTR_weapons_development = {
+            picture = GTR_weapons_development
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.1
+            }
+            research_bonus = {
+                industry = -0.2
+                electronics = -0.2
+                artillery = 0.2
+                infantry_weapons = 0.2
+            }
+        }
+
+        idea_GTR_literacy_problem = {
+            picture = GTR_literacy_problem
+            modifier = {
+                stability_factor = -0.1
+                political_power_gain = -0.25
+                research_speed_factor = -0.1
+            }
+        }
+
+        idea_GTR_wasteless_production = {
+            picture = GTR_wasteless_production
+            modifier = {
+                production_lack_of_resource_penalty_factor = -0.2
+                consumer_goods_factor = 0.05
+            }
+        }
+
+        idea_GTR_making_blueprints = {
+            picture = GTR_drawing_blueprints
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = -0.1
+            }
+        }
+
+        idea_GTR_collecting_personnel = {
+            picture = GTR_collecting_personnel
+            modifier = {
+                political_advisor_cost_factor = 0.5
+                research_speed_factor = -0.3
+            }
+        }
+
+        idea_GTR_building = {
+            picture = GTR_building
+            modifier = {
+                production_speed_buildings_factor = -0.5
+                civilian_factory_use = 5
+            }
+        }
     }
 }

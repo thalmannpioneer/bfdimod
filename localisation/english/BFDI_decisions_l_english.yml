@@ -310,7 +310,15 @@
  GTR_operation_paperclip_north_goiky: "Get §tNorth-Goiky§! Sciencists"
  GTR_operation_paperclip_schneehorn: "Get §gSchneehorn§! Scientists"
  GTR_operation_paperclip_greenport: "Get §GGreenport§! Scientists"
- 
+ decision_GTR_university_reconstruction_category: "§YUniversity Reconstruction§!"
+ decision_GTR_university_reconstruction_category_desc: "§7The Brain of Goiky§! still lies in ruins, destroyed by §tThe Explosion§!. We have no right to name our state §gThe Technocratic Republic§! if we are incapable to restore §7The University§!.\n\nOur situation is clearer and better now. It is time to get to work and §Yrestore the Glory of The University§!."
+ GTR_university_reconstruction_making_blueprints_mission: "Drawing §2Blueprints§!"
+ GTR_university_reconstruction_collecting_personnel_mission: "Searching For §7Professors§!"
+ GTR_university_reconstruction_building_mission: "[BUILDING_MISSION]"
+ GTR_university_reconstruction_building_mission_1: "Laying Down The §LFoundation§!"
+ GTR_university_reconstruction_building_mission_2: "Raising The §5New Buildings§!"
+ GTR_university_reconstruction_building_mission_3: "Planting The §6Poplars§!"
+
  #TBT State Modifiers 
  TBT_low_pop: "Minor Teardroppers Population"
  TBT_med_pop: "Moderate Teardroppers Population"
