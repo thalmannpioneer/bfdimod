@@ -318,6 +318,9 @@
  GTR_university_reconstruction_building_mission_1: "Laying Down The §LFoundation§!"
  GTR_university_reconstruction_building_mission_2: "Raising The §5New Buildings§!"
  GTR_university_reconstruction_building_mission_3: "Planting The §6Poplars§!"
+ GTR_bop_do_brainstorm_decision: "Conduct a §7Brainstorm§!"
+ GTR_bop_agressive_surroundings_decision: "Warn about §gAggresive Surroundings§!"
+ GTR_university_reconstruction_removing_infestation_mission: "Clean up §tSoil Infestation§!"
 
  #TBT State Modifiers 
  TBT_low_pop: "Minor Teardroppers Population"

@@ -1323,6 +1323,14 @@
  GTR_event.43.desc: "During the construction of the University, the idea arose among the engineers to glorify the First Mind of Goiky and place a statue of Golfball on the Campus. There are protests, but it is ultimately up to the government to resolve this issue.\n\nWhat will we decide?"
  GTR_event.43.a: "Let the project live!"
 
+ GTR_event.44.t: "Deeper in the Mud"
+ GTR_event.44.desc: "The average life of a tank on the battlefield is 5 minutes. In the Campus area, an excavator can only lift soil consecutively for about 15 minutes.\n\nThe bravest and most honest objects of Announcergrad volunteered to work in the Campus area to renew the contaminated soil cover. Radiation and infection killed many. But they did it. The most difficult and dangerous task was successfully completed at the cost of these priceless lives."
+ GTR_event.44.a: "True Heroes."
+
+ GTR_event.45.t: "Fair Wind"
+ GTR_event.45.desc: "A pleasant northerly breeze enveloped Piney as she found herself at the main square of the Campus.\nThe perfect glass windows of the new buildings and classrooms reflected the midday sun. Directly ahead, a few dozen meters away, flowed the steady stream of a magnificent fountain.\n\nFascinating.\n\nThe buildings' pristine, clean walls were ready to bear the full weight of the work ahead. There were very few objects around for such a colossus of architecture and technology. She was one of the first to arrive, and the objects around her were no less surprised than Piney.\n\nHaving recovered from her amazement and found the building where her office was assigned, she saw the flags of the Young Technocratic Republic fluttering from the flagpoles in the calm trade winds. A guarantee of peace and stability in the corridors of this monstrous institution, the true flagship of all of Goiky.\nBut it is time to get to work."
+ GTR_event.45.a: "Colleagues, We're Back!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."
@@ -1447,6 +1455,10 @@
  bfdinews.29.t: "Proclamation of the Technocratic Republic!"
  bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, according to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
  bfdinews.29.a: "Golfball actually did it?"
+
+ bfdinews.30.t: "Grand Opening of the University!"
+ bfdinews.30.desc: "Our correspondents in Announcergrad recorded a widespread upsurge in the mood of the \"Technocratic Republic's\" objects: the lengthy and expensive project to restore the glorious Goiky University has proven successful. Our journalists were able to take a look at the newly erected buildings of Goikean alma mater, and they truly look simply marvelous!\nThis will most likely greatly strengthen the position of the newly formed state in the political arena of Goiky and will revive all scientific activity on the continent, unless, of course, the government decides to leave the University in an isolated state."
+ bfdinews.30.a: "What a great news!"
 
 
 # bfdinews_cities

@@ -37,6 +37,8 @@
  decision_cost_ie_1000_blocked: "£infantry_equipment_text_icon §R1000§!"
  decision_cost_ie_200: "£infantry_equipment_text_icon §Y200§!"
  decision_cost_ie_200_blocked: "£infantry_equipment_text_icon §R200§!"
+ decisions_cost_mp_500_pp_50: "£pol_power §Y500§!  £manpower_texticon §Y50§!"
+ decisions_cost_mp_500_pp_50_blocked: "£pol_power §R500§!  £manpower_texticon §R50§!"
 
  l_money_cost_100K: "Costs §G100K Dollars§!"
  l_money_cost_200K: "Costs §G200K Dollars§!"

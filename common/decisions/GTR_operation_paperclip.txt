@@ -27,6 +27,13 @@ decision_GTR_operation_paperclip_category = {
         remove_effect = {
             custom_effect_tooltip = l_GTR_paperclip_tt
             if = {
+                limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+                add_days_mission_timeout = {
+                    mission = GTR_university_reconstruction_collecting_personnel_mission
+                    days = -30
+                }
+            }
+            if = {
                 limit = { has_dlc = "La Resistance" }
                 custom_effect_tooltip = l_GTR_paperclip_lar_tt
             }
@@ -80,6 +87,13 @@ decision_GTR_operation_paperclip_category = {
         }
         remove_effect = {
             custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+                add_days_mission_timeout = {
+                    mission = GTR_university_reconstruction_collecting_personnel_mission
+                    days = -30
+                }
+            }
             if = {
                 limit = { has_dlc = "La Resistance" }
                 custom_effect_tooltip = l_GTR_paperclip_lar_tt
@@ -135,6 +149,13 @@ decision_GTR_operation_paperclip_category = {
         remove_effect = {
             custom_effect_tooltip = l_GTR_paperclip_tt
             if = {
+                limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+                add_days_mission_timeout = {
+                    mission = GTR_university_reconstruction_collecting_personnel_mission
+                    days = -30
+                }
+            }
+            if = {
                 limit = { has_dlc = "La Resistance" }
                 custom_effect_tooltip = l_GTR_paperclip_lar_tt
             }
@@ -188,6 +209,13 @@ decision_GTR_operation_paperclip_category = {
         }
         remove_effect = {
             custom_effect_tooltip = l_GTR_paperclip_tt
+            if = {
+                limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+                add_days_mission_timeout = {
+                    mission = GTR_university_reconstruction_collecting_personnel_mission
+                    days = -30
+                }
+            }
             if = {
                 limit = { has_dlc = "La Resistance" }
                 custom_effect_tooltip = l_GTR_paperclip_lar_tt

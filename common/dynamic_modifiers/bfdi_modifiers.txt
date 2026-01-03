@@ -182,6 +182,17 @@ idea_GTR_noocracy = {
     research_speed_factor = var_idea_GTR_noocracy_rs
 }
 
+modifier_GTR_state_infected = {
+    icon = GFX_modifier_GTR_state_infected
+
+    local_building_slots_factor = -1
+    mobilization_speed = -1
+    hidden_modifier = {
+        state_repair_speed_nuclear_facility_factor = -1
+    }
+    custom_modifier_tooltip = l_GTR_modifier_cant_repair_nf
+}
+
 idea_YFC_anarchic_lands = {
     icon = GFX_idea_YFC_anarchic_lands
 

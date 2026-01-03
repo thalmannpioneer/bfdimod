@@ -2028,6 +2028,7 @@ focus_tree = {
 
         completion_reward = {
             activate_mission = GTR_university_reconstruction_building_mission
+            activate_mission = GTR_university_reconstruction_removing_infestation_mission
             add_ideas = idea_GTR_building
             hidden_effect = {
                 country_event = {
@@ -2059,7 +2060,9 @@ focus_tree = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.45
+        }
     }
 
 
@@ -2149,13 +2152,18 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_military }
 
+        available = { has_war_support > 0.3 }
+        cancel_if_invalid = yes
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_lock_all_division_template = no
+        }
     }
 
     focus = {

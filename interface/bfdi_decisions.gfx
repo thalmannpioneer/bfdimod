@@ -840,4 +840,19 @@ spriteTypes = {
 		name = "GFX_GTR_university_reconstruction_building_mission"
 		textureFile = "gfx/interface/decisions/GFX_GTR_university_reconstruction_building_mission.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_bop_do_brainstorm"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_do_brainstorm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_bop_agressive_surroundings"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_agressive_surroundings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GTR_university_reconstruction_removing_infestation_mission"
+		textureFile = "gfx/interface/decisions/GFX_GTR_university_reconstruction_removing_infestation_mission.dds"
+	}
 }

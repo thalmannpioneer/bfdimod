@@ -1,6 +1,6 @@
 decision_GTR_power_balance_category = {
     GTR_bop_invite_objects_decision = {
-        cost = 50
+        cost = 100
         days_remove = 30
         days_re_enable = 30
         complete_effect = {
@@ -13,7 +13,7 @@ decision_GTR_power_balance_category = {
         icon = GFX_decision_GTR_bop_invite_objects
     }
     GTR_bop_conduct_tests_decision = {
-        cost = 50
+        cost = 100
         days_remove = 30
         days_re_enable = 30
         complete_effect = {
@@ -24,5 +24,35 @@ decision_GTR_power_balance_category = {
         }
 
         icon = GFX_decision_GTR_bop_conduct_tests
+    }
+    GTR_bop_do_brainstorm_decision = {
+        cost = 50
+        days_remove = 30
+        days_re_enable = 30
+        complete_effect = {
+            add_stability = 0.05
+            add_war_support = -0.05
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = -0.05
+            }
+        }
+
+        icon = GFX_decision_GTR_bop_do_brainstorm
+    }
+    GTR_bop_agressive_surroundings_decision = {
+        cost = 50
+        days_remove = 30
+        days_re_enable = 30
+        complete_effect = {
+            add_stability = -0.05
+            add_war_support = 0.05
+            add_power_balance_value = {
+                id = GTR_power_balance
+                value = 0.05
+            }
+        }
+
+        icon = GFX_decision_GTR_bop_agressive_surroundings
     }
 }

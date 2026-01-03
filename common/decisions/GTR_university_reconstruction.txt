@@ -34,4 +34,35 @@ decision_GTR_university_reconstruction_category = {
             country_event = GTR_event.42
         }
     }
+
+    GTR_university_reconstruction_removing_infestation_mission = {
+        activation = { always = no }
+        available = { has_idea = idea_GTR_building }
+        icon = GFX_GTR_university_reconstruction_removing_infestation_mission
+        is_good = yes
+        days_mission_timeout = 150
+        selectable_mission = yes
+        custom_cost_trigger = {
+            has_manpower > 499
+            has_political_power > 49
+        }
+        custom_cost_text = decisions_cost_mp_500_pp_50
+        complete_effect = {
+            hidden_effect = {
+                add_political_power = -50
+                add_manpower = -500
+            }
+            set_temp_variable = { temp_days = days_mission_timeout@GTR_university_reconstruction_removing_infestation_mission }
+            multiply_temp_variable = { temp_days = -1 }
+            add_days_mission_timeout = {
+                mission = GTR_university_reconstruction_building_mission
+                days = temp_days
+            }
+            country_event = GTR_event.44
+        }
+        timeout_effect = {
+            add_manpower = -500
+            country_event = GTR_event.44
+        }
+    }
 }

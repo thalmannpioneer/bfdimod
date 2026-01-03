@@ -227,6 +227,18 @@ country_event = {
                 province = 3545
                 value = 5
             }
+            89 = {
+                set_demilitarized_zone = yes
+                add_dynamic_modifier = {
+                    modifier = modifier_GTR_state_infected
+                }
+                set_state_category = wasteland
+                remove_building = {
+                    type = industrial_complex
+                    level = 2
+                }
+                add_manpower = -12110
+            }
             set_capital = { state = 209 }
             goto_province = 3545
             country_event = {
@@ -236,10 +248,7 @@ country_event = {
             }
             every_possible_country = {
                 limit = {
-                    OR = {
-                        is_ai = no
-                        tag = UGA
-                    }
+                    is_ai = no
                 }
                 news_event = {
                     id = bfdinews.28
@@ -798,6 +807,13 @@ country_event = {
         name = GTR_event.33.a
         custom_effect_tooltip = l_GTR_improves_paperclip
         add_to_variable = { var_idea_GTR_paperclip_rs = 0.05 }
+        if = {
+            limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+            add_days_mission_timeout = {
+                mission = GTR_university_reconstruction_collecting_personnel_mission
+                days = -30
+            }
+        }
     }
 }
 
@@ -967,6 +983,17 @@ country_event = {
     option = {
         name = GTR_event.42.a
         remove_ideas = idea_GTR_building
+        89 = {
+            set_victory_points = {
+                province = 3545
+                value = 30
+            }
+            set_province_name = {
+                id = 3545
+                name = VICTORY_POINTS_3545
+            }
+            set_demilitarized_zone = no
+        }
     }
 }
 
@@ -995,6 +1022,53 @@ country_event = {
         add_power_balance_value = {
             id = GTR_power_balance
             value = 0.05
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.44
+    title = GTR_event.44.t
+    desc = GTR_event.44.desc
+    picture = GFX_GTR_event44
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.44.a
+        89 = {
+            remove_dynamic_modifier = {
+                modifier = modifier_GTR_state_infected
+            }
+            set_state_category = city
+        }
+        clr_country_flag = GTR_university_reconstruction
+    }
+}
+
+country_event = {
+    id = GTR_event.45
+    title = GTR_event.45.t
+    desc = GTR_event.45.desc
+    picture = GFX_GTR_event45
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.45.a
+        swap_ideas = {
+            remove_idea = idea_GTR_destroyed_university
+            add_idea = idea_GTR_goiky_university
+        }
+        hidden_effect = {
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.30
+                    days = 3
+                    random_hours = 12
+                }
+            }
         }
     }
 }

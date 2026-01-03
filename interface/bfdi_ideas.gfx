@@ -472,6 +472,10 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/idea_GTR_building.dds
 	}
 	spriteType = {
+		name = GFX_modifier_GTR_state_infected
+		textureFile = gfx/interface/ideas/modifier_GTR_state_infected.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}

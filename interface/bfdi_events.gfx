@@ -730,6 +730,19 @@ SpriteTypes = {
 		name = GFX_GTR_event43
 		textureFile = gfx/event_pictures/GTR_event43.dds
 	}
+	spriteType = {
+		name = GFX_GTR_event44
+		textureFile = gfx/event_pictures/GTR_event44.dds
+	}
+	frameAnimatedSpriteType = {
+		name = GFX_GTR_event45
+		textureFile = gfx/event_pictures/GTR_event45.dds
+		noOfFrames = 10
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
 	
 	
 	spriteType = {
@@ -844,6 +857,10 @@ SpriteTypes = {
 		looping = yes
 		play_on_show = yes
 		allwaystransparent = yes
+	}
+	spriteType = {
+		name = GFX_bfdinews30
+		texturefile = gfx/event_pictures/bfdinews30.dds
 	}
 	spriteType = {
 		name = GFX_bfdinews_city
