@@ -324,12 +324,11 @@ decision_YFC_sector_category= { #Watermelon
 		}
 
 		fire_only_once = no
-		cost = 150
 		days_remove = 180
 		days_re_enable = 15
 
         modifier = {
-			political_power_gain = -0.50
+			political_power_gain = -2
 		}
 
 		remove_effect = {

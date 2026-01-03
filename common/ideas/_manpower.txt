@@ -199,62 +199,6 @@ ideas = {
                         }
                     }
                 }
-
-                if = {
-                    limit = {
-                        original_tag = ENG
-                        has_dlc = "Man the Guns"
-                        has_completed_focus = ENG_concessions_to_the_trade_unions
-                    }
-                    NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-                }
-                if = {
-                    limit = {
-                        original_tag = SPR
-                        has_dlc = "La Resistance"
-                    }
-                    NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-                }
-                if = {
-                    limit = {
-                        original_tag = BUL
-                        has_dlc = "Battle for the Bosporus"
-                    }
-                    if = {
-                        limit = {
-                            has_dlc = "Arms Against Tyranny"
-                        }
-                        NOT = {
-                            has_idea = BUL_army_restrictions_aat
-                        }
-                    }
-                    else = {
-                        NOT = {
-                            has_idea = BUL_army_restrictions
-                        }
-                    }
-                }
-                if = {
-                    limit = {
-                        DEN_aat_is_subject = yes
-                    }
-                    NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
-                }
-                if = {
-                    limit = {
-                        original_tag = AUS
-                    }
-                    NOT = {
-                        has_idea = AUS_treaty_of_saint_germain_en_laye
-                    }
-                }
-                IF = {
-                    limit = {
-                        has_dlc	= "Graveyard of Empires"
-                        original_tag = AFG
-                    }
-                    has_completed_focus = AFG_adopt_nufus
-                }
             }
 
             modifier = {
@@ -263,6 +207,11 @@ ideas = {
 
             ai_will_do = {
                 factor = 1
+                modifier = {
+                    # Ignore if YFC
+                    factor = -1000
+                    tag = YFC
+                }
                 modifier = {
                     # Ignore if high on manpower
                     factor = 0.5

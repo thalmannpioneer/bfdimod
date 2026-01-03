@@ -45,4 +45,9 @@ characters = {
 			traits = { politically_connected cavalry_officer }
 		}
 	}
+
+	BUN_pen = {
+		name = BUN_pen
+		portraits = { civilian = { large = GFX_BUN_pen} }
+	}
 }

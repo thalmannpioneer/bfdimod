@@ -18,6 +18,8 @@ decision_other_trade_category = {
 		cost = 0
 
 		complete_effect = {
+			random = {
+				chance = 75
 				IF = {
 					limit = {
 						is_in_array = {
@@ -56,6 +58,10 @@ decision_other_trade_category = {
 							array = YFC.buying_X
 							value = 1
 						}
+						add_to_array = {
+							array = YFC.buying_cost
+							value = 0
+						}
 					}	
 				}			
 				IF = {
@@ -64,7 +70,9 @@ decision_other_trade_category = {
 					IF = {
 						limit = {has_tech = advanced_infantry_weapons}
 						set_variable = { ROOT.buying_item = 3 }
-						set_variable = { ROOT.buying_amount = 100 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
 						set_temp_variable = { MATH_COST_var = 0.8 }
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
@@ -72,7 +80,9 @@ decision_other_trade_category = {
 					ELSE_IF = {
 						limit = {has_tech = improved_infantry_weapons}
 						set_variable = { ROOT.buying_item = 2 }
-						set_variable = { ROOT.buying_amount = 100 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
 						set_temp_variable = { MATH_COST_var = 0.7 }
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
@@ -80,14 +90,18 @@ decision_other_trade_category = {
 					ELSE_IF = {
 						limit = {has_tech = infantry_weapons1}
 						set_variable = { ROOT.buying_item = 1 }
-						set_variable = { ROOT.buying_amount = 100 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
 						set_temp_variable = { MATH_COST_var = 0.6 }
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
 					ELSE = {
 						set_variable = { ROOT.buying_item = 0 }
-						set_variable = { ROOT.buying_amount = 100 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
 						set_temp_variable = { MATH_COST_var = 0.5 }
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
@@ -96,34 +110,144 @@ decision_other_trade_category = {
 				ELSE_IF = {
 					limit = {stockpile_ratio = {archetype = support_equipment_1 ratio < 1}}
 					set_country_flag = Confirmed_Trade_Buying
+
 					set_variable = {THIS.buying_item = 4}
+					set_variable = { ROOT.buying_amount = 25 }
+					set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+					multiply_variable = { ROOT.buying_amount = temp_X_var }
+					set_temp_variable = { MATH_COST_var = 1 }
+					multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE_IF = {
 					limit = {stockpile_ratio = {archetype = motorized_equipment ratio < 1}}
 					set_country_flag = Confirmed_Trade_Buying
-					set_variable = {THIS.buying_item = 5}
+					IF = {
+						limit = {has_tech = motorised_infantry} 
+						set_variable = { ROOT.buying_item = 6 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 0.75 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE = {
+						set_variable = { ROOT.buying_item = 5 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 0.6 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
 				}
 				ELSE_IF = {
 					limit = {stockpile_ratio = {archetype = artillery_equipment ratio < 1}}
 					set_country_flag = Confirmed_Trade_Buying
-					set_variable = {THIS.buying_item = 7}
+					IF = {
+						limit = {has_tech = artillery4}
+						set_variable = { ROOT.buying_item = 9 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1.05 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE_IF = {
+						limit = {has_tech = artillery1}
+						set_variable = { ROOT.buying_item = 8 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 0.9 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE = {
+						set_variable = { ROOT.buying_item = 7 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 0.75 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}					
 				}
 				ELSE_IF = {
 					limit = {stockpile_ratio = {archetype = anti_air_equipment ratio < 1}}
 					set_country_flag = Confirmed_Trade_Buying
-					set_variable = {THIS.buying_item = 10}
+					IF = {
+						limit = {has_tech = antiair5}
+						set_variable = { ROOT.buying_item = 12 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1.5 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE_IF = {
+						limit = {has_tech = antiair2}
+						set_variable = { ROOT.buying_item = 11 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1.25 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE = {
+						set_variable = { ROOT.buying_item = 10 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
 				}
 				ELSE_IF = {
 					limit = {stockpile_ratio = {archetype = anti_tank_equipment ratio < 1}}
 					set_country_flag = Confirmed_Trade_Buying
-					set_variable = {THIS.buying_item = 13}
+					IF = {
+						limit = {has_tech = antitank5}
+						set_variable = { ROOT.buying_item = 15 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1.5 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE_IF = {
+						limit = {has_tech = antitank2}
+						set_variable = { ROOT.buying_item = 14 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1.25 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+					ELSE = {
+						set_variable = { ROOT.buying_item = 13 }
+						set_variable = { ROOT.buying_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 40 integer = yes}
+						multiply_variable = { ROOT.buying_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
 				}
 				ELSE = {
 					set_variable = {THIS.buying_item = -1}
+					set_variable = {ROOT.buying_amount = 0 }
+					add_to_array = {array = YFC.selling_cost value = 0 index = YFC_trade_nation_pos_var}
 				}
-				add_political_power = THIS.buying_item
+			}	
 		}
-
 
 		ai_will_do = {
 			base = 0
@@ -150,6 +274,121 @@ decision_other_trade_category = {
 			modifier = {
 				add = 10
 				stockpile_ratio = {archetype = anti_tank_equipment ratio < 1}
+			}
+		}
+	}
+
+	other_trade_AIUSE_SellRequest = { #Ai picks stuff to sell
+		icon = generic_research
+
+		available = { #Why is this code so evil and only partly working?
+			THIS = {
+				is_ai = yes
+				NOT = { has_country_flag = ongoing_trade_offer }
+			}
+		}
+
+		visible = {
+			THIS = {is_ai = yes}
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 0
+
+		complete_effect = {
+			random = {
+				chance = 50
+				IF = {
+					limit = {
+						is_in_array = {
+							array = global.yfc_tradable_countries
+							value = THIS.id
+						}
+					}
+					YFC = {
+						remove_from_array = {
+							array = YFC.selling_X
+							index = FROM.YFC_trade_nation_pos_var
+						}
+						add_to_array = {
+							array = YFC.selling_X
+							value = 1
+							index = FROM.YFC_trade_nation_pos_var
+						}
+						remove_from_array = {
+							array = YFC.buying_cost
+							index = FROM.YFC_trade_nation_pos_var
+						}
+					}
+				}
+				ELSE = {
+					set_variable = {YFC_trade_nation_pos_var = global.yfc_tradable_countries^num}
+					YFC = {
+						add_to_array = {
+							array = global.yfc_tradable_countries
+							value = FROM.id
+						}
+						add_to_array = {
+							array = YFC.selling_X
+							value = 1
+						}
+						add_to_array = {
+							array = YFC.buying_X
+							value = 1
+						}
+						add_to_array = {
+							array = YFC.selling_cost
+							value = 0
+						}
+					}	
+				}			
+				
+				IF = {
+					limit = {has_equipment = {support_equipment_1 > 500}}
+					set_country_flag = Confirmed_Trade_Selling
+
+					set_variable = {THIS.selling_item = 4}
+					set_variable = {ROOT.selling_amount = 25 }
+					set_temp_variable_to_random = {var = temp_X_var min = 4 max = 20 integer = yes}
+					multiply_variable = { ROOT.selling_amount = temp_X_var }
+					set_temp_variable = { MATH_COST_var = 1 }
+					multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
+					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+				}
+				ELSE = {
+					set_variable = {THIS.selling_item = -1}
+					set_variable = {ROOT.selling_amount = 0 }
+					add_to_array = {array = YFC.buying_cost value = 0 index = YFC_trade_nation_pos_var}
+				}
+			}	
+		}
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+				add = 10
+				has_equipment = {infantry_equipment > 1000}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {motorized_equipment > 500}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {support_equipment_1 > 500}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {anti_tank_equipment > 500}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {anti_tank_equipment > 500}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {anti_tank_equipment > 500}
 			}
 		}
 	}

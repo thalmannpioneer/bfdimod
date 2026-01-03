@@ -221,6 +221,15 @@ country_event = {
 								ideology = gen_nazism
 							}
 						}
+						add_field_marshal_role = {
+							character = SMG_one_joke
+							traits = { adaptable inspirational_bagpiper }
+							skill = 9
+							attack_skill = 10
+							defense_skill = 10
+							planning_skill = 10
+							logistics_skill = 10
+						}
 					}
 				}
 			}

@@ -1,55 +1,4 @@
 decision_YFC_trade_category= {
-	YFC_add_countries_to_trade = {
-		icon = generic_research
-
-		available = {
-			is_ai = no
-			is_debug = yes
-		}
-
-		visible = {
-			is_ai = no
-			is_debug = yes
-		}
-
-		fire_only_once = no
-		cost = 0
-
-		complete_effect = {
-			clear_array = YFC.equipment_list
-			clear_array = global.yfc_tradable_countries
-			clear_array = YFC.selling_X
-			clear_array = YFC.buying_X
-			clear_array = YFC.selling_cost
-			every_country = { 
-				IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.selling_item > -1 }
-							check_variable = { THIS.buying_item > -1 }
-						}
-					}
-					add_to_array = {
-						array = global.yfc_tradable_countries
-						value = THIS.id
-					}	
-					IF = {
-						limit = {check_variable = { THIS.selling_item > -1 }}
-						add_to_array = {
-							array = YFC.buying_X
-							value = 1
-						}
-					}
-					IF = {
-						limit = {check_variable = { THIS.buying_item > -1 }}
-
-
-					}
-				}
-			}
-		}
-	}
-
 	YFC_Trade_Tech = {
 		icon = GFX_decisions_YFC_buy_tech
         
@@ -66,7 +15,7 @@ decision_YFC_trade_category= {
 
 		fire_only_once = no
 		cost = 10
-		days_remove = 150
+		days_remove = 180
 		days_re_enable = 30
 
 		complete_effect = {
@@ -81,7 +30,12 @@ decision_YFC_trade_category= {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 20 }
+				check_variable = { money_amount > 30 }
+				add = 100
+			}
+			modifier = { #by this point other nations have other tech so get new stuff
+				check_variable = { money_amount > 15 }
+				date > 2015.01.01
 				add = 100
 			}
 		}
@@ -100,7 +54,7 @@ decision_YFC_trade_category= {
 		}
 
 		fire_only_once = no
-		cost = 50
+		cost = 35
 		days_remove = 120
 		days_re_enable = 60
 
@@ -136,18 +90,10 @@ decision_YFC_trade_category= {
         }
 
 		ai_will_do = {
-			base = 0
-            modifier = {
-				add = 1
-                has_equipment = {infantry_equipment < -100}
-			}
+			base = 2
 			modifier = {
-				add = 20
-                has_equipment = {infantry_equipment < -1000}
-			}
-			modifier = {
-				add = 50
-                has_equipment = {infantry_equipment < -2000}
+				add = 100
+                has_equipment = {infantry_equipment < 100}
 			}
 		}
 	}
@@ -202,11 +148,154 @@ decision_YFC_trade_category= {
 			base = 0
             modifier = {
 				add = 10
-                has_equipment = {infantry_equipment > 800}
+                has_equipment = {infantry_equipment > 1100}
 			}
 			modifier = {
 				add = -100
-                has_equipment = {infantry_equipment < 800}
+                has_equipment = {infantry_equipment < 1100}
+			}
+		}
+	}
+
+	YFC_trade_AIUSE_SellRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
+		icon = generic_research
+
+		available = { #Why is this code so evil and only partly working?
+			THIS = {
+				is_ai = yes
+				NOT = { has_country_flag = ongoing_trade_offer }
+			}
+		}
+
+		visible = {
+			THIS = {is_ai = yes}
+		}
+
+		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
+		targets_dynamic = yes
+		target_trigger = {
+			NOT = {has_country_flag = ongoing_trade_offer}
+			FROM = {
+				has_country_flag = Confirmed_Trade_Buying
+				NOT = {
+					has_country_flag = ongoing_trade_offer
+					has_war_with = YFC
+					has_idea = undisturbed_isolation
+					has_idea = isolation
+					has_idea = closed_economy
+					is_embargoed_by = YFC
+					is_embargoing = YFC
+				}
+			}
+			OR = {
+					AND = {
+						check_variable = {ROOT.num_equipment@infantry_equipment_0 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 0 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@infantry_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 1 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@infantry_equipment_2 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 2 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@infantry_equipment_3 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 3 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@support_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 4 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@motorized_equipment_0 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 5 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@motorized_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 6 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@artillery_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 7 }}
+					}		
+					AND = {
+						check_variable = {ROOT.num_equipment@artillery_equipment_2 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 8 }}
+					}	
+					AND = {
+						check_variable = {ROOT.num_equipment@artillery_equipment_3 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 9 }}
+					}	
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_air_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 10 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_air_equipment_2 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 11 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_air_equipment_3 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 12 }}
+					}	
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_tank_equipment_1 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 13 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_tank_equipment_2 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 14 }}
+					}
+					AND = {
+						check_variable = {ROOT.num_equipment@anti_tank_equipment_3 > FROM.buying_amount}
+						FROM = { check_variable = { buying_item = 15 }}
+					}																																																													
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 0
+
+		complete_effect = {
+			random = {
+				chance = 50
+				set_country_flag = ongoing_trade_offer
+				multiply_variable = { selling_cost^FROM.YFC_trade_nation_pos_var = 1.2 }
+				set_variable = { selling_X^FROM.YFC_trade_nation_pos_var = 1.2 }
+				FROM = { 
+					set_country_flag = ongoing_trade_offer
+					country_event = {
+						id = YFC_event.36
+						hours = 1
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = -1000
+				NOT = {has_completed_focus = YFC_focus_money_arms_capital}
+			}
+			modifier = {
+				add = 2
+				FROM = {has_war = yes}
+			}
+			modifier = {
+				add = 2
+				FROM = {surrender_progress > 0}
+			}
+			modifier = {
+				add = 2
+				FROM = {surrender_progress > 0.5}
+			}
+			modifier = {
+				add = 1
+				FROM = {is_ai = no}
 			}
 		}
 	}

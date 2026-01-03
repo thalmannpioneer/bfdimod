@@ -115,6 +115,16 @@ decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
 	allowed = { 
 		NOT = {tag = YFC}	
 	}
+	available = {
+		NOT = {
+			has_war_with = YFC
+			has_idea = undisturbed_isolation
+			has_idea = isolation
+			has_idea = closed_economy
+			is_embargoed_by = YFC
+			is_embargoing = YFC
+		}	
+	}
 	visible = { 
 		YFC = {has_completed_focus = YFC_focus_open_the_market}
 	}

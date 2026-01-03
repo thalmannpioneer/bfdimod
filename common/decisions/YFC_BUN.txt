@@ -251,12 +251,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 2
-					state = 85
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 2
+						state = 85
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 15
@@ -304,12 +309,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 2
-					state = 212
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 2
+						state = 212
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 15
@@ -354,12 +364,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 1
-					state = 85
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 1
+						state = 85
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 45
@@ -411,12 +426,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 1
-					state = 212
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 1
+						state = 212
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 45
@@ -468,12 +488,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 3
-					state = 85
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 3
+						state = 85
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 45
@@ -533,12 +558,17 @@ decision_YFC_BUN_category = {
 			}
         }
 		cancel_trigger = {
-            NOT = {
-                divisions_in_state = {
-					size > 3
-					state = 212
+			IF = {
+				limit = {
+					is_ai = no
 				}
-            }
+				NOT = {
+					divisions_in_state = {
+						size > 3
+						state = 212
+					}
+				}
+			}
         }
         cancel_effect = {
 			add_political_power = 45

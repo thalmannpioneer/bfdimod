@@ -977,6 +977,10 @@ country_event = {
     
     option = {
 		name = YFC_event.34.a
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
 	}
 }
 
@@ -990,6 +994,10 @@ country_event = {
     
     option = {
 		name = YFC_event.35.a
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
 	}
 }
 
@@ -1002,7 +1010,9 @@ country_event = { #YFC Sell
 	is_triggered_only = yes
     
 	immediate = {
-        set_variable = { trade_cost_show_var = YFC.selling_cost^YFC_trade_nation_pos_var }
+        set_variable = { trade_cost_show_var = YFC.selling_cost^ROOT.YFC_trade_nation_pos_var }
+		set_temp_variable = {trade_cost_temp_var = trade_cost_show_var}
+		divide_temp_variable = { trade_cost_temp_var = 100 }
 		set_country_flag = ongoing_trade_offer
 		clr_country_flag = Selling_Menu 
 		clr_country_flag = Buying_Menu
@@ -1176,11 +1186,11 @@ country_event = { #YFC Sell
 			}
 		}
 		clr_country_flag = ongoing_trade_offer
+		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
-			divide_variable = { trade_cost_show_var = 100 }
 			subtract_from_variable = { money_amount = trade_cost_show_var }
 			YFC = { 
-				add_to_variable = {money_amount = trade_cost_show_var}
+				add_to_variable = {money_amount = ROOT.trade_cost_show_var}
 				country_event = {
 					id = YFC_event.34
 					hours = 1
@@ -1191,8 +1201,44 @@ country_event = { #YFC Sell
 		ai_chance = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > trade_cost_show_var } 
-				add = 10
+				check_variable = { money_amount > trade_cost_temp_var } 
+				add = 2
+		 	}
+			modifier = {
+				check_variable = { money_amount < 10 } 
+				add = 1
+		 	}
+			modifier = {
+				check_variable = { money_amount < 0 } 
+				add = -2
+		 	}
+			modifier = {
+				check_variable = { money_amount < -10 } 
+				add = -2
+		 	}
+			modifier = {
+				has_war = yes
+				add = 3
+		 	}
+			modifier = {
+				has_war = no
+				add = -2
+		 	}
+			modifier = {
+				surrender_progress > 0.1
+				add = 2
+		 	}
+			modifier = {
+				surrender_progress > 0.4
+				add = 3
+		 	}
+			modifier = {
+				surrender_progress > 0.75
+				add = 5
+		 	}
+			modifier = {
+				longest_war_length > 6
+				add = 2
 		 	}
 		}	
 	}
@@ -1207,6 +1253,10 @@ country_event = { #YFC Sell
 				}
 			}
 		}
+
+		ai_chance = {
+			base = 0.1
+		}
 	}
 }
 
@@ -1219,7 +1269,9 @@ country_event = { #YFC Buy
 	is_triggered_only = yes
     
 	immediate = {
-        set_variable = { trade_cost_show_var = YFC.buying_cost^YFC_trade_nation_pos_var }
+        set_variable = { trade_cost_show_var = YFC.buying_cost^ROOT.YFC_trade_nation_pos_var }
+		set_temp_variable = {trade_cost_temp_var = trade_cost_show_var}
+		divide_temp_variable = { trade_cost_temp_var = 100 }
 		set_country_flag = ongoing_trade_offer
 		clr_country_flag = Selling_Menu 
 		clr_country_flag = Buying_Menu
@@ -1393,11 +1445,11 @@ country_event = { #YFC Buy
 			}
 		}
 		clr_country_flag = ongoing_trade_offer
+		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
-			divide_variable = { trade_cost_show_var = 100 }
 			add_to_variable = {money_amount = trade_cost_show_var}
 			YFC = { 
-				subtract_from_variable = { money_amount = trade_cost_show_var }
+				subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
 				country_event = {
 					id = YFC_event.34
 					hours = 1
@@ -1408,7 +1460,7 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > trade_cost_show_var } 
+				check_variable = { money_amount > trade_cost_temp_var } 
 				add = 10
 		 	}
 		}	
@@ -1923,7 +1975,7 @@ country_event = {
 					create_unit = {
 						division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
 						owner = YFC
-						count = 1
+						count = 2
 						id = 1967
 					}
 				}
@@ -3114,6 +3166,13 @@ country_event = { #Election CRN Wins!
 			BUN = {
 				set_cosmetic_tag = BUN_republic
 				remove_ideas = idea_BUN_criminal_state
+				add_country_leader_role = {
+					character = BUN_pen
+					promote_leader = yes
+					country_leader = {
+						ideology = populism
+					}
+				}
 				add_timed_idea = {
 					idea = idea_BUN_adjusting_rebuilding
 					days = 500

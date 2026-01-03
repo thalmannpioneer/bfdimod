@@ -15,13 +15,5 @@ characters = {
 			ideology = gen_nazism
 			desc = SMG_one_joke_desc
 		}
-		field_marshal = {
-			traits = { adaptable inspirational_bagpiper }
-			skill = 9
-			attack_skill = 10
-			defense_skill = 10
-			planning_skill = 10
-			logistics_skill = 10
-		}
 	}
 }

@@ -54,6 +54,7 @@ add_ideas = idea_BUN_criminal_state
 recruit_character = BUN_eraser
 recruit_character = BUN_shackles
 recruit_character = BUN_blocky
+recruit_character = BUN_pen
 
 set_country_flag = game_not_started
 
