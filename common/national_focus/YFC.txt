@@ -1003,15 +1003,15 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_peoniele_the_second_city focus = YFC_focus_big_yoyleton }
 		cost = 8
 		#give event about the large population, highly variable based on what you chose
-		#NONE of these overlap except for 7 and 4
+		#NONE of these overlap except for (7 and 4) && (8 and 3)
 		#DONE1	develop peoniele -> peoniele the second city -> chose large dev (event about large profits but a slightly angry populace, and how yoyleton is still in ruins)
 		#DONE2	develop peoniele -> peoniele the second city -> chose medium or small dev (event about large profits and neglected yoyleton)
 		#DONE3	develop peoniele -> big yoyleton -> chose any large or medium dev (event on having a happy populace and big profits)
 		#DONE4	develop peoniele -> big yoyleton -> chose small (event about cities not living up to expectations, upset sectorials, but still happy population)
-		#5	develop yoyleton -> big yoyleton -> chose large or medium dev (event about large profits, good trade with north, happy populace, but neglected peoniele)
-		#6	develop yoyleton -> big yoyleton -> chose small dev (event about not developing enough, neglected peoniele, angry sectorials)
+		#DONE5	develop yoyleton -> big yoyleton -> chose large or medium dev (event about large profits, good trade with north, happy populace, but neglected peoniele)
+		#DONE6	develop yoyleton -> big yoyleton -> chose small dev (event about not developing enough, neglected peoniele, angry sectorials)
 		#DONE7	develop yoyleton -> peoniele the second city -> chose small dev (same event as #4)
-		#8	develop yoyleton -> peoniele the second city -> chose medium dev (event about big profits, and happy population)
+		#DONE8	develop yoyleton -> peoniele the second city -> chose medium dev MERGED WITH 3
 		#9	develop yoyleton -> peoniele the second city -> chose large dev (event about large profits, happy sectorials, but mad peoniele populace)
 		completion_reward = {
 		
