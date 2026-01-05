@@ -183,6 +183,13 @@
  l_GTR_improves_paperclip: "Improves §YOperation \"Paperclip\"§! National Spirit\n- Research speed §G+5%§!"
  l_GTR_changes_noocracy: "Changes §2Noocracy§! National Spirit\n- Stability §R-5%§!\n- Political Power Gain §G+0.10§!\n- Research Speed §G+5%§!"
  l_GTR_reconstruction_decisions: "Unlocks §YUniversity Reconstruction§! Decisions."
+ l_GTR_unlocks_tb: "Unlocks §YTennis Ball§! as an advisor."
+ l_GTR_unlocks_napalm: "Unlocks §YNapalm§! as an advisor."
+ l_GTR_unlocks_octahedron: "Unlocks §YOctahedron§! as an advisor."
+ l_GTR_start_yoylite_research: "§2Experiments with Yoylite are starting.§!\nOpens §2Push for Peaceful Yoylite§! Decision."
+ l_GTR_explosion_choice: "§0The Bomb§! will §tdamage buildings harsher.§!\n§0The Bomb§! will §7lightly infect the soil.§!"
+ l_GTR_infection_choice: "§0The Bomb§! will §7damage buildings lighter.§!\n§0The Bomb§! will §tmore heavily infect the soil.§!"
+ l_GTR_yoylite_project_starts: "§tThe Deadland Project§! Begins.\nCheck out your §YSpecial Projects!§!"
 
  l_money_gain_100K: "Gain §G100K Dollars§!"
  l_money_gain_200K: "Gain §G200K Dollars§!"

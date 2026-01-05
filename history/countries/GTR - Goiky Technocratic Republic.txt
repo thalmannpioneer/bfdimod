@@ -34,6 +34,8 @@ set_popularities = {
     neutrality = 100
 }
 
+country_lock_all_division_template = yes
+
 set_country_flag = GTR_stage1_selected
 set_variable = { var_GTR_progressbar_stage1 = 5 }
 set_variable = { var_GTR_progressbar_stage2 = 5 }
@@ -68,3 +70,5 @@ recruit_character = GTR_test_tube
 recruit_character = GTR_calculator
 recruit_character = GTR_swappy
 recruit_character = GTR_titanknife
+recruit_character = GTR_napalm
+recruit_character = GTR_octahedron

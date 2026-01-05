@@ -1,0 +1,13 @@
+﻿l_english:
+ sp_yoylite_bomb: "[YOYLITE_BOMB_TITLE]"
+ sp_yoylite_bomb_disabled: "§tLater...§!"
+ sp_yoylite_bomb_enabled: "§0Yoylite Bomb§!"
+ sp_yoylite_bomb_desc: "Thanks to a lucky coincidence we can create a weapon that the object has not yet seen - a weapon of mass destruction that will plunge entire cities into terror..."
+ sp_yoylite_reactor_tested_reward: "Yoylite Reactor Testing"
+ sp_yoylite_reactor_tested_reward_desc: "...          EXPERIMENT No. 4\n\nA control group of scientists successfully managed to launch a cold fusion reactor based on the controlled decay of yoylite atoms. The reactor is currently operating stably. Obviously, this is a big step for the entire physical science of Goiky."
+ yoylite_reactor_tested_reward_classify: "Classify! CLASSIFY!!!"
+ sp_yoylite_reactor_tested_reward_public: "Publish in newspapers!"
+ sp_application_choice_reward: "Application in battle"
+ sp_application_choice_reward_desc: "...              CLASSIFIED. HAND OVER TO GOLFBALL PERSONALLY.\n\nEngineers are arguing. The team is divided into two groups: one wants as much yoylite as possible to be used during the explosion; the other, on the contrary, is in favor of the fact that as a result of the explosion, unstable yoylite will be distributed over a large area and cause contamination of the surrounding area.\nWhat decision will be made?"
+ sp_application_choice_reward_explosion: "Explosion is more important."
+ sp_application_choice_reward_infection: "Dirty Bomb? Interesting."

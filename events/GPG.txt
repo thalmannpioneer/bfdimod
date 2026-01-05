@@ -1885,14 +1885,17 @@ country_event = {
 
     option = {
         name = GPG_event.40.a
-        set_global_flag = demo_ended
         if = {
-            limit = { tag = GPG }
-            set_variable = { var_demo_end = 4 }
-        }
-        else_if = {
-            limit = { tag = GSR }
-            set_variable = { var_demo_end = 5 }
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+            if = {
+                limit = { tag = GPG }
+                set_variable = { var_demo_end = 4 }
+            }
+            else_if = {
+                limit = { tag = GSR }
+                set_variable = { var_demo_end = 5 }
+            }
         }
     }
 }

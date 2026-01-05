@@ -1,287 +1,287 @@
 guiTypes = {
-	containerWindowType = {
-		name = "selection_window"
-		position = { x=-600 y=-350 }	
-		size = { width = 1250 height = 750 }
-		moveable = yes
-		Orientation = CENTER
-		
-		background = {
-			name = "Background"	
-			spriteType = "GFX_tiled_window"
-		}
-		
-		iconType = {
-			name = "map"
-			position = { x = 20 y = 20 }
-			spriteType = GFX_selection_map
-		}
-		 
-		containerWindowType = {
-			name = "quote_bg"
-			position = { x = 20 y = 625 }
-			size = { width = 900 height = 100 }
-			background = {
-				name = "background"
-				spriteType = GFX_tiled_paper_bg
-			}
-		}
-		
-		instantTextBoxType = {
-			name = "quote"
-			position = { x = 40 y = 640 }
-			text = SW_QUOTE
-			font = hoi_30header
-			maxWidth = 1000
-			maxHeight = 100
-		}
-		
-		instantTextBoxType = {
-			name = "prompt"
-			position = { x = 590 y = 690 }
-			text = SW_PROMPT
-			font = hoi_18mbs
-			maxWidth = 1000
-			maxHeight = 100
-		}
-		
-		containerWindowType = {
-			name = "desc_bg"
-			position = { x = 914 y = 15 }
-			size = { width = 325 height = 605 }
-			background = {
-				name = "background"
-				spriteType = GFX_tiled_peace_upper_bar
-			}
-		}
-		
-		instantTextBoxType = {
-			name = "demoerror"
-			position = { x = 923 y = 630 }
-			text = SW_DEMOERROR
-			font = hoi_18mbs
-			maxWidth = 310
-			maxHeight = 100
-			format = CENTER
-		}
-		
-		buttonType = {
-			name = "startbutton"
-			position = { x = 1010 y = 660 }
-			spriteType = GFX_button_148x34
-			buttonText = SW_STARTBUTTON
-			buttonFont = hoi_20bs
-		}
-		
-		buttonType = {
-			name = "gcmd"
-			position = { x = 347 y = 30 }
-			spriteType = GFX_button_gcmd
-			pdx_tooltip = WR_GCMD_BTTT
-		}
-		buttonType = {
-			name = "tbt"
-			position = { x = 543 y = 30 }
-			spriteType = GFX_button_tbt
-			pdx_tooltip = WR_TBT_BTTT
-		}
-		buttonType = {
-			name = "ggrr_s"
-			position = { x = 314 y = 277 }
-			spriteType = GFX_button_ggrr_s
-			pdx_tooltip = WR_GGRR_S_BTTT
-		}
-		buttonType = {
-			name = "gpg"
-			position = { x = 211 y = 283 }
-			spriteType = GFX_button_gpg
-			pdx_tooltip = WR_GPG_BTTT
-		}
-		buttonType = {
-			name = "gpr"
-			position = { x = 103 y = 195 }
-			spriteType = GFX_button_gpr
-			pdx_tooltip = WR_GPR_BTTT
-		}
-		buttonType = {
-			name = "dipz"
-			position = { x = 165 y = 123 }
-			spriteType = GFX_button_dipz
-			pdx_tooltip = WR_DIPZ_BTTT
-		}
-		buttonType = {
-			name = "wgrf"
-			position = { x = 199 y = 44 }
-			spriteType = GFX_button_wgrf
-			pdx_tooltip = WR_WGRF_BTTT
-		}
-		buttonType = {
-			name = "ggrr_n"
-			position = { x = 299 y = 117 }
-			spriteType = GFX_button_ggrr_n
-			pdx_tooltip = WR_GGRR_N_BTTT
-		}
-		buttonType = {
-			name = "cult"
-			position = { x = 502 y = 123 }
-			spriteType = GFX_button_cult
-			pdx_tooltip = WR_CULT_BTTT
-		}
-		buttonType = {
-			name = "ggr"
-			position = { x = 542 y = 335 }
-			spriteType = GFX_button_ggr
-			pdx_tooltip = WR_GGR_BTTT
-		}
-		buttonType = {
-			name = "crn"
-			position = { x = 378 y = 387 }
-			spriteType = GFX_button_crn
-			pdx_tooltip = WR_CRN_BTTT
-		}
-		buttonType = {
-			name = "ebunch"
-			position = { x = 440 y = 330 }
-			spriteType = GFX_button_ebunch
-			pdx_tooltip = WR_EBUNCH_BTTT
-		}
-		buttonType = {
-			name = "gtr"
-			position = { x = 293 y = 333 }
-			spriteType = GFX_button_gtr
-			pdx_tooltip = WR_GTR_BTTT
-		}
-		buttonType = {
-			name = "freet"
-			position = { x = 540 y = 487 }
-			spriteType = GFX_button_freet
-			pdx_tooltip = WR_FREET_BTTT
-		}
-		buttonType = {
-			name = "sgd"
-			position = { x = 140 y = 395 }
-			spriteType = GFX_button_sgd
-			pdx_tooltip = WR_SGD_BTTT
-		}
-		buttonType = {
-			name = "agg"
-			position = { x = 205 y = 380 }
-			spriteType = GFX_button_agg
-			pdx_tooltip = WR_AGG_BTTT
-		}
-		buttonType = {
-			name = "yfc"
-			position = { x = 580 y = 194 }
-			spriteType = GFX_button_yfc
-			pdx_tooltip = WR_YFC_BTTT
-		}
-		buttonType = {
-			name = "sos"
-			position = { x = 64 y = 256 }
-			spriteType = GFX_button_sos
-			pdx_tooltip = WR_SOS_BTTT
-		}
-		
-		iconType = {
-			name = "WGF_available"
-			position = { x = 230 y = 80 }
-			spriteType = GFX_available_text
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "GTR_available"
-			position = { x = 328 y = 380 }
-			spriteType = GFX_available_text
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "GGR_available"
-			position = { x = 670 y = 470 }
-			spriteType = GFX_available_text
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "GPG_available"
-			position = { x = 222 y = 340 }
-			spriteType = GFX_available_text
-			alwaystransparent = yes
-		}
+    containerWindowType = {
+        name = "selection_window"
+        position = { x=-600 y=-350 }
+        size = { width = 1250 height = 750 }
+        moveable = yes
+        Orientation = CENTER
 
-		iconType = {
-			name = "YFC_available"
-			position = { x = 650 y = 305 }
-			spriteType = GFX_available_text
-			alwaystransparent = yes
-		}
-		
-		instantTextBoxType = {
-			name = "countryname"
-			text = SW_COUNTRYNAME
-			font = hoi_24header
-			position = { x = 933 y = 45 }
-			maxWidth = 289
-			format = CENTER
-		}
-		iconType = {
-			name = "desc_flag"
-			spriteType = GFX_flags_bg
-			position = { x = 920 y = 110 }
-		}
-		instantTextBoxType = {
-			name = "countrydesc"
-			text = SW_COUNTRYDESC
-			font = hoi_20bs
-			position = { x = 925 y = 115 }
-			maxWidth = 310
-		}
-	}
-	
-	containerWindowType = {
-		name = disclaimer_container
-		position = { x = 700 y = 400 }
-		size = { width = 400 height = 300 }
-		moveable = yes
-			
-		background = {
-			name = disclaimer_bg
-			spriteType = GFX_tiled_bg
-		}
-		
-		instantTextBoxType = {
-			name = disclaimer_title
-			position = { x = 0 y = 20 }
-			text = l_disclaimer_title
-			font = hoi_30header
-			format = centre
-			maxWidth = 400
-		}
-		
-		instantTextBoxType = {
-			name = disclaimer_desc
-			position = { x = 10 y = 70 }
-			text = l_disclaimer_desc
-			font = hoi_20bs
-			format = centre
-			maxWidth = 380
-		}
-		
-		buttonType = {
-			name = agree
-			position = { x = 140 y = 170 }
-			buttonText = l_disclaimer_button_agree
-			buttonFont = hoi_20bs
-			spriteType = GFX_button_123x34
-		}
-		
-		buttonType = {
-			name = cancel
-			position = { x = 140 y = 220 }
-			buttonText = l_disclaimer_button_cancel
-			buttonFont = hoi_20bs
-			spriteType = GFX_button_123x34
-		}
-	}
+        background = {
+            name = "Background"
+            spriteType = "GFX_tiled_window"
+        }
+
+        iconType = {
+            name = "map"
+            position = { x = 20 y = 20 }
+            spriteType = GFX_selection_map
+        }
+
+        containerWindowType = {
+            name = "quote_bg"
+            position = { x = 20 y = 625 }
+            size = { width = 900 height = 100 }
+            background = {
+                name = "background"
+                spriteType = GFX_tiled_paper_bg
+            }
+        }
+
+        instantTextBoxType = {
+            name = "quote"
+            position = { x = 40 y = 640 }
+            text = SW_QUOTE
+            font = hoi_30header
+            maxWidth = 1000
+            maxHeight = 100
+        }
+
+        instantTextBoxType = {
+            name = "prompt"
+            position = { x = 590 y = 690 }
+            text = SW_PROMPT
+            font = hoi_18mbs
+            maxWidth = 1000
+            maxHeight = 100
+        }
+
+        containerWindowType = {
+            name = "desc_bg"
+            position = { x = 914 y = 15 }
+            size = { width = 325 height = 605 }
+            background = {
+                name = "background"
+                spriteType = GFX_tiled_peace_upper_bar
+            }
+        }
+
+        instantTextBoxType = {
+            name = "demoerror"
+            position = { x = 923 y = 630 }
+            text = SW_DEMOERROR
+            font = hoi_18mbs
+            maxWidth = 310
+            maxHeight = 100
+            format = CENTER
+        }
+
+        buttonType = {
+            name = "startbutton"
+            position = { x = 1010 y = 660 }
+            spriteType = GFX_button_148x34
+            buttonText = SW_STARTBUTTON
+            buttonFont = hoi_20bs
+        }
+
+        buttonType = {
+            name = "gcmd"
+            position = { x = 347 y = 30 }
+            spriteType = GFX_button_gcmd
+            pdx_tooltip = WR_GCMD_BTTT
+        }
+        buttonType = {
+            name = "tbt"
+            position = { x = 543 y = 30 }
+            spriteType = GFX_button_tbt
+            pdx_tooltip = WR_TBT_BTTT
+        }
+        buttonType = {
+            name = "ggrr_s"
+            position = { x = 314 y = 277 }
+            spriteType = GFX_button_ggrr_s
+            pdx_tooltip = WR_GGRR_S_BTTT
+        }
+        buttonType = {
+            name = "gpg"
+            position = { x = 211 y = 283 }
+            spriteType = GFX_button_gpg
+            pdx_tooltip = WR_GPG_BTTT
+        }
+        buttonType = {
+            name = "gpr"
+            position = { x = 103 y = 195 }
+            spriteType = GFX_button_gpr
+            pdx_tooltip = WR_GPR_BTTT
+        }
+        buttonType = {
+            name = "dipz"
+            position = { x = 165 y = 123 }
+            spriteType = GFX_button_dipz
+            pdx_tooltip = WR_DIPZ_BTTT
+        }
+        buttonType = {
+            name = "wgrf"
+            position = { x = 199 y = 44 }
+            spriteType = GFX_button_wgrf
+            pdx_tooltip = WR_WGRF_BTTT
+        }
+        buttonType = {
+            name = "ggrr_n"
+            position = { x = 299 y = 117 }
+            spriteType = GFX_button_ggrr_n
+            pdx_tooltip = WR_GGRR_N_BTTT
+        }
+        buttonType = {
+            name = "cult"
+            position = { x = 502 y = 123 }
+            spriteType = GFX_button_cult
+            pdx_tooltip = WR_CULT_BTTT
+        }
+        buttonType = {
+            name = "ggr"
+            position = { x = 542 y = 335 }
+            spriteType = GFX_button_ggr
+            pdx_tooltip = WR_GGR_BTTT
+        }
+        buttonType = {
+            name = "crn"
+            position = { x = 378 y = 387 }
+            spriteType = GFX_button_crn
+            pdx_tooltip = WR_CRN_BTTT
+        }
+        buttonType = {
+            name = "ebunch"
+            position = { x = 440 y = 330 }
+            spriteType = GFX_button_ebunch
+            pdx_tooltip = WR_EBUNCH_BTTT
+        }
+        buttonType = {
+            name = "gtr"
+            position = { x = 293 y = 333 }
+            spriteType = GFX_button_gtr
+            pdx_tooltip = WR_GTR_BTTT
+        }
+        buttonType = {
+            name = "freet"
+            position = { x = 540 y = 487 }
+            spriteType = GFX_button_freet
+            pdx_tooltip = WR_FREET_BTTT
+        }
+        buttonType = {
+            name = "sgd"
+            position = { x = 140 y = 395 }
+            spriteType = GFX_button_sgd
+            pdx_tooltip = WR_SGD_BTTT
+        }
+        buttonType = {
+            name = "agg"
+            position = { x = 205 y = 380 }
+            spriteType = GFX_button_agg
+            pdx_tooltip = WR_AGG_BTTT
+        }
+        buttonType = {
+            name = "yfc"
+            position = { x = 580 y = 194 }
+            spriteType = GFX_button_yfc
+            pdx_tooltip = WR_YFC_BTTT
+        }
+        buttonType = {
+            name = "sos"
+            position = { x = 64 y = 256 }
+            spriteType = GFX_button_sos
+            pdx_tooltip = WR_SOS_BTTT
+        }
+
+        iconType = {
+            name = "WGF_available"
+            position = { x = 230 y = 80 }
+            spriteType = GFX_available_text
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "GTR_available"
+            position = { x = 328 y = 380 }
+            spriteType = GFX_available_text
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "GGR_available"
+            position = { x = 670 y = 470 }
+            spriteType = GFX_available_text
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "GPG_available"
+            position = { x = 222 y = 340 }
+            spriteType = GFX_available_text
+            alwaystransparent = yes
+        }
+
+        iconType = {
+            name = "YFC_available"
+            position = { x = 650 y = 305 }
+            spriteType = GFX_available_text
+            alwaystransparent = yes
+        }
+
+        instantTextBoxType = {
+            name = "countryname"
+            text = SW_COUNTRYNAME
+            font = hoi_24header
+            position = { x = 933 y = 45 }
+            maxWidth = 289
+            format = CENTER
+        }
+        iconType = {
+            name = "desc_flag"
+            spriteType = GFX_flags_bg
+            position = { x = 920 y = 110 }
+        }
+        instantTextBoxType = {
+            name = "countrydesc"
+            text = SW_COUNTRYDESC
+            font = hoi_20bs
+            position = { x = 925 y = 115 }
+            maxWidth = 310
+        }
+    }
+
+    containerWindowType = {
+        name = disclaimer_container
+        position = { x = 700 y = 400 }
+        size = { width = 400 height = 300 }
+        moveable = yes
+
+        background = {
+            name = disclaimer_bg
+            spriteType = GFX_tiled_bg
+        }
+
+        instantTextBoxType = {
+            name = disclaimer_title
+            position = { x = 0 y = 20 }
+            text = l_disclaimer_title
+            font = hoi_30header
+            format = centre
+            maxWidth = 400
+        }
+
+        instantTextBoxType = {
+            name = disclaimer_desc
+            position = { x = 10 y = 70 }
+            text = l_disclaimer_desc
+            font = hoi_20bs
+            format = centre
+            maxWidth = 380
+        }
+
+        buttonType = {
+            name = agree
+            position = { x = 140 y = 170 }
+            buttonText = l_disclaimer_button_agree
+            buttonFont = hoi_20bs
+            spriteType = GFX_button_123x34
+        }
+
+        buttonType = {
+            name = cancel
+            position = { x = 140 y = 220 }
+            buttonText = l_disclaimer_button_cancel
+            buttonFont = hoi_20bs
+            spriteType = GFX_button_123x34
+        }
+    }
 }

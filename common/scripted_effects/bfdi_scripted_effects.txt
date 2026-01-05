@@ -1,214 +1,303 @@
+BFDI_game_start = {
+    GOI = {
+        every_owned_state = {
+            add_core_of = EMP
+            transfer_state_to = EMP
+            remove_core_of = GOI
+        }
+    }
+
+    WGF = { load_oob = "WGF_2012" }
+    GMD = { load_oob = "GMD_2012" }
+    TBT = { load_oob = "TBT_2012" }
+    DPZ = { load_oob = "DPZ_2012" }
+    NRR = { load_oob = "NRR_2012" }
+    SEC = { load_oob = "SEC_2012" }
+    GPR = { load_oob = "GPR_2012" }
+    GPG = { load_oob = "GPG_2012" }
+    SRR = { load_oob = "SRR_2012" }
+    GTR = { load_oob = "GTR_2012" }
+    BUN = { load_oob = "BUN_2012" }
+    GGR = { load_oob = "GGR_2012" }
+    FFT = { load_oob = "FFT_2012" }
+    AGG = { load_oob = "AGG_2012" }
+    SGD = { load_oob = "SGD_2012" }
+    YFC = { load_oob = "YFC_2012" }
+    CRN = { load_oob = "CRN_2012" }
+    SOS = { load_oob = "SOS_2012" }
+
+    set_global_flag = {
+        flag = game_started
+        value = 0
+    }
+    set_global_flag = {
+        flag = focus_take_prevention
+        value = 0
+    }
+    GGR = {
+        activate_mission = GGR_anarchists_mission
+        country_event = {
+            id = GGR_event.7
+            days = 5
+        }
+    }
+
+    GPG = {
+        country_event = {
+            id = GPG_event.1
+            days = 5
+        }
+        country_event = {
+            id = GPG_event.6
+            days = 30
+        }
+    }
+
+    SOS = {
+        country_event = {
+            id = SOS_hidden_event.1
+            days = 365
+            random_days = 20
+            random_hours = 12
+        }
+    }
+
+    TBT = {
+        country_event = {
+            id = TBT_hidden_event.1
+            days = 300
+            random_days = 30
+            random_hours = 24
+        }
+    }
+
+    GTR = {
+        country_event = {
+            id = GTR_event.1
+            days = 3
+            random_hours = 12
+        }
+        country_event = {
+            id = GTR_event.50
+            days = 600
+            random_days = 100
+            random_hours = 12
+        }
+    }
+}
+
+
 gpg_civil_war = {
-	add_popularity = {
-		ideology = democratic
-		popularity = -0.5
-	}
-	set_party_name = {
-		ideology = democratic
-		long_name = GPG_banned_party
-		name = GPG_banned_party
-	}
-	add_popularity = {
-		ideology = communism
-		popularity = -0.5
-	}
-	set_party_name = {
-		ideology = communism
-		long_name = GPG_banned_party
-		name = GPG_banned_party
-	}
-	add_popularity = {
-		ideology = fascism
-		popularity = -0.5
-	}
-	add_popularity = {
-		ideology = radical_thoughts
-		popularity = -0.5
-	}
-	set_party_name = {
-		ideology = fascism
-		long_name = GPG_banned_party
-		name = GPG_banned_party
-	}
-	set_party_name = {
-		ideology = radical_thoughts
-		long_name = GPG_banned_party
-		name = GPG_banned_party
-	}
-	country_event = {
-		id = GPG_event.30
-		days = 5
-	}
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = cw_third_variant
-				has_country_flag = cw_second_variant
-			}
-		}
-		load_oob = GPG_CW1
-	}
-	else_if = {
-		limit = { has_country_flag = cw_first_variant }
-		load_oob = GPG_CW2
-	}
-	load_focus_tree = GPG_CW_focus_tree
-	GSR = {
-		delete_unit_template_and_units = {
-			division_template = "State patrol"
-			disband = no
-		}
-		load_oob = GSR_CW
-		declare_war_on = {
-			target = GDR
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GFG
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GPG
-			type = annex_everything
-		}
-		country_event = {
-			id = GSR_event.1
-			days = 5
-		}
-	}
-	GDR = {
-		delete_unit_template_and_units = {
-			division_template = "State patrol"
-			disband = no
-		}
-		load_oob = GDR_CW
-		declare_war_on = {
-			target = GSR
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GFG
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GPG
-			type = annex_everything
-		}
-		country_event = {
-			id = GDR_event.1
-			days = 5
-		}
-	}
-	GFG = {
-		delete_unit_template_and_units = {
-			division_template = "State patrol"
-			disband = no
-		}
-		if = {
-			limit = {
-				GPG = {
-					OR = {
-						has_country_flag = cw_first_variant
-						has_country_flag = cw_third_variant
-					}
-				}
-			}
-			load_oob = GFG_CW1
-		}
-		else_if = {
-			limit = { GPG = { has_country_flag = cw_second_variant } }
-			load_oob = GFG_CW2
-		}
-		declare_war_on = {
-			target = GSR
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GDR
-			type = annex_everything
-		}
-		declare_war_on = {
-			target = GPG
-			type = annex_everything
-		}
-		country_event = {
-			id = GFG_event.1
-			days = 5
-		}
-	}
-	news_event = {
-		id = bfdinews.15
-		days = 2
-	}
-	
-	set_global_flag = civilwar_in_casland
-	
-	activate_mission = GPG_mission_race_to_casland
-	GDR = { activate_mission = GPG_mission_race_to_casland }
-	GSR = { activate_mission = GPG_mission_race_to_casland }
-	GFG = { activate_mission = GPG_mission_race_to_casland }
+    add_popularity = {
+        ideology = democratic
+        popularity = -0.5
+    }
+    set_party_name = {
+        ideology = democratic
+        long_name = GPG_banned_party
+        name = GPG_banned_party
+    }
+    add_popularity = {
+        ideology = communism
+        popularity = -0.5
+    }
+    set_party_name = {
+        ideology = communism
+        long_name = GPG_banned_party
+        name = GPG_banned_party
+    }
+    add_popularity = {
+        ideology = fascism
+        popularity = -0.5
+    }
+    add_popularity = {
+        ideology = radical_thoughts
+        popularity = -0.5
+    }
+    set_party_name = {
+        ideology = fascism
+        long_name = GPG_banned_party
+        name = GPG_banned_party
+    }
+    set_party_name = {
+        ideology = radical_thoughts
+        long_name = GPG_banned_party
+        name = GPG_banned_party
+    }
+    country_event = {
+        id = GPG_event.30
+        days = 5
+    }
+    if = {
+        limit = {
+            OR = {
+                has_country_flag = cw_third_variant
+                has_country_flag = cw_second_variant
+            }
+        }
+        load_oob = GPG_CW1
+    }
+    else_if = {
+        limit = { has_country_flag = cw_first_variant }
+        load_oob = GPG_CW2
+    }
+    load_focus_tree = GPG_CW_focus_tree
+    GSR = {
+        delete_unit_template_and_units = {
+            division_template = "State patrol"
+            disband = no
+        }
+        load_oob = GSR_CW
+        declare_war_on = {
+            target = GDR
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GFG
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GPG
+            type = annex_everything
+        }
+        country_event = {
+            id = GSR_event.1
+            days = 5
+        }
+    }
+    GDR = {
+        delete_unit_template_and_units = {
+            division_template = "State patrol"
+            disband = no
+        }
+        load_oob = GDR_CW
+        declare_war_on = {
+            target = GSR
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GFG
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GPG
+            type = annex_everything
+        }
+        country_event = {
+            id = GDR_event.1
+            days = 5
+        }
+    }
+    GFG = {
+        delete_unit_template_and_units = {
+            division_template = "State patrol"
+            disband = no
+        }
+        if = {
+            limit = {
+                GPG = {
+                    OR = {
+                        has_country_flag = cw_first_variant
+                        has_country_flag = cw_third_variant
+                    }
+                }
+            }
+            load_oob = GFG_CW1
+        }
+        else_if = {
+            limit = { GPG = { has_country_flag = cw_second_variant } }
+            load_oob = GFG_CW2
+        }
+        declare_war_on = {
+            target = GSR
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GDR
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = GPG
+            type = annex_everything
+        }
+        country_event = {
+            id = GFG_event.1
+            days = 5
+        }
+    }
+    news_event = {
+        id = bfdinews.15
+        days = 2
+    }
+
+    set_global_flag = civilwar_in_casland
+
+    activate_mission = GPG_mission_race_to_casland
+    GDR = { activate_mission = GPG_mission_race_to_casland }
+    GSR = { activate_mission = GPG_mission_race_to_casland }
+    GFG = { activate_mission = GPG_mission_race_to_casland }
 }
 
 #:skull:
 GPG_on_lawnland_progressbar_change = {
-	if = {
-		limit = { check_variable = { var_GPG_negs_progressbar > 100 } }
-		set_variable = { var_GPG_negs_progressbar = 100 }
-	}
-	else_if = {
-		limit = { check_variable = { var_GPG_negs_progressbar < 0 } }
-		set_variable = { var_GPG_negs_progressbar = 0 }
-	}
-	
-	if = {
-		limit = { check_variable = { var_GPG_war_progressbar > 100 } }
-		set_variable = { var_GPG_war_progressbar = 100 }
-	}
-	else_if = {
-		limit = { check_variable = { var_GPG_war_progressbar < 0 } }
-		set_variable = { var_GPG_war_progressbar = 0 }
-	}
-	
-	if = {
-		limit = { check_variable = { var_GPG_negs_progressbar = 100 } }
-		set_country_flag = lawnland_mechanic_stop
-		country_event = GPG_event.35
-	}
-	else_if = {
-		limit = { check_variable = { var_GPG_negs_progressbar = 0 } }
-		set_country_flag = lawnland_mechanic_stop
-		country_event = GPG_event.36
-	}
-	
-	if = {
-		limit = { check_variable = { var_GPG_war_progressbar = 100 } }
-		set_country_flag = lawnland_mechanic_stop
-		country_event = GPG_event.37
-	}
+    if = {
+        limit = { check_variable = { var_GPG_negs_progressbar > 100 } }
+        set_variable = { var_GPG_negs_progressbar = 100 }
+    }
+    else_if = {
+        limit = { check_variable = { var_GPG_negs_progressbar < 0 } }
+        set_variable = { var_GPG_negs_progressbar = 0 }
+    }
+
+    if = {
+        limit = { check_variable = { var_GPG_war_progressbar > 100 } }
+        set_variable = { var_GPG_war_progressbar = 100 }
+    }
+    else_if = {
+        limit = { check_variable = { var_GPG_war_progressbar < 0 } }
+        set_variable = { var_GPG_war_progressbar = 0 }
+    }
+
+    if = {
+        limit = { check_variable = { var_GPG_negs_progressbar = 100 } }
+        set_country_flag = lawnland_mechanic_stop
+        country_event = GPG_event.35
+    }
+    else_if = {
+        limit = { check_variable = { var_GPG_negs_progressbar = 0 } }
+        set_country_flag = lawnland_mechanic_stop
+        country_event = GPG_event.36
+    }
+
+    if = {
+        limit = { check_variable = { var_GPG_war_progressbar = 100 } }
+        set_country_flag = lawnland_mechanic_stop
+        country_event = GPG_event.37
+    }
 }
 
 BFDI_money_diplay_update = {
-	if = {
-		limit = { check_variable = { money_amount < -10} } #-1M
-		set_variable = { display_state = 2 }
-		set_variable = { display_money = money_amount }
-		divide_variable = { display_money = 10 }
-	}
-	else_if = {
-		limit = { check_variable = { money_amount < 10} } #100K
-		set_variable = { display_state = 1 }
-		set_variable = { display_money = money_amount }
-		multiply_variable = { display_money = 100 }
-	}
-	else_if = {
-		limit = { check_variable = { money_amount < 10000 } } #1M
-		set_variable = { display_state = 2 }
-		set_variable = { display_money = money_amount }
-		divide_variable = { display_money = 10 }
-	}
-	else = { #1B
-		set_variable = { display_state = 3 }
-		set_variable = { display_money = money_amount } 
-		divide_variable = { display_money = 10000 }
-	}
+    if = {
+        limit = { check_variable = { money_amount < -10} } #-1M
+        set_variable = { display_state = 2 }
+        set_variable = { display_money = money_amount }
+        divide_variable = { display_money = 10 }
+    }
+    else_if = {
+        limit = { check_variable = { money_amount < 10} } #100K
+        set_variable = { display_state = 1 }
+        set_variable = { display_money = money_amount }
+        multiply_variable = { display_money = 100 }
+    }
+    else_if = {
+        limit = { check_variable = { money_amount < 10000 } } #1M
+        set_variable = { display_state = 2 }
+        set_variable = { display_money = money_amount }
+        divide_variable = { display_money = 10 }
+    }
+    else = { #1B
+        set_variable = { display_state = 3 }
+        set_variable = { display_money = money_amount }
+        divide_variable = { display_money = 10000 }
+    }
 }

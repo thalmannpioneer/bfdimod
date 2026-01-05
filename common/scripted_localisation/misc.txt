@@ -87,3 +87,16 @@ defined_text = {
         localization_key = GTR_university_reconstruction_building_mission_1
     }
 }
+
+defined_text = {
+    name = YOYLITE_BOMB_TITLE
+    text = {
+        trigger = {
+            has_country_flag = GTR_yoylite_project
+        }
+        localization_key = sp_yoylite_bomb_enabled
+    }
+    text = {
+        localization_key = sp_yoylite_bomb_disabled
+    }
+}

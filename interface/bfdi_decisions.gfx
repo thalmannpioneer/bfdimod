@@ -855,4 +855,9 @@ spriteTypes = {
 		name = "GFX_GTR_university_reconstruction_removing_infestation_mission"
 		textureFile = "gfx/interface/decisions/GFX_GTR_university_reconstruction_removing_infestation_mission.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_GTR_bop_push_for_peaceful_yoylite"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_push_for_peaceful_yoylite.dds"
+	}
 }

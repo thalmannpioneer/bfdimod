@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_sp_yoylite_bomb"
+        textureFile = "gfx/interface/project_icons/sp_yoylite_bomb.dds"
+    }
+}

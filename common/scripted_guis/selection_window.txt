@@ -1,377 +1,220 @@
 scripted_gui = {
-	bfdi_selection_window = {
-		window_name = selection_window
-		context_type = player_context
-	
-		visible = {
-			has_global_flag = game_started
-		}
-		
-		triggers = {
-			demoerror_visible = {
-				NOT = {
-					OR = { 
-						check_variable = { country_select_var = 1 }
-						check_variable = { country_select_var = 8 }
-						check_variable = { country_select_var = 11 }
-						check_variable = { country_select_var = 13 }
-						check_variable = { country_select_var = 16 }
-					}
-				}
-			}
-			startbutton_click_enabled = {
-				OR = { 
-					check_variable = { country_select_var = 1 }
-					check_variable = { country_select_var = 8 }
-					check_variable = { country_select_var = 11 }
-					check_variable = { country_select_var = 13 }
-					check_variable = { country_select_var = 16 }
-				}
-			}
-		}
-		
-		effects = {
-			wgrf_click = {
-				set_variable = { country_select_var = 1 }
-			}
-			gcmd_click = {
-				set_variable = { country_select_var = 2 }
-			}
-			tbt_click = {
-				set_variable = { country_select_var = 3 }
-			}
-			dipz_click = {
-				set_variable = { country_select_var = 4 }
-			}
-			ggrr_n_click = {
-				set_variable = { country_select_var = 5 }
-			}
-			cult_click = {
-				set_variable = { country_select_var = 6 }
-			}
-			gpr_click = {
-				set_variable = { country_select_var = 7 }
-			}
-			gpg_click = {
-				set_variable = { country_select_var = 8 }
-			}
-			ggrr_s_click = {
-				set_variable = { country_select_var = 9 }
-			}
-			ebunch_click = {
-				set_variable = { country_select_var = 10 }
-			}
-			ggr_click = {
-				set_variable = { country_select_var = 11 }
-			}
-			freet_click = {
-				set_variable = { country_select_var = 12 }
-			}
-			gtr_click = {
-				set_variable = { country_select_var = 13 }
-			}
-			agg_click = {
-				set_variable = { country_select_var = 14 }
-			}
-			sgd_click = {
-				set_variable = { country_select_var = 15 }
-			}
-			yfc_click = {
-				set_variable = { country_select_var = 16 }
-			}
-			sos_click = {
-				set_variable = { country_select_var = 17 }
-			}
-			crn_click = {
-				set_variable = { country_select_var = 18 }
-			}
-			
-			startbutton_click = {
-				if = {
-					limit = { check_variable = { country_select_var = 1 } }
-					WGF = { change_tag_from = GOI }
-					goto_state = 177
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 2 } }
-					GMD = { change_tag_from = GOI }
-					goto_state = 173
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 3 } }
-					TBT = { change_tag_from = GOI }
-					goto_state = 168
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 4 } }
-					DPZ = { change_tag_from = GOI }
-					goto_state = 186
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 5 } }
-					NRR = { change_tag_from = GOI }
-					goto_state = 170
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 6 } }
-					SEC = { change_tag_from = GOI }
-					goto_state = 187
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 7 } }
-					GPR = { change_tag_from = GOI }
-					goto_state = 193
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 8 } }
-					GPG = { change_tag_from = GOI }
-					goto_state = 206
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 9 } }
-					SRR = { change_tag_from = GOI }
-					goto_state = 202
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 10 } }
-					BUN = { change_tag_from = GOI }
-					goto_state = 85
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 11 } }
-					set_global_flag = disclaimer_show
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 12 } }
-					FFT = { change_tag_from = GOI }
-					goto_state = 169
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 13 } }
-					GTR = { change_tag_from = GOI }
-					goto_state = 209
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 14 } }
-					AGG = { change_tag_from = GOI }
-					goto_state = 183
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 15 } }
-					SGD = { change_tag_from = GOI }
-					goto_state = 175
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 16 } }
-					YFC = { change_tag_from = GOI }
-					goto_state = 201
-				}
-				else_if = {
-					limit = { check_variable = { country_select_var = 17 } }
-					SOS = { change_tag_from = GOI }
-					goto_state = 204
-				}
-				
-				if = {
-					limit = { NOT = { has_global_flag = disclaimer_show } }
-					GOI = {
-						every_owned_state = { 
-							add_core_of = EMP 
-							transfer_state_to = EMP
-							remove_core_of = GOI
-						}
-					}
-					
-					WGF = { load_oob = "WGF_2012" }
-					GMD = { load_oob = "GMD_2012" }
-					TBT = { load_oob = "TBT_2012" }
-					DPZ = { load_oob = "DPZ_2012" }
-					NRR = { load_oob = "NRR_2012" }
-					SEC = { load_oob = "SEC_2012" }
-					GPR = { load_oob = "GPR_2012" }
-					GPG = { load_oob = "GPG_2012" }
-					SRR = { load_oob = "SRR_2012" }
-					GTR = { load_oob = "GTR_2012" }
-					BUN = { load_oob = "BUN_2012" }
-					GGR = { load_oob = "GGR_2012" }
-					FFT = { load_oob = "FFT_2012" }
-					AGG = { load_oob = "AGG_2012" }
-					SGD = { load_oob = "SGD_2012" }
-					YFC = { load_oob = "YFC_2012" }
-					CRN = { load_oob = "CRN_2012" }
-					SOS = { load_oob = "SOS_2012" }
-					
-					set_global_flag = {
-						flag = game_started
-						value = 0
-					}
-					set_global_flag = {
-						flag = focus_take_prevention
-						value = 0
-					}
-					GGR = { 
-						activate_mission = GGR_anarchists_mission 
-						country_event = {
-							id = GGR_event.7
-							days = 5
-						}
-					}
-					
-					GPG = {
-						country_event = {
-							id = GPG_event.1
-							days = 5
-						}
-						country_event = {
-							id = GPG_event.6
-							days = 30
-						}
-					}
-					
-					SOS = {
-						country_event = {
-							id = SOS_hidden_event.1
-							days = 365
-							random_days = 20
-							random_hours = 12
-						}
-					}
+    bfdi_selection_window = {
+        window_name = selection_window
+        context_type = player_context
 
-					TBT = {
-						country_event = {
-							id = TBT_hidden_event.1
-							days = 300
-							random_days = 30
-							random_hours = 24
-						}
-					}
-					
-					GTR = {
-						country_event = {
-							id = GTR_event.1
-							days = 3
-							random_hours = 12
-						}
-						country_lock_all_division_template = yes
-					}
-				}
-			}
-		}
-		
-		properties = {
-			desc_flag = {
-				frame = ROOT.country_select_var
-			}
-		}
-	}
+        visible = {
+            has_global_flag = game_started
+        }
+
+        triggers = {
+            demoerror_visible = {
+                NOT = {
+                    OR = {
+                        check_variable = { country_select_var = 1 }
+                        check_variable = { country_select_var = 8 }
+                        check_variable = { country_select_var = 11 }
+                        check_variable = { country_select_var = 13 }
+                        check_variable = { country_select_var = 16 }
+                    }
+                }
+            }
+            startbutton_click_enabled = {
+                OR = {
+                    check_variable = { country_select_var = 1 }
+                    check_variable = { country_select_var = 8 }
+                    check_variable = { country_select_var = 11 }
+                    check_variable = { country_select_var = 13 }
+                    check_variable = { country_select_var = 16 }
+                }
+            }
+        }
+
+        effects = {
+            wgrf_click = {
+                set_variable = { country_select_var = 1 }
+            }
+            gcmd_click = {
+                set_variable = { country_select_var = 2 }
+            }
+            tbt_click = {
+                set_variable = { country_select_var = 3 }
+            }
+            dipz_click = {
+                set_variable = { country_select_var = 4 }
+            }
+            ggrr_n_click = {
+                set_variable = { country_select_var = 5 }
+            }
+            cult_click = {
+                set_variable = { country_select_var = 6 }
+            }
+            gpr_click = {
+                set_variable = { country_select_var = 7 }
+            }
+            gpg_click = {
+                set_variable = { country_select_var = 8 }
+            }
+            ggrr_s_click = {
+                set_variable = { country_select_var = 9 }
+            }
+            ebunch_click = {
+                set_variable = { country_select_var = 10 }
+            }
+            ggr_click = {
+                set_variable = { country_select_var = 11 }
+            }
+            freet_click = {
+                set_variable = { country_select_var = 12 }
+            }
+            gtr_click = {
+                set_variable = { country_select_var = 13 }
+            }
+            agg_click = {
+                set_variable = { country_select_var = 14 }
+            }
+            sgd_click = {
+                set_variable = { country_select_var = 15 }
+            }
+            yfc_click = {
+                set_variable = { country_select_var = 16 }
+            }
+            sos_click = {
+                set_variable = { country_select_var = 17 }
+            }
+            crn_click = {
+                set_variable = { country_select_var = 18 }
+            }
+
+            startbutton_click = {
+                if = {
+                    limit = { check_variable = { country_select_var = 1 } }
+                    WGF = { change_tag_from = GOI }
+                    goto_state = 177
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 2 } }
+                    GMD = { change_tag_from = GOI }
+                    goto_state = 173
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 3 } }
+                    TBT = { change_tag_from = GOI }
+                    goto_state = 168
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 4 } }
+                    DPZ = { change_tag_from = GOI }
+                    goto_state = 186
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 5 } }
+                    NRR = { change_tag_from = GOI }
+                    goto_state = 170
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 6 } }
+                    SEC = { change_tag_from = GOI }
+                    goto_state = 187
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 7 } }
+                    GPR = { change_tag_from = GOI }
+                    goto_state = 193
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 8 } }
+                    GPG = { change_tag_from = GOI }
+                    goto_state = 206
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 9 } }
+                    SRR = { change_tag_from = GOI }
+                    goto_state = 202
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 10 } }
+                    BUN = { change_tag_from = GOI }
+                    goto_state = 85
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 11 } }
+                    set_global_flag = disclaimer_show
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 12 } }
+                    FFT = { change_tag_from = GOI }
+                    goto_state = 169
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 13 } }
+                    GTR = { change_tag_from = GOI }
+                    goto_state = 209
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 14 } }
+                    AGG = { change_tag_from = GOI }
+                    goto_state = 183
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 15 } }
+                    SGD = { change_tag_from = GOI }
+                    goto_state = 175
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 16 } }
+                    YFC = { change_tag_from = GOI }
+                    goto_state = 201
+                }
+                else_if = {
+                    limit = { check_variable = { country_select_var = 17 } }
+                    SOS = { change_tag_from = GOI }
+                    goto_state = 204
+                }
+
+                if = {
+                    limit = { NOT = { has_global_flag = disclaimer_show } }
+
+                    BFDI_game_start = yes #look scripted effects
+                }
+            }
+        }
+
+        properties = {
+            desc_flag = {
+                frame = ROOT.country_select_var
+            }
+        }
+    }
 }
 
 scripted_gui = {
-	disclaimer_window_scriptedgui = {
-		window_name = disclaimer_container
-		context_type = player_context
-	
-		visible = {
-			has_global_flag = disclaimer_show
-		}
-		
-		effects = {
-			agree_click = {
-				set_global_flag = {
-					flag = disclaimer_show
-					value = 0
-				}
-				
-				GGR = { change_tag_from = GOI }
-				goto_state = 15
-				
-				GOI = {
-					every_owned_state = { 
-						add_core_of = EMP 
-						transfer_state_to = EMP
-						remove_core_of = GOI
-					}
-				}
-					
-				WGF = { load_oob = "WGF_2012" }
-				GMD = { load_oob = "GMD_2012" }
-				TBT = { load_oob = "TBT_2012" }
-				DPZ = { load_oob = "DPZ_2012" }
-				NRR = { load_oob = "NRR_2012" }
-				SEC = { load_oob = "SEC_2012" }
-				GPR = { load_oob = "GPR_2012" }
-				GPG = { load_oob = "GPG_2012" }
-				SRR = { load_oob = "SRR_2012" }
-				GTR = { load_oob = "GTR_2012" }
-				BUN = { load_oob = "BUN_2012" }
-				GGR = { load_oob = "GGR_2012" }
-				FFT = { load_oob = "FFT_2012" }
-				AGG = { load_oob = "AGG_2012" }
-				SGD = { load_oob = "SGD_2012" }
-				YFC = { load_oob = "YFC_2012" }
-				CRN = { load_oob = "CRN_2012" }
-				SOS = { load_oob = "SOS_2012" }
-					
-				set_global_flag = {
-					flag = game_started
-					value = 0
-				}
-				set_global_flag = {
-					flag = focus_take_prevention
-					value = 0
-				}
-				GGR = { 
-					activate_mission = GGR_anarchists_mission 
-					country_event = {
-						id = GGR_event.7
-						days = 5
-					}
-				}
-				
-				GPG = {
-					country_event = {
-						id = GPG_event.1
-						days = 5
-					}
-					country_event = {
-						id = GPG_event.6
-						days = 30
-					}
-				}
-				
-				SOS = {
-					country_event = {
-						id = SOS_hidden_event.1
-						days = 365
-						random_days = 20
-						random_hours = 12
-					}
-				}
+    disclaimer_window_scriptedgui = {
+        window_name = disclaimer_container
+        context_type = player_context
 
-				TBT = {
-					country_event = {
-						id = TBT_hidden_event.1
-						days = 300
-						random_days = 30
-						random_hours = 24
-					}
-				}
-				
-				GTR = {
-					country_event = {
-						id = GTR_event.1
-						days = 3
-						random_hours = 12
-					}
-					country_lock_all_division_template = yes
-				}
-			}
-			cancel_click = {
-				set_global_flag = {
-					flag = disclaimer_show
-					value = 0
-				}
-			}
-		}
-	}
+        visible = {
+            has_global_flag = disclaimer_show
+        }
+
+        effects = {
+            agree_click = {
+                set_global_flag = {
+                    flag = disclaimer_show
+                    value = 0
+                }
+
+                GGR = { change_tag_from = GOI }
+                goto_state = 15
+
+                BFDI_game_start = yes #look scripted effects
+            }
+            cancel_click = {
+                set_global_flag = {
+                    flag = disclaimer_show
+                    value = 0
+                }
+            }
+        }
+    }
 }

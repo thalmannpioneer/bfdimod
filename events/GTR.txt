@@ -213,6 +213,7 @@ country_event = {
             remove_idea = idea_GTR_goiky_university
             add_idea = idea_GTR_destroyed_university
         }
+        add_research_slot = -1
         hidden_effect = {
             set_country_flag = ohh_thats_bad
             set_country_flag = project_1_fail
@@ -310,14 +311,8 @@ country_event = {
 
     option = {
         name = GTR_event.13.a
-        add_advisor_role = {
-            character = GTR_tennis_ball
-            advisor = {
-                slot = political_advisor
-                idea_token = idea_GTR_tennis_ball
-                traits = { second_hand }
-            }
-        }
+        set_country_flag = GTR_unlock_tb
+        custom_effect_tooltip = l_GTR_unlocks_tb
         hidden_effect = {
             country_event = {
                 id = GTR_event.14
@@ -345,6 +340,10 @@ country_event = {
             remove_country_leader_role = {
                 character = GTR_golfball
                 ideology = technocratism
+            }
+            set_portraits = {
+                character = GTR_golfball
+                civilian = { large = GFX_GTR_golfball_firstmind }
             }
             add_country_leader_role = {
                 character = GTR_duumvirate
@@ -701,6 +700,7 @@ country_event = {
         name = GTR_event.28.a
         add_stability = 0.05
         77 = { add_manpower = -7812 }
+        add_ideas = limited_exports
     }
 }
 
@@ -909,10 +909,6 @@ country_event = {
     option = {
         name = GTR_event.38.a
         retire_character = GTR_duumvirate
-        set_portraits = {
-            character = GTR_golfball
-            civilian = { large = GFX_GTR_golfball_firstmind }
-        }
         add_country_leader_role = {
             character = GTR_golfball
             promote_leader = yes
@@ -1060,6 +1056,7 @@ country_event = {
             remove_idea = idea_GTR_destroyed_university
             add_idea = idea_GTR_goiky_university
         }
+        add_research_slot = 1
         hidden_effect = {
             every_possible_country = {
                 limit = { is_ai = no }
@@ -1070,5 +1067,176 @@ country_event = {
                 }
             }
         }
+    }
+}
+
+country_event = {
+    id = GTR_event.46
+    title = GTR_event.46.t
+    desc = GTR_event.46.desc
+    picture = GFX_GTR_event46
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.46.a
+        set_capital = {
+            state = 89
+        }
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
+    }
+    option = {
+        name = GTR_event.46.b
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.47
+    title = GTR_event.47.t
+    desc = GTR_event.47.desc
+    picture = GFX_GTR_event47
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.47.a
+        set_country_flag = GTR_unlock_napalm
+        custom_effect_tooltip = l_GTR_unlocks_napalm
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
+    }
+    option = {
+        name = GTR_event.47.b
+        set_country_flag = GTR_unlock_octahedron
+        custom_effect_tooltip = l_GTR_unlocks_octahedron
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.48
+    title = GTR_event.48.t
+    desc = GTR_event.48.desc
+    picture = GFX_GTR_event48
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.48.a
+        add_war_support = 0.05
+    }
+}
+
+country_event = {
+    id = GTR_event.49
+    title = GTR_event.49.t
+    desc = GTR_event.49.desc
+    picture = GFX_GTR_event49
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.49.a
+        add_tech_bonus = {
+            bonus = 2
+            uses = 2
+            category = nuclear
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.50
+    title = GTR_event.50.t
+    desc = GTR_event.50.desc
+    picture = GFX_GTR_event50
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.50.a
+        89 = {
+            add_dynamic_modifier = {
+                modifier = modifier_GTR_yoylite_deposits
+            }
+        }
+        set_country_flag = GTR_meteorite_arrived
+        hidden_effect = {
+            every_possible_country = {
+                limit = {
+                    is_ai = no
+                }
+                news_event = {
+                    id = bfdinews.31
+                    days = 2
+                    random_hours = 12
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.51
+    title = GTR_event.51.t
+    desc = GTR_event.51.desc
+    picture = GFX_GTR_event51
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.51.a
+        country_event = {
+            id = GTR_event.52
+            days = 10
+            random_days = 5
+            random_hours = 12
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.52
+    title = GTR_event.52.t
+    desc = GTR_event.52.desc
+    picture = GFX_GTR_event52
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.52.a
+        country_event = {
+            id = GTR_event.53
+            days = 10
+            random_days = 5
+            random_hours = 12
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.53
+    title = GTR_event.53.t
+    desc = GTR_event.53.desc
+    picture = GFX_GTR_event53
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.53.a
+        custom_effect_tooltip = l_GTR_yoylite_project_starts
+        set_country_flag = GTR_yoylite_project
     }
 }

@@ -25,7 +25,9 @@
  l_GTR_all_stages_done: "§YAll preparations are done§!"
  l_GTR_outer_politics_cd_tt: "Last §3Outer Diplomacy Focus§! was completed §Ymore than 35 days ago§!"
  l_GTR_inner_politics_tree_cd: "Last §7Inner Politics Focus§! was completed §Ymore than 70 days ago§!"
- l_GTR_inner_politics_tree_cd_long: "Last §7Inner Politics Focus§! was completed §Ymore than 240 days ago§!"
+ l_GTR_inner_politics_tree_cd_long: "Last §7Inner Politics Focus§! was completed §Ymore than 320 days ago§!"
+ l_GTR_power_of_yoylelite: "We have §0Yoylite Deposits§!"
+ l_GTR_yoylite_project_available: "§tDeadland Project§! Has Begun"
  
  decision_cost_ie_500_pp_50: "£infantry_equipment_text_icon §Y500§!  £pol_power  §Y50§!"
  decision_cost_ie_500_pp_50_blocked: "£infantry_equipment_text_icon §R500§!  £pol_power  §R50§!"
@@ -37,8 +39,8 @@
  decision_cost_ie_1000_blocked: "£infantry_equipment_text_icon §R1000§!"
  decision_cost_ie_200: "£infantry_equipment_text_icon §Y200§!"
  decision_cost_ie_200_blocked: "£infantry_equipment_text_icon §R200§!"
- decisions_cost_mp_500_pp_50: "£pol_power §Y500§!  £manpower_texticon §Y50§!"
- decisions_cost_mp_500_pp_50_blocked: "£pol_power §R500§!  £manpower_texticon §R50§!"
+ decisions_cost_mp_500_pp_50: "£manpower_texticon §Y500§!  £pol_power  §Y50§!"
+ decisions_cost_mp_500_pp_50_blocked: "£manpower_texticon §R500§!  £pol_power  §R50§!"
 
  l_money_cost_100K: "Costs §G100K Dollars§!"
  l_money_cost_200K: "Costs §G200K Dollars§!"
