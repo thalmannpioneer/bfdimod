@@ -761,7 +761,7 @@
  YFC_event.26.a: "I hope someone gets fired for this blunder."
 
  YFC_event.27.t: "Expansion of Northern Trade"
- YFC_event.27.desc: "Our investments into our eastern territories have born dilectable fruits! Our profits have been noticeably higher over the past week, and we -- the company executives, obviously -- have reaped our due benefits. We've managed to establish trade routes with the Teardroppers and Davidians, which is where most of our profits have hailed from. Additionally, we've managed to strengthen our formerly weak routes to the Military District, which has been a nice benefit. The population of Yoyleton, though their opinions obviously do not mater much, seem to be quite happy with the changes we have made. Some lunatic named Pineapple had claimed that he had always been weary of our rule, but the moderate upgrades to the city quelled his 'revolutionary' feelings. Whatever that meant. \nIn hindsight, it does seem as if we had forgotten to invest into Peoniele, which did net us some slight losses, however the gains from Yoyleton have more than made up for this. Perhaps Peoniele was a lost opprotunity, however, for now, we frolic."
+ YFC_event.27.desc: "Our investments into our eastern territories have born dilectable fruits! Our profits have been noticeably higher over the past week, and we -- the company executives, obviously -- have reaped our due benefits. We've managed to establish trade routes with the Teardroppers and Davidians, which is where most of our profits have hailed from. Additionally, we've managed to strengthen our formerly weak routes to the Military District, which has been a nice benefit. The population of Yoyleton, though their opinions obviously do not mater much, seem to be quite happy with the changes we have made. Some lunatic named Pineapple had claimed that he had always been weary of our rule, but the moderate upgrades to the city quelled his 'revolutionary' feelings. Whatever that meant. \nIn hindsight, it does seem as if we had forgotten to invest into Peoniele, which did net us some slight losses, however the gains from Yoyleton have more than made up for this. Perhaps Peoniele was a lost opportunity, however, for now, we frolic."
  YFC_event.27.a: "Frolic in the enhancing of free trade!"
 
  YFC_event.28.t: "A Great Mistake"
@@ -769,7 +769,7 @@
  YFC_event.28.a: "We could've done better..."
 
  YFC_event.29.t: "City outcome event text" #merged with YFC_event.25
- YFC_event.29.desc: "ZDubbz plz write"
+ YFC_event.29.desc: "Pun please remove"
  YFC_event.29.a: "Cough"
 
  YFC_event.30.t: "Peoniele, the Metropolis of East Goiky"
@@ -971,23 +971,30 @@
  YFC_BUN.27.desc: "Despite our efforts in campaigning, it seems as the nominee preferred most by the Bunch's population was Pen. For some reason, Pen was the candidate Numismatia had funded. Why anyone would willingly ask for Pen to do anything is beyond nearly every corporate executive, however, we must still accept his victory. Pen still has quite the large amount of debt owed to us, however, Numismatia has been insistent on getting us to clear, or at least reduce the amount of debt. Hopefully, word of this campaign doesn't spread to the Bunchivist objects, the dollar knows we can't afford another war."
  YFC_BUN.27.a: "Bitch better have my money!"
 
- YFC_BUN.28.t: "'So, how do you three feel about the economy?'"
- YFC_BUN.28.desc: "A younger object from the crowd raised their hand, asking the aforementioned questioned. They looked to be about college-aged, maybe older. Definitely a hardcore Bunchivist, though, seeing as they had brought with them the flag of what revolters called the 'Neo-Bunch.' Regardless, Eraser took it upon himself to answer the question first. He likely had no issues with the revolters, the nimrod.\n'I think a new Bunch Republic shouldn't have an economy at all. We already have a system made up; you make things, someone steals them, or you defend yourself... I guess, if I had to call it anything, it'd be an economy of strength.' The response gained some cheers from the crowd, but they were quickly quieted by Pen's incessant shushing. \nQuickly, he cobbled together a response, 'Uh, I think Eraser had a great point, but I... like capitalism! But like, with democracy! We could... Um, uh...' Pen's attempt at proving himself quickly fell apart as he attempted to continue speaking. Pitiful, but not worthy of such. The crowd didn't really react with much more than confusion. \nThinking on his feet, without any real plans to go off of besides the current audience reactions, Blocky realized he needed to talk about something that'd rile up the crowd. Quickly, he started with his on-the-spot plans about..."
+ YFC_BUN.28.t: "\"So, how do you three feel about the economy?\""
+ YFC_BUN.28.desc: "A younger object from the crowd raised their hand, asking the aforementioned questioned. They looked to be about college-aged, maybe older. Definitely a hardcore Bunchivist, though, seeing as they had brought with them the flag of what revolters called the 'Neo-Bunch.' Regardless, Eraser took it upon himself to answer the question first. He likely had no issues with the revolters, the nimrod.\n\"I think a new Bunch Republic shouldn't have an economy at all. We already have a system made up; you make things, someone steals them, or you defend yourself... I guess, if I had to call it anything, it'd be an economy of strength.\" The response gained some cheers from the crowd, but they were quickly quieted by Pen's incessant shushing. \nQuickly, he cobbled together a response, \"Uh, I think Eraser had a great point, but I... like capitalism! But like, with democracy! We could... Um, uh...\" Pen's attempt at proving himself quickly fell apart as he attempted to continue speaking. Pitiful, but not worthy of such. The crowd didn't really react with much more than confusion. \nThinking on his feet, without any real plans to go off of besides the current audience reactions, Blocky realized he needed to talk about something that'd rile up the crowd. Quickly, he started with his on-the-spot plans about..."
  YFC_BUN.28.a: "A command economy."
  YFC_BUN.28.b: "A Numismatian style free market!"
  YFC_BUN.28.c: "Yellow Facer investment, and the opportunities they bring!"
 
- YFC_BUN.29.t: "'Ah, there's probably gonna be threats from other people, right? How do you plan on addressing those?'"
- YFC_BUN.29.desc: ""
- YFC_BUN.29.a: ""
+ YFC_BUN.29.t: "\"Ah, there's probably gonna be threats from other people, right? How do you plan on addressing those?\""
+ YFC_BUN.29.desc: "From the front of the crowd came the voice of another seemingly college aged object, asking the question in a more timid tone. They seemed not to have any affiliations. Pen regrettably opted for opening his mouth first, he likely had what he believed to be a good response to the prompt. What an unfortunate individual. \"The Numismatians have a really big army, they can defend us well!\" after a silence from the croud, he quickly added, \"And! We'll obviously have our own weapons to defend ourselves from invaders!\" There had been... some noise? A very small amount of cheering, it was likely one or two people. Really, the cheers could have likely been mistaken for a cough if you were far enough away. Quite the adequate response, considering how Pen had answered the question. \nNext, Eraser -- the real competition -- threw his hat in the ring, metaphorically. \"I'm pretty sure I talked about this when the first Bunch had just started, but, I always planned to have a large amount of land minds pre-placed in our outskirts. Obviously, Bunch citizens would be warned of their locations, but other than that, they'd be kept secret. Of course, everyone in the Bunch is well armed, and it'll be staying that way, under my lead.\" Eraser spoke with a sort of calm conviction that easily riled up the moronic Bunchivists, or at least the ones in the crowd today. The eruption of the crowd did make Blocky feel slightly weary about how his response might be reacted to, for if it was not enough, this 'debate' might become another loss. Luckily, he'd had a response to a question on this topic planned in advance, and he firmly stated that..."
+ YFC_BUN.29.a: "The Bunch could simply import weapons from the YFC."
+ YFC_BUN.29.b: "National seizing of the average Buncher's weapon would be in order."
+ YFC_BUN.29.c: "Eraser had stolen 'his' idea from Blocky, long ago."
 
- YFC_BUN.30.t: "'Will us Bunchers be expected to work with Yellow Face or the Numismatians? If we are, how?'"
- YFC_BUN.30.desc: ""
- YFC_BUN.30.a: ""
+ YFC_BUN.30.t: "\"Will us Bunchers be expected to work with Yellow Face or the Numismatians?\""
+ YFC_BUN.30.desc: "Finally, someone who seemed to actually be a grown adult spoke from the crowd. They appeared to have a Bunchivist lean, judging by their demeanor and previous crowd reactions, but they also seemed quite partial to other opinions. This one could be influenced, Blocky would surely be taking that opportunity. Eraser replied first this time, and quickly, at that. \"No, I don't expect anyone to want to work with either or. I'm sure the government will be working with them, but individual citizens? I wouldn't expect you guys to.\" His statement was quite concise, and it failed to draw the crowd reaction his previous responses had brought. Perhaps the Bunch was more impartial to working with us than we had previously thought? \nUnfortunately, ugly opened his mouth, allowing it to leak a noise that resembled the words, \"I mean, I'd assume pretty much everyone here would work with Numismatia. They've poured so much into us, why don't we give back? Well, maybe not *give,* but helping them really shouldn't be out of the question. If you want to, of course.\" The utterance barely sounded like a political position, let alone one coming after the failure of an opponent. Why had Pen even come to this event? Someone should've thrown rotten fruit at the object, it'd be a great learning experience for the oaf. \nRegardless, two failures gave a perfect 'in,' as the kids would say. With the position he was in, Blocky could easily influence the minds of many a Buncher. Decisively, he started,"
+ YFC_BUN.30.a: "\"The Bunch will work with whoever it needs to in order to reach its goals.\""
+ YFC_BUN.30.b: "\"It's in everyone's best intrest to work with the Yellow Facers!\""
+ YFC_BUN.30.c: "\"Half a brain is better than none...\""
 
  YFC_BUN.31.t: "'This may come off as a 'stupid question,' but, what exactly do you aim to achieve?'"
- YFC_BUN.31.desc: ""
- YFC_BUN.31.a: ""
+ YFC_BUN.31.desc: "An elderly object asked the question now at hand. We say, 'elderly,' thought he seems as if he's withering away at the thought of seeing another year go by. Regardless, the open ended and, quite frankly, unnecessary question gave a lot of wiggle room in terms of responses. Pen made the remiss decisions to voice any thoughts he may have been having at the moment -- thoughts were quite few and far between for the object -- quikcly responding with, \"I want to create prosperity in the Bunch!\" This answer gained the most aplause he'd seen from the crowd that afternoon. That is to say, not much, but enough. \nLikely surprised by the non-subpar performance from Pen, Eraser allowed a second of silence before stating \"I fully agree with Pen. The Bunch is my top priority\" The onlookers of the debate seemed to be pleased with his response as well, though cheered louder when Eraser reïterated Pen's same point. The crowd likely new of the latter's incompetence. \nTo end the debate, Blocky would have to give his final position. With such an open-ended question, it would be quite difficult for Blocky to mess up in answering. Blocky gave his stance, saying..."
+ YFC_BUN.31.a: "\"I agree with Eraser and Pen, The Bunch is the most important thing to me.\""
+ YFC_BUN.31.b: "\"I believe our defense and sovereignty are more important than just 'The Bunch.'\""
+ YFC_BUN.31.c: "\"The economy of the Bunch needs to function properly if we ever want things done around here.\""
+ YFC_BUN.31.d: "\"Well, there's no such thing as a 'stupid question,' so it's wise of me if I ask you to leave!\""
 
  #When you are done with a event put a "Sector Update" in the title!
  #Also write is if that make sense if the event goes off a few times!
@@ -1005,17 +1012,17 @@
  YFC_sector.2.a: "It's the free market, why would we persecute Pipe for a purchase?"
  YFC_sector.2.b: "It's Hammer's sector..."
 
- YFC_sector.3.t: "Beaker vs Hammer arguement"
+ YFC_sector.3.t: "Beaker vs Hammer arguement" #zdubbz
  YFC_sector.3.desc: "Both are fighting over something idk (Maybe where to put funds/work)"
  YFC_sector.3.a: "Side with Beaker"
  YFC_sector.3.b: "Side with Hammer"
 
- YFC_sector.4.t: "Taser vs Beaker arguement"
+ YFC_sector.4.t: "Taser vs Beaker arguement" #zdubbz
  YFC_sector.4.desc: "Both are fighting over something idk (Maybe over Electronics usage or funds)"
  YFC_sector.4.a: "Side with Taser"
  YFC_sector.4.b: "Side with Beaker"
 
- YFC_sector.5.t: "Top Hat vs Pipe arguement"
+ YFC_sector.5.t: "Top Hat vs Pipe arguement" #zdubbz
  YFC_sector.5.desc: "Both are fighting over fighting resistance and/or useage of police/media"
  YFC_sector.5.a: "Side with Top Hat"
  YFC_sector.5.b: "Side with Pipe"
@@ -1025,77 +1032,77 @@
  YFC_sector.6.a: "However, we care not for the opinions of the poor."
  YFC_sector.6.b: "And they are correct, for it would be highly dishonest."
 
- YFC_sector.7.t: "Pipe Bribe"
+ YFC_sector.7.t: "Pipe Bribe" #zdubbz
  YFC_sector.7.desc: "Pipe wants to Bribe us"
  YFC_sector.7.a: "Take the Bribe"
  YFC_sector.7.b: "Decline the Bribe"
 
- YFC_sector.8.t: "Beaker Bribe"
+ YFC_sector.8.t: "Beaker Bribe" #zdubbz
  YFC_sector.8.desc: "Beaker wants to Bribe us"
  YFC_sector.8.a: "Take the Bribe"
  YFC_sector.8.b: "Decline the Bribe"
 
- YFC_sector.9.t: "Hammer Bribe"
+ YFC_sector.9.t: "Hammer Bribe" #zdubbz
  YFC_sector.9.desc: "Hammer wants to Bribe us"
  YFC_sector.9.a: "Take the Bribe"
  YFC_sector.9.b: "Decline the Bribe"
 
- YFC_sector.10.t: "Taser Bribe"
+ YFC_sector.10.t: "Taser Bribe" #zdubbz
  YFC_sector.10.desc: "Taser wants to Bribe us"
  YFC_sector.10.a: "Take the Bribe"
  YFC_sector.10.b: "Decline the Bribe"
 
- YFC_sector.11.t: "Pipe vs Hammer vs Taser arguement"
+ YFC_sector.11.t: "Pipe vs Hammer vs Taser arguement" #zdubbz
  YFC_sector.11.desc: "They are fighting over something idk (Maybe construction/funds)"
  YFC_sector.11.a: "Side with Pipe"
  YFC_sector.11.b: "Side with Hammer"
  YFC_sector.11.c: "Side with Taser"
 
- YFC_sector.12.t: "Beaker vs Top Hat vs Taser arguement"
+ YFC_sector.12.t: "Beaker vs Top Hat vs Taser arguement" #zdubbz
  YFC_sector.12.desc: "They are fighting over something idk (Maybe something with police/army tech I really do not know)"
  YFC_sector.12.a: "Side with Beaker"
  YFC_sector.12.b: "Side with Top Hat"
  YFC_sector.12.c: "Side with Taser"
 
- YFC_sector.13.t: "Pipe vs Top Hat vs Taser arguement"
+ YFC_sector.13.t: "Pipe vs Top Hat vs Taser arguement" #zdubbz
  YFC_sector.13.desc: "They are fighting over something idk (Maybe something with police/army and/or supply)"
  YFC_sector.13.a: "Side with Pipe"
  YFC_sector.13.b: "Side with Top Hat"
  YFC_sector.13.c: "Side with Taser"
 
- YFC_sector.14.t: "Pipe vs Hammer vs Beaker arguement"
+ YFC_sector.14.t: "Pipe vs Hammer vs Beaker arguement" #zdubbz
  YFC_sector.14.desc: "They are fighting over something idk (Maybe something with building and/or tech over building)"
  YFC_sector.14.a: "Side with Pipe"
  YFC_sector.14.b: "Side with Hammer"
  YFC_sector.14.c: "Side with Beaker"
 
- YFC_sector.15.t: "Top Hat vs Hammer vs Beaker arguement"
+ YFC_sector.15.t: "Top Hat vs Hammer vs Beaker arguement" #zdubbz
  YFC_sector.15.desc: "They are fighting over something idk (Maybe something over funds or something I really do not know)"
  YFC_sector.15.a: "Side with Top Hat"
  YFC_sector.15.b: "Side with Hammer"
  YFC_sector.15.c: "Side with Beaker"
 
- YFC_sector.16.t: "...Top Hat seizes some control!"
+ YFC_sector.16.t: "...Top Hat seizes some control!" #zdubbz
  YFC_sector.16.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.16.a: "Curse them!"
 
- YFC_sector.17.t: "...Pipe seizes some control!"
+ YFC_sector.17.t: "...Pipe seizes some control!" #zdubbz
  YFC_sector.17.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.17.a: "Curse them!"
 
- YFC_sector.18.t: "...Beaker seizes some control!"
+ YFC_sector.18.t: "...Beaker seizes some control!" #zdubbz
  YFC_sector.18.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.18.a: "Curse them!"
 
- YFC_sector.19.t: "...Hammer seizes some control!"
+ YFC_sector.19.t: "...Hammer seizes some control!" #zdubbz
  YFC_sector.19.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.19.a: "Curse them!"
 
- YFC_sector.20.t: "...Taser seizes some control!"
+ YFC_sector.20.t: "...Taser seizes some control!" #zdubbz
  YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.20.a: "Curse them!"
 
- YFC_sector.21.t: "Economic Report: EMERGENCY!"
+ YFC_sector.21.t: "Economic Report: EMERGENCY!" #zdubbz
  YFC_sector.21.desc: "So YFC is now in debt. The sectors are not gonna work with us till this is fixed. So yeah the player should fix it or something"
  YFC_sector.21.a: "An Unprecedented Disaster!"
 
@@ -1225,11 +1232,11 @@
  GTR_event.20.desc: "The celebrations in Announcergrad filled Cappy with a sense of national pride that she didn't think she'd ever have. From the balcony on which she stood, she watched in awe as the parades of flags and banners of University symbols and graphed mathematical functions alike soared through the newly paved streets of the city. Things were getting better, anyone could see that to be true. Rations were getting larger, actually satiating objects' hunger, the smog filled winds from the south had started thinning out, and management was starting to finally listen to the objects over which the presided. The image of an old friend from a while ago came to Cappy's mind. Grape, he was always much more into the idea of the University Administration than she. She felt her soul warm at the realization that he'd love this sight just as much as the city seemed to love making it, she just wished he could've been here with her. Her thoughs halted as she heard another noisy rally march near, holding flags and banners all the same. Objects, joyful, loud, irrepressibly filled with ardor, filled the city's afternoon streets with a thunderous roar of \"Republic!\"\nWe all may have lost someone..."
  GTR_event.20.a: "...but we shall all move on."
 
- GTR_event.21.t: "Bossy Bot" #mejoraré
+ GTR_event.21.t: "Bossy Bot" #zdubbz
  GTR_event.21.desc: "'Tennis Ball, you are too herbivorous!' - Now Golfball is saying it out loud.\n\n'To survive, we need tougher measures! We need a clear plan and smart leadership, smart objects like ME!'\n\nGB's interrupting the awkward silence with a continuation.\n'We can't rely on these fools from the city, we need a strong government!'\n\nTennis Ball looked down at the table."
  GTR_event.21.a: "'Awwwww, okaaaaaaaaaaay'"
 
- GTR_event.22.t: "Old Connections" #mejoraré
+ GTR_event.22.t: "Old Connections" #zdubbz
  GTR_event.22.desc: "Entering Announcergrad, the Calsand parliamentarians saw an ordinary goikean town, as battered by crisis and devastation as their homeland. On the streets, they saw cheerful objects who believed in the future. There was reason to believe, as the situation had improved significantly over the past month. Things improved in Casland too: the noise of political unrest died down, and the streets stopped ringing with murders.\n\nFinding a small building with a sign reading \"Goiky University Administration\", three objects entered inside.\n\n\n...- \"HAVE YOU DECIDED TO SQUANDER ALL OUR BELONGINGS?!\"\nGolfball flared up with anger when she heard Tennis Ball agree to the parliamentarians' proposal.\n\n\"I think the Republic needs allies. You're just too biased!\" - Tennis Ball resisted."
  GTR_event.22.a: "Let's make contacts with Casland."
  GTR_event.22.b: "Send 'em back!"
@@ -1257,7 +1264,7 @@
  GTR_event.27.desc: "Thanks to the scientific collaboration between Casland and Announcergrad, a decision was made between the University of Goiky and Casland University to create a unified research community through which objects can share contemporary problems in the natural sciences and other disciplines. This will significantly strengthen cooperation between [?206.owner.GetName] and the Technocratic Republic."
  GTR_event.27.a: "Glory to our Science!"
 
- GTR_event.28.t: "Homesickness" #mejoraré
+ GTR_event.28.t: "Homesickness" #zdubbz
  GTR_event.28.desc: "\"Hi, Mom.\n\nHow are you? Things are now better for you there, as I've heard. Dad read in the newspapers that you have electricity again at home.\nThings aren't easy here. Dad and the other adults had to build a house out of REAL TREES themselves! But at least we're safe here. I can go for walks as much as I want! You was always forbidding me this at home! Dad even made a swing set for me and my friends!\nDad feels better too, I can feel it. He was always so nervous in the city, but now he breathes easier. But he's worried about you.\nI'm worried about you too. We all want to go home as soon as possible!\n\nThey say we don't have to be afraid to return now. That the border has opened. Dad says the same. But he's always arguing with others. They say he's a traitor. But my Dad isn't a traitor! We just want to go home! How is that traitorous? :(\n\nIt's hard to send letters here, the mail doesn't come often, and Dad says the postman is a bostard. I don't know what that means, but it's probably bad.\n\nAnyway, Mom, wait for us, we'll be home soon!\nWe all hope you are fine!\""
  GTR_event.28.a: "Good Luck, Little One!"
 
