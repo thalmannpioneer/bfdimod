@@ -227,14 +227,6 @@ ideas = {
                     has_idea = closed_economy
                     has_large_ally_not_pick_closed_economy = yes
                 }
-
-                modifier = {
-                    # We will lose the war support after the war anyway
-                    factor = 0
-                    original_tag = GER
-                    has_civil_war = yes
-                    has_government = neutrality
-                }
             }
         }
 

@@ -1248,7 +1248,7 @@ country_event = { #YFC Sell
 				add = -2
 		 	}
 			modifier = {
-				surrender_progress > 0.1
+				surrender_progress > 0
 				add = 2
 		 	}
 			modifier = {
@@ -1256,7 +1256,7 @@ country_event = { #YFC Sell
 				add = 3
 		 	}
 			modifier = {
-				surrender_progress > 0.75
+				surrender_progress > 0.8
 				add = 5
 		 	}
 			modifier = {
@@ -3196,7 +3196,7 @@ country_event = { #Election CRN Wins!
 					character = BUN_pen
 					promote_leader = yes
 					country_leader = {
-						ideology = populism
+						ideology = liberalism
 					}
 				}
 				add_timed_idea = {

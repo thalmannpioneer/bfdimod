@@ -1018,6 +1018,9 @@ focus_tree = {
 			#Okay new idea use % of current pop = 500K > 50% > 250%
 			
 			custom_effect_tooltip = l_YFC_POP
+			201 = {
+				add_manpower = 21769
+			}
 			hidden_effect = {
 				IF = {
 					limit = {

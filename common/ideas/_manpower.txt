@@ -29,67 +29,7 @@ ideas = {
 
             available = {
                 #has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
-                IF = {
-                    limit = {
-                        original_tag = HUN
-                        has_dlc = "Death or Dishonor"
-                        NOT = {
-                            has_dlc = "Gotterdammerung"
-                        }
-                    }
-                    IF = {
-                        limit = {
-                            has_dlc = "Arms Against Tyranny"
-                        }
-                        NOT = { has_idea = HUN_treaty_of_triannon_aat }
-                    }
-                    ELSE = {
-                        NOT = { has_idea = HUN_treaty_of_triannon }
-                    }
-                }
-                ELSE_IF = {
-                    limit = {
-                        original_tag = HUN
-                        has_dlc = "Gotterdammerung"
-                    }
-                    IF = {
-                        limit = {
-                            has_dlc = "Arms Against Tyranny"
-                        }
-                        custom_trigger_tooltip = {
-                            tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-                            NOT = {
-                                OR = {
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff
-                                }
-                            }
 
-                        }
-                    }
-                    ELSE = {
-                        custom_trigger_tooltip = {
-                            tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-                            NOT = {
-                                OR = {
-                                    has_idea = HUN_treaty_of_triannon_wuw
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if = {
-                    limit = {
-                        DEN_aat_is_subject = yes
-                    }
-                    NOT = { has_country_flag = DEN_had_volunteer_only_flag }
-                }
                 NOT = { has_idea = undisturbed_isolation }
                 NOT = { has_idea = isolation }
             }
@@ -123,82 +63,6 @@ ideas = {
                 has_war_support > 0.1
                 NOT = { has_idea = undisturbed_isolation }
                 NOT = { has_idea = isolation }
-                if = {
-                    limit = {
-                        original_tag = AST
-                        has_dlc = "Together for Victory"
-                    }
-                    has_completed_focus = AST_citizen_military_forces
-                }
-                if = {
-                    limit = {
-                        original_tag = CAN
-                        has_dlc = "Together for Victory"
-                    }
-                    has_completed_focus = CAN_commit_to_the_war
-                }
-                if = {
-                    limit = {
-                        original_tag = RAJ
-                        has_dlc = "Together for Victory"
-                    }
-                    is_subject = no
-                }
-
-                IF = {
-                    limit = {
-                        original_tag = HUN
-                        has_dlc = "Death or Dishonor"
-                        NOT = {
-                            has_dlc = "Gotterdammerung"
-                        }
-                    }
-                    IF = {
-                        limit = {
-                            has_dlc = "Arms Against Tyranny"
-                        }
-                        NOT = { has_idea = HUN_treaty_of_triannon_aat }
-                    }
-                    ELSE = {
-                        NOT = { has_idea = HUN_treaty_of_triannon }
-                    }
-                }
-                ELSE_IF = {
-                    limit = {
-                        original_tag = HUN
-                        has_dlc = "Gotterdammerung"
-                    }
-                    IF = {
-                        limit = {
-                            has_dlc = "Arms Against Tyranny"
-                        }
-                        custom_trigger_tooltip = {
-                            tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-                            NOT = {
-                                OR = {
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
-                                    has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff
-                                }
-                            }
-
-                        }
-                    }
-                    ELSE = {
-                        custom_trigger_tooltip = {
-                            tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-                            NOT = {
-                                OR = {
-                                    has_idea = HUN_treaty_of_triannon_wuw
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff
-                                    has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff
-                                }
-                            }
-                        }
-                    }
-                }
             }
 
             modifier = {
@@ -301,12 +165,6 @@ ideas = {
                     AND = {
                         has_war = yes
                         enemies_strength_ratio > 0.6
-                        #any_enemy_country = {
-                        #	strength_ratio = {
-                        #		tag = ROOT
-                        #		ratio > 0.6
-                        #	}
-                        #}
                     }
                 }
                 OR = {
@@ -360,12 +218,6 @@ ideas = {
                     surrender_progress > 0
                 }
                 enemies_strength_ratio > 0.75
-                #any_enemy_country = {
-                #	strength_ratio = {
-                #		tag = ROOT
-                #		ratio > 0.75
-                #	}
-                #}
             }
 
             ai_will_do = {
@@ -413,12 +265,6 @@ ideas = {
                     surrender_progress > 0.25
                 }
                 enemies_strength_ratio > 1
-                #any_enemy_country = {
-                #	strength_ratio = {
-                #		tag = ROOT
-                #		ratio > 1
-                #	}
-                #}
             }
 
             ai_will_do = {
