@@ -38,6 +38,15 @@ ideas = {
 			cancel = {NOT = {country_exists = YFC}}
 		}
 
+		idea_YFC_Bunch_Insurgency  = {
+			picture = GTR_announcergrad_supplying_problems #Replace later!!!!
+			modifier = {
+				required_garrison_factor = -0.75
+				resistance_target = 0.15
+			}
+			cancel = {country_exists = BUN}
+		}
+
 		idea_YFC_Defiant_Top_Hat = {
 			picture = generic_army_problems #Replace later 
 			modifier = {

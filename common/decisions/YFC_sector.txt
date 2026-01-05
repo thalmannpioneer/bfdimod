@@ -293,7 +293,7 @@ decision_YFC_sector_category= { #Watermelon
         is_good = no
         activation = {
             has_completed_focus = YFC_focus_establish_sectorialism
-            check_variable = { money_amount < -1 }
+            check_variable = { money_amount < -1.5 }
             NOT = {has_idea = idea_YFC_Debt_Crisis}  
         }
         cancel_trigger = {
@@ -303,7 +303,7 @@ decision_YFC_sector_category= { #Watermelon
             always = no
         }
         icon = GFX_mission_YFC_BUN_Growing_Riots  
-        days_mission_timeout = 60
+        days_mission_timeout = 75
         timeout_effect = {
             custom_effect_tooltip = l_YFC_sectors_Debt
             hidden_effect = {
@@ -325,10 +325,10 @@ decision_YFC_sector_category= { #Watermelon
 
 		fire_only_once = no
 		days_remove = 180
-		days_re_enable = 15
+		days_re_enable = 30
 
         modifier = {
-			political_power_gain = -2
+			political_power_gain = -3
 		}
 
 		remove_effect = {

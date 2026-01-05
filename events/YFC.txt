@@ -123,6 +123,7 @@ country_event = {
 
 	option = {
 		name = YFC_event.5.a
+		add_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			set_country_flag = Won_War_BUN
 			if = {
@@ -749,7 +750,7 @@ country_event = {
 }
 
 country_event = {
-	id = YFC_event.25 #Buildup city event OUTCOME #3
+	id = YFC_event.25 #Buildup city event OUTCOME #3+8
 	title = YFC_event.25.t
     desc = YFC_event.25.desc
 	picture = GFX_Temp_event
@@ -815,10 +816,14 @@ country_event = {
     
     option = { 
 		name = YFC_event.27.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+		custom_effect_tooltip = l_money_gain_1M
+		add_to_variable = { money_amount = 10 }
+
+		set_temp_variable = { ADDPOP2 = 216.state_population_k }
+		multiply_temp_variable = {ADDPOP2 = 85} 
+		216 = {
+			add_manpower = ADDPOP2
+		}
 	}
 }
 
@@ -830,17 +835,24 @@ country_event = {
 	
 	is_triggered_only = yes
     
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+
     option = { 
 		name = YFC_event.28.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+		add_stability = -0.1
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
 	}
 }
 
 country_event = {
-	id = YFC_event.29 #Buildup city event OUTCOME #8
+	id = YFC_event.29 #N/A
 	title = YFC_event.29.t
     desc = YFC_event.29.desc
 	picture = GFX_Temp_event
@@ -849,10 +861,6 @@ country_event = {
     
     option = { 
 		name = YFC_event.29.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
 	}
 }
 
@@ -864,12 +872,27 @@ country_event = {
 	
 	is_triggered_only = yes
     
+	immediate = {
+        set_variable = { var_add_to_sector2 = 1 }
+    }
+
     option = { 
 		name = YFC_event.30.a
-		add_political_power = 25 #Replace with money
-		add_stability = -0.01
-		#Please list money and population increase by %
-		#ZDubbz
+
+		custom_effect_tooltip = l_money_gain_800K
+		add_to_variable = { money_amount = 8 }
+		add_stability = -0.02
+		set_temp_variable = { ADDPOP = 196.state_population_k }
+		multiply_temp_variable = {ADDPOP = 60} 
+		196 = {
+			add_manpower = ADDPOP
+		}
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Loss
+		subtract_from_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector2 }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
+		subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Loss
+		subtract_from_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector2 }
 	}
 }
 
@@ -3096,6 +3119,7 @@ country_event = { #Election BUN Wins!
 	option = {
 		name = YFC_BUN.25.a
 		complete_national_focus = YFC_focus_bunch_fostered
+		remove_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			BUN = {
 				add_country_leader_trait = nationalist_symbol
@@ -3126,6 +3150,7 @@ country_event = { #Election YFC Wins!
 	option = {
 		name = YFC_BUN.26.a
 		complete_national_focus = YFC_focus_bunch_fostered
+		remove_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			BUN = {
 				add_country_leader_role = {
@@ -3162,6 +3187,7 @@ country_event = { #Election CRN Wins!
 	option = {
 		name = YFC_BUN.27.a
 		complete_national_focus = YFC_focus_bunch_fostered
+		remove_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			BUN = {
 				set_cosmetic_tag = BUN_republic
@@ -3278,6 +3304,18 @@ country_event = { #Debate event #2
 		name = YFC_BUN.29.a
 
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		custom_effect_tooltip = l_money_gain_500K
+		add_to_variable = { money_amount = 5 }
+		BUN = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+		}
 		hidden_effect = {
 			add_to_variable = { var_foster_YFC_support = 0.5 }
 		}
@@ -3291,9 +3329,14 @@ country_event = { #Debate event #2
 		name = YFC_BUN.29.b
 
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
+
+		BUN = {
+			add_ideas = idea_BUN_highlyfunded_army
+			army_experience = 50
+		}
+
 		hidden_effect = {
-			add_to_variable = { var_foster_YFC_support = 0.5 }
-			BUN = {add_ideas = {idea = idea_BUN_highlyfunded_army}}
+			add_to_variable = { var_foster_YFC_support = 0.5 }	
 		}
 
 		country_event = {
@@ -3312,9 +3355,10 @@ country_event = { #Debate event #2
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 
+		BUN = {add_ideas = idea_BUN_unfunded_army}
+
 		hidden_effect = {
-			add_to_variable = { var_foster_YFC_support = 3 }
-			BUN = {add_ideas = {idea = idea_BUN_unfunded_army}}
+			add_to_variable = { var_foster_YFC_support = 3 }	
 		}
 
 		country_event = {
@@ -3430,12 +3474,52 @@ country_event = { #Debate event #4
 
 	option = {
 		name = YFC_BUN.31.a
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
+		add_to_variable = { var_foster_YFC_support = 3.5 }
 	}
 	option = {
 		name = YFC_BUN.31.b
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 1.5 }
+		BUN = {
+			add_manpower = 10000
+			army_experience = 25
+		}
+		85 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 	option = {
 		name = YFC_BUN.31.c
+		custom_effect_tooltip = l_YFC_BUN_foster_gain
+		add_to_variable = { var_foster_YFC_support = 1.5 }
+		BUN = {
+			add_manpower = 10000
+			army_experience = 25
+		}
+		85 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = YFC_BUN.31.d
+		custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
+		add_to_variable = { var_foster_BUN_support = 2 }
+		add_to_variable = { var_foster_CRN_support = 2 }
+		add_political_power = 100
 	}
 }
 

@@ -36,6 +36,7 @@ decision_YFC_trade_category= {
 			modifier = { #by this point other nations have other tech so get new stuff
 				check_variable = { money_amount > 15 }
 				date > 2015.01.01
+				date < 2016.01.01
 				add = 100
 			}
 		}
@@ -286,6 +287,22 @@ decision_YFC_trade_category= {
 				FROM = {has_war = yes}
 			}
 			modifier = {
+				add = 1
+				FROM = {check_variable = { money_amount > 10 }}
+			}
+			modifier = {
+				add = 1
+				check_variable = { money_amount < 3 }
+			}
+			modifier = {
+				add = -3
+				has_war = yes
+			}
+			modifier = {
+				add = -3
+				surrender_progress > 0
+			}
+			modifier = {
 				add = 2
 				FROM = {surrender_progress > 0}
 			}
@@ -294,7 +311,7 @@ decision_YFC_trade_category= {
 				FROM = {surrender_progress > 0.5}
 			}
 			modifier = {
-				add = 1
+				add = 10
 				FROM = {is_ai = no}
 			}
 		}

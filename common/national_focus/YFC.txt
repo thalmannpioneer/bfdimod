@@ -1097,7 +1097,7 @@ focus_tree = {
 							var_YFC_upgrade_level = 2
 						}
 					}
-					country_event = YFC_event.29
+					country_event = YFC_event.25
 				}
 				ELSE_IF = {
 					limit = {
@@ -1110,7 +1110,7 @@ focus_tree = {
 					country_event = YFC_event.30
 				}
 				ELSE = {
-					#Pick the fallback event if somehow this breaks please
+					#Pick the fallback event if somehow this breaks please ZDubbz
 				}
 			}
 		}
@@ -1719,7 +1719,7 @@ focus_tree = {
 				add_state_core = 85
 				add_state_core = 212
 			}
-			
+			remove_ideas = idea_YFC_Bunch_Insurgency
 			hidden_effect = {
 				BUN = {
 					remove_state_core = 85

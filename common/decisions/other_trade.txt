@@ -342,19 +342,103 @@ decision_other_trade_category = {
 							value = 0
 						}
 					}	
-				}			
-				
+				}	
+				set_temp_variable = { Support_var = 0 }
+				set_temp_variable = { Arty_var = 0 }		
+				set_temp_variable = { AntiTank_var = 0 }	
+				set_temp_variable = { AntiAir_var = 0 }			
+				IF = { #Support Check
+					limit = {has_equipment = {support_equipment_1 > 500}}
+					add_to_temp_variable = { Support_var = 25 }
+				}
+				IF = { #Arty Check
+					limit = {
+						check_variable = {num_equipment@artillery_equipment_3 > 500}
+						has_tech = artillery4
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@artillery_equipment_2 > 500}
+						has_tech = artillery1
+						NOT = { has_tech = artillery4}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@artillery_equipment_1 > 500}
+						has_tech = gw_artillery
+						NOT = { has_tech = artillery1}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				IF = { #Anti_Air Check
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_3 > 500}
+						has_tech = antiair5
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_2 > 500}
+						has_tech = antiair2
+						NOT = { has_tech = antiair5}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_1 > 500}
+						has_tech = interwar_antiair
+						NOT = { has_tech = antiair2}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}	
+				IF = { #Anti_Tank Check
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_3 > 500}
+						has_tech = antiair5
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_2 > 500}
+						has_tech = antiair2
+						NOT = { has_tech = antiair5}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}
+				ELSE_IF = {
+					limit = {
+						check_variable = {num_equipment@anti_air_equipment_1 > 500}
+						has_tech = interwar_antiair
+						NOT = { has_tech = antiair2}
+					}
+					add_to_temp_variable = { Arty_var = 25 }
+				}					
 				IF = {
 					limit = {has_equipment = {support_equipment_1 > 500}}
-					set_country_flag = Confirmed_Trade_Selling
+					add_to_temp_variable = { Support = 25 }
+				}
+				random_list = {
+					Support_var = { #Support
+						set_country_flag = Confirmed_Trade_Selling
+						set_variable = {THIS.selling_item = 4}
+						set_variable = {ROOT.selling_amount = 25 }
+						set_temp_variable_to_random = {var = temp_X_var min = 4 max = 20 integer = yes}
+						multiply_variable = { ROOT.selling_amount = temp_X_var }
+						set_temp_variable = { MATH_COST_var = 1 }
+						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
+						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+					}
+				}
+				IF = {
+					limit = {has_equipment = {support_equipment_1 > 500}}
 
-					set_variable = {THIS.selling_item = 4}
-					set_variable = {ROOT.selling_amount = 25 }
-					set_temp_variable_to_random = {var = temp_X_var min = 4 max = 20 integer = yes}
-					multiply_variable = { ROOT.selling_amount = temp_X_var }
-					set_temp_variable = { MATH_COST_var = 1 }
-					multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE = {
 					set_variable = {THIS.selling_item = -1}
