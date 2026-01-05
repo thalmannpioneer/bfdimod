@@ -133,4 +133,14 @@ leader_traits = {
         party_popularity_stability_factor = 0.2
         offensive_war_stability_factor = 0.2
     }
+
+    GTR_nuclear_scientist = {
+        sprite = 14
+
+        land_mastery_gain_factor = 0.15
+    }
+
+    GTR_civilian_scientist = {
+        sprite = 14
+    }
 }

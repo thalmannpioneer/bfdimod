@@ -167,13 +167,6 @@ idea_GTR_operation_paperclip = {
     research_speed_factor = var_idea_GTR_paperclip_rs
 }
 
-modifier_GTR_city_council = {
-    icon = GFX_modifier_GTR_city_council
-
-    local_building_slots_factor = 0.5
-    mobilization_speed = 0.5
-}
-
 idea_GTR_noocracy = {
     icon = GFX_idea_GTR_noocracy
 

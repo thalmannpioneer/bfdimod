@@ -476,6 +476,10 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/modifier_GTR_state_infected.dds
 	}
 	spriteType = {
+		name = GFX_modifier_GTR_yoylite_deposits
+		textureFile = gfx/interface/ideas/modifier_GTR_yoylite_deposits.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}
@@ -498,6 +502,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_GTR_titanknife
 		textureFile = gfx/interface/ideas/idea_GTR_titanknife.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_napalm
+		textureFile = gfx/interface/ideas/idea_GTR_napalm.dds
+	}
+	spriteType = {
+		name = GFX_idea_GTR_octahedron
+		textureFile = gfx/interface/ideas/idea_GTR_octahedron.dds
 	}
 	
 	spriteType = {

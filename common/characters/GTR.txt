@@ -27,6 +27,25 @@ characters = {
                 small = GFX_idea_GTR_tennis_ball
             }
         }
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_GTR_tennis_ball
+            traits = { second_hand }
+            on_add = {
+                add_power_balance_value = {
+                    id = GTR_power_balance
+                    value = -0.05
+                }
+            }
+            on_remove = {
+                add_power_balance_value = {
+                    id = GTR_power_balance
+                    value = 0.05
+                }
+            }
+            available = { hidden_trigger = { has_country_flag = GTR_unlock_tb } }
+            visible = { has_country_flag = GTR_unlock_tb }
+        }
     }
     GTR_test_tube = {
         name = GTR_test_tube
@@ -70,5 +89,37 @@ characters = {
     GTR_titanknife = {
         name = GTR_titanknife
         portraits = { civilian = { small = GFX_idea_GTR_titanknife } }
+    }
+    GTR_napalm = {
+        name = GTR_napalm
+        portraits = { civilian = { small = GFX_idea_GTR_napalm } }
+        advisor = {
+            slot = theorist
+            cost = 100
+            idea_token = idea_GTR_napalm
+            traits = { GTR_nuclear_scientist }
+            research_bonus = {
+                nuclear = 0.5
+                rocketry = 0.5
+            }
+            available = { hidden_trigger = { has_country_flag = GTR_unlock_napalm } }
+            visible = { has_country_flag = GTR_unlock_napalm }
+        }
+    }
+    GTR_octahedron = {
+        name = GTR_octahedron
+        portraits = { civilian = { small = GFX_idea_GTR_octahedron } }
+        advisor = {
+            slot = theorist
+            cost = 100
+            idea_token = idea_GTR_napalm
+            traits = { GTR_civilian_scientist }
+            research_bonus = {
+                industry = 0.25
+                electronics = 0.25
+            }
+            available = { hidden_trigger = { has_country_flag = GTR_unlock_octahedron } }
+            visible = { has_country_flag = GTR_unlock_octahedron }
+        }
     }
 }

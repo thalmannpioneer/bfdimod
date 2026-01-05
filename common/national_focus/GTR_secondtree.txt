@@ -464,6 +464,13 @@ focus_tree = {
                     modifier = small_increase
                 }
             }
+            if = {
+                limit = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+                add_days_mission_timeout = {
+                    mission = GTR_university_reconstruction_collecting_personnel_mission
+                    days = -50
+                }
+            }
 
             hidden_effect = {
                 country_event = { #Ivy league
@@ -671,7 +678,7 @@ focus_tree = {
                 tooltip = l_GTR_outer_politics_cd_tt
                 NOT = { has_country_flag = GTR_outer_politics_cd }
             }
-            num_divisions > 4
+            num_divisions > 3
         }
         cancel_if_invalid = yes
 
@@ -697,6 +704,7 @@ focus_tree = {
                     give_guarantee = GTR
                 }
             }
+            add_ideas = civilian_economy
             add_power_balance_value = {
                 id = GTR_power_balance
                 value = -0.05
@@ -931,6 +939,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = GTR_event.30
+            add_ideas = civilian_economy
             add_power_balance_value = {
                 id = GTR_power_balance
                 value = -0.05
@@ -1365,7 +1374,7 @@ focus_tree = {
                 limit = { has_completed_focus = GTR_focus_science_for_objects }
                 set_country_flag = {
                     flag = GTR_inner_politics_tree_cd_long
-                    days = 240
+                    days = 320
                     value = 1
                 }
             }
@@ -1547,7 +1556,7 @@ focus_tree = {
 
             set_country_flag = {
                 flag = GTR_inner_politics_tree_cd_long
-                days = 240
+                days = 320
                 value = 1
             }
         }
@@ -1929,7 +1938,14 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_economics }
 
         available = {
-            has_stability > 0.3
+            OR = {
+                NOT = {
+                    has_power_balance = {
+                        id = GTR_power_balance
+                    }
+                }
+                has_stability > 0.3
+            }
         }
         cancel_if_invalid = yes
 
@@ -1946,6 +1962,14 @@ focus_tree = {
             activate_mission = GTR_university_reconstruction_collecting_personnel_mission
             add_ideas = idea_GTR_making_blueprints
             add_ideas = idea_GTR_collecting_personnel
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.47
+                    days = 50
+                    random_days = 10
+                    random_hours = 12
+                }
+            }
         }
     }
 
@@ -2060,6 +2084,17 @@ focus_tree = {
             base = 5
         }
 
+        select_effect = {
+            hidden_effect = {
+                country_event = {
+                    id = GTR_event.46
+                    days = 10
+                    random_days = 3
+                    random_hours = 12
+                }
+            }
+        }
+
         completion_reward = {
             country_event = GTR_event.45
         }
@@ -2076,13 +2111,15 @@ focus_tree = {
 
         allow_branch = { has_country_flag = GTR_republic_formed }
 
-        cost = 5
+        cost = 2
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.48
+        }
     }
 
     focus = {
@@ -2095,13 +2132,24 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_military }
 
-        cost = 5
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = infantry_weapons
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = artillery
+            }
+        }
     }
 
     focus = {
@@ -2114,13 +2162,25 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_defense_tech }
 
+        available = {
+            89 = {
+                NOT = {
+                    has_dynamic_modifier = {
+                        modifier = modifier_GTR_state_infected
+                    }
+                }
+            }
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.49
+        }
     }
 
     focus = {
@@ -2133,13 +2193,29 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_investigate_the_explosion }
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_power_of_yoylelite
+                has_country_flag = GTR_meteorite_arrived
+            }
+            has_idea = idea_GTR_goiky_university
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            custom_effect_tooltip = l_GTR_start_yoylite_research
+            country_event = {
+                id = GTR_event.51
+                days = 10
+                random_days = 5
+                random_hours = 12
+            }
+        }
     }
 
     focus = {
@@ -2152,7 +2228,16 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_military }
 
-        available = { has_war_support > 0.3 }
+        available = {
+            OR = {
+                NOT = {
+                    has_power_balance = {
+                        id = GTR_power_balance
+                    }
+                }
+                has_war_support > 0.15
+            }
+        }
         cancel_if_invalid = yes
 
         cost = 5
@@ -2163,6 +2248,7 @@ focus_tree = {
 
         completion_reward = {
             country_lock_all_division_template = no
+            add_ideas = limited_conscription
         }
     }
 
