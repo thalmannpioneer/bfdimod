@@ -90,20 +90,22 @@ guiTypes = {
 			name = "BuyingButton"
 			position = { x = 20 y = 95 }
 			quadTextureSprite ="GFX_icon_button_46x46"
-			buttonText = "Buy" #UPDATE LATER
+			buttonText = l_decisions_trade_buytext_tooltip
 			buttonFont = "hoi_18mbs"
 			clicksound = click_ok
 			oversound = ui_menu_over
+			pdx_tooltip = l_decisions_trade_buyoffer_tooltip
 		}
 
 		buttonType = {
 			name = "SellingButton"
 			position = { x = 20 y = 185 }
 			quadTextureSprite ="GFX_icon_button_46x46"
-			buttonText = "Sell" #UPDATE LATER
+			buttonText = l_decisions_trade_selltext_tooltip
 			buttonFont = "hoi_18mbs"
 			clicksound = click_ok
 			oversound = ui_menu_over
+			pdx_tooltip = l_decisions_trade_selloffer_tooltip
 		}
 
 		iconType = {
