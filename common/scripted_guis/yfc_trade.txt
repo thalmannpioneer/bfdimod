@@ -14,15 +14,33 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 
 		triggers = { 
 			BuyingButton_click_enabled = {
+				ROOT = { has_political_power > 5}
 				THIS = {
 					has_country_flag = Confirmed_Trade_Selling
-					NOT = { has_country_flag = ongoing_trade_offer }
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+					}					
 				}
 			}
 			SellingButton_click_enabled = {
+				ROOT = { has_political_power > 5}
 				THIS = {
 					has_country_flag = Confirmed_Trade_Buying
-					NOT = { has_country_flag = ongoing_trade_offer }
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+					}					
 				}
 				OR = {
 					AND = {
@@ -147,6 +165,7 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 				ROOT = { set_variable = { ROOT.selling_cost^i = Cost_Diffrent_var }}
 			}
 			BuyingButton_click = {
+				ROOT = {add_political_power = -5}
 				THIS = {
 					set_country_flag = ongoing_trade_offer
 					country_event = {
@@ -156,6 +175,7 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 				}
 			}
 			SellingButton_click = {
+				ROOT = {add_political_power = -5}
 				THIS = { 
 					set_country_flag = ongoing_trade_offer
 					country_event = {

@@ -328,7 +328,7 @@ decision_YFC_sector_category= { #Watermelon
 		days_re_enable = 30
 
         modifier = {
-			political_power_gain = -3
+			political_power_gain = -5
 		}
 
 		remove_effect = {

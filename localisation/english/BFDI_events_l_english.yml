@@ -639,7 +639,7 @@
 #YFC
 
  YFC_event.1.t: "The Company with a State"
- YFC_event.1.desc: "We, The Yellow Face Corporation, have decided that we need our own place to conduct business operations. Our employees have taken a pledge to live in one of the many cities the Corporation has control of (and of course we threatened to lower pay if they refused), but the government's legitimacy is still quite low. It is important that we allow other companies to reside in our nation, and allow a free and fair market to prosper. After all, we don't want to have everything be government owned, less we fall into socialism."
+ YFC_event.1.desc: "We, The Yellow Face Corporation, have decided that we need our own place to conduct business operations. Our employees have taken a pledge to live in one of the many cities the Corporation has control of (and of course we threatened to lower pay if they refused), but the government's legitimacy is still quite low. It is important that we allow other companies to reside in our nation, and allow a free and fair market to prosper. After all, we don't want to have everything be government owned, less we fall into socialism.\n\n§RFor now we must balance our budgets correctly.§!" #Minor way of telling the player to not waste their money
  YFC_event.1.a: "Better Dead Than Red!"
 
  YFC_event.2.t: "The Southern Bandits"

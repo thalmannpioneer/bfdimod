@@ -16,7 +16,7 @@ decision_YFC_trade_category= {
 		fire_only_once = no
 		cost = 10
 		days_remove = 180
-		days_re_enable = 30
+		days_re_enable = 60
 
 		complete_effect = {
 			add_research_slot = 2
@@ -175,7 +175,6 @@ decision_YFC_trade_category= {
 		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
 		targets_dynamic = yes
 		target_trigger = {
-			NOT = {has_country_flag = ongoing_trade_offer}
 			FROM = {
 				has_country_flag = Confirmed_Trade_Buying
 				NOT = {
@@ -313,6 +312,102 @@ decision_YFC_trade_category= {
 			modifier = {
 				add = 10
 				FROM = {is_ai = no}
+			}
+		}
+	}
+
+	YFC_trade_AIUSE_BuyRequest = { #YFC BUYS SHIT!!!!!
+		icon = generic_research
+
+		available = { 
+			THIS = {
+				is_ai = yes
+				NOT = { has_country_flag = ongoing_trade_offer }
+			}
+		}
+
+		visible = {
+			THIS = {is_ai = yes}
+		}
+
+		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_country_flag = Confirmed_Trade_Selling
+				NOT = {
+					has_country_flag = ongoing_trade_offer
+					has_war_with = YFC
+					has_idea = undisturbed_isolation
+					has_idea = isolation
+					has_idea = closed_economy
+					is_embargoed_by = YFC
+					is_embargoing = YFC
+				}
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		cost = 0
+
+		complete_effect = {
+			random = {
+				chance = 80
+				set_country_flag = ongoing_trade_offer
+				multiply_variable = { buying_cost^FROM.YFC_trade_nation_pos_var = 0.8 }
+				set_variable = { buying_X^FROM.YFC_trade_nation_pos_var = 0.8 }
+				FROM = { 
+					set_country_flag = ongoing_trade_offer
+					country_event = {
+						id = YFC_event.37
+						hours = 1
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 3
+				OR = {
+					FROM = { check_variable = { selling_item = 0 }}
+					FROM = { check_variable = { selling_item = 1 }}
+					FROM = { check_variable = { selling_item = 2 }}
+					FROM = { check_variable = { selling_item = 3 }}
+				}
+				has_equipment = {infantry_equipment < 100}
+			}
+			modifier = {
+				add = 3
+				FROM = { check_variable = { selling_item = 4 }}
+				has_equipment = {support_equipment_1 < 500}
+			}
+			modifier = {
+				add = -1
+				check_variable = { money_amount < 7 }
+			}
+			modifier = {
+				add = -2
+				check_variable = { money_amount < 5 }
+			}
+			modifier = {
+				add = -15
+				check_variable = { money_amount < 2 }
+			}
+			modifier = {
+				add = -1
+				FROM = {has_war = yes}
+			}
+			modifier = {
+				add = -3
+				surrender_progress > 0
+			}
+			modifier = {
+				add = 3
+				FROM = {is_ai = no}
+				FROM = {check_variable = { money_amount < 5 }}
 			}
 		}
 	}

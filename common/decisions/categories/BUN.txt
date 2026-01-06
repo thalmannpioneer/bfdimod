@@ -24,6 +24,14 @@ decision_BUN_raids_category = {
 
 decision_BUN_Revolt_category = {
 	allowed = { tag = BUN }
+	available = {
+		tag = BUN
+        country_exists = BUN
+        has_dynamic_modifier = {
+            modifier = idea_BUN_Ticking_Bomb
+        }
+        has_war_with = YFC
+	}
 	visible = { 
 		tag = BUN
         country_exists = BUN

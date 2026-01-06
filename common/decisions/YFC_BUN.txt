@@ -265,6 +265,10 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 15
+			IF = {
+				limit = {is_ai = yes}
+				85 = {add_resistance = -3}
+			}
         }
 		fire_only_once = no
 		cost = 50
@@ -323,6 +327,10 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 15
+			IF = {
+				limit = {is_ai = yes}
+				212 = {add_resistance = -3}
+			}
         }
 		fire_only_once = no
 		cost = 50
@@ -378,6 +386,10 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 45
+			IF = {
+				limit = {is_ai = yes}
+				85 = {add_compliance = 5}
+			}
         }
 		fire_only_once = yes
 
@@ -440,6 +452,10 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 45
+			IF = {
+				limit = {is_ai = yes}
+				212 = {add_compliance = 5}
+			}
         }
 		fire_only_once = yes
 
@@ -502,6 +518,24 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 45
+			IF = {
+				limit = {is_ai = yes}
+				85 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 5679
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 4572
+					}
+					add_resistance = -10
+				}
+			}
         }
 		fire_only_once = yes
 
@@ -572,6 +606,24 @@ decision_YFC_BUN_category = {
         }
         cancel_effect = {
 			add_political_power = 45
+			IF = {
+				limit = {is_ai = yes}
+				212 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 5679
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						instant_build = yes
+						province = 4572
+					}
+					add_resistance = -10
+				}
+			}
         }
 		fire_only_once = yes
 
@@ -736,7 +788,7 @@ decision_YFC_BUN_category = {
 		days_remove = 100
 
 		modifier = {
-			resistance_growth = -0.2
+			resistance_growth = -0.25
 			weekly_manpower = 100
 		}
 
@@ -769,7 +821,7 @@ decision_YFC_BUN_category = {
 
 		modifier = {
 			war_support_weekly = -0.005
-			weekly_manpower = 750
+			weekly_manpower = 1000
 		}
 
 		ai_will_do = {

@@ -296,7 +296,7 @@ decision_other_trade_category = {
 		}
 
 		fire_only_once = no
-		days_remove = 30
+		days_remove = 35
 		cost = 0
 
 		complete_effect = {
@@ -352,7 +352,10 @@ decision_other_trade_category = {
 				set_temp_variable = { AntiAir_var = 0 }		
 				set_temp_variable = { Inf_var = 0 }		
 				IF = { #Support Check
-					limit = {has_equipment = {support_equipment_1 > 500}}
+					limit = {
+						has_equipment = {support_equipment_1 > 500}
+						NOT = {check_variable = { selling_item = 4 }}
+					}
 					add_to_temp_variable = { Support_var = 35 }
 				}
 				IF = { #Arty Check

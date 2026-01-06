@@ -1,0 +1,22 @@
+#Have fun 
+
+GTR_Inf_01 = {
+	name = "INF TEMPLATE"
+
+	for_countries = { GTR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d TEMPLATE"
+	ordered = {
+		1 = { "%dst TEMPLATE" }
+	}
+}
+
+
+
+
+
+	

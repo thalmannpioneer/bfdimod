@@ -495,6 +495,12 @@ on_actions = {
                     }
                     multiply_temp_variable = {combined_modifer = 0.05}
                 }
+                IF = {
+                    limit = {
+                        has_stability < 0.01
+                    }
+                    multiply_temp_variable = {combined_modifer = 0}
+                }
 
                 multiply_temp_variable = {adding_amount = combined_modifer}
                 add_to_variable = { money_amount = adding_amount }

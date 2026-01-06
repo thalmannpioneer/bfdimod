@@ -26,6 +26,7 @@ guiTypes = {
             buttonFont = "hoi_18mbs"
             clicksound = click_ok
             oversound = ui_menu_over
+            pdx_tooltip = l_decisions_trade_confirm_tooltip
         }
 
         buttonType = {
@@ -36,6 +37,7 @@ guiTypes = {
             buttonFont = "hoi_18mbs"
             clicksound = click_ok
             oversound = ui_menu_over
+            pdx_tooltip = l_decisions_trade_confirm_tooltip
         }
 
         buttonType = {
@@ -44,6 +46,7 @@ guiTypes = {
             quadTextureSprite = "GFX_naval_increase_amount"
             pdx_tooltip = ""
             clicksound = click_default
+            pdx_tooltip = l_decisions_trade_amount_tooltip
         }
 
         buttonType = {
@@ -52,6 +55,7 @@ guiTypes = {
             quadTextureSprite = "GFX_naval_decrease_amount"
             pdx_tooltip = ""
             clicksound = click_default
+            pdx_tooltip = l_decisions_trade_amount_tooltip
         }
 
         instantTextboxType = {
@@ -78,6 +82,7 @@ guiTypes = {
             quadTextureSprite = "GFX_naval_increase_amount"
             pdx_tooltip = ""
             clicksound = click_default
+            pdx_tooltip = l_decisions_trade_amount_tooltip
         }
 
         buttonType = {
@@ -86,6 +91,7 @@ guiTypes = {
             quadTextureSprite = "GFX_naval_decrease_amount"
             pdx_tooltip = ""
             clicksound = click_default
+            pdx_tooltip = l_decisions_trade_amount_tooltip
         }
 
         instantTextboxType = {
@@ -111,6 +117,7 @@ guiTypes = {
             position = { x = 100 y = 40 }
             spriteType = GFX_prod_land_equipment_item_large
             clicksound = bfdi_button_press
+            pdx_tooltip = l_decisions_trade_buy_tooltip
         }
 
         iconType = {
@@ -124,6 +131,7 @@ guiTypes = {
             position = { x = 100 y = 130 }
             spriteType = GFX_prod_land_equipment_item_large
             clicksound = bfdi_button_press
+            pdx_tooltip = l_decisions_trade_sell_tooltip
         }
 
         iconType = {

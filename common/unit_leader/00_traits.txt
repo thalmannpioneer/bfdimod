@@ -32,10 +32,6 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
         }
 
     }
@@ -62,12 +58,7 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
         }
-
     }
 
 
@@ -91,10 +82,6 @@ leader_traits = {
             }
             modifier = {
                 FROM = { has_idea = academy_scholarships_spirit }
-                factor = 0
-            }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
                 factor = 0
             }
         }
@@ -185,10 +172,6 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
         }
 
         planning_skill_factor = 1
@@ -218,10 +201,6 @@ leader_traits = {
             }
             modifier = {
                 FROM = { has_idea = academy_scholarships_spirit }
-                factor = 0
-            }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
                 factor = 0
             }
         }
@@ -255,10 +234,6 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
         }
 
         attack_skill_factor = 1
@@ -288,10 +263,6 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
         }
     }
 
@@ -314,10 +285,6 @@ leader_traits = {
             }
             modifier = {
                 FROM = { has_idea = academy_scholarships_spirit }
-                factor = 0
-            }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
                 factor = 0
             }
         }
@@ -362,7 +329,6 @@ leader_traits = {
                     OR = {
                         has_idea = best_of_the_best_spirit
                         has_idea = academy_scholarships_spirit
-                        has_idea = SOV_purged_junior_army_officers_3
                     }
                 }
             }
@@ -388,10 +354,6 @@ leader_traits = {
             }
             modifier = {
                 FROM = { has_idea = academy_scholarships_spirit }
-                factor = 0
-            }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
                 factor = 0
             }
 
@@ -450,10 +412,6 @@ leader_traits = {
                 FROM = { has_idea = academy_scholarships_spirit }
                 factor = 0
             }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-                factor = 0
-            }
 
             modifier = {
                 FROM = {
@@ -493,7 +451,6 @@ leader_traits = {
                     OR = {
                         has_idea = best_of_the_best_spirit
                         has_idea = academy_scholarships_spirit
-                        has_idea = SOV_purged_junior_army_officers_3
                     }
                 }
             }
@@ -515,10 +472,6 @@ leader_traits = {
             }
             modifier = {
                 FROM = { has_idea = academy_scholarships_spirit }
-                factor = 0
-            }
-            modifier = { #Purged Junior Army Officers
-                FROM = { has_idea = SOV_purged_junior_army_officers_3 }
                 factor = 0
             }
 
@@ -597,8 +550,8 @@ leader_traits = {
         allowed = {
             FROM = {
                 OR = {
-                    original_tag = ITA
-                    original_tag = ETH
+                    original_tag = BUN
+                    original_tag = DAV
                 }
             }
         }
@@ -617,8 +570,8 @@ leader_traits = {
             }
             owner = {
                 OR = {
-                    original_tag = ITA
-                    original_tag = ETH
+                    original_tag = BUN
+                    original_tag = DAV
                 }
                 NOT = {
                     OR = {
@@ -645,21 +598,9 @@ leader_traits = {
                 add = 0.5
                 FROM = { #Looks like the allowed parameter is doing NOTHING :D
                     OR = {
-                        original_tag = ITA
-                        original_tag = ETH
+                        original_tag = BUN
+                        original_tag = DAV
                     }
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    has_completed_focus = ITA_comandante_diavolo
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    has_completed_focus = ITA_proclaim_the_italian_empire
                 }
             }
         }
@@ -675,7 +616,7 @@ leader_traits = {
 
         allowed = {
             FROM = {
-                original_tag = ITA
+                original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
             }
         }
 
@@ -686,7 +627,7 @@ leader_traits = {
         unit_trigger = {
             division_has_majority_template = infantry
             owner = {
-                original_tag = ITA
+                original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
                 NOT = {
                     OR = {
                         has_idea = best_of_the_best_spirit
@@ -710,19 +651,7 @@ leader_traits = {
             modifier = {
                 add = 0.5
                 FROM = { #Looks like the allowed parameter is doing NOTHING :D
-                    original_tag = ITA
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    has_completed_focus = ITA_strengthen_ascari_corps
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    has_completed_focus = ITA_novus_ordo
+                    original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
                 }
             }
         }
@@ -739,12 +668,7 @@ leader_traits = {
         allowed = {
             FROM = {
                 OR = {
-                    original_tag = ITA
-                    original_tag = SWI
-                    original_tag = SWE
-                    original_tag = AUS
-                    original_tag = BRA
-                    original_tag = GER
+                    original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
                 }
             }
         }
@@ -757,12 +681,7 @@ leader_traits = {
             division_has_majority_template = militia
             owner = {
                 OR = {
-                    original_tag = ITA
-                    original_tag = SWI
-                    original_tag = SWE
-                    original_tag = AUS
-                    original_tag = BRA
-                    original_tag = GER
+                    original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
                 }
                 NOT = {
                     OR = {
@@ -785,23 +704,7 @@ leader_traits = {
                 add = 0.5
                 FROM = { #Looks like the allowed parameter is doing NOTHING :D
                     OR = {
-                        original_tag = ITA
-                        original_tag = SWI
-                    }
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    has_completed_focus = ITA_strengthen_the_blackshirts
-                }
-            }
-            modifier = { #ITALY
-                factor = 2
-                FROM = {
-                    OR = {
-                        has_completed_focus = ITA_divino_duce
-                        has_completed_focus = ITA_a_greater_purpose
+                        original_tag = EMP #MAYBE CHANGE LATER DEPENDING ON CHANGES
                     }
                 }
             }
@@ -816,7 +719,7 @@ leader_traits = {
         trait_type = personality_trait
 
         allowed = {
-            FROM = { original_tag = FIN }
+            FROM = { original_tag = EMP } #MAYBE CHANGE LATER DEPENDING ON CHANGES
         }
 
         trait_xp_factor = {
