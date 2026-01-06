@@ -16,13 +16,29 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 			BuyingButton_click_enabled = {
 				THIS = {
 					has_country_flag = Confirmed_Trade_Selling
-					NOT = { has_country_flag = ongoing_trade_offer }
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+					}					
 				}
 			}
 			SellingButton_click_enabled = {
 				THIS = {
 					has_country_flag = Confirmed_Trade_Buying
-					NOT = { has_country_flag = ongoing_trade_offer }
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+					}					
 				}
 				OR = {
 					AND = {

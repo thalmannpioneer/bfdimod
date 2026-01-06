@@ -1,0 +1,186 @@
+
+
+garrison_GTR = {
+
+	available_for = {
+		GTR
+	}
+
+	role = garrison
+
+	upgrade_prio = {
+		base = 0.5
+
+		modifier = {
+			factor = 20
+			NOT = { ai_has_role_template = garrison }
+		}
+	}
+
+
+	garrison_GTR = {
+		division_names_group = GTR_Inf_01
+		reinforce_prio = 0
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 2 
+			}
+		}
+	}
+}
+
+
+infantry_GTR = {
+
+	available_for = {
+		GTR
+	}
+
+	role = infantry
+
+	upgrade_prio = {
+		base = 5
+
+		modifier = {
+			factor = 1
+		}
+	}
+
+	infantry_early_GTR = {
+		division_names_group = GTR_Inf_01
+		upgrade_prio = {
+			base = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		can_upgrade_in_field = {
+            has_equipment = { artillery_equipment > 25 }
+			has_equipment = { support_equipment_1 > 25 }
+        }
+
+		target_template = {	
+
+			regiments = {
+				infantry = 3
+			}
+		}
+
+		replace_at_match = 0.5
+        replace_with = infantry_early_upgrade_GTR
+        target_min_match = 0.5
+	}
+
+	infantry_early_upgrade_GTR = {
+		division_names_group = GTR_Inf_01
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 0
+				arms_factory < 3
+			}
+
+			modifier = {
+				factor = 3
+				arms_factory > 3
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				recon = 1
+				artillery = 1
+			}
+
+			regiments = {
+				infantry = 3
+			}
+		}
+	}
+}
+
+suppression_GTR = {
+	
+	role = suppression
+	available_for = {
+		GTR
+	}
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 20
+			has_war = yes
+		}
+	}
+
+	suppression_GTR = {
+		division_names_group = GTR_Inf_01
+		reinforce_prio = 0
+		custom_icon = 13
+	
+		upgrade_prio = {
+			base = 2
+		}
+		
+		target_template = {
+			regiments = {
+				infantry = 2
+			}
+		}
+	}
+}
+
+
+# Non-complete list of sub-units
+
+# REGIMENTS:
+# - infantry
+# - light_armor
+# - medium_armor
+# - heavy_armor
+# - super_heavy_armor
+# - modern_armor
+# - cavalry
+# - motorized
+# - mechanized
+# - marine
+# - mountaineers
+# - paratrooper
+# - artillery_brigade
+# - anti_air_brigade
+# - anti_tank_brigade
+# - light_tank_destroyer_brigade
+# - medium_tank_destroyer_brigade
+# - heavy_tank_destroyer_brigade
+# - super_heavy_tank_destroyer_brigade
+# - modern_tank_destroyer_brigade
+# - light_sp_anti_air_brigade
+# - light_sp_artillery_brigade
+
+# SUPPORT:
+# - engineer
+# - recon
+# - signal_company
+# - maintenance_company
+# - artillery
+# - anti_air
+# - anti_tank
+# - field_hospital
+# - logistics_company
+# - military_police
+# - rocket_artillery

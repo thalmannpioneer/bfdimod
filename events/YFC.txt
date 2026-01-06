@@ -1209,6 +1209,7 @@ country_event = { #YFC Sell
 			}
 		}
 		clr_country_flag = ongoing_trade_offer
+		clr_country_flag = Confirmed_Trade_Buying
 		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
 			subtract_from_variable = { money_amount = trade_cost_show_var }
@@ -1468,6 +1469,7 @@ country_event = { #YFC Buy
 			}
 		}
 		clr_country_flag = ongoing_trade_offer
+		clr_country_flag = Confirmed_Trade_Selling
 		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
 			add_to_variable = {money_amount = trade_cost_show_var}
@@ -1483,8 +1485,28 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > trade_cost_temp_var } 
-				add = 10
+				check_variable = { money_amount < trade_cost_temp_var } 
+				add = 2
+		 	}
+			modifier = {
+				check_variable = { money_amount < 5 } 
+				add = 2
+		 	}
+			modifier = {
+				check_variable = { money_amount < 0 } 
+				add = 2
+		 	}
+			modifier = {
+				check_variable = { money_amount < -10 } 
+				add = 5
+		 	}
+			modifier = {
+				has_war = yes
+				add = -2
+		 	}
+			modifier = {
+				surrender_progress > 0
+				add = -5
 		 	}
 		}	
 	}
@@ -1498,6 +1520,10 @@ country_event = { #YFC Buy
 					hours = 1
 				}
 			}
+		}
+
+		ai_chance = {
+			base = 0.1
 		}
 	}
 }

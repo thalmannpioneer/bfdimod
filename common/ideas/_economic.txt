@@ -359,8 +359,8 @@ ideas = {
                     has_war = no
                     has_idea = limited_exports
                 }
-                modifier = {
-                    factor = 5
+                modifier = { #Please escape this
+                    factor = 100
                     has_war = no
                     has_idea = closed_economy
                 }

@@ -16,7 +16,7 @@ decision_YFC_trade_category= {
 		fire_only_once = no
 		cost = 10
 		days_remove = 180
-		days_re_enable = 30
+		days_re_enable = 60
 
 		complete_effect = {
 			add_research_slot = 2
@@ -175,7 +175,6 @@ decision_YFC_trade_category= {
 		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
 		targets_dynamic = yes
 		target_trigger = {
-			NOT = {has_country_flag = ongoing_trade_offer}
 			FROM = {
 				has_country_flag = Confirmed_Trade_Buying
 				NOT = {
@@ -334,7 +333,6 @@ decision_YFC_trade_category= {
 		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
 		targets_dynamic = yes
 		target_trigger = {
-			NOT = {has_country_flag = ongoing_trade_offer}
 			FROM = {
 				has_country_flag = Confirmed_Trade_Selling
 				NOT = {
@@ -374,16 +372,16 @@ decision_YFC_trade_category= {
 			modifier = {
 				add = 3
 				OR = {
-					FROM = { check_variable = { buying_item = 0 }}
-					FROM = { check_variable = { buying_item = 1 }}
-					FROM = { check_variable = { buying_item = 2 }}
-					FROM = { check_variable = { buying_item = 3 }}
+					FROM = { check_variable = { selling_item = 0 }}
+					FROM = { check_variable = { selling_item = 1 }}
+					FROM = { check_variable = { selling_item = 2 }}
+					FROM = { check_variable = { selling_item = 3 }}
 				}
 				has_equipment = {infantry_equipment < 100}
 			}
 			modifier = {
 				add = 3
-				FROM = { check_variable = { buying_item = 4 }}
+				FROM = { check_variable = { selling_item = 4 }}
 				has_equipment = {support_equipment_1 < 500}
 			}
 			modifier = {
