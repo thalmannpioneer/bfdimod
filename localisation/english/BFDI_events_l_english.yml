@@ -1361,16 +1361,24 @@
  GTR_event.50.a: "Right in our hands!"
 
  GTR_event.51.t: "Disorder"
- GTR_event.51.desc: "...            EXPERIMENT No. 1\n\nAfter delivering the mineral samples to the equipped laboratory, Professor ██████ attempted to pick up one of the active elements. According to surveillance footage, after a few seconds, the sample began to emit a light yellow glow, after which loose objects in the surrounding area were lifted approximately 10 centimeters into the air.\nAfter 10-15 seconds the effect stopped and all the levitating objects fell back down.\nProfessor ██████ was charged with violating safety regulations."
+ GTR_event.51.desc: "...            EXPERIMENT No. 1\n\nAfter delivering the mineral samples to the equipped laboratory, Professor ------ attempted to pick up one of the active elements. According to surveillance footage, after a few seconds, the sample began to emit a light yellow glow, after which loose objects in the surrounding area were lifted approximately 10 centimeters into the air.\nAfter 10-15 seconds the effect stopped and all the levitating objects fell back down.\nProfessor ------ was charged with violating safety regulations."
  GTR_event.51.a: "This thing seems unstable."
 
  GTR_event.52.t: "Deja vu"
- GTR_event.52.desc: "...            EXPERIMENT No. 2\n\nAfter moving the samples into a specially equipped chamber, experiments were conducted on their interaction with other elements and substances. The samples generally performed reliably, but in one test, specifically with the parasitic fungus called Noctiluca Yoylean, a sharp spike in luminescent activity was recorded, followed by a bright flash illuminating the entire observation room.\nA large energy release occurred and the sample was destroyed, but thanks to the fact that the chamber was equipped with tungsten alloys, the lives of the observing professors were saved.\nProfessor ███ claimed to have seen her long-dead mother."
+ GTR_event.52.desc: "...            EXPERIMENT No. 2\n\nAfter moving the samples into a specially equipped chamber, experiments were conducted on their interaction with other elements and substances. The samples generally performed reliably, but in one test, specifically with the parasitic fungus called Noctiluca Yoylean, a sharp spike in luminescent activity was recorded, followed by a bright flash illuminating the entire observation room.\nA large energy release occurred and the sample was destroyed, but thanks to the fact that the chamber was equipped with tungsten alloys, the lives of the observing professors were saved.\nProfessor ---- claimed to have seen her long-dead mother."
  GTR_event.52.a: "Unrestrictable potential."
 
  GTR_event.53.t: "Half-life"
  GTR_event.53.desc: "...            EXPERIMENT No. 3\n\nAfter studying the instability properties of the samples, the council decided to attempt to create a simple reactor for the controlled disintegration of yoylite atoms.\nSilicon oxide was used as a moderator for the emitted neutrons, and the sample was placed in a lead chamber.\nAs a result of observations of the energy release, it was found that one gram of yoylite has an energy value equivalent to 2000 tons of coal...."
  GTR_event.53.a: "Is a controlled explosion possible?..."
+
+ GTR_event.54.t: "Air Resistance"
+ GTR_event.54.desc: "It had long since darkened outside, but Tennis Ball had been sitting for hours, working on his drawings. Gravity, aerodynamics, engine power, and the numbers in his head were neatly organized, like a library. But he was also open to more abstract thoughts.\nHe admired the beauty and elegance of aviation, how huge machines made of aluminum and stainless steel gracefully soared, towering tens of kilometers above the earth.\nBut he returns to work again."
+ GTR_event.54.a: "Spreading The Wings."
+
+ GTR_event.55.t: "The Launch"
+ GTR_event.55.desc: "The Deadland expanses encompass a small portion of the Greeny Plains to the south, formed by the transition to the rolling plateau. Due to strong winds and low humidity, this part of the plains was never inhabited; only occasional transports passed through.\n\nThis is the place chosen for the Event of today.\n\nTennis Ball looked out of the slit windows of the smooth concrete bunker onto the peaceful plain that stretched out.\n\"We have to disturb this land.\".\n\nWhen a blaze of light, brighter than a thousand suns, rose above the heights, he involuntarily uttered:"
+ GTR_event.55.a: "\"I am become Death, the destroyer of worlds.\""
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
@@ -1504,6 +1512,10 @@
  bfdinews.31.t: "Meteorite In Goiky!"
  bfdinews.31.desc: "Last night, a bright white comet was spotted over the Greeny Plains, which, according to eyewitnesses, landed near the town of Announcergrad. As far as we know, no one was injured, but the shockwave damaged some local infrastructure. The composition and origin of the meteorite are still unknown, but rumors suggest it consists of a very rare material. We will continue to follow the events surrounding this incident."
  bfdinews.31.a: "The Symbol of Hope."
+
+ bfdinews.32.t: "Testing of the New Bomb!"
+ bfdinews.32.desc: "Breaking news is coming in from all over the Greeny Plains: it appears the government of the \"Technocratic Republic\" has tested a new type of weapon. The blast wave reached the borders of Casland, and the flash in the sky was visible even from Centrogoiky. If this is truly a new type of weapon, it will turn the entire situation in Goiky upside down: a bomb of such power would likely be capable of wiping out entire cities!\nOur editorial team is very concerned about such news and will continue to monitor developments."
+ bfdinews.32.a: "Stakes are rising."
 
 
 # bfdinews_cities

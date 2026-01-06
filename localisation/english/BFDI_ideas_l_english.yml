@@ -145,6 +145,7 @@
  idea_GTR_building: "Building!"
  modifier_GTR_state_infected: "§tSoil Infestation§!"
  modifier_GTR_yoylite_deposits: "§0Yoylite Deposits§!"
+ idea_GTR_modern_army: "Modern Army"
  
  idea_GGR_fascist_dictatorship: "Fascist dictatorship"
  idea_GGR_fascist_dictatorship_desc: "The Snowy Plateau has been historically quite a poor region of Goiky. After the onset of anarchy and the radicalization of society, the Großgoikysreich was formed here - a reactionary state of an open dictatorship, driven by ultramilitarism and nationalism. The segregation of 'wrong' objects according to many criteria is actively practiced - from the presence of upper limbs to size. Led by Snowball, the local government promotes ideas of expansionism and the physical destruction of the opposition."
@@ -226,3 +227,5 @@
  idea_DAV_the_thousand_year_throne: "The Thousand Year Throne"
  idea_DAV_the_thousand_year_throne_desc: "The rule over the Davidian Islands has been solidified for longer than the Goikean continent has had a population. Even in the ancient days of Yoylelanders, there was a Davidian on the throne, and loyal subjects on his islands. With God at the helm, their rightous dynasty will continue for a thousand years over."
 
+ idea_common_yoylite_nation: "§0The Yoylite Power§!"
+ idea_common_yoylite_nation_desc: "This nation posesses §Ya Unique Weapon Type§! - §0The Yoylite Bomb§!, that might §tdestroy§! any hostile nation."

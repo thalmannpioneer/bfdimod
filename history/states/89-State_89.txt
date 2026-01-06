@@ -1,21 +1,21 @@
 state={
-	id=89
-	name="STATE_89"
-	provinces={
-		3545 4236 
-	}
-	history = {
-		owner = GOI
-		controller = GOI
-		victory_points = { 3545 30 }
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
-			3545 = { nuclear_facility = 1 }
-		}
-	}	
-	manpower=29677
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+    id=89
+    name="STATE_89"
+    provinces={
+        3545 4236
+    }
+    history = {
+        owner = GOI
+        controller = GOI
+        victory_points = { 3545 30 }
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 2
+            3545 = { nuclear_facility = 1 }
+        }
+    }
+    manpower=141522
+    buildings_max_level_factor=1.000
+    state_category=city
+    local_supplies=0.000
 }

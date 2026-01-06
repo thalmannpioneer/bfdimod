@@ -393,6 +393,10 @@ focus_tree = {
                     GDR = { has_war = no }
                 }
             }
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_outer_politics_cd_tt
+                NOT = { has_country_flag = GTR_outer_politics_cd }
+            }
         }
         cancel_if_invalid = yes
 
@@ -1686,10 +1690,9 @@ focus_tree = {
             add_advisor_role = {
                 character = GTR_titanknife
                 advisor = {
-                    slot = high_command
-                    ledger = air
+                    slot = air_chief
                     idea_token = idea_GTR_titanknife
-                    traits = { air_air_superiority_2 }
+                    traits = { air_chief_reform_3 }
                 }
             }
         }
@@ -2262,13 +2265,20 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_defense_tech }
         prerequisite = { focus = GTR_focus_reform_defense_forces }
 
-        cost = 5
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.54
+            add_tech_bonus = {
+                bonus = 1
+                uses = 3
+                category = air_equipment
+            }
+        }
     }
 
     focus = {
@@ -2281,13 +2291,26 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_modern_aircraft }
 
+        available = {
+            num_planes_stationed_in_regions = {
+                value > 50
+                regions = { 3 }
+            }
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = cat_strategic_bomber
+            }
+        }
     }
 
     focus = {
@@ -2301,13 +2324,19 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_power_of_yoylelite }
         prerequisite = { focus = GTR_focus_rockets_air_ground }
 
+        available = {
+            num_of_nukes > 0
+        }
+
         cost = 5
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            country_event = GTR_event.55
+        }
     }
 
     focus = {
@@ -2339,12 +2368,14 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_reform_defense_forces }
 
-        cost = 5
+        cost = 4
 
         ai_will_do = {
             base = 5
         }
 
-        completion_reward = { }
+        completion_reward = {
+            add_ideas = idea_GTR_modern_army
+        }
     }
 }

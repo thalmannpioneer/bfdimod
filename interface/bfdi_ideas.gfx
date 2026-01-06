@@ -480,6 +480,10 @@ spriteTypes = {
 		textureFile = gfx/interface/ideas/modifier_GTR_yoylite_deposits.dds
 	}
 	spriteType = {
+		name = GFX_idea_GTR_modern_army
+		textureFile = gfx/interface/ideas/idea_GTR_modern_army.dds
+	}
+	spriteType = {
 		name = GFX_idea_GTR_tennis_ball
 		texturefile = gfx/interface/ideas/idea_GTR_tennis_ball.dds
 	}
@@ -660,5 +664,10 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_generic_militarization
 		texturefile = gfx/interface/ideas/idea_generic_militarization.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_common_yoylite_nation
+		textureFile = gfx/interface/ideas/idea_common_yoylite_nation.dds
 	}
 }

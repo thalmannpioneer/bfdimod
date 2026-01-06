@@ -1,18 +1,18 @@
 state={
-	id=77
-	name="STATE_77"
-	provinces={
-		440 702 739 1235 1898 2941 3220 3375 3527 3813 4755 4784 4972 11265 11270 11277 11289 11305 
-	}
-	history = {
-		owner = GOI
-		controller = GOI
-		buildings = {
-			infrastructure = 3
-		}
-	}
-	manpower=14620
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+    id=77
+    name="STATE_77"
+    provinces={
+        440 702 739 1235 1898 2941 3220 3375 3527 3813 4755 4784 4972 11265 11270 11277 11289 11305
+    }
+    history = {
+        owner = GOI
+        controller = GOI
+        buildings = {
+            infrastructure = 3
+        }
+    }
+    manpower=31891
+    buildings_max_level_factor=1.000
+    state_category=town
+    local_supplies=0.000
 }

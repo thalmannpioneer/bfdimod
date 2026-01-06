@@ -238,7 +238,7 @@ country_event = {
                     type = industrial_complex
                     level = 2
                 }
-                add_manpower = -12110
+                add_manpower = -118521
             }
             set_capital = { state = 209 }
             goto_province = 3545
@@ -1037,6 +1037,7 @@ country_event = {
                 modifier = modifier_GTR_state_infected
             }
             set_state_category = city
+            add_manpower = 32551
         }
         clr_country_flag = GTR_university_reconstruction
     }
@@ -1056,6 +1057,7 @@ country_event = {
             remove_idea = idea_GTR_destroyed_university
             add_idea = idea_GTR_goiky_university
         }
+        89 = { add_manpower = 28911 }
         add_research_slot = 1
         hidden_effect = {
             every_possible_country = {
@@ -1238,5 +1240,59 @@ country_event = {
         name = GTR_event.53.a
         custom_effect_tooltip = l_GTR_yoylite_project_starts
         set_country_flag = GTR_yoylite_project
+    }
+}
+
+country_event = {
+    id = GTR_event.54
+    title = GTR_event.54.t
+    desc = GTR_event.54.desc
+    picture = GFX_GTR_event54
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.54.a
+        209 = {
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.55
+    title = GTR_event.55.t
+    desc = GTR_event.55.desc
+    picture = GFX_GTR_event55
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.55.a
+        custom_effect_tooltip = l_GTR_yoylite_bomb_strike
+        hidden_effect = {
+            add_ideas = idea_common_yoylite_nation #other nations will accomplish yoylite bombs too later
+
+            launch_nuke = {
+                province = 3398
+                use_nuke = yes
+            }
+            goto_province = 3398
+
+            every_possible_country = {
+                limit = {
+                    is_ai = no
+                }
+                news_event = {
+                    id = bfdinews.32
+                    days = 2
+                    random_hours = 12
+                }
+            }
+        }
     }
 }

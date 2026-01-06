@@ -1,0 +1,9 @@
+#file for ideas that could be accomplished by different nations
+
+ideas = {
+    country = {
+        idea_common_yoylite_nation = {
+            picture = common_yoylite_nation
+        }
+    }
+}

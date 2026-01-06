@@ -1,23 +1,23 @@
 state={
-	id=209
-	name="STATE_209"
-	resources = {
-		coal = 3
-	}
-	provinces={
-		2737 4960 
-	}
-	history = {
-		owner = GOI
-		controller = GOI
-		victory_points = { 2737 20 }
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-		}
-	}
-	manpower=46823
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+    id=209
+    name="STATE_209"
+    resources = {
+        coal = 3
+    }
+    provinces={
+        2737 4960
+    }
+    history = {
+        owner = GOI
+        controller = GOI
+        victory_points = { 2737 20 }
+        buildings = {
+            infrastructure = 3
+            industrial_complex = 1
+        }
+    }
+    manpower=282003
+    buildings_max_level_factor=1.000
+    state_category=large_town
+    local_supplies=0.000
 }

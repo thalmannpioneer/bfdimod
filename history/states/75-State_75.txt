@@ -1,20 +1,20 @@
 state={
-	id=75
-	name="STATE_75"
-	provinces={
-		331 862 1589 2132 2845 3605 3741 4174 4431 5084 5094 5215 5344 5451 5664 5678 11157 11172 11173 11189 11200 11211 11214 
-	}
-	history = {
-		owner = GOI
-		controller = GOI
-		victory_points = { 862 5 }
-		victory_points = { 5215 5 }
-		buildings = {
-			infrastructure = 2
-		}
-	}
-	manpower=21830
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+    id=75
+    name="STATE_75"
+    provinces={
+        331 862 1589 2132 2845 3605 3741 4174 4431 5084 5094 5215 5344 5451 5664 5678 11157 11172 11173 11189 11200 11211 11214
+    }
+    history = {
+        owner = GOI
+        controller = GOI
+        victory_points = { 862 5 }
+        victory_points = { 5215 5 }
+        buildings = {
+            infrastructure = 2
+        }
+    }
+    manpower=49992
+    buildings_max_level_factor=1.000
+    state_category=town
+    local_supplies=0.000
 }
