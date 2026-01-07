@@ -1,0 +1,11 @@
+decision_GTR_space_program_category = {
+    allowed = { tag = GTR }
+    priority = 100
+    icon = GFX_decision_category_space_program
+
+    available = { hidden_trigger = { has_country_flag = GTR_spaceship_building } }
+    visible = { has_country_flag = GTR_spaceship_building }
+
+    visible_when_empty = yes
+    scripted_gui = decisions_GTR_space_program_scriptedgui
+}
