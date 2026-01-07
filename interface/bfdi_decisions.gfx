@@ -860,4 +860,50 @@ spriteTypes = {
 		name = "GFX_decision_GTR_bop_push_for_peaceful_yoylite"
 		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_push_for_peaceful_yoylite.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_category_space_program"
+		textureFile = "gfx/interface/decisions/decision_category_space_program.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_bg"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_button_available"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_button_available.dds"
+		noOfFrames = 3
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_decisions_GTR_space_program_button_locked"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_button_locked.dds"
+		noOfFrames = 19
+		animation_rate_fps = 25
+		loadType = "INGAME"
+		transparencecheck = no
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_spaceship_shuttle"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_spaceship_shuttle.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_spaceship_fuel"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_spaceship_fuel.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_spaceship_engine"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_spaceship_engine.dds"
+		noOfFrames = 2
+	}
 }

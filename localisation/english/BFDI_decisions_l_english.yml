@@ -325,6 +325,7 @@
  GTR_bop_agressive_surroundings_decision: "Warn about §gAggresive Surroundings§!"
  GTR_university_reconstruction_removing_infestation_mission: "Clean up §tSoil Infestation§!"
  GTR_bop_push_for_peaceful_yoylite_decision: "Push For §2Peaceful Yoylite§!"
+ decision_GTR_space_program_category: "§2Space Program§!"
 
  #TBT State Modifiers 
  TBT_low_pop: "Minor Teardroppers Population"

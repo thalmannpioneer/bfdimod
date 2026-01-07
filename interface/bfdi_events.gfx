@@ -783,6 +783,10 @@ SpriteTypes = {
 		name = GFX_GTR_event55
 		textureFile = gfx/event_pictures/GTR_event55.dds
 	}
+	spriteType = {
+		name = GFX_GTR_event56
+		textureFile = gfx/event_pictures/GTR_event56.dds
+	}
 	
 	
 	spriteType = {

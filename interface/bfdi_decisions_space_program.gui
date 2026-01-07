@@ -1,0 +1,65 @@
+guiTypes = {
+    containerWindowType = {
+        name = "space_program_decisions_container"
+        position = { x = 0 y = 0 }
+        size = { width = 100% height = 600 }
+
+        iconType = {
+            name = "bg"
+            position = { x = 10 y = 0 }
+            spriteType = GFX_decisions_GTR_space_program_bg
+        }
+
+        iconType = {
+            name = "fuel"
+            position = { x = 170 y = 45 }
+            spriteType = GFX_decisions_GTR_space_program_spaceship_fuel
+            alwaystransparent = yes
+        }
+        buttonType = {
+            name = "fuel_button_available"
+            position = { x = 205 y = 120 }
+            spriteType = GFX_decisions_GTR_space_program_button_available
+        }
+        iconType = {
+            name = "fuel_button_locked"
+            position = { x = 205 y = 120 }
+            spriteType = GFX_decisions_GTR_space_program_button_locked
+        }
+
+
+        iconType = {
+            name = "shuttle"
+            position = { x = 80 y = 210 }
+            spriteType = GFX_decisions_GTR_space_program_spaceship_shuttle
+            alwaystransparent = yes
+        }
+        buttonType = {
+            name = "shuttle_button_available"
+            position = { x = 100 y = 260 }
+            spriteType = GFX_decisions_GTR_space_program_button_available
+        }
+        iconType = {
+            name = "shuttle_button_locked"
+            position = { x = 100 y = 260 }
+            spriteType = GFX_decisions_GTR_space_program_button_locked
+        }
+
+        iconType = {
+            name = "engine"
+            position = { x = 280 y = 203 }
+            spriteType = GFX_decisions_GTR_space_program_spaceship_engine
+            alwaystransparent = yes
+        }
+        buttonType = {
+            name = "engine_button_available"
+            position = { x = 280 y = 260 }
+            spriteType = GFX_decisions_GTR_space_program_button_available
+        }
+        iconType = {
+            name = "engine_button_locked"
+            position = { x = 280 y = 260 }
+            spriteType = GFX_decisions_GTR_space_program_button_locked
+        }
+    }
+}

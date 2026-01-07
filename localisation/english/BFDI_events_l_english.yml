@@ -1380,6 +1380,10 @@
  GTR_event.55.desc: "The Deadland expanses encompass a small portion of the Greeny Plains to the south, formed by the transition to the rolling plateau. Due to strong winds and low humidity, this part of the plains was never inhabited; only occasional transports passed through.\n\nThis is the place chosen for the Event of today.\n\nTennis Ball looked out of the slit windows of the smooth concrete bunker onto the peaceful plain that stretched out.\n\"We have to disturb this land.\".\n\nWhen a blaze of light, brighter than a thousand suns, rose above the heights, he involuntarily uttered:"
  GTR_event.55.a: "\"I am become Death, the destroyer of worlds.\""
 
+ GTR_event.56.t: "Dream of the Stars"
+ GTR_event.56.desc: "The blue of the gloomy sky again enveloped all the thoughts of Uranus. The longer he looked into the vast expanses of space, the more clearly he saw the white crumbs of scattered stars forming a sieve of millions-year-old constellations.\n\nUranus was assigned to a new secret project in the University's engineering committee. After he found out the details, he began to look at the stars differently. They are no longer unattainable deities, eating you through the glasses of the stratosphere.\n\nThey became the goal.\nThe goal that must be achieved."
+ GTR_event.56.a: "We'll light up our own stars!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

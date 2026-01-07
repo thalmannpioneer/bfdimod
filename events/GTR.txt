@@ -1296,3 +1296,18 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = GTR_event.56
+    title = GTR_event.56.t
+    desc = GTR_event.56.desc
+    picture = GFX_GTR_event56
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.56.a
+        custom_effect_tooltip = l_GTR_opens_spaceship_menu
+        set_country_flag = GTR_spaceship_building
+    }
+}
