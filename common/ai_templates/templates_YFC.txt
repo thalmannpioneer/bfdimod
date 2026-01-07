@@ -29,6 +29,31 @@ infantry_YFC = {
 				cavalry = 2
 			}
 		}
+
+		can_upgrade_in_field = {
+            has_equipment = { infantry_equipment > 1000 }
+        }
+
+		replace_at_match = 0.5
+        replace_with = infantry_early_upgrade_YFC
+        target_min_match = 0.5
+	}
+
+	infantry_early_upgrade_YFC = { #If somehow YFC gets an army then make the divs better
+		division_names_group = YFC_Cav_01
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 3
+				has_army_size = { size > 19 }
+			}
+		}
+
+		target_template = {
+			regiments = {
+				cavalry = 4
+			}
+		}
 	}
 }
 

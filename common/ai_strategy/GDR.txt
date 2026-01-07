@@ -78,3 +78,34 @@ GDR_high_support = {
 		value = 200
 	}
 }
+
+GDR_huge_army = {
+    #Once GDR is at peace to have a large army ready
+	allowed = {
+		original_tag = GDR
+	}
+	enable = {
+		has_war = no
+		has_completed_focus = focus_GDR_democratic_congress
+		has_army_size = {
+            size < 40
+        }
+	}
+
+	abort = {
+		has_army_size = {
+            size > 40
+        }
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 50
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 250
+	}
+}

@@ -249,6 +249,11 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}			
+			modifier = {
 				check_variable = { money_amount > 30 }
 				has_political_power > 150
 				add = 5
@@ -288,6 +293,11 @@ economy_decisions = {
 
 		ai_will_do = {
 			base = 0
+			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}
 			modifier = {
 				check_variable = { money_amount > 30 }
 				has_political_power > 150
@@ -329,12 +339,16 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}			
+			modifier = {
 				check_variable = { money_amount > 40 }
 				OR = {
 					has_political_power > 150
 					has_stability < 0.5
 				}
-				
 				add = 5
 			}
 		}
@@ -371,6 +385,11 @@ economy_decisions = {
 
 		ai_will_do = {
 			base = 0
+			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}			
 			modifier = {
 				check_variable = { money_amount > 40 }
 				has_political_power > 150
@@ -410,6 +429,11 @@ economy_decisions = {
 
 		ai_will_do = {
 			base = 0
+			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}			
 			modifier = {
 				check_variable = { money_amount > 30 }
 				has_political_power > 150
@@ -459,6 +483,11 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}			
+			modifier = {
 				check_variable = { money_amount > 30 }
 				has_political_power > 150
 				add = 5
@@ -503,6 +532,11 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}
+			modifier = {
 				check_variable = { money_amount > 40 }
 				has_political_power > 150
 				add = 5
@@ -545,6 +579,11 @@ economy_decisions = {
 
 		ai_will_do = {
 			base = 0
+			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}
 			modifier = {
 				check_variable = { money_amount > 40 }
 				has_political_power > 150
@@ -677,9 +716,9 @@ propaganda_efforts = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 40 }
+				check_variable = { money_amount < 50 }
 				tag = YFC
-				add = -100
+				add = -1000
 			}
 			modifier = {
 				has_manpower < 5000

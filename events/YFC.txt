@@ -1486,6 +1486,21 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0
 			modifier = {
+				OR = {
+					check_variable = { selling_item = 0 }
+					check_variable = { selling_item = 1 }
+					check_variable = { selling_item = 2 }
+					check_variable = { selling_item = 3 }
+				}
+				has_equipment = {infantry_equipment > 2000}
+				add = 3
+		 	}
+			modifier = {
+				check_variable = { selling_item = 4 } 
+				has_equipment = {support_equipment > 1000}
+				add = 3
+		 	}
+			modifier = {
 				check_variable = { money_amount < 10 } 
 				add = 1
 		 	}

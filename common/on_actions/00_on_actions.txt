@@ -16,7 +16,7 @@ on_actions = {
                 set_country_flag = has_money_system
                 IF = {
                     limit = {tag = YFC}
-                    set_variable = { money_amount = 27.98 }
+                    set_variable = { money_amount = 30.15 }
                     BFDI_money_diplay_update = yes
                 }
                 ELSE_IF = {

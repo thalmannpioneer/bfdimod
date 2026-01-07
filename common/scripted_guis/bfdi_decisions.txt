@@ -159,6 +159,54 @@ scripted_gui = {
 				NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
 				NOT = {has_idea = idea_YFC_Debt_Crisis}
 			}
+			button_railway_increase_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Pipe_level < 5 }
+				NOT = {has_idea = idea_YFC_Defiant_Pipe}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_railway_decrease_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Pipe_level > 1 }
+				NOT = {has_idea = idea_YFC_Defiant_Pipe}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_tech_increase_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Beaker_level < 5 }
+				NOT = {has_idea = idea_YFC_Defiant_Beaker}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_tech_decrease_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Beaker_level > 1 }
+				NOT = {has_idea = idea_YFC_Defiant_Beaker}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_construction_increase_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Hammer_level < 5 }
+				NOT = {has_idea = idea_YFC_Defiant_Hammer}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_construction_decrease_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Hammer_level > 1 }
+				NOT = {has_idea = idea_YFC_Defiant_Hammer}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_energy_increase_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Taser_level < 5 }
+				NOT = {has_idea = idea_YFC_Defiant_Taser}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
+			button_energy_decrease_click_enabled = {
+				has_political_power > 25
+				check_variable = { var_idea_YFC_Taser_level > 1 }
+				NOT = {has_idea = idea_YFC_Defiant_Taser}
+				NOT = {has_idea = idea_YFC_Debt_Crisis}
+			}
 		}
 
 		effects = {
@@ -169,11 +217,66 @@ scripted_gui = {
 				add_to_variable = { var_sectors_combined_cost = 20 }
 				add_political_power = -25
 			}
-
 			button_military_decrease_click = {
 				add_to_variable = { var_idea_YFC_TopHat_level = -1 }
 				add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
 				add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
+				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_political_power = -25
+			}
+			button_railway_increase_click = {
+				add_to_variable = { var_idea_YFC_Pipe_level = 1 }
+				add_to_variable = { var_idea_YFC_Pipe_influence = 1 }
+				add_to_variable = { var_idea_YFC_Pipe_cost = 20 }
+				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_political_power = -25
+			}
+			button_railway_decrease_click = {
+				add_to_variable = { var_idea_YFC_Pipe_level = -1 }
+				add_to_variable = { var_idea_YFC_Pipe_influence = -1 }
+				add_to_variable = { var_idea_YFC_Pipe_cost = -20 }
+				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_political_power = -25
+			}
+			button_tech_increase_click = {
+				add_to_variable = { var_idea_YFC_Beaker_level = 1 }
+				add_to_variable = { var_idea_YFC_Beaker_influence = 1 }
+				add_to_variable = { var_idea_YFC_Beaker_cost = 20 }
+				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_political_power = -25
+			}
+			button_tech_decrease_click = {
+				add_to_variable = { var_idea_YFC_Beaker_level = -1 }
+				add_to_variable = { var_idea_YFC_Beaker_influence = -1 }
+				add_to_variable = { var_idea_YFC_Beaker_cost = -20 }
+				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_political_power = -25
+			}
+			button_construction_increase_click = {
+				add_to_variable = { var_idea_YFC_Hammer_level = 1 }
+				add_to_variable = { var_idea_YFC_Hammer_influence = 1 }
+				add_to_variable = { var_idea_YFC_Hammer_cost = 20 }
+				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_political_power = -25
+			}
+			button_construction_decrease_click = {
+				add_to_variable = { var_idea_YFC_Hammer_level = -1 }
+				add_to_variable = { var_idea_YFC_Hammer_influence = -1 }
+				add_to_variable = { var_idea_YFC_Hammer_cost = -20 }
+				add_to_variable = { var_sectors_combined_cost = -20 }
+				add_political_power = -25
+			}
+			button_energy_increase_click = {
+				add_to_variable = { var_idea_YFC_Taser_level = 1 }
+				add_to_variable = { var_idea_YFC_Taser_influence = 1 }
+				add_to_variable = { var_idea_YFC_Taser_cost = 20 }
+				add_to_variable = { var_sectors_combined_cost = 20 }
+				add_political_power = -25
+			}
+			button_energy_decrease_click = {
+				add_to_variable = { var_idea_YFC_Taser_level = -1 }
+				add_to_variable = { var_idea_YFC_Taser_influence = -1 }
+				add_to_variable = { var_idea_YFC_Taser_cost = -20 }
 				add_to_variable = { var_sectors_combined_cost = -20 }
 				add_political_power = -25
 			}
