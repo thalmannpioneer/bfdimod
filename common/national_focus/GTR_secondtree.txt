@@ -1987,7 +1987,7 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_elephant_in_a_room }
 
         bypass = {
-            NOT = { has_active_mission = GTR_university_reconstruction_making_blueprints_mission }
+            NOT = { has_idea = idea_GTR_making_blueprints } #Fix
         }
 
         cost = 5
@@ -2015,7 +2015,7 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_elephant_in_a_room }
 
         bypass = {
-            NOT = { has_active_mission = GTR_university_reconstruction_collecting_personnel_mission }
+            NOT = { has_idea = idea_GTR_collecting_personnel } #Fix
         }
 
         cost = 5

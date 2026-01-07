@@ -258,11 +258,6 @@ GGR_cheap_guns = {
         id = artillery
         value = -1000
     }
-    ai_strategy = {
-        type = equipment_variant_production_factor
-        id = artillery
-        value = -1000
-    }
 
     ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
         type = intelligence_agency_usable_factories

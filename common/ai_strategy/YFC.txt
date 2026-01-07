@@ -71,3 +71,20 @@ YFC_wait = {
 		value = -1000
 	}
 }
+
+YFC_rails = {
+    #Since there is really no point in making mils/civs, just make railways
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		industrial_complex < 10
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = rail_way
+		value = 1000
+	}
+}

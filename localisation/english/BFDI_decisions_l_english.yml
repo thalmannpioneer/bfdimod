@@ -176,6 +176,8 @@
  l_decisions_sector_construction_stats: "§GConstruction Speed:§! [?var_idea_YFC_sectors_Hammer_construction|%]\n§GFree Repair:§! [?var_idea_YFC_sectors_Hammer_repair|%]\n§RCost:§! [?var_idea_YFC_Hammer_cost]K\n§RInfluence:§! [?var_idea_YFC_Hammer_influence]"
  l_decisions_sector_electronics_title: "§RTaser§!"
  l_decisions_sector_electronics_stats: "§GResistance Growth:§! [?var_idea_YFC_sectors_Taser_resistance|%]\n§GPolitical Power Gain:§! [?var_idea_YFC_sectors_Taser_pp]\n§RCost:§! [?var_idea_YFC_Taser_cost]K\n§RInfluence:§! [?var_idea_YFC_Taser_influence]"
+ YFC_sector_increase: "§YIncrease the Sector's§! §GPower§! §Yand§! §RInfluence.§!\n\n§RCosts 25 Political Power and Payments increase by $20K.§!\n§YTakes time for changes to be implemented.§!"
+ YFC_sector_decrease: "§YDecrease the Sector's§! §GPower§! §Yand§! §RInfluence.§!\n\n§RCosts 25 Political Power and Payments decrease by $20K.§!\n§YTakes time for changes to be implemented.§!"
  YFC_sector_pay: "§YMonthly Report§!"
  YFC_sector_issues: "§YSector Update§!"
  YFC_sector_failing_payments: "§RFailing Payments§!"

@@ -123,6 +123,7 @@ country_event = {
 
 	option = {
 		name = YFC_event.5.a
+		add_political_power = 50
 		add_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			set_country_flag = Won_War_BUN
@@ -1485,8 +1486,8 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < trade_cost_temp_var } 
-				add = 2
+				check_variable = { money_amount < 10 } 
+				add = 1
 		 	}
 			modifier = {
 				check_variable = { money_amount < 5 } 
@@ -1494,7 +1495,7 @@ country_event = { #YFC Buy
 		 	}
 			modifier = {
 				check_variable = { money_amount < 0 } 
-				add = 2
+				add = 3
 		 	}
 			modifier = {
 				check_variable = { money_amount < -10 } 
@@ -2158,7 +2159,7 @@ country_event = {
 			85 = {
 				add_resistance = -75
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2174,7 +2175,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2214,7 +2215,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.1"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.45 start_experience_factor = 0.1"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes

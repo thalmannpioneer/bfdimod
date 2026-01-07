@@ -1,0 +1,164 @@
+#GTR AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+GTR_run_away = {
+    #Please please please do not go to the lab
+    allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		NOT = {has_completed_focus = GTR_focus_tennis_ball_rise}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 100
+		states = {
+			209
+		}
+		subtract_fronts_from_need = yes
+	}
+}
+
+## INDUSTRY ##
+
+GTR_mils = {
+    #We need a mil trust
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		arms_factory < 1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_building
+		id = arms_factory
+		target = 209
+		value = 100
+	}
+}
+
+GTR_moblize = {
+    #Once we can make an army make an army
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		has_completed_focus = GTR_focus_reform_defense_forces
+        has_army_size = {
+            size < 5
+        }
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 250
+    }
+	ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = 50
+    }
+}
+
+GTR_fighters = {
+    #Once we have reason to get planes, learn and make planes!
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		has_completed_focus = GTR_focus_modern_aircraft
+		has_deployed_air_force_size = {
+			size < 75
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 80
+	}
+	ai_strategy = { #With BBA
+		type = equipment_production_factor
+		id = small_plane_airframe
+		value = 50
+	}
+	ai_strategy = { #No BBA
+		type = equipment_production_factor
+		id = fighter_equipment
+		value = 50
+	}
+	ai_strategy = { #No BBA
+		type = research_weight_factor
+		id = early_fighter
+		value = 2000
+	}
+	ai_strategy = { #With BBA
+		type = research_weight_factor
+		id = early_fighter
+		value = 2000
+	}
+	ai_strategy = { #With BBA
+		type = research_weight_factor
+		id = aa_lmg
+		value = 2000
+	}
+	ai_strategy = { #With BBA
+		type = research_weight_factor
+		id = engines_1 
+		value = 2000
+	}
+}
+
+GTR_bombers = {
+    #We have nukes so we need a cool plane to nuke people
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		has_completed_focus = GTR_focus_rockets_air_ground
+		has_deployed_air_force_size = {
+			size < 80
+			type = strat_bomber #Either this does not work or Hoi4 is lying to me :sob:
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 80
+	}
+	ai_strategy = { #With BBA
+		type = equipment_production_factor
+		id = large_plane_airframe
+		value = 50
+	}
+	ai_strategy = { #No BBA
+		type = equipment_production_factor
+		id = strat_bomber_equipment
+		value = 50
+	}
+	ai_strategy = { #No BBA
+		type = research_weight_factor
+		id = strategic_bomber1
+		value = 2000
+	}
+	ai_strategy = { #With BBA
+		type = research_weight_factor
+		id = iw_large_airframe
+		value = 2000
+	}
+	ai_strategy = { #With BBA
+		type = research_weight_factor
+		id = early_bombs 
+		value = 2000
+	}
+}

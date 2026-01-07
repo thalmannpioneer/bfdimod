@@ -1625,9 +1625,10 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			#Decision that allows increase compliance speed for stability and money
-			85 = {add_resistance = -2} 
-			212 = {add_resistance = -2}
+			#Decision that allows increase compliance speed for stability and money THAT WILL NEVER HAPPEN AS I AM LAZY!!!
+			add_political_power = 35
+			85 = {add_resistance = -5} 
+			212 = {add_resistance = -5}
 			if = {
 				limit = {
 					YFC = {

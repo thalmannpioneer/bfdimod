@@ -58,16 +58,24 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_military_increase"
-				position = { x = 70 y = 350 }
-				spriteType = GFX_decisions_WGF_operation_coinflip_button
-				clicksound = bfdi_button_press
+				position = { x = 130 y = 350 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = "+"
+				buttonFont = "hoi_30header"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = YFC_sector_increase
 			}
 
 			buttonType = {
 				name = "button_military_decrease"
-				position = { x = 30 y = 350 }
-				spriteType = GFX_decisions_WGF_operation_coinflip_button
-				clicksound = bfdi_button_press
+				position = { x = 80 y = 350 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = "-"
+				buttonFont = "hoi_30header"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = YFC_sector_decrease
 			}
 
 

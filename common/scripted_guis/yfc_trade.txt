@@ -166,23 +166,29 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 			}
 			BuyingButton_click = {
 				ROOT = {add_political_power = -5}
-				THIS = {
-					set_country_flag = ongoing_trade_offer
-					country_event = {
-						id = YFC_event.37
-						hours = 1
+				IF = {
+					limit = {THIS = {NOT = {has_country_flag = ongoing_trade_offer}}}
+					THIS = {
+						set_country_flag = ongoing_trade_offer
+						country_event = {
+							id = YFC_event.37
+							hours = 1
+						}
 					}
 				}
 			}
 			SellingButton_click = {
 				ROOT = {add_political_power = -5}
-				THIS = { 
-					set_country_flag = ongoing_trade_offer
-					country_event = {
-						id = YFC_event.36
-						hours = 1
+				IF = {
+				limit = {THIS = {NOT = {has_country_flag = ongoing_trade_offer}}}
+					THIS = { 
+						set_country_flag = ongoing_trade_offer
+						country_event = {
+							id = YFC_event.36
+							hours = 1
+						}
 					}
-				}
+				}	
 			}
 		}	
 

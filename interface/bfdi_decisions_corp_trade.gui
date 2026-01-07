@@ -12,6 +12,7 @@ guiTypes = {
 			size = { width = 500 height = 475 }
 			verticalScrollbar = "right_vertical_slider"
 			smooth_scrolling = yes
+			scroll_wheel_factor = 90
 			
 			background = {
 				name = "bg"

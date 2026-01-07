@@ -929,8 +929,6 @@ news_event = {
                     value = 5
                 }
                 set_province_name = { id = 711 name = "Gorge Town Ruins" }
-                add_compliance = -10
-                add_resistance = 55
             }
 
         }
