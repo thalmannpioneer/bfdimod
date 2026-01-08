@@ -60,8 +60,11 @@ YFC_wait = {
 		original_tag = YFC
 	}
 	enable = {
-		has_manpower < 15000
-		surrender_progress < 0.5
+		OR = {
+			is_faction_leader = no
+			has_manpower < 15000
+			surrender_progress < 0.5
+		}
 	}
 	abort_when_not_enabled = yes
 
@@ -86,5 +89,32 @@ YFC_rails = {
 		type = build_building
 		id = rail_way
 		value = 1000
+	}
+}
+
+YFC_tech = {
+    #There are some techs that we must know...
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = tech_support
+		value = 100
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = gw_artillery
+		value = 100
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = infantry_weapons1
+		value = 100
 	}
 }

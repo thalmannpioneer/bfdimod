@@ -989,6 +989,11 @@ war_measures = {
 		ai_will_do = {
 			factor = 10
 			modifier = {
+				check_variable = { money_amount < 50 }
+				tag = YFC
+				add = -1000
+			}
+			modifier = {
 				has_defensive_war = yes
 				factor = 5
 			}

@@ -285,3 +285,23 @@ GGR_four_year = {
         value = 150
     }
 }
+
+GGR_army_complex = {
+    #When the four year is done it is time to make our army better!
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        industrial_complex > 25
+        land_facility < 1
+        NOT = {country_exists = FFT}
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = land_facility
+        target = 11323
+        value = 1000
+    }
+}

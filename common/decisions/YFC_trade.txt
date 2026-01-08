@@ -381,8 +381,14 @@ decision_YFC_trade_category= {
 			}
 			modifier = {
 				add = 3
+				FROM = { check_variable = { selling_item = 1 }}
+				check_variable = {num_equipment@infantry_equipment_1 < 500}
+				date < 2019.01.01
+			}
+			modifier = {
+				add = 3
 				FROM = { check_variable = { selling_item = 4 }}
-				has_equipment = {support_equipment_1 < 500}
+				has_equipment = {support_equipment_1 < 550}
 			}
 			modifier = {
 				add = -1
@@ -407,7 +413,11 @@ decision_YFC_trade_category= {
 			modifier = {
 				add = 3
 				FROM = {is_ai = no}
-				FROM = {check_variable = { money_amount < 5 }}
+				FROM = {check_variable = { money_amount < 10 }}
+			}
+			modifier = {
+				add = 1
+				FROM = {is_ai = no}
 			}
 		}
 	}

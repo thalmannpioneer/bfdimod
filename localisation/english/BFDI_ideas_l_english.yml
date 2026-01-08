@@ -199,12 +199,12 @@
  idea_YFC_anarchic_lands: "Anarchic Lands"
  idea_YFC_anarchic_lands_desc: "Due to us never really controlling the lands we “claim” we are §tunable to build buildings, have any starting research slots, and produce our own weapons without purchasing or 'acquiring' from others.§!"
  idea_YFC_our_benefactors: "Our §8Benefactors§!" #This may be a bad idea but let me cook (Our Benefactors)
- idea_YFC_Defiant_Top_Hat: "Defiant Top Hat" 
- idea_YFC_Defiant_Pipe: "Defiant Pipe" 
- idea_YFC_Defiant_Beaker: "Defiant Beaker" 
- idea_YFC_Defiant_Hammer: "Defiant Hammer" 
- idea_YFC_Defiant_Taser: "Defiant Taser" 
- idea_YFC_Debt_Crisis: "Debt Crisis" 
+ idea_YFC_Defiant_Top_Hat: "§tDefiant Top Hat§!" 
+ idea_YFC_Defiant_Pipe: "§tDefiant Pipe§!" 
+ idea_YFC_Defiant_Beaker: "§tDefiant Beaker§!" 
+ idea_YFC_Defiant_Hammer: "§tDefiant Hammer§!" 
+ idea_YFC_Defiant_Taser: "§tDefiant Taser§!" 
+ idea_YFC_Debt_Crisis: "§RDebt Crisis§!" 
  idea_YFC_Debt_Crisis_desc: "§RThe Crisis will be removed once we no longer have debt.§!" 
  idea_YFC_United_Clash: "Defense Contractors"
  idea_YFC_Bunch_Insurgency: "§OBunch Insurgency§!"
@@ -227,5 +227,5 @@
  idea_DAV_the_thousand_year_throne: "The Thousand Year Throne"
  idea_DAV_the_thousand_year_throne_desc: "The rule over the Davidian Islands has been solidified for longer than the Goikean continent has had a population. Even in the ancient days of Yoylelanders, there was a Davidian on the throne, and loyal subjects on his islands. With God at the helm, their rightous dynasty will continue for a thousand years over."
 
- idea_common_yoylite_nation: "§0The Yoylite Power§!"
+ idea_common_yoylite_nation: "§0The Yoylite Power§!" #gulp
  idea_common_yoylite_nation_desc: "This nation posesses §Ya Unique Weapon Type§! - §0The Yoylite Bomb§!, that might §tdestroy§! any hostile nation."

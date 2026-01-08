@@ -26,10 +26,15 @@ infantry_GDR = {
 
 		can_upgrade_in_field = {
             has_equipment = { infantry_equipment > 100 }
+			has_equipment = { support_equipment > 25 }
         }
 
 		target_template = {	
 			
+			support = {
+				recon = 1
+			}
+
 			regiments = {
 				infantry = 4
 			}
@@ -67,9 +72,9 @@ infantry_GDR = {
 			}
 		}
 
-		replace_at_match = 0.75
+		replace_at_match = 0.5
         replace_with = infantry_early_upgrade_GDR
-        target_min_match = 0.75
+        target_min_match = 0.5
 	}
 
 	infantry_early_upgrade_GDR = {
@@ -78,7 +83,7 @@ infantry_GDR = {
 			base = 3
 			modifier = {
 				factor = 0
-				has_tech = motorised_infantry
+				NOT = {has_tech = motorised_infantry}
 			}
 
 			modifier = {
@@ -88,6 +93,10 @@ infantry_GDR = {
 		}
 
 		target_template = {
+
+			support = {
+				recon = 1
+			}
 
 			regiments = {
 				motorized = 5

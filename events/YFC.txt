@@ -1230,6 +1230,10 @@ country_event = { #YFC Sell
 				add = 2
 		 	}
 			modifier = {
+				YFC = {is_ai = yes} 
+				add = 1
+		 	}
+			modifier = {
 				check_variable = { money_amount < 10 } 
 				add = 1
 		 	}
