@@ -1308,6 +1308,7 @@ country_event = {
     option = {
         name = GTR_event.56.a
         custom_effect_tooltip = l_GTR_opens_spaceship_menu
+        activate_mission = GTR_space_program_launch_mission
         set_country_flag = GTR_spaceship_building
     }
 }

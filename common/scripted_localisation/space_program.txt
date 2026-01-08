@@ -1,0 +1,135 @@
+defined_text = {
+    name = THREE_FACTORIES_DEMAND
+    text = {
+        trigger = {
+            num_of_available_civilian_factories > 2
+        }
+        localization_key = l_GTR_space_program_choice_demand_yoylemetal_factories_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_yoylemetal_factories_false
+    }
+}
+
+defined_text = {
+    name = FOUR_FACTORIES_DEMAND
+    text = {
+        trigger = {
+            num_of_available_civilian_factories > 3
+        }
+        localization_key = l_GTR_space_program_choice_demand_four_factories_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_four_factories_false
+    }
+}
+
+defined_text = {
+    name = FIVE_ALUMINIUM_DEMAND
+    text = {
+        trigger = {
+            aluminium > 4
+        }
+        localization_key = l_GTR_space_program_choice_demand_five_aluminium_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_five_aluminium_false
+    }
+}
+
+defined_text = {
+    name = FIVE_FACTORIES_DEMAND
+    text = {
+        trigger = {
+            num_of_available_civilian_factories > 4
+        }
+        localization_key = l_GTR_space_program_choice_demand_five_factories_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_five_factories_false
+    }
+}
+
+defined_text = {
+    name = TEN_TUNGSTEN_DEMAND
+    text = {
+        trigger = {
+            tungsten > 9
+        }
+        localization_key = l_GTR_space_program_choice_demand_ten_tungsten_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_ten_tungsten_false
+    }
+}
+
+defined_text = {
+    name = FIVE_COAL_DEMAND
+    text = {
+        trigger = {
+            coal > 4
+        }
+        localization_key = l_GTR_space_program_choice_demand_five_coal_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_five_coal_false
+    }
+}
+
+defined_text = {
+    name = TEN_OIL_DEMAND
+    text = {
+        trigger = {
+            oil > 9
+        }
+        localization_key = l_GTR_space_program_choice_demand_ten_oil_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_ten_oil_false
+    }
+}
+
+defined_text = {
+    name = YOYLITE_FACILITY_DEMAND
+    text = {
+        trigger = {
+            nuclear_reactor > 0
+        }
+        localization_key = l_GTR_space_program_choice_demand_yoylite_facility_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_yoylite_facility_false
+    }
+}
+
+defined_text = {
+    name = OIL_FUEL_DEMAND
+    text = {
+        trigger = {
+            has_country_flag = GTR_fuel_oil
+        }
+        localization_key = l_GTR_space_program_choice_demand_oil_fuel_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_oil_fuel_false
+    }
+}
+
+defined_text = {
+    name = THIRD_ENGINES_DEMAND
+    text = {
+        trigger = {
+            NOT = { has_dlc = "By Blood Alone" }
+        }
+        localization_key = l_GTR_space_program_choice_demand_third_engines_skip
+    }
+    text = {
+        trigger = {
+            has_tech = engines_3
+        }
+        localization_key = l_GTR_space_program_choice_demand_third_engines_true
+    }
+    text = {
+        localization_key = l_GTR_space_program_choice_demand_third_engines_false
+    }
+}

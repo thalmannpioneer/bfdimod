@@ -1,0 +1,24 @@
+decision_GTR_space_program_category = {
+    GTR_space_program_launch_mission = {
+        priority = 100
+        days_mission_timeout = 200
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_launch
+            hidden_effect = {
+                country_event = GTR_event.57
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_GTR_spaceship_completed
+                has_country_flag = GTR_shuttle_done
+                has_country_flag = GTR_fuel_done
+                has_country_flag = GTR_engine_done
+            }
+        }
+        selectable_mission = yes
+        activation = { hidden_trigger = { always = no } }
+
+        icon = GFX_decisions_GTR_space_program_launch_mission
+    }
+}

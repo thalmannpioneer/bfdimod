@@ -2,17 +2,17 @@ guiTypes = {
     containerWindowType = {
         name = "space_program_decisions_container"
         position = { x = 0 y = 0 }
-        size = { width = 100% height = 600 }
+        size = { width = 100% height = 700 }
 
         iconType = {
             name = "bg"
-            position = { x = 10 y = 0 }
+            position = { x = 10 y = -20 }
             spriteType = GFX_decisions_GTR_space_program_bg
         }
 
         iconType = {
             name = "fuel"
-            position = { x = 170 y = 45 }
+            position = { x = 170 y = 25 }
             spriteType = GFX_decisions_GTR_space_program_spaceship_fuel
             alwaystransparent = yes
         }
@@ -27,10 +27,9 @@ guiTypes = {
             spriteType = GFX_decisions_GTR_space_program_button_locked
         }
 
-
         iconType = {
             name = "shuttle"
-            position = { x = 80 y = 210 }
+            position = { x = 80 y = 190 }
             spriteType = GFX_decisions_GTR_space_program_spaceship_shuttle
             alwaystransparent = yes
         }
@@ -47,7 +46,7 @@ guiTypes = {
 
         iconType = {
             name = "engine"
-            position = { x = 280 y = 203 }
+            position = { x = 280 y = 183 }
             spriteType = GFX_decisions_GTR_space_program_spaceship_engine
             alwaystransparent = yes
         }
@@ -60,6 +59,670 @@ guiTypes = {
             name = "engine_button_locked"
             position = { x = 280 y = 260 }
             spriteType = GFX_decisions_GTR_space_program_button_locked
+        }
+
+        containerWindowType = {
+            name = "text_container"
+            position = { x = 13 y = 540 }
+            size = { width = 95% height = 150 }
+
+            background = {
+                name = "text_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            instantTextBoxType = {
+                name = "tip"
+                position = { x = 0 y = 10 }
+                maxWidth = 500
+                text = l_GTR_space_program_tip
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "text"
+                position = { x = 20 y = 45 }
+                maxWidth = 460
+                text = l_GTR_space_program_text
+                font = hoi_18mbs
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "background_button"
+        position = { x = 0 y = 0 }
+        size = { width = 10000 height = 10000 }
+
+        buttonType = {
+            name = "button"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_empty
+            buttonFont = hoi_18mbs
+            shortcut = "ESCAPE"
+            scale = 100
+        }
+    }
+
+    containerWindowType = {
+        name = "space_program_shuttle_selection_container"
+        position = { x = 540 y = 200 }
+        fade_time = 500
+        fade_type = linear
+        size = { width = 500 height = 500 }
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        containerWindowType = {
+            name = "title_container"
+            position = { x = 25 y = 20 }
+            size = { width = 90% height = 70 }
+
+            background = {
+                name = "title_bg"
+                spriteType = GFX_tiled_decisions_bg_small
+            }
+
+
+            instantTextBoxType = {
+                name = "title"
+                position = { x = 130 y = 5 }
+                text = l_GTR_space_program_shuttle_selection_title
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "title_subtext"
+                position = { x = 100 y = 40 }
+                text = l_GTR_space_program_selection_title_subtext
+                font = hoi_18mbs
+                maxWidth = 260
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_yoylemetal"
+            position = { x = 25 y = 100 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_yoylemetal"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_shuttle_selection_sheet
+                frame = 1
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_yoylemetal"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_yoylemetal
+                pdx_tooltip = l_GTR_space_program_yoylemetal_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_yoylemetal"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_10
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_yoylemetal_factories"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_yoylemetal_factories
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_yoylemetal"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_aluminium"
+            position = { x = 25 y = 210 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_aluminium"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_shuttle_selection_sheet
+                frame = 2
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_aluminium"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_aluminium
+                pdx_tooltip = l_GTR_space_program_aluminium_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_aluminium"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_20
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_aluminium"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_aluminium
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_aluminium"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_tungsten"
+            position = { x = 25 y = 320 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_tungsten"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_shuttle_selection_sheet
+                frame = 3
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_tungsten"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_tungsten
+                pdx_tooltip = l_GTR_space_program_tungsten_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_tungsten"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_30
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_tungsten"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_tungsten
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_tungsten"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "space_program_fuel_selection_container"
+        position = { x = 540 y = 200 }
+        fade_time = 500
+        fade_type = linear
+        size = { width = 500 height = 500 }
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        containerWindowType = {
+            name = "title_container"
+            position = { x = 25 y = 20 }
+            size = { width = 90% height = 70 }
+
+            background = {
+                name = "title_bg"
+                spriteType = GFX_tiled_decisions_bg_small
+            }
+
+
+            instantTextBoxType = {
+                name = "title"
+                position = { x = 130 y = 5 }
+                text = l_GTR_space_program_fuel_selection_title
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "title_subtext"
+                position = { x = 100 y = 40 }
+                text = l_GTR_space_program_selection_title_subtext
+                font = hoi_18mbs
+                maxWidth = 260
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_coal"
+            position = { x = 25 y = 100 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_coal"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_fuel_selection_sheet
+                frame = 1
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_coal"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_coal
+                pdx_tooltip = l_GTR_space_program_coal_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_coal"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_10
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_coal"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_coal
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_coal"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_oil"
+            position = { x = 25 y = 210 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_oil"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_fuel_selection_sheet
+                frame = 2
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_oil"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_oil
+                pdx_tooltip = l_GTR_space_program_oil_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_oil"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_20
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_oil"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_oil
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_oil"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_yoylite"
+            position = { x = 25 y = 320 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_yoylite"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_fuel_selection_sheet
+                frame = 3
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_yoylite"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_yoylite
+                pdx_tooltip = l_GTR_space_program_yoylite_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_yoylite"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_30
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_yoylite"
+                position = { x = 103 y = 40 }
+                maxWidth = 300
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_yoylite
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_yoylite"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+    }
+
+    containerWindowType = {
+        name = "space_program_engine_selection_container"
+        position = { x = 540 y = 200 }
+        fade_time = 500
+        fade_type = linear
+        size = { width = 500 height = 500 }
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        containerWindowType = {
+            name = "title_container"
+            position = { x = 25 y = 20 }
+            size = { width = 90% height = 70 }
+
+            background = {
+                name = "title_bg"
+                spriteType = GFX_tiled_decisions_bg_small
+            }
+
+
+            instantTextBoxType = {
+                name = "title"
+                position = { x = 130 y = 5 }
+                text = l_GTR_space_program_engine_selection_title
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "title_subtext"
+                position = { x = 100 y = 40 }
+                text = l_GTR_space_program_selection_title_subtext
+                font = hoi_18mbs
+                maxWidth = 260
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_steam"
+            position = { x = 25 y = 100 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_steam"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_engine_selection_sheet
+                frame = 1
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_steam"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_steam
+                pdx_tooltip = l_GTR_space_program_steam_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_steam"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_10
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_steam"
+                position = { x = 103 y = 40 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_steam
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_steam"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_jet"
+            position = { x = 25 y = 210 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_jet"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_engine_selection_sheet
+                frame = 2
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_jet"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_jet
+                pdx_tooltip = l_GTR_space_program_jet_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_jet"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_20
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_jet"
+                position = { x = 103 y = 40 }
+                maxWidth = 250
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_jet
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_jet"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
+        }
+
+        containerWindowType = {
+            name = "choice_container_electric"
+            position = { x = 25 y = 320 }
+            size = { width = 90% height = 100 }
+
+            background = {
+                name = "choice_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+
+            iconType = {
+                name = "choice_image_electric"
+                position = { x = 10 y = 10 }
+                spriteType = GFX_decisions_GTR_space_program_engine_selection_sheet
+                frame = 3
+            }
+
+            instantTextBoxType = {
+                name = "choice_title_electric"
+                position = { x = 100 y = 10 }
+                maxWidth = 150
+                maxHeight = 40
+                text = l_GTR_space_program_choice_title_electric
+                pdx_tooltip = l_GTR_space_program_electric_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_success_rate_electric"
+                position = { x = 330 y = 10 }
+                maxWidth = 100
+                maxHeight = 40
+                text = l_GTR_space_program_choice_success_rate_30
+                pdx_tooltip = l_GTR_space_program_success_rate_tt
+                font = hoi_30header
+            }
+
+            instantTextBoxType = {
+                name = "choice_demand_electric"
+                position = { x = 103 y = 40 }
+                maxWidth = 300
+                maxHeight = 40
+                text = l_GTR_space_program_choice_demand_electric
+                font = hoi_18mbs
+            }
+
+            buttonType = {
+                name = "choice_button_electric"
+                position = { x = 351 y = 58 }
+                spriteType = GFX_77x31_button
+                buttonText = l_GTR_space_program_choice_button
+                buttonFont = hoi_18mbs
+            }
         }
     }
 }

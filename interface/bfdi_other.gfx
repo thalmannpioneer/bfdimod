@@ -25,4 +25,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/agency_icon_GTR_nerd.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_empty"
+		textureFile = "gfx/interface/empty.dds"
+		transparencecheck = no
+	}
 }

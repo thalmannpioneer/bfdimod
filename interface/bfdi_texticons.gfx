@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_yoylenation_texticon"
+        textureFile = "gfx/texticons/yoylenation.dds"
+        legacy_lazy_load = no
+    }
+}

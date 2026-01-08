@@ -906,4 +906,27 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_spaceship_engine.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_shuttle_selection_sheet"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_shuttle_selection_sheet.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_fuel_selection_sheet"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_fuel_selection_sheet.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_engine_selection_sheet"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_engine_selection_sheet.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_launch_mission"
+		texticons = "gfx/interface/decisions/GFX_decisions_GTR_space_program_launch_mission.dds"
+	}
 }

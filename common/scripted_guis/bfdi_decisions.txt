@@ -410,5 +410,127 @@ scripted_gui = {
                 NOT = { has_country_flag = GTR_engine_done }
             }
         }
+
+        effects = {
+            shuttle_button_available_click = {
+                if = {
+                    limit = { has_country_flag = GTR_shuttle_selection_enabled }
+                    clr_country_flag = GTR_shuttle_selection_enabled
+                }
+                else = { set_country_flag = GTR_shuttle_selection_enabled }
+            }
+
+            fuel_button_available_click = {
+                if = {
+                    limit = { has_country_flag = GTR_fuel_selection_enabled }
+                    clr_country_flag = GTR_fuel_selection_enabled
+                }
+                else = { set_country_flag = GTR_fuel_selection_enabled }
+            }
+
+            engine_button_available_click = {
+                if = {
+                    limit = { has_country_flag = GTR_engine_selection_enabled }
+                    clr_country_flag = GTR_engine_selection_enabled
+                }
+                else = { set_country_flag = GTR_engine_selection_enabled }
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_background_button = {
+        window_name = background_button
+        context_type = player_context
+
+        visible = {
+            OR = {
+                has_country_flag = GTR_shuttle_selection_enabled
+                has_country_flag = GTR_fuel_selection_enabled
+                has_country_flag = GTR_engine_selection_enabled
+            }
+        }
+
+        effects = {
+            button_click = {
+                clr_country_flag = GTR_shuttle_selection_enabled
+                clr_country_flag = GTR_fuel_selection_enabled
+                clr_country_flag = GTR_engine_selection_enabled
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_shuttle_selection = {
+        window_name = space_program_shuttle_selection_container
+        context_type = player_context
+
+        visible = { has_country_flag = GTR_shuttle_selection_enabled }
+
+        triggers = {
+            choice_button_yoylemetal_click_enabled = {
+                num_of_available_civilian_factories > 2
+            }
+            choice_button_aluminium_click_enabled = {
+                num_of_available_civilian_factories > 3
+                aluminium > 4
+            }
+            choice_button_tungsten_click_enabled = {
+                num_of_available_civilian_factories > 4
+                tungsten > 9
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_fuel_selection = {
+        window_name = space_program_fuel_selection_container
+        context_type = player_context
+
+        visible = { has_country_flag = GTR_fuel_selection_enabled }
+
+        triggers = {
+            choice_button_coal_click_enabled = {
+                num_of_available_civilian_factories > 2
+                coal > 4
+            }
+            choice_button_oil_click_enabled = {
+                num_of_available_civilian_factories > 3
+                oil > 9
+            }
+            choice_button_yoylite_click_enabled = {
+                num_of_available_civilian_factories > 4
+                nuclear_reactor > 0
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_engine_selection = {
+        window_name = space_program_engine_selection_container
+        context_type = player_context
+
+        visible = { has_country_flag = GTR_engine_selection_enabled }
+
+        triggers = {
+            choice_button_steam_click_enabled = {
+                num_of_available_civilian_factories > 2
+            }
+            choice_button_jet_click_enabled = {
+                num_of_available_civilian_factories > 3
+                has_country_flag = GTR_fuel_oil
+            }
+            choice_button_electric_click_enabled = {
+                num_of_available_civilian_factories > 4
+                OR = {
+                    NOT = { has_dlc = "By Blood Alone" }
+                    has_tech = engines_3
+                }
+            }
+        }
     }
 }
