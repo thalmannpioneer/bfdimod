@@ -195,13 +195,12 @@ guiTypes = {
 
         buttonType = {
             name = "close"
-            position = { x = -50 y = 5 }
-            quadTextureSprite ="GFX_closebutton"
-            buttonFont = "Main_14_black"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_empty
+            buttonFont = hoi_18mbs
             shortcut = "ESCAPE"
-            Orientation = "UPPER_RIGHT"
+            scale = 100
             clicksound = click_close
-            pdx_tooltip = "CLOSE"
         }
     }
 

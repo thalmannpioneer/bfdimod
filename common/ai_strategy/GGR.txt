@@ -301,7 +301,7 @@ GGR_army_complex = {
     ai_strategy = {
         type = build_building
         id = land_facility
-        target = 11323
+        target = 539
         value = 1000
     }
 }

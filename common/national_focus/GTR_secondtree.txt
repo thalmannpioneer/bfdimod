@@ -1692,7 +1692,7 @@ focus_tree = {
                 advisor = {
                     slot = air_chief
                     idea_token = idea_GTR_titanknife
-                    traits = { air_chief_reform_3 }
+                    traits = { air_chief_reform_2 }
                 }
             }
         }
@@ -2274,7 +2274,7 @@ focus_tree = {
         completion_reward = {
             country_event = GTR_event.54
             add_tech_bonus = {
-                bonus = 1
+                bonus = 2
                 uses = 3
                 category = air_equipment
             }

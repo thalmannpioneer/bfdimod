@@ -17,7 +17,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2009
+		start_year = 2016 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -51,7 +51,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2016
+		start_year = 2023 #Changed
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -80,7 +80,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -123,7 +123,7 @@ technologies = {
 		
 		
 		research_cost = 2
-		start_year = 2002
+		start_year = 2016 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -180,7 +180,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -259,7 +259,7 @@ technologies = {
 		}				
 
 		research_cost = 2
-		start_year = 2016
+		start_year = 2023 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -285,12 +285,6 @@ technologies = {
 			modifier = {
 				factor = 4
 				is_major = yes
-			}
-
-			modifier = {
-				factor = 0
-				original_tag = GER
-				date < "1941.1.1"
 			}
 
 			modifier = {
@@ -339,7 +333,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 2020
+		start_year = 2027 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -412,7 +406,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -440,10 +434,6 @@ technologies = {
 				is_major = yes
 				factor = 2
 			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
 		}
 	}
 
@@ -456,7 +446,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2026
+		start_year = 2033 #Changed
 		
 		categories = {
 			light_air
@@ -483,7 +473,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2002
+		start_year = 2016 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 2 }
@@ -522,7 +512,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -586,7 +576,7 @@ technologies = {
 			}
 		}		
 		research_cost = 2
-		start_year = 2016
+		start_year = 2023 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
@@ -649,7 +639,7 @@ technologies = {
 			}
 		}
 		research_cost = 2
-		start_year = 2020
+		start_year = 2027 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
@@ -704,7 +694,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -742,7 +732,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2002
+		start_year = 2016 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
@@ -763,17 +753,6 @@ technologies = {
 				num_of_military_factories < 30
 				factor = 0.1
 			}
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				tag = USA
-				date > 1937.1.1
-			}
 		}
 	}
 	
@@ -790,7 +769,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2012
+		start_year = 2019 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 4 }
@@ -806,16 +785,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 10
-				tag = USA
-			}
+		
 		}
 	}
 	
@@ -850,7 +820,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2016
+		start_year = 2023 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
@@ -866,16 +836,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
 		}
 	}
 	
@@ -892,7 +852,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 2020
+		start_year = 2027 #Changed
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
@@ -908,16 +868,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
 		}
 	}
 	
@@ -937,7 +887,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -973,7 +923,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 1998
+		start_year = 2016 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1036,7 +986,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 2016
+		start_year = 2023 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1073,7 +1023,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1109,7 +1059,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1998
+		start_year = 2016 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1142,7 +1092,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1184,7 +1134,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 2016
+		start_year = 2023 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1226,7 +1176,7 @@ technologies = {
 		}
 			
 		research_cost = 1
-		start_year = 2020
+		start_year = 2027 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1267,7 +1217,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1998
+		start_year = 2016 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1325,7 +1275,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2015
+		start_year = 2022 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1373,7 +1323,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2015
+		start_year = 2022 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1401,13 +1351,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = USA
-					tag = GER
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1419,7 +1362,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2015
+		start_year = 2022 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1456,14 +1399,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1477,7 +1412,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 2019
+		start_year = 2026 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1505,14 +1440,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1526,7 +1453,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1554,14 +1481,6 @@ technologies = {
 				}
 				factor = 5
 			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1576,7 +1495,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1998
+		start_year = 2016 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1660,7 +1579,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1726,7 +1645,7 @@ technologies = {
 			}
 		}		
 		research_cost = 1.5
-		start_year = 2016
+		start_year = 2023 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1787,7 +1706,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 2020
+		start_year = 2027 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1847,7 +1766,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1888,13 +1807,6 @@ technologies = {
 				date > "1939.1.1"
 				factor = 3
 			}
-			modifier = {
-				OR = {
-					tag = USA
-					tag = JAP
-				}
-				factor = 3
-			}
 		}
 	}
 
@@ -1911,7 +1823,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 2012
+		start_year = 2019 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1942,7 +1854,7 @@ technologies = {
 		}
 				
 		research_cost = 1.5 #Carrier Variant
-		start_year = 2020
+		start_year = 2027 #Changed
 
 		# only from focus!!! #####
 		allow = {
@@ -1978,7 +1890,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 2
-		start_year = 2021
+		start_year = 2028 #Changed
 		
 		folder = {
 			name = bba_air_techs_folder
@@ -2031,7 +1943,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		research_cost = 1.75
-		start_year = 2018
+		start_year = 2025 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -2073,7 +1985,7 @@ technologies = {
 		}	
 
 		research_cost = 1.5
-		start_year = 2020
+		start_year = 2027 #Changed
 
 		folder = {
 			name = bba_air_techs_folder
@@ -2113,7 +2025,7 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 1.75
-		start_year = 2022
+		start_year = 2029 #Changed
 
 		folder = {
 			name = bba_air_techs_folder

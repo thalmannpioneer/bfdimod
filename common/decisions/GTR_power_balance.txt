@@ -11,6 +11,18 @@ decision_GTR_power_balance_category = {
         }
 
         icon = GFX_decision_GTR_bop_invite_objects
+
+        ai_will_do = {
+			base = 0
+			modifier = {
+				has_completed_focus = GTR_focus_wide_ruling_horizontal
+                power_balance_value = {
+                    id = GTR_power_balance
+                    value > -0.3
+                }
+				add = 100
+			}
+		}
     }
     GTR_bop_conduct_tests_decision = {
         cost = 100
@@ -24,6 +36,18 @@ decision_GTR_power_balance_category = {
         }
 
         icon = GFX_decision_GTR_bop_conduct_tests
+
+        ai_will_do = {
+			base = 0
+			modifier = {
+				has_completed_focus = GTR_focus_the_first_mind
+                power_balance_value = {
+                    id = GTR_power_balance
+                    value < 0.3
+                }
+				add = 100
+			}
+		}
     }
     GTR_bop_do_brainstorm_decision = {
         cost = 50

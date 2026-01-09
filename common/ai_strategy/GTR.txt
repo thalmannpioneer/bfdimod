@@ -65,7 +65,7 @@ GTR_moblize = {
 	ai_strategy = {
         type = equipment_production_factor
         id = infantry
-        value = 50
+        value = 35
     }
 }
 
@@ -85,12 +85,12 @@ GTR_fighters = {
 
 	ai_strategy = {
 		type = air_factory_balance
-		value = 80
+		value = 90
 	}
 	ai_strategy = { #With BBA
-		type = equipment_production_min_factories_archetype
+		type = equipment_variant_production_factor
 		id = small_plane_airframe
-		value = 4
+		value = 150
 	}
 	ai_strategy = { #No BBA
 		type = research_weight_factor
@@ -133,9 +133,9 @@ GTR_bombers = {
 		value = 80
 	}
 	ai_strategy = { #With BBA
-		type = equipment_production_min_factories_archetype
+		type = equipment_variant_production_factor
 		id = large_plane_airframe
-		value = 4
+		value = 150
 	}
 	ai_strategy = { #No BBA
 		type = research_weight_factor

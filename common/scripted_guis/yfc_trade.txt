@@ -26,6 +26,7 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 						has_idea = closed_economy
 						is_embargoed_by = YFC
 						is_embargoing = YFC
+						check_variable = { selling_item = -1 }
 					}					
 				}
 			}
@@ -42,6 +43,7 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 						has_idea = closed_economy
 						is_embargoed_by = YFC
 						is_embargoing = YFC
+						check_variable = { buying_item = -1 }
 					}					
 				}
 				OR = {

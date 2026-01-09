@@ -275,7 +275,7 @@ country_event = { #YFC sees this
 		}
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
-			days = 90
+			days = 120
 		}
 		division_template = {
 			name = "Militia"

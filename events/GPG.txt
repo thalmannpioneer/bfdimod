@@ -22,11 +22,11 @@ country_event = {
                     }
                 }
                 random_list = {
-                    30 = {
-                        set_country_flag = stability_save_path
-                    }
                     50 = {
                         set_country_flag = civil_war_path
+                    }
+                    30 = {
+                        set_country_flag = stability_save_path
                     }
                     20 = {
                         set_country_flag = fries_path
@@ -759,9 +759,9 @@ country_event = {
                     random_hours = 12
                 }
             }
-            else_if = {
-                limit = { check_variable = { var_congress_support < 13 } }
-                country_event = {
+            else_if = { 
+                limit = { check_variable = { var_congress_support < 13 } } #I have zero idea why, but somehow 12 is 13???????? Thal wtf did you do or what did I do????
+                country_event = { #seems that the UI and the number are messed and idk why :sob:
                     id = GPG_event.22
                     days = 10
                     random_hours = 12
@@ -1297,8 +1297,16 @@ country_event = {
                 complete_national_focus = GPG_focus_bake_taco
                 complete_national_focus = GPG_focus_break_up_the_brilliant
                 complete_national_focus = GPG_focus_yoylemetal_hand
+                8 = { #Minor buff to the AI
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
             }
-            random_owned_state = {
+            8 = { #Minor rebalance so GPG does not lose their only mils in 1 second
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
@@ -1405,6 +1413,19 @@ country_event = {
                         type = annex_everything
                     }
                 }
+                if = { #Minor buff to the AI
+                    limit = {
+                        GPG = {is_ai = yes}
+                    }
+                    145 = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
             }
         }
     }
@@ -1459,6 +1480,19 @@ country_event = {
                     declare_war_on = {
                         target = GFG
                         type = annex_everything
+                    }
+                }
+                if = { #Minor buff to the AI
+                    limit = {
+                        GPG = {is_ai = yes}
+                    }
+                    10 = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
                     }
                 }
             }
@@ -1528,6 +1562,19 @@ country_event = {
                     declare_war_on = {
                         target = GSR
                         type = annex_everything
+                    }
+                }
+                if = { #Minor buff to the AI
+                    limit = {
+                        GPG = {is_ai = yes}
+                    }
+                    158 = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = arms_factory
+                            level = 1
+                            instant_build = yes
+                        }
                     }
                 }
             }

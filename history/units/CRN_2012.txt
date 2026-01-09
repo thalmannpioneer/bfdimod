@@ -3,6 +3,7 @@ division_template = {
     regiments = {
         infantry = { x = 0 y = 0 }
         infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
         infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
     }
@@ -22,7 +23,7 @@ units = {
         name = "1st Goiky Division"
         location = 51
         division_template = "Goiky Division"
-        start_experience_factor = 0.5
+        start_experience_factor = 0.6
         start_equipment_factor = 0.8
     }
 	division= {
@@ -36,7 +37,7 @@ units = {
         name = "Armed Police"
         location = 51 
         division_template = "Armed Police"
-        start_experience_factor = 0.2
+        start_experience_factor = 0.6
         start_equipment_factor = 0.8
     }
 }

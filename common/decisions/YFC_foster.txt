@@ -40,7 +40,7 @@ decision_YFC_foster_category = {
 					id = YFC_BUN.28
 					hours = 1
 				}
-				add_to_variable = { var_foster_BUN_support = 3 }
+				add_to_variable = { var_foster_BUN_support = 2.5 }
 			}
 		}
 	}
@@ -134,7 +134,12 @@ decision_YFC_foster_category = {
 			base = 0
 			modifier = {
 				add = 10
-				check_variable = { money_amount > 5 }
+				check_variable = { money_amount > 20 }
+			}
+			modifier = {
+				add = 10
+				check_variable = { money_amount > 10 }
+				has_completed_focus = YFC_focus_stimulate_bunch_business
 			}
 		}
 	}
@@ -187,12 +192,8 @@ decision_YFC_foster_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 10
-				has_political_power > 25
-			}
-			modifier = {
 				add = 100
-				check_variable = { money_amount > 5 }
+				check_variable = { money_amount > 7 }
 			}
 		}
 	}
@@ -235,7 +236,7 @@ decision_YFC_foster_category = {
 			base = 0
 			modifier = {
 				add = 12
-				check_variable = { money_amount > 6 }
+				check_variable = { money_amount > 15 }
 			}
 		}
 	}

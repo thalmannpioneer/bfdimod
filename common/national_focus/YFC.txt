@@ -554,11 +554,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		icon = GFX_focus_YFC_outsource_gun_prod
-		
-		available = {
-			has_war = no
-		}
-		
+			
 		prerequisite = { focus = YFC_focus_coiny_cooperation }
 		#no.
 
@@ -729,6 +725,10 @@ focus_tree = {
 				factor = -8
 				check_variable = { money_amount < 0.5 }
 			}
+			modifier = { #Okay maybe now go deal with Bunch
+				factor = 10
+				has_completed_focus = YFC_focus_military_industrial_complex
+			}			
 		}
 	}
 
@@ -926,26 +926,25 @@ focus_tree = {
 		cost = 5
 		#makes trade with coiny and teardrop beach territory more profitable
 		completion_reward = {
-			add_opinion_modifier = { target = GMD modifier = medium_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = GMD
-				add_opinion_modifier = { target = YFC modifier = medium_increase }
-			}	
+			custom_effect_tooltip = l_YFC_Trade_Bonus
+			IF = {
+				limit = {country_exists = GMD}
+				add_opinion_modifier = { target = GMD modifier = medium_increase }
+				every_country_with_original_tag = {
+					original_tag_to_check = GMD
+					add_opinion_modifier = { target = YFC modifier = medium_increase }
+				}	
+			}
 			add_opinion_modifier = { target = TBT modifier = medium_increase }
 			every_country_with_original_tag = {
 				original_tag_to_check = TBT
 				add_opinion_modifier = { target = YFC modifier = medium_increase }
 			}	
-			216 = {
-                add_resource = {
-                    type = steel
-                    amount = 10
-                }
-				add_resource = {
-                    type = aluminium
-                    amount = 8
-                }
-            }
+			add_opinion_modifier = { target = DAV modifier = medium_increase }
+			every_country_with_original_tag = {
+				original_tag_to_check = DAV
+				add_opinion_modifier = { target = DAV modifier = medium_increase }
+			}	
 		}
 
 		ai_will_do = {
@@ -964,11 +963,10 @@ focus_tree = {
 		#gives event about sending people out to look at the eastern sea board, in 2 months you get another event abt what they found
 		#secretly helps with 3rd part of tree (eastern seaboard colonization)
 		completion_reward = {
-			#add a tooltip saying that this helps with a future endeavour
+			custom_effect_tooltip = l_YFC_Sea_Bonus
 			country_event = {
 				id = YFC_event.15 
-				days = 1
-				hours = 6
+				hours = 3
 			}
 		}
 

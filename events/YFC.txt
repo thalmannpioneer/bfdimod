@@ -1214,6 +1214,19 @@ country_event = { #YFC Sell
 		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
 			subtract_from_variable = { money_amount = trade_cost_show_var }
+			IF = {
+				limit = {
+					YFC = {has_completed_focus = YFC_focus_expand_northern_trade}
+					OR = {
+						ROOT = { tag = GMD }
+						ROOT = { tag = TBT }
+						ROOT = { tag = DAV }
+					}	
+				}
+				set_temp_variable = {bonus_money_var = trade_cost_show_var}
+				multiply_temp_variable = {bonus_money_var = 0.1}
+				YFC = {add_to_variable = {money_amount = bonus_money_var}}
+			}
 			YFC = { 
 				add_to_variable = {money_amount = ROOT.trade_cost_show_var}
 				country_event = {
@@ -1478,6 +1491,19 @@ country_event = { #YFC Buy
 		divide_variable = { trade_cost_show_var = 100 }
 		hidden_effect = {
 			add_to_variable = {money_amount = trade_cost_show_var}
+			IF = {
+				limit = {
+					YFC = {has_completed_focus = YFC_focus_expand_northern_trade}
+					OR = {
+						ROOT = { tag = GMD }
+						ROOT = { tag = TBT }
+						ROOT = { tag = DAV }
+					}	
+				}
+				set_temp_variable = {bonus_money_var = trade_cost_show_var}
+				multiply_temp_variable = {bonus_money_var = 0.1}
+				YFC = {add_to_variable = {money_amount = bonus_money_var}}
+			}
 			YFC = { 
 				subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
 				country_event = {
@@ -2042,7 +2068,7 @@ country_event = {
 				}
 				216 = {
 					create_unit = {
-						division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
+						division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.4 start_experience_factor = 0.05"
 						owner = YFC
 						count = 2
 						id = 1967

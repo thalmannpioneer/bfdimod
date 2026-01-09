@@ -5,7 +5,7 @@ leader_traits = {
         political_power_gain = -0.25
 
         ai_will_do = {
-            factor = 1
+            base = 1
         }
     }
 
@@ -55,6 +55,9 @@ leader_traits = {
 
         army_defence_factor = 0.1
         breakthrough_factor = 0.1
+        ai_will_do = {
+            base = 1
+        }
     }
 
     tax_reformer = {
@@ -62,6 +65,9 @@ leader_traits = {
 
         stability_factor = 0.05
         consumer_goods_factor = -0.1
+        ai_will_do = {
+            base = 1
+        }
     }
 
     market_interventionist = {
@@ -136,11 +142,18 @@ leader_traits = {
 
     GTR_nuclear_scientist = {
         sprite = 14
-
         land_mastery_gain_factor = 0.15
+
+        ai_will_do = {
+            base = 1
+        }
     }
 
     GTR_civilian_scientist = {
         sprite = 14
+
+        ai_will_do = {
+            base = 1
+        }
     }
 }
