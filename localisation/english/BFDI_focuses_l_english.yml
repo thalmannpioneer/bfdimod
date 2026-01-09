@@ -624,29 +624,6 @@
  GSR_focus_triumphant_victory: "§RTriumphant Victory§!"
  GSR_focus_triumphant_victory_desc: "The victorious march of the revolution spread to the entire former territory of the Provisional Government and the reactionaries were defeated. This victory will go down in Goiky's history as the greatest impetus for the freedom of all objects."
  
- #GSR FOCUSES
- #GSR CW tree
- GSR_focus_workers_revolution: "§RРабочая революция§!"
- GSR_focus_workers_revolution_desc: "Ура! Рабочие шахт наконец-то сбросили с себя ярмо диктатуры капиталистов и чиновничества Временного Правительства! Но это только начало. Рабочим Гойки нужно разбить в последнем бою противников революции, стремящихся восстановить грабительский строй."
- 
- GSR_focus_toilers_dictatorship: "Диктатура Пролетариата"
- GSR_focus_toilers_dictatorship_desc: "В эти тяжёлые дни за судьбы социализма, рабочие Гойки должны установить жёсткий контроль над любыми проявлениями оппозиции методами террора."
- 
- GSR_focus_red_army: "Красная Армия"
- GSR_focus_red_army_desc: "После того как временное правительство рухнуло и борьба перешла из подполья в настоящую линию фронта, пришло время переорганизовать рабочие батальоны в настоящую боеспособную армию."
- 
- GSR_focus_political_commissars: "Политические коммисары"
- GSR_focus_political_commissars_desc: "Для поддержки боевого духа армии нам необходимы ячейки политического просвещения и надзора в каждой боевой единице. Такими ячейками выступят передовые обджекты-оппозиционеры добровольцы, которые хорошо показали себя во время подпольной борьбы."
- 
- GSR_focus_full_expropriation: "Полная Экспроприация"
- GSR_focus_full_expropriation_desc: "Пришло время покончить с эксплуатацией обджектов. Все производственные и добыващие предприятия отныне перейдут в собственность рабочего правительства."
- 
- GSR_focus_well_screw_the_bayonets_ourselves: "...Мы сами прикрутим штыки!"
- GSR_focus_well_screw_the_bayonets_ourselves_desc: "Никто не защитит рабочих, кроме их самих. Обджекты на заводах должны трудиться не покладая рук для защиты революции, а если нужно, взять своей же рукой собранную винтовку и пойти сражаться."
- 
- GSR_focus_triumphant_victory: "§RТоржественная Победа§!"
- GSR_focus_triumphant_victory_desc: "Победное шествие революции распространилось на всю прежнюю территорию Временного Правительства и реакционеры оказались разгромлены. Эта победа войдёт в историю Гойки как величайший толчок к свободе всех обджектов."
- 
  #GSR post-CW tree
  GSR_focus_successful_revolution: "§RSuccessful Revolution§!"
  GSR_focus_successful_revolution_desc: "With big cost, the workers of Casland managed to take power into their own hands. But the Republic is in a very unstable position. It is necessary to defeat the remaining counter-revolutionary forces that lie dormant in the depths of our society."

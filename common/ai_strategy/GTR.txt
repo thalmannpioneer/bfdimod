@@ -90,8 +90,13 @@ GTR_fighters = {
 	ai_strategy = { #With BBA
 		type = equipment_variant_production_factor
 		id = small_plane_airframe
-		value = 150
+		value = 5000
 	}
+	ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = -80
+    }
 	ai_strategy = { #No BBA
 		type = research_weight_factor
 		id = early_fighter
@@ -135,8 +140,13 @@ GTR_bombers = {
 	ai_strategy = { #With BBA
 		type = equipment_variant_production_factor
 		id = large_plane_airframe
-		value = 150
+		value = 5000
 	}
+	ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = -80
+    }
 	ai_strategy = { #No BBA
 		type = research_weight_factor
 		id = strategic_bomber1
@@ -153,3 +163,22 @@ GTR_bombers = {
 		value = 10000
 	}
 }
+
+GTR_nukes = {
+    #>:)
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		has_completed_focus = GTR_focus_power_of_yoylelite
+		num_of_nukes < 0
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { 
+		type = research_weight_factor
+		id = atomic_research 
+		value = 10000
+	}
+}
+

@@ -18,7 +18,7 @@ decision_GTR_power_balance_category = {
 				has_completed_focus = GTR_focus_wide_ruling_horizontal
                 power_balance_value = {
                     id = GTR_power_balance
-                    value > -0.3
+                    value > -0.35
                 }
 				add = 100
 			}
@@ -40,10 +40,10 @@ decision_GTR_power_balance_category = {
         ai_will_do = {
 			base = 0
 			modifier = {
-				has_completed_focus = GTR_focus_the_first_mind
+				has_completed_focus = GTR_focus_voting_cense
                 power_balance_value = {
                     id = GTR_power_balance
-                    value < 0.3
+                    value < 0.35
                 }
 				add = 100
 			}

@@ -22,10 +22,10 @@ country_event = {
                     }
                 }
                 random_list = {
-                    50 = {
+                    45 = {
                         set_country_flag = civil_war_path
                     }
-                    30 = {
+                    35 = {
                         set_country_flag = stability_save_path
                     }
                     20 = {
@@ -945,7 +945,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #I've given up this ai is soo bad :((((
     id = GPG_event.20
     title = GPG_event.20.t
     desc = GPG_event.20.desc
@@ -962,7 +962,7 @@ country_event = {
                     add_manpower = 20000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 3000
+                        amount = 4000
                     }
                 }
             }
@@ -999,7 +999,7 @@ country_event = {
                     add_manpower = 20000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 3000
+                        amount = 4000
                     }
                 }
             }
@@ -1036,7 +1036,7 @@ country_event = {
                     add_manpower = 20000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 3000
+                        amount = 4000
                     }
                 }
             }
@@ -1070,7 +1070,7 @@ country_event = {
                     add_manpower = 20000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 3000
+                        amount = 4000
                     }
                 }
             }

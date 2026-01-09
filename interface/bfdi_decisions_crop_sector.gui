@@ -58,7 +58,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_military_increase"
-				position = { x = 130 y = 350 }
+				position = { x = 130 y = 355 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "+"
 				buttonFont = "hoi_30header"
@@ -69,7 +69,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_military_decrease"
-				position = { x = 80 y = 350 }
+				position = { x = 80 y = 355 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "-"
 				buttonFont = "hoi_30header"
@@ -80,7 +80,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_railway_increase"
-				position = { x = 390 y = 350 }
+				position = { x = 390 y = 355 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "+"
 				buttonFont = "hoi_30header"
@@ -91,7 +91,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_railway_decrease"
-				position = { x = 340 y = 350 }
+				position = { x = 340 y = 355 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "-"
 				buttonFont = "hoi_30header"
@@ -102,7 +102,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_tech_increase"
-				position = { x = 130 y = 750 }
+				position = { x = 130 y = 755 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "+"
 				buttonFont = "hoi_30header"
@@ -113,7 +113,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_tech_decrease"
-				position = { x = 80 y = 750 }
+				position = { x = 80 y = 755 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "-"
 				buttonFont = "hoi_30header"
@@ -124,7 +124,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_construction_increase"
-				position = { x = 390 y = 750 }
+				position = { x = 390 y = 755 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "+"
 				buttonFont = "hoi_30header"
@@ -135,7 +135,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_construction_decrease"
-				position = { x = 340 y = 750 }
+				position = { x = 340 y = 755 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "-"
 				buttonFont = "hoi_30header"
@@ -146,7 +146,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_energy_increase"
-				position = { x = 260 y = 1130 }
+				position = { x = 260 y = 1135 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "+"
 				buttonFont = "hoi_30header"
@@ -157,7 +157,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "button_energy_decrease"
-				position = { x = 210 y = 1130 }
+				position = { x = 210 y = 1135 }
 				quadTextureSprite ="GFX_icon_button_46x46"
 				buttonText = "-"
 				buttonFont = "hoi_30header"

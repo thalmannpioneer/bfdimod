@@ -91,6 +91,10 @@ armored_GGR = {
 				has_tech = basic_medium_tank_chassis
 			}
 		}
+		modifier = {
+			factor = -100
+			army_experience < 75
+		}
 	}
 
 	light_armor_early_GGR = {

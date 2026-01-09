@@ -29,23 +29,41 @@ BFDI_wait_tech = {
 	}
 }
 
+BFDI_stop_guns = {
+	#If we have over 3000 guns then lower the amount we are making
+	enable = {
+		has_equipment = {infantry_equipment > 3000}
+		NOT = {tag = GGR}
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -75
+	}
+}
+
+BFDI_full_stop_guns = {
+	#Okay now really stop making this many guns
+	enable = {
+		has_equipment = {infantry_equipment > 7500}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = -500
+	}
+}
+
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
 		always = yes
 		NOT = {
 			OR = {
-				original_tag = GER
-				original_tag = FRA
-				original_tag = CHI
-				original_tag = ENG
-				original_tag = CZE
-				tag = SOV
-				original_tag = ITA
-				original_tag = JAP
-				original_tag = HUN
-				original_tag = SIA
-				original_tag = USA
+				original_tag = GER #May update later
 			}
 		}
 	}
@@ -165,13 +183,13 @@ default_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 40
+		value = 20
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 25
+		value = 15
 	}
 }
 
@@ -705,31 +723,8 @@ default_mountaineers_production = {
 	}
 }
 
-#default_marines_production = {
-#	enable = {
-#		NOT = { original_tag = GER }
-#		ai_wants_divisions > 49
-#	}
-#	abort = {
-#		ai_wants_divisions < 50
-#	}
-#
-#	ai_strategy = {
-#		type = role_ratio
-#		id = marines
-#		value = 0
-#	}
-#
-#	#ai_strategy = {
-#	#	type = role_ratio
-#	#	id = infantry
-#	#	value = 0
-#	#}
-#}
-
 default_mobile_production = {
 	enable = {
-		NOT = { original_tag = GER }
 		ai_wants_divisions > 11
 		has_tech = motorised_infantry
 	}
@@ -746,13 +741,6 @@ default_mobile_production = {
 
 default_armored_production = {
 	enable = {
-		NOT = {
-			OR = {
-				original_tag = GER
-				original_tag = CZE
-				original_tag = SOV
-			}
-		}
 		ai_wants_divisions > 49
 	}
 	abort = {
@@ -785,11 +773,8 @@ highered_armored_production = {
 slightly_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
-			tag = USA
-			tag = ENG
-			tag = FRA
-			tag = ITA
+			tag = SOS
+			tag = DAV
 		}
 	}
 	abort_when_not_enabled = yes
@@ -822,11 +807,10 @@ slightly_naval_focused_nation = {
 more_naval_focused_nation = {
 	enable = {
 		OR = {
-			tag = JAP
-			tag = USA
-			tag = ENG
+			tag = SOS
+			tag = DAV
 		}
-		date > "1941.1.1"  # Delaying it by a couple of years
+		date > "2018.1.1"  # Delaying it by a couple of years
 	}
 	abort_when_not_enabled = yes
 
@@ -1049,22 +1033,10 @@ dont_build_capitals_if_on_treaty = {
 
 DEFAULT_early_template_design = {
 	enable = {
-		NOT = {
-			OR = {
-				tag = GER
-				tag = ENG
-				tag = SOV
-				tag = ITA
-				tag = JAP
-				tag = USA
-				tag = POL
-				tag = SIA
-			}
-		}
-		date < 1940.1.1
+		date < 2017.1.1
 	}
 	abort = {
-		date > 1940.1.1
+		date > 2017.1.1
 	}
 
 	ai_strategy = {
@@ -1124,7 +1096,7 @@ DEFAULT_midlate_template_design = {
 				tag = SIA
 			}
 		}
-		date > 1940.1.1
+		date > 2018.1.1
 	}
 	abort_when_not_enabled = yes
 
@@ -1233,7 +1205,7 @@ build_intelligence_agency_as_major = {
 		is_major = yes
 		OR = {
 			has_war = yes
-			date > 1938.1.1
+			date > 2018.1.1
 		}
 	}
 	abort_when_not_enabled = yes
@@ -1247,7 +1219,7 @@ build_intelligence_agency_as_major = {
 
 build_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 2020.1.1
 		has_war = no
 		num_of_civilian_factories > 25
 	}
@@ -1267,7 +1239,7 @@ build_intelligence_agency = {
 
 upgrade_intelligence_agency = {
 	enable = {
-		date > 1940.1.1
+		date > 2020.1.1
 		num_of_civilian_factories > 50
 	}
 	abort = {
@@ -1765,111 +1737,6 @@ default_produce_floating_harbors = {
 }
 
 ###
-
-comintern_avoid_starting_wars_during_endgame = { #Sov should avoid attacking allies while ww2 is still going on
-
-	allowed = {
-		OR = {
-			original_tag = SOV
-			is_in_faction_with = SOV
-		}
-	}
-	enable = {
-		is_historical_focus_on = yes
-		SOV = { has_government = communism }
-		OR = {
-			USA = {
-				has_capitulated = no
-				has_war_with = JAP
-			}
-			ENG = {
-				has_capitulated = no
-				has_war_with = JAP
-			}
-		}
-		date > 1943.1.1
-		date < 1945.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = avoid_starting_wars
-		value = -400
-	}
-	ai_strategy = {
-		type = conquer
-		id = POL
-		value = -400 #REALLY dont try and conquer poland
-	}
-	ai_strategy = {
-		type = befriend
-		id = "POL"
-		value = 200
-	}
-	ai_strategy = {
-		type = conquer
-		id = JAP
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for japan while this strategy is active
-	}
-	ai_strategy = {
-		type = conquer
-		id = FIN
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for finland while this strategy is active
-	}
-	ai_strategy = {
-		type = conquer
-		id = PER
-		value = 400 #These values offset each other. Basically we won't start wars with anyone except for iran while this strategy is active
-	}
-}
-
-allies_avoid_starting_wars_during_endgame = { #Allies should avoid attacking.. well, anyone while ww2 is in endgame
-	allowed = {
-		OR = {
-			tag = ENG
-			is_in_faction_with = ENG
-		}
-	}
-	enable = {
-		is_historical_focus_on = yes
-		ENG = { has_government = democratic }
-		OR = {
-			tag = ENG
-			is_in_faction_with = ENG
-		}
-		has_war_with = JAP
-		JAP = {
-			has_government = fascism #Just to make sure we're not looking at a puppet or sth
-		}
-		date > 1943.1.1
-		date < 1945.1.1
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = avoid_starting_wars
-		value = -400
-	}
-}
-
-we_dont_believe_in_mountain_tanks = {
-	enable = {
-		is_historical_focus_on = yes
-	}
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = front_armor_score
-		id = "GRE"
-		value = -100
-	}
-
-	ai_strategy = {
-		type = front_armor_score
-		id = "YUG"
-		value = -100
-	}
-}
 
 # Build some rockets (simple strats to have a minimum production at least )
 if_we_can_build_v1_rockets_we_want_rockets = {

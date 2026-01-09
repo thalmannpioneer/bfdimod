@@ -25,7 +25,7 @@ ideas = {
 				defense_bonus_against = 0.15
 			}
 			modifier = {
-				ai_focus_aggressive_factor = 1
+				ai_focus_aggressive_factor = 2.5
 			}
 			cancel = {NOT = {country_exists = BUN}}
 		}
