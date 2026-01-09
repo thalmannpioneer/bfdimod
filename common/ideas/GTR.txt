@@ -189,5 +189,68 @@ ideas = {
                 additional_brigade_column_size = 1
             }
         }
+
+        idea_GTR_shuttle_yoylemetal = {
+            picture = GTR_shuttle
+            modifier = {
+                civilian_factory_use = 3
+            }
+        }
+        idea_GTR_shuttle_aluminium = {
+            picture = GTR_shuttle
+            modifier = {
+                civilian_factory_use = 4
+                country_resource_aluminium = -5
+            }
+        }
+        idea_GTR_shuttle_tungsten = {
+            picture = GTR_shuttle
+            modifier = {
+                civilian_factory_use = 5
+                country_resource_tungsten = -10
+            }
+        }
+
+        idea_GTR_fuel_coal = {
+            picture = GTR_fuel
+            modifier = {
+                civilian_factory_use = 3
+                country_resource_coal = -5
+            }
+        }
+        idea_GTR_fuel_oil = {
+            picture = GTR_fuel
+            modifier = {
+                civilian_factory_use = 4
+                country_resource_oil = -10
+            }
+        }
+        idea_GTR_fuel_yoylite = {
+            picture = GTR_shuttle
+            modifier = {
+                civilian_factory_use = 5
+                nuclear_production_factor = -1
+            }
+        }
+
+        idea_GTR_engine_steam = {
+            picture = GTR_engine
+            modifier = {
+                civilian_factory_use = 3
+            }
+        }
+        idea_GTR_engine_jet = {
+            picture = GTR_engine
+            modifier = {
+                civilian_factory_use = 4
+            }
+        }
+        idea_GTR_engine_electric = {
+            picture = GTR_engine
+            modifier = {
+                civilian_factory_use = 5
+                factory_energy_consumption = 0.1
+            }
+        }
     }
 }

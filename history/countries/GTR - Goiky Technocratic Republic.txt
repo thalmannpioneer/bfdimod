@@ -54,6 +54,7 @@ set_variable = { var_idea_GTR_noocracy_sf = -0.05 }
 set_variable = { var_idea_GTR_noocracy_ppg = 0.1 }
 set_variable = { var_idea_GTR_noocracy_rs = 0.05 }
 
+set_variable = { var_GTR_space_program_success_rate = -1 }
 set_variable = { var_GTR_shuttle_frame = 1 }
 set_variable = { var_GTR_fuel_frame = 1 }
 set_variable = { var_GTR_engine_frame = 1 }

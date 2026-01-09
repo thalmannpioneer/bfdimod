@@ -1,8 +1,14 @@
 decision_GTR_space_program_category = {
     GTR_space_program_launch_mission = {
         priority = 100
-        days_mission_timeout = 200
+        days_mission_timeout = 300
         timeout_effect = {
+            custom_effect_tooltip = l_GTR_launch
+            hidden_effect = {
+                country_event = GTR_event.57
+            }
+        }
+        complete_effect = {
             custom_effect_tooltip = l_GTR_launch
             hidden_effect = {
                 country_event = GTR_event.57
@@ -20,5 +26,118 @@ decision_GTR_space_program_category = {
         activation = { hidden_trigger = { always = no } }
 
         icon = GFX_decisions_GTR_space_program_launch_mission
+    }
+
+    GTR_space_program_shuttle_mission = {
+        priority = 100
+        days_mission_timeout = 50
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_shuttle_done
+            set_country_flag = GTR_notification_spaceship
+            set_country_flag = GTR_shuttle_done
+            if = {
+                limit = { has_country_flag = GTR_shuttle_yoylemetal }
+                set_variable = { var_GTR_shuttle_frame = 2 }
+                remove_ideas = idea_GTR_shuttle_yoylemetal
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_shuttle_aluminium }
+                set_variable = { var_GTR_shuttle_frame = 3 }
+                remove_ideas = idea_GTR_shuttle_aluminium
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_shuttle_tungsten }
+                set_variable = { var_GTR_shuttle_frame = 4 }
+                remove_ideas = idea_GTR_shuttle_tungsten
+            }
+            if = {
+                limit = {
+                    has_country_flag = GTR_fuel_done
+                    has_country_flag = GTR_engine_done
+                }
+                GTR_calculate_success_rate = yes
+            }
+        }
+        available = {
+            hidden_trigger = { always = no }
+        }
+        selectable_mission = no
+        activation = { hidden_trigger = { always = no } }
+
+        icon = GFX_decisions_GTR_space_program_shuttle_mission
+    }
+
+    GTR_space_program_fuel_mission = {
+        priority = 100
+        days_mission_timeout = 50
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_fuel_done
+            set_country_flag = GTR_notification_spaceship
+            set_country_flag = GTR_fuel_done
+            set_variable = { var_GTR_fuel_frame = 2 }
+            if = {
+                limit = { has_country_flag = GTR_fuel_coal }
+                remove_ideas = idea_GTR_fuel_coal
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_fuel_oil }
+                remove_ideas = idea_GTR_fuel_oil
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_fuel_yoylite }
+                remove_ideas = idea_GTR_fuel_yoylite
+            }
+            if = {
+                limit = {
+                    has_country_flag = GTR_shuttle_done
+                    has_country_flag = GTR_engine_done
+                }
+                GTR_calculate_success_rate = yes
+            }
+        }
+        available = {
+            hidden_trigger = { always = no }
+        }
+        selectable_mission = no
+        activation = { hidden_trigger = { always = no } }
+
+        icon = GFX_decisions_GTR_space_program_fuel_mission
+    }
+
+    GTR_space_program_engine_mission = {
+        priority = 100
+        days_mission_timeout = 50
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_engine_done
+            set_country_flag = GTR_notification_spaceship
+            set_country_flag = GTR_engine_done
+            set_variable = { var_GTR_engine_frame = 2 }
+            if = {
+                limit = { has_country_flag = GTR_engine_steam }
+                remove_ideas = idea_GTR_engine_steam
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_engine_jet }
+                remove_ideas = idea_GTR_engine_jet
+            }
+            else_if = {
+                limit = { has_country_flag = GTR_engine_electric }
+                remove_ideas = idea_GTR_engine_electric
+            }
+            if = {
+                limit = {
+                    has_country_flag = GTR_fuel_done
+                    has_country_flag = GTR_shuttle_done
+                }
+                GTR_calculate_success_rate = yes
+            }
+        }
+        available = {
+            hidden_trigger = { always = no }
+        }
+        selectable_mission = no
+        activation = { hidden_trigger = { always = no } }
+
+        icon = GFX_decisions_GTR_space_program_engine_mission
     }
 }

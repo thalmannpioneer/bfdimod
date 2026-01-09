@@ -927,6 +927,21 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_decisions_GTR_space_program_launch_mission"
-		texticons = "gfx/interface/decisions/GFX_decisions_GTR_space_program_launch_mission.dds"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_launch_mission.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_shuttle_mission"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_shuttle_mission.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_fuel_mission"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_fuel_mission.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_engine_mission"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_engine_mission.dds"
 	}
 }

@@ -141,151 +141,151 @@ scripted_gui = {
 }
 
 scripted_gui = {
-	bfdi_decisions_crop_sector_scriptedgui = {
-		window_name = corp_sector_container
-		context_type = decision_category
-		parent_window_token = decision_tab
-		
-		triggers = { #For now the max level is 5 and min is 1. Granted this may change
-			button_military_increase_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_TopHat_level < 5 }
-				NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_military_decrease_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_TopHat_level > 1 }
-				NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_railway_increase_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Pipe_level < 5 }
-				NOT = {has_idea = idea_YFC_Defiant_Pipe}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_railway_decrease_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Pipe_level > 1 }
-				NOT = {has_idea = idea_YFC_Defiant_Pipe}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_tech_increase_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Beaker_level < 5 }
-				NOT = {has_idea = idea_YFC_Defiant_Beaker}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_tech_decrease_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Beaker_level > 1 }
-				NOT = {has_idea = idea_YFC_Defiant_Beaker}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_construction_increase_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Hammer_level < 5 }
-				NOT = {has_idea = idea_YFC_Defiant_Hammer}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_construction_decrease_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Hammer_level > 1 }
-				NOT = {has_idea = idea_YFC_Defiant_Hammer}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_energy_increase_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Taser_level < 5 }
-				NOT = {has_idea = idea_YFC_Defiant_Taser}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-			button_energy_decrease_click_enabled = {
-				has_political_power > 25
-				check_variable = { var_idea_YFC_Taser_level > 1 }
-				NOT = {has_idea = idea_YFC_Defiant_Taser}
-				NOT = {has_idea = idea_YFC_Debt_Crisis}
-			}
-		}
+    bfdi_decisions_crop_sector_scriptedgui = {
+        window_name = corp_sector_container
+        context_type = decision_category
+        parent_window_token = decision_tab
 
-		effects = {
-			button_military_increase_click = {
-				add_to_variable = { var_idea_YFC_TopHat_level = 1 }
-				add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
-				add_to_variable = { var_idea_YFC_TopHat_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
-				add_political_power = -25
-			}
-			button_military_decrease_click = {
-				add_to_variable = { var_idea_YFC_TopHat_level = -1 }
-				add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
-				add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
-				add_political_power = -25
-			}
-			button_railway_increase_click = {
-				add_to_variable = { var_idea_YFC_Pipe_level = 1 }
-				add_to_variable = { var_idea_YFC_Pipe_influence = 1 }
-				add_to_variable = { var_idea_YFC_Pipe_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
-				add_political_power = -25
-			}
-			button_railway_decrease_click = {
-				add_to_variable = { var_idea_YFC_Pipe_level = -1 }
-				add_to_variable = { var_idea_YFC_Pipe_influence = -1 }
-				add_to_variable = { var_idea_YFC_Pipe_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
-				add_political_power = -25
-			}
-			button_tech_increase_click = {
-				add_to_variable = { var_idea_YFC_Beaker_level = 1 }
-				add_to_variable = { var_idea_YFC_Beaker_influence = 1 }
-				add_to_variable = { var_idea_YFC_Beaker_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
-				add_political_power = -25
-			}
-			button_tech_decrease_click = {
-				add_to_variable = { var_idea_YFC_Beaker_level = -1 }
-				add_to_variable = { var_idea_YFC_Beaker_influence = -1 }
-				add_to_variable = { var_idea_YFC_Beaker_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
-				add_political_power = -25
-			}
-			button_construction_increase_click = {
-				add_to_variable = { var_idea_YFC_Hammer_level = 1 }
-				add_to_variable = { var_idea_YFC_Hammer_influence = 1 }
-				add_to_variable = { var_idea_YFC_Hammer_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
-				add_political_power = -25
-			}
-			button_construction_decrease_click = {
-				add_to_variable = { var_idea_YFC_Hammer_level = -1 }
-				add_to_variable = { var_idea_YFC_Hammer_influence = -1 }
-				add_to_variable = { var_idea_YFC_Hammer_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
-				add_political_power = -25
-			}
-			button_energy_increase_click = {
-				add_to_variable = { var_idea_YFC_Taser_level = 1 }
-				add_to_variable = { var_idea_YFC_Taser_influence = 1 }
-				add_to_variable = { var_idea_YFC_Taser_cost = 20 }
-				add_to_variable = { var_sectors_combined_cost = 20 }
-				add_political_power = -25
-			}
-			button_energy_decrease_click = {
-				add_to_variable = { var_idea_YFC_Taser_level = -1 }
-				add_to_variable = { var_idea_YFC_Taser_influence = -1 }
-				add_to_variable = { var_idea_YFC_Taser_cost = -20 }
-				add_to_variable = { var_sectors_combined_cost = -20 }
-				add_political_power = -25
-			}
-		}
-		#Fuck it i will make decision options for the AI I give up :sob:
-		properties = {	
-			#militray_sector = { frame = var_current_cabinet_leader } #Idk if I will need this yet
-		}
-	}
+        triggers = { #For now the max level is 5 and min is 1. Granted this may change
+            button_military_increase_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_TopHat_level < 5 }
+                NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_military_decrease_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_TopHat_level > 1 }
+                NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_railway_increase_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Pipe_level < 5 }
+                NOT = {has_idea = idea_YFC_Defiant_Pipe}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_railway_decrease_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Pipe_level > 1 }
+                NOT = {has_idea = idea_YFC_Defiant_Pipe}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_tech_increase_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Beaker_level < 5 }
+                NOT = {has_idea = idea_YFC_Defiant_Beaker}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_tech_decrease_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Beaker_level > 1 }
+                NOT = {has_idea = idea_YFC_Defiant_Beaker}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_construction_increase_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Hammer_level < 5 }
+                NOT = {has_idea = idea_YFC_Defiant_Hammer}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_construction_decrease_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Hammer_level > 1 }
+                NOT = {has_idea = idea_YFC_Defiant_Hammer}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_energy_increase_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Taser_level < 5 }
+                NOT = {has_idea = idea_YFC_Defiant_Taser}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+            button_energy_decrease_click_enabled = {
+                has_political_power > 25
+                check_variable = { var_idea_YFC_Taser_level > 1 }
+                NOT = {has_idea = idea_YFC_Defiant_Taser}
+                NOT = {has_idea = idea_YFC_Debt_Crisis}
+            }
+        }
+
+        effects = {
+            button_military_increase_click = {
+                add_to_variable = { var_idea_YFC_TopHat_level = 1 }
+                add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
+                add_to_variable = { var_idea_YFC_TopHat_cost = 20 }
+                add_to_variable = { var_sectors_combined_cost = 20 }
+                add_political_power = -25
+            }
+            button_military_decrease_click = {
+                add_to_variable = { var_idea_YFC_TopHat_level = -1 }
+                add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
+                add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
+                add_to_variable = { var_sectors_combined_cost = -20 }
+                add_political_power = -25
+            }
+            button_railway_increase_click = {
+                add_to_variable = { var_idea_YFC_Pipe_level = 1 }
+                add_to_variable = { var_idea_YFC_Pipe_influence = 1 }
+                add_to_variable = { var_idea_YFC_Pipe_cost = 20 }
+                add_to_variable = { var_sectors_combined_cost = 20 }
+                add_political_power = -25
+            }
+            button_railway_decrease_click = {
+                add_to_variable = { var_idea_YFC_Pipe_level = -1 }
+                add_to_variable = { var_idea_YFC_Pipe_influence = -1 }
+                add_to_variable = { var_idea_YFC_Pipe_cost = -20 }
+                add_to_variable = { var_sectors_combined_cost = -20 }
+                add_political_power = -25
+            }
+            button_tech_increase_click = {
+                add_to_variable = { var_idea_YFC_Beaker_level = 1 }
+                add_to_variable = { var_idea_YFC_Beaker_influence = 1 }
+                add_to_variable = { var_idea_YFC_Beaker_cost = 20 }
+                add_to_variable = { var_sectors_combined_cost = 20 }
+                add_political_power = -25
+            }
+            button_tech_decrease_click = {
+                add_to_variable = { var_idea_YFC_Beaker_level = -1 }
+                add_to_variable = { var_idea_YFC_Beaker_influence = -1 }
+                add_to_variable = { var_idea_YFC_Beaker_cost = -20 }
+                add_to_variable = { var_sectors_combined_cost = -20 }
+                add_political_power = -25
+            }
+            button_construction_increase_click = {
+                add_to_variable = { var_idea_YFC_Hammer_level = 1 }
+                add_to_variable = { var_idea_YFC_Hammer_influence = 1 }
+                add_to_variable = { var_idea_YFC_Hammer_cost = 20 }
+                add_to_variable = { var_sectors_combined_cost = 20 }
+                add_political_power = -25
+            }
+            button_construction_decrease_click = {
+                add_to_variable = { var_idea_YFC_Hammer_level = -1 }
+                add_to_variable = { var_idea_YFC_Hammer_influence = -1 }
+                add_to_variable = { var_idea_YFC_Hammer_cost = -20 }
+                add_to_variable = { var_sectors_combined_cost = -20 }
+                add_political_power = -25
+            }
+            button_energy_increase_click = {
+                add_to_variable = { var_idea_YFC_Taser_level = 1 }
+                add_to_variable = { var_idea_YFC_Taser_influence = 1 }
+                add_to_variable = { var_idea_YFC_Taser_cost = 20 }
+                add_to_variable = { var_sectors_combined_cost = 20 }
+                add_political_power = -25
+            }
+            button_energy_decrease_click = {
+                add_to_variable = { var_idea_YFC_Taser_level = -1 }
+                add_to_variable = { var_idea_YFC_Taser_influence = -1 }
+                add_to_variable = { var_idea_YFC_Taser_cost = -20 }
+                add_to_variable = { var_sectors_combined_cost = -20 }
+                add_political_power = -25
+            }
+        }
+        #Fuck it i will make decision options for the AI I give up :sob:
+        properties = {
+            #militray_sector = { frame = var_current_cabinet_leader } #Idk if I will need this yet
+        }
+    }
 }
 
 scripted_gui = {
@@ -297,9 +297,6 @@ scripted_gui = {
         properties = {
             stageimage = {
                 image = "[PROJECT1_STAGEIMAGE]"
-            }
-            title = {
-                text = "[PROJECT1_TITLE]"
             }
             progressbar_stage1 = {
                 frame = var_GTR_progressbar_stage1
@@ -482,6 +479,27 @@ scripted_gui = {
                 tungsten > 9
             }
         }
+
+        effects = {
+            choice_button_yoylemetal_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_shuttle_yoylemetal_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_aluminium_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_shuttle_aluminium_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_tungsten_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_shuttle_tungsten_selection
+                set_country_flag = GTR_space_program_warning
+            }
+        }
     }
 }
 
@@ -499,11 +517,35 @@ scripted_gui = {
             }
             choice_button_oil_click_enabled = {
                 num_of_available_civilian_factories > 3
-                oil > 9
+                has_resources_in_country = {
+                    resource = oil
+                    amount > 9
+                }
             }
             choice_button_yoylite_click_enabled = {
                 num_of_available_civilian_factories > 4
                 nuclear_reactor > 0
+            }
+        }
+
+        effects = {
+            choice_button_coal_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_fuel_coal_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_oil_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_fuel_oil_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_yoylite_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_fuel_yoylite_selection
+                set_country_flag = GTR_space_program_warning
             }
         }
     }
@@ -530,6 +572,140 @@ scripted_gui = {
                     NOT = { has_dlc = "By Blood Alone" }
                     has_tech = engines_3
                 }
+            }
+        }
+
+        effects = {
+            choice_button_steam_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_engine_steam_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_jet_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_engine_jet_selection
+                set_country_flag = GTR_space_program_warning
+            }
+            choice_button_electric_click = {
+                GTR_clear_all_selection_flags = yes
+
+                set_country_flag = GTR_engine_electric_selection
+                set_country_flag = GTR_space_program_warning
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_warning = {
+        window_name = warning_container
+        context_type = player_context
+
+        visible = { has_country_flag = GTR_space_program_warning }
+
+        effects = {
+            warning_cancel_click = {
+                GTR_clear_all_selection_flags = yes
+            }
+            warning_okay_click = {
+                if = {
+                    limit = { has_country_flag = GTR_shuttle_yoylemetal_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_shuttle_selection_enabled
+                    set_country_flag = GTR_shuttle_sealed
+                    set_country_flag = GTR_shuttle_yoylemetal
+                    add_ideas = idea_GTR_shuttle_yoylemetal
+                    activate_mission = GTR_space_program_shuttle_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_shuttle_aluminium_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_shuttle_selection_enabled
+                    set_country_flag = GTR_shuttle_sealed
+                    set_country_flag = GTR_shuttle_aluminium
+                    add_ideas = idea_GTR_shuttle_aluminium
+                    activate_mission = GTR_space_program_shuttle_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_shuttle_tungsten_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_shuttle_selection_enabled
+                    set_country_flag = GTR_shuttle_sealed
+                    set_country_flag = GTR_shuttle_tungsten
+                    add_ideas = idea_GTR_shuttle_tungsten
+                    activate_mission = GTR_space_program_shuttle_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_fuel_coal_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_fuel_selection_enabled
+                    set_country_flag = GTR_fuel_sealed
+                    set_country_flag = GTR_fuel_coal
+                    add_ideas = idea_GTR_fuel_coal
+                    activate_mission = GTR_space_program_fuel_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_fuel_oil_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_fuel_selection_enabled
+                    set_country_flag = GTR_fuel_sealed
+                    set_country_flag = GTR_fuel_oil
+                    add_ideas = idea_GTR_fuel_oil
+                    activate_mission = GTR_space_program_fuel_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_fuel_yoylite_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_fuel_selection_enabled
+                    set_country_flag = GTR_fuel_sealed
+                    set_country_flag = GTR_fuel_yoylite
+                    add_ideas = idea_GTR_fuel_yoylite
+                    activate_mission = GTR_space_program_fuel_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_engine_steam_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_engine_selection_enabled
+                    set_country_flag = GTR_engine_sealed
+                    set_country_flag = GTR_engine_steam
+                    add_ideas = idea_GTR_engine_steam
+                    activate_mission = GTR_space_program_engine_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_engine_jet_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_engine_selection_enabled
+                    set_country_flag = GTR_engine_sealed
+                    set_country_flag = GTR_engine_jet
+                    add_ideas = idea_GTR_engine_jet
+                    activate_mission = GTR_space_program_engine_mission
+                }
+                else_if = {
+                    limit = { has_country_flag = GTR_engine_electric_selection }
+                    GTR_clear_all_selection_flags = yes
+                    clr_country_flag = GTR_engine_selection_enabled
+                    set_country_flag = GTR_engine_sealed
+                    set_country_flag = GTR_engine_electric
+                    add_ideas = idea_GTR_engine_electric
+                    activate_mission = GTR_space_program_engine_mission
+                }
+            }
+        }
+    }
+}
+
+scripted_gui = {
+    GTR_space_program_notification = {
+        window_name = space_program_notification_container
+        context_type = player_context
+
+        visible = { has_country_flag = GTR_notification_spaceship }
+
+        effects = {
+            notification_okay_click = {
+                clr_country_flag = GTR_notification_spaceship
             }
         }
     }

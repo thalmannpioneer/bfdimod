@@ -1312,3 +1312,72 @@ country_event = {
         set_country_flag = GTR_spaceship_building
     }
 }
+
+country_event = {
+    id = GTR_event.57
+    title = GTR_event.57.t
+    desc = GTR_event.57.desc
+    picture = GFX_GTR_event57
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.57.a
+        custom_effect_tooltip = l_GTR_spaceship_launch_event
+        hidden_effect = {
+            clr_country_flag = GTR_spaceship_building
+            goto_province = 4236
+            random = {
+                chance = var_GTR_space_program_success_rate
+                set_country_flag = GTR_space_program_success
+                every_possible_country = {
+                    limit = {
+                        is_ai = no
+                    }
+                    news_event = {
+                        id = bfdinews.33
+                        days = 2
+                        random_hours = 12
+                    }
+                }
+                country_event = {
+                    id = GTR_event.58
+                    days = 5
+                    random_hours = 12
+                }
+            }
+            if = {
+                limit = { NOT = { has_country_flag = GTR_space_program_success } }
+                every_possible_country = {
+                    limit = {
+                        is_ai = no
+                    }
+                    news_event = {
+                        id = bfdinews.34
+                        days = 2
+                        random_hours = 12
+                    }
+                }
+                country_event = {
+                    id = GTR_event.59
+                    days = 4
+                    random_hours = 12
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.58
+    title = GTR_event.58.t
+    desc = GTR_event.58.desc
+    picture = GFX_GTR_event58
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.58.a
+        custom_effect_tooltip = l_GTR_thats_cool
+    }
+}

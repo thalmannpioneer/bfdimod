@@ -2,7 +2,27 @@ guiTypes = {
     containerWindowType = {
         name = "space_program_decisions_container"
         position = { x = 0 y = 0 }
-        size = { width = 100% height = 700 }
+        size = { width = 100% height = 760 }
+
+        containerWindowType = {
+            name = "sr_container"
+            position = { x = 13 y = 500 }
+            size = { width = 95% height = 100 }
+
+            background = {
+                name = "text_bg"
+                spriteType = GFX_tiled_bg
+            }
+
+            instantTextBoxType = {
+                name = "sr"
+                position = { x = 0 y = 35 }
+                maxWidth = 485
+                text = l_GTR_space_program_success_rate
+                font = hoi_30header
+                format = center
+            }
+        }
 
         iconType = {
             name = "bg"
@@ -20,11 +40,13 @@ guiTypes = {
             name = "fuel_button_available"
             position = { x = 205 y = 120 }
             spriteType = GFX_decisions_GTR_space_program_button_available
+            pdx_tooltip = l_GTR_space_program_fuel_tt
         }
         iconType = {
             name = "fuel_button_locked"
             position = { x = 205 y = 120 }
             spriteType = GFX_decisions_GTR_space_program_button_locked
+            pdx_tooltip = l_GTR_space_program_pending_tt
         }
 
         iconType = {
@@ -37,11 +59,13 @@ guiTypes = {
             name = "shuttle_button_available"
             position = { x = 100 y = 260 }
             spriteType = GFX_decisions_GTR_space_program_button_available
+            pdx_tooltip = l_GTR_space_program_shuttle_tt
         }
         iconType = {
             name = "shuttle_button_locked"
             position = { x = 100 y = 260 }
             spriteType = GFX_decisions_GTR_space_program_button_locked
+            pdx_tooltip = l_GTR_space_program_pending_tt
         }
 
         iconType = {
@@ -54,16 +78,18 @@ guiTypes = {
             name = "engine_button_available"
             position = { x = 280 y = 260 }
             spriteType = GFX_decisions_GTR_space_program_button_available
+            pdx_tooltip = l_GTR_space_program_engine_tt
         }
         iconType = {
             name = "engine_button_locked"
             position = { x = 280 y = 260 }
             spriteType = GFX_decisions_GTR_space_program_button_locked
+            pdx_tooltip = l_GTR_space_program_pending_tt
         }
 
         containerWindowType = {
             name = "text_container"
-            position = { x = 13 y = 540 }
+            position = { x = 13 y = 605 }
             size = { width = 95% height = 150 }
 
             background = {
@@ -723,6 +749,94 @@ guiTypes = {
                 buttonText = l_GTR_space_program_choice_button
                 buttonFont = hoi_18mbs
             }
+        }
+    }
+
+    containerWindowType = {
+        name = "warning_container"
+        orientation = center
+        position = { x = -200 y = -125 }
+        size = { width = 400 height = 200 }
+
+        background = {
+            name = "warning_bg"
+            spriteType = GFX_tiled_bg
+        }
+
+        instantTextBoxType = {
+            name = "warning_title"
+            position = { x = 0 y = 30 }
+            maxWidth = 400
+            text = l_GTR_space_program_warning_title
+            format = center
+            font = hoi_30header
+        }
+
+        instantTextBoxType = {
+            name = "warning_text"
+            position = { x = 0 y = 70 }
+            maxWidth = 400
+            text = l_GTR_space_program_warning_text
+            format = center
+            font = hoi_18mbs
+        }
+
+        buttonType = {
+            name = "warning_cancel"
+            position = { x = 30 y = 130 }
+            spriteType = GFX_button_148x34
+            buttonText = l_GTR_space_program_warning_cancel
+            buttonFont = hoi_18mbs
+        }
+
+        buttonType = {
+            name = "warning_okay"
+            position = { x = 220 y = 130 }
+            spriteType = GFX_button_148x34
+            buttonText = l_GTR_space_program_warning_okay
+            buttonFont = hoi_18mbs
+        }
+    }
+
+    containerWindowType = {
+        name = "space_program_notification_container"
+        orientation = center
+        position = { x = -200 y = -125 }
+        size = { width = 400 height = 200 }
+        show_sound = menu_open_window
+        fade_time = 100
+        fade_type = linear
+
+        background = {
+            name = "notification_bg"
+            spriteType = GFX_tiled_bg
+        }
+
+        instantTextBoxType = {
+            name = "notification_title"
+            position = { x = 0 y = 30 }
+            maxWidth = 400
+            text = l_GTR_space_program_notification_title
+            format = center
+            font = hoi_30header
+        }
+
+        instantTextBoxType = {
+            name = "notification_text"
+            position = { x = 0 y = 70 }
+            maxWidth = 400
+            text = l_GTR_space_program_notification_text
+            format = center
+            font = hoi_18mbs
+        }
+
+        buttonType = {
+            name = "notification_okay"
+            position = { x = 130 y = 130 }
+            spriteType = GFX_button_148x34
+            buttonText = l_GTR_space_program_warning_okay
+            buttonFont = hoi_18mbs
+            shortcut = "RETURN"
         }
     }
 }

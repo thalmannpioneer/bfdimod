@@ -276,6 +276,72 @@ GPG_on_lawnland_progressbar_change = {
     }
 }
 
+GTR_clear_all_selection_flags = {
+    clr_country_flag = GTR_space_program_warning
+
+    clr_country_flag = GTR_shuttle_yoylemetal_selection
+    clr_country_flag = GTR_shuttle_aluminium_selection
+    clr_country_flag = GTR_shuttle_tungsten_selection
+
+    clr_country_flag = GTR_fuel_coal_selection
+    clr_country_flag = GTR_fuel_oil_selection
+    clr_country_flag = GTR_fuel_yoylite_selection
+
+    clr_country_flag = GTR_engine_steam_selection
+    clr_country_flag = GTR_engine_jet_selection
+    clr_country_flag = GTR_engine_electric_selection
+}
+
+GTR_calculate_success_rate = {
+    if = {
+        limit = { has_country_flag = GTR_shuttle_yoylemetal }
+        add_to_variable = { var_GTR_space_program_success_rate = 10 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_shuttle_aluminium }
+        add_to_variable = { var_GTR_space_program_success_rate = 20 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_shuttle_tungsten }
+        add_to_variable = { var_GTR_space_program_success_rate = 30 }
+    }
+
+    if = {
+        limit = { has_country_flag = GTR_fuel_coal }
+        add_to_variable = { var_GTR_space_program_success_rate = 10 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_fuel_oil }
+        add_to_variable = { var_GTR_space_program_success_rate = 20 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_fuel_yoylite }
+        add_to_variable = { var_GTR_space_program_success_rate = 30 }
+    }
+
+    if = {
+        limit = { has_country_flag = GTR_engine_steam }
+        add_to_variable = { var_GTR_space_program_success_rate = 10 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_engine_jet }
+        add_to_variable = { var_GTR_space_program_success_rate = 20 }
+    }
+    else_if = {
+        limit = { has_country_flag = GTR_engine_electric }
+        add_to_variable = { var_GTR_space_program_success_rate = 30 }
+    }
+
+    #a pinch of randomness
+    set_temp_variable_to_random = {
+        var = temp_diff
+        min = -5
+        max = 5
+    }
+
+    add_to_variable = { var_GTR_space_program_success_rate = temp_diff }
+}
+
 BFDI_money_diplay_update = {
     if = {
         limit = { check_variable = { money_amount < -10} } #-1M
