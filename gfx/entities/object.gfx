@@ -32,4 +32,9 @@ objectTypes = {
 		name = "reich_helmet_mesh"
 		file = "gfx/models/units/bomby/helmet_reich.mesh"
 	}
+	
+	pdxmesh = {
+		name = "gtr_helmet_mesh"
+		file = "gfx/models/units/bomby/helmet_gtr.mesh"
+	}
 }

@@ -3,4 +3,15 @@ objectTypes = {
 		name = "golfball_statue_mesh"
 		file = "gfx/models/misc/golfball_statue.mesh"
 	}
+	pdxmesh = {
+		name = "rocket_fly_mesh"
+		file = "gfx/models/misc/rocket/rocket_fly.mesh"
+		animation = { id = "idle" type = "rocket_fly_fly" }
+		animation = { id = "next" type = "rocket_fly_idle" }
+	}
+	pdxmesh = {
+		name = "rocket_dead_mesh"
+		file = "gfx/models/misc/rocket/rocket_dead.mesh"
+		animation = { id = "idle" type = "rocket_dead_idle" }
+	}
 }

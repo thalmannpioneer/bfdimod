@@ -1392,6 +1392,10 @@
  GTR_event.58.desc: "The entire astronaut team successfully landed in the Goiky Ocean and managed to return to our territory. Recordings of the lunar surface were obtained, and the flag of our Technocracy was planted on the satellite itself!\nThis unprecedented victory for our science will go down in Goiky's history as one of its most striking pages, despite the anarchy and chaos surrounding this great event..."
  GTR_event.58.a: "The Future is Calling!"
 
+ GTR_event.59.t: "The Tragedy of \"Cherries\""
+ GTR_event.59.desc: "As a result of tragic miscalculations, our space mission failed. This seriously damaged morale among the professors and the team. But this is not the end. Not all projects, and not all great deeds, are accomplished on the first try. We will definitely return to this plan, even more prepared and experienced. In the meantime, let's remember the heroic \"Cherrys\" team, which proved to be pioneers in the conquest of space, even if they didn't quite reach its heights..."
+ GTR_event.59.a: "The Future is Calling!"
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."
@@ -1532,6 +1536,10 @@
  bfdinews.33.t: "Space Flight!"
  bfdinews.33.desc: "Our correspondents captured unique footage from the launch pad at the \"Dimples\" test site: for the first time in Goiky's history, objects have successfully crossed the stratosphere and soared into space! This astonishing project was made possible thanks to the restoration of Goiky University and the enormous financial investment of the Technocratic Republic's government.\nIt appears the shuttle is heading directly for the Moon. It's still unclear when the astronauts will return to Earth, but it's already clear that this will upend the entire arms race between the surrounding nations."
  bfdinews.33.a: "One step for <an> object..."
+
+ bfdinews.34.t: "Space Flight Tragically Failed!"
+ bfdinews.34.desc: "Tragic news is coming from the Technocratic Republic: it appears the launch of a long-developed space rocket has ended in disaster. Most likely, an accident occurred during the launch mechanism, and the fuel detonated, causing a massive explosion and killing the entire crew. This will seriously undermine the prestige of the Goiky University and the Technocratic Republic in the scientific race with other nations. We will continue to monitor news surrounding this tragic event."
+ bfdinews.34.a: "The first step is always troublesome."
 
 
 # bfdinews_cities

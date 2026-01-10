@@ -795,6 +795,10 @@ SpriteTypes = {
 		name = GFX_GTR_event58
 		textureFile = gfx/event_pictures/GTR_event58.dds
 	}
+	spriteType = {
+		name = GFX_GTR_event59
+		textureFile = gfx/event_pictures/GTR_event59.dds
+	}
 	
 	
 	spriteType = {
@@ -925,6 +929,10 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_bfdinews33
 		textureFile = gfx/event_pictures/bfdinews33.dds
+	}
+	spriteType = {
+		name = GFX_bfdinews34
+		textureFile = gfx/event_pictures/bfdinews34.dds
 	}
 	spriteType = {
 		name = GFX_bfdinews_city

@@ -200,7 +200,8 @@
  l_GTR_fuel_done: "§LFuel§! will be collected"
  l_GTR_engine_done: "§2Engine§! will be assembled"
  l_GTR_spaceship_launch_event: "We will proceed with the §YShip Launch§!.\nThe Chance of the §7Successful Operation§! will be computed of a success rate of all parts of the ship."
- l_GTR_thats_cool: "§2Yo thats like really cool bro!!!!!§!"
+ l_GTR_thats_cool: "§2Wonderful Job!§!"
+ l_GTR_bad_spaceship_outcome: "§tThat's not the end yet...§!"
 
  l_money_gain_100K: "Gain §G100K Dollars§!"
  l_money_gain_200K: "Gain §G200K Dollars§!"

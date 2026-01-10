@@ -1,0 +1,14 @@
+animation = {
+    name = "rocket_dead_idle"
+    file = "rocket_dead_idle.anim"
+}
+
+animation = {
+    name = "rocket_fly_idle"
+    file = "rocket_fly_idle.anim"
+}
+
+animation = {
+    name = "rocket_fly_fly"
+    file = "rocket_fly_fly.anim"
+}

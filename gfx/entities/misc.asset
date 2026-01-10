@@ -2,3 +2,61 @@ entity = {
 	name = "golfball_statue"
 	pdxmesh = "golfball_statue_mesh"
 }
+
+entity = {
+	name = "rocket_dead"
+	pdxmesh = "rocket_dead_mesh"
+
+	state = {
+		name = "next"
+		state_time = 0.0
+
+		animation = "idle"
+        animation_blend_time = 0.0
+        animation_speed = 1.0
+        looping = yes
+        next_state = "idle"
+	}
+
+	state = { 
+        name = "idle" 
+        state_time = 0.0
+        
+		animation = "idle"
+		event = { time = 0 sound = { soundeffect = "nuke_big_light_flash" } }
+		event = { time = 0.5 particle = "nuke_big_particle" keep_particle = yes sound = { soundeffect = "nuke_big_explosion_and_fire" } }
+		event = { time = 4 node = effect time = 0.5 particle = "nuke_big_top_particle" keep_particle = yes }
+		looping = no
+        next_state = "next"
+    }
+}
+entity = {
+	name = "rocket_fly"
+	pdxmesh = "rocket_fly_mesh"
+
+	state = { 
+        name = "idle" 
+        state_time = 0.0
+        
+        animation = "idle"
+        animation_blend_time = 0.0
+        animation_speed = 1.0
+        looping = no
+        next_state = "next"
+
+		event = { time = 0 sound = { soundeffect = "nuke_big_light_flash" } }
+		event = { time = 0.5 particle = "nuke_big_particle" keep_particle = yes sound = { soundeffect = "nuke_big_explosion_and_fire" } }
+		event = { time = 4 node = effect time = 0.5 particle = "nuke_big_top_particle" keep_particle = yes }
+    }
+
+	state = { 
+        name = "next" 
+        state_time = 0.0
+        
+        animation = "next"
+        animation_blend_time = 0.0
+        animation_speed = 1.0
+        looping = yes
+        next_state = "next"
+    }
+}
