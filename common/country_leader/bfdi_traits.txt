@@ -109,7 +109,7 @@ leader_traits = {
     }
 
     skilled_military_staff = { #The great Iron Hand buff
-        army_org_factor = 0.1
+        army_org_factor = 0.15
     }
 
     second_hand = {
@@ -152,7 +152,7 @@ leader_traits = {
     GTR_civilian_scientist = {
         sprite = 14
 
-        ai_will_do = {
+        ai_will_do = { #Why does this not work Hoi4 why???????????
             base = 1
         }
     }

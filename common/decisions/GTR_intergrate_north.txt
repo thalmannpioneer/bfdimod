@@ -26,6 +26,10 @@ decision_GTR_north_integration_category = {
                 has_political_power > 150
                 add = 10
             }
+            modifier = {
+                has_completed_focus = GTR_focus_behind_steel_walls
+                add = 10
+            }
         }
     }
 
@@ -54,6 +58,10 @@ decision_GTR_north_integration_category = {
             base = 5
             modifier = {
                 has_political_power > 150
+                add = 10
+            }
+            modifier = {
+                has_completed_focus = GTR_focus_behind_steel_walls
                 add = 10
             }
         }

@@ -15,6 +15,7 @@ ideas = {
 				training_time_factor = 1
 				command_power_gain_mult = -0.25
 				max_command_power_mult = -0.20
+				planning_speed = -0.25
 			}
 		}
 

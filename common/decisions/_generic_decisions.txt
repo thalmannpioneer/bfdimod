@@ -74,11 +74,12 @@ political_actions = {
                 tooltip = l_decisions_YFC_divs
                 NOT = {has_country_flag = has_active_mercenaries}
             }
-			custom_trigger_tooltip = {
-                tooltip = l_money_cost_500K
-                check_variable = { money_amount > 5 }
-            }
 		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 5 }
+		}
+		custom_cost_text = decisions_cost_money_500k
 
 		fire_only_once = no
 		days_remove = 180
@@ -128,11 +129,12 @@ political_actions = {
                 tooltip = l_decisions_YFC_divs
                 NOT = {has_country_flag = has_active_mercenaries}
             }
-			custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
 		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+		}
+		custom_cost_text = decisions_cost_money_1m
 
 		fire_only_once = no
 		days_remove = 180
@@ -182,11 +184,12 @@ political_actions = {
                 tooltip = l_decisions_YFC_divs
                 NOT = {has_country_flag = has_active_mercenaries}
             }
-			custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
 		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+		}
+		custom_cost_text = decisions_cost_money_1m
 
 		fire_only_once = no
 		days_remove = 180
@@ -234,17 +237,15 @@ economy_decisions = {
 			max_manpower_k < 2500 #Less than 2.5 Mil
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 360
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -278,18 +279,15 @@ economy_decisions = {
 			num_researched_technologies < 30
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 360
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -324,17 +322,17 @@ economy_decisions = {
 
 		available = {
 			has_stability < 0.75
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_2_5M
-                check_variable = { money_amount > 25 }
-            }
         }
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 25 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_2_5m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 360
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -370,18 +368,15 @@ economy_decisions = {
 			has_country_flag = has_money_system
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_2_5M
-                check_variable = { money_amount > 25 }
-            }
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 25 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_2_5m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 360
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -413,19 +408,15 @@ economy_decisions = {
 			has_country_flag = has_money_system
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
-
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 360
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -467,18 +458,15 @@ economy_decisions = {
 			}
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
 		days_remove = 90
 		days_re_enable = 450
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -515,19 +503,15 @@ economy_decisions = {
 			has_country_flag = has_money_system
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_2_5M
-                check_variable = { money_amount > 25 }
-            }
-
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 25 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_2_5m_pp_35
 
 		fire_only_once = no
 		days_remove = 90
 		days_re_enable = 720
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -564,18 +548,14 @@ economy_decisions = {
 			has_country_flag = has_money_system
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_2_5M
-                check_variable = { money_amount > 25 }
-            }
-
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 25 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_2_5m_pp_35
 
 		fire_only_once = no
 		days_re_enable = 720
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -701,17 +681,17 @@ propaganda_efforts = {
 				has_idea = disarmed_nation
 				has_idea = volunteer_only
 			}
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
         }
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 720
-
-		cost = 35
 
 		ai_will_do = {
 			base = 0
@@ -973,18 +953,15 @@ war_measures = {
 			longest_war_length < 6
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_2_5M
-                check_variable = { money_amount > 25 }
-            }
-        }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 25 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_2_5m_pp_35
 
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 180
-
-		cost = 75
 
 		ai_will_do = {
 			factor = 10
@@ -1298,7 +1275,6 @@ economy_decisions = {
             always = yes
         }
 
-        cost = 100
         fire_only_once = no
 
         days_re_enable = 30
@@ -1312,11 +1288,13 @@ economy_decisions = {
 				size < 1
 			}
 		}
-		custom_trigger_tooltip = {
-            tooltip = l_money_cost_1M
-            check_variable = { money_amount > 10 }
-        }
 	}
+
+	custom_cost_trigger = {
+		check_variable = { money_amount > 10 }
+		has_political_power > 99
+	}
+	custom_cost_text = decisions_cost_money_1m_pp_100
 
 	visible = {
 		has_country_flag = has_money_system

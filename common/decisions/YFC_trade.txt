@@ -6,15 +6,13 @@ decision_YFC_trade_category= {
 			has_completed_focus = YFC_focus_open_the_market
 		}
 
-		available = {
-			custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 9
 		}
+		custom_cost_text = decisions_cost_money_1m_pp_10
 
 		fire_only_once = no
-		cost = 10
 		days_remove = 180
 		days_re_enable = 60
 

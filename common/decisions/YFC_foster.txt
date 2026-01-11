@@ -108,16 +108,13 @@ decision_YFC_foster_category = {
 		}
 
 		fire_only_once = no
-		cost = 0
 		days_remove = 15
 		days_re_enable = 10
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_100K
-                check_variable = { money_amount > 1 }
-            }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 1 }
 		}
+		custom_cost_text = decisions_cost_money_100k
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 1 }
@@ -158,16 +155,14 @@ decision_YFC_foster_category = {
 			NOT = {has_completed_focus = YFC_focus_bunch_fostered}
 		}
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_200K
-                check_variable = { money_amount > 2 }
-            }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 2 }
+			has_political_power > 9
 		}
+		custom_cost_text = decisions_cost_money_200K_pp_10
 
 		fire_only_once = yes
 
-		cost = 10
 		days_remove = 60
 
 		complete_effect = {
@@ -213,12 +208,10 @@ decision_YFC_foster_category = {
 		days_remove = 30
 		days_re_enable = 50
 
-		available = {
-            custom_trigger_tooltip = {
-                tooltip = l_money_cost_500K
-                check_variable = { money_amount > 5 }
-            }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 5 }
 		}
+		custom_cost_text = decisions_cost_money_500k
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 5 }
