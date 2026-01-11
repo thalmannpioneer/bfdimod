@@ -517,6 +517,7 @@ country_event = {
             id = GTR_power_balance
             set_value = 0.1
         }
+        activate_mission = GTR_bop_outcome_mission
     }
 }
 
@@ -877,11 +878,15 @@ country_event = {
             }
         }
         remove_power_balance = { id = GTR_power_balance }
-    }
+        set_country_flag = GTR_outcome
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_outcome
 
-    option = {
-        name = GTR_event.36.b
-        remove_power_balance = { id = GTR_power_balance }
+        if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+            set_variable = { var_demo_end = 10 }
+        }
     }
 }
 
@@ -919,11 +924,15 @@ country_event = {
             }
         }
         remove_power_balance = { id = GTR_power_balance }
-    }
+        set_country_flag = GTR_outcome
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_outcome
 
-    option = {
-        name = GTR_event.38.b
-        remove_power_balance = { id = GTR_power_balance }
+        if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+            set_variable = { var_demo_end = 10 }
+        }
     }
 }
 
@@ -1308,9 +1317,9 @@ country_event = {
 
     option = {
         name = GTR_event.56.a
-        custom_effect_tooltip = l_GTR_opens_spaceship_menu
-        activate_mission = GTR_space_program_launch_mission
-        set_country_flag = GTR_spaceship_building
+        custom_effect_tooltip = l_GTR_opens_spaceship_focus
+        set_country_flag = GTR_space_enabled
+        mark_focus_tree_layout_dirty = yes
     }
 }
 
@@ -1325,6 +1334,7 @@ country_event = {
     option = {
         name = GTR_event.57.a
         custom_effect_tooltip = l_GTR_spaceship_launch_event
+        goto_province = 4236
         hidden_effect = {
             clr_country_flag = GTR_spaceship_building
             random = {
@@ -1421,6 +1431,46 @@ country_event = {
     option = {
         name = GTR_event.59.a
         custom_effect_tooltip = l_GTR_bad_spaceship_outcome
+    }
+}
+
+country_event = {
+    id = GTR_event.60
+    title = GTR_event.60.t
+    desc = GTR_event.60.desc
+    picture = GFX_GTR_event60
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.60.a
+        custom_effect_tooltip = l_GTR_opens_spaceship_menu
+        activate_mission = GTR_space_program_launch_mission
+        set_country_flag = GTR_spaceship_building
+    }
+}
+
+
+country_event = {
+    id = GTR_event.61
+    title = GTR_event.61.t
+    desc = GTR_event.61.desc
+    picture = GFX_GTR_event61
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.61.a
+        remove_power_balance = { id = GTR_power_balance }
+        set_country_flag = GTR_outcome
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_outcome
+
+        if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+            set_variable = { var_demo_end = 10 }
+        }
     }
 }
 

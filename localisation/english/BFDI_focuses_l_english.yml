@@ -1276,9 +1276,6 @@
  GTR_focus_wide_ruling_horizontal: "Wide Ruling Horizontal"
  GTR_focus_wide_ruling_horizontal_desc: "We need to attract more talented objects to governance. This is the only way we can sustain the Republic."
 
- GTR_focus_role_of_presidency: "§7The President§!"
- GTR_focus_role_of_presidency_desc: "The time has come to introduce the position of President of the Republic."
-
  GTR_focus_noocracy: "§2Noocracy§!"
  GTR_focus_noocracy_desc: "Science moves ahead of social constructs! They merely impede its eternal progress. That's why only those objects dedicated to its growth should be in control."
 
@@ -1290,9 +1287,6 @@
 
  GTR_focus_voting_cense: "IQ Tests for Voting"
  GTR_focus_voting_cense_desc: "Not everyone is capable of voting correctly. Therefore, it's time to introduce an intellectual qualification for stupid objects."
-
- GTR_focus_the_first_mind: "§2The First Mind§!"
- GTR_focus_the_first_mind_desc: "The Republic must be led by the smartest object! And, naturally, that's Golfball."
 
  GTR_focus_economics: "Bread and Books"
  GTR_focus_economics_desc: "The Technocratic Republic now has a serious material basis for full-fledged economic construction. With the scientific approach of our objects, we will be able to do this most effectively."
@@ -1374,6 +1368,12 @@
 
  GTR_focus_modern_army: "Modern Army"
  GTR_focus_modern_army_desc: "A modern and small army will meet the needs of our defense and will demonstrate the strength of our technology to the entire hostile environment of The Technocratic Republic."
+
+ GTR_focus_outcome: "[GTR_FOCUS_OUTCOME]"
+ GTR_focus_outcome_desc: " "
+ GTR_focus_outcome_golfball: "§2The First Mind§!"
+ GTR_focus_outcome_tennis_ball: "§7The President§!"
+ GTR_focus_outcome_duumvirate: "§LEquilibrium§!"
 
  #generic
  generic_focus_industry: "Industry expansion"

@@ -128,7 +128,7 @@ defined_text = {
     }
     text = {
         trigger = {
-            has_tech = engines_3
+            has_tech = engines_2
         }
         localization_key = l_GTR_space_program_choice_demand_third_engines_true
     }

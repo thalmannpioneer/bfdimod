@@ -4,4 +4,9 @@ spriteTypes = {
         textureFile = "gfx/texticons/yoylenation.dds"
         legacy_lazy_load = no
     }
+    spriteType = {
+        name = "GFX_dollar_texticon"
+        textureFile = "gfx/texticons/dollar.dds"
+        legacy_lazy_load = no
+    }
 }

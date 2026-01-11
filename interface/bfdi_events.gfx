@@ -711,6 +711,10 @@ SpriteTypes = {
 		textureFile = gfx/event_pictures/GTR_event37.dds
 	}
 	spriteType = {
+		name = GFX_GTR_event38
+		textureFile = gfx/event_pictures/GTR_event38.dds
+	}
+	spriteType = {
 		name = GFX_GTR_event39
 		textureFile = gfx/event_pictures/GTR_event39.dds
 	}
@@ -798,6 +802,14 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_GTR_event59
 		textureFile = gfx/event_pictures/GTR_event59.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event60
+		textureFile = gfx/event_pictures/GTR_event60.dds
+	}
+	spriteType = {
+		name = GFX_GTR_event61
+		textureFile = gfx/event_pictures/GTR_event61.dds
 	}
 	
 	

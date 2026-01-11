@@ -570,7 +570,7 @@ scripted_gui = {
                 num_of_available_civilian_factories > 4
                 OR = {
                     NOT = { has_dlc = "By Blood Alone" }
-                    has_tech = engines_3
+                    has_tech = engines_2
                 }
             }
         }

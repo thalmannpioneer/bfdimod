@@ -1,55 +1,59 @@
 defined_text = {
-	name = DEMO_END_TITLE
-	text = {
-		trigger = { original_tag = WGF }
-		localization_key = demo_end_WGF_title
-	}
-	text = {
-		trigger = { original_tag = SMG }
-		localization_key = demo_end_GGR_title_1
-	}
-	text = {
-		trigger = { original_tag = GGR }
-		localization_key = demo_end_GGR_title_2
-	}
-	text = {
-		trigger = { original_tag = GPG }
-		localization_key = demo_end_GPG_title_1
-	}
-	text = {
-		trigger = {
-			original_tag = GSR 
-			has_country_flag = communist_path
-		}
-		localization_key = demo_end_GSR_title_1
-	}
-	text = {
-		trigger = {
-			original_tag = GSR 
-			has_country_flag = anarchist_path
-		}
-		localization_key = demo_end_GSR_title_2
-	}
-	text = {
-		trigger = {
-			original_tag = GFG 
-			has_country_flag = fascist_path
-		}
-		localization_key = demo_end_GFG_title_1
-	}
-	text = {
-		trigger = {
-			original_tag = GFG 
-			has_country_flag = esoteric_path
-		}
-		localization_key = demo_end_GFG_title_2
-	}
-	text = {
-		trigger = { original_tag = GDR }
-		localization_key = demo_end_GDR_title
-	}
-	text = {
-		trigger = { original_tag = UGA }
-		localization_key = demo_end_GTR_title_1
-	}
+    name = DEMO_END_TITLE
+    text = {
+        trigger = { original_tag = WGF }
+        localization_key = demo_end_WGF_title
+    }
+    text = {
+        trigger = { original_tag = SMG }
+        localization_key = demo_end_GGR_title_1
+    }
+    text = {
+        trigger = { original_tag = GGR }
+        localization_key = demo_end_GGR_title_2
+    }
+    text = {
+        trigger = { original_tag = GPG }
+        localization_key = demo_end_GPG_title_1
+    }
+    text = {
+        trigger = {
+            original_tag = GSR
+            has_country_flag = communist_path
+        }
+        localization_key = demo_end_GSR_title_1
+    }
+    text = {
+        trigger = {
+            original_tag = GSR
+            has_country_flag = anarchist_path
+        }
+        localization_key = demo_end_GSR_title_2
+    }
+    text = {
+        trigger = {
+            original_tag = GFG
+            has_country_flag = fascist_path
+        }
+        localization_key = demo_end_GFG_title_1
+    }
+    text = {
+        trigger = {
+            original_tag = GFG
+            has_country_flag = esoteric_path
+        }
+        localization_key = demo_end_GFG_title_2
+    }
+    text = {
+        trigger = { original_tag = GDR }
+        localization_key = demo_end_GDR_title
+    }
+    text = {
+        trigger = { original_tag = UGA }
+        localization_key = demo_end_GTR_title_1
+    }
+    text = {
+        trigger = { original_tag = GTR }
+        localization_key = demo_end_GTR_title_2
+    }
 }

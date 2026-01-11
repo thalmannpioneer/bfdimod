@@ -1392,37 +1392,6 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = GTR_focus_role_of_presidency
-        relative_position_id = GTR_focus_democracy
-        y = 3
-
-        icon = GFX_focus_GTR_role_of_presidency
-
-        cost = 5
-
-        prerequisite = { focus = GTR_focus_wide_ruling_horizontal }
-
-        available = {
-            power_balance_value = {
-                id = GTR_power_balance
-                value < -0.2
-            }
-            custom_trigger_tooltip = {
-                tooltip = l_GTR_inner_politics_tree_cd_long
-                NOT = { has_country_flag = GTR_inner_politics_tree_cd_long }
-            }
-        }
-
-        ai_will_do = {
-            base = 5
-        }
-
-        completion_reward = {
-            country_event = GTR_event.36
-        }
-    }
-
 
     #ZIS IS GOLFBALL UND IM HERE TO SAY YOU MUST GIVE MORE OF YOUR RIGHTS AWAY
     focus = {
@@ -1563,37 +1532,6 @@ focus_tree = {
                 days = 320
                 value = 1
             }
-        }
-    }
-
-    focus = {
-        id = GTR_focus_the_first_mind
-        relative_position_id = GTR_focus_noocracy
-        y = 3
-
-        icon = GFX_focus_GTR_the_first_mind
-
-        cost = 5
-
-        prerequisite = { focus = GTR_focus_voting_cense }
-
-        available = {
-            power_balance_value = {
-                id = GTR_power_balance
-                value > 0.2
-            }
-            custom_trigger_tooltip = {
-                tooltip = l_GTR_inner_politics_tree_cd_long
-                NOT = { has_country_flag = GTR_inner_politics_tree_cd_long }
-            }
-        }
-
-        ai_will_do = {
-            base = 5
-        }
-
-        completion_reward = {
-            country_event = GTR_event.38
         }
     }
 
@@ -1855,7 +1793,12 @@ focus_tree = {
                 add_extra_state_shared_building_slots = 3
                 add_building_construction = {
                     type = arms_factory
-                    level = 3
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
                     instant_build = yes
                 }
                 add_manpower = -10930
@@ -2278,6 +2221,44 @@ focus_tree = {
                 uses = 3
                 category = air_equipment
             }
+
+            hidden_effect = {
+                set_temp_variable = { space_event_days = 30 }
+                if = {
+                    limit = { NOT = { has_completed_focus = GTR_focus_even_better_now } }
+                    add_to_temp_variable = { space_event_days = 30 }
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            OR = {
+                                has_completed_focus = GTR_focus_consumer_factories
+                                has_completed_focus = GTR_focus_massive_factories
+                            }
+                        }
+                    }
+                    add_to_temp_variable = { space_event_days = 30 }
+                }
+                if = {
+                    limit = {
+                        NOT = {
+                            OR = {
+                                has_completed_focus = GTR_focus_mutual_protection
+                                has_completed_focus = GTR_focus_integrate_lofty
+                                has_completed_focus = GTR_focus_brain_of_goiky
+                            }
+                        }
+                    }
+                    add_to_temp_variable = { space_event_days = 30 }
+                }
+
+                country_event = {
+                    id = GTR_event.56
+                    days = space_event_days
+                    random_days = 10
+                    random_hours = 12
+                }
+            }
         }
     }
 
@@ -2349,6 +2330,12 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_modern_aircraft }
 
+        allow_branch = { has_country_flag = GTR_space_enabled }
+
+        available = {
+            has_idea = idea_GTR_goiky_university
+        }
+
         cost = 5
 
         ai_will_do = {
@@ -2356,7 +2343,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            country_event = GTR_event.56
+            country_event = GTR_event.60
         }
     }
 
@@ -2379,5 +2366,47 @@ focus_tree = {
         completion_reward = {
             add_ideas = idea_GTR_modern_army
         }
+    }
+
+
+    # outcome
+
+    focus = {
+        id = GTR_focus_outcome
+        x = 26
+        y = 7
+
+        icon = {
+            trigger = {
+                has_country_leader = {
+                    character = GTR_golfball
+                    ruling_only = yes
+                }
+            }
+            value = GFX_focus_GTR_outcome_golfball
+        }
+        icon = {
+            trigger = {
+                has_country_leader = {
+                    character = GTR_tennis_ball
+                    ruling_only = yes
+                }
+            }
+            value = GFX_focus_GTR_outcome_tennis_ball
+        }
+        icon = {
+            value = GFX_focus_GTR_outcome_duumvirate
+        }
+        dynamic = yes
+
+        cost = 0
+
+        available = {
+            always = no
+        }
+
+        allow_branch = { has_country_flag = GTR_outcome }
+
+        completion_reward = { }
     }
 }

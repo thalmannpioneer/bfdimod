@@ -944,4 +944,26 @@ spriteTypes = {
 		name = "GFX_decisions_GTR_space_program_engine_mission"
 		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_engine_mission.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_invest_industry"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_invest_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_space_program_invest_air_research"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_invest_air_research.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_decisions_GTR_bop_outcome_mission"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_bop_outcome_mission.dds"
+		noOfFrames = 20
+		loadType = "INGAME"
+		transparencecheck = no
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
 }

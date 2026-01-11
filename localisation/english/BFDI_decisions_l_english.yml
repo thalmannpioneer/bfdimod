@@ -381,8 +381,8 @@
  l_GTR_space_program_electric_tt: "High efficiency and environmentally friendly!"
  l_GTR_space_program_choice_demand_electric: "[FIVE_FACTORIES_DEMAND]\n[THIRD_ENGINES_DEMAND]"
  l_GTR_space_program_choice_demand_yoylite_facility_skip: ""
- l_GTR_space_program_choice_demand_third_engines_true: "£GFX_trigger_yes §GВResearched§!  £GFX_research_icon Engines III"
- l_GTR_space_program_choice_demand_third_engines_false: "£GFX_trigger_no §RResearched§!  £GFX_research_icon §gEngines III§!"
+ l_GTR_space_program_choice_demand_third_engines_true: "£GFX_trigger_yes §GВResearched§!  £GFX_research_icon Engines II"
+ l_GTR_space_program_choice_demand_third_engines_false: "£GFX_trigger_no §RResearched§!  £GFX_research_icon §gEngines II§!"
  l_GTR_space_program_tip: "Click on any Ship Part!"
  l_GTR_space_program_text: "In the times of the §7Old Goiky§! nobody was really thinking about the wast §2Space§!. But situation has changed.\n\nIf object of §gthe Technocratic Republic§! will reach the stars, then §YAll Political Game§! will be turned over and §tbig perspectives will open up...§!"
  GTR_space_program_launch_mission: "§2Launch of The Ship§!"
@@ -405,6 +405,10 @@
  l_GTR_space_program_fuel_tt: "§LFuel§!"
  l_GTR_space_program_engine_tt: "§2Engine§!"
  l_GTR_space_program_pending_tt: "§9In progress...§!"
+ GTR_space_program_invest_industry: "Expand §LIndustry§!"
+ GTR_space_program_invest_air_research: "Concentrate on §3Air Tech§!"
+ GTR_bop_outcome_mission: "§YSummarizing§!"
+ GTR_bop_outcome_mission_desc: "We shall define the direction for our Technocratic State."
 
  #TBT State Modifiers 
  TBT_low_pop: "Minor Teardroppers Population"

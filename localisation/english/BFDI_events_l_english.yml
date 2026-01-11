@@ -1296,19 +1296,17 @@
  GTR_event.35.desc: "\"Any Announcergrad object, regardless of gender, limbs, or mental abilities, has the right to vote, express dissent, run for office, and be elected to the Announcergrad Council. This right is unconditionally granted to all objects of the city.\"\n\nTennis Ball stands still in anticipation of the crowd's reaction."
  GTR_event.35.a: "Roaring Applause."
 
- GTR_event.36.t: "Presidency?"
- GTR_event.36.desc: "Tennis Ball's political reforms were met with profound enthusiasm among Announcergrad's objects. But now the most important political question arises: governance. The Republic must be led by a president, or we can maintain a certain status quo between Golfball and Tennis Ball. It's time to decide."
- GTR_event.36.a: "President!"
- GTR_event.36.b: "Duumvirate!"
+ GTR_event.36.t: "Presidency"
+ GTR_event.36.desc: "Tennis Ball's political reforms were met with a great warmth among the objects of Announcergrad. Democratization and the formation of fully fledged civil institutions helped establish the Technocratic Republic as a fully fledged state, where all objects could benefit from the fruits of science and technological progress."
+ GTR_event.36.a: "Long live The Republic!"
 
  GTR_event.37.t: "Dead Weight of Morality"
  GTR_event.37.desc: "Golfball was particularly nervous about her evening brainstorming today. The question made her shudder several times in her comfy office.\n\n\"NO ONE in the old Goiky did care about weapons development. That makes total sense. But why don't we want to do it NOW?\nWhat's stopping my scientists from now starting to develop weapons\"\n\nAnd, suddenly, thought pierced her brain.\nThe reluctance to kill and the feeling of responsibility for killing hinders the creation of new types of weapons.\nThis dead weight needs to be shed."
  GTR_event.37.a: "Science is above these prejudices."
 
- GTR_event.38.t: "The Leader"
- GTR_event.38.desc: "Currently, the Technocratic Republic has no clearly established leader, but there is an unspoken dual power between Tennis Ball and Golfball.\nAs a result of successful reforms, Golfball has pulled ahead, but the future ruler of the Republic has not yet become clear.\n\nWill Golfball take power, or will the Duumvirate be preserved?"
- GTR_event.38.a: "Bossy Bot Rules Alone!"
- GTR_event.38.b: "Duumvirate Stays!"
+ GTR_event.38.t: "The First Mind"
+ GTR_event.38.desc: "Thanks to Golfball's rigorous reforms aimed at supporting the scientific field and transforming the Technocratic Republic into a fully-fledged state with a self-defense force capable of defending itself, Golfball has gained enormous support. The time has come to finally prioritize scientific development for the Republic!"
+ GTR_event.38.a: "Long live The Science!"
 
  GTR_event.39.t: "Stomach Question"
  GTR_event.39.desc: "- \"Won't taking this junk. Give me real money, or get out!\"\n\nLife in Announcergrad revived after the Republic was declared. Transportation was restored, and numerous new businesses opened. They even began printing their own currency. But, unfortunately, growing pains are inevitable.\n\n- \"Knock-knock, four-eyes, you hear me?=\"\n- \"This is all I have. Please, I need to feed my daughter.\"\n\nThe family is struggling to survive on rations, even though they've expanded significantly in recent months. A black market is thriving in the back alleys of Announcergrad.\n\n- \"You don't understand?\"\nThe fist whistled through the air.\n\nProfessors are paid primarily in ration cards, but they are also given foreign currency. However, this is not yet in circulation.\n\n- \"I'll pay for them.\"\nAn object comes out of the queue.\n - \"Carton? My student?\""
@@ -1395,6 +1393,14 @@
  GTR_event.59.t: "The Tragedy of \"Cherries\""
  GTR_event.59.desc: "As a result of tragic miscalculations, our space mission failed. This seriously damaged morale among the professors and the team. But this is not the end. Not all projects, and not all great deeds, are accomplished on the first try. We will definitely return to this plan, even more prepared and experienced. In the meantime, let's remember the heroic \"Cherrys\" team, which proved to be pioneers in the conquest of space, even if they didn't quite reach its heights..."
  GTR_event.59.a: "The Future is Calling!"
+
+ GTR_event.60.t: "Operation \"Bridgecrossing\""
+ GTR_event.60.desc: "\"...and now, let's get to the details.\"\n\nGolfball and Tennis Ball sat in a quiet, even modest conference room, where the agenda was being discussed on a topic that was completely unfittable for its setting.\n\n\"So, the ship will consist of three main, so to speak, \"parts\": a shuttle, where three crew members will be located; a fuel tank, which will contain the energy source for the engine; and the engine itself, which will keep the ship moving and direct it to its final destination - the Moon.\"\n\nShort applause.\n\n\"But, as we know, the devil hides in the details, and we have never had such an extreme experience in the history of engineering, so we will have to experiment...\""
+ GTR_event.60.a: "Let's get to work."
+
+ GTR_event.61.t: "Stability"
+ GTR_event.61.desc: "It seems that during the internal political reforms, neither side has been able to seize the initiative. The old friendship remains strong, and Golfball and Tennis Ball continue to rule the Technocratic Republic together. Seems like it's just their fate."
+ GTR_event.61.a: "TB, GB, sitting on a tree..."
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"

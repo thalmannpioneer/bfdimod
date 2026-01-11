@@ -100,3 +100,28 @@ defined_text = {
         localization_key = sp_yoylite_bomb_disabled
     }
 }
+
+defined_text = {
+    name = GTR_FOCUS_OUTCOME
+    text = {
+        trigger = {
+            has_country_leader = {
+                character = GTR_golfball
+                ruling_only = yes
+            }
+        }
+        localization_key = GTR_focus_outcome_golfball
+    }
+    text = {
+        trigger = {
+            has_country_leader = {
+                character = GTR_tennis_ball
+                ruling_only = yes
+            }
+        }
+        localization_key = GTR_focus_outcome_tennis_ball
+    }
+    text = {
+        localization_key = GTR_focus_outcome_duumvirate
+    }
+}
