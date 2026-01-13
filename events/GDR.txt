@@ -290,7 +290,7 @@ country_event = {
 			GPR = {
 				set_autonomy = {
 					target = ROOT
-					autonomous_state = autonomy_satellite
+					autonomous_state = autonomy_integrated_puppet
 				}
 			}
 		}

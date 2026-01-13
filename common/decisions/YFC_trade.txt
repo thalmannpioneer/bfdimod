@@ -14,7 +14,7 @@ decision_YFC_trade_category= {
 
 		fire_only_once = no
 		days_remove = 180
-		days_re_enable = 60
+		days_re_enable = 75
 
 		complete_effect = {
 			add_research_slot = 2
@@ -28,11 +28,11 @@ decision_YFC_trade_category= {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 35 }
+				check_variable = { money_amount > 50 }
 				add = 100
 			}
 			modifier = { #by this point other nations have other tech so get new stuff
-				check_variable = { money_amount > 15 }
+				check_variable = { money_amount > 17 }
 				date > 2015.01.01
 				date < 2016.01.01
 				add = 100

@@ -47,6 +47,14 @@ characters = {
             visible = { has_country_flag = GTR_unlock_tb }
         }
     }
+    GTR_tennis_wall = {
+        name = GTR_tennis_wall
+        portraits = {
+            civilian = {
+                large = GFX_GTR_tennis_ball
+            }
+        }
+    }
     GTR_test_tube = {
         name = GTR_test_tube
         portraits = { civilian = { small = GFX_idea_GTR_test_tube } }

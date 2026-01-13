@@ -440,7 +440,7 @@ on_actions = {
         }
     }
 
-    on_weekly = {
+    on_daily = {
         effect = {
             IF = {
                 limit = {is_ai = no}

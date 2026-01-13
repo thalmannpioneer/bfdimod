@@ -934,10 +934,8 @@
  YFC_BUN.18.a: "Great news!"
 
  YFC_BUN.19.t: "Numismatia denies our demands!"
- YFC_BUN.19.desc: "After a few days of waiting, we got our response that Numismatia is not going to hand over their occupation zone to us. It seems that their true intentions are now on full display. A war with them while dealing with the resistance is off the table, unfortunately. We could take retaliatory action against them, or let this happen."
- YFC_BUN.19.a: "Place an Embargo on them!"
- YFC_BUN.19.b: "Break Relations with them!"
- YFC_BUN.19.c: "Guess we'll fold..."
+ YFC_BUN.19.desc: "After a few days of waiting, we got our response that Numismatia is not going to hand over their occupation zone to us. It seems that their true intentions are now on full display. Any action against them while dealing with the resistance is off the table, unfortunately. "
+ YFC_BUN.19.a: "So be it."
 
  YFC_BUN.20.t: "Ex-Bunch industry destroyed!"
  YFC_BUN.20.desc: "With our security forces still setting up inside our occupation zone, a terrible attack just occurred. During the night a few days ago, around 10 to 25 objects entered the small industrial district of Podgornyv and started planting explosives on the factories. However, these objects must have lacked the knowledge that a patrol was wandering in the area who noticed the terrorist attack being set up. Screaming matches became gunshots as a small engagement broke out. The small, underequipped group was no match for our forces. However, only one factory was able to be saved in the chaos. The rest of the factories were blown to pieces. Luckily, everyone that was important was evacuated and our security forces took no losses. Only one object was captured, who had no information that he was willing to give up."

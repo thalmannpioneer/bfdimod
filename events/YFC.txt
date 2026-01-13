@@ -853,7 +853,7 @@ country_event = {
 }
 
 country_event = {
-	id = YFC_event.29 #N/A
+	id = YFC_event.29 #N/A (WILL BE USED TO TELL OTHER NATIONS ABOUT OUR TRADE)
 	title = YFC_event.29.t
     desc = YFC_event.29.desc
 	picture = GFX_Temp_event
@@ -1571,6 +1571,170 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0.1
 		}
+	}
+}
+
+country_event = {
+	id = YFC_event.38 #SRI sees this! (YFC demands our resource rights!)
+	title = YFC_event.38.t
+    desc = YFC_event.38.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.38.a
+		give_resource_rights = { receiver = YFC state = 24 }
+		YFC = {give_guarantee = ROOT}
+		custom_effect_tooltip = l_money_gain_500K
+		add_to_variable = { money_amount = 5 }
+		hidden_effect = {
+			YFC = {
+				country_event = {
+					id = YFC_event.39
+					days = 1
+					random_hours = 12
+				}
+			}
+		}
+		ai_chance = {
+			base = 1 #CHANGE LATER!!!
+		}
+	}
+
+	option = {
+		name = YFC_event.38.b
+		hidden_effect = {
+			YFC = {
+				country_event = {
+					id = YFC_event.40
+					days = 1
+					random_hours = 12
+				}
+			}
+		}
+		ai_chance = {
+			base = 0 #CHANGE LATER!!!
+		}
+	}
+}
+
+country_event = {
+	id = YFC_event.39 #SRI tells YFC sure
+	title = YFC_event.39.t
+    desc = YFC_event.39.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.39.a
+		custom_effect_tooltip = l_money_lose_500K
+		subtract_from_variable = { money_amount = 5 }
+		add_opinion_modifier = { target = SRI modifier = large_increase }
+		every_country_with_original_tag = {
+			original_tag_to_check = SRI
+			add_opinion_modifier = { target = YFC modifier = large_increase }
+		}	
+	}
+}
+
+country_event = {
+	id = YFC_event.40 #SRI tells YFC no!
+	title = YFC_event.40.t
+    desc = YFC_event.40.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.40.a
+
+		add_opinion_modifier = { target = SRI modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = SRI
+			add_opinion_modifier = { target = YFC modifier = large_decrease }
+		}	
+	}
+}
+
+country_event = {
+	id = YFC_event.41 #SRI sees this! (YFC demands us as a puppet!)
+	title = YFC_event.41.t
+    desc = YFC_event.41.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.41.a
+		add_stability = -0.25
+		add_war_support = -0.05
+		add_political_power = -100
+		YFC = {puppet = ROOT}
+		hidden_effect = {
+			set_country_flag = Allow_Musketeers
+			YFC = {
+				country_event = {
+					id = YFC_event.42
+					days = 1
+					random_hours = 12
+				}
+			}
+		}
+		ai_chance = {
+			base = 1 #CHANGE LATER!!!
+		}
+	}
+
+	option = {
+		name = YFC_event.41.b
+		add_war_support = 0.1
+		hidden_effect = {
+			YFC = {
+				country_event = {
+					id = YFC_event.43
+					days = 1
+					random_hours = 12
+				}
+			}
+		}
+		ai_chance = {
+			base = 0 #CHANGE LATER!!!
+		}
+	}
+}
+
+country_event = {
+	id = YFC_event.42 #SRI tells YFC sure
+	title = YFC_event.42.t
+    desc = YFC_event.42.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.42.a
+		add_political_power = 25	
+	}
+}
+
+country_event = {
+	id = YFC_event.43 #SRI tells YFC no!
+	title = YFC_event.43.t
+    desc = YFC_event.43.desc
+	picture = GFX_Temp_event
+	
+	is_triggered_only = yes
+    
+    option = { 
+		name = YFC_event.43.a
+
+		add_opinion_modifier = { target = SRI modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = SRI
+			add_opinion_modifier = { target = YFC modifier = large_decrease }
+		}	
 	}
 }
 
@@ -2997,10 +3161,10 @@ country_event = {
 
 	option = {
 		name = YFC_BUN.17.a
-		add_stability = -0.05
-		add_political_power = -100
 
-
+		add_political_power = -50
+		custom_effect_tooltip = l_money_gain_500K
+		add_to_variable = { money_amount = 5 }
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -3009,6 +3173,14 @@ country_event = {
 					random_hours = 50
 				}
 			}	
+		}
+
+		ai_chance = {
+			base = 1 
+			modifier = {
+				add = 100
+				is_ai = no
+			}
 		}
 	}
 	option = {
@@ -3037,6 +3209,7 @@ country_event = {
 
 	option = {
 		name = YFC_BUN.18.a
+		add_political_power = 50
 		transfer_state = 217
 		transfer_state = 218
 		218 = {add_resistance = 30}
@@ -3054,35 +3227,12 @@ country_event = {
 
 	option = {
 		name = YFC_BUN.19.a
-		add_political_power = -50
-
-		diplomatic_relation = {
-			country = CRN
-			relation = embargo
-			active = yes
-		}
 
 		add_opinion_modifier = { target = CRN modifier = small_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = CRN
 			add_opinion_modifier = { target = YFC modifier = small_decrease }
 		}
-	}
-	option = {
-		name = YFC_BUN.19.b
-		add_war_support = 0.02
-		add_political_power = -50
-
-		add_opinion_modifier = { target = CRN modifier = large_decrease }
-		every_country_with_original_tag = {
-			original_tag_to_check = CRN
-			add_opinion_modifier = { target = YFC modifier = large_decrease }
-		}
-	}
-
-	option = {
-		name = YFC_BUN.19.c
-		add_political_power = 20
 	}
 }
 
@@ -3174,9 +3324,9 @@ country_event = { #YFC_focus_remove_oligarchical_sentiment
 
 	option = {
 		name = YFC_BUN.24.a
-		add_stability = -0.01
-		85 = {add_resistance = -5}
-		212 = {add_resistance = -5}
+		add_stability = -0.02
+		85 = {add_resistance = -10}
+		212 = {add_resistance = -10}
 	}
 }
 
@@ -3380,8 +3530,8 @@ country_event = { #Debate event #2
 			type = infantry_equipment
 			amount = -1000
 		}
-		custom_effect_tooltip = l_money_gain_500K
-		add_to_variable = { money_amount = 5 }
+		custom_effect_tooltip = l_money_gain_700K
+		add_to_variable = { money_amount = 7 }
 		BUN = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment

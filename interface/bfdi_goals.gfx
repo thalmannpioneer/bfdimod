@@ -1530,6 +1530,16 @@ SpriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_focus_YFC_bunchivist_new_deal"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunchivist_new_deal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_stimulate_bunch_businesses"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_stimulate_bunch_businesses.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_YFC_economic_issue"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_economic_issue.dds"
 	}
@@ -1572,6 +1582,53 @@ SpriteTypes = {
 	spriteType = {
 		name = "GFX_focus_YFC_expand_northern_trade"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_expand_northern_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_scope_out_sea_trade"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_scope_out_sea_trade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_military_industrial_complex"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_military_industrial_complex.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_spread_out_sectors"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_spread_out_sectors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_the_grapes_and_the_cherries"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds"
+	}
+
+	#Musketeers#
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_form_own"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_form_own.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_unite_trading_deals"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_unite_trading_deals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_gather_contracts"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_gather_contracts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_grant_drilling_subsidies"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_grant_drilling_subsidies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_build_new_mines"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_build_new_mines.dds"
 	}
 	
 	

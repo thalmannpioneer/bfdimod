@@ -195,6 +195,7 @@ country_event = {
 		kill_country_leader = yes
 		hidden_effect = {
 			add_threat = 3.5
+			YFC = {mark_focus_tree_layout_dirty = yes}
 			15 = { 
 				remove_core_of = GGR
 				add_core_of = SMG

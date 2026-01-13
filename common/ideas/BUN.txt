@@ -33,7 +33,7 @@ ideas = {
 				neutrality_drift = 0.25
 				democratic_drift = 0.25
 				training_time_factor = 0.35
-				stability_weekly_factor = 0.005
+				stability_weekly_factor = 0.01
 				political_power_gain = -1.5
 			}
 		}

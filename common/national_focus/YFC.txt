@@ -100,7 +100,7 @@ focus_tree = {
 		id = YFC_focus_the_grapes_and_the_cherries
 		x = 5
 		y = 0
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_the_grapes_and_the_cherries
 		available = {
 			hidden_trigger = {
 				has_completed_focus = YFC_focus_establish_sectorialism
@@ -289,36 +289,6 @@ focus_tree = {
 					random_hours = 12
 				}
 			}
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-
-	focus = {
-		id = YFC_focus_CRN_cooperation
-		relative_position_id = YFC_focus_demand_end_pillage
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_CRN_cooperation
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_demand_end_pillage
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
-
-		prerequisite = { focus = YFC_focus_demand_end_pillage }
-		
-		cost = 4
-		completion_reward = {
-			add_opinion_modifier = { target = CRN modifier = large_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = CRN
-				add_opinion_modifier = { target = YFC modifier = offered_support }
-			}	
 		}
 
 		ai_will_do = {
@@ -523,6 +493,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YFC_focus_CRN_cooperation
+		relative_position_id = YFC_focus_demand_end_pillage
+		x = -1
+		y = 1
+		icon = GFX_focus_YFC_CRN_cooperation
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_demand_end_pillage
+			}
+		}
+		
+		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
+
+		prerequisite = { focus = YFC_focus_demand_end_pillage }
+		
+		cost = 4
+		completion_reward = {
+			add_opinion_modifier = { target = CRN modifier = large_increase }
+			every_country_with_original_tag = {
+				original_tag_to_check = CRN
+				add_opinion_modifier = { target = YFC modifier = offered_support }
+			}	
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	focus = {
 		id = YFC_focus_coiny_cooperation
 		relative_position_id = YFC_focus_demand_end_pillage
 		x = 1
@@ -608,16 +608,15 @@ focus_tree = {
 		#when both YFC and bunch are ai, YFC should do this path 70% of the time, and numis should always be called in
 		#yfc ai will rush down getting to this focus, ignoring all of the other ones if it chooses to do this path
 		completion_reward = {
-			BUN = {
-				YFC = {
-					declare_war_on = {
-						target = BUN
-						type = topple_government
-					}
-				}
+			declare_war_on = {
+				target = BUN
+				type = topple_government
 			}
 
 			hidden_effect = {
+				BUN = {
+					add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
+				}
 				CRN = {
 					country_event = {
 						id = YFC_event.6
@@ -664,6 +663,86 @@ focus_tree = {
 		cost = 2
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = { #My new small path :)
+		id = YFC_focus_new_interests
+		relative_position_id = YFC_focus_a_look_inward
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_a_look_inward }
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
+            }
+			country_exists = SRI
+			hidden_trigger = {
+				NOT = {country_exists = GGR} 	
+				SRI = {has_war = no}
+			}
+		}
+		allow_branch = {
+			NOT = {country_exists = GGR} 
+			country_exists = SRI
+			SRI = {has_war = no}
+		}
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_SRI_demand_1
+			hidden_effect = {
+				SRI = {
+					country_event = {
+						id = YFC_event.38
+						days = 1
+						random_hours = 12
+					}
+				}
+			}
+
+			mark_focus_tree_layout_dirty = yes #Since we may have the Three Musketeers already
+		}
+	}
+
+	focus = {
+		id = YFC_focus_integrate_great_ridge
+		relative_position_id = YFC_focus_new_interests
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_new_interests }
+		available = {
+			hidden_trigger = {
+				NOT = {country_exists = GGR} 
+				country_exists = SRI
+				SRI = {has_war = no}
+				has_country_flag = Allow_Musketeers
+			}
+			is_ally_with = CRN
+		}
+		allow_branch = {
+			NOT = {country_exists = GGR} 
+			country_exists = SRI
+			SRI = {has_war = no}
+			is_ally_with = CRN
+			has_country_flag = Allow_Musketeers
+		}
+		cost = 5
+
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_SRI_demand_2
+			hidden_effect = {
+				SRI = {
+					country_event = {
+						id = YFC_event.41
+						days = 1
+						random_hours = 12
+					}
+				}
+			}
 		}
 	}
 
@@ -899,7 +978,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_industrialize_or_die
 		x = 0
 		y = 2
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_military_industrial_complex
 		prerequisite = { focus = YFC_focus_develop_peoniele focus = YFC_focus_develop_yoyleton }
 		cost = 5
 		completion_reward = {
@@ -957,7 +1036,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_develop_peoniele
 		x = 0
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_scope_out_sea_trade
 		prerequisite = { focus = YFC_focus_develop_peoniele }
 		cost = 5
 		#gives event about sending people out to look at the eastern sea board, in 2 months you get another event abt what they found
@@ -980,7 +1059,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_military_industrial_complex
 		x = 0
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_spread_out_sectors
 		prerequisite = { focus = YFC_focus_military_industrial_complex }
 		cost = 5
 		#Move the event about science goes to yoyleton, railroad goes to peoniele, rest stay to the description of the focus
@@ -1083,6 +1162,10 @@ focus_tree = {
                 }
 			}
 			hidden_effect = {
+				IF = {
+					limit = {is_ai = yes}
+					add_to_variable = { money_amount = 5 }
+				}
 				IF = {
 					limit = {
 						has_completed_focus = YFC_focus_develop_peoniele
@@ -1358,7 +1441,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_foster_new_society
 		x = -1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_stimulate_bunch_businesses
 
 		available = {
 			has_completed_focus = YFC_focus_support_blocky
@@ -1546,7 +1629,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_banks_too_big_to_fail
 		x = 2
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_bunchivist_new_deal
 		prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
 		prerequisite = { focus = YFC_focus_free_pows }
 
