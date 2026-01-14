@@ -137,7 +137,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_grapes_and_the_cherries
 		x = -2
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_invest_in_speed
 
 		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
 		
@@ -166,7 +166,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_grapes_and_the_cherries
 		x = 2
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_invest_in_power
 
 		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
 		
@@ -195,7 +195,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_invest_in_speed
 		x = 0
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_purchase_support_package
 
 		available = {
 			has_tech = tech_support #Required as it is needed for the equipment to spawn in
@@ -230,7 +230,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_invest_in_power
 		x = 0
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_purchase_ordnance_package
 
 		available = {
 			has_tech = gw_artillery #Required as it is needed for the equipment to spawn in
@@ -1874,8 +1874,8 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_political_power = 35
-			85 = {add_compliance = 2} 
-			212 = {add_compliance = 2}
+			85 = {add_compliance = 5} 
+			212 = {add_compliance = 5}
 			if = {
 				limit = {
 					YFC = {
@@ -1883,8 +1883,8 @@ focus_tree = {
 						controls_state = 218
 					}
 				}
-				217 = {add_compliance = 5}
-				218 = {add_compliance = 5}		
+				217 = {add_compliance = 10}
+				218 = {add_compliance = 10}		
 			} 
 		}
 
@@ -1933,6 +1933,7 @@ focus_tree = {
 			212 = {compliance > 75}
 			hidden_trigger = {
 				NOT = {has_completed_focus = YFC_focus_stalled_plans}
+				NOT = {country_exists = BUN}
 			}	
 		}
 
@@ -1943,11 +1944,13 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 50
+			add_manpower = 10000
 			YFC = {
 				add_state_core = 85
 				add_state_core = 212
 			}
 			remove_ideas = idea_YFC_Bunch_Insurgency
+			mark_focus_tree_layout_dirty = yes
 			hidden_effect = {
 				BUN = {
 					remove_state_core = 85
@@ -1974,6 +1977,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YFC_focus_unite_the_capitalists #Only happens if we did kill Bunch correctly
+		relative_position_id = YFC_focus_fully_cored
+		x = 0
+		y = 2
+		icon = GFX_focus_generic
+
+		allow_branch = { has_completed_focus = YFC_focus_fully_cored }
+
+		#Creates The Three Musketeers factions and their shared focus tree
+
+		available = {
+			hidden_trigger = {has_completed_focus = YFC_focus_fully_cored}
+		}
+
+		prerequisite = { focus = YFC_focus_fully_cored }
+		cost = 8
+		completion_reward = {
+			set_country_flag = Allow_Musketeers
+			mark_focus_tree_layout_dirty = yes
+			YFC = {
+				create_faction = "Goiky Trade League"
+				add_to_faction = CRN
+			}
+			hidden_effect = {
+				CRN = {
+					set_country_flag = Allow_Musketeers
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+			add_stability = 0.01
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	focus = {
 		id = YFC_focus_stalled_plans
 		relative_position_id = YFC_focus_clamp_down_on_bunchivism
 		x = 3
@@ -1990,6 +2031,8 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+
+
 
 	#RIP old Raiding stuff here 2025-2025
 

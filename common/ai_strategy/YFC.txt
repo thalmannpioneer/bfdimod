@@ -61,7 +61,7 @@ YFC_wait = {
 	}
 	enable = {
 		is_faction_leader = no
-		has_manpower < 12000
+		has_manpower < 14000
 		surrender_progress < 0.5
 	}
 	abort_when_not_enabled = yes

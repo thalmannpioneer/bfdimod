@@ -60,10 +60,6 @@ ideas = {
 				stability_factor = -0.1
 			}
 			on_remove = {
-				if = {
-					limit = { check_variable = { var_idea_YFC_TopHat_influence > 5} }
-					subtract_from_variable = { var_idea_YFC_TopHat_influence = 5 }
-				}
 				set_variable = { var_idea_YFC_TopHat_level = 1 }
 				set_variable = { var_idea_YFC_TopHat_cost = 20 }
 			}
@@ -79,10 +75,6 @@ ideas = {
 				stability_factor = -0.1
 			}
 			on_remove = {
-				if = {
-					limit = { check_variable = { var_idea_YFC_Pipe_influence > 5} }
-					subtract_from_variable = { var_idea_YFC_Pipe_influence = 5 }
-				}
 				set_variable = { var_idea_YFC_Pipe_level = 1 }
 				set_variable = { var_idea_YFC_Pipe_cost = 20 }
 			}
@@ -98,10 +90,6 @@ ideas = {
 				stability_factor = -0.1
 			}
 			on_remove = {
-				if = {
-					limit = { check_variable = { var_idea_YFC_Beaker_influence > 5} }
-					subtract_from_variable = { var_idea_YFC_Beaker_influence = 5 }
-				}
 				set_variable = { var_idea_YFC_Beaker_level = 1 }
 				set_variable = { var_idea_YFC_Beaker_cost = 20 }
 			}
@@ -117,10 +105,6 @@ ideas = {
 				stability_factor = -0.1
 			}
 			on_remove = {
-				if = {
-					limit = { check_variable = { var_idea_YFC_Hammer_influence > 5} }
-					subtract_from_variable = { var_idea_YFC_Hammer_influence = 5 }
-				}
 				set_variable = { var_idea_YFC_Hammer_level = 1 }
 				set_variable = { var_idea_YFC_Hammer_cost = 20 }
 			}
@@ -135,10 +119,6 @@ ideas = {
 				stability_factor = -0.2
 			}
 			on_remove = {
-				if = {
-					limit = { check_variable = { var_idea_YFC_Taser_influence > 5} }
-					subtract_from_variable = { var_idea_YFC_Taser_influence = 5 }
-				}
 				set_variable = { var_idea_YFC_Taser_level = 1 }
 				set_variable = { var_idea_YFC_Taser_cost = 20 }
 			}

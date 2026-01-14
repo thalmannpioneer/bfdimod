@@ -160,6 +160,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GTR/GTR_tennis_ball.dds"
 	}
 	spriteType = {
+		name = "GFX_GTR_tennis_wall"
+		texturefile = "gfx/leaders/GTR/GTR_tennis_wall.dds"
+	}
+	spriteType = {
 		name = "GFX_GTR_dexter"
 		textureFile = "gfx/leaders/GTR/GTR_dexter.dds"
 	}

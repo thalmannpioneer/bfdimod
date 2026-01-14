@@ -7,24 +7,29 @@ YFC_Cav_01 = {
 
 	division_types = { "cavalry" }
 
-	fallback_name = "%d Guards"
+	fallback_name = "%d. Guards"
 
 	ordered = {
 		1 = { "%dst Border Guards" }
 		2 = { "%dnd Border Guards" }
 		3 = { "%drd Border Guards" }
 		4 = { "%dth Border Guards" }
-		5 = { "%dth 'Footpathburg' Guards" }
-        6 = { "%dth 'Peoniele' Guards" }
-        7 = { "%dth 'Yoyleton' Guards" }
-		8 = { "%dth Protection Guards" }
-		9 = { "%dth Protection Guards" }
-		10 = { "%dth Protection Guards" }
+		5 = { "%dth Border Guards" }
+		6 = { "%dth Border Guards" }
+		7 = { "%dth 'Footpathburg' Police" }
+        8 = { "%dth 'Peoniele' Police" }
+        9 = { "%dth 'Yoyleton' Police" }
+		10 = { "%dth 'Tridil' Police" }
 		11 = { "%dth Protection Guards" }
 		12 = { "%dth Protection Guards" }
 		13 = { "%dth Protection Guards" }
 		14 = { "%dth Protection Guards" }
 		15 = { "%dth Protection Guards" }
+		16 = { "%dth Protection Guards" }
+		17 = { "%dth Protection Guards" }
+		18 = { "%dth Protection Guards" }
+		19 = { "%dth Protection Guards" }
+		20 = { "%dth Protection Guards" }
 	}
 }
 
@@ -37,7 +42,7 @@ YFC_Inf_01 = {
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Division"
+	fallback_name = "%d. Division"
 	ordered = {
 		1 = { "%dst Division" }
 		2 = { "%dnd Division" }

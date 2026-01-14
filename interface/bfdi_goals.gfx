@@ -1604,6 +1604,26 @@ SpriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds"
 	}
 
+	spriteType = {
+		name = "GFX_focus_YFC_invest_in_speed"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_invest_in_speed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_purchase_support_package"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_purchase_support_package.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_invest_in_power"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_invest_in_power.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_purchase_ordnance_package"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_purchase_ordnance_package.dds"
+	}
+
 	#Musketeers#
 
 	spriteType = {

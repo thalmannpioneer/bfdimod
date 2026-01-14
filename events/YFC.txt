@@ -1674,6 +1674,19 @@ country_event = {
 		YFC = {puppet = ROOT}
 		hidden_effect = {
 			set_country_flag = Allow_Musketeers
+			IF = {
+                limit = {has_completed_focus = Musketeers_form_own}
+                add_dynamic_modifier = {
+                     modifier = idea_Musketeers_OWN
+                }
+            }
+            IF = {
+                limit = {has_completed_focus = Musketeers_form_udc}
+                add_dynamic_modifier = {
+                    modifier = idea_Musketeers_UDC
+                }
+            }
+
 			YFC = {
 				country_event = {
 					id = YFC_event.42
@@ -4188,7 +4201,7 @@ country_event = { #Top Hat pranks you ;)
 			idea = idea_YFC_Defiant_Top_Hat
 			days = 180
 		}
-		subtract_from_variable = { var_idea_YFC_TopHat_influence = 5 }
+		subtract_from_variable = { var_idea_YFC_TopHat_influence = 7 }
 	}
 }
 
@@ -4206,7 +4219,7 @@ country_event = { #Pipe pranks you ;)
 			idea = idea_YFC_Defiant_Pipe
 			days = 180
 		}
-		subtract_from_variable = { var_idea_YFC_Pipe_influence = 5 }
+		subtract_from_variable = { var_idea_YFC_Pipe_influence = 7 }
 	}
 }
 
@@ -4224,7 +4237,7 @@ country_event = { #Beaker pranks you ;)
 			idea = idea_YFC_Defiant_Beaker
 			days = 180
 		}
-		subtract_from_variable = { var_idea_YFC_Beaker_influence = 5 }
+		subtract_from_variable = { var_idea_YFC_Beaker_influence = 7 }
 	}
 }
 
@@ -4242,7 +4255,7 @@ country_event = { #Hammer pranks you ;)
 			idea = idea_YFC_Defiant_Hammer
 			days = 180
 		}
-		subtract_from_variable = { var_idea_YFC_Hammer_influence = 5 }
+		subtract_from_variable = { var_idea_YFC_Hammer_influence = 7 }
 	}
 }
 
@@ -4260,7 +4273,7 @@ country_event = { #Taser pranks you ;)
 			idea = idea_YFC_Defiant_Taser
 			days = 180
 		}
-		subtract_from_variable = { var_idea_YFC_Taser_influence = 5 }
+		subtract_from_variable = { var_idea_YFC_Taser_influence = 7 }
 	}
 }
 

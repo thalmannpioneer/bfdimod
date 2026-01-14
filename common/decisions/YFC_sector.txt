@@ -46,6 +46,10 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
                 }
             }
+            IF = {
+                limit = {check_variable = { var_idea_YFC_TopHat_influence < -1}}
+                add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
+            }
 
             #Sector buff changes (Pipe)
             set_temp_variable = { Level_Pipe = var_idea_YFC_Pipe_level }
@@ -64,6 +68,10 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
                     subtract_from_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
                 }
+            }
+            IF = {
+                limit = {check_variable = { var_idea_YFC_Pipe_influence < -1}}
+                add_to_variable = { var_idea_YFC_Pipe_influence = 1 }
             }
 
             #Sector buff changes (Beaker)
@@ -84,6 +92,10 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
                 }
             }
+            IF = {
+                limit = {check_variable = { var_idea_YFC_Beaker_influence < -1}}
+                add_to_variable = { var_idea_YFC_Beaker_influence = 1 }
+            }
 
             #Sector buff changes (Hammer)
             set_temp_variable = { Level_Hammer = var_idea_YFC_Hammer_level }
@@ -102,6 +114,10 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 }
                     subtract_from_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
                 }
+            }
+            IF = {
+                limit = {check_variable = { var_idea_YFC_Hammer_influence < -1}}
+                add_to_variable = { var_idea_YFC_Hammer_influence = 1 }
             }
 
             #Sector buff changes (Taser)
@@ -122,20 +138,26 @@ decision_YFC_sector_category= { #Watermelon
                     subtract_from_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
                 }
             }
+            IF = {
+                limit = {check_variable = { var_idea_YFC_Taser_influence < -1}}
+                add_to_variable = { var_idea_YFC_Taser_influence = 1 }
+            }
             
             #Now Check if the player sucks at management of the Sectors 
             hidden_effect = {
                 IF = {
                     limit = {
-                        NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
-                        NOT = {has_idea = idea_YFC_Defiant_Pipe}
-                        NOT = {has_idea = idea_YFC_Defiant_Beaker}
-                        NOT = {has_idea = idea_YFC_Defiant_Hammer}
-                        NOT = {has_idea = idea_YFC_Defiant_Taser}
+                        NOT = {
+                            has_idea = idea_YFC_Defiant_Top_Hat
+                            has_idea = idea_YFC_Defiant_Pipe
+                            has_idea = idea_YFC_Defiant_Beaker
+                            has_idea = idea_YFC_Defiant_Hammer
+                            has_idea = idea_YFC_Defiant_Taser
+                        }
                     }
 
                     set_temp_variable = { var_Sector_Combined_Influence = 0 }
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence }
+                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence}
                     add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Pipe_influence}
                     add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Beaker_influence}
                     add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Hammer_influence}
@@ -148,6 +170,7 @@ decision_YFC_sector_category= { #Watermelon
                                 check_variable = { var_idea_YFC_TopHat_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_TopHat_influence > 10}
                             }
+                            check_variable = { var_idea_YFC_TopHat_influence > 0}
                         }
                         random = {
                             chance = 50
@@ -163,6 +186,7 @@ decision_YFC_sector_category= { #Watermelon
                                 check_variable = { var_idea_YFC_Pipe_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Pipe_influence > 10}
                             }
+                            check_variable = { var_idea_YFC_Pipe_influence > 0}
                         }
                         random = {
                             chance = 50
@@ -178,6 +202,7 @@ decision_YFC_sector_category= { #Watermelon
                                 check_variable = { var_idea_YFC_Beaker_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Beaker_influence > 10}
                             }
+                            check_variable = { var_idea_YFC_Beaker_influence > 0}
                         }
                         random = {
                             chance = 50
@@ -193,6 +218,7 @@ decision_YFC_sector_category= { #Watermelon
                                 check_variable = { var_idea_YFC_Hammer_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Hammer_influence > 10}
                             }
+                            check_variable = { var_idea_YFC_Hammer_influence > 0}
                         }
                         random = {
                             chance = 50
@@ -208,6 +234,7 @@ decision_YFC_sector_category= { #Watermelon
                                 check_variable = { var_idea_YFC_Taser_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Taser_influence > 10}
                             }
+                            check_variable = { var_idea_YFC_Taser_influence > 0}
                         }
                         random = {
                             chance = 50
@@ -337,7 +364,279 @@ decision_YFC_sector_category= { #Watermelon
         }
 
 		ai_will_do = {
-			base = 1000
+			base = 100
+		}
+	}
+
+    YFC_sector_AI_tophat_increase = { #BELOW IS AI STUFF
+		icon = GFX_decision_generic_army_support
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_TopHat_level = 1 }
+            add_to_variable = { var_idea_YFC_TopHat_influence = 1 }
+            add_to_variable = { var_idea_YFC_TopHat_cost = 20 }
+            add_to_variable = { var_sectors_combined_cost = 20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = 1
+                has_war = yes
+            }
+            modifier = {
+                add = 2
+                surrender_progress > 0.25
+            }
+            modifier = {
+                add = 3
+                surrender_progress > 0.5
+            }
+            modifier = {
+                add = -1
+                check_variable = { money_amount < 10 }
+            }
+            modifier = {
+                add = -5
+                check_variable = { money_amount < 5 }
+            }
+            modifier = {
+                add = -2
+                check_variable = { var_idea_YFC_TopHat_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_TopHat_level = 3 }
+            }
+		}
+	}
+
+    YFC_sector_AI_tophat_decrease = {
+		icon = GFX_decision_generic_army_support
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_TopHat_level = -1 }
+            add_to_variable = { var_idea_YFC_TopHat_influence = -1 }
+            add_to_variable = { var_idea_YFC_TopHat_cost = -20 }
+            add_to_variable = { var_sectors_combined_cost = -20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = 1
+                has_war = no
+            }
+            modifier = {
+                add = -2
+                surrender_progress > 0.25
+            }
+            modifier = {
+                add = -3
+                surrender_progress > 0.5
+            }
+            modifier = {
+                add = 1
+                check_variable = { money_amount < 10 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { money_amount < 5 }
+            }
+            modifier = {
+                add = 2
+                check_variable = { var_idea_YFC_TopHat_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_TopHat_level = 1 }
+            }
+		}
+	}
+
+    YFC_sector_AI_taser_increase = {
+		icon = GFX_decision_generic_arrest
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Taser}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_Taser_level = 1 }
+            add_to_variable = { var_idea_YFC_Taser_influence = 1 }
+            add_to_variable = { var_idea_YFC_Taser_cost = 20 }
+            add_to_variable = { var_sectors_combined_cost = 20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = 2
+                has_idea = idea_YFC_Bunch_Insurgency
+            }
+            modifier = {
+                add = -2
+                check_variable = { money_amount < 15 }
+            }
+            modifier = {
+                add = -5
+                check_variable = { money_amount < 10 }
+            }
+            modifier = {
+                add = -2
+                check_variable = { var_idea_YFC_Taser_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_Taser_level = 3 }
+            }
+		}
+	}
+
+    YFC_sector_AI_taser_decrease = {
+		icon = GFX_decision_generic_arrest
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Taser}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_Taser_level = -1 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -1 }
+            add_to_variable = { var_idea_YFC_Taser_cost = -20 }
+            add_to_variable = { var_sectors_combined_cost = -20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = -2
+                has_idea = idea_YFC_Bunch_Insurgency
+            }
+            modifier = {
+                add = 2
+                check_variable = { money_amount < 15 }
+            }
+            modifier = {
+                add = 5
+                check_variable = { money_amount < 10 }
+            }
+            modifier = {
+                add = 2
+                check_variable = { var_idea_YFC_Taser_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_Taser_level = 1 }
+            }
+		}
+	}
+
+    YFC_sector_AI_hammer_increase = {
+		icon = GFX_decision_generic_construction
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Hammer}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_Hammer_level = 1 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = 1 }
+            add_to_variable = { var_idea_YFC_Hammer_cost = 20 }
+            add_to_variable = { var_sectors_combined_cost = 20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = -2
+                has_war = yes
+            }
+            modifier = {
+                add = 1
+                check_variable = { money_amount > 40 }
+            }
+            modifier = {
+                add = -2
+                check_variable = { var_idea_YFC_Hammer_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_Hammer_level = 3 }
+            }
+		}
+	}
+
+    YFC_sector_AI_hammer_decrease = {
+		icon = GFX_decision_generic_construction
+		visible = {is_ai = yes}
+		available = {is_ai = yes}
+		fire_only_once = no
+        available = {
+            has_political_power > 10
+            NOT = {has_idea = idea_YFC_Defiant_Hammer}
+        }
+		days_remove = 30
+
+		complete_effect = {
+            add_political_power = -10
+            add_to_variable = { var_idea_YFC_Hammer_level = -1 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -1 }
+            add_to_variable = { var_idea_YFC_Hammer_cost = -20 }
+            add_to_variable = { var_sectors_combined_cost = -20 }
+        }
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                add = 2
+                has_war = yes
+            }
+            modifier = {
+                add = 1
+                check_variable = { money_amount < 40 }
+            }
+            modifier = {
+                add = 2
+                check_variable = { var_idea_YFC_Hammer_influence > 5 }
+            }
+            modifier = {
+                add = -1000
+                check_variable = { var_idea_YFC_Hammer_level = 1 }
+            }
 		}
 	}
 }
