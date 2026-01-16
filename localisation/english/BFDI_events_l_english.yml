@@ -1402,6 +1402,11 @@
  GTR_event.61.desc: "It seems that during the internal political reforms, neither side has been able to seize the initiative. The old friendship remains strong, and Golfball and Tennis Ball continue to rule the Technocratic Republic together. Seems like it's just their fate."
  GTR_event.61.a: "TB, GB, sitting on a tree..."
 
+ GTR_event.62.t: "Fire"
+ GTR_event.62.desc: "An accident occurred on the streets of Announcergrad, bringing down a power line on several houses, causing fire. Many buildings were damaged and objects left homeless. Tennis Ball believes they need to immediately allocate funds from the reserve fund, while Golfball speaks of the Republic's long-term goals and that these funds will still be needed. What will the Council decide?"
+ GTR_event.62.a: "Give them money!"
+ GTR_event.62.b: "We'll need these funds later."
+
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"
  bfdinews.1.desc: "After two years of competition, Battle For Dream Island is coming to an end. According to the results of the final vote, the winner was ... Firey! Coiny collapsed as a result. This news has already excited the public and caused considerable resentment in Goiky's society. Leaks also report that Firey allowed everyone on the island except Leafy, his best friend. The reasons are not yet known, but we are monitoring developments.."

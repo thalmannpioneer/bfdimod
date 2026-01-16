@@ -1,0 +1,11 @@
+decision_GTR_development_category = {
+    allowed = { tag = GTR }
+    priority = 100
+    icon = GFX_decision_category_development
+    picture = GFX_decision_cat_GTR_development
+
+    available = { hidden_trigger = { has_country_flag = GTR_republic_formed } }
+    visible = { has_country_flag = GTR_republic_formed }
+
+    visible_when_empty = yes
+}

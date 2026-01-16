@@ -42,6 +42,9 @@ decision_GTR_university_reconstruction_category = {
         is_good = yes
         days_mission_timeout = 150
         selectable_mission = yes
+        ai_will_do = {
+            base = 15
+        }
         custom_cost_trigger = {
             has_manpower > 499
             has_political_power > 49

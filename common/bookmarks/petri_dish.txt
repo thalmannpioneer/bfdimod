@@ -1,0 +1,74 @@
+bookmarks = {
+    bookmark = {
+        name = PETRI_DISH_NAME
+        desc = PETRI_DISH_DESC
+        date = 2012.03.01
+        picture = GFX_select_date_2012
+        default_country = GTR
+        effect = {
+            randomize_weather = 22345 # <- Obligatory in every bookmark !
+            #123 = { rain_light = yes }
+        }
+
+        GTR = {
+            history = idea_GTR_golfball_s_lab_desc
+            ideas = {
+                idea_GTR_golfball_s_lab
+                idea_GTR_goiky_university
+                idea_GTR_announcergrad_supplying_problems
+                idea_GTR_unsettled_government
+            }
+            focuses = {
+                GTR_focus_project_1
+                GTR_focus_secret_weapon
+            }
+        }
+        YFC = {
+            history = idea_YFC_no_more_advertisements_foundation_desc
+            ideas = {
+                idea_YFC_no_more_advertisements_foundation
+                idea_YFC_neglectful_command
+            }
+            focuses = {
+                YFC_focus_open_the_market
+                YFC_focus_establish_sectorialism
+            }
+        }
+        WGF = {
+            history = idea_WGF_revolutionary_fire_desc
+            minor = yes
+            ideas = {
+                idea_WGF_revolutionary_fire
+                idea_WGF_socialist_front
+                idea_WGF_coinflip
+            }
+            focuses = {
+                WGF_focus_ideals_of_revolution
+                WGF_focus_operation_coinflip
+            }
+        }
+        GGR = {
+            history = idea_GGR_fascist_dictatorship_desc
+            minor = yes
+            ideas = {
+                idea_GGR_fascist_dictatorship
+                idea_GGR_peoples_support
+            }
+            focuses = {
+                GGR_focus_power_of_the_strong
+                GGR_focus_partizan_war
+            }
+        }
+        GPG = {
+            history = idea_GPG_questionable_future_desc
+            minor = yes
+            ideas = {
+                idea_GPG_questionable_future
+                idea_GPG_factionalism
+            }
+            focuses = {
+                GPG_focus_second_congress
+            }
+        }
+    }
+}

@@ -11,7 +11,11 @@ decision_GTR_space_program_category = {
         complete_effect = {
             custom_effect_tooltip = l_GTR_launch
             hidden_effect = {
-                country_event = GTR_event.57
+                country_event = {
+                    id = GTR_event.57
+                    days = 3
+                    random_hours = 12
+                }
             }
         }
         available = {
@@ -141,37 +145,19 @@ decision_GTR_space_program_category = {
         icon = GFX_decisions_GTR_space_program_engine_mission
     }
 
-    GTR_space_program_invest_industry = {
-        icon = GFX_decisions_GTR_space_program_invest_industry
-        days_remove = 30
-        days_re_enable = 30
-        custom_cost_trigger = {
-            check_variable = {
-                var = money_amount
-                value = 1
-                compare = greater_than_or_equals
-            }
-        }
-        custom_cost_text = decisions_cost_money_100k
-        complete_effect = { add_to_variable = { money_amount = -1 } }
-        remove_effect = {
-            random_owned_state = {
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-        }
-    }
-
     GTR_space_program_invest_air_research = {
         allowed = { has_dlc = "By Blood Alone" }
 
         icon = GFX_decisions_GTR_space_program_invest_air_research
         days_remove = 20
         fire_only_once = yes
+        ai_will_do = {
+            base = 5
+            modifier = {
+                factor = 2
+                has_tech = engines_1
+            }
+        }
         custom_cost_trigger = {
             check_variable = {
                 var = money_amount
@@ -187,6 +173,248 @@ decision_GTR_space_program_category = {
                 uses = 1
                 category = cat_air_engine
             }
+        }
+    }
+
+    #
+    # AI DECISIONS
+    #
+
+    GTR_space_program_ai_shuttle_yoylemetal = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 150 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+            num_of_civilian_factories_available_for_projects > 2
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_shuttle_mission
+            set_country_flag = GTR_shuttle_sealed
+            set_country_flag = GTR_shuttle_yoylemetal
+            add_ideas = idea_GTR_shuttle_yoylemetal
+        }
+    }
+
+    GTR_space_program_ai_shuttle_aluminium = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 200 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+            num_of_civilian_factories_available_for_projects > 3
+            aluminium > 4
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_shuttle_mission
+            set_country_flag = GTR_shuttle_sealed
+            set_country_flag = GTR_shuttle_aluminium
+            add_ideas = idea_GTR_shuttle_aluminium
+        }
+    }
+
+    GTR_space_program_ai_shuttle_tungsten = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 30
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+            num_of_civilian_factories_available_for_projects > 4
+            tungsten > 9
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_shuttle_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_shuttle_mission
+            set_country_flag = GTR_shuttle_sealed
+            set_country_flag = GTR_shuttle_tungsten
+            add_ideas = idea_GTR_shuttle_tungsten
+        }
+    }
+
+    GTR_space_program_ai_fuel_coal = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 150 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+            num_of_civilian_factories_available_for_projects > 2
+            coal > 4
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_fuel_mission
+            set_country_flag = GTR_fuel_sealed
+            set_country_flag = GTR_fuel_coal
+            add_ideas = idea_GTR_fuel_coal
+        }
+    }
+
+    GTR_space_program_ai_fuel_oil = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 200 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+            num_of_civilian_factories_available_for_projects > 3
+            oil > 9
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_fuel_mission
+            set_country_flag = GTR_fuel_sealed
+            set_country_flag = GTR_fuel_oil
+            add_ideas = idea_GTR_fuel_oil
+        }
+    }
+
+    GTR_space_program_ai_fuel_yoylite = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 30
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+            num_of_civilian_factories_available_for_projects > 4
+            nuclear_reactor > 0
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_fuel_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_fuel_mission
+            set_country_flag = GTR_fuel_sealed
+            set_country_flag = GTR_fuel_yoylite
+            add_ideas = idea_GTR_fuel_yoylite
+        }
+    }
+
+    GTR_space_program_ai_engine_steam = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 10
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 150 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+            num_of_civilian_factories_available_for_projects > 2
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_engine_mission
+            set_country_flag = GTR_engine_sealed
+            set_country_flag = GTR_engine_steam
+            add_ideas = idea_GTR_engine_steam
+        }
+    }
+
+    GTR_space_program_ai_engine_jet = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 20
+                check_variable = { days_mission_timeout@GTR_space_program_launch_mission < 200 }
+            }
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+            num_of_civilian_factories_available_for_projects > 3
+            has_country_flag = GTR_fuel_oil
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_engine_mission
+            set_country_flag = GTR_engine_sealed
+            set_country_flag = GTR_engine_jet
+            add_ideas = idea_GTR_engine_jet
+        }
+    }
+
+    GTR_space_program_ai_engine_electric = {
+        icon = GFX_decisions_GTR_space_program_invest_air_research
+        fire_only_once = yes
+        ai_will_do = {
+            base = 30
+        }
+        available = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+            num_of_civilian_factories_available_for_projects > 4
+            has_tech = engines_2
+        }
+        visible = {
+            is_ai = yes
+            NOT = { has_country_flag = GTR_engine_sealed }
+        }
+        complete_effect = {
+            activate_mission = GTR_space_program_engine_mission
+            set_country_flag = GTR_engine_sealed
+            set_country_flag = GTR_engine_electric
+            add_ideas = idea_GTR_engine_electric
         }
     }
 }

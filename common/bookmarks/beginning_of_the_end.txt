@@ -1,26 +1,26 @@
 bookmarks = {
-	bookmark = {
-		name = "BEGGINING_OF_THE_END_NAME"
-		desc = "BEGGINING_OF_THE_END_DESC"
-		date = 2011.10.1.12
-		picture = "GFX_select_date_1936"
-		default_country = "GOI"
-		default = yes
-		
-		"GOI"={
-			history = "GOI_BEGGINING_OF_THE_END_DESC"
-			ideas = {
-				idea_GOI_anarchy
-				idea_GOI_bfdi
-				idea_GOI_great_goiky_railroad
-			}
-			focuses = {
-				GOI_focus_final_four
-			}
-		}
-		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
-		}
-	}
+    bookmark = {
+        name = BEGGINING_OF_THE_END_NAME
+        desc = BEGGINING_OF_THE_END_DESC
+        date = 2011.10.1.12
+        picture = GFX_select_date_2011
+        default_country = GOI
+        default = yes
+
+        GOI = {
+            history = GOI_BEGGINING_OF_THE_END_DESC
+            ideas = {
+                idea_GOI_anarchy
+                idea_GOI_bfdi
+                idea_GOI_great_goiky_railroad
+            }
+            focuses = {
+                GOI_focus_final_four
+            }
+        }
+        effect = {
+            randomize_weather = 22345 # <- Obligatory in every bookmark !
+            #123 = { rain_light = yes }
+        }
+    }
 }

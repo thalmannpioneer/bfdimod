@@ -2,6 +2,9 @@ decision_GTR_operation_paperclip_category = {
     GTR_operation_paperclip_casland = {
         cost = 50
         days_remove = 30
+        ai_will_do = {
+            base = 15
+        }
         visible = {
             NOT = { has_country_flag = GTR_paperclip_casland }
         }
@@ -65,6 +68,9 @@ decision_GTR_operation_paperclip_category = {
     GTR_operation_paperclip_north_goiky = {
         cost = 50
         days_remove = 30
+        ai_will_do = {
+            base = 15
+        }
         visible = {
             NOT = { has_country_flag = GTR_paperclip_north_goiky }
             country_exists = WGF
@@ -126,6 +132,9 @@ decision_GTR_operation_paperclip_category = {
     GTR_operation_paperclip_schneehorn = {
         cost = 50
         days_remove = 30
+        ai_will_do = {
+            base = 15
+        }
         visible = {
             NOT = { has_country_flag = GTR_paperclip_schneehorn }
             country_exists = GGR
@@ -187,6 +196,9 @@ decision_GTR_operation_paperclip_category = {
     GTR_operation_paperclip_greenport = {
         cost = 50
         days_remove = 30
+        ai_will_do = {
+            base = 15
+        }
         visible = {
             NOT = { has_country_flag = GTR_paperclip_greenport }
             country_exists = GPR

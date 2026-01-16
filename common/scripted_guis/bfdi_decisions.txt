@@ -468,14 +468,14 @@ scripted_gui = {
 
         triggers = {
             choice_button_yoylemetal_click_enabled = {
-                num_of_available_civilian_factories > 2
+                num_of_civilian_factories_available_for_projects > 2
             }
             choice_button_aluminium_click_enabled = {
-                num_of_available_civilian_factories > 3
+                num_of_civilian_factories_available_for_projects > 3
                 aluminium > 4
             }
             choice_button_tungsten_click_enabled = {
-                num_of_available_civilian_factories > 4
+                num_of_civilian_factories_available_for_projects > 4
                 tungsten > 9
             }
         }
@@ -512,18 +512,18 @@ scripted_gui = {
 
         triggers = {
             choice_button_coal_click_enabled = {
-                num_of_available_civilian_factories > 2
+                num_of_civilian_factories_available_for_projects > 2
                 coal > 4
             }
             choice_button_oil_click_enabled = {
-                num_of_available_civilian_factories > 3
+                num_of_civilian_factories_available_for_projects > 3
                 has_resources_in_country = {
                     resource = oil
                     amount > 9
                 }
             }
             choice_button_yoylite_click_enabled = {
-                num_of_available_civilian_factories > 4
+                num_of_civilian_factories_available_for_projects > 4
                 nuclear_reactor > 0
             }
         }
@@ -560,14 +560,14 @@ scripted_gui = {
 
         triggers = {
             choice_button_steam_click_enabled = {
-                num_of_available_civilian_factories > 2
+                num_of_civilian_factories_available_for_projects > 2
             }
             choice_button_jet_click_enabled = {
-                num_of_available_civilian_factories > 3
+                num_of_civilian_factories_available_for_projects > 3
                 has_country_flag = GTR_fuel_oil
             }
             choice_button_electric_click_enabled = {
-                num_of_available_civilian_factories > 4
+                num_of_civilian_factories_available_for_projects > 4
                 OR = {
                     NOT = { has_dlc = "By Blood Alone" }
                     has_tech = engines_2

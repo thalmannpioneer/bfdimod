@@ -114,6 +114,9 @@ focus_tree = {
                 modifier = idea_GTR_humanitary_aid
                 days = 210
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
             remove_ideas = idea_GTR_announcergrad_supplying_problems
         }
     }
@@ -294,10 +297,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -316,7 +315,7 @@ focus_tree = {
         prerequisite = { focus = GTR_focus_new_government }
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -365,10 +364,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -403,7 +398,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -544,7 +539,7 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -561,6 +556,9 @@ focus_tree = {
                 id = GTR_power_balance
                 value = -0.05
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
 
             hidden_effect = {
                 set_country_flag = {
@@ -604,7 +602,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -689,7 +687,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -731,10 +729,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -756,7 +750,7 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -818,7 +812,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -853,6 +847,9 @@ focus_tree = {
                     modifier = small_increase
                 }
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
 
             hidden_effect = {
                 country_event = {
@@ -893,7 +890,11 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 0
+            modifier = {
+                add = 10
+                NOT = { has_country_flag = GTR_space_enabled }
+            }
         }
 
         completion_reward = {
@@ -938,7 +939,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -966,10 +967,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -994,7 +991,7 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1034,7 +1031,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1096,7 +1093,11 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 0
+            modifier = {
+                add = 10
+                has_completed_focus = GTR_focus_reform_defense_forces
+            }
         }
 
         completion_reward = {
@@ -1136,7 +1137,7 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1145,6 +1146,9 @@ focus_tree = {
                 id = GTR_power_balance
                 value = 0.05
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
             hidden_effect = {
                 country_event = {
                     id = GTR_event.32
@@ -1182,7 +1186,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1242,10 +1246,6 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_republican_affairs }
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -1269,7 +1269,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1307,7 +1307,11 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 0
+            modifier = {
+                add = 10
+                has_completed_focus = GTR_focus_reform_defense_forces
+            }
         }
 
         completion_reward = {
@@ -1345,7 +1349,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1407,10 +1411,6 @@ focus_tree = {
 
         prerequisite = { focus = GTR_focus_republican_affairs }
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -1434,7 +1434,11 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 0
+            modifier = {
+                add = 10
+                has_completed_focus = GTR_focus_elephant_in_a_room
+            }
         }
 
         completion_reward = {
@@ -1476,7 +1480,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1514,7 +1518,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1549,7 +1553,7 @@ focus_tree = {
         cost = 2
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -1592,7 +1596,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1650,10 +1654,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -1670,7 +1670,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1733,7 +1733,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1743,6 +1743,9 @@ focus_tree = {
                 uses = 2
                 category = dispersed_industry_category
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
 
             add_power_balance_value = {
                 id = GTR_power_balance
@@ -1765,10 +1768,6 @@ focus_tree = {
 
         cost = 0
 
-        ai_will_do = {
-            base = 5
-        }
-
         completion_reward = { }
     }
 
@@ -1785,7 +1784,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1849,7 +1848,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         completion_reward = {
@@ -1869,6 +1868,9 @@ focus_tree = {
                 }
                 add_manpower = -13812
             }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -1898,7 +1900,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -1936,7 +1938,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -1964,7 +1966,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -1993,7 +1995,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -2027,7 +2029,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         select_effect = {
@@ -2060,7 +2062,7 @@ focus_tree = {
         cost = 2
 
         ai_will_do = {
-            base = 5
+            base = 15
         }
 
         completion_reward = {
@@ -2189,7 +2191,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {
@@ -2312,7 +2314,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 5
+            base = 20
         }
 
         completion_reward = {

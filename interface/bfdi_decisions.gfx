@@ -857,8 +857,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_decision_GTR_bop_push_for_peaceful_yoylite"
-		textureFile = "gfx/interface/decisions/GFX_decision_GTR_bop_push_for_peaceful_yoylite.dds"
+		name = "GFX_decision_GTR_development_push_for_peaceful_yoylite"
+		textureFile = "gfx/interface/decisions/GFX_decision_GTR_development_push_for_peaceful_yoylite.dds"
 	}
 
 	spriteType = {
@@ -946,8 +946,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_decisions_GTR_space_program_invest_industry"
-		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_space_program_invest_industry.dds"
+		name = "GFX_decisions_GTR_development_invest_civs"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_development_invest_civs.dds"
 	}
 
 	spriteType = {
@@ -956,14 +956,28 @@ spriteTypes = {
 	}
 
 	frameAnimatedSpriteType = {
-		name = "GFX_decisions_GTR_bop_outcome_mission"
-		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_bop_outcome_mission.dds"
+		name = "GFX_decisions_GTR_development_outcome_mission"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_development_outcome_mission.dds"
 		noOfFrames = 20
-		loadType = "INGAME"
 		transparencecheck = no
-		animation_rate_fps = 20
+		animation_rate_fps = 15
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_GTR_development"
+		textureFile = "gfx/interface/decisions/decision_cat_GTR_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_development"
+		textureFile = "gfx/interface/decisions/decision_category_development.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_GTR_development_invest_mils"
+		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_development_invest_mils.dds"
 	}
 }

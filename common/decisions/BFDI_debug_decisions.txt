@@ -1,20 +1,20 @@
 decisions_BFDI_debug = {
-	debug_collapse_goiky = {
+    debug_collapse_goiky = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
-		cost = 0
-		available = {
-			is_debug = yes
-			is_ai = no
-			NOT = {
-				has_global_flag = game_started
-			}
+        cost = 0
+        available = {
+            is_debug = yes
+            is_ai = no
+            NOT = {
+                has_global_flag = game_started
+            }
         }
         complete_effect = {
-			country_event = {
-				id = GOI_event.7
-				days = 0
-			}
+            country_event = {
+                id = GOI_event.7
+                days = 0
+            }
         }
     }
 }
@@ -22,229 +22,229 @@ decisions_BFDI_debug = {
 #FORTNITE!!!!!!!!
 
 decisions_BFDI_debug = {
-	debug_battle_royale = {
+    debug_battle_royale = {
         icon = GFX_decision_generic_protection
         fire_only_once = yes
-		cost = 0
-		available = {
-			is_debug = yes
-			is_ai = no
-			NOT = {
-				has_global_flag = game_started
-			}
-			NOT = {
-				tag = GOI
-			}
+        cost = 0
+        available = {
+            is_debug = yes
+            is_ai = no
+            NOT = {
+                has_global_flag = game_started
+            }
+            NOT = {
+                tag = GOI
+            }
         }
-        complete_effect = {	
-			custom_effect_tooltip = tt_GOI_debug_1
-			country_lock_all_division_template = no
-			hidden_effect = {
-				every_country = {
-					limit = { 
-						NOT = {
-							tag = EMP
-						}
-						NOT = {
-							tag = GOI
-						}
-					}
-					country_lock_all_division_template = no
-					add_timed_idea = {
-						idea = idea_debug_battle_royale
-						days = 1000
-					}
-					if = {
-						limit = {
-							is_ai = yes
-						}
-					}
-					every_country = {
-						limit = { 
-							NOT = {
-								tag = EMP
-							}
-							NOT = {
-								tag = GOI
-							}
-						}
-						declare_war_on = {
-							target = PREV
-							type = annex_everything
-						}
-					}
-				}
-				country_event = GOI_event.69
-				random = {
-					chance = 10 
-					set_province_name = { id = 1061 name = "Tilted Towers" }
-					set_province_name = { id = 827 name = "Tomato Town" }
-					set_province_name = { id = 4378 name = "Pleasant Park" }
-					set_province_name = { id = 876 name = "Salty Springs" }
-					set_province_name = { id = 5107 name = "Retail Row" }
-					set_province_name = { id = 11209 name = "Greasy Grove" }
-					set_province_name = { id = 3938 name = "Loot Lake" }
-					set_province_name = { id = 4900 name = "Dusty Depot" }
-				}
-			}	
+        complete_effect = {
+            custom_effect_tooltip = tt_GOI_debug_1
+            country_lock_all_division_template = no
+            hidden_effect = {
+                every_country = {
+                    limit = {
+                        NOT = {
+                            tag = EMP
+                        }
+                        NOT = {
+                            tag = GOI
+                        }
+                    }
+                    country_lock_all_division_template = no
+                    add_timed_idea = {
+                        idea = idea_debug_battle_royale
+                        days = 1000
+                    }
+                    if = {
+                        limit = {
+                            is_ai = yes
+                        }
+                    }
+                    every_country = {
+                        limit = {
+                            NOT = {
+                                tag = EMP
+                            }
+                            NOT = {
+                                tag = GOI
+                            }
+                        }
+                        declare_war_on = {
+                            target = PREV
+                            type = annex_everything
+                        }
+                    }
+                }
+                country_event = GOI_event.69
+                random = {
+                    chance = 10
+                    set_province_name = { id = 1061 name = "Tilted Towers" }
+                    set_province_name = { id = 827 name = "Tomato Town" }
+                    set_province_name = { id = 4378 name = "Pleasant Park" }
+                    set_province_name = { id = 876 name = "Salty Springs" }
+                    set_province_name = { id = 5107 name = "Retail Row" }
+                    set_province_name = { id = 11209 name = "Greasy Grove" }
+                    set_province_name = { id = 3938 name = "Loot Lake" }
+                    set_province_name = { id = 4900 name = "Dusty Depot" }
+                }
+            }
         }
     }
 
-	debug_conquest = {
+    debug_conquest = {
         icon = GFX_decision_generic_protection
         fire_only_once = yes
-		cost = 0
-		allowed = {
-			is_debug = yes
-		}
-		available = {
-			is_ai = no
-			NOT = {
-				has_global_flag = game_started
-			}
-			NOT = {
-				tag = GOI
-			}
+        cost = 0
+        allowed = {
+            is_debug = yes
         }
-        complete_effect = {	
-			custom_effect_tooltip = tt_GOI_debug_2
-			country_lock_all_division_template = no
-			hidden_effect = {
-				add_timed_idea = {
-					idea = idea_debug_battle_royale
-					days = 720
-				}
-				GOI = {
-					create_faction = "United Goiky"
-				}
-				every_other_country = {
-					country_lock_all_division_template = no
-					limit = { 
-						NOT = {
-							tag = EMP
-						}
-						NOT = {
-							tag = GOI
-						}
-					}
-					set_major = yes
-					GOI = {
-						add_to_faction = PREV
-					}					
-					declare_war_on = {
-						target = ROOT
-						type = annex_everything
-					}
-				}
-				GOI = {leave_faction = yes}
-				country_event = GOI_event.69
-			}	
+        available = {
+            is_ai = no
+            NOT = {
+                has_global_flag = game_started
+            }
+            NOT = {
+                tag = GOI
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = tt_GOI_debug_2
+            country_lock_all_division_template = no
+            hidden_effect = {
+                add_timed_idea = {
+                    idea = idea_debug_battle_royale
+                    days = 720
+                }
+                GOI = {
+                    create_faction = "United Goiky"
+                }
+                every_other_country = {
+                    country_lock_all_division_template = no
+                    limit = {
+                        NOT = {
+                            tag = EMP
+                        }
+                        NOT = {
+                            tag = GOI
+                        }
+                    }
+                    set_major = yes
+                    GOI = {
+                        add_to_faction = PREV
+                    }
+                    declare_war_on = {
+                        target = ROOT
+                        type = annex_everything
+                    }
+                }
+                GOI = {leave_faction = yes}
+                country_event = GOI_event.69
+            }
         }
     }
 
-	debug_nuke_everything = {
+    debug_nuke_everything = {
         icon = GFX_decision_generic_USA_flag
         fire_only_once = no
-		cost = 0
-		allowed = {
-			is_debug = yes
-		}
-		available = {
-			is_ai = no
+        cost = 0
+        allowed = {
+            is_debug = yes
         }
-        complete_effect = {	
-			hidden_effect = {
-				every_state = {
-					ROOT = {
-						launch_nuke = {
-							state = PREV
-							nuke_type = thermonuclear_bomb  
-						}
-					}
-					add_dynamic_modifier = {
-						modifier = fallout_atomic
-						days = 730
-					}
-				}
-			}	
+        available = {
+            is_ai = no
         }
-    }
-
-	debug_cool_diplo = {
-        icon = GFX_decision_generic_political_discourse
-        fire_only_once = yes
-		cost = 0
-		allowed = {
-			is_debug = yes
-		}
-		available = {
-			is_ai = no
-        }
-        complete_effect = {	
-			GOI = {add_threat = 100}
-			every_possible_country = {
-				add_ideas = idea_debug_age_diplomacy
-				set_rule = {
-					can_send_volunteers = yes
-				}
-				set_rule = {
-					can_create_factions = yes
-				}
-			}
+        complete_effect = {
+            hidden_effect = {
+                every_state = {
+                    ROOT = {
+                        launch_nuke = {
+                            state = PREV
+                            nuke_type = thermonuclear_bomb
+                        }
+                    }
+                    add_dynamic_modifier = {
+                        modifier = fallout_atomic
+                        days = 730
+                    }
+                }
+            }
         }
     }
 
-	debug_cold_war = {
+    debug_cool_diplo = {
         icon = GFX_decision_generic_political_discourse
         fire_only_once = yes
-		cost = 0
-		allowed = {
-			is_debug = yes
-			has_dlc = "Gotterdammerung"
-		}
-		available = {
-			has_dlc = "Gotterdammerung"
-			is_ai = no
+        cost = 0
+        allowed = {
+            is_debug = yes
         }
-        complete_effect = {	
-			every_country = {
-				IF = {
-					limit = {
-						NOT = {
-							tag = GOI
-							tag = EMP
-						}
-					}
-					set_technology = {
-						atomic_research = 1
-					}
-					set_technology = {
-						experimental_rockets = 1
-					}
-					enable_equipments = {
-						nuclear_missile_equipment_1
-					}
-					enable_equipments = {
-						nuclear_missile_equipment_2
-					}
-					complete_special_project = sp:sp_nuclear_warheads
-					complete_special_project = sp:sp_rockets_long_range_ballistic_missile
-					complete_special_project = sp:sp_nuclear_bomb
-					add_nuclear_bombs = 100
-					add_equipment_to_stockpile = {
-						type = nuclear_missile_equipment_2
-						amount = 100
-					}
-					capital_scope = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = rocket_site
-							level = 1
-							instant_build = yes
-						}
-					}
-				}		
-			}
+        available = {
+            is_ai = no
+        }
+        complete_effect = {
+            GOI = {add_threat = 100}
+            every_possible_country = {
+                add_ideas = idea_debug_age_diplomacy
+                set_rule = {
+                    can_send_volunteers = yes
+                }
+                set_rule = {
+                    can_create_factions = yes
+                }
+            }
+        }
+    }
+
+    debug_cold_war = {
+        icon = GFX_decision_generic_political_discourse
+        fire_only_once = yes
+        cost = 0
+        allowed = {
+            is_debug = yes
+            has_dlc = "Gotterdammerung"
+        }
+        available = {
+            has_dlc = "Gotterdammerung"
+            is_ai = no
+        }
+        complete_effect = {
+            every_country = {
+                IF = {
+                    limit = {
+                        NOT = {
+                            tag = GOI
+                            tag = EMP
+                        }
+                    }
+                    set_technology = {
+                        atomic_research = 1
+                    }
+                    set_technology = {
+                        experimental_rockets = 1
+                    }
+                    enable_equipments = {
+                        nuclear_missile_equipment_1
+                    }
+                    enable_equipments = {
+                        nuclear_missile_equipment_2
+                    }
+                    complete_special_project = sp:sp_nuclear_warheads
+                    complete_special_project = sp:sp_rockets_long_range_ballistic_missile
+                    complete_special_project = sp:sp_nuclear_bomb
+                    add_nuclear_bombs = 100
+                    add_equipment_to_stockpile = {
+                        type = nuclear_missile_equipment_2
+                        amount = 100
+                    }
+                    capital_scope = {
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = rocket_site
+                            level = 1
+                            instant_build = yes
+                        }
+                    }
+                }
+            }
         }
     }
 }

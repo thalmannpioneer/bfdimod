@@ -13,7 +13,6 @@ spriteTypes = {
 			name = "GFX_WGF_firey"
 			texturefile = "gfx/leaders/WGF/WGF_firey.dds"
 			noOfFrames = 9
-			loadType = "INGAME"
 			transparencecheck = no
 			animation_rate_fps = 12
 			looping = yes

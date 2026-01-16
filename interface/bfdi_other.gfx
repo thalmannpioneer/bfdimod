@@ -31,4 +31,23 @@ spriteTypes = {
 		textureFile = "gfx/interface/empty.dds"
 		transparencecheck = no
 	}
+
+	spriteType = {
+		name = "GFX_select_date_2011"
+		textureFile = "gfx/interface/GFX_select_date_2011.dds"
+	}
+
+	spriteType = {
+		name = "GFX_select_date_2012"
+		textureFile = "gfx/interface/GFX_select_date_2012.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_bookmark_animation"
+		textureFile = "gfx/interface/bookmark_animation.dds"
+		noOfFrames = 9
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
 }

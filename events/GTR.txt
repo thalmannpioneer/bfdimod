@@ -373,6 +373,9 @@ country_event = {
             idea = idea_GTR_saved_posessions
             days = 180
         }
+        custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
+        BFDI_money_diplay_update = yes
     }
 }
 
@@ -499,6 +502,12 @@ country_event = {
                 days = 10
                 random_hours = 12
             }
+            country_event = {
+                id = GTR_event.62
+                days = 600
+                random_days = 300
+                random_hours = 12
+            }
         }
     }
 }
@@ -517,7 +526,7 @@ country_event = {
             id = GTR_power_balance
             set_value = 0.1
         }
-        activate_mission = GTR_bop_outcome_mission
+        activate_mission = GTR_development_outcome_mission
     }
 }
 
@@ -1334,8 +1343,9 @@ country_event = {
     option = {
         name = GTR_event.57.a
         custom_effect_tooltip = l_GTR_spaceship_launch_event
-        goto_province = 4236
         hidden_effect = {
+            goto_province = 4236
+            set_country_flag = GTR_space_done
             clr_country_flag = GTR_spaceship_building
             random = {
                 chance = var_GTR_space_program_success_rate
@@ -1470,6 +1480,39 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.62
+    title = GTR_event.62.t
+    desc = GTR_event.62.desc
+    picture = GFX_GTR_event62
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.62.a
+        custom_effect_tooltip = l_money_lose_50K
+        add_to_variable = { money_amount = -0.5 }
+        BFDI_money_diplay_update = yes
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = -0.05
+        }
+    }
+
+    option = {
+        name = GTR_event.62.b
+        damage_building = {
+            type = infrastructure
+            state = 209
+            damage = 2
+        }
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
         }
     }
 }

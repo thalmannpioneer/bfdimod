@@ -20,6 +20,11 @@ guiTypes = {
             alwaystransparent = yes
         }
 
+        iconType = {
+            name = "animation"
+            spriteType = GFX_mainmenu_animation
+            position = { x = 289 y = 391 }
+        }
     }
 
     containerWindowType = {
@@ -126,7 +131,7 @@ guiTypes = {
         {
             name ="frontend_game_logo"
             spriteType = "GFX_frontend_game_logo"
-            position = { x= -90 y = -130 }
+            position = { x= -100 y = -130 }
         }
 
     }
@@ -280,7 +285,7 @@ guiTypes = {
     ### MAIN MENU PANEL (bottom)
     containerWindowType = {
         name ="mainmenu_panel_bottom"
-        position = { x=0 y =50}
+        position = { x=0 y =100}
         size = { width = 320 height = 435 }
         Orientation = CENTER
         Origo = center
@@ -449,24 +454,24 @@ guiTypes = {
 
     containerWindowType = {
         name = "mainmenu_social_buttons"
-        position = { x=-50 y=55 }
+        position = { x=-50 y=105 }
         size = { width = 240 height = 90 }
         Orientation = center
         origo = center
 
         positionType = {
             name = "position_without_social_gui"
-            position = { x = 0 y = 225 }
+            position = { x = 0 y = 275 }
         }
 
         positionType = {
             name = "subscription_position"
-            position = { x = -50 y = 109 }
+            position = { x = -50 y = 159 }
         }
 
         positionType = {
             name = "subscription_position_without_social_gui"
-            position = { x = 0 y = 239 }
+            position = { x = 0 y = 289 }
         }
 
         containerWindowType = {

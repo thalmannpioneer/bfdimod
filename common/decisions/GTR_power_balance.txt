@@ -1,57 +1,4 @@
 decision_GTR_power_balance_category = {
-    GTR_bop_outcome_mission = {
-        priority = 100
-        days_mission_timeout = 1000
-        timeout_effect = {
-            custom_effect_tooltip = l_GTR_outcome
-            hidden_effect = {
-                if = {
-                    limit = {
-                        power_balance_value = {
-                            id = GTR_power_balance
-                            value > 0.5
-                        }
-                    }
-                    country_event = {
-                        id = GTR_event.38
-                        days = 10
-                        random_days = 3
-                        random_hours = 12
-                    }
-                }
-                else_if = {
-                    limit = {
-                        power_balance_value = {
-                            id = GTR_power_balance
-                            value < -0.5
-                        }
-                    }
-                    country_event = {
-                        id = GTR_event.36
-                        days = 10
-                        random_days = 3
-                        random_hours = 12
-                    }
-                }
-                else = {
-                    country_event = {
-                        id = GTR_event.61
-                        days = 10
-                        random_days = 3
-                        random_hours = 12
-                    }
-                }
-            }
-        }
-        available = {
-            hidden_trigger = { always = no }
-        }
-        selectable_mission = no
-        activation = { hidden_trigger = { always = no } }
-
-        icon = GFX_decisions_GTR_bop_outcome_mission
-    }
-
     GTR_bop_invite_objects_decision = {
         cost = 100
         days_remove = 30
@@ -67,14 +14,14 @@ decision_GTR_power_balance_category = {
 
         ai_will_do = {
             base = 0
-            modifier = {
-                has_completed_focus = GTR_focus_wide_ruling_horizontal
-                power_balance_value = {
-                    id = GTR_power_balance
-                    value > -0.35
-                }
-                add = 100
-            }
+            # modifier = {
+            #     has_completed_focus = GTR_focus_wide_ruling_horizontal
+            #     power_balance_value = {
+            #         id = GTR_power_balance
+            #         value > -0.35
+            #     }
+            #     add = 100
+            # }
         }
     }
     GTR_bop_conduct_tests_decision = {
@@ -92,20 +39,28 @@ decision_GTR_power_balance_category = {
 
         ai_will_do = {
             base = 0
-            modifier = {
-                has_completed_focus = GTR_focus_voting_cense
-                power_balance_value = {
-                    id = GTR_power_balance
-                    value < 0.35
-                }
-                add = 100
-            }
+            # modifier = {
+            #     has_completed_focus = GTR_focus_voting_cense
+            #     power_balance_value = {
+            #         id = GTR_power_balance
+            #         value < 0.35
+            #     }
+            #     add = 100
+            # }
         }
     }
     GTR_bop_do_brainstorm_decision = {
         cost = 50
         days_remove = 30
         days_re_enable = 30
+        ai_will_do = {
+            base = 5
+            modifier = {
+                factor = 3
+                NOT = { has_completed_focus = GTR_focus_elephant_in_a_room }
+                has_stability < 0.31
+            }
+        }
         complete_effect = {
             add_stability = 0.05
             add_war_support = -0.05
@@ -121,6 +76,15 @@ decision_GTR_power_balance_category = {
         cost = 50
         days_remove = 30
         days_re_enable = 30
+        ai_will_do = {
+            base = 5
+            modifier = {
+                factor = 3
+                has_completed_focus = GTR_focus_military
+                NOT = { has_completed_focus = GTR_focus_reform_defense_forces }
+                has_war_support < 0.16
+            }
+        }
         complete_effect = {
             add_stability = -0.05
             add_war_support = 0.05
@@ -131,36 +95,5 @@ decision_GTR_power_balance_category = {
         }
 
         icon = GFX_decision_GTR_bop_agressive_surroundings
-    }
-    GTR_bop_push_for_peaceful_yoylite_decision = {
-        cost = 50
-        days_remove = 50
-        days_re_enable = 50
-        visible = { has_completed_focus = GTR_focus_power_of_yoylelite }
-        available = { hidden_trigger = { has_completed_focus = GTR_focus_power_of_yoylelite } }
-        complete_effect = {
-            add_tech_bonus = {
-                bonus = 1
-                uses = 1
-                category = nuclear
-            }
-            random = {
-                chance = 50
-                random_owned_state = {
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = energy_infrastructure
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-            add_power_balance_value = {
-                id = GTR_power_balance
-                value = -0.05
-            }
-        }
-
-        icon = GFX_decision_GTR_bop_push_for_peaceful_yoylite
     }
 }

@@ -343,8 +343,14 @@ GTR_calculate_success_rate = {
 }
 
 BFDI_money_diplay_update = {
-    if = {
-        limit = { check_variable = { money_amount < -9 } } #-1M
+    if = { #-1M
+        limit = {
+            check_variable = {
+                var = money_amount
+                value = -10
+                compare = less_than_or_equals
+            }
+        }
         set_variable = { display_state = 2 }
         set_variable = { display_money = money_amount }
         divide_variable = { display_money = 10 }

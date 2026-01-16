@@ -118,6 +118,10 @@ leader_traits = {
         stability_factor = 0.05
         political_power_gain = 0.1
         consumer_goods_factor = -0.05
+
+        ai_will_do = {
+            base = 5
+        }
     }
 
     tennis_ball_vision = {
@@ -145,7 +149,7 @@ leader_traits = {
         land_mastery_gain_factor = 0.15
 
         ai_will_do = {
-            base = 1
+            base = 5
         }
     }
 
@@ -153,7 +157,7 @@ leader_traits = {
         sprite = 14
 
         ai_will_do = {
-            base = 1
+            base = 5
         }
     }
 }

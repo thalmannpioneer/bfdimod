@@ -2,7 +2,7 @@ defined_text = {
     name = THREE_FACTORIES_DEMAND
     text = {
         trigger = {
-            num_of_available_civilian_factories > 2
+            num_of_civilian_factories_available_for_projects > 2
         }
         localization_key = l_GTR_space_program_choice_demand_yoylemetal_factories_true
     }
@@ -15,7 +15,7 @@ defined_text = {
     name = FOUR_FACTORIES_DEMAND
     text = {
         trigger = {
-            num_of_available_civilian_factories > 3
+            num_of_civilian_factories_available_for_projects > 3
         }
         localization_key = l_GTR_space_program_choice_demand_four_factories_true
     }
@@ -41,7 +41,7 @@ defined_text = {
     name = FIVE_FACTORIES_DEMAND
     text = {
         trigger = {
-            num_of_available_civilian_factories > 4
+            num_of_civilian_factories_available_for_projects > 4
         }
         localization_key = l_GTR_space_program_choice_demand_five_factories_true
     }
