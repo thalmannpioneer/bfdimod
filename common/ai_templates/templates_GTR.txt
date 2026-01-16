@@ -89,12 +89,12 @@ infantry_GTR = {
 			base = 1
 			modifier = {
 				factor = 0
-				arms_factory < 3
+				arms_factory < 2
 			}
 
 			modifier = {
 				factor = 3
-				arms_factory > 3
+				arms_factory > 2
 			}
 		}
 

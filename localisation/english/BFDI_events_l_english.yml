@@ -791,7 +791,6 @@
  YFC_event.33.a: "We'll buy it!"
  YFC_event.33.b: "We'll pass."
 
-
  YFC_event.34.t: "[FROM.GetName] have accepted our deal!" #Don't rewrite
  YFC_event.34.desc: ""
  YFC_event.34.a: "Great!"
@@ -801,14 +800,41 @@
  YFC_event.35.a: "Huh."
 
  YFC_event.36.t: "New Yellow Face Deal!" #Don't rewrite
- YFC_event.36.desc: "Yellow Face is willing to sell [?ROOT.buying_amount] equipment that we have requested for [?trade_cost_show_var]K dollars. Should we take the deal?"
+ YFC_event.36.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§GYellow Face is willing to sell [?ROOT.buying_amount] equipment that we have requested.§!\n\n§RFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
  YFC_event.36.a: "Accept!"
  YFC_event.36.b: "Deny!"
 
  YFC_event.37.t: "New Yellow Face Deal!" #Don't rewrite
- YFC_event.37.desc: "Yellow Face is willing to buy [?ROOT.selling_amount] equipment that we are selling for [?trade_cost_show_var]K dollars. Should we take the deal?"
+ YFC_event.37.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§RYellow Face is willing to buy [?ROOT.selling_amount] equipment that we are selling.§!\n\n§GFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
  YFC_event.37.a: "Accept!"
  YFC_event.37.b: "Deny!"
+
+ YFC_event.38.t: "Yellow Face deamnds our resources!" #I will rewrite when I care more or ZDubbz you do it (SRI sees this)
+ YFC_event.38.desc: "Something something bla bla that for 500K and we protect you does that sound very cool and a good deal?"
+ YFC_event.38.a: "Accept!"
+ YFC_event.38.b: "Deny!"
+
+ YFC_event.39.t: "The Northern Ridge Response" #ZDubbz if you want to
+ YFC_event.39.desc: "Their response has arrived with great news! They have agreed to our deal and now their resources should be sent to us very soon. This is great progress to further increase our profits at little cost!"
+ YFC_event.39.a: "Great news!"
+
+ YFC_event.40.t: "The Northern Ridge Response" #ZDubbz if you want to
+ YFC_event.40.desc: "Their response has arrived with terrible news. They have rejected our generous deal and any other talks. It seems that they want to go their own way despite them having a weak position to do so."
+ YFC_event.40.a: "Terrible error for them."
+
+ YFC_event.41.t: "Yellow Face deamnds our subjugation!" #I will rewrite when I care more or ZDubbz you do it (SRI sees this)
+ YFC_event.41.desc: "There is no upside besides the whole not getting invaded part so uhhhh which sounds like a better plan?"
+ YFC_event.41.a: "Accept!"
+ YFC_event.41.b: "Deny!"
+
+ YFC_event.42.t: "Fate of The Northern Ridge" #ZDubbz if you want to
+ YFC_event.42.desc: "The fate of The Northern Ridge seems rather easy! They submitted to our subjugation and we now have full control of them. This new member will not have the same perks as the others which will be fewer costs for us."
+ YFC_event.42.a: "YAAAAAY!!!"
+
+ YFC_event.43.t: "Fate of The Northern Ridge" #ZDubbz if you want to
+ YFC_event.43.desc: "The fate of The Northern Ridge seems rather uneasy. They have denied our subjugation and seemed to be mobilizing in preparation of our move. Now a war is not the most popular here, but are the interests we could gain worth the risk?"
+ YFC_event.43.a: "It's not worth it..."
+ YFC_event.43.b: "Bad move on their part."
 
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
@@ -934,10 +960,8 @@
  YFC_BUN.18.a: "Great news!"
 
  YFC_BUN.19.t: "Numismatia denies our demands!"
- YFC_BUN.19.desc: "After a few days of waiting, we got our response that Numismatia is not going to hand over their occupation zone to us. It seems that their true intentions are now on full display. A war with them while dealing with the resistance is off the table, unfortunately. We could take retaliatory action against them, or let this happen."
- YFC_BUN.19.a: "Place an Embargo on them!"
- YFC_BUN.19.b: "Break Relations with them!"
- YFC_BUN.19.c: "Guess we'll fold..."
+ YFC_BUN.19.desc: "After a few days of waiting, we got our response that Numismatia is not going to hand over their occupation zone to us. It seems that their true intentions are now on full display. Any action against them while dealing with the resistance is off the table, unfortunately. "
+ YFC_BUN.19.a: "So be it."
 
  YFC_BUN.20.t: "Ex-Bunch industry destroyed!"
  YFC_BUN.20.desc: "With our security forces still setting up inside our occupation zone, a terrible attack just occurred. During the night a few days ago, around 10 to 25 objects entered the small industrial district of Podgornyv and started planting explosives on the factories. However, these objects must have lacked the knowledge that a patrol was wandering in the area who noticed the terrorist attack being set up. Screaming matches became gunshots as a small engagement broke out. The small, underequipped group was no match for our forces. However, only one factory was able to be saved in the chaos. The rest of the factories were blown to pieces. Luckily, everyone that was important was evacuated and our security forces took no losses. Only one object was captured, who had no information that he was willing to give up."

@@ -13,7 +13,7 @@ WGF_INF_01 = {
 		1 = { "%dya 'North-Goikyland' Brigade" }
 		2 = { "%dya 'Free' Brigade" }
 		3 = { "%dya 'Yellowfield' Brigade" }
-		4 = { "%dya 'People’s' Brigade" }
+		4 = { "%dya 'People's' Brigade" }
 		5 = { "%dya 'Fire' Brigade" }
 		6 = { "%dya 'United' Brigade" }
 		7 = { "%dya 'Warm' Brigade" }
@@ -35,6 +35,12 @@ WGF_INF_01 = {
 		23 = { "%dya 'Inferno' Brigade" }
 		24 = { "%dya 'Heat' Brigade" }
 		25 = { "%dya 'Youth' Brigade" }
+		26 = { "%dya 'Burns' Brigade" } #By this point I'm guessing that WGF killed GMD
+		27 = { "%dya 'Medal' Brigade" }
+		27 = { "%dya 'Em Alamain' Brigade" }
+		28 = { "%dya 'Cary' Brigade" }
+		29 = { "%dya 'Reformed' Brigade" }
+		30 = { "%dya 'Redeemed' Brigade" }
 	}
 }
 
@@ -50,9 +56,9 @@ WGF_Cav_01 = {
 	fallback_name = "%dya Cavalry"
 
 	ordered = {
-		1 = { "%dya ‘People’s’ Cavalry" }
-		2 = { "%dya ‘Farmers’ Cavalry" }
-		3 = { "%dya 'Yellow’ Cavalry" }
+		1 = { "%dya 'People's' Cavalry" }
+		2 = { "%dya 'Farmers' Cavalry" }
+		3 = { "%dya 'Yellow' Cavalry" }
 		4 = { "%dya Cavalry" }
 		5 = { "%dya Cavalry" }
 		6 = { "%dya Cavalry" }

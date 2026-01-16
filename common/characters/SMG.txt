@@ -4,6 +4,7 @@ characters = {
 		portraits = { civilian = { large = GFX_SMG_grassy } }
 		country_leader = {
 			ideology = gen_nazism
+			traits = { anarchist_annihilator }
 		}
 	}
 

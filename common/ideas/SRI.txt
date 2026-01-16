@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		idea_SRI_ridge_war = { 
+			picture = ast_volunteer_defence_corps #Maybe make but this is not important
+			modifier = {
+				surrender_limit = 0.15
+				army_core_defence_factor = 0.1
+				war_support_factor = 0.1
+				conscription = 0.05
+			}
+		}
+	}
+}

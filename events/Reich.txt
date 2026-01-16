@@ -195,6 +195,7 @@ country_event = {
 		kill_country_leader = yes
 		hidden_effect = {
 			add_threat = 3.5
+			YFC = {mark_focus_tree_layout_dirty = yes}
 			15 = { 
 				remove_core_of = GGR
 				add_core_of = SMG
@@ -219,6 +220,7 @@ country_event = {
 							promote_leader = yes
 							country_leader = {
 								ideology = gen_nazism
+								traits = { special_character }
 							}
 						}
 						add_field_marshal_role = {

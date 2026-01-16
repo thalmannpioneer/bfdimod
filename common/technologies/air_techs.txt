@@ -144,6 +144,15 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+			modifier = {
+				factor = 2
+				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
+			}
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
+			}
 		}
 	}
 	
@@ -1589,6 +1598,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_rockets_air_ground}
+			}
 		}
 	}
 	

@@ -1014,6 +1014,12 @@
  YFC_focus_a_look_inward: "A Look Inward"
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
+ YFC_focus_new_interests: "New Interests"
+ YFC_focus_new_interests_desc: "With the Snowy Fascists unable to defeat the Anarchists' assaults to the South, an interesting opportunity has appeared. A small group of objects, both arm and armless, formed a government in The Great Ridge. This government is weak both in its army and economy, but rich in resources. So why don't we 'help' them out and make a deal?"
+
+ YFC_focus_integrate_great_ridge: "Integrate the Ridge"
+ YFC_focus_integrate_great_ridge_desc: "Progress has been going nice in other areas with our alliance creation being the highlight. With now more reason to get countries into our sphere, it seems that The Great Ridge question is back again. It is time to bring this small government under our control!"
+
  YFC_focus_the_bunchivist_problem: "The Bunchivist Problem"
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."
 
@@ -1080,8 +1086,13 @@
  YFC_focus_stalled_plans: "Stalled Plans"
  YFC_focus_stalled_plans_desc: "ZDubbz cough cough cough"
 
+ YFC_focus_unite_the_capitalists: "Unite The Capitalists"
+ YFC_focus_unite_the_capitalists_desc: "ZDubbz cough cough cough"
+
  YFC_focus_foster_new_society: "Foster a New Society"
  YFC_focus_foster_new_society_desc: "Bunchivists are still people. And with people, there is profit. Obviously, we've lost quite a bit of money from having to deal with the raiders, but if we have their entire population under our thumb, we could make it back in no time! Facilitating a new, reformed Bunch should be easy, and well worth the cost. Oh, the civillians should be allowed to live free and stuff too. That's totally important to us."
+ YFC_focus_support_blocky: "Support Blocky"
+ YFC_focus_support_blocky_desc: "ZDubbz cough cough cough"
 
  YFC_focus_stimulate_bunch_business: "Stimulate Bunch Businesses"
  YFC_focus_stimulate_bunch_business_desc: "Podgornyv is currently quite barren. It seems to have at least been lived in when we got there, but there aren't many businesses. In all honesty, that should be expected. The (hopefully former) raider society would pillage anything they came accross. Those savages ruined any chance of Bunchivist business! In other words, we could certainly breathe life into this dying city. Maybe, tax breaks for business owners?"
@@ -1098,6 +1109,9 @@
  YFC_focus_banks_too_big_to_fail: "Expand the Banking"
  YFC_focus_banks_too_big_to_fail_desc: "ZDubbz cough cough cough"
 
+ YFC_focus_advertise_YFC_products: "Advertise our Products"
+ YFC_focus_advertise_YFC_products_desc: "ZDubbz cough cough cough"
+
  YFC_focus_insentivize_employment: "Insentivize Employment"
  YFC_focus_insentivize_employment_desc: "ZDubbz cough cough cough"
 
@@ -1109,6 +1123,9 @@
 
  YFC_focus_bunch_fostered: "A Bunch Fostered"
  YFC_focus_bunch_fostered_desc: "ZDubbz cough cough cough"
+
+ YFC_focus_united_by_profits: "United By Profits"
+ YFC_focus_united_by_profits_desc: "ZDubbz cough cough cough"
 
  Musketeers_three_musketeers: "Three Musketeers"
  Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"

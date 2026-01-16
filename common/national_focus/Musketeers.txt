@@ -46,7 +46,7 @@ shared_focus = {
 
 	completion_reward = {
 		add_political_power = 25
-		add_stability = 0.01
+		add_stability = 0.05
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
 	}
@@ -61,7 +61,7 @@ joint_focus = {
 	x = -3
 	y = 1
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_form_own
 	prerequisite = { focus = Musketeers_three_musketeers }
 	available = {
 		hidden_trigger = {
@@ -115,7 +115,7 @@ joint_focus = {
 	x = -2
 	y = 1
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_grant_drilling_subsidies
 	prerequisite = { focus = Musketeers_form_own }
 	available = {
 		hidden_trigger = {
@@ -162,7 +162,7 @@ joint_focus = {
 	x = 2
 	y = 1
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_unite_trading_deals
 	prerequisite = { focus = Musketeers_form_own }
 	available = {
 		hidden_trigger = {
@@ -205,7 +205,7 @@ joint_focus = {
 	x = 0
 	y = 1
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_build_new_mines
 	prerequisite = { focus = Musketeers_grant_drilling_subsidies focus = Musketeers_unite_trading_deals }
 	available = {
 		hidden_trigger = {
@@ -252,7 +252,7 @@ joint_focus = {
 	x = 0
 	y = 1
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_gather_contracts
 	prerequisite = { focus = Musketeers_grant_drilling_subsidies focus = Musketeers_unite_trading_deals }
 	available = {
 		hidden_trigger = {

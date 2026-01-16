@@ -154,7 +154,17 @@ technologies = {
 
 			modifier = {
 				num_of_military_factories < 7
+				NOT = {tag = GTR}
 				factor = 0.1
+			}
+			modifier = {
+				factor = 2
+				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
+			}
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
 			}
 		}
 	}
@@ -751,7 +761,13 @@ technologies = {
 
 			modifier = {
 				num_of_military_factories < 30
+				NOT = {tag = GTR}
 				factor = 0.1
+			}
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_rockets_air_ground}
 			}
 		}
 	}
@@ -1258,7 +1274,7 @@ technologies = {
 					has_tech = iw_medium_airframe
 					has_tech = iw_large_airframe
 				}
-				factor = 5
+				factor = 6
 			}
 		}
 	}
@@ -1538,15 +1554,11 @@ technologies = {
 					has_tech = iw_medium_airframe
 					has_tech = iw_large_airframe
 				}
-				factor = 5
+				factor = 6
 			}
 			modifier = {
 				is_major = yes
 				factor = 2
-			}
-			modifier = {
-				num_of_military_factories < 10
-				factor = 0
 			}
 			modifier = {
 				date > "1937.1.1"

@@ -58,16 +58,22 @@
  decisions_cost_money_2_5m: "£GFX_dollar_texticon §Y2.5M§!"
  decisions_cost_money_2_5m_blocked: "£GFX_dollar_texticon §R2.5M§!"
 
+ decisions_cost_money_200K_pp_10: "£GFX_dollar_texticon §Y200K§!  £pol_power  §Y10§!"
+ decisions_cost_money_200K_pp_10_blocked: "£GFX_dollar_texticon §R200K§!  £pol_power  §R10§!"
+ decisions_cost_money_1m_pp_10: "£GFX_dollar_texticon §Y1M§!  £pol_power  §Y10§!"
+ decisions_cost_money_1m_pp_10_blocked: "£GFX_dollar_texticon §R1M§!  £pol_power  §R10§!"
+ decisions_cost_money_1m_pp_35: "£GFX_dollar_texticon §Y1M§!  £pol_power  §Y35§!"
+ decisions_cost_money_1m_pp_35_blocked: "£GFX_dollar_texticon §R1M§!  £pol_power  §R35§!"
+ decisions_cost_money_1m_pp_100: "£GFX_dollar_texticon §Y1M§!  £pol_power  §Y100§!"
+ decisions_cost_money_1m_pp_100_blocked: "£GFX_dollar_texticon §R1M§!  £pol_power  §R100§!"
+ decisions_cost_money_2_5m_pp_35: "£GFX_dollar_texticon §Y2.5M§!  £pol_power  §Y35§!"
+ decisions_cost_money_2_5m_pp_35_blocked: "£GFX_dollar_texticon §R2.5M§!  £pol_power  §R35§!"
 
- #
- # Pun please replace these in decisions with custom cost triggers ^^^
- #
+
+ #These will stay has some focuses/other require this
  l_money_cost_100K: "Costs §G100K Dollars§!"
  l_money_cost_200K: "Costs §G200K Dollars§!"
  l_money_cost_300K: "Costs §G300K Dollars§!"
  l_money_cost_500K: "Costs §G500K Dollars§!"
  l_money_cost_1M: "Costs §G1M Dollars§!"
  l_money_cost_2_5M: "Costs §G2.5M Dollars§!"
- #
- #
- #

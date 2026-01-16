@@ -15,14 +15,6 @@ guiTypes = {
 				spriteType = "GFX_tiled_window_transparent"
 			}
 
-			gridBoxType = {
-				name = "insert_name"
-				position = { x = 0 y = 0 }
-				size = { width = 100% height = 1200 }
-				slotsize = { width = 280 height = 14 }
-				format = "UPPER_LEFT"
-			}
-
 			instantTextboxType = {
 				name = "title"
 				text = l_decisions_sector_title
@@ -32,12 +24,6 @@ guiTypes = {
 				font = hoi_36header
 			}
 
-			iconType = {
-				name = "sector_military"
-				spriteType = "GFX_decisions_sector_military"
-				position = { x = 50 y = 60 }
-			}
-
 			instantTextboxType = {
 				name = "sector_military_title"
 				text = l_decisions_sector_military_title
@@ -45,6 +31,12 @@ guiTypes = {
 				maxWidth = 250
 				format = centre
 				font = hoi_24header
+			}
+
+			iconType = {
+				name = "sector_military"
+				spriteType = "GFX_decisions_sector_military"
+				position = { x = 50 y = 60 }
 			}
 
 			instantTextboxType = {
@@ -78,6 +70,30 @@ guiTypes = {
 				pdx_tooltip = YFC_sector_decrease
 			}
 
+			instantTextboxType = {
+				name = "sector_railway_title"
+				text = l_decisions_sector_railway_title
+				position = { x = 260 y = 30 }
+				maxWidth = 250
+				format = centre
+				font = hoi_24header
+			}
+
+			iconType = {
+				name = "sector_railway"
+				spriteType = "GFX_decisions_sector_railway"
+				position = { x = 300 y = 60 }
+			}
+
+			instantTextboxType = {
+				name = "sector_railway_stats"
+				text = l_decisions_sector_railway_stats
+				position = { x = 260 y = 275 }
+				maxWidth = 250
+				format = centre
+				font = hoi_18header
+			}
+
 			buttonType = {
 				name = "button_railway_increase"
 				position = { x = 390 y = 355 }
@@ -98,6 +114,30 @@ guiTypes = {
 				clicksound = click_ok
 				oversound = ui_menu_over
 				pdx_tooltip = YFC_sector_decrease
+			}
+
+			instantTextboxType = {
+				name = "sector_science_title"
+				text = l_decisions_sector_science_title
+				position = { x = 5 y = 430 }
+				maxWidth = 250
+				format = centre
+				font = hoi_24header
+			}
+
+			iconType = {
+				name = "sector_science"
+				spriteType = "GFX_decisions_sector_science"
+				position = { x = 50 y = 460 }
+			}
+
+			instantTextboxType = {
+				name = "sector_science_stats"
+				text = l_decisions_sector_science_stats
+				position = { x = 5 y = 675 }
+				maxWidth = 250
+				format = centre
+				font = hoi_18header
 			}
 
 			buttonType = {
@@ -122,6 +162,30 @@ guiTypes = {
 				pdx_tooltip = YFC_sector_decrease
 			}
 
+			instantTextboxType = {
+				name = "sector_construction_title"
+				text = l_decisions_sector_construction_title
+				position = { x = 260 y = 430 }
+				maxWidth = 250
+				format = centre
+				font = hoi_24header
+			}
+
+			iconType = {
+				name = "sector_construction"
+				spriteType = "GFX_decisions_sector_construction"
+				position = { x = 300 y = 460 }
+			}
+
+			instantTextboxType = {
+				name = "sector_construction_stats"
+				text = l_decisions_sector_construction_stats
+				position = { x = 260 y = 675 }
+				maxWidth = 250
+				format = centre
+				font = hoi_18header
+			}
+
 			buttonType = {
 				name = "button_construction_increase"
 				position = { x = 390 y = 755 }
@@ -144,6 +208,30 @@ guiTypes = {
 				pdx_tooltip = YFC_sector_decrease
 			}
 
+			instantTextboxType = {
+				name = "sector_electronics_title"
+				text = l_decisions_sector_electronics_title
+				position = { x = 135 y = 810 }
+				maxWidth = 250
+				format = centre
+				font = hoi_24header
+			}
+
+			iconType = {
+				name = "sector_electronics"
+				spriteType = "GFX_decisions_sector_electronics"
+				position = { x = 180 y = 840 }
+			}
+
+			instantTextboxType = {
+				name = "sector_electronics_stats"
+				text = l_decisions_sector_electronics_stats
+				position = { x = 135 y = 1055 }
+				maxWidth = 250
+				format = centre
+				font = hoi_18header
+			}
+
 			buttonType = {
 				name = "button_energy_increase"
 				position = { x = 260 y = 1135 }
@@ -164,104 +252,6 @@ guiTypes = {
 				clicksound = click_ok
 				oversound = ui_menu_over
 				pdx_tooltip = YFC_sector_decrease
-			}
-
-			iconType = {
-				name = "sector_railway"
-				spriteType = "GFX_decisions_sector_railway"
-				position = { x = 300 y = 60 }
-			}
-
-			instantTextboxType = {
-				name = "sector_railway_title"
-				text = l_decisions_sector_railway_title
-				position = { x = 260 y = 30 }
-				maxWidth = 250
-				format = centre
-				font = hoi_24header
-			}
-
-			instantTextboxType = {
-				name = "sector_railway_stats"
-				text = l_decisions_sector_railway_stats
-				position = { x = 260 y = 275 }
-				maxWidth = 250
-				format = centre
-				font = hoi_18header
-			}
-
-
-			iconType = {
-				name = "sector_science"
-				spriteType = "GFX_decisions_sector_science"
-				position = { x = 50 y = 460 }
-			}
-
-			instantTextboxType = {
-				name = "sector_science_title"
-				text = l_decisions_sector_science_title
-				position = { x = 5 y = 430 }
-				maxWidth = 250
-				format = centre
-				font = hoi_24header
-			}
-
-			instantTextboxType = {
-				name = "sector_science_stats"
-				text = l_decisions_sector_science_stats
-				position = { x = 5 y = 675 }
-				maxWidth = 250
-				format = centre
-				font = hoi_18header
-			}
-
-
-			iconType = {
-				name = "sector_construction"
-				spriteType = "GFX_decisions_sector_construction"
-				position = { x = 300 y = 460 }
-			}
-
-			instantTextboxType = {
-				name = "sector_construction_title"
-				text = l_decisions_sector_construction_title
-				position = { x = 260 y = 430 }
-				maxWidth = 250
-				format = centre
-				font = hoi_24header
-			}
-
-			instantTextboxType = {
-				name = "sector_construction_stats"
-				text = l_decisions_sector_construction_stats
-				position = { x = 260 y = 675 }
-				maxWidth = 250
-				format = centre
-				font = hoi_18header
-			}
-
-			iconType = {
-				name = "sector_electronics"
-				spriteType = "GFX_decisions_sector_electronics"
-				position = { x = 180 y = 840 }
-			}
-
-			instantTextboxType = {
-				name = "sector_electronics_title"
-				text = l_decisions_sector_electronics_title
-				position = { x = 135 y = 810 }
-				maxWidth = 250
-				format = centre
-				font = hoi_24header
-			}
-
-			instantTextboxType = {
-				name = "sector_electronics_stats"
-				text = l_decisions_sector_electronics_stats
-				position = { x = 135 y = 1055 }
-				maxWidth = 250
-				format = centre
-				font = hoi_18header
 			}
 		}
 }

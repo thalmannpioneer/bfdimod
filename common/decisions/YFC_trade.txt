@@ -6,17 +6,15 @@ decision_YFC_trade_category= {
 			has_completed_focus = YFC_focus_open_the_market
 		}
 
-		available = {
-			custom_trigger_tooltip = {
-                tooltip = l_money_cost_1M
-                check_variable = { money_amount > 10 }
-            }
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 9
 		}
+		custom_cost_text = decisions_cost_money_1m_pp_10
 
 		fire_only_once = no
-		cost = 10
 		days_remove = 180
-		days_re_enable = 60
+		days_re_enable = 75
 
 		complete_effect = {
 			add_research_slot = 2
@@ -30,11 +28,11 @@ decision_YFC_trade_category= {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount > 35 }
+				check_variable = { money_amount > 50 }
 				add = 100
 			}
 			modifier = { #by this point other nations have other tech so get new stuff
-				check_variable = { money_amount > 15 }
+				check_variable = { money_amount > 17 }
 				date > 2015.01.01
 				date < 2016.01.01
 				add = 100
@@ -45,6 +43,10 @@ decision_YFC_trade_category= {
 	YFC_Trade_GMD_Guns = {
 		icon = GFX_decisions_YFC_steal_coiny
         
+		available = {
+			country_exists = GMD
+		}
+
 		visible = {
 			has_completed_focus = YFC_focus_outsource_gun_production
 			country_exists = GMD
@@ -55,7 +57,7 @@ decision_YFC_trade_category= {
 		}
 
 		fire_only_once = no
-		cost = 35
+		cost = 50
 		days_remove = 120
 		days_re_enable = 60
 
@@ -159,7 +161,7 @@ decision_YFC_trade_category= {
 	}
 
 	YFC_trade_AIUSE_SellRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
-		icon = generic_research
+		icon = GFX_decision_SOV_stalinist_state
 
 		available = { #Why is this code so evil and only partly working?
 			THIS = {
@@ -317,7 +319,7 @@ decision_YFC_trade_category= {
 	}
 
 	YFC_trade_AIUSE_BuyRequest = { #YFC BUYS SHIT!!!!!
-		icon = generic_research
+		icon = GFX_decision_SOV_left_opposition_state
 
 		available = { 
 			THIS = {

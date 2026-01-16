@@ -18,8 +18,17 @@ decision_other_trade_category = {
 		cost = 0
 
 		complete_effect = {
+			set_temp_variable = { chance_var = 75 }
+			IF = {
+				limit = {tag = CRN}
+				set_temp_variable = { chance_var = 100 }
+			}
+			ELSE_IF = {
+				limit = {tag = BUN}
+				set_temp_variable = { chance_var = 15 }
+			}
 			random = {
-				chance = 75
+				chance = chance_var
 				IF = {
 					limit = {
 						is_in_array = {

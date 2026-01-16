@@ -267,7 +267,7 @@ decision_YFC_BUN_category = {
 			add_political_power = 15
 			IF = {
 				limit = {is_ai = yes}
-				85 = {add_resistance = -3}
+				85 = {add_resistance = -5}
 			}
         }
 		fire_only_once = no
@@ -329,7 +329,7 @@ decision_YFC_BUN_category = {
 			add_political_power = 15
 			IF = {
 				limit = {is_ai = yes}
-				212 = {add_resistance = -3}
+				212 = {add_resistance = -5}
 			}
         }
 		fire_only_once = no

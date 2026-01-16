@@ -207,6 +207,27 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 	}
 }
 
+scripted_gui = {
+    bfdi_other_trade_background_button = {
+        window_name = background_button
+        context_type = player_context
+
+        visible = {
+            OR = {
+                has_country_flag = Selling_Menu
+                has_country_flag = Buying_Menu
+            }
+        }
+
+        effects = {
+			button_click = {
+				ROOT = { clr_country_flag = Selling_Menu }
+				ROOT = { clr_country_flag = Buying_Menu }
+			}
+        }
+    }
+}
+
 scripted_gui = { #I AM SANE
 	bfdi_other_trade_scriptedgui = {
 		window_name = other_trade_container
@@ -894,10 +915,6 @@ scripted_gui = { #I AM SANE
 				}		
 			}
 
-			close_click = {
-				ROOT = { clr_country_flag = Selling_Menu }
-				ROOT = { clr_country_flag = Buying_Menu }
-			}
 			other_trade_list_equipment_button_select_click = {
 				ROOT = {
 					IF = {
@@ -964,10 +981,6 @@ scripted_gui = { #THIS IS NOT HURTING MY BRAIN AT ALL
 		}
 		
 		effects = {
-			close_click = {
-				ROOT = { clr_country_flag = Selling_Menu }
-				ROOT = { clr_country_flag = Buying_Menu }
-			}
 			other_trade_list_equipment_button_select_click = {
 				ROOT = {
 					IF = {

@@ -2,8 +2,8 @@ BFDI_wait_tech = {
 	#Tell EVERY nation that unless they have more than 2 mils or it is past 2015 that Anti-Tank/Air IS NOT NEEDED.
 	enable = {
 		OR = {
-			date < 2015.1.1
-			num_of_military_factories < 3
+			date < 2016.1.1
+			num_of_military_factories < 4
 		}
 	}
 	abort_when_not_enabled = yes
@@ -30,10 +30,10 @@ BFDI_wait_tech = {
 }
 
 BFDI_stop_guns = {
-	#If we have over 3000 guns then lower the amount we are making
+	#If we have over 5000 guns then lower the amount we are making
 	enable = {
-		has_equipment = {infantry_equipment > 3000}
-		NOT = {tag = GGR}
+		has_equipment = {infantry_equipment > 5000}
+		NOT = {original_tag = GGR}
 		has_war = no
 	}
 	abort_when_not_enabled = yes
@@ -47,7 +47,7 @@ BFDI_stop_guns = {
 BFDI_full_stop_guns = {
 	#Okay now really stop making this many guns
 	enable = {
-		has_equipment = {infantry_equipment > 7500}
+		has_equipment = {infantry_equipment > 10000}
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -60,12 +60,8 @@ BFDI_full_stop_guns = {
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
-		always = yes
-		NOT = {
-			OR = {
-				original_tag = GER #May update later
-			}
-		}
+		NOT = {original_tag = GTR}
+		NOT = {original_tag = WGF}
 	}
 	abort_when_not_enabled = yes
 
@@ -189,7 +185,7 @@ default_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 15
+		value = 10
 	}
 }
 
@@ -334,38 +330,39 @@ default_role_ratios = {
 default_surplus_management = {
 	# If we manage to get all equipment we want, keep producing more stuff according to this
 	enable = {
-		always = yes  # For now, applies to everyone
+		NOT = {original_tag = GTR}
+		NOT = {original_tag = WGF}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = equipment_production_surplus_management
 		id = infantry_equipment
-		value = 10
+		value = 8
 	}
 
 	ai_strategy = {
 		type = equipment_production_surplus_management
 		id = support_equipment
-		value = 5
+		value = 4
 	}
 
 	ai_strategy = {
 		type = equipment_production_surplus_management
 		id = artillery_equipment
-		value = 5
+		value = 4
 	}
 
 	ai_strategy = {  # Potentially move into a "specialization" strategy
 		type = equipment_production_surplus_management
 		id = anti_air_equipment
-		value = 3
+		value = 2
 	}
 
 	ai_strategy = {  # Potentially move into a "specialization" strategy
 		type = equipment_production_surplus_management
 		id = anti_tank_equipment
-		value = 2
+		value = 1
 	}
 
 	ai_strategy = {
@@ -379,9 +376,7 @@ bba_air_prod_1 = {
 	# TODO BFW: this was moved from germany's strats
 
 	enable = {
-		always = yes
-		NOT = { original_tag = GER }
-		NOT = { original_tag = ENG }
+		NOT = { original_tag = GTR }
 	}
 
 	abort_when_not_enabled = yes
@@ -683,14 +678,8 @@ build_patrol_bombers = {
 default_garrison_production = {
 	enable = {
 		NOT = {
-			original_tag = GER
-			original_tag = SOV
-			original_tag = USA
-			original_tag = CHI
-			original_tag = FRA
-			original_tag = JAP
-			original_tag = ENG
-			original_tag = SIA
+			original_tag = GTR
+			original_tag = WGF
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes
@@ -703,7 +692,7 @@ default_garrison_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 5
+		value = 2
 	}
 }
 
@@ -997,37 +986,6 @@ default_market_convoy_purchases = {
 		type = equipment_market_buying_threshold
 		id = convoy
 		value = 30  # Consider buying if we have too few (less than 30) convoys. Also interacts with the EQUIPMENT_MARKET_WANTED_CONVOY_USAGE_RATIO define.
-	}
-}
-
-dont_build_capitals_if_on_treaty = {
-	enable = {
-		has_idea = MTG_naval_treaty_adherent
-	}
-
-	abort = {
-		OR = {
-				original_tag = ITA
-				original_tag = ENG
-				NOT = { has_idea = MTG_naval_treaty_adherent }
-			}
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -2		 #1 to 2
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bb
-		value = -100
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = naval_capital_bc
-		value = -100
 	}
 }
 
@@ -1353,7 +1311,7 @@ put_garrisons_on_high_prio = {
 
 	ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = 65 # positive is high prio, negative is low prio
+		value = 35 # positive is high prio, negative is low prio
 	}
 }
 
