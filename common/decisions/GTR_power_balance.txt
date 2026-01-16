@@ -1,4 +1,57 @@
 decision_GTR_power_balance_category = {
+    GTR_bop_outcome_mission = {
+        priority = 100
+        days_mission_timeout = 1000
+        timeout_effect = {
+            custom_effect_tooltip = l_GTR_outcome
+            hidden_effect = {
+                if = {
+                    limit = {
+                        power_balance_value = {
+                            id = GTR_power_balance
+                            value > 0.5
+                        }
+                    }
+                    country_event = {
+                        id = GTR_event.38
+                        days = 10
+                        random_days = 3
+                        random_hours = 12
+                    }
+                }
+                else_if = {
+                    limit = {
+                        power_balance_value = {
+                            id = GTR_power_balance
+                            value < -0.5
+                        }
+                    }
+                    country_event = {
+                        id = GTR_event.36
+                        days = 10
+                        random_days = 3
+                        random_hours = 12
+                    }
+                }
+                else = {
+                    country_event = {
+                        id = GTR_event.61
+                        days = 10
+                        random_days = 3
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+        available = {
+            hidden_trigger = { always = no }
+        }
+        selectable_mission = no
+        activation = { hidden_trigger = { always = no } }
+
+        icon = GFX_decisions_GTR_bop_outcome_mission
+    }
+
     GTR_bop_invite_objects_decision = {
         cost = 100
         days_remove = 30

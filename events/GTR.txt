@@ -1343,6 +1343,7 @@ country_event = {
     option = {
         name = GTR_event.57.a
         custom_effect_tooltip = l_GTR_spaceship_launch_event
+        goto_province = 4236
         hidden_effect = {
             goto_province = 4236
             set_country_flag = GTR_space_done
