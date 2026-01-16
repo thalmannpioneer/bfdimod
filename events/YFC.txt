@@ -1673,20 +1673,6 @@ country_event = {
 		add_political_power = -100
 		YFC = {puppet = ROOT}
 		hidden_effect = {
-			set_country_flag = Allow_Musketeers
-			IF = {
-                limit = {has_completed_focus = Musketeers_form_own}
-                add_dynamic_modifier = {
-                     modifier = idea_Musketeers_OWN
-                }
-            }
-            IF = {
-                limit = {has_completed_focus = Musketeers_form_udc}
-                add_dynamic_modifier = {
-                    modifier = idea_Musketeers_UDC
-                }
-            }
-
 			YFC = {
 				country_event = {
 					id = YFC_event.42
@@ -1696,13 +1682,14 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 1 #CHANGE LATER!!!
+			base = 0 #CHANGE LATER!!!
 		}
 	}
 
 	option = {
 		name = YFC_event.41.b
 		add_war_support = 0.1
+		add_manpower = 5000
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -1713,7 +1700,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 0 #CHANGE LATER!!!
+			base = 1 #CHANGE LATER!!!
 		}
 	}
 }
@@ -1740,14 +1727,39 @@ country_event = {
 	
 	is_triggered_only = yes
     
+	immediate = {
+        set_variable = { var_add_to_sector = 3 }
+    }
+
     option = { 
 		name = YFC_event.43.a
-
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		add_opinion_modifier = { target = SRI modifier = large_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = SRI
 			add_opinion_modifier = { target = YFC modifier = large_decrease }
 		}	
+	}
+	option = { 
+		name = YFC_event.43.b
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		declare_war_on = {
+			target = SRI
+			type = puppet_wargoal_focus
+		}
+		hidden_effect = {
+			activate_mission = YFC_SRI_war_timer
+			SRI = {
+				add_timed_idea = {
+					idea = idea_SRI_ridge_war
+					days = 185
+				}
+			}
+		}
 	}
 }
 
@@ -2429,7 +2441,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.75 start_experience_factor = 0.3"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.8 start_experience_factor = 0.3"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2437,7 +2449,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.45 start_experience_factor = 0.1"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.5 start_experience_factor = 0.1"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -4199,7 +4211,7 @@ country_event = { #Top Hat pranks you ;)
 		name = YFC_sector.16.a
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Top_Hat
-			days = 180
+			days = 250
 		}
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = 7 }
 	}
@@ -4217,7 +4229,7 @@ country_event = { #Pipe pranks you ;)
 		name = YFC_sector.17.a
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Pipe
-			days = 180
+			days = 250
 		}
 		subtract_from_variable = { var_idea_YFC_Pipe_influence = 7 }
 	}
@@ -4235,7 +4247,7 @@ country_event = { #Beaker pranks you ;)
 		name = YFC_sector.18.a
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Beaker
-			days = 180
+			days = 250
 		}
 		subtract_from_variable = { var_idea_YFC_Beaker_influence = 7 }
 	}
@@ -4253,7 +4265,7 @@ country_event = { #Hammer pranks you ;)
 		name = YFC_sector.19.a
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Hammer
-			days = 180
+			days = 250
 		}
 		subtract_from_variable = { var_idea_YFC_Hammer_influence = 7 }
 	}
@@ -4271,7 +4283,7 @@ country_event = { #Taser pranks you ;)
 		name = YFC_sector.20.a
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Taser
-			days = 180
+			days = 250
 		}
 		subtract_from_variable = { var_idea_YFC_Taser_influence = 7 }
 	}

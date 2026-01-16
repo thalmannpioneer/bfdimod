@@ -60,6 +60,46 @@ political_actions = {
 		}
 	}
 
+	YFC_SRI_war_timer = { 
+		icon = GFX_decision_SWI_consolidate_council_power  
+		is_good = no
+		days_mission_timeout = 180
+		selectable_mission = yes
+		activation = { always = no }
+		available = {always = no}
+		available = {
+			NOT = {country_exists = SRI}
+			has_war = no
+		}
+		complete_effect = {
+			add_political_power = 25
+			IF = {
+				limit = {NOT = {YFC = {controls_state = 24}}}
+				26 = {transfer_state_to = YFC}
+			}
+			release_puppet = SRI
+		}
+		timeout_effect = {
+			add_political_power = -100
+			add_war_support = -0.05
+			white_peace = SRI
+			hidden_effect = {
+				CRN = {
+					IF ={
+						limit = {has_war_with = SRI}
+						white_peace = SRI
+					}
+				}
+				BUN = {
+					IF ={
+						limit = {has_war_with = SRI}
+						white_peace = SRI
+					}
+				}
+			}
+		}
+	}
+
 	yfc_mercenaries_normal = {
 		icon = GFX_decisions_YFC_cherry_mercenary
 

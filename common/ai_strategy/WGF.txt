@@ -29,7 +29,7 @@ WGF_GMD_preparation = {
 	ai_strategy = {
         type = prepare_for_war
         id = GMD
-        value = 250
+        value = 500
     }
 }
 

@@ -24,6 +24,7 @@ country_event = {
 					promote_leader = yes
 					country_leader = {
 						ideology = despotism
+						traits = { special_character }
 					}
 				}
 			}

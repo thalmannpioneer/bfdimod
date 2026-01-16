@@ -12,7 +12,7 @@ guiTypes = {
         instantTextboxType = { #I would like this updated at some point to look better
             name = "title"
             text = l_decisions_trade_title
-            position = { x = 0 y = -10 }
+            position = { x = 10 y = -10 }
             maxWidth = 500
             format = centre
             font = hoi_36header
@@ -143,6 +143,35 @@ guiTypes = {
 }
 
 guiTypes = {
+    containerWindowType = {
+        name = "other_trade_list_equipment_container"
+
+        position = { x = 0 y = 1 }
+        size = { width = 335 height = 95 }
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_tiled_plain_bg"
+        }
+
+        iconType = {
+            name = "background_equipment_box_background"
+            spriteType = "GFX_YFC_trade_unselected"
+            position = { x = 10 y = 10 }
+        }
+        iconType = {
+            name = "background_equipment_box_item"
+            position = { x = 90 y = 30 }
+        }
+        buttonType = {
+            name = "other_trade_list_equipment_button_select"
+            position = { x = 290 y = 30 }
+            quadTextureSprite = "GFX_naval_increase_amount"
+            pdx_tooltip = ""
+            clicksound = click_default
+        }
+    }
+
     containerWindowType = { #Picking Equipment
         name = "picking_equipment_window"
         position = { x=544 y=78}
@@ -192,6 +221,12 @@ guiTypes = {
             maxHeight = 32
             format = center
         }
+    }
+
+    containerWindowType = {
+        name = "background_button"
+        position = { x = 0 y = 0 }
+        size = { width = 10000 height = 10000 }
 
         buttonType = {
             name = "close"
@@ -200,36 +235,6 @@ guiTypes = {
             buttonFont = hoi_18mbs
             shortcut = "ESCAPE"
             scale = 100
-            clicksound = click_close
-        }
-    }
-
-    containerWindowType = {
-        name = "other_trade_list_equipment_container"
-
-        position = { x = 0 y = 1 }
-        size = { width = 335 height = 95 }
-
-        background = {
-            name = "Background"
-            quadTextureSprite ="GFX_tiled_plain_bg"
-        }
-
-        iconType = {
-            name = "background_equipment_box_background"
-            spriteType = "GFX_YFC_trade_unselected"
-            position = { x = 10 y = 10 }
-        }
-        iconType = {
-            name = "background_equipment_box_item"
-            position = { x = 90 y = 30 }
-        }
-        buttonType = {
-            name = "other_trade_list_equipment_button_select"
-            position = { x = 290 y = 30 }
-            quadTextureSprite = "GFX_naval_increase_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
         }
     }
 }

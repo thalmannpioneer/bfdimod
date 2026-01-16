@@ -52,8 +52,7 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_consolidate_power }
 
 		cost = 5
-		#opens the trade menu, in decisions tab
-		#basically, just lets you choose who to send resources to, what to send, and tells you what other countries want, and are offering in exchange
+
 		completion_reward = {
 			add_political_power = 25
 			unlock_decision_category_tooltip = decision_YFC_trade_category
@@ -76,8 +75,6 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_open_the_market }
 
 		cost = 5
-		#opens the sectors decisions tab
-		#allows you to choose how much of each thing you produce, however letting a sector get too much power could lead to dire circumstances..
 		#Military sector: Top Hat; Railing sector: Pipe; Scientific sector: Beaker; Construction Sector: Hammer; Electronics Sector: Taser
 		#Top Hat becomes a field marshal
 		#Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
@@ -310,10 +307,7 @@ focus_tree = {
 		bypass = {
 			has_completed_focus = YFC_focus_money_arms_capital
 		}
-		#this and the following focus give you bonuses to the amount you can export in the trade decisions tab until war is declared on the bunch, though it costs a hit in the amount of research slots the GTR is willing to sell. also decreases mils by one
-		#NEW IDEA: Unlocks a decision to sell weapons to Bunch in exchange for money as I will be nerfing Bunch. Best part is that Bunch spends no money on this!!!!!!!
-		#It's free money!
-		#The trade itself would be 200 Guns = 300K (Risky for YFC as while you get free money you give up guns.)
+
 		cost = 5
 
 		completion_reward = {
@@ -342,9 +336,6 @@ focus_tree = {
 			BUN = { give_guarantee = YFC }
 			hidden_effect = {
 				#Raids
-				set_variable = { var_currently_raiding_YFC = 0 }
-				set_variable = { var_progress_raids_GGR = 0 }
-				set_variable = { var_progress_raids_SRR = 0 }
 				add_threat = 0.3
 				IF = {
 					limit = {GGR = {is_ai = yes}}
@@ -460,8 +451,7 @@ focus_tree = {
 		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
 		prerequisite = { focus = YFC_focus_demand_end_pillage }
 		cost = 6
-		#spawn 6 okay-ish divisions, decreases max amount to be traded away  
-		#divs will be deleted on end of war, max amount to trade goes back up
+
 		completion_reward = {
 			subtract_from_variable = { money_amount = 3 }
 			division_template = {
@@ -537,10 +527,9 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
 		prerequisite = { focus = YFC_focus_demand_end_pillage }
-		#buffs the bonus given by trading with coiny
 		cost = 4
 		completion_reward = {
-			add_command_power = 25
+			add_command_power = 30
 		}
 
 		ai_will_do = {
@@ -604,7 +593,6 @@ focus_tree = {
 		icon = GFX_focus_YFC_money_arms_capital
 		prerequisite = { focus = YFC_focus_buy_defense_trainings }
 		cost = 5
-		#declares war on bunch, get event in seven days that allows you to call in numismatia
 		#when both YFC and bunch are ai, YFC should do this path 70% of the time, and numis should always be called in
 		#yfc ai will rush down getting to this focus, ignoring all of the other ones if it chooses to do this path
 		completion_reward = {
@@ -1039,8 +1027,7 @@ focus_tree = {
 		icon = GFX_focus_YFC_scope_out_sea_trade
 		prerequisite = { focus = YFC_focus_develop_peoniele }
 		cost = 5
-		#gives event about sending people out to look at the eastern sea board, in 2 months you get another event abt what they found
-		#secretly helps with 3rd part of tree (eastern seaboard colonization)
+
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_Sea_Bonus
 			country_event = {
@@ -1164,7 +1151,7 @@ focus_tree = {
 			hidden_effect = {
 				IF = {
 					limit = {is_ai = yes}
-					add_to_variable = { money_amount = 5 }
+					add_to_variable = { money_amount = 7 } #AI cheating? In my Hoi4 mod? hmmmmmmmmmm
 				}
 				IF = {
 					limit = {
@@ -1297,14 +1284,8 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 		mutually_exclusive = { focus = YFC_focus_clamp_down_on_bunchivism }
 		cost = 5
-		#autocompleted when the crn gives you a response to you saying you want a new bunchivist society, they only have a yes option for now. 
-		#therefore, this also starts the election mechanic
-		#adds comnpliance to bunchivist territories, gives stability and other things probably
-		#generally just add whatever effects you think would be balanced
+
 		#also ai will choose this like 70% of the time
-		#oh it also gvies you an event talkjing about how you'll have an election to see who runs the bunch etc etc whatever blah
-		
-		#New: election mechanic would be a gui decisions thing, with eraser's bunch becoming a puppet if blocky or pen wins the election
 		
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
@@ -1358,7 +1339,6 @@ focus_tree = {
 		}
 
 		cost = 3
-		#required to do any of the election mechanic decisions, gives event talking abt blocky
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_BUN_foster
 			country_event = YFC_event.19
@@ -1516,7 +1496,6 @@ focus_tree = {
 
 		cost = 5
 
-		#Increases influence of Hammer and Taser
 		completion_reward = {
 			custom_effect_tooltip = l_money_gain_200K
 			add_to_variable = { money_amount = 2 }

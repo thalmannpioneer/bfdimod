@@ -6,6 +6,15 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		size = { width = 100% height = 570 }
 		
+		instantTextboxType = { #I would like this updated at some point to look better
+			name = "title"
+			text = l_decisions_trade_title
+			position = { x = 10 y = 0 }
+			maxWidth = 500
+			format = centre
+			font = hoi_36header
+		}
+
 		containerWindowType = {
 			name = "corp_trade_list_container"
 			position = { x = 5 y = 100 }

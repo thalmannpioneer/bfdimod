@@ -60,9 +60,12 @@ YFC_wait = {
 		original_tag = YFC
 	}
 	enable = {
-		is_faction_leader = no
-		has_manpower < 14000
-		surrender_progress < 0.5
+		AND = {
+			is_faction_leader = no
+			has_manpower < 14000
+			surrender_progress < 0.5
+		}
+		has_manpower < 7500
 	}
 	abort_when_not_enabled = yes
 

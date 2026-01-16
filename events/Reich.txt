@@ -220,6 +220,7 @@ country_event = {
 							promote_leader = yes
 							country_leader = {
 								ideology = gen_nazism
+								traits = { special_character }
 							}
 						}
 						add_field_marshal_role = {

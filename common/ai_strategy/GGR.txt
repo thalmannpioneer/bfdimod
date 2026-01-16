@@ -121,7 +121,7 @@ GGR_tanks = {
     ai_strategy = {
         type = equipment_production_factor
         id = armor
-        value = 75
+        value = 150
     }
     ai_strategy = {
         type = research_weight_factor
@@ -173,7 +173,7 @@ GGR_tanks_NSB = {
     ai_strategy = {
         type = equipment_production_factor
         id = armor
-        value = 75
+        value = 150
     }
     ai_strategy = {
         type = research_weight_factor
