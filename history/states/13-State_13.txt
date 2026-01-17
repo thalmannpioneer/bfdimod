@@ -1,22 +1,23 @@
 
 state={
-	id=13
-	name="STATE_13"
-	provinces={
-		1388 1443 1793 1906 2129 2383 2493 2794 2975 3277 4377 4559 4626 4728 5940 6166 10285 10298 10323 10330 10333 10367 10380 10393 10405 10421 10422 10435 10443 10451 10474 10498 
-	}
-	history={
-		owner = GOI
-		add_core_of = GOI
-		victory_points = { 10367 40 }
-		victory_points = { 10421 30 }
-		buildings = {
+    id=13
+    name="STATE_13"
+    provinces={
+        1388 1443 1793 1906 2129 2383 2493 2794 2975 3277 4377 4559 4626 4728 5940 6166 10285 10298 10323 10330 10333 10367 10380 10393 10405 10421 10422 10435 10443 10451 10474 10498
+    }
+    history={
+        victory_points = { 10367 40 }
+        victory_points = { 10421 30 }
+        buildings = {
             infrastructure = 5
             industrial_complex = 1
         }
-	}
-	manpower=10
-	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=0.000
+
+        owner = GOI
+        add_core_of = GOI
+    }
+    manpower=10
+    buildings_max_level_factor=1.000
+    state_category=megalopolis
+    local_supplies=0.000
 }

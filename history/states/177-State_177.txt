@@ -1,28 +1,28 @@
 
 state={
-	id=177
-	name="STATE_177"
-	provinces={
-		377 825 922 1173 1224 1376 1406 1956 1989 1992 2098 2177 2299 2346 2382 2463 2533 2698 3633 3671 4068 4920 4940 5064 5207 5217 6004 6159 6400 10161 10179 10187 10191 10217 10232 10234 10253 10254 10260 10278 10286 10289 10295 10308 10315 10327 10332 10338 10346 10363 10368 10375 10376 10377 10398 10406 10414 10423 10424 10446 10456 10469 10470 10486 10503 10513 
-	}
-	resources = {
-		steel = 27
-		coal = 5
-		oil = 2
-	}
-	history={
-		owner = GOI
-		add_core_of = GOI
-		victory_points = { 2533 20 }
-		victory_points = { 5207 5 }
-		buildings = {
+    id=177
+    name="STATE_177"
+    provinces={
+        377 825 922 1173 1224 1376 1406 1956 1989 1992 2098 2177 2299 2346 2382 2463 2533 2698 3633 3671 4068 4920 4940 5064 5207 5217 6004 6159 6400 10161 10179 10187 10191 10217 10232 10234 10253 10254 10260 10278 10286 10289 10295 10308 10315 10327 10332 10338 10346 10363 10368 10375 10376 10377 10398 10406 10414 10423 10424 10446 10456 10469 10470 10486 10503 10513
+    }
+    resources = {
+        steel = 27
+        coal = 5
+        oil = 2
+    }
+    history={
+        owner = GOI
+        add_core_of = GOI
+        victory_points = { 2533 20 }
+        victory_points = { 5207 5 }
+        buildings = {
             infrastructure = 3
             industrial_complex = 2
-			2533 = { naval_base = 5 }
+            2533 = { naval_base = 5 }
         }
-	}
-	manpower=128611
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+    }
+    manpower=128611
+    buildings_max_level_factor=1.000
+    state_category=large_town
+    local_supplies=0.000
 }

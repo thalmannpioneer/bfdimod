@@ -9,10 +9,10 @@ set_research_slots = 2
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 set_stability = 0.08
@@ -24,30 +24,31 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 28
-	fascism = 30
-	neutrality = 41
-	radical_thoughts = 1
+    democratic = 28
+    fascism = 30
+    neutrality = 41
+    radical_thoughts = 1
 }
 
-#Revolt BUN 
- set_variable = { var_idea_BUN_Ticking_Bomb_stability_factor = 1 }
- set_variable = { var_idea_BUN_Ticking_Bomb_army_core_attack_factor = 0.75 }
- set_variable = { var_idea_BUN_Ticking_Bomb_army_core_defence_factor = 1.25 }
- set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 1.30 } 
- set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 1.5 } 
+#Revolt BUN
+set_variable = { var_idea_BUN_Ticking_Bomb_stability_factor = 1 }
+set_variable = { var_idea_BUN_Ticking_Bomb_army_core_attack_factor = 0.75 }
+set_variable = { var_idea_BUN_Ticking_Bomb_army_core_defence_factor = 1.25 }
+set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 1.30 }
+set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 1.5 }
 
 set_variable = { var_BUN_raiding = 0 }
 
 add_ideas = limited_conscription
 add_ideas = idea_BUN_criminal_state
+add_ideas = idea_common_unplayable
 
 recruit_character = BUN_eraser
 recruit_character = BUN_shackles

@@ -682,4 +682,8 @@ spriteTypes = {
 		name = GFX_idea_common_yoylite_nation
 		textureFile = gfx/interface/ideas/idea_common_yoylite_nation.dds
 	}
+	spriteType = {
+		name = GFX_idea_common_unplayable
+		textureFile = gfx/interface/ideas/idea_common_unplayable.dds
+	}
 }

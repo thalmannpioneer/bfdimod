@@ -1,27 +1,27 @@
 
 state={
-	id=158
-	name="STATE_158"
+    id=158
+    name="STATE_158"
 
-	history={
-		owner = GOI
-		add_core_of = GOI
-		
-		victory_points = {
-			11209 40 
-		}
+    history={
+        owner = GOI
+        add_core_of = GOI
 
-		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-		}
-	}
+        victory_points = {
+            11209 40
+        }
 
-	provinces={
-		1716 3713 4114 4115 4595 5234 5521 5930 11207 11208 11209 
-	}
-	manpower=910311
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
+        buildings = {
+            infrastructure = 4
+            industrial_complex = 1
+        }
+    }
+
+    provinces={
+        1716 3713 4114 4115 4595 5234 5521 5930 11207 11208 11209
+    }
+    manpower=910311
+    buildings_max_level_factor=1.000
+    state_category=large_city
+    local_supplies=0.000
 }

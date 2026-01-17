@@ -105,6 +105,7 @@ decision_GTR_development_category = {
                 has_country_flag = GTR_space_done
             }
         }
+        is_good = yes
         selectable_mission = no
         activation = { hidden_trigger = { always = no } }
 

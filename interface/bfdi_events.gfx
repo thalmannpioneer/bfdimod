@@ -36,6 +36,15 @@ SpriteTypes = {
 		name = GFX_GOI_event8
 		texturefile = gfx/event_pictures/GOI_event8.dds
 	}
+	frameAnimatedSpriteType = {
+		name = GFX_GOI_event9
+		textureFile = gfx/event_pictures/GOI_event9.dds
+		noOfFrames = 2
+		animation_rate_fps = 6
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
 	
 	
 	spriteType = {

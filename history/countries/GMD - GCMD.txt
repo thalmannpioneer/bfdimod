@@ -9,10 +9,10 @@ set_research_slots = 2
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 set_convoys = 17
@@ -23,25 +23,26 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 2
-	fascism = 9
-	neutrality = 89
+    democratic = 2
+    fascism = 9
+    neutrality = 89
 }
 
 set_variable = { var_GMD_YFC_Troll_Chance = 0 }
 
 add_ideas = idea_GMD_coinys_domain
+add_ideas = idea_common_unplayable
 
 random = {
-	chance = 3 #For 3 mil subs <3
-	recruit_character = GMD_joke_cary
+    chance = 3 #For 3 mil subs <3
+    recruit_character = GMD_joke_cary
 }
 
 recruit_character = GMD_coiny

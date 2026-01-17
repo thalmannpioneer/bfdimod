@@ -2,6 +2,9 @@
 
 ideas = {
     country = {
+        idea_common_unplayable = {
+            picture = common_unplayable
+        }
         idea_common_yoylite_nation = {
             picture = common_yoylite_nation
         }

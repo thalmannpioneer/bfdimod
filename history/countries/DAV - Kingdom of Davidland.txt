@@ -7,36 +7,36 @@ set_research_slots = 2
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 if = {
-	limit = {
-		 has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_light = 1
-		basic_battery = 1
-	}
+    limit = {
+        has_dlc = "Man the Guns"
+    }
+    set_technology = {
+        early_ship_hull_light = 1
+        basic_battery = 1
+    }
 
-	create_equipment_variant = {
-		name = "IV Fracturam Second Edition"
-		type = ship_hull_light_1
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
+    create_equipment_variant = {
+        name = "IV Fracturam Second Edition"
+        type = ship_hull_light_1
+        parent_version = 0
+        modules = {
+            fixed_ship_battery_slot = ship_light_battery_1
+            fixed_ship_anti_air_slot = empty
+            fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+            fixed_ship_radar_slot = empty
+            fixed_ship_engine_slot = light_ship_engine_1
+            fixed_ship_torpedo_slot = empty
+            mid_1_custom_slot = empty
+            rear_1_custom_slot = empty
+        }
+    }
 }
 
 set_convoys = 65
@@ -48,22 +48,23 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 6
-	fascism = 32
-	neutrality = 61
-	communism = 1
+    democratic = 6
+    fascism = 32
+    neutrality = 61
+    communism = 1
 }
 
 oob = "DAV_2012"
 
 add_ideas = idea_DAV_the_thousand_year_throne
+add_ideas = idea_common_unplayable
 
 recruit_character = DAV_king_david
 

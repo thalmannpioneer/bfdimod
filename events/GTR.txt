@@ -1022,18 +1022,6 @@ country_event = {
 
     option = {
         name = GTR_event.43.a
-        create_entity = {
-            entity = golfball_statue
-            x = 4
-            y = 4
-            z = 0
-            province = 3545
-            state = 89
-            rotation = 0.8
-            scale = 1
-            min_zoom = 200
-            visible = golfball_statue_trigger
-        }
         add_power_balance_value = {
             id = GTR_power_balance
             value = 0.05
@@ -1057,6 +1045,17 @@ country_event = {
             }
             set_state_category = city
             add_manpower = 32551
+        }
+        create_entity = {
+            entity = golfball_statue
+            x = 4
+            y = 4
+            z = 0
+            province = 3545
+            state = 89
+            rotation = 0.8
+            scale = 1
+            min_zoom = 200
         }
         clr_country_flag = GTR_university_reconstruction
     }
@@ -1515,6 +1514,39 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+    }
+}
+
+country_event = {
+    id = GTR_event.63
+    title = GTR_event.63.t
+    desc = GTR_event.63.desc
+    picture = GFX_GPG_event20
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.63.a
+        add_power_balance_value = {
+            id = GTR_power_balance
+            value = 0.05
+        }
+        if = {
+            limit = { has_idea = idea_GTR_ivy_league }
+            remove_ideas = idea_GTR_ivy_league
+        }
+        if = {
+            limit = { has_idea = idea_GTR_casland_experience }
+            remove_ideas = idea_GTR_casland_experience
+        }
+        if = {
+            limit = { has_idea = idea_GTR_casland_trade }
+            remove_ideas = idea_GTR_casland_trade
+        }
+        clr_country_flag = GTR_befriend_GPG
+        set_country_flag = GTR_isolation
+        mark_focus_tree_layout_dirty = yes
+        complete_national_focus = GTR_focus_behind_steel_walls
     }
 }
 
