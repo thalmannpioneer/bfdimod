@@ -830,6 +830,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		icon = GFX_focus_YFC_industrialize_or_die
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_the_economic_issue
+			}
+		}
+		
+		allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
 
 		prerequisite = { focus = YFC_focus_the_economic_issue }
 		cost = 5
@@ -858,10 +865,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		icon = GFX_focus_YFC_erasers_stockpiles
-
 		available = {
 			has_completed_focus = YFC_focus_the_bunchivist_problem
 		}
+		
+		allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
+		
 		prerequisite = { focus = YFC_focus_the_economic_issue }
 		cost = 5
 		#gives an increase to your treasury, and an event about stealing from eraser

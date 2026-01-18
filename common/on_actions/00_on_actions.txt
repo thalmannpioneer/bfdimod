@@ -5,6 +5,7 @@ on_actions = {
         effect = {
             if = {
                 limit = { has_start_date < 2012.3.1 }
+                set_global_flag = focus_take_prevention
                 if = {
                     limit = { EMP = { is_ai = no } }
                     GOI = { change_tag_from = EMP }
@@ -43,7 +44,6 @@ on_actions = {
             }
             set_global_flag = showwatermark
             set_global_flag = welcome
-            set_global_flag = focus_take_prevention
 
             every_possible_country = {
                 set_country_flag = has_money_system
