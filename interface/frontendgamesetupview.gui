@@ -1720,7 +1720,7 @@ guiTypes = {
     containerWindowType = {
         name ="gamesetup_gameplay_settings_window"
         position = { x=0 y=196}
-        show_position = { x=5 y =-85}
+        show_position = { x=5 y =-40 }
         animation_type = decelerated
         animation_time = 1000
 

@@ -6,10 +6,10 @@ set_research_slots = 1
 
 set_technology = { basic_train = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 set_convoys = 56
@@ -20,24 +20,24 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 0
-	neutrality = 100
-	communism = 0
+    democratic = 0
+    neutrality = 100
+    communism = 0
 }
 
 country_lock_all_division_template = yes
 
 country_event = {
-	id = GOI_event.5
-	days = 114
-	random_hours = 12
+    id = GOI_event.5
+    days = 114
+    random_hours = 12
 }
 
 set_stability = 0
@@ -48,6 +48,7 @@ set_variable = { country_select_var = 1 }
 add_ideas = idea_GOI_anarchy
 add_ideas = idea_GOI_bfdi
 add_ideas = idea_GOI_great_goiky_railroad
+add_ideas = idea_common_unplayable
 
 add_ideas = undisturbed_isolation
 add_ideas = disarmed_nation

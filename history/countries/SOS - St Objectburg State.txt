@@ -82,6 +82,7 @@ set_popularities = {
 }
 
 add_ideas = idea_SOS_goiky_fleet
+add_ideas = idea_common_unplayable
 
 recruit_character = SOS_anchor
 recruit_character = SOS_pin

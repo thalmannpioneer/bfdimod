@@ -261,6 +261,19 @@ country_event = {
     }
 }
 
+country_event = {
+    id = GOI_event.9
+    title = GOI_event.9.t
+    desc = GOI_event.9.desc
+    picture = GFX_GOI_event9
+
+    is_triggered_only = yes
+
+    option = {
+        name = GOI_event.9.a
+    }
+}
+
 
 country_event = {
     id = GOI_hidden_event.1

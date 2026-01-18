@@ -32,6 +32,10 @@
  GOI_event.8.desc: "This is where our story begins. First, you need to choose one of the many fragments of Goiky, which you will lead to greatness.\n\n§RWE STRICTLY RECOMMEND TO PAUSE THE GAME!§!"
  GOI_event.8.a: "Let's go!"
 
+ GOI_event.9.t: "This Country is Unplayable!"
+ GOI_event.9.desc: "This country currently has no content and not meant to be played by a player. We recommend exiting to the main menu and selecting a different country. You can ignore this warning."
+ GOI_event.9.a: "Ignore Warning"
+
  GOI_event.69.t: "Free Will!"
  GOI_event.69.desc: "To make The Great Battle for Goiky more interesting do you wish to buff the AI?"
  GOI_event.69.a: "Fine as it is."
@@ -1430,6 +1434,10 @@
  GTR_event.62.desc: "An accident occurred on the streets of Announcergrad, bringing down a power line on several houses, causing fire. Many buildings were damaged and objects left homeless. Tennis Ball believes they need to immediately allocate funds from the reserve fund, while Golfball speaks of the Republic's long-term goals and that these funds will still be needed. What will the Council decide?"
  GTR_event.62.a: "Give them money!"
  GTR_event.62.b: "We'll need these funds later."
+
+ GTR_event.63.t: "Fall of Casland"
+ GTR_event.63.desc: "Unfortunately, the government in Casland has suffered a defeat. A completely unfriendly regime has taken hold in the heart of Goiky, and we cannot continue to cooperate. The Technocracy will once again be forced to act alone."
+ GTR_event.63.a: "Well."
 
 #NEWS
  bfdinews.1.t: "Firey won Dream Island!"

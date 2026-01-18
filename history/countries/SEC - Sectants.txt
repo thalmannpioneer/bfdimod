@@ -9,10 +9,10 @@ set_research_slots = 2
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 add_equipment_to_stockpile = {
@@ -22,16 +22,17 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = radical_thoughts
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = radical_thoughts
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	radical_thoughts = 100
+    radical_thoughts = 100
 }
 
 add_ideas = idea_SEC_land_of_madness
+add_ideas = idea_common_unplayable
 
 recruit_character = SEC_the_first

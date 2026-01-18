@@ -1,20 +1,20 @@
 
 state={
-	id=205
-	name="STATE_205"
-	provinces={
-		19 501 1092 1467 1707 1921 2044 2051 2097 2566 2835 3344 3514 3906 4403 4664 4672 4793 4832 4895 4934 5592 5887 6340 10999 11017 11053 11090 11128 11161 11199 11223 
-	}
-	history = {
-		owner = GOI
-		add_core_of = GOI
-		victory_points = { 2044 25 }
-		buildings = {
+    id=205
+    name="STATE_205"
+    provinces={
+        19 501 1092 1467 1707 1921 2044 2051 2097 2566 2835 3344 3514 3906 4403 4664 4672 4793 4832 4895 4934 5592 5887 6340 10999 11017 11053 11090 11128 11161 11199 11223
+    }
+    history = {
+        owner = GOI
+        add_core_of = GOI
+        victory_points = { 2044 25 }
+        buildings = {
             infrastructure = 3
         }
-	}
-	manpower=782560
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+    }
+    manpower=782560
+    buildings_max_level_factor=1.000
+    state_category=large_town
+    local_supplies=0.000
 }

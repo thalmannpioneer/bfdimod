@@ -529,6 +529,7 @@ focus_tree = {
                     GDR = { has_war = no }
                 }
             }
+            arms_factory > 0
             custom_trigger_tooltip = {
                 tooltip = l_GTR_outer_politics_cd_tt
                 NOT = { has_country_flag = GTR_outer_politics_cd }
