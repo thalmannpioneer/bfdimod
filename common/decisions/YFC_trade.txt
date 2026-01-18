@@ -19,6 +19,7 @@ decision_YFC_trade_category= {
 		complete_effect = {
 			add_research_slot = 2
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -10}
 		}
 
 		remove_effect = {

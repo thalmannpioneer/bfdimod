@@ -123,7 +123,6 @@ country_event = {
 
 	option = {
 		name = YFC_event.5.a
-		add_political_power = 50
 		add_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
 			set_country_flag = Won_War_BUN
@@ -1751,9 +1750,14 @@ country_event = {
 			target = SRI
 			type = puppet_wargoal_focus
 		}
+		activate_mission = YFC_SRI_war_timer
 		hidden_effect = {
-			activate_mission = YFC_SRI_war_timer
 			SRI = {
+				add_manpower = 5000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+				}
 				add_timed_idea = {
 					idea = idea_SRI_ridge_war
 					days = 185
@@ -2264,7 +2268,7 @@ country_event = {
 					}
 				}
 				YFC = {
-					add_offsite_building = { type = arms_factory level = 2 }
+					add_offsite_building = { type = arms_factory level = 1 }
 					add_manpower = 20000
 				}
 			}
@@ -2417,7 +2421,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2425,7 +2429,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes

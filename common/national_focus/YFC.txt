@@ -576,8 +576,8 @@ focus_tree = {
 		completion_reward = {
 			subtract_from_variable = { money_amount = 1 }
 			custom_effect_tooltip = l_YFC_foreign_advisor
-			add_ideas = idea_YFC_United_Clash
 			army_experience = 10
+			add_ideas = idea_YFC_United_Clash
 		}
 
 		ai_will_do = {
@@ -1141,10 +1141,10 @@ focus_tree = {
 			custom_effect_tooltip = l_YFC_POP
 			201 = {
 				add_manpower = 21769
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
                     type = industrial_complex
-                    level = 1
+                    level = 2
                     instant_build = yes
                 }
 			}

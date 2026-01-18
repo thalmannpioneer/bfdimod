@@ -64,9 +64,8 @@ political_actions = {
 		icon = GFX_decision_SWI_consolidate_council_power  
 		is_good = no
 		days_mission_timeout = 180
-		selectable_mission = yes
+		selectable_mission = no
 		activation = { always = no }
-		available = {always = no}
 		available = {
 			NOT = {country_exists = SRI}
 			has_war = no
@@ -75,7 +74,7 @@ political_actions = {
 			add_political_power = 25
 			IF = {
 				limit = {NOT = {YFC = {controls_state = 24}}}
-				26 = {transfer_state_to = YFC}
+				24 = {transfer_state_to = YFC}
 			}
 			release_puppet = SRI
 		}
@@ -285,7 +284,7 @@ economy_decisions = {
 
 		fire_only_once = no
 		days_remove = 180
-		days_re_enable = 360
+		days_re_enable = 180
 
 		ai_will_do = {
 			base = 0
@@ -308,6 +307,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -350,6 +350,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -398,6 +399,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -438,6 +440,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -479,6 +482,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -505,7 +509,7 @@ economy_decisions = {
 		custom_cost_text = decisions_cost_money_1m_pp_35
 
 		fire_only_once = no
-		days_remove = 90
+		days_remove = 180
 		days_re_enable = 450
 
 		ai_will_do = {
@@ -529,10 +533,11 @@ economy_decisions = {
 		complete_effect = {
 			set_variable = { node_goal = num_of_supply_nodes }
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
 		}
 
 		cancel_trigger = {
-			check_variable = { node_goal < num_of_supply_nodes } #if the number of supply nodes exceeds the old number by +3, immediately cancel
+			check_variable = { node_goal < num_of_supply_nodes } #if the number of supply nodes exceeds the old number by +1, immediately cancel
 		}
 	}
 
@@ -578,6 +583,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -622,6 +628,7 @@ economy_decisions = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+			hidden_effect = {add_political_power = -35}
 			army_experience = 25
 		}
 	}
@@ -758,6 +765,7 @@ propaganda_efforts = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -1023,6 +1031,7 @@ war_measures = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
+			hidden_effect = {add_political_power = -35}
 		}
 	}
 
@@ -1350,6 +1359,7 @@ economy_decisions = {
 
         complete_effect = {
 			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -100}
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
