@@ -44,8 +44,8 @@ infantry_YFC = {
 		upgrade_prio = {
 			base = 1
 			modifier = {
-				factor = 5
-				has_army_size = { size > 19 }
+				factor = 2
+				has_army_manpower = {size > 15000}
 			}
 		}
 

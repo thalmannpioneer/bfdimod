@@ -4,7 +4,7 @@ on_actions = {
     on_startup = {
         effect = {
             if = {
-                limit = { has_start_date < 2012.3.8 }
+                limit = { has_start_date < 2012.3.1 }
                 set_global_flag = focus_take_prevention
                 if = {
                     limit = { EMP = { is_ai = no } }
@@ -59,6 +59,11 @@ on_actions = {
                     BFDI_money_diplay_update = yes
                 }
                 ELSE_IF = {
+                    limit = { tag = GTR }
+                    set_variable = { money_amount = 0.3142 } #The University would make money though not much. However, I do want to when the University blows up most of the money is lost.
+                    BFDI_money_diplay_update = yes
+                }
+                ELSE_IF = {
                     limit = {
                         OR = {
                             tag = GFG
@@ -70,6 +75,34 @@ on_actions = {
                         var = money_amount
                         min = -9
                         max = -8
+                    }
+                    BFDI_money_diplay_update = yes
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = {
+                            tag = WGF
+                            tag = GGR
+                        }
+                    }
+                    set_variable_to_random = { #Both are in poor areas of Goiky so do not have early funds
+                        var = money_amount
+                        min = -5
+                        max = -3
+                    }
+                    BFDI_money_diplay_update = yes
+                }
+                ELSE_IF = {
+                    limit = {
+                        OR = {
+                            tag = GPR
+                            tag = CRN
+                        }
+                    }
+                    set_variable_to_random = { #Both are in have some wealth yay
+                        var = money_amount
+                        min = 6
+                        max = 7
                     }
                     BFDI_money_diplay_update = yes
                 }
@@ -539,10 +572,11 @@ on_actions = {
                 IF = {
                     limit = {is_ai = yes}
                     set_temp_variable = { civ_count = ROOT.num_of_civilian_factories }
-                    multiply_temp_variable = {civ_count = 0.2}
+                    multiply_temp_variable = {civ_count = 0.1} #10 Civs = 100K
                 }
                 ELSE = {
                     set_temp_variable = { civ_count = ROOT.num_of_available_civilian_factories }
+                    multiply_temp_variable = {civ_count = 0.5} #2 Civs = 100K
                 }
                 set_temp_variable = { stability = ROOT.stability } #100% = 100% Gain
                 multiply_temp_variable = {civ_count = stability}

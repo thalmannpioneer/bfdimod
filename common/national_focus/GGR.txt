@@ -29,6 +29,38 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			country_event = GGR_event.1
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = { rule = GGR_ai_behavior option = DEFAULT }
+					}
+					random_list = {
+						75 = {
+							set_country_flag = LockIn_GGR
+							add_political_power = 50
+						}
+						25 = {
+							set_country_flag = SkillIssue_GGR
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = { rule = GGR_ai_behavior option = DESTORY_ANARCHISTS }
+					}
+					set_country_flag = LockIn_GGR
+					add_political_power = 50
+				}
+				else_if = {
+					limit = {
+						is_ai = yes
+						has_game_rule = { rule = GGR_ai_behavior option = COLLAPSE_COUNTRY }
+					}
+					set_country_flag = SkillIssue_GGR
+				}
+			}
 		}
 	}
 	
@@ -137,15 +169,11 @@ focus_tree = {
 		
 		cost = 8
 		
-		historical_ai = {
-			NOT = {has_game_rule = { rule = GGR_ai_behavior option = COLLAPSE_COUNTRY }}
-		}
-
 		ai_will_do = {
         	base = 10
 			modifier = {
 				add = -100
-				has_game_rule = { rule = GGR_ai_behavior option = COLLAPSE_COUNTRY }
+				has_country_flag = SkillIssue_GGR
 			}
 		}
 		
@@ -630,15 +658,11 @@ focus_tree = {
 		
 		cost = 8
 		
-		historical_ai = {
-			NOT = {has_game_rule = { rule = GGR_ai_behavior option = COLLAPSE_COUNTRY }}
-		}
-
 		ai_will_do = {
         	base = 8
 			modifier = {
 				add = -100
-				has_game_rule = { rule = GGR_ai_behavior option = COLLAPSE_COUNTRY }
+				has_country_flag = SkillIssue_GGR
 			}
 		}
 		

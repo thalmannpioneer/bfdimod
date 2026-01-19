@@ -112,7 +112,6 @@ GGR_tanks = {
         }
     }
 
-
     ai_strategy = {
         type = build_army
         id = armor

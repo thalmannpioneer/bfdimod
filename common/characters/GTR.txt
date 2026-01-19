@@ -51,7 +51,7 @@ characters = {
         name = GTR_tennis_wall
         portraits = {
             civilian = {
-                large = GFX_GTR_tennis_ball
+                large = GFX_GTR_tennis_wall
             }
         }
     }
@@ -97,9 +97,6 @@ characters = {
     GTR_titanknife = {
         name = GTR_titanknife
         portraits = { civilian = { small = GFX_idea_GTR_titanknife } }
-        ai_will_do = {
-            base = 1
-        }
     }
     GTR_napalm = {
         name = GTR_napalm

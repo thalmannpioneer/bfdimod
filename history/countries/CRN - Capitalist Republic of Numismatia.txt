@@ -39,11 +39,7 @@ set_popularities = {
     communism = 22
 }
 
-
-
 set_variable = { var_CRN_BUN_Support = 0 }
-
-add_manpower = 5000
 
 add_ideas = free_trade
 add_ideas = idea_CRN_city_on_a_shining_hill

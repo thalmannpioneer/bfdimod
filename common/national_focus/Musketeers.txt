@@ -66,7 +66,7 @@ joint_focus = {
 	available = {
 		hidden_trigger = {
 			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
+			ROOT = { has_country_flag = Allow_Musketeers }
 			is_in_faction = yes
 			OR = {
 				faction_leader = {tag = YFC}
@@ -76,7 +76,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -130,7 +130,7 @@ joint_focus = {
 	}
 	
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -177,7 +177,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -220,7 +220,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -267,7 +267,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -313,7 +313,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -368,7 +368,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -411,7 +411,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}
@@ -454,7 +454,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers
+		ROOT = { has_country_flag = Allow_Musketeers }
 		is_in_faction = yes
 		OR = {
 			faction_leader = {tag = YFC}

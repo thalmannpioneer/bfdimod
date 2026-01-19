@@ -366,12 +366,26 @@ country_event = {
                 character = GTR_golfball
                 civilian = { large = GFX_GTR_golfball_firstmind }
             }
-            add_country_leader_role = {
-                character = GTR_duumvirate
-                promote_leader = yes
-                country_leader = {
-                    ideology = technocratism
-                    traits = { abusive_relationships }
+            random_list = {
+                99 = {
+                    add_country_leader_role = {
+                        character = GTR_duumvirate
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = technocratism
+                            traits = { abusive_relationships }
+                        }
+                    }
+                }
+                1 = {
+                    add_country_leader_role = {
+                        character = GTR_tennis_wall
+                        promote_leader = yes
+                        country_leader = {
+                            ideology = technocratism
+                            traits = { special_character }
+                        }
+                    }
                 }
             }
         }

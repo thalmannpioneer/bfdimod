@@ -95,7 +95,8 @@ infantry_GDR = {
 		target_template = {
 
 			support = {
-				recon = 1
+				mot_recon = 1
+				logistics_company = 1
 			}
 
 			regiments = {

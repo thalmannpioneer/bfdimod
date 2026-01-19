@@ -123,11 +123,6 @@ country_event = {
 		name = BUN_YFC.4.a
 		add_ideas = idea_BUN_victorious_in_blood
 		add_ideas = disarmed_nation
-		add_manpower = 5000
-		delete_unit_template_and_units = {
-			division_template = "Armed Insurgents"
-			disband = no 
-		}
 		hidden_effect = {
 			IF = {
 				limit = {
@@ -246,6 +241,38 @@ country_event = { #YFC sees this
 				}
 			}
 		}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = { money_amount < 5 } 
+				add = 1
+		 	}
+			modifier = {
+				check_variable = { money_amount < 0 } 
+				add = 2
+		 	}
+			modifier = {
+				NOT = { controls_province = 1146 }
+				add = 1
+		 	}
+			modifier = {
+				controls_province = 4572
+				add = -1
+		 	}
+			modifier = {
+				OR = {
+					controls_province = 1932
+					controls_province = 11220
+					controls_province = 11195
+				}
+				add = -2
+		 	}
+			modifier = {
+				controls_province = 5679
+				add = -5
+		 	}
+		}
 	}
 
 	option = {
@@ -254,6 +281,10 @@ country_event = { #YFC sees this
 		add_stability = -0.05
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+
+		ai_chance = {
+			base = 1
+		}
 	}
 }
 
@@ -305,7 +336,7 @@ country_event = { #YFC sees this
 				201 = {
 					create_unit = {
 						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.35"
-						count = 2
+						count = 3
 						owner = YFC
 					}
 				}
