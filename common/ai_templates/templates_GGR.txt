@@ -1,5 +1,8 @@
 #Took from GER since I have no idea what the fuck I am doing
 
+#Overall idea for GGR:
+#Strong Inf with Armor and Mot to make breakthroughs. 
+
 infantry_GGR = {
 
 	available_for = {
@@ -61,6 +64,7 @@ infantry_GGR = {
 		target_template = {
 
 			support = {
+				field_hospital = 1
 				engineer = 1
 				artillery = 1
 			}
@@ -122,7 +126,7 @@ armored_GGR = {
 			}
 			
 			regiments = {
-				light_armor = 3
+				light_armor = 4
 				cavalry = 3
 			}
 		}
@@ -155,10 +159,11 @@ armored_GGR = {
 			support = {
 				artillery = 1
 				mot_recon = 1
+				logistics_company = 1
 			}
 			
 			regiments = {
-				light_armor = 3
+				light_armor = 4
 				motorized = 3
 			}
 		}
@@ -197,6 +202,7 @@ armored_GGR = {
 		target_template = {
 			
 			support = {
+				logistics_company = 1
 				mot_recon = 1
 				artillery = 1
 			}
@@ -237,6 +243,8 @@ motorized_GGR = {
 		target_template = {
 			support = {
 				artillery = 1
+				field_hospital = 1
+				logistics_company = 1
 			}
 			
 			regiments = {

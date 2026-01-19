@@ -159,12 +159,12 @@
  l_decisions_trade_sell_tooltip: "§YSelect Equipment you want to buy.§!"
  l_decisions_trade_confirm_tooltip: "§YConfirm your deal.§!"
  l_decisions_trade_amount_tooltip: "§YChange the amount in the deal.§!"
- l_decisions_trade_selloffer_tooltip: "§YSend an offer to sell.§!\n\n§RCosts 5 Political Power§!"
- l_decisions_trade_buyoffer_tooltip: "§YSend an offer to buy.§!\n\n§RCosts 5 Political Power§!"
-
+ l_decisions_trade_selloffer_tooltip: "§YSend an offer to sell Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the correct amount of equipment and type!"
+ l_decisions_trade_buyoffer_tooltip: "§YSend an offer to buy Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the funds to purchase!"
  YFC_Trade_Tech: "Purchase §4Foreign Scientists§!"
  YFC_Trade_GMD_Guns: "Exploit §8Coiny's Factories§!"
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
+ YFC_Trade_ports: "Build Port in §Y[123.GetName]§!"
 
  decision_YFC_sector_category: "Our Benefactors"
  l_decisions_sector_title: "§YOur Benefactors§!"

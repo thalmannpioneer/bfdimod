@@ -415,17 +415,11 @@ GGR_ai_behavior = {
 		name = DESTORY_ANARCHISTS
 		text = "RULE_OPTION_DESTORY_ANARCHISTS"
 		desc = "RULE_OPTION_DESTORY_ANARCHISTS_GGR_AI_DESC"
-		allow_achievements = yes
 	}
 	option = {
 		name = COLLAPSE_COUNTRY
 		text = "RULE_OPTION_COLLAPSE_COUNTRY"
 		desc = "RULE_OPTION_COLLAPSE_COUNTRY_GGR_AI_DESC"
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
 
@@ -456,7 +450,6 @@ GPG_ai_behavior = {
 		name = CIVIL_WAR_FRIES
 		text = "RULE_OPTION_CIVIL_WAR_FRIES"
 		desc = "RULE_OPTION_CIVIL_WAR_FRIES_GPG_AI_DESC"
-		allow_achievements = yes
 	}
 	option = {
 		name = CIVIL_WAR_SOCIALIST
@@ -482,11 +475,6 @@ GPG_ai_behavior = {
 		name = CIVIL_WAR_DEMOCRATIC
 		text = "RULE_OPTION_CIVIL_WAR_DEMOCRATIC"
 		desc = "RULE_OPTION_CIVIL_WAR_DEMOCRATIC_GPG_AI_DESC"
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
 

@@ -1,4 +1,6 @@
 
+#Overall idea for WGF:
+#Good overall Inf that can handle any issue, later with more harder hitting units.
 
 garrison_WGF = {
 
@@ -112,6 +114,37 @@ infantry_WGF = {
 
 			regiments = {
 				infantry = 4
+				artillery_brigade = 1
+			}
+		}
+	}
+
+	infantry_WGF = {
+		division_names_group = WGF_INF_01
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 0
+				arms_factory < 10
+			}
+
+			modifier = {
+				factor = 4
+				arms_factory > 10
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				recon = 1
+				anti_air = 1
+				anti_tank = 1
+			}
+
+			regiments = {
+				infantry = 5
 				artillery_brigade = 1
 			}
 		}

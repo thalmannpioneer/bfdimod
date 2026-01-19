@@ -109,6 +109,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_mercs_div
+			add_manpower = 5000
 			division_template = {
 				name = "Cherry Company"
 				is_locked = yes
@@ -141,6 +142,7 @@ focus_tree = {
 		cost = 6
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_mercs_div
+			add_manpower = 2500
 			division_template = {
 				name = "Combined Grape Affiliation"
 				is_locked = yes
@@ -170,6 +172,7 @@ focus_tree = {
 		cost = 6
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_mercs_div
+			add_manpower = 2500
 			division_template = {
 				name = "Unnamed Mercenary Brotherhood"
 				is_locked = yes
@@ -474,7 +477,7 @@ focus_tree = {
 					owner = YFC
 				}
 			}
-			add_manpower = 2500
+			add_manpower = 5000
 		}
 
 		ai_will_do = {
@@ -1149,13 +1152,13 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_POP
 			201 = {
-				add_manpower = 21769
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
                     type = industrial_complex
                     level = 2
                     instant_build = yes
                 }
+				add_manpower = 21769
 			}
 			hidden_effect = {
 				IF = {

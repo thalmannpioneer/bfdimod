@@ -1,0 +1,43 @@
+#BUN AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+BUN_Raiding = { #Place troops on borders to raid better
+
+    allowed = {
+		original_tag = BUN
+	}
+	enable = {
+		has_war = no
+		NOT = {has_cosmetic_tag = BUN_revolt}
+		NOT = {has_cosmetic_tag = BUN_republic}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = CRN
+        value = 50
+    }
+	ai_strategy = {
+        type = prepare_for_war
+        id = YFC
+        value = 50
+    }
+	ai_strategy = {
+        type = prepare_for_war
+        id = SRR
+        value = 50
+    }
+	ai_strategy = {
+        type = prepare_for_war
+        id = GGR
+        value = 25
+    }
+	ai_strategy = {
+        type = garrison
+        value = -200
+    }
+}

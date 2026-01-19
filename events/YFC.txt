@@ -476,8 +476,8 @@ country_event = {
 
 	option = { 
 		name = YFC_event.16.a
-		custom_effect_tooltip = l_money_gain_700K
-		add_to_variable = { money_amount = 7 }
+		custom_effect_tooltip = l_money_gain_600K
+		add_to_variable = { money_amount = 6 }
 		225 = {
 			if = {
 				limit = { is_owned_by = EMP }
@@ -907,17 +907,17 @@ country_event = {
     option = { 
 		name = YFC_event.31.a
 		add_war_support = -0.05
+		add_political_power = 50
 		ai_chance = {
 			base = 0
 			modifier = {
-				has_war_support > 0.5
+				has_war_support > 0.55
 				add = 100
 		 	}
 		}
 	}
 	option = { 
 		name = YFC_event.31.b
-		add_political_power = 50
 		add_offsite_building = { type = arms_factory level = 1 }
 		YFC = {
 			country_event = {
@@ -1597,7 +1597,35 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 1 #CHANGE LATER!!!
+			base = 1
+			modifier = {
+				add = 1
+				has_army_size = {size < 1}
+			}
+			modifier = {
+				add = 1
+				YFC = {has_army_size = {size > 3}}
+			}
+			modifier = {
+				add = 1
+				YFC = {has_country_flag = has_active_mercenaries} 
+			}
+			modifier = {
+				add = 1
+				YFC = {check_variable = { money_amount > 10 }} 
+			}
+			modifier = {
+				add = 1
+				YFC = {is_ally_with = CRN} 
+			}
+			modifier = {
+				add = -2
+				YFC = {check_variable = { money_amount < 2 }} 
+			}
+			modifier = {
+				add = -1
+				has_army_size = {size > 3}
+			}
 		}
 	}
 
@@ -1613,7 +1641,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 0 #CHANGE LATER!!!
+			base = 1
 		}
 	}
 }
@@ -1681,7 +1709,43 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 0 #CHANGE LATER!!!
+			base = 0
+			modifier = {
+				add = 2
+				has_army_size = {size < 1}
+			}
+			modifier = {
+				add = 0.5
+				YFC = {has_army_size = {size > 3}}
+			}
+			modifier = {
+				add = 0.5
+				YFC = {has_country_flag = has_active_mercenaries} 
+			}
+			modifier = {
+				add = 0.5
+				YFC = {check_variable = { money_amount > 10 }} 
+			}
+			modifier = {
+				add = 0.5
+				YFC = {is_ally_with = CRN} 
+			}
+			modifier = {
+				add = 1
+				YFC = {
+					has_resources_rights = {
+						state = 24
+					}
+				} 
+			}
+			modifier = {
+				add = -3
+				YFC = {check_variable = { money_amount < 2 }} 
+			}
+			modifier = {
+				add = -2
+				has_army_size = {size > 3}
+			}
 		}
 	}
 
@@ -1699,7 +1763,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 1 #CHANGE LATER!!!
+			base = 3
 		}
 	}
 }
@@ -1741,6 +1805,10 @@ country_event = {
 			original_tag_to_check = SRI
 			add_opinion_modifier = { target = YFC modifier = large_decrease }
 		}	
+
+		ai_chance = {
+			base = 1
+		}
 	}
 	option = { 
 		name = YFC_event.43.b
@@ -1763,6 +1831,9 @@ country_event = {
 					days = 185
 				}
 			}
+		}
+		ai_chance = {
+			base = 2
 		}
 	}
 }
@@ -2268,7 +2339,7 @@ country_event = {
 					}
 				}
 				YFC = {
-					add_offsite_building = { type = arms_factory level = 1 }
+					add_to_variable = { money_amount = 10 }
 					add_manpower = 20000
 				}
 			}
@@ -2317,7 +2388,7 @@ country_event = {
 				}
 			}
 			YFC = {
-				add_offsite_building = { type = arms_factory level = 3 }
+				add_to_variable = { money_amount = 30 } #You really thought winning your freedom would be THAT easy?
 				add_manpower = 30000
 				add_state_claim = 85
 				add_state_claim = 212
@@ -2338,7 +2409,7 @@ country_event = {
     immediate = {
 			BUN = {
 				add_manpower = 10000
-				add_war_support = 0.20
+				add_war_support = 0.25
 				add_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }
 				add_ideas = low_economic_mobilisation
 				add_ideas = extensive_conscription
@@ -2445,7 +2516,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.8 start_experience_factor = 0.3"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.85 start_experience_factor = 0.3"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2459,14 +2530,6 @@ country_event = {
 					allow_spawning_on_enemy_provs = yes
 					prioritize_location = 4572
 					id = 4572
-				}
-				create_unit = {
-					division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
-					owner = YFC
-					count = 1
-					allow_spawning_on_enemy_provs = yes
-					prioritize_location = 5679
-					id = 1967
 				}
 				add_dynamic_modifier = {
 					modifier = BUN_revolt_support
@@ -2485,7 +2548,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2518,7 +2581,7 @@ country_event = {
 				}
 				217 = {
 					create_unit = {
-						division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.2"
+						division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.5 start_experience_factor = 0.2"
 						owner = BUN
 						count = 1
 						allow_spawning_on_enemy_provs = yes
@@ -2528,7 +2591,7 @@ country_event = {
 				}
 				218 = {
 					create_unit = {
-						division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.2"
+						division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.5 start_experience_factor = 0.2"
 						owner = BUN
 						count = 1
 						allow_spawning_on_enemy_provs = yes

@@ -172,6 +172,6 @@ leader_traits = {
     }
 
     special_character = { #pog
-        ai_badass_factor = 0.01
+        stability_factor = 0.01
     }
 }

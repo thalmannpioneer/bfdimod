@@ -161,6 +161,70 @@ decision_YFC_trade_category= {
 		}
 	}
 
+	YFC_Trade_ports = { 
+		icon = GFX_decision_generic_naval
+		state_target = yes
+        targets = { 225 226 227 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			controls_state = FROM
+		}
+
+		available = {
+			controls_state = FROM
+			has_war = no
+		}
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		custom_cost_trigger = {
+			has_manpower > 1999
+			has_political_power > 99
+		}
+		custom_cost_text = decisions_cost_mp_2000_pp_100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+
+		remove_effect = {
+			add_manpower = 1500
+			custom_effect_tooltip = l_money_gain_100K
+			add_to_variable = { money_amount = 1 }
+			FROM = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point > 0
+					}
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 200
+				has_manpower > 3000
+			}
+		}
+	}
+
+
 	YFC_trade_AIUSE_SellRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
 		icon = GFX_decision_SOV_stalinist_state
 
