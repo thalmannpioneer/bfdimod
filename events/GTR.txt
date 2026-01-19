@@ -312,8 +312,6 @@ country_event = {
 
     option = {
         name = GTR_event.13.a
-        set_country_flag = GTR_unlock_tb
-        custom_effect_tooltip = l_GTR_unlocks_tb
         hidden_effect = {
             country_event = {
                 id = GTR_event.14
@@ -334,7 +332,29 @@ country_event = {
 
     option = {
         name = GTR_event.14.a
+        hidden_effect = {
+            country_event = {
+                id = GTR_event.14-1
+                days = 5
+                random_hours = 12
+            }
+        }
+    }
+}
+
+country_event = {
+    id = GTR_event.14-1
+    title = GTR_event.14-1.t
+    desc = GTR_event.14-1.desc
+    picture = GFX_GTR_event14
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.14-1.a
         custom_effect_tooltip = l_GTR_new_focus_tree
+        set_country_flag = GTR_unlock_tb
+        custom_effect_tooltip = l_GTR_unlocks_tb
         hidden_effect = {
             load_focus_tree = GTR_secondtree_focus_tree
             complete_national_focus = GTR_focus_tennis_ball_rise
@@ -895,6 +915,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
+            play_song = "demo_end"
         }
     }
 }
@@ -941,6 +962,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
+            play_song = "demo_end"
         }
     }
 }
@@ -1480,6 +1502,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
+            play_song = "demo_end"
         }
     }
 }

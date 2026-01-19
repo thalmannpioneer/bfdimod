@@ -1,95 +1,223 @@
 guiTypes = {
-	containerWindowType = {
-		name = "demoend_window"
-		position = { x = -550 y = -300 }
-		size = { width = 1000 height = 600 }
-		moveable = yes
-		orientation = CENTER
-		
-		background = {
-			name = "bg"
-			spriteType = GFX_tiled_window
-		}
-		
-		containerWindowType = {
-			name = "image_bg_container"
-			position = { x = 20 y = 15 }
-			size = { width = 300 height = 571 }
-			
-			background = {
-				name = "image_bg"
-				spriteType = GFX_tiled_bg
-			}
-		}
-		
-		iconType = {
-			name = "image"
-			spriteType = GFX_demo_end_images
-			position = { x = 33 y = 28 }
-		}
-		
-		iconType = {
-			name = "item"
-			spriteType = GFX_demo_end_items
-			position = { x = 150 y = 400 }
-		}
-		
-		containerWindowType = {
-			name = "title_bg_container"
-			position = { x = 350 y = 25 }
-			size = { width = 600 height = 100 }
-			
-			background = {
-				name = "title_bg"
-				spriteType = GFX_tiled_paper_bg2
-			}
-		}
-		
-		instantTextBoxType = {
-			name = "title"
-			text = [DEMO_END_TITLE]
-			font = hoi_30header
-			position = { x = 150 y = 60 }
-			format = centre
-			maxWidth = 1000
-			maxHeight = 100
-		}
-		
-		containerWindowType = {
-			name = "text_bg_container"
-			position = { x = 350 y = 140 }
-			size = { width = 600 height = 390 }
-			
-			background = {
-				name = "text_bg"
-				spriteType = GFX_tiled_paper_bg2
-			}
-		}
-		
-		instantTextBoxType = {
-			name = "text"
-			text = demo_end_text
-			font = hoi_20bs
-			position = { x = 400 y = 150 }
-			format = centre
-			maxWidth = 500
-			maxHeight = 100
-		}
-		
-		buttonType = {
-			name = "button"
-			spriteType = GFX_button_261x34
-			position = { x = 515 y = 542 }
-			text = demo_end_button_text
-			font = hoi_18mbs
-		}
-		
-		buttonType = {
-			name = "button_discord"
-			spriteType = GFX_demo_end_button_discord
-			position = { x = 600 y = 435 }
-			pdx_tooltip = "MENU_DISCORD_TIG"
-			web_link = "https://discord.gg/3Z5EjJVDux"
-		}
-	}
+    containerWindowType = {
+        name = "demoend_bg"
+        position = { x = 0 y = 0 }
+        size = { width = 100% height = 100% }
+        fade_time = 5000
+        fade_type = linear
+
+        iconType = {
+            name = "bg"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_dark
+            scale = 100
+        }
+    }
+
+    containerWindowType = {
+        name = "demoend_window"
+        position = { x = -725 y = -300 }
+        size = { width = 1000 height = 600 }
+        moveable = yes
+        orientation = CENTER
+        fade_time = 5000
+        fade_type = linear
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        containerWindowType = {
+            name = "image_bg_container"
+            position = { x = 20 y = 15 }
+            size = { width = 300 height = 571 }
+
+            background = {
+                name = "image_bg"
+                spriteType = GFX_tiled_bg
+            }
+        }
+
+        iconType = {
+            name = "image"
+            spriteType = GFX_demo_end_images
+            position = { x = 33 y = 28 }
+        }
+
+        iconType = {
+            name = "item"
+            spriteType = GFX_demo_end_items
+            position = { x = 150 y = 400 }
+        }
+
+        containerWindowType = {
+            name = "title_bg_container"
+            position = { x = 350 y = 25 }
+            size = { width = 600 height = 100 }
+
+            background = {
+                name = "title_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+        }
+
+        instantTextBoxType = {
+            name = "title"
+            text = [DEMO_END_TITLE]
+            font = hoi_30header
+            position = { x = 150 y = 60 }
+            format = centre
+            maxWidth = 1000
+            maxHeight = 100
+        }
+
+        containerWindowType = {
+            name = "text_bg_container"
+            position = { x = 350 y = 140 }
+            size = { width = 600 height = 390 }
+
+            background = {
+                name = "text_bg"
+                spriteType = GFX_tiled_paper_bg2
+            }
+        }
+
+        instantTextBoxType = {
+            name = "text_title"
+            text = demo_end_text_title
+            font = hoi_30header
+            position = { x = 400 y = 160 }
+            format = centre
+            maxWidth = 500
+            maxHeight = 100
+        }
+
+        instantTextBoxType = {
+            name = "text"
+            text = demo_end_text
+            font = hoi_20bs
+            position = { x = 400 y = 205 }
+            format = centre
+            maxWidth = 500
+            maxHeight = 100
+        }
+
+        instantTextBoxType = {
+            name = "text_thank"
+            text = demo_end_text_thank
+            font = hoi_30header
+            position = { x = 400 y = 400 }
+            format = centre
+            maxWidth = 500
+            maxHeight = 100
+        }
+
+        buttonType = {
+            name = "button"
+            spriteType = GFX_button_261x34
+            position = { x = 515 y = 542 }
+            text = demo_end_button_text
+            font = hoi_18mbs
+        }
+
+        buttonType = {
+            name = "button_discord"
+            spriteType = GFX_demo_end_button_discord
+            position = { x = 600 y = 435 }
+            pdx_tooltip = "MENU_DISCORD_TIG"
+            web_link = "https://discord.gg/3Z5EjJVDux"
+        }
+    }
+
+    containerWindowType = {
+        name = "credits_container"
+        position = { x = 275 y = -300 }
+        size = { width = 397 height = 600 }
+        moveable = yes
+        orientation = CENTER
+        fade_time = 5000
+        fade_type = linear
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        iconType = {
+            name = "anim_bg"
+            position = { x = 14 y = 14 }
+            spriteType = GFX_credits_animation_bg
+        }
+
+        iconType = {
+            name = "anim1"
+            position = { x = 14 y = 14 }
+            spriteType = GFX_credits_animation_1
+        }
+        iconType = {
+            name = "anim2"
+            position = { x = 67 y = 14 }
+            spriteType = GFX_credits_animation_2
+        }
+        iconType = {
+            name = "anim3"
+            position = { x = 120 y = 14 }
+            spriteType = GFX_credits_animation_3
+        }
+        iconType = {
+            name = "anim4"
+            position = { x = 173 y = 14 }
+            spriteType = GFX_credits_animation_4
+        }
+        iconType = {
+            name = "anim5"
+            position = { x = 226 y = 14 }
+            spriteType = GFX_credits_animation_5
+        }
+        iconType = {
+            name = "anim6"
+            position = { x = 279 y = 14 }
+            spriteType = GFX_credits_animation_6
+        }
+        iconType = {
+            name = "anim7"
+            position = { x = 332 y = 14 }
+            spriteType = GFX_credits_animation_7
+        }
+
+        instantTextBoxType = {
+            name = "credits_title"
+            text = demo_end_credits_title
+            font = hoi_30header
+            position = { x = -100 y = 30 }
+            format = centre
+            orientation = CENTER_UP
+            maxWidth = 200
+            maxHeight = 100
+        }
+
+        containerWindowType = {
+            name = "credits_text_container"
+            verticalScrollbar = "right_vertical_slider"
+            smooth_scrolling = yes
+            drag_scroll = left
+            size = { width = 90% height = 80% }
+            margin = { top = 10 bottom = 10 left = 10 right = 10 }
+            position = { x = 20 y = 70 }
+
+            background = {
+                name = "Background"
+                spriteType ="GFX_tiled_window_small_transparent"
+            }
+
+            instantTextBoxType = {
+                name = "credits_text"
+                text = demo_end_credits_text
+                font = hoi_24header
+                position = { x = 14 y = 0 }
+                maxWidth = 300
+            }
+        }
+    }
 }

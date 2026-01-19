@@ -2,7 +2,7 @@ bookmarks = {
     bookmark = {
         name = PETRI_DISH_NAME
         desc = PETRI_DISH_DESC
-        date = 2012.03.01
+        date = 2012.03.08.12
         picture = GFX_select_date_2012
         default_country = GTR
         effect = {
@@ -336,6 +336,8 @@ bookmarks = {
             CRN = { load_oob = "CRN_2012" }
             SOS = { load_oob = "SOS_2012" }
 
+            clr_global_flag = focus_take_prevention
+
             GGR = {
                 activate_mission = GGR_anarchists_mission
                 country_event = {
@@ -386,11 +388,11 @@ bookmarks = {
                     random_hours = 12
                 }
             }
-			
-			GOI = {
-				remove_ideas = idea_GOI_bfdi
-				remove_ideas = idea_GOI_great_goiky_railroad
-			}
+
+            GOI = {
+                remove_ideas = idea_GOI_bfdi
+                remove_ideas = idea_GOI_great_goiky_railroad
+            }
         }
 
         GTR = {

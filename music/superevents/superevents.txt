@@ -16,62 +16,59 @@ music = {
     song = "superevent_dream_island_dissapear_song"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "snowy_forest_invasion_music"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "civil_war_event"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "GPG_cw_transgov_victory"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "GPG_cw_democrats_victory"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "GPG_cw_ruby_victory"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "GPG_cw_ironhand_victory"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "SOS_pin_coronation"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
     }
 }
 music = {
     song = "GTR_technocratic_republic"
     chance = {
       modifier = { factor = 0 }
-      #modifier = { factor = 0 has_war = yes } #example modifier: music will not play when at war
+    }
+}
+music = {
+    song = "demo_end"
+    chance = {
+      modifier = { factor = 0 }
     }
 }

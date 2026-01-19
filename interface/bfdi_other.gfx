@@ -33,6 +33,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_dark"
+		textureFile = "gfx/interface/dark.dds"
+		transparencecheck = no
+	}
+
+	spriteType = {
 		name = "GFX_select_date_2011"
 		textureFile = "gfx/interface/GFX_select_date_2011.dds"
 	}
@@ -46,6 +52,39 @@ spriteTypes = {
 		name = "GFX_bookmark_animation"
 		textureFile = "gfx/interface/bookmark_animation.dds"
 		noOfFrames = 9
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_overlay"
+		textureFile = "gfx/interface/topbar_overlay.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_topbar_notifications_overlay"
+		textureFile = "gfx/interface/topbar_notifications_overlay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pol_view_overlay"
+		textureFile = "gfx/interface/pol_view_overlay.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_pol_view_overlay_golfball_1"
+		textureFile = "gfx/interface/pol_view_overlay_golfball_1.dds"
+		noOfFrames = 17
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_pol_view_overlay_golfball_2"
+		textureFile = "gfx/interface/pol_view_overlay_golfball_2.dds"
+		noOfFrames = 17
 		animation_rate_fps = 15
 		looping = yes
 		play_on_show = yes

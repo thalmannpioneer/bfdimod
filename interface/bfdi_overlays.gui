@@ -1,0 +1,59 @@
+guiTypes = {
+    containerWindowType = {
+        name = "topbar_overlay_container"
+        position = { x = 96 y = 0 }
+        size = { width = 100%% height = 100%% }
+
+        iconType = {
+            name = "topbar_overlay"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_topbar_overlay
+        }
+    }
+
+    containerWindowType = {
+        name = "topbar_notifications_overlay_container"
+        position = { x = 700 y = -1 }
+        size = { width = 661 height = 70 }
+
+        iconType = {
+            name = "topbar_notifications_overlay"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_topbar_notifications_overlay
+        }
+    }
+
+    containerWindowType = {
+        name = "pol_view_overlay_container"
+        position = { x = 176 y = 240 }
+        size = { width = 374 height = 148 }
+
+        iconType = {
+            name = "pol_view_overlay"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_pol_view_overlay
+        }
+    }
+
+    containerWindowType = {
+        name = "pol_view_laws_overlay_container"
+        position = { x = 0 y = 370}
+        size = { width = 100% height = 632 }
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        iconType = {
+            name = "goofbol_1"
+            position = { x = 20 y = -10 }
+            spriteType = GFX_pol_view_overlay_golfball_1
+        }
+        iconType = {
+            name = "goofbol_2"
+            position = { x = 20 y = 246 }
+            spriteType = GFX_pol_view_overlay_golfball_2
+        }
+    }
+}

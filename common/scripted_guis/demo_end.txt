@@ -1,28 +1,46 @@
 scripted_gui = {
-	bfdi_demo_end_scriptedgui = {
-		window_name = demoend_window
-		context_type = player_context
-	
-		visible = {
-			has_global_flag = demo_ended
-		}
-		
-		effects = {
-			button_click = {
-				set_global_flag = {
-					flag = demo_ended
-					value = 0
-				}
-			}
-		}
-		
-		properties = {
-			image = {
-				frame = var_demo_end
-			}
-			item = {
-				frame = var_demo_end
-			}
-		}
-	}
+    bfdi_demo_end_bg = {
+        window_name = demoend_bg
+        context_type = player_context
+
+        visible = {
+            has_global_flag = demo_ended
+        }
+    }
+
+    bfdi_demo_end_scriptedgui = {
+        window_name = demoend_window
+        context_type = player_context
+
+        visible = {
+            has_global_flag = demo_ended
+        }
+
+        effects = {
+            button_click = {
+                set_global_flag = {
+                    flag = demo_ended
+                    value = 0
+                }
+            }
+        }
+
+        properties = {
+            image = {
+                frame = var_demo_end
+            }
+            item = {
+                frame = var_demo_end
+            }
+        }
+    }
+
+    bfdi_credits = {
+        window_name = "credits_container"
+        context_type = player_context
+
+        visible = {
+            has_global_flag = demo_ended
+        }
+    }
 }

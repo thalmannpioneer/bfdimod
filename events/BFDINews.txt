@@ -112,6 +112,7 @@ news_event = {
             limit = { WGF = { is_ai = no } }
             set_variable = { var_demo_end = 1 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }
@@ -134,6 +135,7 @@ news_event = {
             limit = { SMG = { is_ai = no } }
             set_variable = { var_demo_end = 2 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }
@@ -173,6 +175,7 @@ news_event = {
             limit = { GGR = { is_ai = no } }
             set_variable = { var_demo_end = 3 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }
@@ -461,11 +464,13 @@ news_event = {
             limit = { GSR = { is_ai = no } }
             set_variable = { var_demo_end = 6 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
         else_if = {
             limit = { GFG = { is_ai = no } }
             set_variable = { var_demo_end = 7 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }
@@ -526,6 +531,7 @@ news_event = {
             limit = { GDR = { is_ai = no } }
             set_variable = { var_demo_end = 8 }
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }
@@ -584,8 +590,9 @@ news_event = {
         name = bfdinews.27.a
         if = {
             limit = { UGA = { is_ai = no } }
-            set_variable = { var_demo_end = 9 }
+            set_variable = { var_demo_end = 9}
             set_global_flag = demo_ended
+            play_song = "demo_end"
         }
     }
 }

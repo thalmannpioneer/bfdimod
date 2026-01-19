@@ -759,7 +759,7 @@ country_event = {
                     random_hours = 12
                 }
             }
-            else_if = { 
+            else_if = {
                 limit = { check_variable = { var_congress_support < 13 } } #I have zero idea why, but somehow 12 is 13???????? Thal wtf did you do or what did I do????
                 country_event = { #seems that the UI and the number are messed and idk why :sob:
                     id = GPG_event.22
@@ -1943,6 +1943,7 @@ country_event = {
                 limit = { tag = GSR }
                 set_variable = { var_demo_end = 5 }
             }
+            play_song = "demo_end"
         }
     }
 }

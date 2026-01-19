@@ -46,3 +46,33 @@ music = {
 	file = "fig_leaf_times_two.ogg"
 	volume = 1
 }
+
+music = {
+	name = "big_quest_MMCT"
+	file = "big_quest.ogg"
+	volume = 1
+}
+
+music = {
+	name = "not_as_it_seems_MMCT"
+	file = "not_as_it_seems.ogg"
+	volume = 1
+}
+
+music = {
+	name = "mister_exposition_MMCT"
+	file = "mister_exposition.ogg"
+	volume = 1
+}
+
+music = {
+	name = "bnob_MMCT"
+	file = "bnob.ogg"
+	volume = 1
+}
+
+music = {
+	name = "wherever_u_communicate_MMCT"
+	file = "wherever_u_communicate.ogg"
+	volume = 1
+}

@@ -25,7 +25,7 @@
  SW_COUNTRYNAME: "[SW_COUNTRYNAME]"
  SW_COUNTRYDESC: "[SW_COUNTRYDESC]"
  SW_DEMOERROR: "§RThis country isn't available in demo :(§!"
- WW_TEXT: "§YWelcome to TIG!§!\n\n§RWarning!§! If the content in the mod seems cringy, empty or unbalanced to you, don’t worry! This is just a demo and a huge layer of lore, mechanics and other things will be redone in the future!\n\nMoreover, if you find error or want to suggest something, you can contact me on discord server that listed on the Steam page."
+ WW_TEXT: "§YWelcome to TiG!§!\n\n§RWarning!§! If the content in the mod seems empty or unbalanced, don’t worry! This is just a demo and a huge layer of lore, mechanics and other things will be redone in the future!\n\nMoreover, if you find error or want to suggest something, you can contact me on discord server that listed on the Steam page."
  WW_PLAYBUTTON: "Thanks!"
  
  demo_end_WGF_title: "The §Rred sun§! rises over the North Goiky..."
@@ -39,8 +39,12 @@
  demo_end_GDR_title: "§4Democracy§! rises in the §7Greeny Plains§!..."
  demo_end_GTR_title_1: "§4Alma-mater§! falls into the §gStone Age§!..."
  demo_end_GTR_title_2: "Technocracy §grises from the ashes...§!"
- demo_end_text: "§YDemo ends here. For now.§!\n\nThanks for playing! If you liked the modification, put a like on Steam and add it to your bookmarks. Also join the §1Discord server§!.\n\nThe mod will continue to develop as much as possible and many aspects of the lore and gameplay will be reworked in the future. The current version of the modification §Rdoes not show the final product.§!\n\nAt the moment, the mod has only one developer, and if you want to apply your skills and help the development, you can contact me on the §1Discord server§!.\n\n§7With love, an ordinary fan of the Battle for Dream Island from Russia.§!"
+ demo_end_text_title: "§YDemo ends here. For now.§!"
+ demo_end_text: "Thanks for playing! If you like the mod, put a like on Steam and add it to your bookmarks. Also you can join the §1Discord server§!.\n\nThe mod team will keep working on the development of the mod and many aspects of the lore and gameplay will be reworked in the future. The current version of the mod §Rdoes not show the final product.§!\n\nIf you have skills in writing, graphics or in HOI4 modding generally, you can apply to mod's dev team on our §1Discord server§!."
+ demo_end_text_thank: "§7With love, The Kameshek Team§!"
  demo_end_button_text: "Thanks!"
+ demo_end_credits_title: "Credits"
+ demo_end_credits_text: "§Ythalmannpioneer§!\n(Creator, Map Design, Focus Icons, GFX, Portraits, Flag Design, Programming, Game Design)\n\n§YZDubbz§!\n(Events, Path Design, Game Design, Map Design)\n\n§YPun§!\n(Programming, Game Design)\n\n§YBarelySilver/Starling§!\n(Focus GFX)\n\n§YDaymare§!\n(Illustrated Loading Screen)\n\n§YKind of Human§!\n(Misc. Icons)\n\n§YDabaman§!\n(Focus GFX)\n\n§YPadirian§!\n(Misc. Icons)\n\n§YLither§!\n(Additional Portraits)\n\n§YWhereIsTheI§!\n(Additional Portrait)\n\n§YEl Pastita§!\n(Additional Map Design)\n\n§YIridium§!\n(Additional Flags)\n\n§YAyhem Mayhem§!\n(Money Icon)\n\n§7And all BFDI Community. An enourmous number of assets for this mod were taken from the internet. Thank you all.§!"
  
  cap_window_title: "Another defeat in Goiky"
  cap_window_participiants: "[winning_country.GetNameWithFlag]   Won   [losing_country.GetNameWithFlag]   in the Battle for Goiky"

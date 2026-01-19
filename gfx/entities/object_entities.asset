@@ -354,30 +354,3 @@ entity = {
 		
 	scale = 1.5
 }
-entity = {
-	clone = "object_gfx_cavalry_entity"
-	name = "object_gfx_ngrf_cavalry_entity"
-	pdxmesh = "pink_mesh"
-
-	attach = { 	name = "person"			person = "object_gfx_ngrf_rider_entity" }
-
-	scale = 1.5
-}
-entity = {
-	clone = "object_gfx_cavalry_entity"
-	name = "object_gfx_reich_cavalry_entity"
-	pdxmesh = "pink_mesh"
-
-	attach = { 	name = "person"			person = "object_gfx_reich_rider_entity" }
-
-	scale = 1.5
-}
-entity = {
-	clone = "object_gfx_cavalry_entity"
-	name = "object_gfx_gtr_cavalry_entity"
-	pdxmesh = "pink_mesh"
-
-	attach = { 	name = "person"			person = "object_gfx_gtr_rider_entity" }
-
-	scale = 1.5
-}

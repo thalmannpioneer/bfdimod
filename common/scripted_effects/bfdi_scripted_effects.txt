@@ -225,10 +225,13 @@ gpg_civil_war = {
             days = 5
         }
     }
-    news_event = {
-        id = bfdinews.15
-        days = 2
-    }
+    every_possible_country = {
+		limit = { is_ai = no }
+		news_event = {
+			id = bfdinews.15
+			days = 2
+		}
+	}
 
     set_global_flag = civilwar_in_casland
 

@@ -17,4 +17,66 @@ spriteTypes = {
 		noOfFrames = 1
 		effectFile = gfx/FX/buttonstate.lua
 	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_1"
+		textureFile = "gfx/interface/credits_animation/credits_animation_1.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_2"
+		textureFile = "gfx/interface/credits_animation/credits_animation_2.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_3"
+		textureFile = "gfx/interface/credits_animation/credits_animation_3.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_4"
+		textureFile = "gfx/interface/credits_animation/credits_animation_4.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_5"
+		textureFile = "gfx/interface/credits_animation/credits_animation_5.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_6"
+		textureFile = "gfx/interface/credits_animation/credits_animation_6.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_credits_animation_7"
+		textureFile = "gfx/interface/credits_animation/credits_animation_7.dds"
+		noOfFrames = 75
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+
+	spriteType = {
+		name = "GFX_credits_animation_bg"
+		textureFile = "gfx/interface/credits_animation/credits_animation_bg.dds"
+	}
 }

@@ -50,4 +50,9 @@ music = {
 	file = "GTR_technocratic_republic.ogg"
 	volume = 1
 }
+music = {
+	name = "demo_end"
+	file = "demo_end.ogg"
+	volume = 1
+}
 
