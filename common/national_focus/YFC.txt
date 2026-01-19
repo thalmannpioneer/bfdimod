@@ -870,7 +870,7 @@ focus_tree = {
 		}
 		
 		allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
-		
+
 		prerequisite = { focus = YFC_focus_the_economic_issue }
 		cost = 5
 		#gives an increase to your treasury, and an event about stealing from eraser
@@ -2020,14 +2020,35 @@ focus_tree = {
 		}
 	}
 
-
-
 	#RIP old Raiding stuff here 2025-2025
 
 	#NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	focus = {
 		id = YFC_focus_establish_formal_connection
+		relative_position_id = YFC_focus_YFC_funded_pillaging
+		x = 3
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
+		prerequisite = { focus = YFC_focus_open_foreign_policy }
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_YFC_funded_pillaging
+			}
+		}
+		
+		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
+		
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = YFC_focus_diverting_funds
 		relative_position_id = YFC_focus_YFC_funded_pillaging
 		x = 0
 		y = 1
@@ -2041,7 +2062,66 @@ focus_tree = {
 		}
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
-		
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = YFC_focus_strictly_business_partnership
+		relative_position_id = YFC_focus_diverting_funds
+		x = 1
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_establish_formal_connection }
+		prerequisite = { focus = YFC_focus_diverting_funds }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally, w an event leading up to it
+		id = YFC_focus_the_first_embargo
+		relative_position_id = YFC_focus_diverting_funds
+		x = -2
+		y = 1
+		icon = GFX_focus_generic
+
+		#allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+
+		cost = 3
+		completion_reward = {
+			#snowball fucking hates you now
+		}
+	}
+
+	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally
+		id = YFC_focus_numismatian_split
+		relative_position_id = YFC_focus_strictly_business_partnership
+		x = 3
+		y = 0
+		icon = GFX_focus_generic
+
+		cost = 3
+		completion_reward = {
+			#numismatians publically announce that they no longer see it fit to work with the yfc; news event
+		}
+	}
+
+	focus = {
+		id = YFC_focus_allow_raiding_into_traitors
+		relative_position_id = YFC_focus_strictly_business_partnership
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_strictly_business_partnership }
+		prerequisite = { focus = YFC_focus_the_first_embargo }
+		prerequisite = { focus = YFC_focus_numismatian_split }
+
 		cost = 3
 		completion_reward = {
 			
