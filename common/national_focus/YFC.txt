@@ -2094,7 +2094,13 @@ focus_tree = {
 		y = 1
 		icon = GFX_focus_generic
 
-		#allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_the_first_embargo
+			}
+		}
+
+		allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
 
 		cost = 3
 		completion_reward = {
@@ -2109,7 +2115,13 @@ focus_tree = {
 		y = 0
 		icon = GFX_focus_generic
 
-		#allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_numismatian_split
+			}
+		}
+
+		allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
 		cost = 3
 		completion_reward = {
@@ -2140,6 +2152,14 @@ focus_tree = {
 		x = 24
 		y = 0
 		icon = GFX_focus_generic
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_the_great_recession
+			}
+		}
+
+		allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
 		cost = 3
 		completion_reward = {
@@ -2209,7 +2229,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { #coiny embargoes
+	focus = { 
 		id = YFC_focus_grow_closer_ties
 		relative_position_id = YFC_focus_the_second_embargo
 		x = 0
