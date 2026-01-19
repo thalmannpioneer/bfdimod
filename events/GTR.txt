@@ -334,6 +334,20 @@ country_event = {
 
     option = {
         name = GTR_event.14.a
+        country_event = GTR_event.14-1
+    }
+}
+
+country_event = {
+    id = GTR_event.14-1
+    title = GTR_event.14-1.t
+    desc = GTR_event.14-1.desc
+    picture = GFX_GTR_event14
+
+    is_triggered_only = yes
+
+    option = {
+        name = GTR_event.14-1.a
         custom_effect_tooltip = l_GTR_new_focus_tree
         hidden_effect = {
             load_focus_tree = GTR_secondtree_focus_tree
