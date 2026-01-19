@@ -936,7 +936,7 @@
  YFC_BUN.14.c: "An autonomous state!"
 
  YFC_BUN.15.t: "Words on Paper..."
- YFC_BUN.15.desc: "A major engagement broke out today between Top Hat's security forces and Bunchivist terrorists. It was the largest to date, rivaling that of even some of the battles in the war. It took place in some farmlands near Taptop with most of the area being set ablaze. Nothing out of the ordinary besides the scale, however the events before the engagement are what was interesting to higher command. Reports from local civilians and even security forces state that Top Hat's men opted to raid one of the barns, then an argument broke out. The argument turned to small scuffles, which turned to fights, and now, we're here.\nMany Neo-Bunchivist demonstrators are calling us hypocrites. Our war agains the Bunch was purely justified based on the fact that they were raiders, and now our private police are doing the same thing as them.\nWhat we could do is... sweep it under the rug... Top Hat did say it was likely that his sector would no longer have any foreign support if something like this got out, since all Bunchivists involved were civillians. While bad, this could curve some of the growing influence that the military sector had been getting... our pick?"
+ YFC_BUN.15.desc: "A major engagement broke out today between Top Hat's security forces and Bunchivist terrorists. It was the largest to date, rivaling that of even some of the battles in the war. It took place in some farmlands near Taptop with most of the area being set ablaze. Nothing out of the ordinary besides the scale, however the events before the engagement are what was interesting to higher command. Reports from local civilians and even security forces state that Top Hat's men opted to raid one of the barns, then an argument broke out. The argument turned to small scuffles, which turned to fights, and now, we're here.\nMany Neo-Bunchivist demonstrators are calling us hypocrites. Our war agains the Bunch was purely justified based on the fact that they were raiders, and now our private police are doing the same thing as them.\nWhat we could do is... sweep it under the rug... Top Hat did say it was likely that his sector would no longer have any foreign support if something like this got out, since all Bunchivists involved were civillians. While bad, this could curb some of the growing influence that the military sector had been getting... our pick?"
  YFC_BUN.15.a: "Blame the whole event on Top Hat."
  YFC_BUN.15.b: "Apologize and pay for the damages."
  YFC_BUN.15.c: "Maybe an... 'engagement' could be made."
@@ -1034,20 +1034,20 @@
  YFC_sector.1.a: "Top Hat's got the right idea."
  YFC_sector.1.b: "Taser is the obvious choice."
 
- YFC_sector.2.t: "Sector Update: Hammer vs Pipe Arguement"
+ YFC_sector.2.t: "Sector Update: An Argument Over Purchases"
  YFC_sector.2.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Hammer and Pipe, became the central issue of the night. Some rail lines had been under performing, as of late, so Pipe, of the Rail Road Sector, decided it would be best for their sector that new ones be constructed. Having under-estimated the amount of labor necessary to execute their plans, they decided to hire some. Unfortunately for Hammer, the new contractors Pipe had hired just so happened to have been working on a project for the Construction Sector. Hammer had claimed that this purchase was 'unfair,' and that, as the leader of the Construction sector, he should've had a say in this dealing before it occurred. Who's side shall we take in this argument?"
  YFC_sector.2.a: "It's the free market, why would we persecute Pipe for a purchase?"
  YFC_sector.2.b: "It's Hammer's sector..."
 
- YFC_sector.3.t: "Beaker vs Hammer Arguement" #these r like the new city dev events
+ YFC_sector.3.t: "Sector Update: An Argument Over Funding" #these r like the new city dev events
  YFC_sector.3.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Beaker and Hammer, became the central issue of the night. The two were arguing over where exactly funding should be placed. Beaker claimed that the research sector had been underfunded for a long time, and that, next quarter, any surpless funding should go to her. Hammer argued that Beaker had simply been acting out of greed. He stated that his sector had far less funding, yet he didn't complain. Who's side shall we take?"
  YFC_sector.3.a: "Research is always important, fund Beaker."
  YFC_sector.3.b: "Beaker is just greedy, side with Hammer."
 
- YFC_sector.4.t: "Taser vs Beaker arguement" #zdubbz
- YFC_sector.4.desc: "Both are fighting over something idk (Maybe over Electronics usage or funds)"
- YFC_sector.4.a: "Side with Taser"
- YFC_sector.4.b: "Side with Beaker"
+ YFC_sector.4.t: "Secctor Update: An Argument Over Allocation"
+ YFC_sector.4.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Taster and Beaker, became the central issue of the night. As the head of the Electronics Sector, Taser seemed to have taken quite the possesive hold over what the sector produced. Beaker has been quite vocally against this possesiveness over the past few weeks, with her thoughts on the Sector's management coming to a head at the aforementioned meeting. She claimed that Taser had been 'stifling capital,' and 'betraying the principles of free trade' by way of hoarding the goods. Additionally, it is no secret that the Research Sector, of which Beaker leads, requires quite the amount of complex technology. On the contrary, however, Taser had refused to let up, claiming that it was 'their sector,' and that they could 'do with it as they saw fit.' In all honesty, I don't believe anyone else cares about this issue, though, benign as the argument is, we must still respond in some manner."
+ YFC_sector.4.a: "Taser's sector is Taser's sector."
+ YFC_sector.4.b: "Beaker gives us better returns."
 
  YFC_sector.5.t: "Top Hat vs Pipe arguement" #zdubbz
  YFC_sector.5.desc: "Both are fighting over fighting resistance and/or useage of police/media"
@@ -1057,7 +1057,7 @@
  YFC_sector.6.t: "Sector Update: Purchasing the Government?"
  YFC_sector.6.desc: "Top Hat came to Yellow Faces's office late last night, with a large briefcase. He said that he wanted a couple of laws passed lickity split, and opened the briefcase to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Now, some may say it to be unfair that we may undergo this dealing..."
  YFC_sector.6.a: "However, we care not for the opinions of the poor."
- YFC_sector.6.b: "And they are correct, for it would be highly dishonest."
+ YFC_sector.6.b: "And they would be correct, for it would be highly dishonest."
 
  YFC_sector.7.t: "Pipe Bribe" #zdubbz
  YFC_sector.7.desc: "Pipe wants to Bribe us"
@@ -1259,7 +1259,7 @@
  GTR_event.20.desc: "The celebrations in Announcergrad filled Cappy with a sense of national pride that she didn't think she'd ever have. From the balcony on which she stood, she watched in awe as the parades of flags and banners of University symbols and graphed mathematical functions alike soared through the newly paved streets of the city. Things were getting better, anyone could see that to be true. Rations were getting larger, actually satiating objects' hunger, the smog filled winds from the south had started thinning out, and management was starting to finally listen to the objects over which the presided. The image of an old friend from a while ago came to Cappy's mind. Grape, he was always much more into the idea of the University Administration than she. She felt her soul warm at the realization that he'd love this sight just as much as the city seemed to love making it, she just wished he could've been here with her. Her thoughs halted as she heard another noisy rally march near, holding flags and banners all the same. Objects, joyful, loud, irrepressibly filled with ardor, filled the city's afternoon streets with a thunderous roar of \"Republic!\"\nWe all may have lost someone..."
  GTR_event.20.a: "...but we shall all move on."
 
- GTR_event.21.t: "Bossy Bot" #zdubbz
+ GTR_event.21.t: "Bossy Bot" #zdubbz; event abt golf ball being too headstrong in terms of govt
  GTR_event.21.desc: "'Tennis Ball, you are too herbivorous!' - Now Golfball is saying it out loud.\n\n'To survive, we need tougher measures! We need a clear plan and smart leadership, smart objects like ME!'\n\nGB's interrupting the awkward silence with a continuation.\n'We can't rely on these fools from the city, we need a strong government!'\n\nTennis Ball looked down at the table."
  GTR_event.21.a: "'Awwwww, okaaaaaaaaaaay'"
 
