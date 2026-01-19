@@ -2070,7 +2070,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YFC_focus_strictly_business_partnership
+		id = YFC_focus_great_business_partnership
 		relative_position_id = YFC_focus_diverting_funds
 		x = 1
 		y = 1
@@ -2101,10 +2101,12 @@ focus_tree = {
 
 	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally
 		id = YFC_focus_numismatian_split
-		relative_position_id = YFC_focus_strictly_business_partnership
+		relative_position_id = YFC_focus_great_business_partnership
 		x = 3
 		y = 0
 		icon = GFX_focus_generic
+
+		#allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
 		cost = 3
 		completion_reward = {
@@ -2112,15 +2114,106 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #begins periodically getting other embargoes from nations, when done, next part of tree opens
 		id = YFC_focus_allow_raiding_into_traitors
-		relative_position_id = YFC_focus_strictly_business_partnership
+		relative_position_id = YFC_focus_great_business_partnership
 		x = 0
 		y = 1
 		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_strictly_business_partnership }
+		prerequisite = { focus = YFC_focus_great_business_partnership }
 		prerequisite = { focus = YFC_focus_the_first_embargo }
 		prerequisite = { focus = YFC_focus_numismatian_split }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	#sect 2 of raiders:
+
+	focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
+		id = YFC_focus_the_great_recession
+		x = 24
+		y = 0
+		icon = GFX_focus_generic
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #mass firings, including all sectorials; leads to tophat taking over path & yoyleton
+		id = YFC_focus_mass_firings
+		relative_position_id = YFC_focus_the_great_recession
+		x = -3
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_the_great_recession }
+		mutually_exclusive = { focus = YFC_focus_company_restructuring }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = YFC_focus_company_restructuring
+		relative_position_id = YFC_focus_the_great_recession
+		x = 3
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_the_great_recession }
+		mutually_exclusive = { focus = YFC_focus_mass_firings }
+		
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = YFC_focus_close_the_markets
+		relative_position_id = YFC_focus_the_great_recession
+		x = 0
+		y = 2
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_the_great_recession }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #coiny embargoes
+		id = YFC_focus_the_second_embargo
+		relative_position_id = YFC_focus_close_the_markets
+		x = 0
+		y = 1.5
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_close_the_markets }
+
+		cost = 3
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #coiny embargoes
+		id = YFC_focus_grow_closer_ties
+		relative_position_id = YFC_focus_the_second_embargo
+		x = 0
+		y = 1.5
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_the_second_embargo }
 
 		cost = 3
 		completion_reward = {
