@@ -32,6 +32,15 @@ on_actions = {
                     }
                     country_event = GOI_event.9
                 }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.35
+                        days = 30
+                        random_days = 10
+                        random_hours = 12
+                    }
+                }
                 if = {
                     limit = { EMP = { is_ai = no } }
                     GTR = { change_tag_from = EMP }

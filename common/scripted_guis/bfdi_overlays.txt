@@ -3,26 +3,38 @@ scripted_gui = {
         window_name = "topbar_overlay_container"
         parent_window_token = top_bar
         context_type = player_context
-        visible = { tag = GOI }
+        visible = {
+			tag = GOI
+			is_debug = no
+		}
     }
 
     BFDI_topbar_notifications_overlay = {
         window_name = "topbar_notifications_overlay_container"
         context_type = player_context
-        visible = { tag = GOI }
+        visible = {
+			tag = GOI
+			is_debug = no
+		}
     }
 
     BFDI_pol_view_overlay = {
         window_name = "pol_view_overlay_container"
         parent_window_token = politics_tab
         context_type = player_context
-        visible = { tag = GOI }
+        visible = {
+			tag = GOI
+			is_debug = no
+		}
     }
 
     BFDI_pol_view_laws_overlay = {
         window_name = "pol_view_laws_overlay_container"
         parent_window_token = politics_tab
         context_type = player_context
-        visible = { tag = GOI }
+        visible = {
+			tag = GOI
+			is_debug = no
+		}
     }
 }
