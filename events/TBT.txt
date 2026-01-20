@@ -15,6 +15,7 @@ country_event = {
 				modifier = TBT_low_pop
 				scope = TBT
 			}
+			add_manpower = 2162
 		}
 		country_event = {
 			id = TBT_hidden_event.2
@@ -75,6 +76,7 @@ country_event = {
 				modifier = TBT_med_pop 
 				scope = TBT
 			}
+			add_manpower = 3198
 		}
 		184 = {
 			add_dynamic_modifier = { 

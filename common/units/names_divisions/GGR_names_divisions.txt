@@ -84,7 +84,7 @@ GGR_MOT_01 = {
 
 	can_use = { always = yes }
 
-	division_types = { "motorized"  }
+	division_types = { "motorized" }
 
 	fallback_name = "%d. Objektinfantry-Divizion (mot)"
 

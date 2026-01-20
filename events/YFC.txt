@@ -1867,6 +1867,14 @@ country_event = { #To the east
 
 		complete_national_focus = YFC_focus_see_to_the_eastern_front
 		add_stability = 0.05
+		hidden_effect = {
+			180 = {
+				transfer_state_to = TBT
+				add_core_of = TBT
+				remove_core_of = EMP
+				set_demilitarized_zone = no
+			}
+		}
 	}
 }
 

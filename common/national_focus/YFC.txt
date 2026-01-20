@@ -2085,9 +2085,35 @@ focus_tree = {
 			focus = YFC_focus_stalled_plans
 		}
 
-		cost = 3 #I'll update the costs later but I'm lazy rn
+		cost = 5 #I'll update the costs later but I'm lazy rn
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = { #All the vars of support
+				every_state = {
+					limit = {
+						OR = {
+							state = 229 #???
+							state = 232 #???
+							state = 228 #???
+							state = 225 #Portland
+							state = 230 #???
+							state = 226 #Ofalk
+							state = 192 #???
+							state = 231 #???
+							state = 227 #Ganymede
+						}
+					}
+					set_variable = {eastern_support_var = 0}
+					IF = {
+						limit = {has_dynamic_modifier = {modifier = TBT_low_pop}}
+						add_to_variable = { eastern_support_var = -0.1 }
+					}
+					ELSE_IF = { 
+						limit = {has_dynamic_modifier = {modifier = TBT_med_pop}}
+						add_to_variable = { eastern_support_var = -0.2 }
+					}
+				}
+			}
 		}
 	}
 

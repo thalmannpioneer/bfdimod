@@ -13,10 +13,51 @@ division_template = {
 units = {
 	division= {
         name = "1st Teardivison"
-        location = 5448 # Centrogoiky
+        location = 5448 # Farbeach
         division_template = "Teardivison"
         start_experience_factor = 0.2
         start_equipment_factor = 0.5
-        start_manpower_factor = 0.05
+        start_manpower_factor = 0.1
+    }
+    #Maybe remove these later idk I'm not in the mood to understand why the AI does not build divs
+    division= {
+        name = "2nd Teardivison"
+        location = 5448 # Farbeach
+        division_template = "Teardivison"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1
+    }
+    division= {
+        name = "3rd Teardivison"
+        location = 5448 # Farbeach
+        division_template = "Teardivison"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1
+    }
+    division= {
+        name = "4th Teardivison"
+        location = 5448 # Farbeach
+        division_template = "Teardivison"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1
+    }
+    division= {
+        name = "5th Teardivison"
+        location = 5448 # Farbeach
+        division_template = "Teardivison"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1
+    }
+    division= {
+        name = "6th Teardivison"
+        location = 5448 # Farbeach
+        division_template = "Teardivison"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.1
     }
 }

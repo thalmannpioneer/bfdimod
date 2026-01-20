@@ -1,0 +1,174 @@
+decision_YFC_eastern_category = {
+	YFC_eastern_Countdown = { #Countdown to the end
+		activation = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front	
+			#NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_mission_YFC_foster_Countdown  #Update later!!!
+		is_good = yes
+		days_mission_timeout = 30 #540
+		timeout_effect = {
+
+			hidden_effect = { #There has to be a better way but I'm dumb
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					IF = { #Check support for YFC
+						limit = { 
+							NOT = {is_owned_by = EMP is_owned_by = TBT is_owned_by = YFC}
+							check_variable = {eastern_support_var > 0}
+						}
+						transfer_state_to = YFC
+					}
+					ELSE_IF = { #Check support for TBT
+						limit = {
+							NOT = {is_owned_by = EMP is_owned_by = TBT is_owned_by = YFC}
+							check_variable = {eastern_support_var < 0}
+						}
+						transfer_state_to = TBT
+					}
+					ELSE_IF = { #Check support for a coinflip
+						limit = {
+							NOT = {is_owned_by = TBT is_owned_by = YFC}
+							check_variable = {eastern_support_var = 0}
+						}
+						random_list = {
+							50 = {
+								transfer_state_to = TBT
+							}
+							50 = {
+								transfer_state_to = YFC
+							}
+						}
+					}
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+
+	YFC_eastern_ports = { 
+		icon = GFX_decision_generic_naval
+		state_target = yes
+        targets = { 225 226 227 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			controls_state = FROM
+		}
+
+		available = {
+			controls_state = FROM
+			has_war = no
+		}
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		custom_cost_trigger = {
+			has_manpower > 1999
+			has_political_power > 99
+		}
+		custom_cost_text = decisions_cost_mp_2000_pp_100
+
+		fire_only_once = yes
+
+		days_remove = 180
+
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+				add_manpower = -2000
+			}
+		}
+
+		remove_effect = {
+			add_manpower = 1500
+			custom_effect_tooltip = l_money_gain_100K
+			add_to_variable = { money_amount = 1 }
+			FROM = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_victory_point > 0
+					}
+				}
+				IF = {
+					limit = {NOT = {is_core_of = YFC}}
+					add_compliance = 20
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 165
+				has_manpower > 3000
+			}
+		}
+	}
+
+	YFC_eastern_core = { 
+		icon = GFX_decision_generic_naval
+		state_target = yes
+        targets = { 229 232 230 228 225 230 226 192 231 227 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			controls_state = FROM
+			NOT = {is_core_of = FROM}
+		}
+
+		available = {
+			controls_state = FROM
+			FROM = {
+				compliance > 25
+				hidden_trigger = {
+					NOT = {is_core_of = YFC}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		remove_effect = {
+			FROM = {add_core_of = YFC}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 75
+			}
+		}
+	}
+}
