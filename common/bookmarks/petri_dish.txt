@@ -8,6 +8,8 @@ bookmarks = {
         effect = {
             randomize_weather = 2763 # frfr
 
+            add_threat = 10
+
             #wipe out dream island
             set_victory_points = {
                 province = 3551

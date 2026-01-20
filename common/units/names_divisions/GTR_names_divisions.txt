@@ -1,7 +1,7 @@
 #Have fun 
 
 GTR_Inf_01 = {
-	name = "INF TEMPLATE"
+	name = "Rifle Brigades"
 
 	for_countries = { GTR }
 
@@ -9,9 +9,18 @@ GTR_Inf_01 = {
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d TEMPLATE"
+	fallback_name = "%d Brigade"
 	ordered = {
-		1 = { "%dst TEMPLATE" }
+		1 = { "%dst 'Laboratory' Brigade" }
+		2 = { "%dst 'Progress' Brigade" }
+		3 = { "%dst 'Logarithmic' Brigade" }
+		4 = { "%dst 'Electron' Brigade" }
+		5 = { "%dst 'Bookcover' Brigade" }
+		6 = { "%dst 'Nerdball' Brigade" }
+		7 = { "%dst 'Derivative' Brigade" }
+		8 = { "%dst 'Gearband' Brigade" }
+		9 = { "%dst 'Recursive' Brigade" }
+		10 = { "%dst 'Neuroglia' Brigade" }
 	}
 }
 

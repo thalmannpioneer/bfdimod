@@ -960,6 +960,10 @@ SpriteTypes = {
 		textureFile = gfx/event_pictures/bfdinews34.dds
 	}
 	spriteType = {
+		name = GFX_bfdinews35
+		textureFile = gfx/event_pictures/bfdinews35.dds
+	}
+	spriteType = {
 		name = GFX_bfdinews_city
 		texturefile = gfx/event_pictures/bfdinews_city.dds
 	}

@@ -84,6 +84,16 @@ BFDI_game_start = {
             random_hours = 12
         }
     }
+
+    every_possible_country = {
+        limit = { is_ai = no }
+        news_event = {
+            id = bfdinews.35
+            days = 30
+            random_days = 10
+            random_hours = 12
+        }
+    }
 }
 
 
