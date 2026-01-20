@@ -27,7 +27,6 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_stability = 0.10
-			add_political_power = 100
 			country_event = YFC_event.1
 			hidden_effect = {
 				random_list = {
@@ -412,6 +411,7 @@ focus_tree = {
 				original_tag_to_check = BUN
 				add_opinion_modifier = { target = YFC modifier = large_decrease }
 			}
+			add_political_power = 25
 			hidden_effect = {
 				country_event = {
 					id = YFC_event.8
@@ -1259,6 +1259,20 @@ focus_tree = {
 				ELSE = {
 					#Pick the fallback event if somehow this breaks please ZDubbz
 				}
+				if = {
+					limit = {
+						OR = {
+							has_completed_focus = YFC_focus_bunch_fostered
+							has_completed_focus = YFC_focus_fully_cored
+							has_completed_focus = YFC_focus_stalled_plans
+						}
+					}
+					country_event = {
+						id = YFC_event.44
+						days = 7
+						random_hours = 24
+					}
+				}
 			}
 		}
 
@@ -1661,6 +1675,16 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {has_completed_focus = YFC_focus_population_boom}
+					country_event = {
+						id = YFC_event.44
+						days = 7
+						random_hours = 24
+					}
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1712,217 +1736,6 @@ focus_tree = {
 
 		ai_will_do = {
 			base = 10
-		}
-	}
-
-	#the game: teardroppers
-
-	focus = { #unlocked via event, opens the decisions mechanic
-		id = YFC_focus_see_to_the_eastern_front
-		relative_position_id = YFC_focus_population_boom
-		x = -3
-		y = 2
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_population_boom }
-		prerequisite = {
-			focus = YFC_focus_bunch_fostered
-			focus = YFC_focus_fully_cored
-			focus = YFC_focus_stalled_plans
-		}
-
-		cost = 3
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = YFC_focus_play_fast
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = -4
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
-		mutually_exclusive  = { focus = YFC_focus_play_smart }
-
-		cost = 3
-		completion_reward = {
-			#you attempt to take over the land swiftly without regard for t he inhabitants, for the most part
-			#lets you claim land a little quicker but costs a little more mp & money
-		}
-	}
-
-	focus = {
-		id = YFC_focus_anger_teardrop
-		relative_position_id = YFC_focus_play_fast
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
-
-		available = {
-			has_completed_focus = YFC_focus_play_fast
-		}
-
-		allow_branch = { has_completed_focus = YFC_focus_play_fast }
-
-		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 3
-		completion_reward = {
-			#send a letter of insult to teardrop to 'throw her off her game'
-		}
-	}
-
-	focus = { #claiming land pre-emptively to piss ppl off ig
-		id = YFC_focus_claim_excessive_land
-		relative_position_id = YFC_focus_anger_teardrop
-		x = 3
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_anger_teardrop }
-		cost = 3
-		completion_reward = {
-			#costs pp, basically you just say you have a lot of land but actually you dont, confuses ai i guess??
-		}
-	}
-
-	focus = {
-		id = YFC_focus_move_in_army
-		relative_position_id = YFC_focus_anger_teardrop
-		x = -3
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_anger_teardrop }
-		cost = 3
-		completion_reward = {
-			#you claim land even quicker, but this takes up some money
-		}
-	}
-
-	focus = {
-		id = YFC_focus_invest_into_infrastructure
-		relative_position_id = YFC_focus_move_in_army
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_move_in_army }
-		prerequisite = { focus = YFC_focus_procure_funds }
-
-		cost = 3
-		completion_reward = {
-			#you can buy infrastructure in newly acquired lands, making resistance lower and compl higher
-		}
-	}
-
-	focus = {
-		id = YFC_focus_procure_funds
-		relative_position_id = YFC_focus_play_fast
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 3
-		completion_reward = {
-			#you steal from the teardroppers, makes them mad, gives you cash
-			#the player can choose the amnt to steal
-		}
-	}
-
-	focus = {
-		id = YFC_focus_buy_ships
-		relative_position_id = YFC_focus_move_in_army
-		x = 2
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_move_in_army }
-		cost = 3
-		completion_reward = {
-			#buy ships from davidland!
-		}
-	}
-
-	focus = {
-		id = YFC_focus_undermine_legitimacy
-		relative_position_id = YFC_focus_claim_excessive_land
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_claim_excessive_land }
-		cost = 3
-		completion_reward = {
-			#gives player an event in which they have choicees on what to do to undermine teardrop
-			#costs teardrop some pp i guess
-		}
-	}
-
-	focus = {
-		id = YFC_focus_build_ports
-		relative_position_id = YFC_focus_claim_excessive_land
-		x = -2
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_claim_excessive_land }
-		cost = 3
-		completion_reward = {
-			#only available if you own a coastal province, builds ports
-		}
-	}
-
-	focus = {
-		id = YFC_focus_interfere_with_sea_routes
-		relative_position_id = YFC_focus_buy_ships
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_buy_ships }
-		prerequisite = { focus = YFC_focus_build_ports }
-		cost = 3
-		completion_reward = {
-			#opens a decision that lets you spend money to completely block teardropper movement 
-			#teardrop embargoes you
-		}
-	}
-
-	focus = {
-		id = YFC_focus_who_dares_wins
-		relative_position_id = YFC_focus_interfere_with_sea_routes
-		x = 0
-		y = 2
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
-		prerequisite = { focus = YFC_focus_invest_into_infrastructure }
-		prerequisite = { focus = YFC_focus_undermine_legitimacy }
-
-		cost = 3
-		completion_reward = {
-			#basically just a way of saying the tree is over, and that the player should lock in on capturing land
-			#demo ends here!!
-		}
-	}
-
-	focus = {
-		id = YFC_focus_play_smart
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
-		mutually_exclusive  = { focus = YFC_focus_play_fast }
-
-		cost = 3
-		completion_reward = {
-			
 		}
 	}
 
@@ -2170,6 +1983,14 @@ focus_tree = {
 					remove_state_core = 217
 					remove_state_core = 218
 				}
+				if = {
+					limit = {has_completed_focus = YFC_focus_population_boom}
+					country_event = {
+						id = YFC_event.44
+						days = 7
+						random_hours = 24
+					}
+				}
 			}
 
 			#Maybe an event idk
@@ -2233,6 +2054,252 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				if = {
+					limit = {has_completed_focus = YFC_focus_population_boom}
+					country_event = {
+						id = YFC_event.44
+						days = 7
+						random_hours = 24
+					}
+				}
+			}
+		}
+	}
+
+ #the game: teardroppers
+
+	focus = { #unlocked via event, opens the decisions mechanic
+		id = YFC_focus_see_to_the_eastern_front
+		relative_position_id = YFC_focus_population_boom
+		x = -3
+		y = 2
+		icon = GFX_focus_generic
+
+		allow_branch = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
+
+		prerequisite = { focus = YFC_focus_population_boom }
+		prerequisite = {
+			focus = YFC_focus_bunch_fostered
+			focus = YFC_focus_fully_cored
+			focus = YFC_focus_stalled_plans
+		}
+
+		cost = 3 #I'll update the costs later but I'm lazy rn
+		completion_reward = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = YFC_focus_play_fast
+		relative_position_id = YFC_focus_see_to_the_eastern_front
+		x = -4
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
+		mutually_exclusive  = { focus = YFC_focus_play_smart }
+
+		cost = 3
+		completion_reward = {
+			#you attempt to take over the land swiftly without regard for t he inhabitants, for the most part
+			#lets you claim land a little quicker but costs a little more mp & money
+
+			#Okay so the idea I have is that you gain support from these focuses and stall teardrop BUT the normal actions give less so you are banking in being fast or something
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = YFC_focus_anger_teardrop
+		relative_position_id = YFC_focus_play_fast
+		x = 4
+		y = 1
+		icon = GFX_focus_generic
+
+		available = {
+			has_completed_focus = YFC_focus_play_fast
+		}
+
+		allow_branch = { has_completed_focus = YFC_focus_play_fast }
+
+		prerequisite = { focus = YFC_focus_play_fast }
+		cost = 3
+		completion_reward = {
+			#send a letter of insult to teardrop to 'throw her off her game'
+
+			#How so?
+		}
+	}
+
+	focus = { #claiming land pre-emptively to piss ppl off ig
+		id = YFC_focus_claim_excessive_land
+		relative_position_id = YFC_focus_anger_teardrop
+		x = 3
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_anger_teardrop }
+
+		available = {
+			has_political_power > 100
+		}
+
+		cost = 3
+		completion_reward = {
+			#costs pp, basically you just say you have a lot of land but actually you dont, confuses ai i guess??
+			add_political_power = -100
+
+			#Gain more support in states
+		}
+	}
+
+	focus = {
+		id = YFC_focus_move_in_army
+		relative_position_id = YFC_focus_anger_teardrop
+		x = -3
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_anger_teardrop }
+		cost = 3
+		completion_reward = {
+			#you claim land even quicker, but this takes up some money
+		}
+	}
+
+	focus = {
+		id = YFC_focus_invest_into_infrastructure
+		relative_position_id = YFC_focus_move_in_army
+		x = -1
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_move_in_army }
+		prerequisite = { focus = YFC_focus_procure_funds }
+
+		cost = 3
+		completion_reward = {
+			#you can buy infrastructure in newly acquired lands, making resistance lower and compl higher
+		}
+	}
+
+	focus = {
+		id = YFC_focus_procure_funds
+		relative_position_id = YFC_focus_play_fast
+		x = -1
+		y = 1
+		icon = GFX_focus_generic
+
+		allow_branch = { has_completed_focus = YFC_focus_play_fast }
+
+		prerequisite = { focus = YFC_focus_play_fast }
+		cost = 3
+		completion_reward = {
+			#you steal from the teardroppers, makes them mad, gives you cash
+			#the player can choose the amnt to steal
+		}
+	}
+
+	focus = {
+		id = YFC_focus_buy_ships
+		relative_position_id = YFC_focus_move_in_army
+		x = 2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_move_in_army }
+		cost = 3
+		completion_reward = {
+			#buy ships from davidland!
+
+			#okay but why
+		}
+	}
+
+	focus = {
+		id = YFC_focus_undermine_legitimacy
+		relative_position_id = YFC_focus_claim_excessive_land
+		x = 1
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_claim_excessive_land }
+		cost = 3
+		completion_reward = {
+			#gives player an event in which they have choicees on what to do to undermine teardrop
+			#costs teardrop some pp i guess
+
+			#Would give minor gain to support in some states
+		}
+	}
+
+	focus = {
+		id = YFC_focus_build_ports
+		relative_position_id = YFC_focus_claim_excessive_land
+		x = -2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_claim_excessive_land }
+		cost = 3
+		completion_reward = {
+			#only available if you own a coastal province, builds ports
+
+			#This will unlock the decisions that I already put
+		}
+	}
+
+	focus = {
+		id = YFC_focus_interfere_with_sea_routes
+		relative_position_id = YFC_focus_buy_ships
+		x = 1
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
+		prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
+		cost = 3
+		completion_reward = {
+			#opens a decision that lets you spend money to completely block teardropper movement 
+			#teardrop embargoes you
+
+			#The decision would most likely block actions for 1-2 months
+		}
+	}
+
+	focus = {
+		id = YFC_focus_who_dares_wins
+		relative_position_id = YFC_focus_interfere_with_sea_routes
+		x = 0
+		y = 2
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
+
+		cost = 3
+		completion_reward = {
+			#basically just a way of saying the tree is over, and that the player should lock in on capturing land
+			#demo ends here!!
+
+			#This might just be the focus that autocompletes after the great game is done
+		}
+	}
+
+	focus = {
+		id = YFC_focus_play_smart
+		relative_position_id = YFC_focus_see_to_the_eastern_front
+		x = 4
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
+		mutually_exclusive  = { focus = YFC_focus_play_fast }
+
+		cost = 3
+		completion_reward = {
+			
 		}
 	}
 

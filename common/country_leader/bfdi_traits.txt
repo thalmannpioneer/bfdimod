@@ -104,7 +104,7 @@ leader_traits = {
         sprite = 13
 
         equipment_capture = 0.15
-        army_morale_factor = 0.1
+        army_morale_factor = 0.25
         army_speed_factor = 0.05
         attrition = -0.5
         ai_focus_aggressive_factor = 0.5

@@ -1238,6 +1238,21 @@ country_event = { #YFC Sell
 		ai_chance = {
 			base = 0
 			modifier = {
+				OR = {
+					check_variable = { selling_item = 0 }
+					check_variable = { selling_item = 1 }
+					check_variable = { selling_item = 2 }
+					check_variable = { selling_item = 3 }
+				}
+				has_equipment = {infantry_equipment < 100}
+				add = 2
+		 	}
+			modifier = {
+				check_variable = { selling_item = 4 } 
+				has_equipment = {support_equipment < 100}
+				add = 2
+		 	}
+			modifier = {
 				check_variable = { money_amount > trade_cost_temp_var } 
 				add = 2
 		 	}
@@ -1247,7 +1262,7 @@ country_event = { #YFC Sell
 		 	}
 			modifier = {
 				check_variable = { money_amount < 10 } 
-				add = 1
+				add = -1
 		 	}
 			modifier = {
 				check_variable = { money_amount < 0 } 
@@ -1838,6 +1853,23 @@ country_event = {
 	}
 }
 
+country_event = { #To the east
+	id = YFC_event.44
+	title = YFC_event.44.t
+	desc = YFC_event.44.desc
+	picture = GFX_YFC_event5
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_event.44.a
+
+		complete_national_focus = YFC_focus_see_to_the_eastern_front
+		add_stability = 0.05
+	}
+}
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################
@@ -2322,6 +2354,7 @@ country_event = {
 				add_country_leader_trait = insurgent_leader
 				country_lock_all_division_template = yes
 				set_cosmetic_tag = BUN_revolt
+				add_offsite_building = { type = arms_factory level = 2 }
 			}
 			country_event = {
 				id = YFC_hidden_event.1
@@ -2372,7 +2405,7 @@ country_event = {
 				country_lock_all_division_template = yes
 				set_cosmetic_tag = BUN_revolt
 				retire_character = BUN_blocky
-				hidden_effect = {add_offsite_building = { type = arms_factory level = 1 }}
+				add_offsite_building = { type = arms_factory level = 1 }
 			}
 			BUN = { change_tag_from = YFC }
 			goto_state = 85
@@ -2476,7 +2509,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2484,7 +2517,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2500,7 +2533,7 @@ country_event = {
 					id = 1967
 				}
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.35 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
@@ -2531,6 +2564,14 @@ country_event = {
 					prioritize_location = 4572
 					id = 4572
 				}
+				create_unit = {
+					division = "name = \"\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.15 start_experience_factor = 0.05"
+					owner = YFC
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 5679
+					id = 1967
+				}
 				add_dynamic_modifier = {
 					modifier = BUN_revolt_support
 					scope = YFC
@@ -2540,7 +2581,7 @@ country_event = {
 			212 = {
 				add_resistance = -50
 				create_unit = {
-					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.25 start_experience_factor = 0.05"
+					division = "name = \"Insurgents\" division_template = \"Armed Insurgents\" start_equipment_factor = 0.5 start_experience_factor = 0.05"
 					owner = BUN
 					count = 1
 					allow_spawning_on_enemy_provs = yes
