@@ -676,6 +676,7 @@ focus_tree = {
 			}
 		}
 		allow_branch = {
+			has_completed_focus = YFC_focus_a_look_inward
 			NOT = {country_exists = GGR} 
 			country_exists = SRI
 			SRI = {has_war = no}
@@ -987,7 +988,7 @@ focus_tree = {
 				type = infantry_equipment
 				amount = 1000
 			}
-			add_manpower = 5000
+			add_manpower = 10000
 			add_war_support = 0.01
 		}
 
@@ -1164,7 +1165,7 @@ focus_tree = {
 			hidden_effect = {
 				IF = {
 					limit = {is_ai = yes}
-					add_to_variable = { money_amount = 7 } #AI cheating? In my Hoi4 mod? hmmmmmmmmmm
+					add_to_variable = { money_amount = 10 } #AI cheating? In my Hoi4 mod? hmmmmmmmmmm
 				}
 				IF = {
 					limit = {
@@ -2103,14 +2104,16 @@ focus_tree = {
 							state = 227 #Ganymede
 						}
 					}
-					set_variable = {eastern_support_var = 0}
 					IF = {
 						limit = {has_dynamic_modifier = {modifier = TBT_low_pop}}
-						add_to_variable = { eastern_support_var = -0.1 }
+						set_variable = {eastern_support_var = -0.1}
 					}
 					ELSE_IF = { 
 						limit = {has_dynamic_modifier = {modifier = TBT_med_pop}}
-						add_to_variable = { eastern_support_var = -0.2 }
+						set_variable = {eastern_support_var = -0.2}
+					}
+					ELSE = {
+						set_variable = {eastern_support_var = 0}
 					}
 				}
 			}

@@ -161,6 +161,36 @@ decision_YFC_trade_category= {
 		}
 	}
 
+	YFC_Trade_Child_Labor = { #Why yes a great idea!
+		icon = GFX_decisions_YFC_trade_child_labor
+        
+		visible = {
+			has_completed_focus = YFC_focus_industrialize_or_die
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		complete_effect = {
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
+			add_manpower = 1000
+			add_stability = -0.1
+		}
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+				add = 10
+                check_variable = { money_amount < 10 } 
+			}
+			modifier = {
+				add = 10
+                has_manpower < 500
+			}
+		}
+	}
+
 	YFC_trade_AIUSE_SellRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
 		icon = GFX_decision_SOV_stalinist_state
 

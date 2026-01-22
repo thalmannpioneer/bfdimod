@@ -1927,7 +1927,7 @@ country_event = {
 
 	option = {
 		name = YFC_borderwars.3.a			
-		army_experience = 2
+		army_experience = 5
 	}
 }
 
@@ -2078,6 +2078,70 @@ country_event = {
 				}
 			}
 		}	
+	}
+}
+
+country_event = {
+	#Eastern attacker wins view
+	id = YFC_borderwars.5
+	title = YFC_borderwars.5.t
+	desc = YFC_borderwars.5.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.5.a
+		custom_effect_tooltip = l_YFC_eastern_gainall_10
+		army_experience = 5
+	}
+}
+
+country_event = {
+	#Eastern attacker loses view
+	id = YFC_borderwars.6
+	title = YFC_borderwars.6.t
+	desc = YFC_borderwars.6.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.6.a
+		custom_effect_tooltip = l_YFC_eastern_borderwar_loss
+		army_experience = 2
+	}
+}
+
+country_event = {
+	#Eastern defender wins view
+	id = YFC_borderwars.7
+	title = YFC_borderwars.7.t
+	desc = YFC_borderwars.7.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.7.a
+		custom_effect_tooltip = l_YFC_eastern_borderwar_win
+		army_experience = 5
+	}
+}
+
+country_event = {
+	#Eastern defender loses view
+	id = YFC_borderwars.8
+	title = YFC_borderwars.8.t
+	desc = YFC_borderwars.8.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.8.a
+		custom_effect_tooltip = l_YFC_eastern_loseall_10
+		army_experience = 2
 	}
 }
 
@@ -2340,9 +2404,9 @@ country_event = {
 		custom_effect_tooltip = l_YFC_BUN_8
 		add_war_support = -0.2
 		add_stability = -0.05
-		add_political_power = -200
-		add_threat = 0.5
+		add_political_power = -150
 		hidden_effect = {
+			add_threat = 0.5
 			add_state_claim = 85
 			add_state_claim = 212
 			if = {

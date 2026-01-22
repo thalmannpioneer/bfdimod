@@ -120,7 +120,7 @@ decision_BUN_Revolt_category = {
 
 		fire_only_once = no
 		cost = 25
-		days_remove = 35
+		days_remove = 15
 		days_re_enable = 50
 
 		available = {

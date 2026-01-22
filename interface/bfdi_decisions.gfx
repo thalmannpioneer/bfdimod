@@ -480,6 +480,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_YFC_trade_child_labor"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_trade_child_labor.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decision_category_break_bunch"
 		textureFile = "gfx/interface/decisions/decision_category_break_bunch.dds"
 	}

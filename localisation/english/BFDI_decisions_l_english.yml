@@ -164,7 +164,7 @@
  YFC_Trade_Tech: "Purchase §4Foreign Scientists§!"
  YFC_Trade_GMD_Guns: "Exploit §8Coiny's Factories§!"
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
- YFC_Trade_ports: "Build Port in §Y[123.GetName]§!"
+ YFC_Trade_Child_Labor: "Employ §RChild Labor§!"
 
  decision_YFC_sector_category: "Our Benefactors"
  l_decisions_sector_title: "§YOur Benefactors§!"
@@ -229,6 +229,8 @@
  YFC_BUN_mobilize_reserves: "Mobilize §RReserves§!"
  YFC_BUN_Ceasefire: "Accept §RDefeat§!"
  YFC_BUN_Ceasefire_desc: "Despite all of our efforts, with some of our core territory under Neo-Bunch control, it is time to accept their independence. It may sting and lead to issues later on, but losing the Company would be much worse."
+
+ YFC_eastern_ports: "Build Port in §Y[FROM.GetName]§!"
 
  decision_CRN_BUN_category: "Building The Bunch"
  decision_CRN_BUN_category_desc: "Despite Yellow Face's claims, there is still a future for the Bunch! We must aid rebel groups to hopefully create a revolt against The Company!"

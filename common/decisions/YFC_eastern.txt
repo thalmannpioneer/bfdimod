@@ -171,4 +171,224 @@ decision_YFC_eastern_category = {
 			}
 		}
 	}
+
+	YFC_eastern_raid = { 
+		icon = GFX_decision_generic_naval
+        
+		visible = {
+			OR = {
+				AND = {
+					YFC = {controls_state = 216}
+					TBT = {controls_state = 232}
+				}
+				AND = {
+					YFC = {controls_state = 216}
+					TBT = {controls_state = 230}
+				}
+				AND = {
+					YFC = {controls_state = 232}
+					TBT = {controls_state = 229}
+				}
+				AND = {
+					YFC = {controls_state = 229}
+					TBT = {controls_state = 180}
+				}
+				AND = {
+					YFC = {controls_state = 232}
+					TBT = {controls_state = 230}
+				}
+				AND = {
+					YFC = {controls_state = 230}
+					TBT = {controls_state = 232}
+				}
+			}
+		}
+
+		available = {
+			has_border_war = no
+			hidden_trigger = {
+				OR = {
+					AND = {
+						YFC = {controls_state = 216}
+						TBT = {controls_state = 232}
+					}
+					AND = {
+						YFC = {controls_state = 216}
+						TBT = {controls_state = 230}
+					}
+					AND = {
+						YFC = {controls_state = 232}
+						TBT = {controls_state = 229}
+					}
+					AND = {
+						YFC = {controls_state = 229}
+						TBT = {controls_state = 180}
+					}
+					AND = {
+						YFC = {controls_state = 232}
+						TBT = {controls_state = 230}
+					}
+					AND = {
+						YFC = {controls_state = 230}
+						TBT = {controls_state = 232}
+					}
+				}
+			}
+		}
+
+		cost = 25
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 60
+
+		remove_effect = {
+			IF = {
+                limit = {
+					YFC = {controls_state = 229}
+					TBT = {controls_state = 180}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 229
+                        num_provinces = 1
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 180
+                        num_provinces = 1
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+            }
+			ELSE_IF = {
+				limit = {
+					YFC = {controls_state = 232}
+					TBT = {controls_state = 229}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 232
+                        num_provinces = 2
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 229
+                        num_provinces = 2
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+			}
+			ELSE_IF = {
+				limit = {
+					YFC = {controls_state = 230}
+					TBT = {controls_state = 232}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 230
+                        num_provinces = 2
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 232
+                        num_provinces = 2
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+			}
+			ELSE_IF = {
+				limit = {
+					YFC = {controls_state = 232}
+					TBT = {controls_state = 230}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 232
+                        num_provinces = 2
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 230
+                        num_provinces = 2
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+			}
+			ELSE_IF = {
+				limit = {
+					YFC = {controls_state = 216}
+					TBT = {controls_state = 230}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 216
+                        num_provinces = 2
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 230
+                        num_provinces = 2
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+			}
+			ELSE_IF = {
+				limit = {
+					YFC = {controls_state = 216}
+					TBT = {controls_state = 232}
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 216
+                        num_provinces = 2
+                        on_win = YFC_borderwars.5
+                        on_lose = YFC_borderwars.6
+                        modifier = 0.5
+                    }
+                    defender = {
+                        state = 230
+                        num_provinces = 2
+                        on_win = YFC_borderwars.7
+                        on_lose = YFC_borderwars.8
+						modifier = 0.5
+                    }
+                }
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 50
+				has_manpower > 1000
+			}
+		}
+	}
 }
