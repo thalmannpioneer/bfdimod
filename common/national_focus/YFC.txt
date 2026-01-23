@@ -2194,6 +2194,8 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_anger_teardrop }
 		cost = 3
 		completion_reward = {
+			add_manpower = 5000 #I'll either do this or maybe unlock the decision that cost manpower
+
 			#you claim land even quicker, but this takes up some money
 		}
 	}

@@ -230,7 +230,15 @@
  YFC_BUN_Ceasefire: "Accept §RDefeat§!"
  YFC_BUN_Ceasefire_desc: "Despite all of our efforts, with some of our core territory under Neo-Bunch control, it is time to accept their independence. It may sting and lead to issues later on, but losing the Company would be much worse."
 
- YFC_eastern_ports: "Build Port in §Y[FROM.GetName]§!"
+ decision_YFC_eastern_category: "The Great Eastern Game"
+ YFC_eastern_Countdown: "§YThe Great Eastern Game§!"
+ YFC_eastern_Countdown_desc: "We must hurry to capture as much land in the east as possible!"
+ YFC_eastern_invest: "§GInvest§! in §Y[FROM.GetName]§!"
+ YFC_eastern_manpower: "§GDeploy Soldiers§! in §Y[FROM.GetName]§!"
+ YFC_eastern_seize: "§RSeize§! §Y[FROM.GetName]§!"
+ YFC_eastern_ports: "§CBuild Port§! in §Y[FROM.GetName]§!"
+ YFC_eastern_core: "§YCore§! §Y[FROM.GetName]§!"
+ YFC_eastern_raid: "§RClash§! in the §YNorthern Front§!"
 
  decision_CRN_BUN_category: "Building The Bunch"
  decision_CRN_BUN_category_desc: "Despite Yellow Face's claims, there is still a future for the Bunch! We must aid rebel groups to hopefully create a revolt against The Company!"

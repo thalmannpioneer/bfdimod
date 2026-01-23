@@ -789,7 +789,7 @@ decision_YFC_BUN_category = {
 
 		modifier = {
 			resistance_growth = -0.25
-			weekly_manpower = 100
+			weekly_manpower = 200
 		}
 
 		ai_will_do = {

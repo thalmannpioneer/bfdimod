@@ -359,8 +359,8 @@ decision_YFC_sector_category= { #Watermelon
 		}
 
 		remove_effect = {
-            custom_effect_tooltip = l_money_gain_100K
-		    add_to_variable = { money_amount = 1 }
+            custom_effect_tooltip = l_money_gain_500K
+		    add_to_variable = { money_amount = 5 }
         }
 
 		ai_will_do = {

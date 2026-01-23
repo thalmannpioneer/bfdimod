@@ -1,8 +1,10 @@
-decision_YFC_eastern_category = {
-	YFC_eastern_Countdown = { #Countdown to the end
+decision_TBT_eastern_category = {
+	TBT_eastern_Countdown = {
 		activation = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front	
-			#NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+			YFC = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front	
+				#NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+			}
 		}
 		available = {
 			always = no
@@ -11,56 +13,11 @@ decision_YFC_eastern_category = {
 		is_good = yes
 		days_mission_timeout = 540 #540
 		timeout_effect = {
-			hidden_effect = { #There has to be a better way but I'm dumb
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					IF = { #Check support for YFC
-						limit = { 
-							NOT = {is_controlled_by = TBT is_controlled_by = YFC}
-							check_variable = {eastern_support_var > 0}
-						}
-						transfer_state_to = YFC
-					}
-					ELSE_IF = { #Check support for TBT
-						limit = {
-							NOT = {is_controlled_by = TBT is_controlled_by = YFC}
-							check_variable = {eastern_support_var < 0}
-						}
-						transfer_state_to = TBT
-					}
-					ELSE_IF = { #Check support for a coinflip
-						limit = {
-							NOT = {is_controlled_by = TBT is_controlled_by = YFC}
-							check_variable = {eastern_support_var = 0}
-						}
-						random_list = {
-							50 = {
-								transfer_state_to = TBT
-							}
-							50 = {
-								transfer_state_to = YFC
-							}
-						}
-					}
-					set_demilitarized_zone = no
-				}
-			}
+
 		}
 	}
 
-	YFC_eastern_ports = { 
+	TBT_eastern_ports = { 
 		icon = GFX_decision_SWE_set_navy_budget
 		state_target = yes
         targets = { 225 226 227 }
@@ -127,41 +84,35 @@ decision_YFC_eastern_category = {
 		}
 	}
 
-	YFC_eastern_invest = { 
+	TBT_eastern_media = { 
 		icon = GFX_decision_generic_fundraising
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			YFC = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
 			FROM = {
 				is_controlled_by = EMP
 				num_owned_neighbour_states = {
 					owner = ROOT
 					count > 0
 				}
-				check_variable = {eastern_support_var < 0.9}
+				check_variable = {eastern_support_var > -0.9}
 			}
 		}
 
-		custom_cost_trigger = {
-			check_variable = { money_amount > 0.5 }
-		}
-		custom_cost_text = decisions_cost_money_50k
+		cost = 50
 
 		highlight_states = {
 			highlight_state_targets = {state = FROM}
 		}
 
-		cost = 0
-
 		fire_only_once = no
 
 		complete_effect = {
 			hidden_effect = {
-				FROM = {add_to_variable = { eastern_support_var = 0.1 }}
-				subtract_from_variable = { money_amount = 0.5 }
+				FROM = {add_to_variable = { eastern_support_var = -0.1 }}
 			}	
         }
 
@@ -169,26 +120,26 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 10
-				check_variable = { money_amount > 10 }
+				has_political_power > 65
 			}
 		}
 	}
 
-	YFC_eastern_manpower = { 
+	TBT_eastern_manpower = { 
 		icon = GFX_decision_generic_fundraising
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			YFC = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
 			FROM = {
 				is_controlled_by = EMP
 				num_owned_neighbour_states = {
 					owner = ROOT
 					count > 0
 				}
-				check_variable = {eastern_support_var < 0.9}
+				check_variable = {eastern_support_var > -0.9}
 			}
 		}
 
@@ -208,7 +159,7 @@ decision_YFC_eastern_category = {
 		complete_effect = {
 			hidden_effect = {
 				add_manpower = -250
-				FROM = {add_to_variable = { eastern_support_var = 0.1 }}
+				FROM = {add_to_variable = { eastern_support_var = -0.1 }}
 			}	
         }
 
@@ -221,28 +172,22 @@ decision_YFC_eastern_category = {
 		}
 	}
 
-	YFC_eastern_seize = { 
+	TBT_eastern_seize = { 
 		icon = GFX_decision_generic_fundraising
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			YFC = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
 			FROM = { 
-				check_variable = {eastern_support_var > 0.75}
+				check_variable = {eastern_support_var < -0.75}
 				is_controlled_by = EMP
 			}
 		}
 
 		available = {
-			FROM = { 
-				custom_trigger_tooltip = {
-					tooltip = l_decisions_YFC_eastern_seize
-					check_variable = {eastern_support_var > 0.75}
-				}
-				is_controlled_by = EMP
-			}
+			FROM = { check_variable = {eastern_support_var < -0.75}}
 		}
 
 		cost = 25
@@ -250,19 +195,19 @@ decision_YFC_eastern_category = {
 		fire_only_once = no
 		days_remove = 60
 
+		complete_effect = {
+			hidden_effect = {
+				FROM = {add_to_variable = { eastern_support_var = -0.1 }}
+			}	
+        }
+
 		cancel_trigger = {
 			FROM = { 
 				custom_trigger_tooltip = {
 					tooltip = l_decisions_YFC_eastern_lose
-					check_variable = {eastern_support_var < 0.75}
+					check_variable = {eastern_support_var > -0.75}
 				}
 			}
-        }
-
-		complete_effect = {
-			hidden_effect = {
-				FROM = {add_to_variable = { eastern_support_var = 0.1 }}
-			}	
         }
 
 		remove_effect = {
@@ -278,7 +223,7 @@ decision_YFC_eastern_category = {
 		}
 	}
 
-	YFC_eastern_core = { 
+	TBT_eastern_core = { 
 		icon = GFX_decision_generic_form_nation
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
@@ -324,7 +269,7 @@ decision_YFC_eastern_category = {
 		}
 	}
 
-	YFC_eastern_raid = { 
+	TBT_eastern_raid = { 
 		icon = GFX_decision_generic_ignite_civil_war
         
 		visible = {
@@ -402,14 +347,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 229
+                        state = 180
                         num_provinces = 1
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 180
+                        state = 229
                         num_provinces = 1
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8
@@ -425,14 +370,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 232
+                        state = 229
                         num_provinces = 2
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 229
+                        state = 232
                         num_provinces = 2
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8
@@ -448,14 +393,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 230
+                        state = 232
                         num_provinces = 2
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 232
+                        state = 230
                         num_provinces = 2
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8
@@ -471,14 +416,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 232
+                        state = 230
                         num_provinces = 2
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 230
+                        state = 232
                         num_provinces = 2
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8
@@ -494,14 +439,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 216
+                        state = 230
                         num_provinces = 2
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 230
+                        state = 216
                         num_provinces = 2
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8
@@ -517,14 +462,14 @@ decision_YFC_eastern_category = {
                 start_border_war = {
                     change_state_after_war = no
                     attacker = {
-                        state = 216
+                        state = 232
                         num_provinces = 2
                         on_win = YFC_borderwars.5
                         on_lose = YFC_borderwars.6
                         modifier = 0.5
                     }
                     defender = {
-                        state = 232
+                        state = 216
                         num_provinces = 2
                         on_win = YFC_borderwars.7
                         on_lose = YFC_borderwars.8

@@ -17,6 +17,8 @@
  congress_goodend: "Stability established in Casland"
  cw_done: "Casland's Government is Stable"
  l_decisions_YFC_divs: "No Active Mercenaries"
+ l_decisions_YFC_eastern_seize: "Our control in the state is §Yover 75%§!"
+ l_decisions_YFC_eastern_lose: "Our control in the state §Rfalls under 75%§!"
  l_decisions_YFC_raids_GGR_3: "Have §Y3§! successful raids against Großgoikysreich!"
  l_decisions_YFC_raids_GGR_5: "Have §Y5§! successful raids against Großgoikysreich!"
  l_decisions_YFC_raids_GGR_7: "Have §Y7§! successful raids against Großgoikysreich!"
@@ -40,11 +42,13 @@
  decision_cost_ie_1000_blocked: "£infantry_equipment_text_icon §R1000§!"
  decision_cost_ie_200: "£infantry_equipment_text_icon §Y200§!"
  decision_cost_ie_200_blocked: "£infantry_equipment_text_icon §R200§!"
+ decisions_cost_mp_250: "£manpower_texticon §Y250§!"
+ decisions_cost_mp_250_blocked: "£manpower_texticon §R250§!"
  decisions_cost_mp_500_pp_50: "£manpower_texticon §Y500§!  £pol_power  §Y50§!"
  decisions_cost_mp_500_pp_50_blocked: "£manpower_texticon §R500§!  £pol_power  §R50§!"
  decisions_cost_mp_2000_pp_100: "£manpower_texticon §Y2000§!  £pol_power  §Y100§!"
  decisions_cost_mp_2000_pp_100_blocked: "£manpower_texticon §R2000§!  £pol_power  §R100§!"
- 
+
  decisions_cost_money_50k: "£GFX_dollar_texticon §Y50K§!"
  decisions_cost_money_50k_blocked: "£GFX_dollar_texticon §R50K§!"
  decisions_cost_money_100k: "£GFX_dollar_texticon §Y100K§!"
