@@ -629,6 +629,24 @@ on_actions = {
         }
     }
 
+    on_weekly_YFC = { #EASTERN MECHANIC
+        effect = {
+            if = {
+                limit = { has_completed_focus = YFC_focus_see_to_the_eastern_front}
+                if = {
+                    limit = { NOT = {has_country_flag = eastern_action_ready}}
+                    set_country_flag = eastern_action_ready
+                }
+                TBT = {
+                    if = {
+                        limit = { NOT = {has_country_flag = eastern_action_ready}}
+                        set_country_flag = eastern_action_ready
+                    }
+                }
+            }
+        }
+    }
+
     on_weekly_GTR = { #PROJECT 1 MECHANIC
         effect = {
             if = {

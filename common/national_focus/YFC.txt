@@ -2086,7 +2086,7 @@ focus_tree = {
 			focus = YFC_focus_stalled_plans
 		}
 
-		cost = 5 #I'll update the costs later but I'm lazy rn
+		cost = 5
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 			hidden_effect = { #All the vars of support
@@ -2106,15 +2106,26 @@ focus_tree = {
 					}
 					IF = {
 						limit = {has_dynamic_modifier = {modifier = TBT_low_pop}}
-						set_variable = {eastern_support_var = -0.1}
+						set_variable = {eastern_support_var = 0}
+						add_to_variable = { eastern_support_var = -0.2 }
 					}
 					ELSE_IF = { 
 						limit = {has_dynamic_modifier = {modifier = TBT_med_pop}}
-						set_variable = {eastern_support_var = -0.2}
+						set_variable = {eastern_support_var = 0}
+						add_to_variable = { eastern_support_var = -0.5 }
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}
 					}
+				}
+				YFC = {set_variable = {eastern_borderwar_var = 0.5}}
+				TBT = {set_variable = {eastern_borderwar_var = 0.5}}
+				IF = {
+					limit = {
+						is_ai = yes
+						check_variable = {money_amount < 10}
+					}
+					add_to_variable = { money_amount = 10 }
 				}
 			}
 		}
@@ -2130,14 +2141,16 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
 		mutually_exclusive  = { focus = YFC_focus_play_smart }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#you attempt to take over the land swiftly without regard for t he inhabitants, for the most part
-			#lets you claim land a little quicker but costs a little more mp & money
-
+			custom_effect_tooltip = l_YFC_eastern_fast
 			#Okay so the idea I have is that you gain support from these focuses and stall teardrop BUT the normal actions give less so you are banking in being fast or something
 			mark_focus_tree_layout_dirty = yes
 		}
+
+		ai_will_do = {
+			base = 5
+		}	
 	}
 
 	focus = {
@@ -2154,11 +2167,18 @@ focus_tree = {
 		allow_branch = { has_completed_focus = YFC_focus_play_fast }
 
 		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 3
+		cost = 5
 		completion_reward = {
+			add_political_power = 25
+			country_event = {
+				id = YFC_event.45
+				hours = 1
+				random_hours = 2
+			}
+
 			#send a letter of insult to teardrop to 'throw her off her game'
 
-			#How so?
+			#How so? ZDubbz
 		}
 	}
 
@@ -2172,15 +2192,31 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_anger_teardrop }
 
 		available = {
-			has_political_power > 100
+			has_political_power > 50
 		}
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#costs pp, basically you just say you have a lot of land but actually you dont, confuses ai i guess??
-			add_political_power = -100
-
-			#Gain more support in states
+			add_political_power = -50
+			custom_effect_tooltip = l_YFC_eastern_gainall_10
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.1 }
+				}
+			}
 		}
 	}
 
@@ -2192,11 +2228,28 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_anger_teardrop }
-		cost = 3
+		cost = 5
 		completion_reward = {
-			add_manpower = 5000 #I'll either do this or maybe unlock the decision that cost manpower
-
-			#you claim land even quicker, but this takes up some money
+			add_manpower = 5000
+			custom_effect_tooltip = l_YFC_eastern_gainall_5
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.05 }
+				}
+			}
 		}
 	}
 
@@ -2210,9 +2263,9 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_move_in_army }
 		prerequisite = { focus = YFC_focus_procure_funds }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#you can buy infrastructure in newly acquired lands, making resistance lower and compl higher
+			custom_effect_tooltip = l_YFC_eastern_statebuild
 		}
 	}
 
@@ -2226,8 +2279,10 @@ focus_tree = {
 		allow_branch = { has_completed_focus = YFC_focus_play_fast }
 
 		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 3
+		cost = 5
 		completion_reward = {
+			#Future me add an event here
+
 			#you steal from the teardroppers, makes them mad, gives you cash
 			#the player can choose the amnt to steal
 		}
@@ -2241,11 +2296,41 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_move_in_army }
-		cost = 3
-		completion_reward = {
-			#buy ships from davidland!
 
-			#okay but why
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = l_money_cost_300K
+                check_variable = { money_amount > 3 }
+            }
+
+		}
+
+		cost = 5
+		completion_reward = {
+			#Future me add an event here
+			add_political_power = 50
+			subtract_from_variable = { money_amount = -3 }
+			IF = {
+				limit = {
+					country_exists = DAV
+					DAV = {has_war = no}
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 20
+					producer = DAV
+				}
+			}
+			ELSE = {
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 20
+					producer = SOS
+				}
+			}
+
+			#So I may make this where the player does not gain warships but smaller ships or something
+			#More so that YFC's navy would be stuck without a port at this rate
 		}
 	}
 
@@ -2257,12 +2342,27 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_claim_excessive_land }
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#gives player an event in which they have choicees on what to do to undermine teardrop
-			#costs teardrop some pp i guess
-
-			#Would give minor gain to support in some states
+			custom_effect_tooltip = l_YFC_eastern_gainall_10
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.1 }
+				}
+			}
 		}
 	}
 
@@ -2274,11 +2374,18 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_claim_excessive_land }
-		cost = 3
-		completion_reward = {
-			#only available if you own a coastal province, builds ports
 
-			#This will unlock the decisions that I already put
+		available = {
+			OR = {
+				controls_state = 225
+				controls_state = 226
+				controls_state = 227
+			}
+		}
+
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_eastern_statebuild
 		}
 	}
 
@@ -2291,10 +2398,11 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
 		prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
-		cost = 3
+		cost = 7
 		completion_reward = {
 			#opens a decision that lets you spend money to completely block teardropper movement 
 			#teardrop embargoes you
+			#Future me add an event here
 
 			#The decision would most likely block actions for 1-2 months
 		}
@@ -2309,12 +2417,13 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
 
-		cost = 3
-		completion_reward = {
-			#basically just a way of saying the tree is over, and that the player should lock in on capturing land
-			#demo ends here!!
+		available = {
+			always = no
+		}
 
-			#This might just be the focus that autocompletes after the great game is done
+		cost = 5
+		completion_reward = {
+
 		}
 	}
 

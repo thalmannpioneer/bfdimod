@@ -844,6 +844,17 @@
  YFC_event.44.desc: "Something about Teardrop taking Davidland and that we now need to more fast to get as much land as possible"
  YFC_event.44.a: "zdubbz cough"
 
+ YFC_event.45.t: "Dear Teardrop,"
+ YFC_event.45.desc: "uh put the letter here I guess also please tell me what the effects should be in the context on what I have made (So more control, pp, or something else?)"
+ YFC_event.45.a: "zdubbz cough"
+
+ YFC_event.46.t: "Pickpocketing expanded" #Please put a better name I got no good ones :(
+ YFC_event.46.desc: "zdubbz something on the whole how we are able to do this and why each choice is good or bad bla bla ALSO THAT THIS IS TASER'S IDEA"
+ YFC_event.46.a: "Steal X item" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
+ YFC_event.46.b: "Steal Y item" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
+ YFC_event.46.c: "Steal Z item" #Gain 600K, increases Taser influence by 2, and some other bad thing but I have no idea rn
+ YFC_event.46.d: "We don't need such actions." #Lowers Taser's influence by 2
+
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.5.a: "We cannot allow more raids to happen!"

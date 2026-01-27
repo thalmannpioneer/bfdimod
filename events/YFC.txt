@@ -1866,6 +1866,7 @@ country_event = { #To the east
 		name = YFC_event.44.a
 
 		complete_national_focus = YFC_focus_see_to_the_eastern_front
+		add_political_power = 50
 		add_stability = 0.05
 		hidden_effect = {
 			180 = {
@@ -1875,6 +1876,49 @@ country_event = { #To the east
 				set_demilitarized_zone = no
 			}
 		}
+	}
+}
+
+country_event = { #YFC_focus_anger_teardrop
+	id = YFC_event.45
+	title = YFC_event.45.t
+	desc = YFC_event.45.desc
+	picture = GFX_YFC_event5
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_event.45.a
+
+		add_opinion_modifier = { target = TBT modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = TBT
+			add_opinion_modifier = { target = YFC modifier = large_decrease }
+		}
+	}
+}
+
+country_event = { #YFC_focus_procure_funds
+	id = YFC_event.46
+	title = YFC_event.46.t
+	desc = YFC_event.46.desc
+	picture = GFX_YFC_event5
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #Later me add effects when you are not dying cool thanks!!!!
+		name = YFC_event.46.a
+	}
+	option = {
+		name = YFC_event.46.b
+	}
+	option = {
+		name = YFC_event.46.c
+	}
+	option = {
+		name = YFC_event.46.d
 	}
 }
 
@@ -2094,6 +2138,34 @@ country_event = {
 		name = YFC_borderwars.5.a
 		custom_effect_tooltip = l_YFC_eastern_gainall_10
 		army_experience = 5
+		
+		hidden_effect = {
+			set_temp_variable = { support_temp_var = 0 }
+			IF = {
+				limit = {tag = TBT}
+				add_to_temp_variable = { support_temp_var = -0.1 }
+			}
+			ELSE_IF = {
+				limit = {tag = YFC}
+				add_to_temp_variable = { support_temp_var = 0.1 }
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 229
+						state = 232
+						state = 228
+						state = 225
+						state = 230
+						state = 226
+						state = 192
+						state = 231
+						state = 227
+					}
+				}
+				add_to_variable = { eastern_support_var = support_temp_var }
+			}
+		}
 	}
 }
 
@@ -2110,6 +2182,17 @@ country_event = {
 		name = YFC_borderwars.6.a
 		custom_effect_tooltip = l_YFC_eastern_borderwar_loss
 		army_experience = 2
+		hidden_effect = {
+			IF = {
+				limit = {tag = YFC}
+				add_to_variable = { eastern_borderwar_var = -0.25 }
+				TBT = {add_to_variable = { eastern_borderwar_var = 0.25 }}
+			}
+			ELSE = {
+				add_to_variable = { eastern_borderwar_var = -0.25 }
+				YFC = {add_to_variable = { eastern_borderwar_var = 0.25 }}
+			}
+		}
 	}
 }
 
@@ -2145,8 +2228,12 @@ country_event = {
 	}
 }
 
+
+#####################
 #There were NO CRN events you were going CRAZY 
 #WAKE UP WAKE UP WAKE UP WAKE UP
+#####################
+
 
 country_event = { 
 	id = YFC_BUN.1
