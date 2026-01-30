@@ -1904,10 +1904,10 @@ country_event = { #YFC_focus_anger_teardrop
 	option = {
 		name = YFC_event.45.a
 
-		add_opinion_modifier = { target = TBT modifier = large_decrease }
+		add_opinion_modifier = { target = TBT modifier = medium_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = TBT
-			add_opinion_modifier = { target = YFC modifier = large_decrease }
+			add_opinion_modifier = { target = YFC modifier = medium_decrease }
 		}
 	}
 }
@@ -1935,7 +1935,7 @@ country_event = { #YFC_focus_procure_funds
 	}
 }
 
-country_event = { #YFC_focus_procure_funds
+country_event = { #YFC_focus_buy_ships
 	id = YFC_event.47
 	title = YFC_event.47.t
 	desc = {
@@ -2001,7 +2001,9 @@ country_event = { #Eastern End.
             limit = { is_ai = no }
             set_global_flag = demo_ended
 			set_variable = { var_demo_end = 4 } #Update later
-            play_song = "demo_end"
+			hidden_effect = {
+				play_song = "demo_end"
+			}
         }
 	}
 }

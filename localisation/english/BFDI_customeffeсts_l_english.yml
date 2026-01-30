@@ -160,7 +160,7 @@
  l_YFC_eastern_fast: "§YOur decisions' effects will be lowered to 5% gain. However, our focuses will have better effects for our takeover.§!"
  l_YFC_eastern_statebuild: "§YUnlocks new decisions to states that we have recently taken over!§!"
  l_YFC_eastern_action_use: "§RThis will use our weekly action!§!"
- l_YFC_eastern_block: "§GThis will block any actions from [TBT.GetName] for 2 months!§!\n\n§RHowever, this may cause some... irreversible effects on relations with them...§!"
+ l_YFC_eastern_block: "§GThis will block any actions from [TBT.GetName] for 2 months!§!\n\n§RHowever, this may cause some... irreversible effects with our relations...§!"
  l_YFC_eastern_gain_5: "§GOur control in this state will increase by 5%!§!"
  l_YFC_eastern_gain_10: "§GOur control in this state will increase by 10%!§!"
  l_YFC_eastern_gainall_5: "§GOur control in every contested state will increase by 5%!§!"
