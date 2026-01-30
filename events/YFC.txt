@@ -1857,7 +1857,7 @@ country_event = { #To the east
 	id = YFC_event.44
 	title = YFC_event.44.t
 	desc = YFC_event.44.desc
-	picture = GFX_YFC_event5
+	picture = GFX_Temp_event
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1869,11 +1869,24 @@ country_event = { #To the east
 		add_political_power = 50
 		add_stability = 0.05
 		hidden_effect = {
+			add_threat = 0.5
 			180 = {
 				transfer_state_to = TBT
 				add_core_of = TBT
 				remove_core_of = EMP
 				set_demilitarized_zone = no
+			}
+			country_event = {
+				id = YFC_event.49
+				days = 200
+				random_days = 100
+				random_hours = 100
+			}
+			country_event = {
+				id = YFC_event.50
+				days = 200
+				random_days = 100
+				random_hours = 100
 			}
 		}
 	}
@@ -1883,7 +1896,7 @@ country_event = { #YFC_focus_anger_teardrop
 	id = YFC_event.45
 	title = YFC_event.45.t
 	desc = YFC_event.45.desc
-	picture = GFX_YFC_event5
+	picture = GFX_Temp_event
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1903,7 +1916,7 @@ country_event = { #YFC_focus_procure_funds
 	id = YFC_event.46
 	title = YFC_event.46.t
 	desc = YFC_event.46.desc
-	picture = GFX_YFC_event5
+	picture = GFX_Temp_event
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1919,6 +1932,171 @@ country_event = { #YFC_focus_procure_funds
 	}
 	option = {
 		name = YFC_event.46.d
+	}
+}
+
+country_event = { #YFC_focus_procure_funds
+	id = YFC_event.47
+	title = YFC_event.47.t
+	desc = {
+		text = YFC_event.47.desc.a #DAV
+		trigger = {
+			NOT = {
+				country_exists = DAV
+				DAV = {has_war = no}
+			}
+		}
+	}
+	desc = {
+		text = YFC_event.47.desc.b #SOS
+		trigger = {
+			NOT = {
+				NOT = {country_exists = DAV}
+				DAV = {has_war = yes}
+			}
+		}
+	}
+	picture = GFX_Temp_event
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_event.47.a
+
+		IF = {
+			limit = {
+				country_exists = DAV
+				DAV = {has_war = no}
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+				producer = DAV
+			}
+		}
+		ELSE = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+				producer = SOS
+			}
+		}
+	}
+}
+
+country_event = { #Eastern End.
+	id = YFC_event.48
+	title = YFC_event.48.t
+	desc = YFC_event.48.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.48.a
+		complete_national_focus = YFC_focus_who_dares_wins
+		if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+			set_variable = { var_demo_end = 4 } #Update later
+            play_song = "demo_end"
+        }
+	}
+}
+
+country_event = { #Eastern Event #1
+	id = YFC_event.49
+	title = YFC_event.49.t
+	desc = YFC_event.49.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+		set_variable = { var_add_to_sector2 = 2 }
+    }
+
+	option = { 
+		name = YFC_event.49.a
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_eastern_gainall_10
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 229
+						state = 232
+						state = 228
+						state = 225
+						state = 230
+						state = 226
+						state = 192
+						state = 231
+						state = 227
+					}
+				}
+				add_to_variable = { eastern_support_var = 0.1 }
+			}
+		}
+	}
+	option = { 
+		name = YFC_event.49.b
+	}
+	option = { 
+		name = YFC_event.49.c
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
+		custom_effect_tooltip = l_YFC_eastern_loseall_10
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 229
+						state = 232
+						state = 228
+						state = 225
+						state = 230
+						state = 226
+						state = 192
+						state = 231
+						state = 227
+					}
+				}
+				add_to_variable = { eastern_support_var = -0.1 }
+			}
+		}
+	}
+}
+
+country_event = { #Eastern Event #2
+	id = YFC_event.50
+	title = YFC_event.50.t
+	desc = YFC_event.50.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+
+	option = { 
+		name = YFC_event.50.a
+		custom_effect_tooltip = l_money_gain_400K
+		add_to_variable = { money_amount = 4 }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+	}
+	option = { 
+		name = YFC_event.50.b
 	}
 }
 

@@ -11,7 +11,9 @@ decision_YFC_eastern_category = {
 		is_good = yes
 		days_mission_timeout = 540 #540
 		timeout_effect = {
+			custom_effect_tooltip = l_YFC_eastern_end
 			hidden_effect = { #There has to be a better way but I'm dumb
+				country_event = YFC_event.48
 				every_state = {
 					limit = {
 						OR = {
@@ -169,7 +171,7 @@ decision_YFC_eastern_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			subtract_from_variable = { money_amount = -2 }
+			subtract_from_variable = { money_amount = 2 }
         }
 
 		remove_effect = {
@@ -432,10 +434,52 @@ decision_YFC_eastern_category = {
 		}
 	}
 
+	YFC_eastern_block = { 
+		icon = GFX_decision_generic_ignite_civil_war
+        
+		visible = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front	
+			NOT = {has_completed_focus = YFC_focus_who_dares_wins}
+		}
+
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = l_YFC_eastern_block
+			
+			hidden_effect = {
+				TBT = {
+					add_timed_idea = {
+						idea = idea_TBT_eastern_blocked
+						days = 60
+					}
+				}
+				random = {
+					chance = 75
+					TBT = {
+						country_event = {
+							id = TBT_hidden_event.7
+							days = 7
+							random_days = 7
+							random_hours = 48
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
 	YFC_eastern_raid = { 
 		icon = GFX_decision_generic_ignite_civil_war
         
 		visible = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front	
+			NOT = {has_completed_focus = YFC_focus_who_dares_wins}
 			OR = {
 				AND = {
 					YFC = {controls_state = 216}

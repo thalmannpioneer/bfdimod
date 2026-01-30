@@ -235,9 +235,10 @@
  YFC_eastern_manpower: "§GDeploy Soldiers§! in §Y[FROM.GetName]§!"
  YFC_eastern_seize: "§RSeize§! §Y[FROM.GetName]§!"
  YFC_eastern_ports: "§CBuild Port§! in §Y[FROM.GetName]§!"
- YFC_eastern_roads: "§CBuild Infrastructure! in §Y[FROM.GetName]§!"
+ YFC_eastern_roads: "§CBuild Infrastructure§! in §Y[FROM.GetName]§!"
  YFC_eastern_core: "§YCore§! §Y[FROM.GetName]§!"
  YFC_eastern_raid: "§RClash§! in the §YNorthern Front§!"
+ YFC_eastern_block: "§RBlock§! §CTeardropper Movements§!"
 
  decision_CRN_BUN_category: "Building The Bunch"
  decision_CRN_BUN_category_desc: "Despite Yellow Face's claims, there is still a future for the Bunch! We must aid rebel groups to hopefully create a revolt against The Company!"

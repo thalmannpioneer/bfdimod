@@ -639,7 +639,12 @@ on_actions = {
                 }
                 TBT = {
                     if = {
-                        limit = { NOT = {has_country_flag = eastern_action_ready}}
+                        limit = { 
+                            NOT = {
+                                has_country_flag = eastern_action_ready
+                                has_idea = idea_TBT_eastern_blocked
+                            }
+                        }
                         set_country_flag = eastern_action_ready
                     }
                 }

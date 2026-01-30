@@ -855,6 +855,26 @@
  YFC_event.46.c: "Steal Z item" #Gain 600K, increases Taser influence by 2, and some other bad thing but I have no idea rn
  YFC_event.46.d: "We don't need such actions." #Lowers Taser's influence by 2
 
+ YFC_event.47.t: "Preparations" #For the boats
+ YFC_event.47.desc.a: "This one is for DAV"
+ YFC_event.47.desc.b: "This one is for SOS"
+ YFC_event.47.a: "zdubbz cough"
+
+ YFC_event.48.t: "Gobbled Up"
+ YFC_event.48.desc: "zdubbz something on the eastern stuff is mostly done bla bla bla"
+ YFC_event.48.a: "Where is the next intrest?"
+
+ YFC_event.49.t: "Battalions of Force" #zdubbz cough
+ YFC_event.49.desc: "TopHat wants to deploy more soldiers to the east is this a good idea????????????" 
+ YFC_event.49.a: "Sure!" #Increases TopHat influence
+ YFC_event.49.b: "No!"
+ YFC_event.49.c: "Better idea you fun 'ideas' are going away!" #Lowers TopHat influence
+
+ YFC_event.50.t: "Spoils of Efforts" #zdubbz cough
+ YFC_event.50.desc: "Pipe and Hammer have found resources like grain and other things idk. anyways they want to take and sell/use it. "
+ YFC_event.50.a: "Agree" #Increases Pipe and Hammer influence
+ YFC_event.50.b: "Disagree" #Decreases Pipe and Hammer influence
+
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.5.a: "We cannot allow more raids to happen!"

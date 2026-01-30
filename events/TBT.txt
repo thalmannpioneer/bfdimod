@@ -169,3 +169,24 @@ country_event = {
 		}
 	}
 }
+
+country_event = { #Remove later when TBT gets content!!!!
+	id = TBT_hidden_event.7
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+        	active = yes
+        }
+		add_opinion_modifier = { target = YFC modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = YFC
+			add_opinion_modifier = { target = TBT modifier = large_decrease }
+		}
+	}
+}

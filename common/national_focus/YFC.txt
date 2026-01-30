@@ -2104,22 +2104,34 @@ focus_tree = {
 							state = 227 #Ganymede
 						}
 					}
-					IF = {
-						limit = {has_dynamic_modifier = {modifier = TBT_low_pop}}
-						set_variable = {eastern_support_var = 0}
-						add_to_variable = { eastern_support_var = -0.2 }
+					IF = { #I could try to understand why has_dynamic_modifier does not work here but I'm too tired to care anymore.
+						limit = {
+							OR = {
+								state = 230
+								state = 228
+								state = 232
+							}
+						}
+						set_variable = {eastern_support_var = -0.2}
 					}
 					ELSE_IF = { 
-						limit = {has_dynamic_modifier = {modifier = TBT_med_pop}}
-						set_variable = {eastern_support_var = 0}
-						add_to_variable = { eastern_support_var = -0.5 }
+						limit = {
+							state = 229
+						}
+						set_variable = {eastern_support_var = -0.5}
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}
 					}
 				}
-				YFC = {set_variable = {eastern_borderwar_var = 0.5}}
-				TBT = {set_variable = {eastern_borderwar_var = 0.5}}
+				YFC = {
+					set_variable = {eastern_borderwar_var = 0.5}
+					set_country_flag = eastern_action_ready
+				}
+				TBT = {
+					set_variable = {eastern_borderwar_var = 0.5}
+					set_country_flag = eastern_action_ready
+				}
 				IF = {
 					limit = {
 						is_ai = yes
@@ -2281,10 +2293,11 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_play_fast }
 		cost = 5
 		completion_reward = {
-			#Future me add an event here
-
-			#you steal from the teardroppers, makes them mad, gives you cash
-			#the player can choose the amnt to steal
+			country_event = {
+				id = YFC_event.46
+				hours = 2
+				random_hours = 6
+			}
 		}
 	}
 
@@ -2302,7 +2315,6 @@ focus_tree = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-
 		}
 
 		cost = 5
@@ -2310,24 +2322,6 @@ focus_tree = {
 			#Future me add an event here
 			add_political_power = 50
 			subtract_from_variable = { money_amount = -3 }
-			IF = {
-				limit = {
-					country_exists = DAV
-					DAV = {has_war = no}
-				}
-				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 20
-					producer = DAV
-				}
-			}
-			ELSE = {
-				add_equipment_to_stockpile = {
-					type = convoy
-					amount = 20
-					producer = SOS
-				}
-			}
 
 			#So I may make this where the player does not gain warships but smaller ships or something
 			#More so that YFC's navy would be stuck without a port at this rate
@@ -2400,11 +2394,26 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
 		cost = 7
 		completion_reward = {
-			#opens a decision that lets you spend money to completely block teardropper movement 
-			#teardrop embargoes you
-			#Future me add an event here
-
-			#The decision would most likely block actions for 1-2 months
+			custom_effect_tooltip = l_YFC_eastern_gainall_10
+			unlock_decision_tooltip = YFC_eastern_block
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.1 }
+				}
+			}
 		}
 	}
 

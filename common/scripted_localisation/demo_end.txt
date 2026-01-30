@@ -56,4 +56,8 @@ defined_text = {
         trigger = { original_tag = GTR }
         localization_key = demo_end_GTR_title_2
     }
+    text = {
+        trigger = { original_tag = YFC }
+        localization_key = demo_end_YFC_title_1
+    }
 }
