@@ -318,7 +318,7 @@ focus_tree = {
         prerequisite = { focus = WGF_focus_the_offer focus =  WGF_focus_our_struggling_friends}
 
         available = {
-            date > 2015.01.01
+            date > 2014.11.01
         }
 
         cost = 6
@@ -608,11 +608,11 @@ focus_tree = {
                 category = land_doctrine
             }
             hidden_effect = { #Used to push the AI into something that is not grand battleplan
-				IF = {
-					limit = {is_ai = yes}
-					set_grand_doctrine = superior_firepower
-				}
-			}
+                IF = {
+                    limit = {is_ai = yes}
+                    set_grand_doctrine = superior_firepower
+                }
+            }
         }
     }
 
@@ -807,7 +807,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_WGF_focus_flip_the_coin
             hidden_effect = {
-                add_threat = 1
+                add_threat = 5
                 declare_war_on = {
                     target = GMD
                     type = annex_everything

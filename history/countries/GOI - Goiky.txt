@@ -40,6 +40,13 @@ country_event = {
     random_hours = 12
 }
 
+news_event = {
+    id = bfdinews.37
+    days = 20
+    random_days = 5
+    random_hours = 12
+}
+
 set_stability = 0
 set_war_support = 0
 

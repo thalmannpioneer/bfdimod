@@ -963,8 +963,30 @@ SpriteTypes = {
 		name = GFX_bfdinews35
 		textureFile = gfx/event_pictures/bfdinews35.dds
 	}
+	frameAnimatedSpriteType = {
+		name = GFX_bfdinews36
+		textureFile = gfx/event_pictures/bfdinews36.dds
+		noOfFrames = 18
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = GFX_bfdinews37
+		textureFile = gfx/event_pictures/bfdinews37.dds
+	}
+	spriteType = {
+		name = GFX_bfdinews38
+		textureFile = gfx/event_pictures/bfdinews38.dds
+	}
 	spriteType = {
 		name = GFX_bfdinews_city
 		texturefile = gfx/event_pictures/bfdinews_city.dds
+	}
+
+	spriteType = {
+		name = GFX_common_event1
+		textureFile = gfx/event_pictures/common_event_1.dds
 	}
 }

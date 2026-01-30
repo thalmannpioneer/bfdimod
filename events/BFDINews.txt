@@ -112,7 +112,7 @@ news_event = {
             limit = { WGF = { is_ai = no } }
             set_variable = { var_demo_end = 1 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -135,7 +135,7 @@ news_event = {
             limit = { SMG = { is_ai = no } }
             set_variable = { var_demo_end = 2 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -175,7 +175,7 @@ news_event = {
             limit = { GGR = { is_ai = no } }
             set_variable = { var_demo_end = 3 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -464,13 +464,13 @@ news_event = {
             limit = { GSR = { is_ai = no } }
             set_variable = { var_demo_end = 6 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
         else_if = {
             limit = { GFG = { is_ai = no } }
             set_variable = { var_demo_end = 7 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -531,7 +531,7 @@ news_event = {
             limit = { GDR = { is_ai = no } }
             set_variable = { var_demo_end = 8 }
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -592,7 +592,7 @@ news_event = {
             limit = { UGA = { is_ai = no } }
             set_variable = { var_demo_end = 9}
             set_global_flag = demo_ended
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -709,13 +709,60 @@ news_event = {
     picture = GFX_bfdinews35
 
     major = yes
-
     is_triggered_only = yes
-
     fire_only_once = yes
 
     option = {
         name = bfdinews.35.a
+    }
+}
+
+news_event = {
+    id = bfdinews.36
+    title = bfdinews.36.t
+    desc = bfdinews.36.desc
+    picture = GFX_bfdinews36
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        hidden_effect = { play_song = "coinflip" }
+    }
+
+    option = {
+        name = bfdinews.36.a
+    }
+}
+
+news_event = {
+    id = bfdinews.37
+    title = bfdinews.37.t
+    desc = bfdinews.37.desc
+    picture = GFX_bfdinews37
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.37.a
+    }
+}
+
+news_event = {
+    id = bfdinews.38
+    title = bfdinews.38.t
+    desc = bfdinews.38.desc
+    picture = GFX_bfdinews38
+
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = bfdinews.38.a
     }
 }
 

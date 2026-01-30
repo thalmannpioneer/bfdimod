@@ -1936,7 +1936,7 @@ country_event = {
                 limit = { tag = GSR }
                 set_variable = { var_demo_end = 5 }
             }
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }

@@ -1,375 +1,381 @@
 add_namespace = WGF_event
 
 country_event = {
-	id = WGF_event.1
-	title = WGF_event.1.t
+    id = WGF_event.1
+    title = WGF_event.1.t
     desc = WGF_event.1.desc
-	picture = GFX_WGF_event1
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event1
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.1.a
-	}
+        name = WGF_event.1.a
+    }
 }
 
 country_event = {
-	id = WGF_event.2
-	title = WGF_event.2.t
+    id = WGF_event.2
+    title = WGF_event.2.t
     desc = WGF_event.2.desc
-	picture = GFX_WGF_event2
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event2
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.2.a
-	}
+        name = WGF_event.2.a
+    }
 }
 
 country_event = {
-	id = WGF_event.3
-	title = WGF_event.3.t
+    id = WGF_event.3
+    title = WGF_event.3.t
     desc = WGF_event.3.desc
-	picture = GFX_WGF_event3
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event3
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.3.a
-		add_war_support = 0.05
-		add_stability = -0.05
-	}
-	option = {
-		name = WGF_event.3.b
-		add_stability = 0.02
-	}
-	option = {
-		name = WGF_event.3.c
-		add_stability = 0.05
-		add_political_power = -50
-	}
+        name = WGF_event.3.a
+        add_war_support = 0.05
+        add_stability = -0.05
+    }
+    option = {
+        name = WGF_event.3.b
+        add_stability = 0.02
+    }
+    option = {
+        name = WGF_event.3.c
+        add_stability = 0.05
+        add_political_power = -50
+    }
 }
 
 country_event = {
-	id = WGF_event.4
-	title = WGF_event.4.t
+    id = WGF_event.4
+    title = WGF_event.4.t
     desc = WGF_event.4.desc
-	picture = GFX_WGF_event4
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event4
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.4.a
-	}
+        name = WGF_event.4.a
+    }
 }
 
 country_event = {
-	id = WGF_event.5
-	title = WGF_event.5.t
+    id = WGF_event.5
+    title = WGF_event.5.t
     desc = WGF_event.5.desc
-	picture = GFX_WGF_event5
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event5
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.5.a
-		add_timed_idea = {
-			idea = idea_WGF_cooperation
-			days = 400
-		}
-		WGF = {
-			add_timed_idea = {
-				idea = idea_WGF_cooperation
-				days = 400
-			}
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 0.05
-		}
-	}
+        name = WGF_event.5.a
+        add_timed_idea = {
+            idea = idea_WGF_cooperation
+            days = 400
+        }
+        WGF = {
+            add_timed_idea = {
+                idea = idea_WGF_cooperation
+                days = 400
+            }
+        }
+        add_popularity = {
+            ideology = communism
+            popularity = 0.05
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.6
-	title = WGF_event.6.t
+    id = WGF_event.6
+    title = WGF_event.6.t
     desc = WGF_event.6.desc
-	picture = GFX_WGF_event6
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event6
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.6.a
-	}
+        name = WGF_event.6.a
+    }
 }
 
 country_event = {
-	id = WGF_event.7
-	title = WGF_event.7.t
+    id = WGF_event.7
+    title = WGF_event.7.t
     desc = WGF_event.7.desc
-	picture = GFX_WGF_event7
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event7
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.7.a
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 426
-			producer = GMD
-		}
-		add_war_support = 0.05
-	}
+        name = WGF_event.7.a
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 426
+            producer = GMD
+        }
+        add_war_support = 0.05
+    }
 }
 
 country_event = {
-	id = WGF_event.8
-	title = WGF_event.8.t
+    id = WGF_event.8
+    title = WGF_event.8.t
     desc = WGF_event.8.desc
-	picture = GFX_WGF_event8
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event8
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.8.a
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -426
-		}
-		add_war_support = -0.05
-	}
+        name = WGF_event.8.a
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = -426
+        }
+        add_war_support = -0.05
+    }
 }
 
 country_event = {
-	id = WGF_event.9
-	title = WGF_event.9.t
+    id = WGF_event.9
+    title = WGF_event.9.t
     desc = WGF_event.9.desc
-	picture = GFX_WGF_event9
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event9
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.9.a
-		add_war_support = 0.02
-	}
+        name = WGF_event.9.a
+        add_war_support = 0.02
+    }
 }
 
 country_event = {
-	id = WGF_event.10
-	title = WGF_event.10.t
+    id = WGF_event.10
+    title = WGF_event.10.t
     desc = WGF_event.10.desc
-	picture = GFX_WGF_event10
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event10
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.10.a
-		add_equipment_to_stockpile = {
-			type = convoy
-			amount = -10
-		}
-		hidden_effect = {
-			random_list = {
-				70 = {
-					country_event = {
-					 id = WGF_event.11
-					 days = 30
-					 random_days = 5
-					 random_hours = 12
-					}
-				}
-				30 = {
-					country_event = {
-						id = WGF_event.12
-						days = 30
-						random_days = 5
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = WGF_event.10.b
-		add_stability = 0.05
-	}
+        name = WGF_event.10.a
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = -10
+        }
+        hidden_effect = {
+            random_list = {
+                70 = {
+                    country_event = {
+                        id = WGF_event.11
+                        days = 30
+                        random_days = 5
+                        random_hours = 12
+                    }
+                }
+                30 = {
+                    country_event = {
+                        id = WGF_event.12
+                        days = 30
+                        random_days = 5
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = WGF_event.10.b
+        add_stability = 0.05
+    }
 }
 
 country_event = {
-	id = WGF_event.11
-	title = WGF_event.11.t
+    id = WGF_event.11
+    title = WGF_event.11.t
     desc = WGF_event.11.desc
-	picture = GFX_WGF_event11
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event11
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.11.a
-		custom_effect_tooltip = l_WGF_event11
-		set_country_flag = WGF_expeditors_resсued
-	}
+        name = WGF_event.11.a
+        custom_effect_tooltip = l_WGF_event11
+        set_country_flag = WGF_expeditors_resсued
+    }
 }
 
 country_event = {
-	id = WGF_event.12
-	title = WGF_event.12.t
+    id = WGF_event.12
+    title = WGF_event.12.t
     desc = WGF_event.12.desc
-	picture = GFX_WGF_event12
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event12
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.12.a
-		add_political_power = -25
-	}
+        name = WGF_event.12.a
+        add_political_power = -25
+    }
 }
 
 country_event = {
-	id = WGF_event.13
-	title = WGF_event.13.t
+    id = WGF_event.13
+    title = WGF_event.13.t
     desc = WGF_event.13.desc
-	picture = GFX_WGF_event13
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event13
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.13.a
-		add_stability = -0.05
-		add_war_support = -0.05
-		add_political_power = -50
-	}
+        name = WGF_event.13.a
+        add_stability = -0.05
+        add_war_support = -0.05
+        add_political_power = -50
+    }
 }
 
 country_event = {
-	id = WGF_event.14
-	title = WGF_event.14.t
+    id = WGF_event.14
+    title = WGF_event.14.t
     desc = WGF_event.14.desc
-	picture = GFX_WGF_event14
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event14
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.14.a
-	}
+        name = WGF_event.14.a
+        hidden_effect = {
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = bfdinews.36
+            }
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.15
-	title = WGF_event.15.t
+    id = WGF_event.15
+    title = WGF_event.15.t
     desc = WGF_event.15.desc
-	picture = GFX_WGF_event15
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event15
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.15.a
-	}
+        name = WGF_event.15.a
+    }
 }
 
 country_event = {
-	id = WGF_event.16
-	title = WGF_event.16.t
+    id = WGF_event.16
+    title = WGF_event.16.t
     desc = WGF_event.16.desc
-	picture = GFX_WGF_event16
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event16
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.16.a
-		set_country_flag = {
-			flag = anarchists_decisions
-			value = 0
-		}
-	}
+        name = WGF_event.16.a
+        set_country_flag = {
+            flag = anarchists_decisions
+            value = 0
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.17
-	title = WGF_event.17.t
+    id = WGF_event.17
+    title = WGF_event.17.t
     desc = WGF_event.17.desc
-	picture = GFX_WGF_event17
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event17
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.17.a
-		add_opinion_modifier = {
-			target = GPG
-			modifier = medium_decrease
-		}
-	}
+        name = WGF_event.17.a
+        add_opinion_modifier = {
+            target = GPG
+            modifier = medium_decrease
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.18
-	title = WGF_event.18.t
+    id = WGF_event.18
+    title = WGF_event.18.t
     desc = WGF_event.18.desc
-	picture = GFX_WGF_event18
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event18
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.18.a
-		add_advisor_role = {
-			character = WGF_ruby
-			advisor = {
-				slot = political_advisor
-				idea_token = idea_WGF_ruby
-				ledger = army
-				traits = { propaganda_expert }
-			}
-		}
-	}
+        name = WGF_event.18.a
+        add_advisor_role = {
+            character = WGF_ruby
+            advisor = {
+                slot = political_advisor
+                idea_token = idea_WGF_ruby
+                ledger = army
+                traits = { propaganda_expert }
+            }
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.19
-	title = WGF_event.19.t
+    id = WGF_event.19
+    title = WGF_event.19.t
     desc = WGF_event.19.desc
-	picture = GFX_WGF_event9
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event9
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.19.a
-		add_stability = -0.5
-		add_war_support = -0.5
-		add_political_power = -500
-		hidden_effect = {
-			GMD = {
-				add_manpower = 25000 #Give Coiny hope! (JK it will be a never ending war xd)
-			}
-		}
-	}
+        name = WGF_event.19.a
+        add_stability = -0.5
+        add_war_support = -0.5
+        add_political_power = -500
+        hidden_effect = {
+            GMD = {
+                add_manpower = 25000 #Give Coiny hope! (JK it will be a never ending war xd)
+            }
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.20
-	title = WGF_event.20.t
+    id = WGF_event.20
+    title = WGF_event.20.t
     desc = WGF_event.20.desc
-	picture = GFX_GPG_event4
-	
-	is_triggered_only = yes
-    
+    picture = GFX_GPG_event4
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.20.a
-		add_opinion_modifier = {
-			target = GSR
-			modifier = medium_decrease
-		}
-	}
+        name = WGF_event.20.a
+        add_opinion_modifier = {
+            target = GSR
+            modifier = medium_decrease
+        }
+    }
 }
 
 country_event = {
-	id = WGF_event.21
-	title = WGF_event.21.t
+    id = WGF_event.21
+    title = WGF_event.21.t
     desc = WGF_event.21.desc
-	picture = GFX_WGF_event21
-	
-	is_triggered_only = yes
-    
+    picture = GFX_WGF_event21
+
+    is_triggered_only = yes
+
     option = {
-		name = WGF_event.21.a
-	}
+        name = WGF_event.21.a
+    }
 }
 

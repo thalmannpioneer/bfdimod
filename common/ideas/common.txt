@@ -5,8 +5,29 @@ ideas = {
         idea_common_unplayable = {
             picture = common_unplayable
         }
+
         idea_common_yoylite_nation = {
             picture = common_yoylite_nation
+        }
+
+        idea_common_bankruptcy = {
+            picture = common_bankruptcy
+
+            on_add = {
+                country_lock_all_division_template = yes
+            }
+            on_remove = {
+                country_lock_all_division_template = no
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.2
+                stability_factor = -0.25
+                war_support_factor = -0.5
+                production_speed_buildings_factor = -0.5
+                custom_modifier_tooltip = l_modifier_lock_divisions
+                custom_modifier_tooltip = l_bankruptcy_block_eco
+            }
         }
     }
 }

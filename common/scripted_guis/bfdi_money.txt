@@ -1,9 +1,126 @@
 scripted_gui = {
-	BFDI_money_topbar = {
-		window_name = "money"
-	
-		parent_window_token = top_bar
-		
-		visible = { always = yes }
-	}
+    BFDI_money_topbar = {
+        window_name = "money"
+
+        parent_window_token = top_bar
+
+        effects = {
+            money_button_click = {
+                if = {
+                    limit = { has_country_flag = economic_ledger_opened }
+                    clr_country_flag = economic_ledger_opened
+                }
+                else = {
+                    set_country_flag = economic_ledger_opened
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+        }
+
+        visible = { always = yes }
+    }
+
+    BFDI_economic_ledger = {
+        window_name = "economic_ledger_window"
+
+        context_type = player_context
+
+        effects = {
+            close_click = { clr_country_flag = economic_ledger_opened }
+
+            slider_decrease__tax_click = {
+                if = {
+                    limit = { check_variable = { var_tax_slider_pure > 25 } }
+                    subtract_from_variable = { var_tax_slider_pure = 59 }
+                    subtract_from_variable = { var_tax_slider = 1 }
+                    subtract_from_variable = { var_taxation_cgf = 0.05 }
+                    subtract_from_variable = { var_taxation_mgfp = 0.25 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+            slider_increase__tax_click = {
+                if = {
+                    limit = { check_variable = { var_tax_slider_pure < 261 } }
+                    add_to_variable = { var_tax_slider_pure = 59 }
+                    add_to_variable = { var_tax_slider = 1 }
+                    add_to_variable = { var_taxation_cgf = 0.05 }
+                    add_to_variable = { var_taxation_mgfp = 0.25 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+
+            slider_decrease__schooling_click = {
+                if = {
+                    limit = { check_variable = { var_schooling_slider_pure > 25 } }
+                    subtract_from_variable = { var_schooling_slider_pure = 59 }
+                    subtract_from_variable = { var_schooling_slider = 1 }
+                    subtract_from_variable = { var_schooling_rsf = 0.05 }
+                    subtract_from_variable = { var_schooling_srbf = 0.1 }
+                    subtract_from_variable = { var_schooling_mc = 0.1 }
+                    subtract_from_variable = { var_schooling_mc_display = 10 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+            slider_increase__schooling_click = {
+                if = {
+                    limit = { check_variable = { var_schooling_slider_pure < 261 } }
+                    add_to_variable = { var_schooling_slider_pure = 59 }
+                    add_to_variable = { var_schooling_slider = 1 }
+                    add_to_variable = { var_schooling_rsf = 0.05 }
+                    add_to_variable = { var_schooling_srbf = 0.1 }
+                    add_to_variable = { var_schooling_mc = 0.1 }
+                    add_to_variable = { var_schooling_mc_display = 10 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+
+            slider_decrease__healthcare_click = {
+                if = {
+                    limit = { check_variable = { var_healthcare_slider_pure > 25 } }
+                    subtract_from_variable = { var_healthcare_slider_pure = 59 }
+                    subtract_from_variable = { var_healthcare_slider = 1 }
+                    subtract_from_variable = { var_healthcare_sf = 0.05 }
+                    subtract_from_variable = { var_healthcare_mp = 0.1 }
+                    subtract_from_variable = { var_healthcare_mc = 0.1 }
+                    subtract_from_variable = { var_healthcare_mc_display = 10 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+            slider_increase__healthcare_click = {
+                if = {
+                    limit = { check_variable = { var_healthcare_slider_pure < 261 } }
+                    add_to_variable = { var_healthcare_slider_pure = 59 }
+                    add_to_variable = { var_healthcare_slider = 1 }
+                    add_to_variable = { var_healthcare_sf = 0.05 }
+                    add_to_variable = { var_healthcare_mp = 0.1 }
+                    add_to_variable = { var_healthcare_mc = 0.1 }
+                    add_to_variable = { var_healthcare_mc_display = 10 }
+                    BFDI_calculate_money_stats = yes
+                }
+            }
+        }
+
+        properties = {
+            slider_thumb__tax = {
+                x = var_tax_slider_pure
+            }
+            slider_thumb__schooling = {
+                x = var_schooling_slider_pure
+            }
+            slider_thumb__healthcare = {
+                x = var_healthcare_slider_pure
+            }
+        }
+
+        triggers = {
+            slider_decrease__tax_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_increase__tax_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_decrease__schooling_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_increase__schooling_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_decrease__healthcare_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_increase__healthcare_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+        }
+
+        visible = { has_country_flag = economic_ledger_opened }
+    }
 }

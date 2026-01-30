@@ -6,13 +6,10 @@ guiTypes = {
         size = {
             width = 1920
             height = 1440
-            min = { width = 100% height = 100% }
-            max = { width = 100% height = 10000 }
             preserve_aspect_ratio = yes
         }
         Orientation = center
         Origo = center
-        clipping = no
 
         background = {
             name = "Background"
@@ -23,7 +20,9 @@ guiTypes = {
         iconType = {
             name = "animation"
             spriteType = GFX_mainmenu_animation
-            position = { x = 289 y = 391 }
+            Orientation = center
+            Origo = center
+            position = { x = -671 y = -330 }
         }
     }
 
