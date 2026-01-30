@@ -686,4 +686,8 @@ spriteTypes = {
 		name = GFX_idea_common_unplayable
 		textureFile = gfx/interface/ideas/idea_common_unplayable.dds
 	}
+	spriteType = {
+		name = GFX_idea_common_bankruptcy
+		textureFile = gfx/interface/ideas/idea_common_bankruptcy.dds
+	}
 }

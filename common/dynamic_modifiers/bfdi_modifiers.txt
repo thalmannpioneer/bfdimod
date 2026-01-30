@@ -243,3 +243,20 @@ idea_Musketeers_UDC = { #Musketeers UDC
     command_power_gain_mult = var_udc_command_power_gain_mult
     max_planning_factor = var_udc_max_planning_factor
 }
+
+
+#MONEY
+
+idea_common_taxation = {
+    consumer_goods_factor = var_taxation_cgf
+}
+
+idea_common_schooling = {
+    research_speed_factor = var_schooling_rsf
+    scientist_research_bonus_factor = var_schooling_srbf
+}
+
+idea_common_healthcare = {
+    stability_factor = var_healthcare_sf
+    monthly_population = var_healthcare_mp
+}

@@ -929,7 +929,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -976,7 +976,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }
@@ -1516,7 +1516,7 @@ country_event = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
             set_variable = { var_demo_end = 10 }
-            play_song = "demo_end"
+            hidden_effect = { play_song = "demo_end" }
         }
     }
 }

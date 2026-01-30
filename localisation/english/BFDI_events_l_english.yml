@@ -1,4 +1,9 @@
 ﻿l_english:
+ #COMMON
+ common_event.1.t: "Bankruptcy"
+ common_event.1.desc: "It seems our government is unable to pay off its debt. We are forced to declare insolvency until we pay off by our obligations. This will severely impact our economic potential."
+ common_event.1.a: "Not the best leadership, it seems."
+
  #GOIKY
  GOI_event.1.t: "Battle For Dream Island"
  GOI_event.1.desc: "BFDI, or Battle For Dream Island, is an internet show in which various objects compete for the ultimate prize - an Island with a hotel, two restaurants and other amenities. Recently, it has been gaining more and more popularity. But this show is far from the only thing that happens in the lands of Goiky. This continent is densely populated with various other objects and as a whole is a strong economic and social entity."
@@ -1638,6 +1643,18 @@
  bfdinews.35.t: "Davidland Economy Crash!"
  bfdinews.35.desc: "The collapse of economic and political ties in South Goiky now repercussions beyond the continent: the Goikean Trading Company, a key player in the entire Davidland economy, effectively stopped its existance. Due to the disruption of logistical links and the deteriorating situation in the main export regions of Goiky, the company was unable to fulfill its futures contracts, and its shares plummeted to near zero. A large number of banks declared bankruptcy, unable to meet their deposit obligations. This is causing enormous discontent among the people and will likely undermine the centuries-old monarchy..."
  bfdinews.35.a: "Aw, seriously?"
+
+ bfdinews.36.t: "The Northern War!"
+ bfdinews.36.desc: "According to military correspondence, several hours ago, Revolutionary Front troops crossed the neutral zone and attacked border outposts in the Goiky Canal Military District. Unlike previous armed clashes, this one appears to be on a scale ten times larger and will likely escalate into a full-scale war. Events are unfolding rapidly, and the potential outcome of this conflict cannot yet be determined. We will continue to monitor the escalation of the situation."
+ bfdinews.36.a: "The flame is smoldering."
+
+ bfdinews.37.t: "Flute Tours Goiky!"
+ bfdinews.37.desc: "The continent-famous composer, who has already made history with his legendary \"Truth of a Legend\" and \"Frost Waltz\", has announced a massive tour with his entire orchestra throughout cities and towns of Goiky! Nearly everywhere, theaters are brimming with queues of objects eager to snag a ticket, even though the announced performance date in many cities is still months away! Tickets in Casland and Greenport are already sold out! Goiky hasn't seen such excitement in a long time. We wish this talented artist the best of luck."
+ bfdinews.37.a: "Sounds familiar."
+
+ bfdinews.38.t: "[FROM.GetName] Declares Bankruptcy!"
+ bfdinews.38.desc: "Well, it seems that the [FROM.GetAdjective] government announced its inability to pay its debt obligations and adopted strict anti-crisis measures. It seems the economy in the vast expanses of the new, anarchic Goiky hasn't yet fully got on its own grip, and this is currently impacting the lives of many objects around. Our team also predicts further financial unrest amid similar events..."
+ bfdinews.38.a: "Terrible!"
 
 
 # bfdinews_cities

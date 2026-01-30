@@ -1,0 +1,335 @@
+guiTypes = {
+    containerWindowType = {
+        name = "economic_ledger_window"
+        position = { x = -400 y = -350 }
+        size = { width = 800 height = 700 }
+        moveable = yes
+        orientation = CENTER
+        fade_type = linear
+        fade_time = 100
+
+        background = {
+            name = "bg"
+            spriteType = GFX_tiled_window
+        }
+
+        iconType = {
+            name = "icon_bg"
+            spriteType = GFX_economics_bg
+            position = { x = 15 y = 15 }
+        }
+
+        buttonType = {
+            name = "close"
+            spriteType = GFX_closebutton
+            position = { x = 755 y = 13 }
+            shortcut = "ESCAPE"
+        }
+
+        containerWindowType = {
+            name = "title_bg"
+            position = { x = 200 y = 30 }
+            size = { width = 400 height = 64 }
+
+            background = {
+                name = "bg"
+                spriteType = GFX_tiled_window_small_transparent
+            }
+        }
+
+        instantTextBoxType = {
+            name = "title"
+            position = { x = 300 y = 45 }
+            text = l_economic_title
+            maxWidth = 200
+            font = hoi_30header
+            format = center
+        }
+
+        containerWindowType = {
+            name = "profit_container"
+            position = { x = 40 y = 100 }
+            size = { width = 350 height = 210 }
+
+            background = {
+                name = "bg"
+                spriteType = GFX_tiled_window_small_transparent
+            }
+
+            instantTextBoxType = {
+                name = "profit_title"
+                position = { x = 75 y = 10 }
+                text = l_economic_profit_title
+                maxWidth = 200
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "profit_civs"
+                position = { x = 10 y = 60 }
+                text = l_economic_profit_civs
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+            }
+            instantTextBoxType = {
+                name = "profit_pop"
+                position = { x = 10 y = 90 }
+                text = l_economic_profit_pop
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "rate"
+                position = { x = 10 y = 130 }
+                text = l_economic_profit_rate
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+                pdx_tooltip = l_economic_profit_rate_tt
+                pdx_tooltip_delayed = l_economic_profit_rate_tt_delayed
+            }
+
+            instantTextBoxType = {
+                name = "final_profit"
+                position = { x = 10 y = 170 }
+                text = l_economic_final_profit
+                maxWidth = 330
+                font = hoi_24header
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "deficit_container"
+            position = { x = 410 y = 100 }
+            size = { width = 350 height = 210 }
+
+            background = {
+                name = "bg"
+                spriteType = GFX_tiled_window_small_transparent
+            }
+
+            instantTextBoxType = {
+                name = "deficit_title"
+                position = { x = 75 y = 10 }
+                text = l_economic_deficit_title
+                maxWidth = 200
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "deficit_schools"
+                position = { x = 10 y = 60 }
+                text = l_economic_deficit_schools
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+            }
+            instantTextBoxType = {
+                name = "deficit_healthcare"
+                position = { x = 10 y = 90 }
+                text = l_economic_deficit_healthcare
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+            }
+            instantTextBoxType = {
+                name = "deficit_military"
+                position = { x = 10 y = 120 }
+                text = l_economic_deficit_army
+                maxWidth = 330
+                font = hoi_18mbs
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "final_deficit"
+                position = { x = 10 y = 170 }
+                text = l_economic_final_deficit
+                maxWidth = 330
+                font = hoi_24header
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "final_container"
+            position = { x = 40 y = 320 }
+            size = { width = 90% height = 70 }
+
+            background = {
+                name = "bg"
+                spriteType = GFX_tiled_window_small_transparent
+            }
+
+            instantTextBoxType = {
+                name = "final"
+                position = { x = 10 y = 20 }
+                text = l_economic_final
+                maxWidth = 700
+                font = hoi_30header
+                format = center
+            }
+        }
+
+        containerWindowType = {
+            name = "spending_container"
+            position = { x = 40 y = 400 }
+            size = { width = 90% height = 260 }
+
+            background = {
+                name = "bg"
+                spriteType = GFX_tiled_window_small_transparent
+            }
+
+            instantTextBoxType = {
+                name = "spending_title"
+                position = { x = 10 y = 10 }
+                text = l_economic_spending_title
+                maxWidth = 700
+                font = hoi_30header
+                format = center
+            }
+
+            instantTextBoxType = {
+                name = "spending_tax"
+                position = { x = 10 y = 70 }
+                text = l_economic_spending_tax
+                pdx_tooltip = l_tax_tooltip
+                maxWidth = 700
+                font = hoi_24header
+                format = center
+            }
+
+            containerWindowType = {
+                name = "tax_slider"
+                size = { width = 300 height = 24 }
+                position = { x = 210 y = 105 }
+
+                containerWindowType = {
+                    name = "slider_rail"
+                    size = { width = 250 height = 12 }
+                    position = { x = 25 y = 6 }
+
+                    background = {
+                        name = "bg"
+                        quadTextureSprite = "GFX_scroll_track_horisontal"
+                    }
+                }
+
+                iconType = {
+                    name = "slider_thumb__tax"
+                    spriteType = "GFX_scroll_drager"
+                    position = { x = 25 y = 4 }
+                }
+
+                buttonType = {
+                    name = "slider_decrease__tax"
+                    spriteType = yearslider_leftbutton
+                    position = { x = 0 y = 0 }
+                }
+
+                buttonType = {
+                    name = "slider_increase__tax"
+                    spriteType = yearslider_rightbutton
+                    position = { x = 277 y = 0 }
+                }
+            }
+
+            instantTextBoxType = {
+                name = "spending_schooling"
+                position = { x = 45 y = 145 }
+                text = l_economic_spending_schooling
+                pdx_tooltip = l_schooling_tooltip
+                maxWidth = 300
+                font = hoi_24header
+                format = center
+            }
+
+            containerWindowType = {
+                name = "schooling_slider"
+                size = { width = 300 height = 24 }
+                position = { x = 45 y = 180 }
+
+                containerWindowType = {
+                    name = "slider_rail"
+                    size = { width = 250 height = 12 }
+                    position = { x = 25 y = 6 }
+
+                    background = {
+                        name = "bg"
+                        quadTextureSprite = "GFX_scroll_track_horisontal"
+                    }
+                }
+
+                iconType = {
+                    name = "slider_thumb__schooling"
+                    spriteType = "GFX_scroll_drager"
+                    position = { x = 25 y = 4 }
+                }
+
+                buttonType = {
+                    name = "slider_decrease__schooling"
+                    spriteType = yearslider_leftbutton
+                    position = { x = 0 y = 0 }
+                }
+
+                buttonType = {
+                    name = "slider_increase__schooling"
+                    spriteType = yearslider_rightbutton
+                    position = { x = 277 y = 0 }
+                }
+            }
+
+            instantTextBoxType = {
+                name = "spending_healthcare"
+                position = { x = 370 y = 145 }
+                text = l_economic_spending_healthcare
+                pdx_tooltip = l_healthcare_tooltip
+                maxWidth = 300
+                font = hoi_24header
+                format = center
+            }
+
+            containerWindowType = {
+                name = "healthcare_slider"
+                size = { width = 300 height = 24 }
+                position = { x = 370 y = 180 }
+
+                containerWindowType = {
+                    name = "slider_rail"
+                    size = { width = 250 height = 12 }
+                    position = { x = 25 y = 6 }
+
+                    background = {
+                        name = "bg"
+                        quadTextureSprite = "GFX_scroll_track_horisontal"
+                    }
+                }
+
+                iconType = {
+                    name = "slider_thumb__healthcare"
+                    spriteType = "GFX_scroll_drager"
+                    position = { x = 25 y = 4 }
+                }
+
+                buttonType = {
+                    name = "slider_decrease__healthcare"
+                    spriteType = yearslider_leftbutton
+                    position = { x = 0 y = 0 }
+                }
+
+                buttonType = {
+                    name = "slider_increase__healthcare"
+                    spriteType = yearslider_rightbutton
+                    position = { x = 277 y = 0 }
+                }
+            }
+        }
+    }
+}

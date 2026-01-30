@@ -89,4 +89,9 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 	}
+
+	spriteType = {
+		name = "GFX_economics_bg"
+		textureFile = "gfx/interface/economics_bg.dds"
+	}
 }

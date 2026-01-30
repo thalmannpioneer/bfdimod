@@ -1,0 +1,196 @@
+defined_text = {
+    name = MONEY_AMOUNT
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 1
+                compare = equals
+            }
+        }
+        localization_key = l_money_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 2
+                compare = equals
+            }
+        }
+        localization_key = l_money_millions
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = THIS.display_state
+                value = 3
+                compare = equals
+            }
+        }
+        localization_key = l_money_billions
+    }
+}
+
+defined_text = {
+    name = CIVS_PROFIT
+    text = {
+        trigger = {
+            check_variable = { var_display_civs_profit_stage = 1 }
+        }
+        localization_key = l_display_civs_profit_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_civs_profit_stage = 2 }
+        }
+        localization_key = l_display_civs_profit_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_civs_profit_stage = 3 }
+        }
+        localization_key = l_display_civs_profit_billions
+    }
+}
+
+defined_text = {
+    name = POP_PROFIT
+    text = {
+        trigger = {
+            check_variable = { var_display_pop_profit_stage = 1 }
+        }
+        localization_key = l_display_pop_profit_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_pop_profit_stage = 2 }
+        }
+        localization_key = l_display_pop_profit_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_pop_profit_stage = 3 }
+        }
+        localization_key = l_display_pop_profit_billions
+    }
+}
+
+defined_text = {
+    name = FINAL_PROFIT
+    text = {
+        trigger = {
+            check_variable = { var_display_final_profit_stage = 1 }
+        }
+        localization_key = l_display_final_profit_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_profit_stage = 2 }
+        }
+        localization_key = l_display_final_profit_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_profit_stage = 3 }
+        }
+        localization_key = l_display_final_profit_billions
+    }
+}
+
+defined_text = {
+    name = WAR_MODIFIER
+    text = {
+        trigger = { has_war = yes }
+        localization_key = l_economic_profit_rate_war
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = COMMUNISM_MODIFIER
+    text = {
+        trigger = { has_government = communism }
+        localization_key = l_economic_profit_rate_communism
+    }
+    text = {
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = ISOLATION_MODIFIER
+    text = {
+        trigger = { has_idea = undisturbed_isolation }
+        localization_key = l_economic_profit_rate_isolation
+    }
+    text = {
+        localization_key = ""
+    }
+}
+
+defined_text = {
+    name = FINAL_SPENDING
+    text = {
+        trigger = {
+            check_variable = { var_display_final_spending_stage = 1 }
+        }
+        localization_key = l_display_final_spending_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_spending_stage = 2 }
+        }
+        localization_key = l_display_final_spending_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_spending_stage = 3 }
+        }
+        localization_key = l_display_final_spending_billions
+    }
+}
+
+defined_text = {
+    name = MILITARY_SPENDING
+    text = {
+        trigger = {
+            check_variable = { var_military_spending_stage = 1 }
+        }
+        localization_key = l_display_military_spending_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_military_spending_stage = 2 }
+        }
+        localization_key = l_display_military_spending_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_military_spending_stage = 3 }
+        }
+        localization_key = l_display_military_spending_billions
+    }
+}
+
+defined_text = {
+    name = FINAL_CHANGE
+    text = {
+        trigger = {
+            check_variable = { var_display_final_change_stage = 1 }
+        }
+        localization_key = l_display_final_change_thousands
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_change_stage = 2 }
+        }
+        localization_key = l_display_final_change_millions
+    }
+    text = {
+        trigger = {
+            check_variable = { var_display_final_change_stage = 3 }
+        }
+        localization_key = l_display_final_change_billions
+    }
+}

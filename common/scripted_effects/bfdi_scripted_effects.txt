@@ -85,11 +85,10 @@ BFDI_game_start = {
         }
     }
 
-    every_possible_country = {
-        limit = { is_ai = no }
+    every_country = {
         news_event = {
             id = bfdinews.35
-            days = 30
+            days = 15
             random_days = 10
             random_hours = 12
         }
@@ -385,4 +384,278 @@ BFDI_money_diplay_update = {
         set_variable = { display_money = money_amount }
         divide_variable = { display_money = 10000 }
     }
+}
+
+BFDI_calculate_money_stats = {
+    set_variable = { var_display_final_change = 0 }
+    set_variable = { var_display_final_profit = 0 }
+
+    #
+    # PROFITS
+    #
+
+    set_variable = { var_display_civs_profit = THIS.num_of_civilian_factories }
+    multiply_variable = { var_display_civs_profit = 0.1 }
+    add_to_variable = { var_display_final_profit = var_display_civs_profit }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_display_civs_profit
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_civs_profit = 100 }
+        set_variable = { var_display_civs_profit_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_civs_profit
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_civs_profit = 10 }
+        set_variable = { var_display_civs_profit_stage = 2 }
+    }
+    else = {
+        multiply_variable = { var_display_civs_profit = 100 }
+        set_variable = { var_display_civs_profit_stage = 1 }
+    }
+
+
+    set_variable = { var_display_pop_profit = ROOT.max_manpower_k }
+    divide_variable = { var_display_pop_profit = 1000 }
+    multiply_variable = { var_display_pop_profit = var_taxation_mgfp }
+    add_to_variable = { var_display_final_profit = var_display_pop_profit }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_display_pop_profit
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_pop_profit = 100 }
+        set_variable = { var_display_pop_profit_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_pop_profit
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_pop_profit = 10 }
+        set_variable = { var_display_pop_profit_stage = 2 }
+    }
+    else = {
+        multiply_variable = { var_display_pop_profit = 100 }
+        set_variable = { var_display_pop_profit_stage = 1 }
+    }
+
+    BFDI_calculate_combined_modifier = yes #scripted effect in scripted effect goes kinda hard
+    multiply_variable = { var_display_final_profit = combined_modifier }
+
+    add_to_variable = { var_display_final_change = var_display_final_profit }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_profit
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_profit = 100 }
+        set_variable = { var_display_final_profit_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_profit
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_profit = 10 }
+        set_variable = { var_display_final_profit_stage = 2 }
+    }
+    else = {
+        multiply_variable = { var_display_final_profit = 100 }
+        set_variable = { var_display_final_profit_stage = 1 }
+    }
+
+
+    #
+    # SPENDINGS
+    #
+
+    set_variable = { var_military_spending = THIS.num_battalions }
+    divide_variable = { var_military_spending = 500 }
+
+    set_variable = { var_display_final_spending = var_schooling_mc }
+    add_to_variable = { var_display_final_spending = var_healthcare_mc }
+    add_to_variable = { var_display_final_spending = var_military_spending }
+
+    subtract_from_variable = { var_display_final_change = var_display_final_spending }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_spending
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_spending = 100 }
+        set_variable = { var_display_final_spending_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_spending
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_spending = 10 }
+        set_variable = { var_display_final_spending_stage = 2 }
+    }
+    else = {
+        multiply_variable = { var_display_final_spending = 100 }
+        set_variable = { var_display_final_spending_stage = 1 }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_military_spending
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_military_spending = 100 }
+        set_variable = { var_military_spending_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_military_spending
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_military_spending = 10 }
+        set_variable = { var_military_spending_stage = 2 }
+    }
+    else = {
+        multiply_variable = { var_military_spending = 100 }
+        set_variable = { var_military_spending_stage = 1 }
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_change
+                value = 1000
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_change = 100 }
+        set_variable = { var_display_final_change_stage = 3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_change
+                value = 10
+                compare = greater_than_or_equals
+            }
+        }
+        divide_variable = { var_display_final_change = 10 }
+        set_variable = { var_display_final_change_stage = 2 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_change
+                value = -10
+                compare = greater_than
+            }
+        }
+        multiply_variable = { var_display_final_change = 100 }
+        set_variable = { var_display_final_change_stage = 1 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = var_display_final_change
+                value = -1000
+                compare = greater_than
+            }
+        }
+        multiply_variable = { divide_variable = 10 }
+        set_variable = { var_display_final_change_stage = 2 }
+    }
+    else = {
+        divide_variable = { var_display_final_change = 100 }
+        set_variable = { var_display_final_change_stage = 3 }
+    }
+}
+
+BFDI_calculate_combined_modifier = {
+    set_variable = { combined_modifier = 1 }
+    IF = {
+        limit = {
+            has_war = yes
+        }
+        multiply_variable = {combined_modifier = 0.5} #War bad for the profits >:/
+    }
+    IF = {
+        limit = {
+            has_government = communism
+        }
+        multiply_variable = {combined_modifier = 0.8} #I'll think on how to make the crashes work
+    }
+    IF = {
+        limit = {
+            has_idea = undisturbed_isolation
+        }
+        multiply_variable = {combined_modifier = 0.2}
+    }
+    IF = {
+        limit = {
+            has_stability < 0.01
+        }
+        multiply_variable = {combined_modifier = 0}
+    }
+    multiply_variable = { combined_modifier = THIS.stability } #Stability modifier
+}
+
+BFDI_economics_init = {
+    set_variable = { var_tax_slider_pure = 143 }
+    set_variable = { var_tax_slider = 2 } #[0, 4]
+    set_variable = { var_taxation_cgf = 0.1 }
+    set_variable = { var_taxation_mgfp = 1 } # mgfp = money gain from population
+    add_dynamic_modifier = { modifier = idea_common_taxation }
+
+    set_variable = { var_schooling_slider_pure = 143 }
+    set_variable = { var_schooling_slider = 2 }
+    set_variable = { var_schooling_rsf = 0 }
+    set_variable = { var_schooling_mc = 0.2 } #mc = monthly cost
+    set_variable = { var_schooling_mc_display = 20 }
+    add_dynamic_modifier = { modifier = idea_common_schooling }
+
+    set_variable = { var_healthcare_slider_pure = 143 }
+    set_variable = { var_healthcare_slider = 2 }
+    set_variable = { var_healthcare_sf = 0 }
+    set_variable = { var_healthcare_mp = 0 }
+    set_variable = { var_healthcare_mc = 0.2 }
+    set_variable = { var_healthcare_mc_display = 20 }
+    add_dynamic_modifier = { modifier = idea_common_healthcare }
 }
