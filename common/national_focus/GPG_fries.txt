@@ -34,7 +34,7 @@ focus_tree = {
 
         prerequisite = { focus = GPG_focus_never_again }
 
-        cost = 5
+        cost = 3
 
         ai_will_do = {
             base = 10
@@ -55,7 +55,7 @@ focus_tree = {
 
         prerequisite = { focus = GPG_focus_never_again }
 
-        cost = 5
+        cost = 3
 
         ai_will_do = {
             base = 10
@@ -76,7 +76,7 @@ focus_tree = {
 
         prerequisite = { focus = GPG_focus_never_again }
 
-        cost = 5
+        cost = 3
 
         ai_will_do = {
             base = 10
@@ -109,6 +109,7 @@ focus_tree = {
             custom_effect_tooltip = l_GPG_congress_ended
             add_stability = 0.05
             set_country_flag = congress_ended
+            country_event = GPG_event.52
         }
     }
 

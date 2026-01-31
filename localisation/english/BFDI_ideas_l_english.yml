@@ -243,3 +243,6 @@
  idea_common_unplayable: "§t!!!UNPLAYABLE!!!§!"
  idea_common_unplayable_desc: "We strongly recommend not to select this country, as it lacks any content."
  idea_common_bankruptcy: "§tBankruptcy§!"
+ idea_common_taxation: "Taxation"
+ idea_common_schooling: "Schooling"
+ idea_common_healthcare: "Healthcare"

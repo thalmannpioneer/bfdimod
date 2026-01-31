@@ -1,386 +1,390 @@
 focus_tree = {
-	id = GDR_postcw_focus_tree
-	
-	country = {
-		factor = 0
-	}
-	
-	default = no
-	reset_on_civilwar = no
-	
-	focus = {
-		id = focus_GDR_triumph_of_the_democracy
-		x = 15
-		y = 0
-		icon = GFX_focus_GDR_triumph_of_the_democracy
-		
-		available = { always = no }
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_third_congress
-		relative_position_id = focus_GDR_triumph_of_the_democracy
-		y = 1
-		
-		icon = GFX_focus_GDR_third_congress
-		
-		prerequisite = { focus = focus_GDR_triumph_of_the_democracy }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GDR_event.3
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_president_selection
-		relative_position_id = focus_GDR_triumph_of_the_democracy
-		y = 2
-		
-		icon = GFX_focus_GDR_president_selection
-		
-		prerequisite = { focus = focus_GDR_third_congress }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GDR_event.4
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_dealing_with_crisis
-		relative_position_id = focus_GDR_triumph_of_the_democracy
-		y = 3
-		
-		icon = GFX_focus_GDR_dealing_with_crisis
-		
-		prerequisite = { focus = focus_GDR_president_selection }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GDR_event.6
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_lower_house_plan
-		relative_position_id = focus_GDR_triumph_of_the_democracy
-		y = 4
-		
-		icon = GFX_focus_GDR_lower_house_plan
-		
-		prerequisite = { focus = focus_GDR_dealing_with_crisis }
-		
-		available = { always = no }
-		
-		mutually_exclusive = { focus = focus_GDR_congress_plan }
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_demilitarization
-		relative_position_id = focus_GDR_lower_house_plan
-		x = -2
-		y = 1
-		
-		icon = GFX_focus_GPG_slow_disarm
-		
-		prerequisite = { focus = focus_GDR_lower_house_plan }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			every_owned_state = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GDR_instability_sf = 0.05 }
-			add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.1 }
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_representation_for_left
-		relative_position_id = focus_GDR_lower_house_plan
-		x = -3
-		y = 2
-		
-		icon = GFX_focus_GDR_representation_for_left
-		
-		prerequisite = { focus = focus_GDR_demilitarization }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			set_party_name = {
-				ideology = communism
-				long_name = GDR_communism_party_postreform
-				name = GDR_communism_party_postreform
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GDR_instability_sf = 0.05 }
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_representation_for_right
-		relative_position_id = focus_GDR_lower_house_plan
-		x = -1
-		y = 2
-		
-		icon = GFX_focus_GDR_representation_for_right
-		
-		prerequisite = { focus = focus_GDR_demilitarization }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			set_party_name = {
-				ideology = neutrality
-				long_name = GDR_neutrality_party_postreform
-				name = GDR_neutrality_party_postreform
-			}
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GDR_instability_sf = 0.05 }
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_ban_military_organizations
-		relative_position_id = focus_GDR_lower_house_plan
-		x = -2
-		y = 3
-		
-		icon = GFX_focus_GDR_ban_military_organizations
-		
-		prerequisite = {focus = focus_GDR_representation_for_right }
-		prerequisite = {focus = focus_GDR_representation_for_left }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GDR_event.7
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_slow_privatization
-		relative_position_id = focus_GDR_lower_house_plan
-		x = 2
-		y = 1
-		
-		icon = GFX_focus_GDR_slow_privatization
-		
-		prerequisite = { focus = focus_GDR_lower_house_plan }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_improves_crisis
-			add_to_variable = { var_GDR_payments_to_gpr_cgf = -0.1 }
-			add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.2 }
-			add_to_variable = { var_GDR_payments_to_gpr_pegf = 0.2 }
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_debt_negotiations
-		relative_position_id = focus_GDR_lower_house_plan
-		x = 2
-		y = 2
-		
-		icon = GFX_focus_GDR_debt_negotiations
-		
-		prerequisite = { focus = focus_GDR_slow_privatization }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GDR_debt_negotiations
-			hidden_effect = {
-				country_event = {
-					id = GDR_event.8
-					days = 10
-					random_hours = 12
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_land_of_liberty
-		relative_position_id = focus_GDR_lower_house_plan
-		y = 4
-		
-		icon = GFX_focus_GDR_land_of_liberty
-		
-		prerequisite = { focus = focus_GDR_ban_military_organizations }
-		prerequisite = { focus = focus_GDR_debt_negotiations }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GDR_land_of_liberty
-			hidden_effect = {
-				country_event = {
-					id = GDR_event.9
-					days = 15
-					random_hours = 12
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_democratic_congress
-		x = 15
-		y = 10
-		
-		icon = GFX_focus_GDR_democratic_congress
-		
-		allow_branch = { has_country_flag = democratic_congress_decisions_opened }
-		
-		available = { always = no }
-		
-		cost = 1
-		
-		ai_will_do = {
-			base = 10
-		}
-		
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = focus_GDR_lawnland
-		relative_position_id = focus_GDR_democratic_congress
-		x = -1
-		y = 1
-		
-		prerequisite = { focus = focus_GDR_democratic_congress }
-		
-		cancelable = no
-		
-		icon = GFX_focus_GDR_lawnland
-		
-		cost = 7
-		
-		ai_will_do = {
-			base = 10
-		}
-		
-		select_effect = { country_event = GDR_event.10 }
-		
-		completion_reward = { country_event = GDR_event.11 }
-	}
-	
-	focus = {
-		id = focus_GDR_casland_role
-		relative_position_id = focus_GDR_democratic_congress
-		x = 1
-		y = 1
-		
-		prerequisite = { focus = focus_GDR_democratic_congress }
-		
-		cancelable = no
-		
-		icon = GFX_focus_GDR_casland_role
-		
-		cost = 7
-		
-		ai_will_do = {
-			base = 10
-		}
-		
-		completion_reward = {
-			stability_factor = 0.05
-			add_political_power = 25
-			custom_effect_tooltip = l_GDR_congress_casland_influence_increase
-			if = {
-				limit = { check_variable = { var_GDR_congress_progressbar < 91 } }
-				add_to_variable = { var_GDR_congress_progressbar = 10 }
-			}
-			else = {
-				set_variable = { var_GDR_congress_progressbar = 100 }
-			}
-		}
-	}
+    id = GDR_postcw_focus_tree
+
+    country = {
+        factor = 0
+    }
+
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = focus_GDR_triumph_of_the_democracy
+        x = 15
+        y = 0
+        icon = GFX_focus_GDR_triumph_of_the_democracy
+
+        available = { always = no }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = focus_GDR_third_congress
+        relative_position_id = focus_GDR_triumph_of_the_democracy
+        y = 1
+
+        icon = GFX_focus_GDR_third_congress
+
+        prerequisite = { focus = focus_GDR_triumph_of_the_democracy }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GDR_event.3
+        }
+    }
+
+    focus = {
+        id = focus_GDR_president_selection
+        relative_position_id = focus_GDR_triumph_of_the_democracy
+        y = 2
+
+        icon = GFX_focus_GDR_president_selection
+
+        prerequisite = { focus = focus_GDR_third_congress }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GDR_event.4
+        }
+    }
+
+    focus = {
+        id = focus_GDR_dealing_with_crisis
+        relative_position_id = focus_GDR_triumph_of_the_democracy
+        y = 3
+
+        icon = GFX_focus_GDR_dealing_with_crisis
+
+        prerequisite = { focus = focus_GDR_president_selection }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GPG_event.52
+            country_event = {
+                id = GDR_event.6
+                days = 2
+            }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_lower_house_plan
+        relative_position_id = focus_GDR_triumph_of_the_democracy
+        y = 4
+
+        icon = GFX_focus_GDR_lower_house_plan
+
+        prerequisite = { focus = focus_GDR_dealing_with_crisis }
+
+        available = { always = no }
+
+        mutually_exclusive = { focus = focus_GDR_congress_plan }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = focus_GDR_demilitarization
+        relative_position_id = focus_GDR_lower_house_plan
+        x = -2
+        y = 1
+
+        icon = GFX_focus_GPG_slow_disarm
+
+        prerequisite = { focus = focus_GDR_lower_house_plan }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+            }
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GDR_instability_sf = 0.05 }
+            add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.1 }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_representation_for_left
+        relative_position_id = focus_GDR_lower_house_plan
+        x = -3
+        y = 2
+
+        icon = GFX_focus_GDR_representation_for_left
+
+        prerequisite = { focus = focus_GDR_demilitarization }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            set_party_name = {
+                ideology = communism
+                long_name = GDR_communism_party_postreform
+                name = GDR_communism_party_postreform
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = 0.05
+            }
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GDR_instability_sf = 0.05 }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_representation_for_right
+        relative_position_id = focus_GDR_lower_house_plan
+        x = -1
+        y = 2
+
+        icon = GFX_focus_GDR_representation_for_right
+
+        prerequisite = { focus = focus_GDR_demilitarization }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            set_party_name = {
+                ideology = neutrality
+                long_name = GDR_neutrality_party_postreform
+                name = GDR_neutrality_party_postreform
+            }
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GDR_instability_sf = 0.05 }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_ban_military_organizations
+        relative_position_id = focus_GDR_lower_house_plan
+        x = -2
+        y = 3
+
+        icon = GFX_focus_GDR_ban_military_organizations
+
+        prerequisite = {focus = focus_GDR_representation_for_right }
+        prerequisite = {focus = focus_GDR_representation_for_left }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GDR_event.7
+        }
+    }
+
+    focus = {
+        id = focus_GDR_slow_privatization
+        relative_position_id = focus_GDR_lower_house_plan
+        x = 2
+        y = 1
+
+        icon = GFX_focus_GDR_slow_privatization
+
+        prerequisite = { focus = focus_GDR_lower_house_plan }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_improves_crisis
+            add_to_variable = { var_GDR_payments_to_gpr_cgf = -0.1 }
+            add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.2 }
+            add_to_variable = { var_GDR_payments_to_gpr_pegf = 0.2 }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_debt_negotiations
+        relative_position_id = focus_GDR_lower_house_plan
+        x = 2
+        y = 2
+
+        icon = GFX_focus_GDR_debt_negotiations
+
+        prerequisite = { focus = focus_GDR_slow_privatization }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GDR_debt_negotiations
+            hidden_effect = {
+                country_event = {
+                    id = GDR_event.8
+                    days = 10
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_land_of_liberty
+        relative_position_id = focus_GDR_lower_house_plan
+        y = 4
+
+        icon = GFX_focus_GDR_land_of_liberty
+
+        prerequisite = { focus = focus_GDR_ban_military_organizations }
+        prerequisite = { focus = focus_GDR_debt_negotiations }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GDR_land_of_liberty
+            hidden_effect = {
+                country_event = {
+                    id = GDR_event.9
+                    days = 15
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = focus_GDR_democratic_congress
+        x = 15
+        y = 10
+
+        icon = GFX_focus_GDR_democratic_congress
+
+        allow_branch = { has_country_flag = democratic_congress_decisions_opened }
+
+        available = { always = no }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+        }
+    }
+
+    focus = {
+        id = focus_GDR_lawnland
+        relative_position_id = focus_GDR_democratic_congress
+        x = -1
+        y = 1
+
+        prerequisite = { focus = focus_GDR_democratic_congress }
+
+        cancelable = no
+
+        icon = GFX_focus_GDR_lawnland
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        select_effect = { country_event = GDR_event.10 }
+
+        completion_reward = { country_event = GDR_event.11 }
+    }
+
+    focus = {
+        id = focus_GDR_casland_role
+        relative_position_id = focus_GDR_democratic_congress
+        x = 1
+        y = 1
+
+        prerequisite = { focus = focus_GDR_democratic_congress }
+
+        cancelable = no
+
+        icon = GFX_focus_GDR_casland_role
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            stability_factor = 0.05
+            add_political_power = 25
+            custom_effect_tooltip = l_GDR_congress_casland_influence_increase
+            if = {
+                limit = { check_variable = { var_GDR_congress_progressbar < 91 } }
+                add_to_variable = { var_GDR_congress_progressbar = 10 }
+            }
+            else = {
+                set_variable = { var_GDR_congress_progressbar = 100 }
+            }
+        }
+    }
 }

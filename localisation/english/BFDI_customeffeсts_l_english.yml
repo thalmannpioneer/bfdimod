@@ -76,6 +76,7 @@
  l_GPG_third_congress_ended: "§YThird Congress is closing§!"
  l_GPG_improves_rcc: "§GImproves RCC§!"
  l_GPG_abolish_chairman: "Removes current §YChairman§!"
+ l_GPG_wipes_our_debt: "§tWe will get rid of most of our debt and will be able to manage our economics§!"
  
  l_GSR_loads_focus_tree: "§RSocialism comes to Casland!§!"
  l_GSR_gelatin_retires: "§YGelatin§! 'retires'."
@@ -221,7 +222,8 @@
  l_GTR_bad_spaceship_outcome: "§tThat's not the end yet...§!"
  l_GTR_opens_spaceship_focus: "Opens §3The Taste of Space§! Focus"
  l_GTR_outcome: "§YThe weights will lean towards one of the two ellipsoids...§!\n§LOr maybe not, who knows?§!"
-
+ 
+ l_money_gain_50K: "Gain §G50K Dollars§!"
  l_money_gain_100K: "Gain §G100K Dollars§!"
  l_money_gain_200K: "Gain §G200K Dollars§!"
  l_money_gain_300K: "Gain §G300K Dollars§!"

@@ -113,12 +113,30 @@ scripted_gui = {
         }
 
         triggers = {
-            slider_decrease__tax_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
-            slider_increase__tax_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
-            slider_decrease__schooling_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
-            slider_increase__schooling_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
-            slider_decrease__healthcare_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
-            slider_increase__healthcare_click_enabled = { NOT = { has_idea = idea_common_bankruptcy } }
+            slider_decrease__tax_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
+            slider_increase__tax_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
+            slider_decrease__schooling_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
+            slider_increase__schooling_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
+            slider_decrease__healthcare_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
+            slider_increase__healthcare_click_enabled = {
+                NOT = { has_idea = idea_common_bankruptcy }
+                NOT = { has_country_flag = disable_money_politics }
+            }
         }
 
         visible = { has_country_flag = economic_ledger_opened }

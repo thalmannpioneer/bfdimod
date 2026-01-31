@@ -62,6 +62,9 @@ focus_tree = {
                     instant_build = yes
                 }
             }
+            custom_effect_tooltip = l_money_gain_50K
+            add_to_variable = { money_amount = 0.5 }
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -150,7 +153,8 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_political_power = 20
+            add_political_power = 25
+            add_stability = 0.05
         }
     }
 
@@ -561,6 +565,9 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_WGF_better_situation_with_crisis
             add_to_variable = { var_WGF_economical_devastation_cgf = -0.05 }
+            custom_effect_tooltip = l_money_gain_50K
+            add_to_variable = { money_amount = 0.5 }
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -635,6 +642,9 @@ focus_tree = {
             custom_effect_tooltip = l_WGF_closer_war
             add_to_variable = { var_WGF_war_closeness = 10 }
             remove_dynamic_modifier = { modifier = idea_WGF_economical_devastation }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
         }
     }
 

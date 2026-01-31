@@ -1,382 +1,384 @@
 focus_tree = {
-	id = GFG_postcw_focus_tree
-	
-	country = {
-		factor = 0
-	}
-	
-	default = no
-	reset_on_civilwar = no
-	
-	focus = {
-		id = GFG_focus_green_grass_black_flag
-		x = 15
-		y = 0
-		icon = GFX_focus_GFG_green_grass_black_flag
-		
-		available = { always = no }
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_trial_over_traitors
-		relative_position_id = GFG_focus_green_grass_black_flag
-		y = 1
-		icon = GFX_focus_GFG_trial_over_traitors
-		
-		prerequisite = { focus = GFG_focus_green_grass_black_flag }
-		
-		cost = 5
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GFG_event.4
-		}
-	}
-	
-	#TRIUMVIRATE PATH
-	focus = {
-		id = GFG_focus_neverending_victory
-		relative_position_id = GFG_focus_green_grass_black_flag
-		x = -2
-		y = 2
-		icon = GFX_focus_GFG_eternal_victory
-		
-		prerequisite = { focus = GFG_focus_trial_over_traitors }
-		mutually_exclusive = { focus = GFG_focus_neverending_terror }
-		
-		available = { always = no }
-		
-		allow_branch = { has_country_flag = fascist_path }
-		
-		offset = {
-			x = 2
-			trigger = {
-				has_country_flag = fascist_path
-			}
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_goikian_identity
-		relative_position_id = GFG_focus_neverending_victory
-		x = -1
-		y = 1
-		icon = GFX_focus_GSR_new_casland_object
-		
-		prerequisite = { focus = GFG_focus_neverending_victory }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_if_you_feel
-		relative_position_id = GFG_focus_neverending_victory
-		x = -1
-		y = 2
-		icon = GFX_focus_GFG_if_you_feel
-		
-		prerequisite = { focus = GFG_focus_goikian_identity }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GFG_object_nation
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_clean_from_traitors
-		relative_position_id = GFG_focus_neverending_victory
-		x = 1
-		y = 1
-		icon = GFX_focus_GFG_clean_from_traitors
-		
-		prerequisite = { focus = GFG_focus_neverending_victory }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GFG_improves_resistance
-			add_to_variable = { var_GFG_resistance_sf = 0.05 }
-			add_to_variable = { var_GFG_resistance_cf = 0.1 }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_free_from_empathy
-		relative_position_id = GFG_focus_neverending_victory
-		x = 1
-		y = 2
-		icon = GFX_focus_GFG_free_from_empathy
-		
-		prerequisite = { focus = GFG_focus_clean_from_traitors }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_allows_divisions_training
-			add_stability = -0.05
-			add_timed_idea = {
-				idea = idea_GFG_anti_resistance_activity
-				days = 180
-			}
-			hidden_effect = {
-				country_lock_all_division_template = no
-			}
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_goiky_ressurection_government
-		relative_position_id = GFG_focus_neverending_victory
-		y = 3
-		icon = GFX_focus_GFG_goiky_ressurection_government
-		
-		prerequisite = { focus = GFG_focus_if_you_feel }
-		prerequisite = { focus = GFG_focus_free_from_empathy }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GFG_ressurection_government
-			hidden_effect = {
-				set_cosmetic_tag = GFG_goiky
-				load_focus_tree = GFG_postcw2_focus_tree
-				country_event = {
-					id = GFG_event.5
-					days = 2
-				}
-			}
-		}
-	}
-	
-	#PILLOW PATH
-	focus = {
-		id = GFG_focus_neverending_terror
-		relative_position_id = GFG_focus_green_grass_black_flag
-		x = 2
-		y = 2
-		icon = GFX_focus_GFG_eternal_terror
-		
-		prerequisite = { focus = GFG_focus_trial_over_traitors }
-		mutually_exclusive = { focus = GFG_focus_neverending_victory }
+    id = GFG_postcw_focus_tree
 
-		available = { always = no }
-		
-		allow_branch = { has_country_flag = esoteric_path }
-		
-		offset = {
-			x = -2
-			trigger = {
-				has_country_flag = esoteric_path
-			}
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_burn_their_towns
-		relative_position_id = GFG_focus_neverending_terror
-		x = -1
-		y = 1
-		icon = GFX_focus_GFG_burn_their_houses
-		
-		prerequisite = { focus = GFG_focus_neverending_terror }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GFG_anti_resistance_pillow
-			10 = {
-				add_manpower = -51910
-			}
-			145 = {
-				add_manpower = -30111
-			}
-			add_victory_points = {
-				province = 5107
-				value = -15
-			}
-			add_victory_points = {
-				province = 876
-				value = -10
-			}
-			custom_effect_tooltip = l_GFG_improves_resistance
-			add_to_variable = { var_GFG_resistance_sf = 0.05 }
-			add_to_variable = { var_GFG_resistance_cf = 0.1 }
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_kill_their_people
-		relative_position_id = GFG_focus_neverending_terror
-		x = -1
-		y = 2
-		icon = GFX_focus_GFG_kill_their_people
-		
-		prerequisite = { focus = GFG_focus_burn_their_towns }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_timed_idea = {
-				idea = idea_GFG_anti_resistance_activity
-				days = 180
-			}
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_fake_gods
-		relative_position_id = GFG_focus_neverending_terror
-		x = 1
-		y = 1
-		icon = GFX_focus_GFG_fake_gods
-		
-		prerequisite = { focus = GFG_focus_neverending_terror }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_war_support = 0.05
-			every_other_country = {
-				limit = { NOT = { tag = EMP } }
-				add_opinion_modifier = {
-					target = GFG
-					modifier = large_decrease
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_call_of_the_north
-		relative_position_id = GFG_focus_neverending_terror
-		x = 1
-		y = 2
-		icon = GFX_focus_GFG_call_of_the_north
-		
-		prerequisite = { focus = GFG_focus_fake_gods }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GFG_event.12
-		}
-	}
-	
-	focus = {
-		id = GFG_focus_terra_yoylelandia
-		relative_position_id = GFG_focus_neverending_terror
-		y = 3
-		icon = GFX_focus_GFG_terra_yoylelandia
-		
-		prerequisite = { focus = GFG_focus_kill_their_people }
-		prerequisite = { focus = GFG_focus_call_of_the_north }
-		
-		cost = 7
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GFG_terra_yoylelandia
-			hidden_effect = {
-				load_focus_tree = GFG_postcw2_focus_tree
-				country_event = {
-					id = GFG_event.13
-					days = 10
-				}
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.23
-						days = 15
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
+    country = {
+        factor = 0
+    }
+
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = GFG_focus_green_grass_black_flag
+        x = 15
+        y = 0
+        icon = GFX_focus_GFG_green_grass_black_flag
+
+        available = { always = no }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GFG_focus_trial_over_traitors
+        relative_position_id = GFG_focus_green_grass_black_flag
+        y = 1
+        icon = GFX_focus_GFG_trial_over_traitors
+
+        prerequisite = { focus = GFG_focus_green_grass_black_flag }
+
+        cost = 5
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GFG_event.4
+        }
+    }
+
+    #TRIUMVIRATE PATH
+    focus = {
+        id = GFG_focus_neverending_victory
+        relative_position_id = GFG_focus_green_grass_black_flag
+        x = -2
+        y = 2
+        icon = GFX_focus_GFG_eternal_victory
+
+        prerequisite = { focus = GFG_focus_trial_over_traitors }
+        mutually_exclusive = { focus = GFG_focus_neverending_terror }
+
+        available = { always = no }
+
+        allow_branch = { has_country_flag = fascist_path }
+
+        offset = {
+            x = 2
+            trigger = {
+                has_country_flag = fascist_path
+            }
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GFG_focus_goikian_identity
+        relative_position_id = GFG_focus_neverending_victory
+        x = -1
+        y = 1
+        icon = GFX_focus_GSR_new_casland_object
+
+        prerequisite = { focus = GFG_focus_neverending_victory }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_if_you_feel
+        relative_position_id = GFG_focus_neverending_victory
+        x = -1
+        y = 2
+        icon = GFX_focus_GFG_if_you_feel
+
+        prerequisite = { focus = GFG_focus_goikian_identity }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GFG_object_nation
+        }
+    }
+
+    focus = {
+        id = GFG_focus_clean_from_traitors
+        relative_position_id = GFG_focus_neverending_victory
+        x = 1
+        y = 1
+        icon = GFX_focus_GFG_clean_from_traitors
+
+        prerequisite = { focus = GFG_focus_neverending_victory }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GFG_improves_resistance
+            add_to_variable = { var_GFG_resistance_sf = 0.05 }
+            add_to_variable = { var_GFG_resistance_cf = 0.1 }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_free_from_empathy
+        relative_position_id = GFG_focus_neverending_victory
+        x = 1
+        y = 2
+        icon = GFX_focus_GFG_free_from_empathy
+
+        prerequisite = { focus = GFG_focus_clean_from_traitors }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_allows_divisions_training
+            add_stability = -0.05
+            add_timed_idea = {
+                idea = idea_GFG_anti_resistance_activity
+                days = 180
+            }
+            hidden_effect = {
+                country_lock_all_division_template = no
+            }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_goiky_ressurection_government
+        relative_position_id = GFG_focus_neverending_victory
+        y = 3
+        icon = GFX_focus_GFG_goiky_ressurection_government
+
+        prerequisite = { focus = GFG_focus_if_you_feel }
+        prerequisite = { focus = GFG_focus_free_from_empathy }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GFG_ressurection_government
+            country_event = GPG_event.52
+            hidden_effect = {
+                set_cosmetic_tag = GFG_goiky
+                load_focus_tree = GFG_postcw2_focus_tree
+                country_event = {
+                    id = GFG_event.5
+                    days = 2
+                }
+            }
+        }
+    }
+
+    #PILLOW PATH
+    focus = {
+        id = GFG_focus_neverending_terror
+        relative_position_id = GFG_focus_green_grass_black_flag
+        x = 2
+        y = 2
+        icon = GFX_focus_GFG_eternal_terror
+
+        prerequisite = { focus = GFG_focus_trial_over_traitors }
+        mutually_exclusive = { focus = GFG_focus_neverending_victory }
+
+        available = { always = no }
+
+        allow_branch = { has_country_flag = esoteric_path }
+
+        offset = {
+            x = -2
+            trigger = {
+                has_country_flag = esoteric_path
+            }
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GFG_focus_burn_their_towns
+        relative_position_id = GFG_focus_neverending_terror
+        x = -1
+        y = 1
+        icon = GFX_focus_GFG_burn_their_houses
+
+        prerequisite = { focus = GFG_focus_neverending_terror }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GFG_anti_resistance_pillow
+            10 = {
+                add_manpower = -51910
+            }
+            145 = {
+                add_manpower = -30111
+            }
+            add_victory_points = {
+                province = 5107
+                value = -15
+            }
+            add_victory_points = {
+                province = 876
+                value = -10
+            }
+            custom_effect_tooltip = l_GFG_improves_resistance
+            add_to_variable = { var_GFG_resistance_sf = 0.05 }
+            add_to_variable = { var_GFG_resistance_cf = 0.1 }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_kill_their_people
+        relative_position_id = GFG_focus_neverending_terror
+        x = -1
+        y = 2
+        icon = GFX_focus_GFG_kill_their_people
+
+        prerequisite = { focus = GFG_focus_burn_their_towns }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = idea_GFG_anti_resistance_activity
+                days = 180
+            }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_fake_gods
+        relative_position_id = GFG_focus_neverending_terror
+        x = 1
+        y = 1
+        icon = GFX_focus_GFG_fake_gods
+
+        prerequisite = { focus = GFG_focus_neverending_terror }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_war_support = 0.05
+            every_other_country = {
+                limit = { NOT = { tag = EMP } }
+                add_opinion_modifier = {
+                    target = GFG
+                    modifier = large_decrease
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GFG_focus_call_of_the_north
+        relative_position_id = GFG_focus_neverending_terror
+        x = 1
+        y = 2
+        icon = GFX_focus_GFG_call_of_the_north
+
+        prerequisite = { focus = GFG_focus_fake_gods }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GFG_event.12
+        }
+    }
+
+    focus = {
+        id = GFG_focus_terra_yoylelandia
+        relative_position_id = GFG_focus_neverending_terror
+        y = 3
+        icon = GFX_focus_GFG_terra_yoylelandia
+
+        prerequisite = { focus = GFG_focus_kill_their_people }
+        prerequisite = { focus = GFG_focus_call_of_the_north }
+
+        cost = 7
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GFG_terra_yoylelandia
+            country_event = GPG_event.52
+            hidden_effect = {
+                load_focus_tree = GFG_postcw2_focus_tree
+                country_event = {
+                    id = GFG_event.13
+                    days = 10
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.23
+                        days = 15
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
 }

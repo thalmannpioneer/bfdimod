@@ -647,6 +647,7 @@ BFDI_economics_init = {
     set_variable = { var_schooling_slider_pure = 143 }
     set_variable = { var_schooling_slider = 2 }
     set_variable = { var_schooling_rsf = 0 }
+    set_variable = { var_schooling_srbf = 0 }
     set_variable = { var_schooling_mc = 0.2 } #mc = monthly cost
     set_variable = { var_schooling_mc_display = 20 }
     add_dynamic_modifier = { modifier = idea_common_schooling }

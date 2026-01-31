@@ -1,177 +1,179 @@
 decision_WGF_operation_coinflip_category = {
-	WGF_operation_coinflip_mission = {
-		icon = GFX_decisions_WGF_operation_coinflip_mission
-		activation = {
-			has_completed_focus = WGF_focus_operation_coinflip
-			check_variable = { var_WGF_war_closeness > 4 }
-			NOT = { check_variable = { var_WGF_war_closeness > 99 } }
-			NOT = { custom_trigger_tooltip = {
-						tooltip = l_WGF_trigger_war_closened_enough
-						has_country_flag = operation_prepared
-					} 
-			}
-		}
-		available = { always = no }
-		cancel_trigger = {
-			check_variable = { var_WGF_war_closeness > 99 }
-			has_country_flag = operation_prepared
-		}
-		is_good = no
-		days_mission_timeout = 70
-		selectable_mission = no
-		timeout_effect = {
-			custom_effect_tooltip = l_WGF_coinflip_mission_cf
-			hidden_effect = {
-				random_list = {
-					50 = { add_to_variable = { var_WGF_war_closeness = -5 } }
-					50 = { add_to_variable = { var_WGF_war_closeness = -10 } }
-				}
-			}
-		}
-	}
-	
-	WGF_decision_operation_coinflip_mobilization = {
-		icon = GFX_decisions_WGF_operation_coinflip_mobilization
-		allowed = {
-			tag = WGF
-		}
-		ai_will_do = {
-			base = 10
-			modifier = {
-				add = 50
-				check_variable = { var_WGF_war_closeness < 100 }
-			}
-		}
-		visible = { 
-			has_completed_focus = WGF_focus_deploy_the_army 
-			NOT = { custom_trigger_tooltip = {
-						tooltip = l_WGF_trigger_war_closened_enough
-						has_country_flag = operation_prepared
-					} 
-			}
-		}
-		available = {
-			has_completed_focus = WGF_focus_deploy_the_army
-			NOT = { check_variable = { var_WGF_war_closeness > 95 } }
-			NOT = { custom_trigger_tooltip = {
-						tooltip = l_WGF_trigger_war_closened_enough
-						has_country_flag = operation_prepared
-					} 
-			}
-		}
-		cost = 50
-		fire_only_once = no
-		days_remove = 35
-		remove_effect = {
-			custom_effect_tooltip = l_WGF_closer_war_cf
-			add_to_variable = { var_WGF_war_closeness = 5 }
-			add_manpower = 5000
-		}
-		cancel_trigger = {
-			check_variable = { var_WGF_war_closeness > 95 }
-			has_country_flag = operation_prepared
-		}
-	}
-	
-	WGF_decision_operation_coinflip_propaganda = {
-		allowed = {
-			tag = WGF
-		}
-		ai_will_do = {
-			base = 10
-			modifier = {
-				add = 50
-				check_variable = { var_WGF_war_closeness < 100 }
-			}
-		}
-		visible = { 
-			has_completed_focus = WGF_focus_mass_propaganda
-			NOT = { custom_trigger_tooltip = {
-						tooltip = l_WGF_trigger_war_closened_enough
-						has_country_flag = operation_prepared
-					} 
-			}
-		}
-		available = {
-			has_completed_focus = WGF_focus_mass_propaganda
-			NOT = { check_variable = { var_WGF_war_closeness > 95 } }
-			NOT = { custom_trigger_tooltip = {
-						tooltip = l_WGF_trigger_war_closened_enough
-						has_country_flag = operation_prepared
-					} 
-			}
-		}
-		cost = 50
-		icon = GFX_decisions_WGF_operation_coinflip_propaganda
-		fire_only_once = no
-		days_remove = 50
-		remove_effect = {
-			custom_effect_tooltip = l_WGF_closer_war_cf
-			add_to_variable = { var_WGF_war_closeness = 5 }
-			add_war_support = 0.05
-		}
-		cancel_trigger = {
-			check_variable = { var_WGF_war_closeness > 95 }
-			has_country_flag = operation_prepared
-		}
-	}
-	
-	WGF_decision_operation_coinflip_triumph = {
-		allowed = {
-			tag = WGF
-		}
-		ai_will_do = {
-			base = 50
-		}
-		visible = { 
-			has_country_flag = operation_started
-		}
-		available = {
-			has_country_flag = operation_started
-			173 = {
-				is_fully_controlled_by = WGF
-			}
-			GMD = { exists = no }
-		}
-		icon = GFX_decisions_WGF_operation_coinflip_triumph
-		fire_only_once = no
-		complete_effect = {
-			custom_effect_tooltip = l_WGF_coinflip_triumph
-			hidden_effect = { 
-				set_cosmetic_tag = WGF_stage2 
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.6
-						days = 2
-						hours = 12
-					}
-				}
-				173 = { add_core_of = WGF }
-				11 = { add_core_of = WGF }
-				182 = { add_core_of = WGF }
-			}
-			set_country_flag = WGF_stage1_ended
-		}
-	}
-	
-	WGF_decision_operation_coinflip_war_decision_ai = {
-		allowed = {
-			tag = WGF
-		}
-		visible = { is_ai = yes }
-		available = { 
-			is_ai = yes 
-			check_variable = { var_WGF_war_closeness > 99 }
-			NOT = { has_country_flag = operation_prepared }
-		}
-		ai_will_do = {
-			base = 50
-		}
-		fire_only_once = yes
-		complete_effect = {
-			set_country_flag = operation_prepared
-			set_variable = { var_WGF_operation_is_ready = 2 }
-		}
-	}
+    WGF_operation_coinflip_mission = {
+        icon = GFX_decisions_WGF_operation_coinflip_mission
+        activation = {
+            has_completed_focus = WGF_focus_operation_coinflip
+            check_variable = { var_WGF_war_closeness > 4 }
+            NOT = { check_variable = { var_WGF_war_closeness > 99 } }
+            NOT = { custom_trigger_tooltip = {
+                tooltip = l_WGF_trigger_war_closened_enough
+                has_country_flag = operation_prepared
+            }
+        }
+    }
+    available = { always = no }
+    cancel_trigger = {
+        hidden_trigger = {
+            check_variable = { var_WGF_war_closeness > 99 }
+            has_country_flag = operation_prepared
+        }
+    }
+    is_good = no
+    days_mission_timeout = 70
+    selectable_mission = no
+    timeout_effect = {
+        custom_effect_tooltip = l_WGF_coinflip_mission_cf
+        hidden_effect = {
+            random_list = {
+                50 = { add_to_variable = { var_WGF_war_closeness = -5 } }
+                50 = { add_to_variable = { var_WGF_war_closeness = -10 } }
+            }
+        }
+    }
+}
+
+WGF_decision_operation_coinflip_mobilization = {
+    icon = GFX_decisions_WGF_operation_coinflip_mobilization
+    allowed = {
+        tag = WGF
+    }
+    ai_will_do = {
+        base = 10
+        modifier = {
+            add = 50
+            check_variable = { var_WGF_war_closeness < 100 }
+        }
+    }
+    visible = {
+        has_completed_focus = WGF_focus_deploy_the_army
+        NOT = { custom_trigger_tooltip = {
+            tooltip = l_WGF_trigger_war_closened_enough
+            has_country_flag = operation_prepared
+        }
+    }
+}
+available = {
+    has_completed_focus = WGF_focus_deploy_the_army
+    NOT = { check_variable = { var_WGF_war_closeness > 95 } }
+    NOT = { custom_trigger_tooltip = {
+        tooltip = l_WGF_trigger_war_closened_enough
+        has_country_flag = operation_prepared
+    }
+}
+}
+cost = 50
+fire_only_once = no
+days_remove = 35
+remove_effect = {
+    custom_effect_tooltip = l_WGF_closer_war_cf
+    add_to_variable = { var_WGF_war_closeness = 5 }
+    add_manpower = 5000
+}
+cancel_trigger = {
+    check_variable = { var_WGF_war_closeness > 95 }
+    has_country_flag = operation_prepared
+}
+}
+
+WGF_decision_operation_coinflip_propaganda = {
+    allowed = {
+        tag = WGF
+    }
+    ai_will_do = {
+        base = 10
+        modifier = {
+            add = 50
+            check_variable = { var_WGF_war_closeness < 100 }
+        }
+    }
+    visible = {
+        has_completed_focus = WGF_focus_mass_propaganda
+        NOT = { custom_trigger_tooltip = {
+            tooltip = l_WGF_trigger_war_closened_enough
+            has_country_flag = operation_prepared
+        }
+    }
+}
+available = {
+    has_completed_focus = WGF_focus_mass_propaganda
+    NOT = { check_variable = { var_WGF_war_closeness > 95 } }
+    NOT = { custom_trigger_tooltip = {
+        tooltip = l_WGF_trigger_war_closened_enough
+        has_country_flag = operation_prepared
+    }
+}
+}
+cost = 50
+icon = GFX_decisions_WGF_operation_coinflip_propaganda
+fire_only_once = no
+days_remove = 50
+remove_effect = {
+    custom_effect_tooltip = l_WGF_closer_war_cf
+    add_to_variable = { var_WGF_war_closeness = 5 }
+    add_war_support = 0.05
+}
+cancel_trigger = {
+    check_variable = { var_WGF_war_closeness > 95 }
+    has_country_flag = operation_prepared
+}
+}
+
+WGF_decision_operation_coinflip_triumph = {
+    allowed = {
+        tag = WGF
+    }
+    ai_will_do = {
+        base = 50
+    }
+    visible = {
+        has_country_flag = operation_started
+    }
+    available = {
+        has_country_flag = operation_started
+        173 = {
+            is_fully_controlled_by = WGF
+        }
+        GMD = { exists = no }
+    }
+    icon = GFX_decisions_WGF_operation_coinflip_triumph
+    fire_only_once = no
+    complete_effect = {
+        custom_effect_tooltip = l_WGF_coinflip_triumph
+        hidden_effect = {
+            set_cosmetic_tag = WGF_stage2
+            every_possible_country = {
+                limit = { is_ai = no }
+                news_event = {
+                    id = bfdinews.6
+                    days = 2
+                    hours = 12
+                }
+            }
+            173 = { add_core_of = WGF }
+            11 = { add_core_of = WGF }
+            182 = { add_core_of = WGF }
+        }
+        set_country_flag = WGF_stage1_ended
+    }
+}
+
+WGF_decision_operation_coinflip_war_decision_ai = {
+    allowed = {
+        tag = WGF
+    }
+    visible = { is_ai = yes }
+    available = {
+        is_ai = yes
+        check_variable = { var_WGF_war_closeness > 99 }
+        NOT = { has_country_flag = operation_prepared }
+    }
+    ai_will_do = {
+        base = 50
+    }
+    fire_only_once = yes
+    complete_effect = {
+        set_country_flag = operation_prepared
+        set_variable = { var_WGF_operation_is_ready = 2 }
+    }
+}
 }

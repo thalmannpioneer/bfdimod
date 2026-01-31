@@ -1,16 +1,17 @@
 scripted_gui = {
-	welcome_window = {
-		window_name = welcomewindowContainer
-		context_type = player_context
-	
-		visible = {
-			has_global_flag = welcome
-		}
-		
-		effects = {
-			play_click = {
-				clr_global_flag = welcome
-			}
-		}
-	}
+    welcome_window = {
+        window_name = welcomewindowContainer
+        context_type = player_context
+
+        visible = {
+            has_global_flag = welcome
+        }
+
+        effects = {
+            play_click = {
+                clr_global_flag = welcome
+                country_event = common_event.3
+            }
+        }
+    }
 }

@@ -56,7 +56,12 @@ on_actions = {
             set_global_flag = welcome
 
             every_possible_country = {
+                limit = {
+                    NOT = { tag = GOI }
+                    NOT = { tag = EMP }
+                }
                 set_country_flag = has_money_system
+                BFDI_economics_init = yes
                 IF = {
                     limit = {tag = YFC}
                     set_variable = { money_amount = 30.15 }
@@ -66,6 +71,21 @@ on_actions = {
                     limit = { tag = GPG }
                     set_variable = { money_amount = -10.32 } #Dream Island costs were very high :(
                     BFDI_money_diplay_update = yes
+
+                    set_country_flag = disable_money_politics
+                    set_variable = { var_schooling_slider_pure = 25 }
+                    set_variable = { var_schooling_slider = 0 }
+                    set_variable = { var_schooling_rsf = -0.1 }
+                    set_variable = { var_schooling_srbf = -0.2 }
+                    set_variable = { var_schooling_mc = 0 }
+                    set_variable = { var_schooling_mc_display = 0 }
+
+                    set_variable = { var_healthcare_slider_pure = 25 }
+                    set_variable = { var_healthcare_slider = 0 }
+                    set_variable = { var_healthcare_sf = -0.1 }
+                    set_variable = { var_healthcare_mp = -0.2 }
+                    set_variable = { var_healthcare_mc = 0 }
+                    set_variable = { var_healthcare_mc_display = 0 }
                 }
                 ELSE_IF = {
                     limit = { tag = GTR }
@@ -86,6 +106,21 @@ on_actions = {
                         max = -8
                     }
                     BFDI_money_diplay_update = yes
+
+                    set_country_flag = disable_money_politics
+                    set_variable = { var_schooling_slider_pure = 25 }
+                    set_variable = { var_schooling_slider = 0 }
+                    set_variable = { var_schooling_rsf = -0.1 }
+                    set_variable = { var_schooling_srbf = -0.2 }
+                    set_variable = { var_schooling_mc = 0 }
+                    set_variable = { var_schooling_mc_display = 0 }
+
+                    set_variable = { var_healthcare_slider_pure = 25 }
+                    set_variable = { var_healthcare_slider = 0 }
+                    set_variable = { var_healthcare_sf = -0.1 }
+                    set_variable = { var_healthcare_mp = -0.2 }
+                    set_variable = { var_healthcare_mc = 0 }
+                    set_variable = { var_healthcare_mc_display = 0 }
                 }
                 ELSE_IF = {
                     limit = {
@@ -96,8 +131,8 @@ on_actions = {
                     }
                     set_variable_to_random = { #Both are in poor areas of Goiky so do not have early funds
                         var = money_amount
-                        min = -5
-                        max = -3
+                        min = -2
+                        max = -1
                     }
                     BFDI_money_diplay_update = yes
                 }
@@ -118,8 +153,8 @@ on_actions = {
                 ELSE = {
                     set_variable_to_random = {
                         var = money_amount
-                        min = -2
-                        max = 2
+                        min = -1
+                        max = 1
                     }
                     BFDI_money_diplay_update = yes
                 }
@@ -128,8 +163,6 @@ on_actions = {
                 set_variable = { selling_item = -1 } #YFC trade other
                 set_variable = { buying_amount = 100 } #YFC trade other
                 set_variable = { selling_amount = 100 } #YFC trade other
-
-                BFDI_economics_init = yes
             }
 
             89 = {
@@ -618,17 +651,118 @@ on_actions = {
                     limit = { has_idea = idea_common_bankruptcy }
                     if = {
                         limit = { check_variable = { money_amount > 0 } }
-                        remove_ideas = idea_common_bankruptcy
+                        country_event = common_event.2
                     }
                 }
                 else = {
                     if = {
-                        limit = { check_variable = { money_amount < -5 } }
+                        limit = {
+                            check_variable = { money_amount < -5 }
+                            NOT = { has_country_flag = disable_money_politics }
+                        }
                         country_event = common_event.1
                     }
                 }
 
                 BFDI_money_diplay_update = yes
+            }
+        }
+    }
+
+    on_weekly = { #AI logic for money politics
+        effect = {
+            if = {
+                limit = {
+                    is_ai = yes
+                    NOT = { has_idea = idea_common_bankruptcy }
+                    NOT = { has_country_flag = disable_money_politics }
+                }
+                BFDI_calculate_money_stats = yes
+
+                while_loop_effect = { # Getting out of negative balance
+                    limit = {
+                        check_variable = { var_display_final_change < 0 }
+
+                        OR = {
+                            check_variable = { var_tax_slider < 4 }
+                            check_variable = { var_schooling_slider > 0 }
+                            check_variable = { var_healthcare_slider > 0 }
+                        }
+                    }
+
+                    if = {
+                        limit = { check_variable = { var_tax_slider < 4 } }
+                        add_to_variable = { var_tax_slider = 1 }
+                        add_to_variable = { var_tax_slider_pure = 59 }
+                        add_to_variable = { var_taxation_cgf = 0.05 }
+                        add_to_variable = { var_taxation_mgfp = 0.25 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                    else_if = {
+                        limit = { check_variable = { var_schooling_slider > 0 } }
+                        subtract_from_variable = { var_schooling_slider_pure = 59 }
+                        subtract_from_variable = { var_schooling_slider = 1 }
+                        subtract_from_variable = { var_schooling_rsf = 0.05 }
+                        subtract_from_variable = { var_schooling_srbf = 0.1 }
+                        subtract_from_variable = { var_schooling_mc = 0.1 }
+                        subtract_from_variable = { var_schooling_mc_display = 10 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                    else_if = {
+                        limit = { check_variable = { var_healthcare_slider > 0 } }
+                        subtract_from_variable = { var_healthcare_slider_pure = 59 }
+                        subtract_from_variable = { var_healthcare_slider = 1 }
+                        subtract_from_variable = { var_healthcare_sf = 0.05 }
+                        subtract_from_variable = { var_healthcare_mp = 0.1 }
+                        subtract_from_variable = { var_healthcare_mc = 0.1 }
+                        subtract_from_variable = { var_healthcare_mc_display = 10 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                }
+
+                while_loop_effect = { # Money should work! We don't need an income to be too large
+                    limit = {
+                        OR = {
+                            check_variable = { var_display_final_change > 50 }
+                            check_variable = { var_display_final_change_stage > 1 }
+                        }
+
+                        OR = {
+                            check_variable = { var_tax_slider > 0 }
+                            check_variable = { var_schooling_slider < 4 }
+                            check_variable = { var_healthcare_slider < 4 }
+                        }
+                    }
+
+                    if = {
+                        limit = { check_variable = { var_tax_slider < 4 } }
+                        subtract_from_variable = { var_tax_slider = 1 }
+                        subtract_from_variable = { var_tax_slider_pure = 59 }
+                        subtract_from_variable = { var_taxation_cgf = 0.05 }
+                        subtract_from_variable = { var_taxation_mgfp = 0.25 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                    else_if = {
+                        limit = { check_variable = { var_schooling_slider > 0 } }
+                        add_to_variable = { var_schooling_slider_pure = 59 }
+                        add_to_variable = { var_schooling_slider = 1 }
+                        add_to_variable = { var_schooling_rsf = 0.05 }
+                        add_to_variable = { var_schooling_srbf = 0.1 }
+                        add_to_variable = { var_schooling_mc = 0.1 }
+                        add_to_variable = { var_schooling_mc_display = 10 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                    else_if = {
+                        limit = { check_variable = { var_healthcare_slider > 0 } }
+                        add_to_variable = { var_healthcare_slider_pure = 59 }
+                        add_to_variable = { var_healthcare_slider = 1 }
+                        add_to_variable = { var_healthcare_sf = 0.05 }
+                        add_to_variable = { var_healthcare_mp = 0.1 }
+                        add_to_variable = { var_healthcare_mc = 0.1 }
+                        add_to_variable = { var_healthcare_mc_display = 10 }
+                        BFDI_calculate_money_stats = yes
+                    }
+                }
             }
         }
     }
@@ -643,7 +777,7 @@ on_actions = {
                 }
                 TBT = {
                     if = {
-                        limit = { 
+                        limit = {
                             NOT = {
                                 has_country_flag = eastern_action_ready
                                 has_idea = idea_TBT_eastern_blocked

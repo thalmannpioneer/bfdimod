@@ -4,6 +4,14 @@
  common_event.1.desc: "It seems our government is unable to pay off its debt. We are forced to declare insolvency until we pay off by our obligations. This will severely impact our economic potential."
  common_event.1.a: "Not the best leadership, it seems."
 
+ common_event.2.t: "Crisis Ends"
+ common_event.2.desc: "We have successfully paid off our bloated debts, and our economy can return to normal. Great job!"
+ common_event.2.a: "Forwards!"
+
+ common_event.3.t: "Money System"
+ common_event.3.desc: "The economy in Troubles in Goiky works very simply! Money accumulates based on certain fixed parameters - the number of factories and population. Money is spent on some social policies - public education and medicine, as well as on additional game mechanics (e.g. decisions). If your balance goes deep negative, bankruptcy may occur. Try to avoid this.\nGood luck!"
+ common_event.3.a: "Gotcha"
+
  #GOIKY
  GOI_event.1.t: "Battle For Dream Island"
  GOI_event.1.desc: "BFDI, or Battle For Dream Island, is an internet show in which various objects compete for the ultimate prize - an Island with a hotel, two restaurants and other amenities. Recently, it has been gaining more and more popularity. But this show is far from the only thing that happens in the lands of Goiky. This continent is densely populated with various other objects and as a whole is a strong economic and social entity."
@@ -412,6 +420,10 @@
  GPG_event.51.t: "Relations with Announcergrad"
  GPG_event.51.desc: "We recently sent negotiators to Announcergrad to establish relations with the local government. It appears they returned with good news: the technocratic government is quite willing to do business with us. Perhaps this marks the beginning of a long and fruitful partnership."
  GPG_event.51.a: "Brain and Heart are friends again?"
+
+ GPG_event.52.t: "To Hell with our old Obligations"
+ GPG_event.52.desc: "Dream Island no longer exists. The old government has been reorganized, and there's no point in us trying to pay off the monstrous old debts. It's time to step into a new era for Casland, free from this shameful yoke of economic collapse and irresponsibility."
+ GPG_event.52.a: "Forwards!"
  
  #GDR
  GDR_event.1.t: "Battle For Democracy"

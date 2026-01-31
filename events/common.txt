@@ -43,3 +43,30 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = common_event.2
+    title = common_event.2.t
+    desc = common_event.2.desc
+    picture = GFX_common_event2
+
+    is_triggered_only = yes
+
+    option = {
+        name = common_event.2.a
+        remove_ideas = idea_common_bankruptcy
+    }
+}
+
+country_event = {
+    id = common_event.3
+    title = common_event.3.t
+    desc = common_event.3.desc
+    picture = GFX_common_event3
+
+    is_triggered_only = yes
+
+    option = {
+        name = common_event.3.a
+    }
+}

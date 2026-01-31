@@ -1,1047 +1,1048 @@
 focus_tree = {
-	id = GSR_postcw_focus_tree
-	
-	country = {
-		factor = 0
-	}
-	
-	default = no
-	reset_on_civilwar = no
+    id = GSR_postcw_focus_tree
 
-	#BASED RUBY PATH :D
+    country = {
+        factor = 0
+    }
 
-	focus = {
-		id = GSR_focus_successful_revolution
-		x = 15
-		y = 0
-		icon = GFX_focus_GSR_successful_revolution
-		
-		allow_branch = { NOT = { has_country_flag = anarchist_path } }
-		
-		available = {
-			always = no
-		}
-		
-		mutually_exclusive = { focus = GSR_focus_objects_liberation }
-		
-		offset = {
-			x = 4
-			trigger = {
-				has_country_flag = communist_path
-			}
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			set_country_flag = communist_path
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_struggle_with_anarchists
-		relative_position_id = GSR_focus_successful_revolution
-		x = -1
-		y = 1
-		icon = GFX_focus_GSR_struggle_with_anarchists
-		
-		prerequisite = { focus = GSR_focus_successful_revolution }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.3
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_army_arrests
-		relative_position_id = GSR_focus_successful_revolution
-		x = -2
-		y = 2
-		icon = GFX_focus_GSR_army_arrests
-		
-		prerequisite = { focus = GSR_focus_struggle_with_anarchists }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			remove_ideas = idea_GSR_anarchists_in_army
-			add_timed_idea = {
-				idea = idea_GSR_army_repressions
-				days = 180
-			}
-			add_stability = -0.05
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_congress_condemnation
-		relative_position_id = GSR_focus_successful_revolution
-		x = 0
-		y = 2
-		icon = GFX_focus_GSR_congress_condemnation
-		
-		prerequisite = { focus = GSR_focus_struggle_with_anarchists }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			add_timed_idea = {
-				idea = idea_GSR_party_repressions
-				days = 180
-			}
-			add_stability = -0.05
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_casland_process
-		relative_position_id = GSR_focus_successful_revolution
-		x = -1
-		y = 3
-		icon = GFX_focus_GSR_casland_process
-		
-		prerequisite = { focus = GSR_focus_army_arrests }
-		prerequisite = { focus = GSR_focus_congress_condemnation }
-		
-		available = { has_stability > 0.40 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.4
-			add_stability = -0.15
-			hidden_effect = {
-			country_event = {
-					id = GSR_event.6
-					days = 7
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_slow_retirement
-		relative_position_id = GSR_focus_successful_revolution
-		x = 1
-		y = 1
-		icon = GFX_focus_GSR_slow_retirement
-		
-		prerequisite = { focus = GSR_focus_successful_revolution }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_timed_idea = {
-				idea = idea_GSR_slow_retirement
-				days = 180
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_sweets_monopoly
-		relative_position_id = GSR_focus_successful_revolution
-		x = 2
-		y = 2
-		icon = GFX_focus_GSR_sweets_monopoly
-		
-		prerequisite = { focus = GSR_focus_slow_retirement }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_new_economic_policy
-		relative_position_id = GSR_focus_successful_revolution
-		x = 5
-		y = 3
-		icon = GFX_focus_GSR_new_economic_policy
-		
-		offset = {
-			x = -3
-			trigger = {
-				has_country_flag = communist_path
-			}
-		}
-		
-		offset = {
-			x = -3
-			trigger = {
-				has_country_flag = anarchist_path
-			}
-		}
-		
-		prerequisite = { focus = GSR_focus_sweets_monopoly focus = GSR_focus_embrace_syndicalism}
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = idea_GSR_military_communism
-				add_idea = idea_GSR_new_economic_policy
-			}
-			hidden_effect = {
-				if = {
-					limit = { has_completed_focus = GSR_focus_casland_process }
-					country_event = {
-						id = GSR_event.6
-						days = 10
-					}
-				}
-			}
-		}
-	}
-	
-	#ANARCHISTS PATH
-	
-	focus = {
-		id = GSR_focus_objects_liberation
-		x = 24
-		y = 0
-		icon = GFX_focus_GSR_objects_liberation
-		
-		mutually_exclusive = { focus = GSR_focus_successful_revolution }
-		
-		available = {
-			always = no
-		}
-		
-		allow_branch = { NOT = { has_country_flag = communist_path } }
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		offset = {
-			x = -5
-			trigger = {
-				has_country_flag = anarchist_path
-			}
-		}
-		
-		completion_reward = {
-			set_country_flag = anarchist_path
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_anarchists_consolidation
-		relative_position_id = GSR_focus_objects_liberation
-		x = 0
-		y = 1
-		icon = GFX_focus_GSR_anarchists_consolidation
-		
-		prerequisite = { focus = GSR_focus_objects_liberation }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = -0.05
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_anarchist_propaganda
-		relative_position_id = GSR_focus_objects_liberation
-		x = 1
-		y = 2
-		icon = GFX_focus_GSR_anarchist_propaganda
-		
-		prerequisite = { focus = GSR_focus_anarchists_consolidation }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = -0.05
-			add_timed_idea = {
-				idea = idea_GSR_anarchist_propaganda
-				days = 90
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_embrace_syndicalism
-		relative_position_id = GSR_focus_objects_liberation
-		x = -1
-		y = 2
-		icon = GFX_focus_GSR_embrace_syndicalism
-		
-		prerequisite = { focus = GSR_focus_anarchists_consolidation }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GSR_syndicalism
-			add_stability = -0.05
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_objects_communities
-		relative_position_id = GSR_focus_objects_liberation
-		x = 0
-		y = 3
-		icon = GFX_focus_GSR_objects_communities
-		
-		prerequisite = { focus = GSR_focus_anarchist_propaganda }
-		prerequisite = { focus = GSR_focus_embrace_syndicalism }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = -0.05
-			custom_effect_tooltip = l_GSR_anarchist_uprising
-			hidden_effect = {
-				country_event = {
-					id = GSR_event.5
-					days = 5
-				}
-			}
-		}
-	}
-	
-	
-	#Ruby Path
-	
-	focus = {
-		id = GSR_focus_first_congress_ruby
-		x = 19
-		y = 5
-		icon = GFX_focus_GSR_first_congress_ruby
-		
-		available = {
-			always = no
-		}
-		
-		allow_branch = {
-			has_completed_focus = GSR_focus_casland_process
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_peoples_constitution
-		x = 19
-		y = 6
-		icon = GFX_focus_GSR_peoples_constitution
-		
-		prerequisite = { focus = GSR_focus_first_congress_ruby }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 100
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_article_17
-		x = 16
-		y = 7
-		icon = GFX_focus_GSR_article_17
-		
-		prerequisite = { focus = GSR_focus_peoples_constitution }
-		
-		cost = 4
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_fabrics_conversion
-		x = 15
-		y = 8
-		icon = GFX_focus_GSR_fabrics_conversion
-		
-		prerequisite = { focus = GSR_focus_article_17 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			every_owned_state = {
-				limit = { arms_factory > 0 }
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_war_support = -0.1
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_peoples_goods
-		x = 15
-		y = 9
-		icon = GFX_focus_GPG_object_industry
-		
-		prerequisite = { focus = GSR_focus_fabrics_conversion }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GSR_peoples_goods
-			add_war_support = -0.1
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_regional_development
-		x = 17
-		y = 8
-		icon = GFX_focus_GSR_regional_development
-		
-		prerequisite = { focus = GSR_focus_article_17 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			145 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			8 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			add_stability = 0.05
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_slow_down_casland
-		x = 17
-		y = 9
-		icon = GFX_focus_GSR_slow_down_casland
-		
-		prerequisite = { focus = GSR_focus_regional_development }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			206 = {
-				add_manpower = -251220
-			}
-			145 = {
-				add_manpower = 105011
-			}
-			8 = {
-				add_manpower = 142951
-			}
-			hidden_effect = {
-				country_event = {
-					id = GSR_event.7
-					days = 15
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_planning_commitee
-		x = 16
-		y = 10
-		icon = GFX_focus_GSR_planning_commitee
-		
-		prerequisite = { focus = GSR_focus_peoples_goods }
-		prerequisite = { focus = GSR_focus_slow_down_casland }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GSR_planning_commitee
-		}
-	}
-	
-	
-	focus = {
-		id = GSR_focus_socialism_with_sugar_characters
-		x = 22
-		y = 7
-		icon = GFX_focus_GSR_socialism_with_sugar_characters
-		
-		prerequisite = { focus = GSR_focus_peoples_constitution }
-		
-		available = { has_political_power > 50 } #ik it should be 99 but who really cares lol :P
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -50 #Lowing it as this path does take a while
-			country_event = GSR_event.8
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_cultural_revolution
-		x = 21
-		y = 8
-		icon = GFX_focus_GSR_cultural_revolution
-		
-		prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -50
-			add_timed_idea = {
-				idea = idea_GSR_cultural_revolution
-				days = 180
-			}
-			add_research_slot = 1
-			hidden_effect = {
-				country_event = {
-					id = GSR_event.9
-					days = 40
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_new_casland_object
-		x = 21
-		y = 9
-		icon = GFX_focus_GSR_new_casland_object
-		
-		prerequisite = { focus = GSR_focus_cultural_revolution }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -50
-			add_ideas = idea_GSR_new_object
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_the_only_right_way
-		x = 23
-		y = 8
-		icon = GFX_focus_GSR_the_only_right_way
-		
-		prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -50
-			country_event = GSR_event.10
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_condemn_firey
-		x = 23
-		y = 9
-		icon = GFX_focus_GSR_condemn_firey
-		
-		prerequisite = { focus = GSR_focus_the_only_right_way }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -50
-			WGF = { country_event = WGF_event.20 }
-			add_opinion_modifier = {
-				target = WGF
-				modifier = medium_decrease
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_great_chairman_ruby
-		x = 22
-		y = 10
-		icon = GFX_focus_GSR_great_chairman_ruby
-		
-		prerequisite = { focus = GSR_focus_new_casland_object }
-		prerequisite = { focus = GSR_focus_condemn_firey }
-		
-		available = { has_political_power > 100 }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = -100
-			add_trait = {
-				 character = GSR_ruby
-				 ideology = leninism
-				 trait = ruby_heart
-			}
-			hidden_effect = {
-				set_country_leader_portrait = { portrait = GFX_GSR_ruby }
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_socialism_in_one_country
-		x = 19
-		y = 11
-		icon = GFX_focus_GSR_socialism_in_one_country
-		
-		prerequisite = { focus = GSR_focus_great_chairman_ruby }
-		prerequisite = { focus = GSR_focus_planning_commitee }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GSR_socialism_in_one_country
-			hidden_effect = {
-				country_event = {
-					id = GPG_event.46
-					days = 20
-					random_days = 10
-					random_hours = 12
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_take_what_ours
-		x = 19
-		y = 13
-		icon = GFX_focus_GPG_lawnland_question
-		
-		prerequisite = { focus = GSR_focus_socialism_in_one_country }
-		
-		allow_branch = {
-			has_country_flag = lawnland_decisions_opened_socialist
-		}
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = l_GPG_lawnland
-		}
-	}
-	
-	
-	#Anarchists path (пиздец)
-	
-	focus = {
-		id = GSR_focus_first_coucils_congress
-		x = 19
-		y = 5
-		icon = GFX_focus_GSR_first_coucils_congress
-		
-		allow_branch = {
-			has_completed_focus = GSR_focus_objects_communities
-			has_completed_focus = GSR_focus_new_economic_policy
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_deconstruction
-		x = 19
-		y = 6
-		icon = GFX_focus_GSR_deconstruction
-		
-		prerequisite = { focus = GSR_focus_first_coucils_congress }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = idea_GSR_decentralization
-			}
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_crush_mineco
-		x = 15
-		y = 7
-		icon = GFX_focus_GSR_crush_mineco
-		
-		prerequisite = { focus = GSR_focus_deconstruction }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.12
-			add_political_power = -50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_crush_foraff
-		x = 17
-		y = 7
-		icon = GFX_focus_GSR_crush_foraff
-		
-		prerequisite = { focus = GSR_focus_deconstruction }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.13
-			add_political_power = -50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_crush_police
-		x = 19
-		y = 7
-		icon = GFX_focus_GSR_crush_police
-		
-		prerequisite = { focus = GSR_focus_deconstruction }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.14
-			add_political_power = -50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_crush_parliament
-		x = 21
-		y = 7
-		icon = GFX_focus_GSR_parliament
-		
-		prerequisite = { focus = GSR_focus_deconstruction }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.15
-			add_political_power = -50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_crush_army
-		x = 23
-		y = 7
-		icon = GFX_focus_GSR_crush_army
-		
-		prerequisite = { focus = GSR_focus_deconstruction }
-		
-		available = { has_political_power > 50 }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			country_event = GSR_event.16
-			add_political_power = -50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_we_dont_need_constitution
-		x = 19
-		y = 8
-		icon = GFX_focus_GSR_we_dont_need_constitution
-		
-		prerequisite = { focus = GSR_focus_crush_mineco }
-		prerequisite = { focus = GSR_focus_crush_foraff }
-		prerequisite = { focus = GSR_focus_crush_police }
-		prerequisite = { focus = GSR_focus_crush_parliament }
-		prerequisite = { focus = GSR_focus_crush_army }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_stability = -0.05
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
-			hidden_effect = {
-				country_event = {
-					id = GSR_event.18
-					days = 10
-					random_days = 5
-					random_hours = 12
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_free_from_government
-		x = 19
-		y = 9
-		icon = GFX_focus_GSR_free_from_government
-		
-		prerequisite = { focus = GSR_focus_we_dont_need_constitution }
-		
-		cost = 6
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_ideas = idea_GSR_no_government
-			hidden_effect = {
-				country_event = {
-					id = GSR_event.17
-					days = 20
-					random_days = 10
-					random_hours = 12
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GSR_focus_lawnland_liberation
-		x = 19
-		y = 10
-		icon = GFX_focus_GPG_lawnland_question
-		
-		prerequisite = { focus = GSR_focus_free_from_government }
-		
-		allow_branch = {
-			has_country_flag = anarchist_lawnland
-		}
-		
-		cost = 1
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-		}
-	}
+    default = no
+    reset_on_civilwar = no
+
+    #BASED RUBY PATH :D
+
+    focus = {
+        id = GSR_focus_successful_revolution
+        x = 15
+        y = 0
+        icon = GFX_focus_GSR_successful_revolution
+
+        allow_branch = { NOT = { has_country_flag = anarchist_path } }
+
+        available = {
+            always = no
+        }
+
+        mutually_exclusive = { focus = GSR_focus_objects_liberation }
+
+        offset = {
+            x = 4
+            trigger = {
+                has_country_flag = communist_path
+            }
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            set_country_flag = communist_path
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    focus = {
+        id = GSR_focus_struggle_with_anarchists
+        relative_position_id = GSR_focus_successful_revolution
+        x = -1
+        y = 1
+        icon = GFX_focus_GSR_struggle_with_anarchists
+
+        prerequisite = { focus = GSR_focus_successful_revolution }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.3
+        }
+    }
+
+    focus = {
+        id = GSR_focus_army_arrests
+        relative_position_id = GSR_focus_successful_revolution
+        x = -2
+        y = 2
+        icon = GFX_focus_GSR_army_arrests
+
+        prerequisite = { focus = GSR_focus_struggle_with_anarchists }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            remove_ideas = idea_GSR_anarchists_in_army
+            add_timed_idea = {
+                idea = idea_GSR_army_repressions
+                days = 180
+            }
+            add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = GSR_focus_congress_condemnation
+        relative_position_id = GSR_focus_successful_revolution
+        x = 0
+        y = 2
+        icon = GFX_focus_GSR_congress_condemnation
+
+        prerequisite = { focus = GSR_focus_struggle_with_anarchists }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_popularity = {
+                ideology = communism
+                popularity = 0.1
+            }
+            add_timed_idea = {
+                idea = idea_GSR_party_repressions
+                days = 180
+            }
+            add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = GSR_focus_casland_process
+        relative_position_id = GSR_focus_successful_revolution
+        x = -1
+        y = 3
+        icon = GFX_focus_GSR_casland_process
+
+        prerequisite = { focus = GSR_focus_army_arrests }
+        prerequisite = { focus = GSR_focus_congress_condemnation }
+
+        available = { has_stability > 0.40 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.4
+            add_stability = -0.15
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.6
+                    days = 7
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_slow_retirement
+        relative_position_id = GSR_focus_successful_revolution
+        x = 1
+        y = 1
+        icon = GFX_focus_GSR_slow_retirement
+
+        prerequisite = { focus = GSR_focus_successful_revolution }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_timed_idea = {
+                idea = idea_GSR_slow_retirement
+                days = 180
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_sweets_monopoly
+        relative_position_id = GSR_focus_successful_revolution
+        x = 2
+        y = 2
+        icon = GFX_focus_GSR_sweets_monopoly
+
+        prerequisite = { focus = GSR_focus_slow_retirement }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_new_economic_policy
+        relative_position_id = GSR_focus_successful_revolution
+        x = 5
+        y = 3
+        icon = GFX_focus_GSR_new_economic_policy
+
+        offset = {
+            x = -3
+            trigger = {
+                has_country_flag = communist_path
+            }
+        }
+
+        offset = {
+            x = -3
+            trigger = {
+                has_country_flag = anarchist_path
+            }
+        }
+
+        prerequisite = { focus = GSR_focus_sweets_monopoly focus = GSR_focus_embrace_syndicalism}
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = idea_GSR_military_communism
+                add_idea = idea_GSR_new_economic_policy
+            }
+            country_event = GPG_event.52
+            hidden_effect = {
+                if = {
+                    limit = { has_completed_focus = GSR_focus_casland_process }
+                    country_event = {
+                        id = GSR_event.6
+                        days = 10
+                    }
+                }
+            }
+        }
+    }
+
+    #ANARCHISTS PATH
+
+    focus = {
+        id = GSR_focus_objects_liberation
+        x = 24
+        y = 0
+        icon = GFX_focus_GSR_objects_liberation
+
+        mutually_exclusive = { focus = GSR_focus_successful_revolution }
+
+        available = {
+            always = no
+        }
+
+        allow_branch = { NOT = { has_country_flag = communist_path } }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        offset = {
+            x = -5
+            trigger = {
+                has_country_flag = anarchist_path
+            }
+        }
+
+        completion_reward = {
+            set_country_flag = anarchist_path
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    focus = {
+        id = GSR_focus_anarchists_consolidation
+        relative_position_id = GSR_focus_objects_liberation
+        x = 0
+        y = 1
+        icon = GFX_focus_GSR_anarchists_consolidation
+
+        prerequisite = { focus = GSR_focus_objects_liberation }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = -0.05
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_anarchist_propaganda
+        relative_position_id = GSR_focus_objects_liberation
+        x = 1
+        y = 2
+        icon = GFX_focus_GSR_anarchist_propaganda
+
+        prerequisite = { focus = GSR_focus_anarchists_consolidation }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = -0.05
+            add_timed_idea = {
+                idea = idea_GSR_anarchist_propaganda
+                days = 90
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_embrace_syndicalism
+        relative_position_id = GSR_focus_objects_liberation
+        x = -1
+        y = 2
+        icon = GFX_focus_GSR_embrace_syndicalism
+
+        prerequisite = { focus = GSR_focus_anarchists_consolidation }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GSR_syndicalism
+            add_stability = -0.05
+        }
+    }
+
+    focus = {
+        id = GSR_focus_objects_communities
+        relative_position_id = GSR_focus_objects_liberation
+        x = 0
+        y = 3
+        icon = GFX_focus_GSR_objects_communities
+
+        prerequisite = { focus = GSR_focus_anarchist_propaganda }
+        prerequisite = { focus = GSR_focus_embrace_syndicalism }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = -0.05
+            custom_effect_tooltip = l_GSR_anarchist_uprising
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.5
+                    days = 5
+                }
+            }
+        }
+    }
+
+
+    #Ruby Path
+
+    focus = {
+        id = GSR_focus_first_congress_ruby
+        x = 19
+        y = 5
+        icon = GFX_focus_GSR_first_congress_ruby
+
+        available = {
+            always = no
+        }
+
+        allow_branch = {
+            has_completed_focus = GSR_focus_casland_process
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = GSR_focus_peoples_constitution
+        x = 19
+        y = 6
+        icon = GFX_focus_GSR_peoples_constitution
+
+        prerequisite = { focus = GSR_focus_first_congress_ruby }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = GSR_focus_article_17
+        x = 16
+        y = 7
+        icon = GFX_focus_GSR_article_17
+
+        prerequisite = { focus = GSR_focus_peoples_constitution }
+
+        cost = 4
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GSR_focus_fabrics_conversion
+        x = 15
+        y = 8
+        icon = GFX_focus_GSR_fabrics_conversion
+
+        prerequisite = { focus = GSR_focus_article_17 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            every_owned_state = {
+                limit = { arms_factory > 0 }
+                remove_building = {
+                    type = arms_factory
+                    level = 1
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_war_support = -0.1
+        }
+    }
+
+    focus = {
+        id = GSR_focus_peoples_goods
+        x = 15
+        y = 9
+        icon = GFX_focus_GPG_object_industry
+
+        prerequisite = { focus = GSR_focus_fabrics_conversion }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GSR_peoples_goods
+            add_war_support = -0.1
+        }
+    }
+
+    focus = {
+        id = GSR_focus_regional_development
+        x = 17
+        y = 8
+        icon = GFX_focus_GSR_regional_development
+
+        prerequisite = { focus = GSR_focus_article_17 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            145 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            8 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = GSR_focus_slow_down_casland
+        x = 17
+        y = 9
+        icon = GFX_focus_GSR_slow_down_casland
+
+        prerequisite = { focus = GSR_focus_regional_development }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            206 = {
+                add_manpower = -251220
+            }
+            145 = {
+                add_manpower = 105011
+            }
+            8 = {
+                add_manpower = 142951
+            }
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.7
+                    days = 15
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_planning_commitee
+        x = 16
+        y = 10
+        icon = GFX_focus_GSR_planning_commitee
+
+        prerequisite = { focus = GSR_focus_peoples_goods }
+        prerequisite = { focus = GSR_focus_slow_down_casland }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GSR_planning_commitee
+        }
+    }
+
+
+    focus = {
+        id = GSR_focus_socialism_with_sugar_characters
+        x = 22
+        y = 7
+        icon = GFX_focus_GSR_socialism_with_sugar_characters
+
+        prerequisite = { focus = GSR_focus_peoples_constitution }
+
+        available = { has_political_power > 50 } #ik it should be 99 but who really cares lol :P
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -50 #Lowing it as this path does take a while
+            country_event = GSR_event.8
+        }
+    }
+
+    focus = {
+        id = GSR_focus_cultural_revolution
+        x = 21
+        y = 8
+        icon = GFX_focus_GSR_cultural_revolution
+
+        prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
+
+        available = { has_political_power > 50 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -50
+            add_timed_idea = {
+                idea = idea_GSR_cultural_revolution
+                days = 180
+            }
+            add_research_slot = 1
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.9
+                    days = 40
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_new_casland_object
+        x = 21
+        y = 9
+        icon = GFX_focus_GSR_new_casland_object
+
+        prerequisite = { focus = GSR_focus_cultural_revolution }
+
+        available = { has_political_power > 50 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -50
+            add_ideas = idea_GSR_new_object
+        }
+    }
+
+    focus = {
+        id = GSR_focus_the_only_right_way
+        x = 23
+        y = 8
+        icon = GFX_focus_GSR_the_only_right_way
+
+        prerequisite = { focus = GSR_focus_socialism_with_sugar_characters }
+
+        available = { has_political_power > 50 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -50
+            country_event = GSR_event.10
+        }
+    }
+
+    focus = {
+        id = GSR_focus_condemn_firey
+        x = 23
+        y = 9
+        icon = GFX_focus_GSR_condemn_firey
+
+        prerequisite = { focus = GSR_focus_the_only_right_way }
+
+        available = { has_political_power > 50 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -50
+            WGF = { country_event = WGF_event.20 }
+            add_opinion_modifier = {
+                target = WGF
+                modifier = medium_decrease
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_great_chairman_ruby
+        x = 22
+        y = 10
+        icon = GFX_focus_GSR_great_chairman_ruby
+
+        prerequisite = { focus = GSR_focus_new_casland_object }
+        prerequisite = { focus = GSR_focus_condemn_firey }
+
+        available = { has_political_power > 100 }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_political_power = -100
+            add_trait = {
+                character = GSR_ruby
+                ideology = leninism
+                trait = ruby_heart
+            }
+            hidden_effect = {
+                set_country_leader_portrait = { portrait = GFX_GSR_ruby }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_socialism_in_one_country
+        x = 19
+        y = 11
+        icon = GFX_focus_GSR_socialism_in_one_country
+
+        prerequisite = { focus = GSR_focus_great_chairman_ruby }
+        prerequisite = { focus = GSR_focus_planning_commitee }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GSR_socialism_in_one_country
+            hidden_effect = {
+                country_event = {
+                    id = GPG_event.46
+                    days = 20
+                    random_days = 10
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_take_what_ours
+        x = 19
+        y = 13
+        icon = GFX_focus_GPG_lawnland_question
+
+        prerequisite = { focus = GSR_focus_socialism_in_one_country }
+
+        allow_branch = {
+            has_country_flag = lawnland_decisions_opened_socialist
+        }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            custom_effect_tooltip = l_GPG_lawnland
+        }
+    }
+
+
+    #Anarchists path (пиздец)
+
+    focus = {
+        id = GSR_focus_first_coucils_congress
+        x = 19
+        y = 5
+        icon = GFX_focus_GSR_first_coucils_congress
+
+        allow_branch = {
+            has_completed_focus = GSR_focus_objects_communities
+            has_completed_focus = GSR_focus_new_economic_policy
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+        }
+    }
+
+    focus = {
+        id = GSR_focus_deconstruction
+        x = 19
+        y = 6
+        icon = GFX_focus_GSR_deconstruction
+
+        prerequisite = { focus = GSR_focus_first_coucils_congress }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_dynamic_modifier = {
+                modifier = idea_GSR_decentralization
+            }
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = GSR_focus_crush_mineco
+        x = 15
+        y = 7
+        icon = GFX_focus_GSR_crush_mineco
+
+        prerequisite = { focus = GSR_focus_deconstruction }
+
+        available = { has_political_power > 50 }
+
+        cost = 8
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.12
+            add_political_power = -50
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_crush_foraff
+        x = 17
+        y = 7
+        icon = GFX_focus_GSR_crush_foraff
+
+        prerequisite = { focus = GSR_focus_deconstruction }
+
+        available = { has_political_power > 50 }
+
+        cost = 8
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.13
+            add_political_power = -50
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_crush_police
+        x = 19
+        y = 7
+        icon = GFX_focus_GSR_crush_police
+
+        prerequisite = { focus = GSR_focus_deconstruction }
+
+        available = { has_political_power > 50 }
+
+        cost = 8
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.14
+            add_political_power = -50
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_crush_parliament
+        x = 21
+        y = 7
+        icon = GFX_focus_GSR_parliament
+
+        prerequisite = { focus = GSR_focus_deconstruction }
+
+        available = { has_political_power > 50 }
+
+        cost = 8
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.15
+            add_political_power = -50
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_crush_army
+        x = 23
+        y = 7
+        icon = GFX_focus_GSR_crush_army
+
+        prerequisite = { focus = GSR_focus_deconstruction }
+
+        available = { has_political_power > 50 }
+
+        cost = 8
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            country_event = GSR_event.16
+            add_political_power = -50
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_we_dont_need_constitution
+        x = 19
+        y = 8
+        icon = GFX_focus_GSR_we_dont_need_constitution
+
+        prerequisite = { focus = GSR_focus_crush_mineco }
+        prerequisite = { focus = GSR_focus_crush_foraff }
+        prerequisite = { focus = GSR_focus_crush_police }
+        prerequisite = { focus = GSR_focus_crush_parliament }
+        prerequisite = { focus = GSR_focus_crush_army }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_stability = -0.05
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.18
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_free_from_government
+        x = 19
+        y = 9
+        icon = GFX_focus_GSR_free_from_government
+
+        prerequisite = { focus = GSR_focus_we_dont_need_constitution }
+
+        cost = 6
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+            add_ideas = idea_GSR_no_government
+            hidden_effect = {
+                country_event = {
+                    id = GSR_event.17
+                    days = 20
+                    random_days = 10
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = GSR_focus_lawnland_liberation
+        x = 19
+        y = 10
+        icon = GFX_focus_GPG_lawnland_question
+
+        prerequisite = { focus = GSR_focus_free_from_government }
+
+        allow_branch = {
+            has_country_flag = anarchist_lawnland
+        }
+
+        cost = 1
+
+        ai_will_do = {
+            base = 10
+        }
+
+        completion_reward = {
+        }
+    }
 }

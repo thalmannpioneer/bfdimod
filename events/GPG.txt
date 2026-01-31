@@ -2155,6 +2155,24 @@ country_event = {
 }
 
 country_event = {
+    id = GPG_event.52
+    title = GPG_event.52.t
+    desc = GPG_event.52.desc
+    picture = GFX_GPG_event52
+
+    is_triggered_only = yes
+
+    option = {
+        name = GPG_event.52.a
+        custom_effect_tooltip = l_GPG_wipes_our_debt
+        set_variable = { money_amount = -0.1 }
+        BFDI_money_diplay_update = yes
+        clr_country_flag = disable_money_politics
+        add_stability = -0.1
+    }
+}
+
+country_event = {
     id = GPG_hidden_event.1
     hidden = yes
 
