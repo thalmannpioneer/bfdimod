@@ -70,11 +70,11 @@ decision_YFC_eastern_category = {
 	visible = { 
 		YFC = {
 			has_completed_focus = YFC_focus_see_to_the_eastern_front
-			#NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+			#NOT = {has_completed_focus = YFC_focus_bunch_fostered} #Uhhh change later 
 		}
 	}
 	priority = 10
-	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
 	icon = GFX_decision_category_build_bunch #Update later
 	visible_when_empty = no
+	scripted_gui = bfdi_decisions_crop_eastern_scriptedgui
 }

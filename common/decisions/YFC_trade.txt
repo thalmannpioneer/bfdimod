@@ -33,9 +33,15 @@ decision_YFC_trade_category= {
 				add = 100
 			}
 			modifier = { #by this point other nations have other tech so get new stuff
-				check_variable = { money_amount > 17 }
-				date > 2015.01.01
-				date < 2016.01.01
+				check_variable = { money_amount > 20 }
+				date > 2016.01.01
+				date < 2017.01.01
+				add = 100
+			}
+			modifier = { #by this point other nations have other tech so get new stuff
+				check_variable = { money_amount > 20 }
+				date > 2020.01.01
+				date < 2021.01.01
 				add = 100
 			}
 		}

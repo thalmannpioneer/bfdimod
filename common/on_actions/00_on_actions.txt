@@ -66,6 +66,21 @@ on_actions = {
                     limit = {tag = YFC}
                     set_variable = { money_amount = 30.15 }
                     BFDI_money_diplay_update = yes
+
+                    set_country_flag = disable_money_politics #YFC would not care 
+                    set_variable = { var_schooling_slider_pure = 25 }
+                    set_variable = { var_schooling_slider = 0 }
+                    set_variable = { var_schooling_rsf = -0.1 }
+                    set_variable = { var_schooling_srbf = -0.2 }
+                    set_variable = { var_schooling_mc = 0 }
+                    set_variable = { var_schooling_mc_display = 0 }
+
+                    set_variable = { var_healthcare_slider_pure = 25 }
+                    set_variable = { var_healthcare_slider = 0 }
+                    set_variable = { var_healthcare_sf = -0.1 }
+                    set_variable = { var_healthcare_mp = -0.2 }
+                    set_variable = { var_healthcare_mc = 0 }
+                    set_variable = { var_healthcare_mc_display = 0 }
                 }
                 ELSE_IF = {
                     limit = { tag = GPG }

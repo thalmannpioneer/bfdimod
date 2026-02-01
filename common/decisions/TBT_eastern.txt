@@ -179,6 +179,13 @@ decision_TBT_eastern_category = {
 				add = 50
 				has_political_power > 65
 			}
+			modifier = {
+				add = 50
+				OR = {
+					FROM = {state = 229}
+					FROM = {state = 232}
+				}
+			}
 		}
 	}
 
@@ -235,6 +242,13 @@ decision_TBT_eastern_category = {
 			modifier = {
 				add = 50
 				has_manpower > 3000
+			}
+			modifier = {
+				add = 50
+				OR = {
+					FROM = {state = 229}
+					FROM = {state = 232}
+				}
 			}
 		}
 	}
@@ -350,7 +364,10 @@ decision_TBT_eastern_category = {
 		days_remove = 60
 
 		remove_effect = {
-			FROM = {add_core_of = ROOT}
+			FROM = {
+				add_core_of = ROOT
+				remove_core_of = EMP
+			}
         }
 
 		ai_will_do = {

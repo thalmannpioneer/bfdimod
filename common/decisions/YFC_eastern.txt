@@ -422,7 +422,10 @@ decision_YFC_eastern_category = {
 		days_remove = 60
 
 		remove_effect = {
-			FROM = {add_core_of = ROOT}
+			FROM = {
+				add_core_of = ROOT
+				remove_core_of = EMP
+			}
         }
 
 		ai_will_do = {

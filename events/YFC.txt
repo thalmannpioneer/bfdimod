@@ -80,6 +80,9 @@ country_event = {
 
 	option = {
 		name = YFC_event.4.a
+		trigger = {
+        	country_exists = BUN
+        }
 		CRN = {
 			declare_war_on = {
 				target = BUN
@@ -95,7 +98,10 @@ country_event = {
 
 	option = {
 		name = YFC_event.4.b
-		add_political_power = 25
+		trigger = {
+        	country_exists = BUN
+        }
+		add_political_power = 50
 		hidden_effect = {
 			CRN = {
 				add_opinion_modifier = { target = YFC modifier = betrayed_alliance }
@@ -109,6 +115,14 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
+	}
+
+	option = { #Fall back if YFC already won
+		name = YFC_event.4.c
+		trigger = {
+        	NOT = {country_exists = BUN}
+        }
+		add_political_power = 1
 	}
 }
 

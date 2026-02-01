@@ -304,8 +304,8 @@ country_event = { #YFC sees this
 			type = infantry_equipment
 			amount = 750
 		}
-		custom_effect_tooltip = l_money_gain_500K
-		add_to_variable = { money_amount = 5 }
+		custom_effect_tooltip = l_money_gain_600K
+		add_to_variable = { money_amount = 6 }
 		add_timed_idea = {
 			idea = idea_YFC_operation_enforcement
 			days = 120

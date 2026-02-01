@@ -341,6 +341,7 @@ country_event = {
         add_stability = -0.5
         add_war_support = -0.5
         add_political_power = -500
+        add_manpower = 5000 #Minor push to win (Maybe)
         hidden_effect = {
             GMD = {
                 add_manpower = 25000 #Give Coiny hope! (JK it will be a never ending war xd)

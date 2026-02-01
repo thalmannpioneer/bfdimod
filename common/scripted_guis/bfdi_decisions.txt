@@ -289,6 +289,24 @@ scripted_gui = {
 }
 
 scripted_gui = {
+    bfdi_decisions_crop_eastern_scriptedgui = {
+        window_name = corp_eastern_container
+        context_type = decision_category
+        parent_window_token = decision_tab
+
+        triggers = { 
+
+        }
+        effects = {
+
+        }
+        properties = {
+
+        }
+    }
+}
+
+scripted_gui = {
     decisions_GTR_project_1_scriptedgui = {
         window_name = project_1_decisions_container
         context_type = decision_category
