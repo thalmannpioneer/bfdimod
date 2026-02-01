@@ -94,4 +94,9 @@ spriteTypes = {
 		name = "GFX_economics_bg"
 		textureFile = "gfx/interface/economics_bg.dds"
 	}
+
+	spriteType = {
+		name = "GFX_notification_negdiff"
+		textureFile = "gfx/interface/notification_negdiff.dds"
+	}
 }

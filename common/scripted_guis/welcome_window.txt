@@ -10,7 +10,10 @@ scripted_gui = {
         effects = {
             play_click = {
                 clr_global_flag = welcome
-                country_event = common_event.3
+                if = {
+                    limit = { NOT = { tag = GOI } }
+                    country_event = common_event.3
+                }
             }
         }
     }

@@ -17,7 +17,7 @@ scripted_gui = {
             }
         }
 
-        visible = { always = yes }
+        visible = { has_country_flag = has_money_system }
     }
 
     BFDI_economic_ledger = {
@@ -140,5 +140,24 @@ scripted_gui = {
         }
 
         visible = { has_country_flag = economic_ledger_opened }
+    }
+
+    BFDI_negdiff_notification = {
+        window_name = "negdiff_notification"
+        parent_window_token = top_bar
+        context_type = player_context
+
+        visible = { has_country_flag = negdiff_notification_show }
+
+        effects = {
+            notif_click = {
+                set_country_flag = economic_ledger_opened
+                BFDI_calculate_money_stats = yes
+                clr_country_flag = negdiff_notification_show
+            }
+            notif_right_click = {
+                clr_country_flag = negdiff_notification_show
+            }
+        }
     }
 }

@@ -20,11 +20,32 @@ guiTypes = {
         }
 
         iconType = {
-            name = "animation"
-            spriteType = GFX_mainmenu_animation
+            name = "mainmenu_animation_1"
+            spriteType = "GFX_mainmenu_animation_1"
+            position = { x = -1000 y = -550 }
             Orientation = center
             Origo = center
-            position = { x = -671 y = -330 }
+        }
+        iconType = {
+            name = "mainmenu_animation_2"
+            spriteType = "GFX_mainmenu_animation_2"
+            position = { x = -807 y = -550 }
+            Orientation = center
+            Origo = center
+        }
+        iconType = {
+            name = "mainmenu_animation_3"
+            spriteType = "GFX_mainmenu_animation_3"
+            position = { x = -613 y = -550 }
+            Orientation = center
+            Origo = center
+        }
+        iconType = {
+            name = "mainmenu_animation_4"
+            spriteType = "GFX_mainmenu_animation_4"
+            position = { x = -419 y = -550 }
+            Orientation = center
+            Origo = center
         }
     }
 

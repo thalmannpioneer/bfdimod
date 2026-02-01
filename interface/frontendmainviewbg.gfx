@@ -7,9 +7,40 @@ spriteTypes = {
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate.shader"
 	}
+
 	frameAnimatedSpriteType = {
-		name = "GFX_mainmenu_animation"
-		texturefile = "gfx/interface/mainmenu_animation.dds"
+		name = "GFX_mainmenu_animation_1"
+		texturefile = "gfx/interface/mainmenu_animation/mainmenu_animation_1.dds"
+		noOfFrames = 19
+		transparencecheck = no
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_mainmenu_animation_2"
+		texturefile = "gfx/interface/mainmenu_animation/mainmenu_animation_2.dds"
+		noOfFrames = 19
+		transparencecheck = no
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_mainmenu_animation_3"
+		texturefile = "gfx/interface/mainmenu_animation/mainmenu_animation_3.dds"
+		noOfFrames = 19
+		transparencecheck = no
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_mainmenu_animation_4"
+		texturefile = "gfx/interface/mainmenu_animation/mainmenu_animation_4.dds"
 		noOfFrames = 19
 		transparencecheck = no
 		animation_rate_fps = 20

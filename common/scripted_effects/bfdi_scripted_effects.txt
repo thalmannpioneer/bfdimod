@@ -92,6 +92,10 @@ BFDI_game_start = {
             random_days = 10
             random_hours = 12
         }
+        country_event = {
+            id = common_event.3
+            days = 1
+        }
     }
 }
 

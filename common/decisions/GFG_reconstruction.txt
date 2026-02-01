@@ -1,169 +1,181 @@
 decision_GFG_reconstruction_category = {
-	GFG_reconstruction_casland = {
+    GFG_reconstruction_casland = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
-		cost = 50
-        days_remove = 60
-		available = {
-			NOT = {
-				has_decision = GFG_reconstruction_recharnd
-				has_decision = GFG_reconstruction_greensteel
-				has_decision = GFG_reconstruction_plainy
-			}
+        custom_cost_trigger = {
+            check_variable = {
+                var = money_amount
+                value = 1
+                compare = greater_than_or_equals
+            }
         }
+        custom_cost_text = decisions_cost_money_100k
+        complete_effect = {
+            subtract_from_variable = { money_amount = 1 }
+        }
+        days_remove = 60
         modifier = {
             civilian_factory_use = 3
         }
         remove_effect = {
-			206 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = l_GFG_improves_economy
-			if = {
-				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
-				}				
-				country_event = GFG_event.11
-			}
-			else = {
-				add_to_variable = { var_GFG_crisis_cgf = -0.05 }
-				add_to_variable = { var_GFG_crisis_psf = 0.05 }
-				add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
-			}
+            206 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = l_GFG_improves_economy
+            if = {
+                limit = {
+                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                }
+                country_event = GFG_event.11
+            }
+            else = {
+                add_to_variable = { var_GFG_crisis_cgf = -0.05 }
+                add_to_variable = { var_GFG_crisis_psf = 0.05 }
+                add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
+            }
         }
-		ai_will_do = {
-			base = 50
-		}
+        ai_will_do = {
+            base = 50
+        }
     }
-	
-	GFG_reconstruction_recharnd = {
+
+    GFG_reconstruction_recharnd = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
-		cost = 50
-        days_remove = 60
-		available = {
-			NOT = {
-				has_decision = GFG_reconstruction_casland
-				has_decision = GFG_reconstruction_greensteel
-				has_decision = GFG_reconstruction_plainy
-			}
+        custom_cost_trigger = {
+            check_variable = {
+                var = money_amount
+                value = 1
+                compare = greater_than_or_equals
+            }
         }
+        custom_cost_text = decisions_cost_money_100k
+        complete_effect = {
+            subtract_from_variable = { money_amount = 1 }
+        }
+        days_remove = 60
         modifier = {
             civilian_factory_use = 3
         }
         remove_effect = {
-			158 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = l_GFG_improves_economy
-			if = {
-				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
-				}				
-				country_event = GFG_event.11
-			}
-			else = {
-				add_to_variable = { var_GFG_crisis_cgf = -0.05 }
-				add_to_variable = { var_GFG_crisis_psf = 0.05 }
-				add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
-			}
+            158 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = l_GFG_improves_economy
+            if = {
+                limit = {
+                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                }
+                country_event = GFG_event.11
+            }
+            else = {
+                add_to_variable = { var_GFG_crisis_cgf = -0.05 }
+                add_to_variable = { var_GFG_crisis_psf = 0.05 }
+                add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
+            }
         }
-		ai_will_do = {
-			base = 50
-		}
+        ai_will_do = {
+            base = 50
+        }
     }
-	
-	GFG_reconstruction_greensteel = {
+
+    GFG_reconstruction_greensteel = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
-		cost = 50
-        days_remove = 60
-		available = {
-			NOT = {
-				has_decision = GFG_reconstruction_recharnd
-				has_decision = GFG_reconstruction_casland
-				has_decision = GFG_reconstruction_plainy
-			}
+        custom_cost_trigger = {
+            check_variable = {
+                var = money_amount
+                value = 1
+                compare = greater_than_or_equals
+            }
         }
+        custom_cost_text = decisions_cost_money_100k
+        complete_effect = {
+            subtract_from_variable = { money_amount = 1 }
+        }
+        days_remove = 60
         modifier = {
             civilian_factory_use = 3
         }
         remove_effect = {
-			10 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = l_GFG_improves_economy
-			if = {
-				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
-				}				
-				country_event = GFG_event.11
-			}
-			else = {
-				add_to_variable = { var_GFG_crisis_cgf = -0.05 }
-				add_to_variable = { var_GFG_crisis_psf = 0.05 }
-				add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
-			}
+            10 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = l_GFG_improves_economy
+            if = {
+                limit = {
+                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                }
+                country_event = GFG_event.11
+            }
+            else = {
+                add_to_variable = { var_GFG_crisis_cgf = -0.05 }
+                add_to_variable = { var_GFG_crisis_psf = 0.05 }
+                add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
+            }
         }
-		ai_will_do = {
-			base = 50
-		}
+        ai_will_do = {
+            base = 50
+        }
     }
-	
-	GFG_reconstruction_plainy = {
+
+    GFG_reconstruction_plainy = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
-		cost = 50
-        days_remove = 60
-		available = {
-			NOT = {
-				has_decision = GFG_reconstruction_recharnd
-				has_decision = GFG_reconstruction_greensteel
-				has_decision = GFG_reconstruction_casland
-			}
+        custom_cost_trigger = {
+            check_variable = {
+                var = money_amount
+                value = 1
+                compare = greater_than_or_equals
+            }
         }
+        custom_cost_text = decisions_cost_money_100k
+        complete_effect = {
+            subtract_from_variable = { money_amount = 1 }
+        }
+        days_remove = 60
         modifier = {
             civilian_factory_use = 3
         }
         remove_effect = {
-			145 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = l_GFG_improves_economy
-			if = {
-				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
-				}				
-				country_event = GFG_event.11
-			}
-			else = {
-				add_to_variable = { var_GFG_crisis_cgf = -0.05 }
-				add_to_variable = { var_GFG_crisis_psf = 0.05 }
-				add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
-			}
+            145 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = l_GFG_improves_economy
+            if = {
+                limit = {
+                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                }
+                country_event = GFG_event.11
+            }
+            else = {
+                add_to_variable = { var_GFG_crisis_cgf = -0.05 }
+                add_to_variable = { var_GFG_crisis_psf = 0.05 }
+                add_to_variable = { var_GFG_crisis_pfegf = 0.05 }
+            }
         }
-		ai_will_do = {
-			base = 50
-		}
+        ai_will_do = {
+            base = 50
+        }
     }
 }

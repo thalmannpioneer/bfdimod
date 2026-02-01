@@ -38,4 +38,21 @@ guiTypes = {
             pdx_tooltip_delayed = l_money_tt_delayed
         }
     }
+
+    containerWindowType = {
+        name = "negdiff_notification"
+        position = { x = 1100 y = 40 }
+        size = { width = 47 height = 42 }
+        show_sound = alert_decision_new_sound
+        fade_type = linear
+        fade_time = 100
+
+        buttonType = {
+            name = "notif"
+            position = { x = 0 y = 0 }
+            spriteType = GFX_notification_negdiff
+            pdx_tooltip = l_negdiff_notification_tt
+            pdx_tooltip_delayed = l_negdiff_notification_tt_delayed
+        }
+    }
 }

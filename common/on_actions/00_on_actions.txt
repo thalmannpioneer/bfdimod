@@ -661,6 +661,11 @@ on_actions = {
 
                 add_to_variable = { money_amount = adding_amount }
 
+                if = {
+                    limit = { check_variable = { adding_amount < 0 } }
+                    set_country_flag = negdiff_notification_show
+                }
+
                 # bankruptcy logic
                 if = {
                     limit = { has_idea = idea_common_bankruptcy }

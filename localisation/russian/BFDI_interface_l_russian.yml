@@ -111,3 +111,5 @@
  l_tax_tooltip: "Фабрики народного потребления: §Y[?var_taxation_cgf|%]§!\nФактор доходов с населения: §Y[?var_taxation_mgfp|%]§!"
  l_schooling_tooltip: "Скорость исследований: [?var_schooling_rsf|%+]\nСкорость специальных проектов от учёного: [?var_schooling_srbf|%+]\nРасходы в месяц: §Y[?var_schooling_mc_display] тыс.§!"
  l_healthcare_tooltip: "Стабильность: [?var_healthcare_sf|%+]\nЕжемесячный рост населения: [?var_healthcare_mp|%+]\nРасходы в месяц: §Y[?var_healthcare_mc_display] тыс.§!"
+ l_negdiff_notification_tt: "§tНегативный Баланс!§!"
+ l_negdiff_notification_tt_delayed: "§GПКМ, чтобы скрыть§!"
