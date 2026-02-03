@@ -13,16 +13,19 @@ GDR_civil_war = {
 		country_exists = GPG
 		country_exists = GSR 
 		country_exists = GFG
+		has_war = yes
 	}
-
-	abort = {
-		has_war = no
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = production_upgrade_desire_offset
 		id = infantry_equipment_1
 		value = -1000
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -34,7 +37,8 @@ GDR_civil_war = {
 		value = 50
 	}
 	ai_strategy = {
-		type = force_build_armies
+		type = build_army
+		id = infantry
 		value = 30
 	}
 }
@@ -44,7 +48,7 @@ GDR_civil_war = {
 
 
 GDR_high_support = {
-    #GDR wants fast divs 
+    #GDR wants fast support divs 
 	allowed = {
 		original_tag = GDR
 	}
@@ -53,10 +57,12 @@ GDR_high_support = {
 		NOT = {country_exists = GSR}
 		NOT = {country_exists = GFG}
 	}
-
 	abort = {
-		always = no
-	}
+        has_army_size = {
+            size > 5
+            type = motorized
+        }
+    }
 
 	ai_strategy = {
 		type = research_weight_factor
@@ -70,12 +76,37 @@ GDR_high_support = {
 	}
 	ai_strategy = {
 		type = research_weight_factor
+		id = tech_logistics_company
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = tech_military_police
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
 		id = infantry_weapons2
 		value = 30
 	}
 	ai_strategy = {
 		type = min_wanted_supply_trucks
 		value = 200
+	}
+	ai_strategy = {
+        type = build_army
+        id = motorized
+        value = 1000
+    }
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 100
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = motorized_equipment
+		value = 2
 	}
 }
 
@@ -98,14 +129,77 @@ GDR_huge_army = {
         }
 	}
 
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 50
-	}
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 5
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = support_equipment
+        value = 2
+    }
 	ai_strategy = {
 		type = build_army
 		id = infantry
+		value = 250
+	}
+}
+
+GDR_build = {
+    #GDR's build
+	allowed = {
+		original_tag = GDR
+	}
+	enable = {
+		NOT = {country_exists = GPG}
+		NOT = {country_exists = GSR}
+		NOT = {country_exists = GFG}
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 4
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = support_equipment
+        value = 3
+    }
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 2
+    }
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_air_equipment
+        value = 1
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_tank_equipment
+        value = 1
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = infantry
+        value = 70
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = motorized
+        value = 20
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = garrison
+        value = 10
+    }
+	ai_strategy = {
+		type = min_wanted_supply_trucks
 		value = 250
 	}
 }

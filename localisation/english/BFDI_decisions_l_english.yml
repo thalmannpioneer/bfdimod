@@ -230,6 +230,7 @@
 
  decision_YFC_eastern_category: "The Great Eastern Game"
  YFC_eastern_Countdown: "§YThe Great Eastern Game§!"
+ YFC_eastern_SelectInfo: "§LClick on any state for information!§!"
  YFC_eastern_Countdown_desc: "We must hurry to capture as much land in the east as possible!"
  YFC_eastern_invest: "§GInvest§! in §Y[FROM.GetName]§!"
  YFC_eastern_manpower: "§GDeploy Soldiers§! in §Y[FROM.GetName]§!"

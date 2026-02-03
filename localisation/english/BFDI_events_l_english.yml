@@ -893,6 +893,11 @@
  YFC_event.50.a: "Agree" #Increases Pipe and Hammer influence
  YFC_event.50.b: "Disagree" #Decreases Pipe and Hammer influence
 
+ YFC_event.51.t: "Prospecting Prizes" #zdubbz cough
+ YFC_event.51.desc: "Beaker wants to hunt down some resources (Mainly aluminium) but this will make the local populace mad"
+ YFC_event.51.a: "Yeah!" #Increases Beaker influence
+ YFC_event.51.b: "Noo!" #Decreases Beaker influence
+
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.5.a: "We cannot allow more raids to happen!"

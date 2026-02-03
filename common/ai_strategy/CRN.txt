@@ -78,11 +78,11 @@ CRN_friend_YFC = {
 	ai_strategy = {
 		type = alliance
 		id = YFC
-		value = 10000
+		value = 1000
 	}
 	ai_strategy = {
 		type = befriend
 		id = YFC
-		value = 10
+		value = 100
 	}
 }

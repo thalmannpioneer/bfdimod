@@ -259,7 +259,17 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 10
-				check_variable = { money_amount > 10 }
+				check_variable = { money_amount > 15 }
+			}
+			modifier = {
+				add = 50
+				check_variable = { money_amount > 7 }
+				OR = {
+					FROM = {state = 230}
+					FROM = {state = 231}
+					FROM = {state = 227}
+					FROM = {state = 226}
+				}
 			}
 		}
 	}
@@ -331,6 +341,15 @@ decision_YFC_eastern_category = {
 				add = 10
 				has_manpower > 3000
 			}
+			modifier = {
+				add = 50
+				OR = {
+					FROM = {state = 230}
+					FROM = {state = 231}
+					FROM = {state = 227}
+					FROM = {state = 226}
+				}
+			}
 		}
 	}
 
@@ -358,8 +377,13 @@ decision_YFC_eastern_category = {
 			}
 		}
 
-		cost = 25
+		cost = 0
 		days_re_enable = 60
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
 
 		fire_only_once = no
 		days_remove = 60
@@ -455,7 +479,7 @@ decision_YFC_eastern_category = {
 				TBT = {
 					add_timed_idea = {
 						idea = idea_TBT_eastern_blocked
-						days = 60
+						days = 65
 					}
 				}
 				random = {

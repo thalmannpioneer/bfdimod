@@ -1892,13 +1892,19 @@ country_event = { #To the east
 			}
 			country_event = {
 				id = YFC_event.49
-				days = 200
+				days = 150
 				random_days = 100
 				random_hours = 100
 			}
 			country_event = {
 				id = YFC_event.50
 				days = 200
+				random_days = 100
+				random_hours = 100
+			}
+			country_event = {
+				id = YFC_event.51
+				days = 250
 				random_days = 100
 				random_hours = 100
 			}
@@ -2033,7 +2039,7 @@ country_event = { #Eastern Event #1
 
 	immediate = {
         set_variable = { var_add_to_sector = 2 }
-		set_variable = { var_add_to_sector2 = 2 }
+		set_variable = { var_add_to_sector2 = 1 }
     }
 
 	option = { 
@@ -2099,7 +2105,7 @@ country_event = { #Eastern Event #2
 	is_triggered_only = yes
 
 	immediate = {
-        set_variable = { var_add_to_sector = 2 }
+        set_variable = { var_add_to_sector = 1 }
     }
 
 	option = { 
@@ -2113,6 +2119,54 @@ country_event = { #Eastern Event #2
 	}
 	option = { 
 		name = YFC_event.50.b
+	}
+}
+
+country_event = { #Eastern Event #3
+	id = YFC_event.51
+	title = YFC_event.51.t
+	desc = YFC_event.51.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+
+	option = { 
+		name = YFC_event.51.a
+		201 = {
+			add_resource = {
+            	type = aluminium
+                amount = 10
+            }
+		}
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_eastern_loseall_5
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 229
+						state = 232
+						state = 228
+						state = 225
+						state = 230
+						state = 226
+						state = 192
+						state = 231
+						state = 227
+					}
+				}
+				add_to_variable = { eastern_support_var = -0.05 }
+			}
+		}
+	}
+	option = { 
+		name = YFC_event.51.b
 	}
 }
 

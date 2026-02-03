@@ -62,6 +62,7 @@ default_unit_production = {
 	enable = {
 		NOT = {original_tag = GTR}
 		NOT = {original_tag = WGF}
+		NOT = {original_tag = GDR}
 	}
 	abort_when_not_enabled = yes
 
@@ -332,6 +333,7 @@ default_surplus_management = {
 	enable = {
 		NOT = {original_tag = GTR}
 		NOT = {original_tag = WGF}
+		NOT = {original_tag = GDR}
 	}
 	abort_when_not_enabled = yes
 
@@ -680,6 +682,7 @@ default_garrison_production = {
 		NOT = {
 			original_tag = GTR
 			original_tag = WGF
+			original_tag = GDR
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes

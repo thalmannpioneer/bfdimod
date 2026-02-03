@@ -242,6 +242,7 @@ motorized_GGR = {
 		
 		target_template = {
 			support = {
+				mot_recon = 1
 				artillery = 1
 				field_hospital = 1
 				logistics_company = 1

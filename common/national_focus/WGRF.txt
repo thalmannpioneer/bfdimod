@@ -338,6 +338,16 @@ focus_tree = {
                     limit = { is_ai = no }
                     news_event = bfdinews.4
                 }
+                add_opinion_modifier = { target = GMD modifier = large_decrease }
+                every_country_with_original_tag = {
+                    original_tag_to_check = GMD
+                    add_opinion_modifier = { target = WGF modifier = large_decrease }
+                }
+                add_opinion_modifier = { target = DPZ modifier = large_decrease }
+                every_country_with_original_tag = {
+                    original_tag_to_check = DPZ
+                    add_opinion_modifier = { target = WGF modifier = large_decrease }
+                }
             }
             mark_focus_tree_layout_dirty = yes
         }

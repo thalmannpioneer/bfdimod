@@ -7,34 +7,68 @@ GDR_Inf_01 = {
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Division"
+	fallback_name = "%d. Division"
 	ordered = {
-		1 = { "%dst ‘Free’ Volunteers" }
-		2 = { "%dnd ‘Green’ Volunteers" }
-		3 = { "%drd ‘White’ Volunteers" }
-		4 = { "%dth ‘Blue’ Volunteers" }
-		5 = { "%dth ‘Liberty’ Volunteers" }
-		6 = { "%dth ‘Blue’ Volunteers" }
-		7 = { "%dth ‘Greenport’ Volunteers" }
-		8 = { "%dth ‘Armless’ Volunteers" }
-		9 = { "%dth ‘Hero’ Volunteers" }
-		10 = { "%dth ‘Furnace’ Volunteers" }
-		11 = { "%dth Division ‘Liberty’" }
+		1 = { "%dst 'Free' Volunteers" }
+		2 = { "%dnd 'Green' Volunteers" }
+		3 = { "%drd 'White' Volunteers" }
+		4 = { "%dth 'Blue' Volunteers" }
+		5 = { "%dth 'Liberty' Volunteers" }
+		6 = { "%dth 'Blue' Volunteers" }
+		7 = { "%dth 'Greenport' Volunteers" }
+		8 = { "%dth 'Armless' Volunteers" }
+		9 = { "%dth 'Hero' Volunteers" }
+		10 = { "%dth 'Furnace' Volunteers" }
+		11 = { "%dth Division 'Liberty'" }
 		12 = { "%dth Division 'Equality'" }
-		13 = { "%dth Division ‘Freedom’" }
-		14 = { "%dth Division ‘Voters’" }
-		15 = { "%dth Division ‘Armless’" }
-		16 = { "%dth Division ‘United’" }
-		17 = { "%dth Division ‘Torch’" }
-		18 = { "%dth Division ‘Democratic’" }
-		19 = { "%dth Division ‘Republican’" }
-		20 = { "%dth Division ‘Representative’" }
-		21 = { "%dst Division ‘Judgment’" }
-		22 = { "%dnd Division ’Verdict’" }
-		23 = { "%drd Division ‘Resolution’" }
-		24 = { "%dth Division ‘Opinion’" }
-		25 = { "%dth Division ‘Ambassador’" }
-		26 = { "%dth Division ‘Popular’" }
+		13 = { "%dth Division 'Freedom'" }
+		14 = { "%dth Division 'Voters'" }
+		15 = { "%dth Division 'Armless'" }
+		16 = { "%dth Division 'United'" }
+		17 = { "%dth Division 'Torch'" }
+		18 = { "%dth Division 'Democratic'" }
+		19 = { "%dth Division 'Republican'" }
+		20 = { "%dth Division 'Representative'" }
+		21 = { "%dst Division 'Judgment'" }
+		22 = { "%dnd Division 'Verdict'" }
+		23 = { "%drd Division 'Resolution'" }
+		24 = { "%dth Division 'Opinion'" }
+		25 = { "%dth Division 'Ambassador'" }
+		26 = { "%dth Division 'Popular'" }
+	}
+}
+
+GDR_Gar_01 = {
+	name = "Garrison Divisions"
+
+	for_countries = { GDR }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Reserve Division"
+	ordered = {
+		1 = { "%d. Reserve Division" }
+		2 = { "%d. Reserve Division" }
+		3 = { "%d. Reserve Division" }
+		4 = { "%d. Reserve Division" }
+		5 = { "%d. Reserve Division" }
+		6 = { "%d. Reserve Division" }
+		7 = { "%d. Reserve Division" }
+		8 = { "%d. Reserve Division" }
+		9 = { "%d. Reserve Division" }
+		10 = { "%d. Reserve Division" }
+		11 = { "%d. Reserve Division" }
+		12 = { "%d. Reserve Division" }
+		13 = { "%d. Reserve Division" }
+		14 = { "%d. Reserve Division" }
+		15 = { "%d. Reserve Division" }
+		16 = { "%d. Reserve Division" }
+		17 = { "%d. Reserve Division" }
+		18 = { "%d. Reserve Division" }
+		19 = { "%d. Reserve Division" }
+		20 = { "%d. Reserve Division" }
 	}
 }
 
@@ -47,7 +81,7 @@ GDR_Cav_01 = {
 
 	division_types = { "cavalry" }
 
-	fallback_name = "%d Cavalry Division"
+	fallback_name = "%d. Cavalry Division"
 
 	ordered = {
 		1 = { "%dst Cavalry Division" }
@@ -73,7 +107,3 @@ GDR_Cav_01 = {
 	}
 }
 
-
-
-
-	

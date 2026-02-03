@@ -1,3 +1,6 @@
+#Overall idea for GDR:
+#Well supported/supplied Inf backed by fast mot. with later armor once the mils are higher.
+
 infantry_GDR = {
 
 	available_for = {
@@ -40,9 +43,9 @@ infantry_GDR = {
 			}
 		}
 
-		replace_at_match = 0.75
+		replace_at_match = 0.7
         replace_with = infantry_early_GDR
-        target_min_match = 0.75
+        target_min_match = 0.7
 	}
 
 	infantry_early_GDR = {
@@ -56,6 +59,7 @@ infantry_GDR = {
 		}
 
 		can_upgrade_in_field = {
+			has_equipment = { support_equipment > 100 }
 			has_equipment = { motorized_equipment_1 > 100 }
         }
 
@@ -67,45 +71,62 @@ infantry_GDR = {
 
 		target_template = {
 			
-			regiments = {
-				cavalry = 5
-			}
-		}
-
-		replace_at_match = 0.5
-        replace_with = infantry_early_upgrade_GDR
-        target_min_match = 0.5
-	}
-
-	infantry_early_upgrade_GDR = {
-		division_names_group = GDR_Inf_01
-		upgrade_prio = {
-			base = 3
-			modifier = {
-				factor = 0
-				NOT = {has_tech = motorised_infantry}
-			}
-
-			modifier = {
-				factor = 5
-				has_tech = motorised_infantry
-			}
-		}
-
-		target_template = {
-
 			support = {
-				mot_recon = 1
+				recon = 1
 				logistics_company = 1
+				engineer = 1
 			}
 
 			regiments = {
-				motorized = 5
-			}	
+				infantry = 5
+			}
 		}
 	}
 }
 
+motorized_GDR = {
+
+	available_for = {
+		GDR
+	}
+	
+	role = motorized
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			NOT = { ai_has_role_template = motorized }
+		}
+	}
+	
+	basic_motorized_infantry_GDR = {
+		division_names_group = GDR_Cav_01
+		
+		upgrade_prio = {
+			base = 1
+		}
+		
+		enable = {
+			NOT = { country_exists = GPG }
+			NOT = { country_exists = GFG }
+			NOT = { country_exists = GSR }
+		}
+
+		target_template = {
+			support = {
+				mot_recon = 1
+				logistics_company = 1
+				engineer = 1
+			}
+			
+			regiments = {
+				motorized = 6
+			}
+		}
+	}
+}
 
 garrison_GDR = {
 	available_for = {
@@ -125,7 +146,7 @@ garrison_GDR = {
 
 
 	garrison_GDR = {
-		division_names_group = GDR_Inf_01
+		division_names_group = GDR_Gar_01
 		reinforce_prio = 0
 		custom_icon = 7
 	
@@ -145,6 +166,10 @@ garrison_GDR = {
 
 		target_template = {
 			
+			support = {
+				engineer = 1
+			}
+
 			regiments = {
 				infantry = 3
 			}
