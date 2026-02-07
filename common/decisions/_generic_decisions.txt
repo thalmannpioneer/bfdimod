@@ -105,15 +105,18 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			controls_state = 201
 			YFC = {has_completed_focus = YFC_focus_the_grapes_and_the_cherries}
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-                tooltip = l_decisions_YFC_divs
-                NOT = {has_country_flag = has_active_mercenaries}
-            }
+			controls_state = 201
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = l_decisions_YFC_divs
+					NOT = {has_country_flag = has_active_mercenaries}
+				}
+				surrender_progress > 0.35
+			}
 		}
 
 		custom_cost_trigger = {
@@ -160,15 +163,18 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			controls_state = 201
 			YFC = {has_completed_focus = YFC_focus_invest_in_speed}
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-                tooltip = l_decisions_YFC_divs
-                NOT = {has_country_flag = has_active_mercenaries}
-            }
+			controls_state = 201
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = l_decisions_YFC_divs
+					NOT = {has_country_flag = has_active_mercenaries}
+				}
+				surrender_progress > 0.35
+			}
 		}
 
 		custom_cost_trigger = {
@@ -215,15 +221,18 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			controls_state = 201
 			YFC = {has_completed_focus = YFC_focus_invest_in_power}
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-                tooltip = l_decisions_YFC_divs
-                NOT = {has_country_flag = has_active_mercenaries}
-            }
+			controls_state = 201
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = l_decisions_YFC_divs
+					NOT = {has_country_flag = has_active_mercenaries}
+				}
+				surrender_progress > 0.35
+			}
 		}
 
 		custom_cost_trigger = {

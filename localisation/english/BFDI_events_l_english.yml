@@ -766,27 +766,27 @@
  YFC_event.22.b: "Let us flesh out this city more, it's feeble." 
  YFC_event.22.c: "Pure economic opportunity is in the palms of this city's planner. It shall be the YFC's largest." 
 
- YFC_event.23.t: "Peoniele, The Second City"
+ YFC_event.23.t: "Peoniele, The Second City" #Mixed
  YFC_event.23.desc: "Following our large investments into the city of Peoniele, we have seen massive increases in profits. The pockets of our Sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. Sure, the population of Peoniele herself haven't been the most enthusiastic about the large swaths of people moving to the city, but who cares for their opinions when profits have never been higher? Some environmentalist groups have formed in the city, who preech about 'keeping the beauty,' and what not, but what's more beautiful than the color green? An ignorant populace is easy to ignore, but what we have neglected to ensure the comencing of operations on the other development project we were seeing to, Yoyleton. It was in a great position for trade with the north, so it is a shame that we failed to take the opportunity. Regardless, the population there seems to care not, so at least they are good with what they have been given."
  YFC_event.23.a: "Show me a money spread, Peoniele."
 
- YFC_event.24.t: "Peoniele, The Second City"
+ YFC_event.24.t: "Peoniele, The Second City" #Good
  YFC_event.24.desc: "Following our investments into the city of Peoniele, we have seen great increases in profits. The pockets of our Sectorials are lined more than sufficiently, and even the average employee has gained a few extra dollars for their hard work. The existing populace seems to quite enjoy our changes too, so that's good too. Unfortunately, it seems as if we accidentally neglected so industrialize Yoyleton, which seemed like the promising location, all things considered. Regardless, we have a second stable source of money, and it seems to be growing by the day, seeing as Peoniele's population count has tripled."
  YFC_event.24.a: "A great investment."
 
- YFC_event.25.t: "Beacons of the East"
+ YFC_event.25.t: "Beacons of the East" #Good
  YFC_event.25.desc: "Our investments into our eastern territories have born fruits beyond our wildest capitalistic dreams! Our returns have been, quite frankly, absurd. Every Sectorial's pocket has been dashed more than sufficiently, and even the average menial laborer has seen a more than noticeable pay increase. Despite Peoniele's unsatisfactory growth, according to some of the architects who were designing the city, it seems to have become sort of a tourist attraction across Goiky, due to its natural beauty. Sure, 'natural beauty' isn't all that important, but everyone knows that a tourist is just a walking wallet. Yoyleton has become a bastion of Northern trade, with objects from all over paying visits just to buy and sell. Some independent companies have even started profiting up there, enspiring the competition needed to get our employees to work harder. Of course, these new companies still pay taxes, and who exactly do those tax dollars come back to?"
  YFC_event.25.a: "Back to us!"
 
- YFC_event.26.t: "Missed Opportunities"
+ YFC_event.26.t: "Missed Opportunities" #Bad
  YFC_event.26.desc: "Our investments into our eastern territories have been for not. Whether by way of incompetant architects, or through the neglect of leadership, we have failed to allow our eastern territories to bare fruits. Peoniele looks nearly the same as it did before our investing, the same boring fields of flowers, and small, grass covered houses. Yoyleton is quite a similar story as well, unfortunately. Though the inhabitants of these areas are quite happy with our changes, their opinions are, quite literally, worthless. We gain no profit from bringing 'happpiness' to the existing populace. In fact, it seems as if we've lost a sizeable amount of money from this endeavor. Maybe with better planning, this experiment could've gone over better."
  YFC_event.26.a: "I hope someone gets fired for this blunder."
 
- YFC_event.27.t: "Expansion of Northern Trade"
+ YFC_event.27.t: "Expansion of Northern Trade" #Good
  YFC_event.27.desc: "Our investments into our eastern territories have born dilectable fruits! Our profits have been noticeably higher over the past week, and we -- the company executives, obviously -- have reaped our due benefits. We've managed to establish trade routes with the Teardroppers and Davidians, which is where most of our profits have hailed from. Additionally, we've managed to strengthen our formerly weak routes to the Military District, which has been a nice benefit. The population of Yoyleton, though their opinions obviously do not mater much, seem to be quite happy with the changes we have made. Some lunatic named Dewdrop had claimed that he had always been weary of our rule, but the moderate upgrades to the city quelled his 'revolutionary' feelings. Whatever that meant. \nIn hindsight, it does seem as if we had forgotten to invest into Peoniele, which did net us some slight losses, however the gains from Yoyleton have more than made up for this. Perhaps Peoniele was a lost opportunity, however, for now, we frolic."
  YFC_event.27.a: "Frolic in the enhancing of free trade!"
 
- YFC_event.28.t: "A Great Mistake"
+ YFC_event.28.t: "A Great Mistake" #Bad
  YFC_event.28.desc: "It seems as if our investments into the eastern territories have failed. Not only have many assessed our reworking of Yoyleton to have been far too small, we have entirely neglected Peoniele. The costs for attempting to enlargen Yoyleton and the losses from our neglect of Peoniele far outweigh and profit we gained from the new people moving to the cities. Sure, the population of the cities seems quite okay with being left alone, but who cares of that? Our Sectorials most certainly don't, seeing as they are openly criticizing the actions taken in attempting to develop the city. Peoniele looks nearly the same as it had before, and Yoyleton leaves a lot to be desired."
  YFC_event.28.a: "We could've done better..."
 
@@ -794,7 +794,7 @@
  YFC_event.29.desc: "This event is homeless :(((("
  YFC_event.29.a: "It needs a home!"
 
- YFC_event.30.t: "Peoniele, the Metropolis of East Goiky"
+ YFC_event.30.t: "Peoniele, the Metropolis of East Goiky" #Mixed
  YFC_event.30.desc: "Our investment into the city of Peoniele has paid of more than favorably! The pockets of every single corporate employ have been filled significantly, especially those of the Sectorials. Those Sectorials in question seem to be quite happy with our investments, even dispite the neglect of Yoyleton. The profits earned from this endeavor are more than enough to fund future Yellow Facer projects, to the point money is barely a concern to us. On the expense end, of course; profits shall never stop! Some do seem to be concerned with the reactions of the Peoniele populace who had lived there before our improvements, citing how angry they seem about the removal and trampling of their natural flower fields. Why a people would care for plants is beyond the heads of corporates. It's amazing how little the opinions of people like that contribute to the amount of profits we make."
  YFC_event.30.a: "Finally, it's a real city!"
 
@@ -832,7 +832,7 @@
  YFC_event.37.b: "Deny!"
 
  YFC_event.38.t: "Yellow Face deamnds our resources!" #SRI refers to the player as boy, because the SRI is an eighty year old man who has been in the mines for 2 thirds of his life
- YFC_event.38.desc: "Uh, this morning, large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?"
+ YFC_event.38.desc: "Uh, this morning, large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?" #:sob:
  YFC_event.38.a: "Accept!"
  YFC_event.38.b: "Deny!"
 

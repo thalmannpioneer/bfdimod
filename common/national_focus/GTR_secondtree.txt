@@ -1638,6 +1638,13 @@ focus_tree = {
                     traits = { air_chief_reform_2 }
                 }
             }
+            hidden_effect = {
+                if = {
+                    limit = {is_ai = yes}
+                    activate_advisor = idea_GTR_titanknife #I quit.
+                    add_political_power = -150
+                }
+            }
         }
     }
 

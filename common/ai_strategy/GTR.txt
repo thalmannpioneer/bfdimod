@@ -84,7 +84,7 @@ GTR_fighters = {
     ai_strategy = {
         type = unit_ratio
         id = fighter
-        value = 200
+        value = 250
     }
     ai_strategy = {
         type = equipment_production_factor
@@ -127,7 +127,11 @@ GTR_bombers = {
     }
     abort_when_not_enabled = yes
 
-
+    ai_strategy = {
+        type = unit_ratio
+        id = strategic_bomber
+        value = 250
+    }
     ai_strategy = {
         type = equipment_production_factor
         id = strategic_bomber
@@ -164,6 +168,11 @@ GTR_build = {
         type = equipment_production_min_factories
         id = fighter
         value = 2
+    }
+    ai_strategy = {
+        type = equipment_production_min_factories
+        id = strategic_bomber
+        value = 1
     }
     ai_strategy = {
         type = air_factory_balance

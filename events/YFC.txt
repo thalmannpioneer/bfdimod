@@ -721,7 +721,7 @@ country_event = {
 	id = YFC_event.23 #Buildup city event OUTCOME #1
 	title = YFC_event.23.t
     desc = YFC_event.23.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event23
 	
 	is_triggered_only = yes
     
@@ -744,7 +744,7 @@ country_event = {
 	id = YFC_event.24 #Buildup city event OUTCOME #2
 	title = YFC_event.24.t
     desc = YFC_event.24.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event24
 	
 	is_triggered_only = yes
     
@@ -767,7 +767,7 @@ country_event = {
 	id = YFC_event.25 #Buildup city event OUTCOME #3+8
 	title = YFC_event.25.t
     desc = YFC_event.25.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event24
 	
 	is_triggered_only = yes
     
@@ -796,7 +796,7 @@ country_event = {
 	id = YFC_event.26 #Buildup city event OUTCOME #4+7
 	title = YFC_event.26.t
     desc = YFC_event.26.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event26
 	
 	is_triggered_only = yes
     
@@ -824,7 +824,7 @@ country_event = {
 	id = YFC_event.27 #Buildup city event OUTCOME #5
 	title = YFC_event.27.t
     desc = YFC_event.27.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event24
 	
 	is_triggered_only = yes
     
@@ -845,7 +845,7 @@ country_event = {
 	id = YFC_event.28 #Buildup city event OUTCOME #6
 	title = YFC_event.28.t
     desc = YFC_event.28.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event26
 	
 	is_triggered_only = yes
     
@@ -882,7 +882,7 @@ country_event = {
 	id = YFC_event.30 #Buildup city event OUTCOME #9
 	title = YFC_event.30.t
     desc = YFC_event.30.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event23
 	
 	is_triggered_only = yes
     
