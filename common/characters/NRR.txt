@@ -7,4 +7,19 @@ characters = {
 			ideology = centrism
 		}
 	}
+	NRR_bagged_milk = {
+		name = NRR_bagged_milk
+		portraits = { 
+			army = { 
+				large = GFX_NRR_bagged_milk	
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
 }

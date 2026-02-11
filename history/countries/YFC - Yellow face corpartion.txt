@@ -62,7 +62,7 @@ set_popularities = {
  set_variable = { var_idea_YFC_Beaker_influence = 1 }
  set_variable = { var_idea_YFC_Beaker_level = 1 }
 
- set_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 } #Changed to monthly pop but no gonna be renamed
+ set_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 } #Changed to monthly pop
  set_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
  set_variable = { var_idea_YFC_Hammer_cost = 20 }
  set_variable = { var_idea_YFC_Hammer_influence = 1 }
@@ -81,6 +81,8 @@ set_variable = {var = var_YFC_BUN_Anger value = 1 } #Useless but needed for kill
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david
 recruit_character = YFC_Coiny
+recruit_character = YFC_tophat
+recruit_character = YFC_blocky
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment

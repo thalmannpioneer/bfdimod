@@ -3391,7 +3391,15 @@ country_event = { #Annex Events 5
 		add_political_power = 30
 		85 = {add_resistance = -2}
 		212 = {add_resistance = -2}
-		recruit_character = YFC_blocky
+		add_corps_commander_role = {
+			Character = YFC_blocky
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = { cavalry_officer }
+		}
 		hidden_effect = {
 			BUN = {retire_character = BUN_blocky}
 			country_event = {

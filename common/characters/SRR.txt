@@ -7,4 +7,20 @@ characters = {
 			ideology = centrism
 		}
 	}
+	SRR_sidewalky = {
+		name = SRR_sidewalky
+		portraits = { 
+			army = { 
+				large = GFX_SRR_sidewalky	
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { brave }
+		}
+	}
 }

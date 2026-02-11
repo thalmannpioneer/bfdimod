@@ -184,6 +184,11 @@ spriteTypes = {
 		name = "GFX_FFT_rocky"
 		texturefile = "gfx/leaders/FFT/FFT_rocky.dds"
 	}
+
+	spriteType = {
+		name = "GFX_FFT_molotov"
+		texturefile = "gfx/leaders/FFT/FFT_molotov.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_BUN_eraser"
@@ -206,10 +211,20 @@ spriteTypes = {
 		name = "GFX_SRR_wrench"
 		texturefile = "gfx/leaders/SRR/SRR_wrench.dds"
 	}
+
+	spriteType = {
+		name = "GFX_SRR_sidewalky"
+		texturefile = "gfx/leaders/SRR/SRR_sidewalky.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_NRR_administration"
 		texturefile = "gfx/leaders/NRR/NRR_administration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NRR_bagged_milk"
+		texturefile = "gfx/leaders/NRR/NRR_bagged_milk.dds"
 	}
 	
 	spriteType = {

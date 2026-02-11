@@ -79,7 +79,15 @@ focus_tree = {
 		#Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
 		completion_reward = {
 			unlock_decision_category_tooltip = decision_YFC_sector_category
-			recruit_character = YFC_tophat
+			add_field_marshal_role = {
+				character = YFC_tophat
+				traits = { politically_connected armor_officer trait_reckless organisational_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
 			custom_effect_tooltip = l_YFC_allow_rails
 			add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
 			add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
@@ -2503,7 +2511,7 @@ focus_tree = {
 		
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2525,7 +2533,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2540,7 +2548,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2598,7 +2606,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2620,7 +2628,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2636,7 +2644,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#I might wait on the sectorials part with the embargo events increase influence
 		}
 	}
 
@@ -2652,7 +2660,7 @@ focus_tree = {
 		
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2667,7 +2675,8 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
+			#And if it is to remove the market system I don't want to yet
 		}
 	}
 
@@ -2682,7 +2691,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 
@@ -2697,7 +2706,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#What should this do?
 		}
 	}
 }

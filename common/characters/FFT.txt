@@ -6,5 +6,29 @@ characters = {
 			desc = FFT_rocky_desc
 			ideology = anarchist_communism
 		}
+		field_marshal = {
+			traits = { politically_connected war_hero brave guerilla_fighter }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	FFT_molotov = {
+		name = FFT_molotov
+		portraits = { 
+			army = { 
+				large = GFX_FFT_molotov	
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { guerilla_fighter }
+		}
 	}
 }
