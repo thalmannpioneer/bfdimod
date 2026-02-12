@@ -117,6 +117,10 @@ infantry_WGF = {
 				artillery_brigade = 1
 			}
 		}
+
+		replace_at_match = 0.6
+        replace_with = infantry_WGF
+        target_min_match = 0.6
 	}
 
 	infantry_WGF = {

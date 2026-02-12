@@ -189,7 +189,7 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 100
-				check_variable = { money_amount > 15 }
+				check_variable = { money_amount > 16 }
 			}
 		}
 	}
@@ -259,11 +259,11 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 10
-				check_variable = { money_amount > 15 }
+				check_variable = { money_amount > 16 }
 			}
 			modifier = {
 				add = 50
-				check_variable = { money_amount > 7 }
+				check_variable = { money_amount > 10 }
 				OR = {
 					FROM = {state = 230}
 					FROM = {state = 231}
@@ -339,10 +339,11 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 10
-				has_manpower > 3000
+				has_manpower > 5000
 			}
 			modifier = {
 				add = 50
+				has_manpower > 2000
 				OR = {
 					FROM = {state = 230}
 					FROM = {state = 231}
@@ -764,7 +765,7 @@ decision_YFC_eastern_category = {
 			modifier = {
 				add = 10
 				has_political_power > 50
-				has_manpower > 1000
+				has_manpower > 7000
 			}
 		}
 	}

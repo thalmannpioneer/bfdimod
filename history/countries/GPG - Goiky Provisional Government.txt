@@ -54,7 +54,7 @@ set_variable = { var_GPG_dreamislandtrauma_bf = -0.5 }
 
 set_variable = { var_GPG_postcw_cg = 0.5 }
 set_variable = { var_GPG_postcw_bs = -0.5 }
-set_variable = { var_GPG_postcw_fo = -0.7 }
+set_variable = { var_GPG_postcw_fo = -0.5 } #At -0.7 GPG can't make any guns
 set_variable = { var_GPG_postcw_sf = -0.1 }
 set_variable = { var_GPG_postcw_pp = -0.5 }
 

@@ -13,12 +13,15 @@ GFG_civil_war = {
 		country_exists = GPG
 		country_exists = GDR 
 		country_exists = GSR
+		has_war = yes
 	}
+	abort_when_not_enabled = yes
 
-	abort = {
-		has_war = no
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
 	}
-
 	ai_strategy = {
 		type = production_upgrade_desire_offset
 		id = infantry_equipment_1
@@ -143,4 +146,74 @@ GFG_huge_army = {
 		id = infantry
 		value = 250
 	}
+}
+
+GFG_MP_tech = {
+    #Get MP tech
+	allowed = {
+		original_tag = GFG
+	}
+	enable = {
+		NOT = {has_tech = tech_military_police}
+		NOT = {country_exists = GPG}
+		NOT = {country_exists = GSR}
+		NOT = {country_exists = GDR}
+	}
+	abort_when_not_enabled = yes
+
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = tech_military_police
+		value = 2000
+	}
+}
+
+GFG_build = {
+    #GFG's build
+	allowed = {
+		original_tag = GFG
+	}
+	enable = {
+		NOT = {country_exists = GPG}
+		NOT = {country_exists = GSR}
+		NOT = {country_exists = GDR}
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 3
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = support_equipment
+        value = 2
+    }
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 2
+	}
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_air_equipment
+        value = 0.1
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_tank_equipment
+        value = 0.1
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = infantry
+        value = 90
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = garrison
+        value = 10
+    }
 }

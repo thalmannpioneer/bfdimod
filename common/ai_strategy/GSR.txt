@@ -13,12 +13,15 @@ GSR_civil_war = {
 		country_exists = GPG
 		country_exists = GDR 
 		country_exists = GFG
+		has_war = yes
 	}
+	abort_when_not_enabled = yes
 
-	abort = {
-		has_war = no
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
 	}
-
 	ai_strategy = {
 		type = production_upgrade_desire_offset
 		id = infantry_equipment_1
@@ -135,13 +138,13 @@ GSR_huge_army = {
 	enable = {
 		has_war = no
 		has_army_size = {
-            size < 35
+            size < 40
         }
 	}
 
 	abort = {
 		has_army_size = {
-            size > 35
+            size > 40
         }
 	}
 
@@ -159,4 +162,53 @@ GSR_huge_army = {
 		type = ignore_army_incompetence
 		value = 25
 	}
+}
+
+GSR_build = {
+    #GSR's build
+	allowed = {
+		original_tag = GSR
+	}
+	enable = {
+		NOT = {country_exists = GPG}
+		NOT = {country_exists = GFG}
+		NOT = {country_exists = GDR}
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 3
+    }
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 2
+	}
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_air_equipment
+        value = 0.1
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_tank_equipment
+        value = 0.1
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = infantry
+        value = 85
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = mobile
+        value = 10
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = garrison
+        value = 5
+    }
 }

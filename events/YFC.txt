@@ -2503,6 +2503,9 @@ country_event = {
 				}
 			}
 		}	
+		ai_chance = {
+			base = 3
+		}	
 	}
 
 	option = { 
@@ -2517,6 +2520,9 @@ country_event = {
 				random_hours = 100
 			}
 		}
+		ai_chance = {
+			base = 7
+		}	
 	}
 }
 

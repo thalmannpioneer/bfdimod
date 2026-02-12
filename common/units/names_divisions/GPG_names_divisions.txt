@@ -3,17 +3,61 @@ GPG_Inf_01 = {
 
 	for_countries = { GPG }
 
-	can_use = { always = yes }
+	can_use = { 
+		AND = {
+			NOT = {has_completed_focus = GPG_focus_republic_personnel_army}
+			NOT = {has_completed_focus = GPG_focus_personnel_army}
+		}	
+	}
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Armed Division"
+	fallback_name = "%d. State Patrol"
 	ordered = {
 		1 = { "%dst State Patrol" }
 		2 = { "%dnd State Patrol" }
 		3 = { "%drd State Patrol" }
 		4 = { "%dth State Patrol" }
-		5 = { "%dth Casland Patrol" }
+		5 = { "%dth State Patrol" }
+		6 = { "%dth State Patrol" }
+		7 = { "%dth State Patrol" }
+		8 = { "%dth State Patrol" }
+		9 = { "%dth State Patrol" }
+		10 = { "%dth State Patrol" }
+		11 = { "%dth State Patrol" }
+		12 = { "%dth State Patrol" }
+		13 = { "%dth State Patrol" }
+		14 = { "%dth State Patrol" }
+		15 = { "%dth State Patrol" }
+		16 = { "%dth State Patrol" }
+		17 = { "%dth State Patrol" }
+		18 = { "%dth State Patrol" }
+		19 = { "%dth State Patrol" }
+		20 = { "%dth State Patrol" }
+	}
+}
+
+GPG_Inf_02 = {
+	name = "Infantry Divisions"
+
+	for_countries = { GPG }
+
+	can_use = { 
+		OR = {
+			has_completed_focus = GPG_focus_republic_personnel_army
+			has_completed_focus = GPG_focus_personnel_army
+		}	
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Armed Division"
+	ordered = {
+		1 = { "%dst Armed Division" }
+		2 = { "%dnd Armed Division" }
+		3 = { "%drd Armed Division" }
+		4 = { "%dth Armed Division" }
+		5 = { "%dth Armed Division" }
 		6 = { "%dth Armed Division" }
 		7 = { "%dth Armed Division" }
 		8 = { "%dth Armed Division" }

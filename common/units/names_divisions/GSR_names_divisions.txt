@@ -1,26 +1,72 @@
-GSR_Inf_01 = {
+GSR_Inf_01 = { #Civil War
 	name = "Infantry Divisions"
 
 	for_countries = { GSR }
 
-	can_use = { always = yes }
+	can_use = { 
+		OR = {
+			country_exists = GPG
+			country_exists = GDR
+			country_exists = GFG
+		}	
+	}
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Objects Division"
+	fallback_name = "Militia"
 	ordered = {
-		1 = { "%dst Workers Division" }
-		2 = { "%dnd Miners Division" }
-		3 = { "%drd Anarchists Division" }
-		4 = { "%dth Farmers Division" }
-		5 = { "%dth Militia Division" }
-		6 = { "%dth Farmers Division" }
-		7 = { "%dth Workers Division" }
-		8 = { "%dth Anarchists Division" }
-		9 = { "%dth Anarchists Division" }
-		10 = { "%dth Workers Division" }
-		11 = { "%dth Anarchists Division" }
-		12 = { "%dth Peasants Division" }
+		1 = { "Workers" }
+		2 = { "Miners" }
+		3 = { "Anarchists" }
+		4 = { "Farmers" }
+		5 = { "Militia" }
+		6 = { "Farmers" }
+		7 = { "Workers" }
+		8 = { "Anarchists" }
+		9 = { "Anarchists" }
+		10 = { "Workers" }
+		11 = { "Anarchists" }
+		12 = { "Peasants" }
+		13 = { "Anarchists" }
+		14 = { "Workers" }
+		15 = { "Farmers" }
+		16 = { "Militia" }
+		17 = { "Miners" }
+		18 = { "Miners" }
+		19 = { "Workers" }
+		20 = { "Workers" }
+	}
+}
+
+GSR_Inf_02 = { #After Civil War
+	name = "Infantry Divisions"
+
+	for_countries = { GSR }
+
+	can_use = { 		
+		AND = {
+			NOT = {country_exists = GPG}
+			NOT = {country_exists = GDR}
+			NOT = {country_exists = GFG} 
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Objects Division"
+	ordered = {
+		1 = { "%dst Objects Division" }
+		2 = { "%dnd Objects Division" }
+		3 = { "%drd Objects Division" }
+		4 = { "%dth Objects Division" }
+		5 = { "%dth Objects Division" }
+		6 = { "%dth Objects Division" }
+		7 = { "%dth Objects Division" }
+		8 = { "%dth Objects Division" }
+		9 = { "%dth Objects Division" }
+		10 = { "%dth Objects Division" }
+		11 = { "%dth Objects Division" }
+		12 = { "%dth Objects Division" }
 		13 = { "%dth Objects Division" }
 		14 = { "%dth Objects Division" }
 		15 = { "%dth Objects Division" }
@@ -39,6 +85,11 @@ GSR_Inf_01 = {
 		28 = { "%dth Objects Division" }
 		29 = { "%dth Objects Division" }
 		30 = { "%dth Objects Division" }
+		31 = { "%dst Objects Division" }
+		32 = { "%dnd Objects Division" }
+		33 = { "%drd Objects Division" }
+		34 = { "%dth Objects Division" }
+		35 = { "%dth Objects Division" }
 	}
 }
 
@@ -54,11 +105,11 @@ GSR_Cav_01 = {
 	fallback_name = "%d Objects Cavalry"
 
 	ordered = {
-		1 = { "Free Riders" }
-		2 = { "United Riders" }
+		1 = { "Red Riders" }
+		2 = { "Red Riders" }
 		3 = { "Red Riders" }
-		4 = { "%dth Objects Cavalry" }
-		5 = { "%dth Objects Cavalry" }
+		4 = { "Red Riders" }
+		5 = { "Red Riders" }
 		6 = { "%dth Objects Cavalry" }
 		7 = { "%dth Objects Cavalry" }
 		8 = { "%dth Objects Cavalry" }

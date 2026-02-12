@@ -77,7 +77,7 @@ infantry_GFG = {
 
 	infantry_early_GFG = {
 		#Unlocked after civil war is done
-		division_names_group = GFG_Inf_01
+		division_names_group = GFG_Inf_02
 		upgrade_prio = {
 			base = 2
 			modifier = {
@@ -112,7 +112,7 @@ infantry_GFG = {
 	}
 
 	infantry_early_upgrade_GFG = {
-		division_names_group = GFG_Inf_01
+		division_names_group = GFG_Inf_02
 		upgrade_prio = {
 			base = 3
 			modifier = {
@@ -132,6 +132,7 @@ infantry_GFG = {
 			support = {
 				artillery = 1
 				engineer = 1
+				military_police = 1
 			}
 
 			regiments = {

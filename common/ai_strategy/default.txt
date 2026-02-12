@@ -1,5 +1,5 @@
 BFDI_wait_tech = {
-	#Tell EVERY nation that unless they have more than 2 mils or it is past 2015 that Anti-Tank/Air IS NOT NEEDED.
+	#Tell EVERY nation that unless they have more than 4 mils or it is past 2015 that Anti-Tank/Air IS NOT NEEDED.
 	enable = {
 		OR = {
 			date < 2016.1.1
@@ -60,9 +60,15 @@ BFDI_full_stop_guns = {
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
-		NOT = {original_tag = GTR}
-		NOT = {original_tag = WGF}
-		NOT = {original_tag = GDR}
+		NOT = {
+			original_tag = GTR
+			original_tag = WGF
+			original_tag = GGR
+			original_tag = GDR
+			original_tag = GFG
+			original_tag = GSR
+			original_tag = GPG
+		}
 	}
 	abort_when_not_enabled = yes
 
@@ -331,9 +337,15 @@ default_role_ratios = {
 default_surplus_management = {
 	# If we manage to get all equipment we want, keep producing more stuff according to this
 	enable = {
-		NOT = {original_tag = GTR}
-		NOT = {original_tag = WGF}
-		NOT = {original_tag = GDR}
+		NOT = {
+			original_tag = GTR
+			original_tag = WGF
+			original_tag = GGR
+			original_tag = GDR
+			original_tag = GFG
+			original_tag = GSR
+			original_tag = GPG
+		}
 	}
 	abort_when_not_enabled = yes
 
@@ -682,7 +694,11 @@ default_garrison_production = {
 		NOT = {
 			original_tag = GTR
 			original_tag = WGF
+			original_tag = GGR
 			original_tag = GDR
+			original_tag = GFG
+			original_tag = GSR
+			original_tag = GPG
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes

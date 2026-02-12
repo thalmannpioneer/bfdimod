@@ -1,13 +1,19 @@
-GFG_Inf_01 = {
+GFG_Inf_01 = { #Civil War
 	name = "Infantry Divisions"
 
 	for_countries = { GFG }
 
-	can_use = { always = yes }
+	can_use = { 	
+		OR = {
+			country_exists = GPG
+			country_exists = GSR
+			country_exists = GDR
+		}	
+	}
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Infantry Division"
+	fallback_name = "%d. Stormtroopers"
 	ordered = {
 		1 = { "%dst Stormtroopers" }
 		2 = { "%dnd Stormtroopers" }
@@ -16,15 +22,55 @@ GFG_Inf_01 = {
 		5 = { "%dth Stormtroopers" }
 		6 = { "%dth Stormtroopers" }
 		7 = { "%dth Stormtroopers" }
+		8 = { "%dth Stormtroopers" }
+		9 = { "%dth Stormtroopers" }
+		10 = { "%dth Stormtroopers" }
+		11 = { "%dth Stormtroopers" }
+		12 = { "%dth Stormtroopers" }
+		13 = { "%dth Stormtroopers" }
+		14 = { "%dth Stormtroopers" }
+		15 = { "%dth Stormtroopers" }
+		16 = { "%dth Stormtroopers" }
+		17 = { "%dth Stormtroopers" }
+		18 = { "%dth Stormtroopers" }
+		19 = { "%dth Stormtroopers" }
+		20 = { "%dth Stormtroopers" }
+	}
+}
+
+GFG_Inf_02 = { #After Civil War
+	name = "Infantry Divisions"
+
+	for_countries = { GFG }
+
+	can_use = { 		
+		AND = {
+			NOT = {country_exists = GPG}
+			NOT = {country_exists = GSR}
+			NOT = {country_exists = GDR} 
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infantry Division"
+	ordered = {
+		1 = { "%dst Iron Division" }
+		2 = { "%dnd Iron Division" }
+		3 = { "%drd Iron Division" }
+		4 = { "%dth Iron Division" }
+		5 = { "%dth Iron Division" }
+		6 = { "%dth Iron Division" }
+		7 = { "%dth Iron Division" }
 		8 = { "%dth Iron Division" }
 		9 = { "%dth Iron Division" }
 		10 = { "%dth Iron Division" }
 		11 = { "%dth Iron Division" }
 		12 = { "%dth Iron Division" }
 		13 = { "%dth Iron Division" }
-		14 = { "%dth Iron Division" }
-		15 = { "%dth Iron Division" }
-		16 = { "%dth Iron Division" }
+		14 = { "%dth Infantry Division" } #GFG does some minor restructuring
+		15 = { "%dth Infantry Division" }
+		16 = { "%dth Infantry Division" } 
 		17 = { "%dth Infantry Division" }
 		18 = { "%dth Infantry Division" }
 		19 = { "%dth Infantry Division" }
@@ -51,7 +97,7 @@ GFG_Cav_01 = {
 
 	division_types = { "cavalry" }
 
-	fallback_name = "%d Shock Cavalry"
+	fallback_name = "%d. Shock Cavalry"
 
 	ordered = {
 		1 = { “Iron Cavalry" }

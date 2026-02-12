@@ -13,16 +13,9 @@ GGR_protect_raiders = {
         has_army_size = {
             size < 7
         }
+        country_exists = BUN
     }
-
-    abort = {
-        OR = {
-            has_army_size = {
-                size > 7
-            }
-            NOT = {country_exists = BUN}
-        }
-    }
+    abort_when_not_enabled = yes
 
     ai_strategy = {
         type = prepare_for_war
@@ -31,19 +24,15 @@ GGR_protect_raiders = {
     }
 }
 
-
-GGR_FFT_preparation_and_war = {
+GGR_FFT_preparation = {
     #GGR sends troops to FFT
     allowed = {
         original_tag = GGR
     }
     enable = {
-        OR = {
-            focus_progress = {
-                focus = GGR_focus_partizan_war
-                progress > 0.01
-            }
-            has_war_with = FFT
+        focus_progress = {
+            focus = GGR_focus_partizan_war
+            progress > 0.01
         }
     }
 
@@ -56,10 +45,29 @@ GGR_FFT_preparation_and_war = {
         id = FFT
         value = 750
     }
-    ai_strategy = {
-        type = garrison
-        value = -200
+}
+
+GGR_FFT_war = {
+    #GGR war
+    allowed = {
+        original_tag = GGR
     }
+    enable = {
+        focus_progress = {
+            focus = GGR_focus_partizan_war
+            progress > 0.01
+        }
+    }
+
+    abort = {
+        NOT = { country_exists = FFT }
+    }
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = FFT
+		value = 500
+	}
 }
 
 GGR_FFT_spy = {
@@ -70,10 +78,7 @@ GGR_FFT_spy = {
     enable = {
         country_exists = FFT
     }
-
-    abort = {
-        NOT = { country_exists = FFT }
-    }
+    abort_when_not_enabled = yes
 
     ai_strategy = {
         type = operative_mission
@@ -92,110 +97,6 @@ GGR_FFT_spy = {
 
 ## INDUSTRY ##
 
-GGR_tanks = {
-    #Once GGR has units and tank tech bonus it will try to make tanks for the rest of the game
-    allowed = {
-        original_tag = GGR
-    }
-    enable = {
-        NOT = {has_dlc = "No Step Back"}
-        has_army_size = {
-            size > 8
-        }
-        has_completed_focus = GGR_focus_forest_tanks
-    }
-
-    abort = {
-        has_army_size = {
-            size > 2
-            type = armor
-        }
-    }
-
-    ai_strategy = {
-        type = build_army
-        id = armor
-        value = 1000
-    }
-    ai_strategy = {
-        type = equipment_production_factor
-        id = armor
-        value = 150
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = gwtank
-        value = 1000
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = basic_light_tank
-        value = 750
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = tech_trucks
-        value = 1000
-    }
-    ai_strategy = {
-		type = research_weight_factor
-		id = motorised_infantry
-		value = 1000
-	}
-}
-
-GGR_tanks_NSB = {
-    #NSB Version
-    allowed = {
-        original_tag = GGR
-    }
-    enable = {
-        has_dlc = "No Step Back"
-        has_army_size = {
-            size > 8
-        }
-        has_completed_focus = GGR_focus_forest_tanks
-    }
-
-    abort = {
-        has_army_size = {
-            size > 2
-            type = armor
-        }
-    }
-
-    ai_strategy = {
-        type = build_army
-        id = armor
-        value = 1000
-    }
-    ai_strategy = {
-        type = equipment_production_factor
-        id = armor
-        value = 150
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = gwtank_chassis
-        value = 1000
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = basic_light_tank_chassis
-        value = 750
-    }
-    ai_strategy = {
-        type = research_weight_factor
-        id = tech_trucks
-        value = 1000
-    }
-    ai_strategy = {
-		type = research_weight_factor
-		id = motorised_infantry
-		value = 1000
-	}
-}
-
 GGR_huge_army = {
     #Once GGR can build divs it will try to build a large army quickly
     allowed = {
@@ -209,7 +110,7 @@ GGR_huge_army = {
 
     abort = {
         has_army_size = {
-            size > 15
+            size > 16
         }
     }
 
@@ -230,12 +131,7 @@ GGR_cheap_guns = {
             size < 7
         }
     }
-
-    abort = {
-        has_army_size = {
-            size > 7
-        }
-    }
+    abort_when_not_enabled = yes
 
     ai_strategy = {
         type = production_upgrade_desire_offset
@@ -257,11 +153,126 @@ GGR_cheap_guns = {
         id = artillery
         value = -1000
     }
+}
 
-    ai_strategy = { #Since civs are kinda usless rn put it into agency upgrades
-        type = intelligence_agency_usable_factories
-        value = 7
+GGR_mountaineers = {
+    #Make some mountaineers
+    allowed = {
+        original_tag = GGR
     }
+    enable = {
+        has_army_size = {
+            size < 1
+            type = mountaineers
+        }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = mountaineers
+        value = 1000
+    }
+    ai_strategy = {
+		type = research_weight_factor
+		id = tech_mountaineers
+		value = 2000
+	}
+}
+
+GGR_mils = {
+    #Make mils
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        arms_factory < 5
+        country_exists = FFT
+    }
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 1000
+	}
+}
+
+GGR_tanks = {
+    #Once GGR has units and tank tech bonus it will try to make tanks for the rest of the game
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
+            size < 2
+            type = armor
+        }
+        NOT = { country_exists = FFT }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = armor
+        value = 250
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = gwtank
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = basic_light_tank
+        value = 750
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = gwtank_chassis
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = basic_light_tank_chassis
+        value = 750
+    }
+}
+
+GGR_trucks = {
+    #Same thing as tanks but now trucks
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
+            size < 2
+            type = motorized
+        }
+        NOT = { country_exists = FFT }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = motorized
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = tech_trucks
+        value = 1000
+    }
+    ai_strategy = {
+		type = research_weight_factor
+		id = motorised_infantry
+		value = 1000
+	}
 }
 
 GGR_four_year = {
@@ -273,10 +284,7 @@ GGR_four_year = {
         industrial_complex < 25
         NOT = {country_exists = FFT}
     }
-
-    abort = {
-        industrial_complex > 25
-    }
+    abort_when_not_enabled = yes
 
     ai_strategy = {
         type = building_target
@@ -304,3 +312,118 @@ GGR_army_complex = {
         value = 1000
     }
 }
+
+## BUILDS ##
+
+GGR_build_pre_FFT = {
+    #GGR's build before FFT dies
+	allowed = {
+		original_tag = GGR
+	}
+	enable = {
+		country_exists = FFT
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 3
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = support_equipment
+		value = 0.5
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 0.5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 90
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 10
+	}
+}
+
+GGR_build_after_FFT = {
+    #GGR's build after FFT dies
+	allowed = {
+		original_tag = GGR
+	}
+	enable = {
+		NOT = {country_exists = FFT}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 3
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = support_equipment
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 1
+	}
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 0.5
+    }
+    ai_strategy = {
+		type = equipment_production_surplus_management
+		id = anti_air_equipment
+		value = 0.5
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = anti_tank_equipment
+		value = 0.5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 10
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 5
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 10
+	}
+
+    ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
+	}
+}
+

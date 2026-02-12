@@ -73,7 +73,7 @@ infantry_GSR = {
 
 	infantry_early_GSR = {
 		#Unlocked after civil war is done
-		division_names_group = GSR_Inf_01
+		division_names_group = GSR_Inf_02
 		upgrade_prio = {
 			base = 2
 			modifier = {
@@ -105,7 +105,7 @@ infantry_GSR = {
 	}
 
 	infantry_early_upgrade_GSR = {
-		division_names_group = GSR_Inf_01
+		division_names_group = GSR_Inf_02
 		upgrade_prio = {
 			base = 3
 			modifier = {
@@ -138,6 +138,44 @@ infantry_GSR = {
 	}
 }
 
+mobile_GSR = {
+
+	available_for = {
+		GSR
+	}
+
+	role = mobile
+
+	upgrade_prio = {
+		base = 5
+	}
+
+	mobile_early_cav_GSR = {
+
+		upgrade_prio = {
+			base = 2
+		}
+
+		division_names_group = GSR_Cav_01
+
+		enable = {
+			NOT = { country_exists = GPG }
+			NOT = { country_exists = GFG }
+			NOT = { country_exists = GDR }
+		}
+
+		target_template = {
+
+			support = {
+				artillery = 1
+			}
+
+			regiments = {
+				cavalry = 5
+			}
+		}
+	}
+}
 
 garrison_GSR = {
 	available_for = {

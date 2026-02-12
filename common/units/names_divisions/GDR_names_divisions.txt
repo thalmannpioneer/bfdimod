@@ -1,40 +1,77 @@
-GDR_Inf_01 = {
+GDR_Inf_01 = { #Civil War
 	name = "Infantry Divisions"
 
 	for_countries = { GDR }
 
-	can_use = { always = yes }
+	can_use = { 
+		OR = {
+			country_exists = GPG
+			country_exists = GSR
+			country_exists = GFG
+		}	
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Volunteers"
+	ordered = {
+		1 = { "Democratic Loyalists" }
+		2 = { "Democratic Loyalists" }
+		3 = { "Democratic Loyalists" }
+		4 = { "Democratic Loyalists" }
+		5 = { "%dth 'Free' Volunteers" }
+		6 = { "%dth 'Green' Volunteers" }
+		7 = { "%dth 'White' Volunteers" }
+		8 = { "%dth 'Blue' Volunteers" }
+		9 = { "%dth 'Liberty' Volunteers" }
+		10 = { "%dth 'Blue' Volunteers" }
+		11 = { "%dth 'Greenport' Volunteers" }
+		12 = { "%dth 'Armless' Volunteers" }
+		13 = { "%dth 'Hero' Volunteers" }
+		14 = { "%dth 'Furnace' Volunteers" }
+		15 = { "%dth 'Longroad' Volunteers" }
+	}
+}
+
+GDR_Inf_02 = { #After Civil War
+	name = "Infantry Divisions"
+
+	for_countries = { GDR }
+
+	can_use = { 		
+		AND = {
+			NOT = {country_exists = GPG}
+			NOT = {country_exists = GSR}
+			NOT = {country_exists = GFG} 
+		}
+	}
 
 	division_types = { "infantry" }
 
 	fallback_name = "%d. Division"
 	ordered = {
-		1 = { "%dst 'Free' Volunteers" }
-		2 = { "%dnd 'Green' Volunteers" }
-		3 = { "%drd 'White' Volunteers" }
-		4 = { "%dth 'Blue' Volunteers" }
-		5 = { "%dth 'Liberty' Volunteers" }
-		6 = { "%dth 'Blue' Volunteers" }
-		7 = { "%dth 'Greenport' Volunteers" }
-		8 = { "%dth 'Armless' Volunteers" }
-		9 = { "%dth 'Hero' Volunteers" }
-		10 = { "%dth 'Furnace' Volunteers" }
-		11 = { "%dth Division 'Liberty'" }
-		12 = { "%dth Division 'Equality'" }
-		13 = { "%dth Division 'Freedom'" }
-		14 = { "%dth Division 'Voters'" }
-		15 = { "%dth Division 'Armless'" }
-		16 = { "%dth Division 'United'" }
-		17 = { "%dth Division 'Torch'" }
-		18 = { "%dth Division 'Democratic'" }
-		19 = { "%dth Division 'Republican'" }
-		20 = { "%dth Division 'Representative'" }
-		21 = { "%dst Division 'Judgment'" }
-		22 = { "%dnd Division 'Verdict'" }
-		23 = { "%drd Division 'Resolution'" }
-		24 = { "%dth Division 'Opinion'" }
-		25 = { "%dth Division 'Ambassador'" }
-		26 = { "%dth Division 'Popular'" }
+		1 = { "%dst Division 'Liberty'" }
+		2 = { "%dnd Division 'Equality'" }
+		3 = { "%drd Division 'Freedom'" }
+		4 = { "%dth Division 'Voters'" }
+		5 = { "%dth Division 'Armless'" }
+		6 = { "%dth Division 'United'" }
+		7 = { "%dth Division 'Torch'" }
+		8 = { "%dth Division 'Democratic'" }
+		9 = { "%dth Division 'Republican'" }
+		10 = { "%dth Division 'Representative'" }
+		11 = { "%dth Division 'Judgment'" }
+		12 = { "%dth Division 'Verdict'" }
+		13 = { "%dth Division 'Resolution'" }
+		14 = { "%dth Division 'Opinion'" }
+		15 = { "%dth Division 'Ambassador'" }
+		16 = { "%dth Division 'Popular'" }
+		17 = { "%dth Division 'Liberator'" } 
+		18 = { "%dth Division 'Adjudicator'" }
+		19 = { "%dth Division 'Amendment'" }
+		20 = { "%dth Division 'Constitution'" }
+		21 = { "%dst Division 'Diligence'" }
+		22 = { "%dnd Division 'Reprimand'" }
 	}
 }
 

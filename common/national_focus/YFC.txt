@@ -134,6 +134,10 @@ focus_tree = {
 
 		ai_will_do = {
 			base = 1
+			modifier = { 
+				factor = 6
+				has_manpower < 1000
+			}
 		}
 	}
 
@@ -149,7 +153,7 @@ focus_tree = {
 		cost = 6
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_mercs_div
-			add_manpower = 2500
+			add_manpower = 5000
 			division_template = {
 				name = "Combined Grape Affiliation"
 				is_locked = yes
@@ -163,6 +167,13 @@ focus_tree = {
 					cavalry = { x = 2 y = 0 }
 					cavalry = { x = 2 y = 1 }
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = { 
+				factor = 6
+				has_manpower < 1000
 			}
 		}
 	}
@@ -179,7 +190,7 @@ focus_tree = {
 		cost = 6
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_mercs_div
-			add_manpower = 2500
+			add_manpower = 5000
 			division_template = {
 				name = "Unnamed Mercenary Brotherhood"
 				is_locked = yes
@@ -193,6 +204,13 @@ focus_tree = {
 					infantry = { x = 2 y = 0 }
 					infantry = { x = 2 y = 1 }
 				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = { 
+				factor = 6
+				has_manpower < 1000
 			}
 		}
 	}
@@ -2490,7 +2508,7 @@ focus_tree = {
 
 	#RIP old Raiding stuff here 2025-2025
 
-	#NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 	focus = {
 		id = YFC_focus_establish_formal_connection

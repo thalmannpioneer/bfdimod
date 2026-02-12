@@ -10,15 +10,22 @@ GPG_civil_war = {
 		original_tag = GPG
 	}
 	enable = {
-		country_exists = GFG
-		country_exists = GDR 
 		country_exists = GSR
+		country_exists = GDR 
+		country_exists = GFG
+		has_war = yes
 	}
+	abort_when_not_enabled = yes
 
 	abort = {
 		has_war = no
 	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
 	ai_strategy = {
 		type = production_upgrade_desire_offset
 		id = infantry_equipment_1
@@ -177,5 +184,63 @@ GPG_high_support = {
 	ai_strategy = {
 		type = min_wanted_supply_trucks
 		value = 200
+	}
+}
+
+GPG_build = {
+    #GPG's build
+	allowed = {
+		original_tag = GSR
+	}
+	enable = {
+		NOT = {country_exists = GSR}
+		NOT = {country_exists = GFG}
+		NOT = {country_exists = GDR}
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 3
+    }
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 2
+	}
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = support_equipment
+        value = 2
+    }
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 1
+    }
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_air_equipment
+        value = 0.1
+    }
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = anti_tank_equipment
+        value = 0.1
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = infantry
+        value = 90
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = garrison
+        value = 10
+    }
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 250
 	}
 }
