@@ -83,6 +83,7 @@
  l_GSR_anarchist_uprising: "§tThis will lead to conflicts with the government...§!"
  l_GSR_ruby_runs_away: "§YRuby§! runs away."
  l_GSR_improves_decentralization: "Improves §tDecentralization§! idea"
+ l_GSR_wipes_our_debt: "§tWe will get rid of most of our debt§!"
  
  l_GDR_loads_new_focus_tree: "§7Democracy triumphs in Casland!§!"
  l_GDR_debt_negotiations: "§7Most likely, Greenport will make some concessions...§!"
@@ -234,6 +235,8 @@
  l_money_gain_800K: "Gain §G800K Dollars§!"
  l_money_gain_900K: "Gain §G900K Dollars§!"
  l_money_gain_1M: "Gain §G1M Dollars§!"
+ l_money_gain_2M: "Gain §G2M Dollars§!"
+ l_money_gain_5M: "Gain §G5M Dollars§!"
 
  l_money_lose_50K: "Lose §R50K Dollars§!"
  l_money_lose_100K: "Lose §R100K Dollars§!"

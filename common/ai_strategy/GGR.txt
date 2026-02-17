@@ -162,12 +162,17 @@ GGR_mountaineers = {
     }
     enable = {
         has_army_size = {
-            size < 1
+            size < 2
             type = mountaineers
         }
     }
     abort_when_not_enabled = yes
 
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 10
+	}
     ai_strategy = {
         type = build_army
         id = mountaineers
@@ -212,6 +217,11 @@ GGR_tanks = {
     }
     abort_when_not_enabled = yes
 
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
     ai_strategy = {
         type = build_army
         id = armor
@@ -394,7 +404,11 @@ GGR_build_after_FFT = {
 		id = anti_tank_equipment
 		value = 0.5
 	}
-
+    ai_strategy = {
+        type = equipment_production_factor
+        id = armor
+        value = 30
+    }
 	ai_strategy = {
 		type = role_ratio
 		id = infantry

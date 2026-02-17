@@ -2164,10 +2164,21 @@ country_event = {
 
     option = {
         name = GPG_event.52.a
-        custom_effect_tooltip = l_GPG_wipes_our_debt
+        IF = {
+            limit = {
+                NOT = {
+                    tag = GSR
+                    GSR = {has_completed_focus = GSR_focus_deconstruction}
+                }
+            }
+            custom_effect_tooltip = l_GPG_wipes_our_debt
+            clr_country_flag = disable_money_politics
+        }
+        ELSE = {
+            custom_effect_tooltip = l_GSR_wipes_our_debt #Anarchists can't get the stability to make money and being anarchists it maybe makes sense
+        }    
         set_variable = { money_amount = -0.1 }
         BFDI_money_diplay_update = yes
-        clr_country_flag = disable_money_politics
         add_stability = -0.1
     }
 }

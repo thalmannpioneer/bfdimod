@@ -125,18 +125,19 @@ armored_GGR = {
 	role = armor
 	
 	upgrade_prio = {
-		base = 2
+		base = 1
 
 		modifier = {
 			factor = 4
 			OR = {
-				has_tech = basic_medium_tank
-				has_tech = basic_medium_tank_chassis
+				has_tech = gwtank
+				has_tech = gwtank_chassis
 			}
 		}
 		modifier = {
 			factor = -100
-			army_experience < 75
+			GGR = { army_experience < 65 }
+			NOT = { country_exists = FTT}
 		}
 	}
 
@@ -169,6 +170,10 @@ armored_GGR = {
 				cavalry = 3
 			}
 		}
+
+		replace_at_match = 0.5
+        replace_with = light_armor_GGR
+        target_min_match = 0.5
 	}
 
 	light_armor_GGR = {
@@ -206,6 +211,10 @@ armored_GGR = {
 				motorized = 3
 			}
 		}
+
+		replace_at_match = 0.75
+        replace_with = medium_armor_early_GGR
+        target_min_match = 0.75
 	}
 
 	medium_armor_early_GGR = {
@@ -279,6 +288,10 @@ motorized_GGR = {
 			base = 1
 		}
 		
+		enable = {
+			has_tech = motorised_infantry	
+        }
+
 		target_template = {
 			support = {
 				mot_recon = 1
@@ -354,7 +367,7 @@ mountaineers_GGR = {
 	}
 	
 	mountaineers_default_GGR = {
-		division_names_group = GGR_Inf_01
+		division_names_group = GGR_Mount_01
 		upgrade_prio = {
 			base = 2
 		}
@@ -367,7 +380,7 @@ mountaineers_GGR = {
 			}
 			
 			regiments = {
-				mountaineers = 5
+				mountaineers = 4
 				artillery_brigade = 1
 			}
 		}

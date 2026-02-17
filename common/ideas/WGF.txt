@@ -44,7 +44,7 @@ ideas = {
 		idea_WGF_coinflip = {
 			picture = WGF_coinflip
 			modifier = {
-				ai_focus_aggressive_factor = 2.5
+				ai_focus_aggressive_factor = 5
 			}
 			targeted_modifier = {
 				tag = GMD

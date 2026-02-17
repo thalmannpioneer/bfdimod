@@ -231,7 +231,6 @@ focus_tree = {
                 remove_idea = idea_GSR_military_communism
                 add_idea = idea_GSR_new_economic_policy
             }
-            country_event = GPG_event.52
             hidden_effect = {
                 if = {
                     limit = { has_completed_focus = GSR_focus_casland_process }
@@ -419,6 +418,7 @@ focus_tree = {
         }
 
         completion_reward = {
+            country_event = GPG_event.52
             add_stability = 0.05
             add_political_power = 100
         }
@@ -825,6 +825,7 @@ focus_tree = {
         }
 
         completion_reward = {
+            country_event = GPG_event.52
             add_dynamic_modifier = {
                 modifier = idea_GSR_decentralization
             }

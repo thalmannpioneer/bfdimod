@@ -34,6 +34,14 @@ BFDI_game_start = {
         flag = focus_take_prevention
         value = 0
     }
+
+	every_country = { #Why is this silly code not working????
+        country_event = {
+            id = common_event.3
+            days = 2
+        }
+	}
+
     GGR = {
         activate_mission = GGR_anarchists_mission
         country_event = {
@@ -62,6 +70,15 @@ BFDI_game_start = {
         }
     }
 
+    DAV = {
+        country_event = {
+            id = DAV_hidden_event.1
+            days = 20
+            random_days = 20
+            random_hours = 24
+        }
+    }
+
     TBT = {
         country_event = {
             id = TBT_hidden_event.1
@@ -82,19 +99,6 @@ BFDI_game_start = {
             days = 600
             random_days = 100
             random_hours = 12
-        }
-    }
-
-    every_country = {
-        news_event = {
-            id = bfdinews.35
-            days = 15
-            random_days = 10
-            random_hours = 12
-        }
-        country_event = {
-            id = common_event.3
-            days = 1
         }
     }
 }

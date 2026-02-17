@@ -15,9 +15,9 @@ WGF_GMD_preparation = {
 				focus = WGF_focus_flip_the_coin
 				progress > 0.01
 			}
-			AND = {
-				country_exists = GMD
-				has_completed_focus = WGF_focus_flip_the_coin
+			focus_progress = {
+				focus = WGF_focus_challenge_coiny
+				progress > 0.01
 			}
 		}
 	}

@@ -595,17 +595,7 @@ technologies = {
 
             modifier = {
                 factor = 2
-                tag = USA
-            }
-
-            modifier = {
-                factor = 2
-                tag = GER
-            }
-
-            modifier = {
-                factor = 2
-                tag = ENG
+                tag = GTR
             }
         }
     }
@@ -647,21 +637,6 @@ technologies = {
 
         ai_will_do = {
             factor = 0.7
-
-            modifier = {
-                factor = 3
-                tag = USA
-            }
-
-            modifier = {
-                factor = 3
-                tag = JAP
-            }
-
-            modifier = {
-                factor = 5
-                tag = ENG
-            }
         }
     }
 
@@ -690,16 +665,6 @@ technologies = {
 
         ai_will_do = {
             factor = 0.7
-
-            modifier = {
-                factor = 3
-                tag = USA
-            }
-
-            modifier = {
-                factor = 3
-                tag = JAP
-            }
         }
     }
 
@@ -723,16 +688,6 @@ technologies = {
 
         ai_will_do = {
             factor = 0.7
-
-            modifier = {
-                factor = 3
-                tag = USA
-            }
-
-            modifier = {
-                factor = 3
-                tag = JAP
-            }
         }
     }
 
@@ -774,6 +729,10 @@ technologies = {
 
         ai_will_do = {
             factor = 0.7
+            modifier = {
+                factor = 3
+                tag = GGR
+            }
         }
     }
 

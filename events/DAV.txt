@@ -1,0 +1,41 @@
+add_namespace = DAV_hidden_event
+
+#Remove all these hidden events when DAV gets stuff.
+
+country_event = {
+	id = DAV_hidden_event.1
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+        set_stability = -0.42
+        set_war_support = 0.02
+        set_variable = { money_amount = -102.562 }
+        set_country_flag = disable_money_politics
+        set_variable = { var_schooling_slider_pure = 25 }
+        set_variable = { var_schooling_slider = 0 }
+        set_variable = { var_schooling_rsf = -0.1 }
+        set_variable = { var_schooling_srbf = -0.2 }
+        set_variable = { var_schooling_mc = 0 }
+        set_variable = { var_schooling_mc_display = 0 }
+
+        set_variable = { var_healthcare_slider_pure = 25 }
+        set_variable = { var_healthcare_slider = 0 }
+        set_variable = { var_healthcare_sf = -0.1 }
+        set_variable = { var_healthcare_mp = -0.2 }
+        set_variable = { var_healthcare_mc = 0 }
+        set_variable = { var_healthcare_mc_display = 0 }
+
+		every_possible_country = {
+			limit = { is_ai = no }
+				news_event = {
+				id = bfdinews.35
+				days = 1
+				random_hours = 36
+			}
+		}
+		add_threat = 0.5
+	}
+}
