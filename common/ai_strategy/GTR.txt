@@ -191,7 +191,7 @@ GTR_build = {
     ai_strategy = {
         type = equipment_production_surplus_management
         id = infantry_equipment
-        value = 2
+        value = 1
     }
     ai_strategy = {
         type = equipment_production_surplus_management

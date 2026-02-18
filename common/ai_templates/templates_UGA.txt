@@ -1,0 +1,179 @@
+#You might be asking why did I make ai templates for this country
+#To which I... don't know...
+
+infantry_UGA = {
+
+	available_for = {
+		UGA
+	}
+
+	role = infantry
+
+	upgrade_prio = {
+		base = 5
+
+		modifier = {
+			factor = 1
+		}
+	}
+
+	infantry_UGA = {
+		division_names_group = UGA_Inf_01
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 1.5
+			}
+		}
+
+		target_template = {	
+			
+			regiments = {
+				infantry = 4
+			}
+		}
+	}
+}
+
+mobile_UGA = {
+
+	available_for = {
+		UGA
+	}
+
+	role = mobile
+
+	upgrade_prio = {
+		base = 5
+	}
+
+	mobile_cav_UGA = {
+
+		upgrade_prio = {
+			base = 2
+		}
+
+		division_names_group = UGA_Cav_01
+
+		target_template = {
+
+			regiments = {
+				cavalry = 5
+			}
+		}
+	}
+}
+
+garrison_UGA = {
+	available_for = {
+		UGA
+	}
+	
+	role = garrison
+	
+	upgrade_prio = {
+		factor = 1
+
+		modifier = {
+			factor = 2
+			NOT = { ai_has_role_template = garrison }
+		}
+	}
+
+
+	garrison_UGA = {
+		division_names_group = UGA_Inf_01
+		reinforce_prio = 0
+		custom_icon = 7
+	
+		upgrade_prio = {
+			factor = 1
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_template = {
+			
+			regiments = {
+				infantry = 3
+			}
+		}
+	}
+}
+	
+
+suppression_UGA = {
+	
+	role = suppression
+	available_for = {
+		UGA
+	}
+	upgrade_prio = {
+		base = 0.5
+
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+
+	suppression_generic = {
+		division_names_group = UGA_Cav_01
+		reinforce_prio = 0
+		custom_icon = 13
+	
+		upgrade_prio = {
+			base = 2
+		}
+		
+		target_template = {
+			
+			regiments = {
+				cavalry = 3
+			}
+		}
+	}
+}
+
+
+# Non-complete list of sub-units
+
+# REGIMENTS:
+# - infantry
+# - light_armor
+# - medium_armor
+# - heavy_armor
+# - super_heavy_armor
+# - modern_armor
+# - cavalry
+# - motorized
+# - mechanized
+# - marine
+# - mountaineers
+# - paratrooper
+# - artillery_brigade
+# - anti_air_brigade
+# - anti_tank_brigade
+# - light_tank_destroyer_brigade
+# - medium_tank_destroyer_brigade
+# - heavy_tank_destroyer_brigade
+# - super_heavy_tank_destroyer_brigade
+# - modern_tank_destroyer_brigade
+# - light_sp_anti_air_brigade
+# - light_sp_artillery_brigade
+
+# SUPPORT:
+# - engineer
+# - recon
+# - signal_company
+# - maintenance_company
+# - artillery
+# - anti_air
+# - anti_tank
+# - field_hospital
+# - logistics_company
+# - military_police
+# - rocket_artillery

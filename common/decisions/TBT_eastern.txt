@@ -11,7 +11,7 @@ decision_TBT_eastern_category = {
 		}
 		icon = GFX_decision_SWI_no_elected_president  #Update later!!!
 		is_good = yes
-		days_mission_timeout = 540 #540
+		days_mission_timeout = 600 #540
 		timeout_effect = {
 
 		}
@@ -275,7 +275,7 @@ decision_TBT_eastern_category = {
 		days_re_enable = 60
 
 		fire_only_once = no
-		days_remove = 60
+		days_remove = 75
 
 		complete_effect = {
 			hidden_effect = {

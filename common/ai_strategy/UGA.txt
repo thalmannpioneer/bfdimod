@@ -1,0 +1,37 @@
+#UGA AI 101
+#Change if you want to!!!!
+
+## INDUSTRY ##
+
+UGA_our_army = {
+    #UGA's build
+	allowed = {
+		original_tag = UGA
+	}
+	enable = {
+		always = yes #May be changed later...
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 70
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mobile
+		value = 20
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 10
+	}
+}

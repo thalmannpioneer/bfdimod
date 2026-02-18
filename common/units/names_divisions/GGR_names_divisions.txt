@@ -44,28 +44,28 @@ GGR_Mount_01 = {
 
 	division_types = { "mountaineers" }
 
-	fallback_name = "%d Bergsteiger Objektinfantry"
+	fallback_name = "%d. Bergsteiger Objektinfantry"
 	ordered = {
-		1 = { "%dst Bergsteiger Objektinfantry" }
-		2 = { "%dnd Bergsteiger Objektinfantry" }
-		3 = { "%drd Bergsteiger Objektinfantry" }
-		4 = { "%dth Bergsteiger Objektinfantry" }
-		5 = { "%dth Bergsteiger Objektinfantry" }
-		6 = { "%dth Bergsteiger Objektinfantry" }
-		7 = { "%dth Bergsteiger Objektinfantry" }
-		8 = { "%dth Bergsteiger Objektinfantry" }
-		9 = { "%dth Bergsteiger Objektinfantry" }
-		10 = { "%dth Bergsteiger Objektinfantry" }
-		11 = { "%dth Bergsteiger Objektinfantry" }
-		12 = { "%dth Bergsteiger Objektinfantry" }
-		13 = { "%dth Bergsteiger Objektinfantry" }
-		14 = { "%dth Bergsteiger Objektinfantry" }
-		15 = { "%dth Bergsteiger Objektinfantry" }
-		16 = { "%dth Bergsteiger Objektinfantry" }
-		17 = { "%dth Bergsteiger Objektinfantry" }
-		18 = { "%dth Bergsteiger Objektinfantry" }
-		19 = { "%dth Bergsteiger Objektinfantry" }
-		20 = { "%dth Bergsteiger Objektinfantry" }
+		1 = { "%d. Bergsteiger Objektinfantry" }
+		2 = { "%d. Bergsteiger Objektinfantry" }
+		3 = { "%d. Bergsteiger Objektinfantry" }
+		4 = { "%d. Bergsteiger Objektinfantry" }
+		5 = { "%d. Bergsteiger Objektinfantry" }
+		6 = { "%d. Bergsteiger Objektinfantry" }
+		7 = { "%d. Bergsteiger Objektinfantry" }
+		8 = { "%d. Bergsteiger Objektinfantry" }
+		9 = { "%d. Bergsteiger Objektinfantry" }
+		10 = { "%d. Bergsteiger Objektinfantry" }
+		11 = { "%d. Bergsteiger Objektinfantry" }
+		12 = { "%d. Bergsteiger Objektinfantry" }
+		13 = { "%d. Bergsteiger Objektinfantry" }
+		14 = { "%d. Bergsteiger Objektinfantry" }
+		15 = { "%d. Bergsteiger Objektinfantry" }
+		16 = { "%d. Bergsteiger Objektinfantry" }
+		17 = { "%d. Bergsteiger Objektinfantry" }
+		18 = { "%d. Bergsteiger Objektinfantry" }
+		19 = { "%d. Bergsteiger Objektinfantry" }
+		20 = { "%d. Bergsteiger Objektinfantry" }
 	}
 }
 

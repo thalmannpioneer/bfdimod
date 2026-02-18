@@ -47,6 +47,11 @@ allow_release_nations = {
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_release_nations"
 	default = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
+	}
+	option = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
 		desc = "RULE_ALLOW_RELEASE_NATIONS_FREE_DESC"
@@ -55,11 +60,6 @@ allow_release_nations = {
 		name = "PEACE_ONLY"
 		text = "RULE_OPTION_PEACE_ONLY"
 		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
-	}
-	option = {
-		name = "BLOCKED"
-		text = RULE_OPTION_BLOCKED
-		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
 	}
 }
 
@@ -409,7 +409,7 @@ GGR_ai_behavior = {
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		desc = "RULE_OPTION_NORMAL_PATH"
 	}
 	option = {
 		name = DESTORY_ANARCHISTS
@@ -429,7 +429,7 @@ GPG_ai_behavior = {
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		desc = "RULE_OPTION_NORMAL_PATH"
 	}
 	option = {
 		name = MAINTAIN_PEACE_NO_FRIES
@@ -475,6 +475,31 @@ GPG_ai_behavior = {
 		name = CIVIL_WAR_DEMOCRATIC
 		text = "RULE_OPTION_CIVIL_WAR_DEMOCRATIC"
 		desc = "RULE_OPTION_CIVIL_WAR_DEMOCRATIC_GPG_AI_DESC"
+	}
+}
+
+GTR_ai_behavior = {
+	name = "GTR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_NORMAL_PATH"
+	}
+	option = {
+		name = COLLAPSE_COUNTRY_GTR
+		text = "RULE_OPTION_COLLAPSE_COUNTRY"
+		desc = "RULE_OPTION_DESTORY_ANARCHISTS_GTR_AI_DESC"
+	}
+	option = {
+		name = TENNISBALL
+		text = "RULE_OPTION_TENNISBALL"
+		desc = "RULE_OPTION_TENNISBALL_GTR_AI_DESC"
+	}
+	option = {
+		name = GOLFBALL
+		text = "RULE_OPTION_GOLFBALL"
+		desc = "RULE_OPTION_GOLFBALL_GTR_AI_DESC"
 	}
 }
 

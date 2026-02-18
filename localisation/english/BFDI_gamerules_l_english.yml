@@ -6,17 +6,21 @@
  custom_diff_strong_nrr: "@NRR Strengthen GGRR - North"
  custom_diff_strong_sec: "@SEC Strengthen Cult"
  custom_diff_strong_gpr: "@GPR Strengthen Republic"
- custom_diff_strong_gpg: "@GPG Strengthen Goiky Provisional Government"
+ custom_diff_strong_gpg: "@GPG Strengthen Provisional Government"
  custom_diff_strong_srr: "@SRR Strengthen GGRR - South"
  custom_diff_strong_bun: "@BUN Strengthen Bunch"
  custom_diff_strong_ggr: "@GGR Strengthen Reich"
  custom_diff_strong_fft: "@FFT Strengthen Free Territory"
- custom_diff_strong_gtr: "@GTR Strengthen Technocratic Republic"
+ custom_diff_strong_gtr: "@GTR Strengthen University Administration"
  custom_diff_strong_sgd: "@SGD Strengthen Directorate"
  custom_diff_strong_agg: "@AGG Strengthen Restoration Government"
  custom_diff_strong_YFC: "@YFC Strengthen Yellow Face Corporation"
+ custom_diff_strong_CRN: "@CRN Strengthen Numismatia"
 
  #Like everything else you may change it :)
+
+ RULE_OPTION_NORMAL_PATH: "This country will pick a random route to take. Be ready for some radical paths!"
+
  GGR_AI_BEHAVIOR: "@GGR Großgoikysreich"
  RULE_OPTION_DESTORY_ANARCHISTS: "Destroy Anarchists"
  RULE_OPTION_DESTORY_ANARCHISTS_GGR_AI_DESC: "Großgoikysreich will maintain stable control and fully remove the anarchist threat."
@@ -43,3 +47,17 @@
  RULE_OPTION_CIVIL_WAR_DEMOCRATIC: "Civil War - Democratic"
  RULE_OPTION_CIVIL_WAR_DEMOCRATIC_GPG_AI_DESC: "The Goiky Provisional Government will fail to maintain stability and the Democrats will win the civil war."
 
+ GTR_AI_BEHAVIOR: "@GTR University Administration"
+ RULE_OPTION_COLLAPSE_COUNTRY: "Collapse"
+ RULE_OPTION_DESTORY_ANARCHISTS_GTR_AI_DESC: "The University Administration will collapse and turn into Primal Zone."
+ RULE_OPTION_TENNISBALL: "Tennis Ball"
+ RULE_OPTION_TENNISBALL_GTR_AI_DESC: "The University Administration will always pick options that favor Tennis Ball."
+ RULE_OPTION_GOLFBALL: "Golf Ball"
+ RULE_OPTION_GOLFBALL_GTR_AI_DESC: "The University Administration will always pick options that favor Golf Ball."
+
+
+ RULE_GROUP_FUNNY: "Random BFDI Things."
+ RULE_ALLOW_WAR_JUSTIFICATIONS: "Enable War Justifications"
+ RULE_ALLOW_WAR_JUSTIFICATIONS_BLOCKED_DESC: "Default option."
+ RULE_ALLOW_WAR_JUSTIFICATIONS_ALLOWED_DESC: "Allows you to justify and declare wars. Be careful as this may break focuses, events, and decisions!"
+ RULE_ALLOW_WAR_JUSTIFICATIONS_TOOLTIP: "This mod prohibits war justifications, if you wish to change this look in game rules!"

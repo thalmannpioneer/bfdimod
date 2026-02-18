@@ -111,6 +111,32 @@ infantry_GTR = {
 			}
 		}
 	}
+
+	infantry_GTR = { #A bigger template if we have a big army
+		division_names_group = GTR_Inf_01
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 4
+				has_army_manpower = {size > 100000}
+			}
+		}
+
+		target_template = {
+
+			support = {
+				engineer = 1
+				recon = 1
+				anti_tank = 1
+				anti_air = 1
+			}
+
+			regiments = {
+				infantry = 4
+				artillery_brigade = 1
+			}
+		}
+	}
 }
 
 suppression_GTR = {

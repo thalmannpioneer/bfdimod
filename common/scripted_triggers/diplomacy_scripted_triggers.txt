@@ -912,7 +912,7 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
             }
         }
         custom_trigger_tooltip = {
-            tooltip = RULE_ALLOW_LICENSING_BLOCKED_TT
+            tooltip = RULE_ALLOW_WAR_JUSTIFICATIONS_TOOLTIP
             always = no
         }
     }

@@ -1,0 +1,56 @@
+UGA_Inf_01 = {
+	name = "Infantry Divisions"
+
+	for_countries = { UGA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "Armed Civilians"
+
+	ordered = {
+		1 = { "Armed Civilians" }
+		2 = { "Armed Civilians" }
+		3 = { "Armed Civilians" }
+		4 = { "Armed Civilians" }
+		5 = { "Armed Civilians" }
+		6 = { "Armed Civilians" }
+		7 = { "Armed Civilians" }
+		8 = { "Armed Civilians" }
+		9 = { "Armed Civilians" }
+		10 = { "Armed Civilians" }
+		11 = { "Armed Civilians" }
+		12 = { "Armed Civilians" }
+		13 = { "Armed Civilians" }
+		14 = { "Armed Civilians" }
+		15 = { "Armed Civilians" }
+		16 = { "Armed Civilians" }
+		17 = { "Armed Civilians" }
+		18 = { "Armed Civilians" }
+		19 = { "Armed Civilians" }
+		20 = { "Armed Civilians" }
+	}
+}
+
+UGA_Cav_01 = {
+	name = "Cavalry Divisions"
+
+	for_countries = { UGA }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "Mounted Vigilantes"
+
+	ordered = {
+		1 = { "Mounted Vigilantes" }
+		2 = { "Mounted Vigilantes" }
+		3 = { "Mounted Vigilantes" }
+		4 = { "Mounted Vigilantes" }
+		5 = { "Mounted Vigilantes" }
+		6 = { "Mounted Vigilantes" }
+		7 = { "Mounted Vigilantes" }
+	}
+}

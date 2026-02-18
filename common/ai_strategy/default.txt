@@ -68,6 +68,7 @@ default_unit_production = {
 			original_tag = GFG
 			original_tag = GSR
 			original_tag = GPG
+			original_tag = UGA
 		}
 	}
 	abort_when_not_enabled = yes
@@ -345,6 +346,7 @@ default_surplus_management = {
 			original_tag = GFG
 			original_tag = GSR
 			original_tag = GPG
+			original_tag = UGA
 		}
 	}
 	abort_when_not_enabled = yes
@@ -699,6 +701,7 @@ default_garrison_production = {
 			original_tag = GFG
 			original_tag = GSR
 			original_tag = GPG
+			original_tag = UGA
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes

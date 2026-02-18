@@ -9,6 +9,7 @@ armor_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {
@@ -511,6 +512,7 @@ garrison_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 	
 	roles = {
@@ -720,6 +722,7 @@ infantry_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {
@@ -831,6 +834,7 @@ infantry_big_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {
@@ -959,6 +963,7 @@ mountaineers_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {
@@ -1070,6 +1075,7 @@ marines_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {
@@ -1265,6 +1271,7 @@ paratrooper_generic = {
 		GDR
 		YFC
 		GTR
+		UGA
 	}
 
 	roles = {

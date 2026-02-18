@@ -129,10 +129,15 @@ GPG_rebuild = {
 
 	abort = {
 		has_army_size = {
-            size > 15
+            size > 25
         }
 	}
 
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = infantry_equipment
+        value = 2
+    }
 	ai_strategy = {
 		type = build_army
 		id = infantry

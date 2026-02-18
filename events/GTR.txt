@@ -182,6 +182,22 @@ country_event = {
                 id = 3545
                 name = UNIVERSITY_DESTROYED
             }
+            UGA = {
+                set_country_flag = disable_money_politics
+                set_variable = { var_schooling_slider_pure = 25 }
+                set_variable = { var_schooling_slider = 0 }
+                set_variable = { var_schooling_rsf = -0.1 }
+                set_variable = { var_schooling_srbf = -0.2 }
+                set_variable = { var_schooling_mc = 0 }
+                set_variable = { var_schooling_mc_display = 0 }
+
+                set_variable = { var_healthcare_slider_pure = 25 }
+                set_variable = { var_healthcare_slider = 0 }
+                set_variable = { var_healthcare_sf = -0.1 }
+                set_variable = { var_healthcare_mp = -0.2 }
+                set_variable = { var_healthcare_mc = 0 }
+                set_variable = { var_healthcare_mc_display = 0 }
+            }
         }
     }
 }
@@ -588,6 +604,14 @@ country_event = {
             }
             else = { GDR = { country_event = GPG_event.51 } }
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.22.b
@@ -598,6 +622,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -618,6 +650,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.23.b
@@ -633,6 +673,14 @@ country_event = {
             amount = 1
             producer = SRR
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -673,6 +721,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.25.b
@@ -686,6 +742,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -706,6 +770,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.26.b
@@ -716,6 +788,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -1143,6 +1223,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.46.b
@@ -1150,6 +1238,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -1169,6 +1265,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
     option = {
         name = GTR_event.47.b
@@ -1178,6 +1282,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 
@@ -1538,6 +1650,14 @@ country_event = {
             id = GTR_power_balance
             value = -0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = TENNISBALL }
+				add = 1000
+		 	}
+		}
     }
 
     option = {
@@ -1551,6 +1671,14 @@ country_event = {
             id = GTR_power_balance
             value = 0.05
         }
+
+        ai_chance = {
+			base = 1
+            modifier = {
+				has_game_rule = { rule = GTR_ai_behavior option = GOLFBALL }
+				add = 1000
+		 	}
+		}
     }
 }
 

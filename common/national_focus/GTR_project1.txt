@@ -55,6 +55,11 @@ focus_tree = {
 
         ai_will_do = {
             base = 5
+            modifier = {
+				add = -100
+				is_ai = yes
+				has_game_rule = { rule = GTR_ai_behavior option = COLLAPSE_COUNTRY_GTR }
+			}
         }
 
         completion_reward = {
@@ -142,6 +147,11 @@ focus_tree = {
 
         ai_will_do = {
             base = 5
+            modifier = {
+				add = -100
+				is_ai = yes
+				has_game_rule = { rule = GTR_ai_behavior option = COLLAPSE_COUNTRY_GTR }
+			}
         }
 
         completion_reward = {
@@ -290,6 +300,11 @@ focus_tree = {
 
         ai_will_do = {
             base = 5
+            modifier = {
+				add = -100
+				is_ai = yes
+				has_game_rule = { rule = GTR_ai_behavior option = COLLAPSE_COUNTRY_GTR }
+			}
         }
 
         completion_reward = {

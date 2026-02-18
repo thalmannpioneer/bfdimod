@@ -2151,11 +2151,11 @@ focus_tree = {
 					}
 				}
 				YFC = {
-					set_variable = {eastern_borderwar_var = 0.5}
+					set_variable = {eastern_borderwar_var = 0.25}
 					set_country_flag = eastern_action_ready
 				}
 				TBT = {
-					set_variable = {eastern_borderwar_var = 0.5}
+					set_variable = {eastern_borderwar_var = 0.25}
 					set_country_flag = eastern_action_ready
 				}
 				IF = {

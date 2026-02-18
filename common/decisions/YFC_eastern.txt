@@ -9,7 +9,7 @@ decision_YFC_eastern_category = {
 		}
 		icon = GFX_decision_SWI_no_elected_president  #Update later!!!
 		is_good = yes
-		days_mission_timeout = 540 #540
+		days_mission_timeout = 600 #540
 		timeout_effect = {
 			custom_effect_tooltip = l_YFC_eastern_end
 			hidden_effect = { #There has to be a better way but I'm dumb
@@ -379,7 +379,7 @@ decision_YFC_eastern_category = {
 		}
 
 		cost = 0
-		days_re_enable = 60
+		days_re_enable = 30
 
 		modifier = {
 			political_power_gain = -0.5
@@ -387,7 +387,7 @@ decision_YFC_eastern_category = {
 
 
 		fire_only_once = no
-		days_remove = 60
+		days_remove = 75
 
 		cancel_trigger = {
 			FROM = { 

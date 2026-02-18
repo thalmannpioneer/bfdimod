@@ -71,13 +71,14 @@ political_actions = {
 			has_war = no
 		}
 		complete_effect = {
-			add_political_power = 25
+			add_political_power = 75
 			IF = {
 				limit = {NOT = {YFC = {controls_state = 24}}}
 				24 = {transfer_state_to = YFC}
 			}
 			release_puppet = SRI
 			SRI = {give_resource_rights = { receiver = YFC state = 24 }}
+			hidden_effect = {SRI = {add_manpower = 5000}}
 		}
 		timeout_effect = {
 			add_political_power = -100
@@ -85,13 +86,13 @@ political_actions = {
 			white_peace = SRI
 			hidden_effect = {
 				CRN = {
-					IF ={
+					IF = {
 						limit = {has_war_with = SRI}
 						white_peace = SRI
 					}
 				}
 				BUN = {
-					IF ={
+					IF = {
 						limit = {has_war_with = SRI}
 						white_peace = SRI
 					}
