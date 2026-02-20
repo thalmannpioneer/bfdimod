@@ -17,10 +17,6 @@ GPG_civil_war = {
 	}
 	abort_when_not_enabled = yes
 
-	abort = {
-		has_war = no
-	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -55,13 +51,7 @@ GPG_GPR_trade = {
 		has_idea = idea_GPG_factionalism
 		has_war = no
 	}
-
-	abort = {
-		OR = {
-			has_war = yes
-			NOT = {has_idea = idea_GPG_factionalism}
-		}	
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = put_unit_buffers
@@ -72,8 +62,36 @@ GPG_GPR_trade = {
 	ai_strategy = {
         type = build_army
         id = infantry
-        value = 35
+        value = 10
     }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
+}
+
+GPG_cabinet_war = {
+	allowed = {
+		original_tag = GPG
+	}
+	enable = {
+		has_completed_focus = GPG_focus_cabinet_resisted
+		has_idea = idea_GPG_factionalism
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 25
+    }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
 }
 
 ## INDUSTRY ##
@@ -86,10 +104,7 @@ GPG_rearmament = {
 	enable = {
 		has_idea = idea_GPG_rearmament
 	}
-
-	abort = {
-		NOT = {has_idea = idea_GPG_rearmament}
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = research_weight_factor
@@ -125,13 +140,11 @@ GPG_rebuild = {
 			has_completed_focus = GPG_focus_never_again
 			has_completed_focus = GPG_focus_third_congress
 		}
-	}
-
-	abort = {
 		has_army_size = {
-            size > 25
+            size < 25
         }
 	}
+	abort_when_not_enabled = yes
 
     ai_strategy = {
         type = equipment_production_surplus_management

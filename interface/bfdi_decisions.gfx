@@ -418,6 +418,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_category_sectors"
+		textureFile = "gfx/interface/decisions/decision_category_sectors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_sector_pay"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_sector_pay.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_sector_issues"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_sector_issues.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_sector_military"
 		textureFile = "gfx/interface/decisions/decisions_sector_military.dds"
 	}
@@ -447,6 +462,11 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 		pause_on_loop = 0.0
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_cherry_mercenary"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
 	}
 
 	spriteType = {

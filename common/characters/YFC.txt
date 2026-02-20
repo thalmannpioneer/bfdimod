@@ -7,7 +7,7 @@ characters = {
 			} 
 		}
 		country_leader = {
-			ideology = oligarchism
+			ideology = yellow_face_company
 			traits = { anarchist_annihilator }
 			desc = YFC_yellow_face_desc
 		}

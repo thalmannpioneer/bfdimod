@@ -3,7 +3,7 @@ characters = {
 		name = GOI_power_vacuum
 		portraits = { civilian = { large = GFX_GOI_power_vacuum } }
 		country_leader = {
-			ideology = anarchism
+			ideology = empty
 			desc = GOI_power_vacuum_desc
 		}
 	}

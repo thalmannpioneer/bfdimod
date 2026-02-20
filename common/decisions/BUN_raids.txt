@@ -32,7 +32,7 @@ decision_BUN_raids_category = {
             FROM = {
                 damage_building = {
                     type = infrastructure
-                    damage = 0.5
+                    damage = 1
                 }
                 hidden_effect = {
                     IF = {
@@ -153,7 +153,7 @@ decision_BUN_raids_category = {
             FROM = {
                 damage_building = {
                     type = infrastructure
-                    damage = 0.5
+                    damage = 1
                 }
                 hidden_effect = {
                     IF = {
@@ -274,7 +274,7 @@ decision_BUN_raids_category = {
             FROM = {
                 damage_building = {
                     type = infrastructure
-                    damage = 0.5
+                    damage = 1
                 }
                 hidden_effect = {
                     IF = {
@@ -395,7 +395,7 @@ decision_BUN_raids_category = {
             FROM = {
                 damage_building = {
                     type = infrastructure
-                    damage = 0.5
+                    damage = 1
                 }
                 hidden_effect = {
                     IF = {

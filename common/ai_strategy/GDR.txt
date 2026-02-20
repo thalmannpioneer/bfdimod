@@ -119,13 +119,13 @@ GDR_huge_army = {
 		has_war = no
 		has_completed_focus = focus_GDR_democratic_congress
 		has_army_size = {
-            size < 40
+            size < 45
         }
 	}
 
 	abort = {
 		has_army_size = {
-            size > 40
+            size > 45
         }
 	}
 
@@ -166,7 +166,7 @@ GDR_build = {
     ai_strategy = {
         type = equipment_production_surplus_management
         id = support_equipment
-        value = 1
+        value = 1.5
     }
 	ai_strategy = {
         type = equipment_production_surplus_management

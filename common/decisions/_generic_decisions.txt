@@ -78,7 +78,21 @@ political_actions = {
 			}
 			release_puppet = SRI
 			SRI = {give_resource_rights = { receiver = YFC state = 24 }}
-			hidden_effect = {SRI = {add_manpower = 5000}}
+			hidden_effect = {
+				SRI = {
+					add_manpower = 10000
+					add_stability = -0.35
+					add_war_support = -0.25
+					add_country_leader_role = {
+						character = SRI_YFC_committee
+						promote_leader = yes
+						country_leader = {
+							ideology = despotism
+							traits = { special_authorities }
+						}
+					}
+				}
+			}
 		}
 		timeout_effect = {
 			add_political_power = -100
@@ -154,7 +168,26 @@ political_actions = {
 			base = 0
 			modifier = {
 				add = 50
-				has_war = yes
+				OR = {
+					longest_war_length > 6
+					surrender_progress > 0.1
+				}
+			}
+			modifier = {
+				add = 50
+				AND = {
+					has_border_war = yes
+					has_army_size = {size < 2}
+				}
+			}
+			modifier = {
+				add = 50
+				BUN = {
+					has_dynamic_modifier = {
+						modifier = idea_BUN_Ticking_Bomb
+					}
+					has_war_with = YFC
+				}
 			}
 		}
 	}
@@ -212,7 +245,10 @@ political_actions = {
 			base = 0
 			modifier = {
 				add = 100
-				has_war = yes
+				OR = {
+					longest_war_length > 6
+					surrender_progress > 0.1
+				}
 			}
 		}
 	}
@@ -270,7 +306,10 @@ political_actions = {
 			base = 0
 			modifier = {
 				add = 100
-				has_war = yes
+				OR = {
+					longest_war_length > 6
+					surrender_progress > 0.1
+				}
 			}
 		}
 	}
@@ -303,12 +342,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 75 }
 				tag = YFC
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 40 }
+				check_variable = { money_amount > 50 }
 				OR = {
 					has_political_power > 150
 					has_stability < 0.5
@@ -348,12 +387,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 75 }
 				tag = YFC
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 40 }
+				check_variable = { money_amount > 60 }
 				has_political_power > 150
 				add = 5
 			}
@@ -389,12 +428,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 75 }
 				tag = YFC
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 40 }
 				has_political_power > 150
 				add = 5
 			}
@@ -417,14 +456,7 @@ economy_decisions = {
 
 		visible = { 
 			has_country_flag = has_money_system
-			num_of_supply_nodes < 11
-			OR = {
-				is_major = no
-				AND = {
-					is_faction_leader = yes
-					num_of_factories < 51 #would be a minor if it wasn't for faction leader status
-				}
-			}
+			num_of_supply_nodes < 15
 		}
 
 		custom_cost_trigger = {
@@ -444,11 +476,6 @@ economy_decisions = {
 				tag = YFC
 				add = -1000
 			}			
-			modifier = {
-				check_variable = { money_amount > 30 }
-				has_political_power > 150
-				add = 5
-			}
 		}
 
 		modifier = {
@@ -486,12 +513,12 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 100 }
 				tag = YFC
 				add = -1000
 			}
 			modifier = {
-				check_variable = { money_amount > 40 }
+				check_variable = { money_amount > 65 }
 				has_political_power > 150
 				add = 5
 			}
@@ -503,7 +530,7 @@ economy_decisions = {
 
 		modifier = {
 			industrial_capacity_factory = 0.1
-			production_factory_efficiency_gain_factor = 0.3
+			production_factory_efficiency_gain_factor = 0.35
 		}
 
 		complete_effect = {
@@ -531,17 +558,17 @@ economy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 75 }
 				tag = YFC
 				add = -1000
 			}
 			modifier = {
-				check_variable = { money_amount > 40 }
+				check_variable = { money_amount > 60 }
 				has_political_power > 150
 				add = 5
 			}
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 35 }
 				has_army_experience < 25
 				add = 5
 			}
@@ -668,7 +695,7 @@ propaganda_efforts = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				check_variable = { money_amount < 50 }
+				check_variable = { money_amount < 75 }
 				tag = YFC
 				add = -1000
 			}
@@ -677,14 +704,14 @@ propaganda_efforts = {
 				add = 10
 			}
 			modifier = {
-				check_variable = { money_amount > 30 }
+				check_variable = { money_amount > 50 }
 				has_political_power > 150
 				add = 5
 			}
 		}
 
 		modifier = {
-			weekly_manpower = 100
+			weekly_manpower = 250
 			training_time_army_factor = -0.1
 		}
 
@@ -1159,7 +1186,7 @@ war_measures = {
 		cost = GER_war_bonds_var?50
 
 		modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.15
 		}
 
 		ai_will_do = {
@@ -1304,9 +1331,9 @@ economy_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			base = 0
 			modifier = {
-				factor = 10
+				add = 10
 				any_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
 			}
 		}

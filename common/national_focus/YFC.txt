@@ -1296,7 +1296,7 @@ focus_tree = {
 					}
 					country_event = {
 						id = YFC_event.44
-						days = 7
+						days = 14
 						random_hours = 24
 					}
 				}
@@ -1707,7 +1707,7 @@ focus_tree = {
 					limit = {has_completed_focus = YFC_focus_population_boom}
 					country_event = {
 						id = YFC_event.44
-						days = 7
+						days = 14
 						random_hours = 24
 					}
 				}
@@ -2014,7 +2014,7 @@ focus_tree = {
 					limit = {has_completed_focus = YFC_focus_population_boom}
 					country_event = {
 						id = YFC_event.44
-						days = 7
+						days = 14
 						random_hours = 24
 					}
 				}
@@ -2086,7 +2086,7 @@ focus_tree = {
 					limit = {has_completed_focus = YFC_focus_population_boom}
 					country_event = {
 						id = YFC_event.44
-						days = 7
+						days = 14
 						random_hours = 24
 					}
 				}
@@ -2144,7 +2144,7 @@ focus_tree = {
 						limit = {
 							state = 229
 						}
-						set_variable = {eastern_support_var = -0.5}
+						set_variable = {eastern_support_var = -0.4}
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}
@@ -2161,9 +2161,9 @@ focus_tree = {
 				IF = {
 					limit = {
 						is_ai = yes
-						check_variable = {money_amount < 15}
+						check_variable = {money_amount < 20}
 					}
-					add_to_variable = { money_amount = 10 }
+					add_to_variable = { money_amount = 15 }
 				}
 			}
 		}

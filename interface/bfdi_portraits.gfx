@@ -256,6 +256,11 @@ spriteTypes = {
 		name = "GFX_SRI_sketchpad"
 		texturefile = "gfx/leaders/SRI/SRI_sketchpad.dds"
 	}
+
+	spriteType = {
+		name = "GFX_SRI_YFC_committee"
+		texturefile = "gfx/leaders/SRI/SRI_YFC_committee.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_YFC_yellow_face"

@@ -11,9 +11,7 @@ state={
 	history={
 		owner = GOI
 		add_core_of = GOI
-		victory_points = {
-			11064 5
-		}
+		victory_points = {11064 10}
 		buildings = {
 			infrastructure = 2
 		}

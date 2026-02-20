@@ -250,6 +250,14 @@ ideologies = {
 			
 			technocratism = {
 			}
+
+			yellow_face_company = {
+				can_be_randomly_selected = no
+			}
+
+			empty = {
+				can_be_randomly_selected = no
+			}
 		}
 
 		dynamic_faction_names = {

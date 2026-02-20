@@ -3114,6 +3114,10 @@ country_event = { #Annex Events 1
 				random_hours = 50
 			}
 		}	
+
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #local offical BUT CRN could use if pro-Bunch (Maybe will be added)
 		name = YFC_BUN.9.c
@@ -3129,8 +3133,11 @@ country_event = { #Annex Events 1
 				random_days = 10
 				random_hours = 50
 			}
-		}		
-		#Would cost money when added
+		}	
+		
+		ai_chance = {
+			base = 5
+		}
 	}
 }
 
@@ -3182,6 +3189,10 @@ country_event = { #Annex Events 2
 				random_hours = 50
 			}
 		}	
+
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #Do nothing
 		name = YFC_BUN.10.c
@@ -3252,9 +3263,6 @@ country_event = { #Annex Events 3
 				random_hours = 50
 			}
 		}	
-		ai_chance = {
-			base = 20 #Change Later
-		}
 	}
 	option = { #Do nothing
 		name = YFC_BUN.11.c
@@ -3346,6 +3354,9 @@ country_event = { #Annex Events 4
 				random_days = 25
 				random_hours = 50
 			}
+		}
+		ai_chance = {
+			base = 10
 		}
 	}
 	option = { #Do nothing
@@ -3493,6 +3504,9 @@ country_event = { #Annex Events 6
 				random_hours = 50
 			}
 		}	
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #Autonomous 
 		name = YFC_BUN.14.c
@@ -3518,6 +3532,9 @@ country_event = { #Annex Events 6
 				random_days = 35
 				random_hours = 50
 			}
+		}
+		ai_chance = {
+			base = 5
 		}
 	}
 }
@@ -3572,6 +3589,9 @@ country_event = { #Annex Events 7
 				random_hours = 50
 			}
 		}	
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #Corruption! 
 		name = YFC_BUN.15.c
@@ -3691,6 +3711,7 @@ country_event = { #Annex Events FINAL
 		add_political_power = 50
 		IF = {
 			limit = {is_ai = yes}
+			add_political_power = 50
 			add_timed_idea = {
 				idea = idea_YFC_at_the_finish_line
 				days = 360

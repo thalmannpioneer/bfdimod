@@ -1,4 +1,4 @@
-decision_YFC_sector_category= { #Watermelon
+decision_YFC_sector_category = { #Watermelon
     YFC_sector_pay = {
         is_good = yes
         activation = {
@@ -11,7 +11,7 @@ decision_YFC_sector_category= { #Watermelon
         cancel_trigger = {
             hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
 		}
-        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        icon = GFX_YFC_mission_sector_pay  
         days_mission_timeout = 30
         timeout_effect = {
             #Reset the value
@@ -261,7 +261,7 @@ decision_YFC_sector_category= { #Watermelon
         cancel_trigger = {
             hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
 		}
-        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        icon = GFX_YFC_mission_sector_issues  
         days_mission_timeout = 120
         timeout_effect = {
             hidden_effect = {

@@ -6,7 +6,7 @@ decision_YFC_trade_category = {
 		}
 	}
 	priority = 16
-	icon = decision_category_operation_coinflip
+	icon = decision_category_operation_coinflip #Update
 	visible_when_empty = yes
 	scripted_gui = bfdi_corp_trade_scriptedgui
 }
@@ -19,7 +19,7 @@ decision_YFC_sector_category = {
 		}
 	}
 	priority = 14
-	icon = decision_category_operation_coinflip
+	icon = GFX_decision_category_sectors
 	visible_when_empty = yes
 	scripted_gui = bfdi_decisions_crop_sector_scriptedgui
 }
@@ -74,7 +74,7 @@ decision_YFC_eastern_category = {
 		}
 	}
 	priority = 10
-	icon = GFX_decision_category_build_bunch #Update later
+	icon = GFX_decision_category_sectors #Update later
 	visible_when_empty = no
 	scripted_gui = bfdi_decisions_crop_eastern_scriptedgui
 }
