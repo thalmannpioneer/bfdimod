@@ -16,9 +16,8 @@ state={
 			industrial_complex = 1
 			5448 = { naval_base = 3 }
 		}
-		victory_points = {
-			5448 15
-		}
+		victory_points = {5448 15}
+		victory_points = {4048 5}
 	}
 	manpower=33001
 	buildings_max_level_factor=1.000

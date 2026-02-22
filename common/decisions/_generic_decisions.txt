@@ -690,7 +690,7 @@ propaganda_efforts = {
 
 		fire_only_once = no
 		days_remove = 180
-		days_re_enable = 720
+		days_re_enable = 640
 
 		ai_will_do = {
 			base = 0
@@ -950,7 +950,7 @@ war_measures = {
 		visible = { 
 			has_country_flag = has_money_system
 			has_war = yes
-			longest_war_length < 6
+			longest_war_length < 8
 		}
 
 		custom_cost_trigger = {

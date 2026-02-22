@@ -311,10 +311,10 @@ decision_TBT_eastern_category = {
 		cost = 150
 
 		fire_only_once = yes
-		days_remove = 100
+		days_remove = 125
 
 		remove_effect = {
-			add_political_power = -1000
+			add_political_power = -1500
 			random_list = {
 				10 = {
 					226 = {transfer_state_to = ROOT}
@@ -450,6 +450,10 @@ decision_TBT_eastern_category = {
 				}
 			}
 		}
+
+		cancel_trigger = {
+			has_border_war = yes
+        }
 
 		cost = 25
 		fire_only_once = no

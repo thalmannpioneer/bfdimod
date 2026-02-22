@@ -1674,6 +1674,18 @@
  bfdinews.38.desc: "Well, it seems that the [FROM.GetAdjective] government announced its inability to pay its debt obligations and adopted strict anti-crisis measures. It seems the economy in the vast expanses of the new, anarchic Goiky hasn't yet fully got on its own grip, and this is currently impacting the lives of many objects around. Our team also predicts further financial unrest amid similar events..."
  bfdinews.38.a: "Terrible!"
 
+ bfdinews.39.t: "Formation of The Three Musketeers!"
+ bfdinews.39.desc: "Interesting news has been reported from South Goiky. The nations of Yellow Face, Numismatia, and the newly formed Bunch Republic have created an economic and defense alliance! Yellow Face has stated that the goal is to create economic growth throughout all of Goiky. Only time will tell if the three will stay united, but the balance of power has been changed in Southern Goiky."
+ bfdinews.39.a: "To the future!"
+ bfdinews.39.b: "They think this will stop us?" 
+ bfdinews.39.c: "Interesting..."
+
+ bfdinews.40.t: "Formation of the Goiky Trade League!"
+ bfdinews.40.desc: "Interesting news has arrived from South Goiky. A few months after the defeat of the Bandits led by Eraser, the governments of Yellow Face and Numismatia have an economic and defense alliance! Yellow Face has stated that the goal is to create economic growth throughout all of Goiky. Only time will tell if this faction will hold, but a new strong presence has formed in the South!"
+ bfdinews.40.a: "To the future!"
+ bfdinews.40.b: "They think this will stop us?" 
+ bfdinews.40.c: "Interesting..."
+
 
 # bfdinews_cities
 

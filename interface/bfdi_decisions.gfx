@@ -599,6 +599,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_foster_ruin_everyone.dds"
 	}
 
+	spriteType = {
+		name = "GFX_mission_YFC_eastern_game"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_eastern_game.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_ports"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_ports.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_roads"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_roads.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_invest"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_invest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_core"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_core.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_block"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_block.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_raid"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_raid.dds"
+	}
 
 	#BUN
 

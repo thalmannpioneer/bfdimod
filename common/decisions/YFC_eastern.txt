@@ -7,7 +7,7 @@ decision_YFC_eastern_category = {
 		available = {
 			always = no
 		}
-		icon = GFX_decision_SWI_no_elected_president  #Update later!!!
+		icon = GFX_mission_YFC_eastern_game  #Update later!!!
 		is_good = yes
 		days_mission_timeout = 600 #540
 		timeout_effect = {
@@ -142,7 +142,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_roads = { 
-		icon = GFX_decision_generic_trucks
+		icon = GFX_decisions_YFC_eastern_roads
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
@@ -195,7 +195,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_invest = { 
-		icon = GFX_decision_generic_fundraising
+		icon = GFX_decisions_YFC_eastern_invest
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
@@ -414,7 +414,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_core = { 
-		icon = GFX_decision_generic_form_nation
+		icon = GFX_decisions_YFC_eastern_core
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_and_decisions_view
@@ -463,7 +463,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_block = { 
-		icon = GFX_decision_generic_ignite_civil_war
+		icon = GFX_decisions_YFC_eastern_block
         
 		visible = {
 			has_completed_focus = YFC_focus_interfere_with_sea_routes	
@@ -503,7 +503,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_raid = { 
-		icon = GFX_decision_generic_ignite_civil_war
+		icon = GFX_decisions_YFC_eastern_raid
         
 		visible = {
 			has_completed_focus = YFC_focus_see_to_the_eastern_front	
@@ -571,6 +571,10 @@ decision_YFC_eastern_category = {
 				}
 			}
 		}
+
+		cancel_trigger = {
+			has_border_war = yes
+        }
 
 		cost = 25
 		fire_only_once = no

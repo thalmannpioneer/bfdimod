@@ -13,6 +13,7 @@ state={
 		add_core_of = GOI
 		victory_points = { 4387 10 }
 		victory_points = { 10151 3 }
+		victory_points = { 4797 4 }
 		buildings = {
 			infrastructure = 3
 		}

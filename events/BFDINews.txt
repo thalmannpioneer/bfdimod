@@ -537,11 +537,10 @@ news_event = {
 }
 
 news_event = {
-    #Update picture!!!!!
     id = bfdinews.26
     title = bfdinews.26.t
     desc = bfdinews.26.desc
-    picture = GFX_bfdinews25
+    picture = GFX_bfdinews25 #Update later
 
     major = yes
 
@@ -765,7 +764,109 @@ news_event = {
     }
 }
 
+news_event = {
+    id = bfdinews.39
+    title = bfdinews.39.t
+    desc = bfdinews.39.desc
+    picture = GFX_bfdinews38 #Update later
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.39.a
+        trigger = {
+            OR = {
+                tag = BUN
+                tag = YFC
+                tag = CRN
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.39.b
+        trigger = {
+            OR = {
+                tag = FFT
+                tag = GGR
+                tag = SMG
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.39.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = BUN
+                    tag = YFC
+                    tag = CRN
+                    tag = FFT
+                    tag = GGR
+                    tag = SMG
+                }
+            }
+        }
+    }
+}
+
+news_event = {
+    id = bfdinews.40
+    title = bfdinews.40.t
+    desc = bfdinews.40.desc
+    picture = GFX_bfdinews38 #Update later
+
+    major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.40.a
+        trigger = {
+            OR = {
+                tag = YFC
+                tag = CRN
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.40.b
+        trigger = {
+            OR = {
+                tag = FFT
+                tag = GGR
+                tag = SMG
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.40.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = YFC
+                    tag = CRN
+                    tag = FFT
+                    tag = GGR
+                    tag = SMG
+                }
+            }
+        }
+    }
+}
+
+
+
+##################
 #City Fall events#
+##################
+
+
+
+
 
 news_event = {
     #Greenport
