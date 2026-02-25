@@ -1333,7 +1333,7 @@ put_garrisons_on_high_prio = {
 
 	ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = 10 # positive is high prio, negative is low prio
+		value = 5 # positive is high prio, negative is low prio
 	}
 }
 

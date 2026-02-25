@@ -51,7 +51,12 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = {tag = SOS}
+				limit = {
+					OR = {
+						tag = DAV
+						tag = SOS
+					}
+				}
 				capital_scope = {
 					add_building_construction = {
 						type = dockyard

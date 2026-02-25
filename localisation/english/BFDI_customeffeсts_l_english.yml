@@ -122,6 +122,7 @@
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
  l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"
+ l_YFC_trade_invite_fail: "§YThe Yellow Face Market decisions will be unlocked if the following is completed:§!§G\n\n-Our economy law is not on isolation\n-Our trade law is not closed economy\n-We are not at war with The Yellow Face Corporation\n-We are not embargoing or being embargoed by The Yellow Face Corporation§!"
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YHires Coiny as an Army Chief!§!"
@@ -134,6 +135,7 @@
  l_YFC_mercs_div: "§YUnlocks a new Mercenary Division that can be hired in decisions!§!"
  l_YFC_mercs_upgrade_cav: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Combined Grape Affiliation Divisions.§!"
  l_YFC_mercs_upgrade_inf: "§YAdds Support Artillery and a Artillery battalion to future Unnamed Mercenary Brotherhood Divisions.§!"
+ l_YFC_mercs_upgrade_amount: "§YMercenary hires will now grant 2 additional divisions.§!"
  l_YFC_SRI_demand_1: "§YWe will offer The Great Ridge government 500K dollars and protection for their resource rights. Their willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. If they do not agree we will not lose any money.§!"
  l_YFC_SRI_demand_2: "§YWe will demand The Great Ridge to be our puppet. Their willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. This will be harder for them to agree to than last time...§!"
  l_YFC_PEN: "§YPen§! dies."

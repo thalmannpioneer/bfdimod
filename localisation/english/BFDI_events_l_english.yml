@@ -790,9 +790,10 @@
  YFC_event.28.desc: "It seems as if our investments into the eastern territories have failed. Not only have many assessed our reworking of Yoyleton to have been far too small, we have entirely neglected Peoniele. The costs for attempting to enlargen Yoyleton and the losses from our neglect of Peoniele far outweigh and profit we gained from the new people moving to the cities. Sure, the population of the cities seems quite okay with being left alone, but who cares of that? Our Sectorials most certainly don't, seeing as they are openly criticizing the actions taken in attempting to develop the city. Peoniele looks nearly the same as it had before, and Yoyleton leaves a lot to be desired."
  YFC_event.28.a: "We could've done better..."
 
- YFC_event.29.t: "UNUSED EVENT"
- YFC_event.29.desc: "This event is homeless :(((("
- YFC_event.29.a: "It needs a home!"
+ YFC_event.29.t: "The New Market"
+ YFC_event.29.desc: "We had received an interesting telegram. The Yellow Face Corporation, led by Yellow Face, has informed us about business opportunities with them. They are willing to make deals in a way of a pawn shop as they are willing to both buy and sell equipment. While we may or may not need it now, this will be a valuable tool that we should use carefully." #ZDubbz if you want to
+ YFC_event.29.a: "Very interesting!"
+ YFC_event.29.b: "We are sadly not in a position to use it yet!"
 
  YFC_event.30.t: "Peoniele, the Metropolis of East Goiky" #Mixed
  YFC_event.30.desc: "Our investment into the city of Peoniele has paid of more than favorably! The pockets of every single corporate employ have been filled significantly, especially those of the Sectorials. Those Sectorials in question seem to be quite happy with our investments, even dispite the neglect of Yoyleton. The profits earned from this endeavor are more than enough to fund future Yellow Facer projects, to the point money is barely a concern to us. On the expense end, of course; profits shall never stop! Some do seem to be concerned with the reactions of the Peoniele populace who had lived there before our improvements, citing how angry they seem about the removal and trampling of their natural flower fields. Why a people would care for plants is beyond the heads of corporates. It's amazing how little the opinions of people like that contribute to the amount of profits we make."
@@ -831,20 +832,20 @@
  YFC_event.37.a: "Accept!"
  YFC_event.37.b: "Deny!"
 
- YFC_event.38.t: "Yellow Face deamnds our resources!" #SRI refers to the player as boy, because the SRI is an eighty year old man who has been in the mines for 2 thirds of his life
- YFC_event.38.desc: "Uh, this morning, large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?" #:sob:
+ YFC_event.38.t: "Yellow Face demands our resources!" #SRI refers to the player as boy, because the SRI is an eighty year old man who has been in the mines for 2 thirds of his life
+ YFC_event.38.desc: "Uh, this morning, a large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?" #:sob:
  YFC_event.38.a: "Accept!"
  YFC_event.38.b: "Deny!"
 
  YFC_event.39.t: "The Northern Ridge Response"
- YFC_event.39.desc: "We recieved an amazing response from the Ridge today! They seemed quite a bit confused in their response, whatever that might mean, but they did indeed agree to our offer! Additionally, it seems as if we managed to send our first letter to the wrong address, so, we definitely need to fire someone. Though, regardless, this is a great opportunity!"
+ YFC_event.39.desc: "We received an amazing response from the Ridge today! They seemed quite a bit confused in their response, whatever that might mean, but they did indeed agree to our offer! Additionally, it seems as if we managed to send our first letter to the wrong address, so we definitely need to fire someone. Though, regardless, this is a great opportunity!"
  YFC_event.39.a: "I can smell the resources from here..."
 
  YFC_event.40.t: "The Northern Ridge Response"
- YFC_event.40.desc: "We recieved a pretty confusing response from the Ridge this morning. They didn't seem to understand our request for resource rights. Instead, they started saying something about 'national integrity,' before going on a three paragraph tangent about how their leader had been coughing, quote, 'real bad,' since venturing into a new cave. We're not exactly sure what this means, but it does not seem as if they're looking forward to working with us."
+ YFC_event.40.desc: "We received a pretty confusing response from the Ridge this morning. They didn't seem to understand our request for resource rights. Instead, they started saying something about 'national integrity,' before going on a three paragraph tangent about how their leader had been coughing, quote, 'real bad,' since venturing into a new cave. We're not exactly sure what this means, but it does not seem as if they're looking forward to working with us."
  YFC_event.40.a: "He should really check out that cough..."
 
- YFC_event.41.t: "Yellow Face deamnds our subjugation!"
+ YFC_event.41.t: "Yellow Face demands our subjugation!"
  YFC_event.41.desc: "Uh, apparently them company folk are asking us to be their puppet, boy. They're saying it's an 'Ultimatum,' whatever that means. Basically, we gotta accept it or get invaded boy. By the way, do you know where the mayonnaise is? I haven't been able to find it. And I've told you too many damn times to stop touching my food. But, yeah, either they puppet us or we go to war. Really, I think it'll just be a small skirmish, but, you know how them capital folk are. Always trying to start a fight. Well, what if I don't want a fight? Listen boy, I've been mining for as long as my memory goes back. All I want to do now is keep mining. Ain't much left in this life, I'll tell you what."
  YFC_event.41.a: "Accept!"
  YFC_event.41.b: "Deny!"
@@ -897,6 +898,10 @@
  YFC_event.51.desc: "Beaker wants to hunt down some resources (Mainly aluminium) but this will make the local populace mad"
  YFC_event.51.a: "Yeah!" #Increases Beaker influence
  YFC_event.51.b: "Noo!" #Decreases Beaker influence
+
+ YFC_event.52.t: "Mercenary Upgrade" #zdubbz if you want to rewrite
+ YFC_event.52.desc: "Today we received an interesting letter from a good friend of ours, that friend was the Mercenaries.  The Mercenaries’ strength has been growing for quite some time now thanks to our funding and their own adventures. The letter states that due to this increasing strength, the size of their force has increased. A very nice update from them and a nice upgrade for us."
+ YFC_event.52.a: "Fantastic!"
 
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."

@@ -866,7 +866,7 @@ country_event = {
 }
 
 country_event = {
-	id = YFC_event.29 #N/A (WILL BE USED TO TELL OTHER NATIONS ABOUT OUR TRADE)
+	id = YFC_event.29 #Tell the world about our trade!!!
 	title = YFC_event.29.t
     desc = YFC_event.29.desc
 	picture = GFX_Temp_event
@@ -875,6 +875,31 @@ country_event = {
     
     option = { 
 		name = YFC_event.29.a
+		trigger = {
+			NOT = {
+				has_war_with = YFC
+				has_idea = undisturbed_isolation
+				has_idea = isolation
+				has_idea = closed_economy
+				is_embargoed_by = YFC
+				is_embargoing = YFC
+			}
+		}
+		unlock_decision_category_tooltip = decision_other_trade_category
+	}
+	option = { 
+		name = YFC_event.29.b
+		trigger = {
+			OR = {
+				has_war_with = YFC
+				has_idea = undisturbed_isolation
+				has_idea = isolation
+				has_idea = closed_economy
+				is_embargoed_by = YFC
+				is_embargoing = YFC
+			}
+		}
+		custom_effect_tooltip = l_YFC_trade_invite_fail
 	}
 }
 
@@ -2167,6 +2192,30 @@ country_event = { #Eastern Event #3
 	}
 	option = { 
 		name = YFC_event.51.b
+	}
+}
+
+country_event = { #Cool Merc event YFC get's to buff the Merc amount
+	id = YFC_event.52
+	title = YFC_event.52.t
+	desc = YFC_event.52.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.52.a
+		add_manpower = 2500
+		custom_effect_tooltip = l_YFC_mercs_upgrade_amount
+		add_to_variable = { var_YFC_merc_amount = 2 }
+		hidden_effect = {
+			country_event = {
+				id = YFC_event.52
+				days = 1080
+				random_hours = 48
+			}
+		}
 	}
 }
 

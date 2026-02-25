@@ -118,11 +118,12 @@
  VICTORY_POINTS_2724: "Sole-peak"
  VICTORY_POINTS_11247: "Bergstadt"
  VICTORY_POINTS_2534: "Ahpen"
- VICTORY_POINTS_4797: "Suesi"
+ VICTORY_POINTS_4797: "Suesi" #Look, I don't want to add more VPs but this really, really silly AI does not like attacking in the north
  VICTORY_POINTS_4048: "Tebuck"
-
- VICTORY_POINTS_4387: "Big VP"
- VICTORY_POINTS_3104: "Big VP"
+ VICTORY_POINTS_4387: "Spatterfort"
+ VICTORY_POINTS_3104: "Aquaville" 
+ VICTORY_POINTS_6107: "Damcareus" 
+ VICTORY_POINTS_360: "Tele Ail" 
 
  VICTORY_POINTS_2673: "Another very small VP"
  VICTORY_POINTS_5987: "Another very small VP"

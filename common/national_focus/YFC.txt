@@ -55,6 +55,19 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			unlock_decision_category_tooltip = decision_YFC_trade_category
+			hidden_effect = {
+				every_possible_country = {
+					limit = { 
+						is_ai = no 
+						NOT = {tag = YFC}
+					}
+					news_event = {
+						id = YFC_event.29
+						days = 1
+						random_hours = 2
+					}
+				}
+			}
 		}
 	}
 
@@ -128,6 +141,14 @@ focus_tree = {
 					infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 2 y = 0 }
+				}
+			}
+
+			hidden_effect = {
+				country_event = {
+					id = YFC_event.52
+					days = 1080
+					random_hours = 48
 				}
 			}
 		}
@@ -2502,7 +2523,7 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
