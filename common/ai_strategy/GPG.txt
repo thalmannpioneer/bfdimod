@@ -142,7 +142,7 @@ GPG_rebuild = {
 			has_completed_focus = GPG_focus_third_congress
 		}
 		has_army_size = {
-            size < 25
+            size < 28
         }
 	}
 	abort_when_not_enabled = yes
@@ -150,7 +150,7 @@ GPG_rebuild = {
     ai_strategy = {
         type = equipment_production_surplus_management
         id = infantry_equipment
-        value = 2
+        value = 5
     }
 	ai_strategy = {
 		type = build_army
@@ -226,12 +226,12 @@ GPG_build = {
 	ai_strategy = {
 		type = equipment_production_surplus_management
 		id = artillery_equipment
-		value = 2
+		value = 1.5
 	}
 	ai_strategy = {
         type = equipment_production_surplus_management
         id = support_equipment
-        value = 2
+        value = 1.5
     }
 	ai_strategy = {
         type = equipment_production_surplus_management

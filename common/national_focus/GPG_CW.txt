@@ -111,7 +111,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			division_template = {
-				name = "Goiky Infantry Division"
+				name = "Infantry Division"
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
@@ -121,7 +121,7 @@ focus_tree = {
 			}
 			8 = {
 				create_unit = {
-					division = "name = \"Goiky Infantry Division\" division_template = \"Goiky Infantry Division\" start_experience_factor = 0.5 start_manpower_factor = 0.3"
+					division = "name = \"Goiky Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_manpower_factor = 0.3"
 					owner = GPG
 					count = 1
 				}

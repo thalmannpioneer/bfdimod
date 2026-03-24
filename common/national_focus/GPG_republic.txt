@@ -476,11 +476,26 @@ focus_tree = {
             custom_effect_tooltip = l_GPG_improves_army
             add_to_variable = { var_GPG_armyagony_ao = 0.05 }
             add_to_variable = { var_GPG_armyagony_eg = 0.25 }
+            division_template = {
+				name = "Goiky Infantry Division"
+                division_names_group = GPG_Inf_02
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+                support = {
+                    artillery = { x = 0 y = 0 }		
+                    engineer = { x = 0 y = 1 } 		
+                }
+			}
             8 = {
                 create_unit = {
-                    division = "name = \"Goiky Infantry Division\" division_template = \"Goiky Infantry Division\" start_experience_factor = 0.5 start_manpower_factor = 0.3"
+                    division = "name = \"\" division_template = \"Goiky Infantry Division\" start_experience_factor = 0.3"
                     owner = GPG
-                    count = 2
+                    count = 5
                 }
             }
         }
