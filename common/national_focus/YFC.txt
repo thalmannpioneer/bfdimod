@@ -2567,8 +2567,9 @@ focus_tree = {
 		
 		cost = 3
 		completion_reward = {
-			#What should this do ZDubbz?
-			#re; should probably just be an event, and mutual guarentees
+			country_event = YFC_event.53
+			YFC = { give_guarantee = BUN }
+			BUN = { give_guarantee = YFC }
 		}
 	}
 
@@ -2581,6 +2582,10 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
 
 		available = {
+			custom_trigger_tooltip = {
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
+            }
 			hidden_trigger = {
 				has_completed_focus = YFC_focus_YFC_funded_pillaging
 			}
@@ -2590,8 +2595,9 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#What should this do ZDubbz?
-			#re; cut some income but make army stronger? spirit maybe?
+			subtract_from_variable = { money_amount = 5 }
+			remove_ideas = idea_YFC_neglectful_command
+			add_command_power = 50
 		}
 	}
 
@@ -2606,6 +2612,12 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
+			add_political_power = 50
+			add_opinion_modifier = { target = BUN modifier = medium_increase }
+			every_country_with_original_tag = {
+				original_tag_to_check = BUN
+				add_opinion_modifier = { target = YFC modifier = medium_increase }
+			}
 			hidden_effect = {
 				GGR = { #Embargo event
 					country_event = {
@@ -2614,40 +2626,14 @@ focus_tree = {
 						random_hours = 24
 					}
 				}
-				GMD = { #Embargo event
-					country_event = {
-						id = YFC_event.9
-						days = 5
-						random_hours = 24
-					}
-				}
 				CRN = { #Embargo event
 					country_event = {
 						id = YFC_event.9
-						days = 10
+						days = 6
 						random_hours = 24
 					}
 				}
-				every_other_country = { #Embargo event
-					limit = { 
-						NOT = { 
-							tag = EMP 
-							tag = GOI 
-							tag = GGR
-							tag = GMD
-							tag = CRN 
-						} 
-					}
-					country_event = {
-						id = YFC_event.9
-						days = 15
-						random_days = 15
-						random_hours = 200
-					}
-				}
 			}
-			#What else should this do ZDubbz?
-			#should be fine
 		}
 	}
 
@@ -2668,7 +2654,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#snowball fucking hates you now
+			
 		}
 	}
 
@@ -2703,11 +2689,34 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_first_embargo }
 		prerequisite = { focus = YFC_focus_numismatian_split }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#What should this do ZDubbz?
-			#re; the code that you wrote for "great business partnership" should probably go here
-			#    ive written at the top of this focus what should be done (line 2696)
+			#Alright but what should this give to the player ZDubbz?
+
+			hidden_effect = {
+				every_other_country = { #Embargo event
+					limit = { 
+						NOT = { 
+							tag = EMP 
+							tag = GOI 
+							tag = GGR
+							tag = GMD
+							tag = CRN 
+						} 
+					}
+					country_event = {
+						id = YFC_event.9
+						days = 1
+						random_days = 25
+						random_hours = 200
+					}
+				}
+				country_event = {
+					id = YFC_event.54
+					days = 35
+					random_hours = 24
+				}
+			}
 		}
 	}
 
@@ -2719,22 +2728,21 @@ focus_tree = {
 		y = 0
 		icon = GFX_focus_generic
 
-		#available = {
-		#	hidden_trigger = {
-		#		has_completed_focus = YFC_focus_the_great_recession
-		#	}
-		#}
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_the_great_recession
+			}
+		}
 
-		#allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+		allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#What should this do ZDubbz?
-			#re; event, likely a spirit as well, maybe you lose a bunch of money this autocompletes btw
+			
 		}
 	}
 
-	focus = { #mass firings, including all sectorials; leads to tophat taking over path & yoyleton
+	focus = { 
 		id = YFC_focus_mass_firings
 		relative_position_id = YFC_focus_the_great_recession
 		x = -3
@@ -2744,10 +2752,14 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_great_recession }
 		mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#I might wait on the sectorials part with the embargo events increase influence
-			#re; yeah that makes sense
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
+			add_timed_idea = {
+				idea = idea_YFC_company_reorganization
+				days = 180
+			}
 		}
 	}
 
@@ -2761,10 +2773,18 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_great_recession }
 		mutually_exclusive = { focus = YFC_focus_mass_firings }
 		
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#What should this do ZDubbz?
-			#re; uhhhhhhh
+			custom_effect_tooltip = l_YFC_sectors_All_Lower
+			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+			add_timed_idea = {
+				idea = idea_YFC_company_reorganization
+				days = 180
+			}
 		}
 	}
 
@@ -2779,14 +2799,24 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#What should this do ZDubbz?
-			#And if it is to remove the market system I don't want to yet as the point is that the amount of people you can work with is low
 			#re; well if almost everyone has embargoed the yfc, how would the markets still be open? no one to trade with
+			#AI has a chance to not embargo, but also the player may still want the trade for money/guns so I don't want to game ruin them. ZDubbz
+			#Also this is a major thing for YFC that I don't want removed this quickly in the same way to the Sectors, maybe when Yellow Face takes full contorl the market can be removed
+
+			hidden_effect = {
+				GMD = { 
+					country_event = {
+						id = YFC_event.9
+						days = 1
+						random_hours = 24
+					}
+				}
+			}
 		}
 	}
 
 	focus = { #coiny embargoes
-		id = YFC_focus_the_second_embargo
+		id = YFC_focus_the_second_embargo 
 		relative_position_id = YFC_focus_close_the_markets
 		x = 0
 		y = 1.5
@@ -2794,12 +2824,19 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_close_the_markets }
 
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_the_second_embargo
+			}
+		}
+
+		allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+
 		cost = 3
 		completion_reward = {
-			#I think this should be moved to where GGR embargo is
-			#What should this do ZDubbz?
 			#re; i think that its fine here, maybe it's like the last straw/last connection to the outside world
 			#    i also think that it makes sense for coiny to be a bit late on embargoing the yfc
+			#Most likely name this last/final embargo
 		}
 	}
 
@@ -2814,12 +2851,12 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			YFC = { give_guarantee = BUN }
-			BUN = { give_guarantee = YFC }
-			#What else should this do ZDubbz?
 			#re; event
 			#    not gonna lie i forgot i even made this lmao
+			#:Sob:
 		}
 	}
 }
 
+#Also just as a side note I think both first and second parts should have more stuff and not be as linear 
+#ZDubbz

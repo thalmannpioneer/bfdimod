@@ -700,7 +700,7 @@
  YFC_event.9.t: "Question of Yellow Face" #Zdubbz
  YFC_event.9.desc: "It's no secret that the Yellow Face Corporation has been 'buddying up' with the bunch of bandits in the south of the continent. We've also gotten reports that some other countries have already began embargoing the YFC, in hopes that they'd end the partnership before it gets out of hand. We also hold these same convictions; a raider-state spreading across the continent would be horrible for the livlihoods of our people. Though, on the otherhand, the income we gain from selling parts of our surplus does help us out quite a bit, economically speaking. Is it a wise decision to embargo the Corporation?"
  YFC_event.9.a: "Yes!"
- YFC_event.9.b: "We should just wait this out... for now." #player would get another event, forcing them to embargo the yfc if markets close
+ YFC_event.9.b: "We should just wait this out... for now." #See focus
 
  YFC_event.10.t: "Tragic News!" #Zdubbz
  YFC_event.10.desc: "[FROM.GetName] has embargoed us!" #Might make desc for GGR, GMD, and CRN
@@ -901,8 +901,16 @@
  YFC_event.51.b: "Noo!" #Decreases Beaker influence
 
  YFC_event.52.t: "Mercenary Upgrade" #zdubbz if you want to rewrite
- YFC_event.52.desc: "Today we received an interesting letter from a good friend of ours, that friend was the Mercenaries.  The Mercenaries’ strength has been growing for quite some time now thanks to our funding and their own adventures. The letter states that due to this increasing strength, the size of their force has increased. A very nice update from them and a nice upgrade for us."
+ YFC_event.52.desc: "Today we received an interesting letter from a good friend of ours, that friend was the Mercenaries.  The Mercenaries' strength has been growing for quite some time now thanks to our funding and their own adventures. The letter states that due to this increasing strength, the size of their force has increased. A very nice update from them and a nice upgrade for us."
  YFC_event.52.a: "Fantastic!"
+
+ YFC_event.53.t: "Olive Branch" #ZDubbz
+ YFC_event.53.desc: "Something something lore about the future of the BUN-YFC team and something cool that only works in this event and not foucs desc"
+ YFC_event.53.a: ""
+
+ YFC_event.54.t: "Breaking Point" #ZDubbz
+ YFC_event.54.desc: "Something something about how sectors are fighting, chaos, and loss in money. YFC has made a bad choice and it seems we are fucked"
+ YFC_event.54.a: "Save the sinking ship!"
 
  BUN_borderwars.5.t: "Raiders Attacked!"
  BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."

@@ -326,7 +326,7 @@ country_event = { #Embargo event for all nations
 	option = { #No we like YFC
 		name = YFC_event.9.b
 		ai_chance = {
-			base = 3
+			base = 1
 			modifier = { tag = BUN add = 200 }
 		}
 	}
@@ -349,6 +349,19 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			original_tag_to_check = FROM
 			add_opinion_modifier = { target = YFC modifier = large_decrease }
 		}
+		IF = {
+			limit = {FROM = {tag = GGR}}
+			complete_national_focus = YFC_focus_the_first_embargo
+		}
+		ELSE_IF = {
+			limit = {FROM = {tag = CRN}}
+			complete_national_focus = YFC_focus_numismatian_split
+		}
+		ELSE_IF = {
+			limit = {FROM = {tag = GMD}}
+			complete_national_focus = YFC_focus_the_second_embargo
+		}
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -2243,6 +2256,53 @@ country_event = { #Cool Merc event YFC get's to buff the Merc amount
 				random_hours = 48
 			}
 		}
+	}
+}
+
+country_event = { #YFC_focus_establish_formal_connection event
+	id = YFC_event.53
+	title = YFC_event.53.t
+	desc = YFC_event.53.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.53.a
+	}
+}
+
+country_event = { #YFC_focus_allow_raiding_into_traitors event
+	id = YFC_event.54
+	title = YFC_event.54.t
+	desc = YFC_event.54.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.54.a
+
+		add_ideas = idea_YFC_economic_isolation
+
+		complete_national_focus = YFC_focus_the_great_recession
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = { #Raid event update later
+	id = YFC_event.55
+	title = YFC_event.55.t
+	desc = YFC_event.55.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.55.a
 	}
 }
 
