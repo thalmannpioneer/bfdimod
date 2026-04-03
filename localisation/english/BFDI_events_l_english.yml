@@ -698,13 +698,13 @@
  YFC_event.8.a: "Rapid Escalations..."
 
  YFC_event.9.t: "Question of Yellow Face" #Zdubbz
- YFC_event.9.desc: "Something something about us questioning if working with someone that seems to want to work with the wrong people. Should we cut trade with them?"
+ YFC_event.9.desc: "It's no secret that the Yellow Face Corporation has been 'buddying up' with the bunch of bandits in the south of the continent. We've also gotten reports that some other countries have already began embargoing the YFC, in hopes that they'd end the partnership before it gets out of hand. We also hold these same convictions; a raider-state spreading across the continent would be horrible for the livlihoods of our people. Though, on the otherhand, the income we gain from selling parts of our surplus does help us out quite a bit, economically speaking. Is it a wise decision to embargo the Corporation?"
  YFC_event.9.a: "Yes!"
- YFC_event.9.b: "There are still some good deals to be made."
+ YFC_event.9.b: "We should just wait this out... for now." #player would get another event, forcing them to embargo the yfc if markets close
 
  YFC_event.10.t: "Tragic News!" #Zdubbz
  YFC_event.10.desc: "[FROM.GetName] has embargoed us!" #Might make desc for GGR, GMD, and CRN
- YFC_event.10.a: "Really!?"
+ YFC_event.10.a: "They don't know anything! They're... purple!"
 
  YFC_event.11.t: "How Much?"
  YFC_event.11.desc: "It is no surprise that the large sums of money that Eraser managed to stockpile in his months as a plunderer could be useful for our industrialization efforts, however, many of our Sectorial leaders have been in open debate about the exact amount needed. In an attempt to ease the tensions between the Sectorials, Yellow Face decided to step in and make a concrete decision. He stated that we will be..."
