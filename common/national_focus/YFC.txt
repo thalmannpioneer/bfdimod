@@ -2568,6 +2568,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#What should this do ZDubbz?
+			#re; should probably just be an event, and mutual guarentees
 		}
 	}
 
@@ -2590,6 +2591,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#What should this do ZDubbz?
+			#re; cut some income but make army stronger? spirit maybe?
 		}
 	}
 
@@ -2645,6 +2647,7 @@ focus_tree = {
 				}
 			}
 			#What else should this do ZDubbz?
+			#should be fine
 		}
 	}
 
@@ -2703,6 +2706,8 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#What should this do ZDubbz?
+			#re; the code that you wrote for "great business partnership" should probably go here
+			#    ive written at the top of this focus what should be done (line 2696)
 		}
 	}
 
@@ -2714,17 +2719,18 @@ focus_tree = {
 		y = 0
 		icon = GFX_focus_generic
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_the_great_recession
-			}
-		}
+		#available = {
+		#	hidden_trigger = {
+		#		has_completed_focus = YFC_focus_the_great_recession
+		#	}
+		#}
 
-		allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+		#allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
 		cost = 3
 		completion_reward = {
 			#What should this do ZDubbz?
+			#re; event, likely a spirit as well, maybe you lose a bunch of money this autocompletes btw
 		}
 	}
 
@@ -2741,6 +2747,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#I might wait on the sectorials part with the embargo events increase influence
+			#re; yeah that makes sense
 		}
 	}
 
@@ -2757,6 +2764,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#What should this do ZDubbz?
+			#re; uhhhhhhh
 		}
 	}
 
@@ -2773,6 +2781,7 @@ focus_tree = {
 		completion_reward = {
 			#What should this do ZDubbz?
 			#And if it is to remove the market system I don't want to yet as the point is that the amount of people you can work with is low
+			#re; well if almost everyone has embargoed the yfc, how would the markets still be open? no one to trade with
 		}
 	}
 
@@ -2789,6 +2798,8 @@ focus_tree = {
 		completion_reward = {
 			#I think this should be moved to where GGR embargo is
 			#What should this do ZDubbz?
+			#re; i think that its fine here, maybe it's like the last straw/last connection to the outside world
+			#    i also think that it makes sense for coiny to be a bit late on embargoing the yfc
 		}
 	}
 
@@ -2806,6 +2817,8 @@ focus_tree = {
 			YFC = { give_guarantee = BUN }
 			BUN = { give_guarantee = YFC }
 			#What else should this do ZDubbz?
+			#re; event
+			#    not gonna lie i forgot i even made this lmao
 		}
 	}
 }
