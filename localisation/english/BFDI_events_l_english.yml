@@ -697,13 +697,14 @@
  YFC_event.8.desc: "It had only been a week since checkpoint B had been set up along the supposed 'border' between the Corporation and the Bandits. The day of the event was like any other, few refugees crossing, some arrests, and the random machine gun on an object. The day was wrapping up like any other... \n\nUntil, during the night, checkpoint B's guards spotted a mass amount of objects heading towards them. They claimed that there were 'open borders' and that the guards at the checkpoint had no real authority. After much heated shouting, a gunshot rang out which led to an open battle. They were not refugees, but were bandits. They tried to storm the checkpoint from the small number of guards protecting it. Despite all odds, the guards held the ground and made the Bandits pay for each step forward. Even after the checkpoint was taken, the guards fell back inland and kept the fight on. One interesting report was that a squad of eight held up in a cabin, lead by Vodka Bottle, fought off a force of around a hundred objects and only lost three objects in the five hours of fighting. \n\nNight became day with the engagements only heating up. With the help of reinforcements, the combined forces pushed the Bandits back to the checkpoint. Only when nightfall arrived did the Bandits retreat from the checkpoint. The checkpoint was retaken the next day. Many of the Objects that took part in the engagement have earned medals for their bravery. The overall death toll is still being counted, but both soldiers and civilians were harmed in the fighting. No response has come from anyone in the Bandit lands. "
  YFC_event.8.a: "Rapid Escalations..."
 
- YFC_event.9.t: "Rapid Reorganization" #Will be redone later
- YFC_event.9.desc: "With the idea of training settled, it was time to pick a location to train our soldiers. The perfect spot was found in a village in the hills north of the Great Ridge with great cover and houses. After kicking out the villagers, it was converted into a training ground. From there, countless practice raids were done to build up our strength and strategies. Our soldiers got more inventive then less on following orders, murder then peace, and looting then not. After a few weeks, the village has turned into ruins with no life around. However, one thing did come from these ruins..."
- YFC_event.9.a: "Our skill in raiding."
+ YFC_event.9.t: "Question of Yellow Face" #Zdubbz
+ YFC_event.9.desc: "Something something about us questioning if working with someone that seems to want to work with the wrong people. Should we cut trade with them?"
+ YFC_event.9.a: "Yes!"
+ YFC_event.9.b: "There are still some good deals to be made."
 
- YFC_event.10.t: "Open Air" #Will be redone later
- YFC_event.10.desc: "Now... now is the time to begin our raiding efforts! With more objects in both the countryside and cities being 'hired' we have the ability to begin our raids. We must now use our raiding to not only survive, but to thrive! We need to steal the resources from our neighbors to gather even more strength, wealth, and power!. Sure, this land will fall into a land of anarchy and banditry, but it is a fair price!"
- YFC_event.10.a: "Onwards!"
+ YFC_event.10.t: "Tragic News!" #Zdubbz
+ YFC_event.10.desc: "[FROM.GetName] has embargoed us!" #Might make desc for GGR, GMD, and CRN
+ YFC_event.10.a: "Really!?"
 
  YFC_event.11.t: "How Much?"
  YFC_event.11.desc: "It is no surprise that the large sums of money that Eraser managed to stockpile in his months as a plunderer could be useful for our industrialization efforts, however, many of our Sectorial leaders have been in open debate about the exact amount needed. In an attempt to ease the tensions between the Sectorials, Yellow Face decided to step in and make a concrete decision. He stated that we will be..."

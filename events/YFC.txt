@@ -296,7 +296,7 @@ country_event = {
 }
 
 
-country_event = {
+country_event = { #Embargo event for all nations
 	id = YFC_event.9
 	title = YFC_event.9.t
 	desc = YFC_event.9.desc
@@ -304,13 +304,35 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
+	option = { #Yes we hate YFC
 		name = YFC_event.9.a
-		army_experience = 20
+		add_political_power = 50
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+        	active = yes
+        }
+		hidden_effect = {
+			YFC = {country_event = YFC_event.10}
+		}
+		ai_chance = {
+			base = 1
+			modifier = { is_neighbor_of = YFC add = 100 }
+			modifier = { is_neighbor_of = BUN add = 100 }
+			modifier = { tag = GMD add = 100 }
+			modifier = { tag = BUN add = -200 }
+		}
+	}
+	option = { #No we like YFC
+		name = YFC_event.9.b
+		ai_chance = {
+			base = 3
+			modifier = { tag = BUN add = 200 }
+		}
 	}
 }
 
-country_event = {
+country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR, GMD, and CRN
 	id = YFC_event.10
 	title = YFC_event.10.t
 	desc = YFC_event.10.desc
@@ -320,8 +342,13 @@ country_event = {
 
 	option = {
 		name = YFC_event.10.a
-		add_stability = -0.1
-		add_war_support = 0.2
+		add_political_power = -35
+		add_stability = -0.02
+		add_opinion_modifier = { target = FROM modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = FROM
+			add_opinion_modifier = { target = YFC modifier = large_decrease }
+		}
 	}
 }
 

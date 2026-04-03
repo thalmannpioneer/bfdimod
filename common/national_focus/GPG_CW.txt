@@ -121,7 +121,7 @@ focus_tree = {
 			}
 			8 = {
 				create_unit = {
-					division = "name = \"Goiky Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5 start_manpower_factor = 0.3"
+					division = "name = \"Goiky Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.65 start_manpower_factor = 0.3"
 					owner = GPG
 					count = 1
 				}
