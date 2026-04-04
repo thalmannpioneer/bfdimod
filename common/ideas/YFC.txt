@@ -167,7 +167,7 @@ ideas = {
 		idea_YFC_economic_isolation = { #Might turn this into a modifer but idk
 			picture = ETH_customs_barrier_ITA
 			modifier = {
-				stability_weekly = -0.005
+				stability_weekly = -0.01
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.15
 			}
@@ -176,9 +176,9 @@ ideas = {
 		idea_YFC_company_reorganization = {
 			picture = ETH_customs_barrier_ITA
 			modifier = {
-				political_power_factor = 0.75
+				political_power_gain = 0.75
 				stability_factor = -0.1
-				weekly_manpower = -50
+				weekly_manpower = -100
 			}
 		}
 

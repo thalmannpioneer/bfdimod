@@ -697,21 +697,29 @@
  YFC_event.8.desc: "It had only been a week since checkpoint B had been set up along the supposed 'border' between the Corporation and the Bandits. The day of the event was like any other, few refugees crossing, some arrests, and the random machine gun on an object. The day was wrapping up like any other... \n\nUntil, during the night, checkpoint B's guards spotted a mass amount of objects heading towards them. They claimed that there were 'open borders' and that the guards at the checkpoint had no real authority. After much heated shouting, a gunshot rang out which led to an open battle. They were not refugees, but were bandits. They tried to storm the checkpoint from the small number of guards protecting it. Despite all odds, the guards held the ground and made the Bandits pay for each step forward. Even after the checkpoint was taken, the guards fell back inland and kept the fight on. One interesting report was that a squad of eight held up in a cabin, lead by Vodka Bottle, fought off a force of around a hundred objects and only lost three objects in the five hours of fighting. \n\nNight became day with the engagements only heating up. With the help of reinforcements, the combined forces pushed the Bandits back to the checkpoint. Only when nightfall arrived did the Bandits retreat from the checkpoint. The checkpoint was retaken the next day. Many of the Objects that took part in the engagement have earned medals for their bravery. The overall death toll is still being counted, but both soldiers and civilians were harmed in the fighting. No response has come from anyone in the Bandit lands. "
  YFC_event.8.a: "Rapid Escalations..."
 
- YFC_event.9.t: "Question of Yellow Face" #Zdubbz
- YFC_event.9.desc: "It's no secret that the Yellow Face Corporation has been 'buddying up' with the bunch of bandits in the south of the continent. We've also gotten reports that some other countries have already began embargoing the YFC, in hopes that they'd end the partnership before it gets out of hand. We also hold these same convictions; a raider-state spreading across the continent would be horrible for the livlihoods of our people. Though, on the otherhand, the income we gain from selling parts of our surplus does help us out quite a bit, economically speaking. Is it a wise decision to embargo the Corporation?"
+ YFC_event.9.t.a: "Question of Yellow Face" 
+ YFC_event.9.t.b: "Breaking of Trust" 
+ YFC_event.9.desc.a: "It's no secret that the Yellow Face Corporation has been 'buddying up' with the bunch of bandits in the south of the continent. We've also gotten reports that some other countries have already began embargoing the YFC, in hopes that they'd end the partnership before it gets out of hand. We also hold these same convictions; a raider-state spreading across the continent would be horrible for the livlihoods of our people. Though, on the otherhand, the income we gain from selling parts of our surplus does help us out quite a bit, economically speaking. Is it a wise decision to embargo the Corporation?"
+ YFC_event.9.desc.b: "We have received information that Yellow Face, whom we just started trading with, is now working with the raiders to the north. With this early betrayal by the Company, it has been decided to seize some assets and cut trade with them. Auf Wiedersehen mit ihnen!"
+ YFC_event.9.desc.c: "uh something for CRN hating Yellow Face, though they denounce YFC" #ZDubbz
+ YFC_event.9.desc.d: "uh something for GMD hating Yellow Face, though they take assets" #ZDubbz
  YFC_event.9.a: "Yes!"
  YFC_event.9.b: "We should just wait this out... for now." #See focus
+ YFC_event.9.c: "We do not negotiate with Terrorists!"
 
- YFC_event.10.t: "Tragic News!" #Zdubbz
- YFC_event.10.desc: "[FROM.GetName] has embargoed us!" #Might make desc for GGR, GMD, and CRN
+ YFC_event.10.t.a: "Tragic News!" 
+ YFC_event.10.t.b: "Connections Severed." 
+ YFC_event.10.desc.a: "[FROM.GetName] has embargoed us!"
+ YFC_event.10.desc.b: "Something something about evil CRN being evil idk you have fun" #ZDubbz
  YFC_event.10.a: "They don't know anything! They're... purple!"
+ YFC_event.10.b: "Such 'useful' allies!" #For CRN ZDubbz
 
  YFC_event.11.t: "How Much?"
  YFC_event.11.desc: "It is no surprise that the large sums of money that Eraser managed to stockpile in his months as a plunderer could be useful for our industrialization efforts, however, many of our Sectorial leaders have been in open debate about the exact amount needed. In an attempt to ease the tensions between the Sectorials, Yellow Face decided to step in and make a concrete decision. He stated that we will be..."
- YFC_event.11.a: "Taking None." #0 Taken, 0% Risk
- YFC_event.11.b: "Taking Some." #500K Taken, 25% Risk
- YFC_event.11.c: "Taking Half." #1.5M Taken, 50% Risk
- YFC_event.11.d: "Taking Most." #2.8M Taken, 75% Risk
+ YFC_event.11.a: "Taking None."
+ YFC_event.11.b: "Taking Some."
+ YFC_event.11.c: "Taking Half."
+ YFC_event.11.d: "Taking Most."
 
  YFC_event.12.t: "Brand new faces!"
  YFC_event.12.desc: "Recently, we've heard reports from eastern companymen that a steadily growing population of Teardroppers have been coalescing within our borders. They claim that they are from the Beach Territory, and that many of them have been leaving in droves due to overcrowding. Additionally, it seems these Teardropper clones have taken on appearances quite different to that of Teardrop themselves. Someone who seems to be the 'community organizer' type, who calls themselves Dewdrop, barely even resembles the former BFDI contestant. Regardless, these new Teardroppers do indeed pay tax, so, we shall not interfere with their happenings."

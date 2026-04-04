@@ -298,14 +298,70 @@ country_event = {
 
 country_event = { #Embargo event for all nations
 	id = YFC_event.9
-	title = YFC_event.9.t
-	desc = YFC_event.9.desc
 	picture = GFX_Temp_event
+
+	title = {
+		text = YFC_event.9.t.a 
+		trigger = {
+			NOT = {
+				tag = GGR
+				tag = CRN
+				tag = GMD
+			}
+		}
+	}
+
+	title = {
+		text = YFC_event.9.t.b 
+		trigger = {
+			OR = {
+				tag = GGR
+				tag = CRN
+				tag = GMD
+			}
+		}
+	}
+
+	desc = {
+		text = YFC_event.9.desc.a
+		trigger = {
+			NOT = {
+				tag = GGR
+				tag = CRN
+				tag = GMD
+			}
+		}
+	}
+	desc = {
+		text = YFC_event.9.desc.b
+		trigger = {
+			tag = GGR
+		}
+	}
+	desc = {
+		text = YFC_event.9.desc.c
+		trigger = {
+			tag = CRN
+		}
+	}
+	desc = {
+		text = YFC_event.9.desc.d
+		trigger = {
+			tag = GMD
+		}
+	}
 
 	is_triggered_only = yes
 
 	option = { #Yes we hate YFC
 		name = YFC_event.9.a
+		trigger = {
+			NOT = {
+				tag = GGR
+				tag = CRN
+				tag = GMD
+			}
+		}
 		add_political_power = 50
 		diplomatic_relation = {
             country = YFC
@@ -325,25 +381,120 @@ country_event = { #Embargo event for all nations
 	}
 	option = { #No we like YFC
 		name = YFC_event.9.b
+		trigger = {
+			NOT = {
+				tag = GGR
+				tag = CRN
+				tag = GMD
+			}
+		}
 		ai_chance = {
 			base = 1
 			modifier = { tag = BUN add = 200 }
 		}
 	}
+	option = { #FOR GGR
+		name = YFC_event.9.c
+		trigger = {
+			tag = GGR
+		}
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+        	active = yes
+        }
+		custom_effect_tooltip = l_money_gain_200K
+		add_to_variable = { money_amount = 2 }
+		hidden_effect = {
+			YFC = {country_event = YFC_event.10}
+		}
+	}
+	option = { #FOR CRN
+		name = YFC_event.9.c
+		trigger = {
+			tag = CRN
+		}
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+        	active = yes
+        }
+		add_opinion_modifier = { target = YFC modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = YFC
+			add_opinion_modifier = { target = CRN modifier = large_decrease }
+		}
+		hidden_effect = {
+			YFC = {country_event = YFC_event.10}
+		}
+		#Later me add news event
+	}
+	option = { #FOR GMD
+		name = YFC_event.9.c
+		trigger = {
+			tag = GMD
+		}
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+        	active = yes
+        }
+		custom_effect_tooltip = l_money_gain_300K
+		add_to_variable = { money_amount = 3 }
+		hidden_effect = {
+			YFC = {country_event = YFC_event.10}
+		}
+		#Later me add news event
+	}
 }
 
 country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR, GMD, and CRN
 	id = YFC_event.10
-	title = YFC_event.10.t
-	desc = YFC_event.10.desc
+	title = {
+		text = YFC_event.10.t.a 
+		trigger = {
+			FROM = {
+				NOT = {tag = CRN}
+			}
+		}
+	}
+	title = {
+		text = YFC_event.10.t.b 
+		trigger = {
+			FROM = {
+				tag = CRN
+			}
+		}
+	}
+
+	desc = {
+		text = YFC_event.10.desc.a
+		trigger = {
+			FROM = {
+				NOT = {tag = CRN}
+			}
+		}
+	}
+	desc = {
+		text = YFC_event.10.desc.b
+		trigger = {
+			FROM = {
+				tag = CRN
+			}
+		}
+	}
 	picture = GFX_Temp_event
 
 	is_triggered_only = yes
 
 	option = {
 		name = YFC_event.10.a
-		add_political_power = -35
-		add_stability = -0.02
+		trigger = {
+			FROM = {
+				NOT = {tag = CRN}
+			}
+		}
+
 		add_opinion_modifier = { target = FROM modifier = large_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = FROM
@@ -361,6 +512,23 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			limit = {FROM = {tag = GMD}}
 			complete_national_focus = YFC_focus_the_second_embargo
 		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = YFC_event.10.b
+		trigger = {
+			FROM = {
+				tag = CRN
+			}
+		}
+
+		add_political_power = -50
+		add_opinion_modifier = { target = FROM modifier = large_decrease }
+		every_country_with_original_tag = {
+			original_tag_to_check = FROM
+			add_opinion_modifier = { target = YFC modifier = large_decrease }
+		}
+		complete_national_focus = YFC_focus_numismatian_split
 		mark_focus_tree_layout_dirty = yes
 	}
 }
@@ -2284,11 +2452,13 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 
 	option = { 
 		name = YFC_event.54.a
-
+		add_political_power = -250
 		add_ideas = idea_YFC_economic_isolation
-
 		complete_national_focus = YFC_focus_the_great_recession
 		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			add_threat = 0.5
+		}
 	}
 }
 
