@@ -876,7 +876,7 @@
  YFC_event.45.desc: "uh put the letter here I guess also please tell me what the effects should be in the context on what I have made (So more control, pp, or something else?)"
  YFC_event.45.a: "zdubbz cough"
 
- YFC_event.46.t: "Pickpocketing expanded" #Please put a better name I got no good ones :(
+ YFC_event.46.t: "Pickpocketing expanded" #Please put a better name I got no good ones :( ZDubbz
  YFC_event.46.desc: "zdubbz something on the whole how we are able to do this and why each choice is good or bad bla bla ALSO THAT THIS IS TASER'S IDEA"
  YFC_event.46.a: "Steal X item" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
  YFC_event.46.b: "Steal Y item" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
@@ -1707,6 +1707,12 @@
  bfdinews.40.a: "To the future!"
  bfdinews.40.b: "They think this will stop us?" 
  bfdinews.40.c: "Interesting..."
+
+ bfdinews.41.t: "Numismatia - Yellow Face Split!"
+ bfdinews.41.desc: "Officials from Numismatia have denounced The Yellow Face Corporation for allegedly working with the Southern bandits. This report comes with evidence including trade deals and new routes between the Company and bandits. It should be noted that clashes between the two have also calmed down making the once de facto border seem more official. We have yet to hear from Yellow Face about this matter. Numismatia has called on other nations to quit working with Yellow Face on this matter. Could this be the quick end for the Company?"
+ bfdinews.41.a: "Really now!?"
+ bfdinews.41.b: "Just to think we could have worked together..." 
+ bfdinews.41.c: "Maybe we should cut trade..."
 
 
 # bfdinews_cities

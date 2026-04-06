@@ -1287,6 +1287,7 @@ country_event = {
                 }
                 add_political_power = 50
                 country_lock_all_division_template = no
+                army_experience = 65
                 complete_national_focus = GPG_focus_bake_taco
                 complete_national_focus = GPG_focus_break_up_the_brilliant
                 complete_national_focus = GPG_focus_yoylemetal_hand

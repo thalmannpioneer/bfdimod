@@ -174,9 +174,9 @@ ideas = {
 		}
 
 		idea_YFC_company_reorganization = {
-			picture = ETH_customs_barrier_ITA
+			picture = SOV_coup_detat_ccp_2d_sov_compatibility
 			modifier = {
-				political_power_gain = 0.75
+				political_power_gain = 1.5
 				stability_factor = -0.1
 				weekly_manpower = -100
 			}

@@ -28,6 +28,10 @@ decision_WGF_operation_coinflip_category = {
                 50 = { add_to_variable = { var_WGF_war_closeness = -5 } }
                 50 = { add_to_variable = { var_WGF_war_closeness = -10 } }
             }
+            IF = {
+                limit = {is_ai = yes}
+                add_political_power = 35 #Idk what WGF does with their PP so heres more
+            }
         }
     }
 }

@@ -858,6 +858,39 @@ news_event = {
     }
 }
 
+news_event = {
+    id = bfdinews.41
+    title = bfdinews.41.t
+    desc = bfdinews.41.desc
+    picture = GFX_bfdinews38 #Update later
+
+    major = no
+    is_triggered_only = yes
+
+    option = {
+        name = bfdinews.41.a
+        trigger = {
+            tag = YFC
+        }
+    }
+
+    option = {
+        name = bfdinews.41.b
+        trigger = {
+            tag = CRN
+        }
+    }
+
+    option = {
+        name = bfdinews.41.c
+        trigger = {
+            NOT = {
+                tag = YFC
+                tag = CRN
+            }
+        }
+    }
+}
 
 
 ##################

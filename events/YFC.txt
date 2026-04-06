@@ -389,7 +389,7 @@ country_event = { #Embargo event for all nations
 			}
 		}
 		ai_chance = {
-			base = 1
+			base = 0.5
 			modifier = { tag = BUN add = 200 }
 		}
 	}
@@ -426,8 +426,15 @@ country_event = { #Embargo event for all nations
 		}
 		hidden_effect = {
 			YFC = {country_event = YFC_event.10}
+			every_possible_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = bfdinews.41
+					days = 2
+					random_hours = 2
+				}
+			}
 		}
-		#Later me add news event
 	}
 	option = { #FOR GMD
 		name = YFC_event.9.c
