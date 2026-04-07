@@ -592,6 +592,21 @@ SpriteTypes = {
 		name = GFX_YFC_BUN23
 		textureFile = gfx/event_pictures/YFC_BUN23.dds
 	}
+
+	spriteType = {
+		name = GFX_YFC_Sector1
+		textureFile = gfx/event_pictures/YFC_Sector1.dds
+	}
+
+	spriteType = {
+		name = GFX_YFC_Sector6
+		textureFile = gfx/event_pictures/YFC_Sector6.dds
+	}
+
+	spriteType = {
+		name = GFX_YFC_Sector11
+		textureFile = gfx/event_pictures/YFC_Sector11.dds
+	}
 	
 	
 	spriteType = {

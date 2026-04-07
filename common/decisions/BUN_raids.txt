@@ -9,7 +9,14 @@ decision_BUN_raids_category = {
         visible = {
             controls_state = 85
             NOT = {controls_state = FROM}
-            NOT = {controller = {is_guaranteed_by = ROOT}}
+            FROM = {
+                NOT = {
+                    controller = {
+                        tag = EMP
+                        is_guaranteed_by = BUN
+                    }
+                }
+            }  
             NOT = {is_puppet = yes}
             has_war = no
             has_border_war = no
@@ -124,13 +131,20 @@ decision_BUN_raids_category = {
     BUN_raid_state_217 = {
         icon = GFX_decision_generic_confiscation
         state_target = yes
-        targets = { state = 220 222 }
+        targets = { state = 220 222 75 }
         on_map_mode = map_only
 
         visible = {
             controls_state = 217
             NOT = {controls_state = FROM}
-            NOT = { controller = {is_guaranteed_by = ROOT}}
+            FROM = {
+                NOT = {
+                    controller = {
+                        tag = EMP
+                        is_guaranteed_by = BUN
+                    }
+                }
+            }  
             NOT = {is_puppet = yes}
             has_border_war = no
             has_war = no
@@ -251,7 +265,14 @@ decision_BUN_raids_category = {
         visible = {
             controls_state = 218
             NOT = {controls_state = FROM}
-            NOT = { controller = {is_guaranteed_by = ROOT}}
+            FROM = {
+                NOT = {
+                    controller = {
+                        tag = EMP
+                        is_guaranteed_by = BUN
+                    }
+                }
+            }  
             NOT = {is_puppet = yes}
             has_border_war = no
             has_war = no
@@ -372,7 +393,14 @@ decision_BUN_raids_category = {
         visible = {
             controls_state = 212
             NOT = {controls_state = FROM}
-            NOT = { controller = {is_guaranteed_by = ROOT}}
+            FROM = {
+                NOT = {
+                    controller = {
+                        tag = EMP
+                        is_guaranteed_by = BUN
+                    }
+                }
+            }  
             NOT = {is_puppet = yes}
             has_border_war = no
             has_war = no

@@ -4643,7 +4643,7 @@ country_event = { #Top Hat vs Taser
 	id = YFC_sector.1
 	title = YFC_sector.1.t
     desc = YFC_sector.1.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector1
 	
 	is_triggered_only = yes
     
@@ -4672,7 +4672,7 @@ country_event = { #Hammer vs Pipe
 	id = YFC_sector.2
 	title = YFC_sector.2.t
     desc = YFC_sector.2.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector1
 	
 	is_triggered_only = yes
 
@@ -4701,7 +4701,7 @@ country_event = { #Beaker vs Hammer
 	id = YFC_sector.3
 	title = YFC_sector.3.t
     desc = YFC_sector.3.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector1
 	
 	is_triggered_only = yes
 
@@ -4730,7 +4730,7 @@ country_event = { #Taser vs Beaker
 	id = YFC_sector.4
 	title = YFC_sector.4.t
     desc = YFC_sector.4.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector1
 	
 	is_triggered_only = yes
     
@@ -4759,7 +4759,7 @@ country_event = { #Top Hat vs Pipe
 	id = YFC_sector.5
 	title = YFC_sector.5.t
     desc = YFC_sector.5.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector1
 	
 	is_triggered_only = yes
     
@@ -4791,7 +4791,7 @@ country_event = { #Top Hat
 	id = YFC_sector.6
 	title = YFC_sector.6.t
     desc = YFC_sector.6.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector6
 	
 	is_triggered_only = yes
     
@@ -4815,7 +4815,7 @@ country_event = { #Pipe
 	id = YFC_sector.7
 	title = YFC_sector.7.t
     desc = YFC_sector.7.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector6
 	
 	is_triggered_only = yes
     
@@ -4839,7 +4839,7 @@ country_event = { #Beaker
 	id = YFC_sector.8
 	title = YFC_sector.8.t
     desc = YFC_sector.8.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector6
 	
 	is_triggered_only = yes
     
@@ -4863,7 +4863,7 @@ country_event = { #Hammer
 	id = YFC_sector.9
 	title = YFC_sector.9.t
     desc = YFC_sector.9.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector6
 	
 	is_triggered_only = yes
     
@@ -4887,7 +4887,7 @@ country_event = { #Taser
 	id = YFC_sector.10
 	title = YFC_sector.10.t
     desc = YFC_sector.10.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector6
 	
 	is_triggered_only = yes
     
@@ -4915,7 +4915,7 @@ country_event = { #Pipe vs Hammer vs Taser
 	id = YFC_sector.11
 	title = YFC_sector.11.t
     desc = YFC_sector.11.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector11
 	
 	is_triggered_only = yes
     
@@ -4944,7 +4944,7 @@ country_event = { #Beaker vs Top Hat vs Taser
 	id = YFC_sector.12
 	title = YFC_sector.12.t
     desc = YFC_sector.12.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector11
 	
 	is_triggered_only = yes
     
@@ -4973,7 +4973,7 @@ country_event = { #Pipe vs Top Hat vs Taser
 	id = YFC_sector.13
 	title = YFC_sector.13.t
     desc = YFC_sector.13.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector11
 	
 	is_triggered_only = yes
     
@@ -5002,7 +5002,7 @@ country_event = { #Pipe vs Hammer vs Beaker
 	id = YFC_sector.14
 	title = YFC_sector.14.t
     desc = YFC_sector.14.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector11
 	
 	is_triggered_only = yes
     
@@ -5031,7 +5031,7 @@ country_event = { #Top Hat vs Hammer vs Beaker
 	id = YFC_sector.15
 	title = YFC_sector.15.t
     desc = YFC_sector.15.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector11
 	
 	is_triggered_only = yes
     
