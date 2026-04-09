@@ -190,9 +190,10 @@
  yfc_mercenaries_cav: "Purchase §7Combined Grape Affiliation§!"
  yfc_mercenaries_strong: "Purchase §2Unnamed Mercenary Brotherhood§!"
 
- decision_YFC_raids_category: "Raids for the wealth." #You can't even see it :sob:
- YFC_raid_state_214: "Commit a Raid!"
- YFC_raid_state_201: "Commit a Raid!"
+ decision_YFC_raids_category: "§tAvenues of Wealth§!"
+ YFC_raid_state_214: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
+ YFC_raid_state_201: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
+ YFC_raid_force_conscript_locals: "§RForce Conscript§! §YLocals§!"
  YFC_raid_run_backwards_desc: "If our raid becomes too costly, withdrawing is not a bad choice..."
 
  decision_YFC_foster_category: "Fostering A New Bunch"

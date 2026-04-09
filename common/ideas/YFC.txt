@@ -149,21 +149,6 @@ ideas = {
 			}
 		}
 
-		#WILL BE REDONE
-		idea_YFC_show_no_mercy = {
-			picture = YFC_show_no_mercy
-			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = -0.1
-				army_speed_factor = 0.1
-				army_morale_factor = 0.1
-				non_core_manpower = -0.05
-				conscription = 0.05
-				resistance_target = 0.10
-				compliance_gain = -0.01
-			}
-		}
-
 		idea_YFC_economic_isolation = { #Might turn this into a modifer but idk
 			picture = ETH_customs_barrier_ITA
 			modifier = {

@@ -212,6 +212,19 @@ idea_YFC_our_benefactors  = {
     political_power_gain = var_idea_YFC_sectors_Taser_pp #Taser
 }
 
+idea_YFC_show_no_mercy  = {
+    icon = GFX_idea_YFC_show_no_mercy
+
+	army_attack_factor = var_idea_YFC_mercy_attack
+	army_defence_factor = -0.25
+	army_speed_factor = var_idea_YFC_mercy_speed
+	army_morale_factor = var_idea_YFC_mercy_morale
+	non_core_manpower = -0.05
+	conscription = 0.05
+	resistance_target = 0.15
+	compliance_gain = -0.05
+}
+
 idea_BUN_Ticking_Bomb = { #Bunch Revolt Idea
     icon = GFX_idea_BUN_ticking_bomb
 

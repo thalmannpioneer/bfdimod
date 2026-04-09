@@ -2596,6 +2596,9 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			subtract_from_variable = { money_amount = 5 }
+			hidden_effect = {
+				BUN = {add_to_variable = { money_amount = 5 }}
+			}
 			remove_ideas = idea_YFC_neglectful_command
 			add_command_power = 50
 		}
@@ -2783,8 +2786,10 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			custom_effect_tooltip = l_money_gain_300K
-			add_to_variable = { money_amount = 3 }
+			add_manpower = -5000
+			add_political_power = -50
+			custom_effect_tooltip = l_money_gain_400K
+			add_to_variable = { money_amount = 4 }
 			add_timed_idea = {
 				idea = idea_YFC_company_reorganization
 				days = 180
@@ -2804,6 +2809,8 @@ focus_tree = {
 		
 		cost = 5
 		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -50
 			custom_effect_tooltip = l_YFC_sectors_All_Lower
 			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
 			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
@@ -2826,11 +2833,13 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_the_great_recession }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
 			#re; well if almost everyone has embargoed the yfc, how would the markets still be open? no one to trade with
 			#AI has a chance to not embargo, but also the player may still want the trade for money/guns so I don't want to game ruin them. ZDubbz
 			#Also this is a major thing for YFC that I don't want removed this quickly in the same way to the Sectors, maybe when Yellow Face takes full contorl the market can be removed
+
+			#If you are fine with this I'll think on what to put here
 
 			hidden_effect = {
 				GMD = { 
@@ -2878,14 +2887,25 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_the_second_embargo }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#re; event
-			#    not gonna lie i forgot i even made this lmao
-			#:Sob:
+			country_event = {
+				id = YFC_event.55
+				hours = 1
+			}
+			#Everything below this comment is placeholder stuff for other parts of the tree
+			set_cosmetic_tag = YFC_raiders
+			unlock_decision_category_tooltip = decision_YFC_raids_category
+			add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
+			
 		}
 	}
 }
 
 #Also just as a side note I think both first and second parts should have more stuff and not be as linear 
+
+#More stuff about the raiding things I guess:
+# -Show No Mercy sprit will now be a modifier, starts off grabage but gets better with army xp
+# -Stuff should unlock in time and not all at once
+
 #ZDubbz

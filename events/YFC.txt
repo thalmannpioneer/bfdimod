@@ -2469,7 +2469,7 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 	}
 }
 
-country_event = { #Raid event update later
+country_event = { #YFC_focus_grow_closer_ties event
 	id = YFC_event.55
 	title = YFC_event.55.t
 	desc = YFC_event.55.desc

@@ -76,6 +76,11 @@ set_popularities = {
 
  set_variable = { var_sectors_combined_cost = 100 }
 
+#Show No Mercy Idea
+ set_variable = { var_idea_YFC_mercy_attack = 0.05 }
+ set_variable = { var_idea_YFC_mercy_speed = 0.05 }
+ set_variable = { var_idea_YFC_mercy_morale = 0.05 }
+
 set_variable = {var = var_YFC_BUN_Anger value = 1 } #Useless but needed for killing Neo-Bunch
 
 set_variable = {var = var_YFC_merc_amount value = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
