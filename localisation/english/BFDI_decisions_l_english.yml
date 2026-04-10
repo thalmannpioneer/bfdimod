@@ -194,7 +194,8 @@
  YFC_raid_state_214: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
  YFC_raid_state_201: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
  YFC_raid_force_conscript_locals: "§RForce Conscript§! §YLocals§!"
- YFC_raid_run_backwards_desc: "If our raid becomes too costly, withdrawing is not a bad choice..."
+ YFC_raid_training: "§YConduct Exercises§! with §tBunch§!"
+ YFC_raid_reform: "§GReform§! the §YArmy§!"
 
  decision_YFC_foster_category: "Fostering A New Bunch"
  decision_YFC_foster_category_desc: "Time for an election season! Through funding and campaigning, we may be able to place our influence in the Bunch. May the one with the biggest budget win!\n\n§RCURRENT @BUN ERASER SUPPORT:§! [?var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?var_foster_CRN_support|Y1]"

@@ -2,7 +2,7 @@ decision_YFC_raids_category = {
 	YFC_raid_force_conscript_locals  = { 
 		icon = GFX_decision_SWE_set_army_budget #Update Later
       
-		fire_only_once = yes
+		fire_only_once = no
 
 		cost = 75
 		days_remove = 30
@@ -35,7 +35,7 @@ decision_YFC_raids_category = {
 	YFC_raid_training = { 
 		icon = GFX_decision_generic_prepare_civil_war #Update Later
       
-		fire_only_once = yes
+		fire_only_once = no
 
 		custom_cost_trigger = {
 			check_variable = { money_amount > 3 }
@@ -53,6 +53,7 @@ decision_YFC_raids_category = {
 
 		remove_effect = {
 			army_experience = 25
+			BUN = {army_experience = 10}
 		}
 
 		ai_will_do = {
@@ -60,6 +61,53 @@ decision_YFC_raids_category = {
 			modifier = {
 				add = 100
 				check_variable = { money_amount > 15 }
+			}
+		}
+	}
+
+	YFC_raid_reform = { 
+		icon = GFX_decision_generic_prepare_civil_war #Update Later
+      
+		fire_only_once = no
+
+		visible = {
+			check_variable = {
+                var_idea_YFC_mercy_attack < 0.24
+            }
+		}
+
+		available = {
+			has_army_experience > 35
+		}
+
+		days_remove = 75
+		days_re_enable = 15
+
+		complete_effect = {
+			army_experience = -35
+        }
+
+		remove_effect = {
+			custom_effect_tooltip = l_YFC_raid_improve
+			IF = {
+				limit = {
+					check_variable = {
+						var_idea_YFC_mercy_attack < 0.19
+					}
+				}
+				remove_ideas = idea_YFC_neglectful_command
+			}
+			add_to_variable = { var_idea_YFC_mercy_attack = 0.05 }
+			add_to_variable = { var_idea_YFC_mercy_speed = 0.04 }
+			add_to_variable = { var_idea_YFC_mercy_morale = 0.03 }
+			add_to_variable = { var_idea_YFC_raid_modifer = 0.15 }
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_army_experience > 35
 			}
 		}
 	}
@@ -96,8 +144,8 @@ decision_YFC_raids_category = {
 					num_provinces = 1
 					on_win = YFC_borderwars.1
 					on_lose = YFC_borderwars.2
-					modifier = 0.15
-     				terrain_factor = 0.5
+					modifier = var_idea_YFC_raid_modifer
+     				terrain_factor = -0.5
 				}	
 				defender = {
 					state = FROM
@@ -157,8 +205,8 @@ decision_YFC_raids_category = {
 					num_provinces = 1
 					on_win = YFC_borderwars.1
 					on_lose = YFC_borderwars.2
-					modifier = 0.15
-     				terrain_factor = 0.5
+					modifier = var_idea_YFC_raid_modifer
+     				terrain_factor = -0.5
 				}	
 				defender = {
 					state = FROM
