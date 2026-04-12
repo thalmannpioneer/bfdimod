@@ -1,12 +1,12 @@
 decision_YFC_raids_category = {
-	YFC_raid_force_conscript_locals  = { 
+	YFC_raid_force_conscript_locals = { 
 		icon = GFX_decision_SWE_set_army_budget #Update Later
       
 		fire_only_once = no
 
 		cost = 75
 		days_remove = 30
-		days_re_enable = 360
+		days_re_enable = 270
 
 		complete_effect = {
 			add_war_support = -0.05
@@ -42,7 +42,7 @@ decision_YFC_raids_category = {
 		}
 		custom_cost_text = decisions_cost_money_300k
 		days_remove = 45
-		days_re_enable = 180
+		days_re_enable = 90
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 3 }
@@ -52,7 +52,7 @@ decision_YFC_raids_category = {
         }
 
 		remove_effect = {
-			army_experience = 25
+			army_experience = 20
 			BUN = {army_experience = 10}
 		}
 
@@ -92,7 +92,7 @@ decision_YFC_raids_category = {
 			IF = {
 				limit = {
 					check_variable = {
-						var_idea_YFC_mercy_attack < 0.19
+						var_idea_YFC_mercy_attack > 0.19
 					}
 				}
 				remove_ideas = idea_YFC_neglectful_command
@@ -164,10 +164,14 @@ decision_YFC_raids_category = {
 				has_political_power > 25
 			}
 			modifier = {
+				add = -100
+				has_army_size < 1
+			}
+			modifier = {
 				add = -10
 				AND = {
-					24 = {controller = {is_ai = no}}
-					24 = {controller = {has_war = yes}}
+					FROM = {controller = {is_ai = no}}
+					FROM = {controller = {has_war = yes}}
 				}
 			}
 		}
@@ -225,10 +229,14 @@ decision_YFC_raids_category = {
 				has_political_power > 25
 			}
 			modifier = {
+				add = -100
+				has_army_size < 1
+			}
+			modifier = {
 				add = -10
 				AND = {
-					24 = {controller = {is_ai = no}}
-					24 = {controller = {has_war = yes}}
+					FROM = {controller = {is_ai = no}}
+					FROM = {controller = {has_war = yes}}
 				}
 			}
 		}

@@ -75,16 +75,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 85
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 0.25
                         terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -95,16 +95,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 85
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 1
                         terrain_factor = -0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -203,16 +203,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 217
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 0.25
                         terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -223,16 +223,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 217
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 1
                         terrain_factor = -0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -331,16 +331,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 218
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 0.25
                         terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -351,16 +351,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 218
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 1
                         terrain_factor = -0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -459,16 +459,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 212
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 0.25
                         terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }
@@ -479,16 +479,16 @@ decision_BUN_raids_category = {
                     attacker = {
                         state = 212
                         num_provinces = 1
-                        on_win = YFC_borderwars.1
-                        on_lose = YFC_borderwars.2
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
                         modifier = 1
                         terrain_factor = -0.5
                     }
                     defender = {
                         state = FROM
                         num_provinces = 1
-                        on_win = YFC_borderwars.3
-                        on_lose = BUN_borderwars.5
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
                         dig_in_factor = 2
                     }
                 }

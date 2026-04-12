@@ -161,9 +161,9 @@ ideas = {
 		idea_YFC_company_reorganization = {
 			picture = SOV_coup_detat_ccp_2d_sov_compatibility
 			modifier = {
-				political_power_gain = 1.5
+				political_power_gain = 2
 				stability_factor = -0.1
-				weekly_manpower = -100
+				weekly_manpower = -150
 			}
 		}
 

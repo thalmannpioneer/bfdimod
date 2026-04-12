@@ -2787,7 +2787,6 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_manpower = -5000
-			add_political_power = -50
 			custom_effect_tooltip = l_money_gain_400K
 			add_to_variable = { money_amount = 4 }
 			add_timed_idea = {
@@ -2810,7 +2809,6 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_stability = -0.05
-			add_political_power = -50
 			custom_effect_tooltip = l_YFC_sectors_All_Lower
 			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
 			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }

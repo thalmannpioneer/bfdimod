@@ -920,10 +920,6 @@
  YFC_event.54.desc: "Something something about how sectors are fighting, chaos, and loss in money. YFC has made a bad choice and it seems we are fucked"
  YFC_event.54.a: "Save the sinking ship!"
 
- BUN_borderwars.5.t: "Raiders Attacked!"
- BUN_borderwars.5.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
- BUN_borderwars.5.a: "We cannot allow more raids to happen!"
-
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"
@@ -1268,6 +1264,24 @@
  BUN_YFC.8.t: "The final battle is upon us!" #BUN sees this
  BUN_YFC.8.desc: "From some eavesdropping, we were able to figure out that the Yellow Facers are planning some type of large offensive. We'd say more, but the object who *was* eavesdropping got his arm exploded by a grenade shortly after, and isn't... doing to well, to say the least. Actually, saying the most here, he's probably gonna die. Anyways, we should probably stay alert and, like, fight good."
  BUN_YFC.8.a: "Yeah! Hold the line!" 
+
+# BUN_borderwars
+
+ BUN_borderwars.1.t: "Placeholder Bunch Win"
+ BUN_borderwars.1.desc: "Bunch Raiders won lol easy also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder"
+ BUN_borderwars.1.a: "Placing Holders" 
+
+ BUN_borderwars.2.t: "Placeholder Bunch Loss"
+ BUN_borderwars.2.desc: "Bunch Raiders lost rigged also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder"
+ BUN_borderwars.2.a: "Placing Holders" 
+
+ BUN_borderwars.3.t: "Raiders Repelled"
+ BUN_borderwars.3.desc: "Despite the sudden attack by the raiders, we were able to defend from their vicious assaults. After a few hours of engagement we managed to get the upperhand over them. Now they turn tail and flee back to their bandit country. We have won for now, but they will be back."
+ BUN_borderwars.3.a: "Excellent development." 
+
+ BUN_borderwars.4.t: "Raiders Attacked!"
+ BUN_borderwars.4.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
+ BUN_borderwars.4.a: "We cannot allow more raids to happen!"
 
 # GTR
  GTR_event.1.t: "Gaudeamus Igitur"

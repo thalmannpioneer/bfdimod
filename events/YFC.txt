@@ -389,7 +389,7 @@ country_event = { #Embargo event for all nations
 			}
 		}
 		ai_chance = {
-			base = 0.5
+			base = 1
 			modifier = { tag = BUN add = 200 }
 		}
 	}
@@ -431,7 +431,7 @@ country_event = { #Embargo event for all nations
 				news_event = {
 					id = bfdinews.41
 					days = 2
-					random_hours = 2
+					random_hours = 24
 				}
 			}
 		}
@@ -2459,7 +2459,7 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 
 	option = { 
 		name = YFC_event.54.a
-		add_political_power = -250
+		add_political_power = -300
 		add_ideas = idea_YFC_economic_isolation
 		complete_national_focus = YFC_focus_the_great_recession
 		mark_focus_tree_layout_dirty = yes
@@ -2501,6 +2501,20 @@ country_event = {
 	option = {
 		name = YFC_borderwars.1.a
 		army_experience = 5
+		random_list = {
+			50 = {
+				custom_effect_tooltip = l_money_gain_50K
+				add_to_variable = { money_amount = 0.5 }
+			}
+			35 = {
+				custom_effect_tooltip = l_money_gain_100K
+				add_to_variable = { money_amount = 1 }
+			}
+			15 = {
+				custom_effect_tooltip = l_money_gain_200K
+				add_to_variable = { money_amount = 2 }
+			}
+		}
 	}
 }
 
@@ -2516,7 +2530,7 @@ country_event = {
 
 	option = {
 		name = YFC_borderwars.2.a
-		army_experience = 2
+		army_experience = 8
 	}
 }
 
@@ -2548,141 +2562,7 @@ country_event = {
 
 	option = {
 		name = YFC_borderwars.4.a
-		custom_effect_tooltip = l_YFC_raid_effect
-		hidden_effect = {
-			random_list = {
-				10 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -250
-					}
-					YFC = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 250
-						}
-					}
-				}
-				20 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -350
-					}
-					YFC = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 350
-						}
-					}
-				}
-				40 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -500
-					}
-					YFC = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 500
-						}
-					}
-				}
-				20 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -750
-					}
-					YFC = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 750
-						}
-					}
-				}
-				10 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -1000
-					}
-					YFC = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 1000
-						}
-					}
-				}
-			}
-
-			IF = {
-				limit = {
-					has_tech = tech_support
-				}
-				random_list = {
-					20 = {
-						#Nothing ever happens
-					}
-					40 = {
-						add_equipment_to_stockpile = {
-							type = support_equipment_1
-							amount = -50
-						}
-						YFC = {
-							add_equipment_to_stockpile = {
-								type = support_equipment_1
-								amount = 50
-							}
-						}
-					}
-					40 = {
-						add_equipment_to_stockpile = {
-							type = support_equipment_1
-							amount = -100
-						}
-						YFC = {
-							add_equipment_to_stockpile = {
-								type = support_equipment_1
-								amount = 100
-							}
-						}
-					}
-				}
-			}
-
-			IF = {
-				limit = {
-					has_tech = gw_artillery
-				}
-				random_list = {
-					20 = {
-						#Nothing ever happens
-					}
-					40 = {
-						add_equipment_to_stockpile = {
-							type = artillery_equipment_1
-							amount = -50
-						}
-						YFC = {
-							add_equipment_to_stockpile = {
-								type = artillery_equipment_1
-								amount = 50
-							}
-						}
-					}
-					40 = {
-						add_equipment_to_stockpile = {
-							type = artillery_equipment_1
-							amount = -100
-						}
-						YFC = {
-							add_equipment_to_stockpile = {
-								type = artillery_equipment_1
-								amount = 100
-							}
-						}
-					}
-				}
-			}
-		}	
+		army_experience = 2
 	}
 }
 

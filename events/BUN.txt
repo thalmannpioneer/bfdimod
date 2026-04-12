@@ -379,10 +379,57 @@ country_event = {
 ########RAIDS EVENTS########
 ########################################
 
+country_event = {
+	#BUN wins view
+	id = BUN_borderwars.1
+	title = BUN_borderwars.1.t
+	desc = BUN_borderwars.1.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = BUN_borderwars.1.a
+		army_experience = 5
+	}
+}
+
+country_event = {
+	#BUN loses view
+	id = BUN_borderwars.2
+	title = BUN_borderwars.2.t
+	desc = BUN_borderwars.2.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.2.a
+		army_experience = 5
+	}
+}
+
+country_event = {
+	#Defender wins view
+	id = BUN_borderwars.3
+	title = BUN_borderwars.3.t
+	desc = BUN_borderwars.3.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = BUN_borderwars.3.a			
+		army_experience = 5
+	}
+}
 
 country_event = {
 	#Defender loses view
-	id = BUN_borderwars.5
+	id = BUN_borderwars.4
 	title = BUN_borderwars.5.t
 	desc = BUN_borderwars.5.desc
 	picture = GFX_YFC_raids1
