@@ -1540,6 +1540,21 @@ SpriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_focus_YFC_establish_law_presence"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_law_presence.dds"
+	}
+
+		spriteType = {
+		name = "GFX_focus_YFC_advertise_our_products"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_advertise_our_products.dds"
+	}
+
+		spriteType = {
+		name = "GFX_focus_YFC_incentivize_employment"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_incentivize_employment.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_YFC_economic_issue"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_economic_issue.dds"
 	}
@@ -1597,6 +1612,11 @@ SpriteTypes = {
 	spriteType = {
 		name = "GFX_focus_YFC_spread_out_sectors"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_spread_out_sectors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_second_city_in_peoniele"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_second_city_in_peoniele.dds"
 	}
 
 	spriteType = {

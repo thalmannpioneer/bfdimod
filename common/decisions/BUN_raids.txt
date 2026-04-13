@@ -119,6 +119,10 @@ decision_BUN_raids_category = {
                 has_political_power > 40
             }
             modifier = {
+                add = -100
+                has_army_size = {size < 1}
+            }
+            modifier = {
                 add = -10
                 AND = {
                     FROM = {controller = {is_ai = no}}
@@ -245,6 +249,10 @@ decision_BUN_raids_category = {
             modifier = {
                 add = 15
                 has_political_power > 40
+            }
+            modifier = {
+                add = -100
+                has_army_size = {size < 1}
             }
             modifier = {
                 add = -10
@@ -375,6 +383,10 @@ decision_BUN_raids_category = {
                 has_political_power > 40
             }
             modifier = {
+                add = -100
+                has_army_size = {size < 1}
+            }
+            modifier = {
                 add = -10
                 AND = {
                     FROM = {controller = {is_ai = no}}
@@ -501,6 +513,10 @@ decision_BUN_raids_category = {
             modifier = {
                 add = 15
                 has_political_power > 40
+            }
+            modifier = {
+                add = -100
+                has_army_size = {size < 1}
             }
             modifier = {
                 add = -10

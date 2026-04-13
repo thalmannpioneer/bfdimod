@@ -1132,7 +1132,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_scope_out_sea_trade
 		x = 0
 		y = 2
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_second_city_in_peoniele
 		prerequisite = { focus = YFC_focus_spread_out_sectors }
 		prerequisite = { focus = YFC_focus_scope_out_sea_trade focus = YFC_focus_expand_northern_trade }
 		mutually_exclusive = { focus = YFC_focus_big_yoyleton }
@@ -1431,7 +1431,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_foster_new_society
 		x = 1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_establish_law_presence
 
 		available = {
 			custom_trigger_tooltip = {
@@ -1559,7 +1559,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_stimulate_bunch_business
 		x = 1
 		y = 2
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_advertise_our_products
 
 		prerequisite = { focus = YFC_focus_stimulate_bunch_business  focus = YFC_focus_establish_law_presence }
 
@@ -1651,7 +1651,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_banks_too_big_to_fail
 		x = -3
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_incentivize_employment
 		prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
 		prerequisite = { focus = YFC_focus_advertise_YFC_products }
 		prerequisite = { focus = YFC_focus_stimulate_bunch_business }
@@ -1671,6 +1671,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = l_money_gain_300K
 			add_to_variable = { money_amount = 3 }
+			add_manpower = 1000
 			add_political_power = -50
 		}
 

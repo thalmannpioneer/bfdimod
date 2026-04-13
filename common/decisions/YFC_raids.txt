@@ -38,21 +38,21 @@ decision_YFC_raids_category = {
 		fire_only_once = no
 
 		custom_cost_trigger = {
-			check_variable = { money_amount > 3 }
+			check_variable = { money_amount > 4 }
 		}
-		custom_cost_text = decisions_cost_money_300k
+		custom_cost_text = decisions_cost_money_400k
 		days_remove = 45
 		days_re_enable = 90
 
 		complete_effect = {
-			subtract_from_variable = { money_amount = 3 }
+			subtract_from_variable = { money_amount = 4 }
 			hidden_effect = {
-				BUN = {add_to_variable = { money_amount = 3 }}
+				BUN = {add_to_variable = { money_amount = 4 }}
 			}
         }
 
 		remove_effect = {
-			army_experience = 20
+			army_experience = 30
 			BUN = {army_experience = 10}
 		}
 
@@ -60,7 +60,62 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 100
-				check_variable = { money_amount > 15 }
+				check_variable = { money_amount > 16 }
+			}
+		}
+	}
+
+	YFC_raid_guns = { 
+		icon = GFX_decision_generic_prepare_civil_war #Update Later
+      
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 5 }
+		}
+		custom_cost_text = decisions_cost_money_500k
+		days_remove = 120
+		days_re_enable = 360
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 5 }
+        }
+
+		remove_effect = {
+			random_list = {
+				15 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 600
+					}
+				}
+				30 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 450
+					}
+				}
+				60 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 200
+					}
+				}
+				20 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 50
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_army_size = {size < 3}
+				check_variable = { money_amount > 12 }
 			}
 		}
 	}
@@ -126,8 +181,8 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		cost = 25
-		days_re_enable = 45
+		cost = 0
+		days_re_enable = 50
 
 		complete_effect = {
 			FROM = {
@@ -161,11 +216,11 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 10
-				has_political_power > 25
+				has_political_power > 35
 			}
 			modifier = {
 				add = -100
-				has_army_size < 1
+				has_army_size = {size < 1}
 			}
 			modifier = {
 				add = -10
@@ -191,8 +246,8 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		cost = 25
-		days_re_enable = 45
+		cost = 0
+		days_re_enable = 50
 
 		complete_effect = {
 			FROM = {
@@ -226,17 +281,60 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 10
-				has_political_power > 25
+				has_political_power > 35
 			}
 			modifier = {
 				add = -100
-				has_army_size < 1
+				has_army_size = {size < 1}
 			}
 			modifier = {
 				add = -10
 				AND = {
 					FROM = {controller = {is_ai = no}}
 					FROM = {controller = {has_war = yes}}
+				}
+			}
+		}
+	}
+
+	YFC_raid_nation = {
+		icon = GFX_decision_infiltrate_state
+
+		available = { 
+			has_manpower > 2000
+		}
+
+		targets = { SRR GGR } 
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				check_variable = {var_YCF_raid_attacks > 3}
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		days_re_enable = 180
+		cost = 100
+
+		complete_effect = {
+			add_manpower = -2000
+		}
+
+		remove_effect = {
+			add_political_power = 25
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 300
+			}
+			modifier = {
+				add = 10
+				FROM = {
+					check_variable = {var_YCF_raid_attacks > 5}
 				}
 			}
 		}

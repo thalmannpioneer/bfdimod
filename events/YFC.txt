@@ -501,7 +501,8 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 				NOT = {tag = CRN}
 			}
 		}
-
+		custom_effect_tooltip = l_money_lose_50K
+		subtract_from_variable = { money_amount = 0.5 }
 		add_opinion_modifier = { target = FROM modifier = large_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = FROM
@@ -2500,7 +2501,7 @@ country_event = {
 
 	option = {
 		name = YFC_borderwars.1.a
-		army_experience = 5
+		army_experience = 8
 		random_list = {
 			50 = {
 				custom_effect_tooltip = l_money_gain_50K
@@ -2530,7 +2531,7 @@ country_event = {
 
 	option = {
 		name = YFC_borderwars.2.a
-		army_experience = 8
+		army_experience = 10
 	}
 }
 
@@ -2563,6 +2564,8 @@ country_event = {
 	option = {
 		name = YFC_borderwars.4.a
 		army_experience = 2
+		add_war_support = -0.005
+		add_to_variable = {var_YCF_raid_attacks = 1}
 	}
 }
 
