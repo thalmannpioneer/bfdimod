@@ -58,6 +58,8 @@
  decisions_cost_money_200k_blocked: "£GFX_dollar_texticon §R200K§!"
  decisions_cost_money_300k: "£GFX_dollar_texticon §Y300K§!"
  decisions_cost_money_300k_blocked: "£GFX_dollar_texticon §R300K§!"
+ decisions_cost_money_400k: "£GFX_dollar_texticon §Y400K§!"
+ decisions_cost_money_400k_blocked: "£GFX_dollar_texticon §R400K§!"
  decisions_cost_money_500k: "£GFX_dollar_texticon §Y500K§!"
  decisions_cost_money_500k_blocked: "£GFX_dollar_texticon §R500K§!"
  decisions_cost_money_1m: "£GFX_dollar_texticon §Y1M§!"

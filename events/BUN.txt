@@ -430,16 +430,23 @@ country_event = {
 country_event = {
 	#Defender loses view
 	id = BUN_borderwars.4
-	title = BUN_borderwars.5.t
-	desc = BUN_borderwars.5.desc
+	title = BUN_borderwars.4.t
+	desc = BUN_borderwars.4.desc
 	picture = GFX_YFC_raids1
 
 	fire_only_once = no
 	is_triggered_only = yes
 
 	option = {
-		name = BUN_borderwars.5.a
+		name = BUN_borderwars.4.a
 		custom_effect_tooltip = l_YFC_raid_effect
+		IF = {
+			limit = {
+				tag = GTR
+				has_war_support < 0.25
+			}
+			add_war_support 0.02
+		}
 		hidden_effect = {
 			BUN = {add_to_variable = { money_amount = 1 }}
 			random_list = {

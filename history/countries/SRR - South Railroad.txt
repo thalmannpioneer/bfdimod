@@ -2,7 +2,7 @@
 
 capital = 202
 
-set_variable = { var_YCF_tradeSell_index = 4 }
+set_variable = { var_YCF_raid_attacks = 0 }
 
 set_research_slots = 1
 
