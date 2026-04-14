@@ -2564,7 +2564,7 @@ country_event = {
 	option = {
 		name = YFC_borderwars.4.a
 		army_experience = 2
-		add_war_support = -0.005
+		add_stability = -0.005
 		add_to_variable = {var_YCF_raid_attacks = 1}
 	}
 }
@@ -2669,6 +2669,68 @@ country_event = {
 		name = YFC_borderwars.8.a
 		custom_effect_tooltip = l_YFC_eastern_loseall_10
 		army_experience = 2
+	}
+}
+
+country_event = {
+	#Cool Raid YFC lose
+	id = YFC_borderwars.9
+	title = YFC_borderwars.9.t
+	desc = YFC_borderwars.9.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.9.a
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 300
+			max = 1000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 25
+			max = 200
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+}
+
+country_event = {
+	#Cool Raid YFC win
+	id = YFC_borderwars.10
+	title = YFC_borderwars.10.t
+	desc = YFC_borderwars.10.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.10.a
+		add_political_power = 50
+		FROM = {add_political_power = -100}
+	}
+}
+
+country_event = {
+	#Cool Raid defender loses
+	id = YFC_borderwars.11
+	title = YFC_borderwars.11.t
+	desc = YFC_borderwars.11.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.11.a
 	}
 }
 

@@ -1,12 +1,12 @@
 decision_YFC_raids_category = {
 	YFC_raid_force_conscript_locals = { 
-		icon = GFX_decision_SWE_set_army_budget #Update Later
+		icon = GFX_decisions_YFC_raid_locals
       
 		fire_only_once = no
 
 		cost = 75
-		days_remove = 30
-		days_re_enable = 270
+		days_remove = 45
+		days_re_enable = 360
 
 		complete_effect = {
 			add_war_support = -0.05
@@ -15,7 +15,7 @@ decision_YFC_raids_category = {
 		remove_effect = {
 			add_manpower = 3500
 			hidden_effect = {
-				BUN = {add_manpower = 5000}
+				BUN = {add_manpower = 2000}
 			}
 		}
 
@@ -33,7 +33,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_training = { 
-		icon = GFX_decision_generic_prepare_civil_war #Update Later
+		icon = GFX_decisions_YFC_raid_trainings
       
 		fire_only_once = no
 
@@ -41,6 +41,11 @@ decision_YFC_raids_category = {
 			check_variable = { money_amount > 4 }
 		}
 		custom_cost_text = decisions_cost_money_400k
+
+		visible = {
+			has_idea = idea_YFC_neglectful_command
+		}
+		
 		days_remove = 45
 		days_re_enable = 90
 
@@ -52,7 +57,7 @@ decision_YFC_raids_category = {
         }
 
 		remove_effect = {
-			army_experience = 30
+			army_experience = 35
 			BUN = {army_experience = 10}
 		}
 
@@ -66,7 +71,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_guns = { 
-		icon = GFX_decision_generic_prepare_civil_war #Update Later
+		icon = GFX_decisions_YFC_raid_buy_guns
       
 		fire_only_once = no
 
@@ -121,7 +126,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_reform = { 
-		icon = GFX_decision_generic_prepare_civil_war #Update Later
+		icon = GFX_decisions_YFC_raid_army_reform
       
 		fire_only_once = no
 
@@ -168,7 +173,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_state_201 = {
-		icon = GFX_decision_generic_confiscation
+		icon = GFX_decisions_YFC_raid_commit_raid
 		state_target = yes
         targets = { state = 24 214 }
         on_map_mode = map_only
@@ -233,7 +238,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_state_214 = {
-		icon = GFX_decision_generic_confiscation
+		icon = GFX_decisions_YFC_raid_commit_raid
 		state_target = yes
         targets = { state = 210 }
         on_map_mode = map_only
@@ -301,40 +306,57 @@ decision_YFC_raids_category = {
 		icon = GFX_decision_infiltrate_state
 
 		available = { 
-			has_manpower > 2000
+			has_manpower > 3000
+			has_equipment = {infantry_equipment > 500}
 		}
 
 		targets = { SRR GGR } 
 		targets_dynamic = yes
 		target_trigger = {
 			FROM = {
-				check_variable = {var_YCF_raid_attacks > 3}
+				check_variable = {var_YCF_raid_attacks > 2}
 			}
 		}
 
 		fire_only_once = no
-		days_remove = 45
-		days_re_enable = 180
+		days_remove = 55
+		days_re_enable = 30
 		cost = 100
 
 		complete_effect = {
-			add_manpower = -2000
+			add_manpower = -3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
 		}
 
 		remove_effect = {
-			add_political_power = 25
+			set_temp_variable = { Raid_Chance_Fail = 10 }
+			subtract_from_temp_variable = { Raid_Chance_Fail = FROM.var_YCF_raid_attacks }
+
+			random_list = {
+				FROM.var_YCF_raid_attacks = {
+					country_event = YFC_borderwars.10
+				}
+				Raid_Chance_Fail = {
+					country_event = YFC_borderwars.9
+				}
+			}
+
+			hidden_effect = {
+				FROM = {
+					set_variable = {var_YCF_raid_attacks = 0}
+				}
+			}
 		}
 
 		ai_will_do = {
 			base = 0
 			modifier = {
 				add = 10
-				has_political_power > 300
-			}
-			modifier = {
-				add = 10
 				FROM = {
-					check_variable = {var_YCF_raid_attacks > 5}
+					check_variable = {var_YCF_raid_attacks > 6}
 				}
 			}
 		}

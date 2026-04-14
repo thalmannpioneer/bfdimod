@@ -952,6 +952,14 @@
  YFC_borderwars.8.desc: "uhh don't put text here yet"
  YFC_borderwars.8.a: "...?"
 
+ YFC_borderwars.9.t: "Failed Attack." #ZDubbz if you want to
+ YFC_borderwars.9.desc: "Our forces returned a few hours ago, battered. It seems that they were ready for us and prepared quite well. As a result, our forces took heavy losses and were unable to break through to the countryside. We will return to try again, some day..."
+ YFC_borderwars.9.a: "Unfortunate outcome."
+
+ YFC_borderwars.10.t: "Successful Attack!" #ZDubbz if you want to
+ YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although they had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. They came back victorious carrying the spoils of..."
+ YFC_borderwars.10.a: "placeholder lol"
+
 # YFC_BUN
 
  YFC_BUN.1.t: "Picking the Cards"
@@ -1232,7 +1240,7 @@
  BUN_YFC.1.a: "The Bunch, forever and always!"
 
  BUN_YFC.1.t.z: "The Yellow Facer Ideology Crumbles." #if eraser is jailed
- BUN_YFC.1.desc.z: "We're finally free! After our defeat in the war as the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Eraser was broken out of jail a couple of hours ago too, and he seems to be almost be ready to lead us again! We say 'almost' because he's still dealing with the grief from Pen's unfortunate death. Blocky, that traitor, decided to side with the Corporation, so, Eraser'll be the only one leading us for now. We'll sort out government stuff later, for now, we've gotta make sure this revolution doesn't die!"
+ BUN_YFC.1.desc.z: "We're finally free! After our defeat in the war as the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Eraser was broken out of jail a couple of hours ago too, and he seems to be almost be ready to lead us again! We say 'almost' because he's still dealing with the grief from Pen's unfortunate death. Blocky, that traitor, decided to side with the Corporation, so, soon Eraser'll be the only one leading us for now. We'll sort out government stuff later, for now, we've gotta make sure this revolution doesn't die!"
  BUN_YFC.1.b: "The Bunch, forever and always!"
 
  BUN_YFC.2.t: "Our Darkest Day." #YFC sees this
