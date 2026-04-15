@@ -1355,7 +1355,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_bunchivist_problem
 		x = -1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_foster_new_society
 		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
 		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 		mutually_exclusive = { focus = YFC_focus_clamp_down_on_bunchivism }
@@ -1374,7 +1374,7 @@ focus_tree = {
 					limit = {
 						YFC = {controls_state = 217}
 					}
-					set_variable = { var_foster_BUN_support = 20 } #High but can't rise quickly
+					set_variable = { var_foster_BUN_support = 22 } #High but can't rise quickly
 					set_variable = { var_foster_CRN_support = 3 }
 				}
 				ELSE = {
@@ -1403,7 +1403,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_bunchivist_problem
 		x = 1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_support_blocky
 		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
 		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 

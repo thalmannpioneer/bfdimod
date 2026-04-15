@@ -57,7 +57,7 @@ decision_YFC_raids_category = {
         }
 
 		remove_effect = {
-			army_experience = 35
+			army_experience = 50
 			BUN = {army_experience = 10}
 		}
 
@@ -218,11 +218,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				has_political_power > 35
-			}
+			base = 5
 			modifier = {
 				add = -100
 				has_army_size = {size < 1}
@@ -283,11 +279,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				has_political_power > 35
-			}
+			base = 5
 			modifier = {
 				add = -100
 				has_army_size = {size < 1}
@@ -307,7 +299,7 @@ decision_YFC_raids_category = {
 
 		available = { 
 			has_manpower > 3000
-			has_equipment = {infantry_equipment > 500}
+			has_equipment = {infantry_equipment > 499}
 		}
 
 		targets = { SRR GGR } 
@@ -332,12 +324,30 @@ decision_YFC_raids_category = {
 		}
 
 		remove_effect = {
+			army_experience = 10
 			set_temp_variable = { Raid_Chance_Fail = 10 }
-			subtract_from_temp_variable = { Raid_Chance_Fail = FROM.var_YCF_raid_attacks }
-
+			IF = {
+				limit = {
+					FROM = {
+						check_variable = {var_YCF_raid_attacks > 10}
+					}
+					set_temp_variable = { Raid_Chance_Fail = 0 }
+				}
+			}
+			ELSE = {
+				subtract_from_temp_variable = { Raid_Chance_Fail = FROM.var_YCF_raid_attacks }
+			}
+			
 			random_list = {
 				FROM.var_YCF_raid_attacks = {
-					country_event = YFC_borderwars.10
+					effect_tooltip = {
+        				country_event = YFC_borderwars.10
+   		 			}
+					hidden_effect = {
+						FROM = {
+							country_event = YFC_borderwars.11
+						}
+					}	
 				}
 				Raid_Chance_Fail = {
 					country_event = YFC_borderwars.9
@@ -356,7 +366,7 @@ decision_YFC_raids_category = {
 			modifier = {
 				add = 10
 				FROM = {
-					check_variable = {var_YCF_raid_attacks > 6}
+					check_variable = {var_YCF_raid_attacks > 4}
 				}
 			}
 		}

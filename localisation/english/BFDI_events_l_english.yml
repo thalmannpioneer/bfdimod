@@ -957,8 +957,11 @@
  YFC_borderwars.9.a: "Unfortunate outcome."
 
  YFC_borderwars.10.t: "Successful Attack!" #ZDubbz if you want to
- YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although they had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. They came back victorious carrying the spoils of..."
- YFC_borderwars.10.a: "placeholder lol"
+ YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although [FROM.GetName] had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. They came back victorious carrying the spoils of..."
+ YFC_borderwars.10.a: "Bags of cash!"
+ YFC_borderwars.10.b: "Boxes of rifles!"
+ YFC_borderwars.10.c: "Recurited captives!"
+ YFC_borderwars.10.d: "Trains!"
 
 # YFC_BUN
 

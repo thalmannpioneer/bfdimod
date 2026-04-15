@@ -1530,6 +1530,16 @@ SpriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_focus_YFC_foster_new_society"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_foster_new_society.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_YFC_support_blocky"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_support_blocky.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_YFC_bunchivist_new_deal"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunchivist_new_deal.dds"
 	}
