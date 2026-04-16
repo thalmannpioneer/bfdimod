@@ -4,6 +4,7 @@ decision_YFC_trade_category= {
         
 		visible = {
 			has_completed_focus = YFC_focus_open_the_market
+			NOT = {has_idea = idea_YFC_economic_isolation}
 		}
 
 		custom_cost_trigger = {
@@ -171,7 +172,11 @@ decision_YFC_trade_category= {
 		icon = GFX_decisions_YFC_trade_child_labor
         
 		visible = {
-			has_completed_focus = YFC_focus_industrialize_or_die
+			OR = {
+				has_completed_focus = YFC_focus_industrialize_or_die
+				has_completed_focus = YFC_focus_close_the_markets #Will most likely move this elsewhere
+			}
+			
 		}
 
 		fire_only_once = yes

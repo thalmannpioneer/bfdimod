@@ -402,11 +402,23 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 3
 			modifier = {
 				factor = 100
 				has_country_flag = raiders_path
 			}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = -1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = -1000
+		 	}
 		}
 	}
 
@@ -476,6 +488,18 @@ focus_tree = {
 				factor = 100
 				has_country_flag = money_path
 			}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+				add = -1000
+		 	}
 		}
 	}
 
@@ -2566,6 +2590,10 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 		
+		ai_will_do = {
+			base = 7
+		}
+
 		cost = 5
 		completion_reward = {
 			country_event = YFC_event.53
@@ -2594,6 +2622,10 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 
+		ai_will_do = {
+			base = 7
+		}
+
 		cost = 5
 		completion_reward = {
 			subtract_from_variable = { money_amount = 3 }
@@ -2613,6 +2645,10 @@ focus_tree = {
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_establish_formal_connection }
 		prerequisite = { focus = YFC_focus_diverting_funds }
+
+		ai_will_do = {
+			base = 10
+		}
 
 		cost = 5
 		completion_reward = {
@@ -2657,6 +2693,10 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = YFC_focus_great_business_partnership }
+
+		ai_will_do = {
+			base = 5
+		}
 
 		cost = 8
 		completion_reward = {
@@ -2722,6 +2762,10 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_first_embargo }
 		prerequisite = { focus = YFC_focus_numismatian_split }
 
+		ai_will_do = {
+			base = 10
+		}
+
 		cost = 5
 		completion_reward = {
 			#Alright but what should this give to the player ZDubbz?
@@ -2785,6 +2829,10 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_great_recession }
 		mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
+		ai_will_do = {
+			base = 10
+		}
+
 		cost = 5
 		completion_reward = {
 			add_manpower = -5000
@@ -2831,6 +2879,10 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_the_great_recession }
+
+		ai_will_do = {
+			base = 10
+		}
 
 		cost = 5
 		completion_reward = {
@@ -2885,6 +2937,10 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_the_second_embargo }
+
+		ai_will_do = {
+			base = 5
+		}
 
 		cost = 5
 		completion_reward = {

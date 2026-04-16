@@ -478,6 +478,31 @@ GPG_ai_behavior = {
 	}
 }
 
+YFC_ai_behavior = {
+	name = "YFC_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_NORMAL_PATH"
+	}
+	option = {
+		name = THREE_MUSKETEERS_YFC
+		text = "RULE_OPTION_THREE_MUSKETEERS_YFC"
+		desc = "RULE_OPTION_THREE_MUSKETEERS_YFC_AI_DESC"
+	}
+	option = {
+		name = DESTROY_BUNCH_YFC 
+		text = "RULE_OPTION_DESTROY_BUNCH_YFC"
+		desc = "RULE_OPTION_DESTROY_BUNCH_YFC_AI_DESC"
+	}
+	option = {
+		name = RAIDER_YFC
+		text = "RULE_OPTION_RAIDER_YFC"
+		desc = "RULE_OPTION_RAIDER_YFC_AI_DESC"
+	}
+}
+
 GTR_ai_behavior = {
 	name = "GTR_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -489,7 +514,7 @@ GTR_ai_behavior = {
 	option = {
 		name = COLLAPSE_COUNTRY_GTR
 		text = "RULE_OPTION_COLLAPSE_COUNTRY"
-		desc = "RULE_OPTION_DESTORY_ANARCHISTS_GTR_AI_DESC"
+		desc = "RULE_OPTION_DESTORY_ANARCHISTS_GTR_AI_DESC" #No idea how I missed this but ehhh
 	}
 	option = {
 		name = TENNISBALL
@@ -527,8 +552,6 @@ obsolete_focus_branches_visibility = {
 		allow_achievements = yes
 	}
 }
-
-#FUNNY THINGS LMAO HAHAHAHAHAHAH
 
 allow_war_goals = {
 	name = "RULE_ALLOW_WAR_JUSTIFICATIONS"

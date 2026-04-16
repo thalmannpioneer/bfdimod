@@ -45,7 +45,10 @@ infantry_YFC = {
 			base = 1
 			modifier = {
 				factor = 2
-				has_army_manpower = {size > 15000}
+				OR = {
+					has_army_manpower = {size > 15000}
+					has_completed_focus = YFC_focus_close_the_markets
+				}
 			}
 		}
 

@@ -65,7 +65,7 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 100
-				check_variable = { money_amount > 16 }
+				check_variable = { money_amount > 20 }
 			}
 		}
 	}
@@ -119,8 +119,7 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 100
-				has_army_size = {size < 3}
-				check_variable = { money_amount > 12 }
+				has_equipment = {infantry_equipment < 50}
 			}
 		}
 	}
@@ -186,8 +185,7 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		cost = 0
-		days_re_enable = 50
+		days_re_enable = 60
 
 		complete_effect = {
 			FROM = {
@@ -218,7 +216,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 5
+			base = 10
 			modifier = {
 				add = -100
 				has_army_size = {size < 1}
@@ -247,8 +245,7 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		cost = 0
-		days_re_enable = 50
+		days_re_enable = 60
 
 		complete_effect = {
 			FROM = {
@@ -279,7 +276,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 5
+			base = 10
 			modifier = {
 				add = -100
 				has_army_size = {size < 1}

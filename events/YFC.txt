@@ -2516,6 +2516,10 @@ country_event = {
 				add_to_variable = { money_amount = 2 }
 			}
 		}
+		IF = {
+			limit = {is_ai = yes}
+			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
+		}
 	}
 }
 
@@ -2880,13 +2884,17 @@ country_event = {
 			CRN = {
 				country_event = {
 					id = YFC_BUN.2
-					days = 2
+					days = 1
 					random_hours = 50
 				}
 			}
 		}	
 		ai_chance = {
 			base = 3
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = 1000
+		 	}
 		}	
 	}
 
@@ -2904,6 +2912,10 @@ country_event = {
 		}
 		ai_chance = {
 			base = 7
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = 1000
+		 	}
 		}	
 	}
 }
