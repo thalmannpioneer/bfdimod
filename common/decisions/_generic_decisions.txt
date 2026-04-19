@@ -216,7 +216,9 @@ political_actions = {
 				add = 50
 				AND = {
 					has_border_war = yes
-					has_army_size = {size < 1}
+					has_army_size = {
+						size < 1
+					}
 				}
 			}
 			modifier = {

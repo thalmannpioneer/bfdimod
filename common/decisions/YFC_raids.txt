@@ -14,8 +14,12 @@ decision_YFC_raids_category = {
 
 		remove_effect = {
 			add_manpower = 3500
+			IF = {
+				limit = {is_ai = yes}
+				add_manpower = 2000
+			}
 			hidden_effect = {
-				BUN = {add_manpower = 2000}
+				BUN = {add_manpower = 2500}
 			}
 		}
 
@@ -302,6 +306,7 @@ decision_YFC_raids_category = {
 		targets = { SRR GGR } 
 		targets_dynamic = yes
 		target_trigger = {
+			country_exists = FROM
 			FROM = {
 				check_variable = {var_YCF_raid_attacks > 2}
 			}
@@ -366,6 +371,60 @@ decision_YFC_raids_category = {
 					check_variable = {var_YCF_raid_attacks > 4}
 				}
 			}
+		}
+	}
+
+	YFC_pirate_nation = { #This will be most likly changed later
+		icon = GFX_decision_SWE_set_navy_budget
+
+		available = { 
+			has_manpower > 1500
+			has_equipment = {
+				convoy > 5
+			}
+		}
+
+		targets = { TBT DAV GGR } 
+		targets_dynamic = yes
+		target_trigger = {
+			country_exists = FROM
+			FROM = {
+				always = yes #Maybe change
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 100
+		days_re_enable = 180
+		cost = 50
+
+		complete_effect = {
+			has_manpower = -1500
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -5
+			}
+		}
+
+		remove_effect = { #Will be redone or something
+			random_list = {  
+				50 = {
+					custom_effect_tooltip = l_money_gain_100K
+					add_to_variable = { money_amount = 1 }
+				}
+				35 = {
+					custom_effect_tooltip = l_money_gain_200K
+					add_to_variable = { money_amount = 2 }
+				}
+				15 = {
+					custom_effect_tooltip = l_money_gain_300K
+					add_to_variable = { money_amount = 3 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1		
 		}
 	}
 }

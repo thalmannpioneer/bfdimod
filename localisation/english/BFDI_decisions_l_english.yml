@@ -199,6 +199,7 @@
  YFC_raid_reform: "§GReform§! the §YArmy§!"
  YFC_raid_nation: "§GLaunch§! a §RSpecial Raid§! on §Y[FROM.GetName]§!"
  YFC_raid_nation_desc: "§YEvery successful raid increases the chance for the Special Raid to succeed by 10%.§! §GIf the raid is successful we will have options on what to steal from them!§! §RThe successful raid counter is reset when this decision is taken, plan wisely.§!"
+ YFC_pirate_nation: "§GLaunch§! a §RPirate Campaign§! on §Y[FROM.GetName]§!"
 
  decision_YFC_foster_category: "Fostering A New Bunch"
  decision_YFC_foster_category_desc: "Time for an election season! Through funding and campaigning, we may be able to place our influence in the Bunch. May the one with the biggest budget win!\n\n§RCURRENT @BUN ERASER SUPPORT:§! [?var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?var_foster_CRN_support|Y1]"

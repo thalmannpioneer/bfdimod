@@ -201,7 +201,11 @@ country_event = {
 				add_core_of = SMG
 				transfer_state_to = SMG 
 			}
+			FFT = {add_manpower = 30000}
+			SPL = {add_manpower = 20000}
+			SRI = {add_manpower = 5000}
 			SMG = { 
+				add_manpower = 25000
 				inherit_technology = GGR 
 				change_tag_from = GGR
 				random_list = {

@@ -10,11 +10,9 @@ decision_BUN_raids_category = {
             controls_state = 85
             NOT = {controls_state = FROM}
             FROM = {
-                NOT = {
-                    controller = {
-                        tag = EMP
-                        is_guaranteed_by = BUN
-                    }
+                controller = {
+                    NOT = {tag = EMP}
+                    NOT = {is_guaranteed_by = BUN}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -142,13 +140,11 @@ decision_BUN_raids_category = {
             controls_state = 217
             NOT = {controls_state = FROM}
             FROM = {
-                NOT = {
-                    controller = {
-                        tag = EMP
-                        is_guaranteed_by = BUN
-                    }
+                controller = {
+                    NOT = {tag = EMP}
+                    NOT = {is_guaranteed_by = BUN}
                 }
-            }  
+            } 
             NOT = {is_puppet = yes}
             has_border_war = no
             has_war = no
@@ -274,11 +270,9 @@ decision_BUN_raids_category = {
             controls_state = 218
             NOT = {controls_state = FROM}
             FROM = {
-                NOT = {
-                    controller = {
-                        tag = EMP
-                        is_guaranteed_by = BUN
-                    }
+                controller = {
+                    NOT = {tag = EMP}
+                    NOT = {is_guaranteed_by = BUN}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -406,13 +400,11 @@ decision_BUN_raids_category = {
             controls_state = 212
             NOT = {controls_state = FROM}
             FROM = {
-                NOT = {
-                    controller = {
-                        tag = EMP
-                        is_guaranteed_by = BUN
-                    }
+                controller = {
+                    NOT = {tag = EMP}
+                    NOT = {is_guaranteed_by = BUN}
                 }
-            }  
+            } 
             NOT = {is_puppet = yes}
             has_border_war = no
             has_war = no
