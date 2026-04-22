@@ -65,7 +65,7 @@
 
  ###############################
 
- RULE_GROUP_FUNNY: "Random BFDI Things."
+ RULE_GROUP_FUNNY: "Random Things."
 
  RULE_ALLOW_WAR_JUSTIFICATIONS: "Enable War Justifications"
  RULE_ALLOW_WAR_JUSTIFICATIONS_BLOCKED_DESC: "Default option."
@@ -74,4 +74,4 @@
 
  RULE_ALLOW_EXPERIMENTAL_PATHS: "Enable Experimental Paths"
  RULE_ALLOW_EXPERIMENTAL_PATHS_BLOCKED_DESC: "Default option."
- RULE_ALLOW_EXPERIMENTAL_PATHS_ALLOWED_DESC: "This will unlock new decisions/events for some countries depending on circumstances.\n\n§RNOTE: ALL OF THE DECISIONS/EVENTS ADDED HERE ARE NOT FINAL. THEY ARE HIGHLY SUBJECTED TO CHANGE AND MAY NOT EVEN BE ADDED.§!\n\n§YFollowing are added:§!\nDavidland Civil War"
+ RULE_ALLOW_EXPERIMENTAL_PATHS_ALLOWED_DESC: "This will unlock new decisions/events for some countries depending on circumstances.\n\n§RNOTE: ALL OF THE DECISIONS/EVENTS ADDED HERE ARE NOT FINAL. THEY ARE HIGHLY SUBJECT TO CHANGE AND MAY NOT EVEN BE ADDED.§!\n\n§YFollowing are added:§!\n§gDavidland Civil War§!\n§8Snow Plateau Civil War§!"

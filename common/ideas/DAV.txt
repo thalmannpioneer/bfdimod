@@ -13,9 +13,11 @@ ideas = {
 		idea_DAV_civil_war = { #uhhhhhhhh
 			picture = RAJ_private_military_complex
 			modifier = {
-				surrender_limit = 0.25
-				conscription = 0.1
-				war_support_weekly = -0.001
+				surrender_limit = 0.3
+				conscription = 0.2
+				war_support_weekly = -0.002
+				weekly_manpower = -100
+				monthly_population = -1.5
 				ai_focus_aggressive_factor = 5
 			}
 			cancel = {has_war = no}

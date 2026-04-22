@@ -61,7 +61,7 @@ country_event = { #For my civilwar bullshit nonsense that I make at 2am
 	
 	immediate = {
         add_manpower = 50000
-        add_war_support = 1
+        add_war_support = 0.45
         army_experience = 25
         add_ideas = idea_DAV_civil_war
 
@@ -138,9 +138,9 @@ country_event = { #For my civilwar bullshit nonsense that I make at 2am
                 ideology = fascism
                 popularity = 0.51
             }
-            add_offsite_building = { type = arms_factory level = 2 }
+            add_offsite_building = { type = arms_factory level = 1 }
             add_stability = -0.5
-            add_war_support = 0.35
+            add_war_support = 1
             161 = {
                 create_unit = {
                     division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
@@ -188,7 +188,7 @@ country_event = { #For my civilwar bullshit nonsense that I make at 2am
                 create_unit = {
                     division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
                     owner = ROOT
-                    count = 6
+                    count = 7
                 }
             }
         }
