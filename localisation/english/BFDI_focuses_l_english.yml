@@ -1014,20 +1014,14 @@
  YFC_focus_a_look_inward: "A Look Inward"
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
- YFC_focus_new_interests: "New Interests"
- YFC_focus_new_interests_desc: "With the Snowy Fascists unable to defeat the Anarchists' assaults to the South, an interesting opportunity has appeared. A small group of objects, both arm and armless, formed a government in The Great Ridge. This government is weak both in its army and economy, but rich in resources. So why don't we 'help' them out and make a deal?"
-
- YFC_focus_integrate_great_ridge: "Integrate the Ridge"
- YFC_focus_integrate_great_ridge_desc: "Progress has been going nice in other areas with our alliance creation being the highlight. With now more reason to get countries into our sphere, it seems that The Great Ridge question is back again. It is time to bring this small government under our control!"
-
  YFC_focus_the_bunchivist_problem: "The Bunchivist Problem"
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."
 
  YFC_focus_the_economic_issue: "The Economic Issue"
- YFC_focus_the_economic_issue_desc: "ZDubbz also change this one please :)"
+ YFC_focus_the_economic_issue_desc: "We have been facing some economic... complications, since the end of our war against Bunchivism. It is high time we began closely monitoring the economic situation in our country. Perhaps we could seek to improve our standings?"
 
- YFC_focus_industrialize_or_die: "Expanding Our Reach" #Or maybe 'Expanding Our Growth'
- YFC_focus_industrialize_or_die_desc: "ZDubbz here is your work"
+ YFC_focus_industrialize_or_die: "Our Useless Backyard" #Or maybe 'Expanding Our Growth'
+ YFC_focus_industrialize_or_die_desc: "It is clear; the eastern territories are starting to cost more to maintain than they are worth. So, let us make them profitable! By industrializing eastern settlements, we can ensure maximum profits."
 
  YFC_focus_erasers_stockpiles: "Eraser's Stockpiles"
  YFC_focus_erasers_stockpiles_desc: "The large stash of money we found after taking the bunchivist capital is very much still there. Not in bunchivist land of course, we took it to our own capital, but besides that, the money has been untouched. While still technically property of Eraser, he's in jail, is he not? He most certainly wouldn't mind us... borrowing... some of that. He wouldn't even notice!"
@@ -1042,22 +1036,22 @@
  YFC_focus_military_industrial_complex_desc: "ZDubbz cough cough cough" #I lied about the last statement this just gives us some militray equipment YFC does not care about their army yet
 
  YFC_focus_expand_northern_trade: "Expand the Northern Trade"
- YFC_focus_expand_northern_trade_desc: "ZDubbz cough cough cough"
+ YFC_focus_expand_northern_trade_desc: "By using Yoyleton as a base, we can expand our traderoutes farther north, leading to more efficient trade with North Goikean nations."
 
- YFC_focus_scope_out_sea_trade: "Scope Out the Sea Trade"
- YFC_focus_scope_out_sea_trade_desc: "ZDubbz cough cough cough"
+ YFC_focus_scope_out_sea_trade: "Scope Out Sea Trade"
+ YFC_focus_scope_out_sea_trade_desc: "Trading through the sea is something we've been doing in small parts for some time now. Though, if we had a more permanent foothold on the eastern seaboard, we could rapidly cut down the time and resources needed to trade to the Davidians."
 
  YFC_focus_spread_out_sectors: "Spread Out the Sectors"
- YFC_focus_spread_out_sectors_desc: "ZDubbz cough cough cough"
+ YFC_focus_spread_out_sectors_desc: "Most sectorial debates come from pure proximity; our secotrials are far too close to each other for civil conversations to be had. Perhaps a zoom call or two would pacify them. Of course, none of them would listen to this will unless we gave them an incentive to move. That is to say, we should build them facilities further away from each other. For your sake and mine. Seriously, their fighting is so goddamn annoying that I might actually go insane."
 
  YFC_focus_peoniele_the_second_city: "Peoniele the Second City"
- YFC_focus_peoniele_the_second_city_desc: "ZDubbz cough cough cough"
+ YFC_focus_peoniele_the_second_city_desc: "Ah, Peoniele. What with her flower fields, roilling hills, and massive buildings. The massive buildings are really the best part."
 
  YFC_focus_big_yoyleton: "Big Yoyleton"
- YFC_focus_big_yoyleton_desc: "ZDubbz cough cough cough"
+ YFC_focus_big_yoyleton_desc: "Yoyleton has the posibility to be a bastion of free trade if we play our cards right. Let us hope that things work as they should."
 
  YFC_focus_population_boom: "Population Boom"
- YFC_focus_population_boom_desc: "ZDubbz cough cough cough"
+ YFC_focus_population_boom_desc: "Our investments seem to have people flocking to our cities in large amounts! These migrants can only bring one thing: profits."
 
  YFC_focus_clamp_down_on_bunchivism: "Clamp Down on Bunchivism"
  YFC_focus_clamp_down_on_bunchivism_desc: "The obvious choice. Bunchivism has been a plague to our trading partners since the dawn of Goikean nation states, no longer shall a raider be able to steal our profits and plunder our bretheren in capital. We shall never, under any circumstance, allow a free Bunch to persist, and anyone who believes otherwise is a traitor to the free market. Let Podgornyv's rioters burn with the power of our might!"
@@ -1092,7 +1086,7 @@
  YFC_focus_foster_new_society: "Foster a New Society"
  YFC_focus_foster_new_society_desc: "Bunchivists are still people. And with people, there is profit. Obviously, we've lost quite a bit of money from having to deal with the raiders, but if we have their entire population under our thumb, we could make it back in no time! Facilitating a new, reformed Bunch should be easy, and well worth the cost. Oh, the civillians should be allowed to live free and stuff too. That's totally important to us."
  YFC_focus_support_blocky: "Support Blocky"
- YFC_focus_support_blocky_desc: "ZDubbz cough cough cough"
+ YFC_focus_support_blocky_desc: "Some feebler candidates for Bunchivist presidency have reached out to us, asking for our monetary support, however, one request has stuck out. That is, Blocky's. Covertly, even under the noses of the sectorials, we have dont some small work with Blocky. He is very good at keeping secrets, surprisingly. This trait, of course, makes him a great presidential candidate. For us, that is."
 
  YFC_focus_stimulate_bunch_business: "Stimulate Bunch Businesses"
  YFC_focus_stimulate_bunch_business_desc: "Podgornyv is currently quite barren. It seems to have at least been lived in when we got there, but there aren't many businesses. In all honesty, that should be expected. The (hopefully former) raider society would pillage anything they came accross. Those savages ruined any chance of Bunchivist business! In other words, we could certainly breathe life into this dying city. Maybe, tax breaks for business owners?"
@@ -1104,28 +1098,28 @@
  YFC_focus_blockys_offer_desc: "Blocky is asking us if he can meet with Yellow Face to discuss his campaign. Or at least, we think? He wasn't the clearest in what he was asking for, besides a meeting to discuss things. Anyways, we can get it scheduled pretty soon."
  
  YFC_focus_allow_people_enter: "Allow Immigration Into Bunch"
- YFC_focus_allow_people_enter_desc: "ZDubbz cough cough cough"
+ YFC_focus_allow_people_enter_desc: "Bunchivist population is low, and many criminals who have been tried and put to jail in our lands would likely have a field day in the mess that is Bunchivist society. By opening up the border to our bunchivist occupation zone, we can stimulate their economy, while getting rid of some thorns in our side."
 
- YFC_focus_banks_too_big_to_fail: "Expand the Banking"
- YFC_focus_banks_too_big_to_fail_desc: "ZDubbz cough cough cough"
+ YFC_focus_banks_too_big_to_fail: "Big Bunchivist Banks"
+ YFC_focus_banks_too_big_to_fail_desc: "Blocky's BBB proposal has been a hit, all around the Bunchivist nation. He, in essence, wants to create a large and expansive banking system in the Bunch, in order to store what he calls 'essential' money. Bunchivist culture is obviously built around theft, yes, however, some people don't want to lose everything. His banks would be a secure place to store things, which would be illegal to break in to."
 
  YFC_focus_advertise_YFC_products: "Advertise our Products"
- YFC_focus_advertise_YFC_products_desc: "ZDubbz cough cough cough"
+ YFC_focus_advertise_YFC_products_desc: "Bunchivists are starting to participate in capitalism. Actual, real capitalism. They're buying and selling land, renting things, investing into various companies. It's a sight to behold, really. Now, of course, we must gain an early monetary foothold in the Bunch. So, why not pay for a bit of advertisements?"
 
  YFC_focus_insentivize_employment: "Incentivize Employment"
- YFC_focus_insentivize_employment_desc: "ZDubbz cough cough cough"
+ YFC_focus_insentivize_employment_desc: "Pushing for these lazy assholes to get jobs is a useless effort if we do not give them whatever their insolate brains would consider to be an 'incentive.' These Bunchivists need something if they're going to get employed; what should they be given?"
 
  YFC_focus_free_pows: "Free POWs"
- YFC_focus_free_pows_desc: "ZDubbz cough cough cough"
+ YFC_focus_free_pows_desc: "During and shortly after our war on the Bunch, which analysts are now calling the 'Early War,' large amounts of prisoners were taken, mainly on our side. Okay, entirely on our side. We were the only ones taking prisoners. Regardless, releasing some of the prisoners back into Bunchivist society would likely make them want to kill us less. The question is, though, how many should be released?"
 
  YFC_focus_bunchivist_new_deal: "The Bunchivist New Deal"
- YFC_focus_bunchivist_new_deal_desc: "Admittedly, attempting to convert the Bunchivist society into a less.. stupid one is quite challenging. We're a company, not a government. Well, I guess we are a government. Shit. Anyways, we've just started and already spent more money on this project than anticipated. We need to find a better way to generate money from the population, fast!"
+ YFC_focus_bunchivist_new_deal_desc: "Admittedly, attempting to convert the Bunchivist society into a less.. stupid one is quite challenging. We're a company, not a government. Well, I guess we are a government. Shit. Anyways, we've just started to, and already have, spent more money on this project than anticipated. We need to find a better way to generate money from the population, fast!"
 
  YFC_focus_bunch_fostered: "A Bunch Fostered"
- YFC_focus_bunch_fostered_desc: "ZDubbz cough cough cough"
+ YFC_focus_bunch_fostered_desc: "The presidential elections have come to an end, and the Bunch is securely under both ours, and the Numismatian's control. The Bunch is practicing their own, weird form of capitalism, which we shall permit. For now. Things seem to be looking up for us."
 
  YFC_focus_united_by_profits: "United By Profits"
- YFC_focus_united_by_profits_desc: "ZDubbz cough cough cough"
+ YFC_focus_united_by_profits_desc: "The Numismatians are suggesting that we 'formalize' our relationship with both them and the reformed Bunchivists. What might they mean by this? The Numismatians say a lot of things, actually. Always sending us letters about some unimportant 'foreign diplomacy' stuff. They're lucky we tolerate them."
 
  Musketeers_three_musketeers: "Three Musketeers"
  Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"
