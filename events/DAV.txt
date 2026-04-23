@@ -1,4 +1,5 @@
 add_namespace = DAV_hidden_event
+add_namespace = DAV_lol_event
 
 #Remove all these hidden events when DAV gets stuff.
 
@@ -36,6 +37,190 @@ country_event = {
 				random_hours = 36
 			}
 		}
+        
+        IF = {
+            limit = {has_game_rule = { rule = allow_experimental_paths option = yes }}
+            country_event = {
+				id = DAV_lol_event.1
+				days = 7
+				random_days = 5
+				random_hours = 12
+			}
+        }
+
 		add_threat = 0.5
+	}
+}
+
+country_event = { #For my civilwar bullshit nonsense that I make at 2am
+	id = DAV_hidden_event.2
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+        add_manpower = 50000
+        add_war_support = 0.45
+        army_experience = 25
+        add_ideas = idea_DAV_civil_war
+
+		division_template = {
+			name = "Infantry"
+
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+		}
+
+        capital_scope = {
+			create_unit = {
+				division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+				owner = ROOT
+				count = 14
+			}
+            create_unit = {
+				division = "name = \"Infantry\" division_template = \"Infantry\" start_experience_factor = 0.3"
+				owner = ROOT
+				count = 1
+			}
+		}
+        IF = {
+            limit = {tag = DAV}
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.5
+            }
+            add_popularity = {
+                ideology = communism
+                popularity = -0.5
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"Infantry\" division_template = \"Infantry\" start_experience_factor = 0.3"
+                    owner = ROOT
+                    count = 2
+                }
+            }
+            136 = {
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 2
+                    allow_spawning_on_enemy_provs = yes
+                    prioritize_location = 6361
+                }
+            }
+        }
+        ELSE = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.51
+            }
+            add_offsite_building = { type = arms_factory level = 1 }
+            add_stability = -0.5
+            add_war_support = 1
+            161 = {
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 2
+                    allow_spawning_on_enemy_provs = yes
+                    prioritize_location = 4111
+                }
+            }
+            166 = {
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 1
+                    allow_spawning_on_enemy_provs = yes
+                    prioritize_location = 11857
+                }
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 2
+                    allow_spawning_on_enemy_provs = yes
+                    prioritize_location = 341
+                }
+            }
+            capital_scope = {
+                create_unit = {
+                    division = "name = \"Raised Levy\" division_template = \"Raised Levy\" start_experience_factor = 0.05"
+                    owner = ROOT
+                    count = 7
+                }
+            }
+        }
+	}
+}
+
+country_event = {
+	id = DAV_lol_event.1
+	title = DAV_lol_event.1.t
+	desc = DAV_lol_event.1.desc
+	picture = GFX_Temp_event
+
+	is_triggered_only = yes
+
+	option = { 
+		name = DAV_lol_event.1.a 
+        add_threat = 3
+
+        start_civil_war = {
+
+            ideology = communism
+            size = 0.5
+            capital = 148
+            states = {
+                148 137 140 135 136
+            }
+            PREV = {
+                country_event = DAV_hidden_event.2
+            }
+            PREV.PREV = {
+                country_event = DAV_hidden_event.2
+            }
+        }
 	}
 }

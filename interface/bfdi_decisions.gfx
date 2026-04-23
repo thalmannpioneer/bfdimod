@@ -634,6 +634,31 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_raid.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_army_reform"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_army_reform.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_locals"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_locals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_trainings"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_trainings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_commit_raid"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_commit_raid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_buy_guns"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_buy_guns.dds"
+	}
+
 	#BUN
 
 	spriteType = {

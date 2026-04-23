@@ -1,0 +1,139 @@
+decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 3 times is bad I already accounted for this)
+	GGR_SMG_attack = {
+       	activation = {
+			OR = {
+				country_exists = SPL
+				country_exists = FFT
+			}
+			NOT = {country_exists = GGR}
+			has_game_rule = { rule = allow_experimental_paths option = yes }
+			SMG = {has_war = no}
+	    }
+
+		cancel_trigger = {
+			SMG = {has_war = yes}
+		}
+
+		is_good = no
+		days_mission_timeout = 400
+		selectable_mission = no
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			SMG = {
+				add_timed_idea = {
+					idea = idea_GGR_all_or_nothing
+					days = 180
+				}
+				declare_war_on = {
+					target = SPL
+					type = annex_everything
+				}
+				hidden_effect = {add_war_support = 0.15}
+			}
+		}
+	}
+
+	GGR_FFT_attack = {
+       	activation = {
+			OR = {
+				country_exists = SPL
+				country_exists = SMG
+			}
+			NOT = {country_exists = GGR}
+			has_game_rule = { rule = allow_experimental_paths option = yes }
+			FFT = {has_war = no}
+	    }
+
+		cancel_trigger = {
+			FFT = {has_war = yes}
+		}
+
+		is_good = no
+		days_mission_timeout = 800
+		selectable_mission = no
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			FFT = {
+				declare_war_on = {
+					target = SMG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SPL
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				SMG = {
+					add_manpower = 5000
+					add_ideas = idea_GGR_civil_war
+				}
+				SPL = {
+					add_manpower = 10000
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						producer = SPL
+						amount = 250
+					}
+					add_ideas = idea_GGR_civil_war
+				}
+				FFT = {
+					add_ideas = idea_GGR_civil_war
+				}
+			}
+		}
+	}
+
+	GGR_civil_war_win = {     
+		fire_only_once = yes
+
+		cost = 250
+
+		available = {
+			controls_state = 169
+			controls_state = 33
+			controls_state = 15
+			controls_state = 172
+			has_war = no
+		}
+
+		complete_effect = {
+			add_stability = 0.1
+			add_war_support = 0.05
+			add_manpower = 20000
+			16 = {
+				transfer_state_to = ROOT
+				add_core_of = ROOT
+				remove_core_of = EMP
+			}
+			15 = {
+				remove_core_of = SMG
+				add_core_of = ROOT
+			}
+			143 = {
+				remove_core_of = SPL
+				add_core_of = ROOT
+			}
+			172 = {
+				remove_core_of = SPL
+				add_core_of = ROOT
+			}
+			33 = {
+				remove_core_of = FFT
+				add_core_of = ROOT
+			}
+			169 = {
+				remove_core_of = FFT
+				add_core_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		idea_DAV_the_thousand_year_throne = { #Have fun
+		idea_DAV_the_thousand_year_throne = {
 			picture = DAV_the_thousand_year_throne
 			modifier = {
 				stability_factor = 0.10
@@ -8,6 +8,19 @@ ideas = {
 				political_power_gain = -0.25
 				ai_focus_peaceful_factor = 0.5
 			}
+		}
+
+		idea_DAV_civil_war = { #uhhhhhhhh
+			picture = RAJ_private_military_complex
+			modifier = {
+				surrender_limit = 0.3
+				conscription = 0.2
+				war_support_weekly = -0.002
+				weekly_manpower = -100
+				monthly_population = -1.5
+				ai_focus_aggressive_factor = 5
+			}
+			cancel = {has_war = no}
 		}
 	}
 }

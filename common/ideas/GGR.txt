@@ -15,5 +15,59 @@ ideas = {
 				fascism_drift = 0.3
 			}
 		}
+
+		idea_GGR_all_or_nothing = { #Bullshit
+			picture = HUN_secret_rearmament
+			modifier = {
+				conscription = 0.03
+				supply_consumption_factor = -0.5
+				ai_focus_aggressive_factor = 3
+			}
+			targeted_modifier = {
+				tag = SPL
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.15
+			}
+			on_remove = {
+				IF = {
+					limit = {country_exists = SPL}
+					add_war_support = -0.65
+					add_stability = -0.5
+					SPL = {
+						add_manpower = 15000
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							producer = SPL
+							amount = 2000
+						}
+					}
+				}
+				ELSE = {
+					add_manpower = 15000
+					add_war_support = 0.2
+					add_stability = 0.05
+					143 = {
+						remove_core_of = SPL
+						add_core_of = SMG
+					}
+					172 = {
+						remove_core_of = SPL
+						add_core_of = SMG
+					}
+				}
+			}
+		}
+
+		idea_GGR_civil_war = { #Bullshit
+			picture = generic_war_preparation
+			modifier = {
+				surrender_limit = 0.25
+				conscription = 0.15
+				supply_consumption_factor = -0.15
+				monthly_population = -5
+				ai_focus_aggressive_factor = 5
+			}
+			cancel = {has_war = no}
+		}
 	}
 }

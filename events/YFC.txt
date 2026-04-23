@@ -2516,6 +2516,10 @@ country_event = {
 				add_to_variable = { money_amount = 2 }
 			}
 		}
+		IF = {
+			limit = {is_ai = yes}
+			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
+		}
 	}
 }
 
@@ -2564,7 +2568,7 @@ country_event = {
 	option = {
 		name = YFC_borderwars.4.a
 		army_experience = 2
-		add_war_support = -0.005
+		add_stability = -0.005
 		add_to_variable = {var_YCF_raid_attacks = 1}
 	}
 }
@@ -2672,6 +2676,192 @@ country_event = {
 	}
 }
 
+country_event = {
+	#Cool Raid YFC lose
+	id = YFC_borderwars.9
+	title = YFC_borderwars.9.t
+	desc = YFC_borderwars.9.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.9.a
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 300
+			max = 1000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 25
+			max = 200
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+}
+
+country_event = {
+	#Cool Raid YFC win
+	id = YFC_borderwars.10
+	title = YFC_borderwars.10.t
+	desc = YFC_borderwars.10.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.10.a
+		custom_effect_tooltip = l_money_gain_600K
+		add_to_variable = { money_amount = 6 }
+		FROM = {
+			custom_effect_tooltip = l_money_lose_600K
+			subtract_from_variable = { money_amount = 6 }
+		}
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 2500
+			max = 3000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 400
+			max = 500
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+	option = {
+		name = YFC_borderwars.10.b
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = FROM
+			amount = 1000
+		}
+		FROM = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 2500
+			max = 3000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 400
+			max = 500
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+	option = {
+		name = YFC_borderwars.10.c
+
+		trigger = {
+			FROM = {tag = GGR}
+		}
+
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 4500
+			max = 6000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 400
+			max = 500
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+	option = {
+		name = YFC_borderwars.10.d
+
+		trigger = {
+			FROM = {tag = SRR}
+		}
+
+		custom_effect_tooltip = l_money_gain_200K
+		add_to_variable = { money_amount = 2 }
+		add_equipment_to_stockpile = {
+			type = train_equipment_1
+			producer = SRR
+			amount = 10
+		}
+		FROM = {
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = -10
+			}
+		}
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 2500
+			max = 3000
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = guns_regain
+			min = 400
+			max = 500
+			integer = yes
+		}
+		add_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = YFC
+			amount = guns_regain
+		}
+	}
+}
+
+country_event = {
+	#Cool Raid defender loses
+	id = YFC_borderwars.11
+	title = YFC_borderwars.11.t
+	desc = YFC_borderwars.11.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	immediate = {
+		YFC = {country_event = YFC_borderwars.10}
+	}
+
+	option = {
+		name = YFC_borderwars.11.a
+		add_stability = -0.05
+	}
+}
+
 
 #####################
 #There were NO CRN events you were going CRAZY 
@@ -2694,13 +2884,17 @@ country_event = {
 			CRN = {
 				country_event = {
 					id = YFC_BUN.2
-					days = 2
+					days = 1
 					random_hours = 50
 				}
 			}
 		}	
 		ai_chance = {
 			base = 3
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = 1000
+		 	}
 		}	
 	}
 
@@ -2718,6 +2912,10 @@ country_event = {
 		}
 		ai_chance = {
 			base = 7
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = 1000
+		 	}
 		}	
 	}
 }

@@ -72,17 +72,16 @@ CRN_friend_YFC = {
 
 	abort = {
 		has_opinion_modifier = betrayed_alliance
-		NOT = {YFC = {has_completed_focus = YFC_focus_united_by_profits}}
 	}
 
 	ai_strategy = {
 		type = alliance
 		id = YFC
-		value = 1000
+		value = 200
 	}
 	ai_strategy = {
 		type = befriend
 		id = YFC
-		value = 100
+		value = 200
 	}
 }

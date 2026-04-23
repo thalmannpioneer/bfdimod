@@ -129,7 +129,10 @@
  DAV: "Kingdom of Davidland"
  DAV_ADJ: "Davidian"
  DAV_DEF: "Davidland"
- 
+ DAV_communism: "Davidland Freedom Front" #uhhhhhhhhhhhhhhh
+ DAV_communism_ADJ: "Davidian"
+ DAV_communism_DEF: "Davidland"
+
  UGA: "Primal Zone"
  UGA_ADJ: "Primal Zone"
  UGA_DEF: "Primal"

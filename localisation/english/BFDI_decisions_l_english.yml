@@ -191,12 +191,15 @@
  yfc_mercenaries_strong: "Purchase §2Unnamed Mercenary Brotherhood§!"
 
  decision_YFC_raids_category: "§tAvenues of Wealth§!"
- YFC_raid_state_214: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
- YFC_raid_state_201: "Commit a §RRaid§! in §Y[FROM.GetName]§!!"
+ YFC_raid_state_214: "Commit a §RRaid§! in §Y[FROM.GetName]!§!"
+ YFC_raid_state_201: "Commit a §RRaid§! in §Y[FROM.GetName]!§!"
  YFC_raid_force_conscript_locals: "§RForce Conscript§! §YLocals§!"
  YFC_raid_training: "§YConduct Exercises§! with §tBunch§!"
  YFC_raid_guns: "§YSecretly Purchase§! §RGuns§!"
  YFC_raid_reform: "§GReform§! the §YArmy§!"
+ YFC_raid_nation: "§GLaunch§! a §RSpecial Raid§! on §Y[FROM.GetName]§!"
+ YFC_raid_nation_desc: "§YEvery successful raid increases the chance for the Special Raid to succeed by 10%.§! §GIf the raid is successful we will have options on what to steal from them!§! §RThe successful raid counter is reset when this decision is taken, plan wisely.§!"
+ YFC_pirate_nation: "§GLaunch§! a §RPirate Campaign§! on §Y[FROM.GetName]§!"
 
  decision_YFC_foster_category: "Fostering A New Bunch"
  decision_YFC_foster_category_desc: "Time for an election season! Through funding and campaigning, we may be able to place our influence in the Bunch. May the one with the biggest budget win!\n\n§RCURRENT @BUN ERASER SUPPORT:§! [?var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?var_foster_CRN_support|Y1]"
@@ -243,6 +246,7 @@
  YFC_eastern_core: "§YCore§! §Y[FROM.GetName]§!"
  YFC_eastern_raid: "§RClash§! in the §YNorthern Front§!"
  YFC_eastern_block: "§RBlock§! §CTeardropper Movements§!"
+
 
  decision_CRN_BUN_category: "Building The Bunch"
  decision_CRN_BUN_category_desc: "Despite Yellow Face's claims, there is still a future for the Bunch! We must aid rebel groups to hopefully create a revolt against The Company!"
@@ -435,3 +439,12 @@
  TBT_low_pop: "Minor Teardroppers Population"
  TBT_med_pop: "Moderate Teardroppers Population"
  TBT_high_pop: "Major Teardroppers Population"
+
+ #Bullshit
+ decision_GGR_civil_war_category: "Fate of the Snowy Plateau"
+ decision_GGR_civil_war_category_desc: "The defeat of Snowball's nation and forces have thrown the fate of the region into question. The Anarchists grew larger, a 'more free' government formed in the plains, the 'Wrong' objects fled to the mountains, and the remnants of Snowball's government still hold Schneehorn. Forces from both inside and outside wish to rebuild these lands under their ideals.\n\n§RThe question is, which flag will be the last one standing?§!"
+ GGR_SMG_attack: "Embers of a Fuse"
+ GGR_SMG_attack_desc: "Peace will not last, it seems that Schneehorn is preparing for an all or nothing attack..."
+ GGR_FFT_attack: "Anarchists Invasion"
+ GGR_FFT_attack_desc: "The Anarchists are preparing for their final takeover of the Snow Plateau..."
+ GGR_civil_war_win: "Unite the Snowy Plateau"

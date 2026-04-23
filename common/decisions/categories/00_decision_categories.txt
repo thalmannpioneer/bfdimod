@@ -144,3 +144,22 @@ decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
 	visible_when_empty = yes
 	scripted_gui = bfdi_other_trade_scriptedgui
 }
+
+decision_GGR_civil_war_category = { #ummmmm
+	allowed = { 
+		OR = {
+			tag = SMG
+			tag = FFT
+			tag = SPL
+		}
+	}
+	visible = { 
+		has_game_rule = { rule = allow_experimental_paths option = yes }
+		NOT = {country_exists = GGR}
+	}
+
+	priority = 5
+
+	icon = decision_category_operation_coinflip
+	visible_when_empty = yes
+}

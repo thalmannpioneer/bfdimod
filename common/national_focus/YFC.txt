@@ -402,11 +402,23 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0
+			base = 3
 			modifier = {
 				factor = 100
 				has_country_flag = raiders_path
 			}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = -1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = -1000
+		 	}
 		}
 	}
 
@@ -476,6 +488,18 @@ focus_tree = {
 				factor = 100
 				has_country_flag = money_path
 			}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+				add = 1000
+		 	}
+			modifier = {
+				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+				add = -1000
+		 	}
 		}
 	}
 
@@ -1355,7 +1379,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_bunchivist_problem
 		x = -1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_foster_new_society
 		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
 		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 		mutually_exclusive = { focus = YFC_focus_clamp_down_on_bunchivism }
@@ -1374,7 +1398,7 @@ focus_tree = {
 					limit = {
 						YFC = {controls_state = 217}
 					}
-					set_variable = { var_foster_BUN_support = 20 } #High but can't rise quickly
+					set_variable = { var_foster_BUN_support = 22 } #High but can't rise quickly
 					set_variable = { var_foster_CRN_support = 3 }
 				}
 				ELSE = {
@@ -1403,7 +1427,7 @@ focus_tree = {
 		relative_position_id = YFC_focus_the_bunchivist_problem
 		x = 1
 		y = 1
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_support_blocky
 		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
 		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 
@@ -2256,6 +2280,9 @@ focus_tree = {
 			#send a letter of insult to teardrop to 'throw her off her game'
 
 			#How so? ZDubbz
+
+			#lol imagine if adolf hitler sent winston churchill a letter that said 'u smell bad', thatd probably make him rlly confused
+			#if you mean gamewise, it wouldnt actually do anything to the beach territory, just be cosmetic
 		}
 	}
 
@@ -2566,6 +2593,10 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 		
+		ai_will_do = {
+			base = 7
+		}
+
 		cost = 5
 		completion_reward = {
 			country_event = YFC_event.53
@@ -2594,6 +2625,10 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 
+		ai_will_do = {
+			base = 7
+		}
+
 		cost = 5
 		completion_reward = {
 			subtract_from_variable = { money_amount = 3 }
@@ -2606,13 +2641,50 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YFC_focus_sectorial_meddling
+		relative_position_id = YFC_focus_great_business_partnership
+		x = -2.5
+		y = 0
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_diverting_funds }
+
+		cost = 3
+		completion_reward = {
+			#removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
+		}
+	}
+
+	focus = {
+		id = YFC_focus_permanent_mercenary_purchase
+		relative_position_id = YFC_focus_great_business_partnership
+		x = 2.5
+		y = 0
+		icon = GFX_focus_generic
+		prerequisite = { focus = YFC_focus_establish_formal_connection }
+
+		cost = 3
+		completion_reward = {
+			#gives an event (YES I KNOW) about eraser telling the yfc to have a permanent army
+			#lets player choose between purchasing basic (cheap), speed, or strong
+			#you can add some extra focuses to be unlocked for the grapes and cherries thing!
+			#choosing options here locks you out of other parts of grapes & cherries
+			#for example, if you go with basic, you cant invest in speed or power
+			#vice versa for the other ones
+		}
+	}
+
+	focus = {
 		id = YFC_focus_great_business_partnership
 		relative_position_id = YFC_focus_diverting_funds
-		x = 1
+		x = 1.5
 		y = 1
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_establish_formal_connection }
 		prerequisite = { focus = YFC_focus_diverting_funds }
+
+		ai_will_do = {
+			base = 10
+		}
 
 		cost = 5
 		completion_reward = {
@@ -2642,7 +2714,38 @@ focus_tree = {
 		}
 	}
 
-	focus = { #I know you said that I should not add more focuses, but this is one of those fake ones that will fail from the embargoes
+	focus = { #yfc is kinda realizing that ppl dont fuck with them any more so theyre procuring money from strange places and hoarding it to make sure they dont go broke
+		id = YFC_focus_hoard_gold
+		relative_position_id = YFC_focus_great_business_partnership
+		x = -2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_diverting_funds }
+
+		cost = 3
+		completion_reward = {
+			#gives yfc 3M but makes them gain significantly less money monthly
+		}
+	}
+
+	focus = {
+		id = YFC_focus_publicize_partnership
+		relative_position_id = YFC_focus_great_business_partnership
+		x = 2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_establish_formal_connection }
+
+		cost = 3
+		completion_reward = {
+			#news event about raiders and bunch working together
+			#because yf just loves making shit worse for himself
+		}
+	}
+
+	focus = { #re; make it a real focus, it's sick as hell and im adding more. this part of the tree should be longer anyways
 		id = YFC_focus_from_the_deal
 		relative_position_id = YFC_focus_great_business_partnership
 		x = 0
@@ -2658,8 +2761,12 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_great_business_partnership }
 
+		ai_will_do = {
+			base = 5
+		}
+
 		cost = 8
-		completion_reward = {
+		completion_reward = { #can you make this also require hoard gold and publicize partnership? idk how to do it without using prereq
 			add_political_power = -25
 			add_stability = 0.05
 			add_war_support = 0.1
@@ -2674,7 +2781,7 @@ focus_tree = {
 	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally, w an event leading up to it
 		id = YFC_focus_the_first_embargo
 		relative_position_id = YFC_focus_diverting_funds
-		x = -2
+		x = -2.5
 		y = 2
 		icon = GFX_focus_generic
 
@@ -2695,7 +2802,7 @@ focus_tree = {
 	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally
 		id = YFC_focus_numismatian_split
 		relative_position_id = YFC_focus_great_business_partnership
-		x = 3
+		x = 4
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2722,9 +2829,15 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_first_embargo }
 		prerequisite = { focus = YFC_focus_numismatian_split }
 
+		ai_will_do = {
+			base = 10
+		}
+
 		cost = 5
 		completion_reward = {
-			#Alright but what should this give to the player ZDubbz?
+			#re; as the focus name states, it should open decisions to do VERY covert raids into other countries
+			#    like very sneaky stealth stuff in attempts to train the army
+			#    maybe a focus about it? i know i keep making focuses but its so addicting...
 
 			hidden_effect = {
 				every_other_country = { #Embargo event
@@ -2785,6 +2898,10 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_the_great_recession }
 		mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
+		ai_will_do = {
+			base = 10
+		}
+
 		cost = 5
 		completion_reward = {
 			add_manpower = -5000
@@ -2832,13 +2949,14 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_the_great_recession }
 
+		ai_will_do = {
+			base = 10
+		}
+
 		cost = 5
 		completion_reward = {
-			#re; well if almost everyone has embargoed the yfc, how would the markets still be open? no one to trade with
-			#AI has a chance to not embargo, but also the player may still want the trade for money/guns so I don't want to game ruin them. ZDubbz
-			#Also this is a major thing for YFC that I don't want removed this quickly in the same way to the Sectors, maybe when Yellow Face takes full contorl the market can be removed
-
-			#If you are fine with this I'll think on what to put here
+			#re; limits trading to nations that the yfc is friendly with
+			#    in turn, the trading mechanic becomes more indepth (interpret how you wish, i dont know lol)
 
 			hidden_effect = {
 				GMD = { 
@@ -2852,7 +2970,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { #coiny embargoes
+	focus = { #coiny embargoes, change to the FINAL embargo
 		id = YFC_focus_the_second_embargo 
 		relative_position_id = YFC_focus_close_the_markets
 		x = 0
@@ -2885,6 +3003,10 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_the_second_embargo }
+
+		ai_will_do = {
+			base = 5
+		}
 
 		cost = 5
 		completion_reward = {

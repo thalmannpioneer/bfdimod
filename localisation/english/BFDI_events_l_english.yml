@@ -700,9 +700,9 @@
  YFC_event.9.t.a: "Question of Yellow Face" 
  YFC_event.9.t.b: "Breaking of Trust" 
  YFC_event.9.desc.a: "It's no secret that the Yellow Face Corporation has been 'buddying up' with the bunch of bandits in the south of the continent. We've also gotten reports that some other countries have already began embargoing the YFC, in hopes that they'd end the partnership before it gets out of hand. We also hold these same convictions; a raider-state spreading across the continent would be horrible for the livlihoods of our people. Though, on the otherhand, the income we gain from selling parts of our surplus does help us out quite a bit, economically speaking. Is it a wise decision to embargo the Corporation?"
- YFC_event.9.desc.b: "We have received information that Yellow Face, whom we just started trading with, is now working with the raiders to the north. With this early betrayal by the Company, it has been decided to seize some assets and cut trade with them. Auf Wiedersehen mit ihnen!"
- YFC_event.9.desc.c: "uh something for CRN hating Yellow Face, though they denounce YFC" #ZDubbz
- YFC_event.9.desc.d: "uh something for GMD hating Yellow Face, though they take assets" #ZDubbz
+ YFC_event.9.desc.b: "We have received information that Yellow Face, whom we just started trading with, is now working with the raiders to the north. With this early betrayal by the Company, it has been decided that we seize some assets and cut trade with them. Auf Wiedersehen mit ihnen!"
+ YFC_event.9.desc.c: "The Yellowfacers have done it again. After a night of perusing through senseless spam mail, a delegate has found out that the Yellow Face Corporation has, once again, gone behind our backs and betrayed our trust. Though, this time, we're looking to cut ties for good. The Yellowfacers are now officially allied to the raiding group just north of us, meaning that they have likely been sponsoring the various raids and robberies that this group has been conducting on our cities and towns within the past months. A majority of our delegates are in agreement, we should fully cut ties with The Yellow Face Corporation. Are you in agreement?"
+ YFC_event.9.desc.d: "We see the writing on the wall. It is no secret that no one else on this entire continent supports Yellow Face anymore. Really, we're just in it for the money, regardless, but it looks super bad on us if we keep supporting the YFC. With a heavy heart, we've decided to embargo the company, just like the rest of the continent has... Right? That's what we're doing, right?" #large stability and pp hit if no
  YFC_event.9.a: "Yes!"
  YFC_event.9.b: "We should just wait this out... for now." #See focus
  YFC_event.9.c: "We do not negotiate with Terrorists!"
@@ -710,9 +710,9 @@
  YFC_event.10.t.a: "Tragic News!" 
  YFC_event.10.t.b: "Connections Severed." 
  YFC_event.10.desc.a: "[FROM.GetName] has embargoed us!"
- YFC_event.10.desc.b: "Something something about evil CRN being evil idk you have fun" #ZDubbz
+ YFC_event.10.desc.b: "On a calm afternoon at the corporate office, a strongly worded letter was handed in from who we thought would stand in solidarity with us forever. The Numismatians have, idiotically, decided to break all ties with us. This is, obviously, a horribly stupid and egrigious act on their part, but what's even worse is that they decided to PUBLICIZE this decision. They've broadcasted to every publication that'd listen that we're working with 'pillagers' and 'arsonists'. Don't they know anything about business? We obviously don't support everything that the Bunch does; it's for money. Numismatians, of course, frequently work with socialists, but our esteemed corporate employees don't speak ill of them. It's just money. It's profit. It's the game. \nIt gets even worse; they've also been telling news networks that they've ideologically split from us, and have denounced our economic system as 'Crony Capitalism.' They claim that their economic is the only true capitalistic mode of production. Numismatian buffoonery, from this day forward, knows absolutely no bounds. We have no interest in ever working with them again."
  YFC_event.10.a: "They don't know anything! They're... purple!"
- YFC_event.10.b: "Such 'useful' allies!" #For CRN ZDubbz
+ YFC_event.10.b: "Such 'useful' allies!" #For CRN
 
  YFC_event.11.t: "How Much?"
  YFC_event.11.desc: "It is no surprise that the large sums of money that Eraser managed to stockpile in his months as a plunderer could be useful for our industrialization efforts, however, many of our Sectorial leaders have been in open debate about the exact amount needed. In an attempt to ease the tensions between the Sectorials, Yellow Face decided to step in and make a concrete decision. He stated that we will be..."
@@ -800,7 +800,7 @@
  YFC_event.28.a: "We could've done better..."
 
  YFC_event.29.t: "The New Market"
- YFC_event.29.desc: "We had received an interesting telegram. The Yellow Face Corporation, led by Yellow Face, has informed us about business opportunities with them. They are willing to make deals in a way of a pawn shop as they are willing to both buy and sell equipment. While we may or may not need it now, this will be a valuable tool that we should use carefully." #ZDubbz if you want to
+ YFC_event.29.desc: "We had received an interesting telegram. The Yellow Face Corporation, led by Yellow Face, has informed us about business opportunities with them. They are willing to make deals in a way of a pawn shop as they are willing to both buy and sell equipment. While we may or may not need this now, it will be a valuable tool that we should use carefully." 
  YFC_event.29.a: "Very interesting!"
  YFC_event.29.b: "We are sadly not in a position to use it yet!"
 
@@ -869,18 +869,18 @@
  YFC_event.43.b: "An ultimatum is an ultimatum."
 
  YFC_event.44.t: "Eyes to the East"
- YFC_event.44.desc: "Something about Teardrop taking Davidland and that we now need to more fast to get as much land as possible"
- YFC_event.44.a: "zdubbz cough"
+ YFC_event.44.desc: "The teardropper population has been rapidly spreading throughout northern and eastern Goiky. Anyone living there would tell you that, just a few years ago, it was rare to find a teardropper outside of the Beach Territory. Now? They're nearly everywhere. This, of course, comes from Beacher... overbreeding. Without getting into detail, the territory has become overcrowded, and their government is using it for political advantage, claiming lands in which teardropper population exceeds a certain, arbitrary threshold. This, obviously, poses a threat on the small amounts of sea trade that we do through the lawless eastern seaboard. Though, if we claim and control those lands before the teardroppers can... perhaps we could keep it for ourselves?"
+ YFC_event.44.a: "That would be perfect."
 
  YFC_event.45.t: "Dear Teardrop,"
- YFC_event.45.desc: "uh put the letter here I guess also please tell me what the effects should be in the context on what I have made (So more control, pp, or something else?)"
- YFC_event.45.a: "zdubbz cough"
+ YFC_event.45.desc: "Hello. We have, unfortunately, traded letters before. Then, and even now, I can smell the essence of your sea-salty being upon the paper. You sicken me, not just in smell, but in demeanor and in personality. You are a rotten sort of individual, what with your ruling style, poor planning, uncoordination, I could continue, though, I'm not entirely sure of the reading capabilities that you may or may not have. I say this to say, I have absolutely no clue how any of your citizens, let alone your high command, could stand bearing witness to your ugliness. I would like to extend an apology, not to you, but to the populace of the Beach Territory, as I'm sure your stench wafts its way from Farbeach and back."
+ YFC_event.45.a: "-Sincerely, Yellow Face (P.S., that droopiness at your top is hideous)"
 
- YFC_event.46.t: "Pickpocketing expanded" #Please put a better name I got no good ones :( ZDubbz
- YFC_event.46.desc: "zdubbz something on the whole how we are able to do this and why each choice is good or bad bla bla ALSO THAT THIS IS TASER'S IDEA"
- YFC_event.46.a: "Steal X item" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
- YFC_event.46.b: "Steal Y item" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
- YFC_event.46.c: "Steal Z item" #Gain 600K, increases Taser influence by 2, and some other bad thing but I have no idea rn
+ YFC_event.46.t: "Pickpocketting" #Please put a better name I got no good ones :( ZDubbz
+ YFC_event.46.desc: "Surely the citizens of the Bunch wouldn't notice any missing funds, that are far too poor to care about that sort of thing. This was, in essence, what Taser had been suggesting that we do for the past... well, however long. It's a fair idea to gain money, sure, but no one could really agree on what should be stolen. We've come down to three choices:\n1. We steal a large chunk of quartz from the large bank we built in Podgornyv. They are quite unlikely to notice it, or even blame it on a member of their own populace, if we do it correctly.\n2. We steal a small amount of pillars from the bank. This is quite a bit harder to pull off, considering it would involve removing large structural supports.\n3. Steal the whole bank."
+ YFC_event.46.a: "Quartz chunk!" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
+ YFC_event.46.b: "Quartz pillars!" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
+ YFC_event.46.c: "Entire bank??!!" #Gain 600K, increases Taser influence by 2, and some other bad thing but I have no idea rn
  YFC_event.46.d: "We don't need such actions." #Lowers Taser's influence by 2
 
  YFC_event.47.t: "Preparations" #For the boats
@@ -892,11 +892,11 @@
  YFC_event.48.desc: "zdubbz something on the eastern stuff is mostly done bla bla bla"
  YFC_event.48.a: "Where is the next intrest?"
 
- YFC_event.49.t: "Battalions of Force" #zdubbz cough
- YFC_event.49.desc: "TopHat wants to deploy more soldiers to the east is this a good idea????????????" 
- YFC_event.49.a: "Sure!" #Increases TopHat influence
- YFC_event.49.b: "No!"
- YFC_event.49.c: "Better idea you fun 'ideas' are going away!" #Lowers TopHat influence
+ YFC_event.49.t: "Battalions of Force"
+ YFC_event.49.desc: "TopHat, with his many, many, many suggestions. Today, he has come to Yellow Face's office, wishing to offer him some extra forces. He apparently has spare men lying around (seriously, why does he have spare forces?), and is willing to commit them to the seaboard cause, as long as he can get something out of it. Of course, yet again, that something is money. Now, he certainly isn't asking for a large amount of money, however, some analysts have stated that the next fiscal quarter might be a bit tight for us. Just how far are we willing to take this game?" #tophat wants 150k
+ YFC_event.49.a: "As far as it needs to go." #Increases TopHat influence
+ YFC_event.49.b: "Soldiers aren't that essential, lets not overdo things."
+ YFC_event.49.c: "Better idea: shut up." #Lowers TopHat influence
 
  YFC_event.50.t: "Spoils of Efforts" #zdubbz cough
  YFC_event.50.desc: "Pipe and Hammer have found resources like grain and other things idk. anyways they want to take and sell/use it. "
@@ -908,7 +908,7 @@
  YFC_event.51.a: "Yeah!" #Increases Beaker influence
  YFC_event.51.b: "Noo!" #Decreases Beaker influence
 
- YFC_event.52.t: "Mercenary Upgrade" #zdubbz if you want to rewrite
+ YFC_event.52.t: "Mercenary Upgrade"
  YFC_event.52.desc: "Today we received an interesting letter from a good friend of ours, that friend was the Mercenaries.  The Mercenaries' strength has been growing for quite some time now thanks to our funding and their own adventures. The letter states that due to this increasing strength, the size of their force has increased. A very nice update from them and a nice upgrade for us."
  YFC_event.52.a: "Fantastic!"
 
@@ -951,6 +951,21 @@
  YFC_borderwars.8.t: "Placeholder"
  YFC_borderwars.8.desc: "uhh don't put text here yet"
  YFC_borderwars.8.a: "...?"
+
+ YFC_borderwars.9.t: "Failed Attack." #ZDubbz if you want to
+ YFC_borderwars.9.desc: "Our forces returned a few hours ago, battered. It seems that they were ready for us and prepared quite well. As a result, our forces took heavy losses and were unable to break through to the countryside. We will return to try again, some day..."
+ YFC_borderwars.9.a: "Unfortunate outcome."
+
+ YFC_borderwars.10.t: "Successful Attack!" #ZDubbz if you want to
+ YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although [FROM.GetName] had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. They came back victorious carrying the spoils of..."
+ YFC_borderwars.10.a: "Bags of cash!"
+ YFC_borderwars.10.b: "Boxes of rifles!"
+ YFC_borderwars.10.c: "Recurited captives!"
+ YFC_borderwars.10.d: "Trains!"
+
+ YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to
+ YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder"
+ YFC_borderwars.11.a: "Placeholder"
 
 # YFC_BUN
 
@@ -1232,7 +1247,7 @@
  BUN_YFC.1.a: "The Bunch, forever and always!"
 
  BUN_YFC.1.t.z: "The Yellow Facer Ideology Crumbles." #if eraser is jailed
- BUN_YFC.1.desc.z: "We're finally free! After our defeat in the war as the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Eraser was broken out of jail a couple of hours ago too, and he seems to be almost be ready to lead us again! We say 'almost' because he's still dealing with the grief from Pen's unfortunate death. Blocky, that traitor, decided to side with the Corporation, so, Eraser'll be the only one leading us for now. We'll sort out government stuff later, for now, we've gotta make sure this revolution doesn't die!"
+ BUN_YFC.1.desc.z: "We're finally free! After our defeat in the war as the old bunch, against the Yellow Facers, they split us up, and tried to get rid of our sprits, but we survived. Thrived even! And we're back now, better than ever! Eraser was broken out of jail a couple of hours ago too, and he seems to be almost be ready to lead us again! We say 'almost' because he's still dealing with the grief from Pen's unfortunate death. Blocky, that traitor, decided to side with the Corporation, so, soon Eraser'll be the only one leading us for now. We'll sort out government stuff later, for now, we've gotta make sure this revolution doesn't die!"
  BUN_YFC.1.b: "The Bunch, forever and always!"
 
  BUN_YFC.2.t: "Our Darkest Day." #YFC sees this
@@ -1796,3 +1811,9 @@
  bfdinews_cities.11.a: "Freedom to live or die..."
  bfdinews_cities.11.b: "The best efforts were not to save it..."
  bfdinews_cities.11.c: "The 'Free' Heart is now ours!"
+
+#Bullshit
+
+ DAV_lol_event.1.t: "Civil War Time"
+ DAV_lol_event.1.desc: "Uh Oh! It seems that you were unable to fix the economy in three seconds and now the people are really MAD at you! (even though it would take months for this to happen) Anyways this group called Davidland Freedom Front took all the northern lands and now a civil war is here! Good luck :)"
+ DAV_lol_event.1.a: "Wait... WHAT!?"
