@@ -1208,21 +1208,11 @@ focus_tree = {
 		relative_position_id = YFC_focus_spread_out_sectors
 		x = 0
 		y = 2
-		icon = GFX_focus_generic
+		icon = GFX_focus_YFC_population_boom
 		prerequisite = { focus = YFC_focus_spread_out_sectors }
 		prerequisite = { focus = YFC_focus_peoniele_the_second_city focus = YFC_focus_big_yoyleton }
 		cost = 8
-		#give event about the large population, highly variable based on what you chose
-		#NONE of these overlap except for (7 and 4) && (8 and 3)
-		#DONE1	develop peoniele -> peoniele the second city -> chose large dev (event about large profits but a slightly angry populace, and how yoyleton is still in ruins)
-		#DONE2	develop peoniele -> peoniele the second city -> chose medium or small dev (event about large profits and neglected yoyleton)
-		#DONE3	develop peoniele -> big yoyleton -> chose any large or medium dev (event on having a happy populace and big profits)
-		#DONE4	develop peoniele -> big yoyleton -> chose small (event about cities not living up to expectations, upset sectorials, but still happy population)
-		#DONE5	develop yoyleton -> big yoyleton -> chose large or medium dev (event about large profits, good trade with north, happy populace, but neglected peoniele)
-		#DONE6	develop yoyleton -> big yoyleton -> chose small dev (event about not developing enough, neglected peoniele, angry sectorials)
-		#DONE7	develop yoyleton -> peoniele the second city -> chose small dev (same event as #4)
-		#DONE8	develop yoyleton -> peoniele the second city -> chose medium dev MERGED WITH 3
-		#9	develop yoyleton -> peoniele the second city -> chose large dev (event about large profits, happy sectorials, but mad peoniele populace)
+
 		completion_reward = {
 			custom_effect_tooltip = l_YFC_POP
 			201 = {
@@ -1330,7 +1320,7 @@ focus_tree = {
 					country_event = YFC_event.30
 				}
 				ELSE = {
-					#Pick the fallback event if somehow this breaks please ZDubbz
+					#Pick the fallback event if somehow this breaks please ZDubbz!!!
 				}
 				if = {
 					limit = {
@@ -2553,6 +2543,15 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				IF = {
+					limit = {
+						is_ai = yes
+						has_manpower < 8000
+					}
+					add_manpower = 6000
+				}
+			}
 		}
 	}
 
@@ -2657,19 +2656,26 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_permanent_mercenary_purchase
 		relative_position_id = YFC_focus_great_business_partnership
-		x = 2.5
+		x = 3 #Hoi4 hates .5 or something idk
 		y = 0
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_establish_formal_connection }
+
+		available = {
+			has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+			has_completed_focus = YFC_focus_invest_in_speed
+			has_completed_focus = YFC_focus_invest_in_power
+		}
 
 		cost = 3
 		completion_reward = {
 			#gives an event (YES I KNOW) about eraser telling the yfc to have a permanent army
 			#lets player choose between purchasing basic (cheap), speed, or strong
-			#you can add some extra focuses to be unlocked for the grapes and cherries thing!
-			#choosing options here locks you out of other parts of grapes & cherries
-			#for example, if you go with basic, you cant invest in speed or power
-			#vice versa for the other ones
+
+			#Here is how I have it planned ZDubbz:
+			#Cherry will decrease cost (If possible) and/or increase time of use from 2 additional focuses. Decision option grants 10000 MP
+			#Grape's additional focus will grant supply traits to generals. Decision option grants tech unlock for support equipment and free support equipment
+			#Unnamed additional focus will grant XP and grant attack up to generals. Decision option grants tech unlock for arty equipment and free arty equipment 
 		}
 	}
 
@@ -2726,6 +2732,8 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#gives yfc 3M but makes them gain significantly less money monthly
+
+			#I like the 3M part but maybe Sectors cost twice as much or something else
 		}
 	}
 
@@ -2742,10 +2750,13 @@ focus_tree = {
 		completion_reward = {
 			#news event about raiders and bunch working together
 			#because yf just loves making shit worse for himself
+
+			#I don't feel like this News is major to outside players in the way Numismatia has that makes sense since it leads to the embargoes (Also what would this give you?)
+			#Cool idea but maybe something else? ZDubbz
 		}
 	}
 
-	focus = { #re; make it a real focus, it's sick as hell and im adding more. this part of the tree should be longer anyways
+	focus = { #yay :D
 		id = YFC_focus_from_the_deal
 		relative_position_id = YFC_focus_great_business_partnership
 		x = 0
@@ -2754,6 +2765,7 @@ focus_tree = {
 
 		available = {
 			has_political_power > 25
+
 			hidden_trigger = {
 				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
 			}
@@ -2767,6 +2779,10 @@ focus_tree = {
 
 		cost = 8
 		completion_reward = { #can you make this also require hoard gold and publicize partnership? idk how to do it without using prereq
+			#Why? YFC_focus_great_business_partnership does not have requirements for those two and I kinda like the choice of focuses for the player like the gold one
+			#ZDubbz
+
+
 			add_political_power = -25
 			add_stability = 0.05
 			add_war_support = 0.1
@@ -2778,10 +2794,10 @@ focus_tree = {
 		}
 	}
 
-	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally, w an event leading up to it
+	focus = {
 		id = YFC_focus_the_first_embargo
 		relative_position_id = YFC_focus_diverting_funds
-		x = -2.5
+		x = -3
 		y = 2
 		icon = GFX_focus_generic
 
@@ -2795,11 +2811,11 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			
+			#Gasp
 		}
 	}
 
-	focus = { # autocompleted a bit after completing strictly business partnership, hidden normally
+	focus = {
 		id = YFC_focus_numismatian_split
 		relative_position_id = YFC_focus_great_business_partnership
 		x = 4
@@ -2816,11 +2832,11 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#numismatians publically announce that they no longer see it fit to work with the yfc; news event
+			#Gasp part two
 		}
 	}
 
-	focus = { #begins periodically getting other embargoes from nations, when done, next part of tree opens
+	focus = {
 		id = YFC_focus_allow_raiding_into_traitors
 		relative_position_id = YFC_focus_great_business_partnership
 		x = 0
@@ -2835,9 +2851,9 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			#re; as the focus name states, it should open decisions to do VERY covert raids into other countries
-			#    like very sneaky stealth stuff in attempts to train the army
-			#    maybe a focus about it? i know i keep making focuses but its so addicting...
+			unlock_decision_category_tooltip = decision_YFC_raids_category
+			#I'll just put the raid stuff I had waiting here
+			#But only the raids other stuff unlocks later
 
 			hidden_effect = {
 				every_other_country = { #Embargo event
@@ -2853,13 +2869,13 @@ focus_tree = {
 					country_event = {
 						id = YFC_event.9
 						days = 1
-						random_days = 25
-						random_hours = 200
+						random_days = 45
+						random_hours = 24
 					}
 				}
 				country_event = {
 					id = YFC_event.54
-					days = 35
+					days = 50
 					random_hours = 24
 				}
 			}
@@ -2955,8 +2971,11 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			#re; limits trading to nations that the yfc is friendly with
-			#    in turn, the trading mechanic becomes more indepth (interpret how you wish, i dont know lol)
+			add_stability = 0.05
+			#Maybe a system to regain trust in nations? (Such as paying with money, guns, etc.)
+			#But for now just regain some stability at the cost of money
+
+			#ZDubbz
 
 			hidden_effect = {
 				GMD = { 
@@ -2989,9 +3008,7 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#re; i think that its fine here, maybe it's like the last straw/last connection to the outside world
-			#    i also think that it makes sense for coiny to be a bit late on embargoing the yfc
-			#Most likely name this last/final embargo
+			#Gasp part 3!!!
 		}
 	}
 
@@ -3016,17 +3033,17 @@ focus_tree = {
 			}
 			#Everything below this comment is placeholder stuff for other parts of the tree
 			set_cosmetic_tag = YFC_raiders
-			unlock_decision_category_tooltip = decision_YFC_raids_category
 			add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
 			
 		}
 	}
 }
 
-#Also just as a side note I think both first and second parts should have more stuff and not be as linear 
+#Also just as a side note I think the second part should have more stuff (Shocking I know) and not be as linear 
 
 #More stuff about the raiding things I guess:
 # -Show No Mercy sprit will now be a modifier, starts off grabage but gets better with army xp
 # -Stuff should unlock in time and not all at once
+# -Also look at the raiding decisions and see what and when stuff unlocks
 
 #ZDubbz

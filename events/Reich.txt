@@ -202,10 +202,10 @@ country_event = {
 				transfer_state_to = SMG 
 			}
 			FFT = {
-				add_manpower = 40000
+				add_manpower = 50000
 			}
 			SPL = {
-				add_manpower = 30000
+				add_manpower = 40000
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					producer = GGR
@@ -219,7 +219,7 @@ country_event = {
 					producer = GGR
 					amount = 3000
 				}
-				add_manpower = 15000
+				add_manpower = 25000
 				inherit_technology = GGR 
 				change_tag_from = GGR
 				random_list = {

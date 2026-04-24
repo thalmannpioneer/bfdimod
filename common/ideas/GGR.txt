@@ -34,7 +34,7 @@ ideas = {
 					add_war_support = -0.65
 					add_stability = -0.5
 					SPL = {
-						add_manpower = 15000
+						add_manpower = 20000
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
 							producer = SPL
@@ -55,6 +55,7 @@ ideas = {
 						add_core_of = SMG
 					}
 				}
+				FFT = {add_manpower = 10000}
 			}
 		}
 
@@ -62,7 +63,7 @@ ideas = {
 			picture = generic_war_preparation
 			modifier = {
 				surrender_limit = 0.25
-				conscription = 0.15
+				conscription = 0.25
 				supply_consumption_factor = -0.15
 				monthly_population = -5
 				ai_focus_aggressive_factor = 5

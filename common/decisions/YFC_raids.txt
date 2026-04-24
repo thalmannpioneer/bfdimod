@@ -4,6 +4,10 @@ decision_YFC_raids_category = {
       
 		fire_only_once = no
 
+		visible = {
+			always = no #UPDATE LATER!!!
+		}
+
 		cost = 75
 		days_remove = 45
 		days_re_enable = 360
@@ -48,6 +52,7 @@ decision_YFC_raids_category = {
 
 		visible = {
 			has_idea = idea_YFC_neglectful_command
+			always = no #UPDATE LATER!!!
 		}
 		
 		days_remove = 45
@@ -85,6 +90,10 @@ decision_YFC_raids_category = {
 		custom_cost_text = decisions_cost_money_500k
 		days_remove = 120
 		days_re_enable = 360
+
+		visible = {
+			always = no #UPDATE LATER!!!
+		}
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 5 }
@@ -137,6 +146,7 @@ decision_YFC_raids_category = {
 			check_variable = {
                 var_idea_YFC_mercy_attack < 0.24
             }
+			always = no #UPDATE LATER!!!
 		}
 
 		available = {
@@ -382,6 +392,10 @@ decision_YFC_raids_category = {
 			has_equipment = {
 				convoy > 5
 			}
+		}
+
+		visible = {
+			always = no #UPDATE LATER!!!
 		}
 
 		targets = { TBT DAV GGR } 

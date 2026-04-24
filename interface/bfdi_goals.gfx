@@ -1630,6 +1630,11 @@ SpriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_focus_YFC_population_boom"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_population_boom.dds"
+	}
+
+	spriteType = {
 		name = "GFX_focus_YFC_the_grapes_and_the_cherries"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds"
 	}
