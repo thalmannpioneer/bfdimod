@@ -159,7 +159,10 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			YFC = {has_completed_focus = YFC_focus_the_grapes_and_the_cherries}
+			YFC = {
+				has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+				check_variable = {var_YFC_merc_pick = 0}
+			}
 		}
 
 		available = {
@@ -238,7 +241,10 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			YFC = {has_completed_focus = YFC_focus_invest_in_speed}
+			YFC = {
+				has_completed_focus = YFC_focus_invest_in_speed
+				check_variable = {var_YFC_merc_pick = 0}
+			}
 		}
 
 		available = {
@@ -299,7 +305,10 @@ political_actions = {
 
 		visible = {
 			tag = YFC
-			YFC = {has_completed_focus = YFC_focus_invest_in_power}
+			YFC = {
+				has_completed_focus = YFC_focus_invest_in_power
+				check_variable = {var_YFC_merc_pick = 0}
+			}
 		}
 
 		available = {

@@ -2484,6 +2484,75 @@ country_event = { #YFC_focus_grow_closer_ties event
 	}
 }
 
+country_event = { #YFC_focus_permanent_mercenary_purchase event
+	id = YFC_event.56
+	title = YFC_event.56.t
+	desc = YFC_event.56.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	available = {
+		has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+		custom_trigger_tooltip = {
+			tooltip = l_decisions_YFC_divs
+			NOT = {has_country_flag = has_active_mercenaries}
+		}
+	}
+
+	option = { #Normal
+		name = YFC_event.56.a
+		201 = {
+			create_unit = {
+				division = "name = \"Mercenaries\" division_template = \"Cherry Company\" start_experience_factor = 0.7"
+				owner = YFC
+				count = YFC.var_YFC_merc_amount
+				id = 1984
+			}
+		}
+		set_variable = { var_YFC_merc_pick = 1 }
+		custom_effect_tooltip = l_YFC_mercs_remove
+	}
+	option = { #Speed
+	name = YFC_event.56.b
+		trigger = {
+			has_completed_focus = YFC_focus_invest_in_speed
+		}
+		201 = {
+			create_unit = {
+				division = "name = \"Mercenaries\" division_template = \"Combined Grape Affiliation\" start_experience_factor = 0.95"
+				owner = YFC
+				count = YFC.var_YFC_merc_amount
+				id = 1984
+			}
+		}
+		set_variable = { var_YFC_merc_pick = 2 }
+		custom_effect_tooltip = l_YFC_mercs_remove
+		
+	}
+	option = { #Power
+		name = YFC_event.56.c
+		trigger = {
+			has_completed_focus = YFC_focus_invest_in_power
+		}
+		201 = {
+			create_unit = {
+				division = "name = \"Mercenaries\" division_template = \"Unnamed Mercenary Brotherhood\" start_experience_factor = 0.95"
+				owner = YFC
+				count = YFC.var_YFC_merc_amount
+				id = 1984
+			}
+		}
+		set_variable = { var_YFC_merc_pick = 3 }
+		custom_effect_tooltip = l_YFC_mercs_remove
+	}
+	option = { #Nothing
+		name = YFC_event.56.d
+		army_experience = 50
+	}
+}
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################

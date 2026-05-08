@@ -2650,6 +2650,7 @@ focus_tree = {
 		cost = 3
 		completion_reward = {
 			#removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
+			#Just military_access and/or some cool stuff ZDubbz?
 		}
 	}
 
@@ -2667,15 +2668,13 @@ focus_tree = {
 			has_completed_focus = YFC_focus_invest_in_power
 		}
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#gives an event (YES I KNOW) about eraser telling the yfc to have a permanent army
-			#lets player choose between purchasing basic (cheap), speed, or strong
-
-			#Here is how I have it planned ZDubbz:
-			#Cherry will decrease cost (If possible) and/or increase time of use from 2 additional focuses. Decision option grants 10000 MP
-			#Grape's additional focus will grant supply traits to generals. Decision option grants tech unlock for support equipment and free support equipment
-			#Unnamed additional focus will grant XP and grant attack up to generals. Decision option grants tech unlock for arty equipment and free arty equipment 
+			country_event = {
+				id = YFC_event.56
+				hours = 1
+				random_hours = 2
+			}
 		}
 	}
 
@@ -2720,7 +2719,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { #yfc is kinda realizing that ppl dont fuck with them any more so theyre procuring money from strange places and hoarding it to make sure they dont go broke
+	focus = {
 		id = YFC_focus_hoard_gold
 		relative_position_id = YFC_focus_great_business_partnership
 		x = -2
@@ -2729,11 +2728,10 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_diverting_funds }
 
-		cost = 3
+		cost = 5
 		completion_reward = {
-			#gives yfc 3M but makes them gain significantly less money monthly
-
-			#I like the 3M part but maybe Sectors cost twice as much or something else
+			custom_effect_tooltip = l_money_gain_3M
+			add_to_variable = { money_amount = 30 }
 		}
 	}
 
@@ -2748,11 +2746,10 @@ focus_tree = {
 
 		cost = 3
 		completion_reward = {
-			#news event about raiders and bunch working together
-			#because yf just loves making shit worse for himself
 
-			#I don't feel like this News is major to outside players in the way Numismatia has that makes sense since it leads to the embargoes (Also what would this give you?)
-			#Cool idea but maybe something else? ZDubbz
+			#Alright how about something like a defense pact/allaince (but not a faction yet)
+			#Something that gives YFC maybe army buffs but makes the embargoes worse or something
+			#ZDubbz
 		}
 	}
 
@@ -2778,11 +2775,7 @@ focus_tree = {
 		}
 
 		cost = 8
-		completion_reward = { #can you make this also require hoard gold and publicize partnership? idk how to do it without using prereq
-			#Why? YFC_focus_great_business_partnership does not have requirements for those two and I kinda like the choice of focuses for the player like the gold one
-			#ZDubbz
-
-
+		completion_reward = {
 			add_political_power = -25
 			add_stability = 0.05
 			add_war_support = 0.1
@@ -2971,12 +2964,18 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			add_stability = 0.05
-			#Maybe a system to regain trust in nations? (Such as paying with money, guns, etc.)
-			#But for now just regain some stability at the cost of money
-
-			#ZDubbz
-
+			add_stability = 0.02
+            every_other_country = {
+                limit = { 
+					NOT = { tag = EMP } 
+					NOT = { tag = BUN }
+				}
+                add_opinion_modifier = {
+                    target = YFC
+                    modifier = medium_decrease
+                }
+            }
+			#Maybe something else idk
 			hidden_effect = {
 				GMD = { 
 					country_event = {

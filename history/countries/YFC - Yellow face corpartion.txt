@@ -82,9 +82,10 @@ set_popularities = {
  set_variable = { var_idea_YFC_mercy_morale = 0.03 }
  set_variable = { var_idea_YFC_raid_modifer = -0.15 } #Not part of idea but used in raids
 
-set_variable = {var = var_YFC_BUN_Anger value = 1 } #Useless but needed for killing Neo-Bunch
+set_variable = {var_YFC_BUN_Anger = 1 } #Useless but needed for killing Neo-Bunch
 
-set_variable = {var = var_YFC_merc_amount value = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
+set_variable = {var_YFC_merc_amount = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
+set_variable = { var_YFC_merc_pick = 0 } #Used for YFC raiders side with merc divs
 
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david

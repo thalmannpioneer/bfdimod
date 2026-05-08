@@ -920,6 +920,17 @@
  YFC_event.54.desc: "Something something about how sectors are fighting, chaos, and loss in money. YFC has made a bad choice and it seems we are fucked"
  YFC_event.54.a: "Save the sinking ship!"
 
+ YFC_event.55.t: "YFC_focus_grow_closer_ties" #ZDubbz
+ YFC_event.55.desc: "Words"
+ YFC_event.55.a: "Crazy"
+
+ YFC_event.56.t: "Permanent Mercenaries?" #ZDubbz
+ YFC_event.56.desc: "Idk I guess BUN likes the idea of Permanent forces or something idk it was your idea"
+ YFC_event.56.a: "Cherries!"
+ YFC_event.56.a: "Grapes!"
+ YFC_event.56.a: "Unnamed!"
+ YFC_event.56.d: "It works fine as it is..." #This one keeps the same systems
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

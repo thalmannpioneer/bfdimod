@@ -133,6 +133,7 @@
  l_YFC_repair: "Improves §YAnarchic Lands§! National Spirit by:\n- §YFree Repair:§! §G+25%§!"
  l_YFC_pp_gain: "Improves §YAnarchic Lands§! National Spirit by:\n- §YPolitical Power Gain:§! §G+0.5§!"
  l_YFC_mercs_div: "§YUnlocks a new Mercenary Division that can be hired in decisions!§!"
+ l_YFC_mercs_remove: "§RRemoves decisions to buy Mercenaries§!"
  l_YFC_mercs_upgrade_cav: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Combined Grape Affiliation Divisions.§!"
  l_YFC_mercs_upgrade_inf: "§YAdds Support Artillery and a Artillery battalion to future Unnamed Mercenary Brotherhood Divisions.§!"
  l_YFC_mercs_upgrade_amount: "§YMercenary hires will now grant 2 additional divisions.§!"
@@ -238,6 +239,7 @@
  l_money_gain_900K: "Gain §G900K Dollars§!"
  l_money_gain_1M: "Gain §G1M Dollars§!"
  l_money_gain_2M: "Gain §G2M Dollars§!"
+ l_money_gain_3M: "Gain §G3M Dollars§!"
  l_money_gain_5M: "Gain §G5M Dollars§!"
 
  l_money_lose_50K: "Lose §R50K Dollars§!"
