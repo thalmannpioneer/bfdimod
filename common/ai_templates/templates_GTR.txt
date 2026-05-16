@@ -49,7 +49,7 @@ infantry_GTR = {
 	role = infantry
 
 	upgrade_prio = {
-		base = 5
+		base = 10
 
 		modifier = {
 			factor = 1
@@ -110,6 +110,10 @@ infantry_GTR = {
 				infantry = 3
 			}
 		}
+
+		replace_at_match = 0.75
+        replace_with = infantry_GTR
+        target_min_match = 0.75
 	}
 
 	infantry_GTR = { #A bigger template if we have a big army

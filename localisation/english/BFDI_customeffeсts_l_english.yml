@@ -119,6 +119,8 @@
  l_YFC_sectors_Taser_Loss: "§YTaser's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Taser
  l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
  l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
+ l_YFC_sectors_Gold_Take: "§RHowever, Sectoral costs are increased by $100K permanently.§!"
+ l_YFC_sectors_Gold: "§RYou also pay $100K for the gold you took.§!"
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
  l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"

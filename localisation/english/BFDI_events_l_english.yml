@@ -927,8 +927,8 @@
  YFC_event.56.t: "Permanent Mercenaries?" #ZDubbz
  YFC_event.56.desc: "Idk I guess BUN likes the idea of Permanent forces or something idk it was your idea"
  YFC_event.56.a: "Cherries!"
- YFC_event.56.a: "Grapes!"
- YFC_event.56.a: "Unnamed!"
+ YFC_event.56.b: "Grapes!"
+ YFC_event.56.c: "Unnamed!"
  YFC_event.56.d: "It works fine as it is..." #This one keeps the same systems
 
  YFC_borderwars.1.t: "Success!"

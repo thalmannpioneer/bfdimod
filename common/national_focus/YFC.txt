@@ -2646,8 +2646,18 @@ focus_tree = {
 		y = 0
 		icon = GFX_focus_generic
 		prerequisite = { focus = YFC_focus_diverting_funds }
+		available = {
+			hidden_trigger = {
+				NOT = {has_completed_focus = YFC_focus_numismatian_split}
+			}
+		}
 
-		cost = 3
+		ai_will_do = {
+			base = 7
+		}
+
+		cost = 5
+
 		completion_reward = {
 			#removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
 			#Just military_access and/or some cool stuff ZDubbz?
@@ -2664,8 +2674,6 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = YFC_focus_the_grapes_and_the_cherries
-			has_completed_focus = YFC_focus_invest_in_speed
-			has_completed_focus = YFC_focus_invest_in_power
 		}
 
 		cost = 5
@@ -2675,6 +2683,10 @@ focus_tree = {
 				hours = 1
 				random_hours = 2
 			}
+		}
+
+		ai_will_do = {
+			base = 7
 		}
 	}
 
@@ -2722,16 +2734,28 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_hoard_gold
 		relative_position_id = YFC_focus_great_business_partnership
-		x = -2
-		y = 1
+		x = -4
+		y = 0
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_diverting_funds }
-
+		available = {
+			hidden_trigger = {
+				NOT = {has_completed_focus = YFC_focus_numismatian_split}
+			}
+		}
+		ai_will_do = {
+			base = 7
+		}
 		cost = 5
 		completion_reward = {
 			custom_effect_tooltip = l_money_gain_3M
+			custom_effect_tooltip = l_YFC_sectors_Gold_Take
 			add_to_variable = { money_amount = 30 }
+			IF = {
+				limit = {is_ai = yes}
+				add_to_variable = { money_amount = 15 }
+			}
 		}
 	}
 
@@ -2743,8 +2767,15 @@ focus_tree = {
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_establish_formal_connection }
-
-		cost = 3
+		available = {
+			hidden_trigger = {
+				NOT = {has_completed_focus = YFC_focus_numismatian_split}
+			}
+		}
+		ai_will_do = {
+			base = 7
+		}
+		cost = 5
 		completion_reward = {
 
 			#Alright how about something like a defense pact/allaince (but not a faction yet)
@@ -2839,7 +2870,7 @@ focus_tree = {
 		prerequisite = { focus = YFC_focus_numismatian_split }
 
 		ai_will_do = {
-			base = 10
+			base = 15
 		}
 
 		cost = 5
