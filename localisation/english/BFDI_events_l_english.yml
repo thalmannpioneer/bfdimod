@@ -1823,6 +1823,24 @@
  bfdinews_cities.11.b: "The best efforts were not to save it..."
  bfdinews_cities.11.c: "The 'Free' Heart is now ours!"
 
+ bfdinews_cities.12.t: "LOOTING OF FOOTPATHBURG!"
+ bfdinews_cities.12.desc: "While gunfire still rings out in the streets, it is clear that forces under the [201.controller.GetName] flag have captured a majority of the city. Yellow Face, head of the Yellow Face Company, had hired even more mercenaries to replace the losses from the war. Despite all efforts to throw more money into the war, their enemies reached the city. Fighting took place on every street as the invading army took captured block after block. During the chaos, many stores, banks, and even the HQ of Yellow Face Company itself were looted by the advancing army and civilians. Yellow Face and the rest of the Sectorials have reportedly fled the capital before it came under fire. For now, the once great center of trade has fallen into a state of anarchy as of [?global.date.GetDateStringNoHourLong]."
+ bfdinews_cities.12.a: "Will the global market survive?"
+ bfdinews_cities.12.b: "Is there anyone left to fire...?"
+ bfdinews_cities.12.c: "Money will not solve your problems here!"
+
+ bfdinews_cities.13.t: "FALL OF ANNOUNCERGRAD!"
+ bfdinews_cities.13.desc: "Reports are chaotic and misleading, but it seems that as of [?global.date.GetDateStringNoHourLong], Announcergrad has fallen to the advance of [209.controller.GetName]. [GTR.GetLeader] had rallied any possible defenders inducing armed civilians after the defeats that had allowed the attackers to reach the city. As time went on, fighting had reached more into the city as the attackers had to clear street by street. As the council building came under fire, most of the government, inducing [GTR.GetLeader] had fled from the city. With the fall of the council building, most of the resistance has collapsed with only a few pockets holding on. With the loss of the major city, will the Technocratic Government hold on?"
+ bfdinews_cities.13.a: "Grim situation."
+ bfdinews_cities.13.b: "*Incoherent Screaming*"
+ bfdinews_cities.13.c: "A central point in Goiky is now ours!"
+
+ bfdinews_cities.14.t: "FALL OF THE GOIKY UNIVERSITY!"
+ bfdinews_cities.14.desc: "[89.controller.GetName] had announced that on [?global.date.GetDateStringNoHourLong], The Goiky University, the center of technological advancement in Goiky, had been captured by their forces. As the attackers pushed closer to the University, [GTR.GetLeader] had made preparations to defend the University using fortifications and trenches. As the battle began, the attackers cleared trench after trench, then pushed into the outer buildings of the Campus. Fighting became brutal as the attackers had to clear building after building that housed defenders. As the clearing continued, Golf Ball's lab was cleared out using grenades and flamethrowers. Golf Ball was not there, having already fled. With most of the University captured, the defenders surrendered. With the smoldering ruins now being truly revealed, is this the end of the Technocratic Republic?"
+ bfdinews_cities.14.a: "Technological developments are no more."
+ bfdinews_cities.14.b: "Is the statue gone?"
+ bfdinews_cities.14.c: "Their tech is for the taking!"
+
 #Bullshit
 
  DAV_lol_event.1.t: "Civil War Time"

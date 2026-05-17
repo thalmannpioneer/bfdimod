@@ -1521,3 +1521,160 @@ news_event = {
         }
     }
 }
+
+news_event = {
+    #Footpathburg
+    id = bfdinews_cities.12
+    title = bfdinews_cities.12.t
+    desc = bfdinews_cities.12.desc
+    picture = GFX_bfdinews_city
+
+    major = yes
+    minor_flavor = yes
+
+    trigger = {
+        NOT = {
+            YFC = {controls_province = 166}
+        }
+        201 = { is_owned_by = YFC }
+        NOT = { has_global_flag = fall_of_foot}
+        YFC = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_foot
+        YFC = {subtract_from_variable = { money_amount = 10 }}
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = bfdinews_cities.12.a
+        trigger = {
+            NOT = {TAG = YFC}
+            NOT = {controls_province = 166}
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.12.b
+        trigger = {
+            TAG = YFC
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.12.c
+        trigger = {
+            controls_province = 166
+            NOT = {TAG = YFC}
+        }
+    }
+}
+
+news_event = {
+    #Announcergrad
+    id = bfdinews_cities.13
+    title = bfdinews_cities.13.t
+    desc = bfdinews_cities.13.desc
+    picture = GFX_bfdinews_city
+
+    major = yes
+    minor_flavor = yes
+
+    trigger = {
+        NOT = {
+            GTR = {controls_province = 2737}
+        }
+        209 = { is_owned_by = GTR }
+        NOT = { has_global_flag = fall_of_announcer}
+        GTR = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_announcer
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = bfdinews_cities.13.a
+        trigger = {
+            NOT = {TAG = GTR}
+            NOT = {controls_province = 2737}
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.13.b
+        trigger = {
+            TAG = GTR
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.13.c
+        trigger = {
+            controls_province = 2737
+            NOT = {TAG = GTR}
+        }
+    }
+}
+
+news_event = {
+    #Goiky University
+    id = bfdinews_cities.14
+    title = bfdinews_cities.14.t
+    desc = bfdinews_cities.14.desc
+    picture = GFX_bfdinews_city
+
+    major = yes
+    minor_flavor = yes
+
+    trigger = {
+        NOT = {
+            GTR = {controls_province = 3545}
+        }
+        89 = { is_owned_by = GTR }
+        NOT = { has_global_flag = fall_of_university}
+        GTR = {
+            has_war = yes
+            has_completed_focus = GTR_focus_even_better_now
+        }
+    }
+
+    immediate = {
+        set_global_flag = fall_of_university
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = bfdinews_cities.14.a
+        trigger = {
+            NOT = {TAG = GTR}
+            NOT = {controls_province = 3545}
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.14.b
+        trigger = {
+            TAG = GTR
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.14.c
+        trigger = {
+            controls_province = 3545
+            NOT = {TAG = GTR}
+        }
+    }
+}

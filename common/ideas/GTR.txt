@@ -186,7 +186,7 @@ ideas = {
             modifier = {
                 training_time_factor = 0.1
                 max_command_power = 20
-                additional_brigade_column_size = 1
+                army_leader_start_level = 1 
             }
         }
 

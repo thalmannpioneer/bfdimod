@@ -165,6 +165,10 @@ decision_YFC_trade_category= {
 				add = -100
                 has_equipment = {infantry_equipment < 1100}
 			}
+			modifier = {
+				add = -100
+                has_completed_focus = YFC_focus_numismatian_split
+			}
 		}
 	}
 
@@ -176,7 +180,6 @@ decision_YFC_trade_category= {
 				has_completed_focus = YFC_focus_industrialize_or_die
 				has_completed_focus = YFC_focus_close_the_markets #Will most likely move this elsewhere
 			}
-			
 		}
 
 		fire_only_once = yes

@@ -224,9 +224,18 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = { #This is here so if the player does all the decisions first and focuses last it (should) not break now
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	
@@ -254,9 +263,18 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	
@@ -280,9 +298,18 @@ focus_tree = {
 				popularity = 0.1
 			}
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	
@@ -450,9 +477,18 @@ focus_tree = {
 				days = 180
 			}
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	
@@ -676,9 +712,18 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = idea_GFG_militarization
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	
@@ -701,9 +746,18 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_cgf = -0.1 }
-			add_to_variable = { var_GFG_crisis_psf = 0.1 }
-			add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_cgf = -0.1 }
+				add_to_variable = { var_GFG_crisis_psf = 0.1 }
+				add_to_variable = { var_GFG_crisis_pfegf = 0.1 }
+			}
 		}
 	}
 	

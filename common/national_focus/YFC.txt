@@ -258,6 +258,16 @@ focus_tree = {
 		completion_reward = {
 			subtract_from_variable = { money_amount = 25 }
 			custom_effect_tooltip = l_YFC_mercs_upgrade_cav
+			IF = {
+				limit = {
+					has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+					check_variable = {var_YFC_merc_pick = 2}
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 500
+				}
+			}
 			hidden_effect = {
 				add_units_to_division_template = {
 					template_name = "Combined Grape Affiliation"
@@ -293,6 +303,16 @@ focus_tree = {
 		completion_reward = {
 			subtract_from_variable = { money_amount = 25 }
 			custom_effect_tooltip = l_YFC_mercs_upgrade_inf
+			IF = {
+				limit = {
+					has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+					check_variable = {var_YFC_merc_pick = 3}
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 500
+				}
+			}
 			hidden_effect = {
 				add_units_to_division_template = {
 					template_name = "Unnamed Mercenary Brotherhood"
@@ -303,6 +323,136 @@ focus_tree = {
 						artillery = 0
 					}
 				}
+			}
+		}
+	}
+
+ #ARMY PATH (RAIDER)
+
+	focus = {
+		id = YFC_focus_mobilize_excess_reserves 
+		relative_position_id = YFC_focus_the_grapes_and_the_cherries
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+				check_variable = {var_YFC_merc_pick = 1}
+			}
+		}
+
+		allow_branch = { 
+			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+			check_variable = {var_YFC_merc_pick = 1}
+		}
+
+		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
+		
+		cost = 6
+		completion_reward = {
+			add_manpower = 15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				producer = YFC
+				amount = 500
+			}
+			201 = {
+				create_unit = {
+					division = "name = \"Mercenaries\" division_template = \"Cherry Company\" start_experience_factor = 0.7"
+					owner = YFC
+					count = 2
+					id = 1984
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YFC_focus_focus_on_supply
+		relative_position_id = YFC_focus_purchase_support_package
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+				check_variable = {var_YFC_merc_pick = 2}
+			}
+		}
+
+		allow_branch = { 
+			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+			check_variable = {var_YFC_merc_pick = 2}
+		}
+
+		prerequisite = { focus = YFC_focus_purchase_support_package }
+		
+		cost = 5
+		completion_reward = {
+			every_army_leader = {
+				IF = {
+					limit = {
+						is_field_marshal = yes
+					}
+					add_trait = {
+						character = FROM
+						trait = logistics_wizard
+					}
+				}
+				ELSE = {
+					add_trait = {
+						character = FROM
+						trait = commando
+					}
+				}
+				add_trait = {
+					character = FROM
+					trait = scavenger
+				}
+				add_logistics = 2
+			}
+		}
+	}
+
+	focus = {
+		id = YFC_focus_focus_on_combat
+		relative_position_id = YFC_focus_purchase_ordnance_package
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		available = {
+			hidden_trigger = {
+				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+				check_variable = {var_YFC_merc_pick = 3}
+			}
+		}
+
+		allow_branch = { 
+			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
+			check_variable = {var_YFC_merc_pick = 3}
+		}
+
+		prerequisite = { focus = YFC_focus_purchase_ordnance_package }
+		
+		cost = 5
+		completion_reward = {
+			army_experience = 100
+			add_command_power = 100
+			every_army_leader = {
+				add_trait = {
+					character = FROM
+					trait = infantry_leader
+				}
+				add_trait = {
+					character = FROM
+					trait = organizer
+				}
+				add_planning = 2
+				add_attack = 1
 			}
 		}
 	}
@@ -392,7 +542,7 @@ focus_tree = {
 					GGR = {
 						add_equipment_to_stockpile = {
 							type = infantry_equipment
-							amount = 1500
+							amount = 2000
 						}
 						add_political_power = 100	
 					}
@@ -2661,6 +2811,14 @@ focus_tree = {
 		completion_reward = {
 			#removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
 			#Just military_access and/or some cool stuff ZDubbz?
+
+			custom_effect_tooltip = l_YFC_sectors_All_Lower
+			add_political_power = -100 #Might remove later
+			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
 		}
 	}
 

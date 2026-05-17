@@ -476,7 +476,61 @@ on_actions = {
                 }
                 set_global_flag = cap_alliance
             }
-            else_if = {
+            else_if = { #YELLOW FACE
+                limit = {
+                    ROOT = { tag = YFC }
+                }
+                if = {
+                    limit = {
+                        NOT = { has_global_flag = fall_of_foot}
+                    }
+                    every_possible_country = {
+                        limit = { is_ai = no }
+                        news_event = {
+                            id = bfdinews_cities.12
+                            hours = 1
+                            random_hours = 6
+                        }
+                    }
+                    set_global_flag = fall_of_foot
+                }
+                #set_global_flag = cap_alliance #Update later me
+            }
+            else_if = { #GOLF BALL
+                limit = {
+                    ROOT = { tag = GTR }
+                }
+                if = {
+                    limit = {
+                        NOT = { has_global_flag = fall_of_announcer}
+                    }
+                    every_possible_country = {
+                        limit = { is_ai = no }
+                        news_event = {
+                            id = bfdinews_cities.13
+                            hours = 1
+                            random_hours = 6
+                        }
+                    }
+                    set_global_flag = fall_of_announcer
+                }
+                if = {
+                    limit = {
+                        NOT = { has_global_flag = fall_of_university}
+                    }
+                    every_possible_country = {
+                        limit = { is_ai = no }
+                        news_event = {
+                            id = bfdinews_cities.14
+                            hours = 1
+                            random_hours = 6
+                        }
+                    }
+                    set_global_flag = fall_of_university
+                }
+                #set_global_flag = cap_alliance #Update later me
+            }
+            else_if = { #BUNCH
                 limit = {
                     OR = {
                         AND = {
@@ -493,6 +547,7 @@ on_actions = {
                     IF = {
                         limit = {
                             NOT = {has_completed_focus = YFC_focus_a_look_inward}
+                            NOT = {has_completed_focus = YFC_focus_YFC_funded_pillaging}
                         }
                     }
                     country_event = {
