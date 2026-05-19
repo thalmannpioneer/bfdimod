@@ -241,7 +241,7 @@
  YFC_eastern_invest: "§GInvest§! in §Y[FROM.GetName]§!"
  YFC_eastern_manpower: "§GDeploy Soldiers§! in §Y[FROM.GetName]§!"
  YFC_eastern_seize: "§RSeize§! §Y[FROM.GetName]§!"
- YFC_eastern_ports: "§CBuild Port§! in §Y[FROM.GetName]§!"
+ YFC_eastern_ports: "§CUpgrade Port§! in §Y[FROM.GetName]§!"
  YFC_eastern_roads: "§CBuild Infrastructure§! in §Y[FROM.GetName]§!"
  YFC_eastern_core: "§YCore§! §Y[FROM.GetName]§!"
  YFC_eastern_raid: "§RClash§! in the §YNorthern Front§!"

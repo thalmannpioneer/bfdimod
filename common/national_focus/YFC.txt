@@ -251,6 +251,13 @@ focus_tree = {
             }
 		}
 
+		allow_branch = { 
+			OR = {
+				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
+				check_variable = {var_YFC_merc_pick = 2}
+			}
+		}
+
 		prerequisite = { focus = YFC_focus_invest_in_speed }
 		mutually_exclusive = { focus = YFC_focus_purchase_ordnance_package }
 		
@@ -294,6 +301,13 @@ focus_tree = {
                 tooltip = l_money_cost_2_5M
                 check_variable = { money_amount > 25 }
             }
+		}
+
+		allow_branch = { 
+			OR = {
+				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
+				check_variable = {var_YFC_merc_pick = 3}
+			}
 		}
 
 		prerequisite = { focus = YFC_focus_invest_in_power }

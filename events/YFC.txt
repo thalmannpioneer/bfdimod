@@ -2560,6 +2560,8 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 		set_variable = { var_YFC_merc_pick = 1 }
 		custom_effect_tooltip = l_YFC_mercs_remove
 
+		mark_focus_tree_layout_dirty = yes
+
 		ai_chance = {
 			base = 10
 		}
@@ -2582,6 +2584,7 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 		}
 		set_variable = { var_YFC_merc_pick = 2 }
 		custom_effect_tooltip = l_YFC_mercs_remove
+		mark_focus_tree_layout_dirty = yes
 		
 		ai_chance = {
 			base = 15
@@ -2605,6 +2608,7 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 		}
 		set_variable = { var_YFC_merc_pick = 3 }
 		custom_effect_tooltip = l_YFC_mercs_remove
+		mark_focus_tree_layout_dirty = yes
 
 		ai_chance = {
 			base = 15

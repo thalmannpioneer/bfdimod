@@ -34,6 +34,13 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1000
+			max = 5000
+			integer = yes
+		}
+
 		216 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
@@ -41,6 +48,7 @@ country_event = {
 			}
 		}
 		229 = {
+			add_manpower = manpower_regain
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT
@@ -70,19 +78,26 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1000
+			max = 5000
+			integer = yes
+		}
 		180 = {
 			remove_dynamic_modifier = { modifier = TBT_low_pop }
 			add_dynamic_modifier = { 
 				modifier = TBT_med_pop 
 				scope = TBT
 			}
-			add_manpower = 3198
+			add_manpower = 4198
 		}
 		184 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 		country_event = {
 			id = TBT_hidden_event.4
@@ -101,12 +116,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1000
+			max = 5000
+			integer = yes
+		}
 		216 = {
 			remove_dynamic_modifier = { modifier = TBT_low_pop }
 			add_dynamic_modifier = { 
 				modifier = TBT_med_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 		country_event = {
 			id = TBT_hidden_event.5
@@ -125,17 +147,25 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1000
+			max = 5000
+			integer = yes
+		}
 		232 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 		228 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 		country_event = {
 			id = TBT_hidden_event.6
@@ -154,18 +184,26 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1000
+			max = 5000
+			integer = yes
+		}
 		229 = {
 			remove_dynamic_modifier = { modifier = TBT_low_pop }
 			add_dynamic_modifier = { 
 				modifier = TBT_med_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 		230 = {
 			add_dynamic_modifier = { 
 				modifier = TBT_low_pop 
 				scope = TBT
 			}
+			add_manpower = manpower_regain
 		}
 	}
 }
