@@ -39,7 +39,7 @@ GPG_civil_war = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 30
+		value = 1000
 	}
 }
 
@@ -63,7 +63,7 @@ GPG_GPR_trade = {
 	ai_strategy = {
         type = build_army
         id = infantry
-        value = 10
+        value = 1000
     }
 	ai_strategy = {
 		type = role_ratio

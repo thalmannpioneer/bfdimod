@@ -12,7 +12,7 @@ focus_tree = {
 	reset_on_civilwar = no
 	shared_focus = Musketeers_three_musketeers
 
-	initial_show_position = { focus = YFC_focus_open_the_market }
+	initial_show_position = { focus = YFC_focus_consolidate_power }
 
  #STARTER PATH
 
@@ -252,6 +252,7 @@ focus_tree = {
 		}
 
 		allow_branch = { 
+			has_completed_focus = YFC_focus_establish_sectorialism
 			OR = {
 				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
 				check_variable = {var_YFC_merc_pick = 2}
@@ -304,6 +305,7 @@ focus_tree = {
 		}
 
 		allow_branch = { 
+			has_completed_focus = YFC_focus_establish_sectorialism
 			OR = {
 				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
 				check_variable = {var_YFC_merc_pick = 3}
@@ -544,7 +546,6 @@ focus_tree = {
 		
 		cost = 3
 		completion_reward = {
-			#set_cosmetic_tag = YFC_raiders
 			add_opinion_modifier = { target = BUN modifier = large_increase }
 			every_country_with_original_tag = {
 				original_tag_to_check = BUN
@@ -2355,13 +2356,13 @@ focus_tree = {
 								state = 232
 							}
 						}
-						set_variable = {eastern_support_var = -0.2}
+						set_variable = {eastern_support_var = -0.25}
 					}
 					ELSE_IF = { 
 						limit = {
 							state = 229
 						}
-						set_variable = {eastern_support_var = -0.4}
+						set_variable = {eastern_support_var = -0.5}
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}
@@ -2398,13 +2399,30 @@ focus_tree = {
 
 		cost = 5
 		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_fast
-			#Okay so the idea I have is that you gain support from these focuses and stall teardrop BUT the normal actions give less so you are banking in being fast or something
+			custom_effect_tooltip = l_YFC_eastern_gainall_5
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.05 }
+				}
+			}
 			mark_focus_tree_layout_dirty = yes
 		}
 
 		ai_will_do = {
-			base = 5
+			base = 0 #10
 		}	
 	}
 
@@ -2692,13 +2710,271 @@ focus_tree = {
 	}
 
 	focus = {
-		id = YFC_focus_who_dares_wins
-		relative_position_id = YFC_focus_interfere_with_sea_routes
+		id = YFC_focus_play_smart
+		relative_position_id = YFC_focus_see_to_the_eastern_front
+		x = 4
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
+		mutually_exclusive  = { focus = YFC_focus_play_fast }
+
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = {
+			base = 100 # 10
+		}
+	}
+
+	focus = {
+		id = YFC_focus_negotiate_with_teardrop
+		relative_position_id = YFC_focus_play_smart
+		x = -2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_play_smart }
+
+		allow_branch = { has_completed_focus = YFC_focus_play_smart }
+
+		cost = 5
+		completion_reward = {
+			add_opinion_modifier = { target = TBT modifier = large_increase }
+			every_country_with_original_tag = {
+				original_tag_to_check = TBT
+				add_opinion_modifier = { target = YFC modifier = large_increase }
+			}
+			country_event = {
+				id = YFC_event.57
+				hours = 1
+				random_hours = 2
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_push_for_settlement
+		relative_position_id = YFC_focus_negotiate_with_teardrop
+		x = -2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_negotiate_with_teardrop }
+
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_eastern_statebuild
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_prospect_the_lands
+		relative_position_id = YFC_focus_push_for_settlement
 		x = 0
-		y = 2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_push_for_settlement }
+
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_eastern_statebuild
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_deploy_peacekeepers
+		relative_position_id = YFC_focus_negotiate_with_teardrop
+		x = 2
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_negotiate_with_teardrop focus = YFC_focus_shuffle_around_funds }
+
+		cost = 5
+		completion_reward = {
+			add_manpower = 5000
+			custom_effect_tooltip = l_YFC_eastern_gainall_5
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.05 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_bribe_village_leaders
+		relative_position_id = YFC_focus_deploy_peacekeepers
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_deploy_peacekeepers }
+
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = l_money_cost_300K
+                check_variable = { money_amount > 3 }
+            }
+		}
+
+		cost = 5
+		completion_reward = {
+			subtract_from_variable = { money_amount = 3 }
+			custom_effect_tooltip = l_YFC_eastern_gainall_10
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 229
+							state = 232
+							state = 228
+							state = 225
+							state = 230
+							state = 226
+							state = 192
+							state = 231
+							state = 227
+						}
+					}
+					add_to_variable = { eastern_support_var = 0.1 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_shuffle_around_funds
+		relative_position_id = YFC_focus_play_smart
+		x = 3
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_play_smart }
+
+		allow_branch = { has_completed_focus = YFC_focus_play_smart }
+
+		cost = 5
+		completion_reward = {
+			country_event = {
+				id = YFC_event.58
+				hours = 1
+				random_hours = 2
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_invest_into_infrastructure_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
+		relative_position_id = YFC_focus_shuffle_around_funds
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_shuffle_around_funds }
+
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_eastern_statebuild
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_build_ports_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
+		relative_position_id = YFC_focus_invest_into_infrastructure_other
+		x = 0
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_invest_into_infrastructure_other }
+
+		available = {
+			OR = {
+				controls_state = 225
+				controls_state = 226
+				controls_state = 227
+			}
+		}
+
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = l_YFC_eastern_statebuild
+		}
+		ai_will_do = {
+			base = 5
+		}
+	}
+
+	focus = {
+		id = YFC_focus_accidental_mistakes
+		relative_position_id = YFC_focus_play_smart
+		x = 0
+		y = 4
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_build_ports_other focus = YFC_focus_bribe_village_leaders focus = YFC_focus_prospect_the_lands }
+
+		cost = 7
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { eastern_borderwar_var = 0.75 }
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	focus = {
+		id = YFC_focus_who_dares_wins
+		relative_position_id = YFC_focus_see_to_the_eastern_front
+		x = 0
+		y = 7
 		icon = GFX_focus_generic
 
 		prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
+		prerequisite = { focus = YFC_focus_accidental_mistakes }
+
+		allow_branch = { has_completed_focus = YFC_focus_who_dares_wins }
 
 		available = {
 			always = no
@@ -2716,22 +2992,6 @@ focus_tree = {
 					add_manpower = 6000
 				}
 			}
-		}
-	}
-
-	focus = {
-		id = YFC_focus_play_smart
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
-		mutually_exclusive  = { focus = YFC_focus_play_fast }
-
-		cost = 3
-		completion_reward = {
-			
 		}
 	}
 

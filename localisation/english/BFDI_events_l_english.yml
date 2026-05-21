@@ -931,6 +931,17 @@
  YFC_event.56.c: "Unnamed!"
  YFC_event.56.d: "It works fine as it is..." #This one keeps the same systems
 
+ YFC_event.57.t: "YFC_focus_negotiate_with_teardrop" #ZDubbz
+ YFC_event.57.desc: "Placeholder I'm too tired rn"
+ YFC_event.57.a: "Lazy"
+
+ YFC_event.58.t: "YFC_focus_shuffle_around_funds" #ZDubbz
+ YFC_event.58.desc: "Placeholder I'm too tired rn"
+ YFC_event.58.a: "Lazy"
+ YFC_event.58.b: "Lazy2"
+ YFC_event.58.c: "Lazy3"
+ YFC_event.58.d: "4Lazy"
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

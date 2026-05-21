@@ -2620,6 +2620,48 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 	}
 }
 
+country_event = { #YFC_focus_negotiate_with_teardrop event
+	id = YFC_event.57
+	title = YFC_event.57.t
+	desc = YFC_event.57.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.57.a
+		diplomatic_relation = {
+			country = TBT
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+
+country_event = { # YFC_focus_shuffle_around_funds event
+	id = YFC_event.58
+	title = YFC_event.58.t
+	desc = YFC_event.58.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.58.a
+	}
+	option = { 
+		name = YFC_event.58.b
+	}
+	option = { 
+		name = YFC_event.58.c
+	}
+	option = { 
+		name = YFC_event.58.d
+	}
+}
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################

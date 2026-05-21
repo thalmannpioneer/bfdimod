@@ -73,6 +73,56 @@ decision_YFC_eastern_category = {
 		}
 	}
 
+	YFC_eastern_core = { 
+		icon = GFX_decisions_YFC_eastern_core
+		state_target = yes
+        targets = { 229 232 230 228 225 230 226 192 231 227 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			controls_state = FROM
+			FROM = {
+				compliance > 5
+				NOT = {is_core_of = ROOT}
+			}
+		}
+
+		available = {
+			controls_state = FROM
+			FROM = {
+				compliance > 25
+				hidden_trigger = {
+					NOT = {is_core_of = ROOT}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+				remove_core_of = EMP
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 75
+			}
+		}
+	}
+
 	YFC_eastern_ports = { 
 		icon = GFX_decision_SWE_set_navy_budget
 		state_target = yes
@@ -80,12 +130,10 @@ decision_YFC_eastern_category = {
         on_map_mode = map_and_decisions_view
         
 		visible = {
-			controls_state = FROM
-			YFC = {has_completed_focus = YFC_focus_build_ports}
-		}
-
-		available = {
-			YFC = {has_completed_focus = YFC_focus_build_ports}
+			OR = {
+				has_completed_focus = YFC_focus_build_ports
+				has_completed_focus = YFC_focus_build_ports_other
+			}
 			controls_state = FROM
 		}
 
@@ -148,12 +196,11 @@ decision_YFC_eastern_category = {
         on_map_mode = map_only
         
 		visible = {
-			YFC = {has_completed_focus = YFC_focus_invest_into_infrastructure}
+			OR = {
+				has_completed_focus = YFC_focus_invest_into_infrastructure
+				has_completed_focus = YFC_focus_invest_into_infrastructure_other
+			}
 			controls_state = FROM
-		}
-
-		available = {
-			YFC = {has_completed_focus = YFC_focus_invest_into_infrastructure}
 		}
 
 		custom_cost_trigger = {
@@ -190,6 +237,139 @@ decision_YFC_eastern_category = {
 			modifier = {
 				add = 100
 				check_variable = { money_amount > 16 }
+			}
+		}
+	}
+
+	YFC_eastern_settlement = { 
+		icon = GFX_decision_generic_forestry
+		state_target = yes
+        targets = { 229 232 230 228 225 230 226 192 231 227 }
+        on_map_mode = map_only
+        
+		visible = {
+			has_completed_focus = YFC_focus_push_for_settlement
+			controls_state = FROM
+		}
+
+		cost = 65
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		days_remove = 150
+
+		fire_only_once = yes
+
+		remove_effect = {
+			FROM = {
+				add_manpower = 5000
+				add_compliance = 15
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 150
+			}
+		}
+	}
+
+	YFC_eastern_prospect = { 
+		icon = GFX_decision_steel
+		state_target = yes
+        targets = { 229 232 230 228 225 230 226 192 231 227 }
+        on_map_mode = map_only
+        
+		visible = {
+			has_completed_focus = YFC_focus_prospect_the_lands
+			controls_state = FROM
+		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 2 }
+		}
+		custom_cost_text = decisions_cost_money_200k
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		cost = 0
+		days_remove = 100
+
+		fire_only_once = yes
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 2 }
+        }
+
+		remove_effect = {
+			FROM = {
+				IF = {
+					limit = {
+						OR = {
+							tungsten > 0
+							steel > 0
+							coal > 0
+						}
+					}
+					IF = {
+						limit = {tungsten > 0}
+						add_resource = {
+							type = tungsten
+							amount = 5
+						}
+					}
+					IF = {
+						limit = {coal > 0}
+						add_resource = {
+							type = coal
+							amount = 10
+						}
+					}
+					IF = {
+						limit = {steel > 0}
+						add_resource = {
+							type = steel
+							amount = 7
+						}
+					}
+
+				}
+				ELSE = {
+					random_list = {
+						1 = {
+							add_resource = {
+								type = tungsten
+								amount = 3
+							}
+						}
+						1 = {
+							add_resource = {
+								type = steel
+								amount = 3
+							}
+						}
+						1 = {
+							add_resource = {
+								type = coal
+								amount = 3
+							}
+						}
+					}
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				check_variable = { money_amount > 20 }
 			}
 		}
 	}
@@ -235,24 +415,10 @@ decision_YFC_eastern_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = l_YFC_eastern_action_use
-			IF = {
-				limit = {has_completed_focus = YFC_focus_play_fast}
-				custom_effect_tooltip = l_YFC_eastern_gain_5
-			}
-			ELSE = {
-				custom_effect_tooltip = l_YFC_eastern_gain_10
-			}
-			hidden_effect = {
-				clr_country_flag = eastern_action_ready
-				subtract_from_variable = { money_amount = 0.5 }
-				IF = {
-					limit = {has_completed_focus = YFC_focus_play_fast}
-					FROM = {add_to_variable = { eastern_support_var = 0.05 }}
-				}
-				ELSE = {
-					FROM = {add_to_variable = { eastern_support_var = 0.1 }}
-				}
-			}	
+			custom_effect_tooltip = l_YFC_eastern_gain_10
+			clr_country_flag = eastern_action_ready
+			subtract_from_variable = { money_amount = 0.5 }
+			FROM = {add_to_variable = { eastern_support_var = 0.1 }}
         }
 
 		ai_will_do = {
@@ -315,23 +481,11 @@ decision_YFC_eastern_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = l_YFC_eastern_action_use
-			IF = {
-				limit = {has_completed_focus = YFC_focus_play_fast}
-				custom_effect_tooltip = l_YFC_eastern_gain_5
-			}
-			ELSE = {
-				custom_effect_tooltip = l_YFC_eastern_gain_10
-			}
+			custom_effect_tooltip = l_YFC_eastern_gain_10
+			clr_country_flag = eastern_action_ready
+			FROM = {add_to_variable = { eastern_support_var = 0.1 }}
 			hidden_effect = {
-				clr_country_flag = eastern_action_ready
 				add_manpower = -250
-				IF = {
-					limit = {has_completed_focus = YFC_focus_play_fast}
-					FROM = {add_to_variable = { eastern_support_var = 0.05 }}
-				}
-				ELSE = {
-					FROM = {add_to_variable = { eastern_support_var = 0.1 }}
-				}
 			}	
         }
 
@@ -405,60 +559,14 @@ decision_YFC_eastern_category = {
         }
 
 		remove_effect = {
-			FROM = {transfer_state_to = ROOT}
+			FROM = {
+				transfer_state_to = ROOT
+				set_demilitarized_zone = no
+			}
 		}
 
 		ai_will_do = {
 			base = 100
-		}
-	}
-
-	YFC_eastern_core = { 
-		icon = GFX_decisions_YFC_eastern_core
-		state_target = yes
-        targets = { 229 232 230 228 225 230 226 192 231 227 }
-        on_map_mode = map_and_decisions_view
-        
-		visible = {
-			controls_state = FROM
-			FROM = {
-				NOT = {is_core_of = ROOT}
-			}
-		}
-
-		available = {
-			controls_state = FROM
-			FROM = {
-				compliance > 25
-				hidden_trigger = {
-					NOT = {is_core_of = ROOT}
-				}
-			}
-		}
-
-		highlight_states = {
-			highlight_state_targets = {state = FROM}
-		}
-
-		cost = 50
-
-		fire_only_once = yes
-
-		days_remove = 60
-
-		remove_effect = {
-			FROM = {
-				add_core_of = ROOT
-				remove_core_of = EMP
-			}
-        }
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				has_political_power > 75
-			}
 		}
 	}
 
@@ -508,6 +616,10 @@ decision_YFC_eastern_category = {
 		visible = {
 			has_completed_focus = YFC_focus_see_to_the_eastern_front	
 			NOT = {has_completed_focus = YFC_focus_who_dares_wins}
+			OR = {
+				NOT = {has_non_aggression_pact_with = TBT}
+				has_completed_focus = YFC_focus_accidental_mistakes
+			}
 			OR = {
 				AND = {
 					YFC = {controls_state = 216}

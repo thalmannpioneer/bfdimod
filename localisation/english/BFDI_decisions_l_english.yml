@@ -246,6 +246,8 @@
  YFC_eastern_core: "§YCore§! §Y[FROM.GetName]§!"
  YFC_eastern_raid: "§RClash§! in the §YNorthern Front§!"
  YFC_eastern_block: "§RBlock§! §CTeardropper Movements§!"
+ YFC_eastern_settlement: "§GInvite Settlers§! to §Y[FROM.GetName]§!"
+ YFC_eastern_prospect: "§LResources development§! in §Y[FROM.GetName]§!"
 
 
  decision_CRN_BUN_category: "Building The Bunch"
