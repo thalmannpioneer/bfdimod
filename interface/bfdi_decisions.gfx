@@ -630,6 +630,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_YFC_eastern_seize"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_seize.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_settlement"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_settlement.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_prospect"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_prospect.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_eastern_raid"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_raid.dds"
 	}

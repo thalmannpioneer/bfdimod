@@ -242,7 +242,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_settlement = { 
-		icon = GFX_decision_generic_forestry
+		icon = GFX_decisions_YFC_eastern_settlement
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
@@ -279,7 +279,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_prospect = { 
-		icon = GFX_decision_steel
+		icon = GFX_decisions_YFC_eastern_prospect
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only
@@ -509,7 +509,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_seize = { 
-		icon = GFX_decision_generic_confiscation
+		icon = GFX_decisions_YFC_eastern_seize
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_only

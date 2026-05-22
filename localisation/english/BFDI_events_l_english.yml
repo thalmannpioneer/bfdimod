@@ -876,7 +876,7 @@
  YFC_event.45.desc: "Hello. We have, unfortunately, traded letters before. Then, and even now, I can smell the essence of your sea-salty being upon the paper. You sicken me, not just in smell, but in demeanor and in personality. You are a rotten sort of individual, what with your ruling style, poor planning, uncoordination, I could continue, though, I'm not entirely sure of the reading capabilities that you may or may not have. I say this to say, I have absolutely no clue how any of your citizens, let alone your high command, could stand bearing witness to your ugliness. I would like to extend an apology, not to you, but to the populace of the Beach Territory, as I'm sure your stench wafts its way from Farbeach and back."
  YFC_event.45.a: "-Sincerely, Yellow Face (P.S., that droopiness at your top is hideous)"
 
- YFC_event.46.t: "Pickpocketting" #Please put a better name I got no good ones :( ZDubbz
+ YFC_event.46.t: "Pickpocketting" #Change either what is stolen from Bunch and/or change to another nation, if YFC stole a bank from a Bunch that CRN puppets could cause so much damage that it opens another path which I think is not a really good idea. ZDubbz 
  YFC_event.46.desc: "Surely the citizens of the Bunch wouldn't notice any missing funds, that are far too poor to care about that sort of thing. This was, in essence, what Taser had been suggesting that we do for the past... well, however long. It's a fair idea to gain money, sure, but no one could really agree on what should be stolen. We've come down to three choices:\n1. We steal a large chunk of quartz from the large bank we built in Podgornyv. They are quite unlikely to notice it, or even blame it on a member of their own populace, if we do it correctly.\n2. We steal a small amount of pillars from the bank. This is quite a bit harder to pull off, considering it would involve removing large structural supports.\n3. Steal the whole bank."
  YFC_event.46.a: "Quartz chunk!" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
  YFC_event.46.b: "Quartz pillars!" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
@@ -932,15 +932,15 @@
  YFC_event.56.d: "It works fine as it is..." #This one keeps the same systems
 
  YFC_event.57.t: "YFC_focus_negotiate_with_teardrop" #ZDubbz
- YFC_event.57.desc: "Placeholder I'm too tired rn"
+ YFC_event.57.desc: "ZDubbz If I'm being honest I'm not sure how this should be done, part of me wants to make this have more events as a negation style or just keep it a simple single event. Your pick for what you want ;)"
  YFC_event.57.a: "Lazy"
 
- YFC_event.58.t: "YFC_focus_shuffle_around_funds" #ZDubbz
- YFC_event.58.desc: "Placeholder I'm too tired rn"
- YFC_event.58.a: "Lazy"
- YFC_event.58.b: "Lazy2"
- YFC_event.58.c: "Lazy3"
- YFC_event.58.d: "4Lazy"
+ YFC_event.58.t: "Piggy Banks" #ZDubbz if you want to
+ YFC_event.58.desc: "With the escalation on the East ongoing, a question has popped up on how to fund this adventure. Sure, we have the budget to fund our efforts. However, we still need to not waste too much money while also gaining something from this. The Sectors have had different ideas on what should be defunded in order to free up funds. Some had suggested cuts in the military, which Top Hat defended ferociously and Yellow Face agreed so the discussion moved into company assets. Beaker suggested selling of old products and resources, Pipe wanted to add laying off some less important employees, lastly Taser also wanted to add some funding in the population centers. All would hurt the company, but the prospects of what the East could have might make it worth it. After some hours of discussions, Yellow Face decided to..."
+ YFC_event.58.a: "Sell off some old products and resources."
+ YFC_event.58.b: "Lay off some employees."
+ YFC_event.58.c: "Cut some funding to the population centers."
+ YFC_event.58.d: "Use some of his own funds."
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."

@@ -2182,17 +2182,38 @@ country_event = { #YFC_focus_procure_funds
 	fire_only_once = yes
 	is_triggered_only = yes
 
-	option = { #Later me add effects when you are not dying cool thanks!!!!
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+		set_variable = { var_add_to_sector2 = 2 }
+	}
+
+	option = { 
 		name = YFC_event.46.a
+		custom_effect_tooltip = l_money_gain_200K
+		add_to_variable = { money_amount = 2 }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
 	option = {
 		name = YFC_event.46.b
+		add_political_power = -50
+		custom_effect_tooltip = l_money_gain_400K
+		add_to_variable = { money_amount = 4 }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
 	option = {
 		name = YFC_event.46.c
+		add_political_power = -100
+		custom_effect_tooltip = l_money_gain_600K
+		add_to_variable = { money_amount = 6 }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
 	option = {
 		name = YFC_event.46.d
+		custom_effect_tooltip = l_YFC_sectors_Taser_Loss
+		subtract_from_variable = { var_idea_YFC_Taser_influence = var_add_to_sector2 }
 	}
 }
 
@@ -2650,15 +2671,26 @@ country_event = { # YFC_focus_shuffle_around_funds event
 
 	option = { 
 		name = YFC_event.58.a
+		add_stability = -0.02
+		custom_effect_tooltip = l_money_gain_200K
+		add_to_variable = { money_amount = 2 }
 	}
 	option = { 
 		name = YFC_event.58.b
+		add_stability = -0.04
+		custom_effect_tooltip = l_money_gain_400K
+		add_to_variable = { money_amount = 4 }
 	}
 	option = { 
 		name = YFC_event.58.c
+		add_stability = -0.06
+		custom_effect_tooltip = l_money_gain_700K
+		add_to_variable = { money_amount = 7 }
 	}
 	option = { 
 		name = YFC_event.58.d
+		custom_effect_tooltip = l_money_gain_100K
+		add_to_variable = { money_amount = 1 }
 	}
 }
 
