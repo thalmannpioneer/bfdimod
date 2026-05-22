@@ -92,7 +92,7 @@ country_event = {
 		}
 		give_military_access = CRN
 		ai_chance = {
-			base = 1
+			base = 20
 		}
 	}
 
@@ -114,6 +114,10 @@ country_event = {
 		}
 		ai_chance = {
 			base = 0
+			modifier = { #So a really small chance for something diffrent to happen
+				add = 1
+                has_game_rule = { rule = YFC_ai_behavior option = DEFAULT }
+			}
 		}
 	}
 

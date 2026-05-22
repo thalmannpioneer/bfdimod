@@ -321,21 +321,21 @@ decision_YFC_eastern_category = {
 						limit = {tungsten > 0}
 						add_resource = {
 							type = tungsten
-							amount = 5
+							amount = 3
 						}
 					}
 					IF = {
 						limit = {coal > 0}
 						add_resource = {
 							type = coal
-							amount = 10
+							amount = 7
 						}
 					}
 					IF = {
 						limit = {steel > 0}
 						add_resource = {
 							type = steel
-							amount = 7
+							amount = 5
 						}
 					}
 
@@ -345,19 +345,19 @@ decision_YFC_eastern_category = {
 						1 = {
 							add_resource = {
 								type = tungsten
-								amount = 3
+								amount = 2
 							}
 						}
 						1 = {
 							add_resource = {
 								type = steel
-								amount = 3
+								amount = 2
 							}
 						}
 						1 = {
 							add_resource = {
 								type = coal
-								amount = 3
+								amount = 2
 							}
 						}
 					}

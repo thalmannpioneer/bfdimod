@@ -2356,7 +2356,7 @@ focus_tree = {
 								state = 232
 							}
 						}
-						set_variable = {eastern_support_var = -0.25}
+						set_variable = {eastern_support_var = -0.3}
 					}
 					ELSE_IF = { 
 						limit = {
@@ -2373,6 +2373,10 @@ focus_tree = {
 					set_country_flag = eastern_action_ready
 				}
 				TBT = {
+					IF = {
+						limit = {is_ai = yes}
+						add_manpower = 5000
+					}
 					set_variable = {eastern_borderwar_var = 0.25}
 					set_country_flag = eastern_action_ready
 				}

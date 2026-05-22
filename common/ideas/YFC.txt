@@ -175,6 +175,22 @@ ideas = {
 				resistance_growth = 1
 			}
 			cancel = {country_exists = BUN}
+			on_remove = {
+				set_temp_variable = { compliance_both = 85.compliance }
+				add_to_temp_variable = {compliance_both = 212.compliance}
+				if = {
+					limit = {
+						check_variable = {compliance_both > 135}
+					}
+					85 = {add_compliance = 25} 
+					212 = {add_compliance = 25}
+				}
+				else = {
+					85 = {add_compliance = 5} 
+					212 = {add_compliance = 5}
+					set_country_flag = YFC_BUN_OUT_TIME 
+				}
+			}
 		}
 
 

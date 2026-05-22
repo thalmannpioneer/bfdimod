@@ -132,6 +132,10 @@ decision_YFC_BUN_category = {
 					days = 365
 					tooltip = l_YFC_BUN
 				}
+				IF = {
+					limit = {YFC = {has_country_flag = YFC_BUN_OUT_TIME}}
+					add_resistance = 15
+				}
 			}
 			hidden_effect = {
 				add_to_variable = { var_YFC_BUN_Anger = 0.5 }
@@ -177,6 +181,10 @@ decision_YFC_BUN_category = {
 					amount = 15
 					days = 365
 					tooltip = l_YFC_BUN
+				}
+				IF = {
+					limit = {YFC = {has_country_flag = YFC_BUN_OUT_TIME}}
+					add_resistance = 15
 				}
 			}
 			hidden_effect = {
