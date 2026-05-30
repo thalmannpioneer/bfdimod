@@ -103,6 +103,26 @@ on_actions = {
                     set_variable = { var_healthcare_mc_display = 0 }
                 }
                 ELSE_IF = {
+                    limit = { tag = LSS }
+                    set_variable = { money_amount = 4.62 }
+                    BFDI_money_diplay_update = yes
+
+                    set_country_flag = disable_money_politics
+                    set_variable = { var_schooling_slider_pure = 25 }
+                    set_variable = { var_schooling_slider = 0 }
+                    set_variable = { var_schooling_rsf = -0.1 }
+                    set_variable = { var_schooling_srbf = -0.2 }
+                    set_variable = { var_schooling_mc = 0 }
+                    set_variable = { var_schooling_mc_display = 0 }
+
+                    set_variable = { var_healthcare_slider_pure = 25 }
+                    set_variable = { var_healthcare_slider = 0 }
+                    set_variable = { var_healthcare_sf = -0.1 }
+                    set_variable = { var_healthcare_mp = -0.2 }
+                    set_variable = { var_healthcare_mc = 0 }
+                    set_variable = { var_healthcare_mc_display = 0 }
+                }
+                ELSE_IF = {
                     limit = { tag = GTR }
                     set_variable = { money_amount = 0.3142 } #The University would make money though not much. However, I do want to when the University blows up most of the money is lost.
                     BFDI_money_diplay_update = yes

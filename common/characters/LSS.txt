@@ -1,0 +1,62 @@
+characters = {
+	LSS_Leader = {
+		name = LSS_Leader
+		portraits = { civilian = { large = GFX_LSS_Leader } }
+		country_leader = {
+			ideology = conservatism
+			traits = { SHX_model_governor conservative_nationalist }
+			desc = LSS_Leader_desc
+		}
+	}
+
+	LSS_Rodriguez = {
+		name = LSS_Rodriguez
+		portraits = { 
+			army = { 
+				large = GFX_LSS_Rodriguez
+			} 
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 7
+			traits = { infantry_officer armor_officer organizer commando }
+		}
+	}
+
+	LSS_Milley = {
+		name = LSS_Milley
+		portraits = { 
+			army = { 
+				large = GFX_LSS_Milley
+			} 
+		}
+		field_marshal = {
+			skill = 7
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 5
+			traits = { armor_officer organizer commando panzer_leader fast_planner skilled_staffer }
+		}
+	}
+
+	LSS_Ierardi = {
+		name = LSS_Ierardi
+		portraits = { 
+			army = { 
+				large = GFX_LSS_Ierardi
+			} 
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 7
+			traits = { armor_officer organizer commando panzer_leader cavalry_officer }
+		}
+	}
+}

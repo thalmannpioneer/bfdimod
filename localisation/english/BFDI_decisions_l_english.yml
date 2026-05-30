@@ -139,6 +139,14 @@
  GFG_reconstruction_recharnd: "§3Recharnd§! Reconstruction"
  GFG_reconstruction_greensteel: "§tGreensteel§! Reconstruction"
  GFG_reconstruction_plainy: "§7Plainy§! Reconstruction"
+
+ decision_LSS_Military_category: "Texas Military"
+ LSS_Attack_Loser: "Launch Surprise Invasion of [FROM.GetName]"
+ LSS_Attack_Loser_desc: "They 100% had it coming.\n\nAlso might break stuff but do you really care?"
+ LSS_Bridge: "Repair Dream Island Bridge"
+ LSS_Bridge_desc: "Since you can't build a railway, here you go!\n\n(Will be removed later... maybe)"
+ LSS_Terrorist_Clearing: "Launch Terrorist Clearing Operations"
+ LSS_Terrorist_Clearing_desc: "Fuck You Goiky!\n\n(Will be removed later... maybe)"
  
  decisions_GDR_congress_category: "§7Democratic Congress§!"
  l_GDR_congress_desc: "§7Greeny Plains§! objects are ready for unification.\nThere's only one question left."

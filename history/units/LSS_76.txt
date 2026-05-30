@@ -1,0 +1,141 @@
+# 72nd Infantry Brigade Combat Team, 36th Infantry Division
+
+division_template = {
+    name = "112th Cavalry Regiment"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+	}
+    support = {
+        recon = { x = 0 y = 0 }			
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "141st Infantry Regiment"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+    support = {
+        artillery = { x = 0 y = 0 }
+        anti_air = { x = 0 y = 1 }
+        anti_tank = { x = 0 y = 2 }				
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "278th Armored Cavalry Regiment"
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+        modern_armor = { x = 0 y = 1 }
+        mechanized = { x = 1 y = 0 }
+    }
+    support = {
+        logistics_company = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }  		
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "172nd Brigade Engineer Battalion"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+    }
+    support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }  		
+    }
+    is_locked = yes
+    template_counter = 12
+    division_cap = 1
+}
+
+division_template = {
+    name = "36th Armored Division Artillery"
+    regiments = {
+        modern_sp_artillery_brigade = { x = 0 y = 0 }
+        modern_sp_artillery_brigade = { x = 0 y = 1 }
+        artillery_brigade = { x = 1 y = 0 }
+	}
+    support = {	
+        signal_company = { x = 0 y = 0 } 	
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+	name = "536th Brigade Support Battalion"
+	is_locked = yes
+    template_counter = 0
+    regiments = {
+        infantry = { x = 0 y = 0 }
+    }
+    support = {
+        field_hospital = { x = 0 y = 0 }
+        logistics_company = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }   
+        signal_company = { x = 0 y = 3 } 		
+    }
+    division_cap = 1
+}
+
+
+
+units = {
+	division= {
+        name = "112th Cavalry Regiment"
+        location = 3410
+        division_template = "112th Cavalry Regiment"
+        start_experience_factor = 0.85
+        start_equipment_factor = 0.75
+    }
+	division= {
+        name = "141st Infantry Regiment"
+        location = 10367
+        division_template = "141st Infantry Regiment"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.85
+    }
+	division= {
+        name = "278th Armored Cavalry Regiment"
+        location = 10421
+        division_template = "278th Armored Cavalry Regiment"
+        start_experience_factor = 0.95
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "172nd Brigade Engineer Battalion"
+        location = 3551
+        division_template = "172nd Brigade Engineer Battalion"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.75
+    }
+    division= {
+        name = "36th Armored Division Artillery"
+        location = 3551
+        division_template = "36th Armored Division Artillery"
+        start_experience_factor = 0.90
+        start_equipment_factor = 0.90
+    }
+    division= {
+        name = "536th Brigade Support Battalion"
+        location = 10476
+        division_template = "536th Brigade Support Battalion"
+        start_experience_factor = 0.75
+        start_equipment_factor = 0.85
+    }
+}

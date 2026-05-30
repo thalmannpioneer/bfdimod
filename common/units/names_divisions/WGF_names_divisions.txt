@@ -37,10 +37,10 @@ WGF_INF_01 = {
 		25 = { "%dya 'Youth' Brigade" }
 		26 = { "%dya 'Burns' Brigade" } #By this point I'm guessing that WGF killed GMD
 		27 = { "%dya 'Medal' Brigade" }
-		27 = { "%dya 'Em Alamain' Brigade" }
-		28 = { "%dya 'Cary' Brigade" }
-		29 = { "%dya 'Reformed' Brigade" }
-		30 = { "%dya 'Redeemed' Brigade" }
+		28 = { "%dya 'Em Alamain' Brigade" }
+		29 = { "%dya 'Cary' Brigade" }
+		30 = { "%dya 'Reformed' Brigade" }
+		31 = { "%dya 'Redeemed' Brigade" }
 	}
 }
 

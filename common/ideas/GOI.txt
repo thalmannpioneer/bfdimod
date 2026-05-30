@@ -50,6 +50,19 @@ ideas = {
 				ai_desired_divisions_factor = 2
 				ai_focus_aggressive_factor = 0.5
 			}
+			on_remove = {
+				IF = {
+					limit = {is_ai = yes}
+					every_controlled_state = {
+						random = {
+							chance = 50
+							construct_building_in_random_province = {
+								supply_node = 1
+							}
+						}
+					}
+				}
+			}
 		}
 
 		idea_debug_age_diplomacy  = {

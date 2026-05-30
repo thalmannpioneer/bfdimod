@@ -1,0 +1,22 @@
+#LSS AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+## INDUSTRY ##
+
+LSS_Build = {
+
+	allowed = {
+		original_tag = LSS
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 500
+	}
+}

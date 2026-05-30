@@ -32,7 +32,7 @@ BFDI_wait_tech = {
 BFDI_stop_guns = {
 	#If we have over 5000 guns then lower the amount we are making
 	enable = {
-		has_equipment = {infantry_equipment > 5000}
+		has_equipment = {infantry_equipment > 10000}
 		NOT = {original_tag = GGR}
 		has_war = no
 	}
@@ -40,22 +40,24 @@ BFDI_stop_guns = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = -75
+		value = -30
 	}
 }
 
-BFDI_full_stop_guns = {
-	#Okay now really stop making this many guns
+
+BFDI_coast_stop = {
+	#Please AI stop putting coast units when no one has a FUCKING NAVY!!!!!!!
 	enable = {
-		has_equipment = {infantry_equipment > 10000}
+		always = yes
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = -500
+		type = coast_defense
+		id = 14
+		value = 5
 	}
 }
+
 
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
@@ -1333,7 +1335,7 @@ put_garrisons_on_high_prio = {
 
 	ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = 5 # positive is high prio, negative is low prio
+		value = 2 # positive is high prio, negative is low prio
 	}
 }
 

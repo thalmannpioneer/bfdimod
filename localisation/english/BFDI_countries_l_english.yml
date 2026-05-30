@@ -29,6 +29,11 @@
  GPR_DEF: "Greeny Plains"
  GPR_ADJ: "Republic"
  
+ LSS: "State of Texas"
+ LSS_neutrality: "Texas Emergency Government"
+ LSS_DEF: "Texas"
+ LSS_ADJ: "Texan"
+
  TBT: "Teardrop Beach Territory"
  TBT_DEF: "Beach"
  TBT_ADJ: "Teardrop's"

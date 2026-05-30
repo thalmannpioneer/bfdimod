@@ -1,0 +1,217 @@
+decision_LSS_Military_category = {
+	LSS_Attack_Loser = { #guh
+		icon = GFX_decision_infiltrate_state
+
+		available = {
+			THIS = {
+				has_war = no
+			}
+		}
+
+		visible = {
+			FROM = {
+				is_neighbor_of = LSS
+			}
+		}
+
+		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } 
+		targets_dynamic = yes
+
+		fire_only_once = yes
+		days_remove = 90
+		cost = 0
+
+		remove_effect = {
+			add_manpower = 5000
+			declare_war_on = {
+                target = FROM
+                type = annex_everything
+            }
+			add_threat = 2
+			hidden_effect = {
+				IF = {
+					limit = {is_ai = yes}
+					add_manpower = 15000
+        			add_offsite_building = { type = arms_factory level = 1 }
+					add_stability = 0.25
+				}
+				IF = {
+					limit = {
+						is_ai = yes
+						FROM = {tag = NRR}
+					}
+					188 = {
+						set_building_level = {
+							type = supply_node
+							level = 1
+							province = {
+								id = 10583
+							}
+						}
+					}
+				}
+				IF = {
+					limit = {
+						is_ai = yes
+						FROM = {tag = SEC}
+					}
+					170 = {
+						set_building_level = {
+							type = supply_node
+							level = 1
+							province = {
+								id = 6396
+							}
+						}
+					}
+				}
+				IF = {
+					limit = {
+						is_ai = yes
+						FROM = {tag = WGF}
+					}
+					186 = {
+						set_building_level = {
+							type = supply_node
+							level = 1
+							province = {
+								id = 10519
+							}
+						}
+					}
+				}
+				every_possible_country = {
+					limit = { is_ai = yes }
+					add_manpower = 5000
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = DPZ}
+				date > 2013.4.01
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = NRR}
+				NOT = {country_exists = DPZ}
+				date > 2014.1.01
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = SEC}
+				NOT = {country_exists = NRR}
+				date > 2014.1.01
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = WGF}
+				NOT = {country_exists = SEC}
+				date > 2016.3.01
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = GMD}
+				NOT = {country_exists = WGF}
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = TBT}
+				NOT = {country_exists = WGF}
+				NOT = {country_exists = GMD}
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				FROM = {tag = YFC}
+				NOT = {country_exists = SRR}
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				OR = {
+					FROM = {tag = GGR}
+					FROM = {tag = SPL}
+					FROM = {tag = SRI}
+				}
+				NOT = {country_exists = YFC}
+			}
+			modifier = {
+				add = 10
+				has_war = no
+				NOT = {country_exists = WGF}
+				NOT = {country_exists = SEC}
+				NOT = {country_exists = TBT}
+			}
+		}
+	}
+
+	LSS_Bridge = { 
+		icon = GFX_decision_generic_construction
+      
+		visible = {
+			NOT = {country_exists = DPZ}
+		}
+		
+		available = {
+			NOT = {country_exists = DPZ}
+		}
+
+		fire_only_once = yes
+		cost = 0
+		days_remove = 150
+
+		remove_effect = {
+			build_railway = {
+				level = 5
+				start_state = 181
+				target_state = 186
+			}
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_Terrorist_Clearing = { 
+		icon = GFX_decision_oppression
+      
+		visible = {
+			NOT = {country_exists = DPZ}
+		}
+		
+		fire_only_once = no
+		cost = 0
+		days_remove = 90
+		days_re_enable = 360
+
+		modifier = {
+			resistance_growth = -1.5
+			resistance_target = -0.1
+			compliance_growth = -0.15
+		}
+
+		remove_effect = {
+			add_stability = -0.05
+			add_war_support = -0.07
+			IF = {
+				limit = {is_ai = yes}
+				add_stability = 0.25
+			}
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

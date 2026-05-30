@@ -1,0 +1,168 @@
+# 56th Infantry Brigade Combat Team, 36th Infantry Division
+
+division_template = {
+    name = "124th Cavalry Regiment"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+        cavalry = { x = 0 y = 2 }
+	}
+    support = {
+        recon = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 		
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "142nd Infantry Regiment"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+    support = {
+        artillery = { x = 0 y = 0 }
+        anti_air = { x = 0 y = 1 }
+        anti_tank = { x = 0 y = 2 }		
+        signal_company = { x = 0 y = 3 } 		
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "143rd Infantry Regiment"
+    regiments = {
+        paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+        paratrooper = { x = 0 y = 2 }
+	}
+    support = {
+        artillery = { x = 0 y = 0 }
+        anti_air = { x = 0 y = 1 }
+        anti_tank = { x = 0 y = 2 }		
+        signal_company = { x = 0 y = 3 } 		
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "144th Infantry Regiment"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+	}
+    support = {
+        artillery = { x = 0 y = 0 }
+        anti_air = { x = 0 y = 1 }
+        anti_tank = { x = 0 y = 2 }		
+        signal_company = { x = 0 y = 3 } 		
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "133rd Field Artillery Regiment"
+    regiments = {
+        artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+        artillery_brigade = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+	}
+    support = {
+        signal_company = { x = 0 y = 0 } 		
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "156th Brigade Engineer Battalion"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 } 
+        signal_company = { x = 0 y = 2 }  		
+    }
+    is_locked = yes
+    template_counter = 12
+    division_cap = 1
+}
+
+division_template = {
+    name = "949th Brigade Support Battalion"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+	}
+    support = {
+        field_hospital = { x = 0 y = 0 }
+        logistics_company = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }   
+        signal_company = { x = 0 y = 3 }  		
+    }
+    is_locked = yes
+    template_counter = 0
+    division_cap = 1
+}
+
+units = {
+	division= {
+        name = "124th Cavalry Regiment"
+        location = 3410
+        division_template = "124th Cavalry Regiment"
+        start_experience_factor = 0.85
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "142nd Infantry Regiment"
+        location = 10367
+        division_template = "142nd Infantry Regiment"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "143rd Infantry Regiment"
+        location = 10421
+        division_template = "143rd Infantry Regiment"
+        start_experience_factor = 0.95
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "144th Infantry Regiment"
+        location = 3551
+        division_template = "144th Infantry Regiment"
+        start_experience_factor = 0.9
+        start_equipment_factor = 0.95
+    }
+    division= {
+        name = "133rd Field Artillery Regiment"
+        location = 10476
+        division_template = "133rd Field Artillery Regiment"
+        start_experience_factor = 0.85
+        start_equipment_factor = 0.95
+    }
+    division= {
+        name = "156th Brigade Engineer Battalion"
+        location = 3410
+        division_template = "156th Brigade Engineer Battalion"
+        start_experience_factor = 0.85
+        start_equipment_factor = 0.95
+    }
+    division= {
+        name = "949th Brigade Support Battalion"
+        location = 10476
+        division_template = "949th Brigade Support Battalion"
+        start_experience_factor = 0.75
+        start_equipment_factor = 0.95
+    }
+}

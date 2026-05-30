@@ -156,28 +156,15 @@ GGR_cheap_guns = {
 }
 
 GGR_mountaineers = {
-    #Make some mountaineers
+    #Learn about mountaineers
     allowed = {
         original_tag = GGR
     }
     enable = {
-        has_army_size = {
-            size < 2
-            type = mountaineers
-        }
+        NOT = {has_tech = tech_mountaineers}
     }
     abort_when_not_enabled = yes
 
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 10
-	}
-    ai_strategy = {
-        type = build_army
-        id = mountaineers
-        value = 1000
-    }
     ai_strategy = {
 		type = research_weight_factor
 		id = tech_mountaineers
@@ -437,7 +424,7 @@ GGR_build_after_FFT = {
 
     ai_strategy = {
 		type = min_wanted_supply_trucks
-		value = 250
+		value = 500
 	}
 }
 

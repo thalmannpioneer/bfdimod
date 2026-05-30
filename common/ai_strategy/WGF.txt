@@ -51,6 +51,15 @@ WGF_GMD_war = {
 		tag = GMD
 		value = 500
 	}
+	ai_strategy = {
+		type = front_control
+		tag = GMD
+		priority = 1
+    	ordertype = front
+    	execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
 }
 
 ## INDUSTRY ##
@@ -215,4 +224,32 @@ WGF_GSR_aid = {
 		id = GSR
 		value = 50
 	}
+}
+
+WGF_supply = {
+    #Until Thal or ZDubbz add a supply depot to Lintle just have the AI build one
+	allowed = {
+		original_tag = WGF
+	}
+	enable = {
+		NOT = { country_exists = GMD }
+		177 = {
+			any_province_building_level = {
+				province = {
+					id = 5207
+					limit_to_border = no
+				}
+				building = supply_node
+				level < 1
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = supply_node
+        target = 5207
+        value = 1000
+    }
 }

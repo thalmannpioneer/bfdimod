@@ -1,0 +1,97 @@
+focus_tree = {
+	id = LSS_focus_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = LSS
+		}
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = { focus = generic_focus_industry }
+
+	focus = {
+		id = LSS_focus_understanding_our_position
+		x = 12
+		y = 0
+		icon = GFX_focus_generic_attack_usa
+		
+		available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
+		
+		cost = 1
+		
+		cancelable = no
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		select_effect = { country_event = uncommon_event.3 }
+
+		completion_reward = { country_event = uncommon_event.4 }
+	}
+	
+	focus = {
+		id = LSS_focus_see_our_stockpiles
+		relative_position_id = LSS_focus_understanding_our_position
+		x = 0
+		y = 1
+		icon = GFX_focus_PRC_equipment_from_copper_coins
+		
+		prerequisite = { focus = LSS_focus_understanding_our_position }
+		
+		cost = 2
+		
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			random_army_leader = {
+				add_trait = {
+					character = FROM
+					trait = scavenger 
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_3
+				amount = 600
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 300
+			}
+        	custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_structure_the_government
+		relative_position_id = LSS_focus_see_our_stockpiles
+		x = 0
+		y = 1
+		icon = GFX_focus_generic_annex_country_2
+		
+		prerequisite = { focus = LSS_focus_see_our_stockpiles }
+		
+		cost = 1
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			country_event = uncommon_event.5
+		}
+	}
+}

@@ -38,6 +38,10 @@ GTR = {
 	color = rgb { 217 217 217 }
 	color_ui = rgb { 217 217 217 }
 }
+LSS = {
+	color = rgb { 54 99 222 }
+	color_ui = rgb { 54 99 222 }
+}
 GGR = {
 	color = rgb { 48 48 48 }
 	color_ui = rgb { 48 48 48 }

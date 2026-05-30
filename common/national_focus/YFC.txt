@@ -24,6 +24,10 @@ focus_tree = {
 
 		available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
 
+		ai_will_do = {
+			base = 5
+		}
+
 		cost = 5
 		completion_reward = {
 			add_stability = 0.15
@@ -49,6 +53,10 @@ focus_tree = {
 		icon = GFX_focus_YFC_open_the_markets
 
 		prerequisite = { focus = YFC_focus_consolidate_power }
+
+		ai_will_do = {
+			base = 5
+		}
 
 		cost = 5
 
@@ -85,6 +93,10 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = YFC_focus_open_the_market }
+
+		ai_will_do = {
+			base = 5
+		}
 
 		cost = 5
 		#Military sector: Top Hat; Railing sector: Pipe; Scientific sector: Beaker; Construction Sector: Hammer; Electronics Sector: Taser

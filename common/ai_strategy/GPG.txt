@@ -260,6 +260,6 @@ GPG_build = {
     }
 	ai_strategy = {
 		type = min_wanted_supply_trucks
-		value = 250
+		value = 500
 	}
 }

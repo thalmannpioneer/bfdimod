@@ -1151,21 +1151,6 @@ news_event = {
 
     immediate = {
         set_global_flag = fall_of_gorgetown
-        hidden_effect = {
-            169 = {
-                damage_building = {
-                    type = infrastructure
-                    damage = 3
-                }
-                add_manpower = -2725
-                set_victory_points = {
-                    province = 711
-                    value = 5
-                }
-                set_province_name = { id = 711 name = "Gorge Town Ruins" }
-            }
-
-        }
     }
 
     mean_time_to_happen = {
@@ -1192,6 +1177,18 @@ news_event = {
         trigger = {
             controls_province = 711
             NOT = {TAG = FFT}
+        }
+        169 = {
+            damage_building = {
+                type = infrastructure
+                damage = 3
+            }
+            add_manpower = -2725
+            set_victory_points = {
+                province = 711
+                value = 5
+            }
+            set_province_name = { id = 711 name = "Gorge Town Ruins" }
         }
     }
 }
@@ -1543,7 +1540,6 @@ news_event = {
 
     immediate = {
         set_global_flag = fall_of_foot
-        YFC = {subtract_from_variable = { money_amount = 10 }}
     }
 
     mean_time_to_happen = {
@@ -1563,6 +1559,8 @@ news_event = {
         trigger = {
             TAG = YFC
         }
+        custom_effect_tooltip = l_money_lose_1M
+		subtract_from_variable = { money_amount = 10 }
     }
 
     option = {

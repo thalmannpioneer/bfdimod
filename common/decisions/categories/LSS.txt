@@ -1,0 +1,11 @@
+decision_LSS_Military_category = {
+	allowed = { tag = LSS }
+	visible = { 
+		LSS = {
+			has_completed_focus = LSS_focus_structure_the_government #Move Later
+		}
+	}
+	priority = 15
+	icon = decision_category_usa_intervention_mandate
+	visible_when_empty = yes
+}

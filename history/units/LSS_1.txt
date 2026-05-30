@@ -1,0 +1,140 @@
+# 1st Armored Division
+
+division_template = {
+    name = "1st Cavalry Regiment"
+    regiments = {
+        cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+    support = {
+        recon = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 		
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "37th Armor Regiment"
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+        modern_armor = { x = 0 y = 1 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+    support = {
+        maintenance_company = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 	
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "67/77th Armor Regiment"
+    regiments = {
+        modern_armor = { x = 0 y = 0 }
+        modern_armor = { x = 0 y = 1 }
+        mechanized = { x = 1 y = 0 }
+        mechanized = { x = 1 y = 1 }
+	}
+    support = {
+        maintenance_company = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 	
+    }
+    is_locked = yes
+    template_counter = 3
+    division_cap = 1
+}
+
+division_template = {
+    name = "6th Infantry Regiment"
+    regiments = {
+        mechanized = { x = 0 y = 0 }
+        mechanized = { x = 0 y = 1 }
+        mechanized = { x = 0 y = 2 }
+	}
+    support = {
+        maintenance_company = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 	
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+    name = "1st Armored Division Artillery"
+    regiments = {
+        modern_sp_artillery_brigade = { x = 0 y = 0 }
+        modern_sp_artillery_brigade = { x = 0 y = 1 }
+        modern_sp_artillery_brigade = { x = 0 y = 2 }
+	}
+    support = {
+        anti_air = { x = 0 y = 0 }		
+        signal_company = { x = 0 y = 1 } 	
+    }
+    is_locked = yes
+    division_cap = 1
+}
+
+division_template = {
+	name = "142nd Division Sustainment Support Battalion"
+	is_locked = yes
+    template_counter = 0
+    regiments = {
+        infantry = { x = 0 y = 0 }
+    }
+    support = {
+        field_hospital = { x = 0 y = 0 }
+        logistics_company = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }   
+        signal_company = { x = 0 y = 3 } 		
+    }
+    division_cap = 1
+}
+
+units = {
+	division= {
+        name = "1st Cavalry Regiment"
+        location = 3410
+        division_template = "1st Cavalry Regiment"
+        start_experience_factor = 0.90
+        start_equipment_factor = 0.90
+    }
+	division= {
+        name = "37th Armor Regiment"
+        location = 10367
+        division_template = "37th Armor Regiment"
+        start_experience_factor = 0.95
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "67/77th Armor Regiment"
+        location = 10421
+        division_template = "67/77th Armor Regiment"
+        start_experience_factor = 0.95
+        start_equipment_factor = 0.95
+    }
+	division= {
+        name = "6th Infantry Regiment"
+        location = 3551
+        division_template = "6th Infantry Regiment"
+        start_experience_factor = 0.90
+        start_equipment_factor = 0.90
+    }
+    division= {
+        name = "1st Armored Division Artillery"
+        location = 3551
+        division_template = "1st Armored Division Artillery"
+        start_experience_factor = 0.90
+        start_equipment_factor = 0.90
+    }
+    division= {
+        name = "142nd Division Sustainment Support Battalion"
+        location = 10476
+        division_template = "142nd Division Sustainment Support Battalion"
+        start_experience_factor = 0.75
+        start_equipment_factor = 0.85
+    }
+}
