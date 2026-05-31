@@ -30,17 +30,16 @@ BFDI_wait_tech = {
 }
 
 BFDI_stop_guns = {
-	#If we have over 5000 guns then lower the amount we are making
+	#If we have over 10000 guns then lower the amount we are making
 	enable = {
 		has_equipment = {infantry_equipment > 10000}
-		NOT = {original_tag = GGR}
 		has_war = no
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = -30
+		value = -65
 	}
 }
 

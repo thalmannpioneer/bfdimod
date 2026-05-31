@@ -209,7 +209,7 @@ GPG_high_support = {
 GPG_build = {
     #GPG's build
 	allowed = {
-		original_tag = GSR
+		original_tag = GPG
 	}
 	enable = {
 		NOT = {country_exists = GSR}

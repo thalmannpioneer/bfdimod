@@ -94,4 +94,37 @@ focus_tree = {
 			country_event = uncommon_event.5
 		}
 	}
+
+ ###### ECONOMY PATH ######
+
+	focus = {
+		id = LSS_focus_jumpstart_an_economy
+		x = 6
+		y = 1
+		icon = GFX_SOV_increase_state_reserves_ccp_2d_sov_compatibility
+		
+		allow_branch = { has_completed_focus = LSS_focus_structure_the_government }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			13 = {
+				add_resource = {
+					type = steel
+					amount = 1
+				}
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+
+			country_event = uncommon_event.8
+		}
+	}
+
 }

@@ -225,10 +225,13 @@
  LSS_focus_understanding_our_position_desc: "'This is not right! I was Texas State Capitol! What is going on? What is this land? Where...'"
 
  LSS_focus_see_our_stockpiles: "See our Stockpiles"
- LSS_focus_see_our_stockpiles_desc: "Placeholder"
+ LSS_focus_see_our_stockpiles_desc: "It's clear that a way out of these lands will not be a quick one. We must scavenge what we need and want to move forward. We will start with locating and securing caches that came with us. While we are at it, lets requisition some equipment from the scattered and confused population for 'protection'."
 
  LSS_focus_structure_the_government: "Structure the Government"
- LSS_focus_structure_the_government_desc: "Placeholder"
+ LSS_focus_structure_the_government_desc: "The Political Deadlock is still in our newly reorganized government. Both sides in both The House and Senate have been going nowhere in fixing the issues we now face. It may be time to take... more extreme actions.\n\n§RThe Future of Texas depends on it.§!"
+
+ LSS_focus_jumpstart_an_economy: "Jumpstart an Economy"
+ LSS_focus_jumpstart_an_economy_desc: "Placeholder"
 
  #PROVISIONAL GOVERNMENT
  GPG_focus_first_congress: "§YFirst Congress§!"

@@ -204,6 +204,17 @@ country_event = {
 
     option = {
         name = uncommon_event.1.a
+        hidden_effect = {
+            IF = {
+                limit = {is_ai = no}
+                country_event = {
+                    id = uncommon_event.2
+                    days = 2
+                    hours = 12
+                    random_hours = 48
+                }
+            }
+        }
     }
 }
 
@@ -219,47 +230,50 @@ country_event = {
         name = uncommon_event.2.a
 
         hidden_effect = {
-            goto_state = 181
+            IF = {
+                limit = {is_ai = no}
+                goto_state = 181
 
-            set_victory_points = {
-                province = 3551
-                value = 20
-            }
-            set_victory_points = {
-                province = 10476
-                value = 50
-            }
-            set_victory_points = {
-                province = 3410
-                value = 40
-            }
-            set_victory_points = {
-                province = 10367
-                value = 40
-            }
-            set_victory_points = {
-                province = 10421
-                value = 30
-            }
+                set_victory_points = {
+                    province = 3551
+                    value = 20
+                }
+                set_victory_points = {
+                    province = 10476
+                    value = 50
+                }
+                set_victory_points = {
+                    province = 3410
+                    value = 40
+                }
+                set_victory_points = {
+                    province = 10367
+                    value = 40
+                }
+                set_victory_points = {
+                    province = 10421
+                    value = 30
+                }
 
-            13 = {
-                add_core_of = LSS
-                transfer_state_to = LSS
-                remove_core_of = EMP
-                set_demilitarized_zone = no
-                add_manpower = 250000
-            }
-            181 = {
-                add_core_of = LSS
-                transfer_state_to = LSS
-                remove_core_of = EMP
-                set_demilitarized_zone = no
-                add_manpower = 250000
-            }
+                13 = {
+                    add_core_of = LSS
+                    transfer_state_to = LSS
+                    remove_core_of = EMP
+                    set_demilitarized_zone = no
+                    add_manpower = 250000
+                }
+                181 = {
+                    add_core_of = LSS
+                    transfer_state_to = LSS
+                    remove_core_of = EMP
+                    set_demilitarized_zone = no
+                    add_manpower = 250000
+                }
 
-            LSS = { 
-                change_tag_from = ROOT 
-            }
+                LSS = { 
+                    change_tag_from = ROOT 
+                }
+            }    
         }
     }
 }
@@ -277,6 +291,19 @@ country_event = {
         add_stability = 0.05
         hidden_effect = {
             load_oob = "LSS_2012"
+
+            every_other_country = {
+                limit = { NOT = { tag = EMP } }
+                add_opinion_modifier = {
+                    target = LSS
+                    modifier = large_decrease
+                }
+                diplomatic_relation = {
+                    country = LSS
+                    relation = embargo
+                    active = yes
+                }
+            }
         }
     }
 }
@@ -328,6 +355,8 @@ country_event = {
 				hours = 12
 				random_hours = 48
 			}
+
+            mark_focus_tree_layout_dirty = yes
         }
         set_politics = {
 			ruling_party = neutrality
@@ -349,5 +378,35 @@ country_event = {
 
     option = {
         name = uncommon_event.6.a
+        add_threat = 5
+    }
+}
+
+country_event = { #News
+    id = uncommon_event.7
+    title = uncommon_event.7.t
+    desc = uncommon_event.7.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+    major = yes
+    fire_only_once = yes
+
+    option = {
+        name = uncommon_event.7.a
+    }
+}
+
+country_event = {
+    id = uncommon_event.8
+    title = uncommon_event.8.t
+    desc = uncommon_event.8.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.8.a
+        add_stability = -0.01
     }
 }
