@@ -68,6 +68,18 @@ idea_GGR_verschneitwehr = {
     army_attack_factor = var_GGR_vsnw_ra
 }
 
+idea_LSS_lack_of_everything = {
+    icon = GFX_idea_RAJ_debt_relief
+
+	consumer_goods_factor = var_idea_LSS_lackof_consumer_goods_factor
+	stability_factor = var_idea_LSS_lackof_stability_factor
+    industrial_capacity_factory = var_idea_LSS_lackof_industrial_capacity_factory
+	production_speed_buildings_factor = var_idea_LSS_lackof_production_speed_buildings_factor
+	monthly_population = var_idea_LSS_lackof_monthly_population
+	production_factory_efficiency_gain_factor = var_idea_LSS_lackof_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = var_idea_LSS_lackof_production_factory_max_efficiency_factor
+	production_lack_of_resource_penalty_factor = var_idea_LSS_lackof_production_lack_of_resource_penalty_factor 
+}
 
 idea_GPG_dream_island_trauma = {
     icon = GFX_idea_GPG_dream_island_trauma

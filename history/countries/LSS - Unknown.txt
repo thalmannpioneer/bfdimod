@@ -74,7 +74,7 @@ set_technology = { wartime_train = 1 }
 
 #Tank
 
-if = {
+IF = {
     limit = { NOT = { has_dlc = "No Step Back" } }
     set_technology = { gwtank = 1 }
     set_technology = { basic_light_tank = 1 }
@@ -100,9 +100,10 @@ if = {
             tank_reliability_upgrade = 4
         }
     }
-
 }
-else = {
+IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
+    limit = {has_dlc = "No Step Back" }
+
     set_technology = { gwtank_chassis = 1 }
     set_technology = { basic_light_tank_chassis = 1 }
     set_technology = { improved_light_tank_chassis = 1 }
@@ -235,14 +236,35 @@ set_technology = { computing_machine = 1 }
 set_technology = { improved_computing_machine = 1 }
 set_technology = { advanced_computing_machine = 1 }
 
-if = {
+IF = {
     limit = { NOT = { has_dlc = "La Resistance" } }
+
     set_technology = { basic_encryption = 1 }
     set_technology = { improved_encryption = 1 }
     set_technology = { advanced_encryption = 1 }
     set_technology = { basic_decryption = 1 }
     set_technology = { improved_decryption = 1 }
     set_technology = { advanced_decryption = 1 }
+}
+IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
+    limit = { has_dlc = "La Resistance" } 
+
+    create_intelligence_agency = yes
+    upgrade_intelligence_agency = upgrade_economy_civilian
+    upgrade_intelligence_agency = upgrade_army_department
+    upgrade_intelligence_agency = upgrade_naval_department
+    upgrade_intelligence_agency = upgrade_airforce_department
+    upgrade_intelligence_agency = upgrade_form_department 
+    upgrade_intelligence_agency = upgrade_decryption_boost 
+    upgrade_intelligence_agency = upgrade_decryption_boost
+    upgrade_intelligence_agency = upgrade_decryption_boost_2 
+    upgrade_intelligence_agency = upgrade_decryption_boost_2
+    upgrade_intelligence_agency = upgrade_decryption_boost_2
+    upgrade_intelligence_agency = upgrade_crypto_strength 
+    upgrade_intelligence_agency = upgrade_crypto_strength
+    upgrade_intelligence_agency = upgrade_crypto_strength_2 
+    upgrade_intelligence_agency = upgrade_crypto_strength_2
+    upgrade_intelligence_agency = upgrade_crypto_strength_2
 }
 
 set_technology = { basic_fire_control_system = 1 }
@@ -284,8 +306,8 @@ set_technology = { excavation3 = 1 }
 set_technology = { construction4 = 1 }
 set_technology = { excavation4 = 1 }
 
-set_stability = 0.35
-set_war_support = 0.65
+set_stability = 0.15
+set_war_support = 0.4
 set_fuel_ratio = 0.95
 
 create_equipment_variant = {
@@ -332,9 +354,18 @@ set_popularities = {
     fascism = 3
 }
 
+#Lack of Idea
+ set_variable = { var_idea_LSS_lackof_consumer_goods_factor = 0.95 }
+ set_variable = { var_idea_LSS_lackof_stability_factor = -0.75 }
+ set_variable = { var_idea_LSS_lackof_industrial_capacity_factory = -0.65 }
+ set_variable = { var_idea_LSS_lackof_production_speed_buildings_factor = -0.75 }
+ set_variable = { var_idea_LSS_lackof_monthly_population = -5 }
+ set_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = -0.5 }
+ set_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = -0.1 }
+ set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 }    
 
 add_ideas = undisturbed_isolation
-add_ideas = idea_LSS_lack_of_everything
+add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
 add_ideas = idea_LSS_modern_ground_army
 add_ideas = idea_LSS_political_chaos
 add_ideas = idea_LSS_texas_blood

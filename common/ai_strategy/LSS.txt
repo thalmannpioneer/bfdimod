@@ -19,4 +19,8 @@ LSS_Build = {
 		type = min_wanted_supply_trucks
 		value = 500
 	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -35
+	}
 }

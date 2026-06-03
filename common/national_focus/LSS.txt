@@ -9,10 +9,10 @@ focus_tree = {
 		}
 	}
 	
-	default = yes
+	default = no
 	reset_on_civilwar = no
 
-	initial_show_position = { focus = generic_focus_industry }
+	initial_show_position = { focus = LSS_focus_understanding_our_position }
 
 	focus = {
 		id = LSS_focus_understanding_our_position
@@ -127,4 +127,70 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = LSS_focus_the_agriculture
+		relative_position_id = LSS_focus_jumpstart_an_economy
+		x = -3		
+		y = 1
+		icon = GFX_focus_JAP_remove_the_weeds_from_the_crop
+		
+		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_the_commerce
+		relative_position_id = LSS_focus_jumpstart_an_economy
+		x = 0	
+		y = 1
+		icon = GFX_focus_CHL_silverworking
+		
+		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+			country_event = uncommon_event.9
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_the_relief
+		relative_position_id = LSS_focus_jumpstart_an_economy
+		x = 3	
+		y = 1
+		icon = GFX_focus_generic_price_controls
+		
+		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+			country_event = uncommon_event.10
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+		}
+	}
 }

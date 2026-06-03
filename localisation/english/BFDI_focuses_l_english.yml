@@ -231,7 +231,16 @@
  LSS_focus_structure_the_government_desc: "The Political Deadlock is still in our newly reorganized government. Both sides in both The House and Senate have been going nowhere in fixing the issues we now face. It may be time to take... more extreme actions.\n\n§RThe Future of Texas depends on it.§!"
 
  LSS_focus_jumpstart_an_economy: "Jumpstart an Economy"
- LSS_focus_jumpstart_an_economy_desc: "Placeholder"
+ LSS_focus_jumpstart_an_economy_desc: "This island seemed to have been built for luxury. Unfortunately this is not want we need to have a proper economy. We must lay the groundwork to not only survive, but thrive in these new lands. Let's take stock of what is already on the island and how we should go to build a Texan nation."
+
+ LSS_focus_the_agriculture: "The Agriculture"
+ LSS_focus_the_agriculture_desc: "Placeholder"
+
+ LSS_focus_the_commerce: "The Commerce"
+ LSS_focus_the_commerce_desc: "Placeholder"
+
+ LSS_focus_the_relief: "The Relief"
+ LSS_focus_the_relief_desc: "Placeholder"
 
  #PROVISIONAL GOVERNMENT
  GPG_focus_first_congress: "§YFirst Congress§!"

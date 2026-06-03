@@ -236,6 +236,12 @@ spriteTypes = {
 		name = GFX_idea_GPG_itrd
 		texturefile = gfx/interface/ideas/idea_GPG_itrd.dds
 	}
+
+	spriteType = {
+		name = GFX_idea_LSS_Whataburger
+		texturefile = gfx/interface/ideas/idea_LSS_Whataburger.dds
+	}
+
 	spriteType = {
 		name = GFX_idea_GDR_military_advisors
 		texturefile = gfx/interface/ideas/idea_GDR_military_advisors.dds

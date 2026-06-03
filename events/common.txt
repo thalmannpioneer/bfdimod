@@ -97,11 +97,10 @@ country_event = {
                 amount = 2000
             }
 
-            load_oob = "LSS_56" #Move Later
-            load_oob = "LSS_76" #Move Later
-            load_oob = "LSS_1" #Move Later
-
             hidden_effect = {
+
+                set_country_flag = LSS_attack_losers
+
                 division_template = {
                     name = "Military Police"
                     template_counter = 13
@@ -290,10 +289,12 @@ country_event = {
         name = uncommon_event.3.a
         add_stability = 0.05
         hidden_effect = {
-            load_oob = "LSS_2012"
-
             every_other_country = {
                 limit = { NOT = { tag = EMP } }
+                add_opinion_modifier = {
+                    target = LSS
+                    modifier = large_decrease
+                }
                 add_opinion_modifier = {
                     target = LSS
                     modifier = large_decrease
@@ -319,7 +320,7 @@ country_event = {
     option = {
         name = uncommon_event.4.a
 
-        add_political_power = 50
+        add_political_power = 65
     }
 }
 
@@ -346,6 +347,7 @@ country_event = {
             }
             country_event = {
 				id = uncommon_event.999
+                days = 50
 				hours = 12
 				random_hours = 12
 			}
@@ -354,6 +356,12 @@ country_event = {
                 days = 7
 				hours = 12
 				random_hours = 48
+			}
+            country_event = {
+				id = uncommon_event.11
+                days = 35
+				hours = 48
+				random_hours = 100
 			}
 
             mark_focus_tree_layout_dirty = yes
@@ -378,7 +386,7 @@ country_event = {
 
     option = {
         name = uncommon_event.6.a
-        add_threat = 5
+        add_threat = 15
     }
 }
 
@@ -408,5 +416,57 @@ country_event = {
     option = {
         name = uncommon_event.8.a
         add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = uncommon_event.9
+    title = uncommon_event.9.t
+    desc = uncommon_event.9.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.9.a
+        add_stability = 0.1
+    }
+    option = {
+        name = uncommon_event.9.b
+        add_stability = -0.05
+        add_ideas = LSS_Whataburger
+    }
+}
+
+country_event = {
+    id = uncommon_event.10
+    title = uncommon_event.10.t
+    desc = uncommon_event.10.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.10.a
+        add_stability = 0.05
+    }
+}
+
+country_event = {
+    id = uncommon_event.11
+    title = uncommon_event.11.t
+    desc = uncommon_event.11.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.11.a
+        load_oob = "LSS_2012"
+        add_manpower = 10000
+
+        activate_mission = LSS_Mobilization_56
+        activate_mission = LSS_Mobilization_76
+        activate_mission = LSS_Mobilization_1
     }
 }

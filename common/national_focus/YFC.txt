@@ -2438,7 +2438,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			base = 0 #10
+			base = 10 #10
 		}	
 	}
 
@@ -2741,7 +2741,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = {
-			base = 100 # 10
+			base = 10 # 10
 		}
 	}
 

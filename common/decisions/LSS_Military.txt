@@ -1,8 +1,49 @@
 decision_LSS_Military_category = {
+
+	LSS_Mobilization_56 = { 
+		available = {always = no}
+		icon = GFX_decision_SWE_set_army_budget  
+		is_good = yes
+		days_mission_timeout = 200
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			add_manpower = 10000
+			load_oob = "LSS_56"
+		}
+	}
+
+	LSS_Mobilization_76 = { 
+		available = {always = no}
+		icon = GFX_decision_SWE_set_army_budget  
+		is_good = yes
+		days_mission_timeout = 400
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			add_manpower = 10000
+			load_oob = "LSS_76"
+		}
+	}
+
+	LSS_Mobilization_1 = { 
+		available = {always = no}
+		icon = GFX_decision_SWE_set_army_budget  
+		is_good = yes
+		days_mission_timeout = 800
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			add_manpower = 20000
+			load_oob = "LSS_1"
+		}
+	}
+
 	LSS_Attack_Loser = { #guh
 		icon = GFX_decision_infiltrate_state
 
 		available = {
+			date > 2013.1.01
 			THIS = {
 				has_war = no
 			}
@@ -12,14 +53,19 @@ decision_LSS_Military_category = {
 			FROM = {
 				is_neighbor_of = LSS
 			}
+			THIS = {
+				has_country_flag = LSS_attack_losers
+			}
 		}
 
-		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } 
+		targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF YFC } 
 		targets_dynamic = yes
 
 		fire_only_once = yes
-		days_remove = 90
+		days_remove = 100
 		cost = 0
+
+		war_with_on_remove = FROM
 
 		remove_effect = {
 			add_manpower = 5000
@@ -27,7 +73,7 @@ decision_LSS_Military_category = {
                 target = FROM
                 type = annex_everything
             }
-			add_threat = 2
+			add_threat = 3.5
 			hidden_effect = {
 				IF = {
 					limit = {is_ai = yes}
@@ -82,7 +128,8 @@ decision_LSS_Military_category = {
 				}
 				every_possible_country = {
 					limit = { is_ai = yes }
-					add_manpower = 5000
+					add_manpower = 7500
+					army_experience = 10
 				}
 			}
 		}
@@ -93,7 +140,7 @@ decision_LSS_Military_category = {
 				add = 10
 				has_war = no
 				FROM = {tag = DPZ}
-				date > 2013.4.01
+				date > 2013.2.01
 			}
 			modifier = {
 				add = 10
@@ -197,13 +244,13 @@ decision_LSS_Military_category = {
 
 		modifier = {
 			resistance_growth = -1.5
-			resistance_target = -0.1
-			compliance_growth = -0.15
+			resistance_target = -0.25
+			compliance_growth = -0.25
 		}
 
 		remove_effect = {
 			add_stability = -0.05
-			add_war_support = -0.07
+			add_war_support = -0.1
 			IF = {
 				limit = {is_ai = yes}
 				add_stability = 0.25

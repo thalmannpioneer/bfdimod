@@ -141,6 +141,12 @@
  GFG_reconstruction_plainy: "§7Plainy§! Reconstruction"
 
  decision_LSS_Military_category: "Texas Military"
+ LSS_Mobilization_56: "§Y56th Infantry Brigade Combat Team Mobilization§!"
+ LSS_Mobilization_56_desc: "Part of the 36th Infantry Division, contains solid infantry units and support."
+ LSS_Mobilization_76: "§Y72nd Infantry Brigade Combat Team Mobilization§!"
+ LSS_Mobilization_76_desc: "Part of the 36th Infantry Division, contains an armored tank regiment and good support."
+ LSS_Mobilization_1: "§Y1st Armored Division Mobilization§!"
+ LSS_Mobilization_1_desc: "A powerful division, contains 2 armored tank regiments, a mechanized regiment, and good support."
  LSS_Attack_Loser: "Launch Surprise Invasion of [FROM.GetName]"
  LSS_Attack_Loser_desc: "They 100% had it coming.\n\nAlso might break stuff but do you really care?"
  LSS_Bridge: "Repair Dream Island Bridge"
