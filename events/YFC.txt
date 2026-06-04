@@ -1924,7 +1924,7 @@ country_event = {
 	id = YFC_event.39 #SRI tells YFC sure
 	title = YFC_event.39.t
     desc = YFC_event.39.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event39
 	
 	is_triggered_only = yes
     
@@ -1944,7 +1944,7 @@ country_event = {
 	id = YFC_event.40 #SRI tells YFC no!
 	title = YFC_event.40.t
     desc = YFC_event.40.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event40
 	
 	is_triggered_only = yes
     
@@ -2046,13 +2046,13 @@ country_event = {
 	id = YFC_event.42 #SRI tells YFC sure
 	title = YFC_event.42.t
     desc = YFC_event.42.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event39 #Might Update later
 	
 	is_triggered_only = yes
     
     option = { 
 		name = YFC_event.42.a
-		add_political_power = 25	
+		add_political_power = 10	
 	}
 }
 
@@ -2060,7 +2060,7 @@ country_event = {
 	id = YFC_event.43 #SRI tells YFC no!
 	title = YFC_event.43.t
     desc = YFC_event.43.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event40 #Might Update later
 	
 	is_triggered_only = yes
     

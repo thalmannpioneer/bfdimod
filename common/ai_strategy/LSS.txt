@@ -21,6 +21,6 @@ LSS_Build = {
 	}
 	ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = -35
+		value = -90
 	}
 }

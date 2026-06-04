@@ -4,7 +4,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 200
+		days_mission_timeout = 300
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -17,7 +17,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 400
+		days_mission_timeout = 500
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -30,7 +30,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 800
+		days_mission_timeout = 1000
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -122,6 +122,21 @@ decision_LSS_Military_category = {
 							level = 1
 							province = {
 								id = 10519
+							}
+						}
+					}
+				}
+				IF = {
+					limit = {
+						is_ai = yes
+						FROM = {tag = TBT}
+					}
+					173 = {
+						set_building_level = {
+							type = supply_node
+							level = 1
+							province = {
+								id = 10177
 							}
 						}
 					}

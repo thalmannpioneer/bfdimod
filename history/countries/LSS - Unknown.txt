@@ -307,7 +307,7 @@ set_technology = { construction4 = 1 }
 set_technology = { excavation4 = 1 }
 
 set_stability = 0.15
-set_war_support = 0.4
+set_war_support = 0.3
 set_fuel_ratio = 0.95
 
 create_equipment_variant = {

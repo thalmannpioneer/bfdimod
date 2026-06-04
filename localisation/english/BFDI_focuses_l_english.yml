@@ -242,6 +242,9 @@
  LSS_focus_the_relief: "The Relief"
  LSS_focus_the_relief_desc: "Placeholder"
 
+ LSS_focus_setup_the_livestock: "Setup the Livestock"
+ LSS_focus_setup_the_livestock_desc: "Placeholder"
+
  #PROVISIONAL GOVERNMENT
  GPG_focus_first_congress: "§YFirst Congress§!"
  GPG_focus_first_congress_desc: "The situation on the continent is stalemate, and it has become especially acute in the former economic center of Casland. Various factions united to resist the anarchy and formed the Recommended Characters Council. The first congress of the new government will be held soon."
@@ -1035,6 +1038,12 @@
 
  YFC_focus_a_look_inward: "A Look Inward"
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
+
+ YFC_focus_new_interests: "New Interests"
+ YFC_focus_new_interests_desc: "With the sudden collapse of the Fascist Snowy Government to our south have brought new opportunities. Besides the possible money to be made selling weapons to sides in a possible civil war, a breakaway state on our border has brought intrigue. Where The Great Ridge stands, a government was formed of ex-slaves, anti-Fascists, and normal civilians trying to escape the chaos. \n\nTheir government is weak both military and economically, but stands on resource rich lands which we could make a fortune on. Invasion of their lands is on the table, but let's be civil about this!\n\nWe will start with a simple offer of protection and funding for their resources. Such a good offer they would want to have!" #ZDubbz if you want to
+
+ YFC_focus_integrate_great_ridge: "Integrate The Great Ridge"
+ YFC_focus_integrate_great_ridge_desc: "Placeholder"
 
  YFC_focus_the_bunchivist_problem: "The Bunchivist Problem"
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."

@@ -345,9 +345,9 @@ country_event = {
                     traits = { SHX_model_governor conservative_nationalist }
                 }
             }
-            country_event = {
+            country_event = { #Remove One Day...
 				id = uncommon_event.999
-                days = 50
+                days = 65
 				hours = 12
 				random_hours = 12
 			}
@@ -387,21 +387,51 @@ country_event = {
     option = {
         name = uncommon_event.6.a
         add_threat = 15
+
+        hidden_effect = {
+            every_possible_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = uncommon_event.7
+					days = 1
+					random_hours = 50
+				}
+			}
+        }
     }
 }
 
-country_event = { #News
+news_event = { #News
     id = uncommon_event.7
     title = uncommon_event.7.t
     desc = uncommon_event.7.desc
-    picture = GFX_Temp_event
+    picture = GFX_bfdinews2
 
     is_triggered_only = yes
     major = yes
     fire_only_once = yes
 
     option = {
+        trigger = {
+            NOT = {tag = LSS}
+        }
         name = uncommon_event.7.a
+        add_state_claim = 13
+        add_state_claim = 181
+        add_political_power = -25
+    }
+    option = {
+        trigger = {
+            NOT = {tag = LSS}
+        }
+        name = uncommon_event.7.b
+        add_political_power = 25
+    }
+    option = {
+        trigger = {
+            tag = LSS
+        }
+        name = uncommon_event.7.c
     }
 }
 
@@ -430,10 +460,15 @@ country_event = {
     option = {
         name = uncommon_event.9.a
         add_stability = 0.1
+
+        add_popularity = {
+            ideology = neutrality
+            popularity = 0.15
+        }
     }
     option = {
         name = uncommon_event.9.b
-        add_stability = -0.05
+        add_stability = -0.1
         add_ideas = LSS_Whataburger
     }
 }

@@ -71,7 +71,7 @@ ideas = {
 	
 			modifier = {
 				monthly_population = 0.1
-				supply_consumption_factor = -0.15
+				supply_consumption_factor = -0.1
 			}
 		}
 	}

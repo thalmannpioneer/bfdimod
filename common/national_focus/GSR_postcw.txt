@@ -746,9 +746,13 @@ focus_tree = {
 
         cost = 6
 
-        ai_will_do = {
-            base = 10
-        }
+		ai_will_do = {
+         	base = 0
+			modifier = {
+				add = 10
+				num_divisions > 30
+			}
+		}
 
         completion_reward = {
             add_ideas = idea_GSR_socialism_in_one_country
@@ -1008,9 +1012,13 @@ focus_tree = {
 
         cost = 6
 
-        ai_will_do = {
-            base = 10
-        }
+		ai_will_do = {
+         	base = 0
+			modifier = {
+				add = 10
+				num_divisions > 30
+			}
+		}
 
         completion_reward = {
             add_ideas = idea_GSR_no_government
