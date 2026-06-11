@@ -110,7 +110,7 @@ GGR_huge_army = {
 
     abort = {
         has_army_size = {
-            size > 16
+            size > 17
         }
     }
 

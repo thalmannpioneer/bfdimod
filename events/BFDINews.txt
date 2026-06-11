@@ -1569,6 +1569,8 @@ news_event = {
             controls_province = 166
             NOT = {TAG = YFC}
         }
+        custom_effect_tooltip = l_money_gain_1M
+		add_to_variable = { money_amount = 10 }
     }
 }
 

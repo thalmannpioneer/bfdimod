@@ -105,7 +105,7 @@ focus_tree = {
 		
 		allow_branch = { has_completed_focus = LSS_focus_structure_the_government }
 		
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			base = 5
@@ -122,6 +122,14 @@ focus_tree = {
 					amount = 2
 				}
 			}
+			181 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
 
 			country_event = uncommon_event.8
 		}
@@ -136,7 +144,7 @@ focus_tree = {
 		
 		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
 		
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			base = 5
@@ -158,7 +166,7 @@ focus_tree = {
 		
 		prerequisite = { focus = LSS_focus_the_agriculture }
 		
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			base = 5
@@ -173,6 +181,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LSS_focus_encourage_local_growing
+		relative_position_id = LSS_focus_setup_the_livestock
+		x = 0		
+		y = 1
+		icon = GFX_focus_generic_agricultural_subsidies
+		
+		prerequisite = { focus = LSS_focus_setup_the_livestock }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.5 }
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+		}
+	}
+
+	focus = {
 		id = LSS_focus_the_commerce
 		relative_position_id = LSS_focus_jumpstart_an_economy
 		x = 0	
@@ -181,7 +211,7 @@ focus_tree = {
 		
 		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
 		
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			base = 5
@@ -195,6 +225,69 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LSS_focus_manufacture_tools
+		relative_position_id = LSS_focus_the_commerce
+		x = -1		
+		y = 1
+		icon = GFX_focus_generic_coal_mining
+		
+		prerequisite = { focus = LSS_focus_the_commerce focus = LSS_focus_the_agriculture }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+
+			181 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = 0.1 }
+			add_to_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.1 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_create_new_businesses
+		relative_position_id = LSS_focus_the_commerce
+		x = 1		
+		y = 1
+		icon = GFX_focus_PRC_urbanization
+		
+		prerequisite = { focus = LSS_focus_the_relief focus = LSS_focus_the_commerce}
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
+			add_to_variable = { var_idea_LSS_lackof_production_speed_buildings_factor = 0.05 }
+		}
+	}
+
+	focus = {
 		id = LSS_focus_the_relief
 		relative_position_id = LSS_focus_jumpstart_an_economy
 		x = 3	
@@ -203,7 +296,7 @@ focus_tree = {
 		
 		prerequisite = { focus = LSS_focus_jumpstart_an_economy }
 		
-		cost = 2
+		cost = 3
 
 		ai_will_do = {
 			base = 5
@@ -214,6 +307,30 @@ focus_tree = {
 			country_event = uncommon_event.10
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_create_stimulus_checks
+		relative_position_id = LSS_focus_the_relief
+		x = 1		
+		y = 1
+		icon = GFX_focus_GER_customs_union
+		
+		prerequisite = { focus = LSS_focus_the_relief }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
 		}
 	}
 }

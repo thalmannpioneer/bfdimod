@@ -99,7 +99,7 @@ GRR_Arm_01 = {
 
 	can_use = { always = yes }
 
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" "motorized" }
 
 	fallback_name = "%d. Panzer-Divizion"
 

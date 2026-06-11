@@ -1155,7 +1155,7 @@ focus_tree = {
          	base = 0
 			modifier = {
 				add = 10
-				num_divisions > 15
+				num_divisions > 17
 			}
 		}
 		

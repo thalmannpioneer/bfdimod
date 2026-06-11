@@ -77,7 +77,7 @@ decision_LSS_Military_category = {
 			hidden_effect = {
 				IF = {
 					limit = {is_ai = yes}
-					add_manpower = 15000
+					add_manpower = 20000
         			add_offsite_building = { type = arms_factory level = 1 }
 					add_stability = 0.25
 				}

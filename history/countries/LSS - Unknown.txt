@@ -226,6 +226,23 @@ set_technology = { mtg_tank_landing_craft = 1 }
 
 # Air
 
+IF = {
+    limit = { NOT = { has_dlc = "By Blood Alone" } }
+
+    set_technology = { early_transport_plane = 1 }
+    set_technology = { improved_transport_plane = 1 }
+    set_technology = { strategic_airlifter = 1 }
+
+}
+IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
+    limit = {has_dlc = "By Blood Alone" }
+
+    set_technology = { bba_early_transport_plane = 1 }
+    set_technology = { bba_improved_transport_plane = 1 }
+    set_technology = { bba_strategic_airlifter = 1 }
+}
+
+
 # Electronic
 
 set_technology = { electronic_mechanical_engineering = 1 }
@@ -319,6 +336,11 @@ create_equipment_variant = {
         tank_engine_upgrade = 4
         mech_cost_upgrade  = 4
     }
+}
+
+create_equipment_variant = {
+    name = "Boeing C-17 Globemaster III"
+    type = transport_plane_equipment_3
 }
 
 create_equipment_variant = {

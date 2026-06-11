@@ -23,4 +23,11 @@ LSS_Build = {
 		type = garrison_reinforcement_priority
 		value = -90
 	}
+
+	ai_strategy = {
+		type = operative_mission
+		value = 100
+		mission = root_out_resistance
+		mission_target = LSS
+	}
 }

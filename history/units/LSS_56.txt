@@ -71,9 +71,9 @@ division_template = {
 division_template = {
     name = "133rd Field Artillery Regiment"
     regiments = {
-        artillery_brigade = { x = 0 y = 0 }
-		artillery_brigade = { x = 0 y = 1 }
-        artillery_brigade = { x = 0 y = 2 }
+        mot_artillery_brigade = { x = 0 y = 0 }
+		mot_artillery_brigade = { x = 0 y = 1 }
+        mot_artillery_brigade = { x = 0 y = 2 }
         infantry = { x = 1 y = 0 }
 	}
     support = {

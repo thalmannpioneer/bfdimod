@@ -156,9 +156,9 @@ country_event = {
                     division_cap = 1
                     regiments = {
                         infantry = { x = 0 y = 0 }
-                        anti_air_brigade = { x = 1 y = 0 }
-                        anti_air_brigade = { x = 1 y = 1 }
-                        artillery_brigade = { x = 2 y = 0 }
+                        mot_anti_air_brigade = { x = 1 y = 0 }
+                        mot_anti_air_brigade = { x = 1 y = 1 }
+                        mot_artillery_brigade = { x = 2 y = 0 }
                     }
                 }
                 181 = {
@@ -347,7 +347,7 @@ country_event = {
             }
             country_event = { #Remove One Day...
 				id = uncommon_event.999
-                days = 65
+                days = 200
 				hours = 12
 				random_hours = 12
 			}
@@ -389,8 +389,7 @@ country_event = {
         add_threat = 15
 
         hidden_effect = {
-            every_possible_country = {
-				limit = { is_ai = no }
+            every_country = {
 				news_event = {
 					id = uncommon_event.7
 					days = 1
@@ -503,5 +502,44 @@ country_event = {
         activate_mission = LSS_Mobilization_56
         activate_mission = LSS_Mobilization_76
         activate_mission = LSS_Mobilization_1
+
+        hidden_effect = {
+            country_event = {
+				id = uncommon_event.12
+                days = 7
+				hours = 24
+				random_hours = 48
+			}
+        }
+    }
+}
+
+country_event = {
+    id = uncommon_event.12
+    title = uncommon_event.12.t
+    desc = uncommon_event.12.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.12.a
+
+        181 = {
+            add_building_construction = {
+                type = air_base
+                level = 3
+                instant_build = yes
+            }
+        }
+
+        #air_wings = {
+        #    181 = {
+        #        transport_plane_equipment_3 = {
+        #            owner = "LSS"
+        #            amount = 100
+        #        }
+        #    }
+        #}
     }
 }
