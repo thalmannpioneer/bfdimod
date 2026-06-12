@@ -111,6 +111,22 @@ GTR_fighters = {
         id = engines_1
         value = 10000
     }
+
+    ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_variant_production_factor
+        id = support_equipment
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = artillery
+        value = -1000
+    }
 }
 
 GTR_bombers = {

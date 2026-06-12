@@ -1642,7 +1642,8 @@ focus_tree = {
                 if = {
                     limit = {is_ai = yes}
                     activate_advisor = idea_GTR_titanknife #I quit.
-                    add_political_power = -150
+                    activate_advisor = idea_GTR_calculator
+                    add_political_power = -250
                 }
             }
         }
@@ -2374,6 +2375,7 @@ focus_tree = {
         }
 
         completion_reward = {
+            army_experience = 25
             GTR_calculator = {
                 add_skill_level = 2
             }

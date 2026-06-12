@@ -20,7 +20,46 @@ every_possible_country = {
 
 			support = {
 				hq_support_company = { x = 0 y = 0 }
-				# hq_logistics added via on_research_complete on tech_logistics_company
+			}
+		}
+	}
+
+	# GGR
+	if = {
+		limit = { tag = GGR }
+		division_template = {
+			name = "Objekt Oberkommando"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+				hq_infantry = { x = 0 y = 2 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+			}
+		}
+	}
+
+	# GTR
+	if = {
+		limit = { tag = GTR }
+		division_template = {
+			name = "Technocratic Military Committee" #Maybe?
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+				hq_infantry = { x = 0 y = 2 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
 			}
 		}
 	}
@@ -29,6 +68,8 @@ every_possible_country = {
 	if = {
 		limit = {
 			NOT = { tag = WGF }
+			NOT = { tag = GGR }
+			NOT = { tag = GTR }
 		}
 		division_template = {
 			localization_key = "ARMY_HQ_TEMPLATE_NAME"

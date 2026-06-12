@@ -49,6 +49,7 @@ ideas = {
 				compliance_growth = 1
 				ai_desired_divisions_factor = 2
 				ai_focus_aggressive_factor = 0.5
+				max_command_power_mult = 1
 			}
 			on_remove = {
 				IF = {

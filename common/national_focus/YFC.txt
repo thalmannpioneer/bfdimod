@@ -1942,7 +1942,7 @@ focus_tree = {
 
 		allow_branch = { has_completed_focus = YFC_focus_bunch_fostered }
 
-		#Creates The Three Musketeers factions and their shared focus tree
+		#Creates The Three Musketeers faction and their shared focus tree
 
 		available = {
 			hidden_trigger = {has_completed_focus = YFC_focus_bunch_fostered}
@@ -1950,7 +1950,7 @@ focus_tree = {
 
 		prerequisite = { focus = YFC_focus_bunch_fostered }
 		prerequisite = { focus = YFC_focus_money_arms_capital }
-		cost = 8
+		cost = 10
 		completion_reward = {
 			set_country_flag = Allow_Musketeers
 			mark_focus_tree_layout_dirty = yes
@@ -2259,14 +2259,14 @@ focus_tree = {
 
 		allow_branch = { has_completed_focus = YFC_focus_fully_cored }
 
-		#Creates The Three Musketeers factions and their shared focus tree
+		#Creates The Goiky Trade League faction and their shared focus tree
 
 		available = {
 			hidden_trigger = {has_completed_focus = YFC_focus_fully_cored}
 		}
 
 		prerequisite = { focus = YFC_focus_fully_cored }
-		cost = 8
+		cost = 10
 		completion_reward = {
 			set_country_flag = Allow_Musketeers
 			mark_focus_tree_layout_dirty = yes
@@ -3006,6 +3006,13 @@ focus_tree = {
 						has_manpower < 8000
 					}
 					add_manpower = 6000
+				}
+				IF = {
+					limit = {
+						is_ai = yes
+						check_variable = { money_amount < 10 }
+					}
+					add_to_variable = { money_amount = 5 }
 				}
 			}
 		}

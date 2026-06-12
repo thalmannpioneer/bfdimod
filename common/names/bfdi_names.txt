@@ -3,26 +3,30 @@ default = { #Names here include that of the production of BFDI <3
 		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes" "Ryatt" "Jaxsyn" "Hunter" "Cary" "Michael" "Allen" "Joseph" "Lazlo" "Niall"
 			"Amor" "Sam" "Aidan" "Aiden" "Anthony" "Ari" "Bok Bok" "Brannon" "Bryan" "Carter" "Cormac" "Christopher" "Rohan" "Diego" "Donato" "Gabriel" "Giovanni"
 			"Griffin" "Joseph" "Ivan" "Maixi" "Nate" "Oliver" "Saka" "Sicle" "Stamina" "Sutton" "Atesh" "Connor" "B. Oktavio" "Luca" "Xander" "Braden" "Daniel" "Antony" 
-			"Eathan"
+			"Eathan" "Alem" "Isaiah" "Mason" "Zakary" "Carson" "Kaden" "Limo" "Scott" "Benjamin" "Ian" "Filip" "Adam" "Kalleon" "Ryan" "Coby" "Sam" "Thomas"
 		}
 		surnames = { "Huang" "Lee" "Pak" "T." "Burns" "Boretto" "Thornbury" "V." "Gomez" "Acedo" "Choy" "Cool" "Ndubisi" "W." "Oliver" "Yeh" "J." "De La Torre" "Borza"
 			"Batista" "Edwards" "Weber" "Dubuc" "Hendrix" "Maslov" "Conrow" "Scinto" "Hull" "Sakarya" "S." "Wolfmann" "Hughes" "Archibald" "Whiteside" "Booth" "Kos" 
-			"Chambers"
+			"Chambers" "Hadzic" "Valle" "Gerald" "Bozaich" "Friedland" "C." "Bain" "M." "Cross" "Woodside" "Chick" "Kordas" "Katz" "Lynch" "Ingram" "Dietrich" "Palivathukal"
+			"Ruette" "Ridgewell"
 
 		}
 		callsigns = { }
 	}
 	female = {
-		names = { "Juliette" "Anna" "Satomi" "Kenzie" "Maroue" "Scratch" "Jenny" "Dane" "Florence" "Juni" "Sox" "Pearl" "Zoey"}
-		surnames = { "Hinatsu" "Bryant" "Reus" "H." "Trent" "Chapell" "R." "Slayton" "Wiser"}
+		names = { "Juliette" "Anna" "Satomi" "Kenzie" "Maroue" "Scratch" "Jenny" "Dane" "Florence" "Juni" "Sox" "Pearl" "Zoey" "Chelsea" "Felix" "Matthew" "Ivi" "Emily" 
+			"Bella" "Cindy" "Emily" "Katherine" "Sabrina"
+		}
+		surnames = { "Hinatsu" "Bryant" "Reus" "H." "Trent" "Chapell" "R." "Slayton" "Wiser" "Winters" "Ross" "T." "Mori" "Kalish" "Reeves" "Jiang" "Pitcher" "Sun"}
 		callsigns = { "Queen Of The Sky" "The Red Princess" }
 	}
 	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" "Ethan" "Sam" "Redden" "Zamiel" "Jikkay" "Slislug" "Anderson" 
-		"Kacpir" "P."
+		"Kacpir" "P." "Shimizu" "Chapman" "Marz" "Mintz-Kreyns" "Schazer"
 	}
 	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" "Demon"}
-	#Debating if usernames should be callsigns but for now "derpadon" "EndaTheStar" "RickToons" "TheAnimatedDrawings" "Punch-Holer" "Whimsicosmos"
-	#For Pun: He left off on names of: TPOT, Start
+	#Debating if usernames should be callsigns but for now "derpadon" "EndaTheStar" "RickToons" "TheAnimatedDrawings" "Punch-Holer" "Whimsicosmos" "Alphermebo" "BradyLS" 
+	# "Eyepsychic"
+	
 
 	#Operations - treat these as keys, not strings.
 	prefix = o_operation
@@ -54,7 +58,7 @@ GGR = {
 		Beisswenger Duttmann Wilbs Berglen Behrmann Huber Konig Kraus Vogt Zimmermann
 		Winter Wolff Kuhn Haas Brandt Winkler Sommer Lehmann Roth Dietrich Schulte
 	}
-	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
+	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Goiky" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 	
 	prefix = o_unternehmen
 	operation = {

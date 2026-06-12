@@ -1685,6 +1685,26 @@ SpriteTypes = {
 		name = "GFX_focus_Musketeers_build_new_mines"
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_build_new_mines.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_tighten_command"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_tighten_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_form_udc"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_form_udc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_Musketeers_conduct_military_drills"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_conduct_military_drills.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_Musketeers_rules_of_war"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_rules_of_war.dds"
+	}
 	
 	
 	frameAnimatedSpriteType = {
