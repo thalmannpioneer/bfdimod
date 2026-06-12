@@ -111,6 +111,10 @@ infantry_GGR = {
 				infantry = 6
 				artillery_brigade = 1
 			}
+
+			regimental_support = {
+				field_guns = 2
+			}
 		}
 	}
 }
@@ -210,6 +214,10 @@ armored_GGR = {
 				light_armor = 4
 				motorized = 3
 			}
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 
 		replace_at_match = 0.75
@@ -260,6 +268,10 @@ armored_GGR = {
 				light_armor = 2
 				motorized = 4
 			}
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 	}
 }
@@ -302,6 +314,10 @@ motorized_GGR = {
 			
 			regiments = {
 				motorized = 6
+			}
+
+			regimental_support = {
+				field_guns = 1
 			}
 		}
 	}

@@ -109,6 +109,10 @@ infantry_GTR = {
 			regiments = {
 				infantry = 3
 			}
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 
 		replace_at_match = 0.75
@@ -138,6 +142,10 @@ infantry_GTR = {
 			regiments = {
 				infantry = 4
 				artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_guns = 1
 			}
 		}
 	}

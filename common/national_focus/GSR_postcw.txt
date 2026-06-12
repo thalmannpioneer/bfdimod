@@ -855,7 +855,11 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.12
-            add_political_power = -50
+
+            if = {
+                limit = { NOT = {is_ai = yes}}
+                add_political_power = -50
+            }
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -881,7 +885,10 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.13
-            add_political_power = -50
+            if = {
+                limit = { NOT = {is_ai = yes}}
+                add_political_power = -50
+            }
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -907,7 +914,10 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.14
-            add_political_power = -50
+            if = {
+                limit = { NOT = {is_ai = yes}}
+                add_political_power = -50
+            }
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -933,7 +943,10 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.15
-            add_political_power = -50
+            if = {
+                limit = { NOT = {is_ai = yes}}
+                add_political_power = -50
+            }
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -959,7 +972,10 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.16
-            add_political_power = -50
+            if = {
+                limit = { NOT = {is_ai = yes}}
+                add_political_power = -50
+            }
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -1016,7 +1032,7 @@ focus_tree = {
          	base = 0
 			modifier = {
 				add = 10
-				num_divisions > 30
+				num_divisions > 35
 			}
 		}
 

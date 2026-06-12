@@ -1,17 +1,28 @@
-default = {
+default = { #Names here include that of the production of BFDI <3
 	male = {
-		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes" "Ryatt" "Jaxsyn" "Hunter"}
-		surnames = { }
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes" "Ryatt" "Jaxsyn" "Hunter" "Cary" "Michael" "Allen" "Joseph" "Lazlo" "Niall"
+			"Amor" "Sam" "Aidan" "Aiden" "Anthony" "Ari" "Bok Bok" "Brannon" "Bryan" "Carter" "Cormac" "Christopher" "Rohan" "Diego" "Donato" "Gabriel" "Giovanni"
+			"Griffin" "Joseph" "Ivan" "Maixi" "Nate" "Oliver" "Saka" "Sicle" "Stamina" "Sutton" "Atesh" "Connor" "B. Oktavio" "Luca" "Xander" "Braden" "Daniel" "Antony" 
+			"Eathan"
+		}
+		surnames = { "Huang" "Lee" "Pak" "T." "Burns" "Boretto" "Thornbury" "V." "Gomez" "Acedo" "Choy" "Cool" "Ndubisi" "W." "Oliver" "Yeh" "J." "De La Torre" "Borza"
+			"Batista" "Edwards" "Weber" "Dubuc" "Hendrix" "Maslov" "Conrow" "Scinto" "Hull" "Sakarya" "S." "Wolfmann" "Hughes" "Archibald" "Whiteside" "Booth" "Kos" 
+			"Chambers"
+
+		}
 		callsigns = { }
 	}
 	female = {
-		names = { "Juliette" "Anna" }
-		surnames = { }
+		names = { "Juliette" "Anna" "Satomi" "Kenzie" "Maroue" "Scratch" "Jenny" "Dane" "Florence" "Juni" "Sox" "Pearl" "Zoey"}
+		surnames = { "Hinatsu" "Bryant" "Reus" "H." "Trent" "Chapell" "R." "Slayton" "Wiser"}
 		callsigns = { "Queen Of The Sky" "The Red Princess" }
 	}
-	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
-	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
-
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" "Ethan" "Sam" "Redden" "Zamiel" "Jikkay" "Slislug" "Anderson" 
+		"Kacpir" "P."
+	}
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" "Demon"}
+	#Debating if usernames should be callsigns but for now "derpadon" "EndaTheStar" "RickToons" "TheAnimatedDrawings" "Punch-Holer" "Whimsicosmos"
+	#For Pun: He left off on names of: TPOT, Start
 
 	#Operations - treat these as keys, not strings.
 	prefix = o_operation

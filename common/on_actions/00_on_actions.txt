@@ -990,7 +990,7 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					check_variable = { random < 0.02 }
+					check_variable = { random < 0.01 }
 					NOT = { has_trait = sick }
 					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
 					divide_temp_variable = { temp = num_units }
@@ -1078,4 +1078,89 @@ on_actions = {
 		}
 	}
 
+    on_operative_captured = {
+		effect = {
+			# SCOPE  the operative
+			# ROOT   the country the operative was performing its mission in
+			# FROM   the country the operative is operating for
+			operative_leader_event = {
+					id = lar_operative_event.6
+					recipient = ROOT
+					originator = ROOT
+					set_from_from = ROOT
+					set_from = FROM
+					days = 1
+			}
+			if = {
+				limit = {
+					NOT = { has_unit_leader_flag = le_clerc1 }
+				}
+				set_unit_leader_flag = le_clerc1
+			}
+			else_if = {
+				limit = {
+					has_unit_leader_flag = le_clerc1
+				}
+				set_unit_leader_flag = le_clerc2
+			}
+			random_list = {
+				log = yes
+				90 = { #regular
+					operative_leader_event = {
+						id = lar_operative_event.1
+						set_from_from = ROOT
+					}
+				}
+				10 = { #operative turned
+					modifier = {
+						has_trait = operative_tough
+						factor = 0 #tough operatives never get turned
+					}
+					modifier = {
+						has_trait = operative_double_agent
+						factor = 0 #no tripple agents please
+					}
+					turn_operative = { turned_by = ROOT }
+					# ensure the operative has the nationality of the country he is coming from
+					add_nationality = FROM
+					operative_leader_event = {
+            	    	id = lar_operative_event.5
+						set_from_from = FROM #tells the event which nationality to add
+            		}
+            	}
+			}
+		}
+	}
+
+	on_operative_death = {
+		effect = {
+			# SCOPE  the operative
+			# ROOT   the killer country (optional)
+			# FROM   the country the operative is operating for
+			if = {
+				limit = {
+					country_exists = ROOT
+				}
+
+				# operative killed by a country, likelly while on mission
+				operative_leader_event = {
+					id = lar_operative_event.3
+					set_from_from = ROOT
+				}
+			}
+			else = {
+				# other cause of death
+			}
+			
+			if = {
+				limit = {
+					FROM = {
+						NOT = { is_ai = yes }
+						has_done_agency_upgrade = upgrade_suicide_pills
+					}
+				}
+				set_global_flag = kill_me_alive_flag
+			}
+		}
+	}
 }

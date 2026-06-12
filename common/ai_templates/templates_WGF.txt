@@ -116,6 +116,10 @@ infantry_WGF = {
 				infantry = 4
 				artillery_brigade = 1
 			}
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 
 		replace_at_match = 0.6
@@ -150,6 +154,10 @@ infantry_WGF = {
 			regiments = {
 				infantry = 5
 				artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_guns = 1
 			}
 		}
 	}

@@ -233,6 +233,7 @@ WGF_supply = {
 	}
 	enable = {
 		NOT = { country_exists = GMD }
+		has_completed_focus = WGF_focus_flip_the_coin
 		177 = {
 			any_province_building_level = {
 				province = {

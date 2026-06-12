@@ -138,6 +138,10 @@ infantry_GFG = {
 			regiments = {
 				infantry = 5
 			}	
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 	}
 }
