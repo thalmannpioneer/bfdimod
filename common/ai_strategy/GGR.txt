@@ -52,21 +52,26 @@ GGR_FFT_war = {
     allowed = {
         original_tag = GGR
     }
-    enable = {
-        focus_progress = {
-            focus = GGR_focus_partizan_war
-            progress > 0.01
-        }
-    }
-
-    abort = {
-        NOT = { country_exists = FFT }
-    }
+	enable = {
+		has_war_with = FFT
+	}
+	abort = {
+		NOT = { country_exists = FFT }
+	}
 
 	ai_strategy = {
 		type = front_unit_request
 		tag = FFT
 		value = 500
+	}
+	ai_strategy = {
+		type = front_control
+		tag = FFT
+		priority = 1
+    	ordertype = front
+    	execution_type = rush
+		execute_order = yes
+		manual_attack = yes
 	}
 }
 

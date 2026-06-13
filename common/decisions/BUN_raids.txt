@@ -17,15 +17,20 @@ decision_BUN_raids_category = {
             }  
             NOT = {is_puppet = yes}
             has_war = no
-            has_border_war = no
             NOT = {has_cosmetic_tag = BUN_revolt}
             NOT = {has_cosmetic_tag = BUN_republic}
-            check_variable = {var_BUN_raiding < 1}
         }
 
-        complete_effect = {
-            set_variable = { var_BUN_raiding = 2 }
-        }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = BUN_Raid_Active}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BUN_Raid_Active
+		}
 
         fire_only_once = no
         days_remove = 10
@@ -146,16 +151,21 @@ decision_BUN_raids_category = {
                 }
             } 
             NOT = {is_puppet = yes}
-            has_border_war = no
             has_war = no
             NOT = {has_cosmetic_tag = BUN_revolt}
             NOT = {has_cosmetic_tag = BUN_republic}
-            check_variable = {var_BUN_raiding < 1}
         }
 
-        complete_effect = {
-            set_variable = { var_BUN_raiding = 2 }
-        }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = BUN_Raid_Active}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BUN_Raid_Active
+		}
 
         fire_only_once = no
         days_remove = 10
@@ -276,16 +286,21 @@ decision_BUN_raids_category = {
                 }
             }  
             NOT = {is_puppet = yes}
-            has_border_war = no
             has_war = no
             NOT = {has_cosmetic_tag = BUN_revolt}
             NOT = {has_cosmetic_tag = BUN_republic}
-            check_variable = {var_BUN_raiding < 1}
         }
 
-        complete_effect = {
-            set_variable = { var_BUN_raiding = 2 }
-        }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = BUN_Raid_Active}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BUN_Raid_Active
+		}
 
         fire_only_once = no
         days_remove = 10
@@ -406,16 +421,21 @@ decision_BUN_raids_category = {
                 }
             } 
             NOT = {is_puppet = yes}
-            has_border_war = no
             has_war = no
             NOT = {has_cosmetic_tag = BUN_revolt}
             NOT = {has_cosmetic_tag = BUN_republic}
-            check_variable = {var_BUN_raiding < 1}
         }
 
-        complete_effect = {
-            set_variable = { var_BUN_raiding = 2 }
-        }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = BUN_Raid_Active}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BUN_Raid_Active
+		}
 
         fire_only_once = no
         days_remove = 10

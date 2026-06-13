@@ -22,6 +22,18 @@ ideas = {
 				casualty_trickleback = 0.5
 			}
 		}
+		idea_LSS_modern_air_force = { #Move later 
+			picture = eng_special_air_service
+			modifier = {
+				air_accidents_factor = -0.75
+				air_attack_factor = 0.25
+				air_cas_efficiency = 0.3
+				air_mission_efficiency = 1
+				army_bonus_air_superiority_factor = 0.25
+				ground_attack_factor = 0.5
+				air_mission_xp_gain_factor = 1
+			}
+		}
 		idea_LSS_political_chaos = { #Move later 
 			picture = generic_disjointed_gov
 			modifier = {

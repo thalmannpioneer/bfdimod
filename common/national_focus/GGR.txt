@@ -170,7 +170,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 20
+        	base = 30
 			modifier = {
 				add = -100
 				has_country_flag = SkillIssue_GGR
@@ -456,7 +456,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        base = 10
+        	base = 15
 		}
 		
 		completion_reward = {
@@ -509,7 +509,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        base = 10
+        	base = 15
 		}
 		
 		completion_reward = {
@@ -582,7 +582,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        base = 10
+        	base = 15
 		}
 		
 		completion_reward = {
@@ -672,7 +672,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 8
+        	base = 15
 			modifier = {
 				add = -100
 				has_country_flag = SkillIssue_GGR
@@ -821,7 +821,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 15
+        	base = 30
 		}
 		
 		select_effect = { 
@@ -855,7 +855,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 15
+        	base = 30
 		}
 		
 		select_effect = { 
@@ -899,7 +899,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 15
+        	base = 30
 		}
 		
 		select_effect = { 
@@ -1057,7 +1057,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 15
+        	base = 30
 		}
 		
 		select_effect = { 
@@ -1096,7 +1096,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 15
+        	base = 30
 		}
 		
 		select_effect = { 

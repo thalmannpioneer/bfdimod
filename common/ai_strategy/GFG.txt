@@ -39,7 +39,7 @@ GFG_civil_war = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 30
+		value = 1000
 	}
 }
 

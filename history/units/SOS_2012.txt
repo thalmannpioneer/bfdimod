@@ -40,8 +40,6 @@ units = {
         start_equipment_factor = 0.2
     }
 
-    #To make naming the Goiky fleet more fun I want diffrent devs to add names to some of the ships cause why not 
-
     fleet = {
 		name = "Goiky Navy"			
 		naval_base = 11102 # Objectburg Port
@@ -49,23 +47,31 @@ units = {
 			name = "Commercial Squadron"
 			location = 11102 # Objectburg Port
 
-            ship = { name = "HMAS Cruiser_Name_1" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } } }
-			ship = { name = "HMAS Cruiser_Name_2" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
-			ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_12" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_13" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_14" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
-            ship = { name = "HMAS Destroyer_Name_15" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Goiky" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } } }
+			ship = { name = "HMAS Plunge I" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
+            ship = { name = "HMAS Plunge II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
+			ship = { name = "HMAS Pitfalls" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Snowball" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Tooth" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Crossing" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Three" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Mysteries" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Life" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Nightmare I" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Lofty" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Race" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Marbles" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS None" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Vomitaco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Explosions" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Reveal" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Novum" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Rescission" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Hero" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Glistening" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Hurtful" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Nightmare II" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
+            ship = { name = "HMAS Glider" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
 		}				
 	}
 }

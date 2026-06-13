@@ -3010,9 +3010,9 @@ focus_tree = {
 				IF = {
 					limit = {
 						is_ai = yes
-						check_variable = { money_amount < 10 }
+						check_variable = { money_amount < 15 }
 					}
-					add_to_variable = { money_amount = 5 }
+					add_to_variable = { money_amount = 7 }
 				}
 			}
 		}

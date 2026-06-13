@@ -454,6 +454,10 @@ technologies = {
         enable_subunits = {
             paratrooper
         }
+        enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_paratrooper
+		}
 
         path = {
             leads_to_tech = paratroopers2
@@ -1334,22 +1338,27 @@ technologies = {
 
     support_weapons = {
 
-        category_infantry_and_bicycle = {
-            defense = 0.05
-            breakthrough = 0.05
-        }
-        category_cavalry = {
-            defense = 0.02
-            breakthrough = 0.02
-        }
-        category_special_forces_leg_infantry = {
-            defense = 0.03
-            breakthrough = 0.03
-        }
-        category_vehicle_infantry = {
-            defense = 0.05
-            breakthrough = 0.05
-        }
+        enable_subunits = {
+			fire_support
+			mot_fire_support
+		}
+
+		#category_infantry_and_bicycle = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
+		#category_cavalry = {
+		#	defense = 0.02
+		#	breakthrough = 0.02
+		#}
+		#category_special_forces_leg_infantry = {
+		#	defense = 0.03
+		#	breakthrough = 0.03
+		#}
+		#category_vehicle_infantry = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
 
         path = {
             leads_to_tech = support_weapons2
@@ -1615,6 +1624,10 @@ technologies = {
             mot_artillery_brigade
             mot_anti_air_brigade
         }
+        enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_motorized
+		}
 
         enable_equipments = {
             motorized_equipment_0
@@ -2256,19 +2269,35 @@ technologies = {
         }
     }
 
-    camelry = {
+	######### FROM TURKISH FOCUS ##########
+	camelry = {
 
-        allow = {
-            always = no
-        }
+		allow = {
+			always = no
+		}
 
-        research_cost = 1
-        start_year = 2012
+		research_cost = 1
+		start_year = 2012
 
-        enable_subunits = {
-            camelry
-        }
-    }
+		enable_subunits = {
+			camelry
+		}
+	}
+
+	######### FROM INDIAN FOCUS ##########
+	elephantry = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2012
+
+		enable_subunits = {
+			elephantry
+		}
+	}
 
     ######### FROM SOVIET FOCUS ########## (And Finnish)
     penal_infantry = {
@@ -2567,4 +2596,20 @@ technologies = {
             }
         }
     }
+
+    #### FROM AUSTRALIAN FOCUS  ####
+
+	northern_territory_recon_support_tech = {
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			northern_territory_recon_support
+		}
+	}
 }

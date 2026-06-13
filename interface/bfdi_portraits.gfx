@@ -121,26 +121,38 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GDR/GDR_barf_bag.dds"
 	}
 
+
 	spriteType = {
 		name = "GFX_LSS_Leader"
 		texturefile = "gfx/leaders/LSS/LSS_Leader.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_LSS_Rodriguez"
 		texturefile = "gfx/leaders/LSS/LSS_Rodriguez.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_LSS_Milley"
 		texturefile = "gfx/leaders/LSS/LSS_Milley.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_LSS_Ierardi"
 		texturefile = "gfx/leaders/LSS/LSS_Ierardi.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_LSS_Generic_land_male_1"
+		textureFile = "gfx/leaders/LSS/Portrait_LSS_Generic_land_male_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_LSS_Generic_land_female_1"
+		textureFile = "gfx/leaders/LSS/Portrait_LSS_Generic_land_female_1.dds"
+	}
+
+	
 	spriteType = {
 		name = "GFX_GSR_ruby"
 		texturefile = "gfx/leaders/GSR/GSR_ruby.dds"

@@ -194,14 +194,25 @@ decision_YFC_raids_category = {
 		visible = {
 			controls_state = 201
 			NOT = {controls_state = FROM}
-			has_border_war = no
 			has_war = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = YFC_Raid_Active}
+			}
 		}
 
 		fire_only_once = no
 		days_re_enable = 60
+		days_remove = 5
 
 		complete_effect = {
+			set_country_flag = YFC_Raid_Active
+		}
+
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure
@@ -254,14 +265,25 @@ decision_YFC_raids_category = {
 		visible = {
 			controls_state = 214
 			NOT = {controls_state = FROM}
-			has_border_war = no
 			has_war = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = YFC_Raid_Active}
+			}
 		}
 
 		fire_only_once = no
 		days_re_enable = 60
+		days_remove = 5
 
 		complete_effect = {
+			set_country_flag = YFC_Raid_Active
+		}
+
+		remove_effect = {
 			FROM = {
 				damage_building = {
  					type = infrastructure

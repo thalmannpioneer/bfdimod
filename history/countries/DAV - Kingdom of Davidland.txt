@@ -39,8 +39,8 @@ if = {
     }
 }
 
-set_convoys = 65
-add_manpower = 30000 #Remove when DAV get's correct pop
+set_convoys = 150
+
 add_equipment_to_stockpile = {
     type = train_equipment_1
     amount = 3

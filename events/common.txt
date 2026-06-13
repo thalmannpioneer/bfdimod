@@ -188,6 +188,30 @@ country_event = {
                         owner = ROOT
                     }
                 }
+                division_template = {
+                    name = "149th Aviation Regiment"
+                    is_locked = yes
+                    division_cap = 1
+                    regiments = {
+                        paratrooper = { x = 0 y = 0 }
+		                paratrooper = { x = 0 y = 1 }
+                        paratrooper = { x = 0 y = 2 }
+                    }
+                    support = {
+                        field_hospital = { x = 0 y = 0 }
+                        logistics_company = { x = 0 y = 1 }
+                        maintenance_company = { x = 0 y = 2 }   
+                        signal_company = { x = 0 y = 3 } 
+                        recon = { x = 0 y = 4 }	 
+                    }
+                }
+                181 = {
+                    create_unit = {
+                        division = "name = \"149th Aviation Regiment\" division_template = \"149th Aviation Regiment\" start_experience_factor = 0.9"
+                        count = 1
+                        owner = ROOT
+                    }
+                }
             }
         }
     }
@@ -408,11 +432,13 @@ news_event = { #News
 
     is_triggered_only = yes
     major = yes
-    fire_only_once = yes
 
     option = {
         trigger = {
-            NOT = {tag = LSS}
+            NOT = {
+                tag = LSS
+                tag = EMP
+            }
         }
         name = uncommon_event.7.a
         add_state_claim = 13
@@ -421,7 +447,10 @@ news_event = { #News
     }
     option = {
         trigger = {
-            NOT = {tag = LSS}
+            NOT = {
+                tag = LSS
+                tag = EMP
+            }
         }
         name = uncommon_event.7.b
         add_political_power = 25
@@ -524,22 +553,15 @@ country_event = {
 
     option = {
         name = uncommon_event.12.a
-
-        181 = {
+        add_ideas = idea_LSS_modern_air_force
+        13 = {
             add_building_construction = {
                 type = air_base
-                level = 3
+                level = 4
                 instant_build = yes
             }
         }
 
-        #air_wings = {
-        #    181 = {
-        #        transport_plane_equipment_3 = {
-        #            owner = "LSS"
-        #            amount = 100
-        #        }
-        #    }
-        #}
+        activate_mission = LSS_Mobilization_Air
     }
 }

@@ -39,6 +39,19 @@ decision_LSS_Military_category = {
 		}
 	}
 
+	LSS_Mobilization_Air = { 
+		available = {always = no}
+		icon = GFX_decision_SWE_set_army_budget  
+		is_good = yes
+		days_mission_timeout = 360
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			add_manpower = 5000
+			load_oob = "LSS_Air"
+		}
+	}
+
 	LSS_Attack_Loser = { #guh
 		icon = GFX_decision_infiltrate_state
 
@@ -213,6 +226,7 @@ decision_LSS_Military_category = {
 				NOT = {country_exists = WGF}
 				NOT = {country_exists = SEC}
 				NOT = {country_exists = TBT}
+				NOT = {FROM = {tag = YFC}}
 			}
 		}
 	}

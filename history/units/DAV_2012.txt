@@ -88,6 +88,10 @@ units = {
             ship = { name = "HMAS Destroyer_Name_5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
             ship = { name = "HMAS Destroyer_Name_6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
             ship = { name = "HMAS Destroyer_Name_7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
+            ship = { name = "HMAS Destroyer_Name_11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "Destroyer" } } }
 		}				
 	}
 }

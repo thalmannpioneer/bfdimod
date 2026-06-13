@@ -16,6 +16,14 @@ spriteTypes = {
 		name = "GFX_Portrait_Goiky_Generic_land_3"
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_land_3.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Goiky_Generic_land_4"
+		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Goiky_Generic_land_5"
+		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_land_5.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_Portrait_Goiky_Generic_navy_1"

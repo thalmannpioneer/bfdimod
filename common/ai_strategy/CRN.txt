@@ -4,7 +4,7 @@
 
 ## ARMY PLACEMENT ##
 
-CRN_focus_erasers_stockpiles_hate_raiders = {
+CRN_focus_hate_raiders = {
     #Fuck them bandits >:(
     allowed = {
 		original_tag = CRN

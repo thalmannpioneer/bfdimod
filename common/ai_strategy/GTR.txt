@@ -4,6 +4,40 @@
 
 ## ARMY PLACEMENT ##
 
+GTR_focus_hate_raiders = {
+    #Fuck them bandits >:(
+    allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		country_exists = BUN
+		has_war = no
+		BUN = {
+			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
+		}
+	}
+
+	abort = {
+		OR = {
+            NOT = {country_exists = BUN}
+			has_war = yes
+			BUN = {
+				OR = {
+					has_cosmetic_tag = BUN_revolt
+					has_cosmetic_tag = BUN_republic
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = BUN
+        value = 2000
+    }
+}
+
 GTR_run_away = {
     #Please please please do not go to the lab
     allowed = {

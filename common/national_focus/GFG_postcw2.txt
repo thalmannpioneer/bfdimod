@@ -332,8 +332,18 @@ focus_tree = {
 				target = GGR
 				modifier = medium_decrease
 			}
+
 			custom_effect_tooltip = l_GFG_improves_economy
-			add_to_variable = { var_GFG_crisis_sf = 0.15 }
+			if = {
+				limit = {
+					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
+				}
+				country_event = GFG_event.11
+			}
+			else = {
+				add_to_variable = { var_GFG_crisis_sf = 0.15 }
+			}
 		}
 	}
 	

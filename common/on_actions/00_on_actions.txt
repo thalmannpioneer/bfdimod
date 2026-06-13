@@ -568,12 +568,13 @@ on_actions = {
                         limit = {
                             NOT = {has_completed_focus = YFC_focus_a_look_inward}
                             NOT = {has_completed_focus = YFC_focus_YFC_funded_pillaging}
+                            NOT = {has_completed_focus = YFC_focus_allow_raiding_into_traitors}
                         }
-                    }
-                    country_event = {
-                        id = YFC_event.5
-                        days = 5
-                        random_hours = 60
+                        country_event = {
+                            id = YFC_event.5
+                            days = 5
+                            random_hours = 60
+                        }
                     }
                 }
                 if = {

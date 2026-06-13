@@ -33,11 +33,6 @@ infantry_GDR = {
         }
 
 		target_template = {	
-			
-			support = {
-				recon = 1
-			}
-
 			regiments = {
 				infantry = 4
 			}

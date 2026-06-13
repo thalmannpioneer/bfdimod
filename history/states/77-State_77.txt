@@ -7,6 +7,7 @@ state={
     history = {
         owner = GOI
         controller = GOI
+        victory_points = {11265 7}
         buildings = {
             infrastructure = 3
         }

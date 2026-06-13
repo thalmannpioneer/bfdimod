@@ -18,14 +18,14 @@ GDR_civil_war = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = production_upgrade_desire_offset
-		id = infantry_equipment_1
-		value = -1000
-	}
-	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 100
+	}
+	ai_strategy = {
+		type = production_upgrade_desire_offset
+		id = infantry_equipment_1
+		value = -1000
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -39,7 +39,7 @@ GDR_civil_war = {
 	ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 30
+		value = 1000
 	}
 }
 

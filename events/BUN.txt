@@ -392,6 +392,7 @@ country_event = {
 	option = {
 		name = BUN_borderwars.1.a
 		army_experience = 5
+		clr_country_flag = BUN_Raid_Active
 	}
 }
 
@@ -408,6 +409,7 @@ country_event = {
 	option = {
 		name = YFC_borderwars.2.a
 		army_experience = 5
+		clr_country_flag = BUN_Raid_Active
 	}
 }
 

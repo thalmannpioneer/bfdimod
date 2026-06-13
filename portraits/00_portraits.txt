@@ -32,19 +32,40 @@ default = {
 
 continent = {
 	name = goiky
+
+	#Due to lack of generic protraits, both land and sea will be the same for now
+
 	army = {
 		male = {
 			"GFX_Portrait_Goiky_Generic_land_1"
 			"GFX_Portrait_Goiky_Generic_land_2"
 			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+		}
+		female = {
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
 		}
 	}
 	
 	navy = {
-		male = {
-			"GFX_Portrait_Goiky_Generic_navy_1"
-			"GFX_Portrait_Goiky_Generic_navy_2"
-			"GFX_Portrait_Goiky_Generic_navy_3"
+		male = { 
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+		}
+		female = {
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
 		}
 	}
 	
@@ -70,6 +91,26 @@ continent = {
 			"GFX_Portrait_Goiky_Generic_scientist_1"
 			"GFX_Portrait_Goiky_Generic_scientist_2"
 			"GFX_Portrait_Goiky_Generic_scientist_3"
+		}
+	}
+}
+
+LSS = {
+	army = {
+		male = {
+			"GFX_Portrait_LSS_Generic_land_male_1"
+		}
+		female = {
+			"GFX_Portrait_LSS_Generic_land_female_1"
+		}
+	}
+	
+	navy = {
+		male = { 
+			"GFX_Portrait_LSS_Generic_land_male_1"
+		}
+		female = {
+			"GFX_Portrait_LSS_Generic_land_female_1"
 		}
 	}
 }
