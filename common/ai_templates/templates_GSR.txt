@@ -134,6 +134,10 @@ infantry_GSR = {
 			regiments = {
 				infantry = 7
 			}	
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 	}
 }
@@ -172,6 +176,10 @@ mobile_GSR = {
 
 			regiments = {
 				cavalry = 5
+			}
+
+			regimental_support = {
+				field_guns = 1
 			}
 		}
 	}

@@ -3525,9 +3525,13 @@ focus_tree = {
 				hours = 1
 			}
 			#Everything below this comment is placeholder stuff for other parts of the tree
+			
 			set_cosmetic_tag = YFC_raiders
 			add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
-			
+			YFC = {
+				create_faction = "Bandit Pack"
+				add_to_faction = BUN
+			}
 		}
 	}
 }

@@ -149,6 +149,10 @@ infantry_GPG = {
 			regiments = {
 				infantry = 5
 			}
+
+			regimental_support = {
+				fire_support = 1
+			}
 		}
 	}
 }

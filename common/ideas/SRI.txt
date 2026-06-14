@@ -8,6 +8,7 @@ ideas = {
 				war_support_factor = 0.1
 				conscription = 0.05
 			}
+			cancel = {has_war = no}
 		}
 	}
 }

@@ -44,6 +44,24 @@ every_possible_country = {
 		}
 	}
 
+	# YFC
+	if = {
+		limit = { tag = YFC }
+		division_template = {
+			name = "Object Resources"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 } #Guards? Who needs that!
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+			}
+		}
+	}
+
 	# GTR
 	if = {
 		limit = { tag = GTR }
@@ -93,6 +111,7 @@ every_possible_country = {
 			NOT = { tag = GGR }
 			NOT = { tag = GTR }
 			NOT = { tag = LSS }
+			NOT = { tag = YFC }
 		}
 		division_template = {
 			localization_key = "ARMY_HQ_TEMPLATE_NAME"

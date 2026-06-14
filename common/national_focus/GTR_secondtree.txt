@@ -1435,7 +1435,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 0
+            base = 1 #If the AI has done everything else it will pick this
             modifier = {
                 add = 10
                 has_completed_focus = GTR_focus_elephant_in_a_room

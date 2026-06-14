@@ -75,6 +75,10 @@ infantry_GDR = {
 			regiments = {
 				infantry = 5
 			}
+
+			regimental_support = {
+				fire_support = 1
+			}
 		}
 	}
 }
@@ -121,7 +125,7 @@ motorized_GDR = {
 			}
 
 			regimental_support = {
-				field_guns = 2
+				mot_fire_support = 2
 			}
 		}
 	}

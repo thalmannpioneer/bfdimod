@@ -2769,6 +2769,7 @@ country_event = {
 	option = {
 		name = YFC_borderwars.3.a			
 		army_experience = 5
+		hidden_effect = {YFC = {clr_country_flag = YFC_Raid_Active}}
 	}
 }
 
@@ -2787,6 +2788,8 @@ country_event = {
 		army_experience = 2
 		add_stability = -0.005
 		add_to_variable = {var_YCF_raid_attacks = 1}
+		army_experience = 5
+		hidden_effect = {YFC = {clr_country_flag = YFC_Raid_Active}}
 	}
 }
 

@@ -11,7 +11,7 @@ GGR_protect_raiders = {
     }
     enable = {
         has_army_size = {
-            size < 7
+            size < 9
         }
         country_exists = BUN
     }
@@ -20,7 +20,28 @@ GGR_protect_raiders = {
     ai_strategy = {
         type = prepare_for_war
         id = BUN
-        value = 200
+        value = 250
+    }
+}
+
+GGR_protect_YFC = {
+    #Tells GGR to defend from YFC Raiders till anarchists are done
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_army_size = {
+            size < 9
+        }
+        country_exists = YFC
+        YFC = {has_completed_focus = YFC_focus_allow_raiding_into_traitors}
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = prepare_for_war
+        id = YFC
+        value = 250
     }
 }
 

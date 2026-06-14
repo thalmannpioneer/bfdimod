@@ -95,7 +95,32 @@ technologies = {
 			limit = { has_dlc = "Thunder at Our Gates"}
 			hq_engineer
 		}
-		
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GTR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Technocratic Military Committee"
+					support = { hq_engineer = 0 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = WGF
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Red Army Headquarters"
+					support = { hq_engineer = 0 }
+				}
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_engineers2
 			research_cost_coeff = 1
@@ -443,10 +468,36 @@ technologies = {
 			mot_recon
 			armored_car_recon
 			light_tank_recon
+
 		}
 		enable_subunits = {
 			limit = { has_dlc = "Thunder at Our Gates"}
 			hq_recon
+		}
+
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GTR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Technocratic Military Committee"
+					support = { hq_recon = 0 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = WGF
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Red Army Headquarters"
+					support = { hq_recon = 0 }
+				}
+			}
 		}
 
 		path = {
@@ -649,20 +700,6 @@ technologies = {
 			hq_military_police
 		}
 		
-		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Thunder at Our Gates"
-					tag = GGR
-					is_ai = yes
-				}
-				add_units_to_division_template = {
-					template_name = "Objekt Oberkommando"
-					support = { hq_military_police = 0 }
-				}
-			}
-		}
-
 		path = {
 			leads_to_tech = tech_military_police2
 			research_cost_coeff = 1
@@ -1066,6 +1103,20 @@ technologies = {
 			hq_field_hospital
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GGR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Objekt Oberkommando"
+					support = { hq_field_hospital = 0 }
+				}
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_field_hospital2
 			research_cost_coeff = 1
@@ -1097,6 +1148,12 @@ technologies = {
 		ai_will_do = {
 			base = 1
 			
+			modifier = {
+				factor = 3
+				tag = GGR
+				NOT = {country_exists = FFT}
+			}
+
 			modifier = {
 				factor = 1.2
 				date > "2013.1.1"
@@ -1369,7 +1426,13 @@ technologies = {
 		
 		ai_will_do = {
 			base = 1
-			
+		
+			modifier = {
+				factor = 3
+				tag = GGR
+				NOT = {country_exists = FFT}
+			}
+
 			modifier = {
 				factor = 1.2
 				date > "2013.1.1"
