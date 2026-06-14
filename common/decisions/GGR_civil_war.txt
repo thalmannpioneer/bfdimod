@@ -1,17 +1,19 @@
 decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 3 times is bad I already accounted for this)
 	GGR_SMG_attack = {
        	activation = {
-			OR = {
-				country_exists = SPL
-				country_exists = FFT
-			}
+			country_exists = SPL
+			country_exists = FFT
+			country_exists = SMG
 			NOT = {country_exists = GGR}
 			has_game_rule = { rule = allow_experimental_paths option = yes }
 			SMG = {has_war = no}
 	    }
 
 		cancel_trigger = {
-			SMG = {has_war = yes}
+			OR = {
+				SMG = {has_war = yes}
+				NOT = {country_exists = SMG}
+			}
 		}
 
 		is_good = no

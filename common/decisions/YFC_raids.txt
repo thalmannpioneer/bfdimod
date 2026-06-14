@@ -205,8 +205,8 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 60
-		days_remove = 5
+		days_re_enable = 65
+		days_remove = 7
 
 		complete_effect = {
 			set_country_flag = YFC_Raid_Active
@@ -276,9 +276,8 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 60
-		days_remove = 5
-
+		days_re_enable = 65
+		days_remove = 7
 		complete_effect = {
 			set_country_flag = YFC_Raid_Active
 		}

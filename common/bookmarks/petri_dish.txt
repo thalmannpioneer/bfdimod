@@ -33,6 +33,7 @@ bookmarks = {
             }
 
             GOI = {
+                add_threat = 10
                 every_owned_state = {
                     set_demilitarized_zone = yes
                     remove_core_of = GOI
@@ -53,6 +54,8 @@ bookmarks = {
             85 = { add_manpower = 30020 }
 
             WGF = {
+                add_manpower = 12000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 177
                 transfer_state = 167
                 transfer_state = 12
@@ -83,6 +86,8 @@ bookmarks = {
                 187 = { set_demilitarized_zone = no }
             }
             GMD = {
+                add_manpower = 17000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 182
                 transfer_state = 11
                 transfer_state = 173
@@ -96,6 +101,8 @@ bookmarks = {
                 173 = { set_demilitarized_zone = no }
             }
             GPR = {
+                add_manpower = 10000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 193
                 transfer_state = 203
 
@@ -119,6 +126,8 @@ bookmarks = {
                 207 = { set_demilitarized_zone = no }
             }
             TBT = {
+                add_manpower = 3600 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 176
                 transfer_state = 168
                 transfer_state = 174
@@ -156,6 +165,8 @@ bookmarks = {
                 country_lock_all_division_template = yes
             }
             GTR = {
+                add_manpower = 3000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 89
                 transfer_state = 209
 
@@ -166,6 +177,8 @@ bookmarks = {
                 209 = { set_demilitarized_zone = no }
             }
             GGR = {
+                add_manpower = 24000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 15
                 transfer_state = 16
                 transfer_state = 24
@@ -188,6 +201,8 @@ bookmarks = {
                 172 = { set_demilitarized_zone = no }
             }
             FFT = {
+                add_manpower = 20000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 169
 
                 add_state_core = 169
@@ -195,6 +210,8 @@ bookmarks = {
                 169 = { set_demilitarized_zone = no }
             }
             BUN = {
+                add_manpower = 21000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 85
                 transfer_state = 212
                 transfer_state = 217
@@ -243,6 +260,8 @@ bookmarks = {
                 170 = { set_demilitarized_zone = no }
             }
             SGD = {
+                add_manpower = 9000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 175
 
                 add_state_core = 175
@@ -251,6 +270,8 @@ bookmarks = {
                 175 = { set_demilitarized_zone = no }
             }
             AGG = {
+                add_manpower = 16000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 183
 
                 add_state_core = 183
@@ -264,6 +285,8 @@ bookmarks = {
                 }
             }
             YFC = {
+                add_manpower = 6000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 196
                 transfer_state = 201
                 transfer_state = 215
@@ -280,6 +303,8 @@ bookmarks = {
                 216 = { set_demilitarized_zone = no }
             }
             CRN = {
+                add_manpower = 21000 #Until Thal can find why manpower is fucked this is the temp plan
+
                 transfer_state = 178
                 transfer_state = 219
                 transfer_state = 220

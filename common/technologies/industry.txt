@@ -67,7 +67,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 		
@@ -100,7 +100,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 		
@@ -144,7 +144,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}			
 		}
 		
@@ -176,7 +176,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 		}
 		
@@ -208,7 +208,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 		}
@@ -223,10 +223,6 @@ technologies = {
 	improved_equipment_conversion = {
 	
 		energy_gain_factor = 0.15
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
 
 		path = {
 			leads_to_tech = advanced_equipment_conversion
@@ -243,15 +239,20 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
+			
 			modifier = {
-				factor = 2
-				date > "1937.1.1"
+				factor = 10
+			
+				has_resources_in_country = {
+					resource = coal
+					amount > 0
+					only_imported = yes
+				}
 			}
 
 			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
+				factor = 5
+				energy_ratio < 0.9
 			}
 		}
 		
@@ -275,15 +276,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-
+			
 			modifier = {
-				factor = 2
-				date > "1937.1.1"
+				factor = 5
+			
+				has_resources_in_country = {
+					resource = coal
+					amount > 0
+					only_imported = yes
+				}
 			}
-
+			
 			modifier = {
-				factor = 0
-				NOT = { has_government = fascism }
+				factor = 5
+				energy_ratio < 0.9
 			}
 		}
 		
@@ -321,24 +327,9 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				NOT = { tag = GER }
+				NOT = { tag = GGR }
 			}
 			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 2
-				tag = JAP
-			}
-
 			modifier = {
 				factor = 0
 				has_tech = dispersed_industry
@@ -351,7 +342,7 @@ technologies = {
 						
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 		
@@ -389,7 +380,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 		}
@@ -428,7 +419,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}			
 		}
 		
@@ -466,7 +457,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 		}
 		
@@ -499,12 +490,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				date > "1942.1.9"
+				date > "2018.1.9"
 			}
 			
 			modifier = {
 				factor = 20
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}			
 		}
 		
@@ -548,24 +539,9 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = GGR
 			}
 			
-			modifier = {
-				factor = 0.25
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 0.25
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 0.25
-				tag = JAP
-			}
-
 			modifier = {
 				factor = 0
 				has_tech = concentrated_industry
@@ -578,7 +554,7 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 		
@@ -619,7 +595,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 		
@@ -660,7 +636,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}			
 		}
 		
@@ -701,7 +677,7 @@ technologies = {
 						
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 		}
 		
@@ -739,7 +715,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 		}
 		
@@ -840,11 +816,11 @@ technologies = {
 			
 			modifier = {
 				factor = 0.2
-				date < "1937.1.1"
+				date < "2013.1.1"
 			}
 			modifier = {
 				factor = 0.4
-				date < "1938.1.1"
+				date < "2014.1.1"
 			}
 		}
 	}
@@ -874,7 +850,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = TBT
 				factor = 0.5
 			}
 			modifier = {
@@ -939,7 +915,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = TBT
 				factor = 0.5
 			}	
 			modifier = {
@@ -995,7 +971,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = TBT
 				factor = 0.5
 			}	
 			modifier = {
@@ -1042,7 +1018,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = TBT
 				factor = 0.5
 			}	
 			modifier = {
@@ -1085,7 +1061,7 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				tag = USA
+				tag = TBT
 				factor = 0.5
 			}
 			modifier = {
@@ -1136,26 +1112,14 @@ technologies = {
 			synth_resources
 			cat_synth_oil
 		}
-
-		on_research_complete = {
-			# FIN effect from focus Tire Factory at Nokia
-			if = {
-				limit = {
-					tag = FIN
-					has_completed_focus = FIN_tire_factory_at_nokia
-					controls_state = 927
-				}
-				FIN_nokia_tires_after_tech_effect = yes
-			}
-		}
-		
+	
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = GGR
+					tag = GTR
+					tag = SOS
 				}
 				has_war = yes
 				factor = 5
@@ -1207,9 +1171,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = GGR
+					tag = GTR
+					tag = SOS
 				}
 				has_war = yes
 				factor = 25
@@ -1228,8 +1192,8 @@ technologies = {
 			}			
 			modifier = {
 				factor = 25
-				original_tag = GER	
-				date > "1937.1.1"	
+				original_tag = GGR	
+				date > "2013.1.1"	
 			}
 		}
 		
@@ -1267,9 +1231,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = GGR
+					tag = GTR
+					tag = SOS
 				}
 				has_war = yes
 				factor = 25
@@ -1287,7 +1251,7 @@ technologies = {
 				oil > 30
 			}	
 			modifier = {
-				original_tag = GER			
+				original_tag = GGR			
 				has_war = yes
 				factor = 3
 			}		
@@ -1327,9 +1291,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
+					tag = GGR
+					tag = GTR
+					tag = SOS
 				}
 				has_war = yes
 				factor = 25
@@ -1430,8 +1394,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = GGR
+					tag = GTR
 				}
 				has_war = yes
 				factor = 15
@@ -1450,8 +1414,8 @@ technologies = {
 			}			
 			modifier = {
 				factor = 25
-				original_tag = GER	
-				date > "1938.1.1"	
+				original_tag = GGR	
+				date > "2014.1.1"	
 			}
 		}
 		
@@ -1495,8 +1459,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = GGR
+					tag = GTR
 				}
 				has_war = yes
 				factor = 15
@@ -1555,8 +1519,8 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
-					tag = ITA
+					tag = GGR
+					tag = GTR
 				}
 				has_war = yes
 				factor = 15
@@ -1661,7 +1625,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 	}
@@ -1748,7 +1712,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}			
 		}
 	}
@@ -1847,7 +1811,7 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
@@ -1943,7 +1907,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 		}
 	}
@@ -2028,7 +1992,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 		}
 	}

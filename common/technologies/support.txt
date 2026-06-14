@@ -70,17 +70,17 @@ technologies = {
 			
 			modifier = {
 				factor = 4
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 4
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 	}
@@ -128,21 +128,21 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 			modifier = {
 				factor = 10
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 
@@ -239,17 +239,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 	}
@@ -335,17 +335,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -421,17 +421,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}	
@@ -481,21 +481,21 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 			modifier = {
 				factor = 10
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
@@ -532,17 +532,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 	}
@@ -583,17 +583,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -624,17 +624,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -649,6 +649,20 @@ technologies = {
 			hq_military_police
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GGR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Objekt Oberkommando"
+					support = { hq_military_police = 0 }
+				}
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_military_police2
 			research_cost_coeff = 1
@@ -676,37 +690,19 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
-			}
-
-			modifier = {
-				factor = 10
-				tag = GER
-
-				POL = { has_capitulated = yes }
-				GER = { has_war = yes }
+				tag = GGR
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = GFG
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ITA
+				tag = GSR
 			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
+				
 			modifier = {
 				factor = 2
 				has_war = yes
@@ -882,17 +878,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 	}
@@ -937,17 +933,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 	}
@@ -1001,17 +997,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -1045,17 +1041,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -1103,17 +1099,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 	}
@@ -1159,17 +1155,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 	}
@@ -1225,17 +1221,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -1275,17 +1271,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -1318,6 +1314,31 @@ technologies = {
 			hq_logistics
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GGR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Objekt Oberkommando"
+					support = { hq_logistics = 0 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = WGF
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Red Army Headquarters"
+					support = { hq_logistics = 0 }
+				}
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_logistics_company2
 			research_cost_coeff = 1
@@ -1351,21 +1372,21 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 			modifier = {
 				factor = 5
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
@@ -1405,22 +1426,22 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = GGR
 			}
 		}
 	}
@@ -1464,17 +1485,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -1508,17 +1529,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -1569,7 +1590,7 @@ technologies = {
 			modifier = {
 				factor = 5
 				is_major = yes
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
@@ -1612,17 +1633,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 	}
@@ -1665,17 +1686,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 		}
 	}
@@ -1713,17 +1734,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 	}
@@ -1762,17 +1783,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.2
-				date > "1936.1.1"
+				date > "2012.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 		}
 	}
@@ -1820,8 +1841,8 @@ technologies = {
 
 			modifier = {
 				OR = {
-					TAG = GER
-					tag = SOV
+					TAG = SRR
+					tag = NRR
 				}
 				factor = 1.5
 			}
@@ -1853,17 +1874,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 	}
@@ -1901,26 +1922,44 @@ technologies = {
 				factor = 20
 			}
 			modifier = {
-				tag = GER
+				tag = SRR
 				factor = 5
 			}
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
 
+	tech_recon_focus_bonus = { #gained from Help from the Nagas
+
+		allow = {
+			always = no
+		}
+		category_recon = {
+			recon = 2
+		}
+
+		categories = {
+			support_tech
+			recon_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	### SPECIAL PROJECTS ###
 
@@ -1968,12 +2007,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.5
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 	}
@@ -2022,12 +2061,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.5
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 	}
@@ -2081,12 +2120,12 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.5
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 	}
@@ -2131,7 +2170,7 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 	}
@@ -2176,12 +2215,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 
 			modifier = {
 				factor = 4
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 		}
 	}
@@ -2226,17 +2265,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.5
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.5
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.5
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 	}
@@ -2287,4 +2326,27 @@ technologies = {
 		}
 	}
 
+	AST_war_carriers_tech = { #hidden tech to boost logistics companies
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		logistics_company = {
+			supply_consumption_factor = -0.15
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		categories = {
+			support_tech
+			logistics_tech
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+		}
+	}
 }

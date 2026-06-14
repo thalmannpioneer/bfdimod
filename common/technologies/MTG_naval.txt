@@ -53,7 +53,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				tag = ENG
+				tag = DAV
 			}
 		}
 
@@ -94,8 +94,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
+					tag = SOS
+					tag = DAV
 				}
 			}
 			modifier = {
@@ -142,9 +142,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = DAV
+					tag = SOS
 				}
 			}
 		}
@@ -182,9 +181,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = DAV
+					tag = SOS
 				}
 			}
 		}
@@ -221,7 +219,10 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				tag = ENG
+				OR = {
+					tag = DAV
+					tag = SOS
+				}
 			}
 		}
 
@@ -274,10 +275,6 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
 				anti_submarine_strategy_required_trigger = yes
 			}
 		}
@@ -322,10 +319,6 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				has_war_with = GER
-			}
-			modifier = {
-				factor = 2
 				anti_submarine_strategy_required_trigger = yes
 			}
 		}
@@ -368,10 +361,6 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
 				factor = 2
 				anti_submarine_strategy_required_trigger = yes
 			}
@@ -412,10 +401,6 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
 				factor = 2
 				anti_submarine_strategy_required_trigger = yes
 			}
@@ -455,10 +440,6 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 4
-				has_war_with = GER
-			}
-			modifier = {
 				factor = 2
 				anti_submarine_strategy_required_trigger = yes
 			}
@@ -495,9 +476,81 @@ technologies = {
 			factor = 2
 
 			modifier = {
-				factor = 4
-				has_war_with = GER
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
 			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+	advanced_sonar = {
+		enable_equipment_modules = {
+			ship_sonar_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = modern_sonar
+			research_cost_coeff = 1
+		}		
+		research_cost = 1
+
+		start_year = 2015
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}	
+	
+	modern_sonar = {
+		enable_equipment_modules = {
+			ship_sonar_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		research_cost = 1
+
+		start_year = 2019
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
 			modifier = {
 				factor = 2
 				anti_submarine_strategy_required_trigger = yes
@@ -537,10 +590,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = improved_airplane_launcher
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = improved_airplane_launcher
+		#	research_cost_coeff = 1
+		#}
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -568,9 +621,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 		}
@@ -592,6 +644,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			cruiser_ship_engine_2
+			ship_airplane_launcher_2
 		}
 
 		path = {
@@ -615,9 +668,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 		}
@@ -658,12 +710,11 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
 				factor = 4
+				OR = {
+					tag = SOS
+					tag = DAV
+				}
 			}
 		}
 
@@ -698,10 +749,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 		}
@@ -716,53 +767,54 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 	}
 
-	improved_airplane_launcher = {
+	#improved_airplane_launcher = {
 
 
-		enable_equipment_modules = {
-			ship_airplane_launcher_2
-		}
-		on_research_complete = {
-			custom_effect_tooltip = airplane_launcher_advice_tt
-		}
+	#	enable_equipment_modules = {
+	#		ship_airplane_launcher_2
+	#	}
+	#	on_research_complete = {
+	#		custom_effect_tooltip = airplane_launcher_advice_tt
+	#	}
 
 
-		research_cost = 0.75
+	#	research_cost = 0.75
 
-		start_year = 2012
+	#	start_year = 1936
 
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = 0 y = 2 }
-		}
+	#	folder = {
+	#		name = mtgnavalfolder
+	#		position = {  x = 0 y = 2 }
+	#	}
 
-		ai_will_do = {
-			factor = 2
+	#	ai_will_do = {
+	#		factor = 2
 
-			modifier = {
-				has_navy_size = { size < 20 }
-				factor = 0.1
-			}
-			modifier = {
-				factor = 3.5
-				OR = {
-					tag = GER
-					tag = JAP
-					tag = USA
-				}
-			}
-		}
+	#		modifier = {
+	#			has_navy_size = { size < 20 }
+	#			factor = 0.1
+	#		}
+	#		modifier = {
+	#			factor = 3.5
+	#			OR = {
+	#				tag = GER
+	#				tag = JAP
+	#				tag = USA
+	#			}
+	#		}
+	#	}
 
-		categories = {
-			naval_equipment
-			ca_tech
-			ship_modules_tech
-			mio_cat_tech_all_capital_ship_and_modules
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
+	#	categories = {
+	#		naval_equipment
+	#		ca_tech
+	#		ship_modules_tech
+	#		mio_cat_tech_all_capital_ship_and_modules
+	#		mio_cat_tech_all_screen_ship_and_modules
+	#		mio_cat_tech_all_cruiser_and_modules
+	#	}
+	#	special_project_specialization = { specialization_naval }
+	#}
+
 	basic_cruiser_armor_scheme = {
 
 		enable_equipment_modules = {
@@ -797,11 +849,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 3
+				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 		}
@@ -862,11 +913,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 			modifier = {
@@ -923,11 +973,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 			modifier = {
@@ -967,10 +1016,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 25
-				tag = JAP
-			}
 		}
 
 
@@ -1008,10 +1053,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 5
-				tag = USA
-			}
 			modifier = {
 				is_major = no
 				factor = 0
@@ -1056,11 +1097,6 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 5
-				tag = USA
-
-			}
 			modifier = {
 				is_major = no
 				factor = 0
@@ -1110,11 +1146,10 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 		}
@@ -1159,8 +1194,8 @@ technologies = {
 			modifier = {
 				factor = 4
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = SOS
+					tag = DAV
 				}
 			}
 			modifier = {
@@ -1216,14 +1251,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1259,14 +1286,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1316,14 +1335,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1363,14 +1374,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1394,7 +1397,6 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = {
-			ship_torpedo_sub_1
 			sub_ship_engine_1
 		}
 
@@ -1426,13 +1428,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1449,7 +1444,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_2
 		}
 		enable_equipment_modules = {
-			ship_torpedo_sub_2
 			sub_ship_engine_2
 		}
 		on_research_complete = {
@@ -1487,14 +1481,6 @@ early_ship_hull_carrier = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1511,7 +1497,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_3
 		}
 		enable_equipment_modules = {
-			ship_torpedo_sub_3
 			sub_ship_engine_3
 		}
 
@@ -1537,14 +1522,6 @@ early_ship_hull_carrier = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1561,7 +1538,6 @@ early_ship_hull_carrier = {
 			ship_hull_submarine_4
 		}
 		enable_equipment_modules = {
-			ship_torpedo_sub_4
 			sub_ship_engine_4
 		}
 
@@ -1577,13 +1553,6 @@ early_ship_hull_carrier = {
 		ai_will_do = {
 			factor = 1
 
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = USA
-				}
-			}
 		}
 
 		categories = {
@@ -1618,21 +1587,6 @@ early_ship_hull_carrier = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = HOL
-				}
-			}
-			modifier = {
-				not = {
-					has_war_with = ENG
-					has_War_with = USA
-				}
-				factor = 0.5
-			}
 		}
 
 		categories = {
@@ -1672,14 +1626,6 @@ early_ship_hull_carrier = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = HOL
-				}
-			}
 		}
 
 		categories = {
@@ -1947,4 +1893,62 @@ early_ship_hull_carrier = {
 		}
 	}
 
+	sp_naval_support_ships_pick_a = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_general_support_value_factor = 0.25
+		naval_general_support_factor = -0.1
+		allow = {
+			always = no
+		}
+	}
+	sp_naval_support_ships_pick_b = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_general_support_value_factor = 0.05
+		allow = {
+			always = no
+		}		
+	}
+	sp_naval_support_ships_pick_c = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_general_support_factor = 0.25
+		naval_general_support_value_factor = -0.15
+		allow = {
+			always = no
+		}
+	}
+	sp_naval_repair_ships_pick_a = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_repair_support_value_factor = 0.25
+		naval_repair_support_factor = -0.1
+		allow = {
+			always = no
+		}
+	}
+	sp_naval_repair_ships_pick_b = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_repair_support_value_factor = 0.05
+		allow = {
+			always = no
+		}
+	}
+	sp_naval_repair_ships_pick_c = {
+		#HIDDEN EFFECT FOR REWARD CHOICE
+		research_cost = 1
+		start_year = 1940
+		naval_repair_support_factor = 0.25
+		naval_repair_support_value_factor = -0.15
+		allow = {
+			always = no
+		}
+	}
 }

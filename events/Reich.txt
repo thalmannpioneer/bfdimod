@@ -225,7 +225,7 @@ country_event = {
 				}
 			}
 			SRI = {
-				add_manpower = 7000
+				add_manpower = 2000
 				division_template = { #Have to add this no idea why
 					name = "Objektinfantry"
 					division_names_group = GGR_Inf_01 

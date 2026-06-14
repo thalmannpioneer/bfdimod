@@ -48,10 +48,9 @@ technologies = {
 		ai_will_do = {
 			factor = 30
 			
-			
 			modifier = {
 				factor = 3
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 		}
 		
@@ -112,7 +111,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "2015.8.1"
 			}
 		}
 		
@@ -160,7 +159,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "2015.8.1"
 			}
 		}
 		
@@ -204,7 +203,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "2015.8.1"
 			}
 		}
 		
@@ -287,14 +286,11 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
+				tag = GTR
 				factor = 5
 			}
 			modifier = {
-				date < "1938.1.1"
+				date < "2014.1.1"
 				factor = 0.5
 			}
 		}
@@ -395,14 +391,11 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 4
-				OR = {
-					tag = ENG
-					tag = USA
-				}
+				tag = GTR
 			}
 			modifier = {
 				factor = 0.5
-				date < "1940.1.1"
+				date < "2016.1.1"
 			}
 		}
 		
@@ -450,14 +443,11 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
+				tag = GTR
 				factor = 4
 			}
 			modifier = {
-				date < "1941.1.1"
+				date < "2017.1.1"
 				factor = 0.5
 			}
 		}
@@ -501,10 +491,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-				}
+				tag = GTR
 				factor = 5
 			}
 		}
@@ -586,12 +573,12 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1938.1.6"
+				date > "2014.1.6"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 		
@@ -643,17 +630,17 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1940.1.6"
+				date > "2016.1.6"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = GGR
 			}
 		}
 		
@@ -693,12 +680,12 @@ technologies = {
 			
 			modifier = {
 				factor = 3
-				date > "1942.1.6"
+				date > "2018.1.6"
 			}
 			
 			modifier = {
 				factor = 3
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 		}
 		
@@ -739,12 +726,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = GGR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = WGF
 			}
 		}
 		
@@ -782,12 +769,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = GGR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = WGF
 			}
 		}
 		
@@ -864,12 +851,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = GGR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = WGF
 			}
 		}
 		
@@ -903,12 +890,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = GGR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = WGF
 			}
 		}
 		
@@ -942,12 +929,12 @@ technologies = {
 			modifier = {
 				factor = 3
 
-				tag = GER
+				tag = GGR
 			}
 			modifier = {
 				factor = 3
 
-				tag = SOV
+				tag = WGF
 			}
 		}
 		
@@ -978,9 +965,8 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = SOS
+					tag = DAV
 				}
 				factor = 3
 			}
@@ -1019,9 +1005,8 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = SOS
+					tag = DAV
 				}
 				factor = 3
 			}
@@ -1061,9 +1046,8 @@ technologies = {
 			factor = 0.75
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
+					tag = SOS
+					tag = DAV
 				}
 				factor = 3
 			}
@@ -1658,23 +1642,23 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > 1941.1.1
+				date > 2017.1.1
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > 1942.1.1
+				date > 2018.1.1
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > 1943.1.1
+				date > 2019.1.1
 			}
 
 			modifier = {
 				factor = 2
 				is_major = yes
-				date > 1943.1.1
+				date > 2019.1.1
 			}
 
 			modifier = {
@@ -1755,7 +1739,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
+				tag = GTR
 				factor = 2
 			}
 		}
@@ -1821,13 +1805,7 @@ technologies = {
 		
 		nuclear_production = 0.5
 		on_research_complete = {
-			if = {
-				limit = {
-					tag = USA
-					has_war_with = JAP
-				}
-				play_warning_to_japan_effect = yes
-			}
+
 		}
 		categories = {
 			nuclear

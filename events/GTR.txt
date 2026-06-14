@@ -197,6 +197,14 @@ country_event = {
                 set_variable = { var_healthcare_mp = -0.2 }
                 set_variable = { var_healthcare_mc = 0 }
                 set_variable = { var_healthcare_mc_display = 0 }
+
+                division_template = {
+					name = "Lost Souls" 
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+					}
+				}
             }
         }
     }

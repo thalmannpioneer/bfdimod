@@ -158,10 +158,6 @@ technologies = {
 				factor = 0.1
 			}
 			modifier = {
-				factor = 2
-				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
-			}
-			modifier = {
 				factor = 10000
 				tag = GTR
 				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
@@ -222,22 +218,22 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2021.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "1940.1.1"
+				date > "2023.1.1"
 			}
 		}
 	}
@@ -299,22 +295,22 @@ technologies = {
 
 			modifier = {
 				factor = 1.2
-				date > "1941.1.1"
+				date > "2024.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2025.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2026.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "1944.1.1"
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -374,22 +370,22 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2028.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2029.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1947.1.1"
+				date > "2030.1.1"
 			}
 			
 			modifier = {
 				factor = 5
-				date > "1948.1.1"
+				date > "2031.1.1"
 			}
 		}
 	}
@@ -544,7 +540,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1936.1.1"
+				date > "2019.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -556,13 +552,13 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1938.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 5
 				is_major = yes
-				date > "1940.1.1"
+				date > "2022.1.1"
 			}
 		}
 	}
@@ -607,7 +603,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1940.1.1"
+				date > "2023.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -619,13 +615,13 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1941.1.1"
+				date > "2024.1.1"
 			}
 			
 			modifier = {
 				factor = 5
 				is_major = yes
-				date > "1944.1.1"
+				date > "2027.1.1"
 			}
 		}
 	}
@@ -670,7 +666,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1944.1.1"
+				date > "2027.1.1"
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -682,7 +678,7 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				is_major = yes
-				date > "1945.1.1"
+				date > "2028.1.1"
 			}
 		}
 	}
@@ -1311,15 +1307,15 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				date > "1937.1.1"
+				date > "2020.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1938.1.1"
+				date > "2021.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1939.1.1"
+				date > "2022.1.1"
 				factor = 3
 			}
 			modifier = {
@@ -1561,15 +1557,15 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				date > "1937.1.1"
+				date > "2017.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1938.1.1"
+				date > "2018.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1939.1.1"
+				date > "2019.1.1"
 				factor = 3
 			}
 		}
@@ -1627,15 +1623,15 @@ technologies = {
 				factor = 0
 			}
 			modifier = {
-				date > "1937.1.1"
+				date > "20179.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1938.1.1"
+				date > "2020.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1939.1.1"
+				date > "2021.1.1"
 				factor = 3
 			}
 		}
@@ -1693,15 +1689,15 @@ technologies = {
 				factor = 0
 			}
 			modifier = {
-				date > "1941.1.1"
+				date > "2024.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1942.1.1"
+				date > "2025.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1943.1.1"
+				date > "2026.1.1"
 				factor = 3
 			}
 		}
@@ -1754,15 +1750,15 @@ technologies = {
 				factor = 0
 			}
 			modifier = {
-				date > "1943.1.1"
+				date > "2026.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1944.1.1"
+				date > "2027.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1945.1.1"
+				date > "2028.1.1"
 				factor = 3
 			}
 		}
@@ -1808,15 +1804,15 @@ technologies = {
 				factor = 0
 			}
 			modifier = {
-				date > "1937.1.1"
+				date > "2020.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1938.1.1"
+				date > "2021.1.1"
 				factor = 1.5
 			}
 			modifier = {
-				date > "1939.1.1"
+				date > "2022.1.1"
 				factor = 3
 			}
 		}

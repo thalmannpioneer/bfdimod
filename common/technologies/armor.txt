@@ -63,17 +63,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 		
@@ -150,17 +150,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 		
@@ -188,41 +188,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0.5
-			
-			modifier = {
-				factor = 100
-				OR = {
-					tag = GER
-					tag = SOV
-				}
-				has_war = yes
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 25
-						}
-					}
-				}
-			}
-			modifier = {
-				has_template_containing_unit = light_tank_destroyer_brigade
-				factor = 2
-			}
-			modifier = {
-				num_of_military_factories > 50
-				num_of_military_factories < 120
-				factor = 2
-			}
-
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = improved_light_td
-					can_research = improved_light_td
-					is_researching_technology = improved_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -248,18 +213,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0.25
-			modifier = {
-				has_template_containing_unit = light_sp_artillery_brigade
-				add = 2
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = improved_light_art
-					can_research = improved_light_art
-					is_researching_technology = improved_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -285,18 +238,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-			modifier = {
-				is_major = yes
-				add = 0.25
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = improved_light_spaa
-					can_research = improved_light_spaa
-					is_researching_technology = improved_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -349,35 +290,26 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
 			}
+
 			modifier = {
-				is_major = yes
-				not = { tag = JAP }
-				has_war = yes
-				factor = 10 #you are embarassing yourself
-			}
-			modifier = {
-				tag = SOV
+				tag = GGR
 				factor = 3
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
 		}
 		
@@ -402,35 +334,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-
-			modifier = {
-				add = 120
-				OR = {
-					#tag = GER
-					tag = SOV
-				}
-				has_war = yes
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 27
-						}
-					}
-				}
-			}
-			modifier = {
-				has_template_containing_unit = light_tank_destroyer_brigade
-				add = 2
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = advanced_light_td
-					can_research = advanced_light_td
-					is_researching_technology = advanced_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -453,20 +356,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-
-			modifier = {
-				has_template_containing_unit = light_sp_artillery_brigade
-				add = 2
-			}
-
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = advanced_light_art
-					can_research = advanced_light_art
-					is_researching_technology = advanced_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -489,15 +378,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = advanced_light_spaa
-					can_research = advanced_light_spaa
-					is_researching_technology = advanced_light_tank
-				}
-			}
 		}
 		
 		categories = {
@@ -539,13 +419,6 @@ technologies = {
 		ai_will_do = {
 			base = 0.5
 			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 3
-			}
-			modifier = {
 				not = {
 					any_controlled_state = {
 						is_coastal = yes
@@ -585,13 +458,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
 			}
 			modifier = {
 				not = {
@@ -642,17 +508,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 		
@@ -676,23 +542,6 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-			
-			modifier = {
-				add = 130
-				OR = {
-					#tag = GER
-					tag = SOV
-				}
-				has_war = yes
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 27
-						}
-					}
-				}
-			}
 		}
 		
 		categories = {
@@ -781,38 +630,24 @@ technologies = {
 			base = 2
 			
 			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-				date > "1938.1.1"
-			}
-			modifier = {
-				tag = SOV
+				tag = GER
 				factor = 1.5
 			}
 			modifier = {
 				factor = 1.1
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 			
-			modifier = {
-				factor = 15.0
-				tag = GER
-				has_opinion_modifier = sov_ger_treaty
-			}
 		}
 		
 		categories = {
@@ -840,45 +675,20 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0
-			
+				
 			modifier = {
-				add = 140
-				OR = {
-					#tag = GER
-					tag = SOV
-				}
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 30
-						}
-					}
-				}
-			}
-
-			modifier = {
-				factor = 0
-				OR = {
-					has_tech = improved_medium_td
-					can_research = improved_medium_td
-					is_researching_technology = improved_medium_tank
-				}
+				factor = 1.1
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1940.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1941.1.1"
-			}
-			
-			modifier = {
-				factor = 1.1
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 		}
 		
@@ -918,21 +728,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1940.1.1"
+				date > "2016.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1941.1.1"
+				date > "2017.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
-			}
-			modifier = {
-				factor = 100
-				tag = Ger
+				date > "2018.1.1"
 			}
 		}
 		
@@ -968,10 +774,6 @@ technologies = {
 					can_research = improved_medium_spaa
 					is_researching_technology = improved_medium_tank
 				}
-			}
-			modifier = {
-				factor = 0 # we dont use it
-				tag = GER
 			}
 		}
 		
@@ -1017,40 +819,27 @@ technologies = {
 			base = 3
 			
 			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
-				date < "1941.1.1"
+				date < "2017.1.1"
 				factor = 0.3
 			}
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = GGR
 			}
-			
+					
 			modifier = {
-				factor = 2
-				tag = SOV
+				factor = 1.1
+				date > "2018.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 		
@@ -1076,22 +865,6 @@ technologies = {
 			base = 0
 			
 			modifier = {
-				add = 150
-				OR = {
-					#tag = GER
-					tag = SOV
-				}
-				has_war = yes
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 32
-						}
-					}
-				}
-			}
-			modifier = {
 				has_template_containing_unit = medium_tank_destroyer_brigade
 				factor = 3
 			}
@@ -1107,17 +880,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 		
@@ -1156,17 +929,17 @@ technologies = {
 			}
 			modifier = {
 				factor = 1.1
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 		}
 		
@@ -1198,10 +971,6 @@ technologies = {
 					can_research = advanced_medium_spaa
 					is_researching_technology = advanced_medium_tank
 				}
-			}
-			modifier = {
-				factor = 0 # we dont use it
-				tag = GER
 			}
 		}
 		
@@ -1249,17 +1018,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -1285,22 +1054,6 @@ technologies = {
 			base = 1
 			
 			modifier = {
-				add = 160
-				OR = {
-					tag = GER
-					tag = SOV
-				}
-				any_enemy_country = {
-					ROOT = {
-						estimated_intel_max_armor = {
-							tag = PREV
-							value > 35
-						}
-					}
-				}
-			}
-
-			modifier = {
 				factor = 0
 				OR = {
 					has_tech = modern_td
@@ -1315,17 +1068,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -1365,17 +1118,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.1
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 			
 			modifier = {
 				factor = 1.1
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -1447,17 +1200,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1488,17 +1241,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1529,17 +1282,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1947.1.1"
+				date > "2023.1.1"
 			}
 			
 			modifier = {
 				factor = 2
-				date > "1948.1.1"
+				date > "2024.1.1"
 			}
 		}
 		
@@ -1638,27 +1391,19 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1937.1.1"
+				date > "2013.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1938.1.1"
+				date > "2014.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1939.1.1"
+				date > "2015.1.1"
 			}
-			modifier = {
-				tag = FRA
-				factor = 3
-			}
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
+
 			modifier = {
 				factor = 0
 				OR = {
@@ -1818,24 +1563,20 @@ technologies = {
 		
 		ai_will_do = {
 			base = 0.8
-			modifier = {
-				tag = JAP
-				num_of_military_factories < 100
-				factor = 0
-			}
+
 			modifier = {
 				factor = 1.2
-				date > "1942.1.1"
+				date > "2018.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1943.1.1"
+				date > "2019.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			modifier = {
 				factor = 0
@@ -1983,17 +1724,17 @@ technologies = {
 			
 			modifier = {
 				factor = 1.2
-				date > "1944.1.1"
+				date > "2020.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1945.1.1"
+				date > "2021.1.1"
 			}
 			
 			modifier = {
 				factor = 1.2
-				date > "1946.1.1"
+				date > "2022.1.1"
 			}
 		}
 		
@@ -2155,7 +1896,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
+			factor = 0 # Hitler cries on the inside o7
 		}
 		
 		categories = {
@@ -2244,4 +1985,426 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 	
+	mountain_tanks = {
+
+		research_cost = 1
+
+		# only from focus!!! ##### If changed also remember to change mountain_tanks_tt 
+		allow = {
+			always = no
+		}
+
+		light_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_tank_destroyer_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_sp_artillery_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_sp_anti_air_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		amphibious_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_tank_destroyer_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_sp_artillery_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_sp_anti_air_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_tank_destroyer_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_artillery_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_anti_air_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_tank_destroyer_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_artillery_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_anti_air_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_armor = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_tank_destroyer_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_artillery_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_anti_air_brigade = {
+			mountain = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+
+		categories = {
+			cat_anti_tank
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+	
+	jungle_tanks = {
+
+		research_cost = 1
+
+		# only from focus!!! ##### If changed also remember to change jungle_tanks_tt 
+		allow = {
+			always = no
+		}
+
+		light_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		light_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		amphibious_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		medium_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+
+		categories = {
+			cat_anti_tank
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	jungle_heavy_tanks = {
+
+		research_cost = 1
+
+		# only from focus!!! ##### If changed also remember to change jungle_heavy_tanks_tt 
+		allow = {
+			always = no
+		}
+
+		modern_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		modern_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		heavy_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_armor = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_tank_destroyer_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_artillery_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+
+		super_heavy_sp_anti_air_brigade = {
+			jungle = {
+				attack = 0.15
+				movement = 0.15 
+			}
+		}
+	}
+
 }

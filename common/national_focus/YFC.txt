@@ -574,6 +574,14 @@ focus_tree = {
 						add_political_power = 100	
 					}
 				}
+				ELSE = {
+					GGR = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 250
+						}
+					}
+				}
 			}
 			mark_focus_tree_layout_dirty = yes
 		}

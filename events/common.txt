@@ -430,6 +430,7 @@ news_event = { #News
     desc = uncommon_event.7.desc
     picture = GFX_bfdinews2
 
+    fire_only_once = yes
     is_triggered_only = yes
     major = yes
 
