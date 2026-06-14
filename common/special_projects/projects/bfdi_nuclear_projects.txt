@@ -1,0 +1,147 @@
+sp_yoylite_bomb = {
+    specialization = specialization_nuclear
+    icon = GFX_sp_yoylite_bomb
+    complexity = sp_complexity.medium
+
+    project_tags = sp_tag_nuclear_power
+
+    allowed = {
+        tag = GTR
+    }
+    available = {
+        FROM = { has_tech = atomic_research }
+        custom_trigger_tooltip = {
+            tooltip = l_GTR_yoylite_project_available
+            FROM = { has_country_flag = GTR_yoylite_project }
+        }
+    }
+
+    resource_cost = {
+        resources = { steel = 6 tungsten = 3 }
+    }
+
+    prototype_time = sp_time.prototype.short
+
+    project_output = {
+        country_effects = {
+            custom_override_tooltip = {
+                tooltip = {
+                    localization_key = SP_UNLOCK_BUILDING_ICON_DESC
+                    BUILDING = nuclear_reactor
+                    BUILDING_DESCRIPTION = nuclear_reactor_desc
+                    ICON_FRAME = 13
+                }
+                set_technology = {
+                    nuclear_reactor = 1
+                    popup = no
+                }
+            }
+            add_nuclear_bombs = 1
+            custom_effect_tooltip = sp_nuclear_bomb_tt
+            hidden_effect = {
+                set_technology = {
+                    nukes = 1
+                    popup = no
+                }
+            }
+        }
+        facility_state_effects = {
+            set_building_level = {
+                type = nuclear_reactor
+                level = 1
+            }
+        }
+    }
+
+    generic_prototype_rewards = {
+        sp_nuclear_scientist_xp_generic_reward
+        sp_nuclear_minor_progress_generic_reward
+        sp_nuclear_generic_electronics_tech_reward
+        sp_nuclear_generic_industry_tech_reward
+        sp_nuclear_reactor_radioactive_leak_stabilized_reward
+        sp_nuclear_reactor_minor_explosion_reward
+    }
+
+    unique_prototype_rewards = {
+        sp_yoylite_reactor_tested_reward = {
+            fire_only_once = yes
+
+            threshold = {
+                min = 60
+                max = 90
+            }
+
+            weight = {
+                base = 100
+                modifier = {
+                    factor = 0
+                    FROM = {
+                        has_global_flag = yoylite_reactor_tested_flag
+                    }
+                }
+            }
+
+            option = {
+                token = yoylite_reactor_tested_reward_classify
+                iteration_output = {
+                    country_effects = {
+                        set_global_flag = yoylite_reactor_tested_flag
+                        set_country_flag = yoylite_reactor_classify_flag
+                        add_power_balance_value = {
+                            id = GTR_power_balance
+                            value = 0.05
+                        }
+                    }
+                }
+            }
+
+            option = {
+                token = sp_yoylite_reactor_tested_reward_public
+
+                iteration_output = {
+                    country_effects = {
+                        set_global_flag = yoylite_reactor_tested_flag
+                        set_country_flag = yoylite_reactor_public_flag
+                        add_power_balance_value = {
+                            id = GTR_power_balance
+                            value = -0.05
+                        }
+                    }
+                }
+            }
+        }
+
+        sp_application_choice_reward = {
+            fire_only_once = yes
+
+            threshold = {
+                min = 0
+                max = 20
+            }
+
+            weight = {
+                base = 1000.0
+            }
+
+            option = {
+                token = sp_application_choice_reward_explosion
+
+                iteration_output = {
+                    country_effects = {
+                        custom_effect_tooltip = l_GTR_explosion_choice
+                    }
+                }
+            }
+
+            option = {
+                token = sp_application_choice_reward_infection
+
+                iteration_output = {
+                    country_effects = {
+                        custom_effect_tooltip = l_GTR_infection_choice
+                    }
+                }
+            }
+        }
+    }
+}

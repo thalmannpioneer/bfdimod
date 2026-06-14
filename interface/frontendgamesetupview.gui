@@ -128,46 +128,46 @@ guiTypes = {
         name = "country_entry"
 
         buttonType = {
-            name = "country_leader"
-            quadTextureSprite ="GFX_leader_unknown"
-            position = { x = 17 y = 22 }
-            scale=0.75
-            clicksound = click_checkbox
-        }
+			name = "country_leader"
+			quadTextureSprite ="GFX_leader_unknown"
+			position = { x = 17 y = 22 }
+			scale=0.75
+			clicksound = click_checkbox
+		}
 
-        iconType = {
-            name = "country_flag"
-            quadTextureSprite ="GFX_shield_medium"
-            position = { x = 34 y = 188 }
-            Orientation = "UPPER_LEFT"
-            alwaystransparent = yes
-        }
+		iconType = {
+			name = "country_flag"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 34 y = 188 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
-        buttonType = {
-            name = "country"
-            quadTextureSprite = "GFX_country_selection_entry"
-            position = { x=0 y =0 }
-            clicksound = click_checkbox
-        }
+		buttonType = {
+			name = "country"
+			quadTextureSprite = "GFX_country_selection_entry"
+			position = { x=0 y =0 }
+			clicksound = click_checkbox
+		}
 
-        buttonType = {
-            name = "country_shine"
-            quadTextureSprite = "GFX_country_selection_entry_shine"
-            position = { x=0 y =0 }
-            clicksound = click_checkbox
-        }
+		iconType = {
+			name = "new_content"
+			position = { x = 110 y = 180 }
+			spriteType = "GFX_unplayed_content_notification"
+			alwaystransparent = yes
+		}
 
-        instantTextBoxType = {
-            name = "country_name"
-            position = { x = 8 y = 247 }
-            font = "hoi_20b"
-            borderSize = {x = 0 y = 0}
-            maxWidth = 131
-            maxHeight = 20
-            fixedsize = yes
-            format = center
-            Orientation = "UPPER_LEFT"
-        }
+		instantTextBoxType = {
+			name = "country_name"
+			position = { x = 8 y = 247 }
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 131
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+			Orientation = "UPPER_LEFT"
+		}
     }
 
     ### country entry
@@ -695,7 +695,7 @@ guiTypes = {
 
         containerWindowType = {
             name ="countries_mini"
-            position = { x = 15 y = 340 }
+            position = { x = 40 y = 300 }
             size = { width = -15 height = 120}
 
             gridboxType = {
