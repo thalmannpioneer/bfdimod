@@ -393,6 +393,15 @@ bookmarks = {
                 }
             }
 
+            DAV = {
+                country_event = {
+                    id = DAV_hidden_event.1
+                    days = 20
+                    random_days = 20
+                    random_hours = 24
+                }
+            }
+
             TBT = {
                 country_event = {
                     id = TBT_hidden_event.1

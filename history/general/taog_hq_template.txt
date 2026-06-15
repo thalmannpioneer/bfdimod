@@ -1,5 +1,8 @@
 # Default Army HQ templates, gated on TAOG DLC.
 # To add a country-specific HQ template, add a new `if` block below and add the tag to the generic fallback's NOT list.
+
+#NOTE: IF YOU UPDATE THE HQ NAMES MAKE SURE TO GO TO SUPPORT TECH AS SOME STUFF IS HARD CODED BY THEIR NAME
+
 every_possible_country = {
 	limit = { has_dlc = "Thunder at Our Gates" }
 
@@ -82,6 +85,66 @@ every_possible_country = {
 		}
 	}
 
+	# GFG
+	if = {
+		limit = { tag = GFG }
+		division_template = {
+			name = "Iron Hand HQ"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+				hq_infantry = { x = 0 y = 2 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+			}
+		}
+	}
+
+	# GSR
+	if = {
+		limit = { tag = GSR }
+		division_template = {
+			name = "Revolutionary Command Center"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+				hq_infantry = { x = 0 y = 2 }
+				hq_infantry = { x = 0 y = 3 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+			}
+		}
+	}
+
+	# GPG
+	if = {
+		limit = { tag = GPG }
+		division_template = {
+			name = "Goiky HQ"
+			template_counter = 121
+			is_army_hq = yes
+
+			regiments = {
+				hq_infantry = { x = 0 y = 0 }
+				hq_infantry = { x = 0 y = 1 }
+			}
+
+			support = {
+				hq_support_company = { x = 0 y = 0 }
+			}
+		}
+	}
+
 	# LSS
 	if = {
 		limit = { tag = LSS }
@@ -112,6 +175,9 @@ every_possible_country = {
 			NOT = { tag = GTR }
 			NOT = { tag = LSS }
 			NOT = { tag = YFC }
+			NOT = { tag = GFG }
+			NOT = { tag = GSR }
+			NOT = { tag = GPG }
 		}
 		division_template = {
 			localization_key = "ARMY_HQ_TEMPLATE_NAME"

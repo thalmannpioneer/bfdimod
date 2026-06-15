@@ -700,6 +700,20 @@ technologies = {
 			hq_military_police
 		}
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GFG
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Iron Hand HQ"
+					support = { hq_military_police = 0 }
+				}
+			}
+		}
+
 		path = {
 			leads_to_tech = tech_military_police2
 			research_cost_coeff = 1
@@ -726,12 +740,12 @@ technologies = {
 			base = 0.5
 			
 			modifier = {
-				factor = 5
+				factor = 3
 				tag = GGR
 			}
 			
 			modifier = {
-				factor = 5
+				factor = 6
 				tag = GFG
 			}
 			
@@ -1115,6 +1129,17 @@ technologies = {
 					support = { hq_field_hospital = 0 }
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GPG
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Goiky HQ"
+					support = { hq_field_hospital = 0 }
+				}
+			}
 		}
 
 		path = {
@@ -1152,6 +1177,11 @@ technologies = {
 				factor = 3
 				tag = GGR
 				NOT = {country_exists = FFT}
+			}
+
+			modifier = {
+				factor = 4
+				tag = GPG
 			}
 
 			modifier = {
@@ -1394,6 +1424,17 @@ technologies = {
 					support = { hq_logistics = 0 }
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GPG
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Goiky HQ"
+					support = { hq_logistics = 0 }
+				}
+			}
 		}
 
 		path = {
@@ -1431,6 +1472,11 @@ technologies = {
 				factor = 3
 				tag = GGR
 				NOT = {country_exists = FFT}
+			}
+
+			modifier = {
+				factor = 5
+				tag = GPG
 			}
 
 			modifier = {

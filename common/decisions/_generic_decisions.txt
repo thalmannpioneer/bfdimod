@@ -631,7 +631,7 @@ economy_decisions = {
 		complete_effect = {
 			subtract_from_variable = { money_amount = 25 }
 			hidden_effect = {add_political_power = -35}
-			army_experience = 25
+			army_experience = 40
 		}
 	}
 

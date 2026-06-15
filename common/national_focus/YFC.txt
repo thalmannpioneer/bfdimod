@@ -2376,13 +2376,13 @@ focus_tree = {
 								state = 232
 							}
 						}
-						set_variable = {eastern_support_var = -0.3}
+						set_variable = {eastern_support_var = -0.35}
 					}
 					ELSE_IF = { 
 						limit = {
 							state = 229
 						}
-						set_variable = {eastern_support_var = -0.5}
+						set_variable = {eastern_support_var = -0.55}
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}
