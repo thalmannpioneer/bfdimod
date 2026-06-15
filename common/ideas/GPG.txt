@@ -6,6 +6,9 @@ ideas = {
                 political_power_gain = 0.25
                 drift_defence_factor = -0.1
                 stability_factor = -0.05
+                surrender_limit = 0.1 #So the ai has a better chance to win
+                monthly_population = -1.25
+
             }
         }
 

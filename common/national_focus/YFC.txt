@@ -2097,6 +2097,54 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YFC_focus_fund_secret_police 
+		relative_position_id = YFC_focus_reeducation
+		x = -1
+		y = 1
+		icon = GFX_focus_generic
+
+		prerequisite = { focus = YFC_focus_reeducation }
+
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = l_money_cost_300K
+                check_variable = { money_amount > 3 }
+            }
+		}
+
+		bypass = {
+			country_exists = BUN
+		}
+
+		cost = 5
+
+		completion_reward = {
+			subtract_from_variable = { money_amount = 3 }
+			if = {
+				limit = { 
+					has_dlc = "La Resistance" 
+					is_ai = no
+				}
+				create_intelligence_agency = {
+					name = "The Green Eyes"
+					icon = GFX_agency_icon_GGR_scheeschutz #Place holder
+				}
+				85 = {add_resistance = -2} 
+				212 = {add_resistance = -2}
+			}
+			else = { 
+				85 = {add_resistance = -10} 
+				212 = {add_resistance = -10}
+			}
+
+		}
+
+		ai_will_do = {
+			base = 8
+		}
+	}
+
+	focus = {
 		id = YFC_focus_strengthen_the_law
 		relative_position_id = YFC_focus_execute_pen
 		x = 1
@@ -2376,13 +2424,13 @@ focus_tree = {
 								state = 232
 							}
 						}
-						set_variable = {eastern_support_var = -0.35}
+						set_variable = {eastern_support_var = -0.4}
 					}
 					ELSE_IF = { 
 						limit = {
 							state = 229
 						}
-						set_variable = {eastern_support_var = -0.55}
+						set_variable = {eastern_support_var = -0.6}
 					}
 					ELSE = {
 						set_variable = {eastern_support_var = 0}

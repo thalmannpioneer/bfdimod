@@ -302,7 +302,7 @@ country_event = {
 
 country_event = { #Embargo event for all nations
 	id = YFC_event.9
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event9
 
 	title = {
 		text = YFC_event.9.t.a 
@@ -1089,7 +1089,7 @@ country_event = {
 	id = YFC_event.29 #Tell the world about our trade!!!
 	title = YFC_event.29.t
     desc = YFC_event.29.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event29
 	
 	is_triggered_only = yes
     
@@ -1514,6 +1514,10 @@ country_event = { #YFC Sell
 			modifier = {
 				check_variable = { money_amount > trade_cost_temp_var } 
 				add = 2
+		 	}
+			modifier = {
+				check_variable = { money_amount < trade_cost_temp_var } 
+				add = -3
 		 	}
 			modifier = {
 				YFC = {is_ai = yes} 

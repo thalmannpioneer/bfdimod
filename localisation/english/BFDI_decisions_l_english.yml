@@ -4,6 +4,9 @@
  debug_nuke_everything_desc: "Do I really need to explain...?"
  debug_cool_diplo_desc: "Mainly good for MP games :)"
 
+ targeted_white_peace: "White Peace with [FROM.GetName]"
+ targeted_white_peace_desc: "With no way to reach them, the time is now to reach an agreement to end this useless war."
+
  invest_energy_stations: "Subsidize Civilian Energy"
  invest_construction: "Subsidize Construction"
  invest_infrastructure: "Subsidize Infrastructure"

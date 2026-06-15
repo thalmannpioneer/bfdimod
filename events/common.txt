@@ -72,6 +72,24 @@ country_event = {
     }
 }
 
+country_event = { #White peace event
+    id = common_event.4
+    title = common_event.4.t
+    desc = common_event.4.desc
+    picture = GFX_common_event4
+
+    is_triggered_only = yes
+
+    option = {
+        name = common_event.4.a
+        white_peace = FROM
+    }
+    option = {
+        name = common_event.4.b
+        add_war_support = 0.05
+    }
+}
+
 # ???
 
 country_event = {

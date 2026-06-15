@@ -60,6 +60,50 @@
 		}
 	}
 
+	targeted_white_peace = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		allowed = {
+			always = yes
+		}
+
+		fire_only_once = no
+		days_re_enable = 65
+
+		available = {
+			has_war_with = FROM
+			NOT = {is_neighbor_of = FROM}
+			war_length_with = {
+				tag = FROM
+				months > 12
+			}
+		}
+
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+				has_war_with = ROOT
+				NOT = {is_neighbor_of = ROOT}
+			}
+		}
+
+		visible = {
+			FROM = {
+				has_war_with = ROOT
+				NOT = {is_neighbor_of = ROOT}
+			}
+		}
+
+		complete_effect = {
+			FROM = {country_event = common_event.4}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	YFC_SRI_war_timer = { 
 		icon = GFX_decision_SWI_consolidate_council_power  
 		is_good = no
@@ -144,7 +188,7 @@
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_manpower > 15000
+				has_manpower > 25000
 				add = 5
 			}
 			modifier = {
