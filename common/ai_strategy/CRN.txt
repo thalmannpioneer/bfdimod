@@ -54,7 +54,16 @@ CRN_BUN_war = {
 	ai_strategy = {
 		type = front_unit_request
 		tag = BUN
-		value = 75
+		value = 500
+	}
+	ai_strategy = {
+		type = front_control
+		tag = BUN
+		priority = 1
+    	ordertype = front
+    	execution_type = rush
+		execute_order = yes
+		manual_attack = yes
 	}
 }
 
@@ -82,6 +91,30 @@ CRN_friend_YFC = {
 	ai_strategy = {
 		type = befriend
 		id = YFC
+		value = 200
+	}
+}
+
+CRN_friend_BUN = {
+    #Work with BUN
+    allowed = {
+		original_tag = CRN
+	}
+	enable = {
+		YFC = {has_completed_focus = YFC_focus_bunch_fostered}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = BUN
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = BUN
 		value = 200
 	}
 }

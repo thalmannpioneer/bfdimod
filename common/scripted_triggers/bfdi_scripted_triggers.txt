@@ -1,3 +1,14 @@
 golfball_statue_trigger = {
 	always = yes
 }
+
+three_musketeers_basic_joint_trigger = {
+	is_in_faction = yes  
+	AND = {
+		has_country_flag = Allow_Musketeers 
+		OR = {
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
+		}
+	}
+}

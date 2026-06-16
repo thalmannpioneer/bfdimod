@@ -1554,7 +1554,7 @@ focus_tree = {
         cost = 2
 
         ai_will_do = {
-            base = 20
+            base = 50
         }
 
         completion_reward = {

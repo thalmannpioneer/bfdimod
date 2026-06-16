@@ -2204,6 +2204,10 @@ country_event = { #YFC_focus_procure_funds
 	}
 	option = {
 		name = YFC_event.46.b
+		trigger = {
+			NOT = {BUN = {has_cosmetic_tag = BUN_revolt}}
+		}
+
 		add_political_power = -50
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
@@ -2212,6 +2216,11 @@ country_event = { #YFC_focus_procure_funds
 	}
 	option = {
 		name = YFC_event.46.c
+		trigger = {
+			NOT = {BUN = {is_puppet_of = CRN}}
+			NOT = {BUN = {has_cosmetic_tag = BUN_revolt}}
+		}
+
 		add_political_power = -100
 		custom_effect_tooltip = l_money_gain_600K
 		add_to_variable = { money_amount = 6 }

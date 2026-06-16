@@ -26,8 +26,7 @@ shared_focus = {
 		has_country_flag = Allow_Musketeers
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			faction_leader = {has_country_flag = Allow_Musketeers}
 		}
 	}
 
@@ -36,8 +35,7 @@ shared_focus = {
 			has_country_flag = Allow_Musketeers
 			is_in_faction = yes
 			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+				faction_leader = {has_country_flag = Allow_Musketeers}
 			}	 
 		}
 	}
@@ -75,13 +73,8 @@ joint_focus = {
 		}
 	}
 
-	joint_trigger = { #LATER ME TRY: AND = {}
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+	joint_trigger = { 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -130,12 +123,7 @@ joint_focus = {
 	}
 	
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -177,12 +165,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -220,12 +203,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -267,12 +245,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -313,12 +286,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -368,12 +336,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -411,12 +374,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
@@ -454,12 +412,7 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		has_country_flag = Allow_Musketeers 
-		is_in_faction = yes
-		OR = {
-			is_in_faction_with = YFC
-			is_in_faction_with = CRN
-		} 
+		three_musketeers_basic_joint_trigger = yes
 	}
 
 	cost = 10
