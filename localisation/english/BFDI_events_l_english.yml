@@ -933,11 +933,11 @@
  YFC_event.45.desc: "Hello. We have, unfortunately, traded letters before. Then, and even now, I can smell the essence of your sea-salty being upon the paper. You sicken me, not just in smell, but in demeanor and in personality. You are a rotten sort of individual, what with your ruling style, poor planning, uncoordination, I could continue, though, I'm not entirely sure of the reading capabilities that you may or may not have. I say this to say, I have absolutely no clue how any of your citizens, let alone your high command, could stand bearing witness to your ugliness. I would like to extend an apology, not to you, but to the populace of the Beach Territory, as I'm sure your stench wafts its way from Farbeach and back."
  YFC_event.45.a: "-Sincerely, Yellow Face (P.S., that droopiness at your top is hideous)"
 
- YFC_event.46.t: "Pickpocketting" #Change either what is stolen from Bunch and/or change to another nation, if YFC stole a bank from a Bunch that CRN puppets could cause so much damage that it opens another path which I think is not a really good idea. ZDubbz 
+ YFC_event.46.t: "Pickpocketting" #okay but consider that its really funny and that this is supposed to be the slightly wackier part of the tree
  YFC_event.46.desc: "Surely the citizens of the Bunch wouldn't notice any missing funds, that are far too poor to care about that sort of thing. This was, in essence, what Taser had been suggesting that we do for the past... well, however long. It's a fair idea to gain money, sure, but no one could really agree on what should be stolen. We've come down to three choices:\n1. We steal a large chunk of quartz from the large bank we built in Podgornyv. They are quite unlikely to notice it, or even blame it on a member of their own populace, if we do it correctly.\n2. We steal a small amount of pillars from the bank. This is quite a bit harder to pull off, considering it would involve removing large structural supports.\n3. Steal the whole bank."
  YFC_event.46.a: "Quartz chunk!" #Gain 200K, increases Taser influence by 2 (Side note come up with item we are stealing or remove my dumbass idea for normal money)
  YFC_event.46.b: "Quartz pillars!" #Gain 400K, increases Taser influence by 2, and some other bad thing but I have no idea rn
- YFC_event.46.c: "Entire bank??!!" #Gain 600K, increases Taser influence by 2, and some other bad thing but I have no idea rn
+ YFC_event.46.c: "Entire bank??!!" #Gain 700K, increases Taser influence by 2, and some other bad thing but I have no idea rn
  YFC_event.46.d: "We don't need such actions." #Lowers Taser's influence by 2
 
  YFC_event.47.t: "Preparations" #For the boats
@@ -946,27 +946,27 @@
  YFC_event.47.a: "zdubbz cough"
 
  YFC_event.48.t: "Gobbled Up"
- YFC_event.48.desc: "zdubbz something on the eastern stuff is mostly done bla bla bla"
- YFC_event.48.a: "Where is the next intrest?"
+ YFC_event.48.desc: "We have nearly finished our conquest of the Eastern Seaboard. Though some view our conquests to be, for lack of a better word, unsatisfactory, dissent upon the mission can easily be disregarded. There is a certain tranquility to be found on this patch of sea that could easily be commodified. Perhaps, with these conquests, we could bolster tourism even further? Additionally, let us not forget about what is to be gained from direcct access to the sea. Sea trade is now more than ever, an easy alternative to the treacherous land routes of days past. Our conquests have brought us the potential for a great, profitable future. The game now shifts on to how we plan on using this opportunity."
+ YFC_event.48.a: "What might our next point of interest be?"
 
  YFC_event.49.t: "Battalions of Force"
- YFC_event.49.desc: "TopHat, with his many, many, many suggestions. Today, he has come to Yellow Face's office, wishing to offer him some extra forces. He apparently has spare men lying around (seriously, why does he have spare forces?), and is willing to commit them to the seaboard cause, as long as he can get something out of it. Of course, yet again, that something is money. Now, he certainly isn't asking for a large amount of money, however, some analysts have stated that the next fiscal quarter might be a bit tight for us. Just how far are we willing to take this game?" #tophat wants 150k
+ YFC_event.49.desc: "Top Hat is an object of many, many suggestions. Earlier today, he had came to headquarters, wishing to offer Yellow Face some extra forces. Apparently, he has spare men lying around (From where does he procure these men?), and is willing to commit them to the operation of the seaboard, so long as he gains a sort of return. Of course, yet again, that return is a profit. Now, he certainly isn't asking for a large sum of money, however, some analysts have stated that the next fiscal quarter might be rougher for us at the Company. Just how far are we willing to take this game?" #tophat wants 150k
  YFC_event.49.a: "As far as it needs to go." #Increases TopHat influence
- YFC_event.49.b: "Soldiers aren't that essential, lets not overdo things."
- YFC_event.49.c: "Better idea: shut up." #Lowers TopHat influence
+ YFC_event.49.b: "Soldiers are not essential; lets not overdo things."
+ YFC_event.49.c: "Forsooth: Keep quiet for a time, yes? Perhaps forever?" #Lowers TopHat influence
 
- YFC_event.50.t: "Spoils of Efforts" #zdubbz cough
- YFC_event.50.desc: "Pipe and Hammer have found resources like grain and other things idk. anyways they want to take and sell/use it. "
- YFC_event.50.a: "Agree" #Increases Pipe and Hammer influence
- YFC_event.50.b: "Disagree" #Decreases Pipe and Hammer influence
+ YFC_event.50.t: "Spoils of Efforts"
+ YFC_event.50.desc: "Hammer has always been quite the vivid writer. Just this early morning, they had written a letter, and just this late afternoon, it arrived at central headquarters. It is reproduced below:\n\nPipe and I were spending the morning surveying the development of our cause in the board. It was a nice, early morning. What with the sun sic, rising from its place across the vast sea, giving an air of freedom to all those who saw it from this particular position. The seawinds blowing loud, yet soft noise from the ocean, past the shore. It cannot be overstated how peaceful one could find themselves here. The vibrant, calming orange of the somehow rocky yet still well-forested slice of Goiky made no sense, sure, but truly, it felt like sense didn't matter to it. I could feel clearly how purposeful the board is; above all, it wanted to calm. This was a cause I could find myself at ease with. This is a cause I can find myself in awe of. But, unfortunately for the board, her majesty, there has been a petty conflict on these shores.\nLet me not get ahead of myself. Regardless of the board's beauty, there is indeed things to be gained, money to be made, and we have found our gain in the form of grain. Yes, a shabby, seemingly abandoned millhouse was found on our way to the larger site that you had assigned me and Pipe to. It was a cute little place, I'll admit. Though slightly faded, the red paint and accented whites made for a nice color combination; it was easy on the eyes. It was barely taller than a building's story, which is why, though it was seemingly designed and decorated like a barn, I didn't call it one. Regardless, inside, there was a sizeable amount of grains. Barley, rice, wheat, they were stored in barrels, strewn across the floor of the tiny place like someone had thrown them in there with no regard for the soundness of the interior. Some grain had even spilled onto the floor, though, the people we end up selling it to won't have to know.\nWell, of course, I can't say for sure that we'll be selling this stuff. After all, it must belong to someone, right? Barrowing things from a random person to be sold could be cause for escalate conflict, but, at the same time, we've never sold grain before. Breaking into a new market could be profitable for us. What do you think?"
+ YFC_event.50.a: "Sell the grain, Hammer." #Increases Pipe and Hammer influence, possibility of higher resistence in a random seaprovince, gains like 300k
+ YFC_event.50.b: "Let us not haste." #Decreases Pipe and Hammer influence
 
- YFC_event.51.t: "Prospecting Prizes" #zdubbz cough
- YFC_event.51.desc: "Beaker wants to hunt down some resources (Mainly aluminium) but this will make the local populace mad"
- YFC_event.51.a: "Yeah!" #Increases Beaker influence
- YFC_event.51.b: "Noo!" #Decreases Beaker influence
+ YFC_event.51.t: "Prospecting Prizes"
+ YFC_event.51.desc: "Beaker, surprisingly, emailed Headquarters today, which caused quite the startle. Receieving communications from Sectorials was not rare, sure, but Email? Seriously? We've had this the whole time? Why hasn't anyone else been using this? In any case, they were asking for Corporate's help in ransaking the Eastern Seaboard's caverns in search of aluminum. Apparently, she needed it for their \"science experiments,\" whatever that might mean. Regardless of her reasonings, we have recieved reports from hammer about Teardroppers taking up residence in the caves, along with some other... questionable individuals, claiming to have allegiance to a \"king\" of some sort. Tearing up caves for science may not go over well with cave dwelling individuals, so, this idea has been somewhat contentious at headquarters. Even more contentious than the use of Email."
+ YFC_event.51.a: "They're just caves, people. Let us at them." #Increases Beaker influence, add aluminum production to a board state (dont care which)
+ YFC_event.51.b: "But, but, an unruly populace is hard to conquer!" #Decreases Beaker influence
 
  YFC_event.52.t: "Mercenary Upgrade"
- YFC_event.52.desc: "Today we received an interesting letter from a good friend of ours, that friend was the Mercenaries.  The Mercenaries' strength has been growing for quite some time now thanks to our funding and their own adventures. The letter states that due to this increasing strength, the size of their force has increased. A very nice update from them and a nice upgrade for us."
+ YFC_event.52.desc: "Today we received an interesting letter from some good friends of ours, those friends being the Mercenaries. The Mercenaries' strength has been growing for quite some time now, due entirely to our glorious funding and someone in part to their own (measly) adventures. They have sent us a letter, stating that, due to this increasing strength, the size of their forces have increased. A great update from them, and a great upgrade for us."
  YFC_event.52.a: "Fantastic!"
 
  YFC_event.53.t: "Olive Branch" #ZDubbz
@@ -1315,8 +1315,8 @@
  YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
  YFC_sector.20.a: "Curse them!"
 
- YFC_sector.21.t: "Economic Report: EMERGENCY!" #zdubbz
- YFC_sector.21.desc: "So YFC is now in debt. The sectors are not gonna work with us till this is fixed. So yeah the player should fix it or something"
+ YFC_sector.21.t: "Economic Report: EMERGENCY!"
+ YFC_sector.21.desc: "Chaos.\nThere has been nothing but chaos at headquarters today. Our economic analysts didn't want to believe it. Our financial advisors didn't want to believe it. Not even the Sectorials wanted to believe it. But it is true. The Yellow Face Corporation is not just losing money, it is in debt. Salaries can't be paid, projects can't be funded, the free market may even crumble under the weight of the company. We've already began filing for bankruptcy, but the filers themselves are scared to do it; they know that many of them will be laid off. Either the company needs to downsize, or we need to turn a profit, and fast."
  YFC_sector.21.a: "An Unprecedented Disaster!"
 
 # BUN_YFC
@@ -1590,15 +1590,15 @@
  GTR_event.50.desc: "Telescopes have recorded the fall of an unknown celestial body near the University. It appears to be a meteorite, approximately a hundred meters in diameter. During the search, a large mineral object was discovered, 58.8% of which, according to spectrographs, is composed of an extremely rare metal called yoylite.\nObviously, we will be able to use yoylite samples for our experiments."
  GTR_event.50.a: "Right in our hands!"
 
- GTR_event.51.t: "Disorder" #zdubbz
+ GTR_event.51.t: "Disorder"
  GTR_event.51.desc: "...            EXPERIMENT No. 1\n\nAfter delivering the mineral samples to the equipped laboratory, Professor ------ attempted to pick up one of the active elements. According to surveillance footage, after a few seconds, the sample began to emit a light yellow glow, after which loose objects in the surrounding area were lifted approximately 10 centimeters into the air.\nAfter 10-15 seconds the effect stopped and all the levitating objects fell back down.\nProfessor ------ was charged with violating safety regulations."
  GTR_event.51.a: "This thing seems unstable."
 
- GTR_event.52.t: "Deja vu" #zdubbz
+ GTR_event.52.t: "Deja vu"
  GTR_event.52.desc: "...            EXPERIMENT No. 2\n\nAfter moving the samples into a specially equipped chamber, experiments were conducted on their interaction with other elements and substances. The samples generally performed reliably, but in one test, specifically with the parasitic fungus called Noctiluca Yoylean, a sharp spike in luminescent activity was recorded, followed by a bright flash illuminating the entire observation room.\nA large energy release occurred and the sample was destroyed, but thanks to the fact that the chamber was equipped with tungsten alloys, the lives of the observing professors were saved.\nProfessor ---- claimed to have seen her long-dead mother."
  GTR_event.52.a: "Unrestrictable potential."
 
- GTR_event.53.t: "Half-life" #zdubbz
+ GTR_event.53.t: "Half-life"
  GTR_event.53.desc: "...            EXPERIMENT No. 3\n\nAfter studying the instability properties of the samples, the council decided to attempt to create a simple reactor for the controlled disintegration of yoylite atoms.\nSilicon oxide was used as a moderator for the emitted neutrons, and the sample was placed in a lead chamber.\nAs a result of observations of the energy release, it was found that one gram of yoylite has an energy value equivalent to 2000 tons of coal...."
  GTR_event.53.a: "Is a controlled explosion possible?..."
 

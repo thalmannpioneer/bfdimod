@@ -1052,10 +1052,10 @@
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
  YFC_focus_new_interests: "New Interests"
- YFC_focus_new_interests_desc: "With the sudden collapse of the Fascist Snowy Government to our south have brought new opportunities. Besides the possible money to be made selling weapons to sides in a possible civil war, a breakaway state on our border has brought intrigue. Where The Great Ridge stands, a government was formed of ex-slaves, anti-Fascists, and normal civilians trying to escape the chaos. \n\nTheir government is weak both military and economically, but stands on resource rich lands which we could make a fortune on. Invasion of their lands is on the table, but let's be civil about this!\n\nWe will start with a simple offer of protection and funding for their resources. Such a good offer they would want to have!" #ZDubbz if you want to
+ YFC_focus_new_interests_desc: "With the sudden collapse of the Fascist Snowy Government to our south, we have been brought new opportunities. Besides the possible money to be made selling weapons to sides in a possible civil war, a breakaway state on our border has brought intrigue. Where The Great Ridge stands, a government was formed of ex-slaves, anti-Fascists, and normal civilians trying to escape the chaos.Their government is weak both militarily and economically, but with their resource rich lands, we could make a fortune! Invasion of their lands is on the table, sure, but civilty is preferred. We shall start with a simple offer of protection and funding for their resources. Such a good offer that they would be fools to reject!" 
 
  YFC_focus_integrate_great_ridge: "Integrate The Great Ridge"
- YFC_focus_integrate_great_ridge_desc: "Placeholder"
+ YFC_focus_integrate_great_ridge_desc: "The ridge is all but beholden to our commands, wills, and wants. There is no industry or toil left for their government proper to take, it is now all controlled by the Company. They, truly, are only independent on paper; let us burn said paper. Let us remove their de jure independence. Let us integrate The Great Ridge."
 
  YFC_focus_the_bunchivist_problem: "The Bunchivist Problem"
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."
@@ -1076,7 +1076,7 @@
  YFC_focus_develop_yoyleton_desc: "Yoyleton is the most remote place in South Goiky, as of current. Having a small population, with lots of hard workers, that hick town has great potential. Strangely enough, it seems like some teardroppers live there as well. With the town being so far from the sea, it's a bit strange to see them, however, they mind their business, same as everyone else. Perhaps some water features should be in the works."
 
  YFC_focus_military_industrial_complex: "Expanding Military Industrial Complex" 
- YFC_focus_military_industrial_complex_desc: "ZDubbz cough cough cough" #I lied about the last statement this just gives us some militray equipment YFC does not care about their army yet
+ YFC_focus_military_industrial_complex_desc: "Buying and selling guns to a profit is something we are quite known to do. It only makes sense that we try our hardest to expand this industry, letting us send exports across all of Goiky." #I lied about the last statement this just gives us some militray equipment YFC does not care about their army yet
 
  YFC_focus_expand_northern_trade: "Expand the Northern Trade"
  YFC_focus_expand_northern_trade_desc: "By using Yoyleton as a base, we can expand our traderoutes farther north, leading to more efficient trade with North Goikean nations."
@@ -1106,28 +1106,28 @@
  YFC_focus_execute_pen_desc: "500 Million Vigintillion. A number so impossibly high, has somehow become owed to us. While the competition was still ongoing, Pen had promised to give his supporters a large sum of money. That amount, became debt, which he tried to pay off using a paper slip. Paper slips, made in the YFC of course, are not a 'real' currency, so the amount owed managed to transfer from his supporters, to us. We have no real interest in forcing him to pay that amount, but we do have an interest in making examples out of debt holders. He's a Bunchivist, was very close, too close, to Eraser, while vocally supporting efforts resisting our reign. The perfect example."
 
  YFC_focus_reeducation: "Establish Reeducation Camps"
- YFC_focus_reeducation_desc: "ZDubbz cough cough cough"
+ YFC_focus_reeducation_desc: "The average Bunchivist finds themselves to be an utter moron. They have no knowledge of trade, of capital, of wages. Let us correct the mistakes of the previous regime and teach them something, with force."
 
  YFC_focus_strengthen_the_law: "Strengthen the Law"
- YFC_focus_strengthen_the_law_desc: "ZDubbz cough cough cough"
+ YFC_focus_strengthen_the_law_desc: "Though law inforcement is frowned upon in our more \"core\" territories, there is something to be gained from stationing armed men in bunchivist settlements. It is not hard to see why; those objects of banditry know no reason, only violence. It is only natural that we begin to speak their language."
 
  YFC_focus_ban_theft: "Ban Theft"
- YFC_focus_ban_theft_desc: "ZDubbz cough cough cough"
+ YFC_focus_ban_theft_desc: "Though it may seem like a stupid move, it is ingenious. It is the foundation of Buncher society, stealing is. That is what their \"natural\" \"rule of law\" is. To illegalize it is to destroy the cancer of Bunchivism from its root. Of course, this crime will have harsh punishments."
 
  YFC_focus_remove_oligarchical_sentiment: "Remove Oligarchical Sentiments"
- YFC_focus_remove_oligarchical_sentiment_desc: "ZDubbz cough cough cough"
+ YFC_focus_remove_oligarchical_sentiment_desc: "It is impressive how the oligarchs of the Old Bunch managed to, so quickly and under such strain, form a cult of personality. Let us destroy it. It has infected the lands to our south, infected the minds of the objects within those lands, and, like any disease, threatens to further the infection. This cannot be had. What with Eraser's immorality, Blocky's previous moronicism, and Pen's... Well, Pen is simply Pen; a crime enough."
 
- YFC_focus_fund_secret_police: "Fund Secret Police"
- YFC_focus_fund_secret_police_desc: "ZDubbz cough cough cough"
+ YFC_focus_fund_secret_police: "The Watchful"
+ YFC_focus_fund_secret_police_desc: "Some believe that we aren't cautious enough in our tactics. They say we are too overt, too boastrus, too proud of this conquest. We make it far too apparent that we are the overlords, and that they are the conquered, to be assimilated. That is a fair assessment, it is not unlikely that Bunchivists have taken up the practice of hiding from us, now that they have realized the dynamics at play here. Let us find these secret meetings, infiltrate them, and ruin them from the inside."
 
  YFC_focus_fully_cored: "Fully Cored"
- YFC_focus_fully_cored_desc: "ZDubbz cough cough cough"
+ YFC_focus_fully_cored_desc: "We have done it! All Bunchivists are either complacent, dead, or too scared to fight back. We have tamed the lion (rather, the petty kitten), and are now well on our way to complete and total control over the old lands of the Bunchivist regime."
 
  YFC_focus_stalled_plans: "Stalled Plans"
- YFC_focus_stalled_plans_desc: "ZDubbz cough cough cough"
+ YFC_focus_stalled_plans_desc: "It seems that we may have planned incorrectly. That is okay, we shall once again prosper, for the rule of capital is a natural one. Now, let us move onwards, to once more, finally again, conquering the Bunchivist menace!"
 
  YFC_focus_unite_the_capitalists: "Unite The Capitalists"
- YFC_focus_unite_the_capitalists_desc: "ZDubbz cough cough cough"
+ YFC_focus_unite_the_capitalists_desc: "We are now on the cusp of a full alliance being formed. Let us unite the forces of capital, once and for all."
 
  YFC_focus_foster_new_society: "Foster a New Society"
  YFC_focus_foster_new_society_desc: "Bunchivists are still people. And with people, there is profit. Obviously, we've lost quite a bit of money from having to deal with the raiders, but if we have their entire population under our thumb, we could make it back in no time! Facilitating a new, reformed Bunch should be easy, and well worth the cost. Oh, the civillians should be allowed to live free and stuff too. That's totally important to us."
@@ -1171,37 +1171,37 @@
  YFC_focus_united_by_profits_desc: "The Numismatians are suggesting that we 'formalize' our relationship with both them and the reformed Bunchivists. What might they mean by this? The Numismatians say a lot of things, actually. Always sending us letters about some unimportant 'foreign diplomacy' stuff. They're lucky we tolerate them."
 
  YFC_focus_see_to_the_eastern_front: "Eyes to the East"
- YFC_focus_see_to_the_eastern_front_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_see_to_the_eastern_front_desc: "The Eastern Seaboard is an area that could bring us great fortune, if we manage to take it over. What with her grand opportunity for faster and safer trade routes. Though, it seems as if the Beach Territory has already had eyes on this area for quite some time, considering the amount of teardroppers living in the area. Might we need to play some great game, to secure control over it?"
 
  YFC_focus_play_fast: "Play Fast"
- YFC_focus_play_fast_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_play_fast_desc: "By rapidly escalating the conflict, we can overwhelm the teardropper forces, and subjugate the already existing objects along the Seaboard."
 
  YFC_focus_anger_teardrop: "Anger Teardrop"
- YFC_focus_anger_teardrop_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_anger_teardrop_desc: "No one makes good decisions when they're angry. We can easily throw the teardroppers' strategy astray (or, as the kids say, \"fuck them up\"), by angering their leader, and forcing her to act irrationally."
 
  YFC_focus_procure_funds: "Procure Funds"
- YFC_focus_procure_funds_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_procure_funds_desc: "We may not have the money for this operation available on demand, but, we can certainly gain some from... certian... \"untapped\" industries."
 
  YFC_focus_claim_excessive_land: "Exaggerate our Claims"
- YFC_focus_claim_excessive_land_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_claim_excessive_land_desc: "We're not exactly sure of it, but, the teardroppers may be recieving foreign aid. If we make it seem as if we have far more land than we do in actuality, then we can make the teardropper cause seem lost. No one invests into a lost cause!"
 
  YFC_focus_move_in_army: "Send in the Army"
- YFC_focus_move_in_army_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_move_in_army_desc: "We should have done this far earlier, sure, but there's no time like the present. Unruly teardroppers have already started attacking our peaceful settlers, what might sending in guns do?"
 
  YFC_focus_invest_into_infrastructure: "Build Roads"
- YFC_focus_invest_into_infrastructure_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_invest_into_infrastructure_desc: "We can travel more efficiently with roads, ergo, we can settle more efficiently. More settlers means more de jure land, which means more industry, better trade routes, more tourist locations, in essence, it means more profit."
 
  YFC_focus_buy_ships: "Purchase Ships"
- YFC_focus_buy_ships_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_buy_ships_desc: "The teardroppers obviously have a navy far superior to any other nation on this side of Goiky, save for possibly the davidians, however, if we purchase cheap boats, we can easily keep some of their forces occupied, making it harder for them to bring over any troops to combat ours."
 
  YFC_focus_undermine_legitimacy: "Undermine Teardrop's Legitimacy"
- YFC_focus_undermine_legitimacy_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_undermine_legitimacy_desc: "Was it racist to assume that every teardropper was a follower of Teardrop herself? Because, apparently, not every teardropper is a follower of Teardropp. Some of them are more on the fence about supporting her; she is a dictator, after all. By smearing her image, making her seem incompetant, we can easily get more supporters for our side."
 
  YFC_focus_build_ports: "Improve Shipping"
- YFC_focus_build_ports_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_build_ports_desc: "With our boats and better sea access, we can now start to see the benefits of this great game. Our trade with those in the north can improve; perhaps, we can even start trading with the Davidians again."
 
- YFC_focus_interfere_with_sea_routes: "Interfere with Their Routes"
- YFC_focus_interfere_with_sea_routes_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_interfere_with_sea_routes: "Interfere With Their Routes"
+ YFC_focus_interfere_with_sea_routes_desc: "It's very apparent now that they are getting their funding from someone, right? Even if they are (somehow) simply playing this game well through wit (if they have any), attacking their convoys will effectively starve their soldiers, and make the population reliant on the Corporation's goods."
 
  YFC_focus_play_smart: "Play Smart"
  YFC_focus_play_smart_desc: "ZDubbz cmon gotta work man"
@@ -1218,7 +1218,7 @@
  YFC_focus_prospect_the_lands: "Prospect the Lands"
  YFC_focus_prospect_the_lands_desc: "ZDubbz cmon gotta work man"
 
- YFC_focus_deploy_peacekeepers: "Deploy 'Peacekeepers'"
+ YFC_focus_deploy_peacekeepers: "Deploy \"Peacekeepers\""
  YFC_focus_deploy_peacekeepers_desc: "ZDubbz cmon gotta work man"
 
  YFC_focus_bribe_village_leaders: "Bribe Billage Leaders"
@@ -1227,16 +1227,13 @@
  YFC_focus_shuffle_around_funds: "Shuffle Funds Around"
  YFC_focus_shuffle_around_funds_desc: "ZDubbz cmon gotta work man"
 
- YFC_focus_play_smart: "Play Smart"
- YFC_focus_play_smart_desc: "ZDubbz cmon gotta work man"
-
  YFC_focus_invest_into_infrastructure_other: "Build Roads"
  YFC_focus_invest_into_infrastructure_other_desc: "ZDubbz cmon gotta work man"
 
  YFC_focus_build_ports_other: "Improve Shipping"
  YFC_focus_build_ports_other_desc: "ZDubbz cmon gotta work man"
 
- YFC_focus_accidental_mistakes: "'Accidental' Mistakes"
+ YFC_focus_accidental_mistakes: "\"Accidental\" Mistakes"
  YFC_focus_accidental_mistakes_desc: "ZDubbz cmon gotta work man"
 
  Musketeers_three_musketeers: "Three Musketeers"
