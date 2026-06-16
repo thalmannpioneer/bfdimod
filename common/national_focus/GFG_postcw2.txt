@@ -1003,12 +1003,11 @@ focus_tree = {
 		id = GFG_focus_agreement_result
 		relative_position_id = GFG_focus_greeny_plains_claims
 		y = 2
+		
+		dynamic = yes
 		icon = {
-			trigger = { has_country_flag = agreement_succeed }
-			value = GFX_focus_GFG_agreement_succeed
-		}
-		icon = {
-			value = GFX_focus_GFG_agreement_fail
+			GFX_focus_GFG_agreement_succeed = { has_country_flag = agreement_succeed }
+			GFX_focus_GFG_agreement_fail = yes
 		}
 		
 		prerequisite = { focus = GFG_focus_southern_agreement }

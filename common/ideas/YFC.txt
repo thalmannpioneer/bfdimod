@@ -40,7 +40,7 @@ ideas = {
 		}
 
 		idea_YFC_Bunch_Insurgency  = {
-			picture = MEX_revolutionary_army #Replace later!!!!
+			picture = YFC_bunch_insurgency #Replaced :3
 			modifier = {
 				required_garrison_factor = -0.75
 				stability_factor = -0.05

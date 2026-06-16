@@ -2393,25 +2393,19 @@ focus_tree = {
         y = 7
 
         icon = {
-            trigger = {
+            GFX_focus_GTR_outcome_golfball = {
                 has_country_leader = {
                     character = GTR_golfball
                     ruling_only = yes
                 }
             }
-            value = GFX_focus_GTR_outcome_golfball
-        }
-        icon = {
-            trigger = {
+            GFX_focus_GTR_outcome_tennis_ball = {
                 has_country_leader = {
                     character = GTR_tennis_ball
                     ruling_only = yes
                 }
             }
-            value = GFX_focus_GTR_outcome_tennis_ball
-        }
-        icon = {
-            value = GFX_focus_GTR_outcome_duumvirate
+            GFX_focus_GTR_outcome_duumvirate = yes
         }
         dynamic = yes
 

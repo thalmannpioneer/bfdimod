@@ -655,6 +655,10 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_show_no_mercy.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_bunch_insurgency
+		texturefile = gfx/interface/ideas/idea_YFC_bunch_insurgency.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_lewis
 		texturefile = gfx/interface/ideas/idea_YFC_lewis.dds
 	}

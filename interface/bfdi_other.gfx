@@ -99,4 +99,10 @@ spriteTypes = {
 		name = "GFX_notification_negdiff"
 		textureFile = "gfx/interface/notification_negdiff.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_agency_icon_YFC_green_eye"
+		texturefile = "gfx/interface/agency_icon_YFC_green_eye.dds"
+		noOfFrames = 2
+	}
 }

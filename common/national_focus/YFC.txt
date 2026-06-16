@@ -1,3590 +1,3590 @@
 focus_tree = {
-	id = YFC_focus_tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 20
-			original_tag = YFC
-		}
-	}
+    id = YFC_focus_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 20
+            original_tag = YFC
+        }
+    }
 
-	default = no
-	reset_on_civilwar = no
-	shared_focus = Musketeers_three_musketeers
+    default = no
+    reset_on_civilwar = no
+    shared_focus = Musketeers_three_musketeers
 
-	initial_show_position = { focus = YFC_focus_consolidate_power }
+    initial_show_position = { focus = YFC_focus_consolidate_power }
 
- #STARTER PATH
+    #STARTER PATH
 
-	focus = {
-		id = YFC_focus_consolidate_power
-		x = 17
-		y = 0
-		icon = GFX_focus_YFC_consolidate_power
+    focus = {
+        id = YFC_focus_consolidate_power
+        x = 17
+        y = 0
+        icon = GFX_focus_YFC_consolidate_power
 
-		available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
+        available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
 
-		ai_will_do = {
-			base = 5
-		}
+        ai_will_do = {
+            base = 5
+        }
 
-		cost = 5
-		completion_reward = {
-			add_stability = 0.15
-			country_event = YFC_event.1
-			hidden_effect = {
-				random_list = {
-					70 = { 
-						set_country_flag = money_path
-					}
-					30 = { 
-						set_country_flag = raiders_path
-					}
-				}
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            add_stability = 0.15
+            country_event = YFC_event.1
+            hidden_effect = {
+                random_list = {
+                    70 = {
+                        set_country_flag = money_path
+                    }
+                    30 = {
+                        set_country_flag = raiders_path
+                    }
+                }
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_open_the_market
-		relative_position_id = YFC_focus_consolidate_power
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_open_the_markets
+    focus = {
+        id = YFC_focus_open_the_market
+        relative_position_id = YFC_focus_consolidate_power
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_open_the_markets
 
-		prerequisite = { focus = YFC_focus_consolidate_power }
+        prerequisite = { focus = YFC_focus_consolidate_power }
 
-		ai_will_do = {
-			base = 5
-		}
+        ai_will_do = {
+            base = 5
+        }
 
-		cost = 5
+        cost = 5
 
-		completion_reward = {
-			add_political_power = 25
-			unlock_decision_category_tooltip = decision_YFC_trade_category
-			hidden_effect = {
-				every_possible_country = {
-					limit = { 
-						is_ai = no 
-						NOT = {tag = YFC}
-					}
-					country_event = {
-						id = YFC_event.29
-						days = 1
-						random_hours = 2
-					}
-				}
-			}
-		}
-	}
+        completion_reward = {
+            add_political_power = 25
+            unlock_decision_category_tooltip = decision_YFC_trade_category
+            hidden_effect = {
+                every_possible_country = {
+                    limit = {
+                        is_ai = no
+                        NOT = {tag = YFC}
+                    }
+                    country_event = {
+                        id = YFC_event.29
+                        days = 1
+                        random_hours = 2
+                    }
+                }
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_establish_sectorialism
-		relative_position_id = YFC_focus_open_the_market
-		x = 0
-		y = 2
-		icon = {
-			trigger = { has_shine_effect_on_focus = YFC_focus_establish_sectorialism }
-			value = GFX_focus_YFC_establish_sectorialism_other
-		}
-		icon = {
-			value = GFX_focus_YFC_establish_sectorialism
-		}
+    focus = {
+        id = YFC_focus_establish_sectorialism
+        relative_position_id = YFC_focus_open_the_market
+        x = 0
+        y = 2
+        icon = {
+            GFX_focus_YFC_establish_sectorialism_other = {
+                has_shine_effect_on_focus = YFC_focus_establish_sectorialism
+            }
+            GFX_focus_YFC_establish_sectorialism = yes
+        }
+        dynamic = yes
 
-		prerequisite = { focus = YFC_focus_open_the_market }
+        prerequisite = { focus = YFC_focus_open_the_market }
 
-		ai_will_do = {
-			base = 5
-		}
+        ai_will_do = {
+            base = 5
+        }
 
-		cost = 5
-		#Military sector: Top Hat; Railing sector: Pipe; Scientific sector: Beaker; Construction Sector: Hammer; Electronics Sector: Taser
-		#Top Hat becomes a field marshal
-		#Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
-		completion_reward = {
-			unlock_decision_category_tooltip = decision_YFC_sector_category
-			add_field_marshal_role = {
-				character = YFC_tophat
-				traits = { politically_connected armor_officer trait_reckless organisational_leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 4
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = l_YFC_allow_rails
-			add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
-			add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
-			hidden_effect = {
-				add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
+        cost = 5
+        #Military sector: Top Hat; Railing sector: Pipe; Scientific sector: Beaker; Construction Sector: Hammer; Electronics Sector: Taser
+        #Top Hat becomes a field marshal
+        #Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
+        completion_reward = {
+            unlock_decision_category_tooltip = decision_YFC_sector_category
+            add_field_marshal_role = {
+                character = YFC_tophat
+                traits = { politically_connected armor_officer trait_reckless organisational_leader }
+                skill = 2
+                attack_skill = 2
+                defense_skill = 2
+                planning_skill = 4
+                logistics_skill = 2
+            }
+            custom_effect_tooltip = l_YFC_allow_rails
+            add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
+            hidden_effect = {
+                add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
 
- #ARMY PATH
+    #ARMY PATH
 
-	focus = {
-		id = YFC_focus_the_grapes_and_the_cherries
-		x = 5
-		y = 0
-		icon = GFX_focus_YFC_the_grapes_and_the_cherries
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_establish_sectorialism
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_establish_sectorialism }
-		
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_mercs_div
-			add_manpower = 5000
-			division_template = {
-				name = "Cherry Company"
-				is_locked = yes
-				priority = 2
-				template_counter = 3
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 2 y = 0 }
-				}
-			}
+    focus = {
+        id = YFC_focus_the_grapes_and_the_cherries
+        x = 5
+        y = 0
+        icon = GFX_focus_YFC_the_grapes_and_the_cherries
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_establish_sectorialism
+            }
+        }
 
-			hidden_effect = {
-				country_event = {
-					id = YFC_event.52
-					days = 1080
-					random_hours = 48
-				}
-			}
-		}
+        allow_branch = { has_completed_focus = YFC_focus_establish_sectorialism }
 
-		ai_will_do = {
-			base = 1
-			modifier = { 
-				factor = 6
-				has_manpower < 1000
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_mercs_div
+            add_manpower = 5000
+            division_template = {
+                name = "Cherry Company"
+                is_locked = yes
+                priority = 2
+                template_counter = 3
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 2 y = 0 }
+                }
+            }
 
-	focus = {
-		id = YFC_focus_invest_in_speed
-		relative_position_id = YFC_focus_the_grapes_and_the_cherries
-		x = -2
-		y = 1
-		icon = GFX_focus_YFC_invest_in_speed
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.52
+                    days = 1080
+                    random_hours = 48
+                }
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
-		
-		cost = 6
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_mercs_div
-			add_manpower = 5000
-			division_template = {
-				name = "Combined Grape Affiliation"
-				is_locked = yes
-				priority = 2
-				template_counter = 3
-				regiments = {
-					cavalry = { x = 0 y = 0 }
-					cavalry = { x = 0 y = 1 }
-					cavalry = { x = 1 y = 0 }
-					cavalry = { x = 1 y = 1 }
-					cavalry = { x = 2 y = 0 }
-					cavalry = { x = 2 y = 1 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 1
-			modifier = { 
-				factor = 6
-				has_manpower < 1000
-			}
-		}
-	}
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 6
+                has_manpower < 1000
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_invest_in_power
-		relative_position_id = YFC_focus_the_grapes_and_the_cherries
-		x = 2
-		y = 1
-		icon = GFX_focus_YFC_invest_in_power
+    focus = {
+        id = YFC_focus_invest_in_speed
+        relative_position_id = YFC_focus_the_grapes_and_the_cherries
+        x = -2
+        y = 1
+        icon = GFX_focus_YFC_invest_in_speed
 
-		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
-		
-		cost = 6
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_mercs_div
-			add_manpower = 5000
-			division_template = {
-				name = "Unnamed Mercenary Brotherhood"
-				is_locked = yes
-				priority = 2
-				template_counter = 3
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 1
-			modifier = { 
-				factor = 6
-				has_manpower < 1000
-			}
-		}
-	}
+        prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
 
-	focus = {
-		id = YFC_focus_purchase_support_package
-		relative_position_id = YFC_focus_invest_in_speed
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_purchase_support_package
+        cost = 6
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_mercs_div
+            add_manpower = 5000
+            division_template = {
+                name = "Combined Grape Affiliation"
+                is_locked = yes
+                priority = 2
+                template_counter = 3
+                regiments = {
+                    cavalry = { x = 0 y = 0 }
+                    cavalry = { x = 0 y = 1 }
+                    cavalry = { x = 1 y = 0 }
+                    cavalry = { x = 1 y = 1 }
+                    cavalry = { x = 2 y = 0 }
+                    cavalry = { x = 2 y = 1 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 6
+                has_manpower < 1000
+            }
+        }
+    }
 
-		available = {
-			has_tech = tech_support #Required as it is needed for the equipment to spawn in
-			custom_trigger_tooltip = {
+    focus = {
+        id = YFC_focus_invest_in_power
+        relative_position_id = YFC_focus_the_grapes_and_the_cherries
+        x = 2
+        y = 1
+        icon = GFX_focus_YFC_invest_in_power
+
+        prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
+
+        cost = 6
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_mercs_div
+            add_manpower = 5000
+            division_template = {
+                name = "Unnamed Mercenary Brotherhood"
+                is_locked = yes
+                priority = 2
+                template_counter = 3
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 2 y = 0 }
+                    infantry = { x = 2 y = 1 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1
+            modifier = {
+                factor = 6
+                has_manpower < 1000
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_purchase_support_package
+        relative_position_id = YFC_focus_invest_in_speed
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_purchase_support_package
+
+        available = {
+            has_tech = tech_support #Required as it is needed for the equipment to spawn in
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_2_5M
                 check_variable = { money_amount > 25 }
             }
-		}
+        }
 
-		allow_branch = { 
-			has_completed_focus = YFC_focus_establish_sectorialism
-			OR = {
-				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
-				check_variable = {var_YFC_merc_pick = 2}
-			}
-		}
+        allow_branch = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+            OR = {
+                NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
+                check_variable = {var_YFC_merc_pick = 2}
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_invest_in_speed }
-		mutually_exclusive = { focus = YFC_focus_purchase_ordnance_package }
-		
-		cost = 6
-		completion_reward = {
-			subtract_from_variable = { money_amount = 25 }
-			custom_effect_tooltip = l_YFC_mercs_upgrade_cav
-			IF = {
-				limit = {
-					has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-					check_variable = {var_YFC_merc_pick = 2}
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 500
-				}
-			}
-			hidden_effect = {
-				add_units_to_division_template = {
-					template_name = "Combined Grape Affiliation"
-					support = {
-						engineer = 0
-						recon = 0
-						military_police = 0
-					}
-				}
-			}
-		}
-	}
+        prerequisite = { focus = YFC_focus_invest_in_speed }
+        mutually_exclusive = { focus = YFC_focus_purchase_ordnance_package }
 
-	focus = {
-		id = YFC_focus_purchase_ordnance_package
-		relative_position_id = YFC_focus_invest_in_power
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_purchase_ordnance_package
+        cost = 6
+        completion_reward = {
+            subtract_from_variable = { money_amount = 25 }
+            custom_effect_tooltip = l_YFC_mercs_upgrade_cav
+            IF = {
+                limit = {
+                    has_completed_focus = YFC_focus_permanent_mercenary_purchase
+                    check_variable = {var_YFC_merc_pick = 2}
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment_1
+                    amount = 500
+                }
+            }
+            hidden_effect = {
+                add_units_to_division_template = {
+                    template_name = "Combined Grape Affiliation"
+                    support = {
+                        engineer = 0
+                        recon = 0
+                        military_police = 0
+                    }
+                }
+            }
+        }
+    }
 
-		available = {
-			has_tech = gw_artillery #Required as it is needed for the equipment to spawn in
-			custom_trigger_tooltip = {
+    focus = {
+        id = YFC_focus_purchase_ordnance_package
+        relative_position_id = YFC_focus_invest_in_power
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_purchase_ordnance_package
+
+        available = {
+            has_tech = gw_artillery #Required as it is needed for the equipment to spawn in
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_2_5M
                 check_variable = { money_amount > 25 }
             }
-		}
+        }
 
-		allow_branch = { 
-			has_completed_focus = YFC_focus_establish_sectorialism
-			OR = {
-				NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
-				check_variable = {var_YFC_merc_pick = 3}
-			}
-		}
+        allow_branch = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+            OR = {
+                NOT = {has_completed_focus = YFC_focus_permanent_mercenary_purchase}
+                check_variable = {var_YFC_merc_pick = 3}
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_invest_in_power }
-		mutually_exclusive = { focus = YFC_focus_purchase_support_package }
-		
-		cost = 6
-		completion_reward = {
-			subtract_from_variable = { money_amount = 25 }
-			custom_effect_tooltip = l_YFC_mercs_upgrade_inf
-			IF = {
-				limit = {
-					has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-					check_variable = {var_YFC_merc_pick = 3}
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 500
-				}
-			}
-			hidden_effect = {
-				add_units_to_division_template = {
-					template_name = "Unnamed Mercenary Brotherhood"
-					regiments = {
-						artillery_brigade = 3
-					}
-					support = {
-						artillery = 0
-					}
-				}
-			}
-		}
-	}
+        prerequisite = { focus = YFC_focus_invest_in_power }
+        mutually_exclusive = { focus = YFC_focus_purchase_support_package }
 
- #ARMY PATH (RAIDER)
+        cost = 6
+        completion_reward = {
+            subtract_from_variable = { money_amount = 25 }
+            custom_effect_tooltip = l_YFC_mercs_upgrade_inf
+            IF = {
+                limit = {
+                    has_completed_focus = YFC_focus_permanent_mercenary_purchase
+                    check_variable = {var_YFC_merc_pick = 3}
+                }
+                add_equipment_to_stockpile = {
+                    type = artillery_equipment_1
+                    amount = 500
+                }
+            }
+            hidden_effect = {
+                add_units_to_division_template = {
+                    template_name = "Unnamed Mercenary Brotherhood"
+                    regiments = {
+                        artillery_brigade = 3
+                    }
+                    support = {
+                        artillery = 0
+                    }
+                }
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_mobilize_excess_reserves 
-		relative_position_id = YFC_focus_the_grapes_and_the_cherries
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+    #ARMY PATH (RAIDER)
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-				check_variable = {var_YFC_merc_pick = 1}
-			}
-		}
+    focus = {
+        id = YFC_focus_mobilize_excess_reserves
+        relative_position_id = YFC_focus_the_grapes_and_the_cherries
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-		allow_branch = { 
-			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-			check_variable = {var_YFC_merc_pick = 1}
-		}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_permanent_mercenary_purchase
+                check_variable = {var_YFC_merc_pick = 1}
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
-		
-		cost = 6
-		completion_reward = {
-			add_manpower = 15000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				producer = YFC
-				amount = 500
-			}
-			201 = {
-				create_unit = {
-					division = "name = \"Mercenaries\" division_template = \"Cherry Company\" start_experience_factor = 0.7"
-					owner = YFC
-					count = 2
-					id = 1984
-				}
-			}
-		}
-	}
+        allow_branch = {
+            has_completed_focus = YFC_focus_permanent_mercenary_purchase
+            check_variable = {var_YFC_merc_pick = 1}
+        }
 
-	focus = {
-		id = YFC_focus_focus_on_supply
-		relative_position_id = YFC_focus_purchase_support_package
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_the_grapes_and_the_cherries }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-				check_variable = {var_YFC_merc_pick = 2}
-			}
-		}
+        cost = 6
+        completion_reward = {
+            add_manpower = 15000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                producer = YFC
+                amount = 500
+            }
+            201 = {
+                create_unit = {
+                    division = "name = \"Mercenaries\" division_template = \"Cherry Company\" start_experience_factor = 0.7"
+                    owner = YFC
+                    count = 2
+                    id = 1984
+                }
+            }
+        }
+    }
 
-		allow_branch = { 
-			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-			check_variable = {var_YFC_merc_pick = 2}
-		}
+    focus = {
+        id = YFC_focus_focus_on_supply
+        relative_position_id = YFC_focus_purchase_support_package
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_purchase_support_package }
-		
-		cost = 5
-		completion_reward = {
-			every_army_leader = {
-				IF = {
-					limit = {
-						is_field_marshal = yes
-					}
-					add_trait = {
-						character = FROM
-						trait = logistics_wizard
-					}
-				}
-				ELSE = {
-					add_trait = {
-						character = FROM
-						trait = commando
-					}
-				}
-				add_trait = {
-					character = FROM
-					trait = scavenger
-				}
-				add_logistics = 2
-			}
-		}
-	}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_permanent_mercenary_purchase
+                check_variable = {var_YFC_merc_pick = 2}
+            }
+        }
 
-	focus = {
-		id = YFC_focus_focus_on_combat
-		relative_position_id = YFC_focus_purchase_ordnance_package
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+        allow_branch = {
+            has_completed_focus = YFC_focus_permanent_mercenary_purchase
+            check_variable = {var_YFC_merc_pick = 2}
+        }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-				check_variable = {var_YFC_merc_pick = 3}
-			}
-		}
+        prerequisite = { focus = YFC_focus_purchase_support_package }
 
-		allow_branch = { 
-			has_completed_focus = YFC_focus_permanent_mercenary_purchase 
-			check_variable = {var_YFC_merc_pick = 3}
-		}
+        cost = 5
+        completion_reward = {
+            every_army_leader = {
+                IF = {
+                    limit = {
+                        is_field_marshal = yes
+                    }
+                    add_trait = {
+                        character = FROM
+                        trait = logistics_wizard
+                    }
+                }
+                ELSE = {
+                    add_trait = {
+                        character = FROM
+                        trait = commando
+                    }
+                }
+                add_trait = {
+                    character = FROM
+                    trait = scavenger
+                }
+                add_logistics = 2
+            }
+        }
+    }
 
-		prerequisite = { focus = YFC_focus_purchase_ordnance_package }
-		
-		cost = 5
-		completion_reward = {
-			army_experience = 100
-			add_command_power = 100
-			every_army_leader = {
-				add_trait = {
-					character = FROM
-					trait = infantry_leader
-				}
-				add_trait = {
-					character = FROM
-					trait = organizer
-				}
-				add_planning = 2
-				add_attack = 1
-			}
-		}
-	}
+    focus = {
+        id = YFC_focus_focus_on_combat
+        relative_position_id = YFC_focus_purchase_ordnance_package
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
- #MAIN PATH
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_permanent_mercenary_purchase
+                check_variable = {var_YFC_merc_pick = 3}
+            }
+        }
 
-	focus = {
-		id = YFC_focus_the_southern_bandits
-		relative_position_id = YFC_focus_consolidate_power
-		x = -5
-		y = 0
-		icon = GFX_focus_YFC_southern_bandits
-		
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_establish_sectorialism
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_establish_sectorialism }
+        allow_branch = {
+            has_completed_focus = YFC_focus_permanent_mercenary_purchase
+            check_variable = {var_YFC_merc_pick = 3}
+        }
 
-		cost = 6
-		completion_reward = {
-			country_event = YFC_event.2
-			hidden_effect = {
-				country_event = {
-					id = YFC_event.3
-					days = 10
-					random_days = 5
-					random_hours = 12
-				}
-			}
-		}
+        prerequisite = { focus = YFC_focus_purchase_ordnance_package }
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+        cost = 5
+        completion_reward = {
+            army_experience = 100
+            add_command_power = 100
+            every_army_leader = {
+                add_trait = {
+                    character = FROM
+                    trait = infantry_leader
+                }
+                add_trait = {
+                    character = FROM
+                    trait = organizer
+                }
+                add_planning = 2
+                add_attack = 1
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_sell_them_guns
-		relative_position_id = YFC_focus_the_southern_bandits
-		x = -2
-		y = 1
-		icon = GFX_focus_YFC_sell_them_guns
+    #MAIN PATH
 
-		prerequisite = { focus = YFC_focus_the_southern_bandits }
-		available = {
-			has_war = no
-		}
-		bypass = {
-			has_completed_focus = YFC_focus_money_arms_capital
-		}
+    focus = {
+        id = YFC_focus_the_southern_bandits
+        relative_position_id = YFC_focus_consolidate_power
+        x = -5
+        y = 0
+        icon = GFX_focus_YFC_southern_bandits
 
-		cost = 5
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_establish_sectorialism
+            }
+        }
 
-		completion_reward = {
-			unlock_decision_tooltip = YFC_Trade_BUN_Guns
-		}
+        allow_branch = { has_completed_focus = YFC_focus_establish_sectorialism }
 
-		ai_will_do = {
-			base = 15
-		}
-	}
+        cost = 6
+        completion_reward = {
+            country_event = YFC_event.2
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.3
+                    days = 10
+                    random_days = 5
+                    random_hours = 12
+                }
+            }
+        }
 
-	focus = {
-		id = YFC_focus_YFC_funded_pillaging
-		relative_position_id = YFC_focus_sell_them_guns
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_funded_pilliaging
+        ai_will_do = {
+            base = 10
+        }
+    }
 
-		prerequisite = { focus = YFC_focus_sell_them_guns }
-		mutually_exclusive = { focus = YFC_focus_demand_end_pillage }
-		
-		cost = 3
-		completion_reward = {
-			add_opinion_modifier = { target = BUN modifier = large_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = BUN
-				add_opinion_modifier = { target = YFC modifier = large_increase }
-			}
-			hidden_effect = {
-				IF = { #Move later
-					limit = {GGR = {is_ai = yes}}
-					GGR = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 1500
-						}
-						add_political_power = 50	
-					}
-				}
-				ELSE = {
-					GGR = {
-						add_equipment_to_stockpile = {
-							type = infantry_equipment
-							amount = 250
-						}
-					}
-				}
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
+    focus = {
+        id = YFC_focus_sell_them_guns
+        relative_position_id = YFC_focus_the_southern_bandits
+        x = -2
+        y = 1
+        icon = GFX_focus_YFC_sell_them_guns
 
-		ai_will_do = {
-			base = 3
-			modifier = {
-				factor = 100
-				has_country_flag = raiders_path
-			}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
-				add = 1000
-		 	}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
-				add = -1000
-		 	}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
-				add = -1000
-		 	}
-		}
-	}
+        prerequisite = { focus = YFC_focus_the_southern_bandits }
+        available = {
+            has_war = no
+        }
+        bypass = {
+            has_completed_focus = YFC_focus_money_arms_capital
+        }
 
-	focus = {
-		id = YFC_focus_open_foreign_policy
-		relative_position_id = YFC_focus_the_southern_bandits
-		x = 2
-		y = 1
-		icon = GFX_focus_YFC_open_foreign_policy
-		prerequisite = { focus = YFC_focus_the_southern_bandits }
-		cost = 5
-		completion_reward = {
-			every_country = {
-				limit = { has_government = communism }
-				add_opinion_modifier = { target = YFC modifier = large_decrease }
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = CRN
-				add_opinion_modifier = { target = YFC modifier = large_increase }
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = GTR
-				add_opinion_modifier = { target = YFC modifier = large_increase }
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = GMD
-				add_opinion_modifier = { target = YFC modifier = large_increase }
-			}
-		}
+        cost = 5
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+        completion_reward = {
+            unlock_decision_tooltip = YFC_Trade_BUN_Guns
+        }
 
-	focus = {
-		id = YFC_focus_demand_end_pillage
-		relative_position_id = YFC_focus_the_southern_bandits
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_demand_end_pillaging
+        ai_will_do = {
+            base = 15
+        }
+    }
 
-		prerequisite = { focus = YFC_focus_the_southern_bandits }
-		prerequisite = { focus = YFC_focus_open_foreign_policy }
-		mutually_exclusive = { focus = YFC_focus_YFC_funded_pillaging }
-		cost = 3
-		completion_reward = {
-			add_opinion_modifier = { target = BUN modifier = large_decrease }
-			every_country_with_original_tag = {
-				original_tag_to_check = BUN
-				add_opinion_modifier = { target = YFC modifier = large_decrease }
-			}
-			add_political_power = 25
-			hidden_effect = {
-				country_event = {
-					id = YFC_event.8
-					days = 1
-					random_hours = 24
-				}
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
+    focus = {
+        id = YFC_focus_YFC_funded_pillaging
+        relative_position_id = YFC_focus_sell_them_guns
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_funded_pilliaging
 
-		ai_will_do = {
-			base = 3
-			modifier = {
-				factor = 100
-				has_country_flag = money_path
-			}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
-				add = 1000
-		 	}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
-				add = 1000
-		 	}
-			modifier = {
-				has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
-				add = -1000
-		 	}
-		}
-	}
+        prerequisite = { focus = YFC_focus_sell_them_guns }
+        mutually_exclusive = { focus = YFC_focus_demand_end_pillage }
 
-	focus = {
-		id = YFC_focus_hire_militias
-		relative_position_id = YFC_focus_demand_end_pillage
-		x = 3
-		y = 1
-		icon = GFX_focus_YFC_hire_militias
+        cost = 3
+        completion_reward = {
+            add_opinion_modifier = { target = BUN modifier = large_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+            hidden_effect = {
+                IF = { #Move later
+                    limit = {GGR = {is_ai = yes}}
+                    GGR = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment
+                            amount = 1500
+                        }
+                        add_political_power = 50
+                    }
+                }
+                ELSE = {
+                    GGR = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment
+                            amount = 250
+                        }
+                    }
+                }
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_demand_end_pillage
-			}
-			custom_trigger_tooltip = {
+        ai_will_do = {
+            base = 3
+            modifier = {
+                factor = 100
+                has_country_flag = raiders_path
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+                add = 1000
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+                add = -1000
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+                add = -1000
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_open_foreign_policy
+        relative_position_id = YFC_focus_the_southern_bandits
+        x = 2
+        y = 1
+        icon = GFX_focus_YFC_open_foreign_policy
+        prerequisite = { focus = YFC_focus_the_southern_bandits }
+        cost = 5
+        completion_reward = {
+            every_country = {
+                limit = { has_government = communism }
+                add_opinion_modifier = { target = YFC modifier = large_decrease }
+            }
+            every_country_with_original_tag = {
+                original_tag_to_check = CRN
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+            every_country_with_original_tag = {
+                original_tag_to_check = GTR
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+            every_country_with_original_tag = {
+                original_tag_to_check = GMD
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+    focus = {
+        id = YFC_focus_demand_end_pillage
+        relative_position_id = YFC_focus_the_southern_bandits
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_demand_end_pillaging
+
+        prerequisite = { focus = YFC_focus_the_southern_bandits }
+        prerequisite = { focus = YFC_focus_open_foreign_policy }
+        mutually_exclusive = { focus = YFC_focus_YFC_funded_pillaging }
+        cost = 3
+        completion_reward = {
+            add_opinion_modifier = { target = BUN modifier = large_decrease }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = large_decrease }
+            }
+            add_political_power = 25
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.8
+                    days = 1
+                    random_hours = 24
+                }
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+
+        ai_will_do = {
+            base = 3
+            modifier = {
+                factor = 100
+                has_country_flag = money_path
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = THREE_MUSKETEERS_YFC }
+                add = 1000
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = DESTROY_BUNCH_YFC }
+                add = 1000
+            }
+            modifier = {
+                has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC }
+                add = -1000
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_hire_militias
+        relative_position_id = YFC_focus_demand_end_pillage
+        x = 3
+        y = 1
+        icon = GFX_focus_YFC_hire_militias
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_demand_end_pillage
+            }
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-		}
-		bypass = {
-			has_completed_focus = YFC_focus_a_look_inward
-		}
+        }
+        bypass = {
+            has_completed_focus = YFC_focus_a_look_inward
+        }
 
-		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
-		prerequisite = { focus = YFC_focus_demand_end_pillage }
-		cost = 6
+        allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
+        prerequisite = { focus = YFC_focus_demand_end_pillage }
+        cost = 6
 
-		completion_reward = {
-			subtract_from_variable = { money_amount = 3 }
-			division_template = {
-				name = "Militia"
-				is_locked = yes
-				division_cap = 6 
-				priority = 0
-				template_counter = 0
-				regiments = {
-					militia = { x = 0 y = 0 }
-					militia = { x = 0 y = 1 }
-					militia = { x = 1 y = 0 }
-					militia = { x = 1 y = 1 }
-				}
-			}
-			201 = {
-				create_unit = {
-					division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
-					count = 6
-					owner = YFC
-				}
-			}
-			add_manpower = 5000
-		}
+        completion_reward = {
+            subtract_from_variable = { money_amount = 3 }
+            division_template = {
+                name = "Militia"
+                is_locked = yes
+                division_cap = 6
+                priority = 0
+                template_counter = 0
+                regiments = {
+                    militia = { x = 0 y = 0 }
+                    militia = { x = 0 y = 1 }
+                    militia = { x = 1 y = 0 }
+                    militia = { x = 1 y = 1 }
+                }
+            }
+            201 = {
+                create_unit = {
+                    division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
+                    count = 6
+                    owner = YFC
+                }
+            }
+            add_manpower = 5000
+        }
 
-		ai_will_do = {
-			base = 15
-		}
-	}
+        ai_will_do = {
+            base = 15
+        }
+    }
 
-	focus = {
-		id = YFC_focus_CRN_cooperation
-		relative_position_id = YFC_focus_demand_end_pillage
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_CRN_cooperation
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_demand_end_pillage
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
+    focus = {
+        id = YFC_focus_CRN_cooperation
+        relative_position_id = YFC_focus_demand_end_pillage
+        x = -1
+        y = 1
+        icon = GFX_focus_YFC_CRN_cooperation
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_demand_end_pillage
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_demand_end_pillage }
-		
-		cost = 4
-		completion_reward = {
-			add_opinion_modifier = { target = CRN modifier = large_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = CRN
-				add_opinion_modifier = { target = YFC modifier = offered_support }
-			}	
-		}
+        allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+        prerequisite = { focus = YFC_focus_demand_end_pillage }
 
-	focus = {
-		id = YFC_focus_coiny_cooperation
-		relative_position_id = YFC_focus_demand_end_pillage
-		x = 1
-		y = 1
-		icon = GFX_focus_YFC_coiny_cooperation
+        cost = 4
+        completion_reward = {
+            add_opinion_modifier = { target = CRN modifier = large_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = CRN
+                add_opinion_modifier = { target = YFC modifier = offered_support }
+            }
+        }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_demand_end_pillage
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
-		prerequisite = { focus = YFC_focus_demand_end_pillage }
-		cost = 4
-		completion_reward = {
-			add_command_power = 30
-		}
+        ai_will_do = {
+            base = 10
+        }
+    }
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+    focus = {
+        id = YFC_focus_coiny_cooperation
+        relative_position_id = YFC_focus_demand_end_pillage
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_coiny_cooperation
 
-	focus = {
-		id = YFC_focus_outsource_gun_production
-		relative_position_id = YFC_focus_coiny_cooperation
-		x = 1
-		y = 1
-		icon = GFX_focus_YFC_outsource_gun_prod
-			
-		prerequisite = { focus = YFC_focus_coiny_cooperation }
-		#no.
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_demand_end_pillage
+            }
+        }
 
-		cost = 5
-		completion_reward = {
-			unlock_decision_tooltip = YFC_Trade_GMD_Guns
-		}
-		ai_will_do = {
-			base = 8
-		}
-	}
+        allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
+        prerequisite = { focus = YFC_focus_demand_end_pillage }
+        cost = 4
+        completion_reward = {
+            add_command_power = 30
+        }
 
-	focus = {
-		id = YFC_focus_buy_defense_trainings
-		relative_position_id = YFC_focus_demand_end_pillage
-		x = 0
-		y = 3
-		icon = GFX_focus_YFC_buy_defense_trainings
-		prerequisite = { focus = YFC_focus_CRN_cooperation }
-		prerequisite = { focus = YFC_focus_coiny_cooperation }
+        ai_will_do = {
+            base = 10
+        }
+    }
 
-		available = {
-			custom_trigger_tooltip = {
+    focus = {
+        id = YFC_focus_outsource_gun_production
+        relative_position_id = YFC_focus_coiny_cooperation
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_outsource_gun_prod
+
+        prerequisite = { focus = YFC_focus_coiny_cooperation }
+        #no.
+
+        cost = 5
+        completion_reward = {
+            unlock_decision_tooltip = YFC_Trade_GMD_Guns
+        }
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_buy_defense_trainings
+        relative_position_id = YFC_focus_demand_end_pillage
+        x = 0
+        y = 3
+        icon = GFX_focus_YFC_buy_defense_trainings
+        prerequisite = { focus = YFC_focus_CRN_cooperation }
+        prerequisite = { focus = YFC_focus_coiny_cooperation }
+
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_100K
                 check_variable = { money_amount > 1 }
             }
-		}
+        }
 
-		cost = 5
-		completion_reward = {
-			subtract_from_variable = { money_amount = 1 }
-			custom_effect_tooltip = l_YFC_foreign_advisor
-			army_experience = 10
-			add_ideas = idea_YFC_United_Clash
-		}
+        cost = 5
+        completion_reward = {
+            subtract_from_variable = { money_amount = 1 }
+            custom_effect_tooltip = l_YFC_foreign_advisor
+            army_experience = 10
+            add_ideas = idea_YFC_United_Clash
+        }
 
-		ai_will_do = {
-			base = 11
-		}
-	}
+        ai_will_do = {
+            base = 11
+        }
+    }
 
-	focus = {
-		id = YFC_focus_money_arms_capital
-		relative_position_id = YFC_focus_buy_defense_trainings
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_money_arms_capital
-		prerequisite = { focus = YFC_focus_buy_defense_trainings }
-		cost = 5
-		#when both YFC and bunch are ai, YFC should do this path 70% of the time, and numis should always be called in
-		#yfc ai will rush down getting to this focus, ignoring all of the other ones if it chooses to do this path
-		completion_reward = {
-			declare_war_on = {
-				target = BUN
-				type = topple_government
-			}
+    focus = {
+        id = YFC_focus_money_arms_capital
+        relative_position_id = YFC_focus_buy_defense_trainings
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_money_arms_capital
+        prerequisite = { focus = YFC_focus_buy_defense_trainings }
+        cost = 5
+        #when both YFC and bunch are ai, YFC should do this path 70% of the time, and numis should always be called in
+        #yfc ai will rush down getting to this focus, ignoring all of the other ones if it chooses to do this path
+        completion_reward = {
+            declare_war_on = {
+                target = BUN
+                type = topple_government
+            }
 
-			hidden_effect = {
-				BUN = {
-					add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
-				}
-				CRN = {
-					country_event = {
-						id = YFC_event.6
-						days = 14
-						random_hours = 100
-					}
-				}	
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.26
-						days = 1
-						random_hours = 36
-					}
-				}
-				add_threat = 2
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
+            hidden_effect = {
+                BUN = {
+                    add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
+                }
+                CRN = {
+                    country_event = {
+                        id = YFC_event.6
+                        days = 14
+                        random_hours = 100
+                    }
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.26
+                        days = 1
+                        random_hours = 36
+                    }
+                }
+                add_threat = 2
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
 
-		ai_will_do = {
-			base = 11
-		}
-	}
+        ai_will_do = {
+            base = 11
+        }
+    }
 
-	#RIP old Raiding stuff here 2025-2025
+    #RIP old Raiding stuff here 2025-2025
 
- #SECOND PART NORMAL SIDE
+    #SECOND PART NORMAL SIDE
 
-	focus = {
-		id = YFC_focus_a_look_inward
-		relative_position_id = YFC_focus_consolidate_power
-		x = 7
-		y = 0
-		icon = GFX_focus_YFC_look_inward
-		available = {
-			hidden_trigger = {
-				has_country_flag = Won_War_BUN
-			}
-		}
-		
-		allow_branch = { has_country_flag = Won_War_BUN }
-		
-		cost = 2
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
+    focus = {
+        id = YFC_focus_a_look_inward
+        relative_position_id = YFC_focus_consolidate_power
+        x = 7
+        y = 0
+        icon = GFX_focus_YFC_look_inward
+        available = {
+            hidden_trigger = {
+                has_country_flag = Won_War_BUN
+            }
+        }
 
-	focus = { #My new small path :)
-		id = YFC_focus_new_interests
-		relative_position_id = YFC_focus_a_look_inward
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_a_look_inward }
-		available = {
-			custom_trigger_tooltip = {
+        allow_branch = { has_country_flag = Won_War_BUN }
+
+        cost = 2
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    focus = { #My new small path :)
+        id = YFC_focus_new_interests
+        relative_position_id = YFC_focus_a_look_inward
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_a_look_inward }
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_500K
                 check_variable = { money_amount > 5 }
             }
-			country_exists = SRI
-			hidden_trigger = {
-				NOT = {country_exists = GGR} 	
-				SRI = {has_war = no}
-			}
-		}
-		allow_branch = {
-			has_completed_focus = YFC_focus_a_look_inward
-			NOT = {country_exists = GGR} 
-			country_exists = SRI
-			SRI = {has_war = no}
-		}
-		cost = 5
+            country_exists = SRI
+            hidden_trigger = {
+                NOT = {country_exists = GGR}
+                SRI = {has_war = no}
+            }
+        }
+        allow_branch = {
+            has_completed_focus = YFC_focus_a_look_inward
+            NOT = {country_exists = GGR}
+            country_exists = SRI
+            SRI = {has_war = no}
+        }
+        cost = 5
 
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_SRI_demand_1
-			hidden_effect = {
-				SRI = {
-					country_event = {
-						id = YFC_event.38
-						days = 1
-						random_hours = 12
-					}
-				}
-			}
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_SRI_demand_1
+            hidden_effect = {
+                SRI = {
+                    country_event = {
+                        id = YFC_event.38
+                        days = 1
+                        random_hours = 12
+                    }
+                }
+            }
 
-			mark_focus_tree_layout_dirty = yes #Since we may have the Three Musketeers already
-		}
-	}
+            mark_focus_tree_layout_dirty = yes #Since we may have the Three Musketeers already
+        }
+    }
 
-	focus = {
-		id = YFC_focus_integrate_great_ridge
-		relative_position_id = YFC_focus_new_interests
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_new_interests }
-		available = {
-			hidden_trigger = {
-				NOT = {country_exists = GGR} 
-				country_exists = SRI
-				SRI = {has_war = no}
-				has_country_flag = Allow_Musketeers
-			}
-			is_ally_with = CRN
-		}
-		allow_branch = {
-			NOT = {country_exists = GGR} 
-			country_exists = SRI
-			SRI = {has_war = no}
-			is_ally_with = CRN
-			has_country_flag = Allow_Musketeers
-		}
-		cost = 5
+    focus = {
+        id = YFC_focus_integrate_great_ridge
+        relative_position_id = YFC_focus_new_interests
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_new_interests }
+        available = {
+            hidden_trigger = {
+                NOT = {country_exists = GGR}
+                country_exists = SRI
+                SRI = {has_war = no}
+                has_country_flag = Allow_Musketeers
+            }
+            is_ally_with = CRN
+        }
+        allow_branch = {
+            NOT = {country_exists = GGR}
+            country_exists = SRI
+            SRI = {has_war = no}
+            is_ally_with = CRN
+            has_country_flag = Allow_Musketeers
+        }
+        cost = 5
 
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_SRI_demand_2
-			hidden_effect = {
-				SRI = {
-					country_event = {
-						id = YFC_event.41
-						days = 1
-						random_hours = 12
-					}
-				}
-			}
-		}
-	}
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_SRI_demand_2
+            hidden_effect = {
+                SRI = {
+                    country_event = {
+                        id = YFC_event.41
+                        days = 1
+                        random_hours = 12
+                    }
+                }
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_the_bunchivist_problem
-		relative_position_id = YFC_focus_a_look_inward
-		x = -3
-		y = 1
-		icon = GFX_focus_YFC_bunchivist_problem
-		prerequisite = { focus = YFC_focus_a_look_inward }
-		cost = 8
+    focus = {
+        id = YFC_focus_the_bunchivist_problem
+        relative_position_id = YFC_focus_a_look_inward
+        x = -3
+        y = 1
+        icon = GFX_focus_YFC_bunchivist_problem
+        prerequisite = { focus = YFC_focus_a_look_inward }
+        cost = 8
 
-		#if you choose to tell the crn that you'll be annexing the occupation zone, they have a 50% chance of saying okay
-		#and a 50% chance of saying "no", and they'll begin to work with bunchivist rioters to keep you from doing so
-		#in exchange, bunchivists will help the crn with their internal communist problems
-		#you get a decisions mechanic like the snowy reich one
+        #if you choose to tell the crn that you'll be annexing the occupation zone, they have a 50% chance of saying okay
+        #and a 50% chance of saying "no", and they'll begin to work with bunchivist rioters to keep you from doing so
+        #in exchange, bunchivists will help the crn with their internal communist problems
+        #you get a decisions mechanic like the snowy reich one
 
-		#if you choose the new society option, you'll the process of attempting to force the   bunch to become capitalistic
-		#complete with an election mechanic!!
-		#there are three candidates, yfc favors blocky, numismatia favors pen, bunch wants eraser to stay
-		#an event chain spanning half a year and 14 events gives you the ability to react to certain happenings
-		#your reaction increases or decreases the likelyhood for your candidate getting chosen
-		#numis also get events like this
-		#at the end, if blocky wins, the bunch becomes a puppet of the yfc, and vice versa for numis.
-		#if eraser wins, the bunch becomes a reformed republic, and is fully independent
+        #if you choose the new society option, you'll the process of attempting to force the   bunch to become capitalistic
+        #complete with an election mechanic!!
+        #there are three candidates, yfc favors blocky, numismatia favors pen, bunch wants eraser to stay
+        #an event chain spanning half a year and 14 events gives you the ability to react to certain happenings
+        #your reaction increases or decreases the likelyhood for your candidate getting chosen
+        #numis also get events like this
+        #at the end, if blocky wins, the bunch becomes a puppet of the yfc, and vice versa for numis.
+        #if eraser wins, the bunch becomes a reformed republic, and is fully independent
 
-		completion_reward = {
-			85 = {add_compliance = 10} 
-			212 = {add_compliance = 10}
-			if = {
-				limit = {
-					YFC = {
-						controls_state = 217
-						controls_state = 218
-					}
-				}
-				217 = {add_compliance = 20}
-				218 = {add_compliance = 20}		
-			}
-			country_event = {
-				id = YFC_BUN.1
-				hours = 1
-				random_hours = 2
-			}
-			hidden_effect = {
-				CRN = {
-					set_political_power = 100
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = -5000
-					}
-				}
-			}
-		}
+        completion_reward = {
+            85 = {add_compliance = 10}
+            212 = {add_compliance = 10}
+            if = {
+                limit = {
+                    YFC = {
+                        controls_state = 217
+                        controls_state = 218
+                    }
+                }
+                217 = {add_compliance = 20}
+                218 = {add_compliance = 20}
+            }
+            country_event = {
+                id = YFC_BUN.1
+                hours = 1
+                random_hours = 2
+            }
+            hidden_effect = {
+                CRN = {
+                    set_political_power = 100
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = -5000
+                    }
+                }
+            }
+        }
 
-		ai_will_do = {
-			base = 10
-			modifier = { #Do not go deal with Bunch issues if you are about to go into debt
-				factor = -8
-				check_variable = { money_amount < 0.5 }
-			}
-			modifier = { #Okay maybe now go deal with Bunch
-				factor = 10
-				has_completed_focus = YFC_focus_military_industrial_complex
-			}			
-		}
-	}
+        ai_will_do = {
+            base = 10
+            modifier = { #Do not go deal with Bunch issues if you are about to go into debt
+                factor = -8
+                check_variable = { money_amount < 0.5 }
+            }
+            modifier = { #Okay maybe now go deal with Bunch
+                factor = 10
+                has_completed_focus = YFC_focus_military_industrial_complex
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_the_economic_issue
-		relative_position_id = YFC_focus_a_look_inward
-		x = 3
-		y = 1
-		icon = GFX_focus_YFC_economic_issue
-		prerequisite = { focus = YFC_focus_a_look_inward }
-		cost = 5
+    focus = {
+        id = YFC_focus_the_economic_issue
+        relative_position_id = YFC_focus_a_look_inward
+        x = 3
+        y = 1
+        icon = GFX_focus_YFC_economic_issue
+        prerequisite = { focus = YFC_focus_a_look_inward }
+        cost = 5
 
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_repair
-			add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.25 }
-			custom_effect_tooltip = l_money_gain_100K
-			add_to_variable = { money_amount = 1 }
-			mark_focus_tree_layout_dirty = yes
-		}
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_repair
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.25 }
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            mark_focus_tree_layout_dirty = yes
+        }
 
-		ai_will_do = {
-			base = 5
-			modifier = { #Go if we are running out of money
-				factor = 5
-				check_variable = { money_amount < 8 }
-			}
-		}
-	}
+        ai_will_do = {
+            base = 5
+            modifier = { #Go if we are running out of money
+                factor = 5
+                check_variable = { money_amount < 8 }
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_industrialize_or_die
-		relative_position_id = YFC_focus_the_economic_issue
-		x = 1
-		y = 1
-		icon = GFX_focus_YFC_industrialize_or_die
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_the_economic_issue
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
+    focus = {
+        id = YFC_focus_industrialize_or_die
+        relative_position_id = YFC_focus_the_economic_issue
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_industrialize_or_die
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_economic_issue
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_the_economic_issue }
-		cost = 5
+        allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
 
-		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = l_money_gain_100K
-			add_to_variable = { money_amount = 1 }
-			hidden_effect = {
-				set_variable = { var_YFC_upgrade_level = 0 }
-			}
-		}
+        prerequisite = { focus = YFC_focus_the_economic_issue }
+        cost = 5
 
-		ai_will_do = {
-			base = 5
-			modifier = { #Go if we are running out of money
-				factor = 5
-				check_variable = { money_amount < 8 }
-			}
-		}
-	}
-	
-	focus = {
-		id = YFC_focus_erasers_stockpiles
-		relative_position_id = YFC_focus_the_economic_issue
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_erasers_stockpiles
-		available = {
-			has_completed_focus = YFC_focus_the_bunchivist_problem
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
+        completion_reward = {
+            add_political_power = 25
+            custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
+            hidden_effect = {
+                set_variable = { var_YFC_upgrade_level = 0 }
+            }
+        }
 
-		prerequisite = { focus = YFC_focus_the_economic_issue }
-		cost = 5
-		#gives an increase to your treasury, and an event about stealing from eraser
-		#will make it easier for the bunchivists to chose eraser instead of blocky
-		completion_reward = {
-			IF = {
-				limit = {
-					has_completed_focus = YFC_focus_clamp_down_on_bunchivism
-					NOT = {has_completed_focus =  YFC_focus_fully_cored}
-				}
-				country_event = {
-					id = YFC_event.14
-					hours = 1
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					has_completed_focus = YFC_focus_foster_new_society
-					NOT = {has_completed_focus =  YFC_focus_bunch_fostered}
-				}
-				country_event = {
-					id = YFC_event.11
-					hours = 1
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = l_money_gain_800K
-				add_to_variable = { money_amount = 8 }
-				add_political_power = -100
-			}
-		}
+        ai_will_do = {
+            base = 5
+            modifier = { #Go if we are running out of money
+                factor = 5
+                check_variable = { money_amount < 8 }
+            }
+        }
+    }
 
-		ai_will_do = {
-			base = 5
-			modifier = { #Go if we are running out of money
-				factor = 5
-				check_variable = { money_amount < 8 }
-			}
-		}
-	}
+    focus = {
+        id = YFC_focus_erasers_stockpiles
+        relative_position_id = YFC_focus_the_economic_issue
+        x = -1
+        y = 1
+        icon = GFX_focus_YFC_erasers_stockpiles
+        available = {
+            has_completed_focus = YFC_focus_the_bunchivist_problem
+        }
 
-	focus = {
-		id = YFC_focus_develop_peoniele
-		relative_position_id = YFC_focus_industrialize_or_die
-		x = -2
-		y = 1
-		icon = GFX_focus_YFC_develop_peoniele
-		prerequisite = { focus = YFC_focus_industrialize_or_die }
-		mutually_exclusive = { focus = YFC_focus_develop_yoyleton }
-		cost = 6
-		completion_reward = {
-			196 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_victory_points = {
-					province = 3655
-					value = 5
-				}
-			}
-			add_stability = 0.01
-		}
+        allow_branch = { has_completed_focus = YFC_focus_the_economic_issue }
 
-		ai_will_do = {
-			base = 5
-		}
-	}
-	
-	focus = {
-		id = YFC_focus_develop_yoyleton
-		relative_position_id = YFC_focus_industrialize_or_die
-		x = 2
-		y = 1
-		icon = GFX_focus_YFC_develop_yoyleton
-		prerequisite = { focus = YFC_focus_industrialize_or_die }
-		mutually_exclusive = { focus = YFC_focus_develop_peoniele }
-		cost = 6
-		completion_reward = {
-			216 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_victory_points = {
-					province = 4388
-					value = 5
-				}
-			}
-			add_stability = 0.01
-		}
+        prerequisite = { focus = YFC_focus_the_economic_issue }
+        cost = 5
+        #gives an increase to your treasury, and an event about stealing from eraser
+        #will make it easier for the bunchivists to chose eraser instead of blocky
+        completion_reward = {
+            IF = {
+                limit = {
+                    has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+                    NOT = {has_completed_focus =  YFC_focus_fully_cored}
+                }
+                country_event = {
+                    id = YFC_event.14
+                    hours = 1
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    has_completed_focus = YFC_focus_foster_new_society
+                    NOT = {has_completed_focus =  YFC_focus_bunch_fostered}
+                }
+                country_event = {
+                    id = YFC_event.11
+                    hours = 1
+                }
+            }
+            ELSE = {
+                custom_effect_tooltip = l_money_gain_800K
+                add_to_variable = { money_amount = 8 }
+                add_political_power = -100
+            }
+        }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
-	
-	focus = {
-		id = YFC_focus_military_industrial_complex
-		relative_position_id = YFC_focus_industrialize_or_die
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_military_industrial_complex
-		prerequisite = { focus = YFC_focus_develop_peoniele focus = YFC_focus_develop_yoyleton }
-		cost = 5
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-			}
-			add_manpower = 10000
-			add_war_support = 0.01
-		}
+        ai_will_do = {
+            base = 5
+            modifier = { #Go if we are running out of money
+                factor = 5
+                check_variable = { money_amount < 8 }
+            }
+        }
+    }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+    focus = {
+        id = YFC_focus_develop_peoniele
+        relative_position_id = YFC_focus_industrialize_or_die
+        x = -2
+        y = 1
+        icon = GFX_focus_YFC_develop_peoniele
+        prerequisite = { focus = YFC_focus_industrialize_or_die }
+        mutually_exclusive = { focus = YFC_focus_develop_yoyleton }
+        cost = 6
+        completion_reward = {
+            196 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                add_victory_points = {
+                    province = 3655
+                    value = 5
+                }
+            }
+            add_stability = 0.01
+        }
 
-	focus = {
-		id = YFC_focus_expand_northern_trade
-		relative_position_id = YFC_focus_develop_yoyleton
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_expand_northern_trade
-		prerequisite = { focus = YFC_focus_develop_yoyleton }
-		cost = 5
-		#makes trade with coiny and teardrop beach territory more profitable
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_Trade_Bonus
-			IF = {
-				limit = {country_exists = GMD}
-				add_opinion_modifier = { target = GMD modifier = medium_increase }
-				every_country_with_original_tag = {
-					original_tag_to_check = GMD
-					add_opinion_modifier = { target = YFC modifier = medium_increase }
-				}	
-			}
-			add_opinion_modifier = { target = TBT modifier = medium_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = TBT
-				add_opinion_modifier = { target = YFC modifier = medium_increase }
-			}	
-			add_opinion_modifier = { target = DAV modifier = medium_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = DAV
-				add_opinion_modifier = { target = DAV modifier = medium_increase }
-			}	
-		}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+    focus = {
+        id = YFC_focus_develop_yoyleton
+        relative_position_id = YFC_focus_industrialize_or_die
+        x = 2
+        y = 1
+        icon = GFX_focus_YFC_develop_yoyleton
+        prerequisite = { focus = YFC_focus_industrialize_or_die }
+        mutually_exclusive = { focus = YFC_focus_develop_peoniele }
+        cost = 6
+        completion_reward = {
+            216 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                add_victory_points = {
+                    province = 4388
+                    value = 5
+                }
+            }
+            add_stability = 0.01
+        }
 
-	focus = {
-		id = YFC_focus_scope_out_sea_trade
-		relative_position_id = YFC_focus_develop_peoniele
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_scope_out_sea_trade
-		prerequisite = { focus = YFC_focus_develop_peoniele }
-		cost = 5
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_Sea_Bonus
-			country_event = {
-				id = YFC_event.15 
-				hours = 3
-			}
-		}
+    focus = {
+        id = YFC_focus_military_industrial_complex
+        relative_position_id = YFC_focus_industrialize_or_die
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_military_industrial_complex
+        prerequisite = { focus = YFC_focus_develop_peoniele focus = YFC_focus_develop_yoyleton }
+        cost = 5
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+            }
+            add_manpower = 10000
+            add_war_support = 0.01
+        }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_spread_out_sectors
-		relative_position_id = YFC_focus_military_industrial_complex
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_spread_out_sectors
-		prerequisite = { focus = YFC_focus_military_industrial_complex }
-		cost = 5
-		#Move the event about science goes to yoyleton, railroad goes to peoniele, rest stay to the description of the focus
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_sectors_All_Lower
-			add_political_power = 35
-			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
-			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
-			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
-			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
-			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
-		}
+    focus = {
+        id = YFC_focus_expand_northern_trade
+        relative_position_id = YFC_focus_develop_yoyleton
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_expand_northern_trade
+        prerequisite = { focus = YFC_focus_develop_yoyleton }
+        cost = 5
+        #makes trade with coiny and teardrop beach territory more profitable
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_Trade_Bonus
+            IF = {
+                limit = {country_exists = GMD}
+                add_opinion_modifier = { target = GMD modifier = medium_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = GMD
+                    add_opinion_modifier = { target = YFC modifier = medium_increase }
+                }
+            }
+            add_opinion_modifier = { target = TBT modifier = medium_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = TBT
+                add_opinion_modifier = { target = YFC modifier = medium_increase }
+            }
+            add_opinion_modifier = { target = DAV modifier = medium_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = DAV
+                add_opinion_modifier = { target = DAV modifier = medium_increase }
+            }
+        }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_peoniele_the_second_city
-		relative_position_id = YFC_focus_scope_out_sea_trade
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_second_city_in_peoniele
-		prerequisite = { focus = YFC_focus_spread_out_sectors }
-		prerequisite = { focus = YFC_focus_scope_out_sea_trade focus = YFC_focus_expand_northern_trade }
-		mutually_exclusive = { focus = YFC_focus_big_yoyleton }
-		cost = 5
-		completion_reward = {
-			196 = {
-				add_extra_state_shared_building_slots = 2
-				add_victory_points = {
-					province = 3655
-					value = 5
-				}
-			}
-			hidden_effect = {country_event = YFC_event.22}		
-		}
+    focus = {
+        id = YFC_focus_scope_out_sea_trade
+        relative_position_id = YFC_focus_develop_peoniele
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_scope_out_sea_trade
+        prerequisite = { focus = YFC_focus_develop_peoniele }
+        cost = 5
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_Sea_Bonus
+            country_event = {
+                id = YFC_event.15
+                hours = 3
+            }
+        }
 
-	focus = {
-		id = YFC_focus_big_yoyleton
-		relative_position_id = YFC_focus_expand_northern_trade
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_big_yoyleton
-		prerequisite = { focus = YFC_focus_spread_out_sectors }
-		prerequisite = { focus = YFC_focus_scope_out_sea_trade focus = YFC_focus_expand_northern_trade }
-		mutually_exclusive = { focus = YFC_focus_peoniele_the_second_city }
-		cost = 5
-		completion_reward = {
-			216 = {
-				add_extra_state_shared_building_slots = 2
-				add_victory_points = {
-					province = 4388
-					value = 5
-				}
-			}
-			hidden_effect = {country_event = YFC_event.22}
-		}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-		ai_will_do = {
-			base = 5
-		}		
-	}
+    focus = {
+        id = YFC_focus_spread_out_sectors
+        relative_position_id = YFC_focus_military_industrial_complex
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_spread_out_sectors
+        prerequisite = { focus = YFC_focus_military_industrial_complex }
+        cost = 5
+        #Move the event about science goes to yoyleton, railroad goes to peoniele, rest stay to the description of the focus
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_sectors_All_Lower
+            add_political_power = 35
+            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+        }
 
-	focus = {
-		id = YFC_focus_population_boom
-		relative_position_id = YFC_focus_spread_out_sectors
-		x = 0
-		y = 2
-		icon = GFX_focus_YFC_population_boom
-		prerequisite = { focus = YFC_focus_spread_out_sectors }
-		prerequisite = { focus = YFC_focus_peoniele_the_second_city focus = YFC_focus_big_yoyleton }
-		cost = 8
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_POP
-			201 = {
-				add_manpower = 21769
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
+    focus = {
+        id = YFC_focus_peoniele_the_second_city
+        relative_position_id = YFC_focus_scope_out_sea_trade
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_second_city_in_peoniele
+        prerequisite = { focus = YFC_focus_spread_out_sectors }
+        prerequisite = { focus = YFC_focus_scope_out_sea_trade focus = YFC_focus_expand_northern_trade }
+        mutually_exclusive = { focus = YFC_focus_big_yoyleton }
+        cost = 5
+        completion_reward = {
+            196 = {
+                add_extra_state_shared_building_slots = 2
+                add_victory_points = {
+                    province = 3655
+                    value = 5
+                }
+            }
+            hidden_effect = {country_event = YFC_event.22}
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_big_yoyleton
+        relative_position_id = YFC_focus_expand_northern_trade
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_big_yoyleton
+        prerequisite = { focus = YFC_focus_spread_out_sectors }
+        prerequisite = { focus = YFC_focus_scope_out_sea_trade focus = YFC_focus_expand_northern_trade }
+        mutually_exclusive = { focus = YFC_focus_peoniele_the_second_city }
+        cost = 5
+        completion_reward = {
+            216 = {
+                add_extra_state_shared_building_slots = 2
+                add_victory_points = {
+                    province = 4388
+                    value = 5
+                }
+            }
+            hidden_effect = {country_event = YFC_event.22}
+        }
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_population_boom
+        relative_position_id = YFC_focus_spread_out_sectors
+        x = 0
+        y = 2
+        icon = GFX_focus_YFC_population_boom
+        prerequisite = { focus = YFC_focus_spread_out_sectors }
+        prerequisite = { focus = YFC_focus_peoniele_the_second_city focus = YFC_focus_big_yoyleton }
+        cost = 8
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_POP
+            201 = {
+                add_manpower = 21769
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
                     type = industrial_complex
                     level = 2
                     instant_build = yes
                 }
-			}
-			hidden_effect = {
-				IF = {
-					limit = {is_ai = yes}
-					add_to_variable = { money_amount = 10 } #AI cheating? In my Hoi4 mod? hmmmmmmmmmm
-				}
-				IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_peoniele
-						has_completed_focus = YFC_focus_peoniele_the_second_city
-						check_variable = {
-							var_YFC_upgrade_level = 3
-						}
-					}
-					country_event = YFC_event.23
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_peoniele
-						has_completed_focus = YFC_focus_peoniele_the_second_city
-						check_variable = {
-							var_YFC_upgrade_level < 3
-						}
-					}
-					country_event = YFC_event.24
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_peoniele
-						has_completed_focus = YFC_focus_big_yoyleton
-						check_variable = {
-							var_YFC_upgrade_level > 1
-						}
-					}
-					country_event = YFC_event.25
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_peoniele
-						has_completed_focus = YFC_focus_big_yoyleton
-						check_variable = {
-							var_YFC_upgrade_level = 1
-						}
-					}
-					country_event = YFC_event.26
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_yoyleton
-						has_completed_focus = YFC_focus_big_yoyleton
-						check_variable = {
-							var_YFC_upgrade_level > 1
-						}
-					}
-					country_event = YFC_event.27
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_yoyleton
-						has_completed_focus = YFC_focus_big_yoyleton
-						check_variable = {
-							var_YFC_upgrade_level = 1
-						}
-					}
-					country_event = YFC_event.28
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_yoyleton
-						has_completed_focus = YFC_focus_peoniele_the_second_city
-						check_variable = {
-							var_YFC_upgrade_level = 1
-						}
-					}
-					country_event = YFC_event.26
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_yoyleton
-						has_completed_focus = YFC_focus_peoniele_the_second_city
-						check_variable = {
-							var_YFC_upgrade_level = 2
-						}
-					}
-					country_event = YFC_event.25
-				}
-				ELSE_IF = {
-					limit = {
-						has_completed_focus = YFC_focus_develop_yoyleton
-						has_completed_focus = YFC_focus_peoniele_the_second_city
-						check_variable = {
-							var_YFC_upgrade_level = 3
-						}
-					}
-					country_event = YFC_event.30
-				}
-				ELSE = {
-					#Pick the fallback event if somehow this breaks please ZDubbz!!!
-				}
-				if = {
-					limit = {
-						OR = {
-							has_completed_focus = YFC_focus_bunch_fostered
-							has_completed_focus = YFC_focus_fully_cored
-							has_completed_focus = YFC_focus_stalled_plans
-						}
-					}
-					country_event = {
-						id = YFC_event.44
-						days = 14
-						random_hours = 24
-					}
-				}
-			}
-		}
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {is_ai = yes}
+                    add_to_variable = { money_amount = 10 } #AI cheating? In my Hoi4 mod? hmmmmmmmmmm
+                }
+                IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_peoniele
+                        has_completed_focus = YFC_focus_peoniele_the_second_city
+                        check_variable = {
+                            var_YFC_upgrade_level = 3
+                        }
+                    }
+                    country_event = YFC_event.23
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_peoniele
+                        has_completed_focus = YFC_focus_peoniele_the_second_city
+                        check_variable = {
+                            var_YFC_upgrade_level < 3
+                        }
+                    }
+                    country_event = YFC_event.24
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_peoniele
+                        has_completed_focus = YFC_focus_big_yoyleton
+                        check_variable = {
+                            var_YFC_upgrade_level > 1
+                        }
+                    }
+                    country_event = YFC_event.25
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_peoniele
+                        has_completed_focus = YFC_focus_big_yoyleton
+                        check_variable = {
+                            var_YFC_upgrade_level = 1
+                        }
+                    }
+                    country_event = YFC_event.26
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_yoyleton
+                        has_completed_focus = YFC_focus_big_yoyleton
+                        check_variable = {
+                            var_YFC_upgrade_level > 1
+                        }
+                    }
+                    country_event = YFC_event.27
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_yoyleton
+                        has_completed_focus = YFC_focus_big_yoyleton
+                        check_variable = {
+                            var_YFC_upgrade_level = 1
+                        }
+                    }
+                    country_event = YFC_event.28
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_yoyleton
+                        has_completed_focus = YFC_focus_peoniele_the_second_city
+                        check_variable = {
+                            var_YFC_upgrade_level = 1
+                        }
+                    }
+                    country_event = YFC_event.26
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_yoyleton
+                        has_completed_focus = YFC_focus_peoniele_the_second_city
+                        check_variable = {
+                            var_YFC_upgrade_level = 2
+                        }
+                    }
+                    country_event = YFC_event.25
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_develop_yoyleton
+                        has_completed_focus = YFC_focus_peoniele_the_second_city
+                        check_variable = {
+                            var_YFC_upgrade_level = 3
+                        }
+                    }
+                    country_event = YFC_event.30
+                }
+                ELSE = {
+                    #Pick the fallback event if somehow this breaks please ZDubbz!!!
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_completed_focus = YFC_focus_bunch_fostered
+                            has_completed_focus = YFC_focus_fully_cored
+                            has_completed_focus = YFC_focus_stalled_plans
+                        }
+                    }
+                    country_event = {
+                        id = YFC_event.44
+                        days = 14
+                        random_hours = 24
+                    }
+                }
+            }
+        }
 
-		ai_will_do = {
-			base = 5
-		}
-	}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_clamp_down_on_bunchivism
-		relative_position_id = YFC_focus_the_bunchivist_problem
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_clamp_down_on_bunchivism
-		allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
-		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
-		mutually_exclusive = { focus = YFC_focus_foster_new_society }
-		cost = 5
-		
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-		}
+    focus = {
+        id = YFC_focus_clamp_down_on_bunchivism
+        relative_position_id = YFC_focus_the_bunchivist_problem
+        x = -1
+        y = 1
+        icon = GFX_focus_YFC_clamp_down_on_bunchivism
+        allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
+        prerequisite = { focus = YFC_focus_the_bunchivist_problem }
+        mutually_exclusive = { focus = YFC_focus_foster_new_society }
+        cost = 5
 
-		ai_will_do = {
-			base = 8
-		}
-	}
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+        }
 
-	focus = {
-		id = YFC_focus_foster_new_society
-		relative_position_id = YFC_focus_the_bunchivist_problem
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_foster_new_society
-		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
-		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
-		mutually_exclusive = { focus = YFC_focus_clamp_down_on_bunchivism }
-		cost = 5
+        ai_will_do = {
+            base = 8
+        }
+    }
 
-		#also ai will choose this like 70% of the time
-		
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			85 = {add_compliance = 20} 
-			212 = {add_compliance = 20}
-			217 = {add_compliance = 20} 
-			218 = {add_compliance = 20}
-			hidden_effect = {
-				IF = {
-					limit = {
-						YFC = {controls_state = 217}
-					}
-					set_variable = { var_foster_BUN_support = 22 } #High but can't rise quickly
-					set_variable = { var_foster_CRN_support = 3 }
-				}
-				ELSE = {
-					set_variable = { var_foster_BUN_support = 15 } #High but can't rise quickly
-					set_variable = { var_foster_CRN_support = 7 }
-				}
-				set_variable = { var_foster_YFC_support = 1 }
-				IF = {
-					limit = {YFC = {is_ai = no}}
-					add_to_variable = { var_foster_YFC_support = 5 }
-				}
-				IF = {
-					limit = {CRN = {is_ai = no}}
-					add_to_variable = { var_foster_CRN_support = 5 }
-				}
-			}
-		}
+    focus = {
+        id = YFC_focus_foster_new_society
+        relative_position_id = YFC_focus_the_bunchivist_problem
+        x = -1
+        y = 1
+        icon = GFX_focus_YFC_foster_new_society
+        allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
+        prerequisite = { focus = YFC_focus_the_bunchivist_problem }
+        mutually_exclusive = { focus = YFC_focus_clamp_down_on_bunchivism }
+        cost = 5
 
-		ai_will_do = {
-			base = 8
-		}
-	}
+        #also ai will choose this like 70% of the time
 
-	focus = {
-		id = YFC_focus_support_blocky
-		relative_position_id = YFC_focus_the_bunchivist_problem
-		x = 1
-		y = 1
-		icon = GFX_focus_YFC_support_blocky
-		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
-		prerequisite = { focus = YFC_focus_the_bunchivist_problem }
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            85 = {add_compliance = 20}
+            212 = {add_compliance = 20}
+            217 = {add_compliance = 20}
+            218 = {add_compliance = 20}
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        YFC = {controls_state = 217}
+                    }
+                    set_variable = { var_foster_BUN_support = 22 } #High but can't rise quickly
+                    set_variable = { var_foster_CRN_support = 3 }
+                }
+                ELSE = {
+                    set_variable = { var_foster_BUN_support = 15 } #High but can't rise quickly
+                    set_variable = { var_foster_CRN_support = 7 }
+                }
+                set_variable = { var_foster_YFC_support = 1 }
+                IF = {
+                    limit = {YFC = {is_ai = no}}
+                    add_to_variable = { var_foster_YFC_support = 5 }
+                }
+                IF = {
+                    limit = {CRN = {is_ai = no}}
+                    add_to_variable = { var_foster_CRN_support = 5 }
+                }
+            }
+        }
 
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
+        ai_will_do = {
+            base = 8
+        }
+    }
 
-		cost = 3
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_BUN_foster
-			country_event = YFC_event.19
-			add_political_power = 50
-		}
+    focus = {
+        id = YFC_focus_support_blocky
+        relative_position_id = YFC_focus_the_bunchivist_problem
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_support_blocky
+        allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
+        prerequisite = { focus = YFC_focus_the_bunchivist_problem }
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
 
-	focus = {
-		id = YFC_focus_establish_law_presence
-		relative_position_id = YFC_focus_foster_new_society
-		x = 1
-		y = 1
-		icon = GFX_focus_YFC_establish_law_presence
+        cost = 3
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_BUN_foster
+            country_event = YFC_event.19
+            add_political_power = 50
+        }
 
-		available = {
-			custom_trigger_tooltip = {
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+    focus = {
+        id = YFC_focus_establish_law_presence
+        relative_position_id = YFC_focus_foster_new_society
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_establish_law_presence
+
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_100K
                 check_variable = { money_amount > 1 }
             }
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_foster_new_society
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
-
-		prerequisite = { focus = YFC_focus_foster_new_society }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_pp_gain
-			add_stability = 0.05
-			add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.5 }
-			subtract_from_variable = { money_amount = 1 }
-			85 = {
-				add_compliance = 10
-				add_resistance = -15
-			} 
-			212 = {
-				add_compliance = 10
-				add_resistance = -15
-			}
-			IF = {
-				limit = {
-					AND = {
-						YFC = {controls_state = 217}
-						YFC = {controls_state = 218}
-					}		
-				}
-				217 = {
-					add_compliance = 5
-					add_resistance = -10
-				} 
-				218 = {
-					add_compliance = 5
-					add_resistance = -10
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-	
-	focus = {
-		id = YFC_focus_stimulate_bunch_business
-		relative_position_id = YFC_focus_foster_new_society
-		x = -1
-		y = 1
-		icon = GFX_focus_YFC_stimulate_bunch_businesses
-
-		available = {
-			has_completed_focus = YFC_focus_support_blocky
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_foster_new_society
-			}
-		}
-		
-		prerequisite = { focus = YFC_focus_foster_new_society }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_BUN_foster
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_free_pows
-		relative_position_id = YFC_focus_establish_law_presence
-		x = 2
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_establish_law_presence }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.17
-				hours = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_advertise_YFC_products
-		relative_position_id = YFC_focus_stimulate_bunch_business
-		x = 1
-		y = 2
-		icon = GFX_focus_YFC_advertise_our_products
-
-		prerequisite = { focus = YFC_focus_stimulate_bunch_business  focus = YFC_focus_establish_law_presence }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-
-		completion_reward = {
-			custom_effect_tooltip = l_money_gain_200K
-			add_to_variable = { money_amount = 2 }
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_allow_people_enter
-		relative_position_id = YFC_focus_establish_law_presence
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_establish_law_presence }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 3
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_BUN_foster_gain
-			set_temp_variable = { 85POP = 85.state_population_k }
-			multiply_temp_variable = {85POP = 150} 
-			85 = {
-				add_manpower = 85POP
-				add_compliance = 5
-			}
-			set_temp_variable = { 212POP = 212.state_population_k }
-			multiply_temp_variable = {212POP = 100} 
-			212 = {
-				add_manpower = 212POP
-				add_compliance = 5
-			}
-			add_to_variable = { var_foster_YFC_support = 1.5 }
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_banks_too_big_to_fail
-		relative_position_id = YFC_focus_allow_people_enter
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_allow_people_enter focus = YFC_focus_free_pows }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = l_YFC_BUN_foster
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_insentivize_employment
-		relative_position_id = YFC_focus_banks_too_big_to_fail
-		x = -3
-		y = 1
-		icon = GFX_focus_YFC_incentivize_employment
-		prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
-		prerequisite = { focus = YFC_focus_advertise_YFC_products }
-		prerequisite = { focus = YFC_focus_stimulate_bunch_business }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-		
-		available = {
-			has_political_power > 50
-		}
-
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_money_gain_300K
-			add_to_variable = { money_amount = 3 }
-			add_manpower = 1000
-			add_political_power = -50
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_bunchivist_new_deal
-		relative_position_id = YFC_focus_banks_too_big_to_fail
-		x = 2
-		y = 1
-		icon = GFX_focus_YFC_bunchivist_new_deal
-		prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
-		prerequisite = { focus = YFC_focus_free_pows }
-
-		bypass = {
-			OR = {
-				has_completed_focus = YFC_focus_bunch_fostered
-				country_exists = BUN
-			}
-		}
-
-		cost = 5
-		completion_reward = {
-			country_event = YFC_event.20
-			add_stability = 0.01
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_bunch_fostered
-		relative_position_id = YFC_focus_bunchivist_new_deal
-		x = -2.5
-		y = 1
-		icon = GFX_focus_generic
-
-		#autocompleted after election, disables the decisions
-
-		available = {
-			always = no
-		}
-
-		prerequisite = { focus = YFC_focus_bunchivist_new_deal }
-		prerequisite = { focus = YFC_focus_insentivize_employment }
-		cost = 5
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			hidden_effect = {
-				if = {
-					limit = {has_completed_focus = YFC_focus_population_boom}
-					country_event = {
-						id = YFC_event.44
-						days = 14
-						random_hours = 24
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_united_by_profits
-		relative_position_id = YFC_focus_bunch_fostered
-		x = -5
-		y = 2
-		icon = GFX_focus_generic
-
-		allow_branch = { has_completed_focus = YFC_focus_bunch_fostered }
-
-		#Creates The Three Musketeers faction and their shared focus tree
-
-		available = {
-			hidden_trigger = {has_completed_focus = YFC_focus_bunch_fostered}
-		}
-
-		prerequisite = { focus = YFC_focus_bunch_fostered }
-		prerequisite = { focus = YFC_focus_money_arms_capital }
-		cost = 10
-		completion_reward = {
-			set_country_flag = Allow_Musketeers
-			mark_focus_tree_layout_dirty = yes
-			YFC = {
-				create_faction = "The Three Musketeers"
-				IF = {
-					limit = {BUN = {is_puppet = no}}
-					add_to_faction = BUN
-				}
-				add_to_faction = CRN
-			}
-			hidden_effect = {
-				CRN = {
-					set_country_flag = Allow_Musketeers
-					mark_focus_tree_layout_dirty = yes
-				}
-				BUN = {
-					set_country_flag = Allow_Musketeers
-					mark_focus_tree_layout_dirty = yes
-				}
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.39
-						days = 1
-						random_hours = 36
-					}
-				}
-			}
-			add_stability = 0.01
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-
-	#Jumps back to the evil path 
-
-	focus = {
-		id = YFC_focus_trial_over_eraser
-		relative_position_id = YFC_focus_clamp_down_on_bunchivism
-		x = 2
-		y = 1
-		icon = GFX_focus_generic
-
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_clamp_down_on_bunchivism
-			}
-		}
-		
-		bypass = {
-			country_exists = BUN
-		}
-
-		allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
-
-		prerequisite = { focus = YFC_focus_clamp_down_on_bunchivism }
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.13
-				hours = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_execute_pen
-		relative_position_id = YFC_focus_clamp_down_on_bunchivism
-		x = 0
-		y = 1
-		icon = GFX_focus_YFC_pen
-
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_clamp_down_on_bunchivism
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		prerequisite = { focus = YFC_focus_clamp_down_on_bunchivism }
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_BUN.5
-				hours = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_reeducation
-		relative_position_id = YFC_focus_execute_pen
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		cost = 5
-		completion_reward = {
-			85 = {
-				add_manpower = -2164
-			}
-			212 = {
-				add_manpower = -1274
-			}
-			country_event = {
-				id = YFC_BUN.23
-				hours = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_fund_secret_police 
-		relative_position_id = YFC_focus_reeducation
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_reeducation }
-
-		available = {
-			custom_trigger_tooltip = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_foster_new_society
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_foster_new_society }
+
+        prerequisite = { focus = YFC_focus_foster_new_society }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_pp_gain
+            add_stability = 0.05
+            add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.5 }
+            subtract_from_variable = { money_amount = 1 }
+            85 = {
+                add_compliance = 10
+                add_resistance = -15
+            }
+            212 = {
+                add_compliance = 10
+                add_resistance = -15
+            }
+            IF = {
+                limit = {
+                    AND = {
+                        YFC = {controls_state = 217}
+                        YFC = {controls_state = 218}
+                    }
+                }
+                217 = {
+                    add_compliance = 5
+                    add_resistance = -10
+                }
+                218 = {
+                    add_compliance = 5
+                    add_resistance = -10
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_stimulate_bunch_business
+        relative_position_id = YFC_focus_foster_new_society
+        x = -1
+        y = 1
+        icon = GFX_focus_YFC_stimulate_bunch_businesses
+
+        available = {
+            has_completed_focus = YFC_focus_support_blocky
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_foster_new_society
+            }
+        }
+
+        prerequisite = { focus = YFC_focus_foster_new_society }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_BUN_foster
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_free_pows
+        relative_position_id = YFC_focus_establish_law_presence
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_establish_law_presence }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.17
+                hours = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_advertise_YFC_products
+        relative_position_id = YFC_focus_stimulate_bunch_business
+        x = 1
+        y = 2
+        icon = GFX_focus_YFC_advertise_our_products
+
+        prerequisite = { focus = YFC_focus_stimulate_bunch_business  focus = YFC_focus_establish_law_presence }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+
+        completion_reward = {
+            custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_allow_people_enter
+        relative_position_id = YFC_focus_establish_law_presence
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_establish_law_presence }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 3
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_BUN_foster_gain
+            set_temp_variable = { 85POP = 85.state_population_k }
+            multiply_temp_variable = {85POP = 150}
+            85 = {
+                add_manpower = 85POP
+                add_compliance = 5
+            }
+            set_temp_variable = { 212POP = 212.state_population_k }
+            multiply_temp_variable = {212POP = 100}
+            212 = {
+                add_manpower = 212POP
+                add_compliance = 5
+            }
+            add_to_variable = { var_foster_YFC_support = 1.5 }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_banks_too_big_to_fail
+        relative_position_id = YFC_focus_allow_people_enter
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_allow_people_enter focus = YFC_focus_free_pows }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+        completion_reward = {
+            add_political_power = 25
+            custom_effect_tooltip = l_YFC_BUN_foster
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_insentivize_employment
+        relative_position_id = YFC_focus_banks_too_big_to_fail
+        x = -3
+        y = 1
+        icon = GFX_focus_YFC_incentivize_employment
+        prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
+        prerequisite = { focus = YFC_focus_advertise_YFC_products }
+        prerequisite = { focus = YFC_focus_stimulate_bunch_business }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        available = {
+            has_political_power > 50
+        }
+
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_money_gain_300K
+            add_to_variable = { money_amount = 3 }
+            add_manpower = 1000
+            add_political_power = -50
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_bunchivist_new_deal
+        relative_position_id = YFC_focus_banks_too_big_to_fail
+        x = 2
+        y = 1
+        icon = GFX_focus_YFC_bunchivist_new_deal
+        prerequisite = { focus = YFC_focus_banks_too_big_to_fail }
+        prerequisite = { focus = YFC_focus_free_pows }
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_bunch_fostered
+                country_exists = BUN
+            }
+        }
+
+        cost = 5
+        completion_reward = {
+            country_event = YFC_event.20
+            add_stability = 0.01
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_bunch_fostered
+        relative_position_id = YFC_focus_bunchivist_new_deal
+        x = -2.5
+        y = 1
+        icon = GFX_focus_generic
+
+        #autocompleted after election, disables the decisions
+
+        available = {
+            always = no
+        }
+
+        prerequisite = { focus = YFC_focus_bunchivist_new_deal }
+        prerequisite = { focus = YFC_focus_insentivize_employment }
+        cost = 5
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                if = {
+                    limit = {has_completed_focus = YFC_focus_population_boom}
+                    country_event = {
+                        id = YFC_event.44
+                        days = 14
+                        random_hours = 24
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_united_by_profits
+        relative_position_id = YFC_focus_bunch_fostered
+        x = -5
+        y = 2
+        icon = GFX_focus_generic
+
+        allow_branch = { has_completed_focus = YFC_focus_bunch_fostered }
+
+        #Creates The Three Musketeers faction and their shared focus tree
+
+        available = {
+            hidden_trigger = {has_completed_focus = YFC_focus_bunch_fostered}
+        }
+
+        prerequisite = { focus = YFC_focus_bunch_fostered }
+        prerequisite = { focus = YFC_focus_money_arms_capital }
+        cost = 10
+        completion_reward = {
+            set_country_flag = Allow_Musketeers
+            mark_focus_tree_layout_dirty = yes
+            YFC = {
+                create_faction = "The Three Musketeers"
+                IF = {
+                    limit = {BUN = {is_puppet = no}}
+                    add_to_faction = BUN
+                }
+                add_to_faction = CRN
+            }
+            hidden_effect = {
+                CRN = {
+                    set_country_flag = Allow_Musketeers
+                    mark_focus_tree_layout_dirty = yes
+                }
+                BUN = {
+                    set_country_flag = Allow_Musketeers
+                    mark_focus_tree_layout_dirty = yes
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.39
+                        days = 1
+                        random_hours = 36
+                    }
+                }
+            }
+            add_stability = 0.01
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+    #Jumps back to the evil path
+
+    focus = {
+        id = YFC_focus_trial_over_eraser
+        relative_position_id = YFC_focus_clamp_down_on_bunchivism
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+            }
+        }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
+
+        prerequisite = { focus = YFC_focus_clamp_down_on_bunchivism }
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.13
+                hours = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_execute_pen
+        relative_position_id = YFC_focus_clamp_down_on_bunchivism
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_pen
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_clamp_down_on_bunchivism }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        prerequisite = { focus = YFC_focus_clamp_down_on_bunchivism }
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_BUN.5
+                hours = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_reeducation
+        relative_position_id = YFC_focus_execute_pen
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        cost = 5
+        completion_reward = {
+            85 = {
+                add_manpower = -2164
+            }
+            212 = {
+                add_manpower = -1274
+            }
+            country_event = {
+                id = YFC_BUN.23
+                hours = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_fund_secret_police
+        relative_position_id = YFC_focus_reeducation
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_reeducation }
+
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-		}
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		cost = 5
-
-		completion_reward = {
-			subtract_from_variable = { money_amount = 3 }
-			if = {
-				limit = { 
-					has_dlc = "La Resistance" 
-					is_ai = no
-				}
-				create_intelligence_agency = {
-					name = "The Green Eyes"
-					icon = GFX_agency_icon_GGR_scheeschutz #Place holder
-				}
-				85 = {add_resistance = -2} 
-				212 = {add_resistance = -2}
-			}
-			else = { 
-				85 = {add_resistance = -10} 
-				212 = {add_resistance = -10}
-			}
-
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_strengthen_the_law
-		relative_position_id = YFC_focus_execute_pen
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		cost = 5
-		completion_reward = {
-			#Decision that allows increase compliance speed for stability and money THAT WILL NEVER HAPPEN AS I AM LAZY!!!
-			add_political_power = 35
-			85 = {add_resistance = -5} 
-			212 = {add_resistance = -5}
-			if = {
-				limit = {
-					YFC = {
-						controls_state = 217
-						controls_state = 218
-					}
-				}
-				217 = {add_resistance = -15}
-				218 = {add_resistance = -15}		
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_ban_theft
-		relative_position_id = YFC_focus_reeducation
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_reeducation  focus = YFC_focus_strengthen_the_law }
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		cost = 5
-		completion_reward = {
-			add_political_power = 35
-			85 = {add_compliance = 5} 
-			212 = {add_compliance = 5}
-			if = {
-				limit = {
-					YFC = {
-						controls_state = 217
-						controls_state = 218
-					}
-				}
-				217 = {add_compliance = 10}
-				218 = {add_compliance = 10}		
-			} 
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_remove_oligarchical_sentiment
-		relative_position_id = YFC_focus_trial_over_eraser
-		x = 1
-		y = 2
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_trial_over_eraser }
-
-		bypass = {
-			country_exists = BUN
-		}
-
-		cost = 5
-		#gives event detailing how eraser's cult of personality worked, talks about banning the populace from talking about him or his friends for the time being
-		#basically erasing history
-		completion_reward = {
-			country_event = {
-				id = YFC_BUN.24
-				hours = 1
-			}
-		}
-
-		ai_will_do = {
-			base = 8
-		}
-	}
-
-	focus = {
-		id = YFC_focus_fully_cored
-		relative_position_id = YFC_focus_clamp_down_on_bunchivism
-		x = 1
-		y = 5
-		icon = GFX_focus_generic
-
-		available = {
-			85 = {compliance > 75}
-			212 = {compliance > 75}
-			hidden_trigger = {
-				NOT = {has_completed_focus = YFC_focus_stalled_plans}
-				NOT = {country_exists = BUN}
-			}	
-		}
-
-		prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
-		prerequisite = { focus = YFC_focus_ban_theft }
-		
-		cost = 8
-		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 50
-			add_manpower = 10000
-			YFC = {
-				add_state_core = 85
-				add_state_core = 212
-			}
-			remove_ideas = idea_YFC_Bunch_Insurgency
-			mark_focus_tree_layout_dirty = yes
-			hidden_effect = {
-				BUN = {
-					remove_state_core = 85
-					remove_state_core = 212
-				}
-				IF = {
-					limit = {
-						YFC = {
-							controls_state = 217
-							controls_state = 218
-						}
-					}
-					remove_state_core = 217
-					remove_state_core = 218
-				}
-				if = {
-					limit = {has_completed_focus = YFC_focus_population_boom}
-					country_event = {
-						id = YFC_event.44
-						days = 14
-						random_hours = 24
-					}
-				}
-			}
-
-			#Maybe an event idk
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-
-	focus = {
-		id = YFC_focus_unite_the_capitalists #Only happens if we did kill Bunch correctly
-		relative_position_id = YFC_focus_fully_cored
-		x = 0
-		y = 2
-		icon = GFX_focus_generic
-
-		allow_branch = { has_completed_focus = YFC_focus_fully_cored }
-
-		#Creates The Goiky Trade League faction and their shared focus tree
-
-		available = {
-			hidden_trigger = {has_completed_focus = YFC_focus_fully_cored}
-		}
-
-		prerequisite = { focus = YFC_focus_fully_cored }
-		cost = 10
-		completion_reward = {
-			set_country_flag = Allow_Musketeers
-			mark_focus_tree_layout_dirty = yes
-			YFC = {
-				create_faction = "Goiky Trade League"
-				add_to_faction = CRN
-			}
-			hidden_effect = {
-				CRN = {
-					set_country_flag = Allow_Musketeers
-					mark_focus_tree_layout_dirty = yes
-				}
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.40
-						days = 1
-						random_hours = 36
-					}
-				}
-			}
-			add_stability = 0.01
-		}
-
-		ai_will_do = {
-			base = 10
-		}
-	}
-
-	focus = {
-		id = YFC_focus_stalled_plans
-		relative_position_id = YFC_focus_clamp_down_on_bunchivism
-		x = 3
-		y = 5
-		icon = GFX_focus_generic
-
-		allow_branch = { has_completed_focus = YFC_focus_stalled_plans }
-
-		prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
-		prerequisite = { focus = YFC_focus_ban_theft }
-		
-		cost = 5
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			hidden_effect = {
-				if = {
-					limit = {has_completed_focus = YFC_focus_population_boom}
-					country_event = {
-						id = YFC_event.44
-						days = 14
-						random_hours = 24
-					}
-				}
-			}
-		}
-	}
-
- #the game: teardroppers
-
-	focus = { #unlocked via event, opens the decisions mechanic
-		id = YFC_focus_see_to_the_eastern_front
-		relative_position_id = YFC_focus_population_boom
-		x = -3
-		y = 2
-		icon = GFX_focus_generic
-
-		allow_branch = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
-
-		prerequisite = { focus = YFC_focus_population_boom }
-		prerequisite = {
-			focus = YFC_focus_bunch_fostered
-			focus = YFC_focus_fully_cored
-			focus = YFC_focus_stalled_plans
-		}
-
-		cost = 5
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			hidden_effect = { #All the vars of support
-				every_state = {
-					limit = {
-						OR = {
-							state = 229 #???
-							state = 232 #???
-							state = 228 #???
-							state = 225 #Portland
-							state = 230 #???
-							state = 226 #Ofalk
-							state = 192 #???
-							state = 231 #???
-							state = 227 #Ganymede
-						}
-					}
-					IF = { #I could try to understand why has_dynamic_modifier does not work here but I'm too tired to care anymore.
-						limit = {
-							OR = {
-								state = 230
-								state = 228
-								state = 232
-							}
-						}
-						set_variable = {eastern_support_var = -0.4}
-					}
-					ELSE_IF = { 
-						limit = {
-							state = 229
-						}
-						set_variable = {eastern_support_var = -0.6}
-					}
-					ELSE = {
-						set_variable = {eastern_support_var = 0}
-					}
-				}
-				YFC = {
-					set_variable = {eastern_borderwar_var = 0.25}
-					set_country_flag = eastern_action_ready
-				}
-				TBT = {
-					IF = {
-						limit = {is_ai = yes}
-						add_manpower = 5000
-					}
-					set_variable = {eastern_borderwar_var = 0.25}
-					set_country_flag = eastern_action_ready
-				}
-				IF = {
-					limit = {
-						is_ai = yes
-						check_variable = {money_amount < 20}
-					}
-					add_to_variable = { money_amount = 15 }
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YFC_focus_play_fast
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = -4
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
-		mutually_exclusive  = { focus = YFC_focus_play_smart }
-
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_gainall_5
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.05 }
-				}
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
-
-		ai_will_do = {
-			base = 10 #10
-		}	
-	}
-
-	focus = {
-		id = YFC_focus_anger_teardrop
-		relative_position_id = YFC_focus_play_fast
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
-
-		available = {
-			has_completed_focus = YFC_focus_play_fast
-		}
-
-		allow_branch = { has_completed_focus = YFC_focus_play_fast }
-
-		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 5
-		completion_reward = {
-			add_political_power = 25
-			country_event = {
-				id = YFC_event.45
-				hours = 1
-				random_hours = 2
-			}
-
-			#send a letter of insult to teardrop to 'throw her off her game'
-
-			#How so? ZDubbz
-
-			#lol imagine if adolf hitler sent winston churchill a letter that said 'u smell bad', thatd probably make him rlly confused
-			#if you mean gamewise, it wouldnt actually do anything to the beach territory, just be cosmetic
-		}
-	}
-
-	focus = { #claiming land pre-emptively to piss ppl off ig
-		id = YFC_focus_claim_excessive_land
-		relative_position_id = YFC_focus_anger_teardrop
-		x = 3
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_anger_teardrop }
-
-		available = {
-			has_political_power > 50
-		}
-
-		cost = 5
-		completion_reward = {
-			add_political_power = -50
-			custom_effect_tooltip = l_YFC_eastern_gainall_10
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.1 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
-
-	focus = {
-		id = YFC_focus_move_in_army
-		relative_position_id = YFC_focus_anger_teardrop
-		x = -3
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_anger_teardrop }
-		cost = 5
-		completion_reward = {
-			add_manpower = 5000
-			custom_effect_tooltip = l_YFC_eastern_gainall_5
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.05 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
-
-	focus = {
-		id = YFC_focus_invest_into_infrastructure
-		relative_position_id = YFC_focus_move_in_army
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_move_in_army }
-		prerequisite = { focus = YFC_focus_procure_funds }
-
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
-
-	focus = {
-		id = YFC_focus_procure_funds
-		relative_position_id = YFC_focus_play_fast
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
-
-		allow_branch = { has_completed_focus = YFC_focus_play_fast }
-
-		prerequisite = { focus = YFC_focus_play_fast }
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.46
-				hours = 2
-				random_hours = 6
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
-
-	focus = {
-		id = YFC_focus_buy_ships
-		relative_position_id = YFC_focus_move_in_army
-		x = 2
-		y = 1
-		icon = GFX_focus_generic
-
-		prerequisite = { focus = YFC_focus_move_in_army }
-
-		available = {
-			custom_trigger_tooltip = {
+        }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        cost = 5
+
+        completion_reward = {
+            subtract_from_variable = { money_amount = 3 }
+            if = {
+                limit = {
+                    has_dlc = "La Resistance"
+                    is_ai = no
+                }
+                create_intelligence_agency = {
+                    name = "The Green Eyes"
+                    icon = GFX_agency_icon_GGR_scheeschutz #Place holder
+                }
+                85 = {add_resistance = -2}
+                212 = {add_resistance = -2}
+            }
+            else = {
+                85 = {add_resistance = -10}
+                212 = {add_resistance = -10}
+            }
+
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_strengthen_the_law
+        relative_position_id = YFC_focus_execute_pen
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        cost = 5
+        completion_reward = {
+            #Decision that allows increase compliance speed for stability and money THAT WILL NEVER HAPPEN AS I AM LAZY!!!
+            add_political_power = 35
+            85 = {add_resistance = -5}
+            212 = {add_resistance = -5}
+            if = {
+                limit = {
+                    YFC = {
+                        controls_state = 217
+                        controls_state = 218
+                    }
+                }
+                217 = {add_resistance = -15}
+                218 = {add_resistance = -15}
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_ban_theft
+        relative_position_id = YFC_focus_reeducation
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_reeducation  focus = YFC_focus_strengthen_the_law }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        cost = 5
+        completion_reward = {
+            add_political_power = 35
+            85 = {add_compliance = 5}
+            212 = {add_compliance = 5}
+            if = {
+                limit = {
+                    YFC = {
+                        controls_state = 217
+                        controls_state = 218
+                    }
+                }
+                217 = {add_compliance = 10}
+                218 = {add_compliance = 10}
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_remove_oligarchical_sentiment
+        relative_position_id = YFC_focus_trial_over_eraser
+        x = 1
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_trial_over_eraser }
+
+        bypass = {
+            country_exists = BUN
+        }
+
+        cost = 5
+        #gives event detailing how eraser's cult of personality worked, talks about banning the populace from talking about him or his friends for the time being
+        #basically erasing history
+        completion_reward = {
+            country_event = {
+                id = YFC_BUN.24
+                hours = 1
+            }
+        }
+
+        ai_will_do = {
+            base = 8
+        }
+    }
+
+    focus = {
+        id = YFC_focus_fully_cored
+        relative_position_id = YFC_focus_clamp_down_on_bunchivism
+        x = 1
+        y = 5
+        icon = GFX_focus_generic
+
+        available = {
+            85 = {compliance > 75}
+            212 = {compliance > 75}
+            hidden_trigger = {
+                NOT = {has_completed_focus = YFC_focus_stalled_plans}
+                NOT = {country_exists = BUN}
+            }
+        }
+
+        prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
+        prerequisite = { focus = YFC_focus_ban_theft }
+
+        cost = 8
+        completion_reward = {
+            add_war_support = 0.05
+            add_political_power = 50
+            add_manpower = 10000
+            YFC = {
+                add_state_core = 85
+                add_state_core = 212
+            }
+            remove_ideas = idea_YFC_Bunch_Insurgency
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                BUN = {
+                    remove_state_core = 85
+                    remove_state_core = 212
+                }
+                IF = {
+                    limit = {
+                        YFC = {
+                            controls_state = 217
+                            controls_state = 218
+                        }
+                    }
+                    remove_state_core = 217
+                    remove_state_core = 218
+                }
+                if = {
+                    limit = {has_completed_focus = YFC_focus_population_boom}
+                    country_event = {
+                        id = YFC_event.44
+                        days = 14
+                        random_hours = 24
+                    }
+                }
+            }
+
+            #Maybe an event idk
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+    focus = {
+        id = YFC_focus_unite_the_capitalists #Only happens if we did kill Bunch correctly
+        relative_position_id = YFC_focus_fully_cored
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        allow_branch = { has_completed_focus = YFC_focus_fully_cored }
+
+        #Creates The Goiky Trade League faction and their shared focus tree
+
+        available = {
+            hidden_trigger = {has_completed_focus = YFC_focus_fully_cored}
+        }
+
+        prerequisite = { focus = YFC_focus_fully_cored }
+        cost = 10
+        completion_reward = {
+            set_country_flag = Allow_Musketeers
+            mark_focus_tree_layout_dirty = yes
+            YFC = {
+                create_faction = "Goiky Trade League"
+                add_to_faction = CRN
+            }
+            hidden_effect = {
+                CRN = {
+                    set_country_flag = Allow_Musketeers
+                    mark_focus_tree_layout_dirty = yes
+                }
+                every_possible_country = {
+                    limit = { is_ai = no }
+                    news_event = {
+                        id = bfdinews.40
+                        days = 1
+                        random_hours = 36
+                    }
+                }
+            }
+            add_stability = 0.01
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+    }
+
+    focus = {
+        id = YFC_focus_stalled_plans
+        relative_position_id = YFC_focus_clamp_down_on_bunchivism
+        x = 3
+        y = 5
+        icon = GFX_focus_generic
+
+        allow_branch = { has_completed_focus = YFC_focus_stalled_plans }
+
+        prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
+        prerequisite = { focus = YFC_focus_ban_theft }
+
+        cost = 5
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                if = {
+                    limit = {has_completed_focus = YFC_focus_population_boom}
+                    country_event = {
+                        id = YFC_event.44
+                        days = 14
+                        random_hours = 24
+                    }
+                }
+            }
+        }
+    }
+
+    #the game: teardroppers
+
+    focus = { #unlocked via event, opens the decisions mechanic
+        id = YFC_focus_see_to_the_eastern_front
+        relative_position_id = YFC_focus_population_boom
+        x = -3
+        y = 2
+        icon = GFX_focus_generic
+
+        allow_branch = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
+
+        prerequisite = { focus = YFC_focus_population_boom }
+        prerequisite = {
+            focus = YFC_focus_bunch_fostered
+            focus = YFC_focus_fully_cored
+            focus = YFC_focus_stalled_plans
+        }
+
+        cost = 5
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = { #All the vars of support
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229 #???
+                            state = 232 #???
+                            state = 228 #???
+                            state = 225 #Portland
+                            state = 230 #???
+                            state = 226 #Ofalk
+                            state = 192 #???
+                            state = 231 #???
+                            state = 227 #Ganymede
+                        }
+                    }
+                    IF = { #I could try to understand why has_dynamic_modifier does not work here but I'm too tired to care anymore.
+                        limit = {
+                            OR = {
+                                state = 230
+                                state = 228
+                                state = 232
+                            }
+                        }
+                        set_variable = {eastern_support_var = -0.35}
+                    }
+                    ELSE_IF = {
+                        limit = {
+                            state = 229
+                        }
+                        set_variable = {eastern_support_var = -0.55}
+                    }
+                    ELSE = {
+                        set_variable = {eastern_support_var = 0}
+                    }
+                }
+                YFC = {
+                    set_variable = {eastern_borderwar_var = 0.25}
+                    set_country_flag = eastern_action_ready
+                }
+                TBT = {
+                    IF = {
+                        limit = {is_ai = yes}
+                        add_manpower = 5000
+                    }
+                    set_variable = {eastern_borderwar_var = 0.25}
+                    set_country_flag = eastern_action_ready
+                }
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        check_variable = {money_amount < 20}
+                    }
+                    add_to_variable = { money_amount = 15 }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_play_fast
+        relative_position_id = YFC_focus_see_to_the_eastern_front
+        x = -4
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
+        mutually_exclusive  = { focus = YFC_focus_play_smart }
+
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_gainall_5
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.05 }
+                }
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+
+        ai_will_do = {
+            base = 10 #10
+        }
+    }
+
+    focus = {
+        id = YFC_focus_anger_teardrop
+        relative_position_id = YFC_focus_play_fast
+        x = 4
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            has_completed_focus = YFC_focus_play_fast
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_play_fast }
+
+        prerequisite = { focus = YFC_focus_play_fast }
+        cost = 5
+        completion_reward = {
+            add_political_power = 25
+            country_event = {
+                id = YFC_event.45
+                hours = 1
+                random_hours = 2
+            }
+
+            #send a letter of insult to teardrop to 'throw her off her game'
+
+            #How so? ZDubbz
+
+            #lol imagine if adolf hitler sent winston churchill a letter that said 'u smell bad', thatd probably make him rlly confused
+            #if you mean gamewise, it wouldnt actually do anything to the beach territory, just be cosmetic
+        }
+    }
+
+    focus = { #claiming land pre-emptively to piss ppl off ig
+        id = YFC_focus_claim_excessive_land
+        relative_position_id = YFC_focus_anger_teardrop
+        x = 3
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_anger_teardrop }
+
+        available = {
+            has_political_power > 50
+        }
+
+        cost = 5
+        completion_reward = {
+            add_political_power = -50
+            custom_effect_tooltip = l_YFC_eastern_gainall_10
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.1 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_move_in_army
+        relative_position_id = YFC_focus_anger_teardrop
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_anger_teardrop }
+        cost = 5
+        completion_reward = {
+            add_manpower = 5000
+            custom_effect_tooltip = l_YFC_eastern_gainall_5
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.05 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_invest_into_infrastructure
+        relative_position_id = YFC_focus_move_in_army
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_move_in_army }
+        prerequisite = { focus = YFC_focus_procure_funds }
+
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_procure_funds
+        relative_position_id = YFC_focus_play_fast
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        allow_branch = { has_completed_focus = YFC_focus_play_fast }
+
+        prerequisite = { focus = YFC_focus_play_fast }
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.46
+                hours = 2
+                random_hours = 6
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    focus = {
+        id = YFC_focus_buy_ships
+        relative_position_id = YFC_focus_move_in_army
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_move_in_army }
+
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-		}
+        }
 
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.47
-				hours = 1
-				random_hours = 3
-			}
-			add_political_power = 50
-			subtract_from_variable = { money_amount = -3 }
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.47
+                hours = 1
+                random_hours = 3
+            }
+            add_political_power = 50
+            subtract_from_variable = { money_amount = -3 }
 
-			#So I may make this where the player does not gain warships but smaller ships or something
-			#More so that YFC's navy would be stuck without a port at this rate
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+            #So I may make this where the player does not gain warships but smaller ships or something
+            #More so that YFC's navy would be stuck without a port at this rate
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_undermine_legitimacy
-		relative_position_id = YFC_focus_claim_excessive_land
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_undermine_legitimacy
+        relative_position_id = YFC_focus_claim_excessive_land
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_claim_excessive_land }
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_gainall_10
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.1 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        prerequisite = { focus = YFC_focus_claim_excessive_land }
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_gainall_10
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.1 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_build_ports
-		relative_position_id = YFC_focus_claim_excessive_land
-		x = -2
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_build_ports
+        relative_position_id = YFC_focus_claim_excessive_land
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_claim_excessive_land }
+        prerequisite = { focus = YFC_focus_claim_excessive_land }
 
-		available = {
-			OR = {
-				controls_state = 225
-				controls_state = 226
-				controls_state = 227
-			}
-		}
+        available = {
+            OR = {
+                controls_state = 225
+                controls_state = 226
+                controls_state = 227
+            }
+        }
 
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_interfere_with_sea_routes
-		relative_position_id = YFC_focus_buy_ships
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_interfere_with_sea_routes
+        relative_position_id = YFC_focus_buy_ships
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
-		prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
-		cost = 7
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_gainall_10
-			unlock_decision_tooltip = YFC_eastern_block
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.1 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
+        prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
+        cost = 7
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_gainall_10
+            unlock_decision_tooltip = YFC_eastern_block
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.1 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_play_smart
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_play_smart
+        relative_position_id = YFC_focus_see_to_the_eastern_front
+        x = 4
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
-		mutually_exclusive  = { focus = YFC_focus_play_fast }
+        prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
+        mutually_exclusive  = { focus = YFC_focus_play_fast }
 
-		cost = 5
-		completion_reward = {
-			add_political_power = 50
-			mark_focus_tree_layout_dirty = yes
-		}
-		ai_will_do = {
-			base = 10 # 10
-		}
-	}
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+            mark_focus_tree_layout_dirty = yes
+        }
+        ai_will_do = {
+            base = 10 # 10
+        }
+    }
 
-	focus = {
-		id = YFC_focus_negotiate_with_teardrop
-		relative_position_id = YFC_focus_play_smart
-		x = -4
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_negotiate_with_teardrop
+        relative_position_id = YFC_focus_play_smart
+        x = -4
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_play_smart }
+        prerequisite = { focus = YFC_focus_play_smart }
 
-		allow_branch = { has_completed_focus = YFC_focus_play_smart }
+        allow_branch = { has_completed_focus = YFC_focus_play_smart }
 
-		cost = 5
-		completion_reward = {
-			add_opinion_modifier = { target = TBT modifier = large_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = TBT
-				add_opinion_modifier = { target = YFC modifier = large_increase }
-			}
-			country_event = {
-				id = YFC_event.57
-				hours = 1
-				random_hours = 2
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            add_opinion_modifier = { target = TBT modifier = large_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = TBT
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+            country_event = {
+                id = YFC_event.57
+                hours = 1
+                random_hours = 2
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_push_for_settlement
-		relative_position_id = YFC_focus_negotiate_with_teardrop
-		x = -3
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_push_for_settlement
+        relative_position_id = YFC_focus_negotiate_with_teardrop
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_negotiate_with_teardrop }
+        prerequisite = { focus = YFC_focus_negotiate_with_teardrop }
 
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_prospect_the_lands
-		relative_position_id = YFC_focus_push_for_settlement
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_prospect_the_lands
+        relative_position_id = YFC_focus_push_for_settlement
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_push_for_settlement }
+        prerequisite = { focus = YFC_focus_push_for_settlement }
 
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_deploy_peacekeepers
-		relative_position_id = YFC_focus_negotiate_with_teardrop
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_deploy_peacekeepers
+        relative_position_id = YFC_focus_negotiate_with_teardrop
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_negotiate_with_teardrop focus = YFC_focus_shuffle_around_funds }
+        prerequisite = { focus = YFC_focus_negotiate_with_teardrop focus = YFC_focus_shuffle_around_funds }
 
-		cost = 5
-		completion_reward = {
-			add_manpower = 5000
-			custom_effect_tooltip = l_YFC_eastern_gainall_5
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.05 }
-				}
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            add_manpower = 5000
+            custom_effect_tooltip = l_YFC_eastern_gainall_5
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.05 }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_bribe_village_leaders
-		relative_position_id = YFC_focus_deploy_peacekeepers
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_bribe_village_leaders
+        relative_position_id = YFC_focus_deploy_peacekeepers
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_deploy_peacekeepers }
+        prerequisite = { focus = YFC_focus_deploy_peacekeepers }
 
-		available = {
-			custom_trigger_tooltip = {
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-		}
+        }
 
-		cost = 5
-		completion_reward = {
-			subtract_from_variable = { money_amount = 3 }
-			custom_effect_tooltip = l_YFC_eastern_gainall_10
-			hidden_effect = {
-				every_state = {
-					limit = {
-						OR = {
-							state = 229
-							state = 232
-							state = 228
-							state = 225
-							state = 230
-							state = 226
-							state = 192
-							state = 231
-							state = 227
-						}
-					}
-					add_to_variable = { eastern_support_var = 0.1 }
-				}
-			}
-		}
+        cost = 5
+        completion_reward = {
+            subtract_from_variable = { money_amount = 3 }
+            custom_effect_tooltip = l_YFC_eastern_gainall_10
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.1 }
+                }
+            }
+        }
 
-		ai_will_do = {
-			base = 5
-		}
-	}
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_shuffle_around_funds
-		relative_position_id = YFC_focus_play_smart
-		x = 1
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_shuffle_around_funds
+        relative_position_id = YFC_focus_play_smart
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_play_smart }
+        prerequisite = { focus = YFC_focus_play_smart }
 
-		allow_branch = { has_completed_focus = YFC_focus_play_smart }
+        allow_branch = { has_completed_focus = YFC_focus_play_smart }
 
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.58
-				hours = 1
-				random_hours = 2
-			}
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.58
+                hours = 1
+                random_hours = 2
+            }
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_invest_into_infrastructure_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
-		relative_position_id = YFC_focus_shuffle_around_funds
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_invest_into_infrastructure_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses
+        relative_position_id = YFC_focus_shuffle_around_funds
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_shuffle_around_funds }
+        prerequisite = { focus = YFC_focus_shuffle_around_funds }
 
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_build_ports_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
-		relative_position_id = YFC_focus_invest_into_infrastructure_other
-		x = -1
-		y = 1
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_build_ports_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses
+        relative_position_id = YFC_focus_invest_into_infrastructure_other
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_invest_into_infrastructure_other }
+        prerequisite = { focus = YFC_focus_invest_into_infrastructure_other }
 
-		available = {
-			OR = {
-				controls_state = 225
-				controls_state = 226
-				controls_state = 227
-			}
-		}
+        available = {
+            OR = {
+                controls_state = 225
+                controls_state = 226
+                controls_state = 227
+            }
+        }
 
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_YFC_eastern_statebuild
-		}
-		ai_will_do = {
-			base = 5
-		}
-	}
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_statebuild
+        }
+        ai_will_do = {
+            base = 5
+        }
+    }
 
-	focus = {
-		id = YFC_focus_accidental_mistakes
-		relative_position_id = YFC_focus_play_smart
-		x = -4
-		y = 4
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_accidental_mistakes
+        relative_position_id = YFC_focus_play_smart
+        x = -4
+        y = 4
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_build_ports_other focus = YFC_focus_bribe_village_leaders focus = YFC_focus_prospect_the_lands }
+        prerequisite = { focus = YFC_focus_build_ports_other focus = YFC_focus_bribe_village_leaders focus = YFC_focus_prospect_the_lands }
 
-		cost = 7
-		completion_reward = {
-			add_political_power = 50
-			add_to_variable = { eastern_borderwar_var = 0.75 }
-		}
+        cost = 7
+        completion_reward = {
+            add_political_power = 50
+            add_to_variable = { eastern_borderwar_var = 0.75 }
+        }
 
-		ai_will_do = {
-			base = 10
-		}
-	}
+        ai_will_do = {
+            base = 10
+        }
+    }
 
-	focus = {
-		id = YFC_focus_who_dares_wins
-		relative_position_id = YFC_focus_see_to_the_eastern_front
-		x = 0
-		y = 7
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_who_dares_wins
+        relative_position_id = YFC_focus_see_to_the_eastern_front
+        x = 0
+        y = 7
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
-		prerequisite = { focus = YFC_focus_accidental_mistakes }
+        prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
+        prerequisite = { focus = YFC_focus_accidental_mistakes }
 
-		allow_branch = { has_completed_focus = YFC_focus_who_dares_wins }
+        allow_branch = { has_completed_focus = YFC_focus_who_dares_wins }
 
-		available = {
-			always = no
-		}
+        available = {
+            always = no
+        }
 
-		cost = 5
-		completion_reward = {
-			mark_focus_tree_layout_dirty = yes
-			hidden_effect = {
-				IF = {
-					limit = {
-						is_ai = yes
-						has_manpower < 8000
-					}
-					add_manpower = 6000
-				}
-				IF = {
-					limit = {
-						is_ai = yes
-						check_variable = { money_amount < 15 }
-					}
-					add_to_variable = { money_amount = 7 }
-				}
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        has_manpower < 8000
+                    }
+                    add_manpower = 6000
+                }
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        check_variable = { money_amount < 15 }
+                    }
+                    add_to_variable = { money_amount = 7 }
+                }
+            }
+        }
+    }
 
-	#RIP old Raiding stuff here 2025-2025
+    #RIP old Raiding stuff here 2025-2025
 
- #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-	focus = {
-		id = YFC_focus_establish_formal_connection
-		relative_position_id = YFC_focus_YFC_funded_pillaging
-		x = 3
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
-		prerequisite = { focus = YFC_focus_open_foreign_policy }
+    focus = {
+        id = YFC_focus_establish_formal_connection
+        relative_position_id = YFC_focus_YFC_funded_pillaging
+        x = 3
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
+        prerequisite = { focus = YFC_focus_open_foreign_policy }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_YFC_funded_pillaging
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
-		
-		ai_will_do = {
-			base = 7
-		}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_YFC_funded_pillaging
+            }
+        }
 
-		cost = 5
-		completion_reward = {
-			country_event = YFC_event.53
-			YFC = { give_guarantee = BUN }
-			BUN = { give_guarantee = YFC }
-		}
-	}
+        allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 
-	focus = {
-		id = YFC_focus_diverting_funds
-		relative_position_id = YFC_focus_YFC_funded_pillaging
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
+        ai_will_do = {
+            base = 7
+        }
 
-		available = {
-			custom_trigger_tooltip = {
+        cost = 5
+        completion_reward = {
+            country_event = YFC_event.53
+            YFC = { give_guarantee = BUN }
+            BUN = { give_guarantee = YFC }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_diverting_funds
+        relative_position_id = YFC_focus_YFC_funded_pillaging
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
+
+        available = {
+            custom_trigger_tooltip = {
                 tooltip = l_money_cost_300K
                 check_variable = { money_amount > 3 }
             }
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_YFC_funded_pillaging
-			}
-		}
-		
-		allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_YFC_funded_pillaging
+            }
+        }
 
-		ai_will_do = {
-			base = 7
-		}
+        allow_branch = { has_completed_focus = YFC_focus_YFC_funded_pillaging }
 
-		cost = 5
-		completion_reward = {
-			subtract_from_variable = { money_amount = 3 }
-			hidden_effect = {
-				BUN = {add_to_variable = { money_amount = 3 }}
-			}
-			army_experience = 25
-			add_command_power = 50
-		}
-	}
+        ai_will_do = {
+            base = 7
+        }
 
-	focus = {
-		id = YFC_focus_sectorial_meddling
-		relative_position_id = YFC_focus_great_business_partnership
-		x = -2.5
-		y = 0
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_diverting_funds }
-		available = {
-			hidden_trigger = {
-				NOT = {has_completed_focus = YFC_focus_numismatian_split}
-			}
-		}
+        cost = 5
+        completion_reward = {
+            subtract_from_variable = { money_amount = 3 }
+            hidden_effect = {
+                BUN = {add_to_variable = { money_amount = 3 }}
+            }
+            army_experience = 25
+            add_command_power = 50
+        }
+    }
 
-		ai_will_do = {
-			base = 7
-		}
+    focus = {
+        id = YFC_focus_sectorial_meddling
+        relative_position_id = YFC_focus_great_business_partnership
+        x = -2.5
+        y = 0
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_diverting_funds }
+        available = {
+            hidden_trigger = {
+                NOT = {has_completed_focus = YFC_focus_numismatian_split}
+            }
+        }
 
-		cost = 5
+        ai_will_do = {
+            base = 7
+        }
 
-		completion_reward = {
-			#removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
-			#Just military_access and/or some cool stuff ZDubbz?
+        cost = 5
 
-			custom_effect_tooltip = l_YFC_sectors_All_Lower
-			add_political_power = -100 #Might remove later
-			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
-			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
-			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
-			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
-			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
-		}
-	}
+        completion_reward = {
+            #removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
+            #Just military_access and/or some cool stuff ZDubbz?
 
-	focus = {
-		id = YFC_focus_permanent_mercenary_purchase
-		relative_position_id = YFC_focus_great_business_partnership
-		x = 3 #Hoi4 hates .5 or something idk
-		y = 0
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_establish_formal_connection }
+            custom_effect_tooltip = l_YFC_sectors_All_Lower
+            add_political_power = -100 #Might remove later
+            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+        }
+    }
 
-		available = {
-			has_completed_focus = YFC_focus_the_grapes_and_the_cherries
-		}
+    focus = {
+        id = YFC_focus_permanent_mercenary_purchase
+        relative_position_id = YFC_focus_great_business_partnership
+        x = 3 #Hoi4 hates .5 or something idk
+        y = 0
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_establish_formal_connection }
 
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.56
-				hours = 1
-				random_hours = 2
-			}
-		}
+        available = {
+            has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+        }
 
-		ai_will_do = {
-			base = 7
-		}
-	}
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.56
+                hours = 1
+                random_hours = 2
+            }
+        }
 
-	focus = {
-		id = YFC_focus_great_business_partnership
-		relative_position_id = YFC_focus_diverting_funds
-		x = 1.5
-		y = 1
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_establish_formal_connection }
-		prerequisite = { focus = YFC_focus_diverting_funds }
+        ai_will_do = {
+            base = 7
+        }
+    }
 
-		ai_will_do = {
-			base = 10
-		}
+    focus = {
+        id = YFC_focus_great_business_partnership
+        relative_position_id = YFC_focus_diverting_funds
+        x = 1.5
+        y = 1
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_establish_formal_connection }
+        prerequisite = { focus = YFC_focus_diverting_funds }
 
-		cost = 5
-		completion_reward = {
-			add_political_power = 50
-			add_opinion_modifier = { target = BUN modifier = medium_increase }
-			every_country_with_original_tag = {
-				original_tag_to_check = BUN
-				add_opinion_modifier = { target = YFC modifier = medium_increase }
-			}
-			hidden_effect = {
-				GGR = { #Embargo event
-					country_event = {
-						id = YFC_event.9
-						days = 15
-						random_hours = 48
-					}
-				}
-				CRN = { #Embargo event
-					country_event = {
-						id = YFC_event.9
-						days = 18
-						random_hours = 48
-					}
-				}
-				#Also later me kickstart the sector fighting event chain
-			}
-		}
-	}
+        ai_will_do = {
+            base = 10
+        }
 
-	focus = {
-		id = YFC_focus_hoard_gold
-		relative_position_id = YFC_focus_great_business_partnership
-		x = -4
-		y = 0
-		icon = GFX_focus_generic
+        cost = 5
+        completion_reward = {
+            add_political_power = 50
+            add_opinion_modifier = { target = BUN modifier = medium_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = medium_increase }
+            }
+            hidden_effect = {
+                GGR = { #Embargo event
+                    country_event = {
+                        id = YFC_event.9
+                        days = 15
+                        random_hours = 48
+                    }
+                }
+                CRN = { #Embargo event
+                    country_event = {
+                        id = YFC_event.9
+                        days = 18
+                        random_hours = 48
+                    }
+                }
+                #Also later me kickstart the sector fighting event chain
+            }
+        }
+    }
 
-		prerequisite = { focus = YFC_focus_diverting_funds }
-		available = {
-			hidden_trigger = {
-				NOT = {has_completed_focus = YFC_focus_numismatian_split}
-			}
-		}
-		ai_will_do = {
-			base = 7
-		}
-		cost = 5
-		completion_reward = {
-			custom_effect_tooltip = l_money_gain_3M
-			custom_effect_tooltip = l_YFC_sectors_Gold_Take
-			add_to_variable = { money_amount = 30 }
-			IF = {
-				limit = {is_ai = yes}
-				add_to_variable = { money_amount = 15 }
-			}
-		}
-	}
+    focus = {
+        id = YFC_focus_hoard_gold
+        relative_position_id = YFC_focus_great_business_partnership
+        x = -4
+        y = 0
+        icon = GFX_focus_generic
 
-	focus = {
-		id = YFC_focus_publicize_partnership
-		relative_position_id = YFC_focus_great_business_partnership
-		x = 2
-		y = 1
-		icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_diverting_funds }
+        available = {
+            hidden_trigger = {
+                NOT = {has_completed_focus = YFC_focus_numismatian_split}
+            }
+        }
+        ai_will_do = {
+            base = 7
+        }
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_money_gain_3M
+            custom_effect_tooltip = l_YFC_sectors_Gold_Take
+            add_to_variable = { money_amount = 30 }
+            IF = {
+                limit = {is_ai = yes}
+                add_to_variable = { money_amount = 15 }
+            }
+        }
+    }
 
-		prerequisite = { focus = YFC_focus_establish_formal_connection }
-		available = {
-			hidden_trigger = {
-				NOT = {has_completed_focus = YFC_focus_numismatian_split}
-			}
-		}
-		ai_will_do = {
-			base = 7
-		}
-		cost = 5
-		completion_reward = {
+    focus = {
+        id = YFC_focus_publicize_partnership
+        relative_position_id = YFC_focus_great_business_partnership
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
 
-			#Alright how about something like a defense pact/allaince (but not a faction yet)
-			#Something that gives YFC maybe army buffs but makes the embargoes worse or something
-			#ZDubbz
-		}
-	}
+        prerequisite = { focus = YFC_focus_establish_formal_connection }
+        available = {
+            hidden_trigger = {
+                NOT = {has_completed_focus = YFC_focus_numismatian_split}
+            }
+        }
+        ai_will_do = {
+            base = 7
+        }
+        cost = 5
+        completion_reward = {
 
-	focus = { #yay :D
-		id = YFC_focus_from_the_deal
-		relative_position_id = YFC_focus_great_business_partnership
-		x = 0
-		y = 1
-		icon = GFX_focus_generic
+            #Alright how about something like a defense pact/allaince (but not a faction yet)
+            #Something that gives YFC maybe army buffs but makes the embargoes worse or something
+            #ZDubbz
+        }
+    }
 
-		available = {
-			has_political_power > 25
+    focus = { #yay :D
+        id = YFC_focus_from_the_deal
+        relative_position_id = YFC_focus_great_business_partnership
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
 
-			hidden_trigger = {
-				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
-			}
-		}
+        available = {
+            has_political_power > 25
 
-		prerequisite = { focus = YFC_focus_great_business_partnership }
+            hidden_trigger = {
+                NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+            }
+        }
 
-		ai_will_do = {
-			base = 5
-		}
+        prerequisite = { focus = YFC_focus_great_business_partnership }
 
-		cost = 8
-		completion_reward = {
-			add_political_power = -25
-			add_stability = 0.05
-			add_war_support = 0.1
-			diplomatic_relation = {
-				country = BUN
-				relation = non_aggression_pact
-				active = yes
-			}
-		}
-	}
+        ai_will_do = {
+            base = 5
+        }
 
-	focus = {
-		id = YFC_focus_the_first_embargo
-		relative_position_id = YFC_focus_diverting_funds
-		x = -3
-		y = 2
-		icon = GFX_focus_generic
+        cost = 8
+        completion_reward = {
+            add_political_power = -25
+            add_stability = 0.05
+            add_war_support = 0.1
+            diplomatic_relation = {
+                country = BUN
+                relation = non_aggression_pact
+                active = yes
+            }
+        }
+    }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_the_first_embargo
-			}
-		}
+    focus = {
+        id = YFC_focus_the_first_embargo
+        relative_position_id = YFC_focus_diverting_funds
+        x = -3
+        y = 2
+        icon = GFX_focus_generic
 
-		allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_first_embargo
+            }
+        }
 
-		cost = 3
-		completion_reward = {
-			#Gasp
-		}
-	}
+        allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
 
-	focus = {
-		id = YFC_focus_numismatian_split
-		relative_position_id = YFC_focus_great_business_partnership
-		x = 4
-		y = 1
-		icon = GFX_focus_generic
+        cost = 3
+        completion_reward = {
+            #Gasp
+        }
+    }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_numismatian_split
-			}
-		}
+    focus = {
+        id = YFC_focus_numismatian_split
+        relative_position_id = YFC_focus_great_business_partnership
+        x = 4
+        y = 1
+        icon = GFX_focus_generic
 
-		allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_numismatian_split
+            }
+        }
 
-		cost = 3
-		completion_reward = {
-			#Gasp part two
-		}
-	}
+        allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
-	focus = {
-		id = YFC_focus_allow_raiding_into_traitors
-		relative_position_id = YFC_focus_great_business_partnership
-		x = 0
-		y = 2
-		icon = GFX_focus_generic
-		prerequisite = { focus = YFC_focus_the_first_embargo }
-		prerequisite = { focus = YFC_focus_numismatian_split }
+        cost = 3
+        completion_reward = {
+            #Gasp part two
+        }
+    }
 
-		ai_will_do = {
-			base = 15
-		}
+    focus = {
+        id = YFC_focus_allow_raiding_into_traitors
+        relative_position_id = YFC_focus_great_business_partnership
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+        prerequisite = { focus = YFC_focus_the_first_embargo }
+        prerequisite = { focus = YFC_focus_numismatian_split }
 
-		cost = 5
-		completion_reward = {
-			unlock_decision_category_tooltip = decision_YFC_raids_category
-			#I'll just put the raid stuff I had waiting here
-			#But only the raids other stuff unlocks later
+        ai_will_do = {
+            base = 15
+        }
 
-			hidden_effect = {
-				every_other_country = { #Embargo event
-					limit = { 
-						NOT = { 
-							tag = EMP 
-							tag = GOI 
-							tag = GGR
-							tag = GMD
-							tag = CRN 
-						} 
-					}
-					country_event = {
-						id = YFC_event.9
-						days = 1
-						random_days = 45
-						random_hours = 24
-					}
-				}
-				country_event = {
-					id = YFC_event.54
-					days = 50
-					random_hours = 24
-				}
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            unlock_decision_category_tooltip = decision_YFC_raids_category
+            #I'll just put the raid stuff I had waiting here
+            #But only the raids other stuff unlocks later
 
-	#sect 2 of raiders:
+            hidden_effect = {
+                every_other_country = { #Embargo event
+                    limit = {
+                        NOT = {
+                            tag = EMP
+                            tag = GOI
+                            tag = GGR
+                            tag = GMD
+                            tag = CRN
+                        }
+                    }
+                    country_event = {
+                        id = YFC_event.9
+                        days = 1
+                        random_days = 45
+                        random_hours = 24
+                    }
+                }
+                country_event = {
+                    id = YFC_event.54
+                    days = 50
+                    random_hours = 24
+                }
+            }
+        }
+    }
 
-	focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
-		id = YFC_focus_the_great_recession
-		x = 24
-		y = 0
-		icon = GFX_focus_generic
+    #sect 2 of raiders:
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_the_great_recession
-			}
-		}
+    focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
+        id = YFC_focus_the_great_recession
+        x = 24
+        y = 0
+        icon = GFX_focus_generic
 
-		allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_great_recession
+            }
+        }
 
-		cost = 5
-		completion_reward = {
-			
-		}
-	}
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
-	focus = { 
-		id = YFC_focus_mass_firings
-		relative_position_id = YFC_focus_the_great_recession
-		x = -3
-		y = 1
-		icon = GFX_focus_generic
+        cost = 5
+        completion_reward = {
 
-		prerequisite = { focus = YFC_focus_the_great_recession }
-		mutually_exclusive = { focus = YFC_focus_company_restructuring }
+        }
+    }
 
-		ai_will_do = {
-			base = 10
-		}
+    focus = {
+        id = YFC_focus_mass_firings
+        relative_position_id = YFC_focus_the_great_recession
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
 
-		cost = 5
-		completion_reward = {
-			add_manpower = -5000
-			custom_effect_tooltip = l_money_gain_400K
-			add_to_variable = { money_amount = 4 }
-			add_timed_idea = {
-				idea = idea_YFC_company_reorganization
-				days = 180
-			}
-		}
-	}
+        prerequisite = { focus = YFC_focus_the_great_recession }
+        mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
-	focus = {
-		id = YFC_focus_company_restructuring
-		relative_position_id = YFC_focus_the_great_recession
-		x = 3
-		y = 1
-		icon = GFX_focus_generic
+        ai_will_do = {
+            base = 10
+        }
 
-		prerequisite = { focus = YFC_focus_the_great_recession }
-		mutually_exclusive = { focus = YFC_focus_mass_firings }
-		
-		cost = 5
-		completion_reward = {
-			add_stability = -0.05
-			custom_effect_tooltip = l_YFC_sectors_All_Lower
-			add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
-			add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
-			add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
-			add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
-			add_to_variable = { var_idea_YFC_Taser_influence = -2 }
-			add_timed_idea = {
-				idea = idea_YFC_company_reorganization
-				days = 180
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            add_manpower = -5000
+            custom_effect_tooltip = l_money_gain_400K
+            add_to_variable = { money_amount = 4 }
+            add_timed_idea = {
+                idea = idea_YFC_company_reorganization
+                days = 180
+            }
+        }
+    }
 
-	focus = {
-		id = YFC_focus_close_the_markets
-		relative_position_id = YFC_focus_the_great_recession
-		x = 0
-		y = 2
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_company_restructuring
+        relative_position_id = YFC_focus_the_great_recession
+        x = 3
+        y = 1
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_the_great_recession }
+        prerequisite = { focus = YFC_focus_the_great_recession }
+        mutually_exclusive = { focus = YFC_focus_mass_firings }
 
-		ai_will_do = {
-			base = 10
-		}
+        cost = 5
+        completion_reward = {
+            add_stability = -0.05
+            custom_effect_tooltip = l_YFC_sectors_All_Lower
+            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+            add_timed_idea = {
+                idea = idea_YFC_company_reorganization
+                days = 180
+            }
+        }
+    }
 
-		cost = 5
-		completion_reward = {
-			add_stability = 0.02
+    focus = {
+        id = YFC_focus_close_the_markets
+        relative_position_id = YFC_focus_the_great_recession
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_the_great_recession }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        cost = 5
+        completion_reward = {
+            add_stability = 0.02
             every_other_country = {
-                limit = { 
-					NOT = { tag = EMP } 
-					NOT = { tag = BUN }
-				}
+                limit = {
+                    NOT = { tag = EMP }
+                    NOT = { tag = BUN }
+                }
                 add_opinion_modifier = {
                     target = YFC
                     modifier = medium_decrease
                 }
             }
-			#Maybe something else idk
-			hidden_effect = {
-				GMD = { 
-					country_event = {
-						id = YFC_event.9
-						days = 1
-						random_hours = 24
-					}
-				}
-			}
-		}
-	}
+            #Maybe something else idk
+            hidden_effect = {
+                GMD = {
+                    country_event = {
+                        id = YFC_event.9
+                        days = 1
+                        random_hours = 24
+                    }
+                }
+            }
+        }
+    }
 
-	focus = { #coiny embargoes, change to the FINAL embargo
-		id = YFC_focus_the_second_embargo 
-		relative_position_id = YFC_focus_close_the_markets
-		x = 0
-		y = 1.5
-		icon = GFX_focus_generic
+    focus = { #coiny embargoes, change to the FINAL embargo
+        id = YFC_focus_the_second_embargo
+        relative_position_id = YFC_focus_close_the_markets
+        x = 0
+        y = 1.5
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_close_the_markets }
+        prerequisite = { focus = YFC_focus_close_the_markets }
 
-		available = {
-			hidden_trigger = {
-				has_completed_focus = YFC_focus_the_second_embargo
-			}
-		}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_second_embargo
+            }
+        }
 
-		allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
 
-		cost = 3
-		completion_reward = {
-			#Gasp part 3!!!
-		}
-	}
+        cost = 3
+        completion_reward = {
+            #Gasp part 3!!!
+        }
+    }
 
-	focus = { 
-		id = YFC_focus_grow_closer_ties
-		relative_position_id = YFC_focus_the_second_embargo
-		x = 0
-		y = 1.5
-		icon = GFX_focus_generic
+    focus = {
+        id = YFC_focus_grow_closer_ties
+        relative_position_id = YFC_focus_the_second_embargo
+        x = 0
+        y = 1.5
+        icon = GFX_focus_generic
 
-		prerequisite = { focus = YFC_focus_the_second_embargo }
+        prerequisite = { focus = YFC_focus_the_second_embargo }
 
-		ai_will_do = {
-			base = 5
-		}
+        ai_will_do = {
+            base = 5
+        }
 
-		cost = 5
-		completion_reward = {
-			country_event = {
-				id = YFC_event.55
-				hours = 1
-			}
-			#Everything below this comment is placeholder stuff for other parts of the tree
-			
-			set_cosmetic_tag = YFC_raiders
-			add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
-			YFC = {
-				create_faction = "Bandit Pack"
-				add_to_faction = BUN
-			}
-		}
-	}
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = YFC_event.55
+                hours = 1
+            }
+            #Everything below this comment is placeholder stuff for other parts of the tree
+
+            set_cosmetic_tag = YFC_raiders
+            add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
+            YFC = {
+                create_faction = "Bandit Pack"
+                add_to_faction = BUN
+            }
+        }
+    }
 }
 
-#Also just as a side note I think the second part should have more stuff (Shocking I know) and not be as linear 
+#Also just as a side note I think the second part should have more stuff (Shocking I know) and not be as linear
 
 #More stuff about the raiding things I guess:
 # -Show No Mercy sprit will now be a modifier, starts off grabage but gets better with army xp

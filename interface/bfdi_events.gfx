@@ -521,21 +521,21 @@ SpriteTypes = {
 		name = GFX_GFG_event22
 		texturefile = gfx/event_pictures/GFG_event22.dds
 	}
-
-
-	spriteType = {
-		name = GFX_YFC_event3
-		textureFile = gfx/event_pictures/TIG_event1.png
-	}
-
-	spriteType = {
-		name = GFX_YFC_event2
-		textureFile = gfx/event_pictures/TIG_event2.png
-	}
+	
 	
 	spriteType = {
 		name = GFX_YFC_event1
 		textureFile = gfx/event_pictures/TIG_event3.png
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event2
+		textureFile = gfx/event_pictures/TIG_event2.png
+	}
+
+	spriteType = {
+		name = GFX_YFC_event3
+		textureFile = gfx/event_pictures/TIG_event1.png
 	}
 
 	spriteType = {
@@ -606,6 +606,11 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_YFC_BUN3
 		textureFile = gfx/event_pictures/YFC_BUN3.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN4
+		textureFile = gfx/event_pictures/YFC_BUN4.png
 	}
 
 	spriteType = {

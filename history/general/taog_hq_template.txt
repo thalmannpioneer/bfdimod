@@ -4,215 +4,215 @@
 #NOTE: IF YOU UPDATE THE HQ NAMES MAKE SURE TO GO TO SUPPORT TECH AS SOME STUFF IS HARD CODED BY THEIR NAME
 
 every_possible_country = {
-	limit = { has_dlc = "Thunder at Our Gates" }
+    limit = { has_dlc = "Thunder at Our Gates" }
 
-	# WGF
-	if = {
-		limit = { tag = WGF }
-		division_template = {
-			name = "Red Army Headquarters"
-			template_counter = 121
-			is_army_hq = yes
+    # WGF
+    if = {
+        limit = { tag = WGF }
+        division_template = {
+            name = "Red Army Headquarters"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-				hq_infantry = { x = 0 y = 3 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+                hq_infantry = { x = 0 y = 3 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GGR
-	if = {
-		limit = { tag = GGR }
-		division_template = {
-			name = "Objekt Oberkommando"
-			template_counter = 121
-			is_army_hq = yes
+    # GGR
+    if = {
+        limit = { tag = GGR }
+        division_template = {
+            name = "Objekt Oberkommando"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# YFC
-	if = {
-		limit = { tag = YFC }
-		division_template = {
-			name = "Object Resources"
-			template_counter = 121
-			is_army_hq = yes
+    # YFC
+    if = {
+        limit = { tag = YFC }
+        division_template = {
+            name = "Object Resources"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 } #Guards? Who needs that!
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 } #Guards? Who needs that!
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GTR
-	if = {
-		limit = { tag = GTR }
-		division_template = {
-			name = "Technocratic Military Committee" #Maybe?
-			template_counter = 121
-			is_army_hq = yes
+    # GTR
+    if = {
+        limit = { tag = GTR }
+        division_template = {
+            name = "Technocratic Military Committee" #Maybe?
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GFG
-	if = {
-		limit = { tag = GFG }
-		division_template = {
-			name = "Iron Hand HQ"
-			template_counter = 121
-			is_army_hq = yes
+    # GFG
+    if = {
+        limit = { tag = GFG }
+        division_template = {
+            name = "Iron Hand HQ"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GSR
-	if = {
-		limit = { tag = GSR }
-		division_template = {
-			name = "Revolutionary Command Center"
-			template_counter = 121
-			is_army_hq = yes
+    # GSR
+    if = {
+        limit = { tag = GSR }
+        division_template = {
+            name = "Revolutionary Command Center"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-				hq_infantry = { x = 0 y = 3 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+                hq_infantry = { x = 0 y = 3 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GPG
-	if = {
-		limit = { tag = GPG }
-		division_template = {
-			name = "Goiky HQ"
-			template_counter = 121
-			is_army_hq = yes
+    # GPG
+    if = {
+        limit = { tag = GPG }
+        division_template = {
+            name = "Goiky HQ"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# GDR
-	if = {
-		limit = { tag = GDR }
-		division_template = {
-			name = "Field Army Headquarters"
-			template_counter = 121
-			is_army_hq = yes
+    # GDR
+    if = {
+        limit = { tag = GDR }
+        division_template = {
+            name = "Field Army Headquarters"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-				hq_infantry = { x = 0 y = 2 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+                hq_infantry = { x = 0 y = 2 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 
-	# LSS
-	if = {
-		limit = { tag = LSS }
-		division_template = {
-			name = "Star Command"
-			template_counter = 121
-			is_army_hq = yes
+    # LSS
+    if = {
+        limit = { tag = LSS }
+        division_template = {
+            name = "Star Command"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_motorized = { x = 0 y = 0 }
-				hq_motorized = { x = 0 y = 1 }
-				hq_motorized = { x = 0 y = 2 }
-			}
+            regiments = {
+                hq_motorized = { x = 0 y = 0 }
+                hq_motorized = { x = 0 y = 1 }
+                hq_motorized = { x = 0 y = 2 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-				hq_air_liaison = { x = 0 y = 1 }
-				hq_logistics = { x = 0 y = 2 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+                hq_air_liaison = { x = 0 y = 1 }
+                hq_logistics = { x = 0 y = 2 }
+            }
+        }
+    }
 
-	# Generic fallback for every other TAOG country
-	if = {
-		limit = {
-			NOT = { tag = WGF }
-			NOT = { tag = GGR }
-			NOT = { tag = GTR }
-			NOT = { tag = LSS }
-			NOT = { tag = YFC }
-			NOT = { tag = GFG }
-			NOT = { tag = GSR }
-			NOT = { tag = GPG }
-			NOT = { tag = GDR }
-		}
-		division_template = {
-			localization_key = "ARMY_HQ_TEMPLATE_NAME"
-			template_counter = 121
-			is_army_hq = yes
+    # Generic fallback for every other TAOG country
+    if = {
+        limit = {
+            NOT = { tag = WGF }
+            NOT = { tag = GGR }
+            NOT = { tag = GTR }
+            NOT = { tag = LSS }
+            NOT = { tag = YFC }
+            NOT = { tag = GFG }
+            NOT = { tag = GSR }
+            NOT = { tag = GPG }
+            NOT = { tag = GDR }
+        }
+        division_template = {
+            localization_key = "ARMY_HQ_TEMPLATE_NAME"
+            template_counter = 121
+            is_army_hq = yes
 
-			regiments = {
-				hq_infantry = { x = 0 y = 0 }
-				hq_infantry = { x = 0 y = 1 }
-			}
+            regiments = {
+                hq_infantry = { x = 0 y = 0 }
+                hq_infantry = { x = 0 y = 1 }
+            }
 
-			support = {
-				hq_support_company = { x = 0 y = 0 }
-			}
-		}
-	}
+            support = {
+                hq_support_company = { x = 0 y = 0 }
+            }
+        }
+    }
 }

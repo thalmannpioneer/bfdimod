@@ -202,7 +202,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_trigger_tooltip = l_GDR_loads_new_focus_tree
+			custom_effect_tooltip = l_GDR_loads_new_focus_tree
 			hidden_effect = {
 				load_focus_tree = GDR_postcw_focus_tree
 				country_event = GDR_event.2

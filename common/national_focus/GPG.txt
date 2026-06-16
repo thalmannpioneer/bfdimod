@@ -113,19 +113,12 @@ focus_tree = {
 		
 		#you should love 1.13 update only for this thing
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_clocks_dead_1 = { 
 				has_country_flag = clock_accusation
 				NOT = { has_country_flag = clock_accusation_failure }
 			}
-			value = GFX_focus_GPG_clocks_dead_1
-		}
-		icon = {
-			trigger = { NOT = { has_country_flag = clock_accusation } }
-			value = GFX_focus_GPG_clocks_dead_2
-		}
-		icon = {
-			trigger = { has_country_flag = clock_accusation_failure }
-			value = GFX_focus_GPG_clocks_dead_3
+			GFX_focus_GPG_clocks_dead_2 = { NOT = { has_country_flag = clock_accusation } }
+			GFX_focus_GPG_clocks_dead_3 = { has_country_flag = clock_accusation_failure }
 		}
 		dynamic = yes
 		
@@ -154,13 +147,10 @@ focus_tree = {
 		allow_branch = { has_country_flag = second_question }
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_cabinet_head_1 = {
 				has_country_flag = fries_triumph
 			}
-			value = GFX_focus_GPG_cabinet_head_1
-		}
-		icon = {
-			value = GFX_focus_GPG_cabinet_head_2
+			GFX_focus_GPG_cabinet_head_2 = yes
 		}
 		dynamic = yes
 		
@@ -189,13 +179,10 @@ focus_tree = {
 		allow_branch = { has_country_flag = third_question }
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_compensation_1 = { 
 				has_country_flag = compensation_accepted
 			}
-			value = GFX_focus_GPG_compensation_1
-		}
-		icon = {
-			value = GFX_focus_GPG_compensation_2
+			GFX_focus_GPG_compensation_2 = yes
 		}
 		dynamic = yes
 		
@@ -224,22 +211,15 @@ focus_tree = {
 		allow_branch = { has_country_flag = fourth_question }
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_defense_plan_1 = { 
 				has_country_flag = defense_plan_blue
 			}
-			value = GFX_focus_GPG_defense_plan_1
-		}
-		icon = {
-			trigger = { 
+			GFX_focus_GPG_defense_plan_2 = { 
 				has_country_flag = defense_plan_red
 			}
-			value = GFX_focus_GPG_defense_plan_2
-		}
-		icon = {
-			trigger = { 
+			GFX_focus_GPG_defense_plan_3 = { 
 				has_country_flag = defense_plan_black
 			}
-			value = GFX_focus_GPG_defense_plan_3
 		}
 		dynamic = yes
 		
@@ -268,13 +248,10 @@ focus_tree = {
 		allow_branch = { has_country_flag = fifth_question }
 		
 		icon = {
-			trigger = { 
+			casland_remilitarization = { 
 				has_country_flag = casland_remilitarization
 			}
-			value = GFX_focus_GPG_casland_remilitarization_1
-		}
-		icon = {
-			value = GFX_focus_GPG_casland_remilitarization_2
+			GFX_focus_GPG_casland_remilitarization_2 = yes
 		}
 		dynamic = yes
 		
@@ -303,13 +280,10 @@ focus_tree = {
 		allow_branch = { has_country_flag = sixth_question }
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_mines_1 = { 
 				has_country_flag = mines_nationalization
 			}
-			value = GFX_focus_GPG_mines_1
-		}
-		icon = {
-			value = GFX_focus_GPG_mines_2
+			GFX_focus_GPG_mines_2 = yes
 		}
 		dynamic = yes
 		
@@ -338,13 +312,10 @@ focus_tree = {
 		allow_branch = { has_country_flag = seventh_question }
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_constitution_1 = { 
 				has_country_flag = constitution_accepted
 			}
-			value = GFX_focus_GPG_constitution_1
-		}
-		icon = {
-			value = GFX_focus_GPG_constitution_2
+			GFX_focus_GPG_constitution_2 = yes
 		}
 		dynamic = yes
 		
@@ -378,13 +349,10 @@ focus_tree = {
 		}
 		
 		icon = {
-			trigger = { 
+			GFX_focus_GPG_second_congress_end_1 = { 
 				has_country_flag = second_congress_badend
 			}
-			value = GFX_focus_GPG_second_congress_end_1
-		}
-		icon = {
-			value = GFX_focus_GPG_second_congress_end_2
+			GFX_focus_GPG_second_congress_end_2 = yes
 		}
 		dynamic = yes
 		

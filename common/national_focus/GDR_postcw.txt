@@ -375,7 +375,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            stability_factor = 0.05
+            add_stability = 0.05
             add_political_power = 25
             custom_effect_tooltip = l_GDR_congress_casland_influence_increase
             if = {
