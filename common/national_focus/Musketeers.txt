@@ -63,13 +63,17 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_three_musketeers }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			ROOT = { has_country_flag = Allow_Musketeers }
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
-			} 
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
+			}
 		}
 	}
 
