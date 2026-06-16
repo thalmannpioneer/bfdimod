@@ -1909,7 +1909,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            base = 20
+            base = 50 #If you have the chance, take it.
         }
 
         completion_reward = {

@@ -967,7 +967,7 @@
  GFG_focus_break_the_line_desc: "It's time to defeat the bastards in Greenport once and for all!"
  
  #YFC
- YFC_focus_consolidate_power: "Consolidate Power"
+ YFC_focus_consolidate_power: "§YConsolidate Power§!"
  YFC_focus_consolidate_power_desc: "We need to establish legitimacy in both the Company and the State"
 
  YFC_focus_open_the_market: "Open The Markets!"
@@ -991,10 +991,7 @@
  YFC_focus_purchase_ordnance_package: "Purchase Ordnance Package"
  YFC_focus_purchase_ordnance_package_desc: "The sheer force of the Unnamed Mercenary Brotherhood yields great results, however, with extra firepower, they could be even greater. It is well within our budget to buy some extra artillery for the purpose of arming the UMB even further, if we happen to buy them in the future."
 
- YFC_focus_teachings_of_war: "???"
- YFC_focus_teachings_of_war_desc: "???"
-
- YFC_focus_the_southern_bandits: "The Southern Bandits"
+ YFC_focus_the_southern_bandits: "§gThe Southern Bandits§!"
  YFC_focus_the_southern_bandits_desc: "Those bandits to the south of us are seriously raising concern among our employees. Some of which are scared of a possible attack, and others who believe we should be taking advantage of them. Only time will tell what happens to the bandits, but we must make sure we're ahead of them at all times."
 
  YFC_focus_CRN_cooperation: "Numismatian Cooperation"
@@ -1024,31 +1021,31 @@
  YFC_focus_buy_defense_trainings: "Buy Defense Trainings"
  YFC_focus_buy_defense_trainings_desc: "By paying investors from the Military District to train our mercenaries and militias, we'll be more prepared to attack and defend against the Raiders in a conflict that is seeming inevitable."
  
- YFC_focus_money_arms_capital: "My Money to Arms for Capital!"
+ YFC_focus_money_arms_capital: "§RMy Money to Arms for Capital!§!"
  YFC_focus_money_arms_capital_desc: "Away! Away! Each Raider boy must understand that he must mind the Money Man!"
 
- YFC_focus_promote_blocky: "Promote Blocky"
+ YFC_focus_promote_blocky: "Promote Blocky" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_promote_blocky_desc: "Blocky, despite his short run in BFDI, has proved himself through his feats in The Bunch. He lead many raids, all of which were quick, coordinated, and lead to many decisive victories, where cities burned and profit was plentiful. Eraser may not be happy with us stealing Blocky, but who cares about him am I right?"
 
- YFC_focus_the_pen_problem: "The Pen Problem"
+ YFC_focus_the_pen_problem: "The Pen Problem" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_the_pen_problem_desc: "Pen promised to pay some 500,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 dollars (that's '$500 Million Vigintillion' for all you uneducated folks) to some of the people who voted him back in the game back when BFDI was still ongoing. Somehow, some way that money became owed to us, and now he's essentially indebted to us forever. The other day, he claimed that he'd do 'anything' to get his debt to go away, but instead of offering to give us money or do labor he... got on his knees? Regardless, we'll need to begin working on a compromise if we ever want to get anything back."
 
- YFC_focus_erasers_training: "Eraser's Training"
+ YFC_focus_erasers_training: "Eraser's Training" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_erasers_training_desc: "Eraser has told us in the past that our units are likely unprepared for what it takes to raid a settlement. Far too organized he says, and too rigid, too afraid, too used to walking in straight lines, shooting when told to shoot, retreating when told to retreat. Training our units with him could definitely give us an edge up against our victims."
 
- YFC_focus_a_raid_o3: "A Raid of Our Own" 
+ YFC_focus_a_raid_o3: "A Raid of Our Own" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_a_raid_o3_desc: "Eraser and his leadership finally view our army as 'ready enough' to go on raids. After weeks of rigorous training, teaching our various militias and mercenaries how to be as merciless as possible, we're finally ready to go into foreign countries, spreading our influence and gaining resources."
 
- YFC_focus_numismatian_subjugation: "Subjugate Numismatia" 
+ YFC_focus_numismatian_subjugation: "Subjugate Numismatia" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_numismatian_subjugation_desc: "There's been a thorn in our proverbial sides recently, in the form of a country. Numismatian leadership has been quite vocally against our new bunchivist ideology, claiming that what we're doing is 'unjust', 'against the core principles of the free market', among other things. Despite their hostilities, they have still made attempts to mantain positive relations with specific individuals throughout the corporation. We can use these still-positive relationships to our advantage, keeping them firmly under our thumb, regarldess of their stupid 'opinions'."
 
- YFC_focus_closer_integration: "Closer Integration" 
+ YFC_focus_closer_integration: "Closer Integration" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_closer_integration_desc: "It is only natural that The Bunch and Yellow Face Corporation get closer together, do to our shared ideologies. However, with our recent plans of subjugation, that brings into question The Capitalist Republic. They likely wouldn't be too happy about us getting even closer to the bunch, and we don't know how willing we are to take that risk. Despite already having the go ahead, we should most certainly be careful in the future about how our foreign policy looks if we want to keep them from outwardly speaking against our plans."
 
- YFC_focus_break_diplomacy: "Break Diplomacy" 
+ YFC_focus_break_diplomacy: "Break Diplomacy" #NOT USED RIGHT NOW, REMOVE IF NEED BE
  YFC_focus_break_diplomacy_desc: "The outside world is a bust. Nearly every country in Goiky has mocked our ideals, stating that we're no more than a ragtag band of raiders. Attempting to do anything more than trade with a foreign nation is a waste of our time at this point. At least there'll be no one to speak against us when we burn their settlements to the ground."
 
- YFC_focus_a_look_inward: "A Look Inward"
+ YFC_focus_a_look_inward: "§YA Look Inward§!"
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
  YFC_focus_new_interests: "New Interests"
@@ -1057,10 +1054,10 @@
  YFC_focus_integrate_great_ridge: "Integrate The Great Ridge"
  YFC_focus_integrate_great_ridge_desc: "Placeholder"
 
- YFC_focus_the_bunchivist_problem: "The Bunchivist Problem"
+ YFC_focus_the_bunchivist_problem: "§9The Bunchivist Problem§!"
  YFC_focus_the_bunchivist_problem_desc: "With the defeat of Eraser and his cronies, we have found ourselves in a predicament. The bandit nation was quite a bit more... united than we had anticipated. Many of our new denizens, regardless of where in former bunchivist territory they live, have stated that they deserve to keep their national integrity. We are more than okay with demoloishing Bunchivism entirely. It is a beastly ideology, however, the way we go about it could most certainly determine our future standings. Just imagine the profits we could leech out of a Bunchivist puppet! Imagine how much recognition we'd get for eliminating all raider peoples! Forever."
 
- YFC_focus_the_economic_issue: "The Economic Issue"
+ YFC_focus_the_economic_issue: "§6The Economic Issue§!"
  YFC_focus_the_economic_issue_desc: "We have been facing some economic... complications, since the end of our war against Bunchivism. It is high time we began closely monitoring the economic situation in our country. Perhaps we could seek to improve our standings?"
 
  YFC_focus_industrialize_or_die: "Our Useless Backyard" #Or maybe 'Expanding Our Growth'
@@ -1093,7 +1090,7 @@
  YFC_focus_big_yoyleton: "Big Yoyleton"
  YFC_focus_big_yoyleton_desc: "Yoyleton has the posibility to be a bastion of free trade if we play our cards right. Let us hope that things work as they should."
 
- YFC_focus_population_boom: "Population Boom"
+ YFC_focus_population_boom: "§GPopulation Boom§!"
  YFC_focus_population_boom_desc: "Our investments seem to have people flocking to our cities in large amounts! These migrants can only bring one thing: profits."
 
  YFC_focus_clamp_down_on_bunchivism: "Clamp Down on Bunchivism"
@@ -1120,13 +1117,13 @@
  YFC_focus_fund_secret_police: "Fund Secret Police"
  YFC_focus_fund_secret_police_desc: "ZDubbz cough cough cough"
 
- YFC_focus_fully_cored: "Fully Cored"
+ YFC_focus_fully_cored: "§GFully Cored§!"
  YFC_focus_fully_cored_desc: "ZDubbz cough cough cough"
 
- YFC_focus_stalled_plans: "Stalled Plans"
+ YFC_focus_stalled_plans: "§RStalled Plans§!"
  YFC_focus_stalled_plans_desc: "ZDubbz cough cough cough"
 
- YFC_focus_unite_the_capitalists: "Unite The Capitalists"
+ YFC_focus_unite_the_capitalists: "§YUnite The Capitalists§!"
  YFC_focus_unite_the_capitalists_desc: "ZDubbz cough cough cough"
 
  YFC_focus_foster_new_society: "Foster a New Society"
@@ -1164,13 +1161,10 @@
  YFC_focus_bunch_fostered: "A Bunch Fostered"
  YFC_focus_bunch_fostered_desc: "The presidential elections have come to an end, and the Bunch is securely under both ours, and the Numismatian's control. The Bunch is practicing their own, weird form of capitalism, which we shall permit. For now. Things seem to be looking up for us."
 
- YFC_focus_united_by_profits: "United By Profits"
+ YFC_focus_united_by_profits: "§YUnited By Profits§!"
  YFC_focus_united_by_profits_desc: "The Numismatians are suggesting that we 'formalize' our relationship with both them and the reformed Bunchivists. What might they mean by this? The Numismatians say a lot of things, actually. Always sending us letters about some unimportant 'foreign diplomacy' stuff. They're lucky we tolerate them."
 
- YFC_focus_united_by_profits: "United By Profits"
- YFC_focus_united_by_profits_desc: "The Numismatians are suggesting that we 'formalize' our relationship with both them and the reformed Bunchivists. What might they mean by this? The Numismatians say a lot of things, actually. Always sending us letters about some unimportant 'foreign diplomacy' stuff. They're lucky we tolerate them."
-
- YFC_focus_see_to_the_eastern_front: "Eyes to the East"
+ YFC_focus_see_to_the_eastern_front: "§CEyes to the East§!"
  YFC_focus_see_to_the_eastern_front_desc: "ZDubbz cmon gotta work man"
 
  YFC_focus_play_fast: "Play Fast"
@@ -1238,6 +1232,9 @@
 
  YFC_focus_accidental_mistakes: "'Accidental' Mistakes"
  YFC_focus_accidental_mistakes_desc: "ZDubbz cmon gotta work man"
+
+ YFC_focus_who_dares_wins: "§CEast Secured§!"
+ YFC_focus_who_dares_wins_desc: "ZDubbz cmon gotta work man"
 
  Musketeers_three_musketeers: "Three Musketeers"
  Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"

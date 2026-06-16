@@ -242,6 +242,9 @@ country_event = {
         hidden_effect = {
             set_country_flag = ohh_thats_bad
             set_country_flag = project_1_fail
+
+            add_threat = 1
+
             launch_nuke = {
                 province = 3545 #:sob:
             }
@@ -1454,6 +1457,8 @@ country_event = {
         custom_effect_tooltip = l_GTR_yoylite_bomb_strike
         hidden_effect = {
             add_ideas = idea_common_yoylite_nation #other nations will accomplish yoylite bombs too later
+
+            add_threat = 3
 
             launch_nuke = {
                 province = 3398

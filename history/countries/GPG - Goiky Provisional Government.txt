@@ -37,7 +37,7 @@ set_popularities = {
 }
 
 set_stability = 0.2
-set_war_support = 0
+set_war_support = 0.05
 
 add_ideas = idea_GPG_questionable_future
 add_ideas = idea_GPG_factionalism

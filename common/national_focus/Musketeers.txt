@@ -75,12 +75,12 @@ joint_focus = {
 		}
 	}
 
-	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+	joint_trigger = { #LATER ME TRY: AND = {}
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -130,11 +130,11 @@ joint_focus = {
 	}
 	
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -177,11 +177,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -220,11 +220,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -267,11 +267,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -313,11 +313,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -368,11 +368,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -411,11 +411,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
@@ -454,11 +454,11 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		ROOT = { has_country_flag = Allow_Musketeers }
+		has_country_flag = Allow_Musketeers 
 		is_in_faction = yes
 		OR = {
-			faction_leader = {tag = YFC}
-			faction_leader = {tag = CRN}
+			is_in_faction_with = YFC
+			is_in_faction_with = CRN
 		} 
 	}
 
