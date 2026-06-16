@@ -2,7 +2,6 @@
  debug_battle_royale_desc: "§tWARNING!§! YOUR PC MIGHT EXPLODE FROM ALL THE WARS! MIGHT ALSO BREAK SOME OF THE FOCUSES SO GOOD LUCK!"
  debug_conquest_desc: "§tWARNING!§! YOUR PC MIGHT EXPLODE FROM ALL THE WARS! MIGHT ALSO BREAK SOME OF THE FOCUSES SO GOOD LUCK!"
  debug_nuke_everything_desc: "Do I really need to explain...?"
- debug_cool_diplo_desc: "Mainly good for MP games :)"
 
  targeted_white_peace: "White Peace with [FROM.GetName]"
  targeted_white_peace_desc: "With no way to reach them, the time is now to reach an agreement to end this useless war."
@@ -78,7 +77,7 @@
  decision_GGR_industry_category_desc: "The Snow Plateau's economic development is at a very low level, and if we want to protect our Reich, we must catch up with our potential opponent's industry."
  GGR_industry_four_year_plan_mission: "§YFour-year Plan§!"
  GGR_industry_snowy_vexels_mission: "§LVexels§! Payments"
- GGR_industry_stop_vexels: "§RStop§! Payments by §LVexels§"
+ GGR_industry_stop_vexels: "§RStop§! Payments by §LVexels§!"
  GGR_industry_build_factories_in_schneehorn: "Industrialization of §YSchneehorn§!"
  GGR_industry_build_factories_in_snowy_plains: "Industrialization of §7Snowy plains§!"
  GGR_industry_build_factories_in_snowy_hills: "Industrialization of §9Snowy hills§!"

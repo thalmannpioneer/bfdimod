@@ -44,6 +44,7 @@
  VICTORY_POINTS_3417: "Snowriver"
  VICTORY_POINTS_6084: "Deepforest"
  VICTORY_POINTS_711: "Gorge Town"
+ VICTORY_POINTS_711_RUNIS: "§RGorge Town Ruins§!"
  VICTORY_POINTS_2314: "Yellowfield"
  VICTORY_POINTS_10228: "Burns"
  VICTORY_POINTS_5824: "Cary"
@@ -59,7 +60,7 @@
  VICTORY_POINTS_10646: "Beetburg" #DSF did NOT make this
  VICTORY_POINTS_4572: "Toptap" 
  VICTORY_POINTS_3161: "Round Country"
- VICTORY_POINTS_3797: "High Point"
+ VICTORY_POINTS_3797: "Höhepunkt" #High Point but German
  VICTORY_POINTS_11072: "Tridil"
  VICTORY_POINTS_11074: "Longroad"
  VICTORY_POINTS_1146: "Buerfodek"
@@ -145,6 +146,7 @@
  VICTORY_POINTS_1052: "Mount Big" #From a old Bokoen1 video, don't ask why this idea came to me
  VICTORY_POINTS_6303: "Eastern Suburbs" 
  VICTORY_POINTS_11265: "Nucleifield" 
+ VICTORY_POINTS_11463: "Coldpark" 
 
 
  #TODO: TRANSLATE ALL YF SHIT TO RUSSIAN

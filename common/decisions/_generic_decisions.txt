@@ -441,7 +441,7 @@ economy_decisions = {
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 50 }
+				check_variable = { money_amount > 65 }
 				OR = {
 					has_political_power > 150
 					has_stability < 0.5
@@ -486,7 +486,7 @@ economy_decisions = {
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 60 }
+				check_variable = { money_amount > 65 }
 				has_political_power > 150
 				add = 5
 			}
@@ -527,7 +527,7 @@ economy_decisions = {
 				add = -1000
 			}			
 			modifier = {
-				check_variable = { money_amount > 40 }
+				check_variable = { money_amount > 55 }
 				has_political_power > 150
 				add = 5
 			}
@@ -550,7 +550,7 @@ economy_decisions = {
 
 		visible = { 
 			has_country_flag = has_money_system
-			num_of_supply_nodes < 15
+			num_of_supply_nodes < 20
 		}
 
 		custom_cost_trigger = {
@@ -564,12 +564,7 @@ economy_decisions = {
 		days_re_enable = 450
 
 		ai_will_do = {
-			base = 0
-			modifier = {
-				check_variable = { money_amount < 150 }
-				tag = YFC
-				add = -1000
-			}			
+			base = 0		
 		}
 
 		modifier = {
@@ -612,7 +607,7 @@ economy_decisions = {
 				add = -1000
 			}
 			modifier = {
-				check_variable = { money_amount > 65 }
+				check_variable = { money_amount > 75 }
 				has_political_power > 150
 				add = 5
 			}
@@ -657,12 +652,12 @@ economy_decisions = {
 				add = -1000
 			}
 			modifier = {
-				check_variable = { money_amount > 60 }
+				check_variable = { money_amount > 75 }
 				has_political_power > 150
 				add = 5
 			}
 			modifier = {
-				check_variable = { money_amount > 35 }
+				check_variable = { money_amount > 40 }
 				has_army_experience < 25
 				add = 5
 			}
@@ -798,7 +793,7 @@ propaganda_efforts = {
 				add = 10
 			}
 			modifier = {
-				check_variable = { money_amount > 50 }
+				check_variable = { money_amount > 75 }
 				has_political_power > 150
 				add = 5
 			}

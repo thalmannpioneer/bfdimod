@@ -1013,6 +1013,8 @@ country_event = {
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_outcome
 
+        set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
         if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
@@ -1059,6 +1061,8 @@ country_event = {
         set_country_flag = GTR_outcome
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_outcome
+
+        set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
         if = {
             limit = { is_ai = no }
@@ -1631,6 +1635,8 @@ country_event = {
         set_country_flag = GTR_outcome
         mark_focus_tree_layout_dirty = yes
         complete_national_focus = GTR_focus_outcome
+
+        set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
         if = {
             limit = { is_ai = no }

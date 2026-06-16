@@ -144,7 +144,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 4
+			base = 5
 			
 			modifier = {
 				factor = 2
@@ -437,7 +437,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 4
+			base = 5
 
 			modifier = {
 				factor = 2
@@ -1435,6 +1435,17 @@ technologies = {
 					support = { hq_logistics = 0 }
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Thunder at Our Gates"
+					tag = GDR
+					is_ai = yes
+				}
+				add_units_to_division_template = {
+					template_name = "Field Army Headquarters"
+					support = { hq_logistics = 0 }
+				}
+			}
 		}
 
 		path = {
@@ -1477,6 +1488,11 @@ technologies = {
 			modifier = {
 				factor = 5
 				tag = GPG
+			}
+
+			modifier = {
+				factor = 5
+				tag = GDR
 			}
 
 			modifier = {

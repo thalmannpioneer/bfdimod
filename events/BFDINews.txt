@@ -1179,6 +1179,7 @@ news_event = {
             NOT = {TAG = FFT}
         }
         169 = {
+            add_resistance_target = 15
             damage_building = {
                 type = infrastructure
                 damage = 3
@@ -1186,9 +1187,9 @@ news_event = {
             add_manpower = -2725
             set_victory_points = {
                 province = 711
-                value = 5
+                value = 2
             }
-            set_province_name = { id = 711 name = "Gorge Town Ruins" }
+            set_province_name = { id = 711 name = VICTORY_POINTS_711_RUNIS }
         }
     }
 }

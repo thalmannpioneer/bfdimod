@@ -235,7 +235,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { country_exists = AGG }
+				limit = { 
+					country_exists = AGG 
+					AGG = {has_war = no}
+				}
 				AGG = {
 					declare_war_on = {
 						target = ROOT
@@ -244,7 +247,10 @@ country_event = {
 				}
 			}
 			else_if = {
-				limit = { country_exists = SGD }
+				limit = { 
+					country_exists = SGD
+					SGD = {has_war = no}
+				}
 				SGD = {
 					declare_war_on = {
 						target = ROOT
@@ -377,6 +383,9 @@ country_event = {
 		set_country_flag = anarchist_lawnland
 		complete_national_focus = GSR_focus_lawnland_liberation
 		mark_focus_tree_layout_dirty = yes
+
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
 		hidden_effect = {
 			every_possible_country = {
 				limit = { is_ai = no }

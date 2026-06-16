@@ -49,6 +49,7 @@ GPG_GPR_trade = {
 	}
 	enable = {
 		has_completed_focus = GPG_focus_cabinet_resisted
+		NOT = {has_completed_focus = GPG_focus_strenght_republic_border}
 		has_idea = idea_GPG_factionalism
 		has_war = no
 	}
