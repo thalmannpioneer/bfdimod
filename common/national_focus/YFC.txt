@@ -2804,7 +2804,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_negotiate_with_teardrop
 		relative_position_id = YFC_focus_play_smart
-		x = -2
+		x = -4
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2833,7 +2833,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_push_for_settlement
 		relative_position_id = YFC_focus_negotiate_with_teardrop
-		x = -2
+		x = -3
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2869,7 +2869,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_deploy_peacekeepers
 		relative_position_id = YFC_focus_negotiate_with_teardrop
-		x = 2
+		x = 0
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2951,7 +2951,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_shuffle_around_funds
 		relative_position_id = YFC_focus_play_smart
-		x = 3
+		x = 1
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2975,7 +2975,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_invest_into_infrastructure_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
 		relative_position_id = YFC_focus_shuffle_around_funds
-		x = 0
+		x = -1
 		y = 1
 		icon = GFX_focus_generic
 
@@ -2993,7 +2993,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_build_ports_other #I know that there is a better way to do this but I'm braindead and it's for 2 focuses 
 		relative_position_id = YFC_focus_invest_into_infrastructure_other
-		x = 0
+		x = -1
 		y = 1
 		icon = GFX_focus_generic
 
@@ -3019,7 +3019,7 @@ focus_tree = {
 	focus = {
 		id = YFC_focus_accidental_mistakes
 		relative_position_id = YFC_focus_play_smart
-		x = 0
+		x = -4
 		y = 4
 		icon = GFX_focus_generic
 
