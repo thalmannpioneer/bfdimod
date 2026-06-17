@@ -3,6 +3,9 @@ decisions_BFDI_debug = {
         icon = GFX_decision_generic_factory
         fire_only_once = yes
         cost = 0
+        visible = {
+            is_debug = yes
+        }
         available = {
             is_debug = yes
             is_ai = no
@@ -26,8 +29,10 @@ decisions_BFDI_debug = {
         icon = GFX_decision_generic_protection
         fire_only_once = yes
         cost = 0
-        available = {
+        visible = {
             is_debug = yes
+        }
+        available = {
             is_ai = no
             NOT = {
                 has_global_flag = game_started
@@ -94,7 +99,7 @@ decisions_BFDI_debug = {
         icon = GFX_decision_generic_protection
         fire_only_once = yes
         cost = 0
-        allowed = {
+        visible = {
             is_debug = yes
         }
         available = {
@@ -146,7 +151,7 @@ decisions_BFDI_debug = {
         icon = GFX_decision_generic_USA_flag
         fire_only_once = no
         cost = 0
-        allowed = {
+        visible = {
             is_debug = yes
         }
         available = {

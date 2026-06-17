@@ -81,7 +81,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		set_variable = { var_own_trade_opinion_factor = 0.1 }
@@ -116,13 +116,17 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_form_own }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
-			} 
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
+			}
 		}
 	}
 	
@@ -130,7 +134,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
@@ -158,12 +162,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_form_own }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -172,7 +180,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
@@ -196,12 +204,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_grant_drilling_subsidies focus = Musketeers_unite_trading_deals }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -210,7 +222,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
@@ -238,12 +250,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_grant_drilling_subsidies focus = Musketeers_unite_trading_deals }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -252,7 +268,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
@@ -279,13 +295,17 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_three_musketeers }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
-			} 
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
+			}
 		}
 	}
 
@@ -293,7 +313,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 
@@ -329,12 +349,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_form_udc }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -343,7 +367,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_UDC
@@ -367,12 +391,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_form_udc }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -381,7 +409,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		custom_effect_tooltip = l_UDC
@@ -405,12 +433,16 @@ joint_focus = {
 	prerequisite = { focus = Musketeers_conduct_military_drills focus = Musketeers_tighten_command }
 	available = {
 		hidden_trigger = {
-			has_completed_focus = Musketeers_three_musketeers
-			has_country_flag = Allow_Musketeers
-			is_in_faction = yes
-			OR = {
-				faction_leader = {tag = YFC}
-				faction_leader = {tag = CRN}
+			ROOT = {
+				has_completed_focus = Musketeers_three_musketeers
+				has_country_flag = Allow_Musketeers
+				AND = {
+					is_in_faction = yes
+					OR = {
+						faction_leader = {tag = YFC}
+						faction_leader = {tag = CRN}
+					} 
+				}
 			}
 		}
 	}
@@ -419,7 +451,7 @@ joint_focus = {
 		three_musketeers_basic_joint_trigger = yes
 	}
 
-	cost = 10
+	cost = 15
 
 	completion_reward = {
 		army_experience = 25

@@ -62,6 +62,12 @@ technologies = {
 			}
 			
 			modifier = {
+                factor = 3
+                tag = GGR
+                NOT = {country_exists = FFT}
+            }
+
+			modifier = {
 				factor = 1.2
 				date > "2013.1.1"
 			}
@@ -147,6 +153,12 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+
+			modifier = {
+                factor = 3
+                tag = GGR
+                NOT = {country_exists = FFT}
+            }
 			
 			modifier = {
 				factor = 1.1

@@ -87,6 +87,13 @@ decisions_GPG_lawnland_category = {
 				}
 			}
 		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 150
+			}
+		}
 	}
 	
 	GPG_trainings_on_border_decision = {
@@ -131,6 +138,14 @@ decisions_GPG_lawnland_category = {
 			add_to_variable = { var_GPG_negs_progressbar = -5 }
 			add_to_variable = { var_GPG_war_progressbar = -10 }
 			hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
+		}
+
+		ai_will_do = { #AI will back down if threat is too high
+			base = 0
+			modifier = {
+				add = 10
+				check_variable = {var_GPG_war_progressbar > 80}
+			}
 		}
     }
 }

@@ -833,8 +833,8 @@ country_event = {
             }
             add_manpower = 20000
             army_experience = 125
-            custom_effect_tooltip = l_money_gain_500K
-		    add_to_variable = { money_amount = 5 }
+            custom_effect_tooltip = l_money_gain_1M
+		    add_to_variable = { money_amount = 10 }
         }
     }
 
@@ -859,8 +859,8 @@ country_event = {
             add_manpower = 60000
             add_offsite_building = { type = arms_factory level = 2 }
             army_experience = 250
-            custom_effect_tooltip = l_money_gain_1M
-		    add_to_variable = { money_amount = 10 }
+            custom_effect_tooltip = l_money_gain_2M
+		    add_to_variable = { money_amount = 20 }
         }
     }
 
@@ -885,8 +885,8 @@ country_event = {
             add_manpower = 180000
             add_offsite_building = { type = arms_factory level = 4 }
             army_experience = 375
-            custom_effect_tooltip = l_money_gain_2M
-		    add_to_variable = { money_amount = 20 }
+            custom_effect_tooltip = l_money_gain_5M
+		    add_to_variable = { money_amount = 50 }
         }
     }
 
@@ -911,8 +911,8 @@ country_event = {
             add_manpower = 540000
             add_offsite_building = { type = arms_factory level = 8 }
             army_experience = 500
-            custom_effect_tooltip = l_money_gain_5M
-		    add_to_variable = { money_amount = 50 }
+            custom_effect_tooltip = l_money_gain_10M
+		    add_to_variable = { money_amount = 100 }
         }
     }
 }

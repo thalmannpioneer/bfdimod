@@ -1926,7 +1926,7 @@ country_event = {
 
     option = {
         name = GPG_event.40.a
-
+        set_country_flag = lawnland_mechanic_stop
         set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
         if = {

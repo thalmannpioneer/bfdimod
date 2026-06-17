@@ -976,6 +976,11 @@ technologies = {
 				}
 				factor = 5
 			}
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_rockets_air_ground}
+			}
 		}
 	}
 
@@ -1271,6 +1276,11 @@ technologies = {
 					has_tech = iw_large_airframe
 				}
 				factor = 6
+			}
+			modifier = {
+				factor = 10000
+				tag = GTR
+				GTR = {has_completed_focus = GTR_focus_modern_aircraft}
 			}
 		}
 	}

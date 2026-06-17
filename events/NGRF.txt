@@ -338,14 +338,47 @@ country_event = {
 
     option = {
         name = WGF_event.19.a
-        add_stability = -0.5
+        add_stability = -0.25
         add_war_support = -0.5
-        add_political_power = -500
-        add_manpower = 5000 #Minor push to win (Maybe)
-        hidden_effect = {
-            GMD = {
-                add_manpower = 25000 #Give Coiny hope! (JK it will be a never ending war xd)
+        add_political_power = -250
+
+        IF = {
+            limit = {
+                controls_province = 10228
+                controls_province = 5989
+                controls_province = 10180
             }
+            add_manpower = 10000
+        }
+        ELSE_IF = {
+            limit = {
+                controls_province = 10228
+                controls_province = 5989
+                NOT = {controls_province = 10180}
+            }
+            add_manpower = 7500
+            GMD = {
+                add_manpower = 10000
+                add_war_support = 0.05
+            }
+        }
+        ELSE_IF = {
+            limit = {
+                controls_province = 10228
+                NOT = {controls_province = 5989}
+                NOT = {controls_province = 10180}
+            }
+            add_manpower = 5000
+            GMD = {
+                add_manpower = 20000
+                add_war_support = 0.1
+            }
+        }
+        ELSE = { #skill issue
+            GMD = {
+                add_manpower = 50000
+                add_war_support = 0.25
+            } 
         }
     }
 }

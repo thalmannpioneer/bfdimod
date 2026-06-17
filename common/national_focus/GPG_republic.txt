@@ -428,7 +428,7 @@ focus_tree = {
                     limit = { has_completed_focus = GPG_focus_republic_end_military_turmoil }
                     country_event = {
                         id = GPG_event.46
-                        days = 20
+                        days = 5
                         random_days = 10
                         random_hours = 12
                     }
@@ -622,7 +622,7 @@ focus_tree = {
                     limit = { has_completed_focus = GPG_focus_republic_heart_of_goiky }
                     country_event = {
                         id = GPG_event.46
-                        days = 20
+                        days = 5
                         random_days = 10
                         random_hours = 12
                     }

@@ -759,7 +759,7 @@ focus_tree = {
             hidden_effect = {
                 country_event = {
                     id = GPG_event.46
-                    days = 20
+                    days = 5
                     random_days = 10
                     random_hours = 12
                 }

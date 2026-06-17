@@ -87,6 +87,14 @@ decisions_GSR_lawnland_category = {
 				}
 			}
 		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 100
+			}
+		}
 	}
 	
 	GSR_trainings_on_border_decision = {

@@ -85,7 +85,7 @@ GTR_moblize = {
     }
     enable = {
         has_army_size = {
-            size < 7
+            size < 5
         }
     }
     abort_when_not_enabled = yes

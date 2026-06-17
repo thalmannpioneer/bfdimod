@@ -317,7 +317,7 @@ decision_TBT_eastern_category = {
 		days_remove = 125
 
 		remove_effect = {
-			set_political_power = 250
+			set_political_power = 350
 			random_list = {
 				10 = {
 					226 = {
