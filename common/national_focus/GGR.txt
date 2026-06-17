@@ -239,6 +239,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 50
+			custom_effect_tooltip = l_money_gain_50K
+            add_to_variable = { money_amount = 0.5 }
 		}
 	}
 	
@@ -354,10 +356,12 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        base = 5
+        	base = 5
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = l_money_gain_50K
+            add_to_variable = { money_amount = 0.5 }
 			custom_effect_tooltip = l_GGR_focus_improves_industry
 			activate_mission = GGR_industry_four_year_plan_mission
 			add_stability = 0.05
@@ -436,6 +440,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
 			custom_effect_tooltip = l_GGR_focus_improves_industry_massively
 			add_to_variable = { var_GGR_industry_cg = -0.1 }
 			add_to_variable = { var_GGR_industry_rs = 0.05 }

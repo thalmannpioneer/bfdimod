@@ -1,0 +1,35 @@
+add_namespace = SEC_event
+
+country_event = {  #Bullshit win, remove when SEC gets stuff
+	id = SEC_event.1
+	title = SEC_event.1.t
+	desc = SEC_event.1.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	option = {
+		name = SEC_event.1.a
+
+		army_experience = 10
+		add_war_support = 0.05
+	}
+}
+
+country_event = {  #Bullshit lose, remove when SEC gets stuff
+	id = SEC_event.2
+	title = SEC_event.2.t
+	desc = SEC_event.2.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	option = {
+		name = SEC_event.2.a
+
+		army_experience = 5
+		add_war_support = -0.05
+	}
+}

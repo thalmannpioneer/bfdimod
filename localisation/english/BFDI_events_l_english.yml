@@ -17,6 +17,14 @@
  common_event.4.a: "Agree to White Peace"
  common_event.4.b: "We have a plan to win!"
 
+ SEC_event.1.t: "We Won!" #Bullshit, remove later
+ SEC_event.1.desc: "In the border war we won, yay!"
+ SEC_event.1.a: ":D"
+
+ SEC_event.2.t: "We Lost!" #Bullshit, remove later
+ SEC_event.2.desc: "In the border war we lost, fuck!"
+ SEC_event.2.a: "D:"
+
  #GOIKY
  GOI_event.1.t: "Battle For Dream Island"
  GOI_event.1.desc: "BFDI, or Battle For Dream Island, is an internet show in which various objects compete for the ultimate prize - an Island with a hotel, two restaurants and other amenities. Recently, it has been gaining more and more popularity. But this show is far from the only thing that happens in the lands of Goiky. This continent is densely populated with various other objects and as a whole is a strong economic and social entity."

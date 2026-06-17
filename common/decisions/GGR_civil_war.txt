@@ -26,7 +26,7 @@ decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 
 			SMG = {
 				add_timed_idea = {
 					idea = idea_GGR_all_or_nothing
-					days = 180
+					days = 250
 				}
 				declare_war_on = {
 					target = SPL
@@ -43,6 +43,7 @@ decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 
 				country_exists = SPL
 				country_exists = SMG
 			}
+			country_exists = FFT
 			NOT = {country_exists = GGR}
 			has_game_rule = { rule = allow_experimental_paths option = yes }
 			FFT = {has_war = no}

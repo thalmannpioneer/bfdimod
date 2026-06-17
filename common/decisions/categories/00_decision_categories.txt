@@ -160,6 +160,20 @@ decision_GGR_civil_war_category = { #ummmmm
 
 	priority = 5
 
-	icon = decision_category_operation_coinflip
+	icon = GFX_decision_category_border_war
+	visible_when_empty = yes
+}
+
+decision_SEC_funny_category = { #ummmmm
+	allowed = { 
+		tag = SEC
+	}
+	visible = { 
+		has_game_rule = { rule = allow_experimental_paths option = yes }
+	}
+
+	priority = 5
+
+	icon = GFX_decision_category_border_war
 	visible_when_empty = yes
 }

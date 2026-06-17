@@ -1,0 +1,120 @@
+decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 times is bad I already accounted for this)
+	SEC_border_attack = {
+		icon = GFX_decision_border_war
+        
+		visible = {
+			has_war = no
+			country_exists = NRR
+		}
+
+		available = {
+			has_border_war = no
+		}
+
+		cancel_trigger = {
+			has_war = yes
+        }
+
+		cost = 25
+
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 60
+
+		remove_effect = {
+			IF = {
+				limit = {SEC = {is_ai = yes}}
+				add_manpower = 3000
+			}
+			IF = {
+				limit = {NRR = {is_ai = yes}}
+				NRR = {add_manpower = 2000}
+			}
+
+			170 = {
+				damage_building = {
+ 					type = infrastructure
+  					damage = 1
+				}
+			}
+
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 187
+					num_provinces = 2
+					modifier = 0.5
+					on_win = SEC_event.1
+					on_lose = SEC_event.2
+				}	
+				defender = {
+					state = 170
+					num_provinces = 2
+					on_win = SEC_event.1
+					on_lose = SEC_event.2
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	SEC_hire = {
+		icon = GFX_decision_generic_belgian_colonial_helmet
+        
+		visible = {
+			country_exists = NRR
+		}
+
+		cost = 75
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 120
+
+		remove_effect = {
+			add_manpower = 5000
+			hidden_effect = {
+				NRR = {add_manpower = 2000}
+			}
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	SEC_attack = {
+		icon = GFX_decision_generic_ignite_civil_war
+        
+		available = {
+			date > 2016.6.01
+			has_border_war = no
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		days_remove = 5
+
+		remove_effect = {
+			add_threat = 3
+			declare_war_on = {
+				target = NRR
+				type = annex_everything
+			}
+			hidden_effect = {
+				NRR = {
+					add_manpower = 10000
+					add_war_support = 0.25
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+}
