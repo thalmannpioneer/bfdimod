@@ -74,7 +74,7 @@ country_event = {
 	id = YFC_event.4
 	title = YFC_event.4.t
 	desc = YFC_event.4.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event4
 
 	is_triggered_only = yes
 
@@ -494,7 +494,7 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			}
 		}
 	}
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event10
 
 	is_triggered_only = yes
 
@@ -550,7 +550,7 @@ country_event = {
 	id = YFC_event.11
 	title = YFC_event.11.t
 	desc = YFC_event.11.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event11
 
 	is_triggered_only = yes
 
@@ -600,7 +600,7 @@ country_event = {
 	id = YFC_event.12
 	title = YFC_event.12.t
 	desc = YFC_event.12.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event12
 
 	is_triggered_only = yes
 

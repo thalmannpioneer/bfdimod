@@ -78,7 +78,9 @@ joint_focus = {
 	}
 
 	joint_trigger = { 
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -94,8 +96,11 @@ joint_focus = {
 		custom_effect_tooltip = l_OWN_Give
 		add_offsite_building = { type = industrial_complex level = 1 }
 		hidden_effect = {
-			add_dynamic_modifier = {
-				modifier = idea_Musketeers_OWN
+			if = {
+				limit = { has_country_flag = Allow_Musketeers }
+				add_dynamic_modifier = {
+					modifier = idea_Musketeers_OWN
+				}
 			}
 		}
 	}
@@ -131,7 +136,9 @@ joint_focus = {
 	}
 	
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -177,7 +184,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -219,7 +228,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -265,7 +276,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -310,7 +323,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -327,8 +342,11 @@ joint_focus = {
 		custom_effect_tooltip = l_UDC_Give
 		add_manpower = 5000
 		hidden_effect = {
-			add_dynamic_modifier = {
-				modifier = idea_Musketeers_UDC
+			if = {
+				limit = { has_country_flag = Allow_Musketeers }
+				add_dynamic_modifier = {
+					modifier = idea_Musketeers_UDC
+				}
 			}
 		}
 	}
@@ -364,7 +382,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -406,7 +426,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
@@ -448,7 +470,9 @@ joint_focus = {
 	}
 
 	joint_trigger = {
-		three_musketeers_basic_joint_trigger = yes
+		ROOT = {
+			three_musketeers_basic_joint_trigger = yes
+		}
 	}
 
 	cost = 15
