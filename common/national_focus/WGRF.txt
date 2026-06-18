@@ -173,10 +173,7 @@ focus_tree = {
 
         completion_reward = {
             hidden_effect = {
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = bfdinews.3
-                }
+                news_event = bfdinews.3
             }
             add_ideas = idea_WGF_peoples_object_show
         }
@@ -334,10 +331,7 @@ focus_tree = {
         completion_reward = {
             hidden_effect = {
                 add_threat = 0.5
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = bfdinews.4
-                }
+                news_event = bfdinews.4
                 add_opinion_modifier = { target = GMD modifier = large_decrease }
                 every_country_with_original_tag = {
                     original_tag_to_check = GMD

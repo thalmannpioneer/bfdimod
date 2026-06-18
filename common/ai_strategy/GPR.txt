@@ -1,0 +1,65 @@
+#GPR AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+GPR_Scare_GPG = { #Place troops on the border for the... um... aura?
+
+    allowed = {
+		original_tag = GPR
+	}
+	enable = {
+		has_war = no
+        OR = {
+            GPG = {has_completed_focus = GPG_focus_republic_lawnland_question}
+            GPG = {has_completed_focus = GPG_focus_lawnland_question}
+        }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = GPG
+        value = 100
+    }
+}
+
+GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
+
+    allowed = {
+		original_tag = GPR
+	}
+	enable = {
+		has_war = no
+        OR = {
+            GSR = {has_completed_focus = GSR_focus_take_what_ours}
+            GPG = {has_completed_focus = GSR_focus_deconstruction}
+        }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = GSR
+        value = 100
+    }
+}
+
+GPR_Scare_GFG = { #Place troops on the border for the... um... aura?
+
+    allowed = {
+		original_tag = GPR
+	}
+	enable = {
+		has_war = no
+        GFG = {has_completed_focus = GFG_focus_trial_over_traitors}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = GFG
+        value = 100
+    }
+}

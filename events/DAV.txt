@@ -101,7 +101,7 @@ country_event = { #For my civilwar bullshit nonsense that I make at 2am
                 create_unit = {
                     division = "name = \"Infantry\" division_template = \"Infantry\" start_experience_factor = 0.3"
                     owner = ROOT
-                    count = 4
+                    count = 5
                 }
             }
             136 = {

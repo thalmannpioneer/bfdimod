@@ -85,7 +85,7 @@ GTR_moblize = {
     }
     enable = {
         has_army_size = {
-            size < 5
+            size < 3
         }
     }
     abort_when_not_enabled = yes
@@ -103,17 +103,20 @@ GTR_fighters = {
         original_tag = GTR
     }
     enable = {
+        always = yes
+
         has_completed_focus = GTR_focus_modern_aircraft
         has_deployed_air_force_size = {
-            size < 75
+            size < 100
             type = fighter
-        }
-        OR = {
-            has_tech = early_fighter
-            has_tech = iw_small_airframe
         }
     }
     abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = desired_divisions
+        value = 0
+    }
 
 	ai_strategy = {
 		type = unit_ratio
@@ -124,13 +127,16 @@ GTR_fighters = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 15
+		value = 1000
 	}
-
+    ai_strategy = {
+        type = air_factory_balance
+        value = 1000
+    }
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = fighter
-		value = 6 
+		value = 2 
 	}
 
     ai_strategy = { #No BBA
@@ -160,7 +166,7 @@ GTR_fighters = {
         value = -1000
     }
     ai_strategy = {
-        type = equipment_variant_production_factor
+        type = equipment_production_factor
         id = support_equipment
         value = -1000
     }
@@ -186,15 +192,31 @@ GTR_bombers = {
     abort_when_not_enabled = yes
 
     ai_strategy = {
-        type = unit_ratio
-        id = strategic_bomber
-        value = 300
+        type = desired_divisions
+        value = 0
     }
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 1000
+	}
     ai_strategy = {
-        type = equipment_production_factor
-        id = strategic_bomber
+        type = air_factory_balance
         value = 1000
     }
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = strategic_bomber
+		value = 2 
+	}
+
     ai_strategy = { #No BBA
         type = research_weight_factor
         id = strategic_bomber1
@@ -210,6 +232,32 @@ GTR_bombers = {
         id = early_bombs
         value = 10000
     }
+    ai_strategy = { #With BBA
+        type = research_weight_factor
+        id = engines_2
+        value = 10000
+    }
+    ai_strategy = { #With BBA
+        type = research_weight_factor
+        id = aa_hmg
+        value = 10000
+    }
+
+    ai_strategy = {
+        type = equipment_production_factor
+        id = infantry
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = support_equipment
+        value = -1000
+    }
+    ai_strategy = {
+        type = equipment_production_factor
+        id = artillery
+        value = -1000
+    }
 }
 
 GTR_build = {
@@ -218,7 +266,9 @@ GTR_build = {
         original_tag = GTR
     }
     enable = {
+
         OR = {
+            arms_factory < 6
             AND = {
                 has_deployed_air_force_size = {
                     size > 75
@@ -306,7 +356,6 @@ GTR_build = {
 }
 
 GTR_nukes = {
-    #>:)
     allowed = {
         original_tag = GTR
     }

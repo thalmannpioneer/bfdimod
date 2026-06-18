@@ -82,12 +82,9 @@ country_event = {
                 remove_state_core = 13
                 remove_state_core = 181
             }
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.2
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.2
+                random_hours = 12
             }
             set_global_flag = island_dissapeared
             set_victory_points = {

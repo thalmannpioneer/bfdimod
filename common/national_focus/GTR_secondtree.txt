@@ -1644,6 +1644,7 @@ focus_tree = {
                     activate_advisor = idea_GTR_titanknife #I quit.
                     activate_advisor = idea_GTR_calculator
                     add_political_power = -250
+                    set_grand_doctrine = superior_firepower
                 }
             }
         }

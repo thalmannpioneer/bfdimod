@@ -1662,7 +1662,7 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 4
+				factor = 10
 				tag = GTR
 			}
 		}

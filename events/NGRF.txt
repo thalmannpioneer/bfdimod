@@ -251,10 +251,7 @@ country_event = {
     option = {
         name = WGF_event.14.a
         hidden_effect = {
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = bfdinews.36
-            }
+            news_event = bfdinews.36
         }
     }
 }
@@ -379,6 +376,10 @@ country_event = {
                 add_manpower = 50000
                 add_war_support = 0.25
             } 
+        }
+        IF = {
+            limit = {WGF = {is_ai = yes}}
+            GMD = {add_manpower = 50000} 
         }
     }
 }

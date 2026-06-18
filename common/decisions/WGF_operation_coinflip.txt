@@ -145,13 +145,10 @@ WGF_decision_operation_coinflip_triumph = {
         custom_effect_tooltip = l_WGF_coinflip_triumph
         hidden_effect = {
             set_cosmetic_tag = WGF_stage2
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.6
-                    days = 2
-                    hours = 12
-                }
+            news_event = {
+                id = bfdinews.6
+                days = 2
+                hours = 12
             }
             173 = { add_core_of = WGF }
             11 = { add_core_of = WGF }

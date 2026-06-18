@@ -1048,11 +1048,19 @@ generic_strategic_bomber = {
 			NOT = {original_tag = GTR} #GTR will one day get their own tech
 			factor = 0
 		}
+		modifier = {
+			original_tag = GTR #GTR will one day get their own tech
+			factor = 1000
+		}
 	}
 
 	strat_bomber_1_default = {
 		priority = {
 			factor = 10
+			modifier = { 
+				tag = GTR
+				factor = 1000 
+			}
 		}
 
 		target_variant = {

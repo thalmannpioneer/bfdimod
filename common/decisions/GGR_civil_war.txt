@@ -85,7 +85,7 @@ decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
 						producer = SPL
-						amount = 1500
+						amount = 2500
 					}
 					add_ideas = idea_GGR_civil_war
 				}

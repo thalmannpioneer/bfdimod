@@ -49,7 +49,7 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 			hidden_effect = {
 				IF = {
 					limit = {SEC = {is_ai = yes}}
-					add_manpower = 4500
+					add_manpower = 6000
 				}
 				IF = {
 					limit = {NRR = {is_ai = yes}}
@@ -67,7 +67,7 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 		icon = GFX_decision_generic_belgian_colonial_helmet
         
 		visible = {
-			country_exists = NRR
+			date < 2017.6.01
 		}
 
 		cost = 75
@@ -77,7 +77,7 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 		days_re_enable = 120
 
 		remove_effect = {
-			add_manpower = 7500
+			add_manpower = 5000
 			hidden_effect = {
 				NRR = {add_manpower = 2000}
 			}

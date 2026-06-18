@@ -80,13 +80,10 @@ focus_tree = {
 			add_political_power = 15
 			country_event = GOI_event.3
 			hidden_effect = {
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.1
-						days = 10
-						random_hours = 12
-					}
+				news_event = {
+					id = bfdinews.1
+					days = 10
+					random_hours = 12
 				}
 			}
 		}
