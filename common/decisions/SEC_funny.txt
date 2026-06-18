@@ -22,15 +22,6 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 		days_re_enable = 60
 
 		remove_effect = {
-			IF = {
-				limit = {SEC = {is_ai = yes}}
-				add_manpower = 3000
-			}
-			IF = {
-				limit = {NRR = {is_ai = yes}}
-				NRR = {add_manpower = 2000}
-			}
-
 			170 = {
 				damage_building = {
  					type = infrastructure
@@ -54,6 +45,17 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 					on_lose = SEC_event.2
 				}
 			}
+
+			hidden_effect = {
+				IF = {
+					limit = {SEC = {is_ai = yes}}
+					add_manpower = 4500
+				}
+				IF = {
+					limit = {NRR = {is_ai = yes}}
+					NRR = {add_manpower = 2000}
+				}
+			}
         }
 
 		ai_will_do = {
@@ -75,7 +77,7 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 		days_re_enable = 120
 
 		remove_effect = {
-			add_manpower = 5000
+			add_manpower = 7500
 			hidden_effect = {
 				NRR = {add_manpower = 2000}
 			}

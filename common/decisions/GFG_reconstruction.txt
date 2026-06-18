@@ -29,7 +29,7 @@ decision_GFG_reconstruction_category = {
             custom_effect_tooltip = l_GFG_improves_economy
             if = {
                 limit = {
-                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                    check_variable = { var_GFG_crisis_cgf < 0.05 }
                 }
                 country_event = GFG_event.11
             }
@@ -74,7 +74,7 @@ decision_GFG_reconstruction_category = {
             custom_effect_tooltip = l_GFG_improves_economy
             if = {
                 limit = {
-                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                    check_variable = { var_GFG_crisis_cgf < 0.05 }
                 }
                 country_event = GFG_event.11
             }
@@ -119,7 +119,7 @@ decision_GFG_reconstruction_category = {
             custom_effect_tooltip = l_GFG_improves_economy
             if = {
                 limit = {
-                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                    check_variable = { var_GFG_crisis_cgf < 0.05 }
                 }
                 country_event = GFG_event.11
             }
@@ -164,7 +164,7 @@ decision_GFG_reconstruction_category = {
             custom_effect_tooltip = l_GFG_improves_economy
             if = {
                 limit = {
-                    check_variable = { var_GFG_crisis_cgf = 0.05 }
+                    check_variable = { var_GFG_crisis_cgf < 0.05 }
                 }
                 country_event = GFG_event.11
             }

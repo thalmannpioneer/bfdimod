@@ -1917,6 +1917,12 @@
  bfdinews_cities.14.b: "Is the statue gone?"
  bfdinews_cities.14.c: "Their tech is for the taking!"
 
+ bfdinews_cities.15.t: "FALL OF SCHNEEHORN!"
+ bfdinews_cities.15.desc: "A [15.controller.GetAdjective] report from the front has announced on [?global.date.GetDateStringNoHourLong] the capitulation of all remaining Großgoikian forces in Schneehorn. After encircling the city, the attackers stormed it from several different directions, with the defenders resisting furiously every step of the way. Attacking troops finally fought their way into the parliament building, fighting room by room until they reached the roof where the [15.controller.GetAdjective] flag was raised over the city. The Battle of Schneehorn is over. Snowball is reported to have fled before the encirclement was completed, vowing to continue the fight. Will Großgoikysreich hold on or is this the end?"
+ bfdinews_cities.15.a: "The oppression of the Snowy Plateau is no more. "
+ bfdinews_cities.15.b: "A counter attack is coming!"
+ bfdinews_cities.15.c: "The fascist lair is ours!"
+
 #Bullshit
 
  DAV_lol_event.1.t: "Civil War Time"

@@ -311,13 +311,12 @@ decision_TBT_eastern_category = {
 			YFC = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
 		}
 
-		cost = 0
+		cost = 500
 
 		fire_only_once = yes
 		days_remove = 125
 
 		remove_effect = {
-			set_political_power = 350
 			random_list = {
 				10 = {
 					226 = {

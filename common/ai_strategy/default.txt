@@ -1577,7 +1577,7 @@ default_become_faction_leader = {
 	ai_strategy = {
 		type = pp_spend_priority
 		id = become_faction_leader
-		value = 100
+		value = 5 #No
 	}
 }
 

@@ -48,7 +48,7 @@ decision_LSS_Military_category = {
 		activation = { always = no }
 		timeout_effect = {
 			add_manpower = 5000
-			load_oob = "LSS_Air"
+			load_oob = "LSS_Air_BBA"
 		}
 	}
 
@@ -90,7 +90,7 @@ decision_LSS_Military_category = {
 			hidden_effect = {
 				IF = {
 					limit = {is_ai = yes}
-					add_manpower = 20000
+					add_manpower = 30000
         			add_offsite_building = { type = arms_factory level = 1 }
 					add_stability = 0.25
 				}

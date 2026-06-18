@@ -1094,7 +1094,7 @@ focus_tree = {
         cost = 4
 
         ai_will_do = {
-            base = 0
+            base = 1
             modifier = {
                 add = 10
                 has_completed_focus = GTR_focus_reform_defense_forces
@@ -1308,7 +1308,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 0
+            base = 1
             modifier = {
                 add = 10
                 has_completed_focus = GTR_focus_reform_defense_forces

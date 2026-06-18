@@ -163,7 +163,6 @@ set_technology = { early_ship_hull_cruiser = 1 }
 set_technology = { basic_ship_hull_cruiser = 1 }
 set_technology = { improved_ship_hull_cruiser = 1 }
 set_technology = { advanced_ship_hull_cruiser = 1 }
-set_technology = { improved_airplane_launcher = 1 }
 set_technology = { basic_cruiser_armor_scheme = 1 }
 set_technology = { early_ship_hull_heavy = 1 }
 set_technology = { basic_ship_hull_heavy = 1 }
@@ -188,11 +187,6 @@ set_technology = { basic_light_shell = 1 }
 set_technology = { improved_light_battery = 1 }
 set_technology = { improved_light_shell = 1 }
 set_technology = { advanced_light_battery = 1 }
-set_technology = { basic_medium_battery = 1 }
-set_technology = { basic_medium_shell = 1 }
-set_technology = { improved_medium_battery = 1 }
-set_technology = { improved_medium_shell = 1 }
-set_technology = { advanced_medium_battery = 1 }
 set_technology = { basic_heavy_battery = 1 }
 set_technology = { improved_heavy_battery = 1 }
 set_technology = { advanced_heavy_battery = 1 }
@@ -201,11 +195,9 @@ set_technology = { improved_heavy_shell = 1 }
 set_technology = { basic_dp_light_battery = 1 }
 set_technology = { improved_dp_light_battery = 1 }
 set_technology = { advanced_dp_light_battery = 1 }
-set_technology = { basic_dp_medium_battery = 1 }
 set_technology = { basic_torpedo = 1 }
 set_technology = { magnetic_detonator = 1 }
 set_technology = { homing_torpedo = 1 }
-set_technology = { electric_torpedo = 1 }
 set_technology = { improved_ship_torpedo_launcher = 1 }
 set_technology = { advanced_ship_torpedo_launcher = 1 }
 set_technology = { modern_ship_torpedo_launcher = 1 }
@@ -219,12 +211,14 @@ set_technology = { improved_submarine_mine_laying = 1 }
 set_technology = { improved_naval_mines = 1 }
 set_technology = { degaussing = 1 }
 set_technology = { advanced_naval_mines = 1 }
-set_technology = { modern_naval_mines = 1 }
 set_technology = { mtg_transport = 1 }
 set_technology = { mtg_landing_craft = 1 }
 set_technology = { mtg_tank_landing_craft = 1 }
 
 # Air
+
+complete_special_project = sp:sp_air_jet_engine
+complete_special_project = sp:sp_air_axial_jet_engine
 
 IF = {
     limit = { NOT = { has_dlc = "By Blood Alone" } }
@@ -232,7 +226,6 @@ IF = {
     set_technology = { early_transport_plane = 1 }
     set_technology = { improved_transport_plane = 1 }
     set_technology = { strategic_airlifter = 1 }
-
 }
 IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
     limit = {has_dlc = "By Blood Alone" }
@@ -240,6 +233,73 @@ IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to wo
     set_technology = { bba_early_transport_plane = 1 }
     set_technology = { bba_improved_transport_plane = 1 }
     set_technology = { bba_strategic_airlifter = 1 }
+    set_technology = { iw_small_airframe = 1 }
+    set_technology = { basic_small_airframe = 1 }
+    set_technology = { improved_small_airframe = 1 }
+    set_technology = { advanced_small_airframe = 1 }
+    set_technology = { modern_small_airframe = 1 }
+    set_technology = { iw_medium_airframe = 1 }
+    set_technology = { basic_medium_airframe = 1 }
+    set_technology = { improved_medium_airframe = 1 }
+    set_technology = { advanced_medium_airframe = 1 }
+    set_technology = { modern_medium_airframe = 1 }
+    set_technology = { iw_large_airframe = 1 }
+    set_technology = { basic_large_airframe = 1 }
+    set_technology = { improved_large_airframe = 1 }
+    set_technology = { advanced_large_airframe = 1 }
+    set_technology = { modern_large_airframe = 1 }
+    set_technology = { early_bombs = 1 }
+    set_technology = { heavy_bombs = 1 }
+    set_technology = { armor_piercing_bombs = 1 }
+    set_technology = { air_torpedoe_1 = 1 }
+    set_technology = { air_torpedoe_2 = 1 }
+    set_technology = { air_torpedoe_3 = 1 }
+    set_technology = { aa_lmg = 1 }
+    set_technology = { survivability_studies = 1 }
+    set_technology = { aa_hmg = 1 }
+    set_technology = { aa_cannon_1 = 1 }
+    set_technology = { aa_cannon_2 = 1 }
+    set_technology = { aa_cannon_3 = 1 }
+    set_technology = { engines_1 = 1 }
+    set_technology = { engines_2 = 1 }
+    set_technology = { engines_3 = 1 }
+    set_technology = { engines_4 = 1 }
+    set_technology = { range_improvements = 1 }
+    set_technology = { aircraft_construction = 1 }
+
+    create_equipment_variant = {
+		name = "F-35 Lightning II (Fighter)"
+		type = small_plane_airframe_4
+
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = jet_engine_axial_1x
+			special_type_slot_1 = fuel_tanks_small
+			special_type_slot_2 = self_sealing_fuel_tanks_small
+			special_type_slot_3 = radio_navigation_2
+			special_type_slot_4 = dive_brakes_small
+		}
+	}
+
+    create_equipment_variant = {
+		name = "F-35 Lightning II (CAS)"
+		type = small_plane_cas_airframe_4
+
+		modules = {
+			fixed_main_weapon_slot = rocket_rails
+			fixed_auxiliary_weapon_slot_1 = rocket_rails
+			fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = jet_engine_axial_1x
+			special_type_slot_1 = fuel_tanks_small
+			special_type_slot_2 = self_sealing_fuel_tanks_small
+			special_type_slot_3 = radio_navigation_2
+			special_type_slot_4 = dive_brakes_small
+		}
+	}
 }
 
 
@@ -326,6 +386,8 @@ set_technology = { excavation4 = 1 }
 set_stability = 0.15
 set_war_support = 0.3
 set_fuel_ratio = 0.95
+
+air_experience = 10
 
 create_equipment_variant = {
     name = "M113 Armored Personnel Carrier"

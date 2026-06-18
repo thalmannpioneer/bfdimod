@@ -201,6 +201,7 @@ decision_YFC_raids_category = {
 			custom_trigger_tooltip = {
 				tooltip = l_decisions_YFC_raids_Active
 				NOT = {has_country_flag = YFC_Raid_Active}
+				has_border_war = no
 			}
 		}
 
@@ -272,6 +273,7 @@ decision_YFC_raids_category = {
 			custom_trigger_tooltip = {
 				tooltip = l_decisions_YFC_raids_Active
 				NOT = {has_country_flag = YFC_Raid_Active}
+				has_border_war = no
 			}
 		}
 

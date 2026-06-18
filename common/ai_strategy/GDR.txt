@@ -10,9 +10,15 @@ GDR_civil_war = {
 		original_tag = GDR
 	}
 	enable = {
-		country_exists = GPG
-		country_exists = GSR 
-		country_exists = GFG
+		OR = {
+			country_exists = GPG
+			country_exists = GSR 
+			country_exists = GFG
+		}
+		OR = {
+			NOT = {GPG = {has_completed_focus = GPG_focus_cabinet_resisted}}
+			NOT = {country_exists = GPG}
+		}
 		has_war = yes
 	}
 	abort_when_not_enabled = yes

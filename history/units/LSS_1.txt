@@ -59,6 +59,9 @@ division_template = {
         maintenance_company = { x = 0 y = 0 }		
         signal_company = { x = 0 y = 1 } 	
     }
+    regimental_support = {
+        field_guns = { x = 0 y = 0 }
+    }
     is_locked = yes
     division_cap = 1
 }

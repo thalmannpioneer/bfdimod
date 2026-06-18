@@ -22,6 +22,10 @@ generic_fighter = {
 				has_tech = basic_small_airframe
 				factor = 0 #let's not waste XP here
 			}
+			modifier = { 
+				tag = GTR
+				factor = 10 
+			}
 		}
 
 		target_variant = {

@@ -718,6 +718,7 @@ country_event = {
 				add_core_of = YFC
 				transfer_state_to = YFC
 				remove_core_of = EMP
+				set_demilitarized_zone = no
 				add_victory_points = {
 					province = 10828
 					value = 2

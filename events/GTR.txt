@@ -1643,6 +1643,20 @@ country_event = {
 
         set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
+        hidden_effect = {
+            IF = {
+                limit = {GTR_tennis_wall = {is_country_leader = yes}}
+                add_country_leader_role = {
+                    character = GTR_duumvirate
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = technocratism
+                        traits = { abusive_relationships }
+                    }
+                }
+            }
+        }
+
         if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended

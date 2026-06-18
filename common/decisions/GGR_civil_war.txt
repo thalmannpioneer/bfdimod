@@ -17,7 +17,7 @@ decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 
 		}
 
 		is_good = no
-		days_mission_timeout = 400
+		days_mission_timeout = 450
 		selectable_mission = no
 		available = {
 			always = no
@@ -54,7 +54,7 @@ decision_GGR_civil_war_category = { #gulp (Also before you ask if it triggering 
 		}
 
 		is_good = no
-		days_mission_timeout = 800
+		days_mission_timeout = 850
 		selectable_mission = no
 		available = {
 			always = no

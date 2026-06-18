@@ -26,6 +26,9 @@ division_template = {
         anti_air = { x = 0 y = 1 }
         anti_tank = { x = 0 y = 2 }				
     }
+    regimental_support = {
+        field_guns = { x = 0 y = 0 }
+    }
     is_locked = yes
     template_counter = 3
     division_cap = 1

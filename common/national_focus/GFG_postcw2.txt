@@ -226,7 +226,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = { #This is here so if the player does all the decisions first and focuses last it (should) not break now
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -265,7 +265,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -300,7 +300,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -336,7 +336,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -489,7 +489,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -724,7 +724,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11
@@ -758,7 +758,7 @@ focus_tree = {
 			custom_effect_tooltip = l_GFG_improves_economy
 			if = {
 				limit = {
-					check_variable = { var_GFG_crisis_cgf = 0.05 }
+					check_variable = { var_GFG_crisis_cgf < 0.05 }
 					has_dynamic_modifier = {modifier = idea_GFG_post_civil_war_crisis}
 				}
 				country_event = GFG_event.11

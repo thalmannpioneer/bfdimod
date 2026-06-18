@@ -954,6 +954,14 @@ focus_tree = {
 
             mark_focus_tree_layout_dirty = yes #Since we may have the Three Musketeers already
         }
+
+        ai_will_do = {
+            base = 0
+            modifier = { 
+                add = 5
+                has_war = no
+            }
+        }
     }
 
     focus = {
@@ -990,6 +998,18 @@ focus_tree = {
                         days = 1
                         random_hours = 12
                     }
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = { 
+                add = 10
+                has_war = no
+                OR = {
+                    NOT = {has_completed_focus = YFC_focus_see_to_the_eastern_front}
+                    has_completed_focus = YFC_focus_who_dares_wins
                 }
             }
         }
@@ -2127,16 +2147,25 @@ focus_tree = {
                 }
                 create_intelligence_agency = {
                     name = "The Green Eyes"
-                    icon = GFX_agency_icon_GGR_scheeschutz #Place holder
+                    icon = GFX_agency_icon_YFC_green_eye
                 }
                 85 = {add_resistance = -2}
                 212 = {add_resistance = -2}
             }
             else = {
-                85 = {add_resistance = -10}
-                212 = {add_resistance = -10}
+                85 = {add_resistance = -5}
+                212 = {add_resistance = -5}
             }
-
+            if = {
+                limit = {
+                    YFC = {
+                        controls_state = 217
+                        controls_state = 218
+                    }
+                }
+                217 = {add_resistance = -15}
+                218 = {add_resistance = -15}
+            }
         }
 
         ai_will_do = {
@@ -2424,13 +2453,13 @@ focus_tree = {
                                 state = 232
                             }
                         }
-                        set_variable = {eastern_support_var = -0.35}
+                        set_variable = {eastern_support_var = -0.4}
                     }
                     ELSE_IF = {
                         limit = {
                             state = 229
                         }
-                        set_variable = {eastern_support_var = -0.55}
+                        set_variable = {eastern_support_var = -0.6}
                     }
                     ELSE = {
                         set_variable = {eastern_support_var = 0}
@@ -2527,6 +2556,9 @@ focus_tree = {
 
             #lol imagine if adolf hitler sent winston churchill a letter that said 'u smell bad', thatd probably make him rlly confused
             #if you mean gamewise, it wouldnt actually do anything to the beach territory, just be cosmetic
+        }
+        ai_will_do = {
+            base = 5
         }
     }
 

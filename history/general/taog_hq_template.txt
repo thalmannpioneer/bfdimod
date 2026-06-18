@@ -183,6 +183,7 @@ every_possible_country = {
                 hq_support_company = { x = 0 y = 0 }
                 hq_air_liaison = { x = 0 y = 1 }
                 hq_logistics = { x = 0 y = 2 }
+                hq_field_hospital = { x = 0 y = 3 }
             }
         }
     }

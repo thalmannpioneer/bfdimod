@@ -707,9 +707,8 @@ news_event = {
     desc = bfdinews.35.desc
     picture = GFX_bfdinews35
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.35.a
@@ -1676,6 +1675,57 @@ news_event = {
         trigger = {
             controls_province = 3545
             NOT = {TAG = GTR}
+        }
+    }
+}
+
+news_event = {
+    #Schneehorn
+    id = bfdinews_cities.15
+    title = bfdinews_cities.15.t
+    desc = bfdinews_cities.15.desc
+    picture = GFX_bfdinews_city
+
+    major = yes
+    minor_flavor = yes
+
+    trigger = {
+        NOT = {
+            GGR = {controls_province = 4731}
+        }
+        15 = { is_owned_by = GGR }
+        NOT = { has_global_flag = fall_of_schneehorn}
+        GGR = {has_war = yes}
+    }
+
+    immediate = {
+        set_global_flag = fall_of_schneehorn
+    }
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = bfdinews_cities.15.a
+        trigger = {
+            NOT = {TAG = GGR}
+            NOT = {controls_province = 4731}
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.15.b
+        trigger = {
+            TAG = GGR
+        }
+    }
+
+    option = {
+        name = bfdinews_cities.15.c
+        trigger = {
+            controls_province = 4731
+            NOT = {TAG = GGR}
         }
     }
 }

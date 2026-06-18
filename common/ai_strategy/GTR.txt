@@ -115,16 +115,24 @@ GTR_fighters = {
     }
     abort_when_not_enabled = yes
 
-    ai_strategy = {
-        type = unit_ratio
-        id = fighter
-        value = 250
-    }
-    ai_strategy = {
-        type = equipment_production_factor
-        id = fighter
-        value = 1000
-    }
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 6 
+	}
+
     ai_strategy = { #No BBA
         type = research_weight_factor
         id = early_fighter
@@ -210,7 +218,19 @@ GTR_build = {
         original_tag = GTR
     }
     enable = {
-        always = yes
+        OR = {
+            AND = {
+                has_deployed_air_force_size = {
+                    size > 75
+                    type = fighter
+                }
+                has_deployed_air_force_size = {
+                    size > 80
+                    type = strategic_bomber
+                }
+            }
+            has_war = yes
+        }
     }
     abort_when_not_enabled = yes
 

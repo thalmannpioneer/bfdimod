@@ -107,7 +107,7 @@ country_event = {
 
             add_stability = 0.5
             army_experience = 200
-            add_manpower = 50000
+            add_manpower = 100000
             add_offsite_building = { type = arms_factory level = 2 }
 
             add_equipment_to_stockpile = {
@@ -159,6 +159,9 @@ country_event = {
                     }
                     support = {
                         engineer = { x = 0 y = 0 }	
+                    }
+                    regimental_support = {
+                        field_guns = { x = 0 y = 0 }
                     }
                 }
                 181 = {
@@ -221,6 +224,9 @@ country_event = {
                         maintenance_company = { x = 0 y = 2 }   
                         signal_company = { x = 0 y = 3 } 
                         recon = { x = 0 y = 4 }	 
+                    }
+                    regimental_support = {
+                        field_guns = { x = 0 y = 0 }
                     }
                 }
                 181 = {
@@ -431,12 +437,10 @@ country_event = {
         add_threat = 15
 
         hidden_effect = {
-            every_country = {
-				news_event = {
-					id = uncommon_event.7
-					days = 1
-					random_hours = 50
-				}
+			news_event = {
+				id = uncommon_event.7
+				days = 1
+				random_hours = 50
 			}
         }
     }
@@ -448,7 +452,6 @@ news_event = { #News
     desc = uncommon_event.7.desc
     picture = GFX_bfdinews2
 
-    fire_only_once = yes
     is_triggered_only = yes
     major = yes
 
