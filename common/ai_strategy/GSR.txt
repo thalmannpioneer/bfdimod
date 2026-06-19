@@ -145,20 +145,20 @@ GSR_huge_army = {
 	enable = {
 		has_war = no
 		has_army_size = {
-            size < 40
+            size < 42
         }
 	}
 
 	abort = {
 		has_army_size = {
-            size > 40
+            size > 42
         }
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 50
+		value = 65
 	}
 	ai_strategy = {
 		type = build_army

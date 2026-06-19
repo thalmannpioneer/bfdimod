@@ -108,6 +108,7 @@
  l_GFG_everyone_dies_cry_emoji: "§YFries§! dies.\n§YPuffball§! dies.\n§YBasketball§! dies.\n§YRemote§! dies.\n§YPie§! dies."
  l_GFG_southern_agreement: "§7We'll go to Faraway to conclude a non-aggression pact.§!"
 
+ l_YFC_sectors_unlock: "§GUnlocks various roles for§! §YTop Hat§!, §YPipe§!, §YBeaker§!, §YHammer§!, and §YTaser§!."
  l_YFC_payment_sectors: "§YWe will pay§! §R[?var_sectors_combined_cost]K§! §YDollars to the Sectors.§!\n§GModifiers provided by the Sectors may change depending on changes by you.§!\n§RIf any Sectors' influence is higher than everyone else combined or is above 10 then they may begin to make their own decisions.§!"
  l_YFC_sectors_TopHat_Gain: "§YTop Hat's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Top Hat
  l_YFC_sectors_TopHat_Loss: "§YTop Hat's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Top Hat
@@ -119,6 +120,8 @@
  l_YFC_sectors_Hammer_Loss: "§YHammer's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Hammer
  l_YFC_sectors_Taser_Gain: "§YTaser's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Taser
  l_YFC_sectors_Taser_Loss: "§YTaser's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Taser
+ l_YFC_sectors_Hire: "§RIncreases influence of hired Sector by 2§!\n" #Advisor Hire
+ l_YFC_sectors_Fire: "§GDecreases influence of fired Sector by 2§!\n" #Advisor Fire
  l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
  l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
  l_YFC_sectors_Gold_Take: "§RHowever, Sectoral costs are increased by $100K permanently.§!"

@@ -2425,7 +2425,7 @@ country_event = { #Eastern Event #3
             }
 		}
 		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
-		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_eastern_loseall_5
 		hidden_effect = {
 			every_state = {

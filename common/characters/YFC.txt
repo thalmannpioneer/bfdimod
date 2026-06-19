@@ -70,9 +70,124 @@ characters = {
 		name = YFC_tophat
 		portraits = { 
 			army = { 
-				large = GFX_YFC_tophat			
+				large = GFX_YFC_tophat
+				small = GFX_idea_YFC_TopHat			
 			} 
 		}
+		advisor = {
+            slot = theorist
+            idea_token = idea_YFC_TopHat #Update!
+            ledger = army
+            cost = 100
+            traits = { YFC_follower_of_mobile_warfare }
+			on_add = {
+                owner = {
+					custom_effect_tooltip = l_YFC_sectors_Hire
+					add_to_variable = { var_idea_YFC_TopHat_influence = 2 }
+				}
+            }
+            on_remove = {
+                owner = {
+					add_political_power = 65 #Fire give
+					custom_effect_tooltip = l_YFC_sectors_Fire
+					add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+				}
+            }
+			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+        }
+	}
+	YFC_beaker = {
+		name = YFC_beaker
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Beaker	
+			} 
+		}
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_YFC_Beaker
+            ledger = civilian
+            cost = 100
+            traits = { YFC_diy_expert }
+            on_add = {
+                owner = {
+					add_research_slot = 1
+					custom_effect_tooltip = l_YFC_sectors_Hire
+					add_to_variable = { var_idea_YFC_Beaker_influence = 2 }
+				}
+            }
+            on_remove = {
+                owner = {
+					add_research_slot = -1
+					add_political_power = 65 #Fire give
+					custom_effect_tooltip = l_YFC_sectors_Fire
+					add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+				}
+            }
+			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+        }
+	}
+	YFC_hammer = {
+		name = YFC_hammer
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Hammer
+			} 
+		}
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_YFC_Hammer
+            ledger = civilian
+            cost = 100
+            traits = { YFC_real_estate_agent }
+			on_add = {
+                owner = {
+					custom_effect_tooltip = l_YFC_sectors_Hire
+					add_to_variable = { var_idea_YFC_Hammer_influence = 2 }
+				}
+            }
+            on_remove = {
+                owner = {
+					add_political_power = 65 #Fire give
+					custom_effect_tooltip = l_YFC_sectors_Fire
+					add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+				}
+            }
+			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+        }		
+	}
+	YFC_taser = {
+		name = YFC_taser
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Taser	
+			} 
+		}
+		advisor = {
+            slot = political_advisor
+            idea_token = idea_YFC_Taser
+            ledger = civilian
+            cost = 100
+        	traits = { YFC_apprentice_of_terror }
+			on_add = {
+                owner = {
+					custom_effect_tooltip = l_YFC_sectors_Hire
+					add_to_variable = { var_idea_YFC_Taser_influence = 2 }
+				}
+            }
+            on_remove = {
+                owner = {
+					add_political_power = 65 #Fire give
+					custom_effect_tooltip = l_YFC_sectors_Fire
+					add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+				}
+            }
+			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+        }
 	}
 	YFC_blocky = {
 		name = YFC_blocky

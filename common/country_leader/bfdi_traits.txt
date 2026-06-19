@@ -174,4 +174,40 @@ leader_traits = {
     special_character = { #pog
         stability_factor = 0.01
     }
+
+    YFC_real_estate_agent  = {
+        sprite = 13
+
+        weekly_manpower = 100
+        monthly_population = 0.25
+    }
+
+    YFC_apprentice_of_terror = {
+        sprite = 13
+
+        resistance_damage_to_garrison = -0.1
+        foreign_subversive_activites = -0.15
+        non_core_manpower = 0.1
+    }
+
+    YFC_diy_expert = {
+        sprite = 13
+
+        research_speed_factor = 0.05
+    }
+
+    YFC_railway_enthusiast = {
+        sprite = 13
+
+        production_speed_rail_way_factor = 0.75
+        production_speed_supply_node_factor = 0.5
+    }
+
+    YFC_follower_of_mobile_warfare = {
+        sprite = 5
+
+        army_speed_factor = 0.1
+        army_org_regain = 0.05
+        org_loss_when_moving = -0.25
+    }
 }

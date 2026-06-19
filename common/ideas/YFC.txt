@@ -220,4 +220,35 @@ ideas = {
 			}
 		}
 	}
+
+	industrial_concern = {
+		YFC_Pipe = {
+			
+			picture = idea_YFC_Pipe
+
+			allowed = {
+				original_TAG = YFC
+			}
+			
+			cost = 100
+
+			traits = { YFC_railway_enthusiast }
+
+			available = {
+				hidden_trigger = {has_completed_focus = YFC_focus_establish_sectorialism}
+			}
+			visible = {
+				hidden_trigger = {has_completed_focus = YFC_focus_establish_sectorialism}
+			}
+			on_add = {
+				custom_effect_tooltip = l_YFC_sectors_Hire
+				add_to_variable = { var_idea_YFC_Pipe_influence = 2 }
+            }
+            on_remove = {
+				add_political_power = 65 #Fire give
+				custom_effect_tooltip = l_YFC_sectors_Fire
+				add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            }
+		}
+	}
 }

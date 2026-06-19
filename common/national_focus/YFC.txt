@@ -31,6 +31,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_stability = 0.15
+            add_political_power = 25
             country_event = YFC_event.1
             hidden_effect = {
                 random_list = {
@@ -61,7 +62,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-            add_political_power = 25
+            add_political_power = 50
             unlock_decision_category_tooltip = decision_YFC_trade_category
             hidden_effect = {
                 every_possible_country = {
@@ -104,14 +105,17 @@ focus_tree = {
         #Pipe becomes an advisor, granting +15% railroad construction speed and +30% supply hub construction speed, YFC is able to build railroads and supply hubs
         completion_reward = {
             unlock_decision_category_tooltip = decision_YFC_sector_category
-            add_field_marshal_role = {
-                character = YFC_tophat
-                traits = { politically_connected armor_officer trait_reckless organisational_leader }
-                skill = 2
-                attack_skill = 2
-                defense_skill = 2
-                planning_skill = 4
-                logistics_skill = 2
+            custom_effect_tooltip = l_YFC_sectors_unlock
+            hidden_effect = {
+                add_field_marshal_role = {
+                    character = YFC_tophat
+                    traits = { politically_connected armor_officer trait_reckless organisational_leader }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 4
+                    logistics_skill = 2
+                }
             }
             custom_effect_tooltip = l_YFC_allow_rails
             add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
@@ -1340,7 +1344,7 @@ focus_tree = {
         #Move the event about science goes to yoyleton, railroad goes to peoniele, rest stay to the description of the focus
         completion_reward = {
             custom_effect_tooltip = l_YFC_sectors_All_Lower
-            add_political_power = 35
+            add_political_power = 65
             add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
             add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
             add_to_variable = { var_idea_YFC_Beaker_influence = -2 }

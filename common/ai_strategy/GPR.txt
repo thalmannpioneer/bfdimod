@@ -38,7 +38,7 @@ GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
 		has_war = no
         OR = {
             GSR = {has_completed_focus = GSR_focus_take_what_ours}
-            GPG = {has_completed_focus = GSR_focus_deconstruction}
+            GSR = {has_completed_focus = GSR_focus_deconstruction}
         }
 	}
 	abort_when_not_enabled = yes

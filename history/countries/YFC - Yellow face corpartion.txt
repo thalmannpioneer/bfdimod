@@ -91,6 +91,10 @@ recruit_character = YFC_yellow_face
 recruit_character = YFC_david
 recruit_character = YFC_Coiny
 recruit_character = YFC_tophat
+recruit_character = YFC_beaker
+recruit_character = YFC_hammer
+recruit_character = YFC_taser
+
 recruit_character = YFC_blocky
 
 add_equipment_to_stockpile = {

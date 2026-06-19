@@ -671,6 +671,27 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_dora.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_TopHat
+		texturefile = gfx/interface/ideas/idea_YFC_TopHat.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_Beaker
+		texturefile = gfx/interface/ideas/idea_YFC_Beaker.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_Hammer
+		texturefile = gfx/interface/ideas/idea_YFC_Hammer.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_Taser
+		texturefile = gfx/interface/ideas/idea_YFC_Taser.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_Pipe
+		texturefile = gfx/interface/ideas/idea_YFC_Pipe.dds
+	}
+
+	spriteType = {
 		name = GFX_idea_SOS_goiky_fleet
 		texturefile = gfx/interface/ideas/idea_SOS_goiky_fleet.dds
 	}
