@@ -107,11 +107,8 @@ news_event = {
     desc = bfdinews.7.desc
     picture = GFX_bfdinews7
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.7.a
@@ -130,11 +127,8 @@ news_event = {
     desc = bfdinews.8.desc
     picture = GFX_bfdinews8
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.8.a
@@ -147,11 +141,8 @@ news_event = {
     desc = bfdinews.9.desc
     picture = GFX_bfdinews7
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.9.a
@@ -170,11 +161,8 @@ news_event = {
     desc = bfdinews.10.desc
     picture = GFX_bfdinews10
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.10.a
@@ -205,6 +193,20 @@ news_event = {
             tag = GPR
         }
     }
+    option = {
+        name = bfdinews.10.e
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GPR
+                    tag = GPG
+                    has_government = fascism
+                    has_government = communism
+                    has_government = neutrality
+                }
+            }
+        }
+    }
 }
 
 news_event = {
@@ -213,11 +215,8 @@ news_event = {
     desc = bfdinews.11.desc
     picture = GFX_bfdinews11
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.11.a
@@ -239,14 +238,20 @@ news_event = {
     desc = bfdinews.12.desc
     picture = GFX_bfdinews12
 
-    major = yes
-
-    fire_only_once = yes
-
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.12.a
+        trigger = {
+            tag = GPG
+        }
+    }
+    option = {
+        name = bfdinews.12.b
+        trigger = {
+            NOT = { tag = GPG }
+        }
     }
 }
 
@@ -275,11 +280,8 @@ news_event = {
     desc = bfdinews.14.desc
     picture = GFX_bfdinews14
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.14.a
@@ -297,11 +299,8 @@ news_event = {
     desc = bfdinews.15.desc
     picture = GFX_bfdinews15
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "civil_war_event" }
@@ -309,6 +308,27 @@ news_event = {
 
     option = {
         name = bfdinews.15.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GPG
+                    tag = GDR
+                    tag = GFG
+                    tag = GSR
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.15.b
+        trigger = {
+            OR = {
+                tag = GPG
+                tag = GDR
+                tag = GFG
+                tag = GSR
+            }
+        }
     }
 }
 
@@ -318,11 +338,8 @@ news_event = {
     desc = bfdinews.16.desc
     picture = GFX_bfdinews16
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "GPG_cw_transgov_victory" }
@@ -330,6 +347,15 @@ news_event = {
 
     option = {
         name = bfdinews.16.a
+        trigger = {
+            NOT = {tag = GPG}
+        }
+    }
+    option = {
+        name = bfdinews.16.b
+        trigger = {
+            tag = GPG
+        }
     }
 }
 
@@ -339,11 +365,8 @@ news_event = {
     desc = bfdinews.17.desc
     picture = GFX_bfdinews17
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "GPG_cw_democrats_victory" }
@@ -351,6 +374,26 @@ news_event = {
 
     option = {
         name = bfdinews.17.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GDR
+                    tag = GPR
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.17.b
+        trigger = {
+            tag = GDR
+        }
+    }
+    option = {
+        name = bfdinews.17.c
+        trigger = {
+            tag = GPR
+        }
     }
 }
 
@@ -360,11 +403,8 @@ news_event = {
     desc = bfdinews.18.desc
     picture = GFX_bfdinews18
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "GPG_cw_ruby_victory" }
@@ -372,6 +412,27 @@ news_event = {
 
     option = {
         name = bfdinews.18.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GSR
+                    has_government = communism
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.18.b
+        trigger = {
+            tag = GSR
+        }
+    }
+    option = {
+        name = bfdinews.18.c
+        trigger = {
+            has_government = communism
+            NOT = {tag = GSR}
+        }
     }
 }
 
@@ -381,11 +442,8 @@ news_event = {
     desc = bfdinews.19.desc
     picture = GFX_bfdinews19
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "GPG_cw_ironhand_victory" }
@@ -393,6 +451,27 @@ news_event = {
 
     option = {
         name = bfdinews.19.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GFG
+                    has_government = fascism
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.19.b
+        trigger = {
+            tag = GFG
+        }
+    }
+    option = {
+        name = bfdinews.19.c
+        trigger = {
+            NOT = {tag = GFG}
+            has_government = fascism
+        }
     }
 }
 
@@ -402,14 +481,30 @@ news_event = {
     desc = bfdinews.20.desc
     picture = GFX_bfdinews20
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.20.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GPR
+                    tag = GSR
+                    tag = GPG
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.20.b
+        trigger = {
+            OR = {
+                tag = GPR
+                tag = GSR
+                tag = GPG
+            }
+        }
     }
 }
 
@@ -419,14 +514,20 @@ news_event = {
     desc = bfdinews.21.desc
     picture = GFX_bfdinews21
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.21.a
+        trigger = {
+            NOT = {tag = GSR}
+        }
+    }
+    option = {
+        name = bfdinews.21.b
+        trigger = {
+            tag = GSR
+        }
     }
 }
 
@@ -436,14 +537,17 @@ news_event = {
     desc = bfdinews.22.desc
     picture = GFX_bfdinews22
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.22.a
+        trigger = {
+            OR = {
+                tag = GSR
+                tag = GFG
+            }
+        }
         if = {
             limit = { GSR = { is_ai = no } }
             set_variable = { var_demo_end = 6 }
@@ -457,6 +561,24 @@ news_event = {
             hidden_effect = { play_song = "demo_end" }
         }
     }
+    option = {
+        name = bfdinews.22.b
+        trigger = {
+            tag = GPR
+        }
+    }
+    option = {
+        name = bfdinews.22.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = GSR
+                    tag = GFG
+                    tag = GPR
+                }
+            }
+        }
+    }
 }
 
 news_event = {
@@ -465,14 +587,20 @@ news_event = {
     desc = bfdinews.23.desc
     picture = GFX_bfdinews23
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.23.a
+        trigger = {
+            NOT = {tag = GFG}
+        }
+    }
+    option = {
+        name = bfdinews.23.b
+        trigger = {
+            tag = GFG
+        }
     }
 }
 
@@ -482,11 +610,8 @@ news_event = {
     desc = bfdinews.24.desc
     picture = GFX_bfdinews24
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     immediate = {
         hidden_effect = { play_song = "SOS_pin_coronation" }
@@ -503,11 +628,8 @@ news_event = {
     desc = bfdinews.25.desc
     picture = GFX_bfdinews25
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.25.a
@@ -526,11 +648,8 @@ news_event = {
     desc = bfdinews.26.desc
     picture = GFX_bfdinews25 #Update later
 
-    major = yes
-
     is_triggered_only = yes
-
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.26.a
@@ -565,17 +684,25 @@ news_event = {
     desc = bfdinews.27.desc
     picture = GFX_bfdinews27
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.27.a
+        trigger = {
+            tag = UGA
+        }
         if = {
             limit = { UGA = { is_ai = no } }
             set_variable = { var_demo_end = 9}
             set_global_flag = demo_ended
             hidden_effect = { play_song = "demo_end" }
+        }
+    }
+    option = {
+        name = bfdinews.27.b
+        trigger = {
+            NOT = {tag = UGA}
         }
     }
 }
@@ -586,12 +713,20 @@ news_event = {
     desc = bfdinews.28.desc
     picture = GFX_bfdinews28
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.28.a
+        trigger = {
+            tag = GTR
+        }
+    }
+    option = {
+        name = bfdinews.28.b
+        trigger = {
+            NOT = {tag = GTR}
+        }
     }
 }
 
@@ -601,12 +736,20 @@ news_event = {
     desc = bfdinews.29.desc
     picture = GFX_bfdinews29
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.29.a
+        trigger = {
+            tag = GTR
+        }
+    }
+    option = {
+        name = bfdinews.29.b
+        trigger = {
+            NOT = {tag = GTR}
+        }
     }
 }
 
@@ -616,9 +759,8 @@ news_event = {
     desc = bfdinews.30.desc
     picture = GFX_bfdinews30
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.30.a
@@ -631,9 +773,8 @@ news_event = {
     desc = bfdinews.31.desc
     picture = GFX_bfdinews31
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.31.a
@@ -646,12 +787,20 @@ news_event = {
     desc = bfdinews.32.desc
     picture = GFX_bfdinews32
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.32.a
+        trigger = {
+            tag = GTR
+        }
+    }
+    option = {
+        name = bfdinews.32.b
+        trigger = {
+            NOT = {tag = GTR}
+        }
     }
 }
 
@@ -661,9 +810,8 @@ news_event = {
     desc = bfdinews.33.desc
     picture = GFX_bfdinews33
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.33.a
@@ -676,12 +824,20 @@ news_event = {
     desc = bfdinews.34.desc
     picture = GFX_bfdinews34
 
-    major = yes
     is_triggered_only = yes
-    fire_only_once = yes
+    major = yes
 
     option = {
         name = bfdinews.34.a
+        trigger = {
+            tag = GTR
+        }
+    }
+    option = {
+        name = bfdinews.34.b
+        trigger = {
+            NOT = {tag = GTR}
+        }
     }
 }
 
@@ -714,6 +870,26 @@ news_event = {
 
     option = {
         name = bfdinews.36.a
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = WGF
+                    tag = GMD
+                }
+            }
+        }
+    }
+    option = {
+        name = bfdinews.36.b
+        trigger = {
+            tag = WGF
+        }
+    }
+    option = {
+        name = bfdinews.36.c
+        trigger = {
+            tag = GMD
+        }
     }
 }
 
@@ -738,11 +914,35 @@ news_event = {
     desc = bfdinews.38.desc
     picture = GFX_bfdinews38
 
-    major = yes
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.38.a
+        trigger = {
+            OR = {
+                tag = FROM
+                is_ally_with = FROM
+            }
+        }
+    }
+    option = {
+        name = bfdinews.38.b
+        trigger = {
+            has_war_with = FROM
+        }
+    }
+    option = {
+        name = bfdinews.38.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = FROM
+                    is_ally_with = FROM
+                    has_war_with = FROM
+                }
+            }
+        }
     }
 }
 
@@ -752,8 +952,8 @@ news_event = {
     desc = bfdinews.39.desc
     picture = GFX_bfdinews38 #Update later
 
-    major = yes
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.39.a
@@ -800,8 +1000,8 @@ news_event = {
     desc = bfdinews.40.desc
     picture = GFX_bfdinews38 #Update later
 
-    major = yes
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.40.a
@@ -846,8 +1046,8 @@ news_event = {
     desc = bfdinews.41.desc
     picture = GFX_bfdinews38 #Update later
 
-    major = no
     is_triggered_only = yes
+    major = yes
 
     option = {
         name = bfdinews.41.a

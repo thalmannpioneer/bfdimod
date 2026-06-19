@@ -118,12 +118,10 @@ country_event = {
 		add_stability = -0.05
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.21
-					days = 5
-				}
+			news_event = {
+				id = bfdinews.21
+				days = 2
+				random_hours = 6
 			}
 			retire_character = GSR_ruby
 			#50% chance of Ruby survives :D
@@ -387,13 +385,10 @@ country_event = {
 		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
 		hidden_effect = {
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.22
-					days = 5
-					random_hours = 12
-				}
+			news_event = {
+				id = bfdinews.22
+				days = 5
+				random_hours = 12
 			}
 			add_threat = 2
 			country_event = {

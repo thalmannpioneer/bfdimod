@@ -49,7 +49,7 @@ decision_SEC_funny_category = { #gulp (Also before you ask if it triggering 3 ti
 			hidden_effect = {
 				IF = {
 					limit = {SEC = {is_ai = yes}}
-					add_manpower = 6000
+					add_manpower = 6500
 				}
 				IF = {
 					limit = {NRR = {is_ai = yes}}

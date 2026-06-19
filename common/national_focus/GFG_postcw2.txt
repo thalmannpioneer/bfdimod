@@ -1039,7 +1039,7 @@ focus_tree = {
 				type = annex_everything
 			}
 			hidden_effect = {
-				add_threat = 3
+				add_threat = 4
 				if = {
 					limit = { NOT = { has_country_flag = agreement_succeed } }
 					country_event = {
@@ -1047,13 +1047,10 @@ focus_tree = {
 						days = 30
 					}
 				}
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.22
-						days = 10
-						random_hours = 12
-					}
+				news_event = {
+					id = bfdinews.22
+					days = 2
+					random_hours = 12
 				}
 			}
 		}

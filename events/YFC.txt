@@ -430,13 +430,10 @@ country_event = { #Embargo event for all nations
 		}
 		hidden_effect = {
 			YFC = {country_event = YFC_event.10}
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.41
-					days = 2
-					random_hours = 24
-				}
+			news_event = {
+				id = bfdinews.41
+				days = 2
+				random_hours = 24
 			}
 		}
 	}

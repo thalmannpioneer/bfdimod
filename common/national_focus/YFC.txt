@@ -872,13 +872,10 @@ focus_tree = {
                         random_hours = 100
                     }
                 }
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = {
-                        id = bfdinews.26
-                        days = 1
-                        random_hours = 36
-                    }
+                news_event = {
+                    id = bfdinews.26
+                    days = 1
+                    random_hours = 36
                 }
                 add_threat = 2
             }
@@ -1999,13 +1996,10 @@ focus_tree = {
                     set_country_flag = Allow_Musketeers
                     mark_focus_tree_layout_dirty = yes
                 }
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = {
-                        id = bfdinews.39
-                        days = 1
-                        random_hours = 36
-                    }
+                news_event = {
+                    id = bfdinews.39
+                    days = 1
+                    random_hours = 36
                 }
             }
             add_stability = 0.01
@@ -2364,13 +2358,10 @@ focus_tree = {
                     set_country_flag = Allow_Musketeers
                     mark_focus_tree_layout_dirty = yes
                 }
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = {
-                        id = bfdinews.40
-                        days = 1
-                        random_hours = 36
-                    }
+                news_event = {
+                    id = bfdinews.40
+                    days = 1
+                    random_hours = 36
                 }
             }
             add_stability = 0.01

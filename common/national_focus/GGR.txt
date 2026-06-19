@@ -1175,19 +1175,15 @@ focus_tree = {
 			country_event = GGR_event.12
 			hidden_effect = {
 				FFT = { add_ideas = idea_FFT_freedom_or_death }
-				add_threat = 1
+				add_threat = 2
 				country_event = {
 					id = GGR_event.13
 					days = 15
 					random_hours = 12
 				}
-				every_possible_country = {
-					limit = { is_ai = no }
-					news_event = {
-						id = bfdinews.8
-						days = 2
-					}
-					play_song = "snowy_forest_invasion_music"
+				news_event = {
+					id = bfdinews.8
+					days = 2
 				}
 				WGF = { 
 					if = {

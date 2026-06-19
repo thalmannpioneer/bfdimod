@@ -29,9 +29,6 @@ country_event = {
 				}
 			}
 		}
-		every_possible_country = {
-			limit = { is_ai = no }
-			news_event =  bfdinews.24
-		}
+		news_event =  bfdinews.24
 	}
 }

@@ -1,7 +1,6 @@
 #GPR AI 101
 #Change if you want to!!!!
 
-
 ## ARMY PLACEMENT ##
 
 GPR_Scare_GPG = { #Place troops on the border for the... um... aura?
@@ -23,6 +22,11 @@ GPR_Scare_GPG = { #Place troops on the border for the... um... aura?
         id = GPG
         value = 100
     }
+    ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 30
+	}
 }
 
 GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
@@ -44,6 +48,11 @@ GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
         id = GSR
         value = 100
     }
+    ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 30
+	}
 }
 
 GPR_Scare_GFG = { #Place troops on the border for the... um... aura?
@@ -62,4 +71,9 @@ GPR_Scare_GFG = { #Place troops on the border for the... um... aura?
         id = GFG
         value = 100
     }
+    ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 30
+	}
 }

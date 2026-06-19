@@ -1695,6 +1695,7 @@
  bfdinews.10.b: "We will count on the victory of the socialists."
  bfdinews.10.c: "We will support our right-wing friends."
  bfdinews.10.d: "The Democratic faction must win at all costs."
+ bfdinews.10.e: "Heart in Crisis."
  
  bfdinews.11.t: "Proclamation of the Goiky Republic!"
  bfdinews.11.desc: "A few hours ago, in Casland, the cabinet head approved the constitution of the Goiky Republic. The interim government has been in crisis for a long time, but it appears to be coming to an end and stability is once again being established in the center of Goiky. But for now, nothing else can be said. We will monitor developments."
@@ -1703,7 +1704,8 @@
  
  bfdinews.12.t: "Collapse of the provisional government!"
  bfdinews.12.desc: "Disturbing news comes from Casland. As a result of the conflict in the cabinet, the congress of objects of the Transitional Government of Goiky collapsed and ceased its work, and the outskirts of the state were occupied by military formations of factions. This is likely the end of the short-lived truce between the parties."
- bfdinews.12.a: "Dark times."
+ bfdinews.12.a: "Mobilize all available forces!"
+ bfdinews.12.b: "Dark times."
  
  bfdinews.13.t: "Christmas in Goiky"
  bfdinews.13.desc: "Along with the first snow, Christmas comes to the Greeny Plains. The Casland objects gather together and celebrate joyfully. The roar of fireworks and laughter can be heard from all corners of Goiky. In connection with this event, our redaction congratulates you and wishes you a happy New Year!"
@@ -1716,39 +1718,52 @@
  
  bfdinews.15.t: "Civil war hits Casland"
  bfdinews.15.desc: "According to several eyewitness reports, the Provisional Government, which resided over the capital of Old Goiky, Casland, has all but retreated from the area. Its many factions have broken off, declaring their own separate, sovereign states, all claiming to be the true successor to Old Goiky. Additionally, these factions have declared states of war, though, violence between the factions had been going on since the assassination of Clock. It's hard to say what the outcome of this situation may be, but what we do know is that Casland, and the surrounding areas, are not safe. We predict large refugee populations migrating to nearby states, and urge all of Goiky to aid these groups as they see fit."
- bfdinews.15.a: "War? Again?"
+ bfdinews.15.a: "The fragments shatter again."
+ bfdinews.15.b: "Casland must be ours!"
  
  bfdinews.16.t: "End of the Civil War!"
  bfdinews.16.desc: "After days of devastating fighting, the Provisional Government managed to regain control over its territories and suppress uprisings on the outskirts. Although this is not the end yet, it is already a big step towards restoring stability in the region."
  bfdinews.16.a: "Interesting."
+ bfdinews.16.b: "Casland secured."
  
  bfdinews.17.t: "Casland Democratization!"
  bfdinews.17.desc: "As a result of fierce fighting in Casland and its suburbs, the Democratic Faction was able to destroy its opponents and restore stability. Yesterday Taco, as a representative of the new government, said: 'The goal of the new government is to create a unified democratic state throughout the entire South Goiky.'"
  bfdinews.17.a: "Will it work out?"
+ bfdinews.17.b: "Casland secured."
+ bfdinews.17.c: "Excellent news!"
  
  bfdinews.18.t: "Socialism in Casland!"
  bfdinews.18.desc: "Following a brutal civil war in the heart of Goiky, the mine workers under the leadership of the Toilers Front managed to destroy their opponents and establish a 'dictatorship of the proletariat' throughout the territory of the former Provisional Government. This has already greatly alarmed all the neighbors of the new state, but so far the foreign policy course of the local government remains unclear."
  bfdinews.18.a: "We'll see."
+ bfdinews.18.b: "Casland secured."
+ bfdinews.18.c: "Excellent news!"
  
  bfdinews.19.t: "National Ressurection"
  bfdinews.19.desc: "The fighting in the Casland areas had almost died down, and a clear winner was visible. Thanks to its deep militarization, the Iron Hand was able to destroy its opponents and establish strict power over all the territories of the former transitional regime. The aggressive intentions of the new regime have already become obvious to all its neighbors."
  bfdinews.19.a: "Creepy."
+ bfdinews.19.b: "Casland secured."
+ bfdinews.19.c: "Excellent news!"
  
  bfdinews.20.t: "Tensions in Greeny Plains!"
  bfdinews.20.desc: "As a result of the instability in Casland, the Greeny Plains Republic annexed the border areas and the city of Lawnland in order to protect its borders. Now, with the restoration of a stable government in the heartland of Goiky, there is a significant deterioration in relations between the governments. Negotiations on the region are likely to begin soon."
  bfdinews.20.a: "Hope that there will be no war."
+ bfdinews.20.b: "A stake of the future has arrived."
  
  bfdinews.21.t: "Anarchists take power in Casland!"
  bfdinews.21.desc: "After the victory of the Toilers Front in the civil war in the Greeny Plains, the idea that stability had finally arrived in the region was firmly established. But suddenly, news spread across the continent: rebellious unknown militants, with enormous numerical superiority, swept away the Ruby regime and declared an 'anarchic system'. So far, nothing is known about the new government, and the atmosphere in the heart of the region is tense. We will monitor developments."
  bfdinews.21.a: "Another split?"
+ bfdinews.21.b: "To prosperity!"
  
  bfdinews.22.t: "Greeny Plains in flames!"
  bfdinews.22.desc: "Important news! Casland regime forces have crossed the Republic border and attacked troops in occupied Lawnland! Mobilization has been announced in Greenport. Match called the act of aggression 'a, like, ugly thing to do' and the government declared a state of emergency. Apparently, the war will be prolonged and bloody. No information from Casland side."
- bfdinews.22.a: "And objects are dying again."
+ bfdinews.22.a: "The fate of Central Goiky hangs in the balance."
+ bfdinews.22.b: "Liberty or Death!"
+ bfdinews.22.c: "And objects are dying again."
  
  bfdinews.23.t: "Esoterics in Casland"
  bfdinews.23.desc: "After the victory of the Iron Hand in the civil war, many expected anything, but surely no one expected this. According to the meager information from the local government, it declared itself “a successor of the Great Yoyleland Race” and threatened all “traitors and degenerates” with complete annihilation. The news from Casland is becoming increasingly radical, and this is alarming."
  bfdinews.23.a: "Yoyleland?"
+ bfdinews.23.b: "Yoyleland!"
  
  bfdinews.24.t: "Pin's Coronation"
  bfdinews.24.desc: "Interesting news came the other day from St. Objectburg. The local government, formed from the fleet command, announced Pin's ascension to the self-declared throne. She had already accepted the title and became the first monarch in Goiky's history. So far, the sentiments of neighboring governments are neutral, but we will continue to monitor developments."
@@ -1766,15 +1781,18 @@
  
  bfdinews.27.t: "Goiky University in shambles!"
  bfdinews.27.desc: "Breaking news from the frenzied city of Announcergrad! It appears the population of the starving city has revolted and razed the continent's largest university to the ground. Nothing exact is known yet, but it's already terrifying. Our correspondents will continue to monitor developments."
- bfdinews.27.a: "Tragic."
+ bfdinews.27.a: "..."
+ bfdinews.27.b: "Tragic."
  
  bfdinews.28.t: "Explosion in University!"
  bfdinews.28.desc: "Our correspondents from Central Goiky report on the aftermath of the accident that occurred near Announcergrad! A mushroom cloud of smoke several miles high was reportedly visible from the town to the south, and windows were blown out in the town. The number of casualties is unknown at this time, but we will continue to monitor the situation."
- bfdinews.28.a: "A lot of dead, it seems."
+ bfdinews.28.a: "Hopes dropped to 0.000%."
+ bfdinews.28.b: "A lot of dead, it seems."
 
  bfdinews.29.t: "Proclamation of the Technocratic Republic!"
  bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, according to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
- bfdinews.29.a: "Golfball actually did it?"
+ bfdinews.29.a: "I will NOT let anyone else decide my fate!"
+ bfdinews.29.b: "Golfball actually did it?"
 
  bfdinews.30.t: "Grand Opening of the University!"
  bfdinews.30.desc: "Our correspondents in Announcergrad recorded a widespread upsurge in the mood of the \"Technocratic Republic's\" objects: the lengthy and expensive project to restore the glorious Goiky University has proven successful. Our journalists were able to take a look at the newly erected buildings of Goikean alma mater, and they truly look simply marvelous!\nThis will most likely greatly strengthen the position of the newly formed state in the political arena of Goiky and will revive all scientific activity on the continent, unless, of course, the government decides to leave the University in an isolated state."
@@ -1786,7 +1804,8 @@
 
  bfdinews.32.t: "Testing of the New Bomb!"
  bfdinews.32.desc: "Breaking news is coming in from all over the Greeny Plains: it appears the government of the \"Technocratic Republic\" has tested a new type of weapon. The blast wave reached the borders of Casland, and the flash in the sky was visible even from Centrogoiky. If this is truly a new type of weapon, it will turn the entire situation in Goiky upside down: a bomb of such power would likely be capable of wiping out entire cities!\nOur editorial team is very concerned about such news and will continue to monitor developments."
- bfdinews.32.a: "Stakes are rising."
+ bfdinews.32.a: "Such power..."
+ bfdinews.32.b: "Stakes are rising."
 
  bfdinews.33.t: "Space Flight!"
  bfdinews.33.desc: "Our correspondents captured unique footage from the launch pad at the \"Dimples\" test site: for the first time in Goiky's history, objects have successfully crossed the stratosphere and soared into space! This astonishing project was made possible thanks to the restoration of Goiky University and the enormous financial investment of the Technocratic Republic's government.\nIt appears the shuttle is heading directly for the Moon. It's still unclear when the astronauts will return to Earth, but it's already clear that this will upend the entire arms race between the surrounding nations."
@@ -1795,6 +1814,7 @@
  bfdinews.34.t: "Space Flight Tragically Failed!"
  bfdinews.34.desc: "Tragic news is coming from the Technocratic Republic: it appears the launch of a long-developed space rocket has ended in disaster. Most likely, an accident occurred during the launch mechanism, and the fuel detonated, causing a massive explosion and killing the entire crew. This will seriously undermine the prestige of the Goiky University and the Technocratic Republic in the scientific race with other nations. We will continue to monitor news surrounding this tragic event."
  bfdinews.34.a: "The first step is always troublesome."
+ bfdinews.34.b: "Too fast it seems."
 
  bfdinews.35.t: "Davidland Economy Crash!"
  bfdinews.35.desc: "The collapse of economic and political ties in South Goiky now repercussions beyond the continent: the Goikean Trading Company, a key player in the entire Davidland economy, effectively stopped its existance. Due to the disruption of logistical links and the deteriorating situation in the main export regions of Goiky, the company was unable to fulfill its futures contracts, and its shares plummeted to near zero. A large number of banks declared bankruptcy, unable to meet their deposit obligations. This is causing enormous discontent among the people and will likely undermine the centuries-old monarchy..."
@@ -1803,6 +1823,8 @@
  bfdinews.36.t: "The Northern War!"
  bfdinews.36.desc: "According to military correspondence, several hours ago, Revolutionary Front troops crossed the neutral zone and attacked border outposts in the Goiky Canal Military District. Unlike previous armed clashes, this one appears to be on a scale ten times larger and will likely escalate into a full-scale war. Events are unfolding rapidly, and the potential outcome of this conflict cannot yet be determined. We will continue to monitor the escalation of the situation."
  bfdinews.36.a: "The flame is smoldering."
+ bfdinews.36.b: "Forwards!"
+ bfdinews.36.c: "Uh Oh."
 
  bfdinews.37.t: "Flute Tours Goiky!"
  bfdinews.37.desc: "The continent-famous composer, who has already made history with his legendary \"Truth of a Legend\" and \"Frost Waltz\", has announced a massive tour with his entire orchestra throughout cities and towns of Goiky! Nearly everywhere, theaters are brimming with queues of objects eager to snag a ticket, even though the announced performance date in many cities is still months away! Tickets in Casland and Greenport are already sold out! Goiky hasn't seen such excitement in a long time. We wish this talented artist the best of luck."
@@ -1811,6 +1833,8 @@
  bfdinews.38.t: "[FROM.GetName] Declares Bankruptcy!"
  bfdinews.38.desc: "Well, it seems that the [FROM.GetAdjective] government announced its inability to pay its debt obligations and adopted strict anti-crisis measures. It seems the economy in the vast expanses of the new, anarchic Goiky hasn't yet fully got on its own grip, and this is currently impacting the lives of many objects around. Our team also predicts further financial unrest amid similar events..."
  bfdinews.38.a: "Terrible!"
+ bfdinews.38.b: "Their collapse is near!"
+ bfdinews.38.c: "Unique developments."
 
  bfdinews.39.t: "Formation of The Three Musketeers!"
  bfdinews.39.desc: "Interesting news has been reported from South Goiky. The nations of Yellow Face, Numismatia, and the newly formed Bunch Republic have created an economic and defense alliance! Yellow Face has stated that the goal is to create economic growth throughout all of Goiky. Only time will tell if the three will stay united, but the balance of power has been changed in Southern Goiky."

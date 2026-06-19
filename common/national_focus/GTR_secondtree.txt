@@ -2205,7 +2205,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_manpower = 5000
+            add_manpower = 10000
             country_lock_all_division_template = no
             add_ideas = limited_conscription
         }

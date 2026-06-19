@@ -1054,6 +1054,36 @@ generic_strategic_bomber = {
 		}
 	}
 
+	strat_bomber_interwar_default = {
+		priority = {
+			factor = 10
+			modifier = { 
+				tag = GTR
+				factor = 1000 
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = large_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = engine_2_4x
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = empty
+			}
+		}
+
+		allowed_modules = {
+			large_bomb_bay
+			engine_2_4x
+			lmg_defense_turret_2x
+			lmg_defense_turret
+		}
+	}
+
 	strat_bomber_1_default = {
 		priority = {
 			factor = 10
@@ -1074,7 +1104,6 @@ generic_strategic_bomber = {
 				special_type_slot_1 = lmg_defense_turret_2x
 				special_type_slot_2 = lmg_defense_turret
 			}
-			
 		}
 
 		allowed_modules = {
@@ -1088,7 +1117,6 @@ generic_strategic_bomber = {
 	strat_bomber_2_default = {
 		priority = {
 			factor = 10
-			
 		}
 
 		target_variant = {

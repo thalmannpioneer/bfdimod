@@ -165,18 +165,10 @@ country_event = {
                 limit = { is_ai = no }
                 UGA = { change_tag_from = ROOT }
             }
-            every_possible_country = {
-                limit = {
-                    OR = {
-                        is_ai = no
-                        tag = UGA
-                    }
-                }
-                news_event = {
-                    id = bfdinews.27
-                    days = 5
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.27
+                days = 5
+                random_hours = 12
             }
             set_province_name = {
                 id = 3545
@@ -275,15 +267,10 @@ country_event = {
                 days = 10
                 random_hours = 12
             }
-            every_possible_country = {
-                limit = {
-                    is_ai = no
-                }
-                news_event = {
-                    id = bfdinews.28
-                    days = 2
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.28
+                days = 2
+                random_hours = 12
             }
         }
     }
@@ -553,11 +540,8 @@ country_event = {
         complete_national_focus = GTR_focus_new_government
         mark_focus_tree_layout_dirty = yes
         hidden_effect = {
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = bfdinews.29
-                play_song = "GTR_technocratic_republic"
-            }
+            news_event = bfdinews.29
+            play_song = "GTR_technocratic_republic"
             country_event = {
                 id = GTR_event.21
                 days = 10
@@ -1209,13 +1193,10 @@ country_event = {
         89 = { add_manpower = 28911 }
         add_research_slot = 1
         hidden_effect = {
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.30
-                    days = 3
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.30
+                days = 2
+                random_hours = 12
             }
         }
     }
@@ -1357,15 +1338,10 @@ country_event = {
         }
         set_country_flag = GTR_meteorite_arrived
         hidden_effect = {
-            every_possible_country = {
-                limit = {
-                    is_ai = no
-                }
-                news_event = {
-                    id = bfdinews.31
-                    days = 2
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.31
+                days = 2
+                random_hours = 12
             }
         }
     }
@@ -1465,16 +1441,10 @@ country_event = {
                 use_nuke = yes
             }
             goto_province = 3398
-
-            every_possible_country = {
-                limit = {
-                    is_ai = no
-                }
-                news_event = {
-                    id = bfdinews.32
-                    days = 2
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.32
+                days = 2
+                random_hours = 12
             }
         }
     }

@@ -266,12 +266,10 @@ country_event = {
 
 			set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 			
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = bfdinews.25
-					days = 5
-				}
+			news_event = {
+				id = bfdinews.25
+				days = 2
+				random_hours = 6
 			}
 		}
 	}
@@ -294,6 +292,11 @@ country_event = {
 					target = ROOT
 					autonomous_state = autonomy_integrated_puppet
 				}
+			}
+			news_event = { #Feel free to remove later or now
+				id = bfdinews.25
+				days = 2
+				random_hours = 6
 			}
 		}
 	}

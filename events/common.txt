@@ -14,14 +14,11 @@ country_event = {
         add_ideas = idea_common_bankruptcy
         custom_effect_tooltip = l_bankruptcy_effect
         hidden_effect = {
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.38
-                    days = 2
-                    random_days = 1
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.38
+                days = 2
+                random_days = 1
+                random_hours = 12
             }
             set_variable = { var_tax_slider_pure = 261 }
             set_variable = { var_tax_slider = 4 }

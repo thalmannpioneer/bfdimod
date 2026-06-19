@@ -103,8 +103,7 @@ GTR_fighters = {
         original_tag = GTR
     }
     enable = {
-        always = yes
-
+        has_war = no
         has_completed_focus = GTR_focus_modern_aircraft
         has_deployed_air_force_size = {
             size < 100
@@ -183,6 +182,7 @@ GTR_bombers = {
         original_tag = GTR
     }
     enable = {
+        has_war = no
         has_completed_focus = GTR_focus_rockets_air_ground
         has_deployed_air_force_size = {
             size < 80
@@ -266,7 +266,6 @@ GTR_build = {
         original_tag = GTR
     }
     enable = {
-
         OR = {
             arms_factory < 6
             AND = {

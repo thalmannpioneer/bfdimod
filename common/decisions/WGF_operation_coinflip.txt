@@ -153,6 +153,7 @@ WGF_decision_operation_coinflip_triumph = {
             173 = { add_core_of = WGF }
             11 = { add_core_of = WGF }
             182 = { add_core_of = WGF }
+            add_manpower = 25000 #Just for the funny, remove later
         }
         set_country_flag = WGF_stage1_ended
     }

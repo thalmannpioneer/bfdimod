@@ -317,11 +317,10 @@ on_actions = {
                     ROOT = { tag = FFT }
                 }
                 set_global_flag = cap_rocky
-                GGR = {
-                    news_event = {
-                        id = bfdinews.9
-                        days = 2
-                    }
+                news_event = {
+                    id = bfdinews.9
+                    days = 5
+                    random_hours = 6
                 }
                 if = {
                     limit = {

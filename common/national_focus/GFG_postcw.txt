@@ -368,15 +368,12 @@ focus_tree = {
                 load_focus_tree = GFG_postcw2_focus_tree
                 country_event = {
                     id = GFG_event.13
-                    days = 10
+                    days = 5
                 }
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = {
-                        id = bfdinews.23
-                        days = 15
-                        random_hours = 12
-                    }
+                news_event = {
+                    id = bfdinews.23
+                    days = 2
+                    random_hours = 12
                 }
             }
         }

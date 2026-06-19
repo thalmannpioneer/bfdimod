@@ -291,10 +291,7 @@ country_event = {
 					}
 				}
 			}
-			every_possible_country = {
-				limit = { is_ai = no }
-				news_event = bfdinews.7
-			}
+			news_event = bfdinews.7
 		}
 	}
 }

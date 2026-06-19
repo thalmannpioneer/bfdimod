@@ -171,13 +171,10 @@ country_event = {
                 days = 20
             }
             add_threat = 2.5
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.10
-                    days = 5
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.10
+                days = 1
+                random_hours = 12
             }
             set_variable = { var_current_cabinet_leader = 2 }
         }
@@ -761,17 +758,14 @@ country_event = {
                 }
             }
             else = {
-                every_possible_country = {
-                    limit = { is_ai = no }
-                    news_event = {
-                        id = bfdinews.11
-                        days = 5
-                        random_hours = 12
-                    }
+                news_event = {
+                    id = bfdinews.11
+                    days = 1
+                    random_hours = 12
                 }
                 country_event = {
                     id = GPG_event.23
-                    days = 15
+                    days = 5
                     random_hours = 12
                 }
                 set_cosmetic_tag = GPG_republic
@@ -885,12 +879,10 @@ country_event = {
             retire_character = GPG_tree
             retire_character = GPG_9ball
             retire_character = GPG_income_tax_return_document
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.12
-                    days = 3
-                }
+            news_event = {
+                id = bfdinews.12
+                days = 2
+                random_hours = 6
             }
             country_event = {
                 id = GPG_event.19
@@ -1151,13 +1143,10 @@ country_event = {
             retire_character = GPG_tree
             retire_character = GPG_9ball
             retire_character = GPG_income_tax_return_document
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.12
-                    days = 5
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.12
+                days = 5
+                random_hours = 12
             }
             country_event = {
                 id = GPG_event.19
@@ -1215,13 +1204,10 @@ country_event = {
             retire_character = GPG_tree
             retire_character = GPG_9ball
             retire_character = GPG_income_tax_return_document
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.12
-                    days = 5
-                    random_hours = 12
-                }
+            news_event = {
+                id = bfdinews.12
+                days = 5
+                random_hours = 12
             }
             country_event = {
                 id = GPG_event.19
@@ -1327,12 +1313,10 @@ country_event = {
             days = 5
         }
         hidden_effect = {
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.14
-                    days = 2
-                }
+            news_event = {
+                id = bfdinews.14
+                days = 2
+                random_hours = 6
             }
         }
     }
@@ -2069,12 +2053,10 @@ country_event = {
         }
         hidden_effect = {
             add_threat = 1
-            every_possible_country = {
-                limit = { is_ai = no }
-                news_event = {
-                    id = bfdinews.20
-                    days = 3
-                }
+            news_event = {
+                id = bfdinews.20
+                days = 2
+                random_hours = 6
             }
             country_event = {
                 id = GPG_event.34

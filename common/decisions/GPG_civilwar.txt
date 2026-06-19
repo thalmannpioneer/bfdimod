@@ -79,12 +79,9 @@ decision_GPG_civilwar_category = {
 					}
 					
 					hidden_effect = {
-						every_possible_country = {
-							limit = { is_ai = no }
-							news_event = {
-								id = bfdinews.16
-								days = 5
-							}
+						news_event = {
+							id = bfdinews.16
+							days = 5
 						}
 						GPR = {
 							add_equipment_to_stockpile = {
@@ -107,12 +104,9 @@ decision_GPG_civilwar_category = {
 					set_cosmetic_tag = GDR_republic
 					hidden_effect = {
 						country_lock_all_division_template = yes
-						every_possible_country = {
-							limit = { is_ai = no }
-							news_event = {
-								id = bfdinews.17
-								days = 5
-							}
+						news_event = {
+							id = bfdinews.17
+							days = 5
 						}
 					}
 				}
@@ -128,12 +122,9 @@ decision_GPG_civilwar_category = {
 					set_cosmetic_tag = GSR_post_cw
 					add_threat = 2
 					hidden_effect = {
-						every_possible_country = {
-							limit = { is_ai = no }
-							news_event = {
-								id = bfdinews.18
-								days = 5
-							}
+						news_event = {
+							id = bfdinews.18
+							days = 5
 						}
 					}
 				}
@@ -150,12 +141,9 @@ decision_GPG_civilwar_category = {
 					hidden_effect = {
 						add_threat = 2
 						country_lock_all_division_template = yes
-						every_possible_country = {
-							limit = { is_ai = no }
-							news_event = {
-								id = bfdinews.19
-								days = 5
-							}
+						news_event = {
+							id = bfdinews.19
+							days = 5
 						}
 						country_event = {
 							id = GFG_event.3
