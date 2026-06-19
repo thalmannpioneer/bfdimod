@@ -646,7 +646,7 @@ news_event = {
     id = bfdinews.26
     title = bfdinews.26.t
     desc = bfdinews.26.desc
-    picture = GFX_bfdinews25 #Update later
+    picture = GFX_bfdinews26
 
     is_triggered_only = yes
     major = yes
@@ -950,7 +950,7 @@ news_event = {
     id = bfdinews.39
     title = bfdinews.39.t
     desc = bfdinews.39.desc
-    picture = GFX_bfdinews38 #Update later
+    picture = GFX_bfdinews39
 
     is_triggered_only = yes
     major = yes
@@ -998,7 +998,7 @@ news_event = {
     id = bfdinews.40
     title = bfdinews.40.t
     desc = bfdinews.40.desc
-    picture = GFX_bfdinews38 #Update later
+    picture = GFX_bfdinews40
 
     is_triggered_only = yes
     major = yes

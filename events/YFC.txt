@@ -617,7 +617,7 @@ country_event = {
 	id = YFC_event.13
 	title = YFC_event.13.t
 	desc = YFC_event.13.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event13
 
 	is_triggered_only = yes
 
@@ -647,7 +647,7 @@ country_event = {
 	id = YFC_event.14
 	title = YFC_event.14.t
 	desc = YFC_event.14.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event14
 
 	is_triggered_only = yes
 
@@ -664,7 +664,7 @@ country_event = {
 	id = YFC_event.15
 	title = YFC_event.15.t
 	desc = YFC_event.15.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event15
 
 	is_triggered_only = yes
 
@@ -701,7 +701,7 @@ country_event = {
 	id = YFC_event.16
 	title = YFC_event.16.t
 	desc = YFC_event.16.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event16
 
 	is_triggered_only = yes
 
@@ -730,7 +730,7 @@ country_event = {
 	id = YFC_event.17
 	title = YFC_event.17.t
 	desc = YFC_event.17.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event17
 
 	is_triggered_only = yes
 
@@ -785,7 +785,7 @@ country_event = {
 	id = YFC_event.18
 	title = YFC_event.18.t
 	desc = YFC_event.18.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event18
 
 	is_triggered_only = yes
 
@@ -800,7 +800,7 @@ country_event = {
 	id = YFC_event.19
 	title = YFC_event.19.t
 	desc = YFC_event.19.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event19
 
 	is_triggered_only = yes
 
@@ -814,7 +814,7 @@ country_event = {
 	id = YFC_event.20
 	title = YFC_event.20.t
 	desc = YFC_event.20.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event20
 
 	is_triggered_only = yes
 
@@ -871,7 +871,7 @@ country_event = {
 
 country_event = {
 	id = YFC_event.22 #Buildup city event
-	picture = GFX_Temp_event
+	picture = "[GFX_YFC_event22]" #Scripted Loc
 	
 	title = {
 		text = YFC_event.22.t.a 
@@ -1251,7 +1251,7 @@ country_event = {
 	id = YFC_event.34 #YFC trade other country said yes!
 	title = YFC_event.34.t
     desc = YFC_event.34.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event34
 	
 	is_triggered_only = yes
     
@@ -1268,7 +1268,7 @@ country_event = {
 	id = YFC_event.35 #YFC trade other country said no!
 	title = YFC_event.35.t
     desc = YFC_event.35.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event35
 	
 	is_triggered_only = yes
     
@@ -1285,7 +1285,7 @@ country_event = { #YFC Sell
 	id = YFC_event.36 #YFC trade event other country POV selling
 	title = YFC_event.36.t
     desc = YFC_event.36.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event36
 	
 	is_triggered_only = yes
     
@@ -1581,7 +1581,7 @@ country_event = { #YFC Buy
 	id = YFC_event.37 #YFC trade event other country POV buying
 	title = YFC_event.37.t
     desc = YFC_event.37.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event37
 	
 	is_triggered_only = yes
     

@@ -577,10 +577,60 @@ SpriteTypes = {
 		name = GFX_YFC_event12
 		texturefile = gfx/event_pictures/YFC_event12.dds
 	}
+	
+	spriteType = {
+		name = GFX_YFC_event13
+		texturefile = gfx/event_pictures/YFC_event13.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event14
+		texturefile = gfx/event_pictures/YFC_event14.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event15
+		texturefile = gfx/event_pictures/YFC_event15.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event16
+		texturefile = gfx/event_pictures/YFC_event16.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event17
+		texturefile = gfx/event_pictures/YFC_event17.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event18
+		texturefile = gfx/event_pictures/YFC_event18.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event19
+		texturefile = gfx/event_pictures/YFC_event19.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event20
+		texturefile = gfx/event_pictures/YFC_event20.dds
+	}
 
 	spriteType = {
 		name = GFX_YFC_event21
 		textureFile = gfx/event_pictures/YFC_event21.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event22a
+		texturefile = gfx/event_pictures/YFC_event22a.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event22b
+		texturefile = gfx/event_pictures/YFC_event22b.dds
 	}
 
 	spriteType = {
@@ -606,6 +656,26 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_YFC_event31
 		textureFile = gfx/event_pictures/YFC_event31.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event34
+		texturefile = gfx/event_pictures/YFC_event34.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event35
+		texturefile = gfx/event_pictures/YFC_event35.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event36
+		texturefile = gfx/event_pictures/YFC_event36.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event37
+		texturefile = gfx/event_pictures/YFC_event37.dds
 	}
 
 	spriteType = {
@@ -1002,6 +1072,10 @@ SpriteTypes = {
 		texturefile = gfx/event_pictures/bfdinews25.dds
 	}
 	spriteType = {
+		name = GFX_bfdinews26
+		texturefile = gfx/event_pictures/bfdinews26.dds
+	}
+	spriteType = {
 		name = GFX_bfdinews27
 		texturefile = gfx/event_pictures/bfdinews27.dds
 	}
@@ -1058,6 +1132,14 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_bfdinews38
 		textureFile = gfx/event_pictures/bfdinews38.dds
+	}
+	spriteType = {
+		name = GFX_bfdinews39
+		texturefile = gfx/event_pictures/bfdinews39.dds
+	}
+	spriteType = {
+		name = GFX_bfdinews40
+		texturefile = gfx/event_pictures/bfdinews40.dds
 	}
 	spriteType = {
 		name = GFX_bfdinews_city

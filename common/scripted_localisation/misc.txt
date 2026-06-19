@@ -91,3 +91,19 @@ defined_text = {
         localization_key = GTR_focus_outcome_duumvirate
     }
 }
+
+defined_text = {
+	name = GFX_YFC_event22
+	text = {
+		trigger = {
+			has_completed_focus = YFC_focus_peoniele_the_second_city
+		}
+		localization_key = GFX_YFC_event22a
+	}
+	text = {
+		trigger = {
+			has_completed_focus = YFC_focus_big_yoyleton
+		}
+		localization_key = GFX_YFC_event22b
+	}
+}
