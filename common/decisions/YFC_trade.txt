@@ -186,8 +186,8 @@ decision_YFC_trade_category= {
 		cost = 50
 
 		complete_effect = {
-			custom_effect_tooltip = l_money_gain_200K
-			add_to_variable = { money_amount = 2 }
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
 			add_manpower = 1000
 			add_stability = -0.1
 		}

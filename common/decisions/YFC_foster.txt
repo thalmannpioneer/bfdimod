@@ -16,7 +16,13 @@ decision_YFC_foster_category = {
 				limit = {is_ai = no}
 				add_to_variable = {var_foster_YFC_support = 5}
 			}
-			
+			IF = {
+				limit = {
+					check_variable = { var_foster_YFC_support > var_foster_BUN_support }
+					check_variable = { var_foster_YFC_support > var_foster_CRN_support }
+				}
+				add_to_variable = {var_foster_YFC_support = 5}
+			}
 			random_list = {
 				var_foster_BUN_support = {
 					country_event = {id = YFC_BUN.25 }

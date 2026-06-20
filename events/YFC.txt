@@ -2296,6 +2296,9 @@ country_event = { #Eastern End.
 		complete_national_focus = YFC_focus_who_dares_wins
 		add_political_power = 50
 
+		custom_effect_tooltip = l_money_gain_300K
+		add_to_variable = { money_amount = 3 }
+
 		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 
 		if = {
@@ -4662,7 +4665,7 @@ country_event = { #Debate event #1
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
 		hidden_effect = {
-			add_to_variable = { var_foster_YFC_support = 2 }
+			add_to_variable = { var_foster_YFC_support = 3 }
 		}
 		add_political_power = -30
 
@@ -4689,7 +4692,7 @@ country_event = { #Debate event #1
 
 		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
 		hidden_effect = {
-			add_to_variable = { var_foster_YFC_support = 3 }
+			add_to_variable = { var_foster_YFC_support = 3.5 }
 		}
 		custom_effect_tooltip = l_money_lose_300K
 		subtract_from_variable = { money_amount = 3 }
@@ -4871,7 +4874,7 @@ country_event = { #Debate event #3
 
 
 		hidden_effect = {
-			add_to_variable = { var_foster_YFC_support = 3 }
+			add_to_variable = { var_foster_YFC_support = 3.5 }
 		}
 
 		country_event = {
@@ -4894,12 +4897,12 @@ country_event = { #Debate event #4
 	option = {
 		name = YFC_BUN.31.a
 		custom_effect_tooltip = l_YFC_BUN_foster_gain_highly
-		add_to_variable = { var_foster_YFC_support = 3.5 }
+		add_to_variable = { var_foster_YFC_support = 4 }
 	}
 	option = {
 		name = YFC_BUN.31.b
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
-		add_to_variable = { var_foster_YFC_support = 1.5 }
+		add_to_variable = { var_foster_YFC_support = 2 }
 		BUN = {
 			add_manpower = 10000
 			army_experience = 25
@@ -4915,7 +4918,7 @@ country_event = { #Debate event #4
 	option = {
 		name = YFC_BUN.31.c
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
-		add_to_variable = { var_foster_YFC_support = 1.5 }
+		add_to_variable = { var_foster_YFC_support = 2 }
 		BUN = {
 			add_manpower = 10000
 			army_experience = 25
@@ -5385,6 +5388,11 @@ country_event = { #Top Hat pranks you ;)
 			idea = idea_YFC_Defiant_Top_Hat
 			days = 250
 		}
+		IF = {
+			limit = {YFC_tophat = {is_hired_as_advisor = yes}}
+			deactivate_advisor = idea_YFC_TopHat
+			hidden_effect = { add_political_power = -65 }
+		}
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = 7 }
 	}
 }
@@ -5402,6 +5410,13 @@ country_event = { #Pipe pranks you ;)
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Pipe
 			days = 250
+		}
+		IF = {
+			limit = {
+				has_idea =  YFC_Pipe
+			}
+			remove_ideas = YFC_Pipe
+			hidden_effect = { add_political_power = -65 }
 		}
 		subtract_from_variable = { var_idea_YFC_Pipe_influence = 7 }
 	}
@@ -5421,6 +5436,11 @@ country_event = { #Beaker pranks you ;)
 			idea = idea_YFC_Defiant_Beaker
 			days = 250
 		}
+		IF = {
+			limit = {YFC_beaker = {is_hired_as_advisor = yes}}
+			deactivate_advisor = idea_YFC_Beaker
+			hidden_effect = { add_political_power = -65 }
+		}
 		subtract_from_variable = { var_idea_YFC_Beaker_influence = 7 }
 	}
 }
@@ -5439,6 +5459,11 @@ country_event = { #Hammer pranks you ;)
 			idea = idea_YFC_Defiant_Hammer
 			days = 250
 		}
+		IF = {
+			limit = {YFC_hammer = {is_hired_as_advisor = yes}}
+			deactivate_advisor = idea_YFC_Hammer
+			hidden_effect = { add_political_power = -65 }
+		}
 		subtract_from_variable = { var_idea_YFC_Hammer_influence = 7 }
 	}
 }
@@ -5456,6 +5481,11 @@ country_event = { #Taser pranks you ;)
 		add_timed_idea = {
 			idea = idea_YFC_Defiant_Taser
 			days = 250
+		}
+		IF = {
+			limit = {YFC_taser = {is_hired_as_advisor = yes}}
+			deactivate_advisor = idea_YFC_Taser
+			hidden_effect = { add_political_power = -65 }
 		}
 		subtract_from_variable = { var_idea_YFC_Taser_influence = 7 }
 	}
