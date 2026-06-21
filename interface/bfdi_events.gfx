@@ -687,7 +687,47 @@ SpriteTypes = {
 		name = GFX_YFC_event40
 		textureFile = gfx/event_pictures/YFC_event40.dds
 	}
-
+	
+	spriteType = {
+		name = GFX_YFC_event44
+		textureFile = gfx/event_pictures/YFC_event44.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event45
+		texturefile = gfx/event_pictures/YFC_event45.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event46
+		texturefile = gfx/event_pictures/YFC_event46.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event48
+		texturefile = gfx/event_pictures/YFC_event48.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event49
+		texturefile = gfx/event_pictures/YFC_event49.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event50
+		texturefile = gfx/event_pictures/YFC_event50.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event51
+		texturefile = gfx/event_pictures/YFC_event51.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event52
+		texturefile = gfx/event_pictures/YFC_event52.dds
+	}
+	
 	spriteType = {
 		name = GFX_YFC_BUN1
 		textureFile = gfx/event_pictures/YFC_BUN1.dds
@@ -701,6 +741,61 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_YFC_BUN4
 		textureFile = gfx/event_pictures/YFC_BUN4.png
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN5
+		texturefile = gfx/event_pictures/YFC_BUN5.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN6
+		texturefile = gfx/event_pictures/YFC_BUN6.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN7
+		texturefile = gfx/event_pictures/YFC_BUN7.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN8
+		texturefile = gfx/event_pictures/YFC_BUN8.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN9
+		texturefile = gfx/event_pictures/YFC_BUN9.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN10
+		texturefile = gfx/event_pictures/YFC_BUN10.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN11
+		texturefile = gfx/event_pictures/YFC_BUN11.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN12
+		texturefile = gfx/event_pictures/YFC_BUN12.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN13
+		texturefile = gfx/event_pictures/YFC_BUN13.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN14
+		texturefile = gfx/event_pictures/YFC_BUN14.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN15
+		texturefile = gfx/event_pictures/YFC_BUN15.dds
 	}
 
 	spriteType = {

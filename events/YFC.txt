@@ -2118,7 +2118,7 @@ country_event = { #To the east
 	id = YFC_event.44
 	title = YFC_event.44.t
 	desc = YFC_event.44.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event44
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2163,7 +2163,7 @@ country_event = { #YFC_focus_anger_teardrop
 	id = YFC_event.45
 	title = YFC_event.45.t
 	desc = YFC_event.45.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event45
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2183,7 +2183,7 @@ country_event = { #YFC_focus_procure_funds
 	id = YFC_event.46
 	title = YFC_event.46.t
 	desc = YFC_event.46.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event46
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2286,7 +2286,7 @@ country_event = { #Eastern End.
 	id = YFC_event.48
 	title = YFC_event.48.t
 	desc = YFC_event.48.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event48
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2316,7 +2316,7 @@ country_event = { #Eastern Event #1
 	id = YFC_event.49
 	title = YFC_event.49.t
 	desc = YFC_event.49.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event49
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2383,7 +2383,7 @@ country_event = { #Eastern Event #2
 	id = YFC_event.50
 	title = YFC_event.50.t
 	desc = YFC_event.50.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event50
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2410,7 +2410,7 @@ country_event = { #Eastern Event #3
 	id = YFC_event.51
 	title = YFC_event.51.t
 	desc = YFC_event.51.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event51
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2458,7 +2458,7 @@ country_event = { #Cool Merc event YFC get's to buff the Merc amount
 	id = YFC_event.52
 	title = YFC_event.52.t
 	desc = YFC_event.52.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event52
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3310,7 +3310,7 @@ country_event = {
 	id = YFC_BUN.5 #Pen Part 1
 	title = YFC_BUN.5.t
 	desc = YFC_BUN.5.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN5
 
 	is_triggered_only = yes
 
@@ -3331,7 +3331,7 @@ country_event = {
 	id = YFC_BUN.6 #Pen Part 2
 	title = YFC_BUN.6.t
 	desc = YFC_BUN.6.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN6
 
 	is_triggered_only = yes
 
@@ -3352,7 +3352,7 @@ country_event = {
 	id = YFC_BUN.7 #Pen Part 3
 	title = YFC_BUN.7.t
 	desc = YFC_BUN.7.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN7
 
 	is_triggered_only = yes
 
@@ -3367,7 +3367,7 @@ country_event = {
 	id = YFC_BUN.8
 	title = YFC_BUN.8.t
 	desc = YFC_BUN.8.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN8
 
 	is_triggered_only = yes
 
@@ -3707,7 +3707,7 @@ country_event = { #Annex Events 1
 	id = YFC_BUN.9 
 	title = YFC_BUN.9.t
 	desc = YFC_BUN.9.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN9
 
 	is_triggered_only = yes
 
@@ -3776,7 +3776,7 @@ country_event = { #Annex Events 2
 	id = YFC_BUN.10 
 	title = YFC_BUN.10.t
 	desc = YFC_BUN.10.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN10
 
 	is_triggered_only = yes
 
@@ -3847,7 +3847,7 @@ country_event = { #Annex Events 3
 	id = YFC_BUN.11 
 	title = YFC_BUN.11.t
 	desc = YFC_BUN.11.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN11
 
 	is_triggered_only = yes
 
@@ -3923,7 +3923,7 @@ country_event = { #Annex Events 4
 	id = YFC_BUN.12 
 	title = YFC_BUN.12.t
 	desc = YFC_BUN.12.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN12
 
 	is_triggered_only = yes
 
@@ -4016,7 +4016,7 @@ country_event = { #Annex Events 5
 	id = YFC_BUN.13 
 	title = YFC_BUN.13.t
 	desc = YFC_BUN.13.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN13
 
 	is_triggered_only = yes
 
@@ -4082,7 +4082,7 @@ country_event = { #Annex Events 6
 	id = YFC_BUN.14 
 	title = YFC_BUN.14.t
 	desc = YFC_BUN.14.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN14
 
 	is_triggered_only = yes
 
@@ -4174,7 +4174,7 @@ country_event = { #Annex Events 7
 	id = YFC_BUN.15 
 	title = YFC_BUN.15.t
 	desc = YFC_BUN.15.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN15
 
 	is_triggered_only = yes
 
