@@ -90,6 +90,14 @@ decisions_BFDI_debug = {
                     set_province_name = { id = 11209 name = "Greasy Grove" }
                     set_province_name = { id = 3938 name = "Loot Lake" }
                     set_province_name = { id = 4900 name = "Dusty Depot" }
+                    set_province_name = { id = 6303 name = "Tilted Town" }
+                    set_province_name = { id = 11210 name = "Anarchy Acres" }
+                    set_province_name = { id = 3801 name = "Fatal Fields" }
+                    set_province_name = { id = 11304 name = "Snobby Shores" }
+                    set_province_name = { id = 2044 name = "Flush Factory" }
+                    set_province_name = { id = 11074 name = "Junk Junction" }
+                    set_province_name = { id = 1342 name = "Lazy Links" }
+                    set_province_name = { id = 10940 name = "Lonely Lodge" }
                 }
             }
         }

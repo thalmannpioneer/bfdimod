@@ -176,6 +176,8 @@
  l_decisions_trade_selloffer_tooltip: "§YSend an offer to sell Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the correct amount of equipment and type!"
  l_decisions_trade_buyoffer_tooltip: "§YSend an offer to buy Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the funds to purchase!"
  YFC_Trade_Tech: "Purchase §4Foreign Scientists§!"
+ YFC_Trade_Loan: "§YTake a§! §GLoan§!"
+ YFC_Trade_Loan_desc: "§ROne time use, use it carefully.§!"
  YFC_Trade_GMD_Guns: "Exploit §8Coiny's Factories§!"
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
  YFC_Trade_Child_Labor: "Employ §RChild Labor§!"

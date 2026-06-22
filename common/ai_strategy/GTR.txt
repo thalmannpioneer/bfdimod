@@ -217,6 +217,13 @@ GTR_bombers = {
 		value = 2 
 	}
 
+    ai_strategy = {
+        type = build_building
+        id = air_base
+        target = 209
+        value = 200
+    }
+
     ai_strategy = { #No BBA
         type = research_weight_factor
         id = strategic_bomber1

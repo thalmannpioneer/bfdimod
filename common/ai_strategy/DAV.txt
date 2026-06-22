@@ -1,0 +1,26 @@
+#DAV AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+## INDUSTRY ##
+
+DAV_boat = {
+    #boat
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		has_war = no
+		dockyard < 5
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 300
+	}
+}
+
