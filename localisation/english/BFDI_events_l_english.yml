@@ -1050,9 +1050,37 @@
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to when I 
+ YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to (Cool Raid defender loses)
  YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder"
  YFC_borderwars.11.a: "Placeholder"
+
+ YFC_borderwars.12.t: "Sea movements detected." #ZDubbz if you want to 
+ YFC_borderwars.12.desc: "We have been noticing a rise of unknown boats sailing close by our waters. These boats appear to be armed despite their small size. They may be preparing to take actions against us if we do not move quickly."
+ YFC_borderwars.12.a: "Worrying..."
+
+ YFC_borderwars.13.t: "Pirates Raided!" #ZDubbz
+ YFC_borderwars.13.desc: "something about having zero boats caused an easy raid by the Pirates so now are water ways are fucked"
+ YFC_borderwars.13.a: "An unmitigated disaster!"
+
+ YFC_borderwars.14.t: "Pirate Total Victory against [FROM.GetName]!" #ZDubbz
+ YFC_borderwars.14.desc: "Something something due to their lack of navy our forces had a fun time stealing from them"
+ YFC_borderwars.14.a: "Easy pickings!"
+
+ YFC_borderwars.15.t: "Pirates Attack!" #ZDubbz
+ YFC_borderwars.15.desc: "something about our naval forces were unable to stop the Pirates so are water ways are partly fucked and the fleet damaged"
+ YFC_borderwars.15.a: "A disaster!"
+
+ YFC_borderwars.16.t: "Pirate Victory against [FROM.GetName]!" #ZDubbz
+ YFC_borderwars.16.desc: "Something something that our forces were able to breakthrough their naval forces and were able to raid, though with some minor losses"
+ YFC_borderwars.16.a: "Nice!"
+
+ YFC_borderwars.17.t: "Pirates Defeated!" #ZDubbz
+ YFC_borderwars.17.desc: "Our naval assets were able to shred the poorly armed pirate forces. After a few hours of clashing in the waves, they were forced to flee the area. Many of their boats have been destroyed in the process. Our fleet was partly damaged from the fighting, but they have protected our water routes."
+ YFC_borderwars.17.a: "We rule these waves!"
+
+ YFC_borderwars.18.t: "Pirate Defeat against [FROM.GetName]!" #ZDubbz
+ YFC_borderwars.18.desc: "Something something that our forces took heavy losses and were unable to breakthrough"
+ YFC_borderwars.18.a: "Dammit..."
 
 # YFC_BUN
 

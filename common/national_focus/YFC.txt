@@ -3193,7 +3193,7 @@ focus_tree = {
             #Just military_access and/or some cool stuff ZDubbz?
 
             custom_effect_tooltip = l_YFC_sectors_All_Lower
-            add_political_power = -100 #Might remove later
+            add_political_power = -150 #Might remove later
             add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
             add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
             add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
@@ -3599,7 +3599,7 @@ focus_tree = {
                 id = YFC_event.55
                 hours = 1
             }
-            
+
             #Everything below this comment is placeholder stuff for other parts of the tree
 
             set_cosmetic_tag = YFC_raiders

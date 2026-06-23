@@ -225,8 +225,9 @@ ideas = {
 			modifier = {
 				naval_accidents_chance = 0.5
 				consumer_goods_factor = 0.35
-				industry_free_repair_factor = -0.5
+				industry_free_repair_factor = -0.25
 				stability_factor = -0.1
+				min_export = -0.2
 			}
 		}
 	}

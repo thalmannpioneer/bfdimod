@@ -408,13 +408,13 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_boats = { 
-		icon = GFX_decisions_YFC_raid_buy_guns
+		icon = GFX_decision_generic_naval
       
 		fire_only_once = no
 
 		cost = 100
-		days_remove = 150
-		days_re_enable = 400
+		days_remove = 25
+		days_re_enable = 500
 
 		visible = {
 			always = yes #UPDATE LATER!!!
@@ -482,8 +482,8 @@ decision_YFC_raids_category = {
 		}
 
 		fire_only_once = no
-		days_remove = 100
-		days_re_enable = 180
+		days_remove = 10
+		days_re_enable = 200
 		cost = 50
 
 		complete_effect = {
@@ -495,18 +495,12 @@ decision_YFC_raids_category = {
 		}
 
 		remove_effect = { #Will be redone or something
-			random_list = {  
-				50 = {
-					custom_effect_tooltip = l_money_gain_100K
-					add_to_variable = { money_amount = 1 }
-				}
-				35 = {
-					custom_effect_tooltip = l_money_gain_200K
-					add_to_variable = { money_amount = 2 }
-				}
-				15 = {
-					custom_effect_tooltip = l_money_gain_300K
-					add_to_variable = { money_amount = 3 }
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = YFC_borderwars.12
+						hours = 2
+					}
 				}
 			}
 		}

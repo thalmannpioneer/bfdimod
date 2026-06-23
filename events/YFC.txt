@@ -2891,11 +2891,341 @@ country_event = {
 	}
 }
 
+country_event = {
+	#Pirate Event start
+	id = YFC_borderwars.12
+	title = YFC_borderwars.12.t
+	desc = YFC_borderwars.12.desc
+	picture = GFX_YFC_raids1
 
-#####################
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.12.a
+		activate_mission = YFC_pirate_timer
+	}
+}
+
+country_event = {
+	#Pirate Event zero boats outcome for defender
+	id = YFC_borderwars.13
+	title = YFC_borderwars.13.t
+	desc = YFC_borderwars.13.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {YFC = {country_event = YFC_borderwars.14}}
+	}
+
+	option = {
+		name = YFC_borderwars.13.a
+		
+		add_stability = -0.05
+		add_timed_idea = {
+			idea = idea_YFC_active_pirates
+			days = 180
+		}
+		effect_tooltip = {
+			3 = {
+				custom_effect_tooltip = l_money_lose_100K
+				subtract_from_variable = { money_amount = 1 }
+			}
+			4 = {
+				custom_effect_tooltip = l_money_lose_200K
+				subtract_from_variable = { money_amount = 2 }
+			}
+			5 = {
+				custom_effect_tooltip = l_money_lose_300K
+				subtract_from_variable = { money_amount = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	#Pirate Event zero boats outcome for YFC
+	id = YFC_borderwars.14
+	title = YFC_borderwars.14.t
+	desc = YFC_borderwars.14.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.14.a
+		
+		has_manpower = 1500
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 10
+		}
+
+		3 = {
+			custom_effect_tooltip = l_money_gain_100K
+			add_to_variable = { money_amount = 1 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 1 }}
+			}
+		}
+		4 = {
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 2 }}
+			}
+		}
+		5 = {
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 3 }}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Pirate Event failed outcome for defender
+	id = YFC_borderwars.15
+	title = YFC_borderwars.15.t
+	desc = YFC_borderwars.15.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			YFC = {country_event = YFC_borderwars.16}
+			
+			IF = {
+				limit = {tag = DAV}
+				damage_units = {
+					state = 130
+					region = 19
+					limit = { tag = DAV }
+					str_damage = 0.4
+					ratio = yes
+					navy = yes
+				}
+			}
+			IF = {
+				limit = {tag = TBT}
+				damage_units = {
+					state = 168
+					region = 12
+					limit = { tag = TBT }
+					str_damage = 0.4
+					ratio = yes
+					navy = yes
+				}
+			}
+			IF = {
+				limit = {tag = GMD}
+				damage_units = {
+					state = 173
+					region = 12
+					limit = { tag = GMD }
+					str_damage = 0.4
+					ratio = yes
+					navy = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = YFC_borderwars.15.a
+		
+		add_timed_idea = {
+			idea = idea_YFC_active_pirates
+			days = 90
+		}
+		effect_tooltip = {
+			5 = {
+				custom_effect_tooltip = l_money_lose_100K
+				subtract_from_variable = { money_amount = 1 }
+			}
+			4 = {
+				custom_effect_tooltip = l_money_lose_200K
+				subtract_from_variable = { money_amount = 2 }
+			}
+			3 = {
+				custom_effect_tooltip = l_money_lose_300K
+				subtract_from_variable = { money_amount = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	#Pirate Event failed outcome for YFC
+	id = YFC_borderwars.16
+	title = YFC_borderwars.16.t
+	desc = YFC_borderwars.16.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.16.a
+		
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 1200
+			max = 1500
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = boats_regain
+			min = 8
+			max = 10
+			integer = yes
+		}
+
+		has_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = boats_regain
+		}
+
+		5 = {
+			custom_effect_tooltip = l_money_gain_100K
+			add_to_variable = { money_amount = 1 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 1 }}
+			}
+		}
+		4 = {
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 2 }}
+			}
+		}
+		3 = {
+			custom_effect_tooltip = l_money_gain_300K
+			add_to_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				FROM = {subtract_from_variable = { money_amount = 3 }}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Pirate Event defended outcome for defender
+	id = YFC_borderwars.17
+	title = YFC_borderwars.17.t
+	desc = YFC_borderwars.17.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			YFC = {country_event = YFC_borderwars.18}
+			
+			IF = {
+				limit = {tag = DAV}
+				damage_units = {
+					state = 130
+					region = 19
+					limit = { tag = DAV }
+					str_damage = 0.1
+					ratio = yes
+					navy = yes
+				}
+			}
+			IF = {
+				limit = {tag = TBT}
+				damage_units = {
+					state = 168
+					region = 12
+					limit = { tag = TBT }
+					str_damage = 0.1
+					ratio = yes
+					navy = yes
+				}
+			}
+			IF = {
+				limit = {tag = GMD}
+				damage_units = {
+					state = 173
+					region = 12
+					limit = { tag = GMD }
+					str_damage = 0.1
+					ratio = yes
+					navy = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = YFC_borderwars.17.a
+		
+		damage_units = {
+			state = 130
+			region = 19
+			limit = { tag = DAV }
+			str_damage = 0.1
+			ratio = yes
+			navy = yes
+		}
+	}
+}
+
+country_event = {
+	#Pirate Event defended outcome for YFC
+	id = YFC_borderwars.18
+	title = YFC_borderwars.18.t
+	desc = YFC_borderwars.18.desc
+	picture = GFX_YFC_raids1
+
+	is_triggered_only = yes
+
+	option = {
+		name = YFC_borderwars.18.a
+		
+		set_temp_variable_to_random = {
+			var = manpower_regain
+			min = 300
+			max = 600
+			integer = yes
+		}
+		set_temp_variable_to_random = {
+			var = boats_regain
+			min = 2
+			max = 4
+			integer = yes
+		}
+
+		has_manpower = manpower_regain
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = boats_regain
+		}
+	}
+}
+
+###############################################################
+###############################################################
+###############################################################
 #There were NO CRN events you were going CRAZY 
 #WAKE UP WAKE UP WAKE UP WAKE UP
-#####################
+###############################################################
+###############################################################
+###############################################################
+
+
 
 
 country_event = { 

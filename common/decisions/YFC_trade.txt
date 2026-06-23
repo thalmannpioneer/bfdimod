@@ -67,8 +67,8 @@ decision_YFC_trade_category= {
 		}
 
 		remove_effect = {
-			custom_effect_tooltip = l_money_lose_1_2M
-			subtract_from_variable = { money_amount = 12 }
+			custom_effect_tooltip = l_money_lose_1_5M
+			subtract_from_variable = { money_amount = 15 }
         }
 
 		ai_will_do = {

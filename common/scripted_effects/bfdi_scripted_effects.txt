@@ -665,3 +665,119 @@ BFDI_economics_init = {
     set_variable = { var_healthcare_mc_display = 20 }
     add_dynamic_modifier = { modifier = idea_common_healthcare }
 }
+
+YFC_pirates_DAV = {
+    if = { #Zero boats
+        limit = {
+            ships_in_state_ports = {size < 1 state = 130}
+        }
+        country_event = YFC_borderwars.13
+    }
+    else_if = { #1-5 boats
+        limit = {
+            ships_in_state_ports = {size > 0 state = 130}
+            ships_in_state_ports = {size < 6 state = 130}
+        }
+        random_list = {
+            80 = {country_event = YFC_borderwars.15}
+            20 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #6-10 boats
+        limit = {
+            ships_in_state_ports = {size > 5 state = 130}
+            ships_in_state_ports = {size < 11 state = 130}
+        }
+        random_list = {
+            60 = {country_event = YFC_borderwars.15}
+            40 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #11-15 boats
+        limit = {
+            ships_in_state_ports = {size > 10 state = 130}
+            ships_in_state_ports = {size < 16 state = 130}
+        }
+        random_list = {
+            40 = {country_event = YFC_borderwars.15}
+            60 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #16-20 boats
+        limit = {
+            ships_in_state_ports = {size > 16 state = 130}
+            ships_in_state_ports = {size < 21 state = 130}
+        }
+        random_list = {
+            20 = {country_event = YFC_borderwars.15}
+            80 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #20+ boats
+        limit = {
+            ships_in_state_ports = {size > 20 state = 130}
+        }
+        random_list = {
+            5 = {country_event = YFC_borderwars.15}
+            95 = {country_event = YFC_borderwars.17}
+        }
+    }
+}
+
+YFC_pirates_GMD = {
+    if = { #Zero boats
+        limit = {
+            ships_in_state_ports = {size < 1 state = 173}
+        }
+        country_event = YFC_borderwars.13
+    }
+    else_if = { #1-5 boats
+        limit = {
+            ships_in_state_ports = {size > 0 state = 173}
+            ships_in_state_ports = {size < 6 state = 173}
+        }
+        random_list = {
+            80 = {country_event = YFC_borderwars.15}
+            20 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #6-10 boats
+        limit = {
+            ships_in_state_ports = {size > 5 state = 173}
+            ships_in_state_ports = {size < 11 state = 173}
+        }
+        random_list = {
+            60 = {country_event = YFC_borderwars.15}
+            40 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #11-15 boats
+        limit = {
+            ships_in_state_ports = {size > 10 state = 173}
+            ships_in_state_ports = {size < 16 state = 173}
+        }
+        random_list = {
+            40 = {country_event = YFC_borderwars.15}
+            60 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #16-20 boats
+        limit = {
+            ships_in_state_ports = {size > 16 state = 173}
+            ships_in_state_ports = {size < 21 state = 173}
+        }
+        random_list = {
+            20 = {country_event = YFC_borderwars.15}
+            80 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #20+ boats
+        limit = {
+            ships_in_state_ports = {size > 20 state = 173}
+        }
+        random_list = {
+            5 = {country_event = YFC_borderwars.15}
+            95 = {country_event = YFC_borderwars.17}
+        }
+    }
+}

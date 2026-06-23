@@ -161,6 +161,34 @@
 		}
 	}
 
+	YFC_pirate_timer = { 
+		icon = GFX_decision_SWI_consolidate_council_power  
+		is_good = no
+		days_mission_timeout = 30
+		selectable_mission = no
+		activation = { always = no }
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			IF = {
+				limit = {tag = DAV}
+				custom_effect_tooltip = l_YFC_pirate_DAV
+				YFC_pirates_DAV = yes
+			}
+			IF = {
+				limit = {tag = TBT}
+				custom_effect_tooltip = l_YFC_pirate_TBT
+				YFC_pirates_TBT = yes
+			}
+			IF = {
+				limit = {tag = GMD}
+				custom_effect_tooltip = l_YFC_pirate_GMD
+				YFC_pirates_GMD = yes
+			}
+		}
+	}
+
 	TBT_units = { #placeholder spawn unit stuff 
 		icon = GFX_decisions_YFC_cherry_mercenary
 

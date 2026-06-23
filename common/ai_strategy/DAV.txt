@@ -20,7 +20,7 @@ DAV_boat = {
 	ai_strategy = {
 		type = building_target
 		id = dockyard
-		value = 300
+		value = 1000
 	}
 }
 

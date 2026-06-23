@@ -176,7 +176,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_TopHat_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_TopHat_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_TopHat_influence > 0}
+                            check_variable = { var_idea_YFC_TopHat_influence > 2}
                         }
                         random = {
                             chance = 50
@@ -192,7 +192,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Pipe_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Pipe_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Pipe_influence > 0}
+                            check_variable = { var_idea_YFC_Pipe_influence > 2}
                         }
                         random = {
                             chance = 50
@@ -208,7 +208,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Beaker_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Beaker_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Beaker_influence > 0}
+                            check_variable = { var_idea_YFC_Beaker_influence > 2}
                         }
                         random = {
                             chance = 50
@@ -224,7 +224,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Hammer_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Hammer_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Hammer_influence > 0}
+                            check_variable = { var_idea_YFC_Hammer_influence > 2}
                         }
                         random = {
                             chance = 50
@@ -240,7 +240,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Taser_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Taser_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Taser_influence > 0}
+                            check_variable = { var_idea_YFC_Taser_influence > 2}
                         }
                         random = {
                             chance = 50
