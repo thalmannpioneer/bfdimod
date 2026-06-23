@@ -797,10 +797,85 @@ SpriteTypes = {
 		name = GFX_YFC_BUN15
 		texturefile = gfx/event_pictures/YFC_BUN15.dds
 	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN16ac
+		texturefile = gfx/event_pictures/YFC_BUN16ac.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN16b
+		texturefile = gfx/event_pictures/YFC_BUN16b.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN18
+		texturefile = gfx/event_pictures/YFC_BUN18.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN19
+		texturefile = gfx/event_pictures/YFC_BUN19.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN20
+		texturefile = gfx/event_pictures/YFC_BUN20.dds
+	}
+	
+	frameAnimatedSpriteType = {
+		name = GFX_YFC_BUN21
+		texturefile = gfx/event_pictures/YFC_BUN21.dds
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		allwaystransparent = yes
+	}
 
 	spriteType = {
 		name = GFX_YFC_BUN23
 		textureFile = gfx/event_pictures/YFC_BUN23.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN24
+		texturefile = gfx/event_pictures/YFC_BUN24.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN25
+		texturefile = gfx/event_pictures/YFC_BUN25.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN26
+		texturefile = gfx/event_pictures/YFC_BUN26.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN27
+		texturefile = gfx/event_pictures/YFC_BUN27.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN28
+		texturefile = gfx/event_pictures/YFC_BUN28.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN29
+		texturefile = gfx/event_pictures/YFC_BUN29.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN30
+		texturefile = gfx/event_pictures/YFC_BUN30.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_BUN31
+		texturefile = gfx/event_pictures/YFC_BUN31.dds
 	}
 
 	spriteType = {
@@ -816,6 +891,36 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_YFC_Sector11
 		textureFile = gfx/event_pictures/YFC_Sector11.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector16
+		texturefile = gfx/event_pictures/YFC_Sector16.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector17
+		texturefile = gfx/event_pictures/YFC_Sector17.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector18
+		texturefile = gfx/event_pictures/YFC_Sector18.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector19
+		texturefile = gfx/event_pictures/YFC_Sector19.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector20
+		texturefile = gfx/event_pictures/YFC_Sector20.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_Sector21
+		texturefile = gfx/event_pictures/YFC_Sector21.dds
 	}
 	
 	

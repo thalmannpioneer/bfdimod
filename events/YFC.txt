@@ -4079,7 +4079,7 @@ country_event = { #Annex Events FINAL
 		}
 	}
 
-	picture = GFX_Temp_event
+	picture = "[GFX_YFC_BUN16]"
 	is_triggered_only = yes
 
 	option = { #At war with BUN
@@ -4201,7 +4201,7 @@ country_event = {
 	id = YFC_BUN.18 
 	title = YFC_BUN.18.t
 	desc = YFC_BUN.18.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN18
 
 	is_triggered_only = yes
 
@@ -4219,7 +4219,7 @@ country_event = {
 	id = YFC_BUN.19 
 	title = YFC_BUN.19.t
 	desc = YFC_BUN.19.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN19
 
 	is_triggered_only = yes
 
@@ -4238,7 +4238,7 @@ country_event = { #They blew up stuff :(
 	id = YFC_BUN.20 
 	title = YFC_BUN.20.t
 	desc = YFC_BUN.20.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN20
 
 	is_triggered_only = yes
 
@@ -4264,7 +4264,7 @@ country_event = {
 	id = YFC_BUN.21 
 	title = YFC_BUN.21.t
 	desc = YFC_BUN.21.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN21
 
 	is_triggered_only = yes
 
@@ -4316,7 +4316,7 @@ country_event = { #YFC_focus_remove_oligarchical_sentiment
 	id = YFC_BUN.24 
 	title = YFC_BUN.24.t
 	desc = YFC_BUN.24.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN24
 
 	is_triggered_only = yes
 
@@ -4332,7 +4332,7 @@ country_event = { #Election BUN Wins!
 	id = YFC_BUN.25 
 	title = YFC_BUN.25.t
 	desc = YFC_BUN.25.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN25
 
 	is_triggered_only = yes
 
@@ -4363,7 +4363,7 @@ country_event = { #Election YFC Wins!
 	id = YFC_BUN.26 
 	title = YFC_BUN.26.t
 	desc = YFC_BUN.26.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN26
 
 	is_triggered_only = yes
 
@@ -4400,7 +4400,7 @@ country_event = { #Election CRN Wins!
 	id = YFC_BUN.27 
 	title = YFC_BUN.27.t
 	desc = YFC_BUN.27.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN27
 
 	is_triggered_only = yes
 
@@ -4438,7 +4438,7 @@ country_event = { #Debate event #1
 	id = YFC_BUN.28
 	title = YFC_BUN.28.t
 	desc = YFC_BUN.28.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN28
 
 	is_triggered_only = yes
 
@@ -4506,7 +4506,7 @@ country_event = { #Debate event #2
 	id = YFC_BUN.29
 	title = YFC_BUN.29.t
 	desc = YFC_BUN.29.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN29
 
 	is_triggered_only = yes
 
@@ -4587,7 +4587,7 @@ country_event = { #Debate event #3
 	id = YFC_BUN.30
 	title = YFC_BUN.30.t
 	desc = YFC_BUN.30.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN30
 
 	is_triggered_only = yes
 
@@ -4682,7 +4682,7 @@ country_event = { #Debate event #4
 	id = YFC_BUN.31
 	title = YFC_BUN.31.t
 	desc = YFC_BUN.31.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_BUN31
 
 	is_triggered_only = yes
 
@@ -5170,7 +5170,7 @@ country_event = { #Top Hat pranks you ;)
 	id = YFC_sector.16
 	title = YFC_sector.16.t
     desc = YFC_sector.16.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector16
 	
 	is_triggered_only = yes
     
@@ -5193,7 +5193,7 @@ country_event = { #Pipe pranks you ;)
 	id = YFC_sector.17
 	title = YFC_sector.17.t
     desc = YFC_sector.17.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector17
 	
 	is_triggered_only = yes
     
@@ -5218,7 +5218,7 @@ country_event = { #Beaker pranks you ;)
 	id = YFC_sector.18
 	title = YFC_sector.18.t
     desc = YFC_sector.18.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector18
 	
 	is_triggered_only = yes
     
@@ -5241,7 +5241,7 @@ country_event = { #Hammer pranks you ;)
 	id = YFC_sector.19
 	title = YFC_sector.19.t
     desc = YFC_sector.19.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector19
 	
 	is_triggered_only = yes
     
@@ -5264,7 +5264,7 @@ country_event = { #Taser pranks you ;)
 	id = YFC_sector.20
 	title = YFC_sector.20.t
     desc = YFC_sector.20.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector20
 	
 	is_triggered_only = yes
     
@@ -5287,7 +5287,7 @@ country_event = { #Noo my money was taken by debt! :(
 	id = YFC_sector.21
 	title = YFC_sector.21.t
     desc = YFC_sector.21.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_Sector21
 	
 	is_triggered_only = yes
 
