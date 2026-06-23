@@ -268,7 +268,7 @@ decision_YFC_sector_category = { #Watermelon
             hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
 		}
         icon = GFX_YFC_mission_sector_issues  
-        days_mission_timeout = 120
+        days_mission_timeout = 150
         timeout_effect = {
             hidden_effect = {
                 random_list = {

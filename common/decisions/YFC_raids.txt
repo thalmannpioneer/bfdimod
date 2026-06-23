@@ -494,7 +494,8 @@ decision_YFC_raids_category = {
 			}
 		}
 
-		remove_effect = { #Will be redone or something
+		remove_effect = {
+			custom_effect_tooltip = l_YFC_pirates_yarr
 			hidden_effect = {
 				FROM = {
 					country_event = {

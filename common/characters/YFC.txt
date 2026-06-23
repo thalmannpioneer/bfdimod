@@ -191,6 +191,20 @@ characters = {
 	}
 	YFC_blocky = {
 		name = YFC_blocky
-		portraits = { civilian = { large = GFX_BUN_blocky } }
+		portraits = { 
+			army = { 
+				large = GFX_BUN_blocky 
+				small = GFX_idea_YFC_Blocky
+			} 
+		}
+	}
+	YFC_eraser = {
+		name = YFC_eraser
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Eraser 
+			} 
+		} 
 	}
 }
+

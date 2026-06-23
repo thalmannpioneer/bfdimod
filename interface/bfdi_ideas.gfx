@@ -690,6 +690,14 @@ spriteTypes = {
 		name = GFX_idea_YFC_Pipe
 		texturefile = gfx/interface/ideas/idea_YFC_Pipe.dds
 	}
+	spriteType = {
+		name = GFX_idea_YFC_Blocky
+		texturefile = gfx/interface/ideas/idea_YFC_Blocky.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_Eraser
+		texturefile = gfx/interface/ideas/idea_YFC_Eraser.dds
+	}
 
 	spriteType = {
 		name = GFX_idea_SOS_goiky_fleet

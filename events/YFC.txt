@@ -627,6 +627,18 @@ country_event = {
 		add_political_power = -50
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
+
+		add_advisor_role = {
+			character = YFC_eraser
+			activate = no
+			advisor = {
+				slot = advisor
+				cost = 100
+				idea_token = idea_YFC_Eraser
+				ledger = civilian
+				traits = { YFC_loud_workhorse }
+			}
+		}
 	}
 	option = { #Eraser is jailed
 		name = YFC_event.13.b
@@ -4144,8 +4156,18 @@ country_event = { #Annex Events 5
 
 	option = { #Advisor
 		name = YFC_BUN.13.a
-		#Modifers: IDK
 		add_political_power = 45
+		add_advisor_role = {
+			character = YFC_blocky
+			activate = no
+			advisor = {
+				slot = advisor
+				cost = 100
+				idea_token = idea_YFC_Blocky
+				ledger = civilian
+				traits = { YFC_willing_collaborator }
+			}
+		}
 		hidden_effect = {
 			BUN = {retire_character = BUN_blocky}
 			country_event = {
@@ -4161,6 +4183,7 @@ country_event = { #Annex Events 5
 		add_political_power = 30
 		85 = {add_resistance = -2}
 		212 = {add_resistance = -2}
+		BUN = {retire_character = BUN_blocky}
 		add_corps_commander_role = {
 			Character = YFC_blocky
 			skill = 1

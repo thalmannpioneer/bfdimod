@@ -96,6 +96,7 @@ recruit_character = YFC_hammer
 recruit_character = YFC_taser
 
 recruit_character = YFC_blocky
+recruit_character = YFC_eraser
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment
@@ -106,13 +107,5 @@ add_ideas = free_trade
 add_ideas = idea_YFC_no_more_advertisements_foundation
 add_dynamic_modifier = { modifier = idea_YFC_anarchic_lands }
 add_ideas = idea_YFC_neglectful_command
-
-
-
-
-
-
-
-
 
 
