@@ -110,12 +110,12 @@ infantry_GSR = {
 			base = 3
 			modifier = {
 				factor = 0
-				arms_factory < 6
+				arms_factory < 8
 			}
 
 			modifier = {
 				factor = 3
-				arms_factory > 6
+				arms_factory > 8
 			}
 		}
 
@@ -158,6 +158,10 @@ mobile_GSR = {
 
 		upgrade_prio = {
 			base = 2
+			modifier = {
+				factor = 0
+				arms_factory < 8
+			}
 		}
 
 		division_names_group = GSR_Cav_01

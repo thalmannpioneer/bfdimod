@@ -1023,21 +1023,21 @@
  YFC_borderwars.4.desc: "The city is red. Roads, the sides of buildings, cars, parks, lights, windows, all stained with red. The raiders came last night, they stole, killed, burned, then left. No one expected them, and by the time soldiers arrived to defend, it was far too late. So many objects are dead. So many."
  YFC_borderwars.4.a: "We can't let this happen again."
 
- YFC_borderwars.5.t: "Placeholder"
- YFC_borderwars.5.desc: "uhh don't put text here yet"
- YFC_borderwars.5.a: "...?"
+ YFC_borderwars.5.t: "Offensive Victory!" #ZDubbz if you want to (Note that both YFC and TBT get this if they are the attacker)
+ YFC_borderwars.5.desc: "Our forces were able to cross the contested border and attack the enemy outposts and positions with great skill. Thanks to this we were able to gain the upper hand and clear the area. We are now able to establish new forward positions in the contested lands."
+ YFC_borderwars.5.a: "Great!"
 
- YFC_borderwars.6.t: "Placeholder"
- YFC_borderwars.6.desc: "uhh don't put text here yet"
- YFC_borderwars.6.a: "...?"
+ YFC_borderwars.6.t: "Offensive Defeat." #ZDubbz if you want to (Note that both YFC and TBT get this if they are the attacker)
+ YFC_borderwars.6.desc: "Our forces did cross the contested border and did attack the enemy outposts and positions. However, we were not ready for the preparations they had made. As such, we were unable to break the defenses and had to fall back."
+ YFC_borderwars.6.a: "We'll be back."
 
- YFC_borderwars.7.t: "Placeholder"
- YFC_borderwars.7.desc: "uhh don't put text here yet"
- YFC_borderwars.7.a: "...?"
+ YFC_borderwars.7.t: "Defensive Victory!" #ZDubbz if you want to (Note that both YFC and TBT get this if they are the defender)
+ YFC_borderwars.7.desc: "Enemy forces decided to foolishly cross the contested border and launch attacks on our positions. Their terrible preparations and planning caused them to flounder in their assaults. They have fled back to their border as cowards as we still hold."
+ YFC_borderwars.7.a: "Excellent!"
 
- YFC_borderwars.8.t: "Placeholder"
- YFC_borderwars.8.desc: "uhh don't put text here yet"
- YFC_borderwars.8.a: "...?"
+ YFC_borderwars.8.t: "Defensive Defeat." #ZDubbz if you want to (Note that both YFC and TBT get this if they are the defender)
+ YFC_borderwars.8.desc: "Enemy forces decided to launch an incursion into the contested border lands. Their speed and shock surprised us and they were able to overrun our defences. Sadly, we have been forced to fall back and yield contested lands to them."
+ YFC_borderwars.8.a: "A counterattack will push them back."
 
  YFC_borderwars.9.t: "Failed Attack." #ZDubbz if you want to
  YFC_borderwars.9.desc: "Our forces returned a few hours ago, battered. It seems that they were ready for us and prepared quite well. As a result, our forces took heavy losses and were unable to break through to the countryside. We will return to try again, some day..."
@@ -1050,7 +1050,7 @@
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to
+ YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to when I 
  YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder"
  YFC_borderwars.11.a: "Placeholder"
 

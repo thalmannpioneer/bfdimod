@@ -40,6 +40,7 @@ decision_BUN_raids_category = {
         war_with_on_remove = controller
 
         remove_effect = {
+            clr_country_flag = BUN_Raid_Active
             FROM = {
                 damage_building = {
                     type = infrastructure
@@ -81,7 +82,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 0.25
+                        modifier = 0.45
                         terrain_factor = 0.5
                     }
                     defender = {
@@ -89,7 +90,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -101,7 +102,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1
+                        modifier = 1.25
                         terrain_factor = -0.5
                     }
                     defender = {
@@ -109,7 +110,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -176,6 +177,7 @@ decision_BUN_raids_category = {
         war_with_on_remove = controller
 
         remove_effect = {
+            clr_country_flag = BUN_Raid_Active
             FROM = {
                 damage_building = {
                     type = infrastructure
@@ -217,7 +219,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 0.25
+                        modifier = 0.45
                         terrain_factor = 0.5
                     }
                     defender = {
@@ -225,7 +227,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -237,7 +239,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1
+                        modifier = 1.25
                         terrain_factor = -0.5
                     }
                     defender = {
@@ -245,7 +247,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -312,6 +314,7 @@ decision_BUN_raids_category = {
         war_with_on_remove = controller
 
         remove_effect = {
+            clr_country_flag = BUN_Raid_Active
             FROM = {
                 damage_building = {
                     type = infrastructure
@@ -353,7 +356,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 0.25
+                        modifier = 0.45
                         terrain_factor = 0.5
                     }
                     defender = {
@@ -361,7 +364,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -373,7 +376,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1
+                        modifier = 1.25
                         terrain_factor = -0.5
                     }
                     defender = {
@@ -381,7 +384,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -448,6 +451,7 @@ decision_BUN_raids_category = {
         war_with_on_remove = controller
 
         remove_effect = {
+            clr_country_flag = BUN_Raid_Active
             FROM = {
                 damage_building = {
                     type = infrastructure
@@ -489,7 +493,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 0.25
+                        modifier = 0.45
                         terrain_factor = 0.5
                     }
                     defender = {
@@ -497,7 +501,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }
@@ -509,7 +513,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1
+                        modifier = 1.25
                         terrain_factor = -0.5
                     }
                     defender = {
@@ -517,7 +521,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
-                        dig_in_factor = 2
+                        dig_in_factor = 3
                     }
                 }
             }

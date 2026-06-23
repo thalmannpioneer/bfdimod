@@ -1309,7 +1309,7 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 0}} 
 			YFC = {
 				send_equipment = {
-					equipment = infantry_equipment_0
+					equipment = infantry_equipment
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
@@ -1319,7 +1319,7 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 1}} 
 			YFC = {
 				send_equipment = {
-					equipment = infantry_equipment_1
+					equipment = support_equipment_1
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
@@ -1329,7 +1329,7 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 2}} 
 			YFC = {
 				send_equipment = {
-					equipment = infantry_equipment_2
+					equipment = motorized_equipment
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
@@ -1339,7 +1339,7 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 3}} 
 			YFC = {
 				send_equipment = {
-					equipment = infantry_equipment_3
+					equipment = artillery_equipment
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
@@ -1349,7 +1349,7 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 4}} 
 			YFC = {
 				send_equipment = {
-					equipment = support_equipment_1
+					equipment = anti_air_equipment
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
@@ -1359,112 +1359,13 @@ country_event = { #YFC Sell
 			limit = {check_variable = {buying_item = 5}} 
 			YFC = {
 				send_equipment = {
-					equipment = motorized_equipment_0
+					equipment = anti_tank_equipment
 					amount = ROOT.buying_amount
 					target = ROOT
 				}
 			}
 		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 6}} 
-			YFC = {
-				send_equipment = {
-					equipment = motorized_equipment_1
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 7}} 
-			YFC = {
-				send_equipment = {
-					equipment = artillery_equipment_1
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 8}} 
-			YFC = {
-				send_equipment = {
-					equipment = artillery_equipment_2
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 9}} 
-			YFC = {
-				send_equipment = {
-					equipment = artillery_equipment_3
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 10}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_air_equipment_1
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 11}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_air_equipment_2
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 12}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_air_equipment_3
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 13}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_tank_equipment_1
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 14}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_tank_equipment_2
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {buying_item = 15}} 
-			YFC = {
-				send_equipment = {
-					equipment = anti_tank_equipment_3
-					amount = ROOT.buying_amount
-					target = ROOT
-				}
-			}
-		}
+
 		clr_country_flag = ongoing_trade_offer
 		clr_country_flag = Confirmed_Trade_Buying
 		divide_variable = { trade_cost_show_var = 100 }
@@ -1495,17 +1396,12 @@ country_event = { #YFC Sell
 		ai_chance = {
 			base = 0
 			modifier = {
-				OR = {
-					check_variable = { selling_item = 0 }
-					check_variable = { selling_item = 1 }
-					check_variable = { selling_item = 2 }
-					check_variable = { selling_item = 3 }
-				}
+				check_variable = { selling_item = 0 }
 				has_equipment = {infantry_equipment < 100}
 				add = 2
 		 	}
 			modifier = {
-				check_variable = { selling_item = 4 } 
+				check_variable = { selling_item = 1 } 
 				has_equipment = {support_equipment < 100}
 				add = 2
 		 	}
@@ -1605,7 +1501,7 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 0}} 
 			ROOT = {
 				send_equipment = {
-					equipment = infantry_equipment_0
+					equipment = infantry_equipment
 					amount = ROOT.selling_amount
 					target = YFC
 				}
@@ -1615,7 +1511,7 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 1}} 
 			ROOT = {
 				send_equipment = {
-					equipment = infantry_equipment_1
+					equipment = support_equipment_1
 					amount = ROOT.selling_amount
 					target = YFC
 				}
@@ -1625,7 +1521,7 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 2}} 
 			ROOT = {
 				send_equipment = {
-					equipment = infantry_equipment_2
+					equipment = motorized_equipment
 					amount = ROOT.selling_amount
 					target = YFC
 				}
@@ -1635,7 +1531,7 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 3}} 
 			ROOT = {
 				send_equipment = {
-					equipment = infantry_equipment_3
+					equipment = artillery_equipment
 					amount = ROOT.selling_amount
 					target = YFC
 				}
@@ -1645,7 +1541,7 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 4}} 
 			ROOT = {
 				send_equipment = {
-					equipment = support_equipment_1
+					equipment = anti_air_equipment
 					amount = ROOT.selling_amount
 					target = YFC
 				}
@@ -1655,112 +1551,13 @@ country_event = { #YFC Buy
 			limit = {check_variable = {selling_item = 5}} 
 			ROOT = {
 				send_equipment = {
-					equipment = motorized_equipment_0
+					equipment = anti_tank_equipment
 					amount = ROOT.selling_amount
 					target = YFC
 				}
 			}
 		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 6}} 
-			ROOT = {
-				send_equipment = {
-					equipment = motorized_equipment_1
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 7}} 
-			ROOT = {
-				send_equipment = {
-					equipment = artillery_equipment_1
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 8}} 
-			ROOT = {
-				send_equipment = {
-					equipment = artillery_equipment_2
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 9}} 
-			ROOT = {
-				send_equipment = {
-					equipment = artillery_equipment_3
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 10}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_air_equipment_1
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 11}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_air_equipment_2
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 12}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_air_equipment_3
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 13}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_tank_equipment_1
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 14}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_tank_equipment_2
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
-		ELSE_IF = {
-			limit = {check_variable = {selling_item = 15}} 
-			ROOT = {
-				send_equipment = {
-					equipment = anti_tank_equipment_3
-					amount = ROOT.selling_amount
-					target = YFC
-				}
-			}
-		}
+
 		clr_country_flag = ongoing_trade_offer
 		clr_country_flag = Confirmed_Trade_Selling
 		divide_variable = { trade_cost_show_var = 100 }
@@ -1791,17 +1588,12 @@ country_event = { #YFC Buy
 		ai_chance = {
 			base = 0
 			modifier = {
-				OR = {
-					check_variable = { selling_item = 0 }
-					check_variable = { selling_item = 1 }
-					check_variable = { selling_item = 2 }
-					check_variable = { selling_item = 3 }
-				}
+				check_variable = { selling_item = 0 }
 				has_equipment = {infantry_equipment > 2000}
 				add = 3
 		 	}
 			modifier = {
-				check_variable = { selling_item = 4 } 
+				check_variable = { selling_item = 1 } 
 				has_equipment = {support_equipment > 1000}
 				add = 3
 		 	}

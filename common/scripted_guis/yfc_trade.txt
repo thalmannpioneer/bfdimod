@@ -48,68 +48,28 @@ scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
 				}
 				OR = {
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_0 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@infantry_equipment > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 0 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_1 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@support_equipment_1 > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 1 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_2 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@motorized_equipment > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 2 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_3 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@artillery_equipment > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 3 }}
-					}
+					}		
 					AND = {
-						check_variable = {ROOT.num_equipment@support_equipment_1 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@anti_air_equipment > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 4 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@motorized_equipment_0 > THIS.buying_amount}
+						check_variable = {ROOT.num_equipment@anti_tank_equipment > THIS.buying_amount}
 						THIS = { check_variable = { buying_item = 5 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@motorized_equipment_1 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 6 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_1 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 7 }}
-					}		
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_2 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 8 }}
-					}	
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_3 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 9 }}
-					}	
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_1 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 10 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_2 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 11 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_3 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 12 }}
-					}	
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment_1 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 13 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment_2 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 14 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment_3 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 15 }}
 					}																																																													
 				}
 
@@ -276,68 +236,28 @@ scripted_gui = { #I AM SANE
 				check_variable = { selling_item > -1  }
 				OR = {
 					AND = {
-						ROOT = { check_variable = {num_equipment@infantry_equipment_0 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@infantry_equipment > selling_amount}}
 						THIS = { check_variable = { selling_item = 0 }}
 					}
 					AND = {
-						ROOT = { check_variable = {num_equipment@infantry_equipment_1 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@support_equipment_1 > selling_amount}}
 						THIS = { check_variable = { selling_item = 1 }}
 					}
 					AND = {
-						ROOT = { check_variable = {num_equipment@infantry_equipment_2 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@motorized_equipment > selling_amount}}
 						THIS = { check_variable = { selling_item = 2 }}
 					}
 					AND = {
-						ROOT = { check_variable = {num_equipment@infantry_equipment_3 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@artillery_equipment > selling_amount}}
 						THIS = { check_variable = { selling_item = 3 }}
-					}
+					}		
 					AND = {
-						ROOT = { check_variable = {num_equipment@support_equipment_1 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@anti_air_equipment > selling_amount}}
 						THIS = { check_variable = { selling_item = 4 }}
 					}
 					AND = {
-						ROOT = { check_variable = {num_equipment@motorized_equipment_0 > selling_amount}}
+						ROOT = { check_variable = {num_equipment@anti_tank_equipment > selling_amount}}
 						THIS = { check_variable = { selling_item = 5 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@motorized_equipment_1 > selling_amount}}
-						THIS = { check_variable = { selling_item = 6 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@artillery_equipment_1 > selling_amount}}
-						THIS = { check_variable = { selling_item = 7 }}
-					}		
-					AND = {
-						ROOT = { check_variable = {num_equipment@artillery_equipment_2 > selling_amount}}
-						THIS = { check_variable = { selling_item = 8 }}
-					}	
-					AND = {
-						ROOT = { check_variable = {num_equipment@artillery_equipment_3 > selling_amount}}
-						THIS = { check_variable = { selling_item = 9 }}
-					}	
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_air_equipment_1 > selling_amount}}
-						THIS = { check_variable = { selling_item = 10 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_air_equipment_2 > selling_amount}}
-						THIS = { check_variable = { selling_item = 11 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_air_equipment_3 > selling_amount}}
-						THIS = { check_variable = { selling_item = 12 }}
-					}	
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_tank_equipment_1 > selling_amount}}
-						THIS = { check_variable = { selling_item = 13 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_tank_equipment_2 > selling_amount}}
-						THIS = { check_variable = { selling_item = 14 }}
-					}
-					AND = {
-						ROOT = { check_variable = {num_equipment@anti_tank_equipment_3 > selling_amount}}
-						THIS = { check_variable = { selling_item = 15 }}
 					}																																																													
 				}
 			}
@@ -394,108 +314,38 @@ scripted_gui = { #I AM SANE
 						}
 					}
 					IF = {
-						limit = {check_variable = {THIS.num_equipment@infantry_equipment_1 > 99}} #GFX_infantry_weapons1_medium
+						limit = {has_equipment = {support_equipment_1 > 99}} #GFX_tech_support_medium
 						add_to_array = {
 							array = ROOT.equipment_list
 							value = 1
 						}
 					}
 					IF = {
-						limit = {check_variable = {THIS.num_equipment@infantry_equipment_2 > 99}} #GFX_improved_infantry_weapons_medium
+						limit = {check_variable = {THIS.num_equipment@motorized_equipment_0 > 99}} #GFX_tech_trucks_medium
 						add_to_array = {
 							array = ROOT.equipment_list
 							value = 2
 						}
 					}
 					IF = {
-						limit = {check_variable = {THIS.num_equipment@infantry_equipment_3 > 99}} #GFX_advanced_infantry_weapons_medium
+						limit = {check_variable = {THIS.num_equipment@artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
 						add_to_array = {
 							array = ROOT.equipment_list
 							value = 3
 						}
 					}
 					IF = {
-						limit = {has_equipment = {support_equipment_1 > 99}} #GFX_tech_support_medium
+						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_1 > 99}} #GFX_interwar_antiair_medium
 						add_to_array = {
 							array = ROOT.equipment_list
 							value = 4
 						}
 					}
 					IF = {
-						limit = {check_variable = {THIS.num_equipment@motorized_equipment_0 > 99}} #GFX_tech_trucks_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 5
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@motorized_equipment_1 > 99}} #GFX_motorised_infantry_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 6
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@artillery_equipment_1 > 99}} #GFX_gw_artillery_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 7
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@artillery_equipment_2 > 99}} #GFX_artillery1_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 8
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@artillery_equipment_3 > 99}} #GFX_artillery4_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 9
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_1 > 99}} #GFX_interwar_antiair_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 10
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_2 > 99}} #GFX_antiair2_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 11
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@anti_air_equipment_3 > 99}} #GFX_antiair5_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 12
-						}
-					}
-					IF = {
 						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_1 > 99}} #GFX_interwar_antitank_medium
 						add_to_array = {
 							array = ROOT.equipment_list
-							value = 13
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_2 > 99}} #GFX_antitank2_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 14
-						}
-					}
-					IF = {
-						limit = {check_variable = {THIS.num_equipment@anti_tank_equipment_3 > 99}} #GFX_antitank5_medium
-						add_to_array = {
-							array = ROOT.equipment_list
-							value = 15
+							value = 5
 						}
 					}
 				}	
@@ -523,108 +373,38 @@ scripted_gui = { #I AM SANE
 					}
 				}
 				IF = {
-					limit = {has_tech = infantry_weapons1} #GFX_infantry_weapons1_medium
+					limit = {has_tech = tech_support} #GFX_tech_support_medium
 					add_to_array = {
 						array = ROOT.equipment_list
 						value = 1
 					}
 				}
 				IF = {
-					limit = {has_tech = improved_infantry_weapons} #GFX_improved_infantry_weapons_medium
+					limit = {has_tech = tech_trucks} #GFX_tech_trucks_medium
 					add_to_array = {
 						array = ROOT.equipment_list
 						value = 2
 					}
 				}
 				IF = {
-					limit = {has_tech = advanced_infantry_weapons} #GFX_advanced_infantry_weapons_medium
+					limit = {has_tech = gw_artillery} #GFX_gw_artillery_medium
 					add_to_array = {
 						array = ROOT.equipment_list
 						value = 3
 					}
 				}
 				IF = {
-					limit = {has_tech = tech_support} #GFX_tech_support_medium
+					limit = {has_tech = interwar_antiair} #GFX_interwar_antiair_medium
 					add_to_array = {
 						array = ROOT.equipment_list
 						value = 4
 					}
 				}
 				IF = {
-					limit = {has_tech = tech_trucks} #GFX_tech_trucks_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 5
-					}
-				}
-				IF = {
-					limit = {has_tech = motorised_infantry} #GFX_motorised_infantry_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 6
-					}
-				}
-				IF = {
-					limit = {has_tech = gw_artillery} #GFX_gw_artillery_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 7
-					}
-				}
-				IF = {
-					limit = {has_tech = artillery1} #GFX_artillery1_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 8
-					}
-				}
-				IF = {
-					limit = {has_tech = artillery4} #GFX_artillery4_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 9
-					}
-				}
-				IF = {
-					limit = {has_tech = interwar_antiair} #GFX_interwar_antiair_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 10
-					}
-				}
-				IF = {
-					limit = {has_tech = antiair2} #GFX_antiair2_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 11
-					}
-				}
-				IF = {
-					limit = {has_tech = antiair5} #GFX_antiair5_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 12
-					}
-				}
-				IF = {
 					limit = {has_tech = interwar_antitank} #GFX_interwar_antitank_medium
 					add_to_array = {
 						array = ROOT.equipment_list
-						value = 13
-					}
-				}
-				IF = {
-					limit = {has_tech = antitank2} #GFX_antitank2_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 14
-					}
-				}
-				IF = {
-					limit = {has_tech = antitank5} #GFX_antitank5_medium
-					add_to_array = {
-						array = ROOT.equipment_list
-						value = 15
+						value = 5
 					}
 				}
 			}
@@ -692,48 +472,20 @@ scripted_gui = { #I AM SANE
 					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.selling_item = 1 }
-							check_variable = { THIS.selling_item = 5 }
-						}		
-					}
-					set_temp_variable = { MATH_COST_var = 0.6 }
+					limit = {check_variable = { THIS.selling_item = 1 }}
+					set_temp_variable = { MATH_COST_var = 1 }
 					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
 					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}	
 				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.selling_item = 2 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.7 }
+					limit = {check_variable = { THIS.selling_item = 2 }}
+					set_temp_variable = { MATH_COST_var = 0.6 }
 					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
 					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.selling_item = 6 }
-							check_variable = { THIS.selling_item = 7 }
-						}				
-					}
+					limit = {check_variable = { THIS.selling_item = 3 }}
 					set_temp_variable = { MATH_COST_var = 0.75 }
-					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.selling_item = 3 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.8 }
-					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.selling_item = 8 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.9 }
 					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
 					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
@@ -741,41 +493,10 @@ scripted_gui = { #I AM SANE
 					limit = {
 						OR = {
 							check_variable = { THIS.selling_item = 4 }
-							check_variable = { THIS.selling_item = 10 }
-							check_variable = { THIS.selling_item = 13 }
-						}				
+							check_variable = { THIS.selling_item = 5 }
+						}		
 					}
 					set_temp_variable = { MATH_COST_var = 1 }
-					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.selling_item = 9 }
-					}
-					set_temp_variable = { MATH_COST_var = 1.05 }
-					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.selling_item = 11 }
-							check_variable = { THIS.selling_item = 14 }
-						}				
-					}
-					set_temp_variable = { MATH_COST_var = 1.25 }
-					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
-					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.selling_item = 12 }
-							check_variable = { THIS.selling_item = 15 }
-						}				
-					}
-					set_temp_variable = { MATH_COST_var = 1.5 }
 					multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
 					add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}	
@@ -826,48 +547,20 @@ scripted_gui = { #I AM SANE
 					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.buying_item = 1 }
-							check_variable = { THIS.buying_item = 5 }
-						}		
-					}
-					set_temp_variable = { MATH_COST_var = 0.6 }
+					limit = {check_variable = { THIS.buying_item = 1 }}
+					set_temp_variable = { MATH_COST_var = 1 }
 					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
 					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}	
 				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.buying_item = 2 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.7 }
+					limit = {check_variable = { THIS.buying_item = 2 }}
+					set_temp_variable = { MATH_COST_var = 0.6 }
 					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
 					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
 				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.buying_item = 6 }
-							check_variable = { THIS.buying_item = 7 }
-						}				
-					}
+					limit = {check_variable = { THIS.buying_item = 3 }}
 					set_temp_variable = { MATH_COST_var = 0.75 }
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.buying_item = 3 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.8 }
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.buying_item = 8 }
-					}
-					set_temp_variable = { MATH_COST_var = 0.9 }
 					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
 					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
@@ -875,44 +568,13 @@ scripted_gui = { #I AM SANE
 					limit = {
 						OR = {
 							check_variable = { THIS.buying_item = 4 }
-							check_variable = { THIS.buying_item = 10 }
-							check_variable = { THIS.buying_item = 13 }
-						}				
+							check_variable = { THIS.buying_item = 5 }
+						}		
 					}
 					set_temp_variable = { MATH_COST_var = 1 }
 					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
 					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 				}
-				ELSE_IF = {
-					limit = {
-						check_variable = { THIS.buying_item = 9 }
-					}
-					set_temp_variable = { MATH_COST_var = 1.05 }
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.buying_item = 11 }
-							check_variable = { THIS.buying_item = 14 }
-						}				
-					}
-					set_temp_variable = { MATH_COST_var = 1.25 }
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}
-				ELSE_IF = {
-					limit = {
-						OR = {
-							check_variable = { THIS.buying_item = 12 }
-							check_variable = { THIS.buying_item = 15 }
-						}				
-					}
-					set_temp_variable = { MATH_COST_var = 1.5 }
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
-				}		
 			}
 
 			other_trade_list_equipment_button_select_click = {

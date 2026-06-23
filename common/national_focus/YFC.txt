@@ -3599,6 +3599,7 @@ focus_tree = {
                 id = YFC_event.55
                 hours = 1
             }
+            
             #Everything below this comment is placeholder stuff for other parts of the tree
 
             set_cosmetic_tag = YFC_raiders
@@ -3607,6 +3608,10 @@ focus_tree = {
                 create_faction = "Bandit Pack"
                 add_to_faction = BUN
             }
+            add_equipment_to_stockpile = {
+				type = convoy
+				amount = 25
+			}
         }
     }
 }

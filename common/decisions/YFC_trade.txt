@@ -272,65 +272,25 @@ decision_YFC_trade_category= {
 						FROM = { check_variable = { buying_item = 0 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_1 > FROM.buying_amount}
+						check_variable = {ROOT.num_equipment@support_equipment_1 > FROM.buying_amount}
 						FROM = { check_variable = { buying_item = 1 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_2 > FROM.buying_amount}
+						check_variable = {ROOT.num_equipment@motorized_equipment_0 > FROM.buying_amount}
 						FROM = { check_variable = { buying_item = 2 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment_3 > FROM.buying_amount}
+						check_variable = {ROOT.num_equipment@artillery_equipment_1 > FROM.buying_amount}
 						FROM = { check_variable = { buying_item = 3 }}
-					}
+					}		
 					AND = {
-						check_variable = {ROOT.num_equipment@support_equipment_1 > FROM.buying_amount}
+						check_variable = {ROOT.num_equipment@anti_air_equipment_1 > FROM.buying_amount}
 						FROM = { check_variable = { buying_item = 4 }}
 					}
 					AND = {
-						check_variable = {ROOT.num_equipment@motorized_equipment_0 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 5 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@motorized_equipment_1 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 6 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_1 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 7 }}
-					}		
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_2 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 8 }}
-					}	
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment_3 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 9 }}
-					}	
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_1 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 10 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_2 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 11 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment_3 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 12 }}
-					}	
-					AND = {
 						check_variable = {ROOT.num_equipment@anti_tank_equipment_1 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 13 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment_2 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 14 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment_3 > FROM.buying_amount}
-						FROM = { check_variable = { buying_item = 15 }}
-					}																																																													
+						FROM = { check_variable = { buying_item = 5 }}
+					}																																																								
 			}
 		}
 
@@ -450,23 +410,12 @@ decision_YFC_trade_category= {
 			base = 0
 			modifier = {
 				add = 3
-				OR = {
-					FROM = { check_variable = { selling_item = 0 }}
-					FROM = { check_variable = { selling_item = 1 }}
-					FROM = { check_variable = { selling_item = 2 }}
-					FROM = { check_variable = { selling_item = 3 }}
-				}
+				FROM = { check_variable = { selling_item = 0 }}
 				has_equipment = {infantry_equipment < 100}
 			}
 			modifier = {
 				add = 3
 				FROM = { check_variable = { selling_item = 1 }}
-				check_variable = {num_equipment@infantry_equipment_1 < 500}
-				date < 2019.01.01
-			}
-			modifier = {
-				add = 3
-				FROM = { check_variable = { selling_item = 4 }}
 				has_equipment = {support_equipment_1 < 550}
 			}
 			modifier = {

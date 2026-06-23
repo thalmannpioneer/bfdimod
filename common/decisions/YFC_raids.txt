@@ -407,13 +407,64 @@ decision_YFC_raids_category = {
 		}
 	}
 
+	YFC_raid_boats = { 
+		icon = GFX_decisions_YFC_raid_buy_guns
+      
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 150
+		days_re_enable = 400
+
+		visible = {
+			always = yes #UPDATE LATER!!!
+		}
+
+		remove_effect = {
+			random_list = {
+				20 = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 1
+					}
+				}
+				30 = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 5
+					}
+				}
+				20 = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 10
+					}
+				}
+				10 = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 20
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_equipment = {convoy < 2}
+			}
+		}
+	}
+
 	YFC_pirate_nation = { #This will be most likly changed later
 		icon = GFX_decision_SWE_set_navy_budget
 
 		available = { 
 			has_manpower > 1500
 			has_equipment = {
-				convoy > 5
+				convoy > 10
 			}
 		}
 
@@ -439,7 +490,7 @@ decision_YFC_raids_category = {
 			has_manpower = -1500
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = -5
+				amount = -10
 			}
 		}
 
@@ -461,7 +512,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 1		
+			base = 0		
 		}
 	}
 }

@@ -138,6 +138,38 @@ WGF_specialize_tech = {
 	}
 }
 
+WGF_trucks = {
+    #WGF will want trucks when the war starts 
+	allowed = {
+		original_tag = WGF
+	}
+	enable = {
+		has_completed_focus = WGF_focus_flip_the_coin
+		has_war_with = GMD
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_weight_factor
+		id = tech_trucks
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = motorised_infantry
+		value = 1000
+	}
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 2
+    }
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 200
+	}
+}
+
 WGF_our_army = {
     #WGF's build
 	allowed = {
@@ -177,6 +209,12 @@ WGF_our_army = {
 		id = anti_tank_equipment
 		value = 0.1
 	}
+
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 0.1
+    }
 
 	ai_strategy = {
 		type = role_ratio

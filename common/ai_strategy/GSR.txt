@@ -24,34 +24,6 @@ GSR_civil_war = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = front_control
-		tag = GPG
-		priority = 1
-    	ordertype = front
-    	execution_type = rush
-		execute_order = yes
-		manual_attack = yes
-	}
-	ai_strategy = {
-		type = front_control
-		tag = GDR
-		priority = 1
-    	ordertype = front
-    	execution_type = rush
-		execute_order = yes
-		manual_attack = yes
-	}
-	ai_strategy = {
-		type = front_control
-		tag = GFG
-		priority = 1
-    	ordertype = front
-    	execution_type = rush
-		execute_order = yes
-		manual_attack = yes
-	}
-
-	ai_strategy = {
 		type = role_ratio
 		id = infantry
 		value = 100

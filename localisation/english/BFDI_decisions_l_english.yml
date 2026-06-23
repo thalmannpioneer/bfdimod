@@ -182,8 +182,8 @@
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
  YFC_Trade_Child_Labor: "Employ §RChild Labor§!"
 
- decision_YFC_sector_category: "Our Benefactors"
- l_decisions_sector_title: "§YOur Benefactors§!"
+ decision_YFC_sector_category: "Our Sectors"
+ l_decisions_sector_title: "§YOur Sectors!"
  l_decisions_sector_military_title: "§RTop Hat§!"
  l_decisions_sector_military_stats: "§GDivision Attack:§! [?var_idea_YFC_sectors_TopHat_attack|%]\n§GDivision Organisation:§! [?var_idea_YFC_sectors_TopHat_org|%]\n§RCost:§! [?var_idea_YFC_TopHat_cost]K\n§RInfluence:§! [?var_idea_YFC_TopHat_influence]"
  l_decisions_sector_railway_title: "§RPipe§!"
