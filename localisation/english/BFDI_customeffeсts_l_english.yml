@@ -135,6 +135,10 @@
  l_YFC_foreign_advisor: "§YUnlocks Coiny as an Army Chief!§!"
  l_YFC_raid_effect: "§YA random amount of equipment is stolen.§!"
  l_YFC_raid_improve: "§GImproves§! §YShow No Mercy§! §GNational Spirit!§!\n§GIncreases Our§! §YEffectiveness in Raids!§!"
+ l_YFC_pirate_DAV: "§YHaving more boats stationed in §G[130.GetName]§! will increase the chance of the pirates being repelled!§!"
+ l_YFC_pirate_TBT: "§YHaving more boats stationed in §G[168.GetName]§! will increase the chance of the pirates being repelled!§!"
+ l_YFC_pirate_GMD: "§YHaving more boats stationed in §G[173.GetName]§! will increase the chance of the pirates being repelled!§!"
+ l_YFC_pirates_yarr: "§YWe will launch a pirate campaign against them, the success of the campaign is dependent on their fleet strength they can muster to stop them.§!"
  l_YFC_border_defence: "§YRaids are less effective against us!§!"
  l_YFC_allow_rails: "Improves §YAnarchic Lands§! National Spirit by:\n- §YRailway construction speed:§! §G+500%§!\n- §YSupply Hub construction speed:§! §G+500%§!"
  l_YFC_repair: "Improves §YAnarchic Lands§! National Spirit by:\n- §YFree Repair:§! §G+25%§!"
@@ -178,6 +182,8 @@
  l_YFC_eastern_gainall_10: "§GOur control in every contested state will increase by 10%!§!"
  l_YFC_eastern_loseall_5: "§ROur control in every contested state will decrease by 5%!§!"
  l_YFC_eastern_loseall_10: "§ROur control in every contested state will decrease by 10%!§!"
+ l_YFC_eastern_borderwar_disable: "§YDisables the option for both sides to border war with each other in the east.§! §RFor now.§!"
+ l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
  l_YFC_eastern_borderwar_loss: "§ROur future attack/defence bonus in border wars will be decreased by 25%!§!\n§RThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
 
@@ -260,7 +266,7 @@
  l_money_lose_800K: "Lose §R800K Dollars§!"
  l_money_lose_900K: "Lose §R900K Dollars§!"
  l_money_lose_1M: "Lose §R1M Dollars§!"
- l_money_lose_1_2M: "Lose §R1.2M Dollars§!"
+ l_money_lose_1_5M: "Lose §R1.5M Dollars§!"
  l_money_lose_2M: "Lose §R2M Dollars§!"
 
  l_bankruptcy_effect: "§tBankruptcy will lock economic policies in austerity mode.\nWe will only be able to emerge from bankruptcy when our balance becomes positive again.§!"

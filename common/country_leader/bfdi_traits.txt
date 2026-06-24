@@ -211,16 +211,17 @@ leader_traits = {
         org_loss_when_moving = -0.25
     }
 
-    YFC_willing_collaborator = {
+    YFC_bounty_hunter = {
         sprite = 13
 
-        compliance_growth = 0.25
-        resistance_growth = -0.25
+        resistance_target = -0.1
+        foreign_subversive_activites = -0.4
     }
 
     YFC_loud_workhorse = {
         sprite = 13
 
         political_power_factor = 0.15
+        stability_factor = -0.01
     }
 }

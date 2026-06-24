@@ -48,6 +48,16 @@ shared_focus = {
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
 	}
+
+	#
+
+	ai_will_do = {
+    	base = 0
+		modifier = { #Just gives the player time to pick stuff if they want to
+            add = 5
+            date > 2016.6.01
+        }
+    }
 }
 
 #OWN

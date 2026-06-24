@@ -25,7 +25,7 @@ GPR_Scare_GPG = { #Place troops on the border for the... um... aura?
     ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 30
+		value = 25
 	}
 }
 
@@ -46,7 +46,7 @@ GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
 	ai_strategy = {
         type = prepare_for_war
         id = GSR
-        value = 100
+        value = 200
     }
     ai_strategy = {
 		type = build_army
@@ -69,11 +69,11 @@ GPR_Scare_GFG = { #Place troops on the border for the... um... aura?
 	ai_strategy = {
         type = prepare_for_war
         id = GFG
-        value = 100
+        value = 200
     }
     ai_strategy = {
 		type = build_army
 		id = infantry
-		value = 30
+		value = 35
 	}
 }

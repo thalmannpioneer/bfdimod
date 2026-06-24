@@ -98,6 +98,7 @@ decisions_BFDI_debug = {
                     set_province_name = { id = 11074 name = "Junk Junction" }
                     set_province_name = { id = 1342 name = "Lazy Links" }
                     set_province_name = { id = 10940 name = "Lonely Lodge" }
+                    set_province_name = { id = 11026 name = "Risky Reels" }
                 }
             }
         }

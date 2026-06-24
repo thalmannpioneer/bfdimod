@@ -627,17 +627,15 @@ country_event = {
 		add_political_power = -50
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
-
 		add_advisor_role = {
-			character = YFC_eraser
-			activate = no
-			advisor = {
-				slot = advisor
-				cost = 100
+            character = YFC_eraser
+            advisor = {
+				slot = political_advisor
 				idea_token = idea_YFC_Eraser
 				ledger = civilian
+				cost = 100
 				traits = { YFC_loud_workhorse }
-			}
+            }
 		}
 	}
 	option = { #Eraser is jailed
@@ -2478,6 +2476,7 @@ country_event = { #YFC_focus_negotiate_with_teardrop event
 
 	option = { 
 		name = YFC_event.57.a
+		custom_effect_tooltip = l_YFC_eastern_borderwar_disable
 		diplomatic_relation = {
 			country = TBT
 			relation = non_aggression_pact
@@ -4097,7 +4096,7 @@ country_event = { #Annex Events 4
 		}
 		#Would HEAVILY lower effects of sectors
 		ai_chance = {
-			base = 0
+			base = 1
 		}
 	}
 	option = { #Send Army
@@ -4121,7 +4120,7 @@ country_event = { #Annex Events 4
 			}
 		}
 		ai_chance = {
-			base = 10
+			base = 30 
 		}
 	}
 	option = { #Do nothing
@@ -4142,6 +4141,9 @@ country_event = { #Annex Events 4
 				random_days = 25
 				random_hours = 50
 			}
+		}
+		ai_chance = {
+			base = 10
 		}			
 	}
 }
@@ -4158,15 +4160,14 @@ country_event = { #Annex Events 5
 		name = YFC_BUN.13.a
 		add_political_power = 45
 		add_advisor_role = {
-			character = YFC_blocky
-			activate = no
-			advisor = {
-				slot = advisor
-				cost = 100
+            character = YFC_blocky
+            advisor = {
+				slot = political_advisor
 				idea_token = idea_YFC_Blocky
 				ledger = civilian
-				traits = { YFC_willing_collaborator }
-			}
+				cost = 100
+				traits = { YFC_bounty_hunter }
+            }
 		}
 		hidden_effect = {
 			BUN = {retire_character = BUN_blocky}
@@ -4176,6 +4177,9 @@ country_event = { #Annex Events 5
 				random_days = 30
 				random_hours = 50
 			}
+		}
+		ai_chance = {
+			base = 20
 		}
 	}
 	option = { #General
@@ -4202,6 +4206,9 @@ country_event = { #Annex Events 5
 				random_hours = 50
 			}
 		}
+		ai_chance = {
+			base = 20
+		}
 	}
 	option = { #Face of annex BUT can be killed if revolt 
 		name = YFC_BUN.13.c
@@ -4218,7 +4225,7 @@ country_event = { #Annex Events 5
 			}
 		}
 		ai_chance = {
-			base = 20 #Change Later
+			base = 20
 		}		
 	}
 }
@@ -4262,6 +4269,9 @@ country_event = { #Annex Events 6
 				random_hours = 50
 			}
 		}
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #Integration
 		name = YFC_BUN.14.b
@@ -4281,7 +4291,7 @@ country_event = { #Annex Events 6
 			}
 		}	
 		ai_chance = {
-			base = 5
+			base = 10
 		}
 	}
 	option = { #Autonomous 
@@ -4310,7 +4320,7 @@ country_event = { #Annex Events 6
 			}
 		}
 		ai_chance = {
-			base = 5
+			base = 10
 		}
 	}
 }
@@ -4349,6 +4359,9 @@ country_event = { #Annex Events 7
 				random_hours = 50
 			}
 		}
+		ai_chance = {
+			base = 5
+		}
 	}
 	option = { #Apologize
 		name = YFC_BUN.15.b
@@ -4366,7 +4379,7 @@ country_event = { #Annex Events 7
 			}
 		}	
 		ai_chance = {
-			base = 5
+			base = 10
 		}
 	}
 	option = { #Corruption! 
@@ -4386,7 +4399,10 @@ country_event = { #Annex Events 7
 				random_days = 5
 				random_hours = 50
 			}
-		}			
+		}	
+		ai_chance = {
+			base = 5
+		}		
 	}
 }
 

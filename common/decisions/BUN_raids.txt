@@ -34,8 +34,8 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 10
-        cost = 35
+        days_remove = 5
+        cost = 20
         days_re_enable = 400
         war_with_on_remove = controller
 
@@ -121,7 +121,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 40
+                has_political_power > 20
             }
             modifier = {
                 add = -100
@@ -171,8 +171,8 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 10
-        cost = 35
+        days_remove = 5
+        cost = 20
         days_re_enable = 400
         war_with_on_remove = controller
 
@@ -258,7 +258,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 40
+                has_political_power > 20
             }
             modifier = {
                 add = -100
@@ -308,8 +308,8 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 10
-        cost = 35
+        days_remove = 5
+        cost = 20
         days_re_enable = 400
         war_with_on_remove = controller
 
@@ -395,7 +395,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 40
+                has_political_power > 20
             }
             modifier = {
                 add = -100
@@ -445,8 +445,8 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 10
-        cost = 35
+        days_remove = 5
+        cost = 20
         days_re_enable = 400
         war_with_on_remove = controller
 
@@ -532,7 +532,7 @@ decision_BUN_raids_category = {
             base = 0
             modifier = {
                 add = 15
-                has_political_power > 40
+                has_political_power > 20
             }
             modifier = {
                 add = -100

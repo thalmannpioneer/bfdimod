@@ -3050,11 +3050,16 @@ focus_tree = {
         y = 4
         icon = GFX_focus_generic
 
+        available = {
+            has_completed_focus = YFC_focus_negotiate_with_teardrop
+        }
+
         prerequisite = { focus = YFC_focus_build_ports_other focus = YFC_focus_bribe_village_leaders focus = YFC_focus_prospect_the_lands }
 
         cost = 7
         completion_reward = {
             add_political_power = 50
+            custom_effect_tooltip = l_YFC_eastern_borderwar_enable
             add_to_variable = { eastern_borderwar_var = 0.75 }
         }
 
@@ -3382,7 +3387,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = 4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_break_diplomacy #From the old tree, update if needed
 
         available = {
             hidden_trigger = {
@@ -3403,7 +3408,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_a_raid_o3 #From the old tree, update if needed
         prerequisite = { focus = YFC_focus_the_first_embargo }
         prerequisite = { focus = YFC_focus_numismatian_split }
 

@@ -1,7 +1,12 @@
 characters = {
 	BUN_eraser = {
 		name = BUN_eraser
-		portraits = { civilian = { large = GFX_BUN_eraser } }
+		portraits = { 
+			civilian = { 
+				large = GFX_BUN_eraser 
+				small = GFX_idea_YFC_Eraser
+			} 
+		}
 		country_leader = {
 			desc = BUN_eraser_desc
 			ideology = despotism
@@ -14,6 +19,12 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = idea_YFC_Eraser
+			ledger = civilian
+			traits = { YFC_loud_workhorse }
+        }
 	}
 
 	BUN_shackles = {
@@ -35,7 +46,12 @@ characters = {
 
 	BUN_blocky = {
 		name = BUN_blocky
-		portraits = { civilian = { large = GFX_BUN_blocky } }
+		portraits = { 
+			civilian = { 
+				large = GFX_BUN_blocky
+				small = GFX_idea_YFC_Blocky 
+			} 
+		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 2
@@ -44,6 +60,12 @@ characters = {
 			logistics_skill = 2
 			traits = { politically_connected cavalry_officer }
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = idea_YFC_Blocky
+			ledger = civilian
+			traits = { YFC_bounty_hunter }
+        }
 	}
 
 	BUN_pen = {
