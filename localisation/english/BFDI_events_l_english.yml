@@ -621,7 +621,7 @@
 
  uncommon_event.999.t: "End Point"
  uncommon_event.999.desc: "Hello Map Painter! You have reached the end of this wacky and wild Texas ride. For some fun end game stuff new decisions have been added which includes war declarations! Thanks for playing this path! As for if it will be updated in the future, ask ZDubbz if he is working on the actual content for the mod or is being lazy. If lazy, then you can bet that this path will be updated!\n\n- Pun (Who has never been to Texas)"
- uncommon_event.999.a: "Cool time to kill all of Goiky now >:D"
+ uncommon_event.999.a: "Cool time to kill all of Goiky now >:D" #pun i think youre gay
 
  #GFG
  GFG_event.1.t: "Iron Forces in Casland"
@@ -948,10 +948,11 @@
  YFC_event.46.c: "Entire bank??!!" #Gain 700K, increases Taser influence by 2, and some other bad thing but I have no idea rn
  YFC_event.46.d: "We don't need such actions." #Lowers Taser's influence by 2
 
- YFC_event.47.t: "Preparations" #For the boats
- YFC_event.47.desc.a: "This one is for DAV"
- YFC_event.47.desc.b: "This one is for SOS"
- YFC_event.47.a: "zdubbz cough"
+ YFC_event.47.t: "Buying Boat" #For the boats
+ YFC_event.47.desc.a: "The Davidians, our closest trading partners before their unfortunate economic collapse, are seemingly attempting to regain their monetary footing. Despite having to militarily oust their idiotic king (not a difficult task, surely), they are willing to give away some of their naval assets to fund our mission in the board, for a price. We had sent communications to various seafaring nations, and they were the first to respond. To headquarters, the Davidians said that they had found themselves \"entirely aligned with the idea of containing the teardropper population,\" and are \"willing to work with anyone to rid Goiky of those droplets.\" This is, certainly, not our policy or approach to dealing with teardroppers (we prefer to tax them heavily, as we do to everyone else), but, of course, the Davidians don't need to know this. If they are willing to sell their high quality boats to us for a relatively cheap price, who are we to say no to their... concerning ideas of teardropper eradication?" #if DAV is fascist
+ YFC_event.47.desc.b: "The Davidians, our closest trading partners before their unfortunate economic collapse, are seemingly attempting to regain their monetary footing. Despite having to deal with a petty uprising (our friends had an easy time with this task, of course), they are willing to give away some of their naval assets to fund our mission in the board, for a price. We had sent communications to various seafaring nations, and they were the first to respond. To headquarters, the Davidians said that they had found themselves \"wanting to disable the teardropper threat before it comes to a head,\" and that they are \"concerned about the possibility of teardropper expansian into Hendalia [their southernmost island chain].\" This is, certainly, a reasonable line of thought; if the teardroppers wish to expand into the board, where else might they want to go? Additionally, it would be a great way to send the Davidians a message that they can still trust the Company, even after the troubles in Goiky." #if DAV is monarchist
+ YFC_event.47.desc.c: "In all honesty, we weren't entirely sure that we would get a response after asking to make purchases for boats. To the outside world, it looks rather inane; we, de jure, do not border any coastal territory, but, de facto, we have most certainly been able to reach coastlines. Of course, with the sea comes the fleet; we need to be able to properly defend these coastlines. This is an abridged version of the concerns that we laid out in the communications we sent to the coastal nations of Goiky. And, for a short while, we hadn't any responses. Though, eventually, our message made its way to Saint Objectburg, and there, we found our trading partners. Now, their boats aren't of... the best quality. But they certainly aren't asking us for too high of a price, and they'll get the job done if we manage to surprise the teardroppers, which we are sure to do."
+ YFC_event.47.a: "What a deal!"
 
  YFC_event.48.t: "Gobbled Up"
  YFC_event.48.desc: "We have nearly finished our conquest of the Eastern Seaboard. Though some view our conquests to be, for lack of a better word, unsatisfactory, dissent upon the mission can easily be disregarded. There is a certain tranquility to be found on this patch of sea that could easily be commodified. Perhaps, with these conquests, we could bolster tourism even further? Additionally, let us not forget about what is to be gained from direcct access to the sea. Sea trade is now more than ever, an easy alternative to the treacherous land routes of days past. Our conquests have brought us the potential for a great, profitable future. The game now shifts on to how we plan on using this opportunity."
@@ -977,28 +978,28 @@
  YFC_event.52.desc: "Today we received an interesting letter from some good friends of ours, those friends being the Mercenaries. The Mercenaries' strength has been growing for quite some time now, due entirely to our glorious funding and someone in part to their own (measly) adventures. They have sent us a letter, stating that, due to this increasing strength, the size of their forces have increased. A great update from them, and a great upgrade for us."
  YFC_event.52.a: "Fantastic!"
 
- YFC_event.53.t: "Olive Branch" #ZDubbz
- YFC_event.53.desc: "Something something lore about the future of the BUN-YFC team and something cool that only works in this event and not foucs desc"
- YFC_event.53.a: ""
+ YFC_event.53.t: "Olive Branch"
+ YFC_event.53.desc: "Despite the opinions of many of our office employees, the company has been looking to establish formal relations with Eraser's Bunch. Though the bandits conduct brutal, anarchist-like raids of proper settlements, they have been paying us handsomly for our weaponry. A formal connection could easily translate to more profits, which would obviously bolster the company in its entirety. We have been given warnings from some companymen about the instability of such a partnership, as well as how the Bunch's hostility may reflect on us, but we disregard them; the monetary incentive from this partnership is likely worth losing the support of a couple of rump states."
+ YFC_event.53.a: "For capital!"
 
- YFC_event.54.t: "Breaking Point" #ZDubbz
- YFC_event.54.desc: "Something something about how sectors are fighting, chaos, and loss in money. YFC has made a bad choice and it seems we are fucked"
+ YFC_event.54.t: "Breaking Point"
+ YFC_event.54.desc: "Headquarters is in disaray. Employees are quitting in droves, the sectorials are pulling investments out of the company, objects are foolishly migrating out of the territories we control, and pay is down across the board. The actual building in which we have placed our headquarters is rather cluttered, due to the chaos; we would typically hire some menial object to clean it all up, but, again, we don't have the funds to do so. Despite our best efforts to keep things stable, it seems as if a large majority of our trading partners have pulled out of their partnerships, and even embargoed us. We can, of course, still trade with our ever loyal ally in the Military District, but regardless, trading no longer seems as if it will yield the great profits needed to sustain our great corporation. It is likely time that we look into... different measures, in regards to making money."
  YFC_event.54.a: "Save the sinking ship!"
 
- YFC_event.55.t: "YFC_focus_grow_closer_ties" #ZDubbz
- YFC_event.55.desc: "Words"
- YFC_event.55.a: "Crazy"
+ YFC_event.55.t: "Reflections on our Geopolitical Standings"
+ YFC_event.55.desc: "Well, we most certainly don't have any allies outside of the Bunch. From Schneehorn to Cary, we have lost all of our former trading partners. We have had a good run, but it is clear to the entirety of headquarters now, (rather, what remains of our rapidly shrinking company), that times are changing; we must significantly reconsider the purpose of the corporation, or face its closure. The Bunchivists, despite seemingly having an aversion to capitalism, are actually quite privy to it; they just participate in a different manner. Many at the corporation have noticed this, and, seeing as the situation is dire, it is likely high time that we grow far, far closer to the Bunch, to stay afloat. They respect us now; we are seldom stolen from, instead, they purchase from us. We are no longer raided, instead, we are protected. Their (feeble) governance respecting us has been one thing, but the population's support is another. It is different enough to make us consider a much more formal, much more integrated partnership."
+ YFC_event.55.a: "It shall be."
 
- YFC_event.56.t: "Permanent Mercenaries?" #ZDubbz
- YFC_event.56.desc: "Idk I guess BUN likes the idea of Permanent forces or something idk it was your idea"
+ YFC_event.56.t: "Permanent Mercenaries?"
+ YFC_event.56.desc: "The Bunchivists have stated that it is imperative that we have a standing army. They say that our model -- buying mercenaries for a time and directly administering them -- is inefficient. These calls do seem to come from a place of concern, as, although it is cheaper to not keep (and pay for) a military at all times, it does come with the concern of being unprepared for surprise attacks. Now, of course, we do have a choice in this: there are some at the company who are worried about the pricing here, to the point that they believe it is idiotic for us to do this at all. \nThough, Tophat, of the Military Sector, is quite interested in this idea, and has pushed for the company to buy out the Unnamed Mercenary Brotherhood. He cites the strength found in the company, stating that it has great potential in future conflicts, as he's taken to studying the military tactics of the Bunch.\nThere is, of course, dissent in all forms, everywhere, but ultimately, there is only one correct choice."
  YFC_event.56.a: "Cherries!"
  YFC_event.56.b: "Grapes!"
- YFC_event.56.c: "Unnamed!"
+ YFC_event.56.c: "The Brotherhood!"
  YFC_event.56.d: "It works fine as it is..." #This one keeps the same systems
 
- YFC_event.57.t: "YFC_focus_negotiate_with_teardrop" #ZDubbz
- YFC_event.57.desc: "ZDubbz If I'm being honest I'm not sure how this should be done, part of me wants to make this have more events as a negation style or just keep it a simple single event. Your pick for what you want ;)"
- YFC_event.57.a: "Lazy"
+ YFC_event.57.t: "Being Open to Negotiation"
+ YFC_event.57.desc: "War.\n\nWar is petty. War is unnecessary. War is antithetical to our goal. \nWar is costly.\n\nWe, at the company, for the first time in a long while, have decided to start an open, back and forth, and most importantly, publicized series of negotiations that are to eventually, peacefully, resolve the Great Game over the Eastern Seaboard. We are not privy or partial to any unfair dealings, and will break off negotiations if ever necessary. However, peace is the preferred option by the majority of our populace. Sure, they are not the ones generating the majority of our profit, and sure, large swaths of the corporation do indeed think violence will resolve this issue faster, regardless of the costs, but the sectorials and Yellow Face himself all agree that the unruly populace in the east should be tamed, if we are to move forward with this. The risk of a long and protracted conflict with the teardroppers frightens us, and the bad publicity from a full out war against another sovereign, trading country could devestate our profits for three entire quarters, according to out top economists. It is not the most righteous move, not the most brave, not even the most fun; but it is the correct move. The profitable move."
+ YFC_event.57.a: "And we'll laugh all the way to the bank when we're done!" #we should def have an event chain thatd be awesome and highly needed. the only question is on if i will write that.. YOU will have to design it though. please be less than 12 events
 
  YFC_event.58.t: "Piggy Banks" #ZDubbz if you want to
  YFC_event.58.desc: "With the escalation on the East ongoing, a question has popped up on how to fund this adventure. Sure, we have the budget to fund our efforts. However, we still need to not waste too much money while also gaining something from this. The Sectors have had different ideas on what should be defunded in order to free up funds. Some had suggested cuts in the military, which Top Hat defended ferociously and Yellow Face agreed so the discussion moved into company assets. Beaker suggested selling of old products and resources, Pipe wanted to add laying off some less important employees, lastly Taser also wanted to add some funding in the population centers. All would hurt the company, but the prospects of what the East could have might make it worth it. After some hours of discussions, Yellow Face decided to..."
@@ -1050,10 +1051,10 @@
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to (Cool Raid defender loses)
+ YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to when I 
  YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder"
  YFC_borderwars.11.a: "Placeholder"
-
+ 
  YFC_borderwars.12.t: "Sea movements detected." #ZDubbz if you want to 
  YFC_borderwars.12.desc: "We have been noticing a rise of unknown boats sailing close by our waters. These boats appear to be armed despite their small size. They may be preparing to take actions against us if we do not move quickly."
  YFC_borderwars.12.a: "Worrying..."
@@ -1081,6 +1082,7 @@
  YFC_borderwars.18.t: "Pirate Defeat against [FROM.GetName]!" #ZDubbz
  YFC_borderwars.18.desc: "Something something that our forces took heavy losses and were unable to breakthrough"
  YFC_borderwars.18.a: "Dammit..."
+
 
 # YFC_BUN
 
@@ -1802,7 +1804,7 @@
  bfdinews.25.a: "Objects are united, again."
 
  bfdinews.26.t: "Conflict in the South!"
- bfdinews.26.desc: "Reports have flooded in that forces under the Yellow Face Corporation have crossed the de facto border and entered into lands controlled by bandits! A correspondent from the corporation has reported that 'the socialist bandits' will be removed from the lands in 'clearing operations'. Meanwhile discussions have entered the Numismatian government about also joining these operations. For now, it's unclear who will win, but believed that the unorganized bandits will lose out in a protracted war."
+ bfdinews.26.desc: "Reports have flooded in that forces under the Yellow Face Corporation have crossed the de facto border between themselves and Eraser's Bunch and entered the lands controlled by the bandits! A correspondent from the corporation has reported that 'the socialist bandits' will be removed from the lands in 'ideological clensing operations' in the interests of 'international capital.' We are also getting reports that the Numismatian High Apparatus has began debating whether or not they should get involved. For now, it's unclear who will win, but it is believed that the unorganized bandits will end up loosing in a protracted war; if they move swiftly, however, the bandits have the chance to gain the upper hand."
  bfdinews.26.a: "Eyes on the prize."
  bfdinews.26.b: "How dare they!"
  bfdinews.26.c: "Interesting times..."

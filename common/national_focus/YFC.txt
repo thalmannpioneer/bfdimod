@@ -3172,8 +3172,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_sectorial_meddling
         relative_position_id = YFC_focus_great_business_partnership
-        x = -2.5
-        y = 0
+        x = -2
+        y = 1
         icon = GFX_focus_generic
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
@@ -3272,7 +3272,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_hoard_gold
         relative_position_id = YFC_focus_great_business_partnership
-        x = -4
+        x = -3
         y = 0
         icon = GFX_focus_generic
 
@@ -3359,7 +3359,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_the_first_embargo
         relative_position_id = YFC_focus_diverting_funds
-        x = -3
+        x = -2.5
         y = 2
         icon = GFX_focus_generic
 
