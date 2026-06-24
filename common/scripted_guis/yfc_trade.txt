@@ -683,3 +683,114 @@ scripted_gui = { #THIS IS NOT HURTING MY BRAIN AT ALL
 		}	
 	}
 }
+
+
+
+#Humble rework
+scripted_gui = {
+    bfdi_corp_trade_scriptedgui_REWORK = {
+        window_name = bfdi_corp_trade_container_REWORK
+        context_type = decision_category
+        parent_window_token = decision_tab
+
+        triggers = { 
+			yfc_nagornyv_visible = {
+				YFC = {
+					owns_state = 214
+				}
+			}
+			yfc_bun_visible = {
+				YFC = {
+					owns_state = 85
+					owns_state = 217
+				}
+			}
+			yfc_bun2_visible = {
+				YFC = {
+					owns_state = 85
+					NOT = { owns_state = 217 }
+				}
+			}
+			yfc_sri_visible = {
+				YFC = {
+					owns_state = 24
+				}
+			}
+			smg_visible = {
+				SMG = {
+					owns_state = 15
+				}
+			}
+			spr_visible = {
+				SPR = {
+					exists = yes
+				}
+			}
+			fft_ggr_visible = {
+				FFT = {
+					owns_state = 33
+				}
+			}
+			ggr_visible = {
+				GGR = {
+					exists = yes
+				}
+			}
+			crn_bun_visible = {
+				CRN = {
+					owns_state = 218
+				}
+			}
+			gsr_visible = {
+				GSR = {
+					owns_state = 10
+					NOT = { owns_state = 206 }
+				}
+			}
+			gdr_visible = {
+				GDR = {
+					owns_state = 145
+					NOT = { owns_state = 206 }
+				}
+			}
+			gpg_cw_visible = {
+				GPG = {
+					owns_state = 8
+					NOT = { owns_state = 206 }
+				}
+			}
+			gfg_visible = {
+				GFG = {
+					owns_state = 158
+					NOT = { country_exists = GPG }
+					NOT = { country_exists = GSR }
+					NOT = { country_exists = GDR }
+				}
+			}
+			gpg_visible = {
+				206 = {
+					OR = {
+						is_owned_by = GPG
+						is_owned_by = GSR
+						AND = {
+							is_owned_by = GFG
+							NOT = { country_exists = GPG }
+							NOT = { country_exists = GSR }
+							NOT = { country_exists = GDR }
+						}
+						is_owned_by = GDR
+					}
+				}
+			}
+			bun_visible = {
+				country_exists = BUN
+			}
+        }
+        effects = {
+
+        }
+        properties = {
+	
+        }
+    }
+}

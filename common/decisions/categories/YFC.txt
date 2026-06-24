@@ -76,5 +76,5 @@ decision_YFC_eastern_category = {
 	priority = 10
 	icon = GFX_decision_category_sectors #Update later
 	visible_when_empty = no
-	scripted_gui = bfdi_decisions_crop_eastern_scriptedgui
+	scripted_gui = bfdi_decisions_corp_eastern_scriptedgui
 }

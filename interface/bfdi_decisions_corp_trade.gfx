@@ -1,0 +1,223 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_corp_trade_bg"
+		textureFile = "gfx/interface/decisions/YFC_trade/bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_yfc"
+		textureFile = "gfx/interface/decisions/YFC_trade/YFC.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_yfc_bun"
+		textureFile = "gfx/interface/decisions/YFC_trade/YFC_BUN.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_yfc_bun2"
+		textureFile = "gfx/interface/decisions/YFC_trade/YFC_BUN2.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_yfc_nagornyv"
+		textureFile = "gfx/interface/decisions/YFC_trade/YFC_nagornyv.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_yfc_sri"
+		textureFile = "gfx/interface/decisions/YFC_trade/YFC_SRI.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_bun"
+		textureFile = "gfx/interface/decisions/YFC_trade/BUN.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_crn"
+		textureFile = "gfx/interface/decisions/YFC_trade/CRN.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_crn_bun"
+		textureFile = "gfx/interface/decisions/YFC_trade/CRN_BUN.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_srr"
+		textureFile = "gfx/interface/decisions/YFC_trade/SRR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_gpg"
+		textureFile = "gfx/interface/decisions/YFC_trade/GPG.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_gpg_cw"
+		textureFile = "gfx/interface/decisions/YFC_trade/GPG_CW.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_gsr"
+		textureFile = "gfx/interface/decisions/YFC_trade/GSR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_gfg"
+		textureFile = "gfx/interface/decisions/YFC_trade/GFG.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_gdr"
+		textureFile = "gfx/interface/decisions/YFC_trade/GDR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_gtr"
+		textureFile = "gfx/interface/decisions/YFC_trade/GTR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_ggr"
+		textureFile = "gfx/interface/decisions/YFC_trade/GGR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_smg"
+		textureFile = "gfx/interface/decisions/YFC_trade/SMG.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_sri"
+		textureFile = "gfx/interface/decisions/YFC_trade/SRI.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_spr"
+		textureFile = "gfx/interface/decisions/YFC_trade/SPR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_fft"
+		textureFile = "gfx/interface/decisions/YFC_trade/FFT.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_fft_ggr"
+		textureFile = "gfx/interface/decisions/YFC_trade/FFT_GGR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_tbt"
+		textureFile = "gfx/interface/decisions/YFC_trade/TBT.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_gmd"
+		textureFile = "gfx/interface/decisions/YFC_trade/GMD.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_crn-fft"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_CRN-FFT.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_ggr"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_GGR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_gpg"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_GPG.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_gtr"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_GTR.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_sea"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_sea.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_gmd"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_GMD.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_corp_trade_route_tbt"
+		textureFile = "gfx/interface/decisions/YFC_trade/route_TBT.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+}

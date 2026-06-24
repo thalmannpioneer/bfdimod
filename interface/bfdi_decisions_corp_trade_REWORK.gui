@@ -1,0 +1,188 @@
+guiTypes = {
+	containerWindowType = {
+		name = "bfdi_corp_trade_container_REWORK"
+		
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 500 }
+		
+		iconType = {
+			name = "bg"
+			spriteType = "GFX_corp_trade_bg"
+			position = { x = -25 y = 0 }
+		}
+		
+		iconType = {
+			name = "yfc"
+			spriteType = "GFX_corp_trade_yfc"
+			position = { x = 250 y = 130 }
+		}
+		
+		iconType = {
+			name = "yfc_bun2"
+			spriteType = "GFX_corp_trade_yfc_bun2"
+			position = { x = 155 y = 222 }
+		}
+		
+		iconType = {
+			name = "yfc_bun"
+			spriteType = "GFX_corp_trade_yfc_bun"
+			position = { x = 155 y = 222 }
+		}
+		
+		iconType = {
+			name = "yfc_sri"
+			spriteType = "GFX_corp_trade_yfc_sri"
+			position = { x = 315 y = 230 }
+		}
+		
+		buttonType = {
+			name = "bun"
+			spriteType = "GFX_corp_trade_bun"
+			position = { x = 152 y = 220 }
+		}
+		
+		buttonType = {
+			name = "sri"
+			spriteType = "GFX_corp_trade_sri"
+			position = { x = 315 y = 230 }
+		}
+		
+		buttonType = {
+			name = "spr"
+			spriteType = "GFX_corp_trade_spr"
+			position = { x = 290 y = 240 }
+		}
+		
+		buttonType = {
+			name = "fft_ggr"
+			spriteType = "GFX_corp_trade_fft_ggr"
+			position = { x = 227 y = 253 }
+		}
+		
+		buttonType = {
+			name = "smg"
+			spriteType = "GFX_corp_trade_smg"
+			position = { x = 315 y = 258 }
+		}
+		
+		buttonType = {
+			name = "ggr"
+			spriteType = "GFX_corp_trade_ggr"
+			position = { x = 230 y = 228 }
+		}
+		
+		buttonType = {
+			name = "fft"
+			spriteType = "GFX_corp_trade_fft"
+			position = { x = 220 y = 327 }
+		}
+		
+		buttonType = {
+			name = "crn"
+			spriteType = "GFX_corp_trade_crn"
+			position = { x = 110 y = 260 }
+		}
+		
+		buttonType = {
+			name = "srr"
+			spriteType = "GFX_corp_trade_srr"
+			position = { x = 75 y = 185 }
+		}
+		
+		iconType = {
+			name = "yfc_nagornyv"
+			spriteType = "GFX_corp_trade_yfc_nagornyv"
+			position = { x = 217 y = 200 }
+		}
+		
+		buttonType = {
+			name = "gpg"
+			spriteType = "GFX_corp_trade_gpg"
+			position = { x = 7 y = 185 }
+		}
+		
+		buttonType = {
+			name = "gdr"
+			spriteType = "GFX_corp_trade_gdr"
+			position = { x = 37 y = 185 }
+		}
+		
+		buttonType = {
+			name = "gpg_cw"
+			spriteType = "GFX_corp_trade_gpg_cw"
+			position = { x = 10 y = 215 }
+		}
+		
+		buttonType = {
+			name = "gfg"
+			spriteType = "GFX_corp_trade_gfg"
+			position = { x = 30 y = 235 }
+		}
+		
+		buttonType = {
+			name = "gtr"
+			spriteType = "GFX_corp_trade_gtr"
+			position = { x = 60 y = 223 }
+		}
+		
+		buttonType = {
+			name = "gsr"
+			spriteType = "GFX_corp_trade_gsr"
+			position = { x = 53 y = 207 }
+		}
+		
+		buttonType = {
+			name = "tbt"
+			spriteType = "GFX_corp_trade_tbt"
+			position = { x = 230 y = 15 }
+		}
+		
+		buttonType = {
+			name = "gmd"
+			spriteType = "GFX_corp_trade_gmd"
+			position = { x = 95 y = 15 }
+		}
+		
+		buttonType = {
+			name = "route_crn-fft"
+			spriteType = "GFX_corp_trade_route_crn-fft"
+			position = { x = 200 y = 220 }
+		}
+		
+		buttonType = {
+			name = "route_ggr"
+			spriteType = "GFX_corp_trade_route_ggr"
+			position = { x = 350 y = 220 }
+		}
+		
+		buttonType = {
+			name = "route_gpg"
+			spriteType = "GFX_corp_trade_route_gpg"
+			position = { x = 50 y = 195 }
+		}
+		
+		buttonType = {
+			name = "route_gtr"
+			spriteType = "GFX_corp_trade_route_gtr"
+			position = { x = 100 y = 195 }
+		}
+		
+		buttonType = {
+			name = "route_sea"
+			spriteType = "GFX_corp_trade_route_sea"
+			position = { x = 240 y = 20 }
+		}
+		
+		buttonType = {
+			name = "route_gmd"
+			spriteType = "GFX_corp_trade_route_gmd"
+			position = { x = 200 y = 30 }
+		}
+		
+		buttonType = {
+			name = "route_tbt"
+			spriteType = "GFX_corp_trade_route_tbt"
+			position = { x = 320 y = 50 }
+		}
+	}
+}
