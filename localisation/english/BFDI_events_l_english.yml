@@ -620,7 +620,7 @@
  uncommon_event.11.a: "How does a unit take 'years' to be combat ready?"
 
  uncommon_event.999.t: "End Point"
- uncommon_event.999.desc: "Hello Map Painter! You have reached the end of this wacky and wild Texas ride. For some fun end game stuff new decisions have been added which includes war declarations! Thanks for playing this path! As for if it will be updated in the future, ask ZDubbz if he is working on the actual content for the mod or is being lazy. If lazy, then you can bet that this path will be updated!\n\n- Pun (Who has never been to Texas)"
+ uncommon_event.999.desc: "Hello Map Painter! You have reached the end of this wacky and wild Texas ride. For some fun end game stuff new decisions have been added which includes war declarations! Thanks for playing this path! As for if it will be updated in the future, ask ZD*bbz if he is working on the actual content for the mod or is being lazy. If lazy, then you can bet that this path will be updated!\n\n- Pun (Who has never been to Texas)"
  uncommon_event.999.a: "Cool time to kill all of Goiky now >:D" #pun i think youre gay (Fuck you)
 
  #GFG
@@ -810,7 +810,7 @@
  YFC_event.16.a: "At least we have a good foothold!" #gives some money and state 225, setting the vp there to 12 instead of 1 (RE: Just gonna turn this into a VP, can be increased later)
 
  YFC_event.17.t: "On the Prisoners of War"
- YFC_event.17.desc: "In recent talks, Blocky brought up the idea of releasing the several extremists we took as prisoner during the war. We had indeed jailed many, giving them very long prison sentences for the many crimes they had committed. However, releasing them would make Blocky look like a hero, which would likely boost his suppport in the former Bunchivist lands. Everyone knows our populace to not really care for what may be happening elsewhere, so we have not to worry of their opinions in this deal. Though, the Sectorials have repeatedly stated that they do not want many of them to be released. Beaker specifically stating that we had 'no reason to appeal to those criminals,' and Top Hat agreeing, saying that 'the barbarians to our south deserve not our respect.' So then, what shall the fate of the POWs be?"
+ YFC_event.17.desc: "In recent talks, Blocky brought up the idea of releasing the several extremists we took as prisoner during the war. We had indeed jailed many, giving them very long prison sentences for the many crimes they had committed. However, releasing them would make Blocky look like a hero, which would likely boost his suppport in the former Bunchivist lands. Everyone knows our populace to not really care for what may be happening elsewhere, so we have not to worry of their opinions in this deal. Though, the Sectorials have repeatedly stated that they do not want many of them to be released. Beaker specifically stating that we had \"no reason to appeal to those criminals,\" and Top Hat agreeing, saying that \"the barbarians to our south deserve not our respect.\" So then, what shall the fate of the POWs be?"
  YFC_event.17.a: "Release only the non-combat role ones."
  YFC_event.17.b: "Release mainly the lower ranks."
  YFC_event.17.c: "Release nearly everyone."
@@ -970,7 +970,7 @@
  YFC_event.50.b: "Let us not haste." #Decreases Pipe and Hammer influence
 
  YFC_event.51.t: "Prospecting Prizes"
- YFC_event.51.desc: "Beaker, surprisingly, emailed Headquarters today, which caused quite the startle. Receieving communications from Sectorials was not rare, sure, but Email? Seriously? We've had this the whole time? Why hasn't anyone else been using this? In any case, they were asking for Corporate's help in ransaking the Eastern Seaboard's caverns in search of aluminum. Apparently, she needed it for their \"science experiments,\" whatever that might mean. Regardless of her reasonings, we have recieved reports from hammer about Teardroppers taking up residence in the caves, along with some other... questionable individuals, claiming to have allegiance to a \"king\" of some sort. Tearing up caves for science may not go over well with cave dwelling individuals, so, this idea has been somewhat contentious at headquarters. Even more contentious than the use of Email."
+ YFC_event.51.desc: "Beaker, surprisingly, emailed Headquarters today, which caused quite the startle. Receieving communications from Sectorials was not rare, sure, but Email? Seriously? We've had this the whole time? Why hasn't anyone else been using this? In any case, she was asking for Corporate's help in ransaking the Eastern Seaboard's caverns in search of aluminum. Apparently, he needed it for her \"science experiments,\" whatever that might mean. Regardless of his reasonings, we have recieved reports from Hammer about Teardroppers taking up residence in the caves, along with some other... questionable individuals, claiming to have allegiance to a \"king\" of some sort. Tearing up caves for science may not go over well with cave dwelling individuals, so, this idea has been somewhat contentious at headquarters. Even more contentious than the use of Email."
  YFC_event.51.a: "They're just caves, people. Let us at them." #Increases Beaker influence, add aluminum production to a board state (dont care which)
  YFC_event.51.b: "But, but, an unruly populace is hard to conquer!" #Decreases Beaker influence
 
@@ -1004,8 +1004,8 @@
  #My man I do not want more then like 3 or 4 :sob:
  #In my head it would be TBT gets an event and either demands more, agrees, or rejects the offer. 
 
- YFC_event.58.t: "Piggy Banks" #ZDubbz if you want to
- YFC_event.58.desc: "With the escalation on the East ongoing, a question has popped up on how to fund this adventure. Sure, we have the budget to fund our efforts. However, we still need to not waste too much money while also gaining something from this. The Sectors have had different ideas on what should be defunded in order to free up funds. Some had suggested cuts in the military, which Top Hat defended ferociously and Yellow Face agreed so the discussion moved into company assets. Beaker suggested selling of old products and resources, Pipe wanted to add laying off some less important employees, lastly Taser also wanted to add some funding in the population centers. All would hurt the company, but the prospects of what the East could have might make it worth it. After some hours of discussions, Yellow Face decided to..."
+ YFC_event.58.t: "Piggy Banks"
+ YFC_event.58.desc: "Following our escalation in the East, a question has begged to rear its head: How are we to ensure our profits don't lull during this conflict? Sure, we have the budget to fund our efforts, however, we still need not be wasteful; really, we should make this operation should fund itself. The sectorials have given their differing thoughts upon this topic. Some had suggested cuts in the defense budget, suggestions which Top Hat ferociously attacked. Arguing with Tophat is so frequently the death of a discussion, so, rapidly, the sectorials began to debate about the managing of our corporate assets. Beaker suggested selling of old products and resources. Pipe thought to lay off some lesser employees. Lastly, Taser thought funding in the population centers might have a positive effect in the long run. All would hurt the company in the short term, yes, but the prospects of what the East might hold are sure to make it worth its while. After some hours of discussions, Yellow Face decided to..."
  YFC_event.58.a: "Sell off some old products and resources."
  YFC_event.58.b: "Lay off some employees."
  YFC_event.58.c: "Cut some funding to the population centers."
@@ -1027,63 +1027,63 @@
  YFC_borderwars.4.desc: "The city is red. Roads, the sides of buildings, cars, parks, lights, windows, all stained with red. The raiders came last night, they stole, killed, burned, then left. No one expected them, and by the time soldiers arrived to defend, it was far too late. So many objects are dead. So many."
  YFC_borderwars.4.a: "We can't let this happen again."
 
- YFC_borderwars.5.t: "Offensive Victory!" #ZDubbz if you want to (Note that both YFC and TBT get this if they are the attacker)
- YFC_borderwars.5.desc: "Our forces were able to cross the contested border and attack the enemy outposts and positions with great skill. Thanks to this we were able to gain the upper hand and clear the area. We are now able to establish new forward positions in the contested lands."
+ YFC_borderwars.5.t: "Offensive Victory!"
+ YFC_borderwars.5.desc: "Our forces were able to cross the contested border and attack the enemy outposts and positions with great skill. Thanks to this, we were able to gain the upper hand and clear the enemy of the area. We are now able to establish our rule over this section of the Eastern Seaboard."
  YFC_borderwars.5.a: "Great!"
 
- YFC_borderwars.6.t: "Offensive Defeat." #ZDubbz if you want to (Note that both YFC and TBT get this if they are the attacker)
- YFC_borderwars.6.desc: "Our forces did cross the contested border and did attack the enemy outposts and positions. However, we were not ready for the preparations they had made. As such, we were unable to break the defenses and had to fall back."
+ YFC_borderwars.6.t: "Offensive Defeat."
+ YFC_borderwars.6.desc: "Our forces did cross the contested border, and did attack the enemy's outposts and positions. However, we were not ready for the preparations they had made. So, we were unable to break the defenses and had to fall back. Luckily, we suffered few losses, and will soon be able to attack again."
  YFC_borderwars.6.a: "We'll be back."
 
- YFC_borderwars.7.t: "Defensive Victory!" #ZDubbz if you want to (Note that both YFC and TBT get this if they are the defender)
- YFC_borderwars.7.desc: "Enemy forces decided to foolishly cross the contested border and launch attacks on our positions. Their terrible preparations and planning caused them to flounder in their assaults. They have fled back to their border as cowards as we still hold."
+ YFC_borderwars.7.t: "Defensive Victory!"
+ YFC_borderwars.7.desc: "Enemy forces made the foolish decision to cross the contested border, and launch attacks on our positions. Their terrible preparations and planning caused them to flounder in their assaults. They have fled back to their border as cowards, and we still hold."
  YFC_borderwars.7.a: "Excellent!"
 
- YFC_borderwars.8.t: "Defensive Defeat." #ZDubbz if you want to (Note that both YFC and TBT get this if they are the defender)
+ YFC_borderwars.8.t: "Defensive Defeat."
  YFC_borderwars.8.desc: "Enemy forces decided to launch an incursion into the contested border lands. Their speed and shock surprised us and they were able to overrun our defences. Sadly, we have been forced to fall back and yield contested lands to them."
  YFC_borderwars.8.a: "A counterattack will push them back."
 
- YFC_borderwars.9.t: "Failed Attack." #ZDubbz if you want to
- YFC_borderwars.9.desc: "Our forces returned a few hours ago, battered. It seems that they were ready for us and prepared quite well. As a result, our forces took heavy losses and were unable to break through to the countryside. We will return to try again, some day..."
+ YFC_borderwars.9.t: "Failed Attack."
+ YFC_borderwars.9.desc: "Our forces returned a few hours ago, battered. It seems that they were ready for us, and prepared quite well. As a result, our forces took heavy losses and were unable to break through to the countryside. We will return to try again, some day..."
  YFC_borderwars.9.a: "Unfortunate outcome."
 
- YFC_borderwars.10.t: "Successful Attack!" #ZDubbz if you want to
- YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although [FROM.GetName] had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. They came back victorious carrying the spoils of..."
+ YFC_borderwars.10.t: "Successful Attack!"
+ YFC_borderwars.10.desc: "Our forces returned a few hours ago, in a fine state. Although [FROM.GetName] had made preparations to face us, it was not enough to stop us. After the breakthrough we ransacked the local towns and villages. Our forces came back, victorious, carrying lots of..."
  YFC_borderwars.10.a: "Bags of cash!"
  YFC_borderwars.10.b: "Boxes of rifles!"
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Placeholder!" #ZDubbz if you want to when I 
- YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder"
+ YFC_borderwars.11.t: "Placeholder!" #ZD*bbz if you want to when I 
+ YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder" #when you what?? -zd
  YFC_borderwars.11.a: "Placeholder"
  
- YFC_borderwars.12.t: "Sea movements detected." #ZDubbz if you want to 
- YFC_borderwars.12.desc: "We have been noticing a rise of unknown boats sailing close by our waters. These boats appear to be armed despite their small size. They may be preparing to take actions against us if we do not move quickly."
+ YFC_borderwars.12.t: "Sea movements detected."
+ YFC_borderwars.12.desc: "We have been noticing a rise of unknown boats sailing close by our waters. These boats appear to be armed, despite their small size. They may be preparing to take actions against us if we do not move quickly."
  YFC_borderwars.12.a: "Worrying..."
 
- YFC_borderwars.13.t: "Pirates Raided!" #ZDubbz
- YFC_borderwars.13.desc: "something about having zero boats caused an easy raid by the Pirates so now are water ways are fucked"
+ YFC_borderwars.13.t: "Pirates Raided!"
+ YFC_borderwars.13.desc: "Unfortunately, it seems as if pirates have raided our coastline, causing losses along our waters. We had not made the proper preperations to stop this surprise attack, so, they were met with near zero retaliatory attacks. We will be able to rebuild quickly, but letting the enemy get the upperhand by stealing our resources like this is not something we want to let happen again."
  YFC_borderwars.13.a: "An unmitigated disaster!"
 
- YFC_borderwars.14.t: "Pirate Total Victory against [FROM.GetName]!" #ZDubbz
- YFC_borderwars.14.desc: "Something something due to their lack of navy our forces had a fun time stealing from them"
+ YFC_borderwars.14.t: "Total Pirate Victory against [FROM.GetName]!"
+ YFC_borderwars.14.desc: "Due to the feeble coastal protections of our enemy, we were able to quickly and easily raid their coastline for supplies. They had failed to predict this attack, and thus, there were no defenses for us to falter in. It was quick, tactical, and easy; like stealing candy from a grown man (who happens to be blind and deaf). They may rebuild soon, sure, but if we keep stealing resources like this, we may be able to gain the upper hand!"
  YFC_borderwars.14.a: "Easy pickings!"
 
- YFC_borderwars.15.t: "Pirates Attack!" #ZDubbz
- YFC_borderwars.15.desc: "something about our naval forces were unable to stop the Pirates so are water ways are partly fucked and the fleet damaged"
+ YFC_borderwars.15.t: "Pirates Attack!"
+ YFC_borderwars.15.desc: "Despite our best attempts, our naval forces were unable to repel the act of piracy committed against our coastline, recently. There was a small scale engagement in the waters, which we lost, and due to the sinking of some smaller ships, the water ways are now harder to navigate. In addition to stealing from our coastal settlements, it seems they took the time to steal metal scraps from our sunken boats."
  YFC_borderwars.15.a: "A disaster!"
 
- YFC_borderwars.16.t: "Pirate Victory against [FROM.GetName]!" #ZDubbz
- YFC_borderwars.16.desc: "Something something that our forces were able to breakthrough their naval forces and were able to raid, though with some minor losses"
+ YFC_borderwars.16.t: "Pirate Victory against [FROM.GetName]!"
+ YFC_borderwars.16.desc: "Despite their best attempts, our naval forces pierced through theirs, allowing us to raid settlements along their coastline! Minor losses were faced on both sides, and the boats in the ocean have made it difficult to traverse this water way; for now, at least. From the wreckage, we managed to swipe a few scraps of metal as well."
  YFC_borderwars.16.a: "Nice!"
 
- YFC_borderwars.17.t: "Pirates Defeated!" #ZDubbz
- YFC_borderwars.17.desc: "Our naval assets were able to shred the poorly armed pirate forces. After a few hours of clashing in the waves, they were forced to flee the area. Many of their boats have been destroyed in the process. Our fleet was partly damaged from the fighting, but they have protected our water routes."
+ YFC_borderwars.17.t: "Pirates Defeated!"
+ YFC_borderwars.17.desc: "Our naval assets were able to shred the poorly armed pirate forces. After a few hours of clashing in the waves, they were forced to flee the area. Many of their boats were destroyed in the process, too. Our fleet was partially damaged from the fighting, but they have protected our waters."
  YFC_borderwars.17.a: "We rule these waves!"
 
- YFC_borderwars.18.t: "Pirate Defeat against [FROM.GetName]!" #ZDubbz
- YFC_borderwars.18.desc: "Something something that our forces took heavy losses and were unable to breakthrough"
+ YFC_borderwars.18.t: "Pirate Defeat against [FROM.GetName]!"
+ YFC_borderwars.18.desc: "Our small boats fell to big ones. We attempted to raid the coastline of [FROM.GetName], but, they had made significant naval preperations. We were unable to penetrate their vessels, and the majority our ships that were involved in the engagement sank. We'll be able to recuperate and try again soon, but we should definitely be sure to attack areas without a large naval presence."
  YFC_borderwars.18.a: "Dammit..."
 
 
@@ -1118,7 +1118,7 @@
  YFC_BUN.6.a: "'They check their backs, but never their fronts.'"
 
  YFC_BUN.7.t: "Pen's Execution."
- YFC_BUN.7.desc: "He was on a train. He didn't even know they had those all the way in Greenville. Though, one 'Pipe' was the object driving it. Pipe was supposedly the leader of a 'Rail Road Sector', and they called themselves a 'Sectorial.' This meant nothing to Pen, except that they were with the Yellow Face Corporation.\nLast night, Pen entered Greenville and was greeted by Yellow Facer law inforcement. After putting him in cuffs, and threatening to shoot him if he made a single sound, they put him in a box and paraded him around town for a little while. The residents, some of which he'd spoken to personally, back when the Bunch was still a thing, didn't say anything. They watched him, with looks of fear and horror on their faces, some with complacency. The rest of the night was a haze. A rioter showing up, then more, then gunshots, blood. It was harder to remember last night than it was to listen to the sounds of the train moving along its tracks, so thats what he did instead.\n\nAfter around an hour, Pen got bored. \n\"So, where are you taking me?\" He didn't really expect a response. \nPipe looked over their shoulder, facing Pen. \"Besides Podgornyv, I don't know. I'd tell you if I could.\" The response was honestly a little shocking, to Pen. Not only was Pipe actually speaking to him, they were being respectful. Benevolent, even.\nPen decided to try his luck with another question. \"Why am I being hunted? I haven't even done much wrong, I swear!.\" Pipe turned again, another quick response. \"Not only were you working closely, *very* closely with Eraser, you are some five hundred million vigintillion dollars in debt to us.\" \nThe rest of Pen's train ride continued in silence. Of course this was about money.\n\nA few hours later, and they were back in Podgornyv. Pen had actually been sitting inside some waiting room for a while before now. They let him out just a little while ago, ushering him to some random location in the middle of the once beautiful, now ruined city. When they finished transporting him, he was standing on a stage. Three armed objects behind him, and a crowd in front. It felt like the whole world was standing around him, watching as he stood. The Podgornyv populace watched as Yellow Face read off a long, often repeating, list of crimes and accusations against Pen, many of which hadn't even been illegal in Old Goiky. There was assault, armed robbery, assault with a deadly weapon, treason -- against who he didn't know -- inciting a riot, attempting to evade arrest. Pen couldn't bring himself to care anymore, he knew he was going to die. \nIt's strange, really, how the red block behind him took a good look at his hands before shooting."
+ YFC_BUN.7.desc: "He was on a train. He didn't even know they had those all the way in Greenville. Though, one \"Pipe\" was the object driving it. Pipe was supposedly the leader of a \"Rail Road Sector,\" and they called themselves a \"Sectorial.\" This meant nothing to Pen, except that they were with the Yellow Face Corporation.\nLast night, Pen entered Greenville and was greeted by Yellow Facer law inforcement. After putting him in cuffs, and threatening to shoot him if he made a single sound, they put him in a box and paraded him around town for a little while. The residents -- some of which he'd spoken to personally, back when the Bunch was still a thing -- didn't say anything. They watched him, with looks of fear and horror on their faces, some with complacency. The rest of the night was a haze. A rioter showing up, then more, then gunshots, blood. It was harder to remember last night than it was to listen to the sounds of the train moving along its tracks, so thats what he did instead.\n\nAfter around an hour, Pen got bored. \n\"So, where are you taking me?\" He didn't really expect a response. \nPipe looked behind themselves, facing Pen. \"Besides Podgornyv, I don't know. I'd tell you if I could.\" The response was honestly a little shocking, to Pen. Not only was Pipe actually speaking to him, they were being respectful. Benevolent, even.\nPen decided to try his luck with another question. \"Why am I being hunted? I haven't even done much wrong, I swear!.\" Pipe turned again, another quick response. \"Not only were you working closely, *very* closely with Eraser, you are some five hundred million vigintillion dollars in debt to us.\" \nThe rest of Pen's train ride continued in silence. Of course this was about money.\n\nA few hours later, and they were back in Podgornyv. Pen had actually been sitting inside some waiting room for a while before now. They let him out just a little while ago, ushering him to some random location in the middle of the once beautiful, now ruined city. When they finished transporting him, he was standing on a stage. Three armed objects behind him, and a crowd in front. It felt like the whole world was standing around him, watching as he stood. The Podgornyv populace watched as Yellow Face read off a long, often repeating, list of crimes and accusations against Pen, many of which hadn't even been illegal in Old Goiky. There was assault, armed robbery, assault with a deadly weapon, treason -- against who he didn't know -- inciting a riot, attempting to evade arrest. Pen couldn't bring himself to care anymore, he knew he was going to die. \nIt's strange, really, how the red block behind him took a good look at his hands before shooting."
  YFC_BUN.7.a: "\"You never amounted to anything anyways.\""
 
  YFC_BUN.8.t: "A Rematch!"
@@ -1133,7 +1133,7 @@
  YFC_BUN.9.c: "Br- I mean, 'hire' a local official."
 
  YFC_BUN.10.t: "Monopolies?"
- YFC_BUN.10.desc: "An... interesting question... came up in discussions today. Some of the Sectorials, namely Pipe and Hammer, were asking about setting up permanent operations in Bunch. Much money is to be made, but what about the local stores inside Bunch? A suggestion was to integrate the small business with our sectors. Is the potential anger from the population worth it...?"
+ YFC_BUN.10.desc: "An interesting question came up in discussions today. Some of the Sectorials, namely Pipe and Hammer, had concerns about the Company setting up permanent operations in the Bunch. Much money is to be made, yes, but what about local Buncher stores have already started to pop up. Is it worth it to override this natural development by way of inserting the company in their affairs? Sure, it could make us more money, but the whole point of this operation is to bolster the Bunch, so they can become a formidable partner on their own, yes? Those were the concerns brought up by Pipe specifically. They were very concerned about the sanctity capitalism, sure, but to undermine your own corporation for \"natural development?\" The thought got a rise out of a couple others. After some debate, Hammer made the suggestion to integrate the already existing small businesses with our sectors, to which Pipe voiced some small disagreements. Is it worth it to so directly intervene in autonomous Buncher capitalism?"
  YFC_BUN.10.a: "MONEY!!!!!"
  YFC_BUN.10.b: "Integration helps both us and them."
  YFC_BUN.10.c: "It's not worth the anger..."
@@ -1262,7 +1262,7 @@
  YFC_sector.1.b: "Taser is the obvious choice."
 
  YFC_sector.2.t: "Sector Update: An Argument Over Purchases"
- YFC_sector.2.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Hammer and Pipe, became the central issue of the night. Some rail lines had been under performing, as of late, so Pipe, of the Rail Road Sector, decided it would be best for their sector that new ones be constructed. Having under-estimated the amount of labor necessary to execute their plans, they decided to hire some. Unfortunately for Hammer, the new contractors Pipe had hired just so happened to have been working on a project for the Construction Sector. Hammer had claimed that this purchase was 'unfair,' and that, as the leader of the Construction sector, he should've had a say in this dealing before it occurred. Who's side shall we take in this argument?"
+ YFC_sector.2.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Hammer and Pipe, became the central issue of the night. Some rail lines had been under performing, as of late, so Pipe, of the Rail Road Sector, decided it would be best for their sector that new ones be constructed. Having under-estimated the amount of labor necessary to execute their plans, they decided to hire some. Unfortunately for Hammer, the new contractors Pipe had hired just so happened to have been working on a project for the Construction Sector. Hammer had claimed that this purchase was \"unfair,\" and that, as the leader of the Construction sector, he should've had a say in this dealing before it occurred. The \"discussion\" (though, it was really a petty argument) continued on for much of the night, with others rarely intervening. Who's side should be taken in this conflict?"
  YFC_sector.2.a: "It's the free market, why would we persecute Pipe for a purchase?"
  YFC_sector.2.b: "It's Hammer's sector..."
 
@@ -1271,8 +1271,8 @@
  YFC_sector.3.a: "Research is always important, fund Beaker."
  YFC_sector.3.b: "Beaker is just greedy, side with Hammer."
 
- YFC_sector.4.t: "Secctor Update: An Argument Over Allocation"
- YFC_sector.4.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Taster and Beaker, became the central issue of the night. As the head of the Electronics Sector, Taser seemed to have taken quite the possesive hold over what the sector produced. Beaker has been quite vocally against this possesiveness over the past few weeks, with her thoughts on the Sector's management coming to a head at the aforementioned meeting. She claimed that Taser had been 'stifling capital,' and 'betraying the principles of free trade' by way of hoarding the goods. Additionally, it is no secret that the Research Sector, of which Beaker leads, requires quite the amount of complex technology. On the contrary, however, Taser had refused to let up, claiming that it was 'their sector,' and that they could 'do with it as they saw fit.' In all honesty, I don't believe anyone else cares about this issue, though, benign as the argument is, we must still respond in some manner."
+ YFC_sector.4.t: "Sector Update: An Argument Over Allocation"
+ YFC_sector.4.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Taser and Beaker, became the central issue of the night. As the head of the Electronics Sector, Taser seemed to have taken quite the possesive hold over what the sector produced. Beaker has been quite vocally against this possesiveness over the past few weeks, with her thoughts on the Sector's management coming to a head at the aforementioned meeting. He claimed that Taser had been \"stifling capital,\" and \"betraying the principles of free trade\" by way of hoarding the goods. Additionally, it is no secret that the Research Sector, of which Beaker leads, requires quite the amount of complex technology. On the contrary, however, Taser had refused to let up, claiming that it was \"their sector,\" and that they could \"do with it as they saw fit.\" In all honesty, I don't believe anyone else cares about this issue, though, benign as the argument is, we must still respond in some manner."
  YFC_sector.4.a: "Taser's sector is Taser's sector."
  YFC_sector.4.b: "Beaker gives us better returns."
 
