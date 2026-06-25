@@ -1093,7 +1093,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #Deprecated
 	id = YFC_event.29 #Tell the world about our trade!!!
 	title = YFC_event.29.t
     desc = YFC_event.29.desc

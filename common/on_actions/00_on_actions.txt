@@ -754,6 +754,12 @@ on_actions = {
             }
         }
     }
+	
+	on_weekly_YFC = { #TRADE RELATIONS CALCULATOR
+		effect = {
+			YFC_calc_trade_relations_loop = yes
+		}
+	}
 
     on_weekly = { #AI logic for money politics
         effect = {

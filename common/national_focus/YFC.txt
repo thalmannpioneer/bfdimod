@@ -64,19 +64,9 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             unlock_decision_category_tooltip = decision_YFC_trade_category
-            #hidden_effect = { #commented for rework
-            #    every_possible_country = {
-            #        limit = {
-            #            is_ai = no
-            #           NOT = {tag = YFC}
-            #        }
-            #        country_event = {
-            #            id = YFC_event.29
-            #            days = 1
-            #            random_hours = 2
-            #        }
-            #    }
-            #}
+            hidden_effect = {
+                YFC_calc_trade_relations_loop = yes
+            }
         }
     }
 

@@ -118,3 +118,28 @@ defined_text = {
 		localization_key = GFX_interwar_antitank_medium
 	}
 }
+
+
+defined_text = {
+	name = CORP_TRADE_LEDGER_TITLE
+	text = {
+		trigger = { check_variable = { selected < 17 } }
+		localization_key = "[?tradeable^selected.GetName]"
+	}
+}
+
+defined_text = {
+	name = CORP_TRADE_LEDGER_COUNTRY
+	text = {
+		trigger = { check_variable = { tradeable_relation^selected = 0 } }
+		localization_key = "l_YFC_trade_relation_bad"
+	}
+	text = {
+		trigger = { check_variable = { tradeable_relation^selected = 1 } }
+		localization_key = "l_YFC_trade_relation_neutral"
+	}
+	text = {
+		trigger = { check_variable = { tradeable_relation^selected = 2 } }
+		localization_key = "l_YFC_trade_relation_good"
+	}
+}

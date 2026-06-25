@@ -122,3 +122,7 @@
  l_healthcare_tooltip: "Stability: [?var_healthcare_sf|%+]\nMonthly Population Growth: [?var_healthcare_mp|%+]\nMonthly Spending: §Y[?var_healthcare_mc_display]K§!"
  l_negdiff_notification_tt: "§tNegative Balance!§!"
  l_negdiff_notification_tt_delayed: "§GRight-click to dismiss§!"
+ 
+ l_YFC_trade_relation_bad: "§RBad Trade Relations§!"
+ l_YFC_trade_relation_neutral: "§gNeutral Trade Relations§!"
+ l_YFC_trade_relation_good: "§7Good Trade Relations§!"

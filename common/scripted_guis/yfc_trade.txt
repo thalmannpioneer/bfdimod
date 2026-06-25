@@ -716,13 +716,16 @@ scripted_gui = {
 					owns_state = 24
 				}
 			}
+			sri_visible = {
+				country_exists = SRI
+			}
 			smg_visible = {
 				SMG = {
 					owns_state = 15
 				}
 			}
-			spr_visible = {
-				SPR = {
+			spr_visible = { #messed up, it should be SPL
+				SPL = {
 					exists = yes
 				}
 			}
@@ -738,7 +741,7 @@ scripted_gui = {
 			}
 			crn_bun_visible = {
 				CRN = {
-					owns_state = 218
+					owns_state = 217
 				}
 			}
 			gsr_visible = {
@@ -762,9 +765,11 @@ scripted_gui = {
 			gfg_visible = {
 				GFG = {
 					owns_state = 158
-					NOT = { country_exists = GPG }
-					NOT = { country_exists = GSR }
-					NOT = { country_exists = GDR }
+					OR = {
+						country_exists = GPG
+						country_exists = GSR
+						country_exists = GDR
+					}
 				}
 			}
 			gpg_visible = {
@@ -785,10 +790,67 @@ scripted_gui = {
 			bun_visible = {
 				country_exists = BUN
 			}
+			gmd_enabled = {
+				country_exists = GMD
+			}
         }
         effects = {
-
+			bun_click = {
+				set_variable = { selected = 0 }
+			}
+			crn_click = {
+				set_variable = { selected = 1 }
+			}
+			crn_bun_click = {
+				set_variable = { selected = 1 }
+			}
+			srr_click = {
+				set_variable = { selected = 2 }
+			}
+			gtr_click = {
+				set_variable = { selected = 9 }
+			}
+			gpg_click = {
+				set_variable = { selected = 3 }
+			}
+			gpg_cw_click = {
+				set_variable = { selected = 3 }
+			}
+			gdr_click = {
+				set_variable = { selected = 6 }
+			}
+			gsr_click = {
+				set_variable = { selected = 8 }
+			}
+			gfg_click = {
+				set_variable = { selected = 7 }
+			}
+			ggr_click = {
+				set_variable = { selected = 10 }
+			}
+			fft_click = {
+				set_variable = { selected = 11 }
+			}
+			fft_ggr_click = {
+				set_variable = { selected = 11 }
+			}
+			smg_click = {
+				set_variable = { selected = 13 }
+			}
+			spr_click = {
+				set_variable = { selected = 14 }
+			}
+			sri_click = {
+				set_variable = { selected = 12 }
+			}
+			tbt_click = {
+				set_variable = { selected = 15 }
+			}
+			gmd_click = {
+				set_variable = { selected = 16 }
+			}
         }
+		
         properties = {
 	
         }

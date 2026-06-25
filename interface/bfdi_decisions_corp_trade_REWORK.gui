@@ -3,7 +3,7 @@ guiTypes = {
 		name = "bfdi_corp_trade_container_REWORK"
 		
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 500 }
+		size = { width = 100% height = 850 }
 		
 		iconType = {
 			name = "bg"
@@ -81,6 +81,12 @@ guiTypes = {
 			name = "crn"
 			spriteType = "GFX_corp_trade_crn"
 			position = { x = 110 y = 260 }
+		}
+		
+		buttonType = {
+			name = "crn_bun"
+			spriteType = "GFX_corp_trade_crn_bun"
+			position = { x = 150 y = 250 }
 		}
 		
 		buttonType = {
@@ -183,6 +189,175 @@ guiTypes = {
 			name = "route_tbt"
 			spriteType = "GFX_corp_trade_route_tbt"
 			position = { x = 320 y = 50 }
+		}
+		
+		containerWindowType = {
+			name = "ledger"
+			size = { width = 400 height = 120 }
+			orientation = center
+			position = { x = -200 y = 25 }
+			
+			background = {
+				name = "ledger_bg"
+				spriteType = GFX_tiled_window_small_transparent 
+			}
+			
+			instantTextBoxType = {
+				name = "ledger_title"
+				position = { x = 20 y = 10 }
+				text = "[CORP_TRADE_LEDGER_TITLE]"
+				maxWidth = 360
+				font = hoi_24header
+			}
+			
+			instantTextBoxType = {
+				name = "ledger_route"
+				position = { x = 20 y = 58 }
+				text = "[CORP_TRADE_LEDGER_ROUTE]"
+				maxWidth = 360
+				font = hoi_20bs
+			}
+			
+			instantTextBoxType = {
+				name = "ledger_country"
+				position = { x = 20 y = 58 }
+				text = "[CORP_TRADE_LEDGER_COUNTRY]"
+				maxWidth = 360
+				font = hoi_20bs
+			}
+			
+			instantTextBoxType = {
+				name = "ledger_possible_routes"
+				position = { x = 20 y = 80 }
+				text = "[CORP_TRADE_LEDGER_POSSIBLE_ROUTES]"
+				maxWidth = 360
+				font = hoi_20bs
+			}
+		}
+		
+		containerWindowType = {
+			name = "equipment"
+			
+			orientation = lower_left
+			position = { x = 20 y = -250 }
+			size = { width = 475 height = 220 }
+
+			background = {
+				name="equipment_bg"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			buttonType = {
+				name = "equipment_buy"
+				position = { x = 20 y = 45 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = l_decisions_trade_buytext_tooltip
+				buttonFont = "hoi_18mbs"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = l_decisions_trade_buyoffer_tooltip
+			}
+
+			buttonType = {
+				name = "equipment_sell"
+				position = { x = 20 y = 135 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = l_decisions_trade_selltext_tooltip
+				buttonFont = "hoi_18mbs"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = l_decisions_trade_selloffer_tooltip
+			}
+
+			iconType = {
+				name = "equipment_sell_bg"
+				spriteType = "GFX_YFC_trade_unselected"
+				position = { x = 80 y = 30 }
+			}	
+			iconType = {
+				name = "equipment_sell_item"
+				position = { x = 150 y = 50 }
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = { 
+				name = "equipment_sell_amount"
+				text = [?THIS.selling_amount|Y0] 
+				position = { x = 280 y = 80 }
+				maxWidth = 100
+				format = centre
+				font = hoi_24header
+			}
+
+			iconType = {
+				name = "equipment_buy_bg"
+				spriteType = "GFX_YFC_trade_unselected"
+				position = { x = 80 y = 120 }
+			}	
+			iconType = {
+				name = "equipment_buy_item"
+				position = { x = 150 y = 140 }
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = { 
+				name = "equipment_buy_amount"
+				text = [?THIS.buying_amount|Y0]
+				position = { x = 280 y = 170 }
+				maxWidth = 100
+				format = centre
+				font = hoi_24header
+			}
+
+			instantTextboxType = { 
+				name = "equipment_buy_cost"
+				text = "$[?ROOT.buying_cost^i|0]K([?ROOT.buying_X^i|1]x)"
+				position = { x = 315 y = 45 }
+				maxWidth = 200
+				format = centre
+				font = hoi_24header
+			}
+
+			buttonType = {
+				name = "equipment_buy_inc"
+				position = { x = 425 y = 75 }
+				quadTextureSprite = "GFX_naval_increase_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "equipment_buy_dec"
+				position = { x = 385 y = 75 }
+				quadTextureSprite = "GFX_naval_decrease_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+			}
+
+			instantTextboxType = { 
+				name = "equipment_sell_cost"
+				text = "$[?ROOT.selling_cost^i|0]K([?ROOT.selling_X^i|1]x)" 
+				position = { x = 315 y = 135 }
+				maxWidth = 200
+				format = centre
+				font = hoi_24header
+			}
+
+			buttonType = {
+				name = "equipment_sell_inc"
+				position = { x = 425 y = 165 }
+				quadTextureSprite = "GFX_naval_increase_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "equipment_sell_dec"
+				position = { x = 385 y = 165 }
+				quadTextureSprite = "GFX_naval_decrease_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+			}
 		}
 	}
 }

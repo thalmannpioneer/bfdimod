@@ -113,3 +113,7 @@
  l_healthcare_tooltip: "Стабильность: [?var_healthcare_sf|%+]\nЕжемесячный рост населения: [?var_healthcare_mp|%+]\nРасходы в месяц: §Y[?var_healthcare_mc_display] тыс.§!"
  l_negdiff_notification_tt: "§tНегативный Баланс!§!"
  l_negdiff_notification_tt_delayed: "§GПКМ, чтобы скрыть§!"
+ 
+ l_YFC_trade_relation_bad: "§RПлохие Торговые Отношения§!"
+ l_YFC_trade_relation_neutral: "§gНормальные торговые отношения§!"
+ l_YFC_trade_relation_good: "§7Хорошие Торговые Отношения§!"

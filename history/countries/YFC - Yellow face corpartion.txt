@@ -87,6 +87,72 @@ set_variable = {var_YFC_BUN_Anger = 1 } #Useless but needed for killing Neo-Bunc
 set_variable = {var_YFC_merc_amount = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
 set_variable = { var_YFC_merc_pick = 0 } #Used for YFC raiders side with merc divs
 
+#TRADE
+set_variable = { selected = 0 }
+
+add_to_array = { tradeable = BUN } #0
+add_to_array = { tradeable = CRN } #1
+add_to_array = { tradeable = SRR } #2
+add_to_array = { tradeable = GPG } #3
+add_to_array = { tradeable = BUN } #4
+add_to_array = { tradeable = GPG } #5
+add_to_array = { tradeable = GDR } #6
+add_to_array = { tradeable = GFG } #7
+add_to_array = { tradeable = GSR } #8
+add_to_array = { tradeable = GTR } #9
+add_to_array = { tradeable = GGR } #10
+add_to_array = { tradeable = FFT } #11
+add_to_array = { tradeable = SRI } #12
+add_to_array = { tradeable = SMG } #13
+add_to_array = { tradeable = SPL } #14
+add_to_array = { tradeable = TBT } #15
+add_to_array = { tradeable = GMD } #16
+
+#17 = GGR Route
+#18 = FFT Route
+#19 = GPG Route
+#20 = GTR Route
+#21 = GMG Route
+#22 = TBT Route
+#23 = Sea Route
+
+add_to_array = { tradeable_relation = 1 } #BUN
+add_to_array = { tradeable_relation = 1 } #CRN
+add_to_array = { tradeable_relation = 1 } #SRR
+add_to_array = { tradeable_relation = 1 } #GPG
+add_to_array = { tradeable_relation = 1 } #BUN
+add_to_array = { tradeable_relation = 1 } #GPG
+add_to_array = { tradeable_relation = 1 } #GDR
+add_to_array = { tradeable_relation = 1 } #GFG
+add_to_array = { tradeable_relation = 1 } #GSR
+add_to_array = { tradeable_relation = 1 } #GTR
+add_to_array = { tradeable_relation = 1 } #GGR
+add_to_array = { tradeable_relation = 1 } #FFT
+add_to_array = { tradeable_relation = 1 } #SRI
+add_to_array = { tradeable_relation = 1 } #SMG
+add_to_array = { tradeable_relation = 1 } #SPL
+add_to_array = { tradeable_relation = 1 } #TBT
+add_to_array = { tradeable_relation = 1 } #GMD
+
+add_to_array = { tradeable_count = 0 } #BUN
+add_to_array = { tradeable_count = 0 } #CRN
+add_to_array = { tradeable_count = 0 } #SRR
+add_to_array = { tradeable_count = 0 } #GPG
+add_to_array = { tradeable_count = 0 } #BUN
+add_to_array = { tradeable_count = 0 } #GPG
+add_to_array = { tradeable_count = 0 } #GDR
+add_to_array = { tradeable_count = 0 } #GFG
+add_to_array = { tradeable_count = 0 } #GSR
+add_to_array = { tradeable_count = 0 } #GTR
+add_to_array = { tradeable_count = 0 } #GGR
+add_to_array = { tradeable_count = 0 } #FFT
+add_to_array = { tradeable_count = 0 } #SRI
+add_to_array = { tradeable_count = 0 } #SMG
+add_to_array = { tradeable_count = 0 } #SPL
+add_to_array = { tradeable_count = 0 } #TBT
+add_to_array = { tradeable_count = 0 } #GMD
+
+
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david
 recruit_character = YFC_Coiny
