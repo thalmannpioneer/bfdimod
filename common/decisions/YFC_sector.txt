@@ -346,7 +346,7 @@ decision_YFC_sector_category = { #Watermelon
 	}
 
     YFC_sector_minor_payments = { #Small way for the player to get out of debt and not get softlocked 
-		icon = GFX_decisions_YFC_foster_propaganda
+		icon = GFX_decisions_YFC_payments
       
 		visible = {
             has_completed_focus = YFC_focus_establish_sectorialism

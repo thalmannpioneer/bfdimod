@@ -465,6 +465,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_YFC_payments"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_payments.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_loan"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_loan.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_cherry_mercenary"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
 	}
