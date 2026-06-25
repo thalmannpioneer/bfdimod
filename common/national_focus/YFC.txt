@@ -3364,7 +3364,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+        #allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
 
         cost = 3
         completion_reward = {
@@ -3385,7 +3385,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
+        #allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
         cost = 3
         completion_reward = {
@@ -3394,7 +3394,7 @@ focus_tree = {
     }
 
     focus = {
-        id = YFC_focus_allow_raiding_into_traitors
+        id = YFC_focus_allow_raiding_into_traitors #raid cooperation
         relative_position_id = YFC_focus_great_business_partnership
         x = 0
         y = 2
@@ -3439,7 +3439,7 @@ focus_tree = {
         }
     }
 
-    #sect 2 of raiders:
+    #sect 2 of raiders: on paper, disestablishes the corporation itself (it will either secretly transform into a mafia like drug empire, a large scale underground merecenary and spy4hire company, or be annexed by the bunch)
 
     focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
         id = YFC_focus_the_great_recession
@@ -3453,14 +3453,18 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        #allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
-
+            #the player is put like 7 million bucks into debt
+            #puts stability into the shitter, increases sectorial influence a fuck ton, gives spirit called "sectorial power grabbing"
+            #the spirit probably fucks over stability more, and also does other things as well maybe probably perhaps
+            #also maybe all the stuff im writing here should be in the event? i dont know dude
         }
     }
 
+    #'insane face' path, eventual firings/demotion of the sectorials, drug trading, prevents the byzantinelarp
     focus = {
         id = YFC_focus_mass_firings
         relative_position_id = YFC_focus_the_great_recession
@@ -3487,7 +3491,8 @@ focus_tree = {
         }
     }
 
-    focus = {
+    #company reforms, power struggle between yellow face and the sectorials, leading to either a more typical raider path, or the absolute promotion of tophat
+    focus = { #every focus along this path should give you at least a small amount of money (unless of course i say otherwise or its nonsensicle)
         id = YFC_focus_company_restructuring
         relative_position_id = YFC_focus_the_great_recession
         x = 3
@@ -3514,13 +3519,299 @@ focus_tree = {
     }
 
     focus = {
-        id = YFC_focus_close_the_markets
-        relative_position_id = YFC_focus_the_great_recession
+        id = YFC_focus_lower_wage_gaps
+        relative_position_id = YFC_focus_company_restructuring
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_company_restructuring }
+
+        cost = 5
+        completion_reward = {
+            #tooltip abt sectorials pulling out investments, losing you money in the short term
+            #makes you gain more money naturally, as your spending less on higher-ups
+            #greatly increases stability
+        }
+    }
+
+    focus = {
+        id = YFC_focus_reassess_geopolitics
+        relative_position_id = YFC_focus_company_restructuring
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_company_restructuring }
+
+        cost = 5
+        completion_reward = {
+            #event about how its highly unlikely you'll ever be in a position to trade normally again
+        }
+    }
+
+    focus = {
+        id = YFC_focus_crack_down_on_influence #sectorial influence, i might add!
+        relative_position_id = YFC_focus_company_restructuring
         x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_company_restructuring }
+
+        cost = 5
+        completion_reward = {
+            #starts a 40 day count down that'll remove that gay ass sectorial spirit, loses you a bunch of political power, gains you back a bit of stab
+        }
+    }
+
+    focus = {
+        id = YFC_focus_trade_alternatives
+        relative_position_id = YFC_focus_company_restructuring
+        x = -1
+        y = 3
+        icon = GFX_focus_generic
+
+        prerequisite = { #yes i know this doesnt make sense but it looks cool okay?
+            focus = YFC_focus_reassess_geopolitics 
+            focus = YFC_focus_crack_down_on_influence
+        }
+        prerequisite = { focus = YFC_focus_close_the_markets }
+
+        cost = 5
+        completion_reward = {
+            #event about potentially starting to trade drugs (what am i doing bro)
+        }
+    }
+
+    focus = {
+        id = YFC_focus_offset_debt #to the sectorials i might add!
+        relative_position_id = YFC_focus_company_restructuring
+        x = 1
         y = 2
         icon = GFX_focus_generic
 
+        prerequisite = { focus = YFC_focus_crack_down_on_influence }
+        prerequisite = { focus = YFC_focus_lower_wage_gaps }
+
+        cost = 5
+        completion_reward = {
+            #gets you a substantial amount of money (like a good 2m)
+            #event about how the sectorials are getting kind of upset at yf
+        }
+    }
+
+    focus = {
+        id = YFC_focus_lessons_from_mercs #should have a dynamic icon that changes based on which merc company you sided with
+        relative_position_id = YFC_focus_company_restructuring
+        x = 3
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_lower_wage_gaps }
+
+        cost = 5
+        completion_reward = {
+            #possibility for three different lore events:
+            #as you committed to a merc company earlier, tophat visits that company again, to talk to them about how they conduct their business
+            #different event for each mercenary company; if you didnt commit to one, the game just chooses a random one for you
+            #gets you more political power and a bit more natural passive income
+        }
+    }
+
+    focus = {
+        id = YFC_focus_tophats_outlook
+        relative_position_id = YFC_focus_company_restructuring
+        x = 2
+        y = 3
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_offset_debt }
+        prerequisite = { focus = YFC_focus_lessons_from_mercs }
+
+        cost = 5
+        completion_reward = {
+            #event that's a letter from tophat to headquarters about dealing in the mercenary business, and possibly even with spies
+            #tophat is very clearly angry at yellow face's recent restructurings
+            #gain a bit of political power, some stability
+        }
+    }
+
+    focus = {
+        id = YFC_focus_the_sectorial_powderkeg
+        relative_position_id = YFC_focus_company_restructuring
+        x = 0.5
+        y = 4
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_trade_alternatives }
+        prerequisite = { focus = YFC_focus_tophats_outlook }
+
+        #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
+
+        cost = 5
+        completion_reward = {
+            #event about the sectorials all coming together to declare their opposition to the restructuring of the company
+            #starts our short squabble for power
+            #loses stability AGAIN #lmao
+        }
+    }
+
+    #the following three focuses are only visible after the sectorial powderkeg is started, and the first two must be completed before the last one
+    focus = {
+        id = YFC_focus_sloth #make focus name green
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
+        prerequisite = { focus = YFC_focus_the_second_embargo }
+        prerequisite = { focus = YFC_focus_reassess_geopolitics }
+
+        cost = 5
+        completion_reward = {
+            #event about sectorials beginning to gain power over large swaths of the company
+            #they call yf's restructuring a powergrab, and blame company failures on his laziness
+            #they are in footpathburg, rallying support from common employees, and some stray mercs
+        }
+    }
+
+    focus = {
+        id = YFC_focus_envy #make focus name green
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
+
+        cost = 5
+        completion_reward = {
+            #event about beaker secretly fleeing the yfc temporarily to study in university
+            #if the gtr hasnt fucking died, she goes there, otherwise, she goes to casland
+            #ill write one event but just change out the names because im a lazy bum
+            #she comes back after tophat takes power; if he doesnt, she stays gone
+        }
+    }
+
+    focus = {
+        id = YFC_focus_pride #make focus name green
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
+        prerequisite = { focus = YFC_focus_lessons_from_mercs }
+
+        cost = 5
+        completion_reward = {
+            #resolution from yellow face about expelling the sectorials to the far east
+            #three days later, a writing from hammer about whats going on in the eastern seaboard, how theyre getting ready to lead an attack on footpathburg with their limited funds, and how they hope they can convince more sectorials to go with them to take over yellow face
+            #the mercenary company tophat visited earlier is already on the side of the opposition, the rest's fates are currently unknown
+            #tophat also has some of his own men dedicated to the cause because of course he does
+            #on the map, the tophat clan comes into existence, and gains that one small province in the eastern seaboard
+        }
+    }
+
+    focus = { #grow closer ties can only be completed on this path after this focus has been completed
+        id = YFC_focus_dismantle_sectorialism
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = -1
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_sloth }
+        prerequisite = { focus = YFC_focus_envy }
+        prerequisite = { focus = YFC_focus_pride }
+
+        mutually_exclusive = { focus = YFC_focus_march_on_footpathburg }
+
+        cost = 1
+        completion_reward = {
+            #event about a largescale engagement between yfc and thc (tophat clan) forces, with the yfc eventually winning after a large amount of bloodshed
+            #a couple days later, event about the fate of the sectorials (executions basically)
+        }
+    }
+
+    focus = {
+        id = YFC_focus_march_on_footpathburg
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = 1
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_sloth }
+        prerequisite = { focus = YFC_focus_envy }
+        prerequisite = { focus = YFC_focus_pride }
+
+        mutually_exclusive = { focus = YFC_focus_dismantle_sectorialism }
+
+        cost = 1
+        completion_reward = {
+            #event about how most of the mercenaries that they encountered on the way to the yfc were swayed to the side of the thc
+            #the engagement in footpathburg was mostly peaceful, and yellow face is ousted from power
+            #makes grow closer ties undoable
+        }
+    }
+
+    focus = {
+        id = YFC_focus_yellow_face_holds
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = 0
+        y = 4
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_dismantle_sectorialism }
+        prerequisite = { focus = YFC_focus_grow_closer_ties }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_dismantle_sectorialism
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_dismantle_sectorialism }
+
+        cost = 5 #autocompletes after like 4 days
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = YFC_focus_tophat_clan
+        relative_position_id = YFC_focus_the_sectorial_powderkeg
+        x = 0
+        y = 4
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_march_on_footpathburg }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_march_on_footpathburg
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_march_on_footpathburg }
+    }
+
+    #the middle ground
+    focus = {
+        id = YFC_focus_close_the_markets
+        relative_position_id = YFC_focus_the_great_recession
+        x = 0
+        y = 3
+        icon = GFX_focus_generic
+
         prerequisite = { focus = YFC_focus_the_great_recession }
+        prerequisite = { focus = YFC_focus_mass_firings }
+        prerequisite = { focus = YFC_focus_company_restructuring }
+        prerequisite = {
+            focus = YFC_focus_reassess_geopolitics
+        }
 
         ai_will_do = {
             base = 10
@@ -3556,7 +3847,7 @@ focus_tree = {
         id = YFC_focus_the_second_embargo
         relative_position_id = YFC_focus_close_the_markets
         x = 0
-        y = 1.5
+        y = 2
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_close_the_markets }
@@ -3567,7 +3858,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+        #allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
 
         cost = 3
         completion_reward = {
@@ -3579,7 +3870,7 @@ focus_tree = {
         id = YFC_focus_grow_closer_ties
         relative_position_id = YFC_focus_the_second_embargo
         x = 0
-        y = 1.5
+        y = 3
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_the_second_embargo }
@@ -3607,6 +3898,10 @@ focus_tree = {
 				type = convoy
 				amount = 25
 			}
+
+            #PUN: if yfc is ai and the bunch is a player, this focus makes the yfc get annexed by bunch
+            #     this is specifically to reward the bunchivist player, who will have had a very very hard time making this happen
+            #     in the future, i want the yfc to always default to the capital path if the bunch is a player; the bunch will have to convinvce the yfc to go down the raider path by way of some game mechanic
         }
     }
 }
@@ -3618,4 +3913,4 @@ focus_tree = {
 # -Stuff should unlock in time and not all at once
 # -Also look at the raiding decisions and see what and when stuff unlocks
 
-#ZDubbz
+#hey are any of these notes relevant still or can i remove them? -zd
