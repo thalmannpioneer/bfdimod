@@ -49,5 +49,8 @@ recruit_character = CRN_credit_card
 recruit_character = CRN_mirror
 recruit_character = CRN_pineapple
 
-
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 2000
+}
 

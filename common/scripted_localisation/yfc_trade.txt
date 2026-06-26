@@ -57,31 +57,108 @@ defined_text = {
 defined_text = {
 	name = equipment_type_selling
 	text = {
-		trigger = { check_variable = { THIS.selling_item = -1 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = -1 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = -1 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_add_pol_idea_button
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 0 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 0 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 0 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_infantry_weapons_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 1 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 1 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 1 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_tech_support_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 2 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 2 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 2 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_tech_trucks_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 3 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 3 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 3 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_gw_artillery_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 4 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 4 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 4 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_interwar_antiair_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.selling_item = 5 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 5 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 5 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_interwar_antitank_medium
 	}
 
@@ -90,31 +167,108 @@ defined_text = {
 defined_text = {
 	name = equipment_type_buying
 	text = {
-		trigger = { check_variable = { THIS.buying_item = -1 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = -1 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = -1 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_add_pol_idea_button
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 0 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 0 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_infantry_weapons_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 1 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 1 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_tech_support_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 2 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 2 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_tech_trucks_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 3 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 3 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_gw_artillery_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 4 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 4 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_interwar_antiair_medium
 	}
 	text = {
-		trigger = { check_variable = { THIS.buying_item = 5 } }
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 5 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
+					tag = YFC
+				}
+			}
+		}
 		localization_key = GFX_interwar_antitank_medium
 	}
 }

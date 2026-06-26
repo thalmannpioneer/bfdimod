@@ -152,6 +152,28 @@ add_to_array = { tradeable_count = 0 } #SPL
 add_to_array = { tradeable_count = 0 } #TBT
 add_to_array = { tradeable_count = 0 } #GMD
 
+#Adds YFC into trade array, meaning he will always be #0 in these
+
+add_to_array = {
+	array = global.yfc_tradable_countries
+	value = FROM.id
+}
+add_to_array = {
+	array = YFC.selling_X
+	value = 1
+}
+add_to_array = {
+	array = YFC.buying_X
+	value = 1
+}
+add_to_array = {
+	array = YFC.buying_cost
+	value = 0
+}
+add_to_array = {
+	array = YFC.selling_cost
+	value = 0
+}
 
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david

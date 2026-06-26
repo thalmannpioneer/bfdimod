@@ -1,172 +1,3 @@
-scripted_gui = { #I LOVE WORKING ON THIS SO MUCH :D
-	bfdi_corp_trade_scriptedgui = {
-		window_name = "bfdi_corp_trade_container"
-		context_type = decision_category
-		parent_window_token = decision_tab
-
-		properties = {
-			corp_trade_list_Entry_Flags_Entry_Flag = { image = [This.GetFlag] }
-			corp_trade_list_Entry_Flags_Entry_Flag2 = { image = [This.GetFlag] }
-			bfdi_corpTradeDeal_country_flag = { image = [This.GetFlag] }
-			background_equipment_box_selling_item = { image = "[equipment_type_selling]" }
-			background_equipment_box_buying_item = { image = "[equipment_type_buying]" }
-		}
-
-		triggers = { 
-			BuyingButton_click_enabled = {
-				ROOT = { has_political_power > 5}
-				country_exists = THIS
-				THIS = {
-					has_country_flag = Confirmed_Trade_Selling		
-					NOT = {
-						has_country_flag = ongoing_trade_offer
-						has_war_with = YFC
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-						has_idea = closed_economy
-						is_embargoed_by = YFC
-						is_embargoing = YFC
-						check_variable = { selling_item = -1 }
-					}					
-				}
-			}
-			SellingButton_click_enabled = {
-				ROOT = { has_political_power > 5}
-				country_exists = THIS
-				THIS = {
-					has_country_flag = Confirmed_Trade_Buying
-					NOT = {
-						has_country_flag = ongoing_trade_offer
-						has_war_with = YFC
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-						has_idea = closed_economy
-						is_embargoed_by = YFC
-						is_embargoing = YFC
-						check_variable = { buying_item = -1 }
-					}					
-				}
-				OR = {
-					AND = {
-						check_variable = {ROOT.num_equipment@infantry_equipment > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 0 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@support_equipment_1 > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 1 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@motorized_equipment > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 2 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@artillery_equipment > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 3 }}
-					}		
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_air_equipment > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 4 }}
-					}
-					AND = {
-						check_variable = {ROOT.num_equipment@anti_tank_equipment > THIS.buying_amount}
-						THIS = { check_variable = { buying_item = 5 }}
-					}																																																													
-				}
-
-				
-			}
-			background_equipment_box_selling_item_visible = {
-				THIS = { check_variable = { selling_item > -1 }}
-            }
-			background_equipment_box_buying_item_visible = {
-				THIS = { check_variable = { buying_item > -1 }}
-            }
-			buying_item_button_increase_X_click_enabled  = {
-				ROOT = { check_variable = { ROOT.buying_X^i < 1.5 }}
-				THIS = { check_variable = { selling_item > -1 }}
-			}
-			buying_item_button_decrease_X_click_enabled  = {
-				ROOT = { check_variable = { ROOT.buying_X^i > 0.5 }}
-				THIS = { check_variable = { selling_item > -1 }}
-			}
-			selling_item_button_increase_X_click_enabled  = {
-				ROOT = { check_variable = { ROOT.selling_X^i < 1.5 }}
-				THIS = { check_variable = { buying_item > -1 }}
-			}
-			selling_item_button_decrease_X_click_enabled  = {
-				ROOT = { check_variable = { ROOT.selling_X^i > 0.5 }}
-				THIS = { check_variable = { buying_item > -1 }}
-			}
-		}
-
-		effects = {
-			buying_item_button_increase_X_click = {
-				set_temp_variable = { Cost_Diffrent_var = ROOT.buying_cost^i }
-				divide_temp_variable = { Cost_Diffrent_var = ROOT.buying_X^i }
-				ROOT = { add_to_variable = {ROOT.buying_X^i = 0.1}}
-				multiply_temp_variable = {Cost_Diffrent_var = ROOT.buying_X^i}
-				ROOT = { set_variable = { ROOT.buying_cost^i = Cost_Diffrent_var }}
-			}
-			buying_item_button_decrease_X_click = {
-				set_temp_variable = { Cost_Diffrent_var = ROOT.buying_cost^i }
-				divide_temp_variable = { Cost_Diffrent_var = ROOT.buying_X^i }
-				ROOT = { add_to_variable = {ROOT.buying_X^i = -0.1}}
-				multiply_temp_variable = {Cost_Diffrent_var = ROOT.buying_X^i}
-				ROOT = { set_variable = { ROOT.buying_cost^i = Cost_Diffrent_var }}
-			}
-			selling_item_button_increase_X_click = {
-				set_temp_variable = { Cost_Diffrent_var = ROOT.selling_cost^i }
-				divide_temp_variable = { Cost_Diffrent_var = ROOT.selling_X^i }
-				ROOT = { add_to_variable = {ROOT.selling_X^i = 0.1}}
-				multiply_temp_variable = {Cost_Diffrent_var = ROOT.selling_X^i}
-				ROOT = { set_variable = { ROOT.selling_cost^i = Cost_Diffrent_var }}
-			}
-			selling_item_button_decrease_X_click = {
-				set_temp_variable = { Cost_Diffrent_var = ROOT.selling_cost^i }
-				divide_temp_variable = { Cost_Diffrent_var = ROOT.selling_X^i }
-				ROOT = { add_to_variable = {ROOT.selling_X^i = -0.1}}
-				multiply_temp_variable = {Cost_Diffrent_var = ROOT.selling_X^i}
-				ROOT = { set_variable = { ROOT.selling_cost^i = Cost_Diffrent_var }}
-			}
-			BuyingButton_click = {
-				ROOT = {add_political_power = -5}
-				IF = {
-					limit = {THIS = {NOT = {has_country_flag = ongoing_trade_offer}}}
-					THIS = {
-						set_country_flag = ongoing_trade_offer
-						country_event = {
-							id = YFC_event.37
-							hours = 1
-						}
-					}
-				}
-			}
-			SellingButton_click = {
-				ROOT = {add_political_power = -5}
-				IF = {
-				limit = {THIS = {NOT = {has_country_flag = ongoing_trade_offer}}}
-					THIS = { 
-						set_country_flag = ongoing_trade_offer
-						country_event = {
-							id = YFC_event.36
-							hours = 1
-						}
-					}
-				}	
-			}
-		}	
-
-		dynamic_lists = {
-			corp_trade_list_Entry_Flags = {
-				array = global.yfc_tradable_countries
-				index = i
-				change_scope = yes
-				entry_container = bfdi_corp_tradeDeal_container
-			}
-		}
-	}
-}
-
 scripted_gui = {
     bfdi_other_trade_background_button = {
         window_name = background_button
@@ -693,76 +524,179 @@ scripted_gui = {
         context_type = decision_category
         parent_window_token = decision_tab
 
+		properties = {
+			equipment_sell_item = { image = "[equipment_type_selling]" }
+			equipment_buy_item = { image = "[equipment_type_buying]" }
+		}
+
         triggers = { 
+			equipment_buy_click_enabled = {
+			ROOT = { has_political_power > 5}
+				country_exists = var:YFC.tradeable^YFC.selected
+				var:YFC.tradeable^YFC.selected = {
+					has_country_flag = Confirmed_Trade_Selling		
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+						check_variable = { selling_item = -1 }
+					}					
+				}
+			}
+			equipment_sell_click_enabled = {
+				ROOT = { has_political_power > 5}
+				country_exists = var:YFC.tradeable^YFC.selected
+				var:YFC.tradeable^YFC.selected = {
+					has_country_flag = Confirmed_Trade_Buying
+					NOT = {
+						has_country_flag = ongoing_trade_offer
+						has_war_with = YFC
+						has_idea = undisturbed_isolation
+						has_idea = isolation
+						has_idea = closed_economy
+						is_embargoed_by = YFC
+						is_embargoing = YFC
+						check_variable = { buying_item = -1 }
+					}					
+				}
+				OR = {
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@infantry_equipment}
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
+					}
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@support_equipment_1}
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
+					}
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@motorized_equipment }
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
+					}
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@artillery_equipment}
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
+					}		
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@anti_air_equipment}
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
+					}
+					AND = {
+						var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@anti_tank_equipment}
+						var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
+					}																																																													
+				}
+			}
+			equipment_sell_item_visible = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
+            }
+			equipment_buy_item_visible = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
+            }
+			equipment_buy_inc_click_enabled = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { YFC.buying_X^YFC_trade_nation_pos_var < 1.5 }}
+				var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
+			}
+			equipment_buy_dec_click_enabled = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { YFC.buying_X^YFC_trade_nation_pos_var > 0.5 }}
+				var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
+			}
+			equipment_sell_inc_click_enabled = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { YFC.selling_X^YFC_trade_nation_pos_var < 1.5 }}
+				var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
+			}
+			equipment_sell_dec_click_enabled = {
+				var:YFC.tradeable^YFC.selected = { check_variable = { YFC.selling_X^YFC_trade_nation_pos_var > 0.5 }}
+				var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
+			}
+
+			
 			yfc_nagornyv_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				YFC = {
 					owns_state = 214
 				}
 			}
 			yfc_bun_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				YFC = {
 					owns_state = 85
 					owns_state = 217
 				}
 			}
 			yfc_bun2_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				YFC = {
 					owns_state = 85
 					NOT = { owns_state = 217 }
 				}
 			}
 			yfc_sri_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				YFC = {
 					owns_state = 24
 				}
 			}
 			sri_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				country_exists = SRI
 			}
 			smg_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				SMG = {
 					owns_state = 15
 				}
 			}
 			spr_visible = { #messed up, it should be SPL
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				SPL = {
 					exists = yes
 				}
 			}
 			fft_ggr_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				FFT = {
 					owns_state = 33
 				}
 			}
 			ggr_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				GGR = {
 					exists = yes
 				}
 			}
 			crn_bun_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				CRN = {
 					owns_state = 217
 				}
 			}
 			gsr_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				GSR = {
 					owns_state = 10
 					NOT = { owns_state = 206 }
 				}
 			}
 			gdr_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				GDR = {
 					owns_state = 145
 					NOT = { owns_state = 206 }
 				}
 			}
 			gpg_cw_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				GPG = {
 					owns_state = 8
 					NOT = { owns_state = 206 }
 				}
 			}
 			gfg_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				GFG = {
 					owns_state = 158
 					OR = {
@@ -773,6 +707,7 @@ scripted_gui = {
 				}
 			}
 			gpg_visible = {
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 				206 = {
 					OR = {
 						is_owned_by = GPG
@@ -789,70 +724,182 @@ scripted_gui = {
 			}
 			bun_visible = {
 				country_exists = BUN
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 			}
-			gmd_enabled = {
+			gtr_visible = {
+				country_exists = GTR
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
+			}
+			srr_visible = {
+				country_exists = SRR
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
+			}
+			crn_visible = {
+				country_exists = CRN
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
+			}
+			tbt_visible = {
+				country_exists = TBT
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
+			}
+			fft_visible = {
+				country_exists = FTT
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
+			}
+			gmd_visible = {
 				country_exists = GMD
+				var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
 			}
         }
         effects = {
+			equipment_buy_inc_click = {
+				var:YFC.tradeable^YFC.selected = {
+					set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
+					set_temp_variable = { Cost_Diffrent_var = YFC.buying_cost^Nation_Pos }
+					divide_temp_variable = { Cost_Diffrent_var = YFC.buying_X^Nation_Pos }
+					YFC = { add_to_variable = {YFC.buying_X^Nation_Pos = 0.1}}
+					YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
+					multiply_temp_variable = {Cost_Diffrent_var = YFC.buying_X^Nation_Pos}
+					YFC = { set_variable = { YFC.buying_cost^Nation_Pos = Cost_Diffrent_var }}
+					YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
+				}
+
+			}
+			equipment_buy_dec_click = {
+				var:YFC.tradeable^YFC.selected = {
+					set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
+					set_temp_variable = { Cost_Diffrent_var = YFC.buying_cost^Nation_Pos }
+					divide_temp_variable = { Cost_Diffrent_var = YFC.buying_X^Nation_Pos }
+					YFC = { add_to_variable = {YFC.buying_X^Nation_Pos = -0.1}}
+					YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
+					multiply_temp_variable = {Cost_Diffrent_var = ROOT.buying_X^i}
+					YFC = { set_variable = { YFC.buying_cost^Nation_Pos = Cost_Diffrent_var }}
+					YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
+				}
+			}
+			equipment_sell_inc_click = {
+				var:YFC.tradeable^YFC.selected = {
+					set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
+					set_temp_variable = { Cost_Diffrent_var = YFC.selling_cost^Nation_Pos }
+					divide_temp_variable = { Cost_Diffrent_var = YFC.selling_X^Nation_Pos }
+					YFC = { add_to_variable = {YFC.selling_X^Nation_Pos = 0.1}}
+					YFC = { set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}}
+					multiply_temp_variable = {Cost_Diffrent_var = YFC.selling_X^Nation_Pos}
+					YFC = { set_variable = { YFC.selling_cost^Nation_Pos = Cost_Diffrent_var }}
+					YFC = { set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }}
+				}
+			}
+			equipment_sell_dec_click = {
+				var:YFC.tradeable^YFC.selected = {
+					set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
+					set_temp_variable = { Cost_Diffrent_var = YFC.selling_cost^Nation_Pos }
+					divide_temp_variable = { Cost_Diffrent_var = YFC.selling_X^Nation_Pos }
+					YFC = { add_to_variable = {YFC.selling_X^Nation_Pos = -0.1}}
+					YFC = { set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}}
+					multiply_temp_variable = {Cost_Diffrent_var = YFC.selling_X^Nation_Pos}
+					YFC = { set_variable = { YFC.selling_cost^Nation_Pos = Cost_Diffrent_var }}
+					YFC = { set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }}
+				}
+			}
+			equipment_buy_click = {
+				ROOT = {add_political_power = -5}
+				IF = {
+					limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}
+					var:YFC.tradeable^YFC.selected = {
+						set_country_flag = ongoing_trade_offer
+						country_event = {
+							id = YFC_event.37
+							hours = 1
+						}
+					}
+				}
+			}
+			equipment_sell_click = {
+				ROOT = {add_political_power = -5}
+				IF = {
+					limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}
+					var:YFC.tradeable^YFC.selected = { 
+						set_country_flag = ongoing_trade_offer
+						country_event = {
+							id = YFC_event.36
+							hours = 1
+						}
+					}
+				}	
+			}
+
 			bun_click = {
 				set_variable = { selected = 0 }
+				YFC_calc_trade_update_nation = yes
 			}
 			crn_click = {
 				set_variable = { selected = 1 }
+				YFC_calc_trade_update_nation = yes
 			}
 			crn_bun_click = {
 				set_variable = { selected = 1 }
+				YFC_calc_trade_update_nation = yes
 			}
 			srr_click = {
 				set_variable = { selected = 2 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gtr_click = {
 				set_variable = { selected = 9 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gpg_click = {
 				set_variable = { selected = 3 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gpg_cw_click = {
 				set_variable = { selected = 3 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gdr_click = {
 				set_variable = { selected = 6 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gsr_click = {
 				set_variable = { selected = 8 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gfg_click = {
 				set_variable = { selected = 7 }
+				YFC_calc_trade_update_nation = yes
 			}
 			ggr_click = {
 				set_variable = { selected = 10 }
+				YFC_calc_trade_update_nation = yes
 			}
 			fft_click = {
 				set_variable = { selected = 11 }
+				YFC_calc_trade_update_nation = yes
 			}
 			fft_ggr_click = {
 				set_variable = { selected = 11 }
+				YFC_calc_trade_update_nation = yes
 			}
 			smg_click = {
 				set_variable = { selected = 13 }
+				YFC_calc_trade_update_nation = yes
 			}
 			spr_click = {
 				set_variable = { selected = 14 }
+				YFC_calc_trade_update_nation = yes
 			}
 			sri_click = {
 				set_variable = { selected = 12 }
+				YFC_calc_trade_update_nation = yes
 			}
 			tbt_click = {
 				set_variable = { selected = 15 }
+				YFC_calc_trade_update_nation = yes
 			}
 			gmd_click = {
 				set_variable = { selected = 16 }
+				YFC_calc_trade_update_nation = yes
 			}
-        }
-		
-        properties = {
-	
         }
     }
 }

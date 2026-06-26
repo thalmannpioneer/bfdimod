@@ -282,7 +282,7 @@ guiTypes = {
 
 			instantTextboxType = { 
 				name = "equipment_sell_amount"
-				text = [?THIS.selling_amount|Y0] 
+				text = "[?YFC.selling_amount|Y0]"
 				position = { x = 280 y = 80 }
 				maxWidth = 100
 				format = centre
@@ -302,7 +302,7 @@ guiTypes = {
 
 			instantTextboxType = { 
 				name = "equipment_buy_amount"
-				text = [?THIS.buying_amount|Y0]
+				text = "[?YFC.buying_amount|Y0]"
 				position = { x = 280 y = 170 }
 				maxWidth = 100
 				format = centre
@@ -311,7 +311,7 @@ guiTypes = {
 
 			instantTextboxType = { 
 				name = "equipment_buy_cost"
-				text = "$[?ROOT.buying_cost^i|0]K([?ROOT.buying_X^i|1]x)"
+				text = "$[?YFC.buying_cost^0|0]K([?YFC.buying_X^0|1]x)"
 				position = { x = 315 y = 45 }
 				maxWidth = 200
 				format = centre
@@ -336,7 +336,7 @@ guiTypes = {
 
 			instantTextboxType = { 
 				name = "equipment_sell_cost"
-				text = "$[?ROOT.selling_cost^i|0]K([?ROOT.selling_X^i|1]x)" 
+				text = "$[?YFC.selling_cost^0|0]K([?YFC.selling_X^0|1]x)" 
 				position = { x = 315 y = 135 }
 				maxWidth = 200
 				format = centre
