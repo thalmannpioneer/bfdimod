@@ -6,7 +6,7 @@ country_event = {
 	id = BUN_YFC.1
 	title = BUN_YFC.1.t
 	desc = BUN_YFC.1.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC1
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -39,7 +39,7 @@ country_event = {
 	id = BUN_YFC.2
 	title = BUN_YFC.2.t
 	desc = BUN_YFC.2.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC2
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -86,7 +86,7 @@ country_event = {
 	id = BUN_YFC.3
 	title = BUN_YFC.3.t
 	desc = BUN_YFC.3.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC3
 
 	fire_only_once = yes
 	is_triggered_only = no
@@ -114,7 +114,7 @@ country_event = {
 	id = BUN_YFC.4
 	title = BUN_YFC.4.t
 	desc = BUN_YFC.4.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC4
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -146,7 +146,7 @@ country_event = { #Will be most likly moved to a diffrent event and this on woul
 	id = BUN_YFC.5
 	title = BUN_YFC.5.t
 	desc = BUN_YFC.5.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event4
 
 	is_triggered_only = yes
 
@@ -176,7 +176,7 @@ country_event = { #YFC sees this
 	id = BUN_YFC.6
 	title = BUN_YFC.6.t
 	desc = BUN_YFC.6.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC6
 
 	is_triggered_only = yes
 
@@ -292,7 +292,7 @@ country_event = { #YFC sees this
 	id = BUN_YFC.7
 	title = BUN_YFC.7.t
 	desc = BUN_YFC.7.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC7
 
 	is_triggered_only = yes
 
@@ -349,7 +349,7 @@ country_event = {
 	id = BUN_YFC.8
 	title = BUN_YFC.8.t
 	desc = BUN_YFC.8.desc
-	picture = GFX_Temp_event
+	picture = GFX_BUN_YFC8
 
 	is_triggered_only = yes
 

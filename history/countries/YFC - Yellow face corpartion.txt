@@ -6,10 +6,10 @@ set_research_slots = 0
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
 if = {
-	limit = { NOT = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		transport = 1
-	}
+    limit = { NOT = { has_dlc = "Man the Guns" } }
+    set_technology = {
+        transport = 1
+    }
 }
 
 set_stability = 0
@@ -23,64 +23,64 @@ add_equipment_to_stockpile = {
 }
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1" 
-	election_frequency = 48 
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 7
-	fascism = 9
-	neutrality = 78
-	communism = 6
+    democratic = 7
+    fascism = 9
+    neutrality = 78
+    communism = 6
 }
 
 
 #Anarchic Lands Idea
- set_variable = { var_idea_YFC_anarchic_lands_repair = 5 }
- set_variable = { var_idea_YFC_anarchic_lands_PP = -0.75 }
- set_variable = { var_idea_YFC_anarchic_lands_rail = 0 }
- set_variable = { var_idea_YFC_anarchic_lands_node = 0 }
+set_variable = { var_idea_YFC_anarchic_lands_repair = 5 }
+set_variable = { var_idea_YFC_anarchic_lands_PP = -0.75 }
+set_variable = { var_idea_YFC_anarchic_lands_rail = 0 }
+set_variable = { var_idea_YFC_anarchic_lands_node = 0 }
 
 #Sectors Idea (First two are for the idea and the last two are for the decisions)
- set_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
- set_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
- set_variable = { var_idea_YFC_TopHat_cost = 20 }
- set_variable = { var_idea_YFC_TopHat_influence = 1 }
- set_variable = { var_idea_YFC_TopHat_level = 1 }
+set_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+set_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+set_variable = { var_idea_YFC_TopHat_cost = 20 }
+set_variable = { var_idea_YFC_TopHat_influence = 1 }
+set_variable = { var_idea_YFC_TopHat_level = 1 }
 
- set_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
- set_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
- set_variable = { var_idea_YFC_Pipe_cost = 20 }
- set_variable = { var_idea_YFC_Pipe_influence = 1 }
- set_variable = { var_idea_YFC_Pipe_level = 1 }
+set_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
+set_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }
+set_variable = { var_idea_YFC_Pipe_cost = 20 }
+set_variable = { var_idea_YFC_Pipe_influence = 1 }
+set_variable = { var_idea_YFC_Pipe_level = 1 }
 
- set_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
- set_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
- set_variable = { var_idea_YFC_Beaker_cost = 20 }
- set_variable = { var_idea_YFC_Beaker_influence = 1 }
- set_variable = { var_idea_YFC_Beaker_level = 1 }
+set_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
+set_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
+set_variable = { var_idea_YFC_Beaker_cost = 20 }
+set_variable = { var_idea_YFC_Beaker_influence = 1 }
+set_variable = { var_idea_YFC_Beaker_level = 1 }
 
- set_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 } #Changed to monthly pop
- set_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
- set_variable = { var_idea_YFC_Hammer_cost = 20 }
- set_variable = { var_idea_YFC_Hammer_influence = 1 }
- set_variable = { var_idea_YFC_Hammer_level = 1 }
+set_variable = { var_idea_YFC_sectors_Hammer_construction = 0.05 } #Changed to monthly pop
+set_variable = { var_idea_YFC_sectors_Hammer_repair = 0.1 }
+set_variable = { var_idea_YFC_Hammer_cost = 20 }
+set_variable = { var_idea_YFC_Hammer_influence = 1 }
+set_variable = { var_idea_YFC_Hammer_level = 1 }
 
- set_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
- set_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
- set_variable = { var_idea_YFC_Taser_cost = 20 }
- set_variable = { var_idea_YFC_Taser_influence = 1 }
- set_variable = { var_idea_YFC_Taser_level = 1 }
+set_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
+set_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
+set_variable = { var_idea_YFC_Taser_cost = 20 }
+set_variable = { var_idea_YFC_Taser_influence = 1 }
+set_variable = { var_idea_YFC_Taser_level = 1 }
 
- set_variable = { var_sectors_combined_cost = 100 }
+set_variable = { var_sectors_combined_cost = 100 }
 
 #Show No Mercy Idea
- set_variable = { var_idea_YFC_mercy_attack = 0.05 }
- set_variable = { var_idea_YFC_mercy_speed = 0.04 }
- set_variable = { var_idea_YFC_mercy_morale = 0.03 }
- set_variable = { var_idea_YFC_raid_modifer = -0.15 } #Not part of idea but used in raids
+set_variable = { var_idea_YFC_mercy_attack = 0.05 }
+set_variable = { var_idea_YFC_mercy_speed = 0.04 }
+set_variable = { var_idea_YFC_mercy_morale = 0.03 }
+set_variable = { var_idea_YFC_raid_modifer = -0.15 } #Not part of idea but used in raids
 
 set_variable = {var_YFC_BUN_Anger = 1 } #Useless but needed for killing Neo-Bunch
 
@@ -155,24 +155,24 @@ add_to_array = { tradeable_count = 0 } #GMD
 #Adds YFC into trade array, meaning he will always be #0 in these
 
 add_to_array = {
-	array = global.yfc_tradable_countries
-	value = FROM.id
+    array = global.yfc_tradable_countries
+    value = FROM.id
 }
 add_to_array = {
-	array = YFC.selling_X
-	value = 1
+    array = YFC.selling_X
+    value = 1
 }
 add_to_array = {
-	array = YFC.buying_X
-	value = 1
+    array = YFC.buying_X
+    value = 1
 }
 add_to_array = {
-	array = YFC.buying_cost
-	value = 0
+    array = YFC.buying_cost
+    value = 0
 }
 add_to_array = {
-	array = YFC.selling_cost
-	value = 0
+    array = YFC.selling_cost
+    value = 0
 }
 
 recruit_character = YFC_yellow_face
@@ -187,8 +187,8 @@ recruit_character = YFC_blocky
 recruit_character = YFC_eraser
 
 add_equipment_to_stockpile = {
-	type = infantry_equipment
-	amount = 1500
+    type = infantry_equipment
+    amount = 1500
 }
 
 add_ideas = free_trade

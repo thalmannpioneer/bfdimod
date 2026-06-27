@@ -35,12 +35,12 @@ BFDI_game_start = {
         value = 0
     }
 
-	every_country = { #Why is this silly code not working????
+    every_country = { #Why is this silly code not working????
         country_event = {
             id = common_event.3
             days = 2
         }
-	}
+    }
 
     GGR = {
         activate_mission = GGR_anarchists_mission
@@ -783,49 +783,49 @@ YFC_pirates_GMD = {
 }
 
 YFC_calc_trade_relations_loop = {
-	set_temp_variable = { temp = 0 }
+    set_temp_variable = { temp = 0 }
     YFC_calc_trade_update_nation = yes
-	for_loop_effect = {
-		end = 16
-		value = temp
-		YFC_calc_trade_relations = yes
-	}
+    for_loop_effect = {
+        end = 16
+        value = temp
+        YFC_calc_trade_relations = yes
+    }
 }
 
 YFC_calc_trade_update_nation = {
-	var:YFC.tradeable^YFC.selected = {
-		set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
-		YFC = { set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}}
-		YFC = { set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }}
-		YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
-		YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
-		set_variable = { YFC.buying_amount = THIS.buying_amount }
-		set_variable = { YFC.selling_amount = THIS.selling_amount }
-	}
+    var:YFC.tradeable^YFC.selected = {
+        set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
+        YFC = { set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}}
+        YFC = { set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }}
+        YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
+        YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
+        set_variable = { YFC.buying_amount = THIS.buying_amount }
+        set_variable = { YFC.selling_amount = THIS.selling_amount }
+    }
 }
 
 YFC_calc_trade_relations = {
-	var:tradeable^temp = {
-		save_event_target_as = curr
-	}
-	set_temp_variable = { total_modifier = YFC.opinion@event_target:curr }
-	set_temp_variable = { additional_modifier = tradeable_count^temp }
-	multiply_temp_variable = { additional_modifier = 5 }
-	if = {
-		limit = { check_variable = { total_modifier > 40 } }
-		set_temp_variable = { additional_modifier = 40 }
-	}
-	add_to_temp_variable = { total_modifier = additional_modifier }
-	
-	if = {
-		limit = { check_variable = { total_modifier < 0 } }
-		set_variable = { tradeable_relation^temp = 0 }
-	}
-	else_if = {
-		limit = { check_variable = { total_modifier < 40 } }
-		set_variable = { tradeable_relation^temp = 1 }
-	}
-	else = {
-		set_variable = { tradeable_relation^temp = 2 }
-	}
+    var:tradeable^temp = {
+        save_event_target_as = curr
+    }
+    set_temp_variable = { total_modifier = YFC.opinion@event_target:curr }
+    set_temp_variable = { additional_modifier = tradeable_count^temp }
+    multiply_temp_variable = { additional_modifier = 5 }
+    if = {
+        limit = { check_variable = { total_modifier > 40 } }
+        set_temp_variable = { additional_modifier = 40 }
+    }
+    add_to_temp_variable = { total_modifier = additional_modifier }
+
+    if = {
+        limit = { check_variable = { total_modifier < 0 } }
+        set_variable = { tradeable_relation^temp = 0 }
+    }
+    else_if = {
+        limit = { check_variable = { total_modifier < 40 } }
+        set_variable = { tradeable_relation^temp = 1 }
+    }
+    else = {
+        set_variable = { tradeable_relation^temp = 2 }
+    }
 }
