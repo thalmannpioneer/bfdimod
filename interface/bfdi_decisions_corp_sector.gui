@@ -37,6 +37,8 @@ guiTypes = {
 				name = "sector_military"
 				spriteType = "GFX_decisions_sector_military"
 				position = { x = 50 y = 60 }
+				pdx_tooltip = YFC_tophat
+				pdx_tooltip_delayed  = idea_YFC_TopHat_desc
 			}
 
 			instantTextboxType = {
@@ -83,6 +85,8 @@ guiTypes = {
 				name = "sector_railway"
 				spriteType = "GFX_decisions_sector_railway"
 				position = { x = 300 y = 60 }
+				pdx_tooltip = YFC_Pipe
+				pdx_tooltip_delayed  = YFC_Pipe_desc
 			}
 
 			instantTextboxType = {
@@ -129,6 +133,8 @@ guiTypes = {
 				name = "sector_science"
 				spriteType = "GFX_decisions_sector_science"
 				position = { x = 50 y = 460 }
+				pdx_tooltip = YFC_beaker
+				pdx_tooltip_delayed  = idea_YFC_Beaker_desc
 			}
 
 			instantTextboxType = {
@@ -175,6 +181,8 @@ guiTypes = {
 				name = "sector_construction"
 				spriteType = "GFX_decisions_sector_construction"
 				position = { x = 300 y = 460 }
+				pdx_tooltip = YFC_hammer
+				pdx_tooltip_delayed  = idea_YFC_Hammer_desc
 			}
 
 			instantTextboxType = {
@@ -221,6 +229,8 @@ guiTypes = {
 				name = "sector_electronics"
 				spriteType = "GFX_decisions_sector_electronics"
 				position = { x = 180 y = 840 }
+				pdx_tooltip = YFC_taser
+				pdx_tooltip_delayed  = idea_YFC_Taser_desc
 			}
 
 			instantTextboxType = {
