@@ -111,6 +111,12 @@
 		
 		attach = { 	name = "person"			person = "object_gfx_gtr_rider_entity" }
 	}
+	entity = {
+		clone = "cavalry_entity"
+		name = "YFC_cavalry_entity"
+		
+		attach = { 	name = "person"			person = "object_gfx_yfc_rider_entity" }
+	}
 	
 	entity = {
 		clone = "cavalry_entity"
@@ -133,6 +139,12 @@
 		name = "GTR_cavalry_2_entity"
 		
 		attach = { 	name = "person"			person = "object_gfx_gtr_rider_entity" }
+	}
+	entity = {
+		clone = "cavalry_2_entity"
+		name = "YFC_cavalry_2_entity"
+		
+		attach = { 	name = "person"			person = "object_gfx_yfc_rider_entity" }
 	}
 	
 	entity = {
@@ -157,6 +169,12 @@
 		
 		attach = { 	name = "person"			person = "object_gfx_gtr_rider_entity" }
 	}
+	entity = {
+		clone = "generic_cavalry_rifle_combined_entity"
+		name = "YFC_cavalry_rifle_combined_entity"
+		
+		attach = { 	name = "person"			person = "object_gfx_yfc_rider_entity" }
+	}
 	
 	entity = {
 		clone = "cavalry_entity"
@@ -179,6 +197,12 @@
 		name = "GTR_cavalry_mg_combined_entity"
 		
 		attach = { 	name = "person"			person = "object_gfx_gtr_rider_entity" }
+	}
+	entity = {
+		clone = "generic_cavalry_mg_combined_entity"
+		name = "YFC_cavalry_mg_combined_entity"
+		
+		attach = { 	name = "person"			person = "object_gfx_yfc_rider_entity" }
 	}
 
 	entity = {

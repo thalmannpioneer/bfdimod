@@ -531,7 +531,7 @@ scripted_gui = {
 
         triggers = {
             equipment_buy_click_enabled = {
-                ROOT = { has_political_power > 5}
+                YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
                     has_country_flag = Confirmed_Trade_Selling
@@ -548,7 +548,7 @@ scripted_gui = {
                 }
             }
             equipment_sell_click_enabled = {
-                ROOT = { has_political_power > 5}
+                YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
                     has_country_flag = Confirmed_Trade_Buying
@@ -565,27 +565,27 @@ scripted_gui = {
                 }
                 OR = {
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@infantry_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@infantry_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@support_equipment_1}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@support_equipment_1}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@motorized_equipment }
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@motorized_equipment }
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@artillery_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@artillery_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@anti_air_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_air_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < ROOT.num_equipment@anti_tank_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_tank_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
                     }
                 }
@@ -743,7 +743,7 @@ scripted_gui = {
                 var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
             fft_visible = {
-                country_exists = FTT
+                country_exists = FFT
                 var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
             gmd_visible = {
@@ -775,7 +775,7 @@ scripted_gui = {
                     divide_temp_variable = { Cost_Diffrent_var = YFC.buying_X^Nation_Pos }
                     YFC = { add_to_variable = {YFC.buying_X^Nation_Pos = -0.1}}
                     YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
-                    multiply_temp_variable = {Cost_Diffrent_var = ROOT.buying_X^i}
+                    multiply_temp_variable = {Cost_Diffrent_var = YFC.buying_X^Nation_Pos}
                     YFC = { set_variable = { YFC.buying_cost^Nation_Pos = Cost_Diffrent_var }}
                     YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
                 }
@@ -805,7 +805,7 @@ scripted_gui = {
                 }
             }
             equipment_buy_click = {
-                ROOT = {add_political_power = -5}
+                YFC = {add_political_power = -5}
                 IF = {
                     limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}
                     var:YFC.tradeable^YFC.selected = {
@@ -818,7 +818,7 @@ scripted_gui = {
                 }
             }
             equipment_sell_click = {
-                ROOT = {add_political_power = -5}
+                YFC = {add_political_power = -5}
                 IF = {
                     limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}
                     var:YFC.tradeable^YFC.selected = {
@@ -854,6 +854,25 @@ scripted_gui = {
             gpg_click = {
                 set_variable = { selected = 3 }
                 YFC_calc_trade_update_nation = yes
+				IF = {
+					limit = { country_exists = GPG }
+					set_variable = { selected = 3 }
+				}
+				ELSE_IF = {
+					limit = { country_exists = GDR }
+					set_variable = { selected = 6 }
+				}
+				ELSE_IF = {
+					limit = { country_exists = GFG }
+					set_variable = { selected = 7 }
+				}
+				ELSE_IF = {
+					limit = { country_exists = GSR }
+					set_variable = { selected = 8 }
+				}
+				ELSE = {
+					set_variable = { selected = 3 }
+				}
             }
             gpg_cw_click = {
                 set_variable = { selected = 3 }

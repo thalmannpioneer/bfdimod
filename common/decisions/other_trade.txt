@@ -175,6 +175,10 @@ decision_other_trade_category = {
 				add = 10
 				stockpile_ratio = {archetype = anti_tank_equipment ratio < 1}
 			}
+			modifier = {
+				add = 5
+				has_war = yes
+			}
 		}
 	}
 
@@ -346,8 +350,12 @@ decision_other_trade_category = {
 		ai_will_do = {
 			base = 0
             modifier = {
-				add = 10
+				add = 5
 				has_equipment = {infantry_equipment > 1000}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {infantry_equipment > 5000}
 			}
 			modifier = {
 				add = 10
@@ -368,6 +376,10 @@ decision_other_trade_category = {
 			modifier = {
 				add = 10
 				has_equipment = {anti_tank_equipment > 500}
+			}
+			modifier = {
+				add = -40
+				has_war = yes
 			}
 		}
 	}

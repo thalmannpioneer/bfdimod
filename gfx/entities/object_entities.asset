@@ -151,6 +151,13 @@ entity = {
 
 	get_state_from_parent = yes
 }
+entity = {
+	name = "helmet_yfc_entity"
+	pdxmesh = "yfc_helmet_mesh"
+	scale = 1
+
+	get_state_from_parent = yes
+}
 
 entity = {
 	name = "object_gfx_infantry_entity"
@@ -201,6 +208,16 @@ entity = {
 
 	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
+
+	scale = 1.5
+}
+entity = {
+	clone = "object_gfx_infantry_entity"
+	name = "object_gfx_yfc_infantry_entity"
+	pdxmesh = "bomby_mesh"
+
+	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 
 	scale = 1.5
 }
@@ -333,6 +350,16 @@ entity = {
 
 	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
+
+	scale = 0.7
+}
+entity = {
+	clone = "object_gfx_rider_entity"
+	name = "object_gfx_yfc_rider_entity"
+	pdxmesh = "bomby_mesh"
+
+	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 
 	scale = 0.7
 }
