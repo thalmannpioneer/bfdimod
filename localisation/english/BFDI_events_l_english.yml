@@ -849,7 +849,7 @@
  YFC_event.24.a: "A great investment."
 
  YFC_event.25.t: "Beacons of the East" #Good
- YFC_event.25.desc: "Our investments into our eastern territories have born fruits beyond our wildest capitalistic dreams! Our returns have been, quite frankly, absurd. Every Sectorial's pocket has been dashed more than sufficiently, and even the average menial laborer has seen a more than noticeable pay increase. Despite Peoniele's unsatisfactory growth, according to some of the architects who were designing the city, it seems to have become sort of a tourist attraction across Goiky, due to its natural beauty. Sure, 'natural beauty' isn't all that important, but everyone knows that a tourist is just a walking wallet. Yoyleton has become a bastion of Northern trade, with objects from all over paying visits just to buy and sell. Some independent companies have even started profiting up there, enspiring the competition needed to get our employees to work harder. Of course, these new companies still pay taxes, and who exactly do those tax dollars come back to?"
+ YFC_event.25.desc: "Our investments into our eastern territories have born fruits beyond our wildest capitalistic dreams! Our returns have been, quite frankly, absurd. Every Sectorial's pocket has been dashed more than sufficiently, and even the average menial laborer has seen a more than noticeable pay increase. Despite Peoniele's unsatisfactory growth, according to some of the architects who were designing the city, it seems to have become sort of a tourist attraction across Goiky, due to its natural beauty. Sure, 'natural beauty' isn't all that important, but everyone knows that a tourist is just a walking wallet. Yoyleton has become a bastion of Northern trade, with objects from all over paying visits just to buy and sell. Some independent companies have even started profiting up there, inspiring the competition needed to get our employees to work harder. Of course, these new companies still pay taxes, and who exactly do those tax dollars come back to?"
  YFC_event.25.a: "Back to us!"
 
  YFC_event.26.t: "Missed Opportunities" #Bad
@@ -991,7 +991,7 @@
  YFC_event.55.a: "It shall be."
 
  YFC_event.56.t: "Permanent Mercenaries?"
- YFC_event.56.desc: "The Bunchivists have stated that it is imperative that we have a standing army. They say that our model -- buying mercenaries for a time and directly administering them -- is inefficient. These calls do seem to come from a place of concern, as, although it is cheaper to not keep (and pay for) a military at all times, it does come with the concern of being unprepared for surprise attacks. Now, of course, we do have a choice in this: there are some at the company who are worried about the pricing here, to the point that they believe it is idiotic for us to do this at all. \nThough, Tophat, of the Military Sector, is quite interested in this idea, and has pushed for the company to buy out the Unnamed Mercenary Brotherhood. He cites the strength found in the company, stating that it has great potential in future conflicts, as he's taken to studying the military tactics of the Bunch.\nThere is, of course, dissent in all forms, everywhere, but ultimately, there is only one correct choice."
+ YFC_event.56.desc: "The Bunchivists have stated that it is imperative that we have a standing army. They say that our model -- buying mercenaries for a time and directly administering them -- is inefficient. These calls do seem to come from a place of concern, as, although it is cheaper to not keep (and pay for) a military at all times, it does come with the concern of being unprepared for surprise attacks. Now, of course, we do have a choice in this: there are some at the company who are worried about the pricing here, to the point that they believe it is idiotic for us to do this at all. \nThough, Top Hat, of the Military Sector, is quite interested in this idea, and has pushed for the company to buy out the Unnamed Mercenary Brotherhood. He cites the strength found in the company, stating that it has great potential in future conflicts, as he's taken to studying the military tactics of the Bunch.\nThere is, of course, dissent in all forms, everywhere, but ultimately, there is only one correct choice."
  YFC_event.56.a: "Cherries!"
  YFC_event.56.b: "Grapes!"
  YFC_event.56.c: "The Brotherhood!"
@@ -1005,7 +1005,7 @@
  #In my head it would be TBT gets an event and either demands more, agrees, or rejects the offer. 
 
  YFC_event.58.t: "Piggy Banks"
- YFC_event.58.desc: "Following our escalation in the East, a question has begged to rear its head: How are we to ensure our profits don't lull during this conflict? Sure, we have the budget to fund our efforts, however, we still need not be wasteful; really, we should make this operation should fund itself. The sectorials have given their differing thoughts upon this topic. Some had suggested cuts in the defense budget, suggestions which Top Hat ferociously attacked. Arguing with Tophat is so frequently the death of a discussion, so, rapidly, the sectorials began to debate about the managing of our corporate assets. Beaker suggested selling of old products and resources. Pipe thought to lay off some lesser employees. Lastly, Taser thought funding in the population centers might have a positive effect in the long run. All would hurt the company in the short term, yes, but the prospects of what the East might hold are sure to make it worth its while. After some hours of discussions, Yellow Face decided to..."
+ YFC_event.58.desc: "Following our escalation in the East, a question has begged to rear its head: How are we to ensure our profits don't lull during this conflict? Sure, we have the budget to fund our efforts, however, we still need not be wasteful; really, we should make this operation should fund itself. The sectorials have given their differing thoughts upon this topic. Some had suggested cuts in the defense budget, suggestions which Top Hat ferociously attacked. Arguing with Top Hat is so frequently the death of a discussion, so, rapidly, the sectorials began to debate about the managing of our corporate assets. Beaker suggested selling of old products and resources. Pipe thought to lay off some lesser employees. Lastly, Taser thought funding in the population centers might have a positive effect in the long run. All would hurt the company in the short term, yes, but the prospects of what the East might hold are sure to make it worth its while. After some hours of discussions, Yellow Face decided to..."
  YFC_event.58.a: "Sell off some old products and resources."
  YFC_event.58.b: "Lay off some employees."
  YFC_event.58.c: "Cut some funding to the population centers."
@@ -1166,7 +1166,7 @@
  YFC_BUN.15.desc: "A major engagement broke out today between Top Hat's security forces and Bunchivist terrorists. It was the largest to date, rivaling that of even some of the battles in the war. It took place in some farmlands near Taptop with most of the area being set ablaze. Nothing out of the ordinary besides the scale, however the events before the engagement are what was interesting to higher command. Reports from local civilians and even security forces state that Top Hat's men opted to raid one of the barns, then an argument broke out. The argument turned to small scuffles, which turned to fights, and now, we're here.\nMany Neo-Bunchivist demonstrators are calling us hypocrites. Our war agains the Bunch was purely justified based on the fact that they were raiders, and now our private police are doing the same thing as them.\nWhat we could do is... sweep it under the rug... Top Hat did say it was likely that his sector would no longer have any foreign support if something like this got out, since all Bunchivists involved were civillians. While bad, this could curb some of the growing influence that the military sector had been getting... our pick?"
  YFC_BUN.15.a: "Blame the whole event on Top Hat."
  YFC_BUN.15.b: "Apologize and pay for the damages."
- YFC_BUN.15.c: "Maybe an... 'engagement' could be made."
+ YFC_BUN.15.c: "Maybe an... \"arrangement\" could be made."
 
  YFC_BUN.16.t.a: "Rights of Defence." #IF revolt somehow already happened
  YFC_BUN.16.desc.a: "This was an, in hindsight, an easy mission. It shouldn't have taken any more than a couple of months to pacify the former, now neo, Bunchivist populations. But now, the Neo-Bunchivists are armed, even moreso than our forces. It has been much of a headache for us and the security forces fighting this revolt. At this rate, if things don't get better, we may have much more problems...\n\nThose were our thoughts this morning. \nThis afternoon, we discovered that some of the profit and expense numbers from one of our sectors were miscalculated, and that we have a surplus of funds waiting to be used."
@@ -1276,35 +1276,35 @@
  YFC_sector.4.a: "Taser's sector is Taser's sector."
  YFC_sector.4.b: "Beaker gives us better returns."
 
- YFC_sector.5.t: "Top Hat vs Pipe arguement" #zdubbz
- YFC_sector.5.desc: "Both are fighting over fighting resistance and/or useage of police/media"
- YFC_sector.5.a: "Side with Top Hat"
- YFC_sector.5.b: "Side with Pipe"
+ YFC_sector.5.t: "Sector Update: An Argument Over Media"
+ YFC_sector.5.desc: "During yesterday's discussions, a small scale argument between two Sectorials, namely, Top Hat and Beaker, became the central issue of the night. As an educated object, Beaker had become quite concerned over the control that the Military Sector seemed to be imposing over Yellow Facer Media. As is known, all television in Corporate lands are created by the state. We do not have an \"Entertainment Sector,\" who would even care for that? So, whichever sector feels so inclined to create television programming sends it on the airwaves. Unsurprisingly, the only Sector with enough spare time to do this is Top Hat's military sector, who Beaker says is \"essentially making state propaganda,\" and \"should not be trusted.\" Top Hat, of course, has denied these claims, however, he is also refusing to frame making state propaganda as a bad thing? Throughout the discussion, he repeatedly made statements like \"This accusation is false, though, what might be wrong with state propaganda?\" ... Why must our Sectorials be so strange? Regardless, Beaker is asking us to ban the military sector from creating television programming, stating that propaganda undermines the average object's intelligence (does the average object have intelligence?). Top Hat has simply opted for repeatedly saying \"No.\""
+ YFC_sector.5.a: "Let Top Hat make his propaganda."
+ YFC_sector.5.b: "Beaker is right!"
 
  YFC_sector.6.t: "Sector Update: Purchasing the Government?"
- YFC_sector.6.desc: "Top Hat came to Yellow Faces's office late last night, with a large briefcase. He said that he wanted a couple of laws passed lickity split, and opened the briefcase to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Now, some may say it to be unfair that we may undergo this dealing..."
- YFC_sector.6.a: "However, we care not for the opinions of the poor."
- YFC_sector.6.b: "And they would be correct, for it would be highly dishonest."
+ YFC_sector.6.desc: "Top Hat came to Yellow Faces's office late last night, with a large briefcase. He said that he wanted a couple of laws passed lickity split, and opened the briefcase to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Top Hat, however, it could also be beneficial for us in the short term."
+ YFC_sector.6.a: "Let us profit."
+ YFC_sector.6.b: "This would set a horrible precedent!"
 
- YFC_sector.7.t: "Pipe Bribe" #zdubbz
- YFC_sector.7.desc: "Pipe wants to Bribe us"
- YFC_sector.7.a: "Take the Bribe"
- YFC_sector.7.b: "Decline the Bribe"
+ YFC_sector.7.t: "Sector Update: Purchasing the Government?" 
+ YFC_sector.7.desc: "Pipe came to Yellow Faces's office late last night, with a large blanket. They said that they wanted some light company reforms A-S-A-P, and untied the blanket to reveal incredible amounts of money. From where exactly they procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Pipe, however, it could also be beneficial for us in the short term."
+ YFC_sector.7.a: "Let us Profit."
+ YFC_sector.7.b: "This would set a horrible precedent!"
 
- YFC_sector.8.t: "Beaker Bribe" #zdubbz
- YFC_sector.8.desc: "Beaker wants to Bribe us"
- YFC_sector.8.a: "Take the Bribe"
- YFC_sector.8.b: "Decline the Bribe"
+ YFC_sector.8.t: "Sector Update: Purchasing the Government?"
+ YFC_sector.8.desc: "Beaker came to Yellow Faces's office late last night, with a large dufflebag. She said that he wanted more employees to be hired to her sector, and opened the bag to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Beaker, however, it could also be beneficial for us in the short term."
+ YFC_sector.8.a: "Let us Profit."
+ YFC_sector.8.b: "This would set a horrible precedent!"
 
- YFC_sector.9.t: "Hammer Bribe" #zdubbz
+ YFC_sector.9.t: "Hammer Bribe" #hammer doesnt bribe
  YFC_sector.9.desc: "Hammer wants to Bribe us"
  YFC_sector.9.a: "Take the Bribe"
  YFC_sector.9.b: "Decline the Bribe"
 
- YFC_sector.10.t: "Taser Bribe" #zdubbz
- YFC_sector.10.desc: "Taser wants to Bribe us"
- YFC_sector.10.a: "Take the Bribe"
- YFC_sector.10.b: "Decline the Bribe"
+ YFC_sector.10.t: "Sector Update: Purchasing the Government?" 
+ YFC_sector.10.desc: "Taser came to Yellow Faces's office late last night, with a large dufflebag. They said that they needed higher corporate focus on their sector, and opened the bag to reveal incredible amounts of money. From where exactly they procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Taser, however, it could also be beneficial for us in the short term."
+ YFC_sector.10.a: "Let us Profit."
+ YFC_sector.10.b: "This would set a horrible precedent!"
 
  YFC_sector.11.t: "Pipe vs Hammer vs Taser arguement" #zdubbz
  YFC_sector.11.desc: "They are fighting over something idk (Maybe construction/funds)"
@@ -1387,8 +1387,8 @@
  BUN_YFC.5.a: "We're united till the end!"
  BUN_YFC.5.b: "We'll chart our own course for now."
 
- BUN_YFC.6.t: "A Ceasefire?" #YFC sees this
- BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The Sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to attempt to 'save face,' as the kids say. The offer itself is simple, us losing all gained territory, in exchange for them giving us some resource rights; a large sum of money, and us both signing a pact of non-aggression. Though it seems like quite the compromise, the Sectorials believe the opposite. Top Hat says that 'diverting excess resources to the war could've led us to a quicker victory,' and that the 'incompetence of management' was to blame for this affair. The others agree with him, unfortunately. Frankly, we have not been devoting as much to this as possible, and Top Hat did indeed say he had a better plan for this war, but it would take a significant amount of resources and planning. Should we go through with the ceasefire, or wait for Top Hat to be able to enact his plan?"
+ BUN_YFC.6.t: "A Ceasefire?" #YFC sees this 
+ BUN_YFC.6.desc: "Our ongoing war to suppress those Neo-Bunch anarchists has hit a deadlock. The Sectorials have gotten rowdy, raving about our terrible handling of the war. So when we received an offer from the Neo-Bunch regarding a potential ceasefire, it seemed like a good option to attempt to \"save face,\" as the kids say. The offer itself is simple, us losing all gained territory, in exchange for them giving us some resource rights; a large sum of money, and us both signing a pact of non-aggression. Though it seems like quite the compromise, the Sectorials believe the opposite. Top Hat says that \"diverting excess resources to the war could've led us to a quicker victory,\" and that the \"incompetence of management\" was to blame for this affair. The others agree with him, unfortunately. Frankly, we have not been devoting as much to this as possible, and Top Hat did indeed say he had a better plan for this war, but it would take a significant amount of resources and planning. Should we go through with the ceasefire, or wait for Top Hat to be able to enact his plan?"
  BUN_YFC.6.a: "Agree to the Ceasefire." #Still the same
  BUN_YFC.6.b: "Give Top Hat time." #YFC ingores the idea of a Ceasefire
 
@@ -1505,11 +1505,11 @@
  GTR_event.20.a: "...but we shall all move on."
 
  GTR_event.21.t: "Bossy Bot" #zdubbz; event abt golf ball being too headstrong in terms of govt
- GTR_event.21.desc: "'Tennis Ball, you are too herbivorous!' - Now Golfball is saying it out loud.\n\n'To survive, we need tougher measures! We need a clear plan and smart leadership, smart objects like ME!'\n\nGB's interrupting the awkward silence with a continuation.\n'We can't rely on these fools from the city, we need a strong government!'\n\nTennis Ball looked down at the table."
- GTR_event.21.a: "'Awwwww, okaaaaaaaaaaay'"
+ GTR_event.21.desc: "\"Tennis Ball, you're acting weak! This is a time of confusion for everyone, we need strong, guiding leadership!\" Golf Ball's volume raised further. For the last few hours, the two had been attempting to calmly discuss the manner in which the two should govern. The universe's heat death would come sooner than a calm discussion about this topic between the two. Tennis Ball, despite favoring the highly radical reforms that a sector of the populace seemed to favor, kept quiet. He always attempted to appear more reserved in his beliefs, moving the goal post further and further with each subsequent conversation, but today discussions boiled over. Golf Ball was screaming at the top of her lungs about the insolence she percieved in him. And, of course, Tennis Ball obliged, for the moment."
+ GTR_event.21.a: "\"Awwwww, okaaaaaaaaaaay\""
 
- GTR_event.22.t: "Old Connections" #zdubbz
- GTR_event.22.desc: "Entering Announcergrad, the Calsand parliamentarians saw an ordinary goikean town, as battered by crisis and devastation as their homeland. On the streets, they saw cheerful objects who believed in the future. There was reason to believe, as the situation had improved significantly over the past month. Things improved in Casland too: the noise of political unrest died down, and the streets stopped ringing with murders.\n\nFinding a small building with a sign reading \"Goiky University Administration\", three objects entered inside.\n\n\n...- \"HAVE YOU DECIDED TO SQUANDER ALL OUR BELONGINGS?!\"\nGolfball flared up with anger when she heard Tennis Ball agree to the parliamentarians' proposal.\n\n\"I think the Republic needs allies. You're just too biased!\" - Tennis Ball resisted."
+ GTR_event.22.t: "Old Connections"
+ GTR_event.22.desc: "After a long day of alternating between cars, trains, and walking on foot, a delegation of people from Casland finally arrived in Announcergrad. Looking around for a while, they found similarities between that city and theirs. Announcergrad was clearly a city that had seen its fair share of violence, as did Casland, but there was a certain uniqueness about Announcergrad. Upon interviewing a random object they found on the street, one Uranium, they discovered that, despite being one of the few people he knew that survived the turmoil in the city, he was still hopeful for better days. He seemed almost cheerful, a stark contrast to the rubble behind him. Seeing as the situation had improved within the past couple months, who could blame objects like him for believing in the University Administration? This thought enlightened the delegation. Things could certainly improve in Casland, too. Political unrest had been dying down, violence had all but disappeared, people felt safe enough to have public outings in the city again. They just needed to make their people believe things would keep getting better.\n\nInterviewing random University students and alumni was not the goal of this excursion, however. The delegation, now in front of a small building labelled \"South Goiky University Administration,\" took one last gaze at the city before entering. \n\nAnd after a short discussion with Golf Ball and Tennis Ball, they quickly understood why the population was so sure of their future. Encountering the two in the middle of a tender conversation, Golf Ball's demeanor quickly shifted as she noticed the delegation, screaming \"WHAT PURPOSE DO YOU HAVE IN THIS BUILDING?\"\nTennis Ball quickly followed in saying \"You must be the delegation from Casland, we're happy to have you!\" The contrast between the two's approach created a very firm, yet very soft governing voice, just what a people needed to feel secure in times like these. After a short bit of discussions, they couldn't fully convince Golf Ball to enter into an alliance with the good people over in Casland, so, it came down to Tennis Ball's verdict."
  GTR_event.22.a: "Let's make contacts with Casland."
  GTR_event.22.b: "Send 'em back!"
 
@@ -1536,11 +1536,11 @@
  GTR_event.27.desc: "Thanks to the scientific collaboration between Casland and Announcergrad, a decision was made between the University of Goiky and Casland University to create a unified research community through which objects can share contemporary problems in the natural sciences and other disciplines. This will significantly strengthen cooperation between [?206.owner.GetName] and the Technocratic Republic."
  GTR_event.27.a: "Glory to our Science!"
 
- GTR_event.28.t: "Homesickness" #zdubbz
+ GTR_event.28.t: "Homesickness"
  GTR_event.28.desc: "\"Hi, Mom.\n\nHow are you? Things are now better for you there, as I've heard. Dad read in the newspapers that you have electricity again at home.\nThings aren't easy here. Dad and the other adults had to build a house out of REAL TREES themselves! But at least we're safe here. I can go for walks as much as I want! You was always forbidding me this at home! Dad even made a swing set for me and my friends!\nDad feels better too, I can feel it. He was always so nervous in the city, but now he breathes easier. But he's worried about you.\nI'm worried about you too. We all want to go home as soon as possible!\n\nThey say we don't have to be afraid to return now. That the border has opened. Dad says the same. But he's always arguing with others. They say he's a traitor. But my Dad isn't a traitor! We just want to go home! How is that traitorous? :(\n\nIt's hard to send letters here, the mail doesn't come often, and Dad says the postman is a bostard. I don't know what that means, but it's probably bad.\n\nAnyway, Mom, wait for us, we'll be home soon!\nWe all hope you are fine!\""
  GTR_event.28.a: "Good Luck, Little One!"
 
- GTR_event.29.t: "Gold Rush" #zdubbz
+ GTR_event.29.t: "Gold Rush"
  GTR_event.29.desc: "A backwater bar on the outskirts of Wilopede had been full of strangers the last few evenings. No one asked names, and why would they? Nobody really cares here. Most of the customers here now are profit hunters who have forgotten the concept of home, and just seeking for some profit.\n\n\"I'm telling you, this branch will be one of the most profitable in all of Goiky! Brother, have you heard about the artificial crystals from Announcergrad? And about the flowers in Greenheart?\nThis produt is crazy! Thugs will tear you apart for it if you decide to transport it across the northern plain. Now imagine the opportunities that the railway opens up!\"\n\nA drunk-ish Cotton traced his finger across the stained map, tracing the trajectory of the newly opened Lofty-Announcergrad line. Pebble hung on his every word, as if under a spell, and the other objects around him weren't above listening, either."
  GTR_event.29.a: "\"Tell more, tell more!\""
 
@@ -1548,7 +1548,7 @@
  GTR_event.30.desc: "Thanks to our cooperation with [SRR.GetName] we managed to incorporate the city of Lofty! This will massively improve our position in the north and make our economical condition better."
  GTR_event.30.a: "Wonderful!"
 
- GTR_event.31.t: "Professional Etiquette" #zdubbz
+ GTR_event.31.t: "Professional Etiquette"
  GTR_event.31.desc: "A gloomy rain pours down on the backstreets of the Announcergrad. A lone lamp shines through the thickly curtained windows of a nondescript gray building. \"Where the hell is he? The meeting's been going on for half an hour already.\"\nNotes glanced nervously at his watch, drumming his fingers on the table.\n\n\"Why do you even think we can trust him? Where did he even come from?\"\n\"I already told you he's from Casland, and that the subject is as trusted and reliable as a Greenport watch. He'll be here any minute.\"\n\nA rattling sound in the front hall. Everyone glanced at the entrance to the room, but saw nothing.\n\n\"Gentlemen, look a little lower. I am here.\""
  GTR_event.31.a: "\"Told ya!\""
 
@@ -1564,15 +1564,15 @@
  GTR_event.34.desc: "As a result of Technocrats' espionage activities in our country, many of our scientists fled to Announcergrad with the support of Golfball intelligence. This will seriously impact our scientific potential, and we will need time to fill the vacancies with new personnel."
  GTR_event.34.a: "Stupid Bossy Bot!"
 
- GTR_event.35.t: "Democratization" #zdubbz
+ GTR_event.35.t: "Democratization"
  GTR_event.35.desc: "\"Any Announcergrad object, regardless of gender, limb count, or mental abilities, has the right to vote, express dissent, run for office, and be elected to the Announcergrad Council. This right is unconditionally granted to all objects of the city.\"\n\nTennis Ball stands still in anticipation of the crowd's reaction."
  GTR_event.35.a: "Roaring Applause."
 
- GTR_event.36.t: "Presidency" #zdubbz
+ GTR_event.36.t: "Presidency"
  GTR_event.36.desc: "Tennis Ball's political reforms were met with a great warmth among the objects of Announcergrad. Democratization and the formation of fully fledged civil institutions helped establish the Technocratic Republic as a fully fledged state, where all objects could benefit from the fruits of science and technological progress."
  GTR_event.36.a: "Long live The Republic!"
 
- GTR_event.37.t: "Dead Weight of Morality" #zdubbz
+ GTR_event.37.t: "Dead Weight of Morality"
  GTR_event.37.desc: "Golfball was particularly nervous about her evening brainstorming today. The question made her shudder several times in her comfy office.\n\n\"NO ONE in the old Goiky did care about weapons development. That makes total sense. But why don't we want to do it NOW?\nWhat's stopping my scientists from now starting to develop weapons\"\n\nAnd, suddenly, thought pierced her brain.\nThe reluctance to kill and the feeling of responsibility for killing hinders the creation of new types of weapons.\nThis dead weight needs to be shed."
  GTR_event.37.a: "Science is above these prejudices."
 
@@ -1580,7 +1580,7 @@
  GTR_event.38.desc: "Thanks to Golfball's rigorous reforms aimed at supporting the scientific field and transforming the Technocratic Republic into a fully-fledged state with a self-defense force capable of defending itself, Golfball has gained enormous support. The time has come to finally prioritize scientific development for the Republic!"
  GTR_event.38.a: "Long live The Science!"
 
- GTR_event.39.t: "Stomach Question" #zdubbz
+ GTR_event.39.t: "Stomach Question"
  GTR_event.39.desc: "- \"Won't taking this junk. Give me real money, or get out!\"\n\nLife in Announcergrad revived after the Republic was declared. Transportation was restored, and numerous new businesses opened. They even began printing their own currency. But, unfortunately, growing pains are inevitable.\n\n- \"Knock-knock, four-eyes, you hear me?=\"\n- \"This is all I have. Please, I need to feed my daughter.\"\n\nThe family is struggling to survive on rations, even though they've expanded significantly in recent months. A black market is thriving in the back alleys of Announcergrad.\n\n- \"You don't understand?\"\nThe fist whistled through the air.\n\nProfessors are paid primarily in ration cards, but they are also given foreign currency. However, this is not yet in circulation.\n\n- \"I'll pay for them.\"\nAn object comes out of the queue.\n - \"Carton? My student?\""
  GTR_event.39.a: "- \"Don't worry, professor Geocache.\""
 
@@ -1619,11 +1619,11 @@
  GTR_event.47.a: "Napalm."
  GTR_event.47.b: "Octahedron."
 
- GTR_event.48.t: "1:3" #zdubbz
+ GTR_event.48.t: "1:3" 
  GTR_event.48.desc: "\"...The battles for the Greenland Plain once again confirm the thesis put forward two thousand years ago by the commander Rotatius: for a successful large-scale offensive against the enemy, it is necessary to have a numerical superiority in equipment and objects of *at least* three times.\"\n\nThe erudition of Cross, an elderly military historian and one of the few survivors of the University disaster, once again became useful in these dark times for Goiky.\n\n\"Looking at the tiny battalions of our border guards and seeing the military metamorphoses that are taking place today in Casland, it gives an unresistable urge to cry!\nIf The Technocracy wants to survive, we must redirect our resources to forming a full-scale army!\"\n\nThe conference room at the administration building in Announcergrad erupts in applause. Golfball rises from her chair."
  GTR_event.48.a: "\"You are UNARGUABLY right, mr. Cross!\""
 
- GTR_event.49.t: "Commission Report" #zdubbz
+ GTR_event.49.t: "Commission Report"
  GTR_event.49.desc: "...       CONCLUSION\n\nThe Commission concludes that the detonation of the above-described Mixture was associated with the instability of the outer electron shell of the phosphorus atoms, which created a chain reaction and led to the release of a enormous amount of energy.\nThe Commission was unable to obtain information about why the substance left a stable state, but the Commission put forward a hypothesis according to which the disintegration of atoms occurred as a result of the action of some catalyst, which is still unknown to modern science..."
  GTR_event.49.a: "Continue the observations."
 
@@ -1957,7 +1957,7 @@
  bfdinews_cities.11.c: "The 'Free' Heart is now ours!"
 
  bfdinews_cities.12.t: "LOOTING OF FOOTPATHBURG!"
- bfdinews_cities.12.desc: "While gunfire still rings out in the streets, it is clear that forces under the [201.controller.GetName] flag have captured a majority of the city. Yellow Face, head of the Yellow Face Company, had hired even more mercenaries to replace the losses from the war. Despite all efforts to throw more money into the war, their enemies reached the city. Fighting took place on every street as the invading army took captured block after block. During the chaos, many stores, banks, and even the HQ of Yellow Face Company itself were looted by the advancing army and civilians. Yellow Face and the rest of the Sectorials have reportedly fled the capital before it came under fire. For now, the once great center of trade has fallen into a state of anarchy as of [?global.date.GetDateStringNoHourLong]."
+ bfdinews_cities.12.desc: "While gunfire still rings out in the streets, it is clear that forces under the [201.controller.GetName] flag have captured a majority of the city. Yellow Face, head of the Yellow Face Company, had hired even more mercenaries to replace the losses from the war. Despite all efforts to throw more money into the war, their enemies reached the city. Fighting took place on every street as the invading army took captured block after block. During the chaos, many stores, banks, and even the HQ of Yellow Face Company itself were looted by the advancing army and civilians. Yellow Face and the rest of the Board of Directors had reportedly fled the capital before it came under fire. For now, the once great center of trade has fallen into a state of anarchy as of [?global.date.GetDateStringNoHourLong]."
  bfdinews_cities.12.a: "Will the global market survive?"
  bfdinews_cities.12.b: "Is there anyone left to fire...?"
  bfdinews_cities.12.c: "Money will not solve your problems here!"
