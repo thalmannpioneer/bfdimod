@@ -152,6 +152,24 @@ GDR_huge_army = {
 	}
 }
 
+GDR_militarize = {
+    #Build mils since we will have a large army
+	allowed = {
+		original_tag = GDR
+	}
+	enable = {
+		has_completed_focus = focus_GDR_democratic_congress
+		arms_factory < 7
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 300
+	}
+}
+
 GDR_build = {
     #GDR's build
 	allowed = {

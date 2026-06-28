@@ -52,7 +52,7 @@ decision_YFC_raids_category = {
 
 		visible = {
 			has_idea = idea_YFC_neglectful_command
-			always = yes #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_allow_raiding_into_traitors
 		}
 		
 		days_remove = 45

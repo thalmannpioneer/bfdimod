@@ -58,6 +58,34 @@ infantry_YFC = {
 			}
 		}
 	}
+
+	infantry_upgrade_YFC = { #At this point give YFC good divs
+		division_names_group = YFC_Cav_01
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 3
+				has_army_manpower = {size > 20000}
+				arms_factory > 5
+
+			}
+		}
+
+		target_template = {
+
+			support = {
+				recon = 1
+			}
+
+			regiments = {
+				cavalry = 5
+			}
+
+			regimental_support = {
+				field_guns = 1
+			}
+		}
+	}
 }
 
 suppression_YFC = {

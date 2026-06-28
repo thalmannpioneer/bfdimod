@@ -176,6 +176,27 @@ GTR_fighters = {
     }
 }
 
+GTR_fuel = {
+    #With planes we will need fuel
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+		fuel_silo < 1
+        has_deployed_air_force_size = {
+            size > 90
+            type = fighter
+        }
+	}
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = fuel_silo
+		value = 300
+	}
+}
+
 GTR_bombers = {
     #We have nukes so we need a cool plane to nuke people
     allowed = {

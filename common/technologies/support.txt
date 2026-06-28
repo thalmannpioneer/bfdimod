@@ -1140,6 +1140,17 @@ technologies = {
                     support = { hq_field_hospital = 0 }
                 }
             }
+            if = {
+                limit = {
+                    has_dlc = "Thunder at Our Gates"
+                    tag = WGF
+                    is_ai = yes
+                }
+                add_units_to_division_template = {
+                    template_name = "Red Army Headquarters"
+                    support = { hq_field_hospital = 0 }
+                }
+            }
         }
 
         path = {
@@ -1182,6 +1193,11 @@ technologies = {
             modifier = {
                 factor = 4
                 tag = GPG
+            }
+
+            modifier = {
+                factor = 1.5
+                tag = WGF
             }
 
             modifier = {
@@ -1410,17 +1426,6 @@ technologies = {
                 }
                 add_units_to_division_template = {
                     template_name = "Objekt Oberkommando"
-                    support = { hq_logistics = 0 }
-                }
-            }
-            if = {
-                limit = {
-                    has_dlc = "Thunder at Our Gates"
-                    tag = WGF
-                    is_ai = yes
-                }
-                add_units_to_division_template = {
-                    template_name = "Red Army Headquarters"
                     support = { hq_logistics = 0 }
                 }
             }

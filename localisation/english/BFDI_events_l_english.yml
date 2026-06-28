@@ -1011,6 +1011,44 @@
  YFC_event.58.c: "Cut some funding to the population centers."
  YFC_event.58.d: "Use some of his own funds."
 
+ YFC_event.59.t: "YFC_focus_reassess_geopolitics event"
+ YFC_event.59.desc: "zdubbz words here :D"
+ YFC_event.59.a: "TOO MANY WORDS!!!!"
+
+ YFC_event.60.t: "YFC_focus_trade_alternatives event"
+ YFC_event.60.desc: "zdubbz 420"
+ YFC_event.60.a: "weed..."
+
+ YFC_event.61.t: "YFC_focus_offset_debt event"
+ YFC_event.61.desc: "zdubbz Sectors mad (grrrr)"
+ YFC_event.61.a: "ha ha losers!!!!!!"
+
+ YFC_event.62.t: "YFC_focus_lessons_from_mercs event"
+ YFC_event.62.desc.a: "TopHat talks to Cherry"
+ YFC_event.62.desc.b: "TopHat talks to Grape"
+ YFC_event.62.desc.c: "TopHat talks to Brotherhood"
+ YFC_event.62.a: "Lore lore zdubbz"
+
+ YFC_event.63.t: "YFC_focus_tophats_outlook event"
+ YFC_event.63.desc: "zdubbz TopHat TopHat TopHat"
+ YFC_event.63.a: "TopHat^2"
+
+ YFC_event.64.t: "YFC_focus_the_sectorial_powderkeg event"
+ YFC_event.64.desc: "zdubbz Sectorials hate US!!"
+ YFC_event.64.a: "huh"
+
+ YFC_event.65.t: "YFC_focus_sloth event"
+ YFC_event.65.desc: "zdubbz Sectorials hate US!! (Part 2)"
+ YFC_event.65.a: "huh (Part 2)"
+
+ YFC_event.66.t: "YFC_focus_envy event"
+ YFC_event.66.desc: "zdubbz Beaker leaves how sad"
+ YFC_event.66.a: "Alright"
+
+ YFC_event.67.t: "YFC_focus_pride event"
+ YFC_event.67.desc: "Portland fr fr zdubbz"
+ YFC_event.67.a: "Alright"
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

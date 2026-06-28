@@ -96,10 +96,7 @@ WGF_specialize_tech = {
 	enable = {
 		country_exists = GMD
 	}
-
-	abort = {
-		NOT = {country_exists = GMD}
-	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = research_weight_factor
@@ -145,7 +142,9 @@ WGF_trucks = {
 	}
 	enable = {
 		has_completed_focus = WGF_focus_flip_the_coin
-		has_war_with = GMD
+		NOT = {has_tech = tech_trucks}
+		NOT = {has_tech = motorised_infantry}
+		NOT = {has_tech = tech_field_hospital}
 	}
 	abort_when_not_enabled = yes
 
@@ -160,13 +159,9 @@ WGF_trucks = {
 		value = 1000
 	}
 	ai_strategy = {
-        type = equipment_production_surplus_management
-        id = motorized_equipment
-        value = 2
-    }
-	ai_strategy = {
-		type = min_wanted_supply_trucks
-		value = 200
+		type = research_weight_factor
+		id = tech_field_hospital
+		value = 300
 	}
 }
 
@@ -225,6 +220,11 @@ WGF_our_army = {
 		type = role_ratio
 		id = garrison
 		value = 5
+	}
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 200
 	}
 }
 

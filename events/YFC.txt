@@ -2348,10 +2348,26 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 	fire_only_once = no
 	is_triggered_only = yes
 
+	immediate = {
+        set_variable = { var_add_to_sector = 6 }
+    }
+    
 	option = { 
 		name = YFC_event.54.a
 		add_political_power = -300
 		add_ideas = idea_YFC_economic_isolation
+		custom_effect_tooltip = l_money_lose_1M
+		subtract_from_variable = { money_amount = 10 }
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		complete_national_focus = YFC_focus_the_great_recession
 		mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
@@ -2516,6 +2532,235 @@ country_event = { # YFC_focus_shuffle_around_funds event
 		name = YFC_event.58.d
 		custom_effect_tooltip = l_money_gain_100K
 		add_to_variable = { money_amount = 1 }
+	}
+}
+
+country_event = { #YFC_focus_reassess_geopolitics
+	id = YFC_event.59
+	title = YFC_event.59.t
+	desc = YFC_event.59.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.59.a
+	}
+}
+
+country_event = { #YFC_focus_trade_alternatives
+	id = YFC_event.60
+	title = YFC_event.60.t
+	desc = YFC_event.60.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.60.a
+
+	}
+}
+
+country_event = { #YFC_focus_offset_debt
+	id = YFC_event.61
+	title = YFC_event.61.t
+	desc = YFC_event.61.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 2 }
+    }
+    
+	option = { 
+		name = YFC_event.61.a
+
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+	}
+}
+
+country_event = { #YFC_focus_lessons_from_mercs
+	id = YFC_event.62
+	title = YFC_event.62.t
+
+	desc = {
+		text = YFC_event.62.desc.a #Cherry
+		trigger = {
+			check_variable = {var_YFC_merc_pick < 2 }
+		}
+	}
+	desc = {
+		text = YFC_event.62.desc.b #Grape
+		trigger = {
+			check_variable = {var_YFC_merc_pick = 2 }
+		}
+	}
+	desc = {
+		text = YFC_event.62.desc.c #Brotherhood
+		trigger = {
+			check_variable = {var_YFC_merc_pick = 3 }
+		}
+	}
+
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.62.a
+	}
+}
+
+country_event = { #YFC_focus_tophats_outlook
+	id = YFC_event.63
+	title = YFC_event.63.t
+	desc = YFC_event.63.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 3 }
+    }
+    
+	option = { 
+		name = YFC_event.63.a
+
+		add_political_power = 40
+		add_stability = 0.05
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+	}
+}
+
+country_event = { #YFC_focus_the_sectorial_powderkeg
+	id = YFC_event.64
+	title = YFC_event.64.t
+	desc = YFC_event.64.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 1 }
+    }
+    
+	option = { 
+		name = YFC_event.64.a
+		
+		add_stability = -0.2
+
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+	}
+}
+
+country_event = { #YFC_focus_sloth
+	id = YFC_event.65
+	title = YFC_event.65.t
+	desc = YFC_event.65.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 3 }
+    }
+    
+	option = { 
+		name = YFC_event.65.a
+		
+		add_stability = -0.2
+
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
+		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+	}
+}
+
+country_event = { #YFC_focus_envy
+	id = YFC_event.66
+	title = YFC_event.66.t
+	desc = YFC_event.66.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { var_add_to_sector2 = 10 }
+    }
+    
+	option = { 
+		name = YFC_event.66.a
+
+		IF = {
+			limit = {has_idea = idea_YFC_Defiant_Beaker}
+			remove_ideas = idea_YFC_Defiant_Beaker
+		}
+
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
+		subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
+	}
+}
+
+country_event = { #YFC_focus_pride
+	id = YFC_event.67
+	title = YFC_event.67.t
+	desc = YFC_event.67.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+ 
+	option = { 
+		name = YFC_event.67.a
+
+		225 = {
+			if = {
+				limit = { is_owned_by = EMP }
+				add_core_of = YFC
+				transfer_state_to = YFC
+				remove_core_of = EMP
+				add_victory_points = {
+					province = 10828
+					value = 2
+				}
+			}
+		}
 	}
 }
 

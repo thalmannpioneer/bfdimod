@@ -3399,8 +3399,9 @@ focus_tree = {
         x = 0
         y = 2
         icon = GFX_focus_YFC_a_raid_o3 #From the old tree, update if needed
-        prerequisite = { focus = YFC_focus_the_first_embargo }
-        prerequisite = { focus = YFC_focus_numismatian_split }
+
+        #prerequisite = { focus = YFC_focus_the_first_embargo }
+        #prerequisite = { focus = YFC_focus_numismatian_split }
 
         ai_will_do = {
             base = 15
@@ -3461,10 +3462,12 @@ focus_tree = {
             #puts stability into the shitter, increases sectorial influence a fuck ton, gives spirit called "sectorial power grabbing"
             #the spirit probably fucks over stability more, and also does other things as well maybe probably perhaps
             #also maybe all the stuff im writing here should be in the event? i dont know dude
+
+            #Most of this is done in YFC_event.54 so I won't add much else
         }
     }
 
-    #'insane face' path, eventual firings/demotion of the sectorials, drug trading, prevents the byzantinelarp
+    #'insane face' path, eventual firings/demotion of the sectorials, drug trading
     focus = {
         id = YFC_focus_mass_firings
         relative_position_id = YFC_focus_the_great_recession
@@ -3491,7 +3494,7 @@ focus_tree = {
         }
     }
 
-    #company reforms, power struggle between yellow face and the sectorials, leading to either a more typical raider path, or the absolute promotion of tophat
+    #company reforms, power struggle between yellow face and the sectorials leading to the absolute promotion of tophat
     focus = { #every focus along this path should give you at least a small amount of money (unless of course i say otherwise or its nonsensicle)
         id = YFC_focus_company_restructuring
         relative_position_id = YFC_focus_the_great_recession
@@ -3529,9 +3532,9 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #tooltip abt sectorials pulling out investments, losing you money in the short term
-            #makes you gain more money naturally, as your spending less on higher-ups
-            #greatly increases stability
+            custom_effect_tooltip = l_money_lose_500K
+		    subtract_from_variable = { money_amount = 5 }
+            add_stability = 0.1
         }
     }
 
@@ -3546,7 +3549,11 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #event about how its highly unlikely you'll ever be in a position to trade normally again
+            country_event = {
+                id = YFC_event.59
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -3561,7 +3568,13 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #starts a 40 day count down that'll remove that gay ass sectorial spirit, loses you a bunch of political power, gains you back a bit of stab
+            add_political_power = -75
+            add_stability = 0.05
+            remove_ideas = idea_YFC_economic_isolation
+            modify_timed_idea = {
+                idea = idea_YFC_economic_isolation
+                days = 60
+            }
         }
     }
 
@@ -3580,7 +3593,11 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #event about potentially starting to trade drugs (what am i doing bro)
+            country_event = {
+                id = YFC_event.60
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -3596,8 +3613,16 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #gets you a substantial amount of money (like a good 2m)
-            #event about how the sectorials are getting kind of upset at yf
+            custom_effect_tooltip = l_money_gain_600K
+            add_to_variable = { money_amount = 6 }
+
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.61
+                    hours = 20
+                    random_hours = 40
+                }
+            }
         }
     }
 
@@ -3615,7 +3640,12 @@ focus_tree = {
             #possibility for three different lore events:
             #as you committed to a merc company earlier, tophat visits that company again, to talk to them about how they conduct their business
             #different event for each mercenary company; if you didnt commit to one, the game just chooses a random one for you
-            #gets you more political power and a bit more natural passive income
+            
+            country_event = {
+                id = YFC_event.62
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -3654,6 +3684,8 @@ focus_tree = {
             #event about the sectorials all coming together to declare their opposition to the restructuring of the company
             #starts our short squabble for power
             #loses stability AGAIN #lmao
+
+
         }
     }
 
@@ -3671,6 +3703,12 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            country_event = {
+                id = YFC_event.65
+                hours = 1
+                random_hours = 2
+            }
+
             #event about sectorials beginning to gain power over large swaths of the company
             #they call yf's restructuring a powergrab, and blame company failures on his laziness
             #they are in footpathburg, rallying support from common employees, and some stray mercs
@@ -3688,6 +3726,12 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            country_event = {
+                id = YFC_event.66
+                hours = 1
+                random_hours = 2
+            }
+
             #event about beaker secretly fleeing the yfc temporarily to study in university
             #if the gtr hasnt fucking died, she goes there, otherwise, she goes to casland
             #ill write one event but just change out the names because im a lazy bum
@@ -3707,31 +3751,17 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            country_event = {
+                id = YFC_event.67
+                hours = 1
+                random_hours = 2
+            }
+
             #resolution from yellow face about expelling the sectorials to the far east
             #three days later, a writing from hammer about whats going on in the eastern seaboard, how theyre getting ready to lead an attack on footpathburg with their limited funds, and how they hope they can convince more sectorials to go with them to take over yellow face
             #the mercenary company tophat visited earlier is already on the side of the opposition, the rest's fates are currently unknown
             #tophat also has some of his own men dedicated to the cause because of course he does
             #on the map, the tophat clan comes into existence, and gains that one small province in the eastern seaboard
-        }
-    }
-
-    focus = { #grow closer ties can only be completed on this path after this focus has been completed
-        id = YFC_focus_dismantle_sectorialism
-        relative_position_id = YFC_focus_the_sectorial_powderkeg
-        x = -1
-        y = 2
-        icon = GFX_focus_generic
-
-        prerequisite = { focus = YFC_focus_sloth }
-        prerequisite = { focus = YFC_focus_envy }
-        prerequisite = { focus = YFC_focus_pride }
-
-        mutually_exclusive = { focus = YFC_focus_march_on_footpathburg }
-
-        cost = 1
-        completion_reward = {
-            #event about a largescale engagement between yfc and thc (tophat clan) forces, with the yfc eventually winning after a large amount of bloodshed
-            #a couple days later, event about the fate of the sectorials (executions basically)
         }
     }
 
@@ -3746,37 +3776,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_envy }
         prerequisite = { focus = YFC_focus_pride }
 
-        mutually_exclusive = { focus = YFC_focus_dismantle_sectorialism }
-
         cost = 1
         completion_reward = {
+
+
             #event about how most of the mercenaries that they encountered on the way to the yfc were swayed to the side of the thc
             #the engagement in footpathburg was mostly peaceful, and yellow face is ousted from power
             #makes grow closer ties undoable
-        }
-    }
-
-    focus = {
-        id = YFC_focus_yellow_face_holds
-        relative_position_id = YFC_focus_the_sectorial_powderkeg
-        x = 0
-        y = 4
-        icon = GFX_focus_generic
-
-        prerequisite = { focus = YFC_focus_dismantle_sectorialism }
-        prerequisite = { focus = YFC_focus_grow_closer_ties }
-
-        available = {
-            hidden_trigger = {
-                has_completed_focus = YFC_focus_dismantle_sectorialism
-            }
-        }
-
-        allow_branch = { has_completed_focus = YFC_focus_dismantle_sectorialism }
-
-        cost = 5 #autocompletes after like 4 days
-        completion_reward = {
-            
         }
     }
 
