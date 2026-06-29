@@ -531,6 +531,9 @@ scripted_gui = {
 
         triggers = {
             equipment_buy_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
                 YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
@@ -548,6 +551,9 @@ scripted_gui = {
                 }
             }
             equipment_sell_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
                 YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
@@ -565,50 +571,80 @@ scripted_gui = {
                 }
                 OR = {
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@infantry_equipment}
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@infantry_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@support_equipment_1}
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@support_equipment_1}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@motorized_equipment }
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@motorized_equipment }
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@artillery_equipment}
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@artillery_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_air_equipment}
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@anti_air_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_tank_equipment}
+                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@anti_tank_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
                     }
                 }
             }
             equipment_sell_item_visible = {
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
             }
             equipment_buy_item_visible = {
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
             }
+            equipment_buy_amount_visible = {
+                check_variable = { YFC.selected < 15 }
+            }
+            equipment_sell_amount_visible = {
+                check_variable = { YFC.selected < 15 }
+            }
+            equipment_buy_cost_visible = {
+                check_variable = { YFC.selected < 15 }
+            }
+            equipment_sell_cost_visible = {
+                check_variable = { YFC.selected < 15 }
+            }
             equipment_buy_inc_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { YFC.buying_X^YFC_trade_nation_pos_var < 1.5 }}
                 var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
             }
             equipment_buy_dec_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { YFC.buying_X^YFC_trade_nation_pos_var > 0.5 }}
                 var:YFC.tradeable^YFC.selected = { check_variable = { selling_item > -1 }}
             }
             equipment_sell_inc_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { YFC.selling_X^YFC_trade_nation_pos_var < 1.5 }}
                 var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
             }
             equipment_sell_dec_click_enabled = {
+                YFC = {
+                    check_variable = { tradeable_relation^selected > 0 }
+                }
+                check_variable = { YFC.selected < 15 }
                 var:YFC.tradeable^YFC.selected = { check_variable = { YFC.selling_X^YFC_trade_nation_pos_var > 0.5 }}
                 var:YFC.tradeable^YFC.selected = { check_variable = { buying_item > -1 }}
             }
@@ -750,8 +786,115 @@ scripted_gui = {
                 country_exists = GMD
                 var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            gmd_enabled = {
+
+            bun_click_enabled = {
+                AND = {
+                    check_variable = { BUN.is_blocked = 0 }
+                    check_variable = { BUN.is_blocked_by_prev < 1 }
+                }
+            }
+            crn_click_enabled = {
+                AND = {
+                    check_variable = { CRN.is_blocked = 0 }
+                    check_variable = { CRN.is_blocked_by_prev < 1 }
+                }
+            }
+            crn_bun_click_enabled = {
+                AND = {
+                    check_variable = { CRN.is_blocked = 0 }
+                    check_variable = { CRN.is_blocked_by_prev < 1 }
+                }
+            }
+            srr_click_enabled = {
+                AND = {
+                    check_variable = { SRR.is_blocked = 0 }
+                    check_variable = { SRR.is_blocked_by_prev < 1 }
+                }
+            }
+            gpg_click_enabled = {
+                AND = {
+                    check_variable = { GPG.is_blocked = 0 }
+                    check_variable = { GPG.is_blocked_by_prev < 1 }
+                }
+            }
+            gpg_cw_click_enabled = {
+                AND = {
+                    check_variable = { GPG.is_blocked = 0 }
+                    check_variable = { GPG.is_blocked_by_prev < 1 }
+                }
+            }
+            gsr_click_enabled = {
+                AND = {
+                    check_variable = { GSR.is_blocked = 0 }
+                    check_variable = { GSR.is_blocked_by_prev < 1 }
+                }
+            }
+            gdr_click_enabled = {
+                AND = {
+                    check_variable = { GDR.is_blocked = 0 }
+                    check_variable = { GDR.is_blocked_by_prev < 1 }
+                }
+            }
+            gfg_click_enabled = {
+                AND = {
+                    check_variable = { GFG.is_blocked = 0 }
+                    check_variable = { GFG.is_blocked_by_prev < 1 }
+                }
+            }
+            gtr_click_enabled = {
+                AND = {
+                    check_variable = { GTR.is_blocked = 0 }
+                    check_variable = { GTR.is_blocked_by_prev < 1 }
+                }
+            }
+            ggr_click_enabled = {
+                AND = {
+                    check_variable = { GGR.is_blocked = 0 }
+                    check_variable = { GGR.is_blocked_by_prev < 1 }
+                }
+            }
+            fft_click_enabled = {
+                AND = {
+                    check_variable = { FFT.is_blocked = 0 }
+                    check_variable = { FFT.is_blocked_by_prev < 1 }
+                }
+            }
+            fft_ggr_click_enabled = {
+                AND = {
+                    check_variable = { FFT.is_blocked = 0 }
+                    check_variable = { FFT.is_blocked_by_prev < 1 }
+                }
+            }
+            sri_click_enabled = {
+                AND = {
+                    check_variable = { SRI.is_blocked = 0 }
+                    check_variable = { SRI.is_blocked_by_prev < 1 }
+                }
+            }
+            smg_click_enabled = {
+                AND = {
+                    check_variable = { SMG.is_blocked = 0 }
+                    check_variable = { SMG.is_blocked_by_prev < 1 }
+                }
+            }
+            spr_click_enabled = {
+                AND = {
+                    check_variable = { SPL.is_blocked = 0 }
+                    check_variable = { SPL.is_blocked_by_prev < 1 }
+                }
+            }
+            tbt_click_enabled = {
+                AND = {
+                    check_variable = { TBT.is_blocked = 0 }
+                    check_variable = { TBT.is_blocked_by_prev < 1 }
+                }
+            }
+            gmd_click_enabled = {
                 country_exists = GMD
+                AND = {
+                    check_variable = { GMD.is_blocked = 0 }
+                    check_variable = { GMD.is_blocked_by_prev < 1 }
+                }
             }
         }
         effects = {
@@ -833,94 +976,169 @@ scripted_gui = {
 
             bun_click = {
                 set_variable = { selected = 0 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             crn_click = {
                 set_variable = { selected = 1 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             crn_bun_click = {
                 set_variable = { selected = 1 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             srr_click = {
                 set_variable = { selected = 2 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gtr_click = {
-                set_variable = { selected = 9 }
+                set_variable = { selected = 7 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gpg_click = {
                 set_variable = { selected = 3 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
-				IF = {
-					limit = { country_exists = GPG }
-					set_variable = { selected = 3 }
-				}
-				ELSE_IF = {
-					limit = { country_exists = GDR }
-					set_variable = { selected = 6 }
-				}
-				ELSE_IF = {
-					limit = { country_exists = GFG }
-					set_variable = { selected = 7 }
-				}
-				ELSE_IF = {
-					limit = { country_exists = GSR }
-					set_variable = { selected = 8 }
-				}
-				ELSE = {
-					set_variable = { selected = 3 }
-				}
+                IF = {
+                    limit = { country_exists = GPG }
+                    set_variable = { selected = 3 }
+                }
+                ELSE_IF = {
+                    limit = { country_exists = GDR }
+                    set_variable = { selected = 6 }
+                }
+                ELSE_IF = {
+                    limit = { country_exists = GFG }
+                    set_variable = { selected = 7 }
+                }
+                ELSE_IF = {
+                    limit = { country_exists = GSR }
+                    set_variable = { selected = 8 }
+                }
+                ELSE = {
+                    set_variable = { selected = 3 }
+                }
             }
             gpg_cw_click = {
                 set_variable = { selected = 3 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gdr_click = {
-                set_variable = { selected = 6 }
+                set_variable = { selected = 4 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gsr_click = {
-                set_variable = { selected = 8 }
+                set_variable = { selected = 6 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gfg_click = {
-                set_variable = { selected = 7 }
+                set_variable = { selected = 5 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             ggr_click = {
-                set_variable = { selected = 10 }
+                set_variable = { selected = 8 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             fft_click = {
-                set_variable = { selected = 11 }
+                set_variable = { selected = 9 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             fft_ggr_click = {
-                set_variable = { selected = 11 }
+                set_variable = { selected = 9 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             smg_click = {
-                set_variable = { selected = 13 }
+                set_variable = { selected = 11 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             spr_click = {
-                set_variable = { selected = 14 }
+                set_variable = { selected = 12 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             sri_click = {
-                set_variable = { selected = 12 }
+                set_variable = { selected = 10 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             tbt_click = {
-                set_variable = { selected = 15 }
+                set_variable = { selected = 13 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
             }
             gmd_click = {
-                set_variable = { selected = 16 }
+                set_variable = { selected = 14 }
+                var:tradeable^selected = {
+                    save_global_event_target_as = selected_scope
+                }
                 YFC_calc_trade_update_nation = yes
+            }
+            route_ggr_click = {
+                set_variable = { selected = 15 }
+            }
+            route_crn-fft_click = {
+                set_variable = { selected = 16 }
+            }
+            route_gpg_click = {
+                set_variable = { selected = 17 }
+            }
+            route_gtr_click = {
+                set_variable = { selected = 18 }
+            }
+            route_gmd_click = {
+                set_variable = { selected = 19 }
+            }
+            route_tbt_click = {
+                set_variable = { selected = 20 }
+            }
+            route_sea_click = {
+                set_variable = { selected = 21 }
             }
         }
     }

@@ -94,33 +94,30 @@ add_to_array = { tradeable = BUN } #0
 add_to_array = { tradeable = CRN } #1
 add_to_array = { tradeable = SRR } #2
 add_to_array = { tradeable = GPG } #3
-add_to_array = { tradeable = BUN } #4
-add_to_array = { tradeable = GPG } #5
-add_to_array = { tradeable = GDR } #6
-add_to_array = { tradeable = GFG } #7
-add_to_array = { tradeable = GSR } #8
-add_to_array = { tradeable = GTR } #9
-add_to_array = { tradeable = GGR } #10
-add_to_array = { tradeable = FFT } #11
-add_to_array = { tradeable = SRI } #12
-add_to_array = { tradeable = SMG } #13
-add_to_array = { tradeable = SPL } #14
-add_to_array = { tradeable = TBT } #15
-add_to_array = { tradeable = GMD } #16
+add_to_array = { tradeable = GDR } #4
+add_to_array = { tradeable = GFG } #5
+add_to_array = { tradeable = GSR } #6
+add_to_array = { tradeable = GTR } #7
+add_to_array = { tradeable = GGR } #8
+add_to_array = { tradeable = FFT } #9
+add_to_array = { tradeable = SRI } #10
+add_to_array = { tradeable = SMG } #11
+add_to_array = { tradeable = SPL } #12
+add_to_array = { tradeable = TBT } #13
+add_to_array = { tradeable = GMD } #14
+#Routes toughness: 0 - good 1 - normal 2 - bad
+add_to_array = { tradeable = 1 } #15 = GGR Route
+add_to_array = { tradeable = 1 } #16 = FFT Route
+add_to_array = { tradeable = 0 } #17 = GPG Route
+add_to_array = { tradeable = 0 } #18 = GTR Route
+add_to_array = { tradeable = 2 } #19 = GMD Route
+add_to_array = { tradeable = 2 } #20 = TBT Route
+add_to_array = { tradeable = 1 } #21 = Sea Route
 
-#17 = GGR Route
-#18 = FFT Route
-#19 = GPG Route
-#20 = GTR Route
-#21 = GMG Route
-#22 = TBT Route
-#23 = Sea Route
-
+# 0 = bad 1 = mid 2 = good
 add_to_array = { tradeable_relation = 1 } #BUN
 add_to_array = { tradeable_relation = 1 } #CRN
 add_to_array = { tradeable_relation = 1 } #SRR
-add_to_array = { tradeable_relation = 1 } #GPG
-add_to_array = { tradeable_relation = 1 } #BUN
 add_to_array = { tradeable_relation = 1 } #GPG
 add_to_array = { tradeable_relation = 1 } #GDR
 add_to_array = { tradeable_relation = 1 } #GFG
@@ -134,11 +131,18 @@ add_to_array = { tradeable_relation = 1 } #SPL
 add_to_array = { tradeable_relation = 1 } #TBT
 add_to_array = { tradeable_relation = 1 } #GMD
 
+for_loop_effect = {
+	end = 14
+	value = temp
+	var:tradeable^temp = {
+		set_variable = { is_blocked = 0 }
+		set_variable = { is_blocked_by_prev = 0 }
+	}
+}
+
 add_to_array = { tradeable_count = 0 } #BUN
 add_to_array = { tradeable_count = 0 } #CRN
 add_to_array = { tradeable_count = 0 } #SRR
-add_to_array = { tradeable_count = 0 } #GPG
-add_to_array = { tradeable_count = 0 } #BUN
 add_to_array = { tradeable_count = 0 } #GPG
 add_to_array = { tradeable_count = 0 } #GDR
 add_to_array = { tradeable_count = 0 } #GFG
@@ -151,6 +155,73 @@ add_to_array = { tradeable_count = 0 } #SMG
 add_to_array = { tradeable_count = 0 } #SPL
 add_to_array = { tradeable_count = 0 } #TBT
 add_to_array = { tradeable_count = 0 } #GMD
+
+BUN = { #BUN Blocks CRN and FFT
+	add_to_array = { blocks = CRN }
+	add_to_array = { blocks = FFT }
+}
+CRN = { #CRN Blocks FFT
+	add_to_array = { blocks = FFT }
+}
+SRR = { #SRR Blocks GPG and GTR
+	add_to_array = { blocks = GPG }
+	add_to_array = { blocks = GSR }
+	add_to_array = { blocks = GFG }
+	add_to_array = { blocks = GDR }
+	add_to_array = { blocks = GTR }
+}
+SRI = { #SRI Blocks all post-GGR nations
+	add_to_array = { blocks = SMG }
+	add_to_array = { blocks = SPL }
+}
+
+BUN = {
+	add_to_array = { routes = 16 }
+}
+CRN = {
+	add_to_array = { routes = 16 }
+}
+FFT = {
+	add_to_array = { routes = 16 }
+}
+GGR = {
+	add_to_array = { routes = 15 }
+}
+SRI = {
+	add_to_array = { routes = 15 }
+}
+SMG = {
+	add_to_array = { routes = 15 }
+}
+SPL = {
+	add_to_array = { routes = 15 }
+}
+SRR = {
+	add_to_array = { routes = 17 }
+}
+GPG = {
+	add_to_array = { routes = 17 }
+}
+GSR = {
+	add_to_array = { routes = 17 }
+}
+GDR = {
+	add_to_array = { routes = 17 }
+}
+GFG = {
+	add_to_array = { routes = 17 }
+}
+GTR = {
+	add_to_array = { routes = 18 }
+}
+GMD = {
+	add_to_array = { routes = 19 }
+	add_to_array = { routes = 21 }
+}
+TBT = {
+	add_to_array = { routes = 20 }
+	add_to_array = { routes = 21 }
+}
 
 #Adds YFC into trade array, meaning he will always be #0 in these
 

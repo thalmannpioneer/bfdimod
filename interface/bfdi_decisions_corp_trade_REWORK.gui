@@ -10,6 +10,14 @@ guiTypes = {
             spriteType = "GFX_corp_trade_bg"
             position = { x = -25 y = 0 }
         }
+		
+		iconType = {
+			name = "help"
+			spriteType = "GFX_corp_help"
+			position = { x = 10 y = -20 }
+			pdx_tooltip = l_YFC_trade_help_tt
+			pdx_tooltip_delayed = l_YFC_trade_help_tt_d
+		}
 
         iconType = {
             name = "yfc"
@@ -39,60 +47,70 @@ guiTypes = {
             name = "bun"
             spriteType = "GFX_corp_trade_bun"
             position = { x = 152 y = 220 }
+			pdx_tooltip = l_YFC_trade_bun_tt
         }
 
         buttonType = {
             name = "sri"
             spriteType = "GFX_corp_trade_sri"
             position = { x = 315 y = 230 }
+			pdx_tooltip = l_YFC_trade_sri_tt
         }
 
         buttonType = {
             name = "spr"
             spriteType = "GFX_corp_trade_spr"
             position = { x = 290 y = 240 }
+			pdx_tooltip = l_YFC_trade_spr_tt
         }
 
         buttonType = {
             name = "fft_ggr"
             spriteType = "GFX_corp_trade_fft_ggr"
             position = { x = 227 y = 253 }
+			pdx_tooltip = l_YFC_trade_fft_tt
         }
 
         buttonType = {
             name = "smg"
             spriteType = "GFX_corp_trade_smg"
             position = { x = 315 y = 258 }
+			pdx_tooltip = l_YFC_trade_smg_tt
         }
 
         buttonType = {
             name = "ggr"
             spriteType = "GFX_corp_trade_ggr"
             position = { x = 230 y = 228 }
+			pdx_tooltip = l_YFC_trade_ggr_tt
         }
 
         buttonType = {
             name = "fft"
             spriteType = "GFX_corp_trade_fft"
             position = { x = 220 y = 327 }
+			pdx_tooltip = l_YFC_trade_fft_tt
         }
 
         buttonType = {
             name = "crn"
             spriteType = "GFX_corp_trade_crn"
             position = { x = 110 y = 260 }
+			pdx_tooltip = l_YFC_trade_crn_tt
         }
 
         buttonType = {
             name = "crn_bun"
             spriteType = "GFX_corp_trade_crn_bun"
             position = { x = 150 y = 250 }
+			pdx_tooltip = l_YFC_trade_crn_tt
         }
 
         buttonType = {
             name = "srr"
             spriteType = "GFX_corp_trade_srr"
             position = { x = 75 y = 185 }
+			pdx_tooltip = l_YFC_trade_srr_tt
         }
 
         iconType = {
@@ -105,54 +123,63 @@ guiTypes = {
             name = "gpg"
             spriteType = "GFX_corp_trade_gpg"
             position = { x = 7 y = 185 }
+			pdx_tooltip = l_YFC_trade_gpg_tt
         }
 
         buttonType = {
             name = "gdr"
             spriteType = "GFX_corp_trade_gdr"
             position = { x = 37 y = 185 }
+			pdx_tooltip = l_YFC_trade_gdr_tt
         }
 
         buttonType = {
             name = "gpg_cw"
             spriteType = "GFX_corp_trade_gpg_cw"
             position = { x = 10 y = 215 }
+			pdx_tooltip = l_YFC_trade_gpg_tt
         }
 
         buttonType = {
             name = "gfg"
             spriteType = "GFX_corp_trade_gfg"
             position = { x = 30 y = 235 }
+			pdx_tooltip = l_YFC_trade_gfg_tt
         }
 
         buttonType = {
             name = "gtr"
             spriteType = "GFX_corp_trade_gtr"
             position = { x = 60 y = 223 }
+			pdx_tooltip = l_YFC_trade_gtr_tt
         }
 
         buttonType = {
             name = "gsr"
             spriteType = "GFX_corp_trade_gsr"
             position = { x = 53 y = 207 }
+			pdx_tooltip = l_YFC_trade_gsr_tt
         }
 
         buttonType = {
             name = "tbt"
             spriteType = "GFX_corp_trade_tbt"
             position = { x = 230 y = 15 }
+			pdx_tooltip = l_YFC_trade_tbt_tt
         }
 
         buttonType = {
             name = "gmd"
             spriteType = "GFX_corp_trade_gmd"
             position = { x = 95 y = 15 }
+			pdx_tooltip = l_YFC_trade_gmd_tt
         }
 
         buttonType = {
             name = "route_crn-fft"
             spriteType = "GFX_corp_trade_route_crn-fft"
             position = { x = 200 y = 220 }
+
         }
 
         buttonType = {
@@ -228,7 +255,7 @@ guiTypes = {
 
             instantTextBoxType = {
                 name = "ledger_possible_routes"
-                position = { x = 20 y = 80 }
+                position = { x = 20 y = 85 }
                 text = "[CORP_TRADE_LEDGER_POSSIBLE_ROUTES]"
                 maxWidth = 360
                 font = hoi_20bs

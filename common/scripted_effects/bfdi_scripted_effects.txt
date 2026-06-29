@@ -820,12 +820,39 @@ YFC_calc_trade_relations = {
     if = {
         limit = { check_variable = { total_modifier < 0 } }
         set_variable = { tradeable_relation^temp = 0 }
+		event_target:curr = {
+			set_variable = { is_blocked = 1 }
+			for_each_scope_loop = {
+				array = blocks
+				add_to_variable = { is_blocked_by_prev = 1 }
+			}
+		}
     }
     else_if = {
         limit = { check_variable = { total_modifier < 40 } }
         set_variable = { tradeable_relation^temp = 1 }
+		event_target:curr = {
+			if = {
+				limit = { check_variable = { is_blocked = 1 } }
+				set_variable = { is_blocked = 0 }
+				for_each_scope_loop = {
+					array = blocks
+					subtract_from_variable = { is_blocked_by_prev = 1 }
+				}
+			}
+		}
     }
     else = {
         set_variable = { tradeable_relation^temp = 2 }
+		event_target:curr = {
+			if = {
+				limit = { check_variable = { is_blocked = 1 } }
+				set_variable = { is_blocked = 0 }
+				for_each_scope_loop = {
+					array = blocks
+					subtract_from_variable = { is_blocked_by_prev = 1 }
+				}
+			}
+		}
     }
 }

@@ -277,23 +277,445 @@ defined_text = {
 defined_text = {
 	name = CORP_TRADE_LEDGER_TITLE
 	text = {
-		trigger = { check_variable = { selected < 17 } }
+		trigger = { check_variable = { selected < 15 } }
 		localization_key = "[?tradeable^selected.GetName]"
+	}
+	text = {
+		trigger = { check_variable = { selected = 15 } }
+		localization_key = l_YFC_route_ggr
+	}
+	text = {
+		trigger = { check_variable = { selected = 16 } }
+		localization_key = l_YFC_route_fft
+	}
+	text = {
+		trigger = { check_variable = { selected = 17 } }
+		localization_key = l_YFC_route_gpg
+	}
+	text = {
+		trigger = { check_variable = { selected = 18 } }
+		localization_key = l_YFC_route_gtr
+	}
+	text = {
+		trigger = { check_variable = { selected = 19 } }
+		localization_key = l_YFC_route_gmd
+	}
+	text = {
+		trigger = { check_variable = { selected = 20 } }
+		localization_key = l_YFC_route_tbt
+	}
+	text = {
+		trigger = { check_variable = { selected = 21 } }
+		localization_key = l_YFC_route_sea
 	}
 }
 
 defined_text = {
 	name = CORP_TRADE_LEDGER_COUNTRY
 	text = {
+		trigger = {
+			check_variable = {selected > 14 }
+			check_variable = { tradeable^selected = 0 }
+		}
+		localization_key = l_YFC_route_good
+	}
+	text = {
+		trigger = {
+			check_variable = { selected > 14 }
+			check_variable = { tradeable^selected = 1 }
+		}
+		localization_key = l_YFC_route_mid
+	}
+	text = {
+		trigger = {
+			check_variable = { selected > 14 }
+			check_variable = { tradeable^selected = 2 }
+		}
+		localization_key = l_YFC_route_bad
+	}
+	text = {
 		trigger = { check_variable = { tradeable_relation^selected = 0 } }
-		localization_key = "l_YFC_trade_relation_bad"
+		localization_key = l_YFC_trade_relation_bad
 	}
 	text = {
 		trigger = { check_variable = { tradeable_relation^selected = 1 } }
-		localization_key = "l_YFC_trade_relation_neutral"
+		localization_key = l_YFC_trade_relation_neutral
 	}
 	text = {
 		trigger = { check_variable = { tradeable_relation^selected = 2 } }
-		localization_key = "l_YFC_trade_relation_good"
+		localization_key = l_YFC_trade_relation_good
+	}
+}
+
+defined_text = {
+	name = CORP_BUN_TT
+	text = {
+		trigger = {
+			BUN = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?BUN.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_CRN_TT
+	text = {
+		trigger = {
+			CRN = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?CRN.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_SRR_TT
+	text = {
+		trigger = {
+			SRR = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?SRR.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GPG_TT
+	text = {
+		trigger = {
+			GPG = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GPG.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GDR_TT
+	text = {
+		trigger = {
+			GDR = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GDR.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GSR_TT
+	text = {
+		trigger = {
+			GSR = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GSR.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GFG_TT
+	text = {
+		trigger = {
+			GFG = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GFG.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GTR_TT
+	text = {
+		trigger = {
+			GTR = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GTR.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GGR_TT
+	text = {
+		trigger = {
+			GGR = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GGR.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_FFT_TT
+	text = {
+		trigger = {
+			FFT = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?FFT.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_SRI_TT
+	text = {
+		trigger = {
+			SRI = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?SRI.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_SMG_TT
+	text = {
+		trigger = {
+			SMG = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?SMG.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_SPL_TT
+	text = {
+		trigger = {
+			SPL = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?SPL.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_TBT_TT
+	text = {
+		trigger = {
+			TBT = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?TBT.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_GMD_TT
+	text = {
+		trigger = {
+			GMD = {
+				OR = {
+					check_variable = { is_blocked = 1 }
+					check_variable = { is_blocked_by_prev > 0 }
+				}
+			}
+		}
+		localization_key = l_YFC_trade_blocked
+	}
+	text = {
+		localization_key = "[?GMD.GetName]"
+	}
+}
+defined_text = {
+	name = CORP_TRADE_LEDGER_POSSIBLE_ROUTES
+	text = {
+		trigger = {
+			check_variable = { selected > 14 }
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "[FFT_ROUTE] - [GPG_ROUTE] - [GGR_ROUTE] - [GTR_ROUTE] - [GMD_ROUTE] - [TBT_ROUTE] - [SEA_ROUTE]"
+	}
+}
+defined_text = {
+	name = FFT_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 16
+			}
+		}
+		localization_key = l_YFC_route_fft
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = GGR_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 15
+			}
+		}
+		localization_key = l_YFC_route_ggr
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = GPG_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 17
+			}
+		}
+		localization_key = l_YFC_route_gpg
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = GTR_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 18
+			}
+		}
+		localization_key = l_YFC_route_ggr
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = GMD_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 19
+			}
+		}
+		localization_key = l_YFC_route_gmd
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = TBT_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 20
+			}
+		}
+		localization_key = l_YFC_route_tbt
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
+	}
+}
+defined_text = {
+	name = SEA_ROUTE
+	text = {
+		trigger = {
+			is_in_array = {
+				array = event_target:selected_scope.routes
+				value = 21
+			}
+		}
+		localization_key = l_YFC_route_sea
+	}
+	text = {
+		localization_key = l_YFC_trade_cross
 	}
 }

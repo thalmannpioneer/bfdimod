@@ -1739,7 +1739,7 @@ focus_tree = {
         relative_position_id = YFC_focus_establish_law_presence
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_free_pows
 
         prerequisite = { focus = YFC_focus_establish_law_presence }
 
@@ -1796,7 +1796,7 @@ focus_tree = {
         relative_position_id = YFC_focus_establish_law_presence
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_allow_people_enter
         prerequisite = { focus = YFC_focus_establish_law_presence }
 
         bypass = {
@@ -1834,7 +1834,7 @@ focus_tree = {
         relative_position_id = YFC_focus_allow_people_enter
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_banks_too_big_to_fail
         prerequisite = { focus = YFC_focus_allow_people_enter focus = YFC_focus_free_pows }
 
         bypass = {
@@ -1921,7 +1921,7 @@ focus_tree = {
         relative_position_id = YFC_focus_bunchivist_new_deal
         x = -2.5
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_bunch_fostered
 
         #autocompleted after election, disables the decisions
 
@@ -2010,7 +2010,7 @@ focus_tree = {
         relative_position_id = YFC_focus_clamp_down_on_bunchivism
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_trial_over_eraser
 
         available = {
             hidden_trigger = {
@@ -2076,7 +2076,7 @@ focus_tree = {
         relative_position_id = YFC_focus_execute_pen
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_reeducation
 
         prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
 
@@ -2108,7 +2108,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reeducation
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_fund_secret_police
 
         prerequisite = { focus = YFC_focus_reeducation }
 
@@ -2165,7 +2165,7 @@ focus_tree = {
         relative_position_id = YFC_focus_execute_pen
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_strengthen_the_law
 
         prerequisite = { focus = YFC_focus_execute_pen focus = YFC_focus_trial_over_eraser }
 
@@ -2201,7 +2201,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reeducation
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_ban_theft
 
         prerequisite = { focus = YFC_focus_reeducation  focus = YFC_focus_strengthen_the_law }
 
@@ -2236,7 +2236,7 @@ focus_tree = {
         relative_position_id = YFC_focus_trial_over_eraser
         x = 1
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_remove_oligarchical_sentiment
 
         prerequisite = { focus = YFC_focus_trial_over_eraser }
 
@@ -2264,7 +2264,7 @@ focus_tree = {
         relative_position_id = YFC_focus_clamp_down_on_bunchivism
         x = 1
         y = 5
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_fully_cored
 
         available = {
             85 = {compliance > 75}
@@ -3453,7 +3453,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -3902,7 +3902,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
 
         cost = 3
         completion_reward = {

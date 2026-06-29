@@ -8193,7 +8193,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_CRN_cooperation.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_CRN_cooperation.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_CRN_cooperation.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8205,7 +8205,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_CRN_cooperation.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_CRN_cooperation.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8224,7 +8224,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_hire_militias.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_hire_militias.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_hire_militias.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8236,7 +8236,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_hire_militias.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_hire_militias.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8255,7 +8255,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_sell_them_guns.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_sell_them_guns.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_sell_them_guns.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8267,7 +8267,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_sell_them_guns.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_sell_them_guns.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8751,7 +8751,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_coiny_cooperation.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_coiny_cooperation.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_coiny_cooperation.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8763,7 +8763,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_coiny_cooperation.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_coiny_cooperation.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8782,7 +8782,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_sectorialism.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_sectorialism.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_sectorialism.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8794,7 +8794,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_sectorialism.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_sectorialism.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8813,7 +8813,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_sectorialism_shine.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_sectorialism_shine.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_sectorialism_shine.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8825,7 +8825,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_sectorialism_shine.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_sectorialism_shine.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8844,7 +8844,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_look_inward.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_look_inward.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_look_inward.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8856,7 +8856,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_look_inward.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_look_inward.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8875,7 +8875,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunchivist_problem.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_bunchivist_problem.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunchivist_problem.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8887,7 +8887,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_bunchivist_problem.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunchivist_problem.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8906,7 +8906,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_foster_new_society.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_foster_new_society.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_foster_new_society.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8918,7 +8918,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_foster_new_society.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_foster_new_society.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8937,7 +8937,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_support_blocky.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_support_blocky.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_support_blocky.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8949,7 +8949,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_support_blocky.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_support_blocky.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8968,7 +8968,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunchivist_new_deal.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_bunchivist_new_deal.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunchivist_new_deal.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8980,7 +8980,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_bunchivist_new_deal.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunchivist_new_deal.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -8999,7 +8999,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_stimulate_bunch_businesses.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_stimulate_bunch_businesses.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_stimulate_bunch_businesses.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9011,7 +9011,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_stimulate_bunch_businesses.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_stimulate_bunch_businesses.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9030,7 +9030,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_law_presence.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_law_presence.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_law_presence.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9042,7 +9042,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_establish_law_presence.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_establish_law_presence.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9061,7 +9061,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_advertise_our_products.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_advertise_our_products.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_advertise_our_products.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9073,7 +9073,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_advertise_our_products.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_advertise_our_products.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9092,7 +9092,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_incentivize_employment.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_incentivize_employment.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_incentivize_employment.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9104,7 +9104,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_incentivize_employment.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_incentivize_employment.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9123,7 +9123,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_economic_issue.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_economic_issue.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_economic_issue.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9135,7 +9135,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_economic_issue.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_economic_issue.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9154,7 +9154,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_industrialize_or_die.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_industrialize_or_die.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_industrialize_or_die.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9166,7 +9166,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_industrialize_or_die.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_industrialize_or_die.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9185,7 +9185,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_erasers_stockpiles.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_erasers_stockpiles.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_erasers_stockpiles.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9197,7 +9197,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_erasers_stockpiles.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_erasers_stockpiles.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9216,7 +9216,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_develop_peoniele.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_develop_peoniele.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_develop_peoniele.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9228,7 +9228,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_develop_peoniele.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_develop_peoniele.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9247,7 +9247,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_develop_yoyleton.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_develop_yoyleton.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_develop_yoyleton.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9259,7 +9259,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_develop_yoyleton.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_develop_yoyleton.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9278,7 +9278,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_clamp_down_on_bunchivism.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_clamp_down_on_bunchivism.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_clamp_down_on_bunchivism.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9290,7 +9290,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_clamp_down_on_bunchivism.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_clamp_down_on_bunchivism.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9309,7 +9309,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_pen.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_pen.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_pen.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9321,7 +9321,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_pen.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_pen.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9340,7 +9340,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_big_yoyleton.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_big_yoyleton.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_big_yoyleton.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9352,7 +9352,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_big_yoyleton.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_big_yoyleton.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9371,7 +9371,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_expand_northern_trade.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_expand_northern_trade.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_expand_northern_trade.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9383,7 +9383,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_expand_northern_trade.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_expand_northern_trade.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9402,7 +9402,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_scope_out_sea_trade.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_scope_out_sea_trade.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_scope_out_sea_trade.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9414,7 +9414,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_scope_out_sea_trade.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_scope_out_sea_trade.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9433,7 +9433,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_military_industrial_complex.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_military_industrial_complex.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_military_industrial_complex.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9445,7 +9445,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_military_industrial_complex.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_military_industrial_complex.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9464,7 +9464,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_spread_out_sectors.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_spread_out_sectors.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_spread_out_sectors.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9476,7 +9476,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_spread_out_sectors.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_spread_out_sectors.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9495,7 +9495,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_second_city_in_peoniele.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_second_city_in_peoniele.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_second_city_in_peoniele.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9507,7 +9507,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_second_city_in_peoniele.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_second_city_in_peoniele.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9526,7 +9526,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_population_boom.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_population_boom.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_population_boom.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9538,7 +9538,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_population_boom.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_population_boom.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9557,7 +9557,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_the_grapes_and_the_cherries.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9569,7 +9569,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_the_grapes_and_the_cherries.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_the_grapes_and_the_cherries.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9588,7 +9588,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_invest_in_speed.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_invest_in_speed.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_invest_in_speed.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9600,7 +9600,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_invest_in_speed.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_invest_in_speed.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9619,7 +9619,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_purchase_support_package.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_purchase_support_package.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_purchase_support_package.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9631,7 +9631,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_purchase_support_package.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_purchase_support_package.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9650,7 +9650,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_invest_in_power.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_invest_in_power.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_invest_in_power.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9662,7 +9662,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_invest_in_power.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_invest_in_power.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9681,7 +9681,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_purchase_ordnance_package.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_YFC_purchase_ordnance_package.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_purchase_ordnance_package.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9693,7 +9693,348 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_YFC_purchase_ordnance_package.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_purchase_ordnance_package.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_trial_over_eraser_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_trial_over_eraser.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_trial_over_eraser.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_trial_over_eraser.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_reeducation_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_reeducation.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_reeducation.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_reeducation.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_strengthen_the_law_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_strengthen_the_law.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_strengthen_the_law.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_strengthen_the_law.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_fund_secret_police_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_fund_secret_police.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_fund_secret_police.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_fund_secret_police.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_ban_theft_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_ban_theft.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_ban_theft.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_ban_theft.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_remove_oligarchical_sentiment_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_remove_oligarchical_sentiment.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_remove_oligarchical_sentiment.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_remove_oligarchical_sentiment.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_fully_cored_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_fully_cored.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_fully_cored.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_fully_cored.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_allow_people_enter_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_allow_people_enter.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_allow_people_enter.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_allow_people_enter.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_free_pows_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_free_pows.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_free_pows.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_free_pows.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_bunch_fostered_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunch_fostered.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunch_fostered.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_bunch_fostered.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
+			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_banks_too_big_to_fail_shine"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_banks_too_big_to_fail.dds"
+		effectFile = gfx/FX/buttonstate.lua
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_banks_too_big_to_fail.dds
+			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
+			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no            # yes or no ;)
+			animationtime = 0.75                # in seconds
+			animationdelay = 0            # in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = gfx/interface/goals/GFX_focus_YFC_banks_too_big_to_fail.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9714,7 +10055,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_form_own.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_form_own.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_form_own.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9726,7 +10067,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_form_own.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_form_own.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9745,7 +10086,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_unite_trading_deals.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_unite_trading_deals.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_unite_trading_deals.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9757,7 +10098,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_unite_trading_deals.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_unite_trading_deals.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9776,7 +10117,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_gather_contracts.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_gather_contracts.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_gather_contracts.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9788,7 +10129,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_gather_contracts.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_gather_contracts.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9807,7 +10148,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_grant_drilling_subsidies.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_grant_drilling_subsidies.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_grant_drilling_subsidies.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9819,7 +10160,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_grant_drilling_subsidies.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_grant_drilling_subsidies.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9838,7 +10179,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_build_new_mines.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_build_new_mines.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_build_new_mines.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9850,7 +10191,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_build_new_mines.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_build_new_mines.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9869,7 +10210,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_rules_of_war.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_rules_of_war.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_rules_of_war.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9881,7 +10222,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_rules_of_war.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_rules_of_war.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9900,7 +10241,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_tighten_command.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_tighten_command.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_tighten_command.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9912,7 +10253,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_tighten_command.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_tighten_command.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9931,7 +10272,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_form_udc.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_form_udc.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_form_udc.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9943,7 +10284,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_form_udc.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_form_udc.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9962,7 +10303,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_conduct_military_drills.dds"
 		effectFile = gfx/FX/buttonstate.lua
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_conduct_military_drills.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_conduct_military_drills.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds    # <- the animated file
 			animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)
@@ -9974,7 +10315,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = GFX_focus_Musketeers_conduct_military_drills.dds
+			animationmaskfile = gfx/interface/goals/GFX_focus_Musketeers_conduct_military_drills.dds
 			animationtexturefile = gfx/interface/goals/shine_overlay.dds     # <- the animated file
 			animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no            # yes or no ;)

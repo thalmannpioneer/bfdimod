@@ -220,4 +220,9 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
+	
+	spriteType = {
+		name = "GFX_corp_help"
+		textureFile = "gfx/interface/decisions/YFC_trade/help.dds"
+	}
 }
