@@ -224,4 +224,15 @@ leader_traits = {
         political_power_factor = 0.15
         stability_factor = -0.01
     }
+
+    YFC_old_general = {
+        sprite = 13
+
+        war_support_factor = 0.1
+        stability_factor = -0.1
+        political_power_factor = -0.15
+        command_power_gain = 0.5
+        max_command_power = 100
+        planning_speed = 0.1
+    }
 }

@@ -3518,6 +3518,7 @@ focus_tree = {
                 idea = idea_YFC_company_reorganization
                 days = 180
             }
+            custom_effect_tooltip = l_YFC_raid_sector_takeover
         }
     }
 
@@ -3768,7 +3769,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_march_on_footpathburg
         relative_position_id = YFC_focus_the_sectorial_powderkeg
-        x = 1
+        x = 0
         y = 2
         icon = GFX_focus_generic
 
@@ -3776,9 +3777,15 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_envy }
         prerequisite = { focus = YFC_focus_pride }
 
-        cost = 1
-        completion_reward = {
+        select_effect = { 201 = {set_demilitarized_zone = yes} }
 
+        cost = 2
+        completion_reward = {
+            country_event = {
+                id = YFC_event.68
+                hours = 1
+                random_hours = 2
+            }
 
             #event about how most of the mercenaries that they encountered on the way to the yfc were swayed to the side of the thc
             #the engagement in footpathburg was mostly peaceful, and yellow face is ousted from power
