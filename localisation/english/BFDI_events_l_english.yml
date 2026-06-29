@@ -1011,17 +1011,17 @@
  YFC_event.58.c: "Cut some funding to the population centers."
  YFC_event.58.d: "Use some of his own funds."
 
- YFC_event.59.t: "YFC_focus_reassess_geopolitics event"
- YFC_event.59.desc: "zdubbz words here :D"
- YFC_event.59.a: "TOO MANY WORDS!!!!"
+ YFC_event.59.t: "Our Place in the Sun?"
+ YFC_event.59.desc: "This nights discussions between Yellow Face and the company's Sectorials were quite bleak. The Sectorials were not very happy at being summoned late at night, however, discussions were certainly to be had. It was very clear that the company could not continue in the direction that it had been going in for so long. What with the near death of the international free market through mass embargoes, and denunciation from Numismatia (the morons were being overrun by communists, who could trust them?) undermining our legitimacy, what could the company do? Throughout the night of discussions, the only answer we were able to recieve for this question was Pipe quietly suggesting that the good objects in Cary and Podgornyv were still happy to trade with us officially. This, of course, would not be enough to sustain us, but not a single Sectorial other than Pipe presented an alternative in the meeting. Near its conclusion, Yellow Face spoke about attempting to find more subversive ways to profit. Beaker groaned at the claim, the Sectorials didn't quite enjoy getting their hands dirty."
+ YFC_event.59.a: "An uncertain future."
 
- YFC_event.60.t: "YFC_focus_trade_alternatives event"
- YFC_event.60.desc: "zdubbz 420"
- YFC_event.60.a: "weed..."
+ YFC_event.60.t: "A Different Kind of Profit?"
+ YFC_event.60.desc: "Walking home from a long day of doing nothing in Headquarters, out of the corner of his eye, Yellow Face saw something very interesting. Two objects, attempting to appear hidden, exchanging a seemingly innocuous bag of a green substance, for a fat stack of cash. It was such a simple display, but it had a powerful effect on Yellow Face. People were willing to pay so much for so little? It would likely be easier for the company to store than anything they had sold before; why hadn't he thought of this earlier?! This stuff would likely have to be sold behind the backs of the leaders of the selling area, which might upset the Sectorials; but who cares about them anyways? They're under Yellow Face, and his word is final! Walking over to the cunning business man in the alleyway, Yellow Face quickly and loudly spoke. \"One bag of weed, please!\""
+ YFC_event.60.a: "\"Um.. are you a cop?\""
 
- YFC_event.61.t: "YFC_focus_offset_debt event"
- YFC_event.61.desc: "zdubbz Sectors mad (grrrr)"
- YFC_event.61.a: "ha ha losers!!!!!!"
+ YFC_event.61.t: "An Outing Ruined"
+ YFC_event.61.desc: "The Sectorials had all grown somewhat close to each other, since the company hired them. They frequently attended social outtings together as a group to take the edge off things when work was getting stressful, and work was more stressful than ever under current conditions. Naturally, the Sectorials decided to eat at a fancy restaurant for dinner that night, and their meal was nearly over now, the waiter coming to them now for the bill. Well, for five bills; they would of course be paying separately.\n\nThey gave their cards to the waiter.Hammer made a bad joke about their cards declining, and no one laughed except for Pipe. Thouguh, as the minutes since the waiter left doubled, and then tripled, the group became confused as to what had been taking so long. After nearly half an hour, the waiter came back, apologizing profusely about the cards declining. Top Hat checked his balance to find he was over $100,000 in debt, as were the rest of the Sectorials. It seemed as if the debt of the company randomly became the debt of the Sectorials. "
+ YFC_event.61.a: "For what purpose?!"
 
  YFC_event.62.t: "YFC_focus_lessons_from_mercs event"
  YFC_event.62.desc.a: "TopHat talks to Cherry"
@@ -1546,7 +1546,7 @@
  GTR_event.20.desc: "The celebrations in Announcergrad filled Cappy with a sense of national pride that she didn't think she'd ever have. From the balcony on which she stood, she watched in awe as the parades of flags and banners of University symbols and graphed mathematical functions alike soared through the newly paved streets of the city. Things were getting better, anyone could see that to be true. Rations were getting larger, actually satiating objects' hunger, the smog filled winds from the south had started thinning out, and management was starting to finally listen to the objects over which the presided. The image of an old friend from a while ago came to Cappy's mind. Grape, he was always much more into the idea of the University Administration than she. She felt her soul warm at the realization that he'd love this sight just as much as the city seemed to love making it, she just wished he could've been here with her. Her thoughs halted as she heard another noisy rally march near, holding flags and banners all the same. Objects, joyful, loud, irrepressibly filled with ardor, filled the city's afternoon streets with a thunderous roar of \"Republic!\"\nWe all may have lost someone..."
  GTR_event.20.a: "...but we shall all move on."
 
- GTR_event.21.t: "Bossy Bot" #zdubbz; event abt golf ball being too headstrong in terms of govt
+ GTR_event.21.t: "Bossy Bot"
  GTR_event.21.desc: "\"Tennis Ball, you're acting weak! This is a time of confusion for everyone, we need strong, guiding leadership!\" Golf Ball's volume raised further. For the last few hours, the two had been attempting to calmly discuss the manner in which the two should govern. The universe's heat death would come sooner than a calm discussion about this topic between the two. Tennis Ball, despite favoring the highly radical reforms that a sector of the populace seemed to favor, kept quiet. He always attempted to appear more reserved in his beliefs, moving the goal post further and further with each subsequent conversation, but today discussions boiled over. Golf Ball was screaming at the top of her lungs about the insolence she percieved in him. And, of course, Tennis Ball obliged, for the moment."
  GTR_event.21.a: "\"Awwwww, okaaaaaaaaaaay\""
 
