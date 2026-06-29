@@ -116,6 +116,8 @@ country_event = {
 
                 set_country_flag = LSS_attack_losers
 
+                
+
                 division_template = {
                     name = "Military Police"
                     template_counter = 13
@@ -239,6 +241,36 @@ country_event = {
 }
 
 country_event = {
+    id = uncommon_event.0
+
+    hidden = yes
+
+    is_triggered_only = yes
+
+	immediate = {
+        IF = {
+            limit = {
+                has_game_rule = { rule = unknown option = yes }
+                is_ai = no
+                date > 2012.2.01
+                is_debug = no
+            }
+            country_event = {
+                id = uncommon_event.1
+                days = 3
+                hours = 12
+                random_hours = 48
+            }
+        }
+        ELSE_IF = {
+            limit = {is_debug = yes}
+            goto_state = 89
+            GTR = { change_tag_from = EMP }
+        }
+	}
+}
+
+country_event = {
     id = uncommon_event.1
     title = uncommon_event.1.t
     desc = uncommon_event.1.desc
@@ -253,7 +285,7 @@ country_event = {
                 limit = {is_ai = no}
                 country_event = {
                     id = uncommon_event.2
-                    days = 2
+                    days = 25
                     hours = 12
                     random_hours = 48
                 }

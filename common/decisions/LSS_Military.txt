@@ -48,7 +48,13 @@ decision_LSS_Military_category = {
 		activation = { always = no }
 		timeout_effect = {
 			add_manpower = 5000
-			load_oob = "LSS_Air_BBA"
+			IF = {
+				limit = {has_dlc = "By Blood Alone"}
+				load_oob = "LSS_Air_BBA"
+			}
+			ELSE = {
+				load_oob = "LSS_Air"
+			}
 		}
 	}
 

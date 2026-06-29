@@ -435,6 +435,13 @@ bookmarks = {
                 remove_ideas = idea_GOI_bfdi
                 remove_ideas = idea_GOI_great_goiky_railroad
             }
+
+            EMP = {
+                country_event = {
+                    id = uncommon_event.0
+                    days = 1
+                }
+            }
         }
 
         GTR = {

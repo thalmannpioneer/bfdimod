@@ -33,11 +33,6 @@ on_actions = {
                     country_event = GOI_event.9
                 }
                 if = {
-                    limit = { EMP = { is_ai = no } }
-                    GTR = { change_tag_from = EMP }
-                    goto_state = 89
-                }
-                else_if = {
                     limit = { GOI = { is_ai = no } }
                     GTR = { change_tag_from = GOI }
                     goto_state = 89

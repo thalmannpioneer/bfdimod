@@ -77,6 +77,14 @@ entity = {
 	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
 }
+entity = {
+	clone = "infantry_entity"
+	name = "YFC_infantry_entity"
+	
+	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
+}
+
 
 entity = {
 	clone = "infantry_entity"
@@ -103,6 +111,14 @@ entity = {
 	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
 }
+entity = {
+	clone = "infantry_2_entity"
+	name = "YFC_infantry_2_entity"
+	
+	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
+}
+
 
 entity = {
 	clone = "infantry_2_entity"
@@ -128,6 +144,13 @@ entity = {
 	
 	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
+}
+entity = {
+	clone = "infantry_3_entity"
+	name = "YFC_infantry_3_entity"
+	
+	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
 }
 
 #####################################################################

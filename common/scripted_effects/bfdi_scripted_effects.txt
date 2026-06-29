@@ -101,6 +101,13 @@ BFDI_game_start = {
             random_hours = 12
         }
     }
+
+    EMP = {
+        country_event = {
+            id = uncommon_event.0
+            days = 1
+        }
+    }
 }
 
 

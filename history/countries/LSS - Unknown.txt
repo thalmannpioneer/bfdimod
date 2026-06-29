@@ -123,6 +123,27 @@ IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to wo
     set_technology = { engine_tech_2 = 1 }
     set_technology = { engine_tech_3 = 1 }
     set_technology = { engine_tech_4 = 1 }
+
+    create_equipment_variant = {
+		name = "M1A2 Abrams"
+		type = main_battle_tank_chassis
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon_3
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gas_turbine_engine
+			special_type_slot_1 = tank_radio_3
+            special_type_slot_2 = stabilizer
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
+		}
+	}
 }
 
 # Artillery
@@ -226,7 +247,56 @@ IF = {
     set_technology = { early_transport_plane = 1 }
     set_technology = { improved_transport_plane = 1 }
     set_technology = { strategic_airlifter = 1 }
+
+    set_technology = { early_fighter = 1 }
+    set_technology = { fighter1 = 1 }
+    set_technology = { fighter2 = 1 }
+    set_technology = { fighter3 = 1 }
+    set_technology = { jet_fighter1 = 1 }
+    set_technology = { jet_fighter2 = 1 } #jet_fighter_equipment_2
+    set_technology = { CAS1 = 1 } 
+    set_technology = { CAS2 = 1 } 
+    set_technology = { CAS3 = 1 } 
+    set_technology = { naval_bomber1 = 1 } 
+    set_technology = { naval_bomber2 = 1 } 
+    set_technology = { naval_bomber3 = 1 } 
+    set_technology = { early_bomber = 1 } 
+    set_technology = { heavy_fighter1 = 1 } 
+    set_technology = { heavy_fighter2 = 1 } 
+    set_technology = { heavy_fighter3 = 1 } 
+    set_technology = { tactical_bomber1 = 1 } 
+    set_technology = { tactical_bomber2 = 1 } 
+    set_technology = { tactical_bomber3 = 1 } 
+    set_technology = { jet_tactical_bomber1 = 1 } 
+    set_technology = { jet_tactical_bomber2 = 1 } 
+    set_technology = { strategic_bomber1 = 1 } 
+    set_technology = { strategic_bomber2 = 1 } 
+    set_technology = { strategic_bomber3 = 1 } 
+    set_technology = { jet_strategic_bomber1 = 1 } 
+
+    create_equipment_variant = {
+        name = "F-35 Lightning II (Fighter)"
+        type = jet_fighter_equipment_2
+        upgrades = {
+            plane_gun_upgrade = 4
+            plane_range_upgrade = 4
+            plane_engine_upgrade = 4
+            plane_reliability_upgrade  = 4
+        }
+    }
+
+    create_equipment_variant = {
+        name = "F-35 Lightning II (CAS)"
+        type = CAS_equipment_3
+        upgrades = {
+            plane_cas_upgrade = 4
+            plane_range_upgrade = 4
+            plane_engine_upgrade = 4
+            plane_reliability_upgrade  = 4
+        }
+    }
 }
+
 IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
     limit = {has_dlc = "By Blood Alone" }
 
@@ -408,6 +478,16 @@ create_equipment_variant = {
 create_equipment_variant = {
     name = "M16A4"
     type = infantry_equipment_3
+}
+
+create_equipment_variant = {
+    name = "AMERICAN Support Equipment"
+    type = support_equipment_1
+}
+
+create_equipment_variant = {
+    name = "Navistar 7000 series"
+    type = motorized_equipment_1
 }
 
 if = {

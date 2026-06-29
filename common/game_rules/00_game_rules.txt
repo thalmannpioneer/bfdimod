@@ -582,3 +582,18 @@ allow_experimental_paths = {
 		desc = "RULE_ALLOW_EXPERIMENTAL_PATHS_ALLOWED_DESC"
 	}
 }
+
+UNKNOWN = {
+	name = "RULE_ALLOW_UNKNOWN"
+	group = "RULE_GROUP_FUNNY"
+	default = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_UNKNOWN_BLOCKED_DESC"
+	}
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_UNKNOWN_ALLOWED_DESC"
+	}
+}

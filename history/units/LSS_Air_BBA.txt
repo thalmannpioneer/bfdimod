@@ -1,23 +1,7 @@
 air_wings = {
     13 = {
-        transport_plane_equipment_3 = {
-            owner = "LSS"
-            amount = 100
-        }
-        name = "433rd Airlift Wing"
-    }
-    13 = {
-        small_plane_airframe_4 = {
-            owner = "LSS"
-            amount = 25
-        }
-        name = "182d Fighter Squadron"
-    }
-     13 = {
-        small_plane_cas_airframe_4 = {
-            owner = "LSS"
-            amount = 25
-        }
-        name = "111th Attack Squadron"
+        transport_plane_equipment_3 = {owner = "LSS" creator = "LSS" amount = 100 version_name = "Boeing C-17 Globemaster III"} #433rd Airlift Wing
+        small_plane_airframe_4 = {owner = "LSS" creator = "LSS" amount = 25 version_name = "F-35 Lightning II (Fighter)"} #182d Fighter Squadron
+        small_plane_cas_airframe_4 = {owner = "LSS" creator = "LSS" amount = 25 version_name = "F-35 Lightning II (CAS)"} #111th Attack Squadron
     }
 }
