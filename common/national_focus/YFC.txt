@@ -106,13 +106,12 @@ focus_tree = {
                     planning_skill = 4
                     logistics_skill = 2
                 }
+                add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+                set_country_flag = YFC_Allow_Beaker
             }
             custom_effect_tooltip = l_YFC_allow_rails
             add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
             add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
-            hidden_effect = {
-                add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
-            }
             mark_focus_tree_layout_dirty = yes
         }
     }
@@ -3485,8 +3484,12 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_manpower = -5000
-            custom_effect_tooltip = l_money_gain_400K
-            add_to_variable = { money_amount = 4 }
+            custom_effect_tooltip = l_YFC_sectors_All_Lower
+            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
             add_timed_idea = {
                 idea = idea_YFC_company_reorganization
                 days = 180
@@ -3508,12 +3511,8 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_stability = -0.05
-            custom_effect_tooltip = l_YFC_sectors_All_Lower
-            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
-            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
-            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
-            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
-            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+            custom_effect_tooltip = l_money_gain_400K
+            add_to_variable = { money_amount = 4 }
             add_timed_idea = {
                 idea = idea_YFC_company_reorganization
                 days = 180
@@ -3572,8 +3571,8 @@ focus_tree = {
             add_political_power = -75
             add_stability = 0.05
             remove_ideas = idea_YFC_economic_isolation
-            modify_timed_idea = {
-                idea = idea_YFC_economic_isolation
+            add_timed_idea = {
+                idea = idea_YFC_sectorial_crackdown
                 days = 60
             }
         }
@@ -3598,6 +3597,18 @@ focus_tree = {
                 id = YFC_event.60
                 hours = 1
                 random_hours = 2
+            }
+
+            hidden_effect = {
+                IF = {
+                    limit = {has_completed_focus = YFC_focus_tophats_outlook}
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
             }
         }
     }
@@ -3662,9 +3673,27 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            country_event = {
+                id = YFC_event.63
+                hours = 1
+                random_hours = 2
+            }
+
             #event that's a letter from tophat to headquarters about dealing in the mercenary business, and possibly even with spies
             #tophat is very clearly angry at yellow face's recent restructurings
             #gain a bit of political power, some stability
+
+            hidden_effect = {
+                IF = {
+                    limit = {has_completed_focus = YFC_focus_trade_alternatives}
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+            }
         }
     }
 
@@ -3678,6 +3707,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_trade_alternatives }
         prerequisite = { focus = YFC_focus_tophats_outlook }
 
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_sectorial_powderkeg
+            }
+        }
+        allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
+
         #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
 
         cost = 5
@@ -3685,7 +3721,6 @@ focus_tree = {
             #event about the sectorials all coming together to declare their opposition to the restructuring of the company
             #starts our short squabble for power
             #loses stability AGAIN #lmao
-
 
         }
     }
@@ -3820,11 +3855,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_the_great_recession }
-        prerequisite = { focus = YFC_focus_mass_firings }
-        prerequisite = { focus = YFC_focus_company_restructuring }
-        prerequisite = {
-            focus = YFC_focus_reassess_geopolitics
-        }
+        prerequisite = { focus = YFC_focus_mass_firings focus = YFC_focus_company_restructuring focus = YFC_focus_reassess_geopolitics }
 
         ai_will_do = {
             base = 10

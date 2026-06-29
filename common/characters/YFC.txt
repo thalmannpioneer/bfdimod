@@ -125,8 +125,8 @@ characters = {
 					add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
 				}
             }
-			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
-			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
+			available = { hidden_trigger = { has_country_flag = YFC_Allow_Beaker } }
+			visible = { hidden_trigger = { has_country_flag = YFC_Allow_Beaker } }
         }
 	}
 	YFC_hammer = {

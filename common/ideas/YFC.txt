@@ -159,6 +159,13 @@ ideas = {
 			}
 		}
 
+		idea_YFC_sectorial_crackdown = { #Hoi4 is dumb so I have to do this
+			picture = ETH_customs_barrier_ITA #Do the same as idea_YFC_economic_isolation
+			modifier = {
+				stability_factor = -0.5
+			}
+		}
+
 		idea_YFC_company_reorganization = {
 			picture = SOV_coup_detat_ccp_2d_sov_compatibility
 			modifier = {

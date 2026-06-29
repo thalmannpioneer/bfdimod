@@ -176,12 +176,14 @@ scripted_gui = {
                 check_variable = { var_idea_YFC_Beaker_level < 5 }
                 NOT = {has_idea = idea_YFC_Defiant_Beaker}
                 NOT = {has_idea = idea_YFC_Debt_Crisis}
+                has_country_flag = YFC_Allow_Beaker
             }
             button_tech_decrease_click_enabled = {
                 has_political_power > 25
                 check_variable = { var_idea_YFC_Beaker_level > 1 }
                 NOT = {has_idea = idea_YFC_Defiant_Beaker}
                 NOT = {has_idea = idea_YFC_Debt_Crisis}
+                has_country_flag = YFC_Allow_Beaker
             }
             button_construction_increase_click_enabled = {
                 has_political_power > 25

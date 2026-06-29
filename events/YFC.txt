@@ -2677,6 +2677,10 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+
+		complete_national_focus = YFC_focus_the_sectorial_powderkeg
+
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -2727,13 +2731,30 @@ country_event = { #YFC_focus_envy
 	option = { 
 		name = YFC_event.66.a
 
-		IF = {
-			limit = {has_idea = idea_YFC_Defiant_Beaker}
-			remove_ideas = idea_YFC_Defiant_Beaker
-		}
+		custom_effect_tooltip = l_YFC_sectors_Beaker_leave
 
-		custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
-		subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
+		hidden_effect = {
+			IF = {
+				limit = {has_idea = idea_YFC_Defiant_Beaker}
+				remove_ideas = idea_YFC_Defiant_Beaker
+			}
+			IF = {
+				limit = {YFC_beaker = {is_hired_as_advisor = yes}}
+				deactivate_advisor = idea_YFC_Beaker
+			}
+			set_variable = { var_idea_YFC_Beaker_cost = 0 }
+			set_variable = { var_idea_YFC_sectors_Beaker_research = 0 }
+ 			set_variable = { var_idea_YFC_sectors_Beaker_experience = 0 }
+			set_variable = { var_sectors_combined_cost = 0 } 
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_TopHat_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Pipe_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Beaker_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Hammer_cost }
+            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Taser_cost }
+			clr_country_flag = YFC_Allow_Beaker
+			custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
+			subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
+		}
 	}
 }
 
