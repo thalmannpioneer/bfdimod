@@ -24,7 +24,24 @@ defined_text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 5 } }
 		localization_key = GFX_interwar_antitank_medium
 	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
+		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
+	}
 }
+
+defined_text = {
+	name = selling_deal_equipment_type
+	text = {
+		trigger = { check_variable = {ROOT.buying_item < 6} }
+		localization_key = l_YFC_trade_buying_normal
+	}
+	text = {
+		trigger = { check_variable = {ROOT.buying_item = 6} }
+		localization_key = l_YFC_trade_buying_food
+	}
+}
+
 
 defined_text = {
 	name = equipment_cost_trade
@@ -50,6 +67,10 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 5 } }
+		localization_key = "1K"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
 		localization_key = "1K"
 	}
 }
@@ -161,7 +182,21 @@ defined_text = {
 		}
 		localization_key = GFX_interwar_antitank_medium
 	}
-
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 6 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 6 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
+	}
 }
 
 defined_text = {
@@ -270,6 +305,21 @@ defined_text = {
 			}
 		}
 		localization_key = GFX_interwar_antitank_medium
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 6 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
 	}
 }
 

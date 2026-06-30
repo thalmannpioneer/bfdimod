@@ -3404,6 +3404,10 @@ focus_tree = {
 
         ai_will_do = {
             base = 15
+            modifier = {
+                add = -20
+                NOT = {has_completed_focus = YFC_focus_numismatian_split} #Just so the AI does not take it while testing
+            }
         }
 
         cost = 5

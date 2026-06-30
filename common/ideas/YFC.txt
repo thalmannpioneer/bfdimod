@@ -39,6 +39,16 @@ ideas = {
 			cancel = {NOT = {country_exists = YFC}}
 		}
 
+		idea_YFC_trade_food = {
+			picture = generic_agrarian_society
+			modifier = {
+				stability_factor = 0.05
+				monthly_population = 0.1
+				casualty_trickleback = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
 		idea_YFC_Bunch_Insurgency  = {
 			picture = YFC_bunch_insurgency #Replaced :3
 			modifier = {
@@ -149,8 +159,8 @@ ideas = {
 			}
 		}
 
-		idea_YFC_economic_isolation = { #Might turn this into a modifer but idk
-			picture = ETH_customs_barrier_ITA
+		idea_YFC_economic_isolation = {
+			picture = ETH_customs_barrier_ITA #Replace later 
 			modifier = {
 				stability_factor = -0.1
 				stability_weekly = -0.005
@@ -167,16 +177,16 @@ ideas = {
 		}
 
 		idea_YFC_company_reorganization = {
-			picture = SOV_coup_detat_ccp_2d_sov_compatibility
+			picture = SOV_coup_detat_ccp_2d_sov_compatibility #Replace later 
 			modifier = {
-				political_power_gain = 2.5
+				political_power_gain = 3
 				weekly_manpower = -150
 				monthly_population = -1.5
 			}
 		}
 
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
-			picture = generic_morale_bonus
+			picture = generic_morale_bonus #Replace later 
 			modifier = {
 				compliance_growth = 1.5
 				resistance_growth = 1
@@ -202,7 +212,7 @@ ideas = {
 
 
 		idea_YFC_operation_enforcement = { #Last ditch attack by YFC during revolt, ALL IN!!!!!. Given by choice in a event where a ceasefire could be made
-			picture = CZE_planning_bonus
+			picture = CZE_planning_bonus #Replace later 
 			targeted_modifier = {
 				tag = BUN
 				attack_bonus_against = 0.5
@@ -228,7 +238,7 @@ ideas = {
 		}
 
 		idea_YFC_active_pirates = { Yarr
-			picture = SOV_organize_wreckers
+			picture = SOV_organize_wreckers #Replace later 
 			modifier = {
 				naval_accidents_chance = 0.5
 				consumer_goods_factor = 0.35

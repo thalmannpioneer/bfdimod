@@ -17,7 +17,7 @@ characters = {
 			} 
 		}
 		corps_commander = {
-			skill = 5
+			skill = 6
 			attack_skill = 6
 			defense_skill = 3
 			planning_skill = 5
@@ -34,7 +34,7 @@ characters = {
 			} 
 		}
 		field_marshal = {
-			skill = 7
+			skill = 8
 			attack_skill = 7
 			defense_skill = 5
 			planning_skill = 6
@@ -51,12 +51,46 @@ characters = {
 			} 
 		}
 		corps_commander = {
-			skill = 4
+			skill = 5
 			attack_skill = 4
 			defense_skill = 6
 			planning_skill = 4
 			logistics_skill = 7
 			traits = { armor_officer organizer commando panzer_leader cavalry_officer }
+		}
+	}
+
+	LSS_Norris = {
+		name = LSS_Norris
+		portraits = { 
+			army = { 
+				large = GFX_LSS_Norris
+			} 
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 5
+			traits = { engineer_officer trait_engineer }
+		}
+	}
+
+	LSS_Thomas = {
+		name = LSS_Thomas
+		portraits = { 
+			army = { 
+				large = GFX_LSS_Thomas
+			} 
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 8
+			traits = { commando paratrooper  }
 		}
 	}
 }

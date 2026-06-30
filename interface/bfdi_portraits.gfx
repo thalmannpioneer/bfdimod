@@ -143,6 +143,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_LSS_Norris"
+		texturefile = "gfx/leaders/LSS/LSS_Norris.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LSS_Thomas"
+		texturefile = "gfx/leaders/LSS/LSS_Thomas.dds"
+	}
+
+	spriteType = {
 		name = "GFX_Portrait_LSS_Generic_land_male_1"
 		textureFile = "gfx/leaders/LSS/Portrait_LSS_Generic_land_male_1.dds"
 	}

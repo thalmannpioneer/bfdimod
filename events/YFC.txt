@@ -1376,6 +1376,14 @@ country_event = { #YFC Sell
 				}
 			}
 		}
+		ELSE_IF = {
+			limit = {check_variable = {buying_item = 6}} 
+			add_timed_idea = {
+				idea = idea_YFC_trade_food
+				days = 90
+			}
+			hidden_effect = {YFC = {clr_country_flag = YFC_trade_allow_food}}
+		}
 
 		clr_country_flag = ongoing_trade_offer
 		clr_country_flag = Confirmed_Trade_Buying

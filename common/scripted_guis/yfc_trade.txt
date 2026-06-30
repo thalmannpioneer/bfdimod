@@ -112,10 +112,12 @@ scripted_gui = { #I AM SANE
                 NOT = { has_country_flag = ongoing_trade_offer }
             }
             buying_item_button_increase_X_click_enabled = {
+                check_variable = { buying_item < 6  }
                 check_variable = { buying_amount < 1000 }
                 NOT = { has_country_flag = ongoing_trade_offer }
             }
             buying_item_button_decrease_X_click_enabled = {
+                check_variable = { buying_item < 6  }
                 check_variable = { buying_amount > 100 }
                 NOT = { has_country_flag = ongoing_trade_offer }
             }
@@ -238,6 +240,10 @@ scripted_gui = { #I AM SANE
                         value = 5
                     }
                 }
+                add_to_array = {
+                    array = ROOT.equipment_list
+                    value = 6
+                }
             }
 
             selling_item_button_increase_X_click = {
@@ -331,6 +337,7 @@ scripted_gui = { #I AM SANE
                     multiply_temp_variable = {MATH_COST_var = THIS.selling_amount}
                     add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 }
+
             }
             Buying_Confirm_Button_click = { #ASK WHAT WE WANT TO BUY
                 set_country_flag = Confirmed_Trade_Buying
@@ -400,6 +407,7 @@ scripted_gui = { #I AM SANE
                         OR = {
                             check_variable = { THIS.buying_item = 4 }
                             check_variable = { THIS.buying_item = 5 }
+                            check_variable = { THIS.buying_item = 6 }
                         }
                     }
                     set_temp_variable = { MATH_COST_var = 1 }
@@ -413,10 +421,12 @@ scripted_gui = { #I AM SANE
                     IF = {
                         limit = {has_country_flag = Selling_Menu}
                         set_variable = { selling_item = THIS.equipment_list^i }
+                        set_variable = {THIS.selling_amount = 100}
                     }
                     ELSE_IF = {
                         limit = {has_country_flag = Buying_Menu}
                         set_variable = { buying_item = THIS.equipment_list^i }
+                        set_variable = {THIS.buying_amount = 100}
                     }
                     clr_country_flag = Selling_Menu
                     clr_country_flag = Buying_Menu
@@ -479,10 +489,12 @@ scripted_gui = { #THIS IS NOT HURTING MY BRAIN AT ALL
                     IF = {
                         limit = {has_country_flag = Selling_Menu}
                         set_variable = { selling_item = THIS.equipment_list^i }
+                        set_variable = {THIS.selling_amount = 100}
                     }
                     ELSE_IF = {
                         limit = {has_country_flag = Buying_Menu}
                         set_variable = { buying_item = THIS.equipment_list^i }
+                        set_variable = {THIS.buying_amount = 100}
                     }
                     clr_country_flag = Selling_Menu
                     clr_country_flag = Buying_Menu
@@ -571,28 +583,32 @@ scripted_gui = {
                 }
                 OR = {
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@infantry_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@infantry_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@support_equipment_1}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@support_equipment_1}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@motorized_equipment }
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@motorized_equipment }
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@artillery_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@artillery_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@anti_air_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_air_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = {YFC.buying_amount < YFC.num_equipment@anti_tank_equipment}
+                        var:YFC.tradeable^YFC.selected = {buying_amount < YFC.num_equipment@anti_tank_equipment}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
+                    }
+                    AND = {
+                        YFC = {has_country_flag = YFC_trade_allow_food}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
                     }
                 }
             }

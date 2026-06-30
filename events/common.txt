@@ -112,6 +112,14 @@ country_event = {
                 amount = 2000
             }
 
+			IF = {
+				limit = {has_dlc = "By Blood Alone"}
+				load_oob = "LSS_Air_BBA"
+			}
+			ELSE = {
+				load_oob = "LSS_Air"
+			}
+
             hidden_effect = {
 
                 set_country_flag = LSS_attack_losers

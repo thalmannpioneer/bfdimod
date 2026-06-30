@@ -900,12 +900,12 @@
  YFC_event.35.desc: ""
  YFC_event.35.a: "Huh."
 
- YFC_event.36.t: "New Yellow Face Deal!" #Don't rewrite
- YFC_event.36.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§GYellow Face is willing to sell [?ROOT.buying_amount] equipment that we have requested.§!\n\n§RFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
+ YFC_event.36.t: "New Yellow Face Deal!" #Don't rewrite (For buying X stuff)
+ YFC_event.36.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§GYellow Face is willing to sell [selling_deal_equipment_type] that we have requested.§!\n\n§RFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
  YFC_event.36.a: "Accept!"
  YFC_event.36.b: "Deny!"
 
- YFC_event.37.t: "New Yellow Face Deal!" #Don't rewrite
+ YFC_event.37.t: "New Yellow Face Deal!" #Don't rewrite (For selling X stuff)
  YFC_event.37.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§RYellow Face is willing to buy [?ROOT.selling_amount] equipment that we are selling.§!\n\n§GFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
  YFC_event.37.a: "Accept!"
  YFC_event.37.b: "Deny!"
