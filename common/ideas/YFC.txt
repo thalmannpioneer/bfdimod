@@ -162,7 +162,7 @@ ideas = {
 		idea_YFC_sectorial_crackdown = { #Hoi4 is dumb so I have to do this
 			picture = ETH_customs_barrier_ITA #Do the same as idea_YFC_economic_isolation
 			modifier = {
-				stability_factor = -0.5
+				stability_factor = -0.25
 			}
 		}
 

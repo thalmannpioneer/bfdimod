@@ -1024,7 +1024,7 @@
  YFC_event.60.a: "\"Um.. are you a cop?\""
 
  YFC_event.61.t: "An Outing Ruined"
- YFC_event.61.desc: "The Sectorials had all grown somewhat close to each other, since the company hired them. They frequently attended social outtings together as a group to take the edge off things when work was getting stressful, and work was more stressful than ever under current conditions. Naturally, the Sectorials decided to eat at a fancy restaurant for dinner that night, and their meal was nearly over now, the waiter coming to them now for the bill. Well, for five bills; they would of course be paying separately.\n\nThey gave their cards to the waiter.Hammer made a bad joke about their cards declining, and no one laughed except for Pipe. Thouguh, as the minutes since the waiter left doubled, and then tripled, the group became confused as to what had been taking so long. After nearly half an hour, the waiter came back, apologizing profusely about the cards declining. Top Hat checked his balance to find he was over $100,000 in debt, as were the rest of the Sectorials. It seemed as if the debt of the company randomly became the debt of the Sectorials. "
+ YFC_event.61.desc: "The Sectorials had all grown somewhat close to each other, since the company hired them. They frequently attended social outtings together as a group to take the edge off things when work was getting stressful, and work was more stressful than ever under current conditions. Naturally, the Sectorials decided to eat at a fancy restaurant for dinner that night, and their meal was nearly over now, the waiter coming to them now for the bill. Well, for five bills; they would of course be paying separately.\n\nThey gave their cards to the waiter. Hammer made a bad joke about their cards declining, and no one laughed except for Pipe. Though, as the minutes since the waiter left doubled, and then tripled, the group became confused as to what had been taking so long. After nearly half an hour, the waiter came back, apologizing profusely about the cards declining. Top Hat checked his balance to find he was over $100,000 in debt, as were the rest of the Sectorials. It seemed as if the debt of the company randomly became the debt of the Sectorials."
  YFC_event.61.a: "For what purpose?!"
 
  YFC_event.62.t: "YFC_focus_lessons_from_mercs event"
@@ -1053,7 +1053,7 @@
  YFC_event.67.desc: "Portland fr fr zdubbz"
  YFC_event.67.a: "Alright"
 
- YFC_event.68.t: "YFC_focus_march_on_footpathburg event"
+ YFC_event.68.t: "§tYFC_focus_march_on_footpathburg event§!"
  YFC_event.68.desc: "Yellow Face is gone zdubbz"
  YFC_event.68.a: "cool"
 

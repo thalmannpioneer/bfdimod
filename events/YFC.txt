@@ -521,6 +521,7 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			limit = {FROM = {tag = GMD}}
 			complete_national_focus = YFC_focus_the_second_embargo
 		}
+
 		mark_focus_tree_layout_dirty = yes
 	}
 	option = {
@@ -2580,6 +2581,7 @@ country_event = { #YFC_focus_offset_debt
 	option = { 
 		name = YFC_event.61.a
 
+		add_stability = 0.02
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }

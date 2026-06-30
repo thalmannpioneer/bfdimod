@@ -39,6 +39,10 @@ set_technology = { mechanised_infantry = 1 }
 set_technology = { mechanised_infantry2 = 1 }
 set_technology = { mechanised_infantry3 = 1 }
 
+set_technology = { molotov_cocktails_tech = 1 } #Hidden Buffs
+set_technology = { lotta_svard_tech = 1 } #Hidden Buffs
+set_technology = { HUN_light_infantry_tech = 1 } #Hidden Buffs
+
 if = {
     limit = { NOT = { has_dlc = "Arms Against Tyranny" } }
     set_technology = { tech_special_forces = 1 }

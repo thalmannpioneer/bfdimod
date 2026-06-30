@@ -3530,7 +3530,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
 		    subtract_from_variable = { money_amount = 5 }
@@ -3547,7 +3547,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             country_event = {
                 id = YFC_event.59
@@ -3566,7 +3566,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             add_political_power = -75
             add_stability = 0.05
@@ -3591,7 +3591,7 @@ focus_tree = {
         }
         prerequisite = { focus = YFC_focus_close_the_markets }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             country_event = {
                 id = YFC_event.60
@@ -3623,7 +3623,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_crack_down_on_influence }
         prerequisite = { focus = YFC_focus_lower_wage_gaps }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_gain_600K
             add_to_variable = { money_amount = 6 }
@@ -3647,7 +3647,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_lower_wage_gaps }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             #possibility for three different lore events:
             #as you committed to a merc company earlier, tophat visits that company again, to talk to them about how they conduct their business
@@ -3671,7 +3671,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_offset_debt }
         prerequisite = { focus = YFC_focus_lessons_from_mercs }
 
-        cost = 5
+        cost = 4
         completion_reward = {
             country_event = {
                 id = YFC_event.63
@@ -3737,7 +3737,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_the_second_embargo }
         prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
-        cost = 5
+        cost = 2
         completion_reward = {
             country_event = {
                 id = YFC_event.65
@@ -3760,7 +3760,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
 
-        cost = 5
+        cost = 2
         completion_reward = {
             country_event = {
                 id = YFC_event.66
@@ -3785,7 +3785,12 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
         prerequisite = { focus = YFC_focus_lessons_from_mercs }
 
-        cost = 5
+        available = { #If you want to undo sure but both happening first would explain why Yellow Face expels them
+            has_completed_focus = YFC_focus_envy
+            has_completed_focus = YFC_focus_sloth
+        }
+
+        cost = 2
         completion_reward = {
             country_event = {
                 id = YFC_event.67
@@ -3864,6 +3869,8 @@ focus_tree = {
         cost = 5
         completion_reward = {
             add_stability = 0.02
+            custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
             every_other_country = {
                 limit = {
                     NOT = { tag = EMP }
@@ -3871,7 +3878,7 @@ focus_tree = {
                 }
                 add_opinion_modifier = {
                     target = YFC
-                    modifier = medium_decrease
+                    modifier = large_decrease
                 }
             }
             #Maybe something else idk
@@ -3919,6 +3926,14 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_second_embargo }
 
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_grow_closer_ties #Change this later when Crazy Yellow Face side is added
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_grow_closer_ties } #Change this later when Crazy Yellow Face side is added
+
         ai_will_do = {
             base = 5
         }
@@ -3958,3 +3973,4 @@ focus_tree = {
 # -Also look at the raiding decisions and see what and when stuff unlocks
 
 #hey are any of these notes relevant still or can i remove them? -zd
+#RE: They are relevant since they are not set in stone yet
