@@ -802,116 +802,28 @@ scripted_gui = {
                 country_exists = GMD
                 var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-
-            bun_click_enabled = {
-                AND = {
-                    check_variable = { BUN.is_blocked = 0 }
-                    check_variable = { BUN.is_blocked_by_prev < 1 }
-                }
+            route_ggr_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            crn_click_enabled = {
-                AND = {
-                    check_variable = { CRN.is_blocked = 0 }
-                    check_variable = { CRN.is_blocked_by_prev < 1 }
-                }
+            route_crn-fft_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            crn_bun_click_enabled = {
-                AND = {
-                    check_variable = { CRN.is_blocked = 0 }
-                    check_variable = { CRN.is_blocked_by_prev < 1 }
-                }
+            route_gpg_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            srr_click_enabled = {
-                AND = {
-                    check_variable = { SRR.is_blocked = 0 }
-                    check_variable = { SRR.is_blocked_by_prev < 1 }
-                }
+            route_gtr_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            gpg_click_enabled = {
-                AND = {
-                    check_variable = { GPG.is_blocked = 0 }
-                    check_variable = { GPG.is_blocked_by_prev < 1 }
-                }
+            route_gmd_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            gpg_cw_click_enabled = {
-                AND = {
-                    check_variable = { GPG.is_blocked = 0 }
-                    check_variable = { GPG.is_blocked_by_prev < 1 }
-                }
+            route_tbt_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            gsr_click_enabled = {
-                AND = {
-                    check_variable = { GSR.is_blocked = 0 }
-                    check_variable = { GSR.is_blocked_by_prev < 1 }
-                }
+            route_sea_visible = {
+                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            gdr_click_enabled = {
-                AND = {
-                    check_variable = { GDR.is_blocked = 0 }
-                    check_variable = { GDR.is_blocked_by_prev < 1 }
-                }
-            }
-            gfg_click_enabled = {
-                AND = {
-                    check_variable = { GFG.is_blocked = 0 }
-                    check_variable = { GFG.is_blocked_by_prev < 1 }
-                }
-            }
-            gtr_click_enabled = {
-                AND = {
-                    check_variable = { GTR.is_blocked = 0 }
-                    check_variable = { GTR.is_blocked_by_prev < 1 }
-                }
-            }
-            ggr_click_enabled = {
-                AND = {
-                    check_variable = { GGR.is_blocked = 0 }
-                    check_variable = { GGR.is_blocked_by_prev < 1 }
-                }
-            }
-            fft_click_enabled = {
-                AND = {
-                    check_variable = { FFT.is_blocked = 0 }
-                    check_variable = { FFT.is_blocked_by_prev < 1 }
-                }
-            }
-            fft_ggr_click_enabled = {
-                AND = {
-                    check_variable = { FFT.is_blocked = 0 }
-                    check_variable = { FFT.is_blocked_by_prev < 1 }
-                }
-            }
-            sri_click_enabled = {
-                AND = {
-                    check_variable = { SRI.is_blocked = 0 }
-                    check_variable = { SRI.is_blocked_by_prev < 1 }
-                }
-            }
-            smg_click_enabled = {
-                AND = {
-                    check_variable = { SMG.is_blocked = 0 }
-                    check_variable = { SMG.is_blocked_by_prev < 1 }
-                }
-            }
-            spr_click_enabled = {
-                AND = {
-                    check_variable = { SPL.is_blocked = 0 }
-                    check_variable = { SPL.is_blocked_by_prev < 1 }
-                }
-            }
-            tbt_click_enabled = {
-                AND = {
-                    check_variable = { TBT.is_blocked = 0 }
-                    check_variable = { TBT.is_blocked_by_prev < 1 }
-                }
-            }
-            gmd_click_enabled = {
-                country_exists = GMD
-                AND = {
-                    check_variable = { GMD.is_blocked = 0 }
-                    check_variable = { GMD.is_blocked_by_prev < 1 }
-                }
-            }
+            #Blowing up the block stuff for now
         }
         effects = {
             equipment_buy_inc_click = {

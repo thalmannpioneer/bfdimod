@@ -1477,6 +1477,14 @@ country_event = { #YFC Sell
 				longest_war_length > 6
 				add = 2
 		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
+				add = -2
+		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
+				add = -0.5
+		 	}
 		}	
 	}
 	option = { #Disagree!
@@ -1644,6 +1652,14 @@ country_event = { #YFC Buy
 			modifier = {
 				surrender_progress > 0
 				add = -5
+		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
+				add = -2
+		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
+				add = -0.5
 		 	}
 		}	
 	}

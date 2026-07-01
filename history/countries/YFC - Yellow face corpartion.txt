@@ -132,15 +132,6 @@ add_to_array = { tradeable_relation = 1 } #SPL
 add_to_array = { tradeable_relation = 1 } #TBT
 add_to_array = { tradeable_relation = 1 } #GMD
 
-for_loop_effect = {
-	end = 14
-	value = temp
-	var:tradeable^temp = {
-		set_variable = { is_blocked = 0 }
-		set_variable = { is_blocked_by_prev = 0 }
-	}
-}
-
 add_to_array = { tradeable_count = 0 } #BUN
 add_to_array = { tradeable_count = 0 } #CRN
 add_to_array = { tradeable_count = 0 } #SRR

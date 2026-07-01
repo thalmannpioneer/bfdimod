@@ -399,221 +399,91 @@ defined_text = {
 
 defined_text = {
 	name = CORP_BUN_TT
-	text = {
-		trigger = {
-			BUN = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?BUN.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_CRN_TT
-	text = {
-		trigger = {
-			CRN = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?CRN.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_SRR_TT
-	text = {
-		trigger = {
-			SRR = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?SRR.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GPG_TT
-	text = {
-		trigger = {
-			GPG = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GPG.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GDR_TT
-	text = {
-		trigger = {
-			GDR = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GDR.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GSR_TT
-	text = {
-		trigger = {
-			GSR = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GSR.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GFG_TT
-	text = {
-		trigger = {
-			GFG = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GFG.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GTR_TT
-	text = {
-		trigger = {
-			GTR = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GTR.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GGR_TT
-	text = {
-		trigger = {
-			GGR = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?GGR.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_FFT_TT
-	text = {
-		trigger = {
-			FFT = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?FFT.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_SRI_TT
-	text = {
-		trigger = {
-			SRI = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?SRI.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_SMG_TT
-	text = {
-		trigger = {
-			SMG = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?SMG.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_SPL_TT
-	text = {
-		trigger = {
-			SPL = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
+
 	text = {
 		localization_key = "[?SPL.GetName]"
 	}
@@ -621,33 +491,11 @@ defined_text = {
 defined_text = {
 	name = CORP_TBT_TT
 	text = {
-		trigger = {
-			TBT = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
-	text = {
 		localization_key = "[?TBT.GetName]"
 	}
 }
 defined_text = {
 	name = CORP_GMD_TT
-	text = {
-		trigger = {
-			GMD = {
-				OR = {
-					check_variable = { is_blocked = 1 }
-					check_variable = { is_blocked_by_prev > 0 }
-				}
-			}
-		}
-		localization_key = l_YFC_trade_blocked
-	}
 	text = {
 		localization_key = "[?GMD.GetName]"
 	}

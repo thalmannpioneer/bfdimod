@@ -15,17 +15,11 @@ decision_YFC_sector_category = { #Watermelon
         days_mission_timeout = 30
         timeout_effect = {
             #Reset the value
-            set_variable = { var_sectors_combined_cost = 0 } 
-            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_TopHat_cost }
-            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Pipe_cost }
-            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Beaker_cost }
-            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Hammer_cost }
-            add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Taser_cost }
+            set_variable = { var_sectors_combined_cost = { value = 0 add = var_idea_YFC_TopHat_cost add = var_idea_YFC_Pipe_cost add = var_idea_YFC_Beaker_cost add = var_idea_YFC_Hammer_cost add = var_idea_YFC_Taser_cost } } 
 
             #Money Taken
             custom_effect_tooltip = l_YFC_payment_sectors
-            set_temp_variable = { paying_amount = var_sectors_combined_cost }
-            multiply_temp_variable = {paying_amount = 0.01}
+            set_temp_variable = { paying_amount = {value = var_sectors_combined_cost multiply = 0.01} }
             subtract_from_variable = { money_amount = paying_amount }
             
             IF = {
@@ -162,12 +156,7 @@ decision_YFC_sector_category = { #Watermelon
                         }
                     }
 
-                    set_temp_variable = { var_Sector_Combined_Influence = 0 }
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence}
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Pipe_influence}
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Beaker_influence}
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Hammer_influence}
-                    add_to_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_Taser_influence}
+                    set_temp_variable = { var_Sector_Combined_Influence = {value = 0 add = var_idea_YFC_TopHat_influence add = var_idea_YFC_Pipe_influence add = var_idea_YFC_Beaker_influence add = var_idea_YFC_Hammer_influence add = var_idea_YFC_Taser_influence} }
 
                     subtract_from_temp_variable = { var_Sector_Combined_Influence = var_idea_YFC_TopHat_influence }
                     IF = { #TopHat

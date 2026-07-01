@@ -72,45 +72,52 @@ decision_other_trade_category = {
 							value = 0
 						}
 					}	
-				}			
+				}	
+				set_temp_variable = { Trade_Buying_Inf_var = 0 }
+				set_temp_variable = { Trade_Buying_Support_var = 0 }
+				set_temp_variable = { Trade_Buying_Truck_var = 0 }		
+				set_temp_variable = { Trade_Buying_Arty_var = 0 }	
+				set_temp_variable = { Trade_Buying_AntiAir_var = 0 }		
+				set_temp_variable = { Trade_Buying_AntiTank_var = 0 }			
+				set_temp_variable = { Trade_Buying_Food_var = 0 }
 				IF = {
 					limit = {has_equipment = {infantry_equipment < 2000}}
-					add_to_temp_variable = { Inf_var = 100 }
+					add_to_temp_variable = { Trade_Buying_Inf_var = 100 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {support_equipment_1 < 500}
 						has_tech = tech_support
 					}
-					add_to_temp_variable = { Support_var = 50 }
+					add_to_temp_variable = { Trade_Buying_Support_var = 50 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {motorized_equipment < 250}
 						has_tech = tech_trucks
 					}
-					add_to_temp_variable = { Truck_var = 30 }
+					add_to_temp_variable = { Trade_Buying_Truck_var = 30 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {artillery_equipment < 250}
 						has_tech = gw_artillery
 					}
-					add_to_temp_variable = { Arty_var = 30 }
+					add_to_temp_variable = { Trade_Buying_Arty_var = 30 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {anti_air_equipment < 250}
 						has_tech = interwar_antiair
 					}
-					add_to_temp_variable = { AntiAir_var = 20 }
+					add_to_temp_variable = { Trade_Buying_AntiAir_var = 20 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {anti_tank_equipment < 250}
 						has_tech = interwar_antitank
 					}
-					add_to_temp_variable = { AntiTank_var = 20 }
+					add_to_temp_variable = { Trade_Buying_AntiTank_var = 20 }
 				}
 				IF = {
 					limit = {
@@ -120,10 +127,10 @@ decision_other_trade_category = {
 						}
 						NOT = {has_idea = idea_YFC_trade_food}
 					}
-					add_to_temp_variable = { Food_var = 15 }
+					add_to_temp_variable = { Trade_Buying_Food_var = 15 }
 				}
 				random_list = {
-					Support_var = { #Support
+					Trade_Buying_Support_var = { #Support
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = {THIS.buying_item = 1}
 						set_variable = { ROOT.buying_amount = 25 }
@@ -133,7 +140,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Truck_var = { #Trucks
+					Trade_Buying_Truck_var = { #Trucks
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 2 }
 						set_variable = { ROOT.buying_amount = 25 }
@@ -143,7 +150,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Arty_var = { #Arty
+					Trade_Buying_Arty_var = { #Arty
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 3 }
 						set_variable = { ROOT.buying_amount = 25 }
@@ -153,7 +160,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					AntiAir_var = { #Anti_Air
+					Trade_Buying_AntiAir_var = { #Anti_Air
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 4 }
 						set_variable = { ROOT.buying_amount = 25 }
@@ -163,7 +170,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					AntiTank_var = { #Anti_Tank
+					Trade_Buying_AntiTank_var = { #Anti_Tank
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 5 }
 						set_variable = { ROOT.buying_amount = 25 }
@@ -173,7 +180,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Inf_var = { #Infantry_equipment
+					Trade_Buying_Inf_var = { #Infantry_equipment
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 0 }
 						set_variable = { ROOT.buying_amount = 25 }
@@ -183,7 +190,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 						add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Food_var = {
+					Trade_Buying_Food_var = { #Food
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 6 }
 						set_variable = { ROOT.buying_amount = 100 }
@@ -269,55 +276,56 @@ decision_other_trade_category = {
 						}
 					}	
 				}	
-				set_temp_variable = { Support_var = 0 }
-				set_temp_variable = { Arty_var = 0 }		
-				set_temp_variable = { AntiTank_var = 0 }	
-				set_temp_variable = { AntiAir_var = 0 }		
-				set_temp_variable = { Inf_var = 0 }		
+				set_temp_variable = { Trade_Selling_Support_var = 0 }
+				set_temp_variable = { Trade_Selling_Truck_var = 0 }
+				set_temp_variable = { Trade_Selling_Arty_var = 0 }		
+				set_temp_variable = { Trade_Selling_AntiTank_var = 0 }	
+				set_temp_variable = { Trade_Selling_AntiAir_var = 0 }		
+				set_temp_variable = { Trade_Selling_Inf_var = 0 }		
 				IF = { #Support Check
 					limit = {
 						has_equipment = {support_equipment_1 > 500}
 						NOT = {check_variable = { buying_item = 1 }}
 					}
-					add_to_temp_variable = { Support_var = 35 }
+					add_to_temp_variable = { Trade_Selling_Support_var = 35 }
 				}
 				IF = { #Trucks Check
 					limit = {
 						check_variable = {num_equipment@motorized_equipment > 500}
 						NOT = {check_variable = { buying_item = 2 }}
 					}
-					add_to_temp_variable = { Truck_var = 25 }
+					add_to_temp_variable = { Trade_Selling_Truck_var = 25 }
 				}
 				IF = { #Arty Check
 					limit = {
 						check_variable = {num_equipment@artillery_equipment > 500}
 						NOT = {check_variable = { buying_item = 3 }}
 					}
-					add_to_temp_variable = { Arty_var = 25 }
+					add_to_temp_variable = { Trade_Selling_Arty_var = 25 }
 				}
 				IF = { #Anti_Air Check
 					limit = {
 						check_variable = {num_equipment@anti_air_equipment > 500}
 						NOT = {check_variable = { buying_item = 4 }}
 					}
-					add_to_temp_variable = { AntiAir_var = 25 }
+					add_to_temp_variable = { Trade_Selling_AntiAir_var = 25 }
 				}
 				IF = { #Anti_Tank Check
 					limit = {
 						check_variable = {num_equipment@anti_tank_equipment > 500}
 						NOT = {check_variable = { buying_item = 5 }}
 					}
-					add_to_temp_variable = { AntiTank_var = 25 }
+					add_to_temp_variable = { Trade_Selling_AntiTank_var = 25 }
 				}	
 				IF = { #Inf Check
 					limit = {
 						check_variable = {num_equipment@infantry_equipment > 1000}
 						NOT = {check_variable = { buying_item = 0 }}
 					}
-					add_to_temp_variable = { Inf_var = 40 }
+					add_to_temp_variable = { Trade_Selling_Inf_var = 40 }
 				}				
 				random_list = {
-					Support_var = { #Support
+					Trade_Selling_Support_var = { #Support
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 1}
 						set_variable = {ROOT.selling_amount = 25 }
@@ -327,7 +335,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Truck_var = { #Trucks
+					Trade_Selling_Truck_var = { #Trucks
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 2}
 						set_temp_variable = { MATH_COST_var = 0.6 }
@@ -337,7 +345,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Arty_var = { #Arty
+					Trade_Selling_Arty_var = { #Arty
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 3}
 						set_temp_variable = { MATH_COST_var = 0.75 }
@@ -347,7 +355,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					AntiAir_var = { #Anti_Air
+					Trade_Selling_AntiAir_var = { #Anti_Air
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 4}
 						set_temp_variable = { MATH_COST_var = 1 }
@@ -357,7 +365,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					AntiTank_var = { #Anti_Tank
+					Trade_Selling_AntiTank_var = { #Anti_Tank
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 5}
 						set_temp_variable = { MATH_COST_var = 1 }
@@ -367,7 +375,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					Inf_var = { #Infantry_equipment
+					Trade_Selling_Inf_var = { #Infantry_equipment
 						set_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = 0}
 						set_temp_variable = { MATH_COST_var = 0.5 }
