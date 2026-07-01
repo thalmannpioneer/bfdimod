@@ -264,7 +264,7 @@ decision_YFC_trade_category_REWORK = {
             THIS = {is_ai = yes}
         }
 
-        targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
+        targets = { BUN CRN DAV FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ)
         targets_dynamic = yes
         target_trigger = {
             FROM = {
@@ -303,6 +303,10 @@ decision_YFC_trade_category_REWORK = {
                 AND = {
                     check_variable = {ROOT.num_equipment@anti_tank_equipment_1 > FROM.buying_amount}
                     FROM = { check_variable = { buying_item = 5 }}
+                }
+                AND = {
+                    ROOT = {has_country_flag = YFC_trade_allow_food}
+                    FROM = { check_variable = { buying_item = 6 }}
                 }
             }
         }
@@ -362,7 +366,7 @@ decision_YFC_trade_category_REWORK = {
                 FROM = {surrender_progress > 0.5}
             }
             modifier = {
-                add = 10
+                add = 5
                 FROM = {is_ai = no}
             }
         }
@@ -382,7 +386,7 @@ decision_YFC_trade_category_REWORK = {
             THIS = {is_ai = yes}
         }
 
-        targets = { AGG BUN CRN DAV DPZ FFT GDR GFG GGR GMD GPG GPR GSR GTR NRR SEC SGD SMG SOS SPL SRI SRR TBT UGA WGF } #500 Nations
+        targets = { BUN CRN DAV FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ)
         targets_dynamic = yes
         target_trigger = {
             FROM = {

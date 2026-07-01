@@ -271,7 +271,7 @@ country_event = {
             }
         }
         ELSE_IF = {
-            limit = {is_debug = yes}
+            limit = {is_debug = no}
             goto_state = 89
             GTR = { change_tag_from = EMP }
         }
