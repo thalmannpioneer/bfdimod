@@ -1,4 +1,17 @@
 decision_YFC_trade_category_REWORK = {
+	YFC_Trade_food = { 
+		available = {always = no}
+		icon = GFX_decision_RAJ_famine  
+		is_good = yes
+		days_mission_timeout = 75
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			custom_effect_tooltip = l_YFC_trade_get_food
+            set_country_flag = YFC_trade_allow_food
+		}
+	}
+
     YFC_Trade_Tech = {
         icon = GFX_decisions_YFC_buy_tech
 

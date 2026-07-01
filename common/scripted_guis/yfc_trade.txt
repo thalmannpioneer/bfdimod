@@ -1037,15 +1037,15 @@ scripted_gui = {
                 }
                 ELSE_IF = {
                     limit = { country_exists = GDR }
-                    set_variable = { selected = 6 }
+                    set_variable = { selected = 4 }
                 }
                 ELSE_IF = {
                     limit = { country_exists = GFG }
-                    set_variable = { selected = 7 }
+                    set_variable = { selected = 5 }
                 }
                 ELSE_IF = {
                     limit = { country_exists = GSR }
-                    set_variable = { selected = 8 }
+                    set_variable = { selected = 6 }
                 }
                 ELSE = {
                     set_variable = { selected = 3 }

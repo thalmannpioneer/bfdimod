@@ -1382,7 +1382,12 @@ country_event = { #YFC Sell
 				idea = idea_YFC_trade_food
 				days = 90
 			}
-			hidden_effect = {YFC = {clr_country_flag = YFC_trade_allow_food}}
+			hidden_effect = {
+				YFC = {
+					clr_country_flag = YFC_trade_allow_food
+					activate_mission = YFC_Trade_food
+				}
+			}
 		}
 
 		clr_country_flag = ongoing_trade_offer

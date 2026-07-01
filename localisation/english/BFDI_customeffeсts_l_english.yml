@@ -133,6 +133,7 @@
  l_YFC_trade_invite_fail: "§YThe Yellow Face Market decisions will be unlocked if the following is completed:§!§G\n\n-Our economy law is not on isolation\n-Our trade law is not closed economy\n-We are not at war with The Yellow Face Corporation\n-We are not embargoing or being embargoed by The Yellow Face Corporation§!"
  l_YFC_trade_buying_normal: "[?ROOT.buying_amount] equipment"
  l_YFC_trade_buying_food: "Food Shipments"
+ l_YFC_trade_get_food: "§YAllows for another export of food.§!"
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YUnlocks Coiny as an Army Chief!§!"
