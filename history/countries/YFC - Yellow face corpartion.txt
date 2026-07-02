@@ -251,7 +251,14 @@ recruit_character = YFC_eraser
 
 add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 1500
+    amount = 1000
+    producer = GOI
+}
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 500
+    producer = YFC
 }
 
 add_ideas = free_trade

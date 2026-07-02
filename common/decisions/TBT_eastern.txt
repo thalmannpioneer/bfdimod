@@ -177,7 +177,7 @@ decision_TBT_eastern_category = {
 			base = 0
 			modifier = {
 				add = 50
-				has_political_power > 65
+				has_political_power > 55
 			}
 			modifier = {
 				add = 50
@@ -311,7 +311,7 @@ decision_TBT_eastern_category = {
 			YFC = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
 		}
 
-		cost = 600
+		cost = 550
 
 		fire_only_once = yes
 		days_remove = 125

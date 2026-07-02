@@ -543,9 +543,6 @@ scripted_gui = {
 
         triggers = {
             equipment_buy_click_enabled = {
-                YFC = {
-                    check_variable = { tradeable_relation^selected > 0 }
-                }
                 YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
@@ -563,9 +560,6 @@ scripted_gui = {
                 }
             }
             equipment_sell_click_enabled = {
-                YFC = {
-                    check_variable = { tradeable_relation^selected > 0 }
-                }
                 YFC = { has_political_power > 5}
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {

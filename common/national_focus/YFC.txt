@@ -316,6 +316,14 @@ focus_tree = {
                 }
             }
         }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = -5
+                has_war = yes
+            }
+        }
     }
 
     focus = {
@@ -368,6 +376,14 @@ focus_tree = {
                         artillery = 0
                     }
                 }
+            }
+        }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = -5
+                has_war = yes
             }
         }
     }

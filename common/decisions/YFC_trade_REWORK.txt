@@ -369,6 +369,10 @@ decision_YFC_trade_category_REWORK = {
                 add = 5
                 FROM = {is_ai = no}
             }
+            modifier = { #Since food is free just sell it
+                add = 5
+                FROM = { check_variable = { buying_item = 6 }}
+            }
         }
     }
 

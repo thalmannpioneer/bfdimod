@@ -82,7 +82,7 @@ entity = {
 	name = "YFC_infantry_entity"
 	
 	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
-	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 }
 
 
@@ -116,7 +116,7 @@ entity = {
 	name = "YFC_infantry_2_entity"
 	
 	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
-	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 }
 
 
@@ -150,7 +150,7 @@ entity = {
 	name = "YFC_infantry_3_entity"
 	
 	attach = { 	name = "gunhold"	rifle = "rifle_generic_entity" }
-	attach = { 	name = "helmet"	helmet = "helmet_YFC_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 }
 
 #####################################################################

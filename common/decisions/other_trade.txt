@@ -123,7 +123,8 @@ decision_other_trade_category = {
 					limit = {
 						OR = {
 							has_war = yes
-							has_manpower < 5000
+							has_manpower < 10000
+							has_army_manpower = {size < 20000}
 						}
 						NOT = {has_idea = idea_YFC_trade_food}
 					}
