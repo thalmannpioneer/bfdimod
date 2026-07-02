@@ -395,6 +395,10 @@ defined_text = {
 		trigger = { check_variable = { tradeable_relation^selected = 2 } }
 		localization_key = l_YFC_trade_relation_good
 	}
+	text = {
+		trigger = { check_variable = { tradeable_relation^selected = 3 } }
+		localization_key = l_YFC_trade_relation_excellent
+	}
 }
 
 defined_text = {

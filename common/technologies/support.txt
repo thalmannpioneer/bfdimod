@@ -1196,7 +1196,7 @@ technologies = {
             }
 
             modifier = {
-                factor = 1.5
+                factor = 2
                 tag = WGF
             }
 

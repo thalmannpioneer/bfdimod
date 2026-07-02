@@ -1485,6 +1485,10 @@ country_event = { #YFC Sell
 				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
 				add = -0.5
 		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
+				add = 1.5
+		 	}
 		}	
 	}
 	option = { #Disagree!
@@ -1660,6 +1664,10 @@ country_event = { #YFC Buy
 			modifier = {
 				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
 				add = -0.5
+		 	}
+			modifier = {
+				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
+				add = 1.5
 		 	}
 		}	
 	}

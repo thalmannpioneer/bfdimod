@@ -818,21 +818,25 @@ YFC_calc_trade_relations = {
     set_temp_variable = { total_modifier = {value = event_target:curr.opinion@YFC add = YFC.opinion@event_target:curr} } 
     set_temp_variable = { additional_modifier = tradeable_count^temp }
     multiply_temp_variable = { additional_modifier = 5 }
-    if = {
+    if = { 
         limit = { check_variable = { total_modifier > 40 } }
         set_temp_variable = { additional_modifier = 40 }
     }
     add_to_temp_variable = { total_modifier = additional_modifier }
 
-    if = {
+    if = { #Bad
         limit = { check_variable = { total_modifier < 15 } } #Default YFC can trade with others with the same ideology 
         set_variable = { tradeable_relation^temp = 0 }
     }
-    else_if = {
-        limit = { check_variable = { total_modifier < 80 } }
+    else_if = { #Neutral
+        limit = { check_variable = { total_modifier < 85 } }
         set_variable = { tradeable_relation^temp = 1 }
     }
-    else = {
+    else_if = { #Good
+        limit = { check_variable = { total_modifier < 150 } }
         set_variable = { tradeable_relation^temp = 2 }
+    }
+    else = { #Excellent
+        set_variable = { tradeable_relation^temp = 3 }
     }
 }

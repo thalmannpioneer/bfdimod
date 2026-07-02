@@ -356,7 +356,7 @@ infantry_generic = {
 		}
 
 		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
-		replace_with = infantry_improved
+		replace_with = infantry_mid
 		target_min_match = 0.9
 	}
 
@@ -367,7 +367,7 @@ infantry_generic = {
 
 			modifier = {
 				factor = 3
-				date > 1940.1.1
+				date > 2016.1.1
 			}
 		}
 		
@@ -387,6 +387,45 @@ infantry_generic = {
 			
 			regiments = {
 				infantry = 6
+				artillery_brigade = 2
+			}
+		}
+
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = infantry_late
+		target_min_match = 0.9
+	}
+
+	infantry_late = {
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				date > 2016.1.1	
+				has_army_manpower = {size > 150000}
+			}
+		}
+		
+		target_template = {
+			
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+				anti_air = 1
+				anti_tank = 1
+			}
+
+			regimental_support = {
+				anti_tank_battery = 1
+				fire_support = 1
+				field_guns = 1
+			}
+			
+			regiments = {
+				infantry = 9
 				artillery_brigade = 2
 			}
 		}
