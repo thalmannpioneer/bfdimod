@@ -85,6 +85,23 @@ ideas = {
 			modifier = {
 				monthly_population = 0.1
 				supply_consumption_factor = -0.1
+				casualty_trickleback = 0.05
+			}
+		}
+
+		LSS_ExxonMobil = {
+			picture = LSS_ExxonMobil
+			cost = 150
+			allowed = {
+				original_tag = LSS
+			}
+			
+			research_bonus = {
+				electronics = 0.1
+			}
+	
+			modifier = {
+				factory_energy_consumption = -0.65
 			}
 		}
 	}

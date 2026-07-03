@@ -79,6 +79,7 @@ idea_LSS_lack_of_everything = {
 	production_factory_efficiency_gain_factor = var_idea_LSS_lackof_production_factory_efficiency_gain_factor
 	production_factory_max_efficiency_factor = var_idea_LSS_lackof_production_factory_max_efficiency_factor
 	production_lack_of_resource_penalty_factor = var_idea_LSS_lackof_production_lack_of_resource_penalty_factor 
+    factory_energy_consumption = var_idea_LSS_lackof_factory_energy_consumption
 }
 
 idea_GPG_dream_island_trauma = {

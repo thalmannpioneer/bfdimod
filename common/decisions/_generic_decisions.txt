@@ -202,7 +202,7 @@
 		}
 
 		fire_only_once = no
-		days_re_enable = 30
+		days_re_enable = 20
 
 		complete_effect = {
 			add_manpower = -4000

@@ -3393,7 +3393,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_the_first_embargo
         relative_position_id = YFC_focus_diverting_funds
-        x = -2.5
+        x = -3
         y = 2
         icon = GFX_focus_generic
 
@@ -3522,7 +3522,7 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
         ai_will_do = {
-            base = 10
+            base = 0 #For now later update
         }
 
         cost = 5

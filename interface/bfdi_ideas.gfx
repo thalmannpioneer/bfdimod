@@ -243,6 +243,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_idea_LSS_ExxonMobil
+		texturefile = gfx/interface/ideas/idea_LSS_ExxonMobil.dds
+	}
+
+	spriteType = {
 		name = GFX_idea_GDR_military_advisors
 		texturefile = gfx/interface/ideas/idea_GDR_military_advisors.dds
 	}

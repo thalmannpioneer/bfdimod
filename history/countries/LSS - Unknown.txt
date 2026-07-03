@@ -531,6 +531,7 @@ set_popularities = {
  set_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = -0.5 }
  set_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = -0.1 }
  set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 }    
+ set_variable = { var_idea_LSS_lackof_factory_energy_consumption = 2 }  
 
 add_ideas = undisturbed_isolation
 add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
