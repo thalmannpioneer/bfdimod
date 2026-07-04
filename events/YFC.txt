@@ -2394,8 +2394,8 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 		name = YFC_event.54.a
 		add_political_power = -300
 		add_ideas = idea_YFC_economic_isolation
-		custom_effect_tooltip = l_money_lose_1M
-		subtract_from_variable = { money_amount = 10 }
+		custom_effect_tooltip = l_money_lose_2M
+		subtract_from_variable = { money_amount = 20 }
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }

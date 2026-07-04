@@ -615,6 +615,8 @@ focus_tree = {
                         }
                     }
                 }
+                CRN = {add_manpower = 10000} #So Bunch does not blow up their army
+                SRR = {add_manpower = 10000} #So Bunch does not blow up their army
             }
             mark_focus_tree_layout_dirty = yes
         }

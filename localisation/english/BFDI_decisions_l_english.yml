@@ -175,7 +175,7 @@
  l_decisions_trade_sell_tooltip: "§YSelect Equipment you want to buy.§!"
  l_decisions_trade_confirm_tooltip: "§YConfirm your deal.§!"
  l_decisions_trade_amount_tooltip: "§YChange the amount in the deal.§!"
- l_decisions_trade_selloffer_tooltip: "§YSend an offer to sell Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the correct amount of equipment and type!"
+ l_decisions_trade_selloffer_tooltip: "§YSend an offer to sell Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the correct amount of equipment!"
  l_decisions_trade_buyoffer_tooltip: "§YSend an offer to buy Equipment.§!\n\n§RCosts 5 Political Power§!\nPlease ensure that you have the funds to purchase!"
  YFC_Trade_Tech: "Purchase §4Foreign Scientists§!"
  YFC_Trade_Loan: "§YTake a§! §GLoan§!"

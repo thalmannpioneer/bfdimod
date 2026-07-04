@@ -10,17 +10,19 @@ GGR_protect_raiders = {
         original_tag = GGR
     }
     enable = {
-        has_army_size = {
-            size < 9
-        }
         country_exists = BUN
+        has_war = no
+        BUN = {
+			NOT = {has_cosmetic_tag = BUN_revolt}
+			NOT = {has_cosmetic_tag = BUN_republic}
+		}
     }
     abort_when_not_enabled = yes
 
     ai_strategy = {
         type = prepare_for_war
         id = BUN
-        value = 250
+        value = 100
     }
 }
 
@@ -30,18 +32,19 @@ GGR_protect_YFC = {
         original_tag = GGR
     }
     enable = {
-        has_army_size = {
-            size < 9
-        }
         country_exists = YFC
-        YFC = {has_completed_focus = YFC_focus_allow_raiding_into_traitors}
+        has_war = no
+        YFC = {
+            has_completed_focus = YFC_focus_allow_raiding_into_traitors
+            is_ai = yes
+        }
     }
     abort_when_not_enabled = yes
 
     ai_strategy = {
         type = prepare_for_war
         id = YFC
-        value = 250
+        value = 100
     }
 }
 

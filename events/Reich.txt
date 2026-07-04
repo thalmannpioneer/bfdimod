@@ -367,7 +367,10 @@ country_event = {
 	
 	option = {
 		name = GGR_event.13.a
-		add_manpower = -20000
+		IF = {
+			limit = {is_ai = no} #Just giving the ai a better chance at winning this fucking war
+			add_manpower = -20000
+		}
 		add_war_support = -0.1
 		hidden_effect = {
 			33 = {
