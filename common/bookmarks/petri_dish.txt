@@ -382,11 +382,16 @@ bookmarks = {
             GPG = {
                 country_event = {
                     id = GPG_event.1
-                    days = 5
+                    days = 1
+                    random_days = 5
+                    random_hours = 24
                 }
                 country_event = {
                     id = GPG_event.6
-                    days = 30
+                    hours = 1
+                    days = 20
+                    random_hours = 48
+                    random_days = 5
                 }
             }
 

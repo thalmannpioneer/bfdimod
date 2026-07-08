@@ -12,53 +12,8 @@ country_event = {
     option = {
         name = GPG_event.1.a
         add_political_power = 25
-        hidden_effect = {
-            if = {
-                limit = {
-                    is_ai = yes
-                    OR = {
-                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_NO_FRIES }
-                        has_game_rule = { rule = GPG_ai_behavior option = MAINTAIN_PEACE_FRIES }
-                    }
-                }
-                set_country_flag = stability_save_path
-            }
-            else_if = {
-                limit = {
-                    is_ai = yes
-                    has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FRIES }
-                }
-                set_country_flag = fries_path
-            }
-            else_if = {
-                limit = {
-                    is_ai = yes
-                    OR = {
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }
-                        has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_NO_FRIES }
-                    }
-                }
-                set_country_flag = civil_war_path
-            }
-            else = {
-                random_list = {
-                    5 = { #50%
-                        set_country_flag = stability_save_path
-                    }
-                    4 = { #40% with 25% for each side
-                        set_country_flag = civil_war_path
-                    }
-                    1 = { #10%
-                        set_country_flag = fries_path
-                    }
-                }
-            }
-        }
-
+        #All of the AI stuff is now event 7
+        #Why? Cause random is evil and I now hate it D:<
         ai_chance = {
             base = 10
         }
@@ -68,25 +23,9 @@ country_event = {
         name = GPG_event.1.b
         add_political_power = 25
         country_event = GPG_event.2
-        hidden_effect = {
-            if = {
-                limit = { is_ai = yes }
-                random_list = {
-                    5 = { #50%
-                        set_country_flag = stability_save_path
-                    }
-                    4 = { #40% with 25% for each side
-                        set_country_flag = civil_war_path
-                    }
-                    1 = { #10%
-                        set_country_flag = fries_path
-                    }
-                }
-            }
-        }
 
         ai_chance = {
-            base = 0
+            base = -1
         }
     }
 }
@@ -162,7 +101,10 @@ country_event = {
         hidden_effect = {
             country_event = {
                 id = GPG_event.7
-                days = 20
+                hours = 1
+                days = 7
+                random_days = 10
+                random_hours = 48
             }
             add_threat = 2.5
             news_event = {
@@ -171,6 +113,7 @@ country_event = {
                 random_hours = 12
             }
             set_variable = { var_current_cabinet_leader = 2 }
+
         }
     }
 }
