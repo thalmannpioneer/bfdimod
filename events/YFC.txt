@@ -1299,6 +1299,7 @@ country_event = { #YFC Sell
 	picture = GFX_YFC_event36
 	
 	is_triggered_only = yes
+	fire_only_once = no
     
 	immediate = {
         set_variable = { trade_cost_show_var = YFC.selling_cost^ROOT.YFC_trade_nation_pos_var }
@@ -1478,15 +1479,15 @@ country_event = { #YFC Sell
 				add = 2
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
+				check_variable = { YFC.tradeable_relation^YFC.selected = 0 }
 				add = -2
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
+				check_variable = { YFC.tradeable_relation^YFC.selected = 1 }
 				add = -0.5
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
+				check_variable = { YFC.tradeable_relation^YFC.selected = 3 }
 				add = 1.5
 		 	}
 		}	
@@ -1509,13 +1510,14 @@ country_event = { #YFC Sell
 	}
 }
 
-country_event = { #YFC Buy
-	id = YFC_event.37 #YFC trade event other country POV buying
+country_event = { #YFC trade event other country POV buying
+	id = YFC_event.37
 	title = YFC_event.37.t
     desc = YFC_event.37.desc
 	picture = GFX_YFC_event37
 	
 	is_triggered_only = yes
+	fire_only_once = no
     
 	immediate = {
         set_variable = { trade_cost_show_var = YFC.buying_cost^ROOT.YFC_trade_nation_pos_var }
@@ -1658,15 +1660,15 @@ country_event = { #YFC Buy
 				add = -5
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
 				add = -2
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
 				add = -0.5
 		 	}
 			modifier = {
-				check_variable = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
 				add = 1.5
 		 	}
 		}	
@@ -1742,6 +1744,18 @@ country_event = {
 				add = -1
 				has_army_size = {size > 3}
 			}
+			modifier = {
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
+				add = -2
+		 	}
+			modifier = {
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
+				add = -0.5
+		 	}
+			modifier = {
+				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
+				add = 1.5
+		 	}
 		}
 	}
 

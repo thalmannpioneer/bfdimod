@@ -1228,6 +1228,13 @@ war_measures = {
                         surrender_progress > 0
                     }
                 }
+				AND = {
+                    has_government = radical_thoughts
+                    OR = {
+                        has_war_support > 0.89
+                        surrender_progress > 0
+                    }
+                }
                 AND = {
                     has_government = neutrality
                     has_war_support > 0.84
@@ -1259,7 +1266,10 @@ war_measures = {
 			}
 		}
 		complete_effect = {
-
+			IF = {
+				limit = {is_ai = yes}
+				add_manpower = 10000
+			}
         }
    }
 
@@ -1289,6 +1299,13 @@ war_measures = {
                         surrender_progress > 0
                     }
                 }
+				AND = {
+                    has_government = radical_thoughts
+                    OR = {
+                        has_war_support > 0.89
+                        surrender_progress > 0
+                    }
+                }
                 AND = {
                     has_government = neutrality
                     has_war_support > 0.84
@@ -1296,16 +1313,12 @@ war_measures = {
                 }
             }
         }
-        visible = {
-            has_war = yes
-            NOT = { tag = SPC }
-        }
 
         fire_only_once = no
 
 		days_remove = 180
 
-		cost = GER_war_bonds_var?50
+		cost = 50
 
 		modifier = {
 			consumer_goods_factor = -0.15
@@ -1320,12 +1333,27 @@ war_measures = {
 		}
 
 		remove_effect = {
-
+			IF = {
+				limit = {is_ai = yes}
+				add_to_variable = { money_amount = 3 }
+			}
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = l_money_gain_300K
-            add_to_variable = { money_amount = 3 }
+			IF = {
+				limit = {is_ai = yes}
+				add_to_variable = { money_amount = 3 }
+			}
+
+			IF = {
+				limit = {check_variable = {money_amount < 5}}
+				custom_effect_tooltip = l_money_gain_600K
+				add_to_variable = { money_amount = 6 }
+			}
+			ELSE = {
+				custom_effect_tooltip = l_money_gain_300K
+            	add_to_variable = { money_amount = 3 }
+			}
 		}
     }
 }

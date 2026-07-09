@@ -266,7 +266,7 @@ bookmarks = {
                 170 = { set_demilitarized_zone = no }
             }
             SGD = {
-                add_manpower = 9000 #Until Thal can find why manpower is fucked this is the temp plan
+                add_manpower = 18000 #Until Thal can find why manpower is fucked this is the temp plan
 
                 transfer_state = 175
 
@@ -276,7 +276,7 @@ bookmarks = {
                 175 = { set_demilitarized_zone = no }
             }
             AGG = {
-                add_manpower = 16000 #Until Thal can find why manpower is fucked this is the temp plan
+                add_manpower = 18000 #Until Thal can find why manpower is fucked this is the temp plan
 
                 transfer_state = 183
 

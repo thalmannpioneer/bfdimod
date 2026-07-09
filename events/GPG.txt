@@ -12,7 +12,7 @@ country_event = {
     option = {
         name = GPG_event.1.a
         add_political_power = 25
-        #All of the AI stuff is now event 7
+        #All of the AI stuff is now focus
         #Why? Cause random is evil and I now hate it D:<
         ai_chance = {
             base = 10
@@ -884,7 +884,7 @@ country_event = { #I've given up this ai is soo bad :((((
                     add_manpower = 80000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 7000
+                        amount = 8000 # +1000 Since they suck
                     }
                 }
             }
@@ -958,7 +958,7 @@ country_event = { #I've given up this ai is soo bad :((((
                     add_manpower = 80000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 7000
+                        amount = 8000 # +1000 Since they suck
                     }
                 }
             }

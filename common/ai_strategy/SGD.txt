@@ -1,0 +1,31 @@
+#SGD AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+SGD_attack = { #ATTACK!!!
+
+    allowed = {
+		original_tag = SGD
+	}
+	enable = {
+        has_war_with = AGG
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = AGG
+		value = 500
+	}
+	ai_strategy = {
+		type = front_control
+		tag = AGG
+		priority = 1
+    	ordertype = front
+    	execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}

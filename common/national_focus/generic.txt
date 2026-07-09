@@ -87,7 +87,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_manpower = 20000
-			army_experience = 65
+			army_experience = 85
 			if = {
 				limit = {
 					OR = {
@@ -121,7 +121,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				category = industry
 			}
 		}

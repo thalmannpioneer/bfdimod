@@ -440,8 +440,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = l_money_gain_100K
-            add_to_variable = { money_amount = 1 }
+			custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
 			custom_effect_tooltip = l_GGR_focus_improves_industry_massively
 			add_to_variable = { var_GGR_industry_cg = -0.1 }
 			add_to_variable = { var_GGR_industry_rs = 0.05 }

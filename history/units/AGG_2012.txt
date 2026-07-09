@@ -1,41 +1,77 @@
+#IF THIS IDEA SUCKS GO BACK AND REVERT IT
+
 division_template = {
     name = "Retribution Unit"
     regiments = {
         infantry = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 1 }
 	}
 }
 
 
 units = {
 	division= {
-        name = "1st Retribution Unit"
+        name = "Retribution Unit"
         location = 11304 # Faraway
         division_template = "Retribution Unit"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.95
+    }
+
+	division= {
+        name = "Retribution Unit"
+        location = 11245 # Directorate border
+        division_template = "Retribution Unit"
         start_experience_factor = 0.2
-        start_equipment_factor = 0.3
+        start_equipment_factor = 0.65
     }
 	division= {
-        name = "2nd Retribution Unit"
+        name = "Retribution Unit"
+        location = 11258 # Directorate border
+        division_template = "Retribution Unit"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+	division= {
+        name = "Retribution Unit"
+        location = 11275 # Directorate border
+        division_template = "Retribution Unit"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Retribution Unit"
+        location = 598 # Directorate border
+        division_template = "Retribution Unit"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Retribution Unit"
         location = 11313 # Directorate border
         division_template = "Retribution Unit"
         start_experience_factor = 0.2
-        start_equipment_factor = 0.2
+        start_equipment_factor = 0.65
     }
-	division= {
-        name = "3rd Retribution Unit"
-        location = 75 # Directorate border
+    division= {
+        name = "Retribution Unit"
+        location = 5554 # Directorate border
         division_template = "Retribution Unit"
         start_experience_factor = 0.2
-        start_equipment_factor = 0.2
+        start_equipment_factor = 0.65
     }
-	division= {
-        name = "4th Retribution Unit"
-        location = 698 # GPG border
+    division= {
+        name = "Retribution Unit"
+        location = 298 # Directorate border
         division_template = "Retribution Unit"
         start_experience_factor = 0.2
-        start_equipment_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Retribution Unit"
+        location = 11370 # Directorate border
+        division_template = "Retribution Unit"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
     }
 }

@@ -1,9 +1,10 @@
+#IF THIS IDEA SUCKS GO BACK AND REVERT IT
+
 division_template = {
     name = "Home Guard"
     regiments = {
         infantry = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }
-		infantry = { x = 0 y = 1 }
 	}
 }
 
@@ -13,21 +14,64 @@ units = {
         name = "Home Guard"
         location = 3110 # Old CaS place
         division_template = "Home Guard"
-        start_experience_factor = 0.4
-        start_equipment_factor = 0.6
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.95
     }
+
 	division= {
         name = "Home Guard"
-        location = 11347 # AGRG border
+        location = 748 # AGRG border
         division_template = "Home Guard"
-        start_experience_factor = 0.5
-        start_equipment_factor = 0.7
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
     }
 	division= {
         name = "Home Guard"
         location = 2607 # AGRG border
         division_template = "Home Guard"
-        start_experience_factor = 0.5
-        start_equipment_factor = 0.6
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 2745 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 4818 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 11347 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 320 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 292 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
+    }
+    division= {
+        name = "Home Guard"
+        location = 3086 # AGRG border
+        division_template = "Home Guard"
+        start_experience_factor = 0.2
+        start_equipment_factor = 0.65
     }
 }

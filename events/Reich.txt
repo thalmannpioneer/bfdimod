@@ -325,6 +325,8 @@ country_event = {
 	
 	option = {
 		name = GGR_event.10.a
+		custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
 		custom_effect_tooltip = l_GGR_improves_segregation
 		add_to_variable = { var_GGR_segregation_ef = 0.05 }
 		add_to_variable = { var_GGR_segregation_em = 0.05 }
