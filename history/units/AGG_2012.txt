@@ -17,6 +17,13 @@ units = {
         start_experience_factor = 0.6
         start_equipment_factor = 0.95
     }
+    division= {
+        name = "Retribution Unit"
+        location = 11304 # Faraway
+        division_template = "Retribution Unit"
+        start_experience_factor = 0.6
+        start_equipment_factor = 0.95
+    }
 
 	division= {
         name = "Retribution Unit"

@@ -159,7 +159,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_LSS_lackof
-			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.5 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
 		}
 	}
@@ -181,7 +181,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_LSS_lackof
-			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.5 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 		}
@@ -204,7 +204,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_LSS_lackof
-			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.5 }
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 1 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
 		}
 	}
@@ -271,6 +271,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LSS_focus_grant_land_rights
+		relative_position_id = LSS_focus_manufacture_tools
+		x = 0		
+		y = 1
+		icon = GFX_focus_generic_land_redistribution
+		
+		prerequisite = { focus = LSS_focus_manufacture_tools }
+		mutually_exclusive = { focus = LSS_focus_offer_land_to_companies }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+
+			add_stability = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			181 = {add_extra_state_shared_building_slots = 4}
+			13 = {add_extra_state_shared_building_slots = 2}
+
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = 0.1 }
+			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.2 }
+		}
+	}
+
+	focus = {
 		id = LSS_focus_create_new_businesses
 		relative_position_id = LSS_focus_the_commerce
 		x = 1		
@@ -291,6 +324,34 @@ focus_tree = {
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
 			add_to_variable = { var_idea_LSS_lackof_production_speed_buildings_factor = 0.05 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_offer_land_to_companies
+		relative_position_id = LSS_focus_create_new_businesses
+		x = 0		
+		y = 1
+		icon = GFX_focus_GER_customs_union
+		
+		prerequisite = { focus = LSS_focus_the_relief focus = LSS_focus_create_new_businesses}
+		mutually_exclusive = { focus = LSS_focus_grant_land_rights }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_LSS_lackof
+
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
+			add_political_power = 100
+
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.25 }
+			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.2 }
 		}
 	}
 
@@ -338,6 +399,36 @@ focus_tree = {
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_military_assistance
+		relative_position_id = LSS_focus_create_stimulus_checks
+		x = 0	
+		y = 1
+		icon = GFX_focus_generic_limited_social_mobilization
+		
+		prerequisite = { focus = LSS_focus_create_stimulus_checks }
+		
+		cost = 3
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			add_manpower = -5000
+
+			add_timed_idea = {
+				idea = idea_LSS_military_assistancee
+				days = 200
+			}
+
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.1 }
 		}
 	}
 }

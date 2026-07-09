@@ -435,11 +435,10 @@ ideas = {
                     is_major = yes
                 }
                 modifier = {
-                    add = 1500
+                    add = 100
 
-                    # revert from closed_economy if we have large allies
+                    # revert from closed_economy
                     has_idea = closed_economy
-                    has_large_ally_not_pick_closed_economy = yes
                 }
             }
         }

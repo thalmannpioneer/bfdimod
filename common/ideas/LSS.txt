@@ -69,6 +69,15 @@ ideas = {
 				local_non_core_manpower = -0.75
 			}
 		}
+		idea_LSS_military_assistancee = {
+			picture = generic_supply_lines
+			modifier = {
+				attrition = 0.02
+				army_org_factor = -0.4
+				consumer_goods_factor = -0.4
+				monthly_population = 0.5
+			}
+		}
 	}
 	industrial_concern = {
 		LSS_Whataburger = {

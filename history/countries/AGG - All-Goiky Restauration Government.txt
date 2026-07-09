@@ -21,6 +21,9 @@ add_equipment_to_stockpile = {
     producer = GOI
 }
 
+set_stability = 0.2
+set_war_support = 0.55
+
 set_politics = {
     ruling_party = radical_thoughts
     last_election = "1936.1.1"

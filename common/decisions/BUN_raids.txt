@@ -545,6 +545,13 @@ decision_BUN_raids_category = {
                     FROM = {controller = {has_war = yes}}
                 }
             }
+            modifier = { #Grrr
+                add = 10
+                AND = {
+                    FROM = {controller = {tag = YFC}}
+                    FROM = {controller = {has_completed_focus = YFC_focus_march_on_footpathburg}}
+                }
+            }
         }
     }
 }

@@ -240,22 +240,31 @@
  LSS_focus_the_commerce_desc: "We are a capitalist country, yet the amount of products being sold has hit an all time low as people have hoarding everything and anything they can grab. The time is now to start and restart policies to encourage both selling and buying."
 
  LSS_focus_the_relief: "The Relief"
- LSS_focus_the_relief_desc: "Placeholder"
+ LSS_focus_the_relief_desc: ""
 
  LSS_focus_setup_the_livestock: "Setup the Livestock"
- LSS_focus_setup_the_livestock_desc: "Placeholder"
-
- LSS_focus_manufacture_tools: "Manufacture Tools"
- LSS_focus_manufacture_tools_desc: "Placeholder"
-
- LSS_focus_create_new_businesses: "Create new Businesses"
- LSS_focus_create_new_businesses_desc: "Placeholder"
-
- LSS_focus_create_stimulus_checks: "Create Stimulus Checks"
- LSS_focus_create_stimulus_checks_desc: "Placeholder"
+ LSS_focus_setup_the_livestock_desc: ""
 
  LSS_focus_encourage_local_growing: "Encourage Local Growing"
- LSS_focus_encourage_local_growing_desc: "Placeholder"
+ LSS_focus_encourage_local_growing_desc: ""
+
+ LSS_focus_manufacture_tools: "Manufacture Tools"
+ LSS_focus_manufacture_tools_desc: ""
+
+ LSS_focus_grant_land_rights: "Grant Land Rights"
+ LSS_focus_grant_land_rights_desc: ""
+
+ LSS_focus_create_new_businesses: "Create new Businesses"
+ LSS_focus_create_new_businesses_desc: ""
+
+ LSS_focus_offer_land_to_companies: "Offer Land to Companies"
+ LSS_focus_offer_land_to_companies_desc: ""
+
+ LSS_focus_create_stimulus_checks: "Create Stimulus Checks"
+ LSS_focus_create_stimulus_checks_desc: ""
+
+ LSS_focus_military_assistance: "Military Assistance"
+ LSS_focus_military_assistances_desc: ""
 
  #PROVISIONAL GOVERNMENT
  GPG_focus_first_congress: "§YFirst Congress§!"

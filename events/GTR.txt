@@ -820,7 +820,13 @@ country_event = {
         name = GTR_event.28.a
         add_stability = 0.05
         77 = { add_manpower = -7812 }
-        add_ideas = limited_exports
+        IF = {
+            limit = {has_idea = closed_economy}
+            add_ideas = limited_exports
+        }
+        ELSE = {
+            add_political_power = 50
+        }
     }
 }
 
@@ -834,7 +840,13 @@ country_event = {
 
     option = {
         name = GTR_event.29.a
-        add_ideas = limited_exports
+        IF = {
+            limit = {has_idea = closed_economy}
+            add_ideas = limited_exports
+        }
+        ELSE = {
+            add_political_power = 50
+        }
     }
 }
 

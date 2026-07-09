@@ -396,7 +396,14 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_ideas = limited_exports
+            IF = {
+                limit = {has_idea = closed_economy}
+                add_ideas = limited_exports
+            }
+            ELSE = {
+                custom_effect_tooltip = l_money_gain_200K
+                add_to_variable = { money_amount = 2 }
+            }
             add_political_power = 50
         }
     }

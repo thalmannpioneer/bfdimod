@@ -432,7 +432,7 @@ country_event = {
             }
             country_event = { #Remove One Day...
 				id = uncommon_event.999
-                days = 200
+                days = 270
 				hours = 12
 				random_hours = 12
 			}

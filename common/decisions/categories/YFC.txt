@@ -42,6 +42,7 @@ decision_YFC_raids_category = {
 	visible = { 
 		YFC = {
 			has_completed_focus = YFC_focus_allow_raiding_into_traitors
+			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 	}
 	priority = 10
