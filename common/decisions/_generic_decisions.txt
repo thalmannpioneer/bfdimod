@@ -1336,14 +1336,14 @@ war_measures = {
 		remove_effect = {
 			IF = {
 				limit = {is_ai = yes}
-				add_to_variable = { money_amount = 3 }
+				add_to_variable = { money_amount = 1 }
 			}
 		}
 
 		complete_effect = {
 			IF = {
 				limit = {is_ai = yes}
-				add_to_variable = { money_amount = 3 }
+				add_to_variable = { money_amount = 1 }
 			}
 
 			IF = {

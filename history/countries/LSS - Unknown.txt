@@ -533,6 +533,8 @@ set_popularities = {
  set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 }    
  set_variable = { var_idea_LSS_lackof_factory_energy_consumption = 2 }  
 
+set_variable = { var_LSS_robots = 400 } #Beep Boop 
+
 add_ideas = undisturbed_isolation
 add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
 add_ideas = idea_LSS_modern_ground_army

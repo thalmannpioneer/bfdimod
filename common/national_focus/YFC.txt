@@ -77,7 +77,8 @@ focus_tree = {
                             tag = SOS
                             tag = TBT
                             tag = WGF
-                            tag = DPZ   
+                            tag = DPZ  
+                            tag = EMP 
                         }
                     }
                     set_country_flag = YFC_trade_allow_other
@@ -3455,14 +3456,23 @@ focus_tree = {
         cost = 5
         completion_reward = {
             unlock_decision_category_tooltip = decision_YFC_raids_category
-            #I'll just put the raid stuff I had waiting here
-            #But only the raids other stuff unlocks later
-
             hidden_effect = {
+                #I'll just put the raid stuff I had waiting here
+                #But only the raids other stuff unlocks later
                 every_other_country = { #Embargo event
                     limit = {
                         NOT = {
-                            tag = EMP
+                            tag = YFC
+                            tag = AGG
+                            tag = GPR
+                            tag = NRR
+                            tag = SEC
+                            tag = SGD
+                            tag = SOS
+                            tag = TBT
+                            tag = WGF
+                            tag = DPZ  
+                            tag = EMP 
                             tag = GOI
                             tag = GGR
                             tag = GMD

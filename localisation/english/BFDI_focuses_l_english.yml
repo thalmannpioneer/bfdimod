@@ -248,11 +248,17 @@
  LSS_focus_encourage_local_growing: "Encourage Local Growing"
  LSS_focus_encourage_local_growing_desc: ""
 
+ LSS_focus_expand_rationing: "Expand Rationing"
+ LSS_focus_expand_rationing_desc: ""
+
  LSS_focus_manufacture_tools: "Manufacture Tools"
  LSS_focus_manufacture_tools_desc: ""
 
  LSS_focus_grant_land_rights: "Grant Land Rights"
  LSS_focus_grant_land_rights_desc: ""
+
+ LSS_focus_repurpose_vehicles: "Repurpose Vehicles"
+ LSS_focus_repurpose_vehicles_desc: ""
 
  LSS_focus_create_new_businesses: "Create new Businesses"
  LSS_focus_create_new_businesses_desc: ""
@@ -264,7 +270,7 @@
  LSS_focus_create_stimulus_checks_desc: ""
 
  LSS_focus_military_assistance: "Military Assistance"
- LSS_focus_military_assistances_desc: ""
+ LSS_focus_military_assistance_desc: ""
 
  #PROVISIONAL GOVERNMENT
  GPG_focus_first_congress: "§YFirst Congress§!"

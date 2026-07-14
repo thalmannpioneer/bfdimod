@@ -6,6 +6,18 @@ decision_LSS_Military_category = {
 		}
 	}
 	priority = 15
-	icon = decision_category_usa_intervention_mandate
+	icon = GFX_decision_category_usa_intervention_mandate
+	visible_when_empty = yes
+}
+
+decision_LSS_stabilizing_category = {
+	allowed = { tag = LSS }
+	visible = { 
+		LSS = {
+			has_completed_focus = LSS_focus_structure_the_government
+		}
+	}
+	priority = 10
+	icon = GFX_decision_category_generic_crisis
 	visible_when_empty = yes
 }

@@ -72,9 +72,9 @@ ideas = {
 		idea_LSS_military_assistancee = {
 			picture = generic_supply_lines
 			modifier = {
-				attrition = 0.02
+				stability_weekly = 0.005
 				army_org_factor = -0.4
-				consumer_goods_factor = -0.4
+				consumer_goods_factor = -0.65
 				monthly_population = 0.5
 			}
 		}

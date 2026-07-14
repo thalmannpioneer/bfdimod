@@ -420,6 +420,8 @@ country_event = {
     option = {
         name = uncommon_event.5.a
 
+        unlock_decision_category_tooltip = decision_LSS_stabilizing_category
+
         hidden_effect = {
             retire_country_leader = yes
             add_country_leader_role = {

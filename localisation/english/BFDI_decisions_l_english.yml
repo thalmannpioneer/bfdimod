@@ -157,6 +157,15 @@
  LSS_Bridge_desc: "Since you can't build a railway, here you go!\n\n(Will be removed later... maybe)"
  LSS_Terrorist_Clearing: "Launch Terrorist Clearing Operations"
  LSS_Terrorist_Clearing_desc: "Fuck You Goiky!\n\n(Will be removed later... maybe)"
+
+ decision_LSS_stabilizing_category: "Stabilizing Texas"
+ decision_LSS_stabilizing_category_desc: "This new and unexpected situation has left the state turned country into §Rcrisis§!. We have §Rno economy§!, our people are §Rdying from starvation§!, and our political allies and enemies are §Rfighting for control.§! If we wish to §Gsurvive and continue§! finding our way §Yback home§!, we must gather what we can and §Gfix the nation.§!\n\n We also have §Yrobots§! that can be put to use: §Y[?var_LSS_robots] Robots remaining.§!"
+ LSS_restructure_food_supply: "Restructure Food Supply"
+ LSS_restructure_grant_aid: "Grant Aid"
+ LSS_build_food_kitchens: "Build Food Kitchens"
+ LSS_build_temporary_housing: "Build Temporary Housing"
+ LSS_grant_subsidies_to_companies: "Grant Subsidies to Companies"
+ LSS_robots_for_entertainment: "Use Robots for entertainment"
  
  decisions_GDR_congress_category: "§7Democratic Congress§!"
  l_GDR_congress_desc: "§7Greeny Plains§! objects are ready for unification.\nThere's only one question left."
