@@ -21,7 +21,7 @@ add_equipment_to_stockpile = {
     producer = GOI
 }
 
-set_stability = 0.1
+set_stability = 0.15
 set_war_support = 0.55
 
 set_politics = {

@@ -145,11 +145,14 @@ decision_LSS_stabilizing_category = {
 		days_remove = 10
 		days_re_enable = 50
 
-		remove_effect = {
+		complete_effect = {
 			custom_effect_tooltip = l_LSS_Robot_uses
+			subtract_from_variable = { var_LSS_robots = 10 }
+		}
+
+		remove_effect = {
 			add_political_power = 35
 			add_stability = 0.05
-			subtract_from_variable = { var_LSS_robots = 10 }
         }
 
 		ai_will_do = {
@@ -158,6 +161,142 @@ decision_LSS_stabilizing_category = {
 				add = 10
 				has_political_power < 30
 			}
+		}
+	}
+
+	LSS_robots_for_farming = { 
+		icon = GFX_decision_RAJ_famine
+      
+        available = {
+			custom_trigger_tooltip = {
+                tooltip = l_LSS_25_Robots
+                check_variable = { var_LSS_robots > 25 }
+            }
+        }
+
+		visible = {
+			has_completed_focus = LSS_focus_the_agriculture
+		}
+
+		fire_only_once = no
+		cost = 10
+		days_remove = 15
+		days_re_enable = 100
+
+		complete_effect = {
+			custom_effect_tooltip = l_LSS_Robot_uses
+			subtract_from_variable = { var_LSS_robots = 25 }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_robots_for_civilian_industry = { 
+		icon = GFX_decision_generic_consumer_goods
+      
+        available = {
+			custom_trigger_tooltip = {
+                tooltip = l_LSS_50_Robots
+                check_variable = { var_LSS_robots > 50 }
+            }
+        }
+
+		visible = {
+			has_completed_focus = LSS_focus_the_commerce
+		}
+
+		fire_only_once = no
+		cost = 10
+		days_remove = 90
+		days_re_enable = 180
+
+		complete_effect = {
+			custom_effect_tooltip = l_LSS_Robot_uses
+			subtract_from_variable = { var_LSS_robots = 50 }
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_robots_for_military_industry = { 
+		icon = GFX_decision_ger_military_buildup
+      
+        available = {
+			custom_trigger_tooltip = {
+                tooltip = l_LSS_50_Robots
+                check_variable = { var_LSS_robots > 50 }
+            }
+        }
+
+		visible = {
+			has_completed_focus = LSS_focus_the_commerce
+		}
+
+		fire_only_once = no
+		cost = 10
+		days_remove = 90
+		days_re_enable = 360
+
+		complete_effect = {
+			custom_effect_tooltip = l_LSS_Robot_uses
+			subtract_from_variable = { var_LSS_robots = 50 }
+		}
+
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_robots_for_manufacturing = { 
+		icon = GFX_decision_generic_industry
+      
+        available = {
+			custom_trigger_tooltip = {
+                tooltip = l_LSS_25_Robots
+                check_variable = { var_LSS_robots > 25 }
+            }
+        }
+
+		visible = {
+			has_completed_focus = LSS_focus_manufacture_tools
+		}
+
+		fire_only_once = no
+		cost = 10
+		days_remove = 45
+		days_re_enable = 100
+
+		complete_effect = {
+			custom_effect_tooltip = l_LSS_Robot_uses
+			subtract_from_variable = { var_LSS_robots = 25 }
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.05 }
+        }
+
+		ai_will_do = {
+			base = 10
 		}
 	}
 }

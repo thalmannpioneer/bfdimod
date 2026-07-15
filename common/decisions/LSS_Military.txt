@@ -4,12 +4,13 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 300
+		days_mission_timeout = 400
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
 			add_manpower = 10000
 			load_oob = "LSS_56"
+			add_ideas = idea_LSS_modern_ground_army
 		}
 	}
 
@@ -17,7 +18,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 500
+		days_mission_timeout = 700
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -30,7 +31,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 1000
+		days_mission_timeout = 1200
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -43,7 +44,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 360
+		days_mission_timeout = 400
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -62,7 +63,7 @@ decision_LSS_Military_category = {
 		icon = GFX_decision_infiltrate_state
 
 		available = {
-			date > 2013.1.01
+			date > 2013.3.01
 			THIS = {
 				has_war = no
 			}
@@ -86,6 +87,10 @@ decision_LSS_Military_category = {
 
 		war_with_on_remove = FROM
 
+		complete_effect = {
+			set_country_flag = LSS_attack_losers
+		}
+
 		remove_effect = {
 			add_manpower = 5000
 			declare_war_on = {
@@ -94,6 +99,7 @@ decision_LSS_Military_category = {
             }
 			add_threat = 3.5
 			hidden_effect = {
+				ROOT = { clr_country_flag = LSS_attack_losers }
 				IF = {
 					limit = {is_ai = yes}
 					add_manpower = 30000

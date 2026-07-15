@@ -458,10 +458,8 @@ set_technology = { construction4 = 1 }
 set_technology = { excavation4 = 1 }
 
 set_stability = 0.15
-set_war_support = 0.3
+set_war_support = 0.1
 set_fuel_ratio = 0.95
-
-air_experience = 10
 
 create_equipment_variant = {
     name = "M113 Armored Personnel Carrier"
@@ -506,7 +504,6 @@ add_equipment_to_stockpile = {
     type = train_equipment_2
     amount = 5
 }
-army_experience = 350
 
 set_politics = {
     ruling_party = democratic
@@ -532,12 +529,13 @@ set_popularities = {
  set_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = -0.1 }
  set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 }    
  set_variable = { var_idea_LSS_lackof_factory_energy_consumption = 2 }  
+ add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
+
 
 set_variable = { var_LSS_robots = 400 } #Beep Boop 
 
-add_ideas = undisturbed_isolation
-add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
-add_ideas = idea_LSS_modern_ground_army
+add_ideas = isolation
+add_ideas = closed_economy
 add_ideas = idea_LSS_political_chaos
 add_ideas = idea_LSS_texas_blood
 add_ideas = idea_LSS_human_race
@@ -548,10 +546,5 @@ recruit_character = LSS_Milley
 recruit_character = LSS_Ierardi
 recruit_character = LSS_Norris
 recruit_character = LSS_Thomas
-
-
-
-
-
-
+recruit_character = LSS_Steven
 

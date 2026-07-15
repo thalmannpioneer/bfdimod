@@ -113,4 +113,13 @@ LSS = {
 			"GFX_Portrait_LSS_Generic_land_female_1"
 		}
 	}
+
+	operative = {
+        female = {
+            "GFX_Portrait_LSS_Generic_spy_1"
+        }
+        male = {
+            "GFX_Portrait_LSS_Generic_spy_1"
+        }
+    }
 }

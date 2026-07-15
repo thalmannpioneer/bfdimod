@@ -165,7 +165,11 @@
  LSS_build_food_kitchens: "Build Food Kitchens"
  LSS_build_temporary_housing: "Build Temporary Housing"
  LSS_grant_subsidies_to_companies: "Grant Subsidies to Companies"
- LSS_robots_for_entertainment: "Use Robots for entertainment"
+ LSS_robots_for_entertainment: "Use Robots for Entertainment"
+ LSS_robots_for_farming: "Use Robots for Farming"
+ LSS_robots_for_civilian_industry: "Use Robots for Civilian Industry"
+ LSS_robots_for_military_industry: "Use Robots for Military Industry"
+ LSS_robots_for_manufacturing: "Use Robots for Manufacturing"
  
  decisions_GDR_congress_category: "§7Democratic Congress§!"
  l_GDR_congress_desc: "§7Greeny Plains§! objects are ready for unification.\nThere's only one question left."

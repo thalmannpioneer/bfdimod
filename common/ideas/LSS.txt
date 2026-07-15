@@ -40,6 +40,15 @@ ideas = {
 				political_power_factor = -0.5
 				stability_weekly = -0.01
 				political_advisor_cost_factor = 5
+				industrial_concern_cost_factor = 1
+				economy_cost_factor = 5
+				trade_laws_cost_factor = 5
+				mobilization_laws_cost_factor = 5
+				army_chief_cost_factor = 1
+				navy_chief_cost_factor = 1
+				air_chief_cost_factor = 1
+				high_command_cost_factor = 1
+				theorist_cost_factor = 1
 			}
 		}
 		idea_LSS_texas_blood = { #Move later 
@@ -76,6 +85,14 @@ ideas = {
 				army_org_factor = -0.4
 				consumer_goods_factor = -0.65
 				monthly_population = 0.5
+			}
+		}
+		idea_LSS_company_influence = {
+			picture = ARG_political_corruption_modifier
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.25
+				industrial_concern_cost_factor = -0.85
 			}
 		}
 	}

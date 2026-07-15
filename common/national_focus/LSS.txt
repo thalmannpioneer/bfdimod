@@ -160,6 +160,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = LSS_restructure_food_supply
 			unlock_decision_tooltip = LSS_build_food_kitchens
+			unlock_decision_tooltip = LSS_robots_for_farming
 			custom_effect_tooltip = l_LSS_lackof
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.5 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
@@ -252,8 +253,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = l_LSS_lackof
 			unlock_decision_tooltip = LSS_grant_subsidies_to_companies
+			unlock_decision_tooltip = LSS_robots_for_civilian_industry
+			unlock_decision_tooltip = LSS_robots_for_military_industry
 			country_event = uncommon_event.9
-			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
 		}
 	}
 
@@ -274,7 +277,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_LSS_lackof
-
+			unlock_decision_tooltip = LSS_robots_for_manufacturing
 			181 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -413,6 +416,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LSS_focus_make_grand_deals
+		relative_position_id = LSS_focus_offer_land_to_companies
+		x = 0		
+		y = 1
+		icon = GFX_focus_generic_commission
+		
+		prerequisite = { focus = LSS_focus_offer_land_to_companies}
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			add_ideas = idea_LSS_company_influence
+
+			custom_effect_tooltip = l_money_gain_600K
+			add_to_variable = { money_amount = 6 }
+			add_political_power = 100
+		}
+	}
+
+	focus = {
 		id = LSS_focus_the_relief
 		relative_position_id = LSS_focus_jumpstart_an_economy
 		x = 3	
@@ -488,6 +515,32 @@ focus_tree = {
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.1 }
+		}
+	}
+
+	focus = {
+		id = LSS_focus_reestablish_the_dollar
+		relative_position_id = LSS_focus_military_assistance
+		x = 0	
+		y = 1
+		icon = GFX_focus_generic_limited_social_mobilization
+		
+		prerequisite = { focus = LSS_focus_military_assistance }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = l_money_lose_400K
+			subtract_from_variable = { money_amount = 4 }
+			custom_effect_tooltip = l_LSS_lackof
+			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
+			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
+			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
 		}
 	}
 }
