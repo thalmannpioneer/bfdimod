@@ -236,6 +236,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LSS_focus_first_harvest
+		relative_position_id = LSS_focus_expand_rationing
+		x = 2		
+		y = 1
+		icon = GFX_focus_generic_farmland
+		
+		prerequisite = { focus = LSS_focus_expand_rationing focus = LSS_focus_repurpose_vehicles }
+		
+		cost = 2
+
+		ai_will_do = {
+			base = 5
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			#Place event here
+		}
+	}
+
+	focus = {
 		id = LSS_focus_the_commerce
 		relative_position_id = LSS_focus_jumpstart_an_economy
 		x = 0	
@@ -255,6 +276,7 @@ focus_tree = {
 			unlock_decision_tooltip = LSS_grant_subsidies_to_companies
 			unlock_decision_tooltip = LSS_robots_for_civilian_industry
 			unlock_decision_tooltip = LSS_robots_for_military_industry
+			unlock_decision_tooltip = LSS_robots_for_the_wealthy
 			country_event = uncommon_event.9
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
 		}
@@ -515,6 +537,10 @@ focus_tree = {
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.1 }
+
+			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = 45}
+			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = 30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = 15}
 		}
 	}
 
@@ -523,7 +549,7 @@ focus_tree = {
 		relative_position_id = LSS_focus_military_assistance
 		x = 0	
 		y = 1
-		icon = GFX_focus_generic_limited_social_mobilization
+		icon = GFX_focus_RAJ_special_economic_zones
 		
 		prerequisite = { focus = LSS_focus_military_assistance }
 		

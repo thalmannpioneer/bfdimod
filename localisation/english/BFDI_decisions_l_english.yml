@@ -143,6 +143,10 @@
  GFG_reconstruction_plainy: "§7Plainy§! Reconstruction"
 
  decision_LSS_Military_category: "Texas Military"
+ decision_LSS_Military_category_desc: "With §Rforeign claims being made against us§! we must be §Gready to face the unknown threats§!. We are not fully sure if §Ythey can be trusted.§!"
+ LSS_increase_salaries: "Increase Salaries"
+ LSS_restructure_army_command: "Restructure Army Command"
+ LSS_restructure_air_command: "Restructure Air Command"
  LSS_Mobilization_56: "§Y56th Infantry Brigade Combat Team Mobilization§!"
  LSS_Mobilization_56_desc: "Part of the 36th Infantry Division, contains solid infantry units and support."
  LSS_Mobilization_76: "§Y72nd Infantry Brigade Combat Team Mobilization§!"
@@ -170,6 +174,7 @@
  LSS_robots_for_civilian_industry: "Use Robots for Civilian Industry"
  LSS_robots_for_military_industry: "Use Robots for Military Industry"
  LSS_robots_for_manufacturing: "Use Robots for Manufacturing"
+ LSS_robots_for_the_wealthy: "Sell Robots to The Wealthy"
  
  decisions_GDR_congress_category: "§7Democratic Congress§!"
  l_GDR_congress_desc: "§7Greeny Plains§! objects are ready for unification.\nThere's only one question left."

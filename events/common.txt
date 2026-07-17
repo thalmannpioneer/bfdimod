@@ -597,6 +597,7 @@ country_event = {
 
     option = {
         name = uncommon_event.11.a
+        unlock_decision_category_tooltip = decision_LSS_Military_category
         load_oob = "LSS_2012"
         add_manpower = 10000
         army_experience = 115
@@ -606,6 +607,8 @@ country_event = {
         activate_mission = LSS_Mobilization_1
 
         hidden_effect = {
+            set_country_flag = LSS_Unlock_Militray
+
             country_event = {
 				id = uncommon_event.12
                 days = 7

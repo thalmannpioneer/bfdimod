@@ -4,7 +4,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 400
+		days_mission_timeout = 500
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -18,7 +18,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 700
+		days_mission_timeout = 850
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -31,7 +31,7 @@ decision_LSS_Military_category = {
 		available = {always = no}
 		icon = GFX_decision_SWE_set_army_budget  
 		is_good = yes
-		days_mission_timeout = 1200
+		days_mission_timeout = 1500
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -42,9 +42,9 @@ decision_LSS_Military_category = {
 
 	LSS_Mobilization_Air = { 
 		available = {always = no}
-		icon = GFX_decision_SWE_set_army_budget  
+		icon = GFX_decision_generic_air  
 		is_good = yes
-		days_mission_timeout = 400
+		days_mission_timeout = 550
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {
@@ -56,6 +56,92 @@ decision_LSS_Military_category = {
 			ELSE = {
 				load_oob = "LSS_Air"
 			}
+		}
+	}
+
+	LSS_increase_salaries = { 
+		icon = GFX_decision_generic_protection
+      
+		visible = {
+			has_active_mission = LSS_Mobilization_1
+		}
+		
+		fire_only_once = no
+		cost = 0
+		days_remove = 15
+		days_re_enable = 250
+
+		remove_effect = {
+			custom_effect_tooltip = l_money_lose_300K
+			subtract_from_variable = { money_amount = 3 }
+			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_Air days = -30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_restructure_army_command = { 
+		icon = GFX_decision_generic_army_support
+      
+		available = {
+			has_army_experience > 50 
+		}
+
+		visible = {
+			has_active_mission = LSS_Mobilization_1
+		}
+		
+		fire_only_once = no
+		cost = 5
+		days_remove = 35
+		days_re_enable = 100
+
+		complete_effect = {
+			army_experience = -50
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
+			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	LSS_restructure_air_command = { 
+		icon = GFX_decision_generic_army_support
+      
+		available = {
+			has_air_experience > 50 
+		}
+
+		visible = {
+			has_active_mission = LSS_Mobilization_Air
+		}
+		
+		fire_only_once = no
+		cost = 5
+		days_remove = 35
+		days_re_enable = 100
+
+		complete_effect = {
+			air_experience = -50
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {mission = LSS_Mobilization_Air days = -45}
+        }
+
+		ai_will_do = {
+			base = 10
 		}
 	}
 
@@ -88,7 +174,7 @@ decision_LSS_Military_category = {
 		war_with_on_remove = FROM
 
 		complete_effect = {
-			set_country_flag = LSS_attack_losers
+			clr_country_flag = LSS_attack_losers 
 		}
 
 		remove_effect = {
@@ -99,7 +185,7 @@ decision_LSS_Military_category = {
             }
 			add_threat = 3.5
 			hidden_effect = {
-				ROOT = { clr_country_flag = LSS_attack_losers }
+				ROOT = { set_country_flag = LSS_attack_losers }
 				IF = {
 					limit = {is_ai = yes}
 					add_manpower = 30000

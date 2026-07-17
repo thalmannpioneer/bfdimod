@@ -2,7 +2,7 @@ decision_LSS_Military_category = {
 	allowed = { tag = LSS }
 	visible = { 
 		LSS = {
-			has_completed_focus = LSS_focus_structure_the_government #Move Later
+			has_country_flag = LSS_Unlock_Militray
 		}
 	}
 	priority = 15
