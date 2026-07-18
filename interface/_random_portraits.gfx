@@ -38,15 +38,15 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_Goiky_Generic_navy_1"
+		name = "GFX_Portrait_Goiky_Generic_navy_1" #Not used
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_navy_1.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Goiky_Generic_navy_2"
+		name = "GFX_Portrait_Goiky_Generic_navy_2" #Not used
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_navy_2.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Goiky_Generic_navy_3"
+		name = "GFX_Portrait_Goiky_Generic_navy_3" #Not used
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_navy_3.dds"
 	}
 	
