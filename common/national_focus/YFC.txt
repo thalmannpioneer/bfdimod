@@ -3499,7 +3499,7 @@ focus_tree = {
 
     focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
         id = YFC_focus_the_great_recession
-        x = 24
+        x = 26
         y = 0
         icon = GFX_focus_generic
 
@@ -3550,6 +3550,113 @@ focus_tree = {
                 idea = idea_YFC_company_reorganization
                 days = 180
             }
+            custom_effect_tooltip = l_YFC_raid_yellow_takeover
+        }
+    }
+
+    focus = {
+        id = YFC_focus_entice_the_sectors
+        relative_position_id = YFC_focus_mass_firings
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_mass_firings }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        cost = 4
+        completion_reward = {
+            custom_effect_tooltip = l_money_lose_600K
+		    subtract_from_variable = { money_amount = 6 }
+            custom_effect_tooltip = l_YFC_sectors_All_Lower
+            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+            remove_ideas = idea_YFC_economic_isolation
+        }
+    }
+
+    focus = {
+        id = YFC_focus_debt_restructuring
+        relative_position_id = YFC_focus_entice_the_sectors
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_entice_the_sectors }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        cost = 4
+        completion_reward = {
+            #Later me add an event here
+        }
+    }
+
+    focus = {
+        id = YFC_focus_fire_their_underlings
+        relative_position_id = YFC_focus_entice_the_sectors
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_entice_the_sectors }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        cost = 4
+        completion_reward = {
+            add_political_power = -75
+            #Later me add an event here
+        }
+    }
+
+    focus = {
+        id = YFC_focus_ensure_loyalty
+        relative_position_id = YFC_focus_entice_the_sectors
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_entice_the_sectors }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        cost = 4
+        completion_reward = {
+            #Later me add an event here
+        }
+    }
+
+    focus = {
+        id = YFC_focus_observe_top_hat
+        relative_position_id = YFC_focus_ensure_loyalty
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_ensure_loyalty }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        cost = 4
+        completion_reward = {
+            custom_effect_tooltip = l_money_lose_200K
+		    subtract_from_variable = { money_amount = 2 }
+            #Later me add an event here
         }
     }
 
@@ -3595,25 +3702,6 @@ focus_tree = {
     }
 
     focus = {
-        id = YFC_focus_reassess_geopolitics
-        relative_position_id = YFC_focus_company_restructuring
-        x = -2
-        y = 1
-        icon = GFX_focus_generic
-
-        prerequisite = { focus = YFC_focus_company_restructuring }
-
-        cost = 4
-        completion_reward = {
-            country_event = {
-                id = YFC_event.59
-                hours = 1
-                random_hours = 2
-            }
-        }
-    }
-
-    focus = {
         id = YFC_focus_crack_down_on_influence #sectorial influence, i might add!
         relative_position_id = YFC_focus_company_restructuring
         x = 0
@@ -3630,41 +3718,6 @@ focus_tree = {
             add_timed_idea = {
                 idea = idea_YFC_sectorial_crackdown
                 days = 60
-            }
-        }
-    }
-
-    focus = {
-        id = YFC_focus_trade_alternatives
-        relative_position_id = YFC_focus_company_restructuring
-        x = -1
-        y = 3
-        icon = GFX_focus_generic
-
-        prerequisite = { #yes i know this doesnt make sense but it looks cool okay?
-            focus = YFC_focus_reassess_geopolitics 
-            focus = YFC_focus_crack_down_on_influence
-        }
-        prerequisite = { focus = YFC_focus_close_the_markets }
-
-        cost = 4
-        completion_reward = {
-            country_event = {
-                id = YFC_event.60
-                hours = 1
-                random_hours = 2
-            }
-
-            hidden_effect = {
-                IF = {
-                    limit = {has_completed_focus = YFC_focus_tophats_outlook}
-                    country_event = {
-                        id = YFC_event.64
-                        days = 3
-                        hours = 12
-                        random_hours = 24
-                    }
-                }
             }
         }
     }
@@ -3791,7 +3844,6 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
         prerequisite = { focus = YFC_focus_the_second_embargo }
-        prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
         cost = 2
         completion_reward = {
@@ -3907,16 +3959,38 @@ focus_tree = {
         allow_branch = { has_completed_focus = YFC_focus_march_on_footpathburg }
     }
 
+    #############################
     #the middle ground
+    #############################
+
+
+    focus = {
+        id = YFC_focus_reassess_geopolitics
+        relative_position_id = YFC_focus_the_great_recession
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_company_restructuring focus = YFC_focus_mass_firings }
+
+        cost = 4
+        completion_reward = {
+            country_event = {
+                id = YFC_event.59
+                hours = 1
+                random_hours = 2
+            }
+        }
+    }
+
     focus = {
         id = YFC_focus_close_the_markets
         relative_position_id = YFC_focus_the_great_recession
         x = 0
-        y = 3
+        y = 4
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_the_great_recession }
-        prerequisite = { focus = YFC_focus_mass_firings focus = YFC_focus_company_restructuring focus = YFC_focus_reassess_geopolitics }
+        prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
         ai_will_do = {
             base = 10
@@ -3974,13 +4048,52 @@ focus_tree = {
     }
 
     focus = {
-        id = YFC_focus_grow_closer_ties
+        id = YFC_focus_trade_alternatives
         relative_position_id = YFC_focus_the_second_embargo
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_close_the_markets }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_the_second_embargo
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+
+        cost = 4
+        completion_reward = {
+            country_event = {
+                id = YFC_event.60
+                hours = 1
+                random_hours = 2
+            }
+
+            hidden_effect = {
+                IF = {
+                    limit = {has_completed_focus = YFC_focus_tophats_outlook}
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_grow_closer_ties
+        relative_position_id = YFC_focus_trade_alternatives
         x = 0
         y = 3
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_the_second_embargo }
+        prerequisite = { focus = YFC_focus_trade_alternatives }
 
         available = {
             hidden_trigger = {
