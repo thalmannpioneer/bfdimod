@@ -1044,22 +1044,25 @@
  YFC_event.64.desc.b: "zdubbz Sectorials hate us but Yellow Face is ready for what is next while they are a bit weak or something"
  YFC_event.64.a: "huh" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.65.t: "YFC_focus_sloth event"
+ YFC_event.65.t: "YFC_focus_sloth event" #If you want two separate texts for both paths then replace this comment
  YFC_event.65.desc.a: "zdubbz Sectorials hate US!! (Part 2)"
  YFC_event.65.desc.b: "zdubbz Sectorials have mixed confidence with their takeover plan. Top Hat still has hope (it's bleak). Anyways Yellow Face knows of the plan and gathering mercs and other units for a clash"
- YFC_event.65.a: "huh (Part 2)"
+ YFC_event.65.a: "huh (Part 2)" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.66.t: "YFC_focus_envy event"
- YFC_event.66.desc: "zdubbz Beaker leaves how sad"
- YFC_event.66.a: "Alright"
+ YFC_event.66.t: "YFC_focus_envy event" #If you want two separate texts for both paths then replace this comment
+ YFC_event.66.desc.a: "zdubbz Beaker leaves how sad"
+ YFC_event.66.desc.b: "zdubbz Beaker tells Yellow Face that she is leaving and he allows this and even pays for part of the trip" 
+ YFC_event.66.a: "Alright" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.67.t: "YFC_focus_pride event"
- YFC_event.67.desc: "Portland fr fr zdubbz"
- YFC_event.67.a: "Alright"
+ YFC_event.67.t: "YFC_focus_pride event" #If you want two separate texts for both paths then replace this comment
+ YFC_event.67.desc.a: "Portland and the march fr fr zdubbz"
+ YFC_event.67.desc.b: "Top Hat takes Portland and moves to footpathburg, however without any support from the other sectors and mercenaries"
+ YFC_event.67.a: "Alright" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.68.t: "§tYFC_focus_march_on_footpathburg event§!"
- YFC_event.68.desc: "Yellow Face is gone zdubbz"
- YFC_event.68.a: "cool"
+ YFC_event.68.t: "§tYFC_focus_march_on_footpathburg event§!" #If you want two separate texts for both paths then replace this comment
+ YFC_event.68.desc.a: "Yellow Face is gone zdubbz"
+ YFC_event.68.desc.b: "zdubbz Top Hat fails the coup after a rather bloody battle for the city."
+ YFC_event.68.a: "cool" #If you want two separate texts for both paths then replace this comment
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."

@@ -2853,8 +2853,20 @@ country_event = { #YFC_focus_sloth
 country_event = { #YFC_focus_envy
 	id = YFC_event.66
 	title = YFC_event.66.t
-	desc = YFC_event.66.desc
 	picture = GFX_Temp_event
+
+	desc = {
+		text = YFC_event.66.desc.a #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+	desc = {
+		text = YFC_event.66.desc.b #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2866,8 +2878,13 @@ country_event = { #YFC_focus_envy
 	option = { 
 		name = YFC_event.66.a
 
-		custom_effect_tooltip = l_YFC_sectors_Beaker_leave
+		IF = {
+			limit = {has_completed_focus = YFC_focus_mass_firings}
+			custom_effect_tooltip = l_money_lose_200K
+		    subtract_from_variable = { money_amount = 2 }
+		}
 
+		custom_effect_tooltip = l_YFC_sectors_Beaker_leave
 		hidden_effect = {
 			IF = {
 				limit = {has_idea = idea_YFC_Defiant_Beaker}
@@ -2896,14 +2913,33 @@ country_event = { #YFC_focus_envy
 country_event = { #YFC_focus_pride
 	id = YFC_event.67
 	title = YFC_event.67.t
-	desc = YFC_event.67.desc
 	picture = GFX_Temp_event
 
 	fire_only_once = no
 	is_triggered_only = yes
  
+	desc = {
+		text = YFC_event.67.desc.a #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+	desc = {
+		text = YFC_event.67.desc.b #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
+
 	option = { 
 		name = YFC_event.67.a
+
+		add_stability = -0.1
+
+		IF = {
+			limit = {has_completed_focus = YFC_focus_mass_firings}
+			add_war_support = 0.05
+		}
 
 		225 = {
 			if = {
@@ -2913,7 +2949,7 @@ country_event = { #YFC_focus_pride
 				remove_core_of = EMP
 				add_victory_points = {
 					province = 10828
-					value = 2
+					value = 1
 				}
 			}
 		}
@@ -2923,31 +2959,54 @@ country_event = { #YFC_focus_pride
 country_event = { #YFC_focus_march_on_footpathburg
 	id = YFC_event.68
 	title = YFC_event.68.t
-	desc = YFC_event.68.desc
 	picture = GFX_Temp_event
+
+	desc = {
+		text = YFC_event.68.desc.a #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+	desc = {
+		text = YFC_event.68.desc.b #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
 
 	fire_only_once = no
 	is_triggered_only = yes
  
 	option = { 
 		name = YFC_event.68.a
-		add_manpower = -11
-		set_cosmetic_tag = YFC_TopHat_clan
-		retire_character = YFC_yellow_face #Im guessing you have a plan but for now imma do this
-		add_country_leader_role = {
-			character = YFC_tophat
-			promote_leader = yes
-			country_leader = {
-				ideology = oligarchism
-				traits = { YFC_old_general }
-			}
-		}
 
+		IF = {
+			limit = {has_completed_focus = YFC_focus_mass_firings}
+
+			add_manpower = -4859
+			201 = {add_manpower = -821}
+			retire_character = YFC_tophat 
+		}
+		ELSE = {
+			add_manpower = -11
+			set_cosmetic_tag = YFC_TopHat_clan
+			retire_character = YFC_yellow_face #Im guessing you have a plan but for now imma do this
+			add_country_leader_role = {
+				character = YFC_tophat
+				promote_leader = yes
+				country_leader = {
+					ideology = oligarchism
+					traits = { YFC_old_general }
+				}
+			}
+
+			complete_national_focus = YFC_focus_tophat_clan
+		}
 		hidden_effect = {
 			201 = {set_demilitarized_zone = no}
 			225 = {set_demilitarized_zone = no}
 		}
-		complete_national_focus = YFC_focus_tophat_clan
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 

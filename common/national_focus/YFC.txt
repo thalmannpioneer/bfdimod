@@ -3769,6 +3769,116 @@ focus_tree = {
         }
     }
 
+    focus = {
+        id = YFC_focus_goodwill
+        relative_position_id = YFC_focus_strike_the_headache
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        prerequisite = { focus = YFC_focus_strike_the_headache }
+
+        cost = 2
+        completion_reward = {
+            country_event = {
+                id = YFC_event.66
+                hours = 1
+                random_hours = 2
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_shame
+        relative_position_id = YFC_focus_strike_the_headache
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        available = {
+            has_completed_focus = YFC_focus_diligence
+            has_completed_focus = YFC_focus_goodwill
+        }
+
+        prerequisite = { focus = YFC_focus_strike_the_headache }
+
+        cost = 2
+        completion_reward = {
+            country_event = {
+                id = YFC_event.67
+                hours = 1
+                random_hours = 2
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_battle_for_footpathburg
+        relative_position_id = YFC_focus_strike_the_headache
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        prerequisite = { focus = YFC_focus_shame }
+        prerequisite = { focus = YFC_focus_diligence }
+        prerequisite = { focus = YFC_focus_goodwill }
+
+        cost = 5
+
+        select_effect = { 201 = {set_demilitarized_zone = yes} }
+
+        completion_reward = {
+            country_event = {
+                id = YFC_event.68
+                hours = 1
+                random_hours = 2
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_fate_of_top_hat
+        relative_position_id = YFC_focus_battle_for_footpathburg
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_battle_for_footpathburg
+            }
+        }
+        allow_branch = { has_completed_focus = YFC_focus_battle_for_footpathburg }
+
+        prerequisite = { focus = YFC_focus_battle_for_footpathburg }
+
+        cost = 6
+
+        completion_reward = {
+            #Later me add an event here
+        }
+    }
+
     #company reforms, power struggle between yellow face and the sectorials leading to the absolute promotion of tophat
     focus = { #every focus along this path should give you at least a small amount of money (unless of course i say otherwise or its nonsensicle)
         id = YFC_focus_company_restructuring
