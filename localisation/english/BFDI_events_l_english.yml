@@ -1027,22 +1027,26 @@
  YFC_event.61.desc: "The Sectorials had all grown somewhat close to each other, since the company hired them. They frequently attended social outtings together as a group to take the edge off things when work was getting stressful, and work was more stressful than ever under current conditions. Naturally, the Sectorials decided to eat at a fancy restaurant for dinner that night, and their meal was nearly over now, the waiter coming to them now for the bill. Well, for five bills; they would of course be paying separately.\n\nThey gave their cards to the waiter. Hammer made a bad joke about their cards declining, and no one laughed except for Pipe. Though, as the minutes since the waiter left doubled, and then tripled, the group became confused as to what had been taking so long. After nearly half an hour, the waiter came back, apologizing profusely about the cards declining. Top Hat checked his balance to find he was over $100,000 in debt, as were the rest of the Sectorials. It seemed as if the debt of the company randomly became the debt of the Sectorials."
  YFC_event.61.a: "For what purpose?!"
 
- YFC_event.62.t: "YFC_focus_lessons_from_mercs event"
+ YFC_event.62.t: "YFC_focus_lessons_from_mercs event" #If you want two separate texts for both paths then replace this comment
  YFC_event.62.desc.a: "TopHat talks to Cherry"
  YFC_event.62.desc.b: "TopHat talks to Grape"
  YFC_event.62.desc.c: "TopHat talks to Brotherhood"
- YFC_event.62.a: "Lore lore zdubbz"
+ YFC_event.62.desc.d: "Yellow Face talks to Mercs"
+ YFC_event.62.a: "Lore lore zdubbz" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.63.t: "YFC_focus_tophats_outlook event"
- YFC_event.63.desc: "zdubbz TopHat TopHat TopHat"
- YFC_event.63.a: "TopHat^2"
+ YFC_event.63.t: "YFC_focus_tophats_outlook event" #If you want two separate texts for both paths then replace this comment
+ YFC_event.63.desc.a: "zdubbz TopHat TopHat TopHat"
+ YFC_event.63.desc.b: "zdubbz Yellow Face stops TopHat"
+ YFC_event.63.a: "TopHat^2" #If you want two separate texts for both paths then replace this comment
 
- YFC_event.64.t: "YFC_focus_the_sectorial_powderkeg event"
- YFC_event.64.desc: "zdubbz Sectorials hate US!!"
- YFC_event.64.a: "huh"
+ YFC_event.64.t: "YFC_focus_the_sectorial_powderkeg event" #If you want two separate texts for both paths then replace this comment
+ YFC_event.64.desc.a: "zdubbz Sectorials hate US!!"
+ YFC_event.64.desc.b: "zdubbz Sectorials hate us but Yellow Face is ready for what is next while they are a bit weak or something"
+ YFC_event.64.a: "huh" #If you want two separate texts for both paths then replace this comment
 
  YFC_event.65.t: "YFC_focus_sloth event"
- YFC_event.65.desc: "zdubbz Sectorials hate US!! (Part 2)"
+ YFC_event.65.desc.a: "zdubbz Sectorials hate US!! (Part 2)"
+ YFC_event.65.desc.b: "zdubbz Sectorials have mixed confidence with their takeover plan. Top Hat still has hope (it's bleak). Anyways Yellow Face knows of the plan and gathering mercs and other units for a clash"
  YFC_event.65.a: "huh (Part 2)"
 
  YFC_event.66.t: "YFC_focus_envy event"

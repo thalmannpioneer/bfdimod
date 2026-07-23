@@ -2611,7 +2611,8 @@ country_event = { #YFC_focus_trade_alternatives
 
 	option = { 
 		name = YFC_event.60.a
-
+        custom_effect_tooltip = l_money_gain_50K
+    	add_to_variable = { money_amount = 0.5 }
 	}
 }
 
@@ -2653,18 +2654,27 @@ country_event = { #YFC_focus_lessons_from_mercs
 		text = YFC_event.62.desc.a #Cherry
 		trigger = {
 			check_variable = {var_YFC_merc_pick < 2 }
+			NOT = {has_completed_focus = YFC_focus_ensure_loyalty}
 		}
 	}
 	desc = {
 		text = YFC_event.62.desc.b #Grape
 		trigger = {
 			check_variable = {var_YFC_merc_pick = 2 }
+			NOT = {has_completed_focus = YFC_focus_ensure_loyalty}
 		}
 	}
 	desc = {
 		text = YFC_event.62.desc.c #Brotherhood
 		trigger = {
 			check_variable = {var_YFC_merc_pick = 3 }
+			NOT = {has_completed_focus = YFC_focus_ensure_loyalty}
+		}
+	}
+	desc = {
+		text = YFC_event.62.desc.d #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_ensure_loyalty
 		}
 	}
 
@@ -2675,13 +2685,29 @@ country_event = { #YFC_focus_lessons_from_mercs
 
 	option = { 
 		name = YFC_event.62.a
+
+		army_experience = 5
+		add_war_support = 0.01
 	}
 }
 
 country_event = { #YFC_focus_tophats_outlook
 	id = YFC_event.63
 	title = YFC_event.63.t
-	desc = YFC_event.63.desc
+	
+	desc = {
+		text = YFC_event.63.desc.a #Top Hat
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_ensure_loyalty}
+		}
+	}
+	desc = {
+		text = YFC_event.63.desc.b #Yellow Face
+		trigger = {
+			has_completed_focus = YFC_focus_ensure_loyalty
+		}
+	}
+
 	picture = GFX_Temp_event
 
 	fire_only_once = no
@@ -2689,15 +2715,23 @@ country_event = { #YFC_focus_tophats_outlook
 
 	immediate = {
         set_variable = { var_add_to_sector = 3 }
+		set_variable = { var_add_to_sector2 = 3 }
     }
     
 	option = { 
 		name = YFC_event.63.a
 
-		add_political_power = 40
-		add_stability = 0.05
-		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
-		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		IF = {
+			limit = {NOT = {has_completed_focus = YFC_focus_ensure_loyalty}} 
+			add_political_power = 40
+			add_stability = 0.05
+			add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+			custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		}
+		ELSE = {
+			custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
+			subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
+		}
 	}
 }
 
@@ -2707,11 +2741,30 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 	desc = YFC_event.64.desc
 	picture = GFX_Temp_event
 
+	desc = {
+		text = YFC_event.64.desc.a #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+	desc = {
+		text = YFC_event.64.desc.b #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
+
 	fire_only_once = no
 	is_triggered_only = yes
 
 	immediate = {
-        set_variable = { var_add_to_sector = 1 }
+		IF = {
+			limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
+			set_variable = { var_add_to_sector = 2 }
+		}
+		ELSE = {
+			set_variable = { var_add_to_sector = 1 }
+		}
     }
     
 	option = { 
@@ -2730,8 +2783,13 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 
-		complete_national_focus = YFC_focus_the_sectorial_powderkeg
-
+		IF = {
+			limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
+			complete_national_focus = YFC_focus_the_sectorial_powderkeg
+		}
+		ELSE = {
+			complete_national_focus = YFC_focus_strike_the_headache
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 }
@@ -2739,20 +2797,45 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 country_event = { #YFC_focus_sloth
 	id = YFC_event.65
 	title = YFC_event.65.t
-	desc = YFC_event.65.desc
 	picture = GFX_Temp_event
+
+	desc = {
+		text = YFC_event.65.desc.a #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+	desc = {
+		text = YFC_event.65.desc.b #Yellow Face Side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
 
 	fire_only_once = no
 	is_triggered_only = yes
 
 	immediate = {
-        set_variable = { var_add_to_sector = 3 }
+		IF = {
+			limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
+			set_variable = { var_add_to_sector = 3 }
+		}
+		ELSE = {
+			set_variable = { var_add_to_sector = 1 }
+		}
     }
     
 	option = { 
 		name = YFC_event.65.a
 		
-		add_stability = -0.2
+		IF = {
+			limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
+			add_stability = -0.2
+		}
+		ELSE = {
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
 
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
@@ -2848,6 +2931,7 @@ country_event = { #YFC_focus_march_on_footpathburg
  
 	option = { 
 		name = YFC_event.68.a
+		add_manpower = -11
 		set_cosmetic_tag = YFC_TopHat_clan
 		retire_character = YFC_yellow_face #Im guessing you have a plan but for now imma do this
 		add_country_leader_role = {

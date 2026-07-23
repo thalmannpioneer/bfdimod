@@ -3455,6 +3455,7 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            add_war_support = 0.05
             unlock_decision_category_tooltip = decision_YFC_raids_category
             hidden_effect = {
                 #I'll just put the raid stuff I had waiting here
@@ -3597,6 +3598,21 @@ focus_tree = {
         cost = 4
         completion_reward = {
             #Later me add an event here
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_observe_top_hat
+                        has_completed_focus = YFC_focus_trade_alternatives
+                        has_completed_focus = YFC_focus_fire_their_underlings
+                    }
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+            }
         }
     }
 
@@ -3617,6 +3633,21 @@ focus_tree = {
         completion_reward = {
             add_political_power = -75
             #Later me add an event here
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_observe_top_hat
+                        has_completed_focus = YFC_focus_trade_alternatives
+                        has_completed_focus = YFC_focus_debt_restructuring
+                    }
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+            }
         }
     }
 
@@ -3635,7 +3666,11 @@ focus_tree = {
 
         cost = 4
         completion_reward = {
-            #Later me add an event here
+            country_event = {
+                id = YFC_event.62
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -3656,7 +3691,81 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_lose_200K
 		    subtract_from_variable = { money_amount = 2 }
-            #Later me add an event here
+            country_event = {
+                id = YFC_event.63
+                hours = 1
+                random_hours = 2
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_fire_their_underlings
+                        has_completed_focus = YFC_focus_trade_alternatives
+                        has_completed_focus = YFC_focus_debt_restructuring
+                    }
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_strike_the_headache
+        relative_position_id = YFC_focus_fire_their_underlings
+        x = 0
+        y = 3
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        prerequisite = { focus = YFC_focus_trade_alternatives }
+        prerequisite = { focus = YFC_focus_observe_top_hat }
+        prerequisite = { focus = YFC_focus_fire_their_underlings }
+        prerequisite = { focus = YFC_focus_debt_restructuring }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_strike_the_headache
+            }
+        }
+        allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
+
+        cost = 5
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = YFC_focus_diligence
+        relative_position_id = YFC_focus_strike_the_headache
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
+
+        prerequisite = { focus = YFC_focus_strike_the_headache }
+
+        cost = 2
+        completion_reward = {
+            country_event = {
+                id = YFC_event.65
+                hours = 1
+                random_hours = 2
+            }
+            
         }
     }
 
@@ -3809,8 +3918,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_the_sectorial_powderkeg
         relative_position_id = YFC_focus_company_restructuring
-        x = 0.5
-        y = 4
+        x = 0
+        y = 5
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_trade_alternatives }
@@ -3830,7 +3939,6 @@ focus_tree = {
             #event about the sectorials all coming together to declare their opposition to the restructuring of the company
             #starts our short squabble for power
             #loses stability AGAIN #lmao
-
         }
     }
 
@@ -4028,7 +4136,7 @@ focus_tree = {
         id = YFC_focus_the_second_embargo
         relative_position_id = YFC_focus_close_the_markets
         x = 0
-        y = 2
+        y = 1
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_close_the_markets }
@@ -4051,10 +4159,10 @@ focus_tree = {
         id = YFC_focus_trade_alternatives
         relative_position_id = YFC_focus_the_second_embargo
         x = 0
-        y = 2
+        y = 1
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_close_the_markets }
+        prerequisite = { focus = YFC_focus_the_second_embargo }
 
         available = {
             hidden_trigger = {
@@ -4075,6 +4183,19 @@ focus_tree = {
             hidden_effect = {
                 IF = {
                     limit = {has_completed_focus = YFC_focus_tophats_outlook}
+                    country_event = {
+                        id = YFC_event.64
+                        days = 3
+                        hours = 12
+                        random_hours = 24
+                    }
+                }
+                ELSE_IF = {
+                    limit = {
+                        has_completed_focus = YFC_focus_fire_their_underlings
+                        has_completed_focus = YFC_focus_observe_top_hat
+                        has_completed_focus = YFC_focus_debt_restructuring
+                    }
                     country_event = {
                         id = YFC_event.64
                         days = 3

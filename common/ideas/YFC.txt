@@ -179,7 +179,7 @@ ideas = {
 		idea_YFC_company_reorganization = {
 			picture = SOV_coup_detat_ccp_2d_sov_compatibility #Replace later 
 			modifier = {
-				political_power_gain = 3
+				political_power_gain = 2
 				weekly_manpower = -150
 				monthly_population = -1.5
 			}
