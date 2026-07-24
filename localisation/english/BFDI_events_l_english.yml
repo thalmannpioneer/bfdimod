@@ -1064,6 +1064,14 @@
  YFC_event.68.desc.b: "zdubbz Top Hat fails the coup after a rather bloody battle for the city."
  YFC_event.68.a: "cool" #If you want two separate texts for both paths then replace this comment
 
+ YFC_event.69.t: "YFC_focus_debt_restructuring event" 
+ YFC_event.69.desc: "zdubbz about Yellow Face refusing to pay debt/debt restructuring stuff. This causes huge increases in money stockpile, but has damaged the rep of the company beyond a point"
+ YFC_event.69.a: "huh" 
+
+ YFC_event.70.t: "YFC_focus_fire_their_underlings event" 
+ YFC_event.70.desc: "zdubbz Yellow Face fires employees from the Sectorials. Can be silent or just lay-offs. Should be setup in a report"
+ YFC_event.70.a: "Bye Bye!" 
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

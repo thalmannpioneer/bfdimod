@@ -6,8 +6,8 @@ ideas = {
                 political_power_gain = 0.25
                 drift_defence_factor = -0.1
                 stability_factor = -0.05
-                monthly_population = -1.25
-
+                monthly_population = -2
+                stability_weekly = -0.001 #This is just countering civilian_economy
             }
         }
 
@@ -35,6 +35,7 @@ ideas = {
                 consumer_goods_factor = -1
                 war_support_factor = 0.1
                 political_power_factor = -1
+                monthly_population = -3
             }
         }
 
@@ -45,6 +46,7 @@ ideas = {
                 army_core_attack_factor = 0.35
                 army_core_defence_factor = -0.35
                 ai_focus_aggressive_factor = 5
+                monthly_population = -1.5
             }
         }
 

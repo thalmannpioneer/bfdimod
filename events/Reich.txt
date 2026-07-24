@@ -24,6 +24,11 @@ country_event = {
     
     option = {
 		name = GGR_event.2.a
+		diplomatic_relation = {
+            country = FFT
+            relation = embargo
+        	active = yes
+        }
 	}
 }
 

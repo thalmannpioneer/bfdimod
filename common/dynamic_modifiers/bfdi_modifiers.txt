@@ -13,6 +13,7 @@ idea_WGF_economical_devastation = {
     production_speed_buildings_factor = var_WGF_economical_devastation_sbf
     production_factory_efficiency_gain_factor = var_WGF_economical_devastation_egf
     political_power_gain = -0.25
+    stability_weekly = -0.001 #This is just countering civilian_economy
     research_speed_factor = var_WGF_economical_devastation_rsf
 }
 
@@ -98,6 +99,7 @@ idea_GPG_post_cw_crisis = {
     industrial_capacity_factory = var_GPG_postcw_fo
     stability_factor = var_GPG_postcw_sf
     political_power_gain = var_GPG_postcw_pp
+    stability_weekly = -0.001 #This is just countering civilian_economy
 }
 
 idea_GPG_army_agony = {

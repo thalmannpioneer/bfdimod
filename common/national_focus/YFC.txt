@@ -135,6 +135,7 @@ focus_tree = {
                 set_country_flag = YFC_Allow_Beaker
             }
             custom_effect_tooltip = l_YFC_allow_rails
+            custom_effect_tooltip = l_GOI_unlock_focus
             add_to_variable = { var_idea_YFC_anarchic_lands_rail = 5 }
             add_to_variable = { var_idea_YFC_anarchic_lands_node = 5 }
             mark_focus_tree_layout_dirty = yes
@@ -597,6 +598,7 @@ focus_tree = {
                 original_tag_to_check = BUN
                 add_opinion_modifier = { target = YFC modifier = large_increase }
             }
+            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 IF = { #Move later
                     limit = {GGR = {is_ai = yes}}
@@ -693,6 +695,7 @@ focus_tree = {
                 add_opinion_modifier = { target = YFC modifier = large_decrease }
             }
             add_political_power = 25
+            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 country_event = {
                     id = YFC_event.8
@@ -2023,6 +2026,7 @@ focus_tree = {
                 }
                 add_to_faction = CRN
             }
+            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 CRN = {
                     set_country_flag = Allow_Musketeers
@@ -2389,6 +2393,7 @@ focus_tree = {
                 create_faction = "Goiky Trade League"
                 add_to_faction = CRN
             }
+            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 CRN = {
                     set_country_flag = Allow_Musketeers
@@ -3268,7 +3273,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_great_business_partnership
         relative_position_id = YFC_focus_diverting_funds
-        x = 1.5
+        x = 1
         y = 1
         icon = GFX_focus_generic
         prerequisite = { focus = YFC_focus_establish_formal_connection }
@@ -3390,6 +3395,7 @@ focus_tree = {
                 relation = non_aggression_pact
                 active = yes
             }
+            custom_effect_tooltip = l_GOI_unlock_focus #Lies
         }
     }
 
@@ -3514,11 +3520,6 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            #the player is put like 7 million bucks into debt
-            #puts stability into the shitter, increases sectorial influence a fuck ton, gives spirit called "sectorial power grabbing"
-            #the spirit probably fucks over stability more, and also does other things as well maybe probably perhaps
-            #also maybe all the stuff im writing here should be in the event? i dont know dude
-
             #Most of this is done in YFC_event.54 so I won't add much else
         }
     }
@@ -3535,12 +3536,12 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         cost = 5
         completion_reward = {
-            add_manpower = -5000
+            add_manpower = -2500
             custom_effect_tooltip = l_YFC_sectors_All_Lower
             add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
             add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
@@ -3565,7 +3566,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5
         }
 
         cost = 4
@@ -3592,12 +3593,16 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         cost = 4
         completion_reward = {
-            #Later me add an event here
+            country_event = {
+                id = YFC_event.69
+                hours = 1
+                random_hours = 2
+            }
             hidden_effect = {
                 IF = {
                     limit = {
@@ -3626,13 +3631,17 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         cost = 4
         completion_reward = {
             add_political_power = -75
-            #Later me add an event here
+            country_event = {
+                id = YFC_event.70
+                hours = 1
+                random_hours = 2
+            }
             hidden_effect = {
                 IF = {
                     limit = {
@@ -3661,7 +3670,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         cost = 4
@@ -3684,7 +3693,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_ensure_loyalty }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         cost = 4
@@ -3723,7 +3732,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         prerequisite = { focus = YFC_focus_trade_alternatives }
@@ -3753,7 +3762,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
@@ -3778,7 +3787,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
@@ -3802,7 +3811,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         available = {
@@ -3831,7 +3840,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         prerequisite = { focus = YFC_focus_shame }
@@ -3860,7 +3869,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 5 
         }
 
         available = {
@@ -3875,6 +3884,7 @@ focus_tree = {
         cost = 6
 
         completion_reward = {
+            add_stability = 0.15
             #Later me add an event here
         }
     }
@@ -3889,6 +3899,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_great_recession }
         mutually_exclusive = { focus = YFC_focus_mass_firings }
+
+        ai_will_do = {
+            base = 0 #For now later update
+        }
 
         cost = 5
         completion_reward = {

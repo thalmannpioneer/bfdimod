@@ -262,6 +262,7 @@ add_equipment_to_stockpile = {
 }
 
 add_ideas = free_trade
+add_ideas = low_economic_mobilisation
 add_ideas = idea_YFC_no_more_advertisements_foundation
 add_dynamic_modifier = { modifier = idea_YFC_anarchic_lands }
 add_ideas = idea_YFC_neglectful_command

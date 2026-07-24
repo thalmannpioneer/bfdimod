@@ -5,6 +5,8 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.25
 				stability_factor = 0.05
+				industrial_capacity_dockyard = 0.1
+				experience_gain_navy = 0.05
 				ai_focus_naval_factor = 0.5
 			}
 		}

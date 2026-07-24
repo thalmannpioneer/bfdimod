@@ -54,7 +54,6 @@ country_event = {
 		add_stability = -0.25
 		add_political_power = -150
 		white_peace = BUN
-		complete_national_focus = YFC_focus_stalled_plans
 		IF = {
 			limit = {
 				has_war_with = CRN
@@ -79,6 +78,8 @@ country_event = {
 		}	
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {complete_national_focus = YFC_focus_stalled_plans}
 	}
 }
 
@@ -187,7 +188,6 @@ country_event = { #YFC sees this
 	option = {
 		name = BUN_YFC.6.a
 		white_peace = BUN
-		complete_national_focus = YFC_focus_stalled_plans
 		add_war_support = -0.10
 		add_political_power = -100
 		IF = {
@@ -228,7 +228,9 @@ country_event = { #YFC sees this
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_stalled_plans
 			BUN = {
 				subtract_from_variable = { money_amount = 10 }
 				country_lock_all_division_template = no

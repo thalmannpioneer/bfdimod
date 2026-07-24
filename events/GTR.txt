@@ -265,7 +265,7 @@ country_event = {
             country_event = {
                 id = GTR_event.11
                 days = 10
-                random_hours = 12
+                random_hours = 24
             }
             news_event = {
                 id = bfdinews.28

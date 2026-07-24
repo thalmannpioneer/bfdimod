@@ -163,7 +163,7 @@ ideas = {
 			picture = ETH_customs_barrier_ITA #Replace later 
 			modifier = {
 				stability_factor = -0.1
-				stability_weekly = -0.005
+				stability_weekly = -0.01
 				political_power_factor = -0.25
 				consumer_goods_factor = 0.35
 			}

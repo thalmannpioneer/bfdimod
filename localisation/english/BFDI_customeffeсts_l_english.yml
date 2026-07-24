@@ -9,6 +9,8 @@
  tt_GOI_debug_1: "§REvery nation declares war on each other.§!"
  tt_GOI_debug_2: "§REvery other nation declares war on you and forms a mega faction.§!"
  l_GOI_unlock_diplo: "§RUnlocks all vanilla diplomacy (i.e. war justification)§!"
+
+ l_GOI_unlock_focus: "§YNew focuses have unlocked!§!"
  
  l_WGF_focus_all_objects_serving: "Modifies §YRed army§! idea by:\n- §G2%§! conscription"
  l_WGF_operation_coinflip: "§YBattle for Goiky begins!§!"

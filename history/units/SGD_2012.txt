@@ -15,7 +15,7 @@ units = {
         location = 3110 # Old CaS place
         division_template = "Home Guard"
         start_experience_factor = 0.6
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 
 	division= {

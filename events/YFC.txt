@@ -143,6 +143,7 @@ country_event = {
 		name = YFC_event.5.a
 		add_ideas = idea_YFC_Bunch_Insurgency
 		hidden_effect = {
+			complete_national_focus = YFC_focus_a_look_inward
 			set_country_flag = Won_War_BUN
 			if = {
 				limit = {
@@ -173,8 +174,8 @@ country_event = {
 			division_template = "Militia"
 			disband = no 
 		}
-		complete_national_focus = YFC_focus_a_look_inward
 		add_war_support = 0.02
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
@@ -277,7 +278,7 @@ country_event = {
 		add_war_support = 0.05
 
 		custom_effect_tooltip = l_YFC_border_defence
-
+		
 		201 = {
 			IF = {
 				limit = {has_dynamic_modifier = {modifier = BUN_rampant_raids}}
@@ -1979,10 +1980,11 @@ country_event = { #To the east
 	option = {
 		name = YFC_event.44.a
 
-		complete_national_focus = YFC_focus_see_to_the_eastern_front
 		add_political_power = 50
 		add_stability = 0.05
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_see_to_the_eastern_front
 			add_threat = 0.5
 			180 = {
 				transfer_state_to = TBT
@@ -2419,10 +2421,11 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
-		complete_national_focus = YFC_focus_the_great_recession
-		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			add_threat = 0.5
+			complete_national_focus = YFC_focus_the_great_recession
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
@@ -2783,14 +2786,17 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 
-		IF = {
-			limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
-			complete_national_focus = YFC_focus_the_sectorial_powderkeg
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			IF = {
+				limit = {NOT = {has_completed_focus = YFC_focus_mass_firings}} 
+				complete_national_focus = YFC_focus_the_sectorial_powderkeg
+			}
+			ELSE = {
+				complete_national_focus = YFC_focus_strike_the_headache
+			}
+			mark_focus_tree_layout_dirty = yes
 		}
-		ELSE = {
-			complete_national_focus = YFC_focus_strike_the_headache
-		}
-		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -3007,6 +3013,51 @@ country_event = { #YFC_focus_march_on_footpathburg
 			225 = {set_demilitarized_zone = no}
 		}
 		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = { #YFC_focus_debt_restructuring
+	id = YFC_event.69
+	title = YFC_event.69.t
+	desc = YFC_event.69.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.69.a
+
+        custom_effect_tooltip = l_money_gain_700K
+        add_to_variable = { money_amount = 7 }
+		add_stability = -0.25
+		add_political_power = -100
+	}
+}
+
+country_event = { #YFC_focus_fire_their_underlings
+	id = YFC_event.70
+	title = YFC_event.70.t
+	desc = YFC_event.70.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.70.a
+
+		add_manpower = -2500
+		201 = {add_manpower = -500}
+		196 = {add_manpower = -200}
+		216 = {add_manpower = -100}
+		215 = {add_manpower = -1}
+        custom_effect_tooltip = l_YFC_sectors_All_Lower
+        add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+        add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
+        add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+        add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+        add_to_variable = { var_idea_YFC_Taser_influence = -2 }
 	}
 }
 
@@ -3762,9 +3813,10 @@ country_event = {
 	option = { 
 		name = YFC_BUN.1.b
 		custom_effect_tooltip = l_YFC_BUN_2
-		complete_national_focus = YFC_focus_foster_new_society
 		unlock_decision_category_tooltip = decision_YFC_foster_category
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_foster_new_society
 			country_event = {
 				id = YFC_event.18
 				days = 200
@@ -3868,9 +3920,10 @@ country_event = {
 
 	option = { 
 		name = YFC_BUN.3.a
-		complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 		unlock_decision_category_tooltip = decision_YFC_BUN_category
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 			country_event = {
 				id = YFC_BUN.9
 				days = 15
@@ -3897,14 +3950,15 @@ country_event = {
 
 	option = { 
 		name = YFC_BUN.4.a
-		complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 		custom_effect_tooltip = l_GGR_anarchists_decisions_open
 		add_opinion_modifier = { target = CRN modifier = medium_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = CRN
 			add_opinion_modifier = { target = YFC modifier = medium_decrease }
 		}
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 			country_event = {
 				id = YFC_BUN.9
 				days = 15
@@ -3922,11 +3976,14 @@ country_event = {
 
 	option = { 
 		name = YFC_BUN.4.b
-		complete_national_focus = YFC_focus_foster_new_society
 		custom_effect_tooltip = l_GGR_anarchists_decisions_open
 		add_war_support = -0.05
 		add_stability = -0.1
-		add_political_power = -150
+		add_political_power = -100
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			complete_national_focus = YFC_focus_foster_new_society
+		}
 	}
 }
 
@@ -5198,9 +5255,10 @@ country_event = { #Election BUN Wins!
 
 	option = {
 		name = YFC_BUN.25.a
-		complete_national_focus = YFC_focus_bunch_fostered
 		remove_ideas = idea_YFC_Bunch_Insurgency
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_bunch_fostered
 			BUN = {
 				add_country_leader_trait = nationalist_symbol
 				set_country_leader_ideology = centrism
@@ -5229,9 +5287,10 @@ country_event = { #Election YFC Wins!
 
 	option = {
 		name = YFC_BUN.26.a
-		complete_national_focus = YFC_focus_bunch_fostered
 		remove_ideas = idea_YFC_Bunch_Insurgency
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_bunch_fostered
 			BUN = {
 				add_country_leader_role = {
 					character = BUN_blocky
@@ -5266,9 +5325,10 @@ country_event = { #Election CRN Wins!
 
 	option = {
 		name = YFC_BUN.27.a
-		complete_national_focus = YFC_focus_bunch_fostered
 		remove_ideas = idea_YFC_Bunch_Insurgency
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = YFC_focus_bunch_fostered
 			BUN = {
 				set_cosmetic_tag = BUN_republic
 				remove_ideas = idea_BUN_criminal_state
