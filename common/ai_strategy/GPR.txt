@@ -77,3 +77,24 @@ GPR_Scare_GFG = { #Place troops on the border for the... um... aura?
 		value = 35
 	}
 }
+
+## INDUSTRY ##
+
+GPR_army = {
+    #Build a force
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_army_size = {
+            size > 10
+        }
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 250
+    }
+}

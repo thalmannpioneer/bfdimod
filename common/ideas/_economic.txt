@@ -105,16 +105,6 @@ ideas = {
 
             ai_will_do = {
                 base = 1
-
-
-                modifier = { #Go back to civ if we lack stability
-                    factor = 1000
-
-                    has_idea = low_economic_mobilisation
-                    has_stability < 0.4
-                    has_political_power > 200
-                    has_war = no
-                }
             }
         }
 
@@ -153,11 +143,10 @@ ideas = {
                     has_war_support > 0.25
                     has_idea = civilian_economy
                 }
-                modifier = { #Fall back to this law when not at war
-                    factor = 300
+                modifier = { #Do not take if we are not at war and low on stability
+                    factor = 0.01
 
-                    NOT = {has_idea = civilian_economy}
-                    has_political_power > 200
+                    has_stability < 0.15
                     has_war = no
                 }
             }
@@ -195,7 +184,7 @@ ideas = {
                 }
 
                 modifier = { #Do not take if we are not at war and low on stability
-                    factor = 0.1
+                    factor = 0.01
 
                     has_stability < 0.05
                     has_war = no
@@ -245,15 +234,16 @@ ideas = {
                 modifier = {
                     #High prio on production
                     factor = 35
-
+                    
+                    manpower_per_military_factory > 1000
                     OR = {
-                        manpower_per_military_factory > 1000
+                        has_stability > 0.5
                         has_war = yes
                     }
                 }
 
                 modifier = { #Do not take if we are not at war and low on stability
-                    factor = 0.1
+                    factor = 0.01
 
                     has_stability < 0.15
                     has_war = no
@@ -280,6 +270,8 @@ ideas = {
                     # revert from closed_economy if we have large allies
                     has_idea = closed_economy
                     has_large_ally_not_pick_closed_economy = yes
+                    has_stability > 0.4
+                    has_war = yes
                 }
             }
         }
@@ -320,7 +312,7 @@ ideas = {
                 }
 
                 modifier = { #Do not take if we are not at war and low on stability
-                    factor = 0.1
+                    factor = 0.01
 
                     has_stability < 0.15
                     has_war = no
@@ -424,11 +416,6 @@ ideas = {
                     factor = 3
                     has_war = no
                     has_idea = limited_exports
-                }
-                modifier = { #Please escape this
-                    factor = 1000
-                    has_war = no
-                    has_idea = closed_economy
                 }
             }
         }

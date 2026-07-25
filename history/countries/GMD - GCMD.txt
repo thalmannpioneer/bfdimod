@@ -37,13 +37,9 @@ set_popularities = {
 
 set_variable = { var_GMD_YFC_Troll_Chance = 0 }
 
+add_ideas = low_economic_mobilisation
 add_ideas = idea_GMD_coinys_domain
 add_ideas = idea_common_unplayable
-
-random = {
-    chance = 3 #For 3 mil subs <3
-    recruit_character = GMD_joke_cary
-}
 
 recruit_character = GMD_coiny
 recruit_character = GMD_dinar

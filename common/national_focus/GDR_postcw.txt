@@ -250,6 +250,16 @@ focus_tree = {
 
         completion_reward = {
             custom_effect_tooltip = l_GPG_improves_crisis
+            IF = {
+                limit = {has_idea = closed_economy}
+                add_ideas = limited_exports
+                custom_effect_tooltip = l_money_gain_200K
+                add_to_variable = { money_amount = 2 }
+            }
+            ELSE = {
+                custom_effect_tooltip = l_money_gain_500K
+                add_to_variable = { money_amount = 5 }
+            }
             add_to_variable = { var_GDR_payments_to_gpr_cgf = -0.1 }
             add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.2 }
             add_to_variable = { var_GDR_payments_to_gpr_pegf = 0.2 }
@@ -301,11 +311,12 @@ focus_tree = {
         }
 
         completion_reward = {
+            add_stability = 0.05
             custom_effect_tooltip = l_GDR_land_of_liberty
             hidden_effect = {
                 country_event = {
                     id = GDR_event.9
-                    days = 15
+                    days = 5
                     random_hours = 12
                 }
             }

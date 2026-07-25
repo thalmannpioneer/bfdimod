@@ -32,12 +32,18 @@ decision_YFC_sector_category = { #Watermelon
             set_temp_variable = { Level_TopHat = var_idea_YFC_TopHat_level }
             multiply_temp_variable = {Level_TopHat = 0.05}
             IF = {
-                limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack < Level_TopHat}}
+                limit = {
+                    check_variable = { var_idea_YFC_sectors_TopHat_attack < Level_TopHat}
+                    NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+                }
                 add_to_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
                 add_to_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
             }
             ELSE_IF = {
-                limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}}
+                limit = {
+                    check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}
+                    NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+                }
                 subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
                 subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
                 IF = {
@@ -78,12 +84,18 @@ decision_YFC_sector_category = { #Watermelon
             set_temp_variable = { Level_Beaker = var_idea_YFC_Beaker_level }
             multiply_temp_variable = {Level_Beaker = 0.1}
             IF = {
-                limit = {check_variable = { var_idea_YFC_sectors_Beaker_research < Level_Beaker}}
+                limit = {
+                    check_variable = { var_idea_YFC_sectors_Beaker_research < Level_Beaker}
+                    has_country_flag = YFC_Allow_Beaker
+                }
                 add_to_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
                 add_to_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
             }
             ELSE_IF = {
-                limit = {check_variable = { var_idea_YFC_sectors_Beaker_research > Level_Beaker}}
+                limit = {
+                    check_variable = { var_idea_YFC_sectors_Beaker_research > Level_Beaker}
+                    has_country_flag = YFC_Allow_Beaker
+                }
                 subtract_from_variable = { var_idea_YFC_sectors_Beaker_research = 0.1 }
                 subtract_from_variable = { var_idea_YFC_sectors_Beaker_experience = 0.01 }
                 IF = {
@@ -371,6 +383,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
         }
 		days_remove = 30
 
@@ -423,6 +436,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
+            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
         }
 		days_remove = 30
 

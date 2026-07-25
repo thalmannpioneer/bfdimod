@@ -128,3 +128,73 @@ defined_text = {
 		localization_key = GFX_YFC_BUN16ac
 	}
 }
+
+defined_text = { #Remove later it's useless
+    name = YFC_Sector_Military_Leader
+    text = {
+		trigger = { check_variable = { var_idea_YFC_sectors_TopHat_type = 0 } }
+		localization_key = GFX_decisions_sector_military_jailed
+	}
+    text = {
+		trigger = { check_variable = { var_idea_YFC_sectors_TopHat_type = 1 } }
+		localization_key = GFX_Portrait_Goiky_Empty
+	}
+	text = {
+		trigger = { check_variable = { var_idea_YFC_sectors_TopHat_type = 2 } }
+		localization_key = GFX_decisions_sector_military 
+	}
+	text = {
+		trigger = { check_variable = { var_idea_YFC_sectors_TopHat_type = 3 } }
+		localization_key = GFX_BUN_blocky
+	}
+}  
+
+defined_text = {
+    name = YFC_Sector_TopHat_Name
+    text = {
+        trigger = {
+            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+        }
+        localization_key = l_decisions_sector_military_title
+    }
+    text = {
+        localization_key = l_decisions_sector_unknown_title
+    }
+}  
+defined_text = {
+    name = YFC_Sector_TopHat_Stats
+    text = {
+        trigger = {
+            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+        }
+        localization_key = l_decisions_sector_military_stats
+    }
+    text = {
+        localization_key = l_decisions_sector_unknown_title
+    }
+} 
+
+defined_text = {
+    name = YFC_Sector_Beaker_Name
+    text = {
+        trigger = {
+            has_country_flag = YFC_Allow_Beaker
+        }
+        localization_key = l_decisions_sector_science_title
+    }
+    text = {
+        localization_key = l_decisions_sector_unknown_title
+    }
+}  
+defined_text = {
+    name = YFC_Sector_Beaker_Stats
+    text = {
+        trigger = {
+            has_country_flag = YFC_Allow_Beaker
+        }
+        localization_key = l_decisions_sector_science_stats
+    }
+    text = {
+        localization_key = l_decisions_sector_unknown_title
+    }
+} 

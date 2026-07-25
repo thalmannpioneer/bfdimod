@@ -29,6 +29,30 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			country_event = GGR_event.1
+		}
+	}
+	
+	focus = {
+		id = GGR_focus_radicalization
+		relative_position_id = GGR_focus_power_of_the_strong
+		x = 1
+		y = 1
+		icon = GFX_focus_GGR_radicalization
+		
+		prerequisite = { focus = GGR_focus_power_of_the_strong }
+		
+		cost = 8
+		
+		ai_will_do = {
+        base = 10
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -60,30 +84,6 @@ focus_tree = {
 					}
 					set_country_flag = SkillIssue_GGR
 				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GGR_focus_radicalization
-		relative_position_id = GGR_focus_power_of_the_strong
-		x = 1
-		y = 1
-		icon = GFX_focus_GGR_radicalization
-		
-		prerequisite = { focus = GGR_focus_power_of_the_strong }
-		
-		cost = 8
-		
-		ai_will_do = {
-        base = 10
-		}
-		
-		completion_reward = {
-			add_political_power = 50
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
 			}
 		}
 	}

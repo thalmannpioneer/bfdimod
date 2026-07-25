@@ -147,17 +147,36 @@ scripted_gui = {
         parent_window_token = decision_tab
 
         triggers = { #For now the max level is 5 and min is 1. Granted this may change
+            sector_military_visible = {
+                check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
+            }
+            sector_military_empty_visible = {
+                check_variable = { var_idea_YFC_sectors_TopHat_type = 1 }
+            }
+            sector_military_jailed_visible = {
+                check_variable = { var_idea_YFC_sectors_TopHat_type = 0 }
+            }
+
+            sector_science_visible = {
+                has_country_flag = YFC_Allow_Beaker
+            }
+            sector_science_empty_visible = {
+                NOT = {has_country_flag = YFC_Allow_Beaker}
+            }
+
             button_military_increase_click_enabled = {
                 has_political_power > 25
                 check_variable = { var_idea_YFC_TopHat_level < 5 }
                 NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
                 NOT = {has_idea = idea_YFC_Debt_Crisis}
+                NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
             }
             button_military_decrease_click_enabled = {
                 has_political_power > 25
                 check_variable = { var_idea_YFC_TopHat_level > 1 }
                 NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
                 NOT = {has_idea = idea_YFC_Debt_Crisis}
+                NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
             }
             button_railway_increase_click_enabled = {
                 has_political_power > 25
@@ -285,7 +304,7 @@ scripted_gui = {
         }
         #Fuck it i will make decision options for the AI I give up :sob:
         properties = {
-            #militray_sector = { frame = var_current_cabinet_leader } #Idk if I will need this yet
+
         }
     }
 }

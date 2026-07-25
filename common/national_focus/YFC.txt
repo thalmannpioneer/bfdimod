@@ -133,6 +133,7 @@ focus_tree = {
                 }
                 add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
                 set_country_flag = YFC_Allow_Beaker
+                set_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
             }
             custom_effect_tooltip = l_YFC_allow_rails
             custom_effect_tooltip = l_GOI_unlock_focus
@@ -3885,7 +3886,11 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.15
-            #Later me add an event here
+            country_event = {
+                id = YFC_event.71
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -4230,9 +4235,10 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            add_stability = 0.02
+            add_stability = 0.05
             custom_effect_tooltip = l_money_gain_200K
             add_to_variable = { money_amount = 2 }
+            add_ideas = closed_economy
             every_other_country = {
                 limit = {
                     NOT = { tag = EMP }

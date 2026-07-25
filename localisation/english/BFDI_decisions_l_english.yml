@@ -204,7 +204,8 @@
  YFC_Trade_food: "§YGathering Food§!"
 
  decision_YFC_sector_category: "Our Sectors"
- l_decisions_sector_title: "§YOur Sectors!"
+ l_decisions_sector_title: "§YOur Sectors§!"
+ l_decisions_sector_unknown_title: "§RUNAVAILABLE§!"
  l_decisions_sector_military_title: "§RTop Hat§!"
  l_decisions_sector_military_stats: "§GDivision Attack:§! [?var_idea_YFC_sectors_TopHat_attack|%]\n§GDivision Organisation:§! [?var_idea_YFC_sectors_TopHat_org|%]\n§RCost:§! [?var_idea_YFC_TopHat_cost]K\n§RInfluence:§! [?var_idea_YFC_TopHat_influence]"
  l_decisions_sector_railway_title: "§RPipe§!"
@@ -222,6 +223,8 @@
  YFC_sector_failing_payments: "§RFailing Payments§!"
  YFC_sector_failing_payments_desc: "Reports have flooded us that we are running out of money! We need to fix this issue quickly or we will have much bigger issues in the future!"
  YFC_sector_minor_payments: "Make Small Payments"
+
+
 
  YFC_SRI_war_timer: "§RSubjugate The Great Ridge§!"
  YFC_SRI_war_timer_desc: "We must hurry to control The Great Ridge and bring them into our sphere! We are on limited time as the Sectors and population want a quick and easy war!"

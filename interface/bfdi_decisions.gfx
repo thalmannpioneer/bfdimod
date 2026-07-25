@@ -438,6 +438,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_sector_military_jailed"
+		textureFile = "gfx/interface/decisions/decisions_sector_military_jailed.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_sector_railway"
 		textureFile = "gfx/interface/decisions/decisions_sector_railway.dds"
 	}

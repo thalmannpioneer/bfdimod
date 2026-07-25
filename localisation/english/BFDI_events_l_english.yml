@@ -1072,6 +1072,12 @@
  YFC_event.70.desc: "zdubbz Yellow Face fires employees from the Sectorials. Can be silent or just lay-offs. Should be setup in a report"
  YFC_event.70.a: "Bye Bye!" 
 
+ YFC_event.71.t: "YFC_focus_fate_of_top_hat event" 
+ YFC_event.71.desc: "zdubbz Yellow Face puts Top Hat on tiral for trying to overthrow the company bla bla.\n\n§RThe choice made here may mean much more later.§!" #Keep the last line or something close to it as it is more of a tooltip
+ YFC_event.71.a: "Execution!" 
+ YFC_event.71.b: "Prison Time!" 
+ YFC_event.71.c: "Exile!" 
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

@@ -517,6 +517,15 @@ focus_tree = {
                     on_cancel = WGF_event.9
                 }
             }
+
+            hidden_effect = {
+                GMD = { #Maybe move later idk
+                    random = {
+                        chance = 3 #For 3 mil subs <3
+                        recruit_character = GMD_joke_cary
+                    }
+                }
+            }
         }
     }
 

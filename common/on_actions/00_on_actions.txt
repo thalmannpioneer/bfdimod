@@ -791,6 +791,7 @@ on_actions = {
                 while_loop_effect = { # Getting out of negative balance
                     limit = {
                         check_variable = { var_display_final_change < 0 }
+                        NOT = {has_country_flag = disable_money_politics}
 
                         OR = {
                             check_variable = { var_tax_slider < 4 }
@@ -831,6 +832,8 @@ on_actions = {
 
                 while_loop_effect = { # Money should work! We don't need an income to be too large
                     limit = {
+                        NOT = {has_country_flag = disable_money_politics}
+
                         OR = {
                             check_variable = { var_display_final_change > 50 }
                             check_variable = { var_display_final_change_stage > 1 }
@@ -873,6 +876,60 @@ on_actions = {
                     }
                 }
             }
+            if = { #For backing laws (tot_economic_mobilisation)
+                limit = {
+                    is_ai = yes
+                    has_idea = tot_economic_mobilisation
+                    has_war = No
+                    has_political_power > 250
+                }
+                add_ideas = low_economic_mobilisation
+                add_political_power = -150
+            }
+            else_if = { #(war_economy)
+                limit = {
+                    is_ai = yes
+                    has_idea = war_economy
+                    has_war = No
+                    has_stability < 0.4
+                    has_political_power > 250
+                }
+                add_ideas = low_economic_mobilisation
+                add_political_power = -150
+            }
+            else_if = { #(partial_economic_mobilisation)
+                limit = {
+                    is_ai = yes
+                    has_idea = partial_economic_mobilisation
+                    has_war = No
+                    has_stability < 0.15
+                    has_political_power > 250
+                }
+                add_ideas = low_economic_mobilisation
+                add_political_power = -150
+            }
+            else_if = { #(low_economic_mobilisation)
+                limit = {
+                    is_ai = yes
+                    has_idea = low_economic_mobilisation
+                    has_war = No
+                    has_stability < 0.05
+                    has_political_power > 250
+                }
+                add_ideas = civilian_economy
+                add_political_power = -150
+            }
+            if = { #Trade laws (closed_economy)
+                limit = {
+                    is_ai = yes
+                    has_idea = closed_economy
+                    has_war = No
+                    has_political_power > 350
+                }
+                add_ideas = export_focus #Could try to understand how limited works but I don't care
+                add_political_power = -150
+            }
+
         }
     }
 

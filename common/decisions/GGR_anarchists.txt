@@ -320,7 +320,7 @@ decision_GGR_anarcists_category = {
 		icon = GFX_decisions_GGR_anarchists_suppression
 		state_target = yes
 		ai_will_do = {
-			base = 30
+			base = 100
 		}
 		targets = { state = 15 }
 		on_map_mode = map_only
@@ -648,7 +648,7 @@ decision_GGR_anarcists_category = {
 		targets = { state = 143 }
 		on_map_mode = map_only
 		ai_will_do = {
-			base = 25
+			base = 95
 		}
         available = {
             custom_trigger_tooltip = {
@@ -974,7 +974,7 @@ decision_GGR_anarcists_category = {
 		targets = { state = 33 }
 		on_map_mode = map_only
 		ai_will_do = {
-			base = 20
+			base = 90
 		}
         available = {
             custom_trigger_tooltip = {
@@ -1299,7 +1299,7 @@ decision_GGR_anarcists_category = {
 		targets = { state = 172 }
 		on_map_mode = map_only
 		ai_will_do = {
-			base = 15
+			base = 85
 		}
 		icon = GFX_decisions_GGR_anarchists_suppression
         available = {

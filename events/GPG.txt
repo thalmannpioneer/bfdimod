@@ -884,7 +884,7 @@ country_event = { #I've given up this ai is soo bad :((((
                     add_manpower = 80000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 8000 # +1000 Since they suck
+                        amount = 9000 # +2000 Since they suck
                     }
                 }
             }

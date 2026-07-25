@@ -71,4 +71,9 @@ spriteTypes = {
 		name = "GFX_Portrait_Goiky_Generic_scientist_3"
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_scientist_3.dds"
 	}
+
+	spriteType = {
+		name = "GFX_Portrait_Goiky_Empty"
+		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Empty.dds"
+	}
 }

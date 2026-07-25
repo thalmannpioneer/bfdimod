@@ -26,7 +26,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "sector_military_title"
-				text = l_decisions_sector_military_title
+				text = "[YFC_Sector_TopHat_Name]"
 				position = { x = 5 y = 30 }
 				maxWidth = 250
 				format = centre
@@ -34,16 +34,33 @@ guiTypes = {
 			}
 
 			iconType = {
-				name = "sector_military"
+				name = "sector_military" #Normal
 				spriteType = "GFX_decisions_sector_military"
 				position = { x = 50 y = 60 }
 				pdx_tooltip = YFC_tophat
 				pdx_tooltip_delayed  = idea_YFC_TopHat_desc
 			}
 
+			iconType = {
+				name = "sector_military_jailed" #Same as sector_military just jailed
+				spriteType = "GFX_decisions_sector_military_jailed"
+				position = { x = 50 y = 60 }
+				pdx_tooltip = YFC_tophat
+				pdx_tooltip_delayed  = l_decisions_sector_unknown_title
+			}
+
+			iconType = {
+				name = "sector_military_empty" #Same as sector_military just empty
+				spriteType = "GFX_Portrait_Goiky_Empty"
+				position = { x = 50 y = 60 }
+				pdx_tooltip = l_decisions_sector_unknown_title
+				pdx_tooltip_delayed  = l_decisions_sector_unknown_title
+			}
+
+
 			instantTextboxType = {
 				name = "sector_military_stats"
-				text = l_decisions_sector_military_stats
+				text = "[YFC_Sector_TopHat_Stats]"
 				position = { x = 5 y = 275 }
 				maxWidth = 250
 				format = centre
@@ -122,7 +139,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "sector_science_title"
-				text = l_decisions_sector_science_title
+				text = "[YFC_Sector_Beaker_Name]"
 				position = { x = 5 y = 430 }
 				maxWidth = 250
 				format = centre
@@ -137,9 +154,17 @@ guiTypes = {
 				pdx_tooltip_delayed  = idea_YFC_Beaker_desc
 			}
 
+			iconType = {
+				name = "sector_science_empty" #Same as sector_science just empty
+				spriteType = "GFX_Portrait_Goiky_Empty"
+				position = { x = 50 y = 460 }
+				pdx_tooltip = l_decisions_sector_unknown_title
+				pdx_tooltip_delayed  = l_decisions_sector_unknown_title
+			}
+
 			instantTextboxType = {
 				name = "sector_science_stats"
-				text = l_decisions_sector_science_stats
+				text = "[YFC_Sector_Beaker_Stats]"
 				position = { x = 5 y = 675 }
 				maxWidth = 250
 				format = centre

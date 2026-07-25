@@ -2600,6 +2600,7 @@ country_event = { #YFC_focus_reassess_geopolitics
 
 	option = { 
 		name = YFC_event.59.a
+		add_ideas = limited_exports
 	}
 }
 
@@ -2877,10 +2878,6 @@ country_event = { #YFC_focus_envy
 	fire_only_once = no
 	is_triggered_only = yes
 
-	immediate = {
-		set_variable = { var_add_to_sector2 = 10 }
-    }
-    
 	option = { 
 		name = YFC_event.66.a
 
@@ -2903,6 +2900,7 @@ country_event = { #YFC_focus_envy
 			set_variable = { var_idea_YFC_Beaker_cost = 0 }
 			set_variable = { var_idea_YFC_sectors_Beaker_research = 0 }
  			set_variable = { var_idea_YFC_sectors_Beaker_experience = 0 }
+			set_variable = { var_idea_YFC_Beaker_level = 0 }
 			set_variable = { var_sectors_combined_cost = 0 } 
             add_to_variable = { var_sectors_combined_cost = var_idea_YFC_TopHat_cost }
             add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Pipe_cost }
@@ -2910,8 +2908,7 @@ country_event = { #YFC_focus_envy
             add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Hammer_cost }
             add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Taser_cost }
 			clr_country_flag = YFC_Allow_Beaker
-			custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
-			subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
+			set_variable = { var_idea_YFC_Beaker_influence = 0 } 
 		}
 	}
 }
@@ -2979,7 +2976,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 			has_completed_focus = YFC_focus_mass_firings
 		}
 	}
-
+ 
 	fire_only_once = no
 	is_triggered_only = yes
  
@@ -2991,7 +2988,26 @@ country_event = { #YFC_focus_march_on_footpathburg
 
 			add_manpower = -4859
 			201 = {add_manpower = -821}
-			retire_character = YFC_tophat 
+			custom_effect_tooltip = l_YFC_sectors_TopHat_leave
+			hidden_effect = {
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Top_Hat}
+					remove_ideas = idea_YFC_Defiant_Top_Hat
+				}
+				set_variable = { var_idea_YFC_sectors_TopHat_type = 0 }
+				set_variable = { var_idea_YFC_TopHat_cost = 0 }
+				set_variable = { var_idea_YFC_sectors_TopHat_attack = 0 }
+				set_variable = { var_idea_YFC_sectors_TopHat_org = 0 }
+				set_variable = { var_idea_YFC_TopHat_level = 0 }
+				set_variable = { var_sectors_combined_cost = 0 } 
+				add_to_variable = { var_sectors_combined_cost = var_idea_YFC_TopHat_cost }
+				add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Pipe_cost }
+				add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Beaker_cost }
+				add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Hammer_cost }
+				add_to_variable = { var_sectors_combined_cost = var_idea_YFC_Taser_cost }
+				retire_character = YFC_tophat
+				set_variable = { var_idea_YFC_TopHat_influence = 0 }
+			}
 		}
 		ELSE = {
 			add_manpower = -11
@@ -3058,6 +3074,53 @@ country_event = { #YFC_focus_fire_their_underlings
         add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
         add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
         add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+	}
+}
+
+country_event = { #YFC_focus_fate_of_top_hat
+	id = YFC_event.71
+	title = YFC_event.71.t
+	desc = YFC_event.71.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		#Just for testing
+		set_variable = { var_idea_YFC_sectors_TopHat_type = 1 } 
+		set_variable = { var_idea_YFC_TopHat_cost = 0 }
+		set_variable = { var_idea_YFC_sectors_TopHat_attack = 0 }
+		set_variable = { var_idea_YFC_sectors_TopHat_org = 0 }
+		set_variable = { var_idea_YFC_TopHat_level = 0 }
+		set_variable = { var_idea_YFC_sectors_Beaker_research = 0 }
+ 		set_variable = { var_idea_YFC_sectors_Beaker_experience = 0 }
+		set_variable = { var_idea_YFC_Beaker_level = 0 }
+	}
+
+	option = { #Kill him, removes any chance for him to come back BUT Beaker is not coming back and the Sectors quit (later) 
+		name = YFC_event.71.a
+
+		add_war_support = 0.1
+		add_stability = -0.1
+
+		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
+	}
+	option = { #Imprison him, the normal one with the normal stuff. Sectors will be fired down the road in normal time. Top Hat may come back as an enemy though I'm not sure how
+		name = YFC_event.71.b
+
+		add_stability = 0.05
+		add_political_power = 50
+
+		set_variable = {var_idea_YFC_sectors_TopHat_type = 0}
+	}
+	option = { #Exile him, allows the Sectors to stay with Beaker coming back but Top Hat may join an enemy nation though I'm not sure how or who
+		name = YFC_event.71.c
+
+		add_stability = 0.15
+		add_political_power = 100
+
+		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
 	}
 }
 
