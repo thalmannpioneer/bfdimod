@@ -449,6 +449,16 @@ focus_tree = {
 			add_to_variable = { var_GGR_industry_em = 0.1 }
 			add_to_variable = { var_GGR_industry_ef = 0.15 }
 			add_to_variable = { var_GGR_industry_fr = -0.05 }
+
+			hidden_effect = { #Small push so they don't get stuck
+				IF = {
+					limit = {
+						is_ai = yes
+						check_variable = {money_amount < 1} 
+					}
+					add_to_variable = { money_amount = 6 }
+				}
+			}
 		}
 	}
 	
@@ -1104,7 +1114,7 @@ focus_tree = {
 		cost = 8
 		
 		ai_will_do = {
-        	base = 30
+        	base = 50
 		}
 		
 		select_effect = { 
@@ -1164,6 +1174,11 @@ focus_tree = {
 			modifier = {
 				add = 10
 				num_divisions > 17
+				has_equipment = {infantry_equipment > 1500} #Have an alright stockpile before attacking
+			}
+			modifier = {
+				add = 10
+				date > 2018.01.01 #Okay you gotta get a move on
 			}
 		}
 		

@@ -511,15 +511,17 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 		}
 		IF = {
 			limit = {FROM = {tag = GGR}}
-			complete_national_focus = YFC_focus_the_first_embargo
+			hidden_effect = {complete_national_focus = YFC_focus_the_first_embargo}
 		}
 		ELSE_IF = {
 			limit = {FROM = {tag = CRN}}
-			complete_national_focus = YFC_focus_numismatian_split
+			custom_effect_tooltip = l_GOI_unlock_focus
+			hidden_effect = {complete_national_focus = YFC_focus_numismatian_split}
 		}
 		ELSE_IF = {
 			limit = {FROM = {tag = GMD}}
-			complete_national_focus = YFC_focus_the_second_embargo
+			custom_effect_tooltip = l_GOI_unlock_focus
+			hidden_effect = {complete_national_focus = YFC_focus_the_second_embargo}
 		}
 
 		mark_focus_tree_layout_dirty = yes
@@ -2989,6 +2991,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 			add_manpower = -4859
 			201 = {add_manpower = -821}
 			custom_effect_tooltip = l_YFC_sectors_TopHat_leave
+			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
 				IF = {
 					limit = {has_idea = idea_YFC_Defiant_Top_Hat}
@@ -3021,8 +3024,9 @@ country_event = { #YFC_focus_march_on_footpathburg
 					traits = { YFC_old_general }
 				}
 			}
-
-			complete_national_focus = YFC_focus_tophat_clan
+			custom_effect_tooltip = l_money_gain_600K #Stealing YF money
+            add_to_variable = { money_amount = 6 }
+			hidden_effect = {complete_national_focus = YFC_focus_tophat_clan}
 		}
 		hidden_effect = {
 			201 = {set_demilitarized_zone = no}

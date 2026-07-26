@@ -25,7 +25,7 @@ focus_tree = {
         available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
 
         ai_will_do = {
-            base = 5
+            base = 10
         }
 
         cost = 5
@@ -3886,6 +3886,8 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.15
+            custom_effect_tooltip = l_money_gain_400K #Stealing TopHat money
+            add_to_variable = { money_amount = 4 }
             country_event = {
                 id = YFC_event.71
                 hours = 1
@@ -4196,6 +4198,7 @@ focus_tree = {
         allow_branch = { has_completed_focus = YFC_focus_march_on_footpathburg }
     }
 
+
     #############################
     #the middle ground
     #############################
@@ -4337,7 +4340,7 @@ focus_tree = {
         }
     }
 
-    focus = {
+    focus = { #I plan on canning/moving it elsewhere for the time being
         id = YFC_focus_grow_closer_ties
         relative_position_id = YFC_focus_trade_alternatives
         x = 0

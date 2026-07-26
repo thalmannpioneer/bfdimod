@@ -147,6 +147,9 @@ scripted_gui = {
         parent_window_token = decision_tab
 
         triggers = { #For now the max level is 5 and min is 1. Granted this may change
+            sector_military_blocky_visible = { #I know that there is a better way to do this I'm just too dumb to understand how
+                check_variable = { var_idea_YFC_sectors_TopHat_type = 3 }
+            }
             sector_military_visible = {
                 check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
             }
