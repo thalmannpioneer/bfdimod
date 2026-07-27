@@ -17,7 +17,7 @@ decision_YFC_trade_category_REWORK = {
 
         visible = {
             has_completed_focus = YFC_focus_open_the_market
-            NOT = {has_idea = idea_YFC_economic_isolation}
+            NOT = {has_completed_focus = YFC_focus_the_great_recession}
         }
 
         custom_cost_trigger = {
@@ -66,7 +66,7 @@ decision_YFC_trade_category_REWORK = {
 
         visible = {
             has_completed_focus = YFC_focus_open_the_market
-            NOT = {has_idea = idea_YFC_economic_isolation}
+            NOT = {has_completed_focus = YFC_focus_the_great_recession}
         }
 
         cost = 35
@@ -160,6 +160,7 @@ decision_YFC_trade_category_REWORK = {
         visible = {
             has_completed_focus = YFC_focus_sell_them_guns
             NOT = {has_completed_focus = YFC_focus_money_arms_capital}
+            NOT = {has_completed_focus = YFC_focus_tophat_clan}
             country_exists = BUN
             BUN = {
                 NOT = {has_war_with = YFC}

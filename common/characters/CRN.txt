@@ -20,7 +20,7 @@ characters={
 		}
 	}
 
-	CRN_mirror = {
+	CRN_mirror = { #From @barelysilver
 		name = CRN_mirror
 		portraits = { civilian = { small = GFX_idea_CRN_mirror } }
 		advisor = {
@@ -30,7 +30,7 @@ characters={
 		}
 	}
 
-	CRN_pineapple = {
+	CRN_pineapple = { #From @barelysilver
 		name = CRN_pineapple
 		portraits = { civilian = { small = GFX_idea_CRN_pineapple } }
 		advisor = {

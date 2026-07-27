@@ -51,11 +51,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_Goiky_Generic_spy_1"
+		name = "GFX_Portrait_Goiky_Generic_spy_1" #From @barelysilver
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_spy_1.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Goiky_Generic_spy_2"
+		name = "GFX_Portrait_Goiky_Generic_spy_2" #From @barelysilver
 		textureFile = "gfx/leaders/Goiky/Portrait_Goiky_Generic_spy_2.dds"
 	}
 	

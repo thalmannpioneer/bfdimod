@@ -64,7 +64,7 @@ characters = {
 		}
 	}
 
-	GDR_9ball = {
+	GDR_9ball = { #From @barelysilver
 		name = GPG_9ball
 		portraits = { civilian = { small = GFX_idea_GPG_9ball } }
 		advisor = {
@@ -78,7 +78,7 @@ characters = {
 		}
 	}
 
-	GDR_income_tax_return_document = {
+	GDR_income_tax_return_document = { #From @barelysilver
 		name = GPG_income_tax_return_document
 		portraits = { civilian = { small = GFX_idea_GPG_itrd } }
 		advisor = {

@@ -24,6 +24,7 @@ idea_GGR_anarchist_resistance = {
     political_power_gain = var_GGR_anarchists_ppg
     production_speed_buildings_factor = var_GGR_anarchists_bf
     party_popularity_stability_factor = var_GGR_anarchists_psf
+    stability_weekly = var_GGR_anarchists_ws #This is just countering civilian_economy
 }
 
 idea_GGR_snowy_industry = {
@@ -143,6 +144,7 @@ idea_GFG_post_civil_war_crisis = {
     production_speed_buildings_factor = var_GFG_crisis_psf
     production_factory_efficiency_gain_factor = var_GFG_crisis_pfegf
     stability_factor = var_GFG_crisis_sf
+    stability_weekly = -0.001 #This is just countering civilian_economy
 }
 
 idea_GFG_massive_resistance = {

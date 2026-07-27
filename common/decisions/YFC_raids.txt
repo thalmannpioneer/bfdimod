@@ -5,7 +5,8 @@ decision_YFC_raids_category = {
 		fire_only_once = no
 
 		visible = {
-			always = yes #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_allow_raiding_into_traitors
+			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 
 		cost = 75
@@ -53,6 +54,7 @@ decision_YFC_raids_category = {
 		visible = {
 			has_idea = idea_YFC_neglectful_command
 			has_completed_focus = YFC_focus_allow_raiding_into_traitors
+			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 		
 		days_remove = 45
@@ -92,7 +94,8 @@ decision_YFC_raids_category = {
 		days_re_enable = 360
 
 		visible = {
-			always = yes #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_allow_raiding_into_traitors
+			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 
 		complete_effect = {
@@ -146,7 +149,7 @@ decision_YFC_raids_category = {
 			check_variable = {
                 var_idea_YFC_mercy_attack < 0.24
             }
-			always = yes #UPDATE LATER!!!
+			always = no #UPDATE LATER!!!
 		}
 
 		available = {
@@ -195,6 +198,7 @@ decision_YFC_raids_category = {
 			controls_state = 201
 			NOT = {controls_state = FROM}
 			has_war = no
+			always = no #UPDATE LATER!!!
 		}
 
 		available = {
@@ -267,6 +271,7 @@ decision_YFC_raids_category = {
 			controls_state = 214
 			NOT = {controls_state = FROM}
 			has_war = no
+			always = no #UPDATE LATER!!!
 		}
 
 		available = {
@@ -417,7 +422,7 @@ decision_YFC_raids_category = {
 		days_re_enable = 500
 
 		visible = {
-			always = yes #UPDATE LATER!!!
+			always = no #UPDATE LATER!!!
 		}
 
 		remove_effect = {
@@ -469,7 +474,7 @@ decision_YFC_raids_category = {
 		}
 
 		visible = {
-			always = yes #UPDATE LATER!!!
+			always = no #UPDATE LATER!!!
 		}
 
 		targets = { TBT DAV GGR } 

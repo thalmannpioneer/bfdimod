@@ -3537,7 +3537,7 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
         ai_will_do = {
-            base = 5 
+            base = 10
         }
 
         cost = 5
@@ -3908,7 +3908,7 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
-            base = 0 #For now later update
+            base = 10 #For now later update
         }
 
         cost = 5

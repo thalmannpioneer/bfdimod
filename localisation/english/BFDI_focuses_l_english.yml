@@ -1326,7 +1326,7 @@
  YFC_focus_battle_for_footpathburg: "§RBattle for Footpathburg§!"
  YFC_focus_battle_for_footpathburg_desc: "ZDubbz"
 
- YFC_focus_fate_of_top_hat: "§bFate of Top Hat§!"
+ YFC_focus_fate_of_top_hat: "§LFate of Top Hat§!"
  YFC_focus_fate_of_top_hat_desc: "ZDubbz"
 
  YFC_focus_company_restructuring: "Company Restructuring"
@@ -1370,6 +1370,9 @@
 
  YFC_focus_the_second_embargo: "Final Embargo"
  YFC_focus_the_second_embargo_desc: "ZDubbz"
+
+ YFC_focus_trade_alternatives: "Trade Alternatives?"
+ YFC_focus_trade_alternatives_desc: "ZDubbz"
 
  Musketeers_three_musketeers: "Three Musketeers"
  Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"

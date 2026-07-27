@@ -71,6 +71,11 @@ characters = {
 			logistics_skill = 2
 		}
 	}
+
+	GFG_yoyle_berry = { #From @papipipo12, designed by @antotallynot_insanetagalog 
+		name = GFG_yoyle_berry
+		portraits = { army = { large = GFX_GFG_yoyle_berry} }
+	}
 	
 	GFG_basketball = {
 		name = GPG_basketball
@@ -87,3 +92,4 @@ characters = {
 		portraits = { civilian = { small = GFX_idea_GPG_puffball } }
 	}
 }
+

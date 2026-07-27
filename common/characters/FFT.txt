@@ -15,7 +15,7 @@ characters = {
 			logistics_skill = 3
 		}
 	}
-	FFT_molotov = {
+	FFT_molotov = { #From @antotallynot_insanetagalog
 		name = FFT_molotov
 		portraits = { 
 			army = { 

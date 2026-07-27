@@ -41,6 +41,7 @@ recruit_character = GFG_fanny
 recruit_character = GFG_pillow
 recruit_character = GFG_saw
 recruit_character = GFG_nickel
+recruit_character = GFG_yoyle_berry
 recruit_character = GFG_basketball
 recruit_character = GFG_remote
 recruit_character = GFG_puffball
@@ -52,3 +53,4 @@ set_variable = { var_GFG_crisis_sf = -0.25 }
 
 set_variable = { var_GFG_resistance_sf = -0.1 }
 set_variable = { var_GFG_resistance_cf = -0.2 }
+

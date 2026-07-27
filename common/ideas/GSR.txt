@@ -25,7 +25,8 @@ ideas = {
 				war_support_factor = 0.1
 				recruitable_population = 0.05
 				political_power_gain = -0.25
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
+				stability_weekly = -0.001 #This is just countering civilian_economy
 			}
 		}
 		

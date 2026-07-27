@@ -41,6 +41,7 @@ set_variable = { var_GGR_anarchists_sf = -0.1 }
 set_variable = { var_GGR_anarchists_bf = -0.2 }
 set_variable = { var_GGR_anarchists_psf = -0.1 }
 set_variable = { var_GGR_anarchists_ppg = -0.5 }
+set_variable = { var_GGR_anarchists_ws = -0.001 }
 
 set_variable = { var_schneehorn_status = 50 }
 set_variable = { var_schneehorn_status_2 = 2 }

@@ -4804,7 +4804,7 @@ country_event = { #Annex Events 5
 		212 = {add_resistance = -2}
 		BUN = {retire_character = BUN_blocky}
 		add_corps_commander_role = {
-			Character = YFC_blocky
+			character = YFC_blocky
 			skill = 1
 			attack_skill = 2
 			defense_skill = 1

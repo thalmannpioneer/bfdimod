@@ -111,6 +111,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_war_support = 0.15
 			add_stability = -0.05
 			add_manpower = -2000
 			add_popularity = {
@@ -189,12 +190,21 @@ focus_tree = {
 		cost = 5
 		
 		ai_will_do = {
-        base = 10
+        	base = 10
 		}
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GFG_loads_focus_tree
+
 			hidden_effect = { 
+				add_corps_commander_role = {
+					character = GFG_yoyle_berry
+					skill = 1
+					attack_skill = 1
+					defense_skill = 3
+					planning_skill = 1
+					logistics_skill = 2
+				}
 				load_focus_tree = GFG_postcw_focus_tree
 				country_event = GFG_event.2
 			}

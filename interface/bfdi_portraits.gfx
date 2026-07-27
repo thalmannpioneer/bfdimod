@@ -105,6 +105,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_GFG_yoyle_berry"
+		texturefile = "gfx/leaders/GFG/GFG_yoyle_berry.dds"
+	}
+
+	spriteType = {
 		name = "GFX_GDR_eggy"
 		texturefile = "gfx/leaders/GDR/GDR_eggy.dds"
 	}
