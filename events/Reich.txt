@@ -446,6 +446,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		YFC = { set_variable = {tradeable^15 = 2}}
 		172 = { 
 			remove_core_of = GGR
 			add_core_of = SPL

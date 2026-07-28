@@ -110,12 +110,12 @@ add_to_array = { tradeable = TBT } #13
 add_to_array = { tradeable = GMD } #14
 #Routes toughness: 0 - good 1 - normal 2 - bad
 add_to_array = { tradeable = 1 } #15 = GGR Route
-add_to_array = { tradeable = 1 } #16 = FFT Route
+add_to_array = { tradeable = 2 } #16 = FFT Route
 add_to_array = { tradeable = 0 } #17 = GPG Route
 add_to_array = { tradeable = 0 } #18 = GTR Route
 add_to_array = { tradeable = 2 } #19 = GMD Route
 add_to_array = { tradeable = 2 } #20 = TBT Route
-add_to_array = { tradeable = 1 } #21 = Sea Route
+add_to_array = { tradeable = 2 } #21 = Sea Route
 
 # 0 = bad 1 = mid 2 = good
 add_to_array = { tradeable_relation = 1 } #BUN

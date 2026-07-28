@@ -164,7 +164,7 @@
  l_YFC_ERASER: "§YEraser§! dies."
  l_YFC_BLOCKY: "§YBlocky§! dies."
  l_YFC_BUN: "§RGaining Strength§!"
- l_YFC_Trade_Bonus: "§GWe will make 10% bonus money and spend 10% less money in trade deals with [GMD.GetName], [TBT.GetName], and [DAV.GetName].§!"
+ l_YFC_Trade_Bonus: "§GWe will make 25% bonus money and spend 25% less money in trade deals with [GMD.GetName] and [TBT.GetName].§!" #[DAV.GetName]
  l_YFC_Sea_Bonus: "§GThis will help us both now and in our future endeavors...§!"
  l_YFC_POP: "§YDepending on previous choices, the outcome will vary...§!"
  l_YFC_BUN_foster: "§YUnlocks new decisions to increase support for our Candidate!§!"

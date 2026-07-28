@@ -124,7 +124,7 @@ decision_YFC_eastern_category = {
 	}
 
 	YFC_eastern_ports = { 
-		icon = GFX_decision_SWE_set_navy_budget
+		icon = GFX_decisions_YFC_eastern_ports
 		state_target = yes
         targets = { 225 226 227 }
         on_map_mode = map_and_decisions_view
@@ -183,8 +183,8 @@ decision_YFC_eastern_category = {
 			base = 0
 			modifier = {
 				add = 100
-				has_political_power > 165
-				has_manpower > 3000
+				has_political_power > 155
+				has_manpower > 2500
 			}
 		}
 	}
@@ -272,8 +272,9 @@ decision_YFC_eastern_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 100
-				has_political_power > 150
+				add = 200
+				has_political_power > 70
+				has_completed_focus = YFC_focus_who_dares_wins
 			}
 		}
 	}

@@ -227,7 +227,7 @@ decision_other_trade_category = {
 		}
 
 		fire_only_once = no
-		days_remove = 25
+		days_remove = 29
 		cost = 0
 
 		complete_effect = {

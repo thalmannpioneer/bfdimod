@@ -175,47 +175,53 @@ guiTypes = {
 			pdx_tooltip = l_YFC_trade_gmd_tt
         }
 
-        buttonType = {
+        iconType = {
             name = "route_crn-fft"
             spriteType = "GFX_corp_trade_route_crn-fft"
-            position = { x = 200 y = 220 }
-
+            position = { x = 200 y = 220 }    
+            pdx_tooltip = l_YFC_route_fft_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_ggr"
             spriteType = "GFX_corp_trade_route_ggr"
             position = { x = 350 y = 220 }
+            pdx_tooltip = l_YFC_route_ggr_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_gpg"
             spriteType = "GFX_corp_trade_route_gpg"
             position = { x = 50 y = 195 }
+            pdx_tooltip = l_YFC_route_gpg_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_gtr"
             spriteType = "GFX_corp_trade_route_gtr"
             position = { x = 100 y = 195 }
+            pdx_tooltip = l_YFC_route_gtr_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_sea"
             spriteType = "GFX_corp_trade_route_sea"
             position = { x = 240 y = 20 }
+            pdx_tooltip = l_YFC_route_sea_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_gmd"
             spriteType = "GFX_corp_trade_route_gmd"
             position = { x = 200 y = 30 }
+            pdx_tooltip = l_YFC_route_gmd_level
         }
 
-        buttonType = {
+        iconType = {
             name = "route_tbt"
             spriteType = "GFX_corp_trade_route_tbt"
             position = { x = 320 y = 50 }
+            pdx_tooltip = l_YFC_route_tbt_level
         }
 
         containerWindowType = {

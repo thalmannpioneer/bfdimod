@@ -145,6 +145,7 @@ country_event = {
 		hidden_effect = {
 			complete_national_focus = YFC_focus_a_look_inward
 			set_country_flag = Won_War_BUN
+			set_variable = {tradeable^16 = 1}
 			if = {
 				limit = {
 					CRN = {
@@ -1408,7 +1409,7 @@ country_event = { #YFC Sell
 					}	
 				}
 				set_temp_variable = {bonus_money_var = trade_cost_show_var}
-				multiply_temp_variable = {bonus_money_var = 0.1}
+				multiply_temp_variable = {bonus_money_var = 0.25}
 				YFC = {add_to_variable = {money_amount = bonus_money_var}}
 			}
 			YFC = { 
@@ -1613,7 +1614,7 @@ country_event = { #YFC trade event other country POV buying
 					}	
 				}
 				set_temp_variable = {bonus_money_var = trade_cost_show_var}
-				multiply_temp_variable = {bonus_money_var = 0.1}
+				multiply_temp_variable = {bonus_money_var = 0.25}
 				YFC = {add_to_variable = {money_amount = bonus_money_var}}
 			}
 			YFC = { 
@@ -3889,6 +3890,12 @@ country_event = {
 				days = 200
 				random_hours = 100
 			}
+			country_event = {
+				id = YFC_BUN.20
+				days = 10
+				random_days = 5
+				random_hours = 50
+			}
 		}
 		ai_chance = {
 			base = 7
@@ -4023,9 +4030,9 @@ country_event = {
 			original_tag_to_check = CRN
 			add_opinion_modifier = { target = YFC modifier = medium_decrease }
 		}
+		complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
-			complete_national_focus = YFC_focus_clamp_down_on_bunchivism
 			country_event = {
 				id = YFC_BUN.9
 				days = 15
@@ -4047,9 +4054,20 @@ country_event = {
 		add_war_support = -0.05
 		add_stability = -0.1
 		add_political_power = -100
+		complete_national_focus = YFC_focus_foster_new_society
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
-			complete_national_focus = YFC_focus_foster_new_society
+			country_event = {
+				id = YFC_event.18
+				days = 200
+				random_hours = 100
+			}
+			country_event = {
+				id = YFC_BUN.20
+				days = 10
+				random_days = 5
+				random_hours = 50
+			}
 		}
 	}
 }
@@ -4126,6 +4144,7 @@ country_event = {
 		add_stability = -0.05
 		add_political_power = -150
 		hidden_effect = {
+			set_variable = {tradeable^16 = 2}
 			add_threat = 0.5
 			add_state_claim = 85
 			add_state_claim = 212

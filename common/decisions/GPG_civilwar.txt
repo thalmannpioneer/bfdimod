@@ -39,6 +39,8 @@ decision_GPG_civilwar_category = {
 			custom_effect_tooltip = l_GPG_cw_victory_effect
 			subtract_from_variable = { money_amount = 5 }
 			hidden_effect = {
+				YFC = { set_variable = {tradeable^17 = 0}}
+
 				country_lock_all_division_template = no
 				if = {
 					limit = { 206 = { is_owned_by = EMP } }

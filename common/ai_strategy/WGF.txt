@@ -161,7 +161,7 @@ WGF_trucks = {
 	ai_strategy = {
 		type = research_weight_factor
 		id = tech_field_hospital
-		value = 1000
+		value = 3000
 	}
 }
 

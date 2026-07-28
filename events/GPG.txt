@@ -875,6 +875,10 @@ country_event = { #I've given up this ai is soo bad :((((
 
     is_triggered_only = yes
 
+    immediate = {
+        hidden_effect = {YFC = { set_variable = {tradeable^17 = 1}}}
+    }
+
     option = {
         name = GPG_event.20.a
         hidden_effect = {

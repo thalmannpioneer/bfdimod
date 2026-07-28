@@ -134,9 +134,16 @@
  l_YFC_route_gmd: "The Tough Road"
  l_YFC_route_tbt: "The Desert Route"
  l_YFC_route_sea: "The Sea Route"
- l_YFC_route_good: "§7Good Route§!"
- l_YFC_route_mid: "§YNormal Route§!"
- l_YFC_route_bad: "§tBad Route§!"
+ l_YFC_route_ggr_level: "§YThe Snowy Route§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^15]§!"
+ l_YFC_route_fft_level: "§YThe Forest Route§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^16]§!"
+ l_YFC_route_gpg_level: "§YThe Heart Route§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^17]§!"
+ l_YFC_route_gtr_level: "§YThe University Path§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^18]§!"
+ l_YFC_route_gmd_level: "§YThe Tough Road§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^19]§!"
+ l_YFC_route_tbt_level: "§YThe Desert Route§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^20]§!"
+ l_YFC_route_sea_level: "§YThe Sea Route§!\n\n§RDanger Level:§! §Y[?YFC.tradeable^21]§!"
+ l_YFC_route_good: "§7Good Route§!" #Unused
+ l_YFC_route_mid: "§YNormal Route§!" #Unused
+ l_YFC_route_bad: "§tBad Route§!" #Unused
  l_YFC_trade_blocked: "§tBlocked by bad relations or other nations!§!"
  l_YFC_trade_bun_tt: "[CORP_BUN_TT]" #i despise my life
  l_YFC_trade_crn_tt: "[CORP_CRN_TT]"
@@ -154,5 +161,5 @@
  l_YFC_trade_tbt_tt: "[CORP_TBT_TT]"
  l_YFC_trade_gmd_tt: "[CORP_GMD_TT]"
  l_YFC_trade_help_tt: "Need some help?"
- l_YFC_trade_help_tt_d: "The §YYellow Face Corporation§! Trading Menu (c) offers you a great opportunity to §7Sell§! and §tBuy§! military equipment.\n\nJust §2Click on any nation on the map below§! and start doing business!\n\nYou can also §RClick on any route on the map§! to see its passability.\n§2Success rate of the delivery§! is defined by this property.\n§t50% - Bad Route§!\n§Y75% - Normal Route§!\n§790% - Good Route§!\n\nGood luck!"
+ l_YFC_trade_help_tt_d: "The §YYellow Face Corporation§! Trading Menu (c) offers you a great opportunity to §7Sell§! and §tBuy§! military equipment.\n\nJust §2hover on any nation on the map below§! and start doing business!\n\nYou can also §RClick on any route on the map§! to see its passability.\n§2Success rate of the delivery§! is defined by this property.\n§t50% - Bad Route(2)§!\n§Y75% - Normal Route(1)§!\n§790% - Good Route(0)§!\n\nThe routes' risk changes as global events unfold so be sure to check every once in a while!\n\nGood luck!"
  l_YFC_trade_cross: "§tX§!"

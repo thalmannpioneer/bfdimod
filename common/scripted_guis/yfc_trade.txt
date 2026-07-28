@@ -796,27 +796,7 @@ scripted_gui = {
                 country_exists = GMD
                 var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
             }
-            route_ggr_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_crn-fft_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_gpg_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_gtr_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_gmd_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_tbt_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
-            route_sea_visible = {
-                var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}
-            }
+
             #Blowing up the block stuff for now
         }
         effects = {
@@ -1040,27 +1020,6 @@ scripted_gui = {
                     save_global_event_target_as = selected_scope
                 }
                 YFC_calc_trade_update_nation = yes
-            }
-            route_ggr_click = {
-                set_variable = { selected = 15 }
-            }
-            route_crn-fft_click = {
-                set_variable = { selected = 16 }
-            }
-            route_gpg_click = {
-                set_variable = { selected = 17 }
-            }
-            route_gtr_click = {
-                set_variable = { selected = 18 }
-            }
-            route_gmd_click = {
-                set_variable = { selected = 19 }
-            }
-            route_tbt_click = {
-                set_variable = { selected = 20 }
-            }
-            route_sea_click = {
-                set_variable = { selected = 21 }
             }
         }
     }

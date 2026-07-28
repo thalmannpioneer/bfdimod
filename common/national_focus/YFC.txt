@@ -75,9 +75,9 @@ focus_tree = {
                             tag = SEC
                             tag = SGD
                             tag = SOS
-                            tag = TBT
                             tag = WGF
                             tag = DPZ  
+                            tag = DAV #Maybe remove later?
                             tag = EMP 
                         }
                     }
@@ -1335,11 +1335,13 @@ focus_tree = {
                 original_tag_to_check = TBT
                 add_opinion_modifier = { target = YFC modifier = medium_increase }
             }
-            add_opinion_modifier = { target = DAV modifier = medium_increase }
-            every_country_with_original_tag = {
-                original_tag_to_check = DAV
-                add_opinion_modifier = { target = DAV modifier = medium_increase }
-            }
+            #add_opinion_modifier = { target = DAV modifier = medium_increase }
+            #every_country_with_original_tag = {
+            #    original_tag_to_check = DAV
+            #    add_opinion_modifier = { target = DAV modifier = medium_increase }
+            #}
+
+            hidden_effect = {set_variable = {tradeable^20 = 1}}
         }
 
         ai_will_do = {
@@ -1362,6 +1364,8 @@ focus_tree = {
                 id = YFC_event.15
                 hours = 3
             }
+
+            hidden_effect = { set_variable = {tradeable^21 = 1}}
         }
 
         ai_will_do = {
@@ -1774,6 +1778,26 @@ focus_tree = {
         cost = 5
         completion_reward = {
             custom_effect_tooltip = l_YFC_BUN_foster
+            85 = {
+                add_compliance = 5
+            }
+            212 = {
+                add_compliance = 5
+            }
+            IF = {
+                limit = {
+                    AND = {
+                        YFC = {controls_state = 217}
+                        YFC = {controls_state = 218}
+                    }
+                }
+                217 = {
+                    add_compliance = 5
+                }
+                218 = {
+                    add_compliance = 5
+                }
+            }
         }
 
         ai_will_do = {
@@ -1982,6 +2006,19 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
+                set_variable = {tradeable^16 = 0}
+                85 = {
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 2
+                        instant_build = yes
+                    }
+                }
                 if = {
                     limit = {has_completed_focus = YFC_focus_population_boom}
                     country_event = {
@@ -2027,7 +2064,6 @@ focus_tree = {
                 }
                 add_to_faction = CRN
             }
-            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 CRN = {
                     set_country_flag = Allow_Musketeers
@@ -2044,6 +2080,7 @@ focus_tree = {
                 }
             }
             add_stability = 0.01
+            custom_effect_tooltip = l_GOI_unlock_focus
         }
 
         ai_will_do = {
@@ -2338,6 +2375,7 @@ focus_tree = {
             remove_ideas = idea_YFC_Bunch_Insurgency
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
+                set_variable = {tradeable^16 = 0}
                 BUN = {
                     remove_state_core = 85
                     remove_state_core = 212
@@ -2394,7 +2432,6 @@ focus_tree = {
                 create_faction = "Goiky Trade League"
                 add_to_faction = CRN
             }
-            custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
                 CRN = {
                     set_country_flag = Allow_Musketeers
@@ -2407,6 +2444,7 @@ focus_tree = {
                 }
             }
             add_stability = 0.01
+            custom_effect_tooltip = l_GOI_unlock_focus
         }
 
         ai_will_do = {
@@ -2430,6 +2468,7 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
+                set_variable = {tradeable^16 = 2}
                 if = {
                     limit = {has_completed_focus = YFC_focus_population_boom}
                     country_event = {
@@ -2803,6 +2842,17 @@ focus_tree = {
         cost = 5
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_statebuild
+
+            hidden_effect = {
+                IF = {
+                    limit = {check_variable = {tradeable^21 = 2}}
+                    set_variable = {tradeable^21 = 1}
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {tradeable^21 = 1}}
+                    set_variable = {tradeable^21 = 0}
+                }
+            }
         }
         ai_will_do = {
             base = 5
@@ -3075,6 +3125,17 @@ focus_tree = {
         cost = 5
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_statebuild
+
+            hidden_effect = {
+                IF = {
+                    limit = {check_variable = {tradeable^21 = 2}}
+                    set_variable = {tradeable^21 = 1}
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {tradeable^21 = 1}}
+                    set_variable = {tradeable^21 = 0}
+                }
+            }
         }
         ai_will_do = {
             base = 5
@@ -3098,7 +3159,7 @@ focus_tree = {
         completion_reward = {
             add_political_power = 50
             custom_effect_tooltip = l_YFC_eastern_borderwar_enable
-            add_to_variable = { eastern_borderwar_var = 0.75 }
+            add_to_variable = { eastern_borderwar_var = 1 }
         }
 
         ai_will_do = {
@@ -3126,6 +3187,7 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
+                set_variable = {tradeable^21 = 0}
                 IF = {
                     limit = {
                         is_ai = yes

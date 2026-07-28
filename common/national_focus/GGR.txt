@@ -1130,6 +1130,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_political_power = 100
 			country_event = GGR_event.4
+			hidden_effect = {YFC = { set_variable = {tradeable^15 = 0}}}
 		}
 	}
 	

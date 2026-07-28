@@ -126,6 +126,8 @@ country_event = {
         name = GTR_event.8.a
         custom_effect_tooltip = l_GTR_its_over_sob
         hidden_effect = {
+            YFC = { set_variable = {tradeable^18 = 2}}
+
             89 = {
                 transfer_state_to = UGA
                 add_core_of = UGA
@@ -293,6 +295,9 @@ country_event = {
             set_country_leader_portrait = {
                 portrait = GFX_GTR_golfball_collapse
             }
+
+            YFC = { set_variable = {tradeable^18 = 1}}
+
             country_event = {
                 id = GTR_event.12
                 days = 15
@@ -541,6 +546,7 @@ country_event = {
         mark_focus_tree_layout_dirty = yes
         hidden_effect = {
             news_event = bfdinews.29
+            YFC = { set_variable = {tradeable^18 = 0}}
             play_song = "GTR_technocratic_republic"
             country_event = {
                 id = GTR_event.21
