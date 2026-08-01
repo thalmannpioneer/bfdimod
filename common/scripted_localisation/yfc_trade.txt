@@ -26,7 +26,7 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
-		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
+		localization_key = GFX_YFC_trade_food #Update later!!!!
 	}
 }
 
@@ -195,7 +195,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
+		localization_key =  GFX_YFC_trade_food #Update later!!!!
 	}
 }
 
@@ -319,7 +319,7 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = GFX_idea_DEN_danish_produce #Update later!!!!
+		localization_key = GFX_YFC_trade_food #Update later!!!!
 	}
 }
 

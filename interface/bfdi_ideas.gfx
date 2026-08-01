@@ -652,6 +652,14 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_anarchy.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_our_sectors
+		texturefile = gfx/interface/ideas/idea_YFC_our_sectors.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_neglectful_command
+		texturefile = gfx/interface/ideas/idea_YFC_neglectful_command.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_United_Clash
 		texturefile = gfx/interface/ideas/idea_YFC_coiny_advisors.dds
 	}
@@ -694,6 +702,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_YFC_Pipe
 		texturefile = gfx/interface/ideas/idea_YFC_Pipe.dds
+	}
+		spriteType = {
+		name = GFX_idea_YFC_Tie
+		texturefile = gfx/interface/ideas/idea_YFC_Tie.dds
+	}
+		spriteType = {
+		name = GFX_idea_YFC_Quarter
+		texturefile = gfx/interface/ideas/idea_YFC_Quarter.dds
 	}
 	spriteType = {
 		name = GFX_idea_YFC_Blocky

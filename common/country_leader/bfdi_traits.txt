@@ -218,6 +218,14 @@ leader_traits = {
         foreign_subversive_activites = -0.4
     }
 
+    YFC_expert_propagandist = {
+        sprite = 13
+
+        stability_factor = 0.05
+        war_support_factor = 0.05
+        conscription = 0.02
+    }
+
     YFC_loud_workhorse = {
         sprite = 13
 

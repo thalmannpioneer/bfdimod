@@ -215,7 +215,7 @@ idea_YFC_anarchic_lands = {
 }
 
 idea_YFC_our_benefactors  = {
-    icon = GFX_idea_PER_fund_state_intelligence_idea
+    icon = GFX_idea_YFC_our_sectors
 
     army_org_factor = var_idea_YFC_sectors_TopHat_attack #TopHat
     army_attack_factor = var_idea_YFC_sectors_TopHat_org #TopHat

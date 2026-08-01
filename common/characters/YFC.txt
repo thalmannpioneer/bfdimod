@@ -189,6 +189,22 @@ characters = {
 			visible = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
         }
 	}
+	YFC_tie = {
+		name = YFC_tie
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Tie
+			} 
+		}
+	}
+	YFC_quarter = {
+		name = YFC_quarter
+		portraits = { 
+			army = { 
+				small = GFX_idea_YFC_Quarter 
+			} 
+		} 
+	}
 	YFC_blocky = {
 		name = YFC_blocky
 		portraits = { 

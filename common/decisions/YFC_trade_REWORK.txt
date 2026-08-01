@@ -1,7 +1,7 @@
 decision_YFC_trade_category_REWORK = {
 	YFC_Trade_food = { 
 		available = {always = no}
-		icon = GFX_decision_RAJ_famine  
+		icon = GFX_YFC_mission_get_food  
 		is_good = yes
 		days_mission_timeout = 75
 		selectable_mission = no

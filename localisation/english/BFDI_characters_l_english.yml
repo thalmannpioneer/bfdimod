@@ -73,7 +73,6 @@
  GTR_duumvirate: "Duumvirate" #City news events need this to be normal color sadly (unless my sick ass can't see a better way)
  GTR_tennis_ball: "Tennis Ball"
  GTR_tennis_wall: "Tennis Ball?" #hehe
- GTR_tennis_wall_desc: "Wait what? What the fuck...? WHAT DID YOU DO WITH TENNIS BALL YOU ARE NOT REA-" 
  GTR_test_tube: "Flask"
  GTR_calculator: "Cali"
  GTR_swappy: "Swappy"
@@ -124,6 +123,8 @@
  YFC_beaker: "Beaker"
  YFC_hammer: "Hammer"
  YFC_taser: "Taser"
+ YFC_tie: "Tie"
+ YFC_quarter: "Quarter"
  YFC_blocky: "Blocky"
  YFC_eraser: "Eraser"
  

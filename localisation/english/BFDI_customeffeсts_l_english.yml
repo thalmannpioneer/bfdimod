@@ -138,6 +138,9 @@
  l_YFC_trade_buying_normal: "[?ROOT.buying_amount] equipment"
  l_YFC_trade_buying_food: "Food Shipments"
  l_YFC_trade_get_food: "§YAllows for another export of food.§!"
+ l_YFC_trade_lost_sent: "§RYou will not make the expected profits in this sale.§!" #For YFC
+ l_YFC_trade_lost_get: "§RYou will not receive the expected equipment in this sale.§!" #For YFC
+ l_YFC_trade_lost_recive: "§RYou will still receive the expected equipment, but not have to pay for anything.§!" #For other
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YUnlocks Coiny as an Army Chief!§!"
@@ -163,8 +166,9 @@
  l_YFC_PEN: "§YPen§! dies."
  l_YFC_ERASER: "§YEraser§! dies."
  l_YFC_BLOCKY: "§YBlocky§! dies."
+ l_YFC_TOPHAT: "§YTop Hat§! dies."
  l_YFC_BUN: "§RGaining Strength§!"
- l_YFC_Trade_Bonus: "§GWe will make 25% bonus money and spend 25% less money in trade deals with [GMD.GetName] and [TBT.GetName].§!" #[DAV.GetName]
+ l_YFC_Trade_Bonus: "§GWe will make 25% bonus money and spend 25% less money in successful trade deals with [GMD.GetName] and [TBT.GetName].§!" #[DAV.GetName]
  l_YFC_Sea_Bonus: "§GThis will help us both now and in our future endeavors...§!"
  l_YFC_POP: "§YDepending on previous choices, the outcome will vary...§!"
  l_YFC_BUN_foster: "§YUnlocks new decisions to increase support for our Candidate!§!"

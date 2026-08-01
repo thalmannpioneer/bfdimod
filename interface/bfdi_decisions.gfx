@@ -414,7 +414,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_YFC_trade_unselected"
-		textureFile = "gfx/interface/YFC_trade_unselected.dds"
+		textureFile = "gfx/interface/YFC_trade_unselected.dds" 
+	}
+
+	spriteType = {
+		name = "GFX_YFC_trade_food"
+		textureFile = "gfx/interface/YFC_trade_food.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_get_food"
+		textureFile = "gfx/interface/GFX_YFC_mission_get_food.dds"
 	}
 
 	spriteType = {

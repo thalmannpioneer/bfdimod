@@ -3234,8 +3234,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             country_event = YFC_event.53
-            YFC = { give_guarantee = BUN }
-            BUN = { give_guarantee = YFC }
+            add_political_power = 10
         }
     }
 
@@ -3282,6 +3281,10 @@ focus_tree = {
         icon = GFX_focus_generic
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_1M
+                check_variable = { money_amount > 10 }
+            }
             hidden_trigger = {
                 NOT = {has_completed_focus = YFC_focus_numismatian_split}
             }
@@ -3291,19 +3294,31 @@ focus_tree = {
             base = 7
         }
 
-        cost = 5
+        cost = 6
 
         completion_reward = {
-            #removes some influence from all sectorials (even more from tophat), in exchange for BUN paying more to go through yfc territory
-            #Just military_access and/or some cool stuff ZDubbz?
-
-            custom_effect_tooltip = l_YFC_sectors_All_Lower
-            add_political_power = -150 #Might remove later
-            add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
-            add_to_variable = { var_idea_YFC_Pipe_influence = -2 }
-            add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
-            add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
-            add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+            add_political_power = 65
+            add_advisor_role = {
+                character = YFC_tie
+                advisor = {
+                    slot = political_advisor
+                    idea_token = idea_YFC_Tie
+                    ledger = civilian
+                    cost = 150
+                    traits = { silent_workhorse }
+                }
+            }
+            add_advisor_role = {
+                character = YFC_quarter
+                advisor = {
+                    slot = political_advisor
+                    idea_token = idea_YFC_quarter
+                    ledger = civilian
+                    cost = 150
+                    traits = { YFC_expert_propagandist }
+                }
+            }
+            subtract_from_variable = {money_amount = 10}
         }
     }
 
@@ -3319,7 +3334,7 @@ focus_tree = {
             has_completed_focus = YFC_focus_the_grapes_and_the_cherries
         }
 
-        cost = 5
+        cost = 6
         completion_reward = {
             country_event = {
                 id = YFC_event.56
@@ -3377,7 +3392,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_hoard_gold
         relative_position_id = YFC_focus_great_business_partnership
-        x = -3
+        x = -4 #Doing this since the foucs tree makes a weird line so unless you can find the root don't change
         y = 0
         icon = GFX_focus_generic
 
@@ -3390,7 +3405,7 @@ focus_tree = {
         ai_will_do = {
             base = 7
         }
-        cost = 5
+        cost = 6
         completion_reward = {
             custom_effect_tooltip = l_money_gain_3M
             custom_effect_tooltip = l_YFC_sectors_Gold_Take
@@ -3411,19 +3426,32 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_establish_formal_connection }
         available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
+            }
             hidden_trigger = {
-                NOT = {has_completed_focus = YFC_focus_numismatian_split}
+                NOT = {has_completed_focus = YFC_focus_tophat_clan}
             }
         }
         ai_will_do = {
             base = 7
         }
-        cost = 5
+        cost = 6
         completion_reward = {
-
-            #Alright how about something like a defense pact/allaince (but not a faction yet)
-            #Something that gives YFC maybe army buffs but makes the embargoes worse or something
-            #ZDubbz
+            add_political_power = -75
+            custom_effect_tooltip = l_YFC_border_defence
+            201 = {
+                IF = {
+                    limit = {has_dynamic_modifier = {modifier = BUN_rampant_raids}}
+                    remove_dynamic_modifier = {
+                        modifier = BUN_rampant_raids
+                    }
+                }
+            }
+            subtract_from_variable = {money_amount = 5}
+            YFC = { give_guarantee = BUN }
+            BUN = { give_guarantee = YFC }
         }
     }
 
