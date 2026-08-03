@@ -131,6 +131,7 @@
  l_YFC_sectors_Gold: "§RYou also pay $100K for the gold you took.§!"
  l_YFC_sectors_Beaker_leave: "§YDisables buffs and costs from the Science Sector for now...§!"
  l_YFC_sectors_TopHat_leave: "§YDisables buffs and costs from the Military Sector for now...§!"
+ l_YFC_sectors_influence_gone: "§GEvery Sectors' Influence is now set to 1, permanently.§!"
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
  l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"

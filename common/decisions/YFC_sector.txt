@@ -28,6 +28,13 @@ decision_YFC_sector_category = { #Watermelon
                 subtract_from_variable = { money_amount = 1 }
             }
 
+            IF = {
+                limit = {has_completed_focus = YFC_focus_sectors_their_place}
+                set_variable = { var_idea_YFC_Hammer_influence = 1 }
+                set_variable = { var_idea_YFC_Taser_influence = 1 }
+                set_variable = { var_idea_YFC_Pipe_influence = 1 }
+            }
+
             #Sector buff changes (TopHat)
             set_temp_variable = { Level_TopHat = var_idea_YFC_TopHat_level }
             multiply_temp_variable = {Level_TopHat = 0.05}
@@ -165,6 +172,7 @@ decision_YFC_sector_category = { #Watermelon
                             has_idea = idea_YFC_Defiant_Beaker
                             has_idea = idea_YFC_Defiant_Hammer
                             has_idea = idea_YFC_Defiant_Taser
+                            has_completed_focus = YFC_focus_sectors_their_place
                         }
                     }
 
@@ -261,12 +269,22 @@ decision_YFC_sector_category = { #Watermelon
         activation = {
             has_completed_focus = YFC_focus_establish_sectorialism
             NOT = {has_idea = idea_YFC_Debt_Crisis}
+            NOT = {has_completed_focus = YFC_focus_the_sectorial_powderkeg}
+            NOT = {has_completed_focus = YFC_focus_strike_the_headache}
         }
         available = {
             always = no
         }
         cancel_trigger = {
-            hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
+            hidden_trigger = { 
+                OR =  {
+                    has_idea = idea_YFC_Debt_Crisis
+                    has_completed_focus = YFC_focus_the_sectorial_powderkeg
+                    has_completed_focus = YFC_focus_strike_the_headache
+                }
+                
+                
+            }
 		}
         icon = GFX_YFC_mission_sector_issues  
         days_mission_timeout = 150

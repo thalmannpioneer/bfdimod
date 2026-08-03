@@ -736,6 +736,20 @@ country_event = {
 				}
 			}
 		}
+		division_template = {
+			name = "Portland Garrison"
+            division_names_group = YFC_Cav_01
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+			}
+		}
+        225 = {
+            create_unit = {
+                division = "name = \"Portland Garrison\" division_template = \"Portland Garrison\" start_experience_factor = 0.1"
+                owner = YFC
+                count = 1
+            }
+        }
 	}
 }
 
@@ -2683,7 +2697,7 @@ country_event = { #YFC_focus_tophats_outlook
 
 	immediate = {
         set_variable = { var_add_to_sector = 3 }
-		set_variable = { var_add_to_sector2 = 3 }
+		set_variable = { var_add_to_sector2 = 1 }
     }
     
 	option = { 
@@ -2914,12 +2928,27 @@ country_event = { #YFC_focus_pride
 				add_core_of = YFC
 				transfer_state_to = YFC
 				remove_core_of = EMP
+				set_demilitarized_zone = no
 				add_victory_points = {
 					province = 10828
 					value = 1
 				}
 			}
 		}
+		division_template = {
+			name = "Portland Garrison"
+            division_names_group = YFC_Cav_01
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+			}
+		}
+        225 = {
+            create_unit = {
+                division = "name = \"Portland Garrison\" division_template = \"Portland Garrison\" start_experience_factor = 0.1"
+                owner = YFC
+                count = 1
+            }
+        }
 	}
 }
 
@@ -3010,8 +3039,8 @@ country_event = { #YFC_focus_debt_restructuring
 	option = { 
 		name = YFC_event.69.a
 
-        custom_effect_tooltip = l_money_gain_700K
-        add_to_variable = { money_amount = 7 }
+        custom_effect_tooltip = l_money_gain_800K
+        add_to_variable = { money_amount = 8 }
 		add_stability = -0.25
 		add_political_power = -100
 	}
@@ -3148,6 +3177,103 @@ country_event = { #YFC Market shipment failed to make it to us
 
 		custom_effect_tooltip = l_YFC_trade_lost_get
 		add_political_power = -1
+	}
+}
+
+country_event = { #YFC aftermath
+	id = YFC_event.74
+	title = YFC_event.74.t
+	picture = GFX_Temp_event
+
+	desc = {
+		text = YFC_event.74.desc.a #Left side
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
+	desc = {
+		text = YFC_event.74.desc.b #Right side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #Left Side
+		name = YFC_event.74.a
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			complete_national_focus = YFC_focus_last_of_the_layoffs
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = { #Right side
+		name = YFC_event.74.b
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = { #YFC_focus_sectors_their_place
+	id = YFC_event.75
+	title = YFC_event.75.t
+	desc = YFC_event.75.desc
+	picture = GFX_YFC_event10
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.75.a
+		custom_effect_tooltip = l_YFC_sectors_influence_gone
+		set_variable = { var_idea_YFC_Hammer_influence = 1 }
+		set_variable = { var_idea_YFC_Taser_influence = 1 }
+		set_variable = { var_idea_YFC_Pipe_influence = 1 }
+		IF = {
+			limit = {has_idea = idea_YFC_Defiant_Pipe}
+			remove_ideas = idea_YFC_Defiant_Pipe
+		}
+		IF = {
+			limit = {has_idea = idea_YFC_Defiant_Hammer}
+			remove_ideas = idea_YFC_Defiant_Hammer
+		}
+		IF = {
+			limit = {has_idea = idea_YFC_Defiant_Taser}
+			remove_ideas = idea_YFC_Defiant_Taser
+		}				
+	}
+}
+
+country_event = { #YFC_focus_radical_meeting
+	id = YFC_event.76
+	title = YFC_event.76.t
+	desc = YFC_event.76.desc
+	picture = GFX_YFC_event10
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.76.a
+
+        set_cosmetic_tag = YFC_raiders
+        add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy } #Move later
+        YFC = { #Move later
+            create_faction = "Bandit Pack"
+            add_to_faction = BUN
+        }
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 

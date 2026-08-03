@@ -652,8 +652,32 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_anarchy.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_food_imports
+		texturefile = gfx/interface/ideas/idea_YFC_food_imports.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_our_sectors
 		texturefile = gfx/interface/ideas/idea_YFC_our_sectors.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_defiant_tophat
+		texturefile = gfx/interface/ideas/idea_YFC_defiant_tophat.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_defiant_pipe
+		texturefile = gfx/interface/ideas/idea_YFC_defiant_pipe.dds
+	}	
+	spriteType = {
+		name = GFX_idea_YFC_defiant_beaker
+		texturefile = gfx/interface/ideas/idea_YFC_our_sectors.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_defiant_hammer
+		texturefile = gfx/interface/ideas/idea_YFC_defiant_hammer.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_defiant_taser
+		texturefile = gfx/interface/ideas/idea_YFC_defiant_taser.dds
 	}
 	spriteType = {
 		name = GFX_idea_YFC_neglectful_command
@@ -672,7 +696,15 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_bunch_insurgency.dds
 	}
 	spriteType = {
-		name = GFX_idea_YFC_lewis
+		name = GFX_idea_YFC_UDC
+		texturefile = gfx/interface/ideas/idea_YFC_UDC.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_OWN
+		texturefile = gfx/interface/ideas/idea_YFC_OWN.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_lewis #Unused
 		texturefile = gfx/interface/ideas/idea_YFC_lewis.dds
 	}
 	spriteType = {
@@ -680,7 +712,7 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_coiny.dds
 	}
 	spriteType = {
-		name = GFX_idea_YFC_dora
+		name = GFX_idea_YFC_dora #Unused
 		texturefile = gfx/interface/ideas/idea_YFC_dora.dds
 	}
 	spriteType = {

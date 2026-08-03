@@ -55,7 +55,7 @@ shared_focus = {
     	base = 0
 		modifier = { #Just gives the player time to pick stuff if they want to
             add = 5
-            date > 2016.6.01
+            date > 2016.1.01
         }
     }
 }

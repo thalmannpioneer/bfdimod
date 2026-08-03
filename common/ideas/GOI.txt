@@ -40,18 +40,19 @@ ideas = {
 				mobilization_speed = 5
 				surrender_limit = 0.15
 				production_factory_efficiency_gain_factor = 0.35
-				training_time_army_factor = -0.5
+				training_time_army_factor = -1
 				war_support_factor = 0.2
-				weekly_manpower = 500
+				weekly_manpower = 1000
 				out_of_supply_factor = -0.35
 				conscription = 0.75
 				equipment_capture = 0.25
 				compliance_growth = 1
-				ai_desired_divisions_factor = 2
+				ai_desired_divisions_factor = 2.5
 				ai_focus_aggressive_factor = 0.5
 				max_command_power_mult = 1
 			}
 			on_remove = {
+				add_manpower = 20000
 				IF = {
 					limit = {is_ai = yes}
 					every_controlled_state = {

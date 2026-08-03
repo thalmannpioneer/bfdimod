@@ -41,7 +41,7 @@ ideas = {
 		}
 
 		idea_YFC_trade_food = {
-			picture = generic_agrarian_society
+			picture = YFC_food_imports
 			modifier = {
 				stability_factor = 0.05
 				monthly_population = 0.1
@@ -61,7 +61,7 @@ ideas = {
 		}
 
 		idea_YFC_Defiant_Top_Hat = {
-			picture = generic_army_problems #Replace later 
+			picture = YFC_defiant_tophat  
 			modifier = {
 				conscription_factor = -0.25
 				resistance_growth = 0.5
@@ -77,7 +77,7 @@ ideas = {
 		}
 
 		idea_YFC_Defiant_Pipe = {
-			picture = generic_railroads #Replace later 
+			picture = YFC_defiant_pipe
 			modifier = {
 				army_speed_factor = -0.35
 				supply_consumption_factor = 0.3
@@ -92,7 +92,7 @@ ideas = {
 		}
 
 		idea_YFC_Defiant_Beaker = {
-			picture = jap_duplicate_research #Replace later 
+			picture = YFC_defiant_beaker
 			modifier = {
 				experience_gain_army_factor = -0.95
 				research_speed_factor = -0.25
@@ -107,7 +107,7 @@ ideas = {
 		}
 
 		idea_YFC_Defiant_Hammer = {
-			picture = generic_devalue_currency #Replace later 
+			picture = YFC_defiant_hammer
 			modifier = {
 				production_speed_buildings_factor = -0.75
 				monthly_population = -0.95
@@ -122,7 +122,7 @@ ideas = {
 		}
 
 		idea_YFC_Defiant_Taser = {
-			picture = ast_classify_aliens #Replace later 
+			picture = YFC_defiant_taser
 			modifier = {
 				compliance_growth = -0.5
 				resistance_target = 0.1

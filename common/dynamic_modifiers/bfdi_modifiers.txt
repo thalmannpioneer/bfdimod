@@ -253,7 +253,7 @@ idea_BUN_Ticking_Bomb = { #Bunch Revolt Idea
 }
 
 idea_Musketeers_OWN = { #Musketeers OWN
-    icon = GFX_idea_generic_constitutional_guarantees
+    icon = GFX_idea_YFC_OWN
 
     trade_opinion_factor = var_own_trade_opinion_factor
     political_power_factor = var_own_political_power_factor
@@ -264,7 +264,7 @@ idea_Musketeers_OWN = { #Musketeers OWN
 }
 
 idea_Musketeers_UDC = { #Musketeers UDC
-    icon = GFX_idea_generic_constitutional_guarantees
+    icon = GFX_idea_YFC_UDC
 
     army_org_factor = var_udc_army_org_factor
     experience_gain_army_factor = var_udc_experience_gain_army_factor

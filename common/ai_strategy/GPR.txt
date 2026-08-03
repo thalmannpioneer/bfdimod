@@ -87,7 +87,7 @@ GPR_army = {
     }
     enable = {
         has_army_size = {
-            size < 10
+            size < 15
         }
         has_war = no
     }

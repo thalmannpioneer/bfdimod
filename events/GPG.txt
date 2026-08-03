@@ -1926,7 +1926,13 @@ country_event = {
         custom_effect_tooltip = l_GPG_lawnland_increases_10_escalation
         add_to_variable = { var_GPG_negs_progressbar = 10 }
         add_to_variable = { var_GPG_war_progressbar = 10 }
-        hidden_effect = { GPG_on_lawnland_progressbar_change = yes }
+        hidden_effect = { 
+            GPG_on_lawnland_progressbar_change = yes 
+            28 - {
+                add_compliance = -15
+                add_resistance = 50
+            }
+        }
     }
 }
 
