@@ -41,7 +41,10 @@ decision_YFC_raids_category = {
 	allowed = { tag = YFC }	
 	visible = { 
 		YFC = {
-			has_completed_focus = YFC_focus_allow_raiding_into_traitors
+			OR = {
+				has_completed_focus = YFC_focus_allow_raiding_into_traitors
+				has_completed_focus = YFC_focus_way_of_raiders
+			}
 			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 	}

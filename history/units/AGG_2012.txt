@@ -22,7 +22,7 @@ units = {
         location = 11304 # Faraway
         division_template = "Retribution Unit"
         start_experience_factor = 0.7
-        start_equipment_factor = 1
+        start_equipment_factor = 0.9
     }
 
 	division= {

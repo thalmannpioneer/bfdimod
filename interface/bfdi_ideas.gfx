@@ -617,6 +617,26 @@ spriteTypes = {
 		name = GFX_idea_BUN_unstable_future
 		texturefile = gfx/interface/ideas/idea_BUN_unstable_future.dds
 	}
+
+	spriteType = {
+		name = GFX_idea_BUN_adjusting_rebuilding
+		texturefile = gfx/interface/ideas/idea_BUN_adjusting_rebuilding.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_BUN_highlyfunded_army
+		texturefile = gfx/interface/ideas/idea_BUN_highlyfunded_army.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_BUN_unfunded_army
+		texturefile = gfx/interface/ideas/idea_BUN_unfunded_army.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_BUN_victorious_in_blood
+		texturefile = gfx/interface/ideas/idea_BUN_victorious_in_blood.dds
+	}
 	
 	spriteType = {
 		name = GFX_idea_NRR_between_two_fires

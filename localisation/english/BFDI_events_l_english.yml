@@ -1078,6 +1078,30 @@
  YFC_event.71.b: "Prison Time!" 
  YFC_event.71.c: "Exile!" 
 
+ YFC_event.72.t: "Shipment Failed!" 
+ YFC_event.72.desc.a: "[FROM.GetName] has reported that they failed to receive the shipment. Contact with the shipment is lost as it either went missing or was robbed. With our warranty policy we have to send another shipment that comes out of the cost of the profits we should have made. Hopefully next time we will not have to suffer this setback." #zdubbz if you want to
+ YFC_event.72.desc.b: "Despite us agreeing to the Yellow Face shipment, it has not arrived for the last few days. Yellow Face stated that it was sent, meaning it was either stolen or lost. As such we have already requested for another shipment under the warranty policy. They should really protect their own shipments!" #zdubbz if you want to
+ YFC_event.72.a: "That sucks..." 
+ YFC_event.72.b: "Wasting our time..." 
+
+ YFC_event.73.t: "Shipment Failed!" 
+ YFC_event.73.desc: "We have not received the expected shipment despite [FROM.GetName] agreeing to the deal. They have already told us that they sent the shipment and we sent the payment. As such the shipment must have been lost from unknown causes. We will need to find the equipment elsewhere..." #zdubbz if you want to
+ YFC_event.73.a: "It would have been nice to have the shipment!" 
+
+ YFC_event.74.t: "Aftermath" 
+ YFC_event.74.desc.a: "text"
+ YFC_event.74.desc.b: "text"
+ YFC_event.74.a: "text" 
+ YFC_event.74.b: "text" 
+
+ YFC_event.75.t: "End of Defiance" 
+ YFC_event.75.desc: "It had gone quiet, way too quiet in the company HQ. With two Sectors gone, the last three felt that they had little hope to do much angsit Yellow Face's rapidly growing power. Today was time for another meeting with him, as the last one was before the chaos that Top Hat created. The discussion was to be about where the company would go with the chaos calming down. \n\n'We should try to reestablish trade relations with our old trading partners', Hammer said with slight hesitation. The other two sectors agreed, as Yellow Face was really low and liquid cash and assets.\n\nSilence filled afterwards as it seemed that Yellow Face already made his decision before even planning the meeting..." #zdubbz if you want to
+ YFC_event.75.a: "'We are working with the Bandits, end of discussion.'" 
+
+ YFC_event.76.t: "Meeting text" 
+ YFC_event.76.desc: "Wake up me" #Work
+ YFC_event.76.a: "..." 
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

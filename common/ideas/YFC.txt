@@ -238,7 +238,14 @@ ideas = {
 			}
 		}
 
-		idea_YFC_active_pirates = { Yarr
+		idea_YFC_BUN_tech = { 
+			picture = jap_duplicate_research
+			modifier = {
+				research_speed_factor = -0.75
+			}
+		}
+
+		idea_YFC_active_pirates = {
 			picture = SOV_organize_wreckers #Replace later 
 			modifier = {
 				naval_accidents_chance = 0.5

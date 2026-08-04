@@ -25,8 +25,8 @@ ideas = {
 			}
 		}
 
-		idea_BUN_adjusting_rebuilding = { #Rebuilding
-			picture = ARG_civilian_economy_boost
+		idea_BUN_adjusting_rebuilding = {
+			picture = BUN_adjusting_rebuilding
 			modifier = {
 				consumer_goods_factor = 0.75
 				production_speed_buildings_factor = -0.25
@@ -38,8 +38,8 @@ ideas = {
 			}
 		}
 
-		idea_BUN_highlyfunded_army = { #Debate picks reforming army
-			picture = generic_war_preparation
+		idea_BUN_highlyfunded_army = { 
+			picture = BUN_highlyfunded_army
 			modifier = {
 				consumer_goods_factor = 0.35
 				production_speed_buildings_factor = -0.25
@@ -49,8 +49,8 @@ ideas = {
 			}
 		}
 
-		idea_BUN_unfunded_army = { #Debate picks YFC/CRN help
-			picture = generic_army_problems
+		idea_BUN_unfunded_army = { 
+			picture = BUN_unfunded_army
 			modifier = {
 				consumer_goods_factor = -0.25
 				production_speed_buildings_factor = 0.3
@@ -74,9 +74,9 @@ ideas = {
 			}
 		}
 
-		#All these ideas will become modifiers when Neo-Bunch gets stuff
+		#Most of these ideas will become modifiers when Neo-Bunch gets stuff
 
-		idea_BUN_collapsed_economy = { #All industry was blown up or stolen so no money :sad:. Given in revolt
+		idea_BUN_collapsed_economy = { 
 			picture = BUN_collapsed_economy
 			modifier = {
 				consumer_goods_factor = 0.65
@@ -88,7 +88,7 @@ ideas = {
 			}
 		}
 
-		idea_BUN_armed_militia  = { #Everyone hates YFC so civilian militia. Given in revolt
+		idea_BUN_armed_militia  = {
 			picture = BUN_armed_militia
 			modifier = {
 				resistance_target_on_our_occupied_states = 0.15
@@ -104,7 +104,7 @@ ideas = {
 			}
 		}
 
-		idea_BUN_unstable_future  = { #Bunch leadership and goals gone, so unknown paths to take. Given in revolt
+		idea_BUN_unstable_future = { 
 			picture = BUN_unstable_future
 			modifier = {
 				political_power_gain = -0.65
@@ -113,8 +113,8 @@ ideas = {
 			}
 		}
 
-		idea_BUN_victorious_in_blood = { #Most people now want peace and it's hard to change laws due to weak government. Given when won
-			picture = generic_victors_of_ww1
+		idea_BUN_victorious_in_blood = { 
+			picture = BUN_victorious_in_blood
 			modifier = {
 				offensive_war_stability_factor = -0.35
 				defensive_war_stability_factor = 0.35

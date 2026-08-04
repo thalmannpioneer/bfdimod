@@ -35,8 +35,7 @@ GGR_protect_YFC = {
         country_exists = YFC
         has_war = no
         YFC = {
-            has_completed_focus = YFC_focus_allow_raiding_into_traitors
-            is_ai = yes
+            has_cosmetic_tag = YFC_raiders
         }
     }
     abort_when_not_enabled = yes
@@ -44,7 +43,7 @@ GGR_protect_YFC = {
     ai_strategy = {
         type = prepare_for_war
         id = YFC
-        value = 100
+        value = 50
     }
 }
 
@@ -54,15 +53,11 @@ GGR_FFT_preparation = {
         original_tag = GGR
     }
     enable = {
-        focus_progress = {
-            focus = GGR_focus_partizan_war
-            progress > 0.01
-        }
+        has_completed_focus = GGR_focus_popular_support
+        has_completed_focus = GGR_focus_operation_wintersfest
+        country_exists = FFT
     }
-
-    abort = {
-        NOT = { country_exists = FFT }
-    }
+    abort_when_not_enabled = yes
 
     ai_strategy = {
         type = prepare_for_war
@@ -79,9 +74,7 @@ GGR_FFT_war = {
 	enable = {
 		has_war_with = FFT
 	}
-	abort = {
-		NOT = { country_exists = FFT }
-	}
+    abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
@@ -236,7 +229,12 @@ GGR_tanks = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 10
+		value = 25
+	}
+    ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 25
 	}
     ai_strategy = {
         type = build_army

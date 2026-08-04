@@ -13,22 +13,21 @@ country_event = {
 	
 	option = {
 		name = BUN_YFC.1.a
-		add_war_support = 0.1
-		add_stability = 0.05
 		country_lock_all_division_template = no
 		remove_country_leader_trait = insurgent_leader
+		add_country_leader_trait = nationalist_symbol
 		remove_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }
 		YFC = {
 			country_event = {
 				id = BUN_YFC.2
-				hours = 2
+				hours = 1
 				random_hours = 2
 			}
 		}
 		hidden_effect = {
 			country_event = {
 				id = BUN_YFC.4
-				days = 12
+				days = 14
 				random_hours = 50
 			}
 		}
@@ -124,6 +123,8 @@ country_event = {
 		name = BUN_YFC.4.a
 		add_ideas = idea_BUN_victorious_in_blood
 		add_ideas = disarmed_nation
+		add_stability = 0.25
+		add_war_support = 0.45
 		hidden_effect = {
 			IF = {
 				limit = {

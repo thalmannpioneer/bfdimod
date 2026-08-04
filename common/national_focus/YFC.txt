@@ -33,16 +33,6 @@ focus_tree = {
             add_stability = 0.15
             add_political_power = 25
             country_event = YFC_event.1
-            hidden_effect = {
-                random_list = {
-                    70 = {
-                        set_country_flag = money_path
-                    }
-                    30 = {
-                        set_country_flag = raiders_path
-                    }
-                }
-            }
         }
     }
 
@@ -91,6 +81,14 @@ focus_tree = {
             }
             hidden_effect = {
                 YFC_calc_trade_relations_loop = yes
+                random_list = {
+                    70 = {
+                        set_country_flag = money_path
+                    }
+                    30 = {
+                        set_country_flag = raiders_path
+                    }
+                }
             }
         }
     }
@@ -594,10 +592,10 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            add_opinion_modifier = { target = BUN modifier = large_increase }
+            add_opinion_modifier = { target = BUN modifier = medium_increase }
             every_country_with_original_tag = {
                 original_tag_to_check = BUN
-                add_opinion_modifier = { target = YFC modifier = large_increase }
+                add_opinion_modifier = { target = YFC modifier = medium_increase }
             }
             custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
@@ -3504,7 +3502,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+        allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
 
         cost = 3
         completion_reward = {
@@ -3525,7 +3523,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
+        allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
         cost = 3
         completion_reward = {
@@ -3540,8 +3538,8 @@ focus_tree = {
         y = 2
         icon = GFX_focus_YFC_a_raid_o3 #From the old tree, update if needed
 
-        #prerequisite = { focus = YFC_focus_the_first_embargo }
-        #prerequisite = { focus = YFC_focus_numismatian_split }
+        prerequisite = { focus = YFC_focus_the_first_embargo }
+        prerequisite = { focus = YFC_focus_numismatian_split }
 
         ai_will_do = {
             base = 15
@@ -3576,18 +3574,19 @@ focus_tree = {
                             tag = GGR
                             tag = GMD
                             tag = CRN
+                            tag = DAV #Maybe?
                         }
                     }
                     country_event = {
                         id = YFC_event.9
                         days = 1
-                        random_days = 45
+                        random_days = 30
                         random_hours = 24
                     }
                 }
                 country_event = {
                     id = YFC_event.54
-                    days = 50
+                    days = 35
                     random_hours = 24
                 }
             }
@@ -4560,7 +4559,254 @@ focus_tree = {
             }
         }
     }
+
+    focus = { #Last Part!
+        id = YFC_focus_way_of_raiders
+
+        x = 40
+        y = 0
+
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+
+        }
+
+        #available = {
+        #    hidden_trigger = {
+        #        has_completed_focus = YFC_focus_way_of_raiders
+        #    }
+        #}
+
+        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+
+        cost = 5 
+
+        completion_reward = {
+            hidden_effect = { #Just for testing, remove later
+                set_cosmetic_tag = YFC_raiders
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_seek_cooperation_with_bunch
+        relative_position_id = YFC_focus_way_of_raiders
+        x = 0
+        y = 3
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+            modifier = {
+                add = -20
+                NOT = {has_completed_focus = YFC_focus_numismatian_split} #Just so the AI does not take it while testing
+            }
+        }
+
+        prerequisite = { focus = YFC_focus_way_of_raiders }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            add_opinion_modifier = { target = BUN modifier = large_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = large_increase }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_finally_form_the_deal
+        relative_position_id = YFC_focus_seek_cooperation_with_bunch
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            has_political_power > 50
+        }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            add_political_power = -50
+            add_war_support = 0.1
+            army_experience = 25
+        }
+    }
+
+    focus = {
+        id = YFC_focus_invite_bunch_settlers
+        relative_position_id = YFC_focus_finally_form_the_deal
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_finally_form_the_deal }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            add_stability = 0.05
+            add_manpower = 2000
+            201 = {add_manpower = 478}
+            215 = {add_manpower = 4373}
+            196 = {add_manpower = 592}
+
+            hidden_effect = {
+                BUN = {add_stability = 0.05}
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_bunch_technology
+        relative_position_id = YFC_focus_invite_bunch_settlers
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_invite_bunch_settlers }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            add_research_slot = 1
+            add_ideas = idea_YFC_BUN_tech
+            #Maybe add a tech sharing group
+            hidden_effect = {
+                BUN = {
+                    add_tech_bonus = {
+                        bonus = 1
+                        uses = 3
+                        category = industry
+                    }
+                    add_tech_bonus = {
+                        bonus = 0.75
+                        uses = 2
+                        category = electronics
+                    }
+                    add_tech_bonus = {
+                        bonus = 0.5
+                        uses = 1
+                        category = infantry_weapons
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_free_flowing_trade
+        relative_position_id = YFC_focus_seek_cooperation_with_bunch
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            #Add idea later
+            BUN = {
+                #Add idea later
+                custom_effect_tooltip = l_money_gain_200K
+		        add_to_variable = { money_amount = 2 }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_improve_the_rail_links
+        relative_position_id = YFC_focus_free_flowing_trade
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_free_flowing_trade }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            IF = {
+                limit = {has_stability < 0}
+                add_stability = 0.05
+            }
+            build_railway = {
+                level = 2
+                start_state = 201
+                target_state = 212
+            }
+            BUN = {
+                build_railway = {
+                    level = 1
+                    start_state = 85
+                    target_state = 212
+                }
+                set_building_level = {
+					type = supply_node
+					level = 1
+					province = {
+						id = 11260
+					}
+				}
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_hand_over_intel
+
+        relative_position_id = YFC_focus_improve_the_rail_links
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_improve_the_rail_links }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            add_command_power = 15
+            army_experience = 5
+
+            #Add Bunch code
+        }
+    }
 }
+
 
 #Also just as a side note I think the second part should have more stuff (Shocking I know) and not be as linear
 

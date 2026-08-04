@@ -3154,7 +3154,7 @@ country_event = { #YFC Market shipment failed to make it to them
 			NOT = {tag = YFC}
 		}
 
-		
+		add_political_power = -25
 		add_opinion_modifier = { target = YFC modifier = small_decrease }
         every_country_with_original_tag = {
             original_tag_to_check = YFC
@@ -3274,6 +3274,7 @@ country_event = { #YFC_focus_radical_meeting
             add_to_faction = BUN
         }
 		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {complete_national_focus = YFC_focus_way_of_raiders}
 	}
 }
 
