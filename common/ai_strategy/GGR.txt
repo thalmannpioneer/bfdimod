@@ -62,7 +62,7 @@ GGR_FFT_preparation = {
     ai_strategy = {
         type = prepare_for_war
         id = FFT
-        value = 1000
+        value = 2000
     }
 }
 

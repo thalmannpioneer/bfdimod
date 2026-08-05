@@ -3206,6 +3206,7 @@ country_event = { #YFC aftermath
 		trigger = {
 			has_completed_focus = YFC_focus_mass_firings
 		}
+		add_political_power = 50
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			complete_national_focus = YFC_focus_last_of_the_layoffs
@@ -3269,12 +3270,12 @@ country_event = { #YFC_focus_radical_meeting
 
         set_cosmetic_tag = YFC_raiders
         add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy } #Move later
-        YFC = { #Move later
-            create_faction = "Bandit Pack"
-            add_to_faction = BUN
-        }
+
 		custom_effect_tooltip = l_GOI_unlock_focus
-		hidden_effect = {complete_national_focus = YFC_focus_way_of_raiders}
+		hidden_effect = {
+			complete_national_focus = YFC_focus_way_of_raiders
+			BUN = {add_manpower = 5000}
+		}
 	}
 }
 

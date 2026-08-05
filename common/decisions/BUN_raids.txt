@@ -34,9 +34,9 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 5
+        days_remove = 7
         cost = 20
-        days_re_enable = 400
+        days_re_enable = 360
         war_with_on_remove = controller
 
         remove_effect = {
@@ -88,7 +88,6 @@ decision_BUN_raids_category = {
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = 0.45
-                        terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
@@ -107,8 +106,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1.25
-                        terrain_factor = -0.5
+                        modifier = var_BUN_raiding_attack_stats
                     }
                     defender = {
                         state = FROM
@@ -176,9 +174,9 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 5
+        days_remove = 7
         cost = 20
-        days_re_enable = 400
+        days_re_enable = 360
         war_with_on_remove = controller
 
         remove_effect = {
@@ -230,7 +228,6 @@ decision_BUN_raids_category = {
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = 0.45
-                        terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
@@ -249,8 +246,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1.25
-                        terrain_factor = -0.5
+                        modifier = var_BUN_raiding_attack_stats
                     }
                     defender = {
                         state = FROM
@@ -318,9 +314,9 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 5
+        days_remove = 7
         cost = 20
-        days_re_enable = 400
+        days_re_enable = 360
         war_with_on_remove = controller
 
         remove_effect = {
@@ -372,7 +368,6 @@ decision_BUN_raids_category = {
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = 0.45
-                        terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
@@ -391,8 +386,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1.25
-                        terrain_factor = -0.5
+                        modifier = var_BUN_raiding_attack_stats
                     }
                     defender = {
                         state = FROM
@@ -460,9 +454,9 @@ decision_BUN_raids_category = {
 		}
 
         fire_only_once = no
-        days_remove = 5
+        days_remove = 7
         cost = 20
-        days_re_enable = 400
+        days_re_enable = 360
         war_with_on_remove = controller
 
         remove_effect = {
@@ -514,7 +508,6 @@ decision_BUN_raids_category = {
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = 0.45
-                        terrain_factor = 0.5
                     }
                     defender = {
                         state = FROM
@@ -533,8 +526,7 @@ decision_BUN_raids_category = {
                         num_provinces = 1
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
-                        modifier = 1.25
-                        terrain_factor = -0.5
+                        modifier = var_BUN_raiding_attack_stats
                     }
                     defender = {
                         state = FROM

@@ -448,7 +448,7 @@ country_event = {
 				tag = GTR
 				has_war_support < 0.25
 			}
-			add_war_support 0.02
+			add_war_support = 0.1
 		}
 		hidden_effect = {
 			BUN = {

@@ -637,6 +637,16 @@ spriteTypes = {
 		name = GFX_idea_BUN_victorious_in_blood
 		texturefile = gfx/interface/ideas/idea_BUN_victorious_in_blood.dds
 	}
+
+	spriteType = {
+		name = GFX_idea_BUN_renewed_resolve
+		texturefile = gfx/interface/ideas/idea_BUN_renewed_resolve.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_BUN_greenville_treaty
+		texturefile = gfx/interface/ideas/idea_BUN_greenville_treaty.dds
+	}
 	
 	spriteType = {
 		name = GFX_idea_NRR_between_two_fires
@@ -714,6 +724,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_YFC_bunch_insurgency
 		texturefile = gfx/interface/ideas/idea_YFC_bunch_insurgency.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_debt_crisis
+		texturefile = gfx/interface/ideas/idea_YFC_debt_crisis.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_at_the_finish_line
+		texturefile = gfx/interface/ideas/idea_YFC_at_the_finish_line.dds
 	}
 	spriteType = {
 		name = GFX_idea_YFC_UDC

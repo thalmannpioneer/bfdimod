@@ -136,7 +136,7 @@ ideas = {
 		}
 
 		idea_YFC_Debt_Crisis = {
-			picture = generic_economic_crisis #Replace later 
+			picture = YFC_debt_crisis #Replace later 
 			modifier = {
 				political_power_factor = -0.75
 				stability_factor = -0.25
@@ -187,7 +187,7 @@ ideas = {
 		}
 
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
-			picture = generic_morale_bonus #Replace later 
+			picture = YFC_at_the_finish_line #Replace later 
 			modifier = {
 				compliance_growth = 1.5
 				resistance_growth = 1
@@ -242,6 +242,15 @@ ideas = {
 			picture = jap_duplicate_research
 			modifier = {
 				research_speed_factor = -0.75
+			}
+		}
+
+		idea_YFC_snowpath = { 
+			picture = generic_goods_red_bonus
+			modifier = {
+				country_resource_steel = 8
+				country_resource_coal = 12
+				local_resources_factor = 0.1
 			}
 		}
 

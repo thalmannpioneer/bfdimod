@@ -250,6 +250,7 @@ country_event = {
 	
 	option = {
 		name = GDR_event.13.a
+		
 		hidden_effect = {
 			add_threat = -2
 			GPR = {
@@ -263,6 +264,22 @@ country_event = {
 			}
 			
 			set_cosmetic_tag = GDR_federation
+
+			division_template = {
+				name = "Freesmart Van"
+				regiments = {
+					bus = { x = 0 y = 0 }
+				}
+				is_locked = yes
+				override_model = SWE_bus_vehicle_entity
+			}
+
+			193 = {
+				create_unit = {
+					division = "name = \"Freesmart Van\" division_template = \"Freesmart Van\" start_equipment_factor = 1 start_experience_factor = 1 "
+					owner = GDR
+				}
+			}
 
 			set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
 			

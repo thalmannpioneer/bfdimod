@@ -424,7 +424,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_YFC_mission_get_food"
-		textureFile = "gfx/interface/GFX_YFC_mission_get_food.dds"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_get_food.dds"
 	}
 
 	spriteType = {

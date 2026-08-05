@@ -11,7 +11,7 @@ ideas = {
 		}
 
 		idea_CRN_greenville_treaty = { #Deal with BUN, some communists are... removed by some 'unknown and hard to get' criminals. Given by a decision
-			picture = generic_deal_with_the_devil2
+			picture = BUN_greenville_treaty
 			modifier = {
 				communism_drift = -0.01
 				political_power_gain = 0.1

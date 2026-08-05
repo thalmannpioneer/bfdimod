@@ -2,8 +2,6 @@
 
 capital = 85
 
-set_variable = { var_YCF_tradeSell_index = 5 }
-
 set_research_slots = 1
 
 set_technology = { basic_train = 1 }
@@ -45,6 +43,7 @@ set_variable = { var_idea_BUN_Ticking_Bomb_surrender_limit = 1.30 }
 set_variable = { var_idea_BUN_Ticking_Bomb_ai_focus_aggressive_factor = 1.5 }
 
 set_variable = { var_BUN_raiding = 0 }
+set_variable = { var_BUN_raiding_attack_stats = 1 } #Base raiding attack
 
 add_ideas = limited_conscription
 add_ideas = idea_BUN_criminal_state

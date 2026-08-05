@@ -55,7 +55,7 @@ BUN_rampant_raids = {
     icon = GFX_decision_generic_protection
 
     industry_free_repair_factor = -0.25
-    attrition = 0.02
+    attrition = 0.05
     army_core_attack_factor = -0.1
     army_speed_factor = -0.25
     disable_strategic_redeployment = 1
