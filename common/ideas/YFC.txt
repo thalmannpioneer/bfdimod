@@ -147,12 +147,22 @@ ideas = {
 			}
 			cancel = {check_variable = { money_amount > 0} }
 			on_remove = {
-				set_variable = { var_idea_YFC_TopHat_level = 1 }
-				set_variable = { var_idea_YFC_TopHat_cost = 20 }
+				IF = {
+					limit = {
+						NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+					}
+					set_variable = { var_idea_YFC_TopHat_level = 1 }
+					set_variable = { var_idea_YFC_TopHat_cost = 20 }
+				}
+				IF = {
+					limit = {
+						has_country_flag = YFC_Allow_Beaker
+					}
+					set_variable = { var_idea_YFC_Beaker_level = 1 }
+					set_variable = { var_idea_YFC_Beaker_cost = 20 }
+				}
 				set_variable = { var_idea_YFC_Pipe_level = 1 }
 				set_variable = { var_idea_YFC_Pipe_cost = 20 }
-				set_variable = { var_idea_YFC_Beaker_level = 1 }
-				set_variable = { var_idea_YFC_Beaker_cost = 20 }
 				set_variable = { var_idea_YFC_Hammer_level = 1 }
 				set_variable = { var_idea_YFC_Hammer_cost = 20 }
 				set_variable = { var_idea_YFC_Taser_level = 1 }

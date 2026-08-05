@@ -46,11 +46,13 @@ set_variable = { var_idea_YFC_anarchic_lands_node = 0 }
 #Sectors Idea (First two are for the idea and the last two are for the decisions)
 set_variable = { var_idea_YFC_sectors_TopHat_type = 2 } #For TopHat GFX (0 = Jailed, 1 = Empty, 2 = Normal, 3 = Blocky)
 
-set_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
-set_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
-set_variable = { var_idea_YFC_TopHat_cost = 20 }
-set_variable = { var_idea_YFC_TopHat_influence = 1 }
-set_variable = { var_idea_YFC_TopHat_level = 1 }
+set_variable = { var_idea_YFC_sectors_TopHat_attack = 0.1 }
+set_variable = { var_idea_YFC_sectors_TopHat_org = 0.1 }
+set_variable = { var_idea_YFC_sectors_Blocky_cavattack = 0.0 } #For Blocky 0.5
+set_variable = { var_idea_YFC_sectors_Block_speed = 0.0 } #For Blocky 0.5
+set_variable = { var_idea_YFC_TopHat_cost = 40 }
+set_variable = { var_idea_YFC_TopHat_influence = 2 }
+set_variable = { var_idea_YFC_TopHat_level = 2 }
 
 set_variable = { var_idea_YFC_sectors_Pipe_railway = 0.1 }
 set_variable = { var_idea_YFC_sectors_Pipe_supply = -0.05 }

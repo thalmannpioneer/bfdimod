@@ -113,6 +113,7 @@
 
  l_YFC_sectors_unlock: "§GUnlocks various roles for§! §YTop Hat§!, §YPipe§!, §YBeaker§!, §YHammer§!, and §YTaser§!."
  l_YFC_payment_sectors: "§YWe will pay§! §R[?var_sectors_combined_cost]K§! §YDollars to the Sectors.§!\n§GModifiers provided by the Sectors may change depending on changes by you.§!\n§RIf any Sectors' influence is higher than everyone else combined or is above 10 then they may begin to make their own decisions.§!"
+ l_YFC_sectors_Blocky_unlock: "§tBlocky§! §Ywill take over the§! §RMilitary Sector§! §Ywith§! §GCavalry Attack§! §Yand§! §GDivision Speed§! §Ybonuses.§!" #Blocky unlock
  l_YFC_sectors_TopHat_Gain: "§YTop Hat's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Top Hat
  l_YFC_sectors_TopHat_Loss: "§YTop Hat's§! influence will §Gdecrease§! by [?var_add_to_sector2|Y0]" #Top Hat
  l_YFC_sectors_Pipe_Gain: "§YPipe's§! influence will §Rincrease§! by [?var_add_to_sector|Y0]" #Pipe

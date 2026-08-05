@@ -1015,6 +1015,15 @@
  YFC_focus_purchase_ordnance_package: "Purchase Ordnance Package"
  YFC_focus_purchase_ordnance_package_desc: "The sheer force of the Unnamed Mercenary Brotherhood yields great results, however, with extra firepower, they could be even greater. It is well within our budget to buy some extra artillery for the purpose of arming the UMB even further, if we happen to buy them in the future."
 
+ YFC_focus_mobilize_excess_reserves: "Mobilize Excess Reserves"
+ YFC_focus_mobilize_excess_reserves_desc: "ZDubbz"
+
+ YFC_focus_focus_on_supply: "Focus on Supply"
+ YFC_focus_focus_on_supply_desc: "ZDubbz"
+
+ YFC_focus_focus_on_combat: "Focus on Combat"
+ YFC_focus_focus_on_combat_desc: "ZDubbz"
+
  YFC_focus_the_southern_bandits: "§gThe Southern Bandits§!"
  YFC_focus_the_southern_bandits_desc: "Those bandits to the south of us are seriously raising concern among our employees. Some of which are scared of a possible attack, and others who believe we should be taking advantage of them. Only time will tell what happens to the bandits, but we must make sure we're ahead of them at all times."
 
@@ -1048,27 +1057,6 @@
  YFC_focus_money_arms_capital: "§RMy Money to Arms for Capital!§!"
  YFC_focus_money_arms_capital_desc: "Away! Away! Each Raider boy must understand that he must mind the Money Man!"
 
- YFC_focus_promote_blocky: "Promote Blocky" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_promote_blocky_desc: "Blocky, despite his short run in BFDI, has proved himself through his feats in The Bunch. He lead many raids, all of which were quick, coordinated, and lead to many decisive victories, where cities burned and profit was plentiful. Eraser may not be happy with us stealing Blocky, but who cares about him am I right?"
-
- YFC_focus_the_pen_problem: "The Pen Problem" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_the_pen_problem_desc: "Pen promised to pay some 500,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 dollars (that's '$500 Million Vigintillion' for all you uneducated folks) to some of the people who voted him back in the game back when BFDI was still ongoing. Somehow, some way that money became owed to us, and now he's essentially indebted to us forever. The other day, he claimed that he'd do 'anything' to get his debt to go away, but instead of offering to give us money or do labor he... got on his knees? Regardless, we'll need to begin working on a compromise if we ever want to get anything back."
-
- YFC_focus_erasers_training: "Eraser's Training" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_erasers_training_desc: "Eraser has told us in the past that our units are likely unprepared for what it takes to raid a settlement. Far too organized he says, and too rigid, too afraid, too used to walking in straight lines, shooting when told to shoot, retreating when told to retreat. Training our units with him could definitely give us an edge up against our victims."
-
- YFC_focus_a_raid_o3: "A Raid of Our Own" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_a_raid_o3_desc: "Eraser and his leadership finally view our army as 'ready enough' to go on raids. After weeks of rigorous training, teaching our various militias and mercenaries how to be as merciless as possible, we're finally ready to go into foreign countries, spreading our influence and gaining resources."
-
- YFC_focus_numismatian_subjugation: "Subjugate Numismatia" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_numismatian_subjugation_desc: "There's been a thorn in our proverbial sides recently, in the form of a country. Numismatian leadership has been quite vocally against our new bunchivist ideology, claiming that what we're doing is 'unjust', 'against the core principles of the free market', among other things. Despite their hostilities, they have still made attempts to mantain positive relations with specific individuals throughout the corporation. We can use these still-positive relationships to our advantage, keeping them firmly under our thumb, regarldess of their stupid 'opinions'."
-
- YFC_focus_closer_integration: "Closer Integration" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_closer_integration_desc: "It is only natural that The Bunch and Yellow Face Corporation get closer together, do to our shared ideologies. However, with our recent plans of subjugation, that brings into question The Capitalist Republic. They likely wouldn't be too happy about us getting even closer to the bunch, and we don't know how willing we are to take that risk. Despite already having the go ahead, we should most certainly be careful in the future about how our foreign policy looks if we want to keep them from outwardly speaking against our plans."
-
- YFC_focus_break_diplomacy: "Break Diplomacy" #NOT USED RIGHT NOW, REMOVE IF NEED BE
- YFC_focus_break_diplomacy_desc: "The outside world is a bust. Nearly every country in Goiky has mocked our ideals, stating that we're no more than a ragtag band of raiders. Attempting to do anything more than trade with a foreign nation is a waste of our time at this point. At least there'll be no one to speak against us when we burn their settlements to the ground."
-
  YFC_focus_a_look_inward: "§YA Look Inward§!"
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
@@ -1084,7 +1072,7 @@
  YFC_focus_the_economic_issue: "§6The Economic Issue§!"
  YFC_focus_the_economic_issue_desc: "We have been facing some economic... complications, since the end of our war against Bunchivism. It is high time we began closely monitoring the economic situation in our country. Perhaps we could seek to improve our standings?"
 
- YFC_focus_industrialize_or_die: "Our Useless Backyard" #Or maybe 'Expanding Our Growth'
+ YFC_focus_industrialize_or_die: "Our Useless Backyard" 
  YFC_focus_industrialize_or_die_desc: "It is clear; the eastern territories are starting to cost more to maintain than they are worth. So, let us make them profitable! By industrializing eastern settlements, we can ensure maximum profits."
 
  YFC_focus_erasers_stockpiles: "Eraser's Stockpiles"
@@ -1097,7 +1085,7 @@
  YFC_focus_develop_yoyleton_desc: "Yoyleton is the most remote place in South Goiky, as of current. Having a small population, with lots of hard workers, that hick town has great potential. Strangely enough, it seems like some teardroppers live there as well. With the town being so far from the sea, it's a bit strange to see them, however, they mind their business, same as everyone else. Perhaps some water features should be in the works."
 
  YFC_focus_military_industrial_complex: "Expanding Military Industrial Complex" 
- YFC_focus_military_industrial_complex_desc: "Buying and selling guns to a profit is something we are quite known to do. It only makes sense that we try our hardest to expand this industry, letting us send exports across all of Goiky." #I lied about the last statement this just gives us some militray equipment YFC does not care about their army yet
+ YFC_focus_military_industrial_complex_desc: "Buying and selling guns to a profit is something we are quite known to do. It only makes sense that we try our hardest to expand this industry, letting us send exports across all of Goiky." 
 
  YFC_focus_expand_northern_trade: "Expand the Northern Trade"
  YFC_focus_expand_northern_trade_desc: "By using Yoyleton as a base, we can expand our traderoutes farther north, leading to more efficient trade with North Goikean nations."
@@ -1275,7 +1263,7 @@
  YFC_focus_hoard_gold: "Hoard Gold"
  YFC_focus_hoard_gold_desc: "ZDubbz :D :D :D"
 
- YFC_focus_publicize_partnership: "Establish a True Border" #Publicize Partnership
+ YFC_focus_publicize_partnership: "Establish a True Border"
  YFC_focus_publicize_partnership_desc: "The de facto Bunch broder has been a talking point in the company for quite some time. The Sectorials believe that vague border gives a great opportunity to attack the bandits. However, we still can be attacked as well. As such we will do the next best thing, sign a treaty with them to get a real border." #ZDubbz if you want to
 
  YFC_focus_from_the_deal: "§GForm The Deal§!"
@@ -1394,6 +1382,9 @@
 
  YFC_focus_seek_cooperation_with_bunch: "§9Seek Cooperation with Bunch§!"
  YFC_focus_seek_cooperation_with_bunch_desc: ""
+
+ YFC_focus_promote_blocky: "Promote Blocky"
+ YFC_focus_promote_blocky_desc: ""
 
  YFC_focus_finally_form_the_deal: "Finally Form The Deal"
  YFC_focus_finally_form_the_deal_desc: ""

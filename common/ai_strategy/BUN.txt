@@ -41,3 +41,39 @@ BUN_Raiding = { #Place troops on borders to raid better
         value = -200
     }
 }
+
+## DIPLOMACY ##
+
+BUN_friend_CRN_YFC = {
+    #Work with CRN and YFC
+    allowed = {
+		original_tag = BUN
+	}
+	enable = {
+		YFC = {has_completed_focus = YFC_focus_bunch_fostered}
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = CRN
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = CRN
+		value = 200
+	}
+    ai_strategy = {
+		type = alliance
+		id = YFC
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = YFC
+		value = 200
+	}
+}

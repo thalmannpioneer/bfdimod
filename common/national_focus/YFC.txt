@@ -81,14 +81,6 @@ focus_tree = {
             }
             hidden_effect = {
                 YFC_calc_trade_relations_loop = yes
-                random_list = {
-                    70 = {
-                        set_country_flag = money_path
-                    }
-                    30 = {
-                        set_country_flag = raiders_path
-                    }
-                }
             }
         }
     }
@@ -258,7 +250,7 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            base = 1
+            base = 2
             modifier = {
                 factor = 6
                 has_manpower < 1000
@@ -414,12 +406,7 @@ focus_tree = {
 
         cost = 6
         completion_reward = {
-            add_manpower = 15000
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-                producer = YFC
-                amount = 500
-            }
+            add_manpower = 10000
             201 = {
                 create_unit = {
                     division = "name = \"Mercenaries\" division_template = \"Cherry Company\" start_experience_factor = 0.7"
@@ -546,11 +533,19 @@ focus_tree = {
                     random_days = 5
                     random_hours = 12
                 }
+                random_list = {
+                    70 = {
+                        set_country_flag = money_path
+                    }
+                    30 = {
+                        set_country_flag = raiders_path
+                    }
+                }
             }
         }
 
         ai_will_do = {
-            base = 10
+            base = 2
         }
     }
 
@@ -1059,20 +1054,6 @@ focus_tree = {
         icon = GFX_focus_YFC_bunchivist_problem
         prerequisite = { focus = YFC_focus_a_look_inward }
         cost = 8
-
-        #if you choose to tell the crn that you'll be annexing the occupation zone, they have a 50% chance of saying okay
-        #and a 50% chance of saying "no", and they'll begin to work with bunchivist rioters to keep you from doing so
-        #in exchange, bunchivists will help the crn with their internal communist problems
-        #you get a decisions mechanic like the snowy reich one
-
-        #if you choose the new society option, you'll the process of attempting to force the   bunch to become capitalistic
-        #complete with an election mechanic!!
-        #there are three candidates, yfc favors blocky, numismatia favors pen, bunch wants eraser to stay
-        #an event chain spanning half a year and 14 events gives you the ability to react to certain happenings
-        #your reaction increases or decreases the likelyhood for your candidate getting chosen
-        #numis also get events like this
-        #at the end, if blocky wins, the bunch becomes a puppet of the yfc, and vice versa for numis.
-        #if eraser wins, the bunch becomes a reformed republic, and is fully independent
 
         completion_reward = {
             85 = {add_compliance = 10}
@@ -2620,13 +2601,6 @@ focus_tree = {
                 hours = 1
                 random_hours = 2
             }
-
-            #send a letter of insult to teardrop to 'throw her off her game'
-
-            #How so? ZDubbz
-
-            #lol imagine if adolf hitler sent winston churchill a letter that said 'u smell bad', thatd probably make him rlly confused
-            #if you mean gamewise, it wouldnt actually do anything to the beach territory, just be cosmetic
         }
         ai_will_do = {
             base = 5
@@ -4625,6 +4599,35 @@ focus_tree = {
     }
 
     focus = {
+        id = YFC_focus_promote_blocky
+        relative_position_id = YFC_focus_seek_cooperation_with_bunch
+        x = 0
+        y = 1
+        icon = GFX_focus_YFC_promote_blocky
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
+
+        cost = 5 
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_sectors_Blocky_unlock
+            set_variable = {var_idea_YFC_sectors_TopHat_type = 3}
+            set_variable = { var_idea_YFC_sectors_TopHat_org = 0 }
+            set_variable = { var_idea_YFC_sectors_TopHat_attack = 0 }
+            set_variable = { var_idea_YFC_sectors_Blocky_cavattack = 0.05 }
+            set_variable = { var_idea_YFC_sectors_Block_speed = 0.05 }
+            set_variable = { var_idea_YFC_TopHat_cost = 20 }
+            set_variable = { var_idea_YFC_TopHat_influence = 1 }
+            set_variable = { var_idea_YFC_TopHat_level = 1 }
+        }
+    }
+
+    focus = {
         id = YFC_focus_finally_form_the_deal
         relative_position_id = YFC_focus_seek_cooperation_with_bunch
         x = -2
@@ -4739,9 +4742,8 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = idea_YFC_snowpath
+            add_stability = 0.05
             BUN = {
-                custom_effect_tooltip = l_money_gain_200K
-		        add_to_variable = { money_amount = 2 }
                 add_ideas = idea_BUN_snowpath
             }
         }
@@ -4874,7 +4876,7 @@ focus_tree = {
         relative_position_id = YFC_focus_seek_cooperation_with_bunch
         x = 0
         y = 5
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_closer_integration #Can't tell if I really hate this or like it
 
         ai_will_do = {
             base = 5 

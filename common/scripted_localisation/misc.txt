@@ -133,9 +133,15 @@ defined_text = {
     name = YFC_Sector_TopHat_Name
     text = {
         trigger = {
-            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+            check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
         }
         localization_key = l_decisions_sector_military_title
+    }
+    text = {
+        trigger = {
+            check_variable = { var_idea_YFC_sectors_TopHat_type = 3 }
+        }
+        localization_key = l_decisions_sector_military_title_b
     }
     text = {
         localization_key = l_decisions_sector_unknown_title
@@ -145,9 +151,15 @@ defined_text = {
     name = YFC_Sector_TopHat_Stats
     text = {
         trigger = {
-            NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+           check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
         }
         localization_key = l_decisions_sector_military_stats
+    }
+    text = {
+        trigger = {
+           check_variable = { var_idea_YFC_sectors_TopHat_type = 3 }
+        }
+        localization_key = l_decisions_sector_military_stats_b
     }
     text = {
         localization_key = l_decisions_sector_unknown_title

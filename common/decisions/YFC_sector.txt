@@ -30,6 +30,7 @@ decision_YFC_sector_category = { #Watermelon
 
             IF = {
                 limit = {has_completed_focus = YFC_focus_sectors_their_place}
+                set_variable = { var_idea_YFC_TopHat_influence = 1 }
                 set_variable = { var_idea_YFC_Hammer_influence = 1 }
                 set_variable = { var_idea_YFC_Taser_influence = 1 }
                 set_variable = { var_idea_YFC_Pipe_influence = 1 }
@@ -43,20 +44,43 @@ decision_YFC_sector_category = { #Watermelon
                     check_variable = { var_idea_YFC_sectors_TopHat_attack < Level_TopHat}
                     NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
                 }
-                add_to_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
-                add_to_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }}
+                    add_to_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+                    add_to_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                }
+                ELSE = {
+                    add_to_variable = { var_idea_YFC_sectors_Blocky_cavattack = 0.05 }
+                    add_to_variable = { var_idea_YFC_sectors_Block_speed = 0.05 }
+                }
             }
             ELSE_IF = {
                 limit = {
                     check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}
                     NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
                 }
-                subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
-                subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+
                 IF = {
-                    limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}}
+                    limit = {check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }}
                     subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
                     subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                }
+                ELSE = {
+                    subtract_from_variable = { var_idea_YFC_sectors_Blocky_cavattack = 0.05 }
+                    subtract_from_variable = { var_idea_YFC_sectors_Block_speed = 0.05 }
+                }
+
+                IF = {
+                    limit = {check_variable = { var_idea_YFC_sectors_TopHat_attack > Level_TopHat}}
+                    IF = {
+                        limit = {check_variable = { var_idea_YFC_sectors_TopHat_type = 2 }}
+                        subtract_from_variable = { var_idea_YFC_sectors_TopHat_attack = 0.05 }
+                        subtract_from_variable = { var_idea_YFC_sectors_TopHat_org = 0.05 }
+                    }
+                    ELSE = {
+                        subtract_from_variable = { var_idea_YFC_sectors_Blocky_cavattack = 0.05 }
+                        subtract_from_variable = { var_idea_YFC_sectors_Block_speed = 0.05 }
+                    }
                 }
             }
             IF = {
@@ -354,7 +378,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             always = no
         }
-        icon = GFX_mission_YFC_BUN_Growing_Riots  
+        icon = GFX_mission_YFC_BUN_Growing_Riots #Update later
         days_mission_timeout = 75
         timeout_effect = {
             custom_effect_tooltip = l_YFC_sectors_Debt

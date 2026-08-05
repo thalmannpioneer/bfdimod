@@ -219,6 +219,8 @@ idea_YFC_our_benefactors  = {
 
     army_org_factor = var_idea_YFC_sectors_TopHat_attack #TopHat
     army_attack_factor = var_idea_YFC_sectors_TopHat_org #TopHat
+    cavalry_attack_factor = var_idea_YFC_sectors_Blocky_cavattack #Blocky
+    army_speed_factor = var_idea_YFC_sectors_Block_speed #Blocky
     production_speed_rail_way_factor = var_idea_YFC_sectors_Pipe_railway #Pipe
     supply_consumption_factor = var_idea_YFC_sectors_Pipe_supply #Pipe
     research_speed_factor = var_idea_YFC_sectors_Beaker_research #Beaker
