@@ -3365,7 +3365,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_hoard_gold
         relative_position_id = YFC_focus_great_business_partnership
-        x = -4 #Doing this since the foucs tree makes a weird line so unless you can find the root don't change
+        x = -3 #Doing this since the foucs tree makes a weird line so unless you can find the root don't change
         y = 0
         icon = GFX_focus_generic
 
