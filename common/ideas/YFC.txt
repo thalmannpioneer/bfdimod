@@ -264,6 +264,13 @@ ideas = {
 			}
 		}
 
+		idea_YFC_real_raider_force = { 
+			picture = SIA_purged_senior_military
+			modifier = {
+				experience_gain_army_factor = 0.25
+			}
+		}
+
 		idea_YFC_active_pirates = {
 			picture = SOV_organize_wreckers #Replace later 
 			modifier = {

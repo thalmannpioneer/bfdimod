@@ -1413,6 +1413,45 @@
  YFC_focus_bandit_pack: "§YBandit Pack§!"
  YFC_focus_bandit_pack_desc: ""
 
+ YFC_focus_prepare_for_strikes: "§gPrepare For Strikes§!"
+ YFC_focus_prepare_for_strikes_desc: ""
+
+ YFC_focus_acquire_the_people: "Acquire The People" #Or objects idk
+ YFC_focus_acquire_the_people_desc: ""
+
+ YFC_focus_acquire_the_firepower: "Acquire The Firepower"
+ YFC_focus_acquire_the_firepower_desc: ""
+
+ YFC_focus_train_with_bunch: "Train With Bunch"
+ YFC_focus_train_with_bunch_desc: ""
+
+ YFC_focus_pillage_our_neighbors: "§RPillage Our Neighbors§!"
+ YFC_focus_pillage_our_neighbors_desc: ""
+
+ YFC_focus_setup_staging_grounds: "Setup Staging Grounds"
+ YFC_focus_setup_staging_grounds_desc: ""
+
+ YFC_focus_follow_easers_strategy: "Follow Easer's Strategy"
+ YFC_focus_follow_easers_strategy_desc: ""
+
+ YFC_focus_rapid_assaults: "Rapid Assaults"
+ YFC_focus_rapid_assaults_desc: ""
+
+ YFC_focus_old_traditions: "Old Traditions"
+ YFC_focus_old_traditions_desc: ""
+
+ YFC_focus_mercenaries_practice: "Mercenaries' Practice"
+ YFC_focus_mercenaries_practice_desc: ""
+
+ YFC_focus_modern_weaponry: "Modern Weaponry"
+ YFC_focus_modern_weaponry_desc: ""
+
+ YFC_focus_new_motorization: "New Motorization"
+ YFC_focus_new_motorization_desc: ""
+
+ YFC_focus_acknowledge_our_shortcomings: "Acknowledge Our Shortcomings"
+ YFC_focus_acknowledge_our_shortcomings_desc: ""
+
  #Musketeers
  Musketeers_three_musketeers: "Three Musketeers"
  Musketeers_three_musketeers_desc: "With everyone now united in the ideals of capitalism we can finally begin the process of making real big bucks! It will take some time before these improvements do wonders for us, but time is on our side. May the arrow keep growing!"

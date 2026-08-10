@@ -237,10 +237,13 @@ idea_YFC_show_no_mercy  = {
     icon = GFX_idea_YFC_show_no_mercy
 
 	army_attack_factor = var_idea_YFC_mercy_attack
-	army_defence_factor = -0.25
+    army_defence_factor = var_idea_YFC_mercy_defence
 	army_speed_factor = var_idea_YFC_mercy_speed
 	army_morale_factor = var_idea_YFC_mercy_morale
-	non_core_manpower = -0.05
+    org_loss_when_moving = var_idea_YFC_org_moving_loss
+    cavalry_attack_factor = var_idea_YFC_mercy_cav_attack
+    motorized_attack_factor = var_idea_YFC_mercy_mot_attack
+	non_core_manpower = -0.25
 	conscription = 0.05
 	resistance_target = 0.15
 	compliance_gain = -0.05

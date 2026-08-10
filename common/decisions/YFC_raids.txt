@@ -50,10 +50,7 @@ decision_YFC_raids_category = {
 		fire_only_once = no
 
 		visible = {
-			OR = {
-				has_completed_focus = YFC_focus_allow_raiding_into_traitors
-				has_completed_focus = YFC_focus_way_of_raiders
-			}
+			has_completed_focus = YFC_focus_acquire_the_people
 			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 
@@ -71,9 +68,7 @@ decision_YFC_raids_category = {
 				limit = {is_ai = yes}
 				add_manpower = 2000
 			}
-			hidden_effect = {
-				BUN = {add_manpower = 2500}
-			}
+			hidden_effect = {BUN = {add_manpower = 2500}}
 		}
 
 		ai_will_do = {
@@ -85,49 +80,6 @@ decision_YFC_raids_category = {
 			modifier = {
 				add = 100
 				has_manpower < 2000
-			}
-		}
-	}
-
-	YFC_raid_training = { 
-		icon = GFX_decisions_YFC_raid_trainings
-      
-		fire_only_once = no
-
-		custom_cost_trigger = {
-			check_variable = { money_amount > 4 }
-		}
-		custom_cost_text = decisions_cost_money_400k
-
-		visible = {
-			has_idea = idea_YFC_neglectful_command
-			OR = {
-				has_completed_focus = YFC_focus_allow_raiding_into_traitors
-				has_completed_focus = YFC_focus_way_of_raiders
-			}
-			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
-		}
-		
-		days_remove = 45
-		days_re_enable = 90
-
-		complete_effect = {
-			subtract_from_variable = { money_amount = 4 }
-			hidden_effect = {
-				BUN = {add_to_variable = { money_amount = 4 }}
-			}
-        }
-
-		remove_effect = {
-			army_experience = 50
-			BUN = {army_experience = 10}
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				check_variable = { money_amount > 20 }
 			}
 		}
 	}
@@ -145,10 +97,7 @@ decision_YFC_raids_category = {
 		days_re_enable = 360
 
 		visible = {
-			OR = {
-				has_completed_focus = YFC_focus_allow_raiding_into_traitors
-				has_completed_focus = YFC_focus_way_of_raiders
-			}
+			has_completed_focus = YFC_focus_acquire_the_firepower
 			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 
@@ -194,6 +143,46 @@ decision_YFC_raids_category = {
 		}
 	}
 
+	YFC_raid_training = { 
+		icon = GFX_decisions_YFC_raid_trainings
+      
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 4 }
+		}
+		custom_cost_text = decisions_cost_money_400k
+
+		visible = {
+			has_idea = idea_YFC_neglectful_command
+			has_completed_focus = YFC_focus_train_with_bunch
+			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
+		}
+		
+		days_remove = 45
+		days_re_enable = 90
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 4 }
+			hidden_effect = {
+				BUN = {add_to_variable = { money_amount = 4 }}
+			}
+        }
+
+		remove_effect = {
+			army_experience = 50
+			BUN = {army_experience = 10}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				check_variable = { money_amount > 20 }
+			}
+		}
+	}
+
 	YFC_raid_reform = { 
 		icon = GFX_decisions_YFC_raid_army_reform
       
@@ -201,20 +190,20 @@ decision_YFC_raids_category = {
 
 		visible = {
 			check_variable = {
-                var_idea_YFC_mercy_attack < 0.24
+                var_idea_YFC_mercy_speed < 0.19
             }
-			always = no #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_acknowledge_our_shortcomings
 		}
 
 		available = {
-			has_army_experience > 35
+			has_army_experience > 40
 		}
 
-		days_remove = 75
-		days_re_enable = 15
+		days_remove = 90
+		days_re_enable = 30
 
 		complete_effect = {
-			army_experience = -35
+			army_experience = -40
         }
 
 		remove_effect = {
@@ -222,7 +211,7 @@ decision_YFC_raids_category = {
 			IF = {
 				limit = {
 					check_variable = {
-						var_idea_YFC_mercy_attack > 0.19
+						var_idea_YFC_mercy_speed < 0.15
 					}
 				}
 				remove_ideas = idea_YFC_neglectful_command
@@ -246,13 +235,13 @@ decision_YFC_raids_category = {
 		icon = GFX_decisions_YFC_raid_commit_raid
 		state_target = yes
         targets = { state = 24 214 }
-        on_map_mode = map_only
+        on_map_mode = map_and_decisions_view
         
 		visible = {
 			controls_state = 201
 			NOT = {controls_state = FROM}
 			has_war = no
-			always = no #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_pillage_our_neighbors
 		}
 
 		available = {
@@ -319,13 +308,13 @@ decision_YFC_raids_category = {
 		icon = GFX_decisions_YFC_raid_commit_raid
 		state_target = yes
         targets = { state = 210 }
-        on_map_mode = map_only
+        on_map_mode = map_and_decisions_view
         
 		visible = {
 			controls_state = 214
 			NOT = {controls_state = FROM}
 			has_war = no
-			always = no #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_pillage_our_neighbors
 		}
 
 		available = {

@@ -3258,9 +3258,10 @@ focus_tree = {
                 tooltip = l_money_cost_1M
                 check_variable = { money_amount > 10 }
             }
-            hidden_trigger = {
-                NOT = {has_completed_focus = YFC_focus_numismatian_split}
-            }
+			custom_trigger_tooltip = {
+				tooltip = l_GOI_all_is_good_ct
+				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+			}
         }
 
         ai_will_do = {
@@ -3437,10 +3438,10 @@ focus_tree = {
 
         available = {
             has_political_power > 25
-
-            hidden_trigger = {
-                NOT = {has_completed_focus = YFC_focus_the_first_embargo}
-            }
+			custom_trigger_tooltip = {
+				tooltip = l_GOI_all_is_good_ct
+				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+			}
         }
 
         prerequisite = { focus = YFC_focus_great_business_partnership }
@@ -4913,7 +4914,7 @@ focus_tree = {
         id = YFC_focus_bandit_pack
         relative_position_id = YFC_focus_seek_cooperation_with_bunch
         x = 0
-        y = 5
+        y = 7
         icon = GFX_focus_YFC_closer_integration #Can't tell if I really hate this or like it
 
         ai_will_do = {
@@ -4923,7 +4924,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_strength_in_skill }
         prerequisite = { focus = YFC_focus_strength_in_power }
 
-        cost = 7
+        cost = 8
 
         completion_reward = {
             YFC = {
@@ -4931,7 +4932,7 @@ focus_tree = {
                 add_to_faction = BUN
             }
             hidden_effect = {
-                BUN = {add_manpower = 15000}
+                BUN = {add_manpower = 25000}
                 IF = {
                     limit = {
                         is_ai = yes
@@ -4940,6 +4941,339 @@ focus_tree = {
                     add_to_variable = {money_amount = 10}
                 }
             }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_prepare_for_strikes
+        relative_position_id = YFC_focus_way_of_raiders
+        x = -6
+        y = 3
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_way_of_raiders }
+
+        cost = 5 #Maybe change later
+
+        completion_reward = {
+            army_experience = 25
+            add_political_power = 15
+        }
+    }
+
+    focus = {
+        id = YFC_focus_acquire_the_people
+        relative_position_id = YFC_focus_prepare_for_strikes
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_prepare_for_strikes }
+
+        cost = 3 #Maybe change later
+
+        completion_reward = {
+            unlock_decision_tooltip = YFC_raid_force_conscript_locals
+        }
+    }
+
+    focus = {
+        id = YFC_focus_acquire_the_firepower
+        relative_position_id = YFC_focus_prepare_for_strikes
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_prepare_for_strikes }
+
+        cost = 3 #Maybe change later
+
+        completion_reward = {
+            unlock_decision_tooltip = YFC_raid_guns
+        }
+    }
+
+    focus = {
+        id = YFC_focus_train_with_bunch
+        relative_position_id = YFC_focus_prepare_for_strikes
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_acquire_the_firepower }
+        prerequisite = { focus = YFC_focus_acquire_the_people }
+
+        cost = 5
+
+        completion_reward = {
+            unlock_decision_tooltip = YFC_raid_training
+            add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy } #Move in event later
+            #add event here
+        }
+    }
+
+    focus = {
+        id = YFC_focus_pillage_our_neighbors
+        relative_position_id = YFC_focus_train_with_bunch
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_train_with_bunch }
+
+        cost = 5
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raids1
+            #add event here
+        }
+    }
+
+    focus = {
+        id = YFC_focus_setup_staging_grounds
+        relative_position_id = YFC_focus_pillage_our_neighbors
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_200K
+                check_variable = { money_amount > 2 }
+            }
+        }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+
+        cost = 5
+
+        completion_reward = {
+            201 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            196 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_to_variable = {var_idea_YFC_raid_modifer = 0.05}
+            subtract_from_variable = {money_amount = 2}
+        }
+    }
+
+    focus = {
+        id = YFC_focus_follow_easers_strategy
+        relative_position_id = YFC_focus_pillage_our_neighbors
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            has_army_experience > 15
+        }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+        mutually_exclusive = { focus = YFC_focus_mercenaries_practice }
+
+        cost = 6
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raid_improve_div_attack
+            add_to_variable = {var_idea_YFC_mercy_attack = 0.1}
+            army_experience = -15
+        }
+    }
+
+    focus = {
+        id = YFC_focus_rapid_assaults
+        relative_position_id = YFC_focus_follow_easers_strategy
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_follow_easers_strategy }
+
+        cost = 6
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raid_improve_div_reorg
+            add_to_variable = {var_idea_YFC_mercy_morale = 0.05}
+            add_to_variable = {var_idea_YFC_org_moving_loss = -0.1}
+        }
+    }
+
+    focus = {
+        id = YFC_focus_old_traditions
+        relative_position_id = YFC_focus_rapid_assaults
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_rapid_assaults focus = YFC_focus_modern_weaponry }
+        mutually_exclusive = { focus = YFC_focus_new_motorization }
+
+        cost = 6
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raid_improve_cav_attack
+            add_to_variable = {var_idea_YFC_mercy_cav_attack = 0.1}
+        }
+    }
+
+    focus = {
+        id = YFC_focus_mercenaries_practice
+        relative_position_id = YFC_focus_pillage_our_neighbors
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            has_army_experience > 15
+        }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+        mutually_exclusive = { focus = YFC_focus_follow_easers_strategy }
+
+        cost = 6
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raid_improve_div_defence
+            add_to_variable = {var_idea_YFC_mercy_defence = 0.2}
+            army_experience = -15
+        }
+    }
+
+    focus = {
+        id = YFC_focus_modern_weaponry
+        relative_position_id = YFC_focus_mercenaries_practice
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_mercenaries_practice }
+
+        cost = 6
+
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 2.5
+                uses = 3
+                category = infantry_weapons
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = support_tech
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = artillery
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_new_motorization
+        relative_position_id = YFC_focus_modern_weaponry
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_rapid_assaults focus = YFC_focus_modern_weaponry }
+        mutually_exclusive = { focus = YFC_focus_old_traditions }
+
+        cost = 6
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_raid_improve_mot_attack
+            add_to_variable = {var_idea_YFC_mercy_mot_attack = 0.05}
+            add_tech_bonus = {
+                bonus = 3
+                uses = 2
+                category = motorized_equipment
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_acknowledge_our_shortcomings
+        relative_position_id = YFC_focus_new_motorization #Maybe update later idk
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_old_traditions focus = YFC_focus_new_motorization }
+
+        cost = 8
+
+        completion_reward = {
+            add_ideas = idea_YFC_real_raider_force
+            unlock_decision_tooltip = YFC_raid_reform
+            army_experience = 50
         }
     }
 }

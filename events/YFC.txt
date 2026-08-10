@@ -3275,8 +3275,6 @@ country_event = { #YFC_focus_radical_meeting
 		name = YFC_event.76.a
 
         set_cosmetic_tag = YFC_raiders
-        add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy } #Move later
-
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			complete_national_focus = YFC_focus_way_of_raiders

@@ -82,6 +82,10 @@ set_variable = { var_sectors_combined_cost = 100 }
 
 #Show No Mercy Idea
 set_variable = { var_idea_YFC_mercy_attack = 0.05 }
+set_variable = { var_idea_YFC_mercy_cav_attack = 0 }
+set_variable = { var_idea_YFC_mercy_mot_attack = 0 }
+set_variable = { var_idea_YFC_mercy_defence = -0.25}
+set_variable = { var_idea_YFC_org_moving_loss = 0}
 set_variable = { var_idea_YFC_mercy_speed = 0.04 }
 set_variable = { var_idea_YFC_mercy_morale = 0.03 }
 set_variable = { var_idea_YFC_raid_modifer = -0.15 } #Not part of idea but used in raids
