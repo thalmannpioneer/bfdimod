@@ -202,6 +202,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_sector_frame"
 		textureFile = "gfx/interface/decisions/decisions_sector_frame.dds"
+		allwaystransparent = yes
 	}
 	
 	spriteType = {
@@ -481,7 +482,6 @@ spriteTypes = {
 		name = "GFX_decisions_sector_electronics"
 		texturefile = "gfx/interface/decisions/decisions_sector_electronics.dds"
 		noOfFrames = 12
-		loadType = "INGAME"
 		transparencecheck = no
 		animation_rate_fps = 24
 		looping = yes
@@ -537,6 +537,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_trade_child_labor"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_trade_child_labor.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_YFC_BUN"
+		textureFile = "gfx/interface/decisions/decision_cat_YFC_BUN.dds"
 	}
 
 	spriteType = {

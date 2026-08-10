@@ -950,7 +950,7 @@ focus_tree = {
         relative_position_id = YFC_focus_a_look_inward
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_new_interests
         prerequisite = { focus = YFC_focus_a_look_inward }
         available = {
             custom_trigger_tooltip = {
@@ -1000,7 +1000,7 @@ focus_tree = {
         relative_position_id = YFC_focus_new_interests
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_integrate_great_ridge
         prerequisite = { focus = YFC_focus_new_interests }
         available = {
             hidden_trigger = {
@@ -2393,7 +2393,7 @@ focus_tree = {
         relative_position_id = YFC_focus_fully_cored
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_unite_the_capitalists
 
         allow_branch = { has_completed_focus = YFC_focus_fully_cored }
 
@@ -2468,9 +2468,11 @@ focus_tree = {
         relative_position_id = YFC_focus_population_boom
         x = -3
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_see_to_the_eastern_front
 
-        allow_branch = { has_completed_focus = YFC_focus_see_to_the_eastern_front }
+        allow_branch = { 
+			has_completed_focus = YFC_focus_see_to_the_eastern_front
+		}
 
         prerequisite = { focus = YFC_focus_population_boom }
         prerequisite = {
@@ -2545,7 +2547,7 @@ focus_tree = {
         relative_position_id = YFC_focus_see_to_the_eastern_front
         x = -4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_play_fast
 
         prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
         mutually_exclusive  = { focus = YFC_focus_play_smart }
@@ -2584,7 +2586,7 @@ focus_tree = {
         relative_position_id = YFC_focus_play_fast
         x = 4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_anger_teardrop
 
         available = {
             has_completed_focus = YFC_focus_play_fast
@@ -2612,7 +2614,7 @@ focus_tree = {
         relative_position_id = YFC_focus_anger_teardrop
         x = 3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_claim_excessive_land
 
         prerequisite = { focus = YFC_focus_anger_teardrop }
 
@@ -2653,7 +2655,7 @@ focus_tree = {
         relative_position_id = YFC_focus_anger_teardrop
         x = -3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_move_in_army
 
         prerequisite = { focus = YFC_focus_anger_teardrop }
         cost = 5
@@ -2689,7 +2691,7 @@ focus_tree = {
         relative_position_id = YFC_focus_move_in_army
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_invest_into_infrastructure
 
         prerequisite = { focus = YFC_focus_move_in_army }
         prerequisite = { focus = YFC_focus_procure_funds }
@@ -2708,7 +2710,7 @@ focus_tree = {
         relative_position_id = YFC_focus_play_fast
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_procure_funds
 
         allow_branch = { has_completed_focus = YFC_focus_play_fast }
 
@@ -2731,7 +2733,7 @@ focus_tree = {
         relative_position_id = YFC_focus_move_in_army
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_buy_ships
 
         prerequisite = { focus = YFC_focus_move_in_army }
 
@@ -2765,7 +2767,7 @@ focus_tree = {
         relative_position_id = YFC_focus_claim_excessive_land
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_undermine_legitimacy
 
         prerequisite = { focus = YFC_focus_claim_excessive_land }
         cost = 5
@@ -2800,7 +2802,7 @@ focus_tree = {
         relative_position_id = YFC_focus_claim_excessive_land
         x = -2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_build_ports
 
         prerequisite = { focus = YFC_focus_claim_excessive_land }
 
@@ -2837,7 +2839,7 @@ focus_tree = {
         relative_position_id = YFC_focus_buy_ships
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_interfere_with_sea_routes
 
         prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
         prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
@@ -2874,7 +2876,7 @@ focus_tree = {
         relative_position_id = YFC_focus_see_to_the_eastern_front
         x = 4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_play_smart
 
         prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
         mutually_exclusive  = { focus = YFC_focus_play_fast }
@@ -2894,7 +2896,7 @@ focus_tree = {
         relative_position_id = YFC_focus_play_smart
         x = -4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_negotiate_with_teardrop
 
         prerequisite = { focus = YFC_focus_play_smart }
 
@@ -2923,7 +2925,7 @@ focus_tree = {
         relative_position_id = YFC_focus_negotiate_with_teardrop
         x = -3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_push_for_settlement
 
         prerequisite = { focus = YFC_focus_negotiate_with_teardrop }
 
@@ -2941,7 +2943,7 @@ focus_tree = {
         relative_position_id = YFC_focus_push_for_settlement
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_prospect_the_lands
 
         prerequisite = { focus = YFC_focus_push_for_settlement }
 
@@ -2959,7 +2961,7 @@ focus_tree = {
         relative_position_id = YFC_focus_negotiate_with_teardrop
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_move_in_army
 
         prerequisite = { focus = YFC_focus_negotiate_with_teardrop focus = YFC_focus_shuffle_around_funds }
 
@@ -2996,7 +2998,7 @@ focus_tree = {
         relative_position_id = YFC_focus_deploy_peacekeepers
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_bribe_village_leaders
 
         prerequisite = { focus = YFC_focus_deploy_peacekeepers }
 
@@ -3041,7 +3043,7 @@ focus_tree = {
         relative_position_id = YFC_focus_play_smart
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_shuffle_around_funds
 
         prerequisite = { focus = YFC_focus_play_smart }
 
@@ -3065,7 +3067,7 @@ focus_tree = {
         relative_position_id = YFC_focus_shuffle_around_funds
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_invest_into_infrastructure
 
         prerequisite = { focus = YFC_focus_shuffle_around_funds }
 
@@ -3083,7 +3085,7 @@ focus_tree = {
         relative_position_id = YFC_focus_invest_into_infrastructure_other
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_build_ports
 
         prerequisite = { focus = YFC_focus_invest_into_infrastructure_other }
 
@@ -3120,7 +3122,7 @@ focus_tree = {
         relative_position_id = YFC_focus_play_smart
         x = -4
         y = 4
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_accidental_mistakes
 
         available = {
             has_completed_focus = YFC_focus_negotiate_with_teardrop
@@ -3145,12 +3147,14 @@ focus_tree = {
         relative_position_id = YFC_focus_see_to_the_eastern_front
         x = 0
         y = 7
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_who_dares_wins
 
         prerequisite = { focus = YFC_focus_interfere_with_sea_routes }
         prerequisite = { focus = YFC_focus_accidental_mistakes }
 
-        allow_branch = { has_completed_focus = YFC_focus_who_dares_wins }
+        allow_branch = {
+			has_completed_focus = YFC_focus_who_dares_wins
+		}
 
         available = {
             always = no
