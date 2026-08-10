@@ -3106,7 +3106,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 		name = YFC_event.71.b
 
 		add_stability = 0.05
-		add_political_power = 50
+		add_political_power = 100
 
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 0}
 	}
@@ -3114,7 +3114,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 		name = YFC_event.71.c
 
 		add_stability = 0.15
-		add_political_power = 100
+		add_political_power = 150
 
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
 	}

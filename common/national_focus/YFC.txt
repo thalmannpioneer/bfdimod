@@ -3207,7 +3207,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             country_event = YFC_event.53
-            add_political_power = 10
+            add_political_power = 25
         }
     }
 
@@ -3412,7 +3412,7 @@ focus_tree = {
         }
         cost = 6
         completion_reward = {
-            add_political_power = -75
+            add_political_power = -35
             custom_effect_tooltip = l_YFC_border_defence
             201 = {
                 IF = {
@@ -3617,9 +3617,10 @@ focus_tree = {
             add_to_variable = { var_idea_YFC_Taser_influence = -2 }
             add_timed_idea = {
                 idea = idea_YFC_company_reorganization
-                days = 180
+                days = 200
             }
             custom_effect_tooltip = l_YFC_raid_yellow_takeover
+            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -3946,8 +3947,8 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.15
-            custom_effect_tooltip = l_money_gain_200K #Stealing TopHat money
-            add_to_variable = { money_amount = 2 }
+            custom_effect_tooltip = l_money_gain_400K #Stealing TopHat money
+            add_to_variable = { money_amount = 4 }
             country_event = {
                 id = YFC_event.71
                 hours = 1
@@ -3986,9 +3987,10 @@ focus_tree = {
             add_to_variable = { money_amount = 4 }
             add_timed_idea = {
                 idea = idea_YFC_company_reorganization
-                days = 180
+                days = 200
             }
             custom_effect_tooltip = l_YFC_raid_sector_takeover
+            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -4277,6 +4279,21 @@ focus_tree = {
         relative_position_id = YFC_focus_the_great_recession
         x = 0
         y = 2
+
+        offset = {
+            x = 1
+            trigger = {
+                has_completed_focus = YFC_focus_company_restructuring
+            }
+        }
+
+        offset = {
+            x = -1
+            trigger = {
+                has_completed_focus = YFC_focus_mass_firings
+            }
+        }
+
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_company_restructuring focus = YFC_focus_mass_firings }
@@ -4362,6 +4379,21 @@ focus_tree = {
         relative_position_id = YFC_focus_the_second_embargo
         x = 0
         y = 1
+
+        offset = {
+            x = 2
+            trigger = {
+                has_completed_focus = YFC_focus_company_restructuring
+            }
+        }
+
+        offset = {
+            x = -2
+            trigger = {
+                has_completed_focus = YFC_focus_mass_firings
+            }
+        }
+
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_the_second_embargo }
@@ -4458,7 +4490,7 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.15
-            add_political_power = 50
+            add_political_power = 25
         }
     }
 
@@ -4503,6 +4535,7 @@ focus_tree = {
         cost = 3 
 
         completion_reward = {
+            add_political_power = 50
             country_event = {
                 id = YFC_event.75
                 hours = 1
@@ -4741,6 +4774,8 @@ focus_tree = {
         cost = 5 #Maybe change later
 
         completion_reward = {
+            custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
             add_ideas = idea_YFC_snowpath
             add_stability = 0.05
             BUN = {
@@ -4766,6 +4801,8 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.05
+            custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
             build_railway = {
                 level = 2
                 start_state = 201
@@ -4797,8 +4834,8 @@ focus_tree = {
         cost = 5 #Maybe change later
 
         completion_reward = {
-            add_command_power = 15
-            army_experience = 5
+            custom_effect_tooltip = l_money_gain_400K
+            add_to_variable = { money_amount = 4 }
             custom_effect_tooltip = l_YFC_raid_BUN_upgrade
             hidden_effect = {
                 BUN = {add_to_variable = {var_BUN_raiding_attack_stats = 0.5}}
@@ -4894,6 +4931,13 @@ focus_tree = {
             }
             hidden_effect = {
                 BUN = {add_manpower = 15000}
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        check_variable = {money_amount < 5}
+                    }
+                    add_to_variable = {money_amount = 10}
+                }
             }
         }
     }
