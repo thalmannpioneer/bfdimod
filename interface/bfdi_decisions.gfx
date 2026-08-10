@@ -195,6 +195,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_decisions_sector_header"
+		textureFile = "gfx/interface/decisions/decisions_sector_header.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decisions_sector_frame"
+		textureFile = "gfx/interface/decisions/decisions_sector_frame.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_decisions_congress_icon"
 		textureFile = "gfx/interface/decisions/decisions_congress_icon.dds"
 		noOfFrames = 25
