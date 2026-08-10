@@ -1111,7 +1111,7 @@ country_event = {
 	}
 }
 
-country_event = { #Deprecated
+country_event = { 
 	id = YFC_event.29 #Tell the world about our trade!!!
 	title = YFC_event.29.t
     desc = YFC_event.29.desc
@@ -2671,6 +2671,11 @@ country_event = { #YFC_focus_lessons_from_mercs
 
 		army_experience = 5
 		add_war_support = 0.01
+	}
+	option = { 
+		name = YFC_event.62.b
+
+		add_political_power = 5
 	}
 }
 

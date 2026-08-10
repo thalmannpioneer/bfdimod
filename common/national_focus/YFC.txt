@@ -3828,6 +3828,7 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
+        prerequisite = { focus = YFC_focus_observe_top_hat }
 
         cost = 2
         completion_reward = {
@@ -4312,7 +4313,7 @@ focus_tree = {
         id = YFC_focus_close_the_markets
         relative_position_id = YFC_focus_the_great_recession
         x = 0
-        y = 4
+        y = 3
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_reassess_geopolitics }
