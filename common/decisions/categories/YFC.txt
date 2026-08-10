@@ -16,6 +16,7 @@ decision_YFC_sector_category = {
 	visible = { 
 		YFC = {
 			has_completed_focus = YFC_focus_establish_sectorialism
+			NOT = { has_country_flag = YFC_Sectors_done }
 		}
 	}
 	priority = 14

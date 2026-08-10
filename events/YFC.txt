@@ -2404,6 +2404,12 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 		hidden_effect = {
 			add_threat = 0.5
 			complete_national_focus = YFC_focus_the_great_recession
+			country_event = {
+                id = YFC_event.79
+                days = 5
+                random_hours = 60
+                random_days = 75
+            }
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -3106,6 +3112,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 		add_stability = -0.1
 		custom_effect_tooltip = l_YFC_TOPHAT
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
+		set_country_flag = YFC_Sectors_quit
 	}
 	option = { #Imprison him, the normal one with the normal stuff. Sectors will be fired down the road in normal time. Top Hat may come back as an enemy though I'm not sure how
 		name = YFC_event.71.b
@@ -3114,6 +3121,12 @@ country_event = { #YFC_focus_fate_of_top_hat
 		add_political_power = 100
 
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 0}
+		hidden_effect = {
+			random_list = {
+				50 = {set_country_flag = YFC_Sectors_quit}
+				50 = {set_country_flag = YFC_Sectors_fire}
+			}
+		}
 	}
 	option = { #Exile him, allows the Sectors to stay with Beaker coming back but Top Hat may join an enemy nation though I'm not sure how or who
 		name = YFC_event.71.c
@@ -3122,6 +3135,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 		add_political_power = 150
 
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
+		set_country_flag = YFC_Sectors_fire
 	}
 }
 
@@ -3236,7 +3250,7 @@ country_event = { #YFC_focus_sectors_their_place
 	id = YFC_event.75
 	title = YFC_event.75.t
 	desc = YFC_event.75.desc
-	picture = GFX_YFC_event10
+	picture = GFX_Temp_event
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3266,7 +3280,7 @@ country_event = { #YFC_focus_radical_meeting
 	id = YFC_event.76
 	title = YFC_event.76.t
 	desc = YFC_event.76.desc
-	picture = GFX_YFC_event10
+	picture = GFX_Temp_event
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3282,6 +3296,106 @@ country_event = { #YFC_focus_radical_meeting
 		}
 		mark_focus_tree_layout_dirty = yes
 	}
+}
+
+country_event = { #YFC_focus_train_with_bunch
+	id = YFC_event.77
+	title = YFC_event.77.t
+	desc = YFC_event.77.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.77.a
+		add_dynamic_modifier = { modifier = idea_YFC_show_no_mercy }
+	}
+}
+
+country_event = { #YFC_focus_pillage_our_neighbors
+	id = YFC_event.78
+	title = YFC_event.78.t
+	desc = YFC_event.78.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.78.a
+		add_war_support = 0.05
+		custom_effect_tooltip = l_YFC_raids1
+	}
+}
+
+country_event = { #One random TopHat one
+	id = YFC_event.79
+	title = YFC_event.79.t
+	desc = YFC_event.79.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+        set_variable = { var_add_to_sector = 3 }
+    }
+
+	option = { 
+		name = YFC_event.79.a
+		add_stability = -0.1
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+	}
+}
+
+country_event = { #Sectors Quit/Fire
+	id = YFC_event.80
+	title = YFC_event.80.t
+	picture = GFX_Temp_event
+
+	desc = {
+		text = YFC_event.80.desc.a #Sectors Quit
+		trigger = {
+			has_country_flag = YFC_Sectors_quit
+		}
+	}
+	desc = {
+		text = YFC_event.80.desc.b #Sectors Fire
+		trigger = {
+			has_country_flag = YFC_Sectors_fire
+		}
+	}
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #If Sectors fire themselves 
+		name = YFC_event.80.a
+		trigger = {
+			has_country_flag = YFC_Sectors_quit
+		}
+		set_country_flag = YFC_Sectors_done
+		remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+	}
+	option = { #If YFC fires Sectors 
+		name = YFC_event.80.b
+		trigger = {
+			has_country_flag = YFC_Sectors_fire
+		}
+		set_country_flag = YFC_Sectors_done
+		remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+		custom_effect_tooltip = l_money_gain_700K
+        add_to_variable = { money_amount = 7 }
+	}
+	option = { #If YFC Keeps Sectors
+		name = YFC_event.80.c
+		trigger = {
+			has_country_flag = YFC_Sectors_fire
+		}
+		add_stability = 0.05
+	}	
 }
 
 ###############################################################################

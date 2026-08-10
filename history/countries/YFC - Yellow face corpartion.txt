@@ -5,6 +5,13 @@ set_research_slots = 0
 
 set_technology = { basic_train = 1 }
 set_technology = { infantry_weapons = 1 }
+set_technology = { tech_support = 1 }
+set_technology = { basic_machine_tools = 1 }
+set_technology = { construction1 = 1 }
+set_technology = { electronic_mechanical_engineering = 1 }
+set_technology = { radio = 1 }
+set_technology = { gw_artillery = 1 }
+
 if = {
     limit = { NOT = { has_dlc = "Man the Guns" } }
     set_technology = {
@@ -18,8 +25,28 @@ set_war_support = 0
 set_convoys = 20
 add_equipment_to_stockpile = {
     type = train_equipment_1
-    amount = 10
+    amount = 15
     producer = GOI
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 600
+    producer = GOI
+}
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 600
+    producer = YFC
+}
+add_equipment_to_stockpile = {
+    type = artillery_equipment_1
+    amount = 200
+    producer = YFC
+}
+add_equipment_to_stockpile = {
+    type = support_equipment_1
+    amount = 300
+    producer = YFC
 }
 
 set_politics = {
@@ -92,7 +119,7 @@ set_variable = { var_idea_YFC_raid_modifer = -0.15 } #Not part of idea but used 
 
 set_variable = {var_YFC_BUN_Anger = 1 } #Useless but needed for killing Neo-Bunch
 
-set_variable = {var_YFC_merc_amount = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
+set_variable = { var_YFC_merc_amount = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
 set_variable = { var_YFC_merc_pick = 0 } #Used for YFC raiders side with merc divs
 
 #TRADE
@@ -258,18 +285,6 @@ recruit_character = YFC_quarter
 
 recruit_character = YFC_blocky
 recruit_character = YFC_eraser
-
-add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 1000
-    producer = GOI
-}
-
-add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 500
-    producer = YFC
-}
 
 add_ideas = free_trade
 add_ideas = low_economic_mobilisation

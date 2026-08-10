@@ -226,7 +226,7 @@ decision_YFC_raids_category = {
 			base = 0
 			modifier = {
 				add = 100
-				has_army_experience > 35
+				has_army_experience > 40
 			}
 		}
 	}
