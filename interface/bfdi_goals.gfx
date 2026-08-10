@@ -1713,8 +1713,123 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_banks_too_big_to_fail"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_banks_too_big_to_fail.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_unite_the_capitalists"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_unite_the_capitalists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_see_to_the_eastern_front"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_see_to_the_eastern_front.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_play_fast"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_play_fast.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_play_smart"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_play_smart.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_procure_funds"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_procure_funds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_anger_teardrop"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_anger_teardrop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_move_in_army"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_move_in_army.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_claim_excessive_land"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_claim_excessive_land.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_build_ports"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_build_ports.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_undermine_legitimacy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_undermine_legitimacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_invest_into_infrastructure"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_invest_into_infrastructure.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_buy_ships"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_buy_ships.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_interfere_with_sea_routes"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_interfere_with_sea_routes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_who_dares_wins"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_who_dares_wins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_negotiate_with_teardrop"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_negotiate_with_teardrop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_shuffle_around_funds"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_shuffle_around_funds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_push_for_settlement"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_push_for_settlement.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_prospect_the_lands"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_prospect_the_lands.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_bribe_village_leaders"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_bribe_village_leaders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_accidental_mistakes"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_accidental_mistakes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_new_interests"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_new_interests.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_integrate_great_ridge"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_integrate_great_ridge.dds"
+	}
 
 	#Musketeers#
+	
+	spriteType = {
+		name = "GFX_focus_Musketeers_three_musketeers"
+		texturefile = "gfx/interface/goals/GFX_focus_Musketeers_three_musketeers.dds"
+	}
 
 	spriteType = {
 		name = "GFX_focus_Musketeers_form_own"

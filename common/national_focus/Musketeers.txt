@@ -20,7 +20,7 @@ shared_focus = {
 		}
 	}
 
-	icon = GFX_focus_generic
+	icon = GFX_focus_Musketeers_three_musketeers
 
 	allow_branch = { 
 		has_country_flag = Allow_Musketeers

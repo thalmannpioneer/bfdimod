@@ -8,6 +8,23 @@ guiTypes = {
 			name = "bg"
 			spriteType = "GFX_tiled_window_transparent"
 		}
+		
+		containerWindowType = {
+			name = "states"
+			position = { x = 200 y = 0 }
+			
+			buttonType = {
+				name = "1"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_YFC_eastern_state_1_neutral"
+			}
+			
+			buttonType = {
+				name = "2"
+				position = { x = -85 y = 47 }
+				spriteType = "GFX_YFC_eastern_state_2_neutral"
+			}
+		}
 
 		containerWindowType = {
 			name = "state_info_container"
