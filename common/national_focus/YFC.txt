@@ -3578,9 +3578,16 @@ focus_tree = {
 
     focus = { #as mentioned, it's unlocked when all capitalistic countries have chosen to either embargo or not embargo the yfc
         id = YFC_focus_the_great_recession
-        x = 26
+        x = 28
         y = 0
         icon = GFX_focus_generic
+
+        offset = {
+            x = -2
+            trigger = {
+                has_completed_focus = YFC_focus_company_restructuring
+            }
+        }
 
         available = {
             hidden_trigger = {
@@ -3632,10 +3639,18 @@ focus_tree = {
     focus = {
         id = YFC_focus_entice_the_sectors
         relative_position_id = YFC_focus_mass_firings
-        x = 0
+        x = -2
         y = 1
         icon = GFX_focus_generic
 
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_mass_firings
+            }
+        }
+        
+        allow_branch = { has_completed_focus = YFC_focus_mass_firings }
+        
         prerequisite = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
@@ -3753,11 +3768,12 @@ focus_tree = {
     focus = {
         id = YFC_focus_observe_top_hat
         relative_position_id = YFC_focus_ensure_loyalty
-        x = 0
+        x = 1
         y = 1
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_ensure_loyalty }
+        prerequisite = { focus = YFC_focus_fire_their_underlings }
 
         ai_will_do = {
             base = 5 
@@ -3793,8 +3809,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_strike_the_headache
         relative_position_id = YFC_focus_fire_their_underlings
-        x = 0
-        y = 3
+        x = 1
+        y = 2
         icon = GFX_focus_generic
 
 
@@ -3812,6 +3828,7 @@ focus_tree = {
                 has_completed_focus = YFC_focus_strike_the_headache
             }
         }
+        
         allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
 
         cost = 5
@@ -3888,6 +3905,8 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
+        prerequisite = { focus = YFC_focus_trade_alternatives }
+        prerequisite = { focus = YFC_focus_debt_restructuring }
 
         cost = 2
         completion_reward = {
@@ -3945,6 +3964,7 @@ focus_tree = {
                 has_completed_focus = YFC_focus_battle_for_footpathburg
             }
         }
+        
         allow_branch = { has_completed_focus = YFC_focus_battle_for_footpathburg }
 
         prerequisite = { focus = YFC_focus_battle_for_footpathburg }
@@ -4007,6 +4027,14 @@ focus_tree = {
         y = 1
         icon = GFX_focus_generic
 
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_company_restructuring
+            }
+        }
+        
+        allow_branch = { has_completed_focus = YFC_focus_company_restructuring }
+
         prerequisite = { focus = YFC_focus_company_restructuring }
 
         cost = 4
@@ -4023,6 +4051,29 @@ focus_tree = {
         x = 0
         y = 1
         icon = GFX_focus_generic
+
+        offset = {
+            x = -6
+            trigger = {
+                has_completed_focus = YFC_focus_mass_firings
+            }
+        }
+
+        available = {
+            hidden_trigger = {
+                OR = {
+                    has_completed_focus = YFC_focus_company_restructuring
+                    has_completed_focus = YFC_focus_mass_firings
+                }
+            }
+        }
+        
+        allow_branch = { 
+                OR = {
+                    has_completed_focus = YFC_focus_company_restructuring
+                    has_completed_focus = YFC_focus_mass_firings
+                } 
+            }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
@@ -4125,8 +4176,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_the_sectorial_powderkeg
         relative_position_id = YFC_focus_company_restructuring
-        x = 0
-        y = 5
+        x = 0.5
+        y = 4
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_trade_alternatives }
@@ -4137,6 +4188,7 @@ focus_tree = {
                 has_completed_focus = YFC_focus_the_sectorial_powderkeg
             }
         }
+        
         allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
 
         #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
@@ -4159,6 +4211,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
         prerequisite = { focus = YFC_focus_the_second_embargo }
+        prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
         cost = 2
         completion_reward = {
@@ -4321,6 +4374,7 @@ focus_tree = {
         y = 3
         icon = GFX_focus_generic
 
+        prerequisite = { focus = YFC_focus_the_great_recession }
         prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
         ai_will_do = {
@@ -4361,7 +4415,7 @@ focus_tree = {
         id = YFC_focus_the_second_embargo
         relative_position_id = YFC_focus_close_the_markets
         x = 0
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_close_the_markets }
@@ -4382,7 +4436,7 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_trade_alternatives
-        relative_position_id = YFC_focus_the_second_embargo
+        relative_position_id = YFC_focus_close_the_markets
         x = 0
         y = 1
 
@@ -4402,7 +4456,12 @@ focus_tree = {
 
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_the_second_embargo }
+        prerequisite = { 
+            focus = YFC_focus_crack_down_on_influence
+            focus = YFC_focus_reassess_geopolitics
+        }
+        prerequisite = { focus = YFC_focus_close_the_markets }
+        prerequisite = { focus = YFC_focus_debt_restructuring }
 
         available = {
             hidden_trigger = {
@@ -4453,7 +4512,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_last_of_the_layoffs
         relative_position_id = YFC_focus_fate_of_top_hat
-        x = 0
+        x = 3
         y = 1
         icon = GFX_focus_generic
 
@@ -4467,9 +4526,11 @@ focus_tree = {
                 has_completed_focus = YFC_focus_last_of_the_layoffs
             }
         }
+        
         allow_branch = { has_completed_focus = YFC_focus_last_of_the_layoffs }
 
         prerequisite = { focus = YFC_focus_fate_of_top_hat }
+        prerequisite = { focus = YFC_focus_the_second_embargo }
 
         cost = 5
 
@@ -4595,13 +4656,13 @@ focus_tree = {
             }
         }
 
-        #available = {
-        #    hidden_trigger = {
-        #        has_completed_focus = YFC_focus_way_of_raiders
-        #    }
-        #}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_way_of_raiders
+            }
+        }
 
-        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+        allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
 
         cost = 5 
 
