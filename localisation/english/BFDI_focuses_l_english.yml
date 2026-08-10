@@ -1061,7 +1061,7 @@
  YFC_focus_a_look_inward_desc: "The bandit nation has crumbled, sure, but their ideology persists. Now, with us partially occupying their land, some of their 'citizens' have decided to defect to our nation. Despite their origins, they have been mainly peaceful, however, this newfound influx of people has lead to us realizing one of our greatest weaknessess. We have no real cities. This has lead to many sectorials to divert their attention from current projects, opting to take a look at our cities instead."
 
  YFC_focus_new_interests: "New Interests"
- YFC_focus_new_interests_desc: "With the sudden collapse of the Fascist Snowy Government to our south, we have been brought new opportunities. Besides the possible money to be made selling weapons to sides in a possible civil war, a breakaway state on our border has brought intrigue. Where The Great Ridge stands, a government was formed of ex-slaves, anti-Fascists, and normal civilians trying to escape the chaos.Their government is weak both militarily and economically, but with their resource rich lands, we could make a fortune! Invasion of their lands is on the table, sure, but civilty is preferred. We shall start with a simple offer of protection and funding for their resources. Such a good offer that they would be fools to reject!" 
+ YFC_focus_new_interests_desc: "With the sudden collapse of the Fascist Snowy Government to our south, we have been brought new opportunities. Besides the possible money to be made selling weapons to sides in a possible civil war, a breakaway state on our border has brought intrigue. Where The Great Ridge stands, a government was formed of ex-slaves, anti-Fascists, and normal civilians trying to escape the chaos. Their government is weak both militarily and economically, but with their resource rich lands, we could make a fortune! Invasion of their lands is on the table, sure, but civilty is preferred. We shall start with a simple offer of protection and funding for their resources. Such a good offer that they would be fools to reject!" 
 
  YFC_focus_integrate_great_ridge: "Integrate The Great Ridge"
  YFC_focus_integrate_great_ridge_desc: "The ridge is all but beholden to our commands, wills, and wants. There is no industry or toil left for their government proper to take, it is now all controlled by the Company. They, truly, are only independent on paper; let us burn said paper. Let us remove their de jure independence. Let us integrate The Great Ridge."
@@ -1227,7 +1227,7 @@
  YFC_focus_deploy_peacekeepers: "Deploy \"Peacekeepers\""
  YFC_focus_deploy_peacekeepers_desc: "ZDubbz cmon gotta work man"
 
- YFC_focus_bribe_village_leaders: "Bribe Billage Leaders"
+ YFC_focus_bribe_village_leaders: "Bribe Village Leaders"
  YFC_focus_bribe_village_leaders_desc: "ZDubbz cmon gotta work man"
 
  YFC_focus_shuffle_around_funds: "Shuffle Funds Around"
@@ -1288,34 +1288,34 @@
  YFC_focus_entice_the_sectors_desc: "ZDubbz"
 
  YFC_focus_debt_restructuring: "Debt Restructuring"
- YFC_focus_debt_restructuring_desc: "ZDubbz"
+ YFC_focus_debt_restructuring_desc: "We are low on lquid cash and assets. It's cause of these damn crediters and investers who would like their money. What have they done anyways? We should simply cancel our debt, what could go wrong?" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_fire_their_underlings: "Fire Their Underlings"
- YFC_focus_fire_their_underlings_desc: "ZDubbz"
+ YFC_focus_fire_their_underlings_desc: "The Sectors are far to powerful and unstable to work with at the moment. The thought that they could take over is not a good sign. As such we need to weaken their grip on power. Let's fire some of their employees!" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_ensure_loyalty: "Ensure Loyalty"
- YFC_focus_ensure_loyalty_desc: "ZDubbz"
+ YFC_focus_ensure_loyalty_desc: "The mercenaries are chaotic and will follow the highest bidder. We must ensure that they follow us rather then... the others." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_observe_top_hat: "Observe Top Hat"
- YFC_focus_observe_top_hat_desc: "ZDubbz"
+ YFC_focus_observe_top_hat_desc: "Top Hat, the most powerful Sector, has been acting werid for a last few weeks. He has been going to less meetings and more harder to conntact. We need to pay some employees to go follow his movments and stop whatever he is doing" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_strike_the_headache: "§RStrike The Headache§!"
- YFC_focus_strike_the_headache_desc: "ZDubbz"
+ YFC_focus_strike_the_headache_desc: "So their intentions were true, time to remove these useless staff!" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_diligence: "§GDiligence§!"
- YFC_focus_diligence_desc: "ZDubbz"
+ YFC_focus_diligence_desc: "Things are quickly breaking down with us and the Sectors, we can only hope our preparations were good enough..." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_goodwill: "§GGoodwill§!"
- YFC_focus_goodwill_desc: "ZDubbz"
+ YFC_focus_goodwill_desc: "It seems that the Sectors are not the must united on their goal of taking over the company. We must exploit this weakness lest we fall to them" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_shame: "§GShame§!"
- YFC_focus_shame_desc: "ZDubbz"
+ YFC_focus_shame_desc: "TopHat, despite being on his own, is not backing down. We had already lost conntact with him a while ago. It seems there is a storm on it's way..." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_battle_for_footpathburg: "§RBattle for Footpathburg§!"
- YFC_focus_battle_for_footpathburg_desc: "ZDubbz"
+ YFC_focus_battle_for_footpathburg_desc: "Who will win? Us or the Traitors?" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_fate_of_top_hat: "§LFate of Top Hat§!"
- YFC_focus_fate_of_top_hat_desc: "ZDubbz"
+ YFC_focus_fate_of_top_hat_desc: "Such a shame at has to become of this, but a message is a message" #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_company_restructuring: "Company Restructuring"
  YFC_focus_company_restructuring_desc: "ZDubbz"
@@ -1362,20 +1362,20 @@
  YFC_focus_trade_alternatives: "Trade Alternatives?"
  YFC_focus_trade_alternatives_desc: "ZDubbz"
 
- YFC_focus_last_of_the_layoffs: "Last of the Layoffs"
- YFC_focus_last_of_the_layoffs_desc: ""
+ YFC_focus_last_of_the_layoffs: "Last of the Layoffs" 
+ YFC_focus_last_of_the_layoffs_desc: "It is time to guarantee that the Sectors can never get a chance to take over." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_establish_the_correct_leadership: "Establish the Correct Leadership"
- YFC_focus_establish_the_correct_leadership_desc: ""
+ YFC_focus_establish_the_correct_leadership_desc: "We should promote the staff that has stay loyal with us all this time." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_create_checkpoints: "Create Checkpoints"
- YFC_focus_create_checkpoints_desc: ""
+ YFC_focus_create_checkpoints_desc: "We need to make sure of no more whispers of a takeover. We will build checkpoints around the cities and offices to keep an eye on our staff." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_sectors_their_place: "Put the Sectors in their Place"
- YFC_focus_sectors_their_place_desc: ""
+ YFC_focus_sectors_their_place_desc: "End this issue once and for all..." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_radical_meeting: "§9Radical Meeting§!"
- YFC_focus_radical_meeting_desc: ""
+ YFC_focus_radical_meeting_desc: "We have so focused in removing the Sector issues that we have really low on a cash and a clear path forward. Our only remaining ally is the Bandits lead by Easer. With no other option, let's go talk to him about ideas." #ZDubbz Half rambling make due with it. Reword all of it if needed
 
  YFC_focus_way_of_raiders: "§RWay of Raiders§!"
  YFC_focus_way_of_raiders_desc: ""
