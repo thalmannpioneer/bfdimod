@@ -1823,6 +1823,103 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_integrate_great_ridge"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_integrate_great_ridge.dds"
 	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_focus_YFC_the_great_recession"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_great_recession.dds"
+		noOfFrames = 8
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_mass_firings"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_mass_firings.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_company_restructuring"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_company_restructuring.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_reassess_geopolitics"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_reassess_geopolitics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_close_the_markets"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_close_the_markets.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_crack_down_on_influence"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_crack_down_on_influence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_lower_wage_gaps"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_lower_wage_gaps.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_offset_debt"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_offset_debt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_lessons_from_mercs"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_lessons_from_mercs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_tophats_outlook"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_tophats_outlook.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_trade_alternatives"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_trade_alternatives.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_second_embargo"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_second_embargo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_sectorial_powderkeg"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_sectorial_powderkeg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_sloth"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_sloth.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_envy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_envy.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_pride"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_pride.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_march_on_footpathburg"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_march_on_footpathburg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_tophat_clan"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_tophat_clan.dds"
+	}
 
 	#Musketeers#
 	
