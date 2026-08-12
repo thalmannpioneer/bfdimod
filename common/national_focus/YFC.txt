@@ -3487,7 +3487,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #Gasp
+            #gives an event (I KNOW.) saying snowball wont trade with us anymore because they dont want to work with anarchist bandits or whatever
         }
     }
 
@@ -3597,10 +3597,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-			always = yes
-			#has_completed_focus = YFC_focus_the_great_recession
-		}
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -3787,7 +3784,7 @@ focus_tree = {
         cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_lose_200K
-		    subtract_from_variable = { money_amount = 2 }
+            subtract_from_variable = { money_amount = 2 }
             country_event = {
                 id = YFC_event.63
                 hours = 1
