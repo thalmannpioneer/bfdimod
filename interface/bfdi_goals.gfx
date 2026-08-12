@@ -1920,6 +1920,66 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_tophat_clan"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_tophat_clan.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_mobilize_excess_reserves"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_mobilize_excess_reserves.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_focus_on_supply"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_focus_on_supply.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_focus_on_combat"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_focus_on_combat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_diverting_funds"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_diverting_funds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_establish_formal_connection"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_formal_connection.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_hoard_gold"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_hoard_gold.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_sectorial_meddling"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_sectorial_meddling.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_great_business_partnership"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_great_business_partnership.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_from_the_deal"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_from_the_deal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_publicize_partnership"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_publicize_partnership.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_permanent_mercenary_purchase"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_permanent_mercenary_purchase.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_first_embargo"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_first_embargo.dds"
+	}
 
 	#Musketeers#
 	

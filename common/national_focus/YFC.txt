@@ -390,7 +390,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_grapes_and_the_cherries
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_mobilize_excess_reserves
 
         available = {
             hidden_trigger = {
@@ -425,7 +425,7 @@ focus_tree = {
         relative_position_id = YFC_focus_purchase_support_package
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_focus_on_supply
 
         available = {
             hidden_trigger = {
@@ -473,7 +473,7 @@ focus_tree = {
         relative_position_id = YFC_focus_purchase_ordnance_package
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_focus_on_combat
 
         available = {
             hidden_trigger = {
@@ -3194,7 +3194,7 @@ focus_tree = {
         relative_position_id = YFC_focus_YFC_funded_pillaging
         x = 3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_establish_formal_connection
         prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
         prerequisite = { focus = YFC_focus_open_foreign_policy }
 
@@ -3222,7 +3222,7 @@ focus_tree = {
         relative_position_id = YFC_focus_YFC_funded_pillaging
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_diverting_funds
         prerequisite = { focus = YFC_focus_YFC_funded_pillaging }
 
         available = {
@@ -3257,7 +3257,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = -2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_sectorial_meddling
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
             custom_trigger_tooltip = {
@@ -3305,9 +3305,9 @@ focus_tree = {
     focus = {
         id = YFC_focus_permanent_mercenary_purchase
         relative_position_id = YFC_focus_great_business_partnership
-        x = 3 #Hoi4 hates .5 or something idk
+        x = 3 #Hoi4 hates .5 or something idk #it doesnt work like that
         y = 0
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_permanent_mercenary_purchase
         prerequisite = { focus = YFC_focus_establish_formal_connection }
 
         available = {
@@ -3333,7 +3333,7 @@ focus_tree = {
         relative_position_id = YFC_focus_diverting_funds
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_great_business_partnership
         prerequisite = { focus = YFC_focus_establish_formal_connection }
         prerequisite = { focus = YFC_focus_diverting_funds }
 
@@ -3374,7 +3374,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = -3 #Doing this since the foucs tree makes a weird line so unless you can find the root don't change
         y = 0
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_hoard_gold
 
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
@@ -3402,7 +3402,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_publicize_partnership
 
         prerequisite = { focus = YFC_focus_establish_formal_connection }
         available = {
@@ -3440,7 +3440,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_business_partnership
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_from_the_deal
 
         available = {
             has_political_power > 25
@@ -3475,7 +3475,7 @@ focus_tree = {
         relative_position_id = YFC_focus_diverting_funds
         x = -3
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_first_embargo
 
         available = {
             hidden_trigger = {
@@ -3597,7 +3597,9 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = {
+			has_completed_focus = YFC_focus_the_great_recession
+		}
 
         cost = 5
         completion_reward = {
