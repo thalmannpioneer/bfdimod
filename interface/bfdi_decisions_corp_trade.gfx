@@ -225,4 +225,9 @@ spriteTypes = {
 		name = "GFX_corp_help"
 		textureFile = "gfx/interface/decisions/YFC_trade/help.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_YFC_trade_select_overlay"
+		textureFile = "gfx/interface/decisions/YFC_trade/picking_equipment_overlay.dds"
+	}
 }

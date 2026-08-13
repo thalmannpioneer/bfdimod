@@ -1,88 +1,88 @@
 decision_YFC_trade_category = {
-	allowed = { tag = YFC }
-	visible = { 
-		YFC = {
-			has_completed_focus = YFC_focus_open_the_market
-		}
-	}
-	priority = 16 
-	icon = GFX_decision_category_YFC_trade
-	visible_when_empty = yes
-	scripted_gui = bfdi_corp_trade_scriptedgui_REWORK
+    allowed = { tag = YFC }
+    visible = {
+        YFC = {
+            has_completed_focus = YFC_focus_open_the_market
+        }
+    }
+    priority = 16
+    icon = GFX_decision_category_YFC_trade
+    visible_when_empty = yes
+    scripted_gui = bfdi_corp_trade_scriptedgui_REWORK
 }
 
-decision_YFC_sector_category = { 
-	allowed = { tag = YFC }
-	available = {
-		hidden_trigger = {NOT = { has_country_flag = YFC_Sectors_done }}
-	}
-	visible = { 
-		YFC = {
-			has_completed_focus = YFC_focus_establish_sectorialism
-			NOT = { has_country_flag = YFC_Sectors_done }
-		}
-	}
-	priority = 14
-	icon = GFX_decision_category_sectors
-	visible_when_empty = yes
-	scripted_gui = bfdi_decisions_crop_sector_scriptedgui
+decision_YFC_sector_category = {
+    allowed = { tag = YFC }
+    available = {
+        hidden_trigger = {NOT = { has_country_flag = YFC_Sectors_done }}
+    }
+    visible = {
+        YFC = {
+            has_completed_focus = YFC_focus_establish_sectorialism
+            NOT = { has_country_flag = YFC_Sectors_done }
+        }
+    }
+    priority = 14
+    icon = GFX_decision_category_sectors
+    visible_when_empty = yes
+    scripted_gui = bfdi_decisions_crop_sector_scriptedgui
 }
 
 
 decision_YFC_raids_category = {
-	allowed = { tag = YFC }	
-	visible = { 
-		always = yes
-		YFC = {
-			OR = {
-				has_completed_focus = YFC_focus_allow_raiding_into_traitors
-				has_completed_focus = YFC_focus_way_of_raiders
-			}
-			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
-		}
-	}
-	priority = 10
-	icon = GFX_decision_category_YFC_raids
-	visible_when_empty = no
+    allowed = { tag = YFC }
+    visible = {
+        always = yes
+        YFC = {
+            OR = {
+                has_completed_focus = YFC_focus_allow_raiding_into_traitors
+                has_completed_focus = YFC_focus_way_of_raiders
+            }
+            NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
+        }
+    }
+    priority = 10
+    icon = GFX_decision_category_YFC_raids
+    visible_when_empty = no
 }
 
 decision_YFC_BUN_category = {
-	allowed = { tag = YFC }	
-	visible = { 
-		YFC = {
-			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
-			NOT = {has_completed_focus = YFC_focus_fully_cored}
-		}
-	}
-	priority = 10
-	picture = GFX_decision_cat_YFC_BUN
-	icon = GFX_decision_category_break_bunch
-	visible_when_empty = yes
+    allowed = { tag = YFC }
+    visible = {
+        YFC = {
+            has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+            NOT = {has_completed_focus = YFC_focus_fully_cored}
+        }
+    }
+    priority = 10
+    picture = GFX_decision_cat_YFC_BUN
+    icon = GFX_decision_category_break_bunch
+    visible_when_empty = yes
 }
 
 decision_YFC_foster_category = {
-	allowed = { tag = YFC }	
-	visible = { 
-		YFC = {
-			has_completed_focus = YFC_focus_foster_new_society
-			NOT = {has_completed_focus = YFC_focus_bunch_fostered}
-		}
-	}
-	priority = 10
-	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
-	icon = GFX_decision_category_build_bunch
-	visible_when_empty = yes
+    allowed = { tag = YFC }
+    visible = {
+        YFC = {
+            has_completed_focus = YFC_focus_foster_new_society
+            NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+        }
+    }
+    priority = 10
+    picture = GFX_decision_cat_GFG_reconstruction #Change later plz
+    icon = GFX_decision_category_build_bunch
+    visible_when_empty = yes
 }
 
 decision_YFC_eastern_category = {
-	allowed = { tag = YFC }	
-	visible = { 
-		YFC = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
-		}
-	}
-	priority = 10
-	icon = GFX_decision_category_YFC_eastern
-	visible_when_empty = yes
-	scripted_gui = bfdi_decisions_corp_eastern_scriptedgui
+    allowed = { tag = YFC }
+    visible = {
+        YFC = {
+            has_completed_focus = YFC_focus_see_to_the_eastern_front
+        }
+    }
+    priority = 10
+    icon = GFX_decision_category_YFC_eastern
+    visible_when_empty = yes
+    scripted_gui = bfdi_decisions_corp_eastern_scriptedgui
 }
