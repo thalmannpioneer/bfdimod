@@ -5,8 +5,8 @@ decision_YFC_trade_category = {
 			has_completed_focus = YFC_focus_open_the_market
 		}
 	}
-	priority = 16 #Change
-	icon = decision_category_operation_coinflip #Update
+	priority = 16 
+	icon = GFX_decision_category_YFC_trade
 	visible_when_empty = yes
 	scripted_gui = bfdi_corp_trade_scriptedgui_REWORK
 }
@@ -42,7 +42,7 @@ decision_YFC_raids_category = {
 		}
 	}
 	priority = 10
-	icon = decision_category_operation_coinflip
+	icon = GFX_decision_category_YFC_raids
 	visible_when_empty = no
 }
 
@@ -79,11 +79,10 @@ decision_YFC_eastern_category = {
 	visible = { 
 		YFC = {
 			has_completed_focus = YFC_focus_see_to_the_eastern_front
-			NOT = {has_completed_focus = YFC_focus_bunch_fostered} #Uhhh change later 
 		}
 	}
 	priority = 10
-	icon = GFX_decision_category_sectors #Update later
+	icon = GFX_decision_category_YFC_eastern
 	visible_when_empty = yes
 	scripted_gui = bfdi_decisions_corp_eastern_scriptedgui
 }

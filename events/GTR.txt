@@ -1458,6 +1458,12 @@ country_event = {
                 province = 3398
                 use_nuke = yes
             }
+            94 = {
+                add_dynamic_modifier = {
+                    modifier = fallout_atomic
+                    days = 360
+                }
+            }
             goto_province = 3398
             news_event = {
                 id = bfdinews.32

@@ -478,39 +478,3 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
-	id = GGR_event.14 #YFC gets some guns 
-	title = GGR_event.14.t
-	desc = GGR_event.14.desc
-	picture = GFX_Temp_event
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = GGR_event.14.a
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 2000
-			producer = GGR
-		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.05
-		}
-	}
-
-	option = {
-		name = GGR_event.14.b
-		add_war_support = 0.02
-		add_political_power = 25
-		hidden_effect = {
-			GGR = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 1500
-				}
-			}
-		}
-	}
-}

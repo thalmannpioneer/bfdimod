@@ -5,5 +5,5 @@ decisions_BFDI_debug = {
 	}
 	priority = 999999
 	visible_when_empty = no
-	icon = GFX_decision_category_generic
+	icon = GFX_decision_category_BFDI_debug
 }

@@ -1069,11 +1069,76 @@ news_event = {
             NOT = {
                 tag = YFC
                 tag = CRN
+                tag = BUN
             }
+        }
+    }
+
+    option = {
+        name = bfdinews.41.d
+        trigger = {
+            tag = BUN
         }
     }
 }
 
+news_event = {
+    id = bfdinews.42
+    title = bfdinews.42.t
+    desc = bfdinews.42.desc
+    picture = GFX_bfdinews38 #Update later
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = bfdinews.42.a
+        trigger = {
+            OR = {
+                tag = YFC
+                tag = BUN
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.42.b
+        trigger = {
+            OR = {
+                tag = FFT
+                tag = GGR
+                tag = SMG
+                tag = SRI
+                tag = SPL
+                tag = CRN
+                tag = SRR
+                tag = TBT
+                tag = GTR
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.42.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = YFC
+                    tag = BUN
+                    tag = FFT
+                    tag = GGR
+                    tag = SMG
+                    tag = SRI
+                    tag = SPL
+                    tag = CRN
+                    tag = SRR
+                    tag = TBT
+                    tag = GTR
+                }
+            }
+        }
+    }
+}
 
 ##################
 #City Fall events#

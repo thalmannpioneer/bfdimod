@@ -1987,7 +1987,13 @@
  bfdinews.41.a: "Really now!?"
  bfdinews.41.b: "Just to think we could have worked together..." 
  bfdinews.41.c: "Maybe we should cut trade..."
+ bfdinews.41.d: "This could work..."
 
+ bfdinews.42.t: "Bandits Unite!" #ZDubbz if you want to
+ bfdinews.42.desc: "One of our remaining correspondents has reported the creation of a military and economic alliance in the South. Created by The Yellow Face Corporation, now self renamed to Yellow Face Raiders, and Eraser's Bunch, the alliance calls itself the 'Bandit Pack'. While its goals are unclear, it seems to wish great profit to themselves by the destruction of its neighbors. Yellow Face blamed both neighbors and his own staff of having to reach this stage. We will keep reporting as the two start making more serious moves... "
+ bfdinews.42.a: "Take the backstabbers' wealth!" #YFC/BUN
+ bfdinews.42.b: "A storm is brewing..." #Neighbors
+ bfdinews.42.c: "A storm grows in the South." #Anyone else
 
 # bfdinews_cities
 

@@ -1,6 +1,6 @@
 decisions_BFDI_debug = {
     debug_collapse_goiky = {
-        icon = GFX_decision_generic_factory
+        icon = GFX_decisions_debug_collapse_goiky
         fire_only_once = yes
         cost = 0
         visible = {
@@ -26,7 +26,7 @@ decisions_BFDI_debug = {
 
 decisions_BFDI_debug = {
     debug_battle_royale = {
-        icon = GFX_decision_generic_protection
+        icon = GFX_decisions_debug_battle_royale
         fire_only_once = no
         cost = 0
         visible = {
@@ -157,7 +157,7 @@ decisions_BFDI_debug = {
     }
 
     debug_nuke_everything = {
-        icon = GFX_decision_generic_USA_flag
+        icon = GFX_decisions_debug_nuke_everything
         fire_only_once = no
         cost = 0
         visible = {

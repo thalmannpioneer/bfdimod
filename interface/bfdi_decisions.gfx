@@ -1,5 +1,30 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_decision_category_BFDI_debug"
+		textureFile = "gfx/interface/decisions/decision_category_BFDI_debug.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_debug_collapse_goiky"
+		textureFile = "gfx/interface/decisions/GFX_decisions_debug_collapse_goiky.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_debug_battle_royale"
+		textureFile = "gfx/interface/decisions/GFX_decisions_debug_battle_royale.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_debug_conquest"
+		textureFile = "gfx/interface/decisions/GFX_decisions_debug_conquest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_debug_nuke_everything"
+		textureFile = "gfx/interface/decisions/GFX_decisions_debug_nuke_everything.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_WGF_our_snowy_friends_map"
 		textureFile = "gfx/interface/decisions/GFX_decisions_WGF_our_snowy_friends_map.dds"
 	}
@@ -495,6 +520,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_category_YFC_trade"
+		textureFile = "gfx/interface/decisions/decision_category_YFC_trade.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_loan"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_loan.dds"
 	}
@@ -640,6 +670,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decision_category_YFC_eastern"
+		textureFile = "gfx/interface/decisions/decision_category_YFC_eastern.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_mission_YFC_eastern_game"
 		textureFile = "gfx/interface/decisions/GFX_mission_YFC_eastern_game.dds"
 	}
@@ -682,6 +717,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_eastern_prospect"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_prospect.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_YFC_raids"
+		textureFile = "gfx/interface/decisions/decision_category_YFC_raids.dds"
 	}
 
 	spriteType = {
