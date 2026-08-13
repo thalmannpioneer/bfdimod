@@ -32,6 +32,7 @@ decision_YFC_sector_category = {
 decision_YFC_raids_category = {
 	allowed = { tag = YFC }	
 	visible = { 
+		always = yes
 		YFC = {
 			OR = {
 				has_completed_focus = YFC_focus_allow_raiding_into_traitors

@@ -998,7 +998,7 @@
  YFC_focus_open_the_market_desc: "By allowing foreign companies to operate within our state, we can generate more GDP, and stimulate our and foreign economies. We should also participate in the markets of other nations, selling our own goods, or selling other country's goods for profit."
 
  YFC_focus_establish_sectorialism: "Establish Sectorialism"
- YFC_focus_establish_sectorialism_desc: "By allowing friendly competition between different parts of our corporation, we can guarentee that our production, and therefore our profits, will rise. Of course, we can't let one branch have too much power over the government, that would just be foolish."
+ YFC_focus_establish_sectorialism_desc: "By allowing friendly competition between different parts of our corporation, we can guarantee that our production, and therefore our profits, will rise. Of course, we can't let one branch have too much power over the government, that would just be foolish."
 
  YFC_focus_the_grapes_and_the_cherries: "The Grapes and The Cherries"
  YFC_focus_the_grapes_and_the_cherries_desc: "Some mercenaries have decided to set up their base of operations in Footpathburg. Buying mercenaries does seem to be quite the good idea, so, why not try it? Of course, we should also help them set up operations, as a sign of good will." 
@@ -1016,13 +1016,13 @@
  YFC_focus_purchase_ordnance_package_desc: "The sheer force of the Unnamed Mercenary Brotherhood yields great results, however, with extra firepower, they could be even greater. It is well within our budget to buy some extra artillery for the purpose of arming the UMB even further, if we happen to buy them in the future."
 
  YFC_focus_mobilize_excess_reserves: "Mobilize Excess Reserves"
- YFC_focus_mobilize_excess_reserves_desc: "ZDubbz"
+ YFC_focus_mobilize_excess_reserves_desc: "Our permanent purchase of the Cherry Company has allowed us to more formally invest in them, without running the risk of accidentally strengthening a possible future enemy. Thus, we, the Yellow Face Corporation, will be attempting to bolster their forces, in order to be more formidable in future conflicts."
 
  YFC_focus_focus_on_supply: "Focus on Supply"
- YFC_focus_focus_on_supply_desc: "ZDubbz"
+ YFC_focus_focus_on_supply_desc: "Our permanent purchase of the Combined Grape Affiliation has allowed us to more formally invest in them, without running the risk of accidentally strengthening a possible future enemy. Thus, we, the Yellow Face Corporation, will be employing them to train our commanders, making it easier for us to work with them, and, in turn, making us stronger in future battles."
 
  YFC_focus_focus_on_combat: "Focus on Combat"
- YFC_focus_focus_on_combat_desc: "ZDubbz"
+ YFC_focus_focus_on_combat_desc: "Our permanent purchase of the Unnamed Mercenary Brotherhood has allowed us to more formally invest in them, without running the risk of accidentally strengthening a possible future enemy. Thus, we, the Yellow Face Corporation, will be employing them to train our commanders, making it easier for us to work with them, and, in turn, making us stronger in future battles."
 
  YFC_focus_the_southern_bandits: "§gThe Southern Bandits§!"
  YFC_focus_the_southern_bandits_desc: "Those bandits to the south of us are seriously raising concern among our employees. Some of which are scared of a possible attack, and others who believe we should be taking advantage of them. Only time will tell what happens to the bandits, but we must make sure we're ahead of them at all times."
@@ -1091,7 +1091,7 @@
  YFC_focus_expand_northern_trade_desc: "By using Yoyleton as a base, we can expand our traderoutes farther north, leading to more efficient trade with North Goikean nations."
 
  YFC_focus_scope_out_sea_trade: "Scope Out Sea Trade"
- YFC_focus_scope_out_sea_trade_desc: "Trading through the sea is something we've been doing in small parts for some time now. Though, if we had a more permanent foothold on the eastern seaboard, we could rapidly cut down the time and resources needed to trade to the Davidians."
+ YFC_focus_scope_out_sea_trade_desc: "Trading through the sea is something we've been doing in small parts for some time now. Though, if we had a more permanent foothold on the Eastern Seaboard, we could rapidly cut down the time and resources needed to trade to the Davidians."
 
  YFC_focus_spread_out_sectors: "Spread Out the Sectors"
  YFC_focus_spread_out_sectors_desc: "Most sectorial debates come from pure proximity; our secotrials are far too close to each other for civil conversations to be had. Perhaps a zoom call or two would pacify them. Of course, none of them would listen to this will unless we gave them an incentive to move. That is to say, we should build them facilities further away from each other. For your sake and mine. Seriously, their fighting is so goddamn annoying that I might actually go insane."
@@ -1210,112 +1210,109 @@
  YFC_focus_interfere_with_sea_routes_desc: "It's very apparent now that they are getting their funding from someone, right? Even if they are (somehow) simply playing this game well through wit (if they have any), attacking their convoys will effectively starve their soldiers, and make the population reliant on the Corporation's goods."
 
  YFC_focus_play_smart: "Play Smart"
- YFC_focus_play_smart_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_play_smart_desc: "By employing carefully constructed strategy, we can gain the upperhand in this conflict, dominating the Eastern Seaboard. The teardroppers cannot gain the upperhand if we outwit them; an easy task."
 
  YFC_focus_negotiate_with_teardrop: "Negotiate with Teardrop"
- YFC_focus_negotiate_with_teardrop_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_negotiate_with_teardrop_desc: "We obviously don't intend to gain much from negotiation, however, by appearing friendly, we can easily smear Teardrop in the future, by making her look as if she is the agressor, in this conflict. Internationally, she could even lose support!"
 
  YFC_focus_push_for_settlement: "Push for Settlement"
- YFC_focus_push_for_settlement_desc: "ZDubbz cmon gotta work man"
-
- YFC_focus_play_smart: "Play Smart"
- YFC_focus_play_smart_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_push_for_settlement_desc: "Internally, we can easily push our employees to move to the Eastern Seaboard. What with her nice beaches, constantly sunny weather, and calming waves, we could easily convince people to fork over some cash in moving. And, of course, we own the property!"
 
  YFC_focus_prospect_the_lands: "Prospect the Lands"
- YFC_focus_prospect_the_lands_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_prospect_the_lands_desc: "The Eastern Seaboard clearly is home to many caves, which could most certainly contain precious metals, with which we could profit. Owning this land is already something that would return to us a profit, however, knowing how much the land might be worth could easily earn us some extra investments. "
 
  YFC_focus_deploy_peacekeepers: "Deploy \"Peacekeepers\""
- YFC_focus_deploy_peacekeepers_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_deploy_peacekeepers_desc: "Understand, these lands are nothing short of chaotic! With the influx of teardroppers, there clearly needs to be a force to contain these individuals. Fortunately, Top Hat, our Military Sectorial, has some men (from where does he procure these men?) who are willing to defend our territory, for the time being. Of course, Top Hat pays these men out of pocket, so, it will come at no additional cost to us!"
 
  YFC_focus_bribe_village_leaders: "Bribe Village Leaders"
- YFC_focus_bribe_village_leaders_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_bribe_village_leaders_desc: "Though most villages are comprised of teardroppers themselves, they claim to have no relation to the Beach Territory. It is possible that, with a bit of money, we can get them to not allow new beachers to move in, only letting our employees and associates live and work in the east."
 
  YFC_focus_shuffle_around_funds: "Shuffle Funds Around"
- YFC_focus_shuffle_around_funds_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_shuffle_around_funds_desc: "Apparently, some moron at headquarters has been taking out loans and paying them back to \"seem busy.\" If we fire that guy, and reduce the salaries of some of our lower earning employees, we can save on costs, and redirect them to the Great Eastern Game."
 
  YFC_focus_invest_into_infrastructure_other: "Build Roads"
- YFC_focus_invest_into_infrastructure_other_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_invest_into_infrastructure_other_desc: "Some have said that, due to the limited infrastructure and resources, they have been unable to take pilgrimages to the Eastern Seaboard. By building roads, we can make it easier to live in the Seaboard for our citizens, thus, establishing greater footholds in the area."
 
  YFC_focus_build_ports_other: "Improve Shipping"
- YFC_focus_build_ports_other_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_build_ports_other_desc: "We have already established trade routes through the Sea of St. Rocky, however, with our stronger footholds in the Eastern Seaboard, we can bolster trade through the sea, making it easier, and more viable. In turn, we will profit more from trading with the Davidians, and likely the Military District as well."
 
  YFC_focus_accidental_mistakes: "\"Mistakes\""
- YFC_focus_accidental_mistakes_desc: "ZDubbz cmon gotta work man"
+ YFC_focus_accidental_mistakes_desc: "We can, very easily, \"acidentally\" sabatoge the supply routes of the teardroppers, forcing some of them to slow their advances, all while keeping international forces outside of the conflict."
 
- YFC_focus_who_dares_wins: "§YEast Secured§!"
- YFC_focus_who_dares_wins_desc: "ZDubbz cmon gotta work man"
-
- YFC_focus_establish_formal_connection: "Establish Formal Connection"
- YFC_focus_establish_formal_connection_desc: "ZDubbz :D :D :D"
-
- YFC_focus_diverting_funds: "Divert Funds"
- YFC_focus_diverting_funds_desc: "ZDubbz :D :D :D"
+ YFC_focus_who_dares_wins: "§YWho Dares, Wins§!"
+ YFC_focus_who_dares_wins_desc: "Well, from this point, there is not much to be done. We have allocated most of our free resources, we have committed men, we have made advertisements, and now, finally, there is only one thing to do: Play the game."
 
  YFC_focus_sectorial_meddling: "Hire New Employees"
- YFC_focus_sectorial_meddling_desc: "With the very unlikely possibility that our actions of working with the Bandits could cause outrage, we should find the guarantee of loyal workers that will do our bidding. Let's get to work setting up those 'now hiring' filers!" #ZDubbz if you want to
+ YFC_focus_sectorial_meddling_desc: "With the, very unlikely, possibility that our actions of working with the Bandits could cause outrage, we should find the guarantee of loyal workers that will do our bidding. Let us get to work, and set up some \"now hiring\" fliers!" #pun this is so good i thought i wrote it lowkey
+
+ YFC_focus_establish_formal_connection: "Establish Formal Connection"
+ YFC_focus_establish_formal_connection_desc: "It would be ridiculous for us to attempt to engage in business with the Eraser's Bunch, without first recognizing their independence, and sending proper diplomats to their nation."
+
+ YFC_focus_diverting_funds: "Divert Funds"
+ YFC_focus_diverting_funds_desc: "In our company's infancy, we were quick to spend money on adspace, wherever it popped up. We would advertise far and wide, often to people who already knew of our products, thus, wasting precious resources. By cutting advertising funds, we can free up some space, affording us flexibility in our future dealings with this new trading partner."
 
  YFC_focus_permanent_mercenary_purchase: "Purchase Permanent Mercenaries"
- YFC_focus_permanent_mercenary_purchase_desc: "ZDubbz :D :D :D"
+ YFC_focus_permanent_mercenary_purchase_desc: "The Bunchers, clearly a militaristic nation, have informed us that it is important that we have a formidable standing army. We have, for a little while, been searching for mercenary companies, who are willing to be hired by us, for a time. Perhaps, with the right price, they will swear allegiance to us, and act as our, permanent, army!"
 
  YFC_focus_great_business_partnership: "§YGreat Business Partnership§!"
- YFC_focus_great_business_partnership_desc: "ZDubbz :D :D :D"
+ YFC_focus_great_business_partnership_desc: "With our great strength in negotiating, we have created a series of deals that are great for us. There is a sort of symbiosis between us and the Bunch; we have a partnership that works perfectly, and we have no reason to harbor any of our previous hostilities."
 
  YFC_focus_hoard_gold: "Hoard Gold"
- YFC_focus_hoard_gold_desc: "ZDubbz :D :D :D"
+ YFC_focus_hoard_gold_desc: "Despite freeing up some funds earlier, it is still imperative that we make sure we have enough funds to be secure in our investments and purchases. By cutting corners in the production of goods, and selling them for higher prices, we can be prepared for any hard times to come."
 
  YFC_focus_publicize_partnership: "Establish a True Border"
- YFC_focus_publicize_partnership_desc: "The de facto Bunch broder has been a talking point in the company for quite some time. The Sectorials believe that vague border gives a great opportunity to attack the bandits. However, we still can be attacked as well. As such we will do the next best thing, sign a treaty with them to get a real border." #ZDubbz if you want to
+ YFC_focus_publicize_partnership_desc: "Our de facto border with Eraser's Bunch has been a frequent topic of discussion at company headquarters. The undefined border often leads to great misunderstandings, which have, occasionally, resulted in injury. As such, we shall attempt to properly define a border, to promote peace, and safety (between the two of us, at least)."
 
- YFC_focus_from_the_deal: "§GForm The Deal§!"
- YFC_focus_from_the_deal_desc: "ZDubbz :D :D :D"
+ YFC_focus_from_the_deal: "§GFrom The Deal§!"
+ YFC_focus_from_the_deal_desc: "From our fiscal engagements with the Bunchivists, we have made the company far more profitable that it ever has been. Employees, even some at the bottom, have been seeing raises, the headquarters is much cleaner, and we've been able to expand our reach in the north and west of the continent. In working with these raiders, we can truly become great; truly, we can only become great From the Deal."
 
  YFC_focus_the_first_embargo: "An Embargo..."
- YFC_focus_the_first_embargo_desc: "It's only one... right?"
+ YFC_focus_the_first_embargo_desc: "Those sick, treacherous mountain objects have ceased their dealings with us! It's only one... right?"
 
  YFC_focus_numismatian_split: "Numismatian Split"
- YFC_focus_numismatian_split_desc: "Just another lose end... \n\nright?"
+ YFC_focus_numismatian_split_desc: "This event is certainly unprecedented, but the Numismatians, ultimately, are an irrelevant sect. This is just another lose end... \n\nright?"
 
  YFC_focus_allow_raiding_into_traitors: "Authorize Raiding"
- YFC_focus_allow_raiding_into_traitors_desc: "ZDubbz"
+ YFC_focus_allow_raiding_into_traitors_desc: "Retaliatory measures must be taken when doing business. If some company or nation wrongs you, you must wrong them back; it is only fair. So, if Numismatia and the Snowy Reich hate our partnership with the Bunch so much, why not show them what the Bunch can really do? Let us allow our friends to raid these renegade \"capitalists,\" so long as they pay us a share of the spoils."
 
  YFC_focus_the_great_recession: "§RThe Great Recession§!"
- YFC_focus_the_great_recession_desc: "ZDubbz"
+ YFC_focus_the_great_recession_desc: "Well, none of this has really gone according to plan, has it? What are we to do, with nearly no funds!"
 
  YFC_focus_mass_firings: "Mass Firings"
- YFC_focus_mass_firings_desc: "ZDubbz"
+ YFC_focus_mass_firings_desc: "By letting go of some of our employees, we can free up some space. Though we will remain in the negatives, small losses are easier to recover from than large ones."
 
  YFC_focus_entice_the_sectors: "Entice The Sectors"
- YFC_focus_entice_the_sectors_desc: "ZDubbz"
+ YFC_focus_entice_the_sectors_desc: "The sectorials currently are not happy about the company downsizings, and blame the recession on Yellow Face's leadership. This, itself, is not an issue, however, their ideas are influencing the common employees, which could prove dangerous. By using our meager equity, we can still give the sectorials just enough gifts to keep their mouths shut."
 
  YFC_focus_debt_restructuring: "Debt Restructuring"
- YFC_focus_debt_restructuring_desc: "We are low on lquid cash and assets. It's cause of these damn crediters and investers who would like their money. What have they done anyways? We should simply cancel our debt, what could go wrong?" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_debt_restructuring_desc: "Unfortunately, the debt collectors have come for us, and they've demanded large sums of money. Of course, this is not the fault of any company management; lower employees are in charge of controlling company investments. However, those employees have been fired, so, is this debt really due to us? Why don't we shift it to the layoffees?"
 
  YFC_focus_fire_their_underlings: "Fire Their Underlings"
- YFC_focus_fire_their_underlings_desc: "The Sectors are far to powerful and unstable to work with at the moment. The thought that they could take over is not a good sign. As such we need to weaken their grip on power. Let's fire some of their employees!" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_fire_their_underlings_desc: "The sectorials, what with their vast control over the minds and masses of the lower employees, have only added trouble to the strife of this recession. This trouble can, of course, only lead to more trouble, likely in the form of violence, if someone like Top Hat has it his way. Obviously, it would be unwise to upset the sectorials directly, however, by firing their most loyal followers, we can destroy their control from the bottom, while making it seem as if it us just another layoff in a large series of firings."
 
  YFC_focus_ensure_loyalty: "Ensure Loyalty"
- YFC_focus_ensure_loyalty_desc: "The mercenaries are chaotic and will follow the highest bidder. We must ensure that they follow us rather then... the others." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_ensure_loyalty_desc: "The mercenaries, despite the fact that they agreed to be purchased permanently, are not the most controlled force. We are still required to pay them salaries, and, at any point, they can demand impossibly high wage increases, to jump ship to a more stable nation, or once more become renegades. Of course, by deploying the great military mind of Top Hat, we can beat discipline and loyalty into them."
 
  YFC_focus_observe_top_hat: "Observe Top Hat"
- YFC_focus_observe_top_hat_desc: "Top Hat, the most powerful Sector, has been acting werid for a last few weeks. He has been going to less meetings and more harder to conntact. We need to pay some employees to go follow his movments and stop whatever he is doing" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_observe_top_hat_desc: "Despite working with us closely, Top Hat has, more and more, become an unstable, and untrustable, sectorial. He has been attending less meetings, responded to letters at a slower pace, and has been spotted covertly speaking to some other sectorials, as if he is attempting to keep a secret. Though he has not done something directly egrigious, we should still monitor him closely, as to make sure our company can remain safe." 
 
- YFC_focus_strike_the_headache: "§RStrike The Headache§!"
- YFC_focus_strike_the_headache_desc: "So their intentions were true, time to remove these useless staff!" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_strike_the_headache: "§RThe Headache§!"
+ YFC_focus_strike_the_headache_desc: "We have made a discovery. Top Hat has, apparently, been attempting a large coup of our leadership, to some failures. It is, certainly, time we set him in line, and prepare ourselves for a larger conflict." 
 
  YFC_focus_diligence: "§GDiligence§!"
- YFC_focus_diligence_desc: "Things are quickly breaking down with us and the Sectors, we can only hope our preparations were good enough..." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_diligence_desc: "Though the other sectorials seem to have gone with Top Hat, we can still insure that we are prepared for the large conflict ahead of us." 
 
  YFC_focus_goodwill: "§GGoodwill§!"
- YFC_focus_goodwill_desc: "It seems that the Sectors are not the must united on their goal of taking over the company. We must exploit this weakness lest we fall to them" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_goodwill_desc: "The sectorials, surprisingly, do not have the most united of goals, in the way of taking over this great corporation. They do not understand cohesion at all, seemingly; let us exploit this weak point."
 
  YFC_focus_shame: "§GShame§!"
- YFC_focus_shame_desc: "TopHat, despite being on his own, is not backing down. We had already lost conntact with him a while ago. It seems there is a storm on it's way..." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_shame_desc: "Top Hat, despite the other sectorials no longer working closely with him, still believes that he and his men (from where does he procure these men?) can take over the corporation, with a large battle being planned in Footpathburg. Luckily for us, we know what he is planning, and his silly game is for two."
 
  YFC_focus_battle_for_footpathburg: "§RBattle for Footpathburg§!"
- YFC_focus_battle_for_footpathburg_desc: "Who will win? Us or the Traitors?" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_battle_for_footpathburg_desc: "Our reconnaissance proved factual; the renegade sectorial, Top Hat, is marching upon Footpathburg, planning to take over the city, and with it, the company. We do not know much of his plan outside of this, however, what we do know is, we can certainly stand our ground. Only time will tell: Us, or Him?"
 
  YFC_focus_fate_of_top_hat: "§LFate of Top Hat§!"
- YFC_focus_fate_of_top_hat_desc: "Such a shame at has to become of this, but a message is a message" #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_fate_of_top_hat_desc: "It is such a shame that this petty situation has had to come to a point like this, however, the company needs to send a messsage. Not just to our own employees, but to the wider world. This corporation is not some plaything, it is a formidable force; one that kills those who dare stand against it, no matter the cost." #if top hat doesnt die change kill to something else that is equally cool
 
  YFC_focus_company_restructuring: "Company Restructuring"
  YFC_focus_company_restructuring_desc: "In light of the harsh recession that our company has faced, it is important that we recuperate ourselves with careful economic planning, however, it is more important that we find someone to blame. The sectorials are a useful group, however, they are the highest paid employees; if we use them as scapegoats, we can reduce their pay, freeing up more funds for us."
@@ -1342,10 +1339,10 @@
  YFC_focus_envy_desc: "One of the few remaining Railroad Sector employees has, helpfully, informed us of their viewing of a particular event. They claim to have seen Hammer and Beaker, purchasing a train ticket, set to leave in just two weeks. Of course, the transaction still went through -- why would we not take their money? -- however, it begs the question, just what are the sectorials planning?"
 
  YFC_focus_pride: "§GPride§!"
- YFC_focus_pride_desc: "We have finally put our collective, metaphorical foots down, and said, enough is enough. The subversive and shady actions that the sectorials have been doing, as well as their loud, open calls to go on strike against the company, have caused enough strife internally. We -- and by we, we mean Yellow Face -- have decided to deport the rebellious ex-sectorials to the sparsely inhabited eastern seaboard, as to keep them from influencing the populace."
+ YFC_focus_pride_desc: "We have finally put our collective, metaphorical foots down, and said, enough is enough. The subversive and shady actions that the sectorials have been doing, as well as their loud, open calls to go on strike against the company, have caused enough strife internally. We -- and by we, we mean Yellow Face -- have decided to deport the rebellious ex-sectorials to the sparsely inhabited Eastern Seaboard, as to keep them from influencing the populace."
 
  YFC_focus_march_on_footpathburg: "§RMarch on Footpathburg§!"
- YFC_focus_march_on_footpathburg_desc: "We have recieved an astounding amount of reports,-- from inhabitants of our eastern territories, to even residents of Ridgeheart County not in Footpathburg -- about the startling advance of our expelled employees. The former sectorials, the mercenary group we purchased, and some of Top Hat's personal men (from where does he procure these men?), have all marched, from the random part of the eastern seaboard we stuck them in, to the outskirts of our capital. We have attempted to hire more mercenaries, and raise some average company men as forces, in order to repell the rebellion, however, we cannot know the outcome until it comes out."
+ YFC_focus_march_on_footpathburg_desc: "We have recieved an astounding amount of reports,-- from inhabitants of our eastern territories, to even residents of Ridgeheart County not in Footpathburg -- about the startling advance of our expelled employees. The former sectorials, the mercenary group we purchased, and some of Top Hat's personal men (from where does he procure these men?), have all marched, from the random part of the Eastern Seaboard we stuck them in, to the outskirts of our capital. We have attempted to hire more mercenaries, and raise some average company men as forces, in order to repell the rebellion, however, we cannot know the outcome until it comes out."
 
  YFC_focus_tophat_clan: "§0Top Hat Clan§!"
  YFC_focus_tophat_clan_desc: "Hello. This is a broadcast from the newly formed Top Hat Clan, or THC (acronym intentional). We own you."
@@ -1363,19 +1360,19 @@
  YFC_focus_trade_alternatives_desc: "We clearly cannot turn a profit by buying and reselling military equipment any more; that much is obvious. Of course, we must still procure money, so, we must find a different thing to sell. There haven't been many suggestions from our companymen on the topic (at least, any worthwile suggestions), and we must act fast. The fate of the company is highly uncertain, right now."
 
  YFC_focus_last_of_the_layoffs: "Last of the Layoffs" 
- YFC_focus_last_of_the_layoffs_desc: "It is time to guarantee that the Sectors can never get a chance to take over." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_last_of_the_layoffs_desc: "Unfortunately, elements of sectorialist rebellion still remain in the lower ranks of our company. We will likely be gutted by these firings, but it is a requirement for the continued existence of this corporation. We cannot be had any longer by petty disagreements."
 
  YFC_focus_establish_the_correct_leadership: "Establish the Correct Leadership"
- YFC_focus_establish_the_correct_leadership_desc: "We should promote the staff that has stay loyal with us all this time." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_establish_the_correct_leadership_desc: "The horrible sectorial fiasco has proven that we need better leadership. Perhaps, by hiring employees that have consistently sided with Yellow Face in all respects, we can guarantee that our company will no longer fall to rebellious forces." 
 
  YFC_focus_create_checkpoints: "Create Checkpoints"
- YFC_focus_create_checkpoints_desc: "We need to make sure of no more whispers of a takeover. We will build checkpoints around the cities and offices to keep an eye on our staff." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_create_checkpoints_desc: "This type of conspiracy can never again occur. By surveilling our employees and citizens, we can better ensure that dissent will not be had. Surveillance can be made easy by setting up checkpoints around our largest settlements, letting people stand guard in shadier spots, to listen out for any strange activity."
 
  YFC_focus_sectors_their_place: "Put the Sectors in their Place"
- YFC_focus_sectors_their_place_desc: "End this issue once and for all..." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_sectors_their_place_desc: "Let us end this issue once and for all, by properly dealing with the rebellious sectorial menaces..."
 
  YFC_focus_radical_meeting: "§9Radical Meeting§!"
- YFC_focus_radical_meeting_desc: "We have so focused in removing the Sector issues that we have really low on a cash and a clear path forward. Our only remaining ally is the Bandits lead by Easer. With no other option, let's go talk to him about ideas." #ZDubbz Half rambling make due with it. Reword all of it if needed
+ YFC_focus_radical_meeting_desc: "Unfortunately, this terrible event of rebellion and repelling has exhausted us even more; we have less funds than we did at the onset of the recession, and are far closer to going fully bankrupt than we were previously. Luckily, our (sole) ally, the Bunch, is prospering. Perhaps, by working closer with Eraser, we can get back on our feet; let us meet with him."
 
  YFC_focus_way_of_raiders: "§RWay of Raiders§!"
  YFC_focus_way_of_raiders_desc: ""
