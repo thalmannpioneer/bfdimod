@@ -136,7 +136,7 @@ ideas = {
 		}
 
 		idea_YFC_Debt_Crisis = {
-			picture = YFC_debt_crisis #Replace later 
+			picture = YFC_debt_crisis 
 			modifier = {
 				political_power_factor = -0.75
 				stability_factor = -0.25
@@ -171,7 +171,7 @@ ideas = {
 		}
 
 		idea_YFC_economic_isolation = {
-			picture = ETH_customs_barrier_ITA #Replace later 
+			picture = YFC_economic_isolation #Replace later 
 			modifier = {
 				stability_factor = -0.1
 				stability_weekly = -0.01
@@ -181,14 +181,14 @@ ideas = {
 		}
 
 		idea_YFC_sectorial_crackdown = { #Hoi4 is dumb so I have to do this
-			picture = ETH_customs_barrier_ITA #Do the same as idea_YFC_economic_isolation
+			picture = YFC_economic_isolation #Do the same as idea_YFC_economic_isolation
 			modifier = {
 				stability_factor = -0.25
 			}
 		}
 
 		idea_YFC_company_reorganization = {
-			picture = SOV_coup_detat_ccp_2d_sov_compatibility #Replace later 
+			picture = YFC_company_reorganization
 			modifier = {
 				political_power_gain = 2
 				weekly_manpower = -150
@@ -197,7 +197,7 @@ ideas = {
 		}
 
 		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
-			picture = YFC_at_the_finish_line #Replace later 
+			picture = YFC_at_the_finish_line 
 			modifier = {
 				compliance_growth = 1.5
 				resistance_growth = 1
@@ -223,7 +223,7 @@ ideas = {
 
 
 		idea_YFC_operation_enforcement = { #Last ditch attack by YFC during revolt, ALL IN!!!!!. Given by choice in a event where a ceasefire could be made
-			picture = CZE_planning_bonus #Replace later 
+			picture = YFC_operation_enforcement
 			targeted_modifier = {
 				tag = BUN
 				attack_bonus_against = 0.5
@@ -249,14 +249,14 @@ ideas = {
 		}
 
 		idea_YFC_BUN_tech = { 
-			picture = jap_duplicate_research
+			picture = idea_YFC_BUN_tech
 			modifier = {
 				research_speed_factor = -0.75
 			}
 		}
 
 		idea_YFC_snowpath = { 
-			picture = generic_goods_red_bonus
+			picture = YFC_snowpath
 			modifier = {
 				country_resource_steel = 8
 				country_resource_coal = 12
@@ -265,7 +265,7 @@ ideas = {
 		}
 
 		idea_YFC_real_raider_force = { 
-			picture = SIA_purged_senior_military
+			picture = YFC_real_raider_force
 			modifier = {
 				experience_gain_army_factor = 0.25
 			}

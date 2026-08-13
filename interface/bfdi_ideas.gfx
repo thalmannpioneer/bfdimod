@@ -722,8 +722,32 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_show_no_mercy.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_company_reorganization
+		texturefile = gfx/interface/ideas/idea_YFC_company_reorganization.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_economic_isolation
+		texturefile = gfx/interface/ideas/idea_YFC_economic_isolation.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_snowpath
+		texturefile = gfx/interface/ideas/idea_YFC_snowpath.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_BUN_tech
+		texturefile = gfx/interface/ideas/idea_YFC_BUN_tech.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_real_raider_force
+		texturefile = gfx/interface/ideas/idea_YFC_real_raider_force.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_bunch_insurgency
 		texturefile = gfx/interface/ideas/idea_YFC_bunch_insurgency.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_operation_enforcement
+		texturefile = gfx/interface/ideas/idea_YFC_operation_enforcement.dds
 	}
 	spriteType = {
 		name = GFX_idea_YFC_debt_crisis

@@ -11,13 +11,13 @@ ideas = {
 		}
 
 		idea_BUN_snowpath = { 
-			picture = generic_goods_red_bonus
+			picture = YFC_snowpath
 			modifier = {
 				consumer_goods_factor = -0.35
 			}
 		}
 
-		idea_BUN_renewed_resolve = { #45 Day buff for Neo-Bunch
+		idea_BUN_renewed_resolve = {
 			picture = BUN_renewed_resolve
 			modifier = {
 				army_core_attack_factor = 0.5

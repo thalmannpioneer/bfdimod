@@ -13,6 +13,9 @@ decision_YFC_trade_category = {
 
 decision_YFC_sector_category = { 
 	allowed = { tag = YFC }
+	available = {
+		hidden_trigger = {NOT = { has_country_flag = YFC_Sectors_done }}
+	}
 	visible = { 
 		YFC = {
 			has_completed_focus = YFC_focus_establish_sectorialism
