@@ -453,5 +453,10 @@ GGR_build_after_FFT = {
 		type = min_wanted_supply_trucks
 		value = 500
 	}
+
+    ai_strategy = {
+        type = force_concentration_factor
+        value = 10
+    }
 }
 

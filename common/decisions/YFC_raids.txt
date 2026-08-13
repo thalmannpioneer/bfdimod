@@ -190,20 +190,20 @@ decision_YFC_raids_category = {
 
 		visible = {
 			check_variable = {
-                var_idea_YFC_mercy_speed < 0.19
+                var_idea_YFC_mercy_speed < 0.18
             }
 			has_completed_focus = YFC_focus_acknowledge_our_shortcomings
 		}
 
 		available = {
-			has_army_experience > 40
+			has_army_experience > 50
 		}
 
-		days_remove = 90
+		days_remove = 120
 		days_re_enable = 30
 
 		complete_effect = {
-			army_experience = -40
+			army_experience = -50
         }
 
 		remove_effect = {
@@ -211,8 +211,9 @@ decision_YFC_raids_category = {
 			IF = {
 				limit = {
 					check_variable = {
-						var_idea_YFC_mercy_speed < 0.15
+						var_idea_YFC_mercy_speed > 0.15
 					}
+					has_idea = idea_YFC_neglectful_command
 				}
 				remove_ideas = idea_YFC_neglectful_command
 			}

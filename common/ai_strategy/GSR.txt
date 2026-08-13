@@ -218,4 +218,8 @@ GSR_build = {
         id = garrison
         value = 5
     }
+	ai_strategy = {
+        type = force_concentration_factor
+        value = -10
+    }
 }

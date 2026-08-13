@@ -4686,6 +4686,9 @@ focus_tree = {
 
         completion_reward = {
             hidden_effect = { #Just for testing, remove later
+                set_country_leader_portrait = {
+                    portrait = GFX_YFC_crack_face
+                }
                 set_cosmetic_tag = YFC_raiders
             }
         }
@@ -5018,6 +5021,11 @@ focus_tree = {
                 add_to_faction = BUN
             }
             hidden_effect = {
+                news_event = {
+                    id = bfdinews.42
+                    days = 1
+                    random_hours = 36
+                }
                 BUN = {
                     add_manpower = 25000
                     add_threat = 1.5
@@ -5147,7 +5155,25 @@ focus_tree = {
                 hours = 1
                 random_hours = 2
             }
-            hidden_effect = {add_threat = 0.5}
+            hidden_effect = {
+                add_threat = 0.5
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        check_variable = {money_amount < 0}
+                    }
+                    add_to_variable = {money_amount = 5}
+                }
+                IF = {
+                    limit = {
+                        is_ai = yes
+                    }
+                    add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 1000
+					}
+                }
+            }
         }
     }
 

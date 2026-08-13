@@ -12,6 +12,11 @@ characters = {
 		name = GFG_fanny
 		portraits = { civilian = { large = GFX_GFG_fanny } }
 	}
+
+	GFG_fan = {
+		name = GFG_fan
+		portraits = { civilian = { large = GFX_GFG_fan } }
+	}
 	
 	GFG_pillow = {
 		name = GPG_pillow

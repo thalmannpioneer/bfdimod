@@ -94,13 +94,42 @@ country_event = {
 	option = {
 		name = GFG_event.5.a
 		retire_character = GFG_triumvirate
-		add_country_leader_role = {
-			character = GFG_fanny
-			promote_leader = yes
-			country_leader = {
-				ideology = fascism_ideology
+		
+		effect_tooltip = {
+			add_country_leader_role = {
+				character = GFG_fanny
+				promote_leader = yes
+				country_leader = {
+					ideology = fascism_ideology
+				}
 			}
 		}
+
+		hidden_effect = {
+			random_list = {
+				99 = {
+					add_country_leader_role = {
+						character = GFG_fanny
+						promote_leader = yes
+						country_leader = {
+							ideology = fascism_ideology
+						}
+					}
+				}
+				1 = {
+					add_country_leader_role = {
+						character = GFG_fan
+						promote_leader = yes
+						country_leader = {
+							ideology = emperor_fascism
+							traits = { special_character }
+							desc = GFG_fan_desc
+						}
+					}
+				}
+			}
+		}
+
 		complete_national_focus = GFG_focus_i_hate_you
 	}
 }

@@ -120,6 +120,42 @@ suppression_YFC = {
 	}
 }
 
+motorized_YFC = {
+
+	available_for = {
+		YFC
+	}
+	
+	role = motorized
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			NOT = { ai_has_role_template = motorized }
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
+	
+	basic_motorized_infantry_YFC = {
+		division_names_group = YFC_MOT_01
+		
+		upgrade_prio = {
+			base = 1
+		}
+		
+		enable = {
+			has_tech = motorised_infantry	
+        }
+
+		target_template = {
+			regiments = {
+				motorized = 5
+			}
+		}
+	}
+}
 
 # Non-complete list of sub-units
 

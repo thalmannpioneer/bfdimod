@@ -105,6 +105,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_GFG_fan"
+		texturefile = "gfx/leaders/GFG/GFG_fan.dds"
+	}
+
+	spriteType = {
 		name = "GFX_GFG_yoyle_berry"
 		texturefile = "gfx/leaders/GFG/GFG_yoyle_berry.dds"
 	}
@@ -321,6 +326,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_YFC_yellow_face"
 		texturefile = "gfx/leaders/YFC/YFC_yellow_face.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_crack_face"
+		texturefile = "gfx/leaders/YFC/YFC_crack_face.dds"
 	}
 
 	spriteType = {

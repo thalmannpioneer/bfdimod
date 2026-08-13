@@ -52,6 +52,8 @@
  GPG_income_tax_return_document: "Income Tax Return Document"
  
  GFG_fanny: "Fanny"
+ GFG_fan: "A Literal Fan"
+ GFG_fan_desc: "Is this a FNAF reference?"
  GFG_yoyle_berry: "Yoyle Berry"
  
  GDR_eggy: "Eggy"
@@ -73,6 +75,7 @@
  GTR_duumvirate: "Duumvirate" #City news events need this to be normal color sadly (unless my sick ass can't see a better way)
  GTR_tennis_ball: "Tennis Ball"
  GTR_tennis_wall: "Tennis Ball?" #hehe
+ GTR_tennis_wall_desc: "Where did Tennis Ball go? What the fuck did you do with him?!??!" #hehe
  GTR_test_tube: "Flask"
  GTR_calculator: "Cali"
  GTR_swappy: "Swappy"

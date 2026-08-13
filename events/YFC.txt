@@ -3450,6 +3450,7 @@ country_event = {
 		IF = {
 			limit = {is_ai = yes}
 			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
+			add_manpower = 2000
 		}
 	}
 }
@@ -3468,6 +3469,10 @@ country_event = {
 		name = YFC_borderwars.2.a
 		army_experience = 10
 		clr_country_flag = YFC_Raid_Active
+		IF = {
+			limit = {is_ai = yes}
+			add_manpower = 1000
+		}
 	}
 }
 

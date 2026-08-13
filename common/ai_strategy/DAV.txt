@@ -4,6 +4,60 @@
 
 ## ARMY PLACEMENT ##
 
+DAV_invade_TBT = {
+    #...
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		has_war_with = TBT
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 15
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = TBT
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_transport
+		value = 2000
+	}
+}
+
+DAV_invade_WGF = {
+    #...
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		has_war_with = WGF
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 15
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = WGF
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_transport
+		value = 2000
+	}
+}
+
 ## INDUSTRY ##
 
 DAV_boat = {

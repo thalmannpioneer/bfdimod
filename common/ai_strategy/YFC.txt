@@ -99,29 +99,115 @@ YFC_wait = {
 	}
 }
 
-YFC_tech = {
-    #There are some techs that we must know...
+YFC_trucks = {
+    #Beep beep
+    allowed = {
+        original_tag = YFC
+    }
+    enable = {
+        has_army_size = {
+            size < 2
+            type = motorized
+        }
+        has_completed_focus = YFC_focus_new_motorization
+		arms_factory > 3
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = motorized
+        value = 1000
+    }
+    ai_strategy = {
+        type = research_weight_factor
+        id = tech_trucks
+        value = 1000
+    }
+    ai_strategy = {
+		type = research_weight_factor
+		id = motorised_infantry
+		value = 1000
+	}
+}
+
+## BUILDS ##
+
+YFC_build = {
+    #YFC normal build
 	allowed = {
 		original_tag = YFC
 	}
 	enable = {
-		always = yes
+		has_completed_focus = YFC_focus_demand_end_pillage
+		NOT = {has_completed_focus = YFC_focus_mass_firings}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = research_weight_factor
-		id = tech_support
-		value = 100
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 3
 	}
 	ai_strategy = {
-		type = research_weight_factor
-		id = gw_artillery
-		value = 100
+		type = equipment_production_surplus_management
+		id = support_equipment
+		value = 0.5
 	}
 	ai_strategy = {
-		type = research_weight_factor
-		id = infantry_weapons1
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 0.5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 100
+	}
+}
+
+YFC_build_raiders = {
+    #YFC raider
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		has_completed_focus = YFC_focus_mass_firings
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 3
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = support_equipment
+		value = 0.1
+	}
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 0.1
+	}
+    ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 0.5
+    }
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 90
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 10
+	}
+    ai_strategy = {
+		type = min_wanted_supply_trucks
 		value = 100
 	}
 }

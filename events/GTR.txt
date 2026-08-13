@@ -403,6 +403,7 @@ country_event = {
                         country_leader = {
                             ideology = technocratism
                             traits = { special_character }
+                            desc = GTR_tennis_wall_desc
                         }
                     }
                 }
