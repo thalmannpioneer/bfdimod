@@ -3324,7 +3324,14 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 7
+            base = 0
+            modifier = {
+                add = 7
+                OR = {
+                    has_completed_focus = YFC_focus_invest_in_speed
+                    has_completed_focus = YFC_focus_invest_in_power
+                }
+            }
         }
     }
 
@@ -3378,9 +3385,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
-            hidden_trigger = {
-                NOT = {has_completed_focus = YFC_focus_numismatian_split}
-            }
+            custom_trigger_tooltip = {
+				tooltip = l_GOI_all_is_good_ct
+				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+			}
         }
         ai_will_do = {
             base = 7
@@ -3619,7 +3627,7 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_company_restructuring }
 
         ai_will_do = {
-            base = 10
+            base = 50 #Deal with the Chaos
         }
 
         cost = 5
@@ -3658,7 +3666,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
-            base = 5
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -3679,7 +3687,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos 
         }
 
         cost = 4
@@ -3717,7 +3725,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos 
         }
 
         cost = 4
@@ -3756,7 +3764,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -3780,7 +3788,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_fire_their_underlings }
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -3819,7 +3827,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_trade_alternatives }
@@ -3876,7 +3884,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
@@ -3900,7 +3908,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         available = {
@@ -3931,7 +3939,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_shame }
@@ -3961,7 +3969,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         available = {
@@ -4057,28 +4065,15 @@ focus_tree = {
         y = 1
         icon = GFX_focus_YFC_crack_down_on_influence
 
-        offset = {
-            x = -6
-            trigger = {
-                has_completed_focus = YFC_focus_mass_firings
-            }
-        }
-
         available = {
             hidden_trigger = {
-                OR = {
-                    has_completed_focus = YFC_focus_company_restructuring
-                    has_completed_focus = YFC_focus_mass_firings
-                }
+                has_completed_focus = YFC_focus_company_restructuring
             }
         }
         
         allow_branch = { 
-                OR = {
-                    has_completed_focus = YFC_focus_company_restructuring
-                    has_completed_focus = YFC_focus_mass_firings
-                } 
-            }
+            has_completed_focus = YFC_focus_company_restructuring
+        }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
@@ -4519,7 +4514,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         available = {
@@ -4549,7 +4544,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_last_of_the_layoffs }
@@ -4571,7 +4566,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_last_of_the_layoffs }
@@ -4594,7 +4589,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_create_checkpoints }
@@ -4621,7 +4616,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_sectors_their_place }
