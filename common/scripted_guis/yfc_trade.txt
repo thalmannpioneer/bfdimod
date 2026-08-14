@@ -542,230 +542,230 @@ scripted_gui = {
         }
 
         triggers = {
-			notif_gmd_visible = {
-				GMD = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_tbt_visible = {
-				TBT = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_ggr_visible = {
-				GGR = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_sri_visible = {
-				SRI = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_smg_visible = {
-				SMG = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gmd_visible = {
-				GMD = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_spr_visible = {
-				SPL = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_fft_visible = {
-				FFT = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_crn_visible = {
-				CRN = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_bun_visible = {
-				BUN = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_srr_visible = {
-				SRR = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gpg_visible = {
-				OR = {
-					GPG = {
-						exists = yes
-						NOT = {
-							OR = {
-								country_exists = GSR
-								country_exists = GDR
-								country_exists = GFG
-							}
-						}
-						OR = {
-							has_country_flag = Confirmed_Trade_Selling
-							has_country_flag = Confirmed_Trade_Buying
-						}
-					}
-					GDR = {
-						exists = yes
-						NOT = {
-							OR = {
-								country_exists = GSR
-								country_exists = GPG
-								country_exists = GFG
-							}
-						}
-						OR = {
-							has_country_flag = Confirmed_Trade_Selling
-							has_country_flag = Confirmed_Trade_Buying
-						}
-					}
-					GFG = {
-						exists = yes
-						NOT = {
-							OR = {
-								country_exists = GSR
-								country_exists = GPG
-								country_exists = GDR
-							}
-						}
-						OR = {
-							has_country_flag = Confirmed_Trade_Selling
-							has_country_flag = Confirmed_Trade_Buying
-						}
-					}
-					GSR = {
-						exists = yes
-						NOT = {
-							OR = {
-								country_exists = GDR
-								country_exists = GPG
-								country_exists = GFG
-							}
-						}
-						OR = {
-							has_country_flag = Confirmed_Trade_Selling
-							has_country_flag = Confirmed_Trade_Buying
-						}
-					}
-				}
-			}
-			notif_gpg_cw_visible = {
-				GPG = {
-					exists = yes
-					OR = {
-						country_exists = GSR
-						country_exists = GDR
-						country_exists = GFG
-					}
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gdr_visible = {
-				GDR = {
-					exists = yes
-					OR = {
-						country_exists = GSR
-						country_exists = GPG
-						country_exists = GFG
-					}
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gfg_visible = {
-				GFG = {
-					exists = yes
-					OR = {
-						country_exists = GSR
-						country_exists = GPG
-						country_exists = GDR
-					}
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gsr_visible = {
-				GSR = {
-					exists = yes
-					OR = {
-						country_exists = GDR
-						country_exists = GPG
-						country_exists = GFG
-					}
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
-			notif_gtr_visible = {
-				GTR = {
-					exists = yes
-					OR = {
-						has_country_flag = Confirmed_Trade_Selling
-						has_country_flag = Confirmed_Trade_Buying
-					}
-				}
-			}
+            notif_gmd_visible = {
+                GMD = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_tbt_visible = {
+                TBT = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_ggr_visible = {
+                GGR = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_sri_visible = {
+                SRI = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_smg_visible = {
+                SMG = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gmd_visible = {
+                GMD = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_spr_visible = {
+                SPL = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_fft_visible = {
+                FFT = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_crn_visible = {
+                CRN = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_bun_visible = {
+                BUN = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_srr_visible = {
+                SRR = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gpg_visible = {
+                OR = {
+                    GPG = {
+                        exists = yes
+                        NOT = {
+                            OR = {
+                                country_exists = GSR
+                                country_exists = GDR
+                                country_exists = GFG
+                            }
+                        }
+                        OR = {
+                            has_country_flag = Confirmed_Trade_Selling
+                            has_country_flag = Confirmed_Trade_Buying
+                        }
+                    }
+                    GDR = {
+                        exists = yes
+                        NOT = {
+                            OR = {
+                                country_exists = GSR
+                                country_exists = GPG
+                                country_exists = GFG
+                            }
+                        }
+                        OR = {
+                            has_country_flag = Confirmed_Trade_Selling
+                            has_country_flag = Confirmed_Trade_Buying
+                        }
+                    }
+                    GFG = {
+                        exists = yes
+                        NOT = {
+                            OR = {
+                                country_exists = GSR
+                                country_exists = GPG
+                                country_exists = GDR
+                            }
+                        }
+                        OR = {
+                            has_country_flag = Confirmed_Trade_Selling
+                            has_country_flag = Confirmed_Trade_Buying
+                        }
+                    }
+                    GSR = {
+                        exists = yes
+                        NOT = {
+                            OR = {
+                                country_exists = GDR
+                                country_exists = GPG
+                                country_exists = GFG
+                            }
+                        }
+                        OR = {
+                            has_country_flag = Confirmed_Trade_Selling
+                            has_country_flag = Confirmed_Trade_Buying
+                        }
+                    }
+                }
+            }
+            notif_gpg_cw_visible = {
+                GPG = {
+                    exists = yes
+                    OR = {
+                        country_exists = GSR
+                        country_exists = GDR
+                        country_exists = GFG
+                    }
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gdr_visible = {
+                GDR = {
+                    exists = yes
+                    OR = {
+                        country_exists = GSR
+                        country_exists = GPG
+                        country_exists = GFG
+                    }
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gfg_visible = {
+                GFG = {
+                    exists = yes
+                    OR = {
+                        country_exists = GSR
+                        country_exists = GPG
+                        country_exists = GDR
+                    }
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gsr_visible = {
+                GSR = {
+                    exists = yes
+                    OR = {
+                        country_exists = GDR
+                        country_exists = GPG
+                        country_exists = GFG
+                    }
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
+            notif_gtr_visible = {
+                GTR = {
+                    exists = yes
+                    OR = {
+                        has_country_flag = Confirmed_Trade_Selling
+                        has_country_flag = Confirmed_Trade_Buying
+                    }
+                }
+            }
 
             equipment_buy_click_enabled = {
                 YFC = { has_political_power > 5}
@@ -802,7 +802,7 @@ scripted_gui = {
                 }
                 OR = {
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@infantry_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@infantry_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
                     }
                     AND = {
@@ -810,19 +810,19 @@ scripted_gui = {
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@motorized_equipment }}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@motorized_equipment }}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@artillery_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@artillery_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_air_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@anti_air_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_tank_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@anti_tank_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
                     }
                     AND = {

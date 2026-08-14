@@ -12,7 +12,7 @@ decision_YFC_raids_category = {
 			NOT = {has_completed_focus = YFC_focus_march_on_footpathburg}
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = 30
 		days_re_enable = 550
 

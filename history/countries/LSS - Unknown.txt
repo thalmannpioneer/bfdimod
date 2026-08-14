@@ -520,15 +520,15 @@ set_popularities = {
 }
 
 #Lack of Idea
- set_variable = { var_idea_LSS_lackof_consumer_goods_factor = 0.95 }
- set_variable = { var_idea_LSS_lackof_stability_factor = -0.75 }
- set_variable = { var_idea_LSS_lackof_industrial_capacity_factory = -0.65 }
- set_variable = { var_idea_LSS_lackof_production_speed_buildings_factor = -0.75 }
- set_variable = { var_idea_LSS_lackof_monthly_population = -5 }
- set_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = -0.5 }
- set_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = -0.1 }
- set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 }    
- set_variable = { var_idea_LSS_lackof_factory_energy_consumption = 2 }  
+ set_variable = { var_idea_LSS_lackof_consumer_goods_factor = 0.95 } #0.35
+ set_variable = { var_idea_LSS_lackof_stability_factor = -0.75 } #-0.25
+ set_variable = { var_idea_LSS_lackof_industrial_capacity_factory = -0.65 } #-0.35
+ set_variable = { var_idea_LSS_lackof_production_speed_buildings_factor = -0.75 } #-0.25
+ set_variable = { var_idea_LSS_lackof_monthly_population = -5 } #-1
+ set_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = -0.5 } #-0.15
+ set_variable = { var_idea_LSS_lackof_production_factory_max_efficiency_factor = -0.15 } #0
+ set_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 1 } #0.45
+ set_variable = { var_idea_LSS_lackof_factory_energy_consumption = 2 } #0.5
  add_dynamic_modifier = { modifier = idea_LSS_lack_of_everything }
 
 

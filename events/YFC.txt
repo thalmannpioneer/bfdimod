@@ -2234,7 +2234,8 @@ country_event = { #Eastern End.
 			}
 		}
 
-		#complete_national_focus = YFC_focus_who_dares_wins
+		complete_national_focus = YFC_focus_locked_on_land
+		add_ideas = idea_YFC_learning_the_waves
 		add_political_power = -50
 
 		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
@@ -2260,7 +2261,8 @@ country_event = { #Eastern End.
 			}
 		}
 
-		#complete_national_focus = YFC_focus_who_dares_wins
+		complete_national_focus = YFC_focus_way_to_seas
+		add_ideas = idea_YFC_expanding_the_waves
 		add_political_power = 25
 
 		custom_effect_tooltip = l_money_gain_200K
@@ -2797,11 +2799,19 @@ country_event = { #YFC_focus_lessons_from_mercs
 	option = { 
 		name = YFC_event.62.a
 
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_ensure_loyalty}
+		}
+
 		army_experience = 5
 		add_war_support = 0.01
 	}
 	option = { 
 		name = YFC_event.62.b
+
+		trigger = {
+			has_completed_focus = YFC_focus_ensure_loyalty
+		}
 
 		add_political_power = 5
 	}
@@ -3542,8 +3552,8 @@ country_event = { #Lose Yoyleton
 			hidden_effect = {
 				add_claim_by = YFC
 				set_compliance = 30
-				set_resistance = 70
-				add_resistance_target = 25
+				set_resistance = 65
+				add_resistance_target = 20
 			}
 		}
 		mark_focus_tree_layout_dirty = yes

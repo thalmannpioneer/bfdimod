@@ -145,6 +145,30 @@ decision_LSS_Military_category = {
 		}
 	}
 
+	LSS_remove_steven = { 
+		icon = GFX_decision_generic_break_treaty
+      
+		visible = {
+			
+			has_active_mission = LSS_Mobilization_1
+		}
+		
+		fire_only_once = yes
+		cost = 10
+		days_remove = 30
+
+		remove_effect = {
+			retire_character = LSS_Steven
+			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -200}
+			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -200}
+			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -200}
+        }
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
 	LSS_Attack_Loser = { #guh
 		icon = GFX_decision_infiltrate_state
 

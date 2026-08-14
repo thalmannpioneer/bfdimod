@@ -272,6 +272,9 @@
  LSS_focus_make_grand_deals: "Make Grand Deals"
  LSS_focus_make_grand_deals_desc: ""
 
+ LSS_focus_build_housing: "Build Housing"
+ LSS_focus_build_housing_desc: ""
+
  LSS_focus_create_stimulus_checks: "Create Stimulus Checks"
  LSS_focus_create_stimulus_checks_desc: "To get a functioning economy going, you need a basic supply and demand. The supply, while small, is there. However, the demand is still low as many don't want to spend their money. To curve this issue we still start giving money to people to spend around the island."
 
@@ -1450,7 +1453,40 @@
  YFC_focus_acknowledge_our_shortcomings_desc: ""
 
  YFC_focus_issues_in_east: "§CIssues in The East§!"
- YFC_focus_issues_in_east_desc: ""
+ YFC_focus_issues_in_east_desc: "Teardrop is making moves to seize the east and we must hurry to get some land and ports!" #ZDubbz me yapping
+
+ YFC_focus_to_portland: "To Portland!"
+ YFC_focus_to_portland_desc: "Portland is the port we have and we will make a connection to it" #ZDubbz me yapping
+
+ YFC_focus_plunder_the_wealth: "Plunder The East" 
+ YFC_focus_plunder_the_wealth_desc: "The east, while small in size, does still have villages and town that could be used" #ZDubbz me yapping
+
+ YFC_focus_distract_teardrop: "Distract Teardrop"
+ YFC_focus_distract_teardrop_desc: "similar to the letter one in the normal path" #ZDubbz me yapping
+
+ YFC_focus_dispatch_the_forces: "Dispatch The Forces"
+ YFC_focus_dispatch_the_forces_desc: "teardrop is scary and also we need more hands to rob homeless objects" #ZDubbz me yapping
+
+ YFC_focus_more_ways_of_wealth: "More Ways of Wealth"
+ YFC_focus_more_ways_of_wealth_desc: "With us low on cash and other funds to expand eastwards, we may need... new strategies (durgs... it's durgs)" #ZDubbz me yapping
+
+ YFC_focus_expand_our_claims: "Expand Our Claims"
+ YFC_focus_expand_our_claims_desc: "Just Exaggerate our claims but under different paint" #ZDubbz me yapping
+
+ YFC_focus_scout_teardrop_positions: "Scout Teardrop Positions"
+ YFC_focus_scout_teardrop_positions_desc: "To win these minor clashes we should do something crazy and look out who we are fighting" #ZDubbz me yapping
+
+ YFC_focus_smuggle_prisoners: "Smuggle Prisoners"
+ YFC_focus_smuggle_prisoners_desc: "RPing the Burning of Moscow but in the East and with objects" #ZDubbz me yapping
+
+ YFC_focus_way_to_seas: "§GWay to The Seas§!"
+ YFC_focus_way_to_seas_desc: "We have our port connection!!!!!" #ZDubbz me yapping
+
+ YFC_focus_locked_on_land: "§RLocked on Land§!"
+ YFC_focus_locked_on_land_desc: "We do not have that port connection... FUCK" #ZDubbz me yapping
+
+ YFC_focus_suppress_yoyleton: "Suppress Yoyleton"
+ YFC_focus_suppress_yoyleton_desc: "Deport Teardroppers be like:" #ZDubbz me yapping
 
  #Musketeers
  Musketeers_three_musketeers: "Three Musketeers"
