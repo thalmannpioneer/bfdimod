@@ -577,27 +577,27 @@ scripted_gui = {
                 }
                 OR = {
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@infantry_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@infantry_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = { {buying_amount < YFC.num_equipment@support_equipment_1}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@support_equipment_1}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@motorized_equipment }}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@motorized_equipment }}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@artillery_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@artillery_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_air_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@anti_air_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
                     }
                     AND = {
-                        var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_tank_equipment}}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@anti_tank_equipment}}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
                     }
                     AND = {
