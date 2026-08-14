@@ -165,7 +165,10 @@
  l_YFC_trade_cross: "§tX§!"
  l_YFC_other_trade_help_tt_d: "Dear Customer of the §YYellow Face Corporation§! (c)!\nIn this panel you can §7buy§! and §tsell§! food and equipment to our Company with really good prices. Just select anything you want to trade for and press the corresponding button.\nBy buying §9Food§! at our Company, you can reinforce your political regime and make people happy!"
  
+ YFC_eastern_state: "§9[target_eastern_state.GetName]§!"
  YFC_eastern_influence: "[YFC_EASTERN_INFLUENCE]"
- YFC_eastern_influence_yfc: "§YThe Corporation§! is Leading - [?target_eastern_state.eastern_support_var|%]="
- YFC_eastern_influence_tbt: "§5Teardrop§! is Leading - [?target_eastern_state.eastern_support_var|%=]"
- YFC_eastern_influence_neutral: "[target_eastern_state.GetName] is §gNeutral§!"
+ YFC_eastern_influence_yfc: "§YThe Corporation§! is Leading - [?target_eastern_state.eastern_support_var|%+0..0]"
+ YFC_eastern_owns_yfc: "§YThe Corporation§! Owns This Land"
+ YFC_eastern_influence_tbt: "§5Teardrop§! is Leading - [?target_eastern_state.eastern_support_var|%+0..0]"
+ YFC_eastern_owns_tbt: "§5Teardrop§! Owns This Land"
+ YFC_eastern_influence_neutral: "§gNeutral Territory§!"

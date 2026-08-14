@@ -16,56 +16,167 @@ guiTypes = {
 			
 			buttonType = {
 				name = "STATE_1"
-				position = { x = 0 y = 0 }
-				spriteType = "GFX_YFC_eastern_state_1_neutral"
+				position = { x = 18 y = 18 }
+				spriteType = "GFX_YFC_eastern_state_1"
 			}
 			
 			buttonType = {
 				name = "STATE_2"
-				position = { x = -85 y = 47 }
-				spriteType = "GFX_YFC_eastern_state_2_neutral"
+				position = { x = -72 y = 60 }
+				spriteType = "GFX_YFC_eastern_state_2"
 			}
 			
 			buttonType = {
 				name = "STATE_3"
 				position = { x = 53 y = 145 }
-				spriteType = "GFX_YFC_eastern_state_3_neutral"
+				spriteType = "GFX_YFC_eastern_state_3"
 			}
 			
 			buttonType = {
 				name = "STATE_4"
 				position = { x = 95 y = 170 }
-				spriteType = "GFX_YFC_eastern_state_4_neutral"
+				spriteType = "GFX_YFC_eastern_state_4"
 			}
 			
 			buttonType = {
 				name = "STATE_5"
 				position = { x = -30 y = 177 }
-				spriteType = "GFX_YFC_eastern_state_5_neutral"
+				spriteType = "GFX_YFC_eastern_state_5"
 			}
 			
 			buttonType = {
 				name = "STATE_6"
 				position = { x = 45 y = 265 }
-				spriteType = "GFX_YFC_eastern_state_6_neutral"
+				spriteType = "GFX_YFC_eastern_state_6"
 			}
 			
 			buttonType = {
 				name = "STATE_7"
 				position = { x = 3 y = 315 }
-				spriteType = "GFX_YFC_eastern_state_7_neutral"
+				spriteType = "GFX_YFC_eastern_state_7"
 			}
 			
 			buttonType = {
 				name = "STATE_8"
 				position = { x = 35 y = 382 }
-				spriteType = "GFX_YFC_eastern_state_8_neutral"
+				spriteType = "GFX_YFC_eastern_state_8"
 			}
 			
 			buttonType = {
 				name = "STATE_9"
 				position = { x = 100 y = 440 }
-				spriteType = "GFX_YFC_eastern_state_9_neutral"
+				spriteType = "GFX_YFC_eastern_state_9"
+			}
+			
+			iconType = {
+				name = "owned_1_yfc"
+				position = { x = 28 y = 78 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.7
+			}
+			iconType = {
+				name = "owned_1_tbt"
+				position = { x = 38 y = 78 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.7
+			}
+			
+			iconType = {
+				name = "owned_2_yfc"
+				position = { x = -50 y = 100 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+			}
+			iconType = {
+				name = "owned_2_tbt"
+				position = { x = -30 y = 100 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+			}
+			
+			iconType = {
+				name = "owned_3_yfc"
+				position = { x = 62 y = 168 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.5
+			}
+			iconType = {
+				name = "owned_3_tbt"
+				position = { x = 68 y = 168 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.5
+			}
+			
+			iconType = {
+				name = "owned_4_yfc"
+				position = { x = 95 y = 168 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.4
+			}
+			iconType = {
+				name = "owned_4_tbt"
+				position = { x = 100 y = 168 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.4
+			}
+			
+			iconType = {
+				name = "owned_5_yfc"
+				position = { x = -20 y = 210 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+			}
+			iconType = {
+				name = "owned_5_tbt"
+				position = { x = 0 y = 210 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+			}
+			
+			iconType = {
+				name = "owned_6_yfc"
+				position = { x = 42 y = 275 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.5
+			}
+			iconType = {
+				name = "owned_6_tbt"
+				position = { x = 48 y = 275 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.5
+			}
+			
+			iconType = {
+				name = "owned_7_yfc"
+				position = { x = 0 y = 350 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+			}
+			iconType = {
+				name = "owned_7_tbt"
+				position = { x = 20 y = 350 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+			}
+			
+			iconType = {
+				name = "owned_8_yfc"
+				position = { x = 58 y = 430 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.7
+			}
+			iconType = {
+				name = "owned_8_tbt"
+				position = { x = 68 y = 430 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.7
+			}
+			
+			iconType = {
+				name = "owned_9_yfc"
+				position = { x = 98 y = 450 }
+				spriteType = "GFX_YFC_eastern_owned_yfc"
+				scale = 0.7
+			}
+			iconType = {
+				name = "owned_9_tbt"
+				position = { x = 108 y = 450 }
+				spriteType = "GFX_YFC_eastern_owned_tbt"
+				scale = 0.7
 			}
 		}
 		
@@ -95,12 +206,21 @@ guiTypes = {
 			}
 			
 			instantTextboxType = {
+				name = "state"
+				text = YFC_eastern_state
+				font = hoi_30header
+				format = centre
+				maxWidth = 480
+				position = { x = 0 y = 50 }
+			}
+			
+			instantTextboxType = {
 				name = "info"
 				text = YFC_eastern_influence
 				font = hoi_30header
 				format = centre
 				maxWidth = 480
-				position = { x = 0 y = 50 }
+				position = { x = 0 y = 90 }
 			}
 
 			instantTextboxType = {

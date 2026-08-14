@@ -319,7 +319,24 @@ scripted_gui = {
         parent_window_token = decision_tab
 
         triggers = { 
-
+			owned_1_yfc_visible = { 229 = { is_owned_by = YFC } }
+			owned_1_tbt_visible = { 229 = { is_owned_by = TBT } }
+			owned_2_yfc_visible = { 232 = { is_owned_by = YFC } }
+			owned_2_tbt_visible = { 232 = { is_owned_by = TBT } }
+			owned_3_yfc_visible = { 228 = { is_owned_by = YFC } }
+			owned_3_tbt_visible = { 228 = { is_owned_by = TBT } }
+			owned_4_yfc_visible = { 225 = { is_owned_by = YFC } }
+			owned_4_tbt_visible = { 225 = { is_owned_by = TBT } }
+			owned_5_yfc_visible = { 230 = { is_owned_by = YFC } }
+			owned_5_tbt_visible = { 230 = { is_owned_by = TBT } }
+			owned_6_yfc_visible = { 226 = { is_owned_by = YFC } }
+			owned_6_tbt_visible = { 226 = { is_owned_by = TBT } }
+			owned_7_yfc_visible = { 192 = { is_owned_by = YFC } }
+			owned_7_tbt_visible = { 192 = { is_owned_by = TBT } }
+			owned_8_yfc_visible = { 231 = { is_owned_by = YFC } }
+			owned_8_tbt_visible = { 231 = { is_owned_by = TBT } }
+			owned_9_yfc_visible = { 227 = { is_owned_by = YFC } }
+			owned_9_tbt_visible = { 227 = { is_owned_by = TBT } }
         }
         effects = {
 			STATE_1_click = {
@@ -379,32 +396,42 @@ scripted_gui = {
         }
         properties = {
 			STATE_1 = {
-				image = "[EASTERN_229]"
+				frame = var_eastern_state_1
 			}
 			STATE_2 = {
-				image = "[EASTERN_232]"
+				frame = var_eastern_state_2
 			}
 			STATE_3 = {
-				image = "[EASTERN_228]"
+				frame = var_eastern_state_3
 			}
 			STATE_4 = {
-				image = "[EASTERN_225]"
+				frame = var_eastern_state_4
 			}
 			STATE_5 = {
-				image = "[EASTERN_230]"
+				frame = var_eastern_state_5
 			}
 			STATE_6 = {
-				image = "[EASTERN_226]"
+				frame = var_eastern_state_6
 			}
 			STATE_7 = {
-				image = "[EASTERN_192]"
+				frame = var_eastern_state_7
 			}
 			STATE_8 = {
-				image = "[EASTERN_231]"
+				frame = var_eastern_state_8
 			}
 			STATE_9 = {
-				image = "[EASTERN_227]"
+				frame = var_eastern_state_9
 			}
+			
+			owned_1_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_2_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_3_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_4_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_5_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_6_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_7_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_8_yfc = { image = "[OWNER_ICON_YFC]" }
+			owned_9_yfc = { image = "[OWNER_ICON_YFC]" }
         }
     }
 }

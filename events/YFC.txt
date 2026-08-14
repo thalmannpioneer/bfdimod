@@ -1964,7 +1964,9 @@ country_event = { #To the east
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			IF = {
-				limit = {has_completed_focus = YFC_focus_a_look_inward}
+				limit = {
+					has_completed_focus = YFC_focus_a_look_inward
+				}
 				complete_national_focus = YFC_focus_see_to_the_eastern_front
 				add_threat = 0.5
 				180 = {

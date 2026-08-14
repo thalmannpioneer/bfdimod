@@ -2525,6 +2525,9 @@ focus_tree = {
                         set_variable = {eastern_support_var = 0}
                     }
                 }
+				
+				YFC_update_eastern_states = yes
+				
                 YFC = {
                     set_variable = {eastern_borderwar_var = 0.25}
                     set_country_flag = eastern_action_ready

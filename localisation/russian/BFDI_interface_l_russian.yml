@@ -148,7 +148,10 @@
  l_YFC_trade_cross: "§tX§!"
  l_YFC_other_trade_help_tt_d: "Дорогой Клиент компании §YYellow Face Corporation§! (c)!\nВ этой панели вы можете §7покупать§! и §tпродавать§! еду и снаряжение у нашей Компании по невероятно выгодным ценам. Всего лишь выберите то, что желаете приобрести или продать и нажмите соответствующую кнопку.\nПокупая §9Еду§! в нашей Компании, вы обеспечиваете свой режим стабильностью и ростом!"
  
+ YFC_eastern_state: "[target_eastern_state.GetName]"
  YFC_eastern_influence: "[YFC_EASTERN_INFLUENCE]"
- YFC_eastern_influence_yfc: "§YКорпорация§! Доминирует - [?selected_eastern_state.eastern_support_var|%]"
- YFC_eastern_influence_tbt: "§5Тирдроп§! Доминирует - [?target_eastern_state.eastern_support_var|%]"
- YFC_eastern_influence_neutral: "[target_eastern_state.GetName] §gНейтрален§!"
+ YFC_eastern_influence_yfc: "§YКорпорация§! Доминирует - [?selected_eastern_state.eastern_support_var|%+0..0]"
+ YFC_eastern_owns_yfc: "§YКорпорация§! Владеет Территорией"
+ YFC_eastern_influence_tbt: "§5Тирдроп§! Доминирует - [?target_eastern_state.eastern_support_var|%+0..0]"
+ YFC_eastern_owns_yfc: "§5Тирдроп§! Владеет Территорией"
+ YFC_eastern_influence_neutral: "§gНейтральная Территория§!"

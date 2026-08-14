@@ -957,6 +957,7 @@ on_actions = {
                         set_country_flag = eastern_action_ready
                     }
                 }
+				YFC_update_eastern_states = yes
             }
         }
     }

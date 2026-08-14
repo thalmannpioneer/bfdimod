@@ -798,7 +798,7 @@ YFC_calc_trade_relations_loop = {
     set_temp_variable = { temp = 0 }
     YFC_calc_trade_update_nation = yes
     for_loop_effect = {
-        end = 16
+        end = 14
         value = temp
         YFC_calc_trade_relations = yes
     }
@@ -822,17 +822,17 @@ YFC_calc_trade_relations = {
     var:tradeable^temp = {
         save_event_target_as = curr
     }
-    set_temp_variable = { total_modifier = {value = event_target:curr.opinion@YFC add = YFC.opinion@event_target:curr} } 
+    set_temp_variable = { total_modifier = {value = event_target:curr.opinion@YFC add = YFC.opinion@event_target:curr} }
     set_temp_variable = { additional_modifier = tradeable_count^temp }
     multiply_temp_variable = { additional_modifier = 5 }
-    if = { 
+    if = {
         limit = { check_variable = { total_modifier > 40 } }
         set_temp_variable = { additional_modifier = 40 }
     }
     add_to_temp_variable = { total_modifier = additional_modifier }
 
     if = { #Bad
-        limit = { check_variable = { total_modifier < 15 } } #Default YFC can trade with others with the same ideology 
+        limit = { check_variable = { total_modifier < 15 } } #Default YFC can trade with others with the same ideology
         set_variable = { tradeable_relation^temp = 0 }
     }
     else_if = { #Neutral
@@ -931,7 +931,7 @@ YFC_calc_trade_risk_selling = {
     random_list = {
         deliver_chance = { #SHIPMENT MADE IT TO OTHER
             IF = {
-                limit = {check_variable = {buying_item = 0}} 
+                limit = {check_variable = {buying_item = 0}}
                 YFC = {
                     send_equipment = {
                         equipment = infantry_equipment
@@ -941,7 +941,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 1}} 
+                limit = {check_variable = {buying_item = 1}}
                 YFC = {
                     send_equipment = {
                         equipment = support_equipment_1
@@ -951,7 +951,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 2}} 
+                limit = {check_variable = {buying_item = 2}}
                 YFC = {
                     send_equipment = {
                         equipment = motorized_equipment
@@ -961,7 +961,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 3}} 
+                limit = {check_variable = {buying_item = 3}}
                 YFC = {
                     send_equipment = {
                         equipment = artillery_equipment
@@ -971,7 +971,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 4}} 
+                limit = {check_variable = {buying_item = 4}}
                 YFC = {
                     send_equipment = {
                         equipment = anti_air_equipment
@@ -981,7 +981,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 5}} 
+                limit = {check_variable = {buying_item = 5}}
                 YFC = {
                     send_equipment = {
                         equipment = anti_tank_equipment
@@ -991,7 +991,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 6}} 
+                limit = {check_variable = {buying_item = 6}}
                 add_timed_idea = {
                     idea = idea_YFC_trade_food
                     days = 90
@@ -1013,26 +1013,26 @@ YFC_calc_trade_risk_selling = {
                     OR = {
                         ROOT = { tag = GMD }
                         ROOT = { tag = TBT }
-                    }	
+                    }
                     set_temp_variable = {bonus_money_var = trade_cost_show_var}
                     multiply_temp_variable = {bonus_money_var = 0.25}
-                }   
+                }
                 YFC = {add_to_variable = {money_amount = bonus_money_var}}
             }
-            YFC = { 
+            YFC = {
                 add_to_variable = {money_amount = ROOT.trade_cost_show_var}
                 country_event = {
                     id = YFC_event.34
                     hours = 2
                 }
-            } 
+            }
         }
         deliver_risk = { #SHIPMENT FAILED TO MAKE IT TO OTHER
             clr_country_flag = ongoing_trade_offer
             clr_country_flag = Confirmed_Trade_Buying
 
             IF = {
-                limit = {check_variable = {buying_item = 0}} 
+                limit = {check_variable = {buying_item = 0}}
                 YFC = {
                     send_equipment = {
                         equipment = infantry_equipment
@@ -1042,7 +1042,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 1}} 
+                limit = {check_variable = {buying_item = 1}}
                 YFC = {
                     send_equipment = {
                         equipment = support_equipment_1
@@ -1052,7 +1052,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 2}} 
+                limit = {check_variable = {buying_item = 2}}
                 YFC = {
                     send_equipment = {
                         equipment = motorized_equipment
@@ -1062,7 +1062,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 3}} 
+                limit = {check_variable = {buying_item = 3}}
                 YFC = {
                     send_equipment = {
                         equipment = artillery_equipment
@@ -1072,7 +1072,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 4}} 
+                limit = {check_variable = {buying_item = 4}}
                 YFC = {
                     send_equipment = {
                         equipment = anti_air_equipment
@@ -1082,7 +1082,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 5}} 
+                limit = {check_variable = {buying_item = 5}}
                 YFC = {
                     send_equipment = {
                         equipment = anti_tank_equipment
@@ -1092,7 +1092,7 @@ YFC_calc_trade_risk_selling = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {buying_item = 6}} 
+                limit = {check_variable = {buying_item = 6}}
                 add_timed_idea = {
                     idea = idea_YFC_trade_food
                     days = 90
@@ -1203,7 +1203,7 @@ YFC_calc_trade_risk_buying = {
     random_list = {
         deliver_chance = { #SHIPMENT MADE IT TO YFC
             IF = {
-                limit = {check_variable = {selling_item = 0}} 
+                limit = {check_variable = {selling_item = 0}}
                 ROOT = {
                     send_equipment = {
                         equipment = infantry_equipment
@@ -1213,7 +1213,7 @@ YFC_calc_trade_risk_buying = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {selling_item = 1}} 
+                limit = {check_variable = {selling_item = 1}}
                 ROOT = {
                     send_equipment = {
                         equipment = support_equipment_1
@@ -1223,7 +1223,7 @@ YFC_calc_trade_risk_buying = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {selling_item = 2}} 
+                limit = {check_variable = {selling_item = 2}}
                 ROOT = {
                     send_equipment = {
                         equipment = motorized_equipment
@@ -1233,7 +1233,7 @@ YFC_calc_trade_risk_buying = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {selling_item = 3}} 
+                limit = {check_variable = {selling_item = 3}}
                 ROOT = {
                     send_equipment = {
                         equipment = artillery_equipment
@@ -1243,7 +1243,7 @@ YFC_calc_trade_risk_buying = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {selling_item = 4}} 
+                limit = {check_variable = {selling_item = 4}}
                 ROOT = {
                     send_equipment = {
                         equipment = anti_air_equipment
@@ -1253,7 +1253,7 @@ YFC_calc_trade_risk_buying = {
                 }
             }
             ELSE_IF = {
-                limit = {check_variable = {selling_item = 5}} 
+                limit = {check_variable = {selling_item = 5}}
                 ROOT = {
                     send_equipment = {
                         equipment = anti_tank_equipment
@@ -1274,13 +1274,13 @@ YFC_calc_trade_risk_buying = {
                     OR = {
                         ROOT = { tag = GMD }
                         ROOT = { tag = TBT }
-                    }	
+                    }
                 }
                 set_temp_variable = {bonus_money_var = trade_cost_show_var}
                 multiply_temp_variable = {bonus_money_var = 0.25}
                 YFC = {add_to_variable = {money_amount = bonus_money_var}}
             }
-            YFC = { 
+            YFC = {
                 subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
                 country_event = {
                     id = YFC_event.34
@@ -1292,10 +1292,10 @@ YFC_calc_trade_risk_buying = {
             clr_country_flag = ongoing_trade_offer
             clr_country_flag = Confirmed_Trade_Selling
             divide_variable = { trade_cost_show_var =100 }
- 
+
             add_to_variable = {money_amount = trade_cost_show_var}
 
-            YFC = { 
+            YFC = {
                 subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
                 country_event = {
                     id = YFC_event.73
@@ -1306,5 +1306,239 @@ YFC_calc_trade_risk_buying = {
     }
 }
 
+YFC_update_eastern_states = {
+    set_variable = { var_eastern_state_1 = 1 }
+    if = {
+        limit = { check_variable = { 229.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_1 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 229.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_1 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 229.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_1 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 229.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_1 = 5 }
+    }
+    if = {
+        limit = { 229 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_1 = 3 }
+    }
+    if = {
+        limit = { 229 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_1 = 5 }
+    }
 
+    set_variable = { var_eastern_state_2 = 1 }
+    if = {
+        limit = { check_variable = { 232.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_2 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 232.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_2 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 232.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_2 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 232.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_2 = 5 }
+    }
+    if = {
+        limit = { 232 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_2 = 3 }
+    }
+    if = {
+        limit = { 232 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_2 = 5 }
+    }
+
+    set_variable = { var_eastern_state_3 = 1 }
+    if = {
+        limit = { check_variable = { 228.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_3 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 228.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_3 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 228.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_3 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 228.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_3 = 5 }
+    }
+    if = {
+        limit = { 228 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_3 = 3 }
+    }
+    if = {
+        limit = { 228 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_3 = 5 }
+    }
+
+    set_variable = { var_eastern_state_4 = 1 }
+    if = {
+        limit = { check_variable = { 225.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_4 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 225.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_4 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 225.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_4 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 225.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_4 = 5 }
+    }
+    if = {
+        limit = { 225 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_4 = 3 }
+    }
+    if = {
+        limit = { 225 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_4 = 5 }
+    }
+
+    set_variable = { var_eastern_state_5 = 1 }
+    if = {
+        limit = { check_variable = { 230.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_5 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 230.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_5 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 230.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_5 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 230.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_5 = 5 }
+    }
+    if = {
+        limit = { 230 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_5 = 3 }
+    }
+    if = {
+        limit = { 230 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_5 = 5 }
+    }
+
+    set_variable = { var_eastern_state_6 = 1 }
+    if = {
+        limit = { check_variable = { 226.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_6 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 226.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_6 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 226.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_6 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 226.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_6 = 5 }
+    }
+    if = {
+        limit = { 226 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_6 = 3 }
+    }
+    if = {
+        limit = { 226 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_6 = 5 }
+    }
+
+    set_variable = { var_eastern_state_7 = 1 }
+    if = {
+        limit = { check_variable = { 192.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_7 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 192.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_7 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 192.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_7 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 192.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_7 = 5 }
+    }
+    if = {
+        limit = { 192 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_7 = 3 }
+    }
+    if = {
+        limit = { 192 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_7 = 5 }
+    }
+
+    set_variable = { var_eastern_state_8 = 1 }
+    if = {
+        limit = { check_variable = { 231.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_8 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 231.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_8 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 231.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_8 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 231.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_8 = 5 }
+    }
+    if = {
+        limit = { 231 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_8 = 3 }
+    }
+    if = {
+        limit = { 231 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_8 = 5 }
+    }
+
+    set_variable = { var_eastern_state_9 = 1 }
+    if = {
+        limit = { check_variable = { 227.eastern_support_var > 0.24 } }
+        set_variable = { var_eastern_state_9 = 2 }
+    }
+    if = {
+        limit = { check_variable = { 227.eastern_support_var > 0.74 } }
+        set_variable = { var_eastern_state_9 = 3 }
+    }
+    if = {
+        limit = { check_variable = { 227.eastern_support_var < -0.24 } }
+        set_variable = { var_eastern_state_9 = 4 }
+    }
+    if = {
+        limit = { check_variable = { 227.eastern_support_var < -0.74 } }
+        set_variable = { var_eastern_state_9 = 5 }
+    }
+    if = {
+        limit = { 227 = { is_owned_by = YFC } }
+        set_variable = { var_eastern_state_9 = 3 }
+    }
+    if = {
+        limit = { 227 = { is_owned_by = TBT } }
+        set_variable = { var_eastern_state_9 = 5 }
+    }
+}
 

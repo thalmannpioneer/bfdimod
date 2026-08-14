@@ -1,316 +1,4 @@
 defined_text = {
-	name = EASTERN_229
-	text = {
-		trigger = {
-			229 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_1_tbt_integrated
-	}
-	text = {
-		trigger = {
-			229 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_1_tbt_contested
-	}
-	text = {
-		trigger = {
-			229 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_1_yfc_integrated
-	}
-	text = {
-		trigger = {
-			229 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_1_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_1_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_232
-	text = {
-		trigger = {
-			232 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_2_tbt_integrated
-	}
-	text = {
-		trigger = {
-			232 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_2_tbt_contested
-	}
-	text = {
-		trigger = {
-			232 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_2_yfc_integrated
-	}
-	text = {
-		trigger = {
-			232 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_2_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_2_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_228
-	text = {
-		trigger = {
-			228 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_3_tbt_integrated
-	}
-	text = {
-		trigger = {
-			228 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_3_tbt_contested
-	}
-	text = {
-		trigger = {
-			228 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_3_yfc_integrated
-	}
-	text = {
-		trigger = {
-			228 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_3_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_3_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_225
-	text = {
-		trigger = {
-			225 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_4_tbt_integrated
-	}
-	text = {
-		trigger = {
-			225 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_4_tbt_contested
-	}
-	text = {
-		trigger = {
-			225 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_4_yfc_integrated
-	}
-	text = {
-		trigger = {
-			225 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_4_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_4_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_230
-	text = {
-		trigger = {
-			230 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_5_tbt_integrated
-	}
-	text = {
-		trigger = {
-			230 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_5_tbt_contested
-	}
-	text = {
-		trigger = {
-			230 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_5_yfc_integrated
-	}
-	text = {
-		trigger = {
-			230 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_5_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_5_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_226
-	text = {
-		trigger = {
-			226 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_6_tbt_integrated
-	}
-	text = {
-		trigger = {
-			226 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_6_tbt_contested
-	}
-	text = {
-		trigger = {
-			226 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_6_yfc_integrated
-	}
-	text = {
-		trigger = {
-			226 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_6_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_6_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_192
-	text = {
-		trigger = {
-			192 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_7_tbt_integrated
-	}
-	text = {
-		trigger = {
-			192 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_7_tbt_contested
-	}
-	text = {
-		trigger = {
-			192 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_7_yfc_integrated
-	}
-	text = {
-		trigger = {
-			192 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_7_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_7_neutral
-	}
-}
-
-defined_text = {
-	name = EASTERN_231
-	text = {
-		trigger = {
-			231 = {
-				check_variable = { eastern_support_var < -0.74 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_8_tbt_integrated
-	}
-	text = {
-		trigger = {
-			231 = {
-				check_variable = { eastern_support_var < -0.24 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_8_tbt_contested
-	}
-	text = {
-		trigger = {
-			231 = {
-				check_variable = { eastern_support_var > 0.75 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_8_yfc_integrated
-	}
-	text = {
-		trigger = {
-			231 = {
-				check_variable = { eastern_support_var > 0.25 }
-			}
-		}
-		localization_key = GFX_YFC_eastern_state_8_yfc_contested
-	}
-	text = {
-		localization_key = GFX_YFC_eastern_state_8_neutral
-	}
-}
-
-defined_text = {
 	name = EASTERN_227
 	text = {
 		trigger = {
@@ -318,7 +6,7 @@ defined_text = {
 				check_variable = { eastern_support_var < -0.74 }
 			}
 		}
-		localization_key = GFX_YFC_eastern_state_9_tbt_integrated
+		localization_key = 5
 	}
 	text = {
 		trigger = {
@@ -326,7 +14,7 @@ defined_text = {
 				check_variable = { eastern_support_var < -0.24 }
 			}
 		}
-		localization_key = GFX_YFC_eastern_state_9_tbt_contested
+		localization_key = 4
 	}
 	text = {
 		trigger = {
@@ -334,7 +22,7 @@ defined_text = {
 				check_variable = { eastern_support_var > 0.75 }
 			}
 		}
-		localization_key = GFX_YFC_eastern_state_9_yfc_integrated
+		localization_key = 3
 	}
 	text = {
 		trigger = {
@@ -342,15 +30,31 @@ defined_text = {
 				check_variable = { eastern_support_var > 0.25 }
 			}
 		}
-		localization_key = GFX_YFC_eastern_state_9_yfc_contested
+		localization_key = 2
 	}
 	text = {
-		localization_key = GFX_YFC_eastern_state_9_neutral
+		localization_key = 1
 	}
 }
 
 defined_text = {
 	name = YFC_EASTERN_INFLUENCE
+	text = {
+		trigger = {
+			var:selected_eastern_state = {
+				is_owned_by = YFC
+			}
+		}
+		localization_key = YFC_eastern_owns_yfc
+	}
+	text = {
+		trigger = {
+			var:selected_eastern_state = {
+				is_owned_by = TBT
+			}
+		}
+		localization_key = YFC_eastern_owns_tbt
+	}
 	text = {
 		trigger = {
 			var:selected_eastern_state = {
@@ -369,5 +73,21 @@ defined_text = {
 	}
 	text = {
 		localization_key = YFC_eastern_influence_neutral
+	}
+}
+
+defined_text = {
+	name = OWNER_ICON_YFC
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = YFC_tophat
+				ruling_only = yes
+			}
+		}
+		localization_key = GFX_YFC_eastern_owned_yfc_th
+	}
+	text = {
+		localization_key = GFX_YFC_eastern_owned_yfc
 	}
 }

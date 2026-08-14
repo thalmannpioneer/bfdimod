@@ -1,713 +1,73 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_YFC_eastern_state_1_neutral"
+		name = "GFX_YFC_eastern_state_1"
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
+		noOfFrames = 5
 		transparencecheck = yes
-		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_1_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_1_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_1_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_1_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/1.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_2_neutral"
+		name = "GFX_YFC_eastern_state_2"
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
+		noOfFrames = 5
 		transparencecheck = yes
 		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_2_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_2_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_2_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_2_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/2.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_3_neutral"
+		name = "GFX_YFC_eastern_state_3"
+		noOfFrames = 5
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
 		transparencecheck = yes
 		
 	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_3_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_3_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_3_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_3_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/3.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_4_neutral"
+		name = "GFX_YFC_eastern_state_4"
+		noOfFrames = 5
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
 		transparencecheck = yes
 		
 	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_4_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_4_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_4_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_4_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/4.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_5_neutral"
+		name = "GFX_YFC_eastern_state_5"
+		noOfFrames = 5
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
 		transparencecheck = yes
 		
 	}
+	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_5_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
+		name = "GFX_YFC_eastern_state_6"
+		noOfFrames = 5
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
 		transparencecheck = yes
 		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_5_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_5_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_5_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/5.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_6_neutral"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
+		name = "GFX_YFC_eastern_state_7"
+		noOfFrames = 5
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
 		transparencecheck = yes
 		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_6_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_6_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_6_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_6_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/6.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_7_neutral"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
+		name = "GFX_YFC_eastern_state_8"
+		noOfFrames = 5
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
 		transparencecheck = yes
 		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_7_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_7_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_7_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_7_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/7.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
-		name = "GFX_YFC_eastern_state_8_neutral"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-		transparencecheck = yes
-		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_8_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_8_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_8_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_8_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/8.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	
-	spriteType = {
-		name = "GFX_YFC_eastern_state_9_neutral"
+		name = "GFX_YFC_eastern_state_9"
+		noOfFrames = 5
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
 		transparencecheck = yes
 		
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_9_yfc_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_9_yfc_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/yellow.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_9_tbt_contested"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = add
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-	}
-	spriteType = {
-		name = "GFX_YFC_eastern_state_9_tbt_integrated"
-		textureFile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-		transparencecheck = yes
-		
-		animation = {
-			animationmaskfile = "gfx/interface/decisions/YFC_eastern_game/9.dds"
-			animationtexturefile = "gfx/interface/decisions/YFC_eastern_game/blue.dds"
-			animationrotation = 0.0
-			animationlooping = yes
-			animationtime = 1.0
-			animationdelay = 0.0
-			animationblendmode = overlay
-			animationtype = scrolling
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 	}
 	
 	spriteType = {
@@ -719,6 +79,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_YFC_eastern_bg"
 		textureFile = "gfx/interface/decisions/YFC_eastern_game/bg.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_YFC_eastern_owned_yfc"
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/owned_yfc.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_YFC_eastern_owned_yfc_th"
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/owned_yfc_th.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_YFC_eastern_owned_tbt"
+		textureFile = "gfx/interface/decisions/YFC_eastern_game/owned_tbt.dds"
 		alwaystransparent = yes
 	}
 }
