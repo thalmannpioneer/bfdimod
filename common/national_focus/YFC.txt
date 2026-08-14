@@ -2487,6 +2487,10 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = { #All the vars of support
+				set_variable = { selected_eastern_state = 230 }
+				var:selected_eastern_state = {
+					   save_global_event_target_as = target_eastern_state
+				}
                 every_state = {
                     limit = {
                         OR = {

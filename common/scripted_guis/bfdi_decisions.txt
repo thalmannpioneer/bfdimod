@@ -322,10 +322,89 @@ scripted_gui = {
 
         }
         effects = {
-
+			STATE_1_click = {
+				set_variable = { selected_eastern_state = 229 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_2_click = {
+				set_variable = { selected_eastern_state = 232 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_3_click = {
+				set_variable = { selected_eastern_state = 228 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_4_click = {
+				set_variable = { selected_eastern_state = 225 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_5_click = {
+				set_variable = { selected_eastern_state = 230 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_6_click = {
+				set_variable = { selected_eastern_state = 226 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_7_click = {
+				set_variable = { selected_eastern_state = 192 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_8_click = {
+				set_variable = { selected_eastern_state = 231 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
+			STATE_9_click = {
+				set_variable = { selected_eastern_state = 227 }
+				var:selected_eastern_state = {
+					save_global_event_target_as = target_eastern_state
+				}
+			}
         }
         properties = {
-
+			STATE_1 = {
+				image = "[EASTERN_229]"
+			}
+			STATE_2 = {
+				image = "[EASTERN_232]"
+			}
+			STATE_3 = {
+				image = "[EASTERN_228]"
+			}
+			STATE_4 = {
+				image = "[EASTERN_225]"
+			}
+			STATE_5 = {
+				image = "[EASTERN_230]"
+			}
+			STATE_6 = {
+				image = "[EASTERN_226]"
+			}
+			STATE_7 = {
+				image = "[EASTERN_192]"
+			}
+			STATE_8 = {
+				image = "[EASTERN_231]"
+			}
+			STATE_9 = {
+				image = "[EASTERN_227]"
+			}
         }
     }
 }

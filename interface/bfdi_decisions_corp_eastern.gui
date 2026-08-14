@@ -2,57 +2,115 @@ guiTypes = {
 	containerWindowType = {
 		name = "corp_eastern_container"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height = 500 }
+		size = { width = 100% height = 750 }
 		
-		background = {
+		iconType = {
 			name = "bg"
-			spriteType = "GFX_tiled_window_transparent"
+			spriteType = "GFX_YFC_eastern_bg"
+			position = { x = 0 y = 15 }
 		}
 		
 		containerWindowType = {
 			name = "states"
-			position = { x = 200 y = 0 }
+			position = { x = 200 y = 10 }
 			
 			buttonType = {
-				name = "1"
+				name = "STATE_1"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_YFC_eastern_state_1_neutral"
 			}
 			
 			buttonType = {
-				name = "2"
+				name = "STATE_2"
 				position = { x = -85 y = 47 }
 				spriteType = "GFX_YFC_eastern_state_2_neutral"
 			}
+			
+			buttonType = {
+				name = "STATE_3"
+				position = { x = 53 y = 145 }
+				spriteType = "GFX_YFC_eastern_state_3_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_4"
+				position = { x = 95 y = 170 }
+				spriteType = "GFX_YFC_eastern_state_4_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_5"
+				position = { x = -30 y = 177 }
+				spriteType = "GFX_YFC_eastern_state_5_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_6"
+				position = { x = 45 y = 265 }
+				spriteType = "GFX_YFC_eastern_state_6_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_7"
+				position = { x = 3 y = 315 }
+				spriteType = "GFX_YFC_eastern_state_7_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_8"
+				position = { x = 35 y = 382 }
+				spriteType = "GFX_YFC_eastern_state_8_neutral"
+			}
+			
+			buttonType = {
+				name = "STATE_9"
+				position = { x = 100 y = 440 }
+				spriteType = "GFX_YFC_eastern_state_9_neutral"
+			}
+		}
+		
+		iconType = {
+			name = "umbrella"
+			position = { x = 175 y = -20 }
+			spriteType = GFX_YFC_eastern_umbrella
 		}
 
 		containerWindowType = {
 			name = "state_info_container"
 			size = { width = 480 height = 180 }
-			position = { x = 14 y = 315 }
+			position = { x = 14 y = 560 }
 			
 			background = {
 				name = "background_text_east"
 				spriteType = GFX_tiled_decisions_bg_small
 			}
-		}
-		
-		instantTextboxType = {
-			name = "title"
-			text = YFC_eastern_Countdown
-			font = hoi_36header
-			format = centre
-			maxWidth = 500
-			position = { x = 7 y = 315 }
-		}
+			
+			instantTextboxType = {
+				name = "title"
+				text = YFC_eastern_Countdown
+				font = hoi_36header
+				format = centre
+				maxWidth = 480
+				position = { x = 0 y = 0 }
+			}
+			
+			instantTextboxType = {
+				name = "info"
+				text = YFC_eastern_influence
+				font = hoi_30header
+				format = centre
+				maxWidth = 480
+				position = { x = 0 y = 50 }
+			}
 
-		instantTextboxType = {
-			name = "state_hint"
-			text = YFC_eastern_SelectInfo
-			font = hoi_16mbs
-			format = centre
-			maxWidth = 500
-			position = { x = 7 y = 470 }
+			instantTextboxType = {
+				name = "state_hint"
+				text = YFC_eastern_SelectInfo
+				font = hoi_16mbs
+				format = centre
+				maxWidth = 480
+				position = { x = 0 y = 155 }
+			}
 		}
 	}
 }

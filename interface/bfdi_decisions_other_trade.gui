@@ -2,7 +2,7 @@ guiTypes = {
     containerWindowType = {
         name = "other_trade_container"
         position = { x = 10 y = 0 }
-        size = { width = 100% height = 230 }
+        size = { width = 100% height = 280 }
 
         background = {
             name = "bg"
@@ -12,133 +12,153 @@ guiTypes = {
         instantTextboxType = { #I would like this updated at some point to look better
             name = "title"
             text = l_decisions_trade_title
-            position = { x = 10 y = -10 }
-            maxWidth = 500
+            position = { x = 10 y = 10 }
+            maxWidth = 450
             format = centre
             font = hoi_36header
         }
+		
+		iconType = {
+			scale = 0.8
+			name = "help"
+			spriteType = "GFX_corp_help"
+			position = { x = 430 y = -10 }
+			pdx_tooltip = l_YFC_trade_help_tt
+			pdx_tooltip_delayed = l_YFC_other_trade_help_tt_d
+		}
 
-        buttonType = {
-            name = "Selling_Confirm_Button"
-            position = { x = 30 y = 60 }
-            quadTextureSprite ="GFX_icon_button_46x46"
-            buttonText = "Sell" #UPDATE LATER
-            buttonFont = "hoi_18mbs"
-            clicksound = click_ok
-            oversound = ui_menu_over
-            pdx_tooltip = l_decisions_trade_confirm_tooltip
-        }
+        containerWindowType = {
+			name = "mechanic"
+			position = { x = 15 y = 60 }
+			size = { width = 480 height = 212 }
+			
+			background = {
+				name = "bg"
+				spriteType = "GFX_tiled_window_small_transparent"
+			}
+			
+			buttonType = {
+				name = "Selling_Confirm_Button"
+				position = { x = 20 y = 40 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = "Sell" #UPDATE LATER
+				buttonFont = "hoi_18mbs"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = l_decisions_trade_confirm_tooltip
+			}
 
-        buttonType = {
-            name = "Buying_Confirm_Button"
-            position = { x = 30 y = 150 }
-            quadTextureSprite ="GFX_icon_button_46x46"
-            buttonText = "Buy" #UPDATE LATER
-            buttonFont = "hoi_18mbs"
-            clicksound = click_ok
-            oversound = ui_menu_over
-            pdx_tooltip = l_decisions_trade_confirm_tooltip
-        }
+			buttonType = {
+				name = "Buying_Confirm_Button"
+				position = { x = 20 y = 130 }
+				quadTextureSprite ="GFX_icon_button_46x46"
+				buttonText = "Buy" #UPDATE LATER
+				buttonFont = "hoi_18mbs"
+				clicksound = click_ok
+				oversound = ui_menu_over
+				pdx_tooltip = l_decisions_trade_confirm_tooltip
+			}
 
-        buttonType = {
-            name = "selling_item_button_increase_X"
-            position = { x = 450 y = 90 }
-            quadTextureSprite = "GFX_naval_increase_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
-            pdx_tooltip = l_decisions_trade_amount_tooltip
-        }
+			buttonType = {
+				name = "selling_item_button_increase_X"
+				position = { x = 430 y = 70 }
+				quadTextureSprite = "GFX_naval_increase_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+				pdx_tooltip = l_decisions_trade_amount_tooltip
+			}
 
-        buttonType = {
-            name = "selling_item_button_decrease_X"
-            position = { x = 400 y = 90 }
-            quadTextureSprite = "GFX_naval_decrease_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
-            pdx_tooltip = l_decisions_trade_amount_tooltip
-        }
+			buttonType = {
+				name = "selling_item_button_decrease_X"
+				position = { x = 380 y = 70 }
+				quadTextureSprite = "GFX_naval_decrease_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+				pdx_tooltip = l_decisions_trade_amount_tooltip
+			}
 
-        instantTextboxType = {
-            name = "selling_amount_text"
-            text = [?THIS.selling_amount|0]
-            position = { x = 390 y = 50 }
-            maxWidth = 100
-            format = centre
-            font = hoi_30header
-        }
+			instantTextboxType = {
+				name = "selling_amount_text"
+				text = [?THIS.selling_amount|0]
+				position = { x = 370 y = 30 }
+				maxWidth = 100
+				format = centre
+				font = hoi_30header
+			}
 
-        instantTextboxType = {
-            name = "selling_amount_text_confirmed"
-            text = [?THIS.selling_amount|G0]
-            position = { x = 390 y = 50 }
-            maxWidth = 100
-            format = centre
-            font = hoi_30header
-        }
+			instantTextboxType = {
+				name = "selling_amount_text_confirmed"
+				text = [?THIS.selling_amount|G0]
+				position = { x = 370 y = 30 }
+				maxWidth = 100
+				format = centre
+				font = hoi_30header
+			}
 
-        buttonType = {
-            name = "buying_item_button_increase_X"
-            position = { x = 450 y = 180 }
-            quadTextureSprite = "GFX_naval_increase_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
-            pdx_tooltip = l_decisions_trade_amount_tooltip
-        }
+			buttonType = {
+				name = "buying_item_button_increase_X"
+				position = { x = 430 y = 150 }
+				quadTextureSprite = "GFX_naval_increase_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+				pdx_tooltip = l_decisions_trade_amount_tooltip
+			}
 
-        buttonType = {
-            name = "buying_item_button_decrease_X"
-            position = { x = 400 y = 180 }
-            quadTextureSprite = "GFX_naval_decrease_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
-            pdx_tooltip = l_decisions_trade_amount_tooltip
-        }
+			buttonType = {
+				name = "buying_item_button_decrease_X"
+				position = { x = 380 y = 150 }
+				quadTextureSprite = "GFX_naval_decrease_amount"
+				pdx_tooltip = ""
+				clicksound = click_default
+				pdx_tooltip = l_decisions_trade_amount_tooltip
+			}
 
-        instantTextboxType = {
-            name = "buying_amount_text"
-            text = [?THIS.buying_amount|0]
-            position = { x = 390 y = 140 }
-            maxWidth = 100
-            format = centre
-            font = hoi_30header
-        }
+			instantTextboxType = {
+				name = "buying_amount_text"
+				text = [?THIS.buying_amount|0]
+				position = { x = 370 y = 115 }
+				maxWidth = 100
+				format = centre
+				font = hoi_30header
+			}
 
-        instantTextboxType = {
-            name = "buying_amount_text_confirmed"
-            text = [?THIS.buying_amount|G0]
-            position = { x = 390 y = 140 }
-            maxWidth = 100
-            format = centre
-            font = hoi_30header
-        }
+			instantTextboxType = {
+				name = "buying_amount_text_confirmed"
+				text = [?THIS.buying_amount|G0]
+				position = { x = 370 y = 115 }
+				maxWidth = 100
+				format = centre
+				font = hoi_30header
+			}
 
-        buttonType = {
-            name = "Selling_Button"
-            position = { x = 100 y = 40 }
-            spriteType = GFX_prod_land_equipment_item_large
-            clicksound = bfdi_button_press
-            pdx_tooltip = l_decisions_trade_buy_tooltip
-        }
+			buttonType = {
+				name = "Selling_Button"
+				position = { x = 80 y = 20 }
+				spriteType = GFX_prod_land_equipment_item_large
+				clicksound = bfdi_button_press
+				pdx_tooltip = l_decisions_trade_buy_tooltip
+			}
 
-        iconType = {
-            name = "background_equipment_box_selling_item"
-            position = { x = 180 y = 65 }
-            alwaystransparent = yes
-        }
+			iconType = {
+				name = "background_equipment_box_selling_item"
+				position = { x = 160 y = 45 }
+				alwaystransparent = yes
+			}
 
-        buttonType = {
-            name = "Buying_Button"
-            position = { x = 100 y = 130 }
-            spriteType = GFX_prod_land_equipment_item_large
-            clicksound = bfdi_button_press
-            pdx_tooltip = l_decisions_trade_sell_tooltip
-        }
+			buttonType = {
+				name = "Buying_Button"
+				position = { x = 80 y = 110 }
+				spriteType = GFX_prod_land_equipment_item_large
+				clicksound = bfdi_button_press
+				pdx_tooltip = l_decisions_trade_sell_tooltip
+			}
 
-        iconType = {
-            name = "background_equipment_box_buying_item"
-            position = { x = 180 y = 155 }
-            alwaystransparent = yes
-        }
+			iconType = {
+				name = "background_equipment_box_buying_item"
+				position = { x = 160 y = 135 }
+				alwaystransparent = yes
+			}
+		}
     }
 }
 
@@ -163,13 +183,16 @@ guiTypes = {
             name = "background_equipment_box_item"
             position = { x = 90 y = 30 }
         }
-        buttonType = {
-            name = "other_trade_list_equipment_button_select"
+        iconType = {
+            name = "other_trade_list_equipment_fake"
             position = { x = 290 y = 30 }
             quadTextureSprite = "GFX_naval_increase_amount"
-            pdx_tooltip = ""
-            clicksound = click_default
         }
+		buttonType = {
+			name = "other_trade_list_equipment_button_select"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_YFC_trade_select_overlay"
+		}
     }
 
     containerWindowType = { #Picking Equipment
