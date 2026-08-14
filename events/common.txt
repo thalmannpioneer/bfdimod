@@ -265,10 +265,11 @@ country_event = {
             }
             country_event = {
                 id = uncommon_event.1
-                days = 3
+                days = 7
                 hours = 12
-                random_hours = 48
+                random_hours = 100
             }
+            set_variable = { unknown_emp_var = 0}
         }
         ELSE_IF = {
             limit = {is_debug = no}
@@ -309,6 +310,10 @@ country_event = {
     picture = GFX_Temp_event
 
     is_triggered_only = yes
+
+    trigger = {
+        check_variable = { unknown_emp_var > 10 }
+    }
 
     option = {
         name = uncommon_event.2.a
@@ -358,6 +363,22 @@ country_event = {
                     change_tag_from = ROOT 
                 }
             }    
+        }
+    }
+
+    option = {
+        name = uncommon_event.2.b
+
+        trigger = {
+            check_variable = { unknown_emp_var < 10 }
+        }
+
+        hidden_effect = {
+            add_to_variable = {unknown_emp_var = 0}
+            country_event = {
+                id = uncommon_event.2
+                hours = 1
+            }
         }
     }
 }

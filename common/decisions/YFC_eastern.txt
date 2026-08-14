@@ -1,7 +1,10 @@
 decision_YFC_eastern_category = {
 	YFC_eastern_Countdown = { #Countdown to the end
 		activation = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front	
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}	
 			NOT = {has_completed_focus = YFC_focus_who_dares_wins}
 		}
 		available = {
@@ -9,7 +12,7 @@ decision_YFC_eastern_category = {
 		}
 		icon = GFX_mission_YFC_eastern_game  #Update later!!!
 		is_good = yes
-		days_mission_timeout = 600 #540
+		days_mission_timeout = 550 #540
 		timeout_effect = {
 			custom_effect_tooltip = l_YFC_eastern_end
 			hidden_effect = { #There has to be a better way but I'm dumb
@@ -81,6 +84,7 @@ decision_YFC_eastern_category = {
         
 		visible = {
 			controls_state = FROM
+			has_completed_focus = YFC_focus_see_to_the_eastern_front
 			FROM = {
 				compliance > 5
 				NOT = {is_core_of = ROOT}
@@ -382,7 +386,10 @@ decision_YFC_eastern_category = {
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}
 			FROM = {
 				is_controlled_by = EMP
 				num_owned_neighbour_states = {
@@ -415,11 +422,18 @@ decision_YFC_eastern_category = {
 		fire_only_once = no
 
 		complete_effect = {
+			IF = {
+				limit = {has_completed_focus = YFC_focus_see_to_the_eastern_front}
+				custom_effect_tooltip = l_YFC_eastern_gain_10
+				FROM = {add_to_variable = { eastern_support_var = 0.1 }}
+			}
+			ELSE = {
+				custom_effect_tooltip = l_YFC_eastern_gain_5
+				FROM = {add_to_variable = { eastern_support_var = 0.05 }}
+			}
 			custom_effect_tooltip = l_YFC_eastern_action_use
-			custom_effect_tooltip = l_YFC_eastern_gain_10
 			clr_country_flag = eastern_action_ready
 			subtract_from_variable = { money_amount = 0.5 }
-			FROM = {add_to_variable = { eastern_support_var = 0.1 }}
         }
 
 		ai_will_do = {
@@ -448,7 +462,10 @@ decision_YFC_eastern_category = {
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}
 			FROM = {
 				is_controlled_by = EMP
 				num_owned_neighbour_states = {
@@ -482,9 +499,17 @@ decision_YFC_eastern_category = {
 
 		complete_effect = {
 			custom_effect_tooltip = l_YFC_eastern_action_use
-			custom_effect_tooltip = l_YFC_eastern_gain_10
+			
+			IF = {
+				limit = {has_completed_focus = YFC_focus_see_to_the_eastern_front}
+				custom_effect_tooltip = l_YFC_eastern_gain_10
+				FROM = {add_to_variable = { eastern_support_var = 0.1 }}
+			}
+			ELSE = {
+				custom_effect_tooltip = l_YFC_eastern_gain_5
+				FROM = {add_to_variable = { eastern_support_var = 0.05 }}
+			}
 			clr_country_flag = eastern_action_ready
-			FROM = {add_to_variable = { eastern_support_var = 0.1 }}
 			hidden_effect = {
 				add_manpower = -250
 			}	
@@ -516,7 +541,10 @@ decision_YFC_eastern_category = {
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}
 			FROM = { 
 				check_variable = {eastern_support_var > 0.75}
 				is_controlled_by = EMP
@@ -615,7 +643,10 @@ decision_YFC_eastern_category = {
 		icon = GFX_decisions_YFC_eastern_raid
         
 		visible = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front	
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}	
 			NOT = {has_completed_focus = YFC_focus_who_dares_wins}
 			OR = {
 				NOT = {has_non_aggression_pact_with = TBT}

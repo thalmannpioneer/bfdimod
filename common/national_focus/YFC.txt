@@ -4674,22 +4674,29 @@ focus_tree = {
             }
         }
 
-        available = {
-            hidden_trigger = {
-                has_completed_focus = YFC_focus_way_of_raiders
-            }
-        }
+        #available = {
+        #    hidden_trigger = {
+        #        has_completed_focus = YFC_focus_way_of_raiders
+        #    }
+        #}
 
-        allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
 
         cost = 5 
 
         completion_reward = {
-            hidden_effect = { #Just for testing, remove later
+            hidden_effect = {
                 set_country_leader_portrait = {
                     portrait = GFX_YFC_crack_face
                 }
                 set_cosmetic_tag = YFC_raiders
+                country_event = { #Starts East Game
+                    id = YFC_event.44
+                    days = 120
+                    random_days = 120
+                    hours = 12
+                    random_hours = 100
+                }
             }
         }
     }
@@ -5397,6 +5404,90 @@ focus_tree = {
             add_ideas = idea_YFC_real_raider_force
             unlock_decision_tooltip = YFC_raid_reform
             army_experience = 50
+        }
+    }
+
+    focus = { #East
+        id = YFC_focus_issues_in_east
+        relative_position_id = YFC_focus_way_of_raiders
+        x = 6
+        y = 3
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_issues_in_east
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_issues_in_east }
+
+        prerequisite = { focus = YFC_focus_way_of_raiders }
+
+        cost = 5
+
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            hidden_effect = { #All the vars of support
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229 #???
+                            state = 232 #???
+                            state = 228 #???
+                            state = 225 #Portland
+                            state = 230 #???
+                            state = 226 #Ofalk
+                            state = 192 #???
+                            state = 231 #???
+                            state = 227 #Ganymede
+                        }
+                    }
+                    IF = { #I could try to understand why has_dynamic_modifier does not work here but I'm too tired to care anymore.
+                        limit = {
+                            OR = {
+                                state = 230
+                                state = 228
+                                state = 232
+                            }
+                        }
+                        set_variable = {eastern_support_var = -0.5}
+                    }
+                    ELSE_IF = {
+                        limit = {
+                            state = 229
+                        }
+                        set_variable = {eastern_support_var = -0.65}
+                    }
+                    ELSE = {
+                        set_variable = {eastern_support_var = 0}
+                    }
+                }
+                YFC = {
+                    set_variable = {eastern_borderwar_var = 0.25}
+                    set_country_flag = eastern_action_ready
+                }
+                TBT = {
+                    IF = {
+                        limit = {is_ai = yes}
+                        add_manpower = 5000
+                    }
+                    set_variable = {eastern_borderwar_var = 0.25}
+                    set_country_flag = eastern_action_ready
+                }
+                IF = {
+                    limit = {
+                        is_ai = yes
+                        check_variable = {money_amount < 10}
+                    }
+                    add_to_variable = { money_amount = 5 }
+                }
+            }
         }
     }
 }

@@ -222,7 +222,7 @@
  
  #???
  LSS_focus_understanding_our_position: "Understanding our Position"
- LSS_focus_understanding_our_position_desc: "'This is not right! I was in Texas State Capitol! What is going on? What is this land? Where...'"
+ LSS_focus_understanding_our_position_desc: "'This is not right! I was in the Texas State Capitol! What is going on? What is this land? Where...'"
 
  LSS_focus_see_our_stockpiles: "See our Stockpiles"
  LSS_focus_see_our_stockpiles_desc: "It's clear that a way out of these lands will not be a quick one. We must scavenge what we need and want to move forward. We will start with locating and securing caches that came with us. While we are at it, lets requisition some equipment from the scattered and confused population for 'protection'."
@@ -240,10 +240,10 @@
  LSS_focus_the_commerce_desc: "We are a capitalist country, yet the amount of products being sold has hit an all time low as people have hoarding everything and anything they can grab. The time is now to start and restart policies to encourage both selling and buying."
 
  LSS_focus_the_relief: "The Relief"
- LSS_focus_the_relief_desc: ""
+ LSS_focus_the_relief_desc: "With the teleport, the dollar became useless overnight. Bartering as quickly taken over, with people trading anything for everything. Should we not act fast, new 'items' could enter the market. We will enforce the dollar through aid."
 
  LSS_focus_setup_the_livestock: "Setup the Livestock"
- LSS_focus_setup_the_livestock_desc: ""
+ LSS_focus_setup_the_livestock_desc: "It's strange, as the teleport seemingly picked weird things to bring over. One of those was some sheep, cows, pigs, and a few other animals. These could be a good source of food if matinted correctly. Let's get some farms and barns going. "
 
  LSS_focus_encourage_local_growing: "Encourage Local Growing"
  LSS_focus_encourage_local_growing_desc: ""
@@ -255,7 +255,7 @@
  LSS_focus_first_harvest_desc: ""
 
  LSS_focus_manufacture_tools: "Manufacture Tools"
- LSS_focus_manufacture_tools_desc: ""
+ LSS_focus_manufacture_tools_desc: "A good amount of modern industry and economy lies in the worker's tools. Since we are still limited in manufacturing and in jobs, we will get people employed into making tools to fuel more jobs. A great upward cycle!"
 
  LSS_focus_grant_land_rights: "Grant Land Rights"
  LSS_focus_grant_land_rights_desc: ""
@@ -264,7 +264,7 @@
  LSS_focus_repurpose_vehicles_desc: ""
 
  LSS_focus_create_new_businesses: "Create new Businesses"
- LSS_focus_create_new_businesses_desc: ""
+ LSS_focus_create_new_businesses_desc: "Unemployment is catastrophically high. Our rough estimates have placed the number around 50%+ on the lower ends. Any more days could cause unspeakable damage to the already fairagle nation. We must create new jobs and employment opportunities as quickly as possible."
 
  LSS_focus_offer_land_to_companies: "Offer Land to Companies"
  LSS_focus_offer_land_to_companies_desc: ""
@@ -273,7 +273,7 @@
  LSS_focus_make_grand_deals_desc: ""
 
  LSS_focus_create_stimulus_checks: "Create Stimulus Checks"
- LSS_focus_create_stimulus_checks_desc: ""
+ LSS_focus_create_stimulus_checks_desc: "To get a functioning economy going, you need a basic supply and demand. The supply, while small, is there. However, the demand is still low as many don't want to spend their money. To curve this issue we still start giving money to people to spend around the island."
 
  LSS_focus_military_assistance: "Military Assistance"
  LSS_focus_military_assistance_desc: ""
@@ -1413,7 +1413,7 @@
  YFC_focus_prepare_for_strikes: "§gPrepare For Strikes§!"
  YFC_focus_prepare_for_strikes_desc: ""
 
- YFC_focus_acquire_the_people: "Acquire The Objects" #Or objects idk
+ YFC_focus_acquire_the_people: "Acquire The Objects" 
  YFC_focus_acquire_the_people_desc: ""
 
  YFC_focus_acquire_the_firepower: "Acquire The Firepower"
@@ -1448,6 +1448,9 @@
 
  YFC_focus_acknowledge_our_shortcomings: "Acknowledge Our Shortcomings"
  YFC_focus_acknowledge_our_shortcomings_desc: ""
+
+ YFC_focus_issues_in_east: "§CIssues in The East§!"
+ YFC_focus_issues_in_east_desc: ""
 
  #Musketeers
  Musketeers_three_musketeers: "Three Musketeers"
