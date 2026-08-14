@@ -4739,7 +4739,7 @@ focus_tree = {
         id = YFC_focus_seek_cooperation_with_bunch
         relative_position_id = YFC_focus_way_of_raiders
         x = 0
-        y = 3
+        y = 1
         icon = GFX_focus_generic
 
 
@@ -5088,8 +5088,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_prepare_for_strikes
         relative_position_id = YFC_focus_way_of_raiders
-        x = -6
-        y = 3
+        x = -8
+        y = 1
         icon = GFX_focus_generic
 
 
@@ -5180,7 +5180,7 @@ focus_tree = {
         id = YFC_focus_pillage_our_neighbors
         relative_position_id = YFC_focus_train_with_bunch
         x = 0
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
 
@@ -5223,8 +5223,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_setup_staging_grounds
         relative_position_id = YFC_focus_pillage_our_neighbors
-        x = -3
-        y = 1
+        x = -4
+        y = 2
         icon = GFX_focus_generic
 
         available = {
@@ -5265,8 +5265,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_follow_easers_strategy
         relative_position_id = YFC_focus_pillage_our_neighbors
-        x = -1
-        y = 1
+        x = -2
+        y = -1
         icon = GFX_focus_generic
 
         available = {
@@ -5277,7 +5277,7 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+        prerequisite = { focus = YFC_focus_train_with_bunch }
         mutually_exclusive = { focus = YFC_focus_mercenaries_practice }
 
         cost = 6
@@ -5292,7 +5292,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_rapid_assaults
         relative_position_id = YFC_focus_follow_easers_strategy
-        x = 0
+        x = -1
         y = 1
         icon = GFX_focus_generic
 
@@ -5314,7 +5314,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_old_traditions
         relative_position_id = YFC_focus_rapid_assaults
-        x = 0
+        x = 1
         y = 1
         icon = GFX_focus_generic
 
@@ -5336,8 +5336,8 @@ focus_tree = {
     focus = {
         id = YFC_focus_mercenaries_practice
         relative_position_id = YFC_focus_pillage_our_neighbors
-        x = 1
-        y = 1
+        x = 2
+        y = -1
         icon = GFX_focus_generic
 
         available = {
@@ -5348,7 +5348,7 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+        prerequisite = { focus = YFC_focus_train_with_bunch }
         mutually_exclusive = { focus = YFC_focus_follow_easers_strategy }
 
         cost = 6
@@ -5363,7 +5363,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_modern_weaponry
         relative_position_id = YFC_focus_mercenaries_practice
-        x = 0
+        x = 1
         y = 1
         icon = GFX_focus_generic
 
@@ -5397,7 +5397,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_new_motorization
         relative_position_id = YFC_focus_modern_weaponry
-        x = 0
+        x = -1
         y = 1
         icon = GFX_focus_generic
 
@@ -5424,7 +5424,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_acknowledge_our_shortcomings
         relative_position_id = YFC_focus_new_motorization #Maybe update later idk
-        x = -1
+        x = -2
         y = 1
         icon = GFX_focus_generic
 
@@ -5447,7 +5447,7 @@ focus_tree = {
         id = YFC_focus_issues_in_east
         relative_position_id = YFC_focus_way_of_raiders
         x = 8
-        y = 3
+        y = 1
         icon = GFX_focus_generic
 
 
@@ -5461,7 +5461,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_issues_in_east }
+        #allow_branch = { has_completed_focus = YFC_focus_issues_in_east }
 
         prerequisite = { focus = YFC_focus_way_of_raiders }
 
@@ -5689,7 +5689,7 @@ focus_tree = {
     focus = { 
         id = YFC_focus_expand_our_claims
         relative_position_id = YFC_focus_more_ways_of_wealth
-        x = -1
+        x = 0
         y = 1
         icon = GFX_focus_generic
 
@@ -5698,6 +5698,8 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_more_ways_of_wealth }
+        prerequisite = { focus = YFC_focus_scout_teardrop_positions }
+        prerequisite = { focus = YFC_focus_smuggle_prisoners }
 
         cost = 5
 
@@ -5727,15 +5729,15 @@ focus_tree = {
     focus = { 
         id = YFC_focus_scout_teardrop_positions
         relative_position_id = YFC_focus_more_ways_of_wealth
-        x = 1
-        y = 1
+        x = -2
+        y = 0
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_more_ways_of_wealth }
+        prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
         cost = 5
 
@@ -5747,16 +5749,16 @@ focus_tree = {
 
     focus = { 
         id = YFC_focus_smuggle_prisoners
-        relative_position_id = YFC_focus_more_ways_of_wealth
-        x = 0
-        y = 2
+        relative_position_id = YFC_focus_dispatch_the_forces
+        x = -1
+        y = 1
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_expand_our_claims focus = YFC_focus_scout_teardrop_positions }
+        prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
         cost = 5
 
@@ -5768,15 +5770,16 @@ focus_tree = {
     focus = { 
         id = YFC_focus_way_to_seas
         relative_position_id = YFC_focus_smuggle_prisoners
-        x = 0
-        y = 1
+        x = -5
+        y = 2
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_smuggle_prisoners }
+        prerequisite = { focus = YFC_focus_expand_our_claims }
+        prerequisite = { focus = YFC_focus_scout_teardrop_positions }
 
         available = {
             hidden_trigger = {
@@ -5784,7 +5787,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
+        #allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
 
         cost = 5
 
@@ -5796,14 +5799,15 @@ focus_tree = {
     focus = { 
         id = YFC_focus_locked_on_land
         relative_position_id = YFC_focus_smuggle_prisoners
-        x = 0
-        y = 1
+        x = 1
+        y = 2
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
+        prerequisite = { focus = YFC_focus_expand_our_claims }
         prerequisite = { focus = YFC_focus_smuggle_prisoners }
 
         available = {
@@ -5812,7 +5816,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_locked_on_land }
+        #allow_branch = { has_completed_focus = YFC_focus_locked_on_land }
 
         cost = 5
 
@@ -5825,7 +5829,7 @@ focus_tree = {
         id = YFC_focus_suppress_yoyleton
         relative_position_id = YFC_focus_issues_in_east
         x = 0
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
         available = {
