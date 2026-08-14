@@ -371,6 +371,45 @@ GTR_calculate_success_rate = {
     add_to_variable = { var_GTR_space_program_success_rate = temp_diff }
 }
 
+LSS_lack_check = {
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_consumer_goods_factor < 0.35}}
+        set_variable = {var_idea_LSS_lackof_consumer_goods_factor = 0.35}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_stability_factor > -0.25}}
+        set_variable = {var_idea_LSS_lackof_stability_factor = -0.25}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_industrial_capacity_factory > -0.35}}
+        set_variable = {var_idea_LSS_lackof_industrial_capacity_factory = -0.35}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_production_speed_buildings_factor > -0.25}}
+        set_variable = {var_idea_LSS_lackof_production_speed_buildings_factor = -0.25}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_monthly_population > -1}}
+        set_variable = {var_idea_LSS_lackof_monthly_population = -1}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_production_factory_efficiency_gain_factor > -0.15}}
+        set_variable = {var_idea_LSS_lackof_production_factory_efficiency_gain_factor = -0.15}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_production_factory_max_efficiency_factor > 0}}
+        set_variable = {var_idea_LSS_lackof_production_factory_max_efficiency_factor = 0}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_production_lack_of_resource_penalty_factor < 0.45}}
+        set_variable = {var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = 0.45}
+    }
+    IF = {
+        limit = {check_variable = {var_idea_LSS_lackof_factory_energy_consumption < 0.5}}
+        set_variable = {var_idea_LSS_lackof_factory_energy_consumption = 0.5}
+    }
+}
+
 BFDI_money_diplay_update = {
     if = { #-1M
         limit = {

@@ -20,6 +20,10 @@ decision_LSS_stabilizing_category = {
 			custom_effect_tooltip = l_LSS_lackof
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.75 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -32,6 +36,9 @@ decision_LSS_stabilizing_category = {
       
 		visible = {
 			has_completed_focus = LSS_focus_the_relief
+			check_variable = {
+				var_idea_LSS_lackof_consumer_goods_factor < -0.25
+			}
 		}
 
 		fire_only_once = no
@@ -44,6 +51,10 @@ decision_LSS_stabilizing_category = {
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
 			custom_effect_tooltip = l_money_lose_300K
 			subtract_from_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -56,6 +67,9 @@ decision_LSS_stabilizing_category = {
       
 		visible = {
 			has_completed_focus = LSS_focus_the_agriculture
+			check_variable = {
+				var_idea_LSS_lackof_monthly_population < -1
+			}
 		}
 
 		fire_only_once = no
@@ -68,6 +82,10 @@ decision_LSS_stabilizing_category = {
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
 			custom_effect_tooltip = l_money_lose_300K
 			subtract_from_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -93,6 +111,10 @@ decision_LSS_stabilizing_category = {
 			add_to_variable = { var_idea_LSS_lackof_factory_energy_consumption = -0.1 }
 			custom_effect_tooltip = l_money_lose_300K
 			subtract_from_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -119,6 +141,10 @@ decision_LSS_stabilizing_category = {
 			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.05 }
 			custom_effect_tooltip = l_money_lose_300K
 			subtract_from_variable = { money_amount = 3 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -151,7 +177,7 @@ decision_LSS_stabilizing_category = {
 		}
 
 		remove_effect = {
-			add_political_power = 35
+			add_political_power = 40
 			add_stability = 0.05
         }
 
@@ -176,6 +202,9 @@ decision_LSS_stabilizing_category = {
 
 		visible = {
 			has_completed_focus = LSS_focus_the_agriculture
+			check_variable = {
+				var_idea_LSS_lackof_monthly_population < -1
+			}
 		}
 
 		fire_only_once = no
@@ -191,6 +220,10 @@ decision_LSS_stabilizing_category = {
 		remove_effect = {
 			custom_effect_tooltip = l_LSS_lackof
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
@@ -293,6 +326,10 @@ decision_LSS_stabilizing_category = {
 			add_to_variable = { var_idea_LSS_lackof_industrial_capacity_factory = 0.05 }
 			add_to_variable = { var_idea_LSS_lackof_production_factory_efficiency_gain_factor = 0.05 }
 			add_to_variable = { var_idea_LSS_lackof_production_lack_of_resource_penalty_factor = -0.05 }
+
+			hidden_effect = {
+				LSS_lack_check = yes
+			}			
         }
 
 		ai_will_do = {
