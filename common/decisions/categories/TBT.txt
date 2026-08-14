@@ -2,8 +2,10 @@ decision_TBT_eastern_category = {
 	allowed = { tag = TBT }	
 	visible = { 
 		YFC = {
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
-			#NOT = {has_completed_focus = YFC_focus_bunch_fostered}
+			OR = {
+				has_completed_focus = YFC_focus_see_to_the_eastern_front
+				has_completed_focus = YFC_focus_issues_in_east
+			}
 		}
 	}
 	priority = 10

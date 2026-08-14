@@ -807,12 +807,14 @@ YFC_calc_trade_relations_loop = {
 YFC_calc_trade_update_nation = {
     var:YFC.tradeable^YFC.selected = {
         set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }
-        YFC = { set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}}
-        YFC = { set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }}
-        YFC = { set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}}
-        YFC = { set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }}
-        set_variable = { YFC.buying_amount = THIS.buying_amount }
-        set_variable = { YFC.selling_amount = THIS.selling_amount }
+        YFC = {
+            set_variable = {YFC.selling_X^0 = YFC.selling_X^Nation_Pos}
+            set_variable = { YFC.selling_cost^0 = YFC.selling_cost^Nation_Pos }
+            set_variable = {YFC.buying_X^0 = YFC.buying_X^Nation_Pos}
+            set_variable = { YFC.buying_cost^0 = YFC.buying_cost^Nation_Pos }
+            set_variable = { YFC.buying_amount = PREV.buying_amount }
+            set_variable = { YFC.selling_amount = PREV.selling_amount }
+        }
     }
 }
 

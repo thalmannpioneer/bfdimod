@@ -960,8 +960,12 @@
  YFC_event.47.a: "What a deal!"
 
  YFC_event.48.t: "Gobbled Up"
- YFC_event.48.desc: "We have nearly finished our conquest of the Eastern Seaboard. Though some view our conquests to be, for lack of a better word, unsatisfactory, dissent upon the mission can easily be disregarded. There is a certain tranquility to be found on this patch of sea that could easily be commodified. Perhaps, with these conquests, we could bolster tourism even further? Additionally, let us not forget about what is to be gained from direcct access to the sea. Sea trade is now more than ever, an easy alternative to the treacherous land routes of days past. Our conquests have brought us the potential for a great, profitable future. The game now shifts on to how we plan on using this opportunity."
+ YFC_event.48.desc.a: "We have nearly finished our conquest of the Eastern Seaboard. Though some view our conquests to be, for lack of a better word, unsatisfactory, dissent upon the mission can easily be disregarded. There is a certain tranquility to be found on this patch of sea that could easily be commodified. Perhaps, with these conquests, we could bolster tourism even further? Additionally, let us not forget about what is to be gained from direcct access to the sea. Sea trade is now more than ever, an easy alternative to the treacherous land routes of days past. Our conquests have brought us the potential for a great, profitable future. The game now shifts on to how we plan on using this opportunity."
+ YFC_event.48.desc.b: "Zdubbz" #Raiders fail to get a land connection to a port, while does not stop pirate actions this will slow them down
+ YFC_event.48.desc.c: "Zdubbz" #Raiders gain in geting a land connection to a port, pirate actions can start
  YFC_event.48.a: "What might our next point of interest be?"
+ YFC_event.48.b: "Merely a Setback." #Fail
+ YFC_event.48.c: "Onwards to the waves!" #Win
 
  YFC_event.49.t: "Battalions of Force"
  YFC_event.49.desc: "Top Hat is an object of many, many suggestions. Earlier today, he had came to headquarters, wishing to offer Yellow Face some extra forces. Apparently, he has spare men lying around (From where does he procure these men?), and is willing to commit them to the operation of the seaboard, so long as he gains a sort of return. Of course, yet again, that return is a profit. Now, he certainly isn't asking for a large sum of money, however, some analysts have stated that the next fiscal quarter might be rougher for us at the Company. Just how far are we willing to take this game?" #tophat wants 150k
@@ -1091,27 +1095,42 @@
  YFC_event.73.desc: "We have not received the expected shipment despite [FROM.GetName] agreeing to the deal. They have already told us that they sent the shipment and we sent the payment. As such the shipment must have been lost from unknown causes. We will need to find the equipment elsewhere..." #zdubbz if you want to
  YFC_event.73.a: "It would have been nice to have the shipment!" 
 
- YFC_event.74.t: "Aftermath" 
- YFC_event.74.desc.a: "text"
- YFC_event.74.desc.b: "text"
- YFC_event.74.a: "text" 
- YFC_event.74.b: "text" 
+ YFC_event.74.t: "Aftermath" #After the chaos is done zdubbz
+ YFC_event.74.desc.a: "text" #Left Side
+ YFC_event.74.desc.b: "text" #Right Side
+ YFC_event.74.a: "text" #Left Side
+ YFC_event.74.b: "text" #Right Side
 
  YFC_event.75.t: "End of Defiance" 
  YFC_event.75.desc: "It had gone quiet, way too quiet in the company HQ. With two Sectors gone, the last three felt that they had little hope to do much angsit Yellow Face's rapidly growing power. Today was time for another meeting with him, as the last one was before the chaos that Top Hat created. The discussion was to be about where the company would go with the chaos calming down. \n\n'We should try to reestablish trade relations with our old trading partners', Hammer said with slight hesitation. The other two sectors agreed, as Yellow Face was really low and liquid cash and assets.\n\nSilence filled afterwards as it seemed that Yellow Face already made his decision before even planning the meeting..." #zdubbz if you want to
  YFC_event.75.a: "'We are working with the Bandits, end of discussion.'" 
 
  YFC_event.76.t: "Meeting text" 
- YFC_event.76.desc: "Wake up me" #Work
+ YFC_event.76.desc: "Wake up me" #Work either me or ZDubbz, it is about Yellow Face in need of wealth and power and Eraser gives ideas to Yellow Face
  YFC_event.76.a: "..." 
 
  YFC_event.77.t: "Training text" 
- YFC_event.77.desc: "Wake up me" #Work
+ YFC_event.77.desc: "Wake up me" #Work either me or ZDubbz, it is about either a raid into a nation or a practice one. Should NOT just be an overview, but rather from the view of one object and/or as a report
  YFC_event.77.a: "..." 
 
  YFC_event.78.t: "Raiding text" 
- YFC_event.78.desc: "Wake up me" #Work
+ YFC_event.78.desc: "Wake up me" #Work either me or ZDubbz, it is about preparing for the first raid and/or the first raid. Should NOT just be an overview
  YFC_event.78.a: "..." 
+
+ YFC_event.79.t: "Top Hat text" 
+ YFC_event.79.desc: "Wake up me" #Work either me or ZDubbz, an random event thrown in the chaos, should be before powerderkeg. It is about TopHat either not working with Yellow Face or making hidden moves. 
+ YFC_event.79.a: "..." 
+
+ YFC_event.80.t: "The Final Fate of The Sectors" #ZDubbz
+ YFC_event.80.desc.a: "It seems that the Sectors have decided that it is best for them to leave the company. Before they left they collectively made a letter for us. \n\n'Dear Yellow Face,\nAfter much deliberation between the three of us, we have decided to walk away from the company. It may or may not be a shock to you, but best we go before the worst comes for us, don't look for us.\n\nSigned, Your Victims.'\n\nThe letter was left in Hammer's office; no signs of the Sectors have been seen for a few days as it appears they fled." #ZDubbz if you want to
+ YFC_event.80.desc.b: "Wake up me" #ZDubbz, it is where the Sector are thinking about leaving and a meeting is held. From here the player can either remove them or have them stay.
+ YFC_event.80.a: "Makes it easier for us!" #They quit
+ YFC_event.80.b: "..." #YFC fires them
+ YFC_event.80.c: "..." #YFC keeps them
+
+ YFC_event.81.t: "Yoyleton Lost" 
+ YFC_event.81.desc: "Wake up me" #ZDubbz, The teardrop popultion in Yoyleton and surrounding areas have become sick of the company's lack of care/chaos. As such the area has slighty turned into Protest and Riots. YFC does not fully control the area anymore
+ YFC_event.81.a: "Ungrateful." 
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
@@ -1926,7 +1945,7 @@
 
  bfdinews.29.t: "Proclamation of the Technocratic Republic!"
  bfdinews.29.desc: "We're getting interesting news from Announcergrad, that recently suffered massive calaclysm. The restored administration of the Goiky University after eliminating the worst concequences of the crisis, has proclaimed 'The Technocratic Republic, based on the eternal march of the technological progress'. Announcergrad objects, according to our journalists, mostly support the new government formation. We'll keep monitoring the development of the situation in Announcergrad."
- bfdinews.29.a: "I will NOT let anyone else decide my fate!"
+ bfdinews.29.a: "I will NOT let anyone else decide the future!"
  bfdinews.29.b: "Golfball actually did it?"
 
  bfdinews.30.t: "Grand Opening of the University!"
@@ -1940,7 +1959,7 @@
  bfdinews.32.t: "Testing of the New Bomb!"
  bfdinews.32.desc: "Breaking news is coming in from all over the Greeny Plains: it appears the government of the \"Technocratic Republic\" has tested a new type of weapon. The blast wave reached the borders of Casland, and the flash in the sky was visible even from Centrogoiky. If this is truly a new type of weapon, it will turn the entire situation in Goiky upside down: a bomb of such power would likely be capable of wiping out entire cities!\nOur editorial team is very concerned about such news and will continue to monitor developments."
  bfdinews.32.a: "Such power..."
- bfdinews.32.b: "Stakes are rising."
+ bfdinews.32.b: "The stakes are rising."
 
  bfdinews.33.t: "Space Flight!"
  bfdinews.33.desc: "Our correspondents captured unique footage from the launch pad at the \"Dimples\" test site: for the first time in Goiky's history, objects have successfully crossed the stratosphere and soared into space! This astonishing project was made possible thanks to the restoration of Goiky University and the enormous financial investment of the Technocratic Republic's government.\nIt appears the shuttle is heading directly for the Moon. It's still unclear when the astronauts will return to Earth, but it's already clear that this will upend the entire arms race between the surrounding nations."

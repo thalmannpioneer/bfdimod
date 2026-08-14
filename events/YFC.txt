@@ -2135,14 +2135,65 @@ country_event = { #YFC_focus_buy_ships
 country_event = { #Eastern End.
 	id = YFC_event.48
 	title = YFC_event.48.t
-	desc = YFC_event.48.desc
 	picture = GFX_YFC_event48
+
+	desc = {
+		text = YFC_event.48.desc.a #Normal
+		trigger = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front
+		}
+	}
+	desc = {
+		text = YFC_event.48.desc.b #YFC Raiders Lose
+		trigger = {
+			has_completed_focus = YFC_focus_issues_in_east
+			NOT = {
+				225 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				226 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				227 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+			}
+		}
+	}
+	desc = {
+		text = YFC_event.48.desc.c #YFC Raiders Win
+		trigger = {
+			has_completed_focus = YFC_focus_issues_in_east
+			OR = {
+				225 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				226 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				227 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+			}
+		}
+	}
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = { 
 		name = YFC_event.48.a
+
+		trigger = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front
+		}
+
 		complete_national_focus = YFC_focus_who_dares_wins
 		add_political_power = 50
 
@@ -2159,6 +2210,59 @@ country_event = { #Eastern End.
 				play_song = "demo_end"
 			}
         }
+	}
+	option = { 
+		name = YFC_event.48.b #Raiders lose
+
+		trigger = {
+			has_completed_focus = YFC_focus_issues_in_east
+			NOT = {
+				225 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				226 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				227 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+			}
+		}
+
+		#complete_national_focus = YFC_focus_who_dares_wins
+		add_political_power = -50
+
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+	}
+	option = { 
+		name = YFC_event.48.c #Raiders win
+
+		trigger = {
+			has_completed_focus = YFC_focus_issues_in_east
+			OR = {
+				225 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				226 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+				227 = {
+					is_in_home_area = yes
+					is_owned_by = YFC
+				}
+			}
+		}
+
+		#complete_national_focus = YFC_focus_who_dares_wins
+		add_political_power = 25
+
+		custom_effect_tooltip = l_money_gain_200K
+		add_to_variable = { money_amount = 2 }
 	}
 }
 
@@ -3412,6 +3516,33 @@ country_event = { #Sectors Quit/Fire
 		}
 		add_stability = 0.05
 	}	
+}
+
+country_event = { #Lose Yoyleton
+	id = YFC_event.81
+	title = YFC_event.81.t
+	desc = YFC_event.81.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.81.a
+		add_stability = -0.05
+		216 = {
+			add_core_of = TBT #Maybe update with a new tag later
+			remove_core_of = YFC
+			start_resistance = yes
+			hidden_effect = {
+				add_claim_by = YFC
+				set_compliance = 30
+				set_resistance = 70
+				add_resistance_target = 25
+			}
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
 }
 
 ###############################################################################

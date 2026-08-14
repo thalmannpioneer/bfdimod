@@ -76,7 +76,7 @@ characters = {
 		}
 		advisor = {
             slot = theorist
-            idea_token = idea_YFC_TopHat #Update!
+            idea_token = idea_YFC_TopHat
             ledger = army
             cost = 100
             traits = { YFC_follower_of_mobile_warfare }

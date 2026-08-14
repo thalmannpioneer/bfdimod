@@ -4701,6 +4701,33 @@ focus_tree = {
                     hours = 12
                     random_hours = 100
                 }
+                225 = { #REMOVE LATER WHEN TESTING IS DONE
+                    if = {
+                        limit = { is_owned_by = EMP }
+                        add_core_of = YFC
+                        transfer_state_to = YFC
+                        remove_core_of = EMP
+                        set_demilitarized_zone = no
+                        add_victory_points = {
+                            province = 10828
+                            value = 2
+                        }
+                    }
+                }
+                division_template = {
+                    name = "Portland Garrison"
+                    division_names_group = YFC_Cav_01
+                    regiments = {
+                        cavalry = { x = 0 y = 0 }
+                    }
+                }
+                225 = {
+                    create_unit = {
+                        division = "name = \"Portland Garrison\" division_template = \"Portland Garrison\" start_experience_factor = 0.1"
+                        owner = YFC
+                        count = 1
+                    }
+                }
             }
         }
     }
@@ -5414,7 +5441,7 @@ focus_tree = {
     focus = { #East
         id = YFC_focus_issues_in_east
         relative_position_id = YFC_focus_way_of_raiders
-        x = 6
+        x = 8
         y = 3
         icon = GFX_focus_generic
 
@@ -5438,6 +5465,10 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = { #All the vars of support
+            	set_variable = { selected_eastern_state = 230 }
+				var:selected_eastern_state = {
+					   save_global_event_target_as = target_eastern_state
+				}
                 every_state = {
                     limit = {
                         OR = {
@@ -5460,7 +5491,7 @@ focus_tree = {
                                 state = 232
                             }
                         }
-                        set_variable = {eastern_support_var = -0.5}
+                        set_variable = {eastern_support_var = -0.35}
                     }
                     ELSE_IF = {
                         limit = {
@@ -5491,6 +5522,192 @@ focus_tree = {
                     }
                     add_to_variable = { money_amount = 5 }
                 }
+                IF = {
+                    limit = {
+                        is_ai = yes
+                    }
+                    add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 500
+					}
+                }
+                country_event = {
+                    id = YFC_event.81
+                    days = 35
+                    random_days = 95
+                    hours = 12
+                    random_hours = 48
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_to_portland
+        relative_position_id = YFC_focus_issues_in_east
+        x = -2
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_issues_in_east }
+
+        cost = 5
+
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_eastern_to_portland
+            hidden_effect = {
+                232 = {add_to_variable = {eastern_support_var = 0.25}}
+                230 = {add_to_variable = {eastern_support_var = 0.25}}
+                228 = {add_to_variable = {eastern_support_var = 0.25}}
+            }
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_plunder_the_wealth
+        relative_position_id = YFC_focus_to_portland
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_to_portland }
+
+        cost = 5
+
+        completion_reward = {
+            add_stability = -0.05
+            custom_effect_tooltip = l_money_gain_300K
+            add_to_variable = { money_amount = 3 }
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_distract_teardrop
+        relative_position_id = YFC_focus_issues_in_east
+        x = 2
+        y = 1
+        icon = GFX_focus_generic
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_issues_in_east }
+
+        cost = 5
+
+        completion_reward = {
+            country_event = {
+                id = YFC_event.45
+                hours = 1
+                random_hours = 2
+            }
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_dispatch_the_forces
+        relative_position_id = YFC_focus_distract_teardrop
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_move_in_army
+
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_distract_teardrop }
+
+        cost = 5
+
+        completion_reward = {
+            add_manpower = 5000
+            custom_effect_tooltip = l_YFC_eastern_gainall_5
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229
+                            state = 232
+                            state = 228
+                            state = 225
+                            state = 230
+                            state = 226
+                            state = 192
+                            state = 231
+                            state = 227
+                        }
+                    }
+                    add_to_variable = { eastern_support_var = 0.05 }
+                }
+            }
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_more_ways_of_wealth
+        relative_position_id = YFC_focus_issues_in_east
+        x = 0
+        y = 3
+        icon = GFX_focus_generic
+
+        available = {
+            is_neighbor_of = TBT
+        }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
+
+        cost = 5
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = { 
+        id = YFC_focus_suppress_yoyleton
+        relative_position_id = YFC_focus_issues_in_east
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        available = {
+            hidden_trigger = {
+                NOT = {216 = {is_core_of = YFC}}
+            }
+        }
+
+        allow_branch = { NOT = {216 = {is_core_of = YFC}} }
+
+        ai_will_do = {
+            base = 5 
+        }
+
+        prerequisite = { focus = YFC_focus_issues_in_east }
+
+        cost = 5
+
+        completion_reward = {
+            add_stability = -0.05
+            216 = {
+                add_compliance = 15
+                add_resistance_target = -20
             }
         }
     }

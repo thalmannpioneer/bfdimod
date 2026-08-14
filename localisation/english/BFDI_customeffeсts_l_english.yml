@@ -10,7 +10,7 @@
  tt_GOI_debug_2: "§REvery other nation declares war on you and forms a mega faction.§!"
  l_GOI_unlock_diplo: "§RUnlocks all vanilla diplomacy (i.e. war justification)§!"
 
- l_GOI_unlock_focus: "§CNew focuses have unlocked!§!"
+ l_GOI_unlock_focus: "§CNew focus(es) have unlocked!§!"
  
  l_WGF_focus_all_objects_serving: "Modifies §YRed army§! idea by:\n- §YRecruitable Population:§! §G+2%§!"
  l_WGF_operation_coinflip: "§YBattle for Goiky begins!§!"
@@ -205,6 +205,7 @@
  l_YFC_eastern_gainall_10: "§GOur control in every contested state will increase by 10%!§!"
  l_YFC_eastern_loseall_5: "§ROur control in every contested state will decrease by 5%!§!"
  l_YFC_eastern_loseall_10: "§ROur control in every contested state will decrease by 10%!§!"
+ l_YFC_eastern_to_portland: "§YOur control in [232.GetName], [230.GetName], and [228.GetName] will be increased by 25%!§!"
  l_YFC_eastern_borderwar_disable: "§YDisables the option for both sides to border war with each other in the east.§! §RFor now.§!"
  l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
