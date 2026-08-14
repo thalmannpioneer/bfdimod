@@ -223,6 +223,103 @@ guiTypes = {
             position = { x = 320 y = 50 }
             pdx_tooltip = l_YFC_route_tbt_level
         }
+		
+		iconType = {
+			name = "notif_gmd"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 150 y = 20 }
+		}
+		iconType = {
+			name = "notif_tbt"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 320 y = 10 }
+		}
+		iconType = {
+			name = "notif_ggr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 340 y = 280 }
+		}
+		iconType = {
+			name = "notif_sri"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 380 y = 210 }
+		}
+		iconType = {
+			name = "notif_smg"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 350 y = 250 }
+		}
+		iconType = {
+			name = "notif_spr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 400 y = 300 }
+		}
+		iconType = {
+			name = "notif_fft"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 250 y = 330 }
+		}
+		iconType = {
+			name = "notif_crn"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 170 y = 270 }
+		}
+		iconType = {
+			name = "notif_bun"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 220 y = 220 }
+		}
+		iconType = {
+			name = "notif_srr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 160 y = 180 }
+		}
+		iconType = {
+			name = "notif_gtr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 110 y = 220 }
+		}
+		iconType = {
+			name = "notif_gpg"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.8
+			position = { x = 40 y = 180 }
+		}
+		iconType = {
+			name = "notif_gpg_cw"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.5
+			position = { x = 20 y = 200 }
+		}
+		iconType = {
+			name = "notif_gdr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.5
+			position = { x = 60 y = 180 }
+		}
+		iconType = {
+			name = "notif_gfg"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.5
+			position = { x = 45 y = 210 }
+		}
+		iconType = {
+			name = "notif_gsr"
+			spriteType = "GFX_YFC_trade_notification"
+			scale = 0.5
+			position = { x = 70 y = 200 }
+		}
 
         containerWindowType = {
             name = "ledger"

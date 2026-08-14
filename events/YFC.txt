@@ -3151,7 +3151,10 @@ country_event = { #YFC_focus_march_on_footpathburg
 			}
 			custom_effect_tooltip = l_money_gain_600K #Stealing YF money
             add_to_variable = { money_amount = 6 }
-			hidden_effect = {complete_national_focus = YFC_focus_tophat_clan}
+			hidden_effect = {
+				complete_national_focus = YFC_focus_tophat_clan
+				play_song = "tophatclan"
+			}
 		}
 		hidden_effect = {
 			201 = {set_demilitarized_zone = no}

@@ -56,6 +56,12 @@ music = {
 	volume = 1
 }
 music = {
+	name = "tophatclan"
+	file = "tophatclan.ogg"
+	volume = 1
+}
+
+music = {
 	name = "demo_end"
 	file = "demo_end.ogg"
 	volume = 1

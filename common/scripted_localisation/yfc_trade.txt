@@ -621,3 +621,86 @@ defined_text = {
 		localization_key = l_YFC_trade_cross
 	}
 }
+defined_text = {
+	name = BUY_BUTTON
+	text = {
+		trigger = {
+			YFC = { has_political_power > 5}
+			country_exists = var:YFC.tradeable^YFC.selected
+			var:YFC.tradeable^YFC.selected = {
+				has_country_flag = Confirmed_Trade_Selling
+				NOT = {
+					has_country_flag = ongoing_trade_offer
+					has_war_with = YFC
+					has_idea = undisturbed_isolation
+					has_idea = isolation
+					has_idea = closed_economy
+					is_embargoed_by = YFC
+					is_embargoing = YFC
+					check_variable = { selling_item = -1 }
+				}
+			}
+		}
+		localization_key = l_decisions_trade_buytext
+	}
+	text = {
+		localization_key = l_decisions_trade_blocked
+	}
+}
+
+defined_text = {
+	name = SELL_BUTTON
+	text = {
+		trigger = {
+			YFC = { has_political_power > 5}
+			country_exists = var:YFC.tradeable^YFC.selected
+			var:YFC.tradeable^YFC.selected = {
+				has_country_flag = Confirmed_Trade_Buying
+				NOT = {
+					has_country_flag = ongoing_trade_offer
+					has_war_with = YFC
+					has_idea = undisturbed_isolation
+					has_idea = isolation
+					has_idea = closed_economy
+					is_embargoed_by = YFC
+					is_embargoing = YFC
+					check_variable = { buying_item = -1 }
+				}
+			}
+			OR = {
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@infantry_equipment}}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 0 }}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_amount < YFC.num_equipment@support_equipment_1 } }
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 1 }}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@motorized_equipment }}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 2 }}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@artillery_equipment}}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 3 }}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_air_equipment}}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 4 }}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = {buying_amount < YFC.num_equipment@anti_tank_equipment}}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
+				}
+				AND = {
+					YFC = {has_country_flag = YFC_trade_allow_food}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
+				}
+			}
+		}
+		localization_key = l_decisions_trade_selltext
+	}
+	text = {
+		localization_key = l_decisions_trade_blocked
+	}
+}

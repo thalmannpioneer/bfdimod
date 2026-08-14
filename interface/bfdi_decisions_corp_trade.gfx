@@ -230,4 +230,10 @@ spriteTypes = {
 		name = "GFX_YFC_trade_select_overlay"
 		textureFile = "gfx/interface/decisions/YFC_trade/picking_equipment_overlay.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_YFC_trade_notification"
+		textureFile = "gfx/interface/decisions/YFC_trade/notification.dds"
+		alwaystransparent = yes
+	}
 }

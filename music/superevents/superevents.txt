@@ -73,6 +73,12 @@ music = {
     }
 }
 music = {
+    song = "tophatclan"
+    chance = {
+      modifier = { factor = 0 }
+    }
+}
+music = {
     song = "demo_end"
     chance = {
       modifier = { factor = 0 }
