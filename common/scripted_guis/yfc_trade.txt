@@ -768,7 +768,10 @@ scripted_gui = {
             }
 
             equipment_buy_click_enabled = {
-                YFC = { has_political_power > 5}
+                YFC = { 
+                    has_political_power > 5
+                    NOT = {has_idea = idea_YFC_Debt_Crisis}
+                }
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
                     has_country_flag = Confirmed_Trade_Selling
@@ -785,7 +788,9 @@ scripted_gui = {
                 }
             }
             equipment_sell_click_enabled = {
-                YFC = { has_political_power > 5}
+                YFC = { 
+                    has_political_power > 5
+                }
                 country_exists = var:YFC.tradeable^YFC.selected
                 var:YFC.tradeable^YFC.selected = {
                     has_country_flag = Confirmed_Trade_Buying

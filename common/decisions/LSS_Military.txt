@@ -207,7 +207,7 @@ decision_LSS_Military_category = {
                 target = FROM
                 type = annex_everything
             }
-			add_threat = 3.5
+			add_threat = 4
 			hidden_effect = {
 				ROOT = { set_country_flag = LSS_attack_losers }
 				IF = {
@@ -278,8 +278,9 @@ decision_LSS_Military_category = {
 				}
 				every_possible_country = {
 					limit = { is_ai = yes }
-					add_manpower = 7500
-					army_experience = 10
+					add_manpower = 15000
+					army_experience = 25
+					add_war_support = 0.1
 				}
 			}
 		}

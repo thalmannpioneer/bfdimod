@@ -269,7 +269,6 @@ country_event = {
                 hours = 12
                 random_hours = 100
             }
-            set_variable = { unknown_emp_var = 0}
         }
         ELSE_IF = {
             limit = {is_debug = no}
@@ -290,11 +289,12 @@ country_event = {
     option = {
         name = uncommon_event.1.a
         hidden_effect = {
+            set_variable = { unknown_emp_var = 0}
             IF = {
                 limit = {is_ai = no}
                 country_event = {
                     id = uncommon_event.2
-                    days = 25
+                    days = 10
                     hours = 12
                     random_hours = 48
                 }
@@ -311,12 +311,12 @@ country_event = {
 
     is_triggered_only = yes
 
-    trigger = {
-        check_variable = { unknown_emp_var > 10 }
-    }
-
     option = {
         name = uncommon_event.2.a
+
+        trigger = {
+            check_variable = { unknown_emp_var > 10 }
+        }
 
         hidden_effect = {
             IF = {

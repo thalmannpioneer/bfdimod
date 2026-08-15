@@ -26,7 +26,11 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
-		localization_key = GFX_YFC_trade_food #Update later!!!!
+		localization_key = GFX_YFC_trade_food 
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 999 } }
+		localization_key = GFX_YFC_trade_drugs #Update later!!!!
 	}
 }
 
@@ -195,7 +199,22 @@ defined_text = {
 				}
 			}
 		}
-		localization_key =  GFX_YFC_trade_food #Update later!!!!
+		localization_key =  GFX_YFC_trade_food 
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 999 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 7 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key =  GFX_YFC_trade_drugs #Update later!!!!
 	}
 }
 
@@ -319,7 +338,22 @@ defined_text = {
 				}
 			}
 		}
-		localization_key = GFX_YFC_trade_food #Update later!!!!
+		localization_key = GFX_YFC_trade_food
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 999 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 7 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key = GFX_YFC_trade_drugs #Update later!!!!
 	}
 }
 
