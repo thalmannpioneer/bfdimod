@@ -1320,6 +1320,9 @@
  YFC_focus_company_restructuring: "Company Restructuring"
  YFC_focus_company_restructuring_desc: "In light of the harsh recession that our company has faced, it is important that we recuperate ourselves with careful economic planning, however, it is more important that we find someone to blame. The sectorials are a useful group, however, they are the highest paid employees; if we use them as scapegoats, we can reduce their pay, freeing up more funds for us."
 
+ YFC_focus_lower_wage_gaps: "Lower Wage Gaps"
+ YFC_focus_lower_wage_gaps_desc: "By lowering the pay of the sectorials, we can quell dissent between highly and lowly paid employees, guaranteeing company stability, and saving on costs."
+
  YFC_focus_crack_down_on_influence: "Crack Down on Influence"
  YFC_focus_crack_down_on_influence_desc: "Surprisingly, a sizeable amount of our staff has been more loyal to individual sectorials than the company as a whole. By harshing this dissent of thought (and doing a tiny series of layoffs), we can easily make sure our company remembers who's truly in charge. Though, we are not sure how the sectorials may respond."
 
@@ -1332,7 +1335,7 @@
  YFC_focus_tophats_outlook: "Top Hat's Outlook?"
  YFC_focus_tophats_outlook_desc: "A letter, sent from Top Hat, assumedly adressed to Yellow Face, has appeared within the corporate mailbox (really, it is a large storage facility, with letters dating back to 2011; we don't check our mail!). Let us open it up and see what he has written."
 
- YFC_focus_the_sectorial_powderkeg: "§RSectorial Powderkeg§!"
+ YFC_focus_the_sectorial_powderkeg: "§RThe Sectorial Powderkeg§!"
  YFC_focus_the_sectorial_powderkeg_desc: "The sectorials are not happy with us, by any sense of the word. In fact, one could say that they are... \"upset\" at us. They have been growing restless over our changes to the company's structure, and are now openly refusing to work with Yellow Face, unless demands are met. Fortunately, they are still doing just enough work for the company to prosper, so, we will continue to put pressure on them, until our financial situation has been alleviated. Perhaps, if they wish to once more have their benefits, they should help us out of this rut?"
 
  YFC_focus_sloth: "§GSloth§!"
