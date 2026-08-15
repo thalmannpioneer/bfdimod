@@ -4327,6 +4327,16 @@ focus_tree = {
         }
 
         allow_branch = { has_completed_focus = YFC_focus_march_on_footpathburg }
+
+        completion_reward = {
+            hidden_effect = {
+                news_event = {
+                    id = bfdinews.43
+                    days = 1
+                    random_hours = 36
+                }
+            }
+        }
     }
 
 
@@ -4394,10 +4404,18 @@ focus_tree = {
                 limit = {
                     NOT = { tag = EMP }
                     NOT = { tag = BUN }
+                    is_embargoing = YFC
                 }
                 add_opinion_modifier = {
                     target = YFC
                     modifier = large_decrease
+                }
+                YFC = {
+                    diplomatic_relation = {
+                        country = PREV
+                        relation = embargo
+                        active = no
+                    }
                 }
             }
             #Maybe something else idk
@@ -4685,7 +4703,7 @@ focus_tree = {
         #    }
         #}
 
-        allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
 
         cost = 5 
 
@@ -4729,6 +4747,7 @@ focus_tree = {
                         count = 1
                     }
                 }
+                send_embargo = CRN
             }
         }
     }
@@ -5707,7 +5726,25 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-
+            hidden_effect = {
+                set_country_flag = YFC_trade_allow_drugs
+                every_other_country = {
+                    limit = {
+                        NOT = { tag = EMP }
+                        NOT = { tag = BUN }
+                        OR = {
+                            is_embargoing = YFC
+                            is_embargoed_by = YFC
+                        }
+                    }
+					set_country_flag = Confirmed_Trade_Buying
+					set_variable = { THIS.buying_item = 999}
+					set_variable = { THIS.buying_amount = 50 }
+                    set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
+					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
+					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+                }
+            }
         }
     }
 
@@ -5794,9 +5831,9 @@ focus_tree = {
 
     focus = { 
         id = YFC_focus_way_to_seas
-        relative_position_id = YFC_focus_smuggle_prisoners
-        x = -5
-        y = 2
+        relative_position_id = YFC_focus_expand_our_claims
+        x = 0
+        y = 1 #Having one poke out of the side of the tree (Since only one can be completed) does not look good tbh
         icon = GFX_focus_generic
 
         ai_will_do = {
@@ -5814,6 +5851,7 @@ focus_tree = {
 
         #allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
         #can we keep both this focus and the next one open?
+        #wdym? These are done when the eastern game is done
 
         cost = 5
 
@@ -5824,9 +5862,9 @@ focus_tree = {
 
     focus = { 
         id = YFC_focus_locked_on_land
-        relative_position_id = YFC_focus_smuggle_prisoners
-        x = 1
-        y = 2
+        relative_position_id = YFC_focus_expand_our_claims
+        x = 0
+        y = 1 #Having one poke out of the side of the tree (Since only one can be completed) does not look good tbh
         icon = GFX_focus_generic
 
         ai_will_do = {

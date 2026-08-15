@@ -675,6 +675,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = l_money_lose_400K
 			subtract_from_variable = { money_amount = 4 }
+			country_event = uncommon_event.13
 			custom_effect_tooltip = l_LSS_lackof
 			add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.1 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }

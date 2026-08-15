@@ -800,9 +800,14 @@ scripted_gui = {
                         has_idea = undisturbed_isolation
                         has_idea = isolation
                         has_idea = closed_economy
-                        is_embargoed_by = YFC
-                        is_embargoing = YFC
                         check_variable = { buying_item = -1 }
+                    }
+                    OR = {
+                        AND = {
+                            NOT = {is_embargoed_by = YFC}                       
+                            NOT = {is_embargoing = YFC}
+                        }
+                        check_variable = { buying_item = 999 }
                     }
                 }
                 OR = {
@@ -833,6 +838,10 @@ scripted_gui = {
                     AND = {
                         YFC = {has_country_flag = YFC_trade_allow_food}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
+                    }
+                    AND = {
+                        YFC = {has_country_flag = YFC_trade_allow_drugs}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 999 }}
                     }
                 }
             }
@@ -1081,14 +1090,26 @@ scripted_gui = {
                 }
             }
             equipment_sell_click = {
-                YFC = {add_political_power = -5}
+                YFC = {
+                    add_political_power = -5
+                    clr_country_flag = YFC_trade_allow_drugs
+                }
                 IF = {
                     limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}
                     var:YFC.tradeable^YFC.selected = {
                         set_country_flag = ongoing_trade_offer
-                        country_event = {
-                            id = YFC_event.36
-                            hours = 1
+                        IF = {
+                            limit = {check_variable = {buying_item = 999}}
+                            country_event = {
+                                id = YFC_hidden_event.3
+                                hours = 1
+                            }
+                        }
+                        ELSE = {
+                            country_event = {
+                                id = YFC_event.36
+                                hours = 1
+                            }
                         }
                     }
                 }

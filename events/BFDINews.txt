@@ -1140,6 +1140,66 @@ news_event = {
     }
 }
 
+news_event = {
+    id = bfdinews.43
+    title = bfdinews.43.t
+    desc = bfdinews.43.desc
+    picture = GFX_bfdinews38 #Update later
+
+    is_triggered_only = yes
+    major = yes
+
+    immediate = {
+        hidden_effect = { play_song = "tophatclan" }
+    }
+
+    option = {
+        name = bfdinews.43.a
+        trigger = {
+            tag = YFC
+        }
+    }
+
+    option = {
+        name = bfdinews.43.b
+        trigger = {
+            tag = BUN
+        }
+    }
+
+    option = {
+        name = bfdinews.43.c
+        trigger = {
+            NOT = {
+                OR = {
+                    tag = YFC
+                    tag = BUN
+                    AND = {
+                        tag = GFG
+                        has_government = radical_thoughts
+                    }
+                    has_government = communism
+                }
+            }
+        }
+    }
+
+    option = {
+        name = bfdinews.43.d
+        trigger = {
+            has_government = communism
+        }
+    }
+
+    option = {
+        name = bfdinews.43.e
+        trigger = {
+            tag = GFG
+            has_government = radical_thoughts
+        }
+    }
+}
+
 ##################
 #City Fall events#
 ##################

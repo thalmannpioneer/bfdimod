@@ -77,6 +77,10 @@ defined_text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
 		localization_key = "1K"
 	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 999 } }
+		localization_key = "1K"
+	}
 }
 
 defined_text = {
@@ -209,7 +213,7 @@ defined_text = {
 					NOT = {tag = YFC}
 				}
 				AND = {
-					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 7 }}
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 999 }}
 					tag = YFC
 				}
 			}
@@ -348,7 +352,7 @@ defined_text = {
 					NOT = {tag = YFC}
 				}
 				AND = {
-					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 7 }}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 999 }}
 					tag = YFC
 				}
 			}
@@ -690,16 +694,21 @@ defined_text = {
 			country_exists = var:YFC.tradeable^YFC.selected
 			var:YFC.tradeable^YFC.selected = {
 				has_country_flag = Confirmed_Trade_Buying
-				NOT = {
-					has_country_flag = ongoing_trade_offer
-					has_war_with = YFC
-					has_idea = undisturbed_isolation
-					has_idea = isolation
-					has_idea = closed_economy
-					is_embargoed_by = YFC
-					is_embargoing = YFC
-					check_variable = { buying_item = -1 }
-				}
+                NOT = {
+                    has_country_flag = ongoing_trade_offer
+                    has_war_with = YFC
+                    has_idea = undisturbed_isolation
+                    has_idea = isolation
+                    has_idea = closed_economy
+                    check_variable = { buying_item = -1 }
+                }
+                OR = {
+                    AND = {
+                        NOT = {is_embargoed_by = YFC}                       
+                        NOT = {is_embargoing = YFC}
+                    }
+                    check_variable = { buying_item = 999 }
+                }
 			}
 			OR = {
 				AND = {
@@ -730,6 +739,10 @@ defined_text = {
 					YFC = {has_country_flag = YFC_trade_allow_food}
 					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
 				}
+				AND = {
+                    YFC = {has_country_flag = YFC_trade_allow_drugs}
+                    var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 999 }}
+                }
 			}
 		}
 		localization_key = l_decisions_trade_selltext

@@ -294,7 +294,7 @@ country_event = {
                 limit = {is_ai = no}
                 country_event = {
                     id = uncommon_event.2
-                    days = 10
+                    days = 15
                     hours = 12
                     random_hours = 48
                 }
@@ -315,7 +315,7 @@ country_event = {
         name = uncommon_event.2.a
 
         trigger = {
-            check_variable = { unknown_emp_var > 10 }
+            check_variable = { unknown_emp_var > 14 }
         }
 
         hidden_effect = {
@@ -370,14 +370,14 @@ country_event = {
         name = uncommon_event.2.b
 
         trigger = {
-            check_variable = { unknown_emp_var < 10 }
+            check_variable = { unknown_emp_var < 15 }
         }
 
         hidden_effect = {
-            add_to_variable = {unknown_emp_var = 0}
+            add_to_variable = {unknown_emp_var = 1}
             country_event = {
                 id = uncommon_event.2
-                hours = 1
+                hours = unknown_emp_var
             }
         }
     }
@@ -566,7 +566,8 @@ country_event = {
 
     option = {
         name = uncommon_event.8.a
-        add_stability = -0.01
+        181 = {add_manpower = -1}
+        hidden_effect = {add_manpower = -1}
     }
 }
 
@@ -661,5 +662,19 @@ country_event = {
         }
 
         activate_mission = LSS_Mobilization_Air
+    }
+}
+
+country_event = {
+    id = uncommon_event.13
+    title = uncommon_event.13.t
+    desc = uncommon_event.13.desc
+    picture = GFX_Temp_event
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.13.a
+        add_stability = -0.01
     }
 }

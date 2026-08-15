@@ -3163,7 +3163,6 @@ country_event = { #YFC_focus_march_on_footpathburg
             add_to_variable = { money_amount = 6 }
 			hidden_effect = {
 				complete_national_focus = YFC_focus_tophat_clan
-				play_song = "tophatclan"
 			}
 		}
 		hidden_effect = {
@@ -3557,6 +3556,49 @@ country_event = { #Lose Yoyleton
 			}
 		}
 		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = { #YFC Drug shipment made it to them
+	id = YFC_event.82
+	title = YFC_event.82.t
+	desc = YFC_event.82.desc
+	picture = GFX_YFC_event10
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.82.a
+	}
+}
+
+country_event = { #YFC Drug shipment DID NOT make it to them
+	id = YFC_event.83
+	title = YFC_event.83.t
+	desc = YFC_event.83.desc
+	picture = GFX_YFC_event10
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.83.a
+	}
+}
+
+country_event = { #YFC Drug event start
+	id = YFC_event.84
+	title = YFC_event.84.t
+	desc = YFC_event.84.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.84.a
+
 	}
 }
 

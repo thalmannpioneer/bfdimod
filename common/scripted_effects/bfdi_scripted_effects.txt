@@ -1239,106 +1239,144 @@ YFC_calc_trade_risk_buying = {
         set_temp_variable = {deliver_chance = { value = 4 subtract = deliver_risk } }
     }
 
+    IF = {
+        limit = {check_variable = {buying_item = 999}}
+        add_to_temp_variable = {deliver_risk = 1 }
+    }
+
     random_list = {
         deliver_chance = { #SHIPMENT MADE IT TO YFC
-            IF = {
-                limit = {check_variable = {selling_item = 0}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = infantry_equipment
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
-            ELSE_IF = {
-                limit = {check_variable = {selling_item = 1}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = support_equipment_1
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
-            ELSE_IF = {
-                limit = {check_variable = {selling_item = 2}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = motorized_equipment
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
-            ELSE_IF = {
-                limit = {check_variable = {selling_item = 3}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = artillery_equipment
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
-            ELSE_IF = {
-                limit = {check_variable = {selling_item = 4}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = anti_air_equipment
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
-            ELSE_IF = {
-                limit = {check_variable = {selling_item = 5}}
-                ROOT = {
-                    send_equipment = {
-                        equipment = anti_tank_equipment
-                        amount = ROOT.selling_amount
-                        target = YFC
-                    }
-                }
-            }
 
-            clr_country_flag = ongoing_trade_offer
-            clr_country_flag = Confirmed_Trade_Selling
-            divide_variable = { trade_cost_show_var = 100 }
-
-            add_to_variable = {money_amount = trade_cost_show_var}
             IF = {
-                limit = {
-                    YFC = {has_completed_focus = YFC_focus_expand_northern_trade}
-                    OR = {
-                        ROOT = { tag = GMD }
-                        ROOT = { tag = TBT }
+                limit = {check_variable = {buying_item = 999}}
+                YFC = {
+                    add_to_variable = {money_amount = trade_cost_show_var}
+                    country_event = {
+                        id = YFC_event.82
+                        hours = 3
                     }
                 }
-                set_temp_variable = {bonus_money_var = trade_cost_show_var}
-                multiply_temp_variable = {bonus_money_var = 0.25}
-                YFC = {add_to_variable = {money_amount = bonus_money_var}}
+                add_stability = -0.005
+                add_political_power = -5
+                set_country_flag = Confirmed_Trade_Buying
+				set_variable = { ROOT.buying_item = 999}
+				set_variable = { ROOT.buying_amount = 50 }
+                set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
+				multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
+				add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
             }
-            YFC = {
-                subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
-                country_event = {
-                    id = YFC_event.34
-                    hours = 1
+            ELSE = {
+                IF = {
+                    limit = {check_variable = {selling_item = 0}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = infantry_equipment
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {selling_item = 1}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = support_equipment_1
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {selling_item = 2}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = motorized_equipment
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {selling_item = 3}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = artillery_equipment
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {selling_item = 4}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = anti_air_equipment
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {selling_item = 5}}
+                    ROOT = {
+                        send_equipment = {
+                            equipment = anti_tank_equipment
+                            amount = ROOT.selling_amount
+                            target = YFC
+                        }
+                    }
+                }
+
+                clr_country_flag = ongoing_trade_offer
+                clr_country_flag = Confirmed_Trade_Selling
+                divide_variable = { trade_cost_show_var = 100 }
+
+                add_to_variable = {money_amount = trade_cost_show_var}
+                IF = {
+                    limit = {
+                        YFC = {has_completed_focus = YFC_focus_expand_northern_trade}
+                        OR = {
+                            ROOT = { tag = GMD }
+                            ROOT = { tag = TBT }
+                        }
+                    }
+                    set_temp_variable = {bonus_money_var = trade_cost_show_var}
+                    multiply_temp_variable = {bonus_money_var = 0.25}
+                    YFC = {add_to_variable = {money_amount = bonus_money_var}}
+                }
+                YFC = {
+                    subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
+                    country_event = {
+                        id = YFC_event.34
+                        hours = 1
+                    }
                 }
             }
         }
         deliver_risk = { #SHIPMENT FAILED TO MAKE IT TO YFC
-            clr_country_flag = ongoing_trade_offer
-            clr_country_flag = Confirmed_Trade_Selling
-            divide_variable = { trade_cost_show_var =100 }
 
-            add_to_variable = {money_amount = trade_cost_show_var}
+            IF = {
+                limit = {check_variable = {buying_item = 999}}
+                YFC = {
+                    country_event = {
+                        id = YFC_event.83
+                        hours = 3
+                    }
+                }
+            }
+            ELSE = {
+                clr_country_flag = ongoing_trade_offer
+                clr_country_flag = Confirmed_Trade_Selling
+                divide_variable = { trade_cost_show_var =100 }
 
-            YFC = {
-                subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
-                country_event = {
-                    id = YFC_event.73
-                    hours = 2
+                add_to_variable = {money_amount = trade_cost_show_var}
+
+                YFC = {
+                    subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
+                    country_event = {
+                        id = YFC_event.73
+                        hours = 2
+                    }
                 }
             }
         }
