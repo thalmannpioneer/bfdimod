@@ -55,7 +55,7 @@ focus_tree = {
             add_political_power = 50
             unlock_decision_category_tooltip = decision_YFC_trade_category
             hidden_effect = { #commented for rework
-               every_possible_country = {
+                every_possible_country = {
                     limit = {
                         NOT = {
                             tag = YFC
@@ -66,9 +66,9 @@ focus_tree = {
                             tag = SGD
                             tag = SOS
                             tag = WGF
-                            tag = DPZ  
+                            tag = DPZ
                             tag = DAV #Maybe remove later?
-                            tag = EMP 
+                            tag = EMP
                         }
                     }
                     set_country_flag = YFC_trade_allow_other
@@ -990,7 +990,7 @@ focus_tree = {
 
         ai_will_do = {
             base = 0
-            modifier = { 
+            modifier = {
                 add = 5
                 has_war = no
             }
@@ -1037,7 +1037,7 @@ focus_tree = {
 
         ai_will_do = {
             base = 0
-            modifier = { 
+            modifier = {
                 add = 10
                 has_war = no
                 OR = {
@@ -2472,9 +2472,9 @@ focus_tree = {
         y = 2
         icon = GFX_focus_YFC_see_to_the_eastern_front
 
-        allow_branch = { 
-			has_completed_focus = YFC_focus_see_to_the_eastern_front
-		}
+        allow_branch = {
+            has_completed_focus = YFC_focus_see_to_the_eastern_front
+        }
 
         prerequisite = { focus = YFC_focus_population_boom }
         prerequisite = {
@@ -2487,10 +2487,10 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = { #All the vars of support
-				set_variable = { selected_eastern_state = 230 }
-				var:selected_eastern_state = {
-					   save_global_event_target_as = target_eastern_state
-				}
+                set_variable = { selected_eastern_state = 230 }
+                var:selected_eastern_state = {
+                    save_global_event_target_as = target_eastern_state
+                }
                 every_state = {
                     limit = {
                         OR = {
@@ -2525,9 +2525,9 @@ focus_tree = {
                         set_variable = {eastern_support_var = 0}
                     }
                 }
-				
-				YFC_update_eastern_states = yes
-				
+
+                YFC_update_eastern_states = yes
+
                 YFC = {
                     set_variable = {eastern_borderwar_var = 0.25}
                     set_country_flag = eastern_action_ready
@@ -3162,8 +3162,8 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_accidental_mistakes }
 
         allow_branch = {
-			has_completed_focus = YFC_focus_who_dares_wins
-		}
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
 
         available = {
             always = no
@@ -3194,7 +3194,7 @@ focus_tree = {
 
     #RIP old Raiding stuff here 2025-2025
 
- #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    #NEW RAIDING PATH SHOULD ONLY GO HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     focus = {
         id = YFC_focus_establish_formal_connection
@@ -3271,10 +3271,10 @@ focus_tree = {
                 tooltip = l_money_cost_1M
                 check_variable = { money_amount > 10 }
             }
-			custom_trigger_tooltip = {
-				tooltip = l_GOI_all_is_good_ct
-				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
-			}
+            custom_trigger_tooltip = {
+                tooltip = l_GOI_all_is_good_ct
+                NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+            }
         }
 
         ai_will_do = {
@@ -3393,9 +3393,9 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_diverting_funds }
         available = {
             custom_trigger_tooltip = {
-				tooltip = l_GOI_all_is_good_ct
-				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
-			}
+                tooltip = l_GOI_all_is_good_ct
+                NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+            }
         }
         ai_will_do = {
             base = 7
@@ -3459,10 +3459,10 @@ focus_tree = {
 
         available = {
             has_political_power > 25
-			custom_trigger_tooltip = {
-				tooltip = l_GOI_all_is_good_ct
-				NOT = {has_completed_focus = YFC_focus_the_first_embargo}
-			}
+            custom_trigger_tooltip = {
+                tooltip = l_GOI_all_is_good_ct
+                NOT = {has_completed_focus = YFC_focus_the_first_embargo}
+            }
         }
 
         prerequisite = { focus = YFC_focus_great_business_partnership }
@@ -3566,8 +3566,8 @@ focus_tree = {
                             tag = SOS
                             tag = TBT
                             tag = WGF
-                            tag = DPZ  
-                            tag = EMP 
+                            tag = DPZ
+                            tag = EMP
                             tag = GOI
                             tag = GGR
                             tag = GMD
@@ -3612,7 +3612,10 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_the_great_recession
+        }
 
         cost = 5
         completion_reward = {
@@ -3658,16 +3661,19 @@ focus_tree = {
         relative_position_id = YFC_focus_mass_firings
         x = -2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_entice_the_sectors
 
         available = {
             hidden_trigger = {
                 has_completed_focus = YFC_focus_mass_firings
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_mass_firings }
-        
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_mass_firings
+        }
+
         prerequisite = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
@@ -3677,7 +3683,7 @@ focus_tree = {
         cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
-		    subtract_from_variable = { money_amount = 5 }
+            subtract_from_variable = { money_amount = 5 }
             remove_ideas = idea_YFC_economic_isolation
         }
     }
@@ -3687,12 +3693,12 @@ focus_tree = {
         relative_position_id = YFC_focus_entice_the_sectors
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_debt_restructuring
 
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 50 #Deal with the Chaos 
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -3725,12 +3731,12 @@ focus_tree = {
         relative_position_id = YFC_focus_entice_the_sectors
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_fire_their_underlings
 
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
         ai_will_do = {
-            base = 50 #Deal with the Chaos 
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -3764,7 +3770,7 @@ focus_tree = {
         relative_position_id = YFC_focus_entice_the_sectors
         x = -3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_ensure_loyalty
 
         prerequisite = { focus = YFC_focus_entice_the_sectors }
 
@@ -3787,7 +3793,7 @@ focus_tree = {
         relative_position_id = YFC_focus_ensure_loyalty
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_observe_top_hat
 
         prerequisite = { focus = YFC_focus_ensure_loyalty }
         prerequisite = { focus = YFC_focus_fire_their_underlings }
@@ -3828,7 +3834,7 @@ focus_tree = {
         relative_position_id = YFC_focus_fire_their_underlings
         x = 1
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_strike_the_headache
 
 
         ai_will_do = {
@@ -3845,8 +3851,11 @@ focus_tree = {
                 has_completed_focus = YFC_focus_strike_the_headache
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_strike_the_headache
+        }
 
         cost = 5
         completion_reward = {
@@ -3859,7 +3868,7 @@ focus_tree = {
         relative_position_id = YFC_focus_strike_the_headache
         x = -2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_diligence
 
 
         ai_will_do = {
@@ -3876,7 +3885,7 @@ focus_tree = {
                 hours = 1
                 random_hours = 2
             }
-            
+
         }
     }
 
@@ -3885,7 +3894,7 @@ focus_tree = {
         relative_position_id = YFC_focus_strike_the_headache
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_goodwill
 
 
         ai_will_do = {
@@ -3909,7 +3918,7 @@ focus_tree = {
         relative_position_id = YFC_focus_strike_the_headache
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_shame
 
 
         ai_will_do = {
@@ -3940,7 +3949,7 @@ focus_tree = {
         relative_position_id = YFC_focus_strike_the_headache
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_march_on_footpathburg
 
 
         ai_will_do = {
@@ -3970,7 +3979,7 @@ focus_tree = {
         relative_position_id = YFC_focus_battle_for_footpathburg
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_fate_of_top_hat
 
 
         ai_will_do = {
@@ -3982,8 +3991,11 @@ focus_tree = {
                 has_completed_focus = YFC_focus_battle_for_footpathburg
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_battle_for_footpathburg }
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_battle_for_footpathburg
+        }
 
         prerequisite = { focus = YFC_focus_battle_for_footpathburg }
 
@@ -4050,15 +4062,18 @@ focus_tree = {
                 has_completed_focus = YFC_focus_company_restructuring
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_company_restructuring }
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_company_restructuring
+        }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
         cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
-		    subtract_from_variable = { money_amount = 5 }
+            subtract_from_variable = { money_amount = 5 }
             add_stability = 0.1
         }
     }
@@ -4075,9 +4090,10 @@ focus_tree = {
                 has_completed_focus = YFC_focus_company_restructuring
             }
         }
-        
-        allow_branch = { 
-            has_completed_focus = YFC_focus_company_restructuring
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_company_restructuring
         }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
@@ -4133,7 +4149,7 @@ focus_tree = {
             #possibility for three different lore events:
             #as you committed to a merc company earlier, tophat visits that company again, to talk to them about how they conduct their business
             #different event for each mercenary company; if you didnt commit to one, the game just chooses a random one for you
-            
+
             country_event = {
                 id = YFC_event.62
                 hours = 1
@@ -4193,8 +4209,11 @@ focus_tree = {
                 has_completed_focus = YFC_focus_the_sectorial_powderkeg
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_the_sectorial_powderkeg
+        }
 
         #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
 
@@ -4446,7 +4465,10 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_the_second_embargo
+        }
 
         cost = 3
         completion_reward = {
@@ -4476,7 +4498,7 @@ focus_tree = {
 
         icon = GFX_focus_YFC_trade_alternatives
 
-        prerequisite = { 
+        prerequisite = {
             focus = YFC_focus_crack_down_on_influence
             focus = YFC_focus_debt_restructuring
         }
@@ -4488,7 +4510,10 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_the_second_embargo
+        }
 
         cost = 4
         completion_reward = {
@@ -4526,14 +4551,14 @@ focus_tree = {
         }
     }
 
- #LEFT SIDE END OF DEMO PATH
+    #LEFT SIDE END OF DEMO PATH
 
     focus = {
         id = YFC_focus_last_of_the_layoffs
         relative_position_id = YFC_focus_fate_of_top_hat
         x = 3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_last_of_the_layoffs
 
 
         ai_will_do = {
@@ -4545,8 +4570,11 @@ focus_tree = {
                 has_completed_focus = YFC_focus_last_of_the_layoffs
             }
         }
-        
-        allow_branch = { has_completed_focus = YFC_focus_last_of_the_layoffs }
+
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_last_of_the_layoffs
+        }
 
         prerequisite = { focus = YFC_focus_fate_of_top_hat }
         prerequisite = { focus = YFC_focus_the_second_embargo }
@@ -4563,7 +4591,7 @@ focus_tree = {
         relative_position_id = YFC_focus_last_of_the_layoffs
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_establish_the_correct_leadership
 
 
         ai_will_do = {
@@ -4585,7 +4613,7 @@ focus_tree = {
         relative_position_id = YFC_focus_last_of_the_layoffs
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_create_checkpoints
 
 
         ai_will_do = {
@@ -4608,7 +4636,7 @@ focus_tree = {
         relative_position_id = YFC_focus_last_of_the_layoffs
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_sectors_their_place
 
 
         ai_will_do = {
@@ -4618,7 +4646,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_create_checkpoints }
         prerequisite = { focus = YFC_focus_establish_the_correct_leadership }
 
-        cost = 3 
+        cost = 3
 
         completion_reward = {
             add_political_power = 50
@@ -4635,7 +4663,7 @@ focus_tree = {
         relative_position_id = YFC_focus_sectors_their_place
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_radical_meeting
 
 
         ai_will_do = {
@@ -4644,7 +4672,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_sectors_their_place }
 
-        cost = 6 
+        cost = 6
 
         completion_reward = {
             country_event = {
@@ -4683,14 +4711,15 @@ focus_tree = {
     focus = { #Last Part!
         id = YFC_focus_way_of_raiders
 
-        x = 43
+        #x = 43
+        x = 50
         y = 0
 
         icon = GFX_focus_generic
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
             modifier = {
                 add = -20
                 NOT = {has_completed_focus = YFC_focus_radical_meeting} #Just so the AI does not take it while testing
@@ -4703,9 +4732,12 @@ focus_tree = {
         #    }
         #}
 
-        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+        allow_branch = {
+            always = yes
+            #has_completed_focus = YFC_focus_way_of_raiders
+        }
 
-        cost = 5 
+        cost = 5
 
         completion_reward = {
             hidden_effect = {
@@ -4761,7 +4793,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_way_of_raiders }
@@ -4790,12 +4822,12 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
 
-        cost = 5 
+        cost = 5
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_sectors_Blocky_unlock
@@ -4822,7 +4854,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
@@ -4844,7 +4876,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_finally_form_the_deal }
@@ -4879,7 +4911,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
@@ -4920,7 +4952,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_finally_form_the_deal }
@@ -4950,7 +4982,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_bunch_technology }
@@ -4988,7 +5020,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_bunch_technology }
@@ -5017,17 +5049,17 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
-        prerequisite = { 
-            focus = YFC_focus_invite_bunch_settlers 
-            focus = YFC_focus_free_flowing_trade 
-            focus = YFC_focus_improve_the_rail_links 
-            focus = YFC_focus_hand_over_intel 
+        prerequisite = {
+            focus = YFC_focus_invite_bunch_settlers
+            focus = YFC_focus_free_flowing_trade
+            focus = YFC_focus_improve_the_rail_links
+            focus = YFC_focus_hand_over_intel
         }
 
-        cost = 6 
+        cost = 6
 
         completion_reward = {
             YFC_yellow_face = {
@@ -5058,17 +5090,17 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
-        prerequisite = { 
-            focus = YFC_focus_invite_bunch_settlers 
-            focus = YFC_focus_free_flowing_trade 
-            focus = YFC_focus_improve_the_rail_links 
-            focus = YFC_focus_hand_over_intel 
+        prerequisite = {
+            focus = YFC_focus_invite_bunch_settlers
+            focus = YFC_focus_free_flowing_trade
+            focus = YFC_focus_improve_the_rail_links
+            focus = YFC_focus_hand_over_intel
         }
 
-        cost = 6 
+        cost = 6
 
         completion_reward = {
             add_equipment_to_stockpile = {
@@ -5092,7 +5124,7 @@ focus_tree = {
         icon = GFX_focus_YFC_closer_integration #Can't tell if I really hate this or like it
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_strength_in_skill }
@@ -5138,7 +5170,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_way_of_raiders }
@@ -5160,7 +5192,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_prepare_for_strikes }
@@ -5181,7 +5213,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_prepare_for_strikes }
@@ -5202,7 +5234,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_acquire_the_firepower }
@@ -5229,7 +5261,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_train_with_bunch }
@@ -5256,9 +5288,9 @@ focus_tree = {
                         is_ai = yes
                     }
                     add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 1000
-					}
+                        type = infantry_equipment
+                        amount = 1000
+                    }
                 }
             }
         }
@@ -5279,7 +5311,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_pillage_our_neighbors }
@@ -5318,7 +5350,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_train_with_bunch }
@@ -5341,7 +5373,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_follow_easers_strategy }
@@ -5363,7 +5395,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_rapid_assaults focus = YFC_focus_modern_weaponry }
@@ -5389,7 +5421,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_train_with_bunch }
@@ -5412,7 +5444,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_mercenaries_practice }
@@ -5446,7 +5478,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_rapid_assaults focus = YFC_focus_modern_weaponry }
@@ -5473,7 +5505,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_old_traditions focus = YFC_focus_new_motorization }
@@ -5496,7 +5528,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         available = {
@@ -5514,10 +5546,10 @@ focus_tree = {
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = { #All the vars of support
-            	set_variable = { selected_eastern_state = 230 }
-				var:selected_eastern_state = {
-					   save_global_event_target_as = target_eastern_state
-				}
+                set_variable = { selected_eastern_state = 230 }
+                var:selected_eastern_state = {
+                    save_global_event_target_as = target_eastern_state
+                }
                 every_state = {
                     limit = {
                         OR = {
@@ -5576,9 +5608,9 @@ focus_tree = {
                         is_ai = yes
                     }
                     add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 500
-					}
+                        type = infantry_equipment
+                        amount = 500
+                    }
                 }
                 country_event = {
                     id = YFC_event.81
@@ -5591,7 +5623,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_to_portland
         relative_position_id = YFC_focus_issues_in_east
         x = -2
@@ -5600,7 +5632,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_issues_in_east }
@@ -5617,7 +5649,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_plunder_the_wealth
         relative_position_id = YFC_focus_to_portland
         x = -1
@@ -5626,7 +5658,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_to_portland }
@@ -5640,7 +5672,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_distract_teardrop
         relative_position_id = YFC_focus_issues_in_east
         x = 2
@@ -5649,7 +5681,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_issues_in_east }
@@ -5666,7 +5698,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_dispatch_the_forces
         relative_position_id = YFC_focus_distract_teardrop
         x = 1
@@ -5675,7 +5707,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_distract_teardrop }
@@ -5706,7 +5738,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_more_ways_of_wealth
         relative_position_id = YFC_focus_issues_in_east
         x = 0
@@ -5718,7 +5750,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
@@ -5737,18 +5769,18 @@ focus_tree = {
                             is_embargoed_by = YFC
                         }
                     }
-					set_country_flag = Confirmed_Trade_Buying
-					set_variable = { THIS.buying_item = 999}
-					set_variable = { THIS.buying_amount = 50 }
+                    set_country_flag = Confirmed_Trade_Buying
+                    set_variable = { THIS.buying_item = 999}
+                    set_variable = { THIS.buying_amount = 50 }
                     set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
-					multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
-					add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+                    multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
+                    add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 }
             }
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_expand_our_claims
         relative_position_id = YFC_focus_more_ways_of_wealth
         x = 0
@@ -5756,7 +5788,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_more_ways_of_wealth }
@@ -5788,7 +5820,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_scout_teardrop_positions
         relative_position_id = YFC_focus_more_ways_of_wealth
         x = -2
@@ -5796,7 +5828,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
@@ -5809,7 +5841,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_smuggle_prisoners
         relative_position_id = YFC_focus_dispatch_the_forces
         x = -1
@@ -5817,7 +5849,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
@@ -5829,7 +5861,7 @@ focus_tree = {
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_way_to_seas
         relative_position_id = YFC_focus_expand_our_claims
         x = 0
@@ -5837,7 +5869,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_expand_our_claims }
@@ -5856,11 +5888,11 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-            
+
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_locked_on_land
         relative_position_id = YFC_focus_expand_our_claims
         x = 0
@@ -5868,7 +5900,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_expand_our_claims }
@@ -5885,11 +5917,11 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
-            
+
         }
     }
 
-    focus = { 
+    focus = {
         id = YFC_focus_suppress_yoyleton
         relative_position_id = YFC_focus_issues_in_east
         x = 0
@@ -5905,7 +5937,7 @@ focus_tree = {
         allow_branch = { NOT = {216 = {is_core_of = YFC}} }
 
         ai_will_do = {
-            base = 5 
+            base = 5
         }
 
         prerequisite = { focus = YFC_focus_issues_in_east }

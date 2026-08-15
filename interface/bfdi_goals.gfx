@@ -1980,6 +1980,81 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_the_first_embargo"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_first_embargo.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_entice_the_sectors"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_entice_the_sectors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_ensure_loyalty"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_ensure_loyalty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_fire_their_underlings"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_fire_their_underlings.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_debt_restructuring"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_debt_restructuring.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_observe_top_hat"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_observe_top_hat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_strike_the_headache"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_strike_the_headache.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_diligence"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_diligence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_goodwill"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_goodwill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_shame"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_shame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_fate_of_top_hat"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_fate_of_top_hat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_last_of_the_layoffs"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_last_of_the_layoffs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_establish_the_correct_leadership"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_establish_the_correct_leadership.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_create_checkpoints"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_create_checkpoints.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_sectors_their_place"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_sectors_their_place.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_radical_meeting"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_radical_meeting.dds"
+	}
 
 	#Musketeers#
 	
