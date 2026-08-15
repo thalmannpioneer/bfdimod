@@ -3612,9 +3612,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-			has_completed_focus = YFC_focus_the_great_recession
-		}
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -4351,7 +4349,7 @@ focus_tree = {
         }
 
         offset = {
-            x = -1
+            x = -2
             trigger = {
                 has_completed_focus = YFC_focus_mass_firings
             }
@@ -4687,7 +4685,7 @@ focus_tree = {
         #    }
         #}
 
-        #allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
+        allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
 
         cost = 5 
 
@@ -4822,7 +4820,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_invite_bunch_settlers
         relative_position_id = YFC_focus_finally_form_the_deal
-        x = 0
+        x = -1
         y = 1
         icon = GFX_focus_generic
 
@@ -4831,6 +4829,10 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_finally_form_the_deal }
+        prerequisite = {
+            focus = YFC_focus_promote_blocky
+            focus = YFC_focus_bunch_technology
+        }
 
         cost = 5 #Maybe change later
 
@@ -4852,8 +4854,8 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_bunch_technology
-        relative_position_id = YFC_focus_invite_bunch_settlers
-        x = 0
+        relative_position_id = YFC_focus_seek_cooperation_with_bunch
+        x = 2
         y = 1
         icon = GFX_focus_generic
 
@@ -4861,7 +4863,7 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_invite_bunch_settlers }
+        prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
 
         cost = 5 #Maybe change later
 
@@ -4893,8 +4895,8 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_free_flowing_trade
-        relative_position_id = YFC_focus_seek_cooperation_with_bunch
-        x = 2
+        relative_position_id = YFC_focus_finally_form_the_deal
+        x = 1
         y = 1
         icon = GFX_focus_generic
 
@@ -4902,7 +4904,11 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_seek_cooperation_with_bunch }
+        prerequisite = { focus = YFC_focus_finally_form_the_deal }
+        prerequisite = {
+            focus = YFC_focus_promote_blocky
+            focus = YFC_focus_bunch_technology
+        }
 
         cost = 5 #Maybe change later
 
@@ -4919,8 +4925,8 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_improve_the_rail_links
-        relative_position_id = YFC_focus_free_flowing_trade
-        x = 0
+        relative_position_id = YFC_focus_promote_blocky
+        x = 1
         y = 1
         icon = GFX_focus_generic
 
@@ -4928,7 +4934,11 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_free_flowing_trade }
+        prerequisite = { focus = YFC_focus_bunch_technology }
+        prerequisite = {
+            focus = YFC_focus_promote_blocky
+            focus = YFC_focus_finally_form_the_deal
+        }
 
         cost = 5 #Maybe change later
 
@@ -4953,8 +4963,8 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_hand_over_intel
-        relative_position_id = YFC_focus_improve_the_rail_links
-        x = 0
+        relative_position_id = YFC_focus_promote_blocky
+        x = 3
         y = 1
         icon = GFX_focus_generic
 
@@ -4962,7 +4972,11 @@ focus_tree = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_improve_the_rail_links }
+        prerequisite = { focus = YFC_focus_bunch_technology }
+        prerequisite = {
+            focus = YFC_focus_promote_blocky
+            focus = YFC_focus_finally_form_the_deal
+        }
 
         cost = 5 #Maybe change later
 
@@ -4978,16 +4992,21 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_strength_in_skill
-        relative_position_id = YFC_focus_bunch_technology
+        relative_position_id = YFC_focus_improve_the_rail_links
         x = 1
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_bunch_technology focus = YFC_focus_hand_over_intel }
+        prerequisite = { 
+            focus = YFC_focus_invite_bunch_settlers 
+            focus = YFC_focus_free_flowing_trade 
+            focus = YFC_focus_improve_the_rail_links 
+            focus = YFC_focus_hand_over_intel 
+        }
 
         cost = 6 
 
@@ -5014,16 +5033,21 @@ focus_tree = {
 
     focus = {
         id = YFC_focus_strength_in_power
-        relative_position_id = YFC_focus_hand_over_intel
-        x = -1
-        y = 1
+        relative_position_id = YFC_focus_promote_blocky
+        x = -2
+        y = 3
         icon = GFX_focus_generic
 
         ai_will_do = {
             base = 5 
         }
 
-        prerequisite = { focus = YFC_focus_bunch_technology focus = YFC_focus_hand_over_intel }
+        prerequisite = { 
+            focus = YFC_focus_invite_bunch_settlers 
+            focus = YFC_focus_free_flowing_trade 
+            focus = YFC_focus_improve_the_rail_links 
+            focus = YFC_focus_hand_over_intel 
+        }
 
         cost = 6 
 
@@ -5045,7 +5069,7 @@ focus_tree = {
         id = YFC_focus_bandit_pack
         relative_position_id = YFC_focus_seek_cooperation_with_bunch
         x = 0
-        y = 7
+        y = 6
         icon = GFX_focus_YFC_closer_integration #Can't tell if I really hate this or like it
 
         ai_will_do = {
@@ -5054,6 +5078,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_strength_in_skill }
         prerequisite = { focus = YFC_focus_strength_in_power }
+        prerequisite = { focus = YFC_focus_promote_blocky }
 
         cost = 8
 
@@ -5461,7 +5486,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_issues_in_east }
+        allow_branch = { has_completed_focus = YFC_focus_issues_in_east }
 
         prerequisite = { focus = YFC_focus_way_of_raiders }
 
@@ -5690,7 +5715,7 @@ focus_tree = {
         id = YFC_focus_expand_our_claims
         relative_position_id = YFC_focus_more_ways_of_wealth
         x = 0
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
         ai_will_do = {
@@ -5730,7 +5755,7 @@ focus_tree = {
         id = YFC_focus_scout_teardrop_positions
         relative_position_id = YFC_focus_more_ways_of_wealth
         x = -2
-        y = 0
+        y = 1
         icon = GFX_focus_generic
 
         ai_will_do = {
@@ -5751,7 +5776,7 @@ focus_tree = {
         id = YFC_focus_smuggle_prisoners
         relative_position_id = YFC_focus_dispatch_the_forces
         x = -1
-        y = 1
+        y = 2
         icon = GFX_focus_generic
 
         ai_will_do = {
@@ -5788,6 +5813,7 @@ focus_tree = {
         }
 
         #allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
+        #can we keep both this focus and the next one open?
 
         cost = 5
 
