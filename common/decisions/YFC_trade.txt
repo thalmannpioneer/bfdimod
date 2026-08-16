@@ -14,7 +14,7 @@ decision_YFC_trade_category= {
 
 	YFC_Trade_drugs = { 
 		available = {always = no}
-		icon = GFX_YFC_mission_get_food #Update later
+		icon = GFX_YFC_mission_get_drugs
 		is_good = yes
 		days_mission_timeout = YFC_trade_drug_timer_var
 		selectable_mission = no
@@ -26,7 +26,7 @@ decision_YFC_trade_category= {
 	}
 
     YFC_Trade_drugs_upgrade = {
-        icon = GFX_decisions_YFC_buy_tech #Update later
+        icon = GFX_decisions_YFC_Trade_drugs_upgrade
 
         visible = {
             has_completed_focus = YFC_focus_more_ways_of_wealth
@@ -39,8 +39,12 @@ decision_YFC_trade_category= {
         days_re_enable = 60
 
         remove_effect = {
-            custom_effect_tooltip = l_YFC_trade_get_food
+            custom_effect_tooltip = l_YFC_trade_get_drugs_upgrade
             subtract_from_variable = {YFC_trade_drug_timer_var = 20}
+            IF = {
+                limit = {has_active_mission = YFC_Trade_drugs}
+                add_days_mission_timeout = {mission = YFC_Trade_drugs days = -20}
+            }
         }
 
         ai_will_do = {

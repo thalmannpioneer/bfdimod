@@ -56,7 +56,13 @@ decision_CRN_foster_category = {
 		remove_effect = {
 			custom_effect_tooltip = l_YFC_BUN_foster_gain
 			hidden_effect = {
-				YFC = {add_to_variable = { var_foster_CRN_support = 0.5 }}
+				IF = {
+					limit = {has_opinion_modifier = betrayed_alliance}
+					YFC = {add_to_variable = { var_foster_CRN_support = 1.25 }} #Change later back to 0.5
+				}
+				ELSE = {
+					YFC = {add_to_variable = { var_foster_CRN_support = 0.5 }} #Change later back to 0.5
+				}
 			}
         }
 
@@ -99,7 +105,13 @@ decision_CRN_foster_category = {
 		remove_effect = {
 			custom_effect_tooltip = l_YFC_BUN_foster_gain
 			hidden_effect = {
-				YFC = {add_to_variable = { var_foster_CRN_support = 0.5 }}
+				IF = {
+					limit = {has_opinion_modifier = betrayed_alliance}
+					YFC = {add_to_variable = { var_foster_CRN_support = 1.25 }} #Change later back to 0.5
+				}
+				ELSE = {
+					YFC = {add_to_variable = { var_foster_CRN_support = 0.5 }} #Change later back to 0.5
+				}
 			}
         }
 

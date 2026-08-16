@@ -370,6 +370,27 @@ decision_BUN_Revolt_category = {
 
 		ai_will_do = {
 			base = 100
+
+			modifier = {
+				add = -100
+				surrender_progress < 0.05
+			}
+			modifier = {
+				add = -85
+				surrender_progress < 0.2
+			}
+			modifier = {
+				add = -50
+				surrender_progress < 0.4
+			}
+			modifier = {
+				add = -50
+				enemies_strength_ratio < 0.5
+			}
+			modifier = {
+				add = -100
+				enemies_strength_ratio < 1
+			}
 		}
 	}
 }

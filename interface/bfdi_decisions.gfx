@@ -214,7 +214,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/decision_cat_GGR_industry.dds"
 	}
 
-	spriteType = {
+	spriteType = { #Unsused
 		name = "GFX_decisions_GGR_YFC_BUN_aid"
 		textureFile = "gfx/interface/decisions/GFX_decisions_GGR_YFC_BUN_aid.dds"
 	}
@@ -758,6 +758,21 @@ spriteTypes = {
 		name = "GFX_decisions_YFC_raid_buy_guns"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_buy_guns.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_request_donations"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_request_donations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_get_drugs"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_get_drugs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decisions_YFC_Trade_drugs_upgrade"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_drugs_upgrade.dds"
+	}	
 
 	#BUN
 

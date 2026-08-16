@@ -52,6 +52,7 @@ decision_YFC_BUN_category = {
         YFC = {
             has_completed_focus = YFC_focus_clamp_down_on_bunchivism
             NOT = {has_completed_focus = YFC_focus_fully_cored}
+            NOT = {has_completed_focus = YFC_focus_stalled_plans}
         }
     }
     priority = 10

@@ -1250,6 +1250,7 @@ YFC_calc_trade_risk_buying = {
             IF = {
                 limit = {check_variable = {buying_item = 999}}
                 YFC = {
+                    clr_country_flag = YFC_trade_allow_drugs
                     add_to_variable = {money_amount = trade_cost_show_var}
                     country_event = {
                         id = YFC_event.82
@@ -1380,6 +1381,7 @@ YFC_calc_trade_risk_buying = {
                 add_to_variable = {money_amount = trade_cost_show_var}
 
                 YFC = {
+                    clr_country_flag = YFC_trade_allow_drugs
                     subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
                     country_event = {
                         id = YFC_event.73

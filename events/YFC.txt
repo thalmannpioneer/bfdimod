@@ -2981,13 +2981,61 @@ country_event = { #YFC_focus_sloth
 
 country_event = { #YFC_focus_envy
 	id = YFC_event.66
-	title = YFC_event.66.t
 	picture = GFX_Temp_event
 
-	desc = {
-		text = YFC_event.66.desc.a #Sector Side
+	title = {
+		text = YFC_event.66.t #Sector
 		trigger = {
 			NOT = {has_completed_focus = YFC_focus_mass_firings}
+		}
+	}
+
+	title = {
+		text = YFC_event.66.ta #YFC
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+	}
+
+	desc = {
+		text = YFC_event.66.desc.a #Sector Side GTR
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+			GTR = {country_exists = yes}
+		}
+	}
+	desc = {
+		text = YFC_event.66.desc.ab #Sector Side GPG
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+			GTR = {country_exists = no}
+			OR = {
+				GDR = {
+					country_exists = yes
+					has_war = no
+				}
+				GPG = {
+					country_exists = yes
+					has_war = no
+				}
+			}
+		}
+	}
+	desc = {
+		text = YFC_event.66.desc.ac #Sector Side
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
+			GTR = {country_exists = no}
+			GDR = {
+				OR = {
+					country_exists = no
+					has_war = yes
+				}
+			}
+			GPG = {
+				country_exists = no
+				has_war = yes
+			}
 		}
 	}
 	desc = {
@@ -3228,8 +3276,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 	is_triggered_only = yes
 
 	immediate = {
-		#Just for testing
-		set_variable = { var_idea_YFC_sectors_TopHat_type = 1 } 
+		#Just for testing 
 		set_variable = { var_idea_YFC_TopHat_cost = 0 }
 		set_variable = { var_idea_YFC_sectors_TopHat_attack = 0 }
 		set_variable = { var_idea_YFC_sectors_TopHat_org = 0 }
@@ -3575,7 +3622,6 @@ country_event = { #YFC Drug shipment made it to them
 			clr_country_flag = ongoing_trade_offer
 		}
 		hidden_effect = {
-			clr_country_flag = YFC_trade_allow_drugs
             activate_mission = YFC_Trade_drugs
 		}
 	}
@@ -3597,7 +3643,6 @@ country_event = { #YFC Drug shipment DID NOT make it to them
 			clr_country_flag = ongoing_trade_offer
 		}
 		hidden_effect = {
-			clr_country_flag = YFC_trade_allow_drugs
             activate_mission = YFC_Trade_drugs
 		}
 	}
@@ -3614,7 +3659,10 @@ country_event = { #YFC Drug event start
 
 	option = { 
 		name = YFC_event.84.a
-
+		custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
+		custom_effect_tooltip = l_YFC_trade_get_drugs_unlock
+		unlock_decision_tooltip = YFC_Trade_drugs_upgrade
 	}
 }
 
@@ -4792,6 +4840,16 @@ country_event = { #Annex Events 1
 		add_political_power = 25
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}
+		if = {
+            limit = {
+                YFC = {
+                    controls_state = 217
+                    controls_state = 218
+                }
+            }
+            217 = {add_compliance = 12}
+            218 = {add_compliance = 12}
+        }
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.10
@@ -5004,6 +5062,8 @@ country_event = { #Annex Events 4
 	option = { #Send Army
 		name = YFC_BUN.12.b
 		add_manpower = -1000
+		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		85 = {add_resistance = -7.5}
 		212 = {add_resistance = -5}
 		random = {
@@ -5011,8 +5071,6 @@ country_event = { #Annex Events 4
 			85 = {add_compliance = -5}
 			212 = {add_compliance = -2.5}
 		}
-		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
-		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.13
@@ -5146,7 +5204,7 @@ country_event = { #Annex Events 6
 
 	option = { #Lesser State
 		name = YFC_BUN.14.a
-		add_political_power = 75
+		add_political_power = 100
 		85 = {
 			add_compliance = -5
 			add_dynamic_modifier = {
@@ -5180,6 +5238,16 @@ country_event = { #Annex Events 6
 		add_political_power = 50
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
+		if = {
+            limit = {
+                YFC = {
+                    controls_state = 217
+                    controls_state = 218
+                }
+            }
+            217 = {add_compliance = 2}
+            218 = {add_compliance = 2}
+        }
 		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
@@ -5198,7 +5266,6 @@ country_event = { #Annex Events 6
 	}
 	option = { #Autonomous 
 		name = YFC_BUN.14.c
-		add_political_power = 25
 		85 = {
 			add_compliance = 7.5
 			add_dynamic_modifier = {
@@ -5211,6 +5278,16 @@ country_event = { #Annex Events 6
 				modifier = BUN_autonomous_state
 			}
 		}
+		if = {
+            limit = {
+                YFC = {
+                    controls_state = 217
+                    controls_state = 218
+                }
+            }
+            217 = {add_compliance = 5}
+            218 = {add_compliance = 5}
+        }
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		hidden_effect = {
@@ -5575,9 +5652,9 @@ country_event = {
 	option = {
 		name = YFC_BUN.23.a
 		add_stability = -0.01
-		add_political_power = 20
-		85 = {add_compliance = 2}
-		212 = {add_compliance = 2}
+		add_political_power = 35
+		85 = {add_compliance = 4}
+		212 = {add_compliance = 4}
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 	}

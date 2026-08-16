@@ -232,11 +232,17 @@ ideas = {
 				supply_consumption_factor = -0.15
 				ai_focus_aggressive_factor = 2
 			}
-			cancel = {NOT = {country_exists = BUN}}
+			cancel = {
+				NOT = {country_exists = BUN}
+				NOT = {has_war_with = BUN}
+			}
 			on_remove = {
 				if = {
 					limit = { country_exists = BUN }
-					BUN = {country_event = BUN_YFC.1}
+					IF = {
+						limit = {BUN = {has_war_with = YFC}}
+						BUN = {country_event = BUN_YFC.1}
+					}
 					add_war_support = -0.05
 					add_political_power = -100
 					subtract_from_variable = { var_idea_YFC_TopHat_influence = 3 }

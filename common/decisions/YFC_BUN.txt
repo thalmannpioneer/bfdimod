@@ -358,6 +358,130 @@ decision_YFC_BUN_category = {
 		}
 	}
 
+	YFC_BUN_218_Counter = {
+		icon = GFX_decisions_YFC_BUN_counter
+		state_target = yes
+        targets = { state = 218 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			controls_state = 218
+			218 = {
+				compliance < 80
+			}
+		}
+		available = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				divisions_in_state = {
+					size > 2
+					state = 218
+				}
+			}
+        }
+		cancel_trigger = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				NOT = {
+					divisions_in_state = {
+						size > 2
+						state = 218
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			add_political_power = 15
+			IF = {
+				limit = {is_ai = yes}
+				218 = {add_resistance = -5}
+			}
+        }
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 35
+
+		remove_effect = {
+			218 = {add_resistance = -20}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 65
+			}
+		}
+	}
+
+	YFC_BUN_217_Counter = {
+		icon = GFX_decisions_YFC_BUN_counter
+		state_target = yes
+        targets = { state = 217 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
+			controls_state = 217
+			217 = {
+				compliance < 80
+			}
+		}
+		available = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				divisions_in_state = {
+					size > 2
+					state = 217
+				}
+			}
+        }
+		cancel_trigger = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				NOT = {
+					divisions_in_state = {
+						size > 2
+						state = 217
+					}
+				}
+			}
+        }
+        cancel_effect = {
+			add_political_power = 15
+			IF = {
+				limit = {is_ai = yes}
+				217 = {add_resistance = -5}
+			}
+        }
+		fire_only_once = no
+		cost = 50
+		days_remove = 30
+		days_re_enable = 35
+
+		remove_effect = {
+			217 = {add_resistance = -20}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 65
+			}
+		}
+	}
+
 	YFC_BUN_85_Infrastructure = { #Would also cost money or something else
 		icon = GFX_decisions_YFC_BUN_infrastructure
 		state_target = yes

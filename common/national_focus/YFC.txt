@@ -152,6 +152,12 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_YFC_mercs_div
             add_manpower = 5000
+            add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 166
+			}
             division_template = {
                 name = "Cherry Company"
                 is_locked = yes
@@ -195,7 +201,15 @@ focus_tree = {
 
         cost = 6
         completion_reward = {
-            custom_effect_tooltip = l_YFC_mercs_div
+            IF = {
+                limit = {
+                    OR = {
+                        check_variable = {var_YFC_merc_pick = 2}
+                        check_variable = {var_YFC_merc_pick = 0}
+                    }
+                }
+                custom_effect_tooltip = l_YFC_mercs_div
+            }
             add_manpower = 5000
             division_template = {
                 name = "Combined Grape Affiliation"
@@ -232,7 +246,15 @@ focus_tree = {
 
         cost = 6
         completion_reward = {
-            custom_effect_tooltip = l_YFC_mercs_div
+            IF = {
+                limit = {
+                    OR = {
+                        check_variable = {var_YFC_merc_pick = 3}
+                        check_variable = {var_YFC_merc_pick = 0}
+                    }
+                }
+                custom_effect_tooltip = l_YFC_mercs_div
+            }
             add_manpower = 5000
             division_template = {
                 name = "Unnamed Mercenary Brotherhood"
@@ -4271,10 +4293,14 @@ focus_tree = {
 
         cost = 2
         completion_reward = {
-            country_event = {
-                id = YFC_event.67
-                hours = 1
-                random_hours = 2
+            add_political_power = 25
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.67
+                    days = 7
+                    hours = 12
+                    random_hours = 36
+                }
             }
 
             #resolution from yellow face about expelling the sectorials to the far east
@@ -5731,6 +5757,11 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
+            country_event = {
+                id = YFC_event.84
+                hours = 1
+                random_hours = 2
+            }
             hidden_effect = {
                 set_country_flag = YFC_trade_allow_drugs
                 set_variable = {YFC_trade_drug_timer_var = 180}
@@ -5846,8 +5877,17 @@ focus_tree = {
             base = 5
         }
 
+        offset = {
+            x = 2
+            trigger = {
+                NOT = {has_completed_focus = YFC_focus_way_to_seas}
+            }
+        }
+
         prerequisite = { focus = YFC_focus_expand_our_claims }
         prerequisite = { focus = YFC_focus_scout_teardrop_positions }
+
+        mutually_exclusive = { focus = YFC_focus_locked_on_land }
 
         available = {
             hidden_trigger = {
@@ -5855,15 +5895,10 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
-        #can we keep both this focus and the next one open?
-        #wdym? These are done when the eastern game is done
-        #RE: as in, don't hide them, just make it so you cant complete them
-
         cost = 5
 
         completion_reward = {
-
+            mark_focus_tree_layout_dirty = yes
         }
     }
 
@@ -5874,9 +5909,18 @@ focus_tree = {
         y = 1 #Having one poke out of the side of the tree (Since only one can be completed) does not look good tbh
         icon = GFX_focus_generic
 
+        offset = {
+            x = -2
+            trigger = {
+                NOT = {has_completed_focus = YFC_focus_locked_on_land}
+            }
+        }
+
         ai_will_do = {
             base = 5
         }
+
+        mutually_exclusive = { focus = YFC_focus_way_to_seas }
 
         prerequisite = { focus = YFC_focus_expand_our_claims }
         prerequisite = { focus = YFC_focus_smuggle_prisoners }
@@ -5887,12 +5931,10 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_locked_on_land }
-
         cost = 5
 
         completion_reward = {
-
+            mark_focus_tree_layout_dirty = yes
         }
     }
 

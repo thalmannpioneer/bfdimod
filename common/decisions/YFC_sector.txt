@@ -4,12 +4,14 @@ decision_YFC_sector_category = { #Watermelon
         activation = {
             has_completed_focus = YFC_focus_establish_sectorialism
             NOT = {has_idea = idea_YFC_Debt_Crisis}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
         available = {
             always = no
         }
         cancel_trigger = {
             hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
+            NOT = { has_country_flag = YFC_Sectors_done }
 		}
         icon = GFX_YFC_mission_sector_pay  
         days_mission_timeout = 30
@@ -295,6 +297,7 @@ decision_YFC_sector_category = { #Watermelon
             NOT = {has_idea = idea_YFC_Debt_Crisis}
             NOT = {has_completed_focus = YFC_focus_the_sectorial_powderkeg}
             NOT = {has_completed_focus = YFC_focus_strike_the_headache}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
         available = {
             always = no
@@ -306,7 +309,7 @@ decision_YFC_sector_category = { #Watermelon
                     has_completed_focus = YFC_focus_the_sectorial_powderkeg
                     has_completed_focus = YFC_focus_strike_the_headache
                 }
-                
+                NOT = { has_country_flag = YFC_Sectors_done }
                 
             }
 		}
@@ -314,6 +317,15 @@ decision_YFC_sector_category = { #Watermelon
         days_mission_timeout = 150
         timeout_effect = {
             hidden_effect = {
+                set_temp_variable = {bribe_chance_var = 1}
+                IF = {
+                    limit = {check_variable = {money_amount < 10}}
+                    set_temp_variable = {bribe_chance_var = 5}
+                }
+                ELSE_IF = {
+                    limit = {check_variable = {money_amount > 30}}
+                    set_temp_variable = {bribe_chance_var = 0}
+                }
                 random_list = {
                     1 = {
                         country_event = YFC_sector.1
@@ -330,19 +342,19 @@ decision_YFC_sector_category = { #Watermelon
                     1 = {
                         country_event = YFC_sector.5
                     }
-                    1 = {
+                    bribe_chance_var = {
                         country_event = YFC_sector.6
                     }
-                    1 = {
+                    bribe_chance_var = {
                         country_event = YFC_sector.7
                     }
-                    1 = {
+                    bribe_chance_var = {
                         country_event = YFC_sector.8
                     }
-                    1 = {
+                    bribe_chance_var = {
                         country_event = YFC_sector.9
                     }
-                    1 = {
+                    bribe_chance_var = {
                         country_event = YFC_sector.10
                     }
                     1 = {
@@ -371,9 +383,11 @@ decision_YFC_sector_category = { #Watermelon
             has_completed_focus = YFC_focus_establish_sectorialism
             check_variable = { money_amount < -1.5 }
             NOT = {has_idea = idea_YFC_Debt_Crisis}  
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
         cancel_trigger = {
             check_variable = { money_amount > 0 }
+            NOT = { has_country_flag = YFC_Sectors_done }
 		}
         available = {
             always = no
@@ -394,13 +408,14 @@ decision_YFC_sector_category = { #Watermelon
 		visible = {
             has_completed_focus = YFC_focus_establish_sectorialism
             has_idea = idea_YFC_Debt_Crisis
+            NOT = { has_country_flag = YFC_Sectors_done }
 		}
 		available = {
 			has_idea = idea_YFC_Debt_Crisis
 		}
 
 		fire_only_once = no
-		days_remove = 180
+		days_remove = 150
 		days_re_enable = 30
 
         modifier = {
@@ -479,6 +494,7 @@ decision_YFC_sector_category = { #Watermelon
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Top_Hat}
             NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
 		days_remove = 30
 
@@ -531,6 +547,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Taser}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
 		days_remove = 30
 
@@ -575,6 +592,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Taser}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
 		days_remove = 30
 
@@ -619,6 +637,7 @@ decision_YFC_sector_category = { #Watermelon
         available = {
             has_political_power > 10
             NOT = {has_idea = idea_YFC_Defiant_Hammer}
+            NOT = { has_country_flag = YFC_Sectors_done }
         }
 		days_remove = 30
 
