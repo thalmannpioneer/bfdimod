@@ -207,6 +207,8 @@
  YFC_Trade_BUN_Guns: "Export Guns to §tEraser§!"
  YFC_Trade_Child_Labor: "Employ §RChild Labor§!"
  YFC_Trade_food: "§YGathering Food§!"
+ YFC_Trade_drugs: "§YCreating Drugs§!"
+ YFC_Trade_drugs_upgrade: "§YImprove Drug Creation Facilities§!"
 
  decision_YFC_sector_category: "Our Sectors"
  l_decisions_sector_title: "§YOur Sectors§!"

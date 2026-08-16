@@ -1092,7 +1092,6 @@ scripted_gui = {
             equipment_sell_click = {
                 YFC = {
                     add_political_power = -5
-                    clr_country_flag = YFC_trade_allow_drugs
                 }
                 IF = {
                     limit = {var:YFC.tradeable^YFC.selected = {NOT = {has_country_flag = ongoing_trade_offer}}}

@@ -1136,13 +1136,13 @@
  YFC_event.81.desc: "Wake up me" #ZDubbz, The teardrop popultion in Yoyleton and surrounding areas have become sick of the company's lack of care/chaos. As such the area has slighty turned into Protest and Riots. YFC does not fully control the area anymore
  YFC_event.81.a: "Ungrateful." 
 
- YFC_event.82.t: "Drug shipment successful!" 
- YFC_event.82.desc: "Wake up me" #I will (maybe) work on this later
- YFC_event.82.a: "." 
+ YFC_event.82.t: "Drug Shipment successful!" 
+ YFC_event.82.desc: "Wake up me" #ZDubbz, or maybe have no text, your pick
+ YFC_event.82.a: "Excellent." 
 
- YFC_event.83.t: "Drug shipment failed!" 
- YFC_event.83.desc: "Wake up me" #I will (maybe) work on this later
- YFC_event.83.a: "."
+ YFC_event.83.t: "Drug Shipment failed!" 
+ YFC_event.83.desc: "Wake up me" #ZDubbz
+ YFC_event.83.a: "Not excellent."
 
  YFC_event.84.t: "In a mere house..." 
  YFC_event.84.desc: "Wake up me" #ZDubbz, okay a bit out there but have these be from two unnamed objects who are making drugs. Like breaking bad (Which I never watched). 
@@ -2108,7 +2108,7 @@
  bfdinews_cities.11.c: "The 'Free' Heart is now ours!"
 
  bfdinews_cities.12.t: "LOOTING OF FOOTPATHBURG!"
- bfdinews_cities.12.desc: "While gunfire still rings out in the streets, it is clear that forces under the [201.controller.GetName] flag have captured a majority of the city. Yellow Face, head of the Yellow Face Company, had hired even more mercenaries to replace the losses from the war. Despite all efforts to throw more money into the war, their enemies reached the city. Fighting took place on every street as the invading army took captured block after block. During the chaos, many stores, banks, and even the HQ of Yellow Face Company itself were looted by the advancing army and civilians. Yellow Face and the rest of the Board of Directors had reportedly fled the capital before it came under fire. For now, the once great center of trade has fallen into a state of anarchy as of [?global.date.GetDateStringNoHourLong]."
+ bfdinews_cities.12.desc: "While gunfire still rings out in the streets, it is clear that forces under the [201.controller.GetName] flag have captured a majority of the city. [YFC.GetLeader], head of the [YFC.GetName], had hired even more mercenaries to replace the losses from the war. Despite all efforts to throw more money into the war, their enemies reached the city. Fighting took place on every street as the invading army took captured block after block. During the chaos, many stores, banks, and even the HQ of Company itself were looted by the advancing army and civilians. [YFC.GetLeader] and the rest of the Higher Ups had reportedly fled the capital before it came under fire. For now, the once great center of trade has fallen into a state of anarchy as of [?global.date.GetDateStringNoHourLong]."
  bfdinews_cities.12.a: "Will the global market survive?"
  bfdinews_cities.12.b: "Is there anyone left to fire...?"
  bfdinews_cities.12.c: "Money will not solve your problems here!"

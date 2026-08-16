@@ -3563,13 +3563,21 @@ country_event = { #YFC Drug shipment made it to them
 	id = YFC_event.82
 	title = YFC_event.82.t
 	desc = YFC_event.82.desc
-	picture = GFX_YFC_event10
+	picture = GFX_YFC_event34
 
 	fire_only_once = no
 	is_triggered_only = yes
 
 	option = { 
 		name = YFC_event.82.a
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
+		hidden_effect = {
+			clr_country_flag = YFC_trade_allow_drugs
+            activate_mission = YFC_Trade_drugs
+		}
 	}
 }
 
@@ -3584,6 +3592,14 @@ country_event = { #YFC Drug shipment DID NOT make it to them
 
 	option = { 
 		name = YFC_event.83.a
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
+		hidden_effect = {
+			clr_country_flag = YFC_trade_allow_drugs
+            activate_mission = YFC_Trade_drugs
+		}
 	}
 }
 

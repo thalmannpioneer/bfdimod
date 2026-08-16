@@ -99,7 +99,7 @@ set_variable = { var_idea_YFC_Hammer_cost = 20 }
 set_variable = { var_idea_YFC_Hammer_influence = 1 }
 set_variable = { var_idea_YFC_Hammer_level = 1 }
 
-set_variable = { var_idea_YFC_sectors_Taser_resistance = -0.05 }
+set_variable = { var_idea_YFC_sectors_Taser_resistance = -0.1 }
 set_variable = { var_idea_YFC_sectors_Taser_pp = 0.1 }
 set_variable = { var_idea_YFC_Taser_cost = 20 }
 set_variable = { var_idea_YFC_Taser_influence = 1 }
