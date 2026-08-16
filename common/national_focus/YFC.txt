@@ -3600,7 +3600,7 @@ focus_tree = {
         icon = GFX_focus_YFC_the_great_recession
 
         offset = {
-            x = -2
+            x = -6
             trigger = {
                 has_completed_focus = YFC_focus_company_restructuring
             }
@@ -3612,10 +3612,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_the_great_recession
-        }
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -3669,10 +3666,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_mass_firings
-        }
+        allow_branch = { has_completed_focus = YFC_focus_mass_firings }
 
         prerequisite = { focus = YFC_focus_mass_firings }
 
@@ -3852,10 +3846,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_strike_the_headache
-        }
+        allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
 
         cost = 5
         completion_reward = {
@@ -3992,10 +3983,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_battle_for_footpathburg
-        }
+        allow_branch = { has_completed_focus = YFC_focus_battle_for_footpathburg }
 
         prerequisite = { focus = YFC_focus_battle_for_footpathburg }
 
@@ -4063,10 +4051,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_company_restructuring
-        }
+        allow_branch = { has_completed_focus = YFC_focus_company_restructuring }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
@@ -4091,10 +4076,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_company_restructuring
-        }
+        allow_branch = { has_completed_focus = YFC_focus_company_restructuring }
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
@@ -4210,10 +4192,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_the_sectorial_powderkeg
-        }
+        allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
 
         #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
 
@@ -4465,10 +4444,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_the_second_embargo
-        }
+        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
 
         cost = 3
         completion_reward = {
@@ -4510,10 +4486,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = {
-            always = yes
-            #has_completed_focus = YFC_focus_the_second_embargo
-        }
+        allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
 
         cost = 4
         completion_reward = {
@@ -5884,6 +5857,7 @@ focus_tree = {
         #allow_branch = { has_completed_focus = YFC_focus_way_to_seas }
         #can we keep both this focus and the next one open?
         #wdym? These are done when the eastern game is done
+        #RE: as in, don't hide them, just make it so you cant complete them
 
         cost = 5
 
