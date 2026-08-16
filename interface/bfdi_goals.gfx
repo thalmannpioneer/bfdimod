@@ -2055,6 +2055,131 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_radical_meeting"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_radical_meeting.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_united_by_profits"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_united_by_profits.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_way_of_raiders"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_way_of_raiders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_prepare_for_strikes"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_prepare_for_strikes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_acquire_the_people"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_acquire_the_people.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_train_with_bunch"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_train_with_bunch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_follow_easers_strategy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_follow_easers_strategy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_mercenaries_practice"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_mercenaries_practice.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_pillage_our_neighbors"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_pillage_our_neighbors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_modern_weaponry"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_modern_weaponry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_old_traditions"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_old_traditions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_new_motorization"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_new_motorization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_acknowledge_our_shortcomings"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_acknowledge_our_shortcomings.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_seek_cooperation_with_bunch"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_seek_cooperation_with_bunch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_finally_form_the_deal"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_finally_form_the_deal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_bunch_technology"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_bunch_technology.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_stalled_plans"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_stalled_plans.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_invite_bunch_settlers"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_invite_bunch_settlers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_free_flowing_trade"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_free_flowing_trade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_strength_in_power"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_strength_in_power.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_strength_in_skill"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_strength_in_skill.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_to_portland"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_to_portland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_distract_teardrop"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_distract_teardrop.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_suppress_yoyleton"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_suppress_yoyleton.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_scout_teardrop_positions"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_scout_teardrop_positions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_locked_on_land"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_locked_on_land.dds"
+	}
 
 	#Musketeers#
 	
