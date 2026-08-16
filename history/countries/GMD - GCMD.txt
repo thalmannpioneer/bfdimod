@@ -44,3 +44,8 @@ add_ideas = idea_common_unplayable
 recruit_character = GMD_coiny
 recruit_character = GMD_dinar
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 2000
+    producer = GOI
+}

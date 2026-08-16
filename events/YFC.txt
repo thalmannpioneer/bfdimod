@@ -3346,6 +3346,10 @@ country_event = { #YFC Market shipment failed to make it to them
 		trigger = {
 			tag = YFC
 		}
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
 		custom_effect_tooltip = l_YFC_trade_lost_sent
 		add_political_power = -1
 	}
@@ -3375,7 +3379,10 @@ country_event = { #YFC Market shipment failed to make it to us
 
 	option = { 
 		name = YFC_event.73.a
-
+		IF = {
+			limit = {has_country_flag = ongoing_trade_offer}
+			clr_country_flag = ongoing_trade_offer
+		}
 		custom_effect_tooltip = l_YFC_trade_lost_get
 		add_political_power = -1
 	}

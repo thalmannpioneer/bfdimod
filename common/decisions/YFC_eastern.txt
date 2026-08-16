@@ -105,7 +105,7 @@ decision_YFC_eastern_category = {
 			highlight_state_targets = {state = FROM}
 		}
 
-		cost = 50
+		cost = 35
 
 		fire_only_once = yes
 
@@ -115,6 +115,10 @@ decision_YFC_eastern_category = {
 			FROM = {
 				add_core_of = ROOT
 				remove_core_of = EMP
+			}
+			YFC = {
+				custom_effect_tooltip = l_money_gain_50K
+            	add_to_variable = { money_amount = 0.5 }
 			}
         }
 
@@ -164,8 +168,8 @@ decision_YFC_eastern_category = {
 
 		remove_effect = {
 			add_manpower = 1500
-			custom_effect_tooltip = l_money_gain_100K
-			add_to_variable = { money_amount = 1 }
+			custom_effect_tooltip = l_money_gain_200K
+			add_to_variable = { money_amount = 2 }
 			FROM = {
 				add_building_construction = {
 					type = naval_base

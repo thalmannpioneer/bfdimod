@@ -105,6 +105,68 @@ decision_YFC_trade_category= {
         }
     }
 
+    YFC_Trade_bunch_steal = {
+        icon = GFX_decisions_YFC_loan #Update later
+
+        visible = {
+            has_completed_focus = YFC_focus_fully_cored
+            controls_state = 85
+            controls_state = 212
+        }
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 2 }
+		}
+		custom_cost_text = decisions_cost_money_200k
+
+        fire_only_once = yes
+        days_remove = 360
+
+        modifier = {
+            political_power_gain = -0.5
+            stability_factor = -0.1
+        }
+
+        complete_effect = {
+            subtract_from_variable = { money_amount = 2 }
+        }
+
+        remove_effect = {
+            85 = {
+                add_resource = {
+					type = steel
+					amount = 4
+				}
+                add_resource = {
+					type = chromium
+					amount = 5
+				}
+                add_resource = {
+					type = coal
+					amount = 4
+				}
+            }
+            212 = {
+                add_resource = {
+					type = steel
+					amount = 9
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                check_variable = { money_amount > 10 }
+                add = 100
+            }
+        }
+    }
+
     YFC_Trade_Loan = {
         icon = GFX_decisions_YFC_loan
 

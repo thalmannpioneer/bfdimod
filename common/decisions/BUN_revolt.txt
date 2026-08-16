@@ -391,6 +391,14 @@ decision_BUN_Revolt_category = {
 				add = -100
 				enemies_strength_ratio < 1
 			}
+			modifier = {
+				add = 50
+				surrender_progress > 0.5
+			}
+			modifier = {
+				add = 50
+				surrender_progress > 0.75
+			}
 		}
 	}
 }

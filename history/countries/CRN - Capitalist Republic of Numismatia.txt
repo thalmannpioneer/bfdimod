@@ -51,7 +51,7 @@ recruit_character = CRN_pineapple
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment
-	amount = 2000
+	amount = 3500
     producer = GOI
 }
 

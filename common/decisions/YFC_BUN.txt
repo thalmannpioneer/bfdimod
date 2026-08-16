@@ -403,7 +403,7 @@ decision_YFC_BUN_category = {
 			}
         }
 		fire_only_once = no
-		cost = 50
+		cost = 35
 		days_remove = 30
 		days_re_enable = 35
 
@@ -415,7 +415,7 @@ decision_YFC_BUN_category = {
 			base = 0
 			modifier = {
 				add = 10
-				has_political_power > 65
+				has_political_power > 100
 			}
 		}
 	}
@@ -465,7 +465,7 @@ decision_YFC_BUN_category = {
 			}
         }
 		fire_only_once = no
-		cost = 50
+		cost = 35
 		days_remove = 30
 		days_re_enable = 35
 
@@ -477,7 +477,7 @@ decision_YFC_BUN_category = {
 			base = 0
 			modifier = {
 				add = 10
-				has_political_power > 65
+				has_political_power > 100
 			}
 		}
 	}
