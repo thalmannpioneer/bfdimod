@@ -5095,7 +5095,7 @@ focus_tree = {
     #middleground
 
     focus = {
-        id = YFC_focus_county_compromise
+        id = YFC_focus_city_council_compromise
         relative_position_id = YFC_focus_the_democratic_question
         x = -1
         y = 1
