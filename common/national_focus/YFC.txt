@@ -2085,7 +2085,7 @@ focus_tree = {
                     random_hours = 36
                 }
             }
-            add_stability = 0.01
+            add_stability = 0.05
             custom_effect_tooltip = l_GOI_unlock_focus
         }
 
@@ -2449,7 +2449,7 @@ focus_tree = {
                     random_hours = 36
                 }
             }
-            add_stability = 0.01
+            add_stability = 0.05
             custom_effect_tooltip = l_GOI_unlock_focus
         }
 

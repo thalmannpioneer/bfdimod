@@ -5,7 +5,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				monthly_population = 0.5
-				trade_opinion_factor = 0.25
+				trade_opinion_factor = 0.3
 				faction_trade_opinion_factor = 0.1
 			}
 		}

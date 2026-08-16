@@ -6,6 +6,7 @@ ideas = {
 				stability_factor = -0.05
 				political_power_gain = 0.25
 				consumer_goods_factor = -0.2
+				trade_opinion_factor = 0.5
 			}
 		}
 
