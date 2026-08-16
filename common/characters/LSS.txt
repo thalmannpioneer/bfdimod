@@ -110,4 +110,32 @@ characters = {
 			traits = { trait_cautious jaeger trickster  }
 		}
 	}
+
+	LSS_Todd = {
+        name = LSS_Todd
+        portraits = {
+            civilian = {
+                small = GFX_idea_LSS_Todd
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_LSS_Todd
+            traits = { agriculture_commissioner }
+        }
+    }
+
+	LSS_Esperanza = {
+        name = LSS_Esperanza
+        portraits = {
+            civilian = {
+                small = GFX_idea_LSS_Esperanza
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = idea_LSS_Esperanza
+            traits = { secretary_of_state }
+        }
+    }
 }

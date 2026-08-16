@@ -52,8 +52,10 @@
  RULE_OPTION_THREE_MUSKETEERS_YFC_AI_DESC: "Yellow Face will topple and restructure Eraser's Bunch and later create The Three Musketeers."
  RULE_OPTION_DESTROY_BUNCH_YFC: "Destroy Bunch"
  RULE_OPTION_DESTROY_BUNCH_YFC_AI_DESC: "Yellow Face will topple and destroy Eraser's Bunch and try to form a faction with Numismatia. Though this plan... may not work."
- RULE_OPTION_RAIDER_YFC: "Raider State"
- RULE_OPTION_RAIDER_YFC_AI_DESC: "Yellow Face will work with Eraser's Bunch and later become a raider state."
+ RULE_OPTION_RAIDER_LEFT_YFC: "Raider State"
+ RULE_OPTION_RAIDER_LEFT_YFC_AI_DESC: "Yellow Face will work with Eraser's Bunch, then suffer internal issues, and lastly become a raider state."
+ RULE_OPTION_RAIDER_RIGHT_YFC: "TopHat Clan" 
+ RULE_OPTION_RAIDER_RIGHT_YFC_AI_DESC: "Yellow Face will work with Eraser's Bunch, then suffer internal issues, and lastly Top Hat will take over."
 
  GTR_AI_BEHAVIOR: "@GTR University Administration"
  RULE_OPTION_COLLAPSE_COUNTRY: "Collapse"
