@@ -5733,6 +5733,7 @@ focus_tree = {
         completion_reward = {
             hidden_effect = {
                 set_country_flag = YFC_trade_allow_drugs
+                set_variable = {YFC_trade_drug_timer_var = 180}
                 every_other_country = {
                     limit = {
                         NOT = { tag = EMP }

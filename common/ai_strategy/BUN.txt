@@ -52,9 +52,7 @@ BUN_friend_CRN_YFC = {
 	enable = {
 		YFC = {has_completed_focus = YFC_focus_bunch_fostered}
 	}
-	abort = {
-		always = no
-	}
+	abort = {always = no}
 
 	ai_strategy = {
 		type = alliance
@@ -66,6 +64,28 @@ BUN_friend_CRN_YFC = {
 		id = CRN
 		value = 200
 	}
+    ai_strategy = {
+		type = alliance
+		id = YFC
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = YFC
+		value = 200
+	}
+}
+
+BUN_friend_YFC = {
+    #Work with YFC
+    allowed = {
+		original_tag = BUN
+	}
+	enable = {
+		YFC = {has_completed_focus = YFC_focus_bandit_pack}
+	}
+	abort = {always = no}
+
     ai_strategy = {
 		type = alliance
 		id = YFC
