@@ -2105,7 +2105,7 @@ country_event = { #YFC_focus_buy_ships
 			}
 		}
 	}
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event47
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -2485,7 +2485,7 @@ country_event = { #YFC_focus_establish_formal_connection event
 	id = YFC_event.53
 	title = YFC_event.53.t
 	desc = YFC_event.53.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event53
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2499,7 +2499,7 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 	id = YFC_event.54
 	title = YFC_event.54.t
 	desc = YFC_event.54.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event54
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2543,7 +2543,7 @@ country_event = { #YFC_focus_grow_closer_ties event
 	id = YFC_event.55
 	title = YFC_event.55.t
 	desc = YFC_event.55.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event55
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2557,7 +2557,7 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 	id = YFC_event.56
 	title = YFC_event.56.t
 	desc = YFC_event.56.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event56
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2648,7 +2648,7 @@ country_event = { #YFC_focus_negotiate_with_teardrop event
 	id = YFC_event.57
 	title = YFC_event.57.t
 	desc = YFC_event.57.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event45
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2668,7 +2668,7 @@ country_event = { # YFC_focus_shuffle_around_funds event
 	id = YFC_event.58
 	title = YFC_event.58.t
 	desc = YFC_event.58.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event58
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2702,7 +2702,7 @@ country_event = { #YFC_focus_reassess_geopolitics
 	id = YFC_event.59
 	title = YFC_event.59.t
 	desc = YFC_event.59.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event59
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2717,7 +2717,7 @@ country_event = { #YFC_focus_trade_alternatives
 	id = YFC_event.60
 	title = YFC_event.60.t
 	desc = YFC_event.60.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event60
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2733,7 +2733,7 @@ country_event = { #YFC_focus_offset_debt
 	id = YFC_event.61
 	title = YFC_event.61.t
 	desc = YFC_event.61.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event61
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2791,7 +2791,7 @@ country_event = { #YFC_focus_lessons_from_mercs
 		}
 	}
 
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event62
 
 	fire_only_once = no
 	is_triggered_only = yes
