@@ -779,6 +779,31 @@ SpriteTypes = {
 	}
 	
 	spriteType = {
+		name = GFX_YFC_event63
+		texturefile = gfx/event_pictures/YFC_event63.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event64
+		texturefile = gfx/event_pictures/YFC_event64.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event65
+		texturefile = gfx/event_pictures/YFC_event65.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event66
+		texturefile = gfx/event_pictures/YFC_event66.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event67
+		texturefile = gfx/event_pictures/YFC_event67.dds
+	}
+	
+	spriteType = {
 		name = GFX_YFC_BUN1
 		textureFile = gfx/event_pictures/YFC_BUN1.dds
 	}

@@ -2830,7 +2830,7 @@ country_event = { #YFC_focus_tophats_outlook
 		}
 	}
 
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event63
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -2861,7 +2861,7 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 	id = YFC_event.64
 	title = YFC_event.64.t
 	desc = YFC_event.64.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event64
 
 	desc = {
 		text = YFC_event.64.desc.a #Sector Side
@@ -2922,7 +2922,7 @@ country_event = { #YFC_focus_the_sectorial_powderkeg
 country_event = { #YFC_focus_sloth
 	id = YFC_event.65
 	title = YFC_event.65.t
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event65
 
 	desc = {
 		text = YFC_event.65.desc.a #Sector Side
@@ -2977,7 +2977,7 @@ country_event = { #YFC_focus_sloth
 
 country_event = { #YFC_focus_envy
 	id = YFC_event.66
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event66
 
 	title = {
 		text = YFC_event.66.t #Sector
@@ -3082,7 +3082,7 @@ country_event = { #YFC_focus_envy
 country_event = { #YFC_focus_pride
 	id = YFC_event.67
 	title = YFC_event.67.t
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event67
 
 	fire_only_once = no
 	is_triggered_only = yes

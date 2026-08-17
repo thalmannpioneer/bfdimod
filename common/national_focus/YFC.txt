@@ -2047,7 +2047,7 @@ focus_tree = {
         relative_position_id = YFC_focus_bunch_fostered
         x = -5
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_united_by_profits
 
         allow_branch = { has_completed_focus = YFC_focus_bunch_fostered }
 
@@ -3631,7 +3631,7 @@ focus_tree = {
         id = YFC_focus_the_great_recession
         x = 28
         y = 0
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_great_recession
 
         offset = {
             x = -6
