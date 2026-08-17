@@ -106,7 +106,7 @@ decision_YFC_trade_category= {
     }
 
     YFC_Trade_bunch_steal = {
-        icon = GFX_decisions_YFC_loan #Update later
+        icon = GFX_decisions_YFC_Trade_exploit_bunch_resources 
 
         visible = {
             has_completed_focus = YFC_focus_fully_cored

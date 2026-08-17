@@ -3,12 +3,11 @@
 division_template = {
     name = "112th Cavalry Regiment"
     regiments = {
-        cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-        cavalry = { x = 0 y = 2 }
+        motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 	}
     support = {
-        recon = { x = 0 y = 0 }			
+        mot_recon = { x = 0 y = 0 }			
     }
     is_locked = yes
     division_cap = 1
@@ -58,7 +57,7 @@ division_template = {
     }
     support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 }
+        mot_recon = { x = 0 y = 1 }
         signal_company = { x = 0 y = 2 }  		
     }
     is_locked = yes
@@ -104,41 +103,41 @@ units = {
         location = 3410
         division_template = "112th Cavalry Regiment"
         start_experience_factor = 0.85
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
 	division= {
         name = "141st Infantry Regiment"
         location = 10367
         division_template = "141st Infantry Regiment"
         start_experience_factor = 0.9
-        start_equipment_factor = 0.85
+        start_equipment_factor = 0.8
     }
 	division= {
         name = "278th Armored Cavalry Regiment"
         location = 10421
         division_template = "278th Armored Cavalry Regiment"
         start_experience_factor = 0.95
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 	division= {
         name = "172nd Brigade Engineer Battalion"
         location = 3551
         division_template = "172nd Brigade Engineer Battalion"
         start_experience_factor = 0.9
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
     division= {
         name = "36th Armored Division Artillery"
         location = 3551
         division_template = "36th Armored Division Artillery"
         start_experience_factor = 0.90
-        start_equipment_factor = 0.90
+        start_equipment_factor = 0.9
     }
     division= {
         name = "536th Brigade Support Battalion"
         location = 10476
         division_template = "536th Brigade Support Battalion"
         start_experience_factor = 0.75
-        start_equipment_factor = 0.85
+        start_equipment_factor = 0.7
     }
 }

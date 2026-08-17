@@ -376,6 +376,10 @@ country_event = { #Embargo event for all nations
         }
 		hidden_effect = {
 			YFC = {country_event = YFC_event.10}
+			set_variable = {buying_item = -1}
+			set_variable = {selling_item = -1}
+			set_variable = { buying_amount = 0 }
+            set_variable = { selling_amount = 0 }
 		}
 		ai_chance = {
 			base = 3 #About 1/3 any other nation says no to embargo
@@ -3670,6 +3674,47 @@ country_event = { #YFC Drug event start
         add_to_variable = { money_amount = 1 }
 		custom_effect_tooltip = l_YFC_trade_get_drugs_unlock
 		unlock_decision_tooltip = YFC_Trade_drugs_upgrade
+	}
+}
+
+country_event = { #YFC Moscow 1812
+	id = YFC_event.85
+	title = YFC_event.85.t
+	desc = YFC_event.85.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.85.a
+		custom_effect_tooltip = l_YFC_eastern_gainall_5
+		custom_effect_tooltip = l_YFC_eastern_block
+		
+		hidden_effect = {
+			TBT = {
+				add_timed_idea = {
+					idea = idea_TBT_eastern_blocked
+					days = 65
+				}
+			}
+			every_state = {
+                limit = {
+                    OR = {
+                        state = 229
+                        state = 232
+                        state = 228
+                        state = 225
+                        state = 230
+                        state = 226
+                        state = 192
+                        state = 231
+                        state = 227
+                    }
+                }
+                add_to_variable = { eastern_support_var = 0.05 }
+            }
+		}
 	}
 }
 

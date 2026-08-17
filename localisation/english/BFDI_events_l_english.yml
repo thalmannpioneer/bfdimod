@@ -1157,6 +1157,10 @@
  YFC_event.84.desc: "Wake up me" #ZDubbz, okay a bit out there but have these be from two unnamed objects who are making drugs. Like breaking bad (Which I never watched). 
  YFC_event.84.a: "." 
 
+ YFC_event.85.t: "Let them run wild" 
+ YFC_event.85.desc: "text text bla bla" #ZDubbz, what we already talked about. Yellow Face let's prisoners run wild in Teardrop lands causing a pause to the east. Could be done from a view of a prisoner/guard/local. Just nothing that the foucs desc already does
+ YFC_event.85.a: "Have fun with this Teardrop!" 
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

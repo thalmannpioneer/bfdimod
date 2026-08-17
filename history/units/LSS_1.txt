@@ -3,11 +3,11 @@
 division_template = {
     name = "1st Cavalry Regiment"
     regiments = {
-        cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
+        mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
 	}
     support = {
-        recon = { x = 0 y = 0 }		
+        mot_recon = { x = 0 y = 0 }		
         signal_company = { x = 0 y = 1 } 		
     }
     is_locked = yes
@@ -103,7 +103,7 @@ units = {
         location = 3410
         division_template = "1st Cavalry Regiment"
         start_experience_factor = 0.90
-        start_equipment_factor = 0.90
+        start_equipment_factor = 0.85
     }
 	division= {
         name = "37th Armor Regiment"

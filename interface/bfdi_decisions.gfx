@@ -484,6 +484,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_mission_YFC_sector_failing_payments"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_sector_failing_payments.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_sector_military"
 		textureFile = "gfx/interface/decisions/decisions_sector_military.dds"
 	}
@@ -567,6 +572,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_buy_tech"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_buy_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_Trade_exploit_bunch_resources" #Little long xd
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_exploit_bunch_resources.dds"
 	}
 
 	spriteType = {
@@ -697,6 +707,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_eastern_invest"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_invest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_eastern_manpower"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_eastern_manpower.dds"
 	}
 
 	spriteType = {
