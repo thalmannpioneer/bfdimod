@@ -497,9 +497,14 @@ YFC_ai_behavior = {
 		desc = "RULE_OPTION_DESTROY_BUNCH_YFC_AI_DESC"
 	}
 	option = {
-		name = RAIDER_YFC
-		text = "RULE_OPTION_RAIDER_YFC"
-		desc = "RULE_OPTION_RAIDER_YFC_AI_DESC"
+		name = RAIDER_YFC_LEFT
+		text = "RULE_OPTION_RAIDER_LEFT_YFC"
+		desc = "RULE_OPTION_RAIDER_LEFT_YFC_AI_DESC"
+	}
+	option = {
+		name = RAIDER_YFC_RIGHT
+		text = "RULE_OPTION_RAIDER_RIGHT_YFC"
+		desc = "RULE_OPTION_RAIDER_RIGHT_YFC_AI_DESC"
 	}
 }
 

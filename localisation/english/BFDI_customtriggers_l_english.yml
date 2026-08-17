@@ -21,6 +21,7 @@
  l_decisions_YFC_eastern_seize: "Our control in the state is §Yover 75%§!"
  l_decisions_YFC_eastern_lose: "Our control in the state §Rfalls under 75%§!"
  l_decisions_YFC_raids_Active: "No active or preparing raid"
+ l_YFC_sectors_still_around: "Sectors have not been removed"
  l_alliance_YFC_Three_Musketeers: "Part of Three Musketeers Alliance"
  l_GTR_prev_stages_done: "§YPrevious stages are done§!"
  l_GTR_all_stages_done: "§YAll preparations are done§!"
@@ -88,4 +89,5 @@
  l_money_cost_300K: "Costs §G300K Dollars§!"
  l_money_cost_500K: "Costs §G500K Dollars§!"
  l_money_cost_1M: "Costs §G1M Dollars§!"
+ l_money_cost_1M_5: "Costs §G1.5M Dollars§!"
  l_money_cost_2_5M: "Costs §G2.5M Dollars§!"

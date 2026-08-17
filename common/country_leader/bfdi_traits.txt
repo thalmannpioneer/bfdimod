@@ -118,8 +118,30 @@ leader_traits = {
         ai_focus_peaceful_factor = -0.5
     }
 
-    skilled_military_staff = { #The great Iron Hand buff
+    skilled_military_staff = {
         army_org_factor = 0.15
+    }
+
+    agriculture_commissioner = {
+        sprite = 13
+
+        weekly_manpower = 50
+        stability_factor = 0.1
+
+        ai_will_do = {
+            base = 5
+        }
+    }
+
+    secretary_of_state = {
+        sprite = 13
+
+        consumer_goods_factor = -0.25
+        political_power_gain = 0.1
+
+        ai_will_do = {
+            base = 5
+        }
     }
 
     second_hand = {

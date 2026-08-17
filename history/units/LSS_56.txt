@@ -3,12 +3,11 @@
 division_template = {
     name = "124th Cavalry Regiment"
     regiments = {
-        cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-        cavalry = { x = 0 y = 2 }
+        motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
 	}
     support = {
-        recon = { x = 0 y = 0 }		
+        mot_recon = { x = 0 y = 0 }		
         signal_company = { x = 0 y = 1 } 		
     }
     is_locked = yes
@@ -100,7 +99,7 @@ division_template = {
 	}
     support = {
         engineer = { x = 0 y = 0 }
-        recon = { x = 0 y = 1 } 
+        mot_recon = { x = 0 y = 1 } 
         signal_company = { x = 0 y = 2 }  		
     }
     is_locked = yes
@@ -130,48 +129,48 @@ units = {
         location = 3410
         division_template = "124th Cavalry Regiment"
         start_experience_factor = 0.85
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 	division= {
         name = "142nd Infantry Regiment"
         location = 10367
         division_template = "142nd Infantry Regiment"
         start_experience_factor = 0.9
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 	division= {
         name = "143rd Infantry Regiment"
         location = 10421
         division_template = "143rd Infantry Regiment"
         start_experience_factor = 0.95
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 	division= {
         name = "144th Infantry Regiment"
         location = 3551
         division_template = "144th Infantry Regiment"
         start_experience_factor = 0.9
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
     division= {
         name = "133rd Field Artillery Regiment"
         location = 10476
         division_template = "133rd Field Artillery Regiment"
         start_experience_factor = 0.85
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
     division= {
         name = "156th Brigade Engineer Battalion"
         location = 3410
         division_template = "156th Brigade Engineer Battalion"
         start_experience_factor = 0.85
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
     division= {
         name = "949th Brigade Support Battalion"
         location = 10476
         division_template = "949th Brigade Support Battalion"
         start_experience_factor = 0.75
-        start_equipment_factor = 0.95
+        start_equipment_factor = 0.9
     }
 }

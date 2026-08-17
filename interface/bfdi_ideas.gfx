@@ -241,10 +241,18 @@ spriteTypes = {
 		name = GFX_idea_LSS_Whataburger
 		texturefile = gfx/interface/ideas/idea_LSS_Whataburger.dds
 	}
-
 	spriteType = {
 		name = GFX_idea_LSS_ExxonMobil
 		texturefile = gfx/interface/ideas/idea_LSS_ExxonMobil.dds
+	}
+
+	spriteType = {
+		name = GFX_idea_LSS_Todd
+		texturefile = gfx/interface/ideas/idea_LSS_Todd.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Esperanza
+		texturefile = gfx/interface/ideas/idea_LSS_Esperanza.dds
 	}
 
 	spriteType = {

@@ -10,8 +10,12 @@ decision_YFC_sector_category = { #Watermelon
             always = no
         }
         cancel_trigger = {
-            hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
-            NOT = { has_country_flag = YFC_Sectors_done }
+            hidden_trigger = {
+                OR = {
+                    hidden_trigger = { has_idea = idea_YFC_Debt_Crisis }
+                    has_country_flag = YFC_Sectors_done
+                }
+            }
 		}
         icon = GFX_YFC_mission_sector_pay  
         days_mission_timeout = 30
@@ -211,7 +215,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_TopHat_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_TopHat_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_TopHat_influence > 2}
+                            check_variable = { var_idea_YFC_TopHat_influence > 4}
                         }
                         random = {
                             chance = 50
@@ -227,7 +231,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Pipe_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Pipe_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Pipe_influence > 2}
+                            check_variable = { var_idea_YFC_Pipe_influence > 4}
                         }
                         random = {
                             chance = 50
@@ -243,7 +247,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Beaker_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Beaker_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Beaker_influence > 2}
+                            check_variable = { var_idea_YFC_Beaker_influence > 4}
                         }
                         random = {
                             chance = 50
@@ -259,7 +263,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Hammer_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Hammer_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Hammer_influence > 2}
+                            check_variable = { var_idea_YFC_Hammer_influence > 4}
                         }
                         random = {
                             chance = 50
@@ -275,7 +279,7 @@ decision_YFC_sector_category = { #Watermelon
                                 check_variable = { var_idea_YFC_Taser_influence > var_Sector_Combined_Influence}
                                 check_variable = { var_idea_YFC_Taser_influence > 10}
                             }
-                            check_variable = { var_idea_YFC_Taser_influence > 2}
+                            check_variable = { var_idea_YFC_Taser_influence > 4}
                         }
                         random = {
                             chance = 50
@@ -308,9 +312,8 @@ decision_YFC_sector_category = { #Watermelon
                     has_idea = idea_YFC_Debt_Crisis
                     has_completed_focus = YFC_focus_the_sectorial_powderkeg
                     has_completed_focus = YFC_focus_strike_the_headache
-                }
-                NOT = { has_country_flag = YFC_Sectors_done }
-                
+                    has_country_flag = YFC_Sectors_done
+                }`
             }
 		}
         icon = GFX_YFC_mission_sector_issues  
@@ -386,14 +389,18 @@ decision_YFC_sector_category = { #Watermelon
             NOT = { has_country_flag = YFC_Sectors_done }
         }
         cancel_trigger = {
-            check_variable = { money_amount > 0 }
-            NOT = { has_country_flag = YFC_Sectors_done }
+            hidden_trigger = {
+                OR = {
+                    check_variable = { money_amount > 0 }
+                    has_country_flag = YFC_Sectors_done
+                }
+            }
 		}
         available = {
             always = no
         }
-        icon = GFX_mission_YFC_BUN_Growing_Riots #Update later
-        days_mission_timeout = 75
+        icon = GFX_mission_YFC_sector_failing_payments
+        days_mission_timeout = 100
         timeout_effect = {
             custom_effect_tooltip = l_YFC_sectors_Debt
             hidden_effect = {

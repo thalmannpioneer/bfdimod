@@ -800,9 +800,14 @@ decision_YFC_BUN_category = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
 			controls_state = 85
 			85 = {
-				compliance < 85
+				compliance > 50
+			}
+		}
+
+		available = {
+			85 = { 
+				resistance < 50
 				compliance > 65
-				resistance < 40
 			}
 		}
 
@@ -838,9 +843,14 @@ decision_YFC_BUN_category = {
 			has_completed_focus = YFC_focus_clamp_down_on_bunchivism
 			controls_state = 212
 			212 = {
-				compliance < 85
+				compliance > 50
+			}
+		}
+
+		available = {
+			212 = { 
+				resistance < 50
 				compliance > 65
-				resistance < 40
 			}
 		}
 

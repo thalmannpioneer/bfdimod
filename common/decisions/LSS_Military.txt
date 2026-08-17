@@ -212,9 +212,13 @@ decision_LSS_Military_category = {
 				ROOT = { set_country_flag = LSS_attack_losers }
 				IF = {
 					limit = {is_ai = yes}
-					add_manpower = 30000
+					add_manpower = 15000
         			add_offsite_building = { type = arms_factory level = 1 }
 					add_stability = 0.25
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 2000
+					}
 				}
 				IF = {
 					limit = {

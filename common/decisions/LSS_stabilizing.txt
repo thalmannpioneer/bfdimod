@@ -27,7 +27,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -58,7 +58,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -89,7 +89,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -118,7 +118,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -148,7 +148,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -184,7 +184,7 @@ decision_LSS_stabilizing_category = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 10
+				add = 50
 				has_political_power < 30
 			}
 		}
@@ -227,7 +227,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -260,7 +260,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -293,7 +293,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -333,7 +333,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 
@@ -367,7 +367,7 @@ decision_LSS_stabilizing_category = {
         }
 
 		ai_will_do = {
-			base = 10
+			base = 25
 		}
 	}
 }

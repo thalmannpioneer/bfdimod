@@ -19,27 +19,27 @@ units = {
         location = 3410
         division_template = "State Guard"
         start_experience_factor = 0.6
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
     division= {
         name = "2nd Brigade"
         location = 10476
         division_template = "State Guard"
         start_experience_factor = 0.6
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
     division= {
         name = "3rd Brigade"
         location = 10476
         division_template = "State Guard"
         start_experience_factor = 0.6
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
     division= {
         name = "6th Brigade"
         location = 10367
         division_template = "State Guard"
         start_experience_factor = 0.6
-        start_equipment_factor = 0.75
+        start_equipment_factor = 0.7
     }
 }
