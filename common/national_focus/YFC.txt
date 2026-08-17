@@ -5163,11 +5163,11 @@ focus_tree = {
             }
         }
 
-        #available = {
-        #    hidden_trigger = {
-        #        has_completed_focus = YFC_focus_way_of_raiders
-        #    }
-        #}
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_way_of_raiders
+            }
+        }
 
         allow_branch = { has_completed_focus = YFC_focus_way_of_raiders }
 
@@ -5207,7 +5207,6 @@ focus_tree = {
         cost = 3 #Maybe change later
 
         completion_reward = {
-            add_political_power = 35
             add_opinion_modifier = { target = BUN modifier = large_increase }
             every_country_with_original_tag = {
                 original_tag_to_check = BUN
@@ -5477,7 +5476,11 @@ focus_tree = {
             YFC_david = {
                 add_skill_level = 2
             }
-            add_manpower = 5000
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.95
+                uses = 1
+                category = land_doctrine
+            }
             hidden_effect = {
                 BUN = {
                     army_experience = 25
@@ -5566,6 +5569,19 @@ focus_tree = {
                         check_variable = {money_amount < 5}
                     }
                     add_to_variable = {money_amount = 10}
+                }
+                IF = {
+                    limit = {
+                        OR = {
+                            has_completed_focus = YFC_focus_locked_on_land
+                            has_completed_focus = YFC_focus_way_to_seas
+                        }
+                        country_event = {
+                            id = YFC_event.86
+                            days = 7
+                            random_hours = 48
+                        }
+                    }
                 }
             }
         }
@@ -5926,6 +5942,21 @@ focus_tree = {
             add_ideas = idea_YFC_real_raider_force
             unlock_decision_tooltip = YFC_raid_reform
             army_experience = 50
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            has_completed_focus = YFC_focus_locked_on_land
+                            has_completed_focus = YFC_focus_way_to_seas
+                        }
+                        country_event = {
+                            id = YFC_event.86
+                            days = 7
+                            random_hours = 48
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -6188,7 +6219,7 @@ focus_tree = {
                     set_country_flag = Confirmed_Trade_Buying
                     set_variable = { THIS.buying_item = 999}
                     set_variable = { THIS.buying_amount = 50 }
-                    set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
+                    set_temp_variable_to_random = {var = MATH_COST_var min = 2 max = 5 integer = yes}
                     multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
                     add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 }
@@ -6253,7 +6284,7 @@ focus_tree = {
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_borderwar_buff
-            add_to_variable = {eastern_borderwar_var = 1}
+            add_to_variable = {eastern_borderwar_var = 1.5}
         }
     }
 
@@ -6314,6 +6345,21 @@ focus_tree = {
 
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            has_completed_focus = YFC_focus_bandit_pack
+                            has_completed_focus = YFC_focus_acknowledge_our_shortcomings
+                        }
+                        country_event = {
+                            id = YFC_event.86
+                            days = 7
+                            random_hours = 48
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -6350,6 +6396,21 @@ focus_tree = {
 
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
+            hidden_effect = {
+                IF = {
+                    limit = {
+                        OR = {
+                            has_completed_focus = YFC_focus_bandit_pack
+                            has_completed_focus = YFC_focus_acknowledge_our_shortcomings
+                        }
+                        country_event = {
+                            id = YFC_event.86
+                            days = 7
+                            random_hours = 48
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -6381,6 +6442,162 @@ focus_tree = {
             216 = {
                 add_compliance = 15
                 add_resistance_target = -20
+            }
+        }
+    }
+
+    #Final part
+
+    focus = {
+        id = YFC_focus_before_setting_sail
+        relative_position_id = YFC_focus_bandit_pack
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_before_setting_sail
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_before_setting_sail }
+
+        ai_will_do = {
+            base = 5
+        }
+
+        prerequisite = { focus = YFC_focus_bandit_pack focus = YFC_focus_acknowledge_our_shortcomings }
+        prerequisite = { focus = YFC_focus_way_to_seas focus = YFC_focus_locked_on_land }
+
+        cost = 3 #Maybe change later
+
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = YFC_focus_construct_the_naval_base
+        relative_position_id = YFC_focus_before_setting_sail
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5
+        }
+
+        prerequisite = { focus = YFC_focus_before_setting_sail }
+
+        cost = 5
+
+        completion_reward = {
+            navy_experience = 25
+            IF = {
+                limit = { #Portland, Great
+                    225 = {
+                        is_in_home_area = yes
+                        is_owned_by = YFC
+                    } 
+                }
+                225 = {
+                    add_building_construction = {
+                        type = naval_base
+                        level = 2
+                        instant_build = yes
+                        province = {
+                            all_provinces = yes
+                            limit_to_victory_point > 0
+                        }
+                    }
+                    add_building_construction = {
+                        type = dockyard
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+            ELSE_IF = {
+                limit = { #Other Port, alright
+                    226 = {
+                        is_in_home_area = yes
+                        is_owned_by = YFC
+                    } 
+                }
+                226 = {
+                    add_building_construction = {
+                        type = naval_base
+                        level = 1
+                        instant_build = yes
+                        province = {
+                            all_provinces = yes
+                            limit_to_victory_point > 0
+                        }
+                    }
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            ELSE_IF = {
+                limit = { #Other Port, alright
+                    227 = {
+                        is_in_home_area = yes
+                        is_owned_by = YFC
+                    } 
+                }
+                227 = {
+                    add_building_construction = {
+                        type = naval_base
+                        level = 1
+                        instant_build = yes
+                        province = {
+                            all_provinces = yes
+                            limit_to_victory_point > 0
+                        }
+                    }
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            ELSE = { #Portland, meh
+                225 = {
+                    add_building_construction = {
+                        type = dockyard
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
+        id = YFC_focus_pirate_life
+        relative_position_id = YFC_focus_construct_the_naval_base
+        x = 0
+        y = 1
+        icon = GFX_focus_generic
+
+        ai_will_do = {
+            base = 5
+        }
+
+        prerequisite = { focus = YFC_focus_construct_the_naval_base }
+
+        cost = 2
+
+        completion_reward = {
+            country_event = {
+                id = YFC_event.87
+                hours = 1
+                random_hours = 2
             }
         }
     }

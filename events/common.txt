@@ -630,6 +630,11 @@ country_event = {
 
         hidden_effect = {
             set_country_flag = LSS_Unlock_Militray
+            
+            IF = {
+                limit = {is_ai = yes}
+                set_grand_doctrine = mobile_warfare
+            }
 
             country_event = {
 				id = uncommon_event.12

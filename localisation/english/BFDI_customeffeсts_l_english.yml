@@ -160,6 +160,7 @@
  l_YFC_raid_improve_cav_attack: "Improves §YShow No Mercy§! National Spirit by:\n- §YCavalry Attack:§! §G+10%§!"
  l_YFC_raid_improve_mot_attack: "Improves §YShow No Mercy§! National Spirit by:\n- §YMotorized Attack:§! §G+5%§!"
  l_YFC_raid_BUN_upgrade: "§YIncreases Bunch's raiding effectiveness by +50%§!"
+ l_YFC_pirate_unlock: "§YUnlocks Pirate decisions!§!"
  l_YFC_pirate_DAV: "§YHaving more boats stationed in §G[130.GetName]§! will increase the chance of the pirates being repelled!§!"
  l_YFC_pirate_TBT: "§YHaving more boats stationed in §G[168.GetName]§! will increase the chance of the pirates being repelled!§!"
  l_YFC_pirate_GMD: "§YHaving more boats stationed in §G[173.GetName]§! will increase the chance of the pirates being repelled!§!"
@@ -209,11 +210,11 @@
  l_YFC_eastern_loseall_5: "§ROur control in every contested state will decrease by 5%!§!"
  l_YFC_eastern_loseall_10: "§ROur control in every contested state will decrease by 10%!§!"
  l_YFC_eastern_to_portland: "§YOur control in [232.GetName], [230.GetName], and [228.GetName] will be increased by 25%!§!"
- l_YFC_eastern_borderwar_buff: "§YIncreases our modifier in Eastern Game border conflicts by 100%!§!"
+ l_YFC_eastern_borderwar_buff: "§YIncreases our modifier in Eastern Game border conflicts by 150%!§!"
  l_YFC_eastern_borderwar_disable: "§YDisables the option for both sides to border war with each other in the east.§! §RFor now.§!"
  l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
- l_YFC_eastern_borderwar_loss: "§ROur future attack/defence bonus in border wars will be decreased by 25%!§!\n§RThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
+ l_YFC_eastern_borderwar_loss: "§ROur future attack/defence bonus in border wars will be decreased by 25%!§!\n§RThe enemies' future attack/defence bonus in border wars will be increased by 25%!§!"
 
  l_BUN_YFC_1: "Modifies §YOn a Ticking Timed Bomb§! National Spirit by:\n- §YAll Modifiers§! §R-25%§!"
 

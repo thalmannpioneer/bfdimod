@@ -2566,14 +2566,6 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 	fire_only_once = no
 	is_triggered_only = yes
 
-	available = {
-		has_completed_focus = YFC_focus_the_grapes_and_the_cherries
-		custom_trigger_tooltip = {
-			tooltip = l_decisions_YFC_divs
-			NOT = {has_country_flag = has_active_mercenaries}
-		}
-	}
-
 	option = { #Normal
 		name = YFC_event.56.a
 		201 = {
@@ -3715,6 +3707,51 @@ country_event = { #YFC Moscow 1812
                 add_to_variable = { eastern_support_var = 0.05 }
             }
 		}
+	}
+}
+
+country_event = { #Pirate 1
+	id = YFC_event.86
+	title = YFC_event.86.t
+	desc = YFC_event.86.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.86.a
+
+		custom_effect_tooltip = l_GOI_unlock_focus
+
+		hidden_effect = {
+			complete_national_focus = YFC_focus_before_setting_sail
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Pirate 2
+	id = YFC_event.87
+	title = YFC_event.87.t
+	desc = YFC_event.87.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.87.a
+		custom_effect_tooltip = l_YFC_pirate_unlock
+		
+		if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+			set_variable = { var_demo_end = 4 } #Update later
+			hidden_effect = {
+				play_song = "demo_end"
+			}
+        }
 	}
 }
 

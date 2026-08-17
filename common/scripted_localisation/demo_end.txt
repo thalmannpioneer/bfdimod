@@ -57,7 +57,25 @@ defined_text = {
         localization_key = demo_end_GTR_title_2
     }
     text = {
-        trigger = { original_tag = YFC }
+        trigger = { 
+            original_tag = YFC 
+            NOT = {has_cosmetic_tag = YFC_raiders}
+            NOT = {has_cosmetic_tag = YFC_TopHat_clan}
+        }
         localization_key = demo_end_YFC_title_1
+    }
+    text = {
+        trigger = { 
+            original_tag = YFC 
+            has_cosmetic_tag = YFC_raiders
+        }
+        localization_key = demo_end_YFC_title_2
+    }
+    text = {
+        trigger = { 
+            original_tag = YFC 
+            has_cosmetic_tag = YFC_TopHat_clan
+        }
+        localization_key = demo_end_YFC_title_3
     }
 }

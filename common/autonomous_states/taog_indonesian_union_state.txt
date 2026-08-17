@@ -1,5 +1,5 @@
 autonomy_state = {
-	id = autonomy_aat_defense_council_member
+	id = autonomy_taog_indonesian_union_state
 	
 	is_puppet = yes
 	
@@ -22,13 +22,12 @@ autonomy_state = {
 		autonomy_manpower_share = 1
 		can_master_build_for_us = 1
 		extra_trade_to_overlord_factor = 1.0
-		overlord_trade_cost_factor = -0.8
-		cic_to_overlord_factor = 0.35
-		mic_to_overlord_factor = 0.65
+		overlord_trade_cost_factor = -0.1
+		cic_to_overlord_factor = 0.3
+		mic_to_overlord_factor = 0.75
 		autonomy_gain_global_factor = -0.3
 		peace_score_ratio_transferred_to_overlord = 0.5
 		lend_lease_tension_with_overlord = -0.40
-		faction_influence_contribution_factor = -0.5
 	}
 	
 	ai_subject_wants_higher = {
@@ -44,16 +43,18 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Arms Against Tyranny"
+		has_dlc = "Thunder at Our Gates"
 		OR = {
-			original_tag = NOR
-			original_tag = ICE
-			original_tag = DEN
-			original_tag = FIN
+			original_tag = ATJ
+			original_tag = BLI
+			original_tag = GOW
+			original_tag = SSI
+			original_tag = POK
+			original_tag = TNE
 		}
 
 		OVERLORD = {
-			original_tag = SWE
+			original_tag = INS
 		}
 	}
 	
