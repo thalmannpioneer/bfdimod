@@ -1680,14 +1680,32 @@ country_event = {
     desc = YFC_event.38.desc
 	picture = GFX_Temp_event
 	
+	desc = {
+		text = YFC_event.38.desc.a #Normal side
+		trigger = {
+			YFC = {has_completed_focus = YFC_focus_new_interests}
+		}
+	}
+	desc = {
+		text = YFC_event.38.desc.b #Raider side
+		trigger = {
+			YFC = {has_completed_focus = YFC_focus_demand_great_ridge_tribute}
+		}
+	}
+
 	is_triggered_only = yes
     
     option = { 
 		name = YFC_event.38.a
 		give_resource_rights = { receiver = YFC state = 24 }
-		YFC = {give_guarantee = ROOT}
-		custom_effect_tooltip = l_money_gain_500K
-		add_to_variable = { money_amount = 5 }
+		IF = {
+			limit = {
+				YFC = {has_completed_focus = YFC_focus_new_interests}
+			}
+			YFC = {give_guarantee = ROOT}
+			custom_effect_tooltip = l_money_gain_500K
+			add_to_variable = { money_amount = 5 }
+		}
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -1746,10 +1764,22 @@ country_event = {
 		name = YFC_event.38.b
 		hidden_effect = {
 			YFC = {
-				country_event = {
-					id = YFC_event.40
-					days = 1
-					random_hours = 12
+				IF = {
+					limit = {
+						has_completed_focus = YFC_focus_demand_great_ridge_tribute
+					}
+					country_event = {
+						id = YFC_event.43
+						days = 1
+						random_hours = 12
+					}
+				}
+				ELSE = {
+					country_event = {
+						id = YFC_event.40
+						days = 1
+						random_hours = 12
+					}
 				}
 			}
 		}
@@ -1769,8 +1799,13 @@ country_event = {
     
     option = { 
 		name = YFC_event.39.a
-		custom_effect_tooltip = l_money_lose_500K
-		subtract_from_variable = { money_amount = 5 }
+		IF = {
+			limit = {
+				YFC = {has_completed_focus = YFC_focus_new_interests}
+			}
+			custom_effect_tooltip = l_money_lose_500K
+			subtract_from_variable = { money_amount = 5 }
+		}
 		add_opinion_modifier = { target = SRI modifier = large_increase }
 		every_country_with_original_tag = {
 			original_tag_to_check = SRI
@@ -3562,7 +3597,21 @@ country_event = { #Sectors Quit/Fire
 			has_country_flag = YFC_Sectors_quit
 		}
 		set_country_flag = YFC_Sectors_done
-		remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+		custom_effect_tooltip = l_YFC_sectors_remove
+		IF = {
+			limit = {has_completed_focus = YFC_focus_promote_blocky }
+			custom_effect_tooltip = l_YFC_sectors_remove_blocky
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+				producer = BUN
+                amount = 1500
+            }
+		}
+		hidden_effect = {
+			retire_character = YFC_hammer
+			retire_character = YFC_taser
+			remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+		}
 	}
 	option = { #If YFC fires Sectors 
 		name = YFC_event.80.b
@@ -3570,16 +3619,27 @@ country_event = { #Sectors Quit/Fire
 			has_country_flag = YFC_Sectors_fire
 		}
 		set_country_flag = YFC_Sectors_done
-		remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
-		custom_effect_tooltip = l_money_gain_700K
-        add_to_variable = { money_amount = 7 }
+		custom_effect_tooltip = l_YFC_sectors_remove
+		IF = {
+			limit = {has_completed_focus = YFC_focus_promote_blocky }
+			custom_effect_tooltip = l_YFC_sectors_remove_blocky
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+				producer = BUN
+                amount = 1500
+            }
+		}
+		hidden_effect = {
+			retire_character = YFC_hammer
+			retire_character = YFC_taser
+			remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
+		}
 	}
 	option = { #If YFC Keeps Sectors
 		name = YFC_event.80.c
 		trigger = {
 			has_country_flag = YFC_Sectors_fire
 		}
-		add_stability = 0.05
 	}	
 }
 

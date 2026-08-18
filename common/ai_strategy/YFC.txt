@@ -14,6 +14,7 @@ YFC_hate_raiders = {
 		has_war = no
 		NOT = {has_completed_focus = YFC_focus_a_look_inward}
 		NOT = {has_completed_focus = YFC_focus_YFC_funded_pillaging}
+		NOT = {has_completed_focus = YFC_focus_tophat_clan}
 	}
 
 	abort = {
@@ -32,6 +33,39 @@ YFC_hate_raiders = {
     }
 }
 
+YFC_raiders = {
+    #Raider people
+    allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		has_war = no
+		has_completed_focus = YFC_focus_pillage_our_neighbors
+		OR = {
+			NOT = {has_completed_focus = YFC_focus_issues_in_east}
+			has_completed_focus = YFC_focus_locked_on_land
+			has_completed_focus = YFC_focus_way_to_seas
+		}	
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = SRR
+        value = 2000
+    }
+	ai_strategy = {
+        type = prepare_for_war
+        id = GGR
+        value = 2000
+    }
+	ai_strategy = {
+        type = prepare_for_war
+        id = SRI
+        value = 2000
+    }
+}
+
 YFC_TBT_scary = {
     #Borderwars 
     allowed = {
@@ -40,15 +74,22 @@ YFC_TBT_scary = {
 	enable = {
 		country_exists = TBT
 		has_war = no
-		has_completed_focus = YFC_focus_see_to_the_eastern_front
-		NOT = {has_completed_focus = YFC_focus_who_dares_wins}
+		OR = {
+			has_completed_focus = YFC_focus_see_to_the_eastern_front
+			has_completed_focus = YFC_focus_issues_in_east
+		}
+		NOT = {
+			has_completed_focus = YFC_focus_who_dares_wins
+			has_completed_focus = YFC_focus_locked_on_land
+			has_completed_focus = YFC_focus_way_to_seas
+		}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
         type = prepare_for_war
         id = TBT
-        value = 50
+        value = 100
     }
 }
 

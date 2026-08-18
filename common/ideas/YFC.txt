@@ -320,10 +320,16 @@ ideas = {
 			traits = { YFC_railway_enthusiast }
 
 			available = {
-				hidden_trigger = {has_completed_focus = YFC_focus_establish_sectorialism}
+				hidden_trigger = {
+					has_completed_focus = YFC_focus_establish_sectorialism
+					NOT = {has_country_flag = YFC_Sectors_done}
+				}
 			}
 			visible = {
-				hidden_trigger = {has_completed_focus = YFC_focus_establish_sectorialism}
+				hidden_trigger = {
+					has_completed_focus = YFC_focus_establish_sectorialism
+					NOT = {has_country_flag = YFC_Sectors_done}
+				}
 			}
 			on_add = {
 				custom_effect_tooltip = l_YFC_sectors_Hire

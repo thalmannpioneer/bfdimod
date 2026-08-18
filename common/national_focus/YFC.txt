@@ -638,7 +638,7 @@ focus_tree = {
         ai_will_do = {
             base = 0
             modifier = {
-                factor = 50
+                add = 5
                 has_country_flag = raiders_path
             }
             modifier = {
@@ -726,7 +726,7 @@ focus_tree = {
         ai_will_do = {
             base = 0
             modifier = {
-                factor = 50
+                add = 5
                 has_country_flag = money_path
             }
             modifier = {
@@ -3673,7 +3673,7 @@ focus_tree = {
             }
             modifier = {
                 has_country_flag = left_path
-                add = 50
+                add = 5
             }
         }
 
@@ -4063,14 +4063,14 @@ focus_tree = {
         mutually_exclusive = { focus = YFC_focus_mass_firings }
 
         ai_will_do = {
-            base = 0 #For now later update (10)
+            base = 0
             modifier = {
                 has_game_rule = { rule = YFC_ai_behavior option = RAIDER_YFC_RIGHT }
                 add = 1000
             }
             modifier = {
                 has_country_flag = right_path
-                add = 50
+                add = 5
             }
         }
 
@@ -4105,6 +4105,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         cost = 4
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
@@ -4130,6 +4134,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         cost = 4
         completion_reward = {
             add_political_power = -75
@@ -4151,6 +4159,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_crack_down_on_influence }
         prerequisite = { focus = YFC_focus_lower_wage_gaps }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
 
         cost = 4
         completion_reward = {
@@ -4176,6 +4188,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_lower_wage_gaps }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         cost = 4
         completion_reward = {
             #possibility for three different lore events:
@@ -4199,6 +4215,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_offset_debt }
         prerequisite = { focus = YFC_focus_lessons_from_mercs }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
 
         cost = 4
         completion_reward = {
@@ -4236,6 +4256,10 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_trade_alternatives }
         prerequisite = { focus = YFC_focus_tophats_outlook }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         available = {
             hidden_trigger = {
                 has_completed_focus = YFC_focus_the_sectorial_powderkeg
@@ -4266,6 +4290,10 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_the_second_embargo }
         prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         cost = 2
         completion_reward = {
             country_event = {
@@ -4288,6 +4316,10 @@ focus_tree = {
         icon = GFX_focus_YFC_envy
 
         prerequisite = { focus = YFC_focus_the_sectorial_powderkeg }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
 
         cost = 2
         completion_reward = {
@@ -4317,6 +4349,10 @@ focus_tree = {
         available = { #If you want to undo sure but both happening first would explain why Yellow Face expels them
             has_completed_focus = YFC_focus_envy
             has_completed_focus = YFC_focus_sloth
+        }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
         }
 
         cost = 2
@@ -4351,6 +4387,10 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_pride }
 
         select_effect = { 201 = {set_demilitarized_zone = yes} }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
 
         cost = 2
         completion_reward = {
@@ -4389,6 +4429,10 @@ focus_tree = {
             }
         }
 
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
+        }
+
         icon = GFX_focus_YFC_reassess_geopolitics
 
         prerequisite = { focus = YFC_focus_company_restructuring focus = YFC_focus_mass_firings }
@@ -4414,7 +4458,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_reassess_geopolitics }
 
         ai_will_do = {
-            base = 10
+            base = 50 #Deal with the Chaos
         }
 
         cost = 4
@@ -4510,6 +4554,10 @@ focus_tree = {
             hidden_trigger = {
                 has_completed_focus = YFC_focus_the_second_embargo
             }
+        }
+
+        ai_will_do = {
+            base = 50 #Deal with the Chaos
         }
 
         allow_branch = { has_completed_focus = YFC_focus_the_second_embargo }
@@ -4715,6 +4763,12 @@ focus_tree = {
         y = 9
         icon = GFX_focus_YFC_tophat_clan
 
+        cost = 5
+
+        ai_will_do = {
+            base = 0 #For testing do not do this
+        }
+
         completion_reward = {
             hidden_effect = {
                 news_event = {
@@ -4736,6 +4790,9 @@ focus_tree = {
         completion_reward = {
             #obv removes sectorial system (wont be replaced sorry), our sectors spirit, sectorial crackdown spirit, company reorganization spirit
             #replaces neglectful command with "top hat's prowess" which gives lots of good military shit but fucks over supply lowkey
+
+            #ZDubbz this is just a placeholder where would it go?
+            #Also I think we could have it to where influnce is disabled then later the system
         }
     }
 
@@ -4789,6 +4846,8 @@ focus_tree = {
             #for now, theres only "set up policing" for each state, and then, when youve set up policing in all states
             #it lets you make a formal police system
             #only costs manpower
+
+            #ZDubbz Should this stay in trade or it's own category?
         }
     }
 
@@ -4853,6 +4912,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #top hat gives a speech in yoyleton, gives stability, greatly lowers resistance in yoyleton
+
+            #ZDubbz then when should yoyleton resistance start?
         }
     }
 
@@ -4871,6 +4932,8 @@ focus_tree = {
             #gives big stability (biggest in this part of tree), costs money 
             #makes you produce 150 food per month instead of just 100
             #gives you more decisions in the stabilization category, lets you send farming resources to each state
+
+            #ZDubbz since I coded food's timer to be based off of stability now (50% is about 60 days) I may do this or not 
         }
     }
 
@@ -4902,6 +4965,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #cores yoyleton, gives the same effects as "expand northern trade" in to arms for capital
+
+            #ZDubbz should there be a resistance check? Like under 10% or something
         }
     }
 
@@ -4954,6 +5019,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #lets you build civs (hidden spirit that makes them build 50% faster until anarchic lands is fully removed), sets economy to limited exports
+
+            #ZDubbz might just add a modifer to anarchic lands then that
         }
     }
 
@@ -4984,6 +5051,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #re enables raiding from bunch, gives event around a week after completion, gives 75 political power
+
+            #ZDubbz how and why would bunch stop raiding you? In fact would he not raid more after his own ally just go removed?
         }
     }
 
@@ -5048,6 +5117,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #reopens the market mechanic, as it should, sends you to export focus
+
+            #ZDubbz I'll also add decisions to talk to X nation to reopen trade, for the event they get more benifts to reopen then to not. AI will mostly pick yes 
         }
     }
 
@@ -5087,6 +5158,9 @@ focus_tree = {
             #                they cost the same, but only half goes back to the thc
             #                so unnamed brotherhood would cost 1m for buying nation, and give thc 500k
             #                dm me your thoughts on disc im never looking at this focus tree code again after today
+
+
+            #This will be fun to code...
         }
     }
 
@@ -5123,6 +5197,8 @@ focus_tree = {
         completion_reward = {
             #makes trading routes less likely to fucking explode (ex. danger 2 goes from 50% to 66%, danger 1 goes to 81%, danger 0 stays 100%)
             #probably some more stuff but i dont really know. numismatian relations??
+
+            #Pain to code but I got this
         }
     }
 
@@ -5142,6 +5218,8 @@ focus_tree = {
             #7 events for thc, ill write the teardrop side when she actually has content
             #ill get these ones done fast ok it wont be a repeat of the numis event chain
             #teardrop is very hostile at first
+
+            #ZDubbz after the chain is done should TBT start the east game just on their own or?
         }
     }
 
@@ -5175,6 +5253,8 @@ focus_tree = {
         completion_reward = {
             #beaker suggests that we start researching flight technology
             #perhaps she starts out with helicopter research? eventually (out of demo) this will lead to the airship
+
+            #ZDubbz GTR and CRN will be building aircraft I feel we need something new then this, maybe the biycles or inf tech
         }
     }
 
@@ -5198,6 +5278,8 @@ focus_tree = {
             #shes not hating on top hat or anything, basically js telling him to be careful
             #gives stability and political power
             #replaces anarchic lands with "city-government," which gives like 5% stability, 0.25 pp gain, +7% construction speed, but keeps economy and trade laws unchangeable (are they fully unchangeable? they should be)
+
+            #ZDubbz I mean they can be changed if the play is to wait for 900 PP...
         }
     }
 
@@ -5213,6 +5295,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #cores navgornyv (if you have it), increases stability
+
+            #ZDubbz They already have cores... uh maybe something for yoyleton
         }
     }
 
@@ -5231,6 +5315,8 @@ focus_tree = {
             #hammer and pipe have a copy of it that theyre reading and studying
             #basically foreshadowing for the out of demo stuff
             #you should probably make this one do something else but im not really sure what it should do
+
+            #ZDubbz +1% democratic
         }
     }
 
@@ -5248,6 +5334,8 @@ focus_tree = {
         completion_reward = {
             #moves you to civ economy
             #gives spirit called "the ruralite" which gives lots of stability, and some other stuff that i cant think of right now
+
+            #ZDubbz really helpful...
         }
     }
 
@@ -5283,6 +5371,8 @@ focus_tree = {
             #the event will say that shes having complications getting back home, and needs monetary help returning
             #as such, this focus costs money (50k), and you get an event abt beaker returning 2 days after completing it
             #event gives stability #yay
+
+            #ZDubbz okay so whatever crack you are on I'll just have it that 2 years after Top Hat clan Beaker will come back
         }
     }
 
@@ -5306,6 +5396,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #hammer event, nothing more
+            
+            #ZDubbz does it give anything?
         }
     }
 
@@ -5322,6 +5414,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #event with all the sectorials, just being themselves. theyre so happy yay!
+
+            #ZDubbz anything else or is that it?
         }
     }
 
@@ -5951,6 +6045,53 @@ focus_tree = {
     }
 
     focus = {
+        id = YFC_focus_demand_great_ridge_tribute
+        relative_position_id = YFC_focus_pillage_our_neighbors
+        x = 4
+        y = 2
+        icon = GFX_focus_YFC_integrate_great_ridge
+
+        available = {
+            hidden_trigger = {
+                NOT = {country_exists = GGR}
+                country_exists = SRI
+                SRI = {has_war = no}
+            }
+        }
+        allow_branch = {
+            NOT = {country_exists = GGR}
+            country_exists = SRI
+            SRI = {has_war = no}
+        }
+
+        ai_will_do = {
+            base = 5
+            modifier = { #Deal with the east before going back to raiding
+				add = -100
+				has_completed_focus = YFC_focus_issues_in_east
+				NOT = {
+					has_completed_focus = YFC_focus_locked_on_land
+					has_completed_focus = YFC_focus_way_to_seas
+				}
+			}
+        }
+
+        prerequisite = { focus = YFC_focus_pillage_our_neighbors }
+
+        cost = 5
+
+        completion_reward = {
+            SRI = {
+                country_event = {
+                    id = YFC_event.38
+                    days = 1
+                    random_hours = 12
+                }
+            }
+        }
+    }
+
+    focus = {
         id = YFC_focus_follow_easers_strategy
         relative_position_id = YFC_focus_pillage_our_neighbors
         x = -2
@@ -6259,12 +6400,12 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_issues_in_east }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_to_portland
@@ -6272,6 +6413,13 @@ focus_tree = {
                 232 = {add_to_variable = {eastern_support_var = 0.25}}
                 230 = {add_to_variable = {eastern_support_var = 0.25}}
                 228 = {add_to_variable = {eastern_support_var = 0.25}}
+
+                IF = {
+                    limit = {is_ai = yes}
+                    232 = {add_to_variable = {eastern_support_var = 0.1}}
+                    230 = {add_to_variable = {eastern_support_var = 0.1}}
+                    228 = {add_to_variable = {eastern_support_var = 0.1}}
+                }
             }
         }
     }
@@ -6285,12 +6433,12 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_to_portland }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             add_stability = -0.05
@@ -6308,12 +6456,12 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_issues_in_east }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             add_political_power = 50
@@ -6334,12 +6482,12 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_distract_teardrop }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             add_manpower = 5000
@@ -6377,12 +6525,12 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             country_event = {
@@ -6421,14 +6569,14 @@ focus_tree = {
         icon = GFX_focus_YFC_claim_excessive_land
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_more_ways_of_wealth }
         prerequisite = { focus = YFC_focus_scout_teardrop_positions }
         prerequisite = { focus = YFC_focus_smuggle_prisoners }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_gainall_5
@@ -6461,12 +6609,12 @@ focus_tree = {
         icon = GFX_focus_YFC_scout_teardrop_positions
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_borderwar_buff
@@ -6482,12 +6630,12 @@ focus_tree = {
         icon = GFX_focus_YFC_accidental_mistakes
 
         ai_will_do = {
-            base = 5
+            base = 15 #Deal with east
         }
 
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
-        cost = 5
+        cost = 6
 
         completion_reward = {
             country_event = {
@@ -6529,6 +6677,10 @@ focus_tree = {
 
         cost = 5
 
+        allow_branch = {
+            NOT = {has_completed_focus = YFC_focus_locked_on_land}
+        }
+
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
@@ -6565,6 +6717,10 @@ focus_tree = {
 
         ai_will_do = {
             base = 5
+        }
+
+        allow_branch = {
+            NOT = {has_completed_focus = YFC_focus_way_to_seas}
         }
 
         mutually_exclusive = { focus = YFC_focus_way_to_seas }

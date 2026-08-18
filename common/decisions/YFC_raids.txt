@@ -63,12 +63,12 @@ decision_YFC_raids_category = {
 		}
 
 		remove_effect = {
-			add_manpower = 3500
+			add_manpower = 4500
 			IF = {
 				limit = {is_ai = yes}
-				add_manpower = 2000
+				add_manpower = 5000
 			}
-			hidden_effect = {BUN = {add_manpower = 2500}}
+			hidden_effect = {BUN = {add_manpower = 3500}}
 		}
 
 		ai_will_do = {
@@ -110,25 +110,25 @@ decision_YFC_raids_category = {
 				15 = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 600
+						amount = 1000
 					}
 				}
 				30 = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 450
+						amount = 750
 					}
 				}
 				60 = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 200
+						amount = 500
 					}
 				}
 				20 = {
 					add_equipment_to_stockpile = {
 						type = infantry_equipment
-						amount = 50
+						amount = 250
 					}
 				}
 			}
@@ -295,6 +295,14 @@ decision_YFC_raids_category = {
 				add = -100
 				has_army_size = {size < 1}
 			}
+			modifier = { #Deal with the east before going back to raiding
+				add = -100
+				has_completed_focus = YFC_focus_issues_in_east
+				NOT = {
+					has_completed_focus = YFC_focus_locked_on_land
+					has_completed_focus = YFC_focus_way_to_seas
+				}
+			}
 			modifier = {
 				add = -10
 				AND = {
@@ -366,6 +374,14 @@ decision_YFC_raids_category = {
 			modifier = {
 				add = -100
 				has_army_size = {size < 1}
+			}
+			modifier = { #Deal with the east before going back to raiding
+				add = -100
+				has_completed_focus = YFC_focus_issues_in_east
+				NOT = {
+					has_completed_focus = YFC_focus_locked_on_land
+					has_completed_focus = YFC_focus_way_to_seas
+				}
 			}
 			modifier = {
 				add = -10
@@ -456,57 +472,6 @@ decision_YFC_raids_category = {
 		}
 	}
 
-	YFC_raid_boats = { 
-		icon = GFX_decision_generic_naval
-      
-		fire_only_once = no
-
-		cost = 100
-		days_remove = 25
-		days_re_enable = 500
-
-		visible = {
-			always = no #UPDATE LATER!!!
-		}
-
-		remove_effect = {
-			random_list = {
-				20 = {
-					add_equipment_to_stockpile = {
-						type = convoy
-						amount = 1
-					}
-				}
-				30 = {
-					add_equipment_to_stockpile = {
-						type = convoy
-						amount = 5
-					}
-				}
-				20 = {
-					add_equipment_to_stockpile = {
-						type = convoy
-						amount = 10
-					}
-				}
-				10 = {
-					add_equipment_to_stockpile = {
-						type = convoy
-						amount = 20
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				has_equipment = {convoy < 2}
-			}
-		}
-	}
-
 	YFC_pirate_nation = { #This will be most likly changed later
 		icon = GFX_decision_SWE_set_navy_budget
 
@@ -518,7 +483,7 @@ decision_YFC_raids_category = {
 		}
 
 		visible = {
-			always = no #UPDATE LATER!!!
+			has_completed_focus = YFC_focus_pirate_life
 		}
 
 		targets = { TBT DAV GGR } 
@@ -532,7 +497,7 @@ decision_YFC_raids_category = {
 
 		fire_only_once = no
 		days_remove = 10
-		days_re_enable = 200
+		days_re_enable = 250
 		cost = 50
 
 		complete_effect = {
@@ -556,7 +521,7 @@ decision_YFC_raids_category = {
 		}
 
 		ai_will_do = {
-			base = 0		
+			base = 2		
 		}
 	}
 }

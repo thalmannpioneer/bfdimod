@@ -1386,6 +1386,75 @@
  YFC_focus_green_energy: "Green Energy" #ZDubbz
  YFC_focus_green_energy_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
 
+ YFC_focus_the_state: "The State" #ZDubbz
+ YFC_focus_the_state_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_kickstart_economy: "Kickstart Cconomy" #ZDubbz
+ YFC_focus_kickstart_economy_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_decorporatization: "Decorporatization" #ZDubbz
+ YFC_focus_decorporatization_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_reformalize_borders: "Reformalize Borders" #ZDubbz
+ YFC_focus_reformalize_borders_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_meet_with_numismatia: "Meet with Numismatia" #ZDubbz
+ YFC_focus_meet_with_numismatia_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_the_democratic_question: "Democratic Question?" #ZDubbz
+ YFC_focus_the_democratic_question_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_disavow_raiders: "Disavow Raiders" #ZDubbz
+ YFC_focus_disavow_raiders_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_reopen_markets: "Reopen Markets" #ZDubbz
+ YFC_focus_reopen_markets_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_great_goikean_trade: "Great Goikean Trade" #ZDubbz
+ YFC_focus_great_goikean_trade_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_new_monetary_avenues: "New Monetary Avenues" #ZDubbz
+ YFC_focus_new_monetary_avenues_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_crackdown_on_substances: "Crackdown On Substances" #ZDubbz
+ YFC_focus_crackdown_on_substances_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_international_standards: "International Standards" #ZDubbz
+ YFC_focus_international_standards_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_teardrop_diplomacy: "Teardrop Diplomacy" #ZDubbz
+ YFC_focus_teardrop_diplomacy_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_take_up_arms: "Take Up Arms" #ZDubbz
+ YFC_focus_take_up_arms_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_beakers_idea: "Beaker's Idea:" #ZDubbz
+ YFC_focus_beakers_idea_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_city_council_compromise: "Council Compromise" #ZDubbz
+ YFC_focus_city_council_compromise_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_respect_autonomy: "Respect Autonomy" #ZDubbz
+ YFC_focus_respect_autonomy_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_the_numis_ideology: "The Numis Ideology" #ZDubbz
+ YFC_focus_the_numis_ideology_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_rural_representation: "Rural Representation" #ZDubbz
+ YFC_focus_rural_representation_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_grand_metropolises: "Grand Metropolises" #ZDubbz
+ YFC_focus_grand_metropolises_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_beakers_return: "Beakers Return" #ZDubbz
+ YFC_focus_beakers_return_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_a_stable_society: "A Stable Society" #ZDubbz
+ YFC_focus_a_stable_society_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_to_the_future: "To The Future" #ZDubbz
+ YFC_focus_to_the_future_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
  #I'll add more later I sleepy
 
  YFC_focus_reassess_geopolitics: "Reassess Geopolitics"
@@ -1468,6 +1537,9 @@
 
  YFC_focus_setup_staging_grounds: "Setup Staging Grounds"
  YFC_focus_setup_staging_grounds_desc: "Of course, it would be... far better to raid from actual roads and rails, with actual transportation, rather than attempting to hike through bushes and forests to attack our opponents. Building infrastructure can easily go quite the mile (or kilometer?), so, let us do just that."
+
+ YFC_focus_demand_great_ridge_tribute: "Demand Great Ridge Tribute"
+ YFC_focus_demand_great_ridge_tribute_desc: "" #ZDubbz, close to normal side just that we are flat out demanding the rights or face war. 
 
  YFC_focus_follow_easers_strategy: "Follow Easer's Strategy"
  YFC_focus_follow_easers_strategy_desc: "Eraser, the competant man, has, for a long time, had a working strategy with regards to raiding. It is simple, distract, infiltrate, and go from the center of a settlement, outwards, driving people away from the settlement, and, gaining the raiding party a substantial amount of wealth. This strategy has worked well in the past, and, though some settlements are better learning how to repell this type of stunt, it's not as if it is broken."

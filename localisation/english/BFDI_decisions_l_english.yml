@@ -251,7 +251,6 @@
  YFC_raid_reform: "§GReform§! the §YArmy§!"
  YFC_raid_nation: "§GLaunch§! a §RSpecial Raid§! on §Y[FROM.GetName]§!"
  YFC_raid_nation_desc: "§YEvery successful raid increases the chance for the Special Raid to succeed by 10%.§! §GIf the raid is successful we will have options on what to steal from them!§! §RThe successful raid counter is reset when this decision is taken, plan wisely.§!"
- YFC_raid_boats: "§RSeize§! §YFishing Boats§!"
  YFC_pirate_nation: "§GLaunch§! a §RPirate Campaign§! at §Y[FROM.GetName]§!"
  YFC_pirate_timer: "§RRepel the Pirates§!"
  YFC_pirate_timer_desc: "Pirates seem to be gathering off of the coast. If we do not act quickly, they could begin to strangle and steal our sea trade routes."

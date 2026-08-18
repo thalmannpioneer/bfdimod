@@ -916,7 +916,8 @@
  YFC_event.37.b: "Deny!"
 
  YFC_event.38.t: "Yellow Face demands our resources!" #SRI refers to the player as boy, because the SRI is an eighty year old man who has been in the mines for 2 thirds of his life
- YFC_event.38.desc: "Uh, this morning, a large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?" #:sob:
+ YFC_event.38.desc.a: "Uh, this morning, a large piece of paper hit some poor mining man. Now, the paper says it came from the Yellow Facers, to the north of us, and that they're asking us for partial resource rights, in exchange for protection. We don't really know how they managed to not contact anyone who actually works in the government, but anywho, it's looking pretty promising. Do we accept, or deny, boy?" #:sob:
+ YFC_event.38.desc.b: "" #ZDubbz, just a version for raiders. Should only have demands resource rights or war
  YFC_event.38.a: "Accept!"
  YFC_event.38.b: "Deny!"
 
@@ -1161,6 +1162,14 @@
  YFC_event.85.desc: "text text bla bla" #ZDubbz, what we already talked about. Yellow Face let's prisoners run wild in Teardrop lands causing a pause to the east. Could be done from a view of a prisoner/guard/local. Just nothing that the foucs desc already does
  YFC_event.85.a: "Have fun with this Teardrop!" 
 
+ YFC_event.86.t: "Marching On The Waves" 
+ YFC_event.86.desc: "text text bla bla" #ZDubbz, after east is done and one of the other paths is done. tbh I don't have a great idea for this so I could be them building/training the fleet. Just again should not just be a focus desc
+ YFC_event.86.a: "About Ready." 
+
+ YFC_event.87.t: "Pirate 101" 
+ YFC_event.87.desc: "text text bla bla" #ZDubbz, should either be Yellow Face looking at the Pirate fleet and/or their first raid on a poor fishing boat. This also ends demo for raiders side
+ YFC_event.87.a: "Onwards!" 
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"
@@ -1204,8 +1213,8 @@
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Placeholder!" #ZD*bbz if you want to when I 
- YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder" #when you what?? -zd
+ YFC_borderwars.11.t: "Raiders Plundered!" #ZDubbz no fucking clue why I put placeholder as if you could read my find :sob: 
+ YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder" #This is after the special YFC can do angaist a nation from the view of the other nation. Should just be that raiders broke through after so many raiders and caused damage/chaos
  YFC_borderwars.11.a: "Placeholder"
  
  YFC_borderwars.12.t: "Sea movements detected."
@@ -1447,7 +1456,7 @@
  YFC_sector.8.a: "Let us Profit."
  YFC_sector.8.b: "This would set a horrible precedent!"
 
- YFC_sector.9.t: "Hammer Bribe" #hammer doesnt bribe
+ YFC_sector.9.t: "Hammer Bribe" #hammer doesnt bribe (Too fucking bad I'm keeping everything equal) zdubbz
  YFC_sector.9.desc: "Hammer wants to Bribe us"
  YFC_sector.9.a: "Take the Bribe"
  YFC_sector.9.b: "Decline the Bribe"
