@@ -83,7 +83,10 @@ set_popularities = {
     communism = 1
 }
 
-oob = "DAV_2012"
+if = {
+	limit = { has_start_date < 2012.01.01 }
+	set_oob = "DAV_2012"
+}
 
 add_ideas = idea_DAV_the_thousand_year_throne
 add_ideas = idea_common_unplayable

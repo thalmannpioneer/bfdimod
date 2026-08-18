@@ -65,4 +65,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2035;11360;impassable;-1;-1;-1;-1;-1;;Snow-Plateau
 4282;578;impassable;-1;-1;-1;-1;-1;;Snow-Plateau
 872;578;impassable;-1;-1;-1;-1;-1;;Snow-Plateau
+1891;1010;sea;11903;-1;-1;-1;-1;;Green-Gate-bridge
+10856;1010;sea;11903;-1;-1;-1;-1;;Pun-bridge
 -1;-1;-1;-1;-1;-1;-1;-1;-1

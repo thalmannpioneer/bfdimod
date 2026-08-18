@@ -294,7 +294,7 @@ focus_tree = {
 		allow_branch = { has_country_flag = fifth_question }
 		
 		icon = {
-			casland_remilitarization = { 
+			GFX_focus_GPG_casland_remilitarization_1 = { 
 				has_country_flag = casland_remilitarization
 			}
 			GFX_focus_GPG_casland_remilitarization_2 = yes

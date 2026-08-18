@@ -4806,7 +4806,7 @@ focus_tree = {
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_tophat_clan }
-        
+
         cost = 3
         completion_reward = {
             #this half of the tree is moreso focused on forging a quasi-national identity, essentially making people happy
@@ -4929,11 +4929,11 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #gives big stability (biggest in this part of tree), costs money 
+            #gives big stability (biggest in this part of tree), costs money
             #makes you produce 150 food per month instead of just 100
             #gives you more decisions in the stabilization category, lets you send farming resources to each state
 
-            #ZDubbz since I coded food's timer to be based off of stability now (50% is about 60 days) I may do this or not 
+            #ZDubbz since I coded food's timer to be based off of stability now (50% is about 60 days) I may do this or not
         }
     }
 
@@ -4948,7 +4948,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #a letter to top hat telling him to conserve peoniele's beauty, gives stability 
+            #a letter to top hat telling him to conserve peoniele's beauty, gives stability
         }
     }
 
@@ -4961,7 +4961,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_yoyleton_speech }
         prerequisite = { focus = YFC_focus_hire_city_planners }
-        
+
         cost = 3
         completion_reward = {
             #cores yoyleton, gives the same effects as "expand northern trade" in to arms for capital
@@ -5035,7 +5035,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #removes "the company with a state" spirit, gives 15 political power 
+            #removes "the company with a state" spirit, gives 15 political power
         }
     }
 
@@ -5118,7 +5118,7 @@ focus_tree = {
         completion_reward = {
             #reopens the market mechanic, as it should, sends you to export focus
 
-            #ZDubbz I'll also add decisions to talk to X nation to reopen trade, for the event they get more benifts to reopen then to not. AI will mostly pick yes 
+            #ZDubbz I'll also add decisions to talk to X nation to reopen trade, for the event they get more benifts to reopen then to not. AI will mostly pick yes
         }
     }
 
@@ -5154,7 +5154,7 @@ focus_tree = {
             #on mercenaries:
             #                i feel like, the nation should, in their market decisions category, get a new decision that says like "opt in to top hat's mercenary system" or something
             #                this costs 100k and gives top hat 100k (with an event saying x nation bought in to mercenary sysyem)
-            #                it gives you the purchasing nation normal mercenary decisions that yfc has typically 
+            #                it gives you the purchasing nation normal mercenary decisions that yfc has typically
             #                they cost the same, but only half goes back to the thc
             #                so unnamed brotherhood would cost 1m for buying nation, and give thc 500k
             #                dm me your thoughts on disc im never looking at this focus tree code again after today
@@ -5180,7 +5180,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #spirit called *crack*down 
+            #spirit called *crack*down
         }
     }
 
@@ -5396,7 +5396,7 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #hammer event, nothing more
-            
+
             #ZDubbz does it give anything?
         }
     }
@@ -6067,13 +6067,13 @@ focus_tree = {
         ai_will_do = {
             base = 5
             modifier = { #Deal with the east before going back to raiding
-				add = -100
-				has_completed_focus = YFC_focus_issues_in_east
-				NOT = {
-					has_completed_focus = YFC_focus_locked_on_land
-					has_completed_focus = YFC_focus_way_to_seas
-				}
-			}
+                add = -100
+                has_completed_focus = YFC_focus_issues_in_east
+                NOT = {
+                    has_completed_focus = YFC_focus_locked_on_land
+                    has_completed_focus = YFC_focus_way_to_seas
+                }
+            }
         }
 
         prerequisite = { focus = YFC_focus_pillage_our_neighbors }
@@ -6795,7 +6795,7 @@ focus_tree = {
         relative_position_id = YFC_focus_bandit_pack
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_before_setting_sail
 
         available = {
             hidden_trigger = {
@@ -6803,7 +6803,9 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_before_setting_sail }
+        allow_branch = {
+            has_completed_focus = YFC_focus_before_setting_sail
+        }
 
         ai_will_do = {
             base = 5
@@ -6824,7 +6826,7 @@ focus_tree = {
         relative_position_id = YFC_focus_before_setting_sail
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_construct_the_naval_base
 
         ai_will_do = {
             base = 5
@@ -6841,7 +6843,7 @@ focus_tree = {
                     225 = {
                         is_in_home_area = yes
                         is_owned_by = YFC
-                    } 
+                    }
                 }
                 225 = {
                     add_building_construction = {
@@ -6865,7 +6867,7 @@ focus_tree = {
                     226 = {
                         is_in_home_area = yes
                         is_owned_by = YFC
-                    } 
+                    }
                 }
                 226 = {
                     add_building_construction = {
@@ -6889,7 +6891,7 @@ focus_tree = {
                     227 = {
                         is_in_home_area = yes
                         is_owned_by = YFC
-                    } 
+                    }
                 }
                 227 = {
                     add_building_construction = {
@@ -6924,8 +6926,8 @@ focus_tree = {
         id = YFC_focus_pirate_life
         relative_position_id = YFC_focus_construct_the_naval_base
         x = 0
-        y = 2
-        icon = GFX_focus_generic #Either make this a gif or look really cool
+        y = 1
+        icon = GFX_focus_YFC_pirate_life
 
         ai_will_do = {
             base = 5

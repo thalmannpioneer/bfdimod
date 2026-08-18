@@ -1,0 +1,36 @@
+defined_text = {
+	name = GFX_YFC_BUN16
+	text = {
+		trigger = {
+			has_war_with = BUN
+		}
+		localization_key = GFX_YFC_BUN16ac
+	}
+	text = {
+		trigger = {
+			212 = {compliance > 70}
+			85 = {compliance > 70}
+			NOT = {has_war_with = BUN}
+		}
+		localization_key = GFX_YFC_BUN16b
+	}
+	text = {
+		localization_key = GFX_YFC_BUN16ac
+	}
+}
+
+defined_text = {
+	name = GFX_YFC_event68
+	text = {
+		trigger = {
+			NOT = { has_completed_focus = YFC_focus_mass_firings }
+		}
+		localization_key = GFX_YFC_event68a
+	}
+	text = {
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+		localization_key = GFX_YFC_event68b
+	}
+}

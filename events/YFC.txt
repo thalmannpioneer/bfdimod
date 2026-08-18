@@ -2246,7 +2246,7 @@ country_event = { #Eastern End.
 		if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
-			set_variable = { var_demo_end = 4 } #Update later
+			set_variable = { var_demo_end = 11 } #Update later
 			hidden_effect = {
 				play_song = "demo_end"
 			}
@@ -3178,7 +3178,7 @@ country_event = { #YFC_focus_pride
 country_event = { #YFC_focus_march_on_footpathburg
 	id = YFC_event.68
 	title = YFC_event.68.t
-	picture = GFX_Temp_event
+	picture = "[GFX_YFC_event68]"
 
 	desc = {
 		text = YFC_event.68.desc.a #Sector Side
@@ -3257,7 +3257,7 @@ country_event = { #YFC_focus_debt_restructuring
 	id = YFC_event.69
 	title = YFC_event.69.t
 	desc = YFC_event.69.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event69
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3276,7 +3276,7 @@ country_event = { #YFC_focus_fire_their_underlings
 	id = YFC_event.70
 	title = YFC_event.70.t
 	desc = YFC_event.70.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event70
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3302,7 +3302,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 	id = YFC_event.71
 	title = YFC_event.71.t
 	desc = YFC_event.71.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event71
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3470,7 +3470,7 @@ country_event = { #YFC_focus_sectors_their_place
 	id = YFC_event.75
 	title = YFC_event.75.t
 	desc = YFC_event.75.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event64
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -3573,7 +3573,7 @@ country_event = { #One random TopHat one
 country_event = { #Sectors Quit/Fire
 	id = YFC_event.80
 	title = YFC_event.80.t
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event80
 
 	desc = {
 		text = YFC_event.80.desc.a #Sectors Quit
@@ -3808,7 +3808,7 @@ country_event = { #Pirate 2
 		if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
-			set_variable = { var_demo_end = 4 } #Update later
+			set_variable = { var_demo_end = 12 } #Update later
 			hidden_effect = {
 				play_song = "demo_end"
 			}
@@ -3920,7 +3920,7 @@ country_event = {
 	id = YFC_borderwars.5
 	title = YFC_borderwars.5.t
 	desc = YFC_borderwars.5.desc
-	picture = GFX_YFC_raids1
+	picture = GFX_YFC_borderwars5
 
 	is_triggered_only = yes
 
@@ -3964,7 +3964,7 @@ country_event = {
 	id = YFC_borderwars.6
 	title = YFC_borderwars.6.t
 	desc = YFC_borderwars.6.desc
-	picture = GFX_YFC_raids1
+	picture = GFX_YFC_borderwars5
 
 	is_triggered_only = yes
 
@@ -3991,7 +3991,7 @@ country_event = {
 	id = YFC_borderwars.7
 	title = YFC_borderwars.7.t
 	desc = YFC_borderwars.7.desc
-	picture = GFX_YFC_raids1
+	picture = GFX_YFC_borderwars5
 
 	is_triggered_only = yes
 
@@ -4007,7 +4007,7 @@ country_event = {
 	id = YFC_borderwars.8
 	title = YFC_borderwars.8.t
 	desc = YFC_borderwars.8.desc
-	picture = GFX_YFC_raids1
+	picture = GFX_YFC_borderwars5
 
 	is_triggered_only = yes
 

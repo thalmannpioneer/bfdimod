@@ -368,6 +368,7 @@ bookmarks = {
             YFC = { load_oob = "YFC_2012" }
             CRN = { load_oob = "CRN_2012" }
             SOS = { load_oob = "SOS_2012" }
+			DAV = { load_oob = "DAV_2012" }
 
             clr_global_flag = focus_take_prevention
 

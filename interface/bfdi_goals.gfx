@@ -2180,6 +2180,21 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_locked_on_land"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_locked_on_land.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_before_setting_sail"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_before_setting_sail.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_construct_the_naval_base"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_construct_the_naval_base.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_pirate_life"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_pirate_life.dds"
+	}
 
 	#Musketeers#
 	

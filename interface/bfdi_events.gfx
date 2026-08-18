@@ -804,6 +804,36 @@ SpriteTypes = {
 	}
 	
 	spriteType = {
+		name = GFX_YFC_event68a
+		texturefile = gfx/event_pictures/YFC_event68a.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event68b
+		texturefile = gfx/event_pictures/YFC_event68b.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event69
+		texturefile = gfx/event_pictures/YFC_event69.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event70
+		texturefile = gfx/event_pictures/YFC_event70.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event71
+		texturefile = gfx/event_pictures/YFC_event71.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event80
+		texturefile = gfx/event_pictures/YFC_event80.dds
+	}
+	
+	spriteType = {
 		name = GFX_YFC_BUN1
 		textureFile = gfx/event_pictures/YFC_BUN1.dds
 	}
@@ -996,6 +1026,11 @@ SpriteTypes = {
 	spriteType = {
 		name = GFX_YFC_Sector21
 		texturefile = gfx/event_pictures/YFC_Sector21.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_borderwars5
+		texturefile = gfx/event_pictures/YFC_borderwars5.dds
 	}
 	
 	spriteType = {
