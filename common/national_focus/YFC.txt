@@ -4734,7 +4734,8 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #obv removes sectorial system (wont be replaced sorry), our sectors spirit, sectorial crackdown spirit, company reorganization spirit
+            #replaces neglectful command with "top hat's prowess" which gives lots of good military shit but fucks over supply lowkey
         }
     }
 
@@ -4751,7 +4752,10 @@ focus_tree = {
         
         cost = 3
         completion_reward = {
-            
+            #this half of the tree is moreso focused on forging a quasi-national identity, essentially making people happy
+            #this focus gives 5 stability and an event
+            #by beaker's return you should have 60% stability if you did poorly, and nearly 80% if you did good
+            #give focuses/events stability amnts accordingly pls
         }
     }
 
@@ -4766,7 +4770,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #removes the thingy that makes it so you cant buigldsf on your land or you cant change enceonoimic loaws and buidl an your lands
+            #removes all effects from anarchic lands except for political power, construction and trade/econ laws, changes pp gain from -0.75 to -0.50, changes construction speed to -75%
         }
     }
 
@@ -4781,7 +4785,10 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #gives you map decisions that give you stability
+            #for now, theres only "set up policing" for each state, and then, when youve set up policing in all states
+            #it lets you make a formal police system
+            #only costs manpower
         }
     }
 
@@ -4796,7 +4803,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #heavy stability buff, costs money
         }
     }
 
@@ -4812,7 +4819,9 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #adds new decision to the stabilization category, that lets you build housing in your states, costs money
+            #when all states have the housing, one final (expensive) decision called tenants rights
+            #when tenants rights is done, you gain a spirit called "high quality housing," which gives you more monthly population
         }
     }
 
@@ -4827,7 +4836,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #gives stability, costs money, changes anarchic laws' construction speed thing to -20%
         }
     }
 
@@ -4843,7 +4852,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #top hat gives a speech in yoyleton, gives stability, greatly lowers resistance in yoyleton
         }
     }
 
@@ -4856,6 +4865,13 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_instate_stabilization }
         prerequisite = { focus = YFC_focus_peoniele_conservation }
+
+        cost = 3
+        completion_reward = {
+            #gives big stability (biggest in this part of tree), costs money 
+            #makes you produce 150 food per month instead of just 100
+            #gives you more decisions in the stabilization category, lets you send farming resources to each state
+        }
     }
 
     focus = {
@@ -4869,7 +4885,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #a letter to top hat telling him to conserve peoniele's beauty, gives stability 
         }
     }
 
@@ -4885,7 +4901,7 @@ focus_tree = {
         
         cost = 3
         completion_reward = {
-            
+            #cores yoyleton, gives the same effects as "expand northern trade" in to arms for capital
         }
     }
 
@@ -4893,11 +4909,19 @@ focus_tree = {
         id = YFC_focus_green_energy
         relative_position_id = YFC_focus_peoniele_conservation
         x = -4
-        y = 2
+        y = 3
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_peoniele_conservation }
         prerequisite = { focus = YFC_focus_repossess_our_land }
+        #should also require city councils, but it makes the tree look ugly if i add it here
+
+        cost = 3
+        completion_reward = {
+            #gives stability, adds a spirit called "clean skies" which quells resistence, adds a bit of monthly population
+            # increases numis, ggrr south, greeny plains republic, & gb's opinion of you (or anprim if they are around)
+            #cores peoniele, they send a letter thanking you (sectorial powderkeg should remove cores on every state but ridgeheart)
+        }
     }
 
     #statal
@@ -4913,7 +4937,8 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #this branch would mainly be concerned with geopolitics and state organization
+            #this focus gives 50 political power and an event
         }
     }
 
@@ -4928,7 +4953,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #lets you build civs (hidden spirit that makes them build 50% faster until anarchic lands is fully removed), sets economy to limited exports
         }
     }
 
@@ -4943,12 +4968,12 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #removes "the company with a state" spirit, gives 15 political power 
         }
     }
 
     focus = {
-        id = YFC_focus_formalize_borders
+        id = YFC_focus_reformalize_borders
         relative_position_id = YFC_focus_the_state
         x = -3
         y = 1
@@ -4958,22 +4983,23 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #re enables raiding from bunch, gives event around a week after completion, gives 75 political power
         }
     }
 
     focus = {
         id = YFC_focus_meet_with_numismatia
-        relative_position_id = YFC_focus_formalize_borders
+        relative_position_id = YFC_focus_reformalize_borders
         x = -1
         y = 1
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_formalize_borders }
+        prerequisite = { focus = YFC_focus_reformalize_borders }
 
         cost = 3
         completion_reward = {
-            
+            #event, positive opinions from and to numismatia
+            #hidden, in 3 months numismatia will send you 200k to help you industrialize (done through event)
         }
     }
 
@@ -4987,22 +5013,22 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
         cost = 3
         completion_reward = {
-            
+            #event from top hat to the other sectors, saying he wants to implement democratic institutions, but believes that the yfc still lingers (hes just paranoid abt losing power lmao)
         }
     }
 
     focus = {
         id = YFC_focus_disavow_raiders
-        relative_position_id = YFC_focus_formalize_borders
+        relative_position_id = YFC_focus_reformalize_borders
         x = 1
         y = 1
         icon = GFX_focus_generic
 
-        prerequisite = { focus = YFC_focus_formalize_borders }
+        prerequisite = { focus = YFC_focus_reformalize_borders }
 
         cost = 3
         completion_reward = {
-            
+            #heavily decreases raider opinion of you, even more than it already (shouldve) decreased
         }
     }
 
@@ -5021,7 +5047,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #reopens the market mechanic, as it should, sends you to export focus
         }
     }
 
@@ -5037,14 +5063,14 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #moves you up to free trade yay!
         }
     }
 
     focus = {
         id = YFC_focus_new_monetary_avenues
         relative_position_id = YFC_focus_reopen_markets
-        x = -2
+        x = -1
         y = 1
         icon = GFX_focus_generic
 
@@ -5053,7 +5079,34 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #lets you sell militias (mp, set up like food), mercenaries (other nations get decisions that go back to you), and spies (spirit that increases spy amnt by 1, immediately creates a spy agency for purchasing nation bc the ai will probably forget to make an actual spy agency)
+            #on mercenaries:
+            #                i feel like, the nation should, in their market decisions category, get a new decision that says like "opt in to top hat's mercenary system" or something
+            #                this costs 100k and gives top hat 100k (with an event saying x nation bought in to mercenary sysyem)
+            #                it gives you the purchasing nation normal mercenary decisions that yfc has typically 
+            #                they cost the same, but only half goes back to the thc
+            #                so unnamed brotherhood would cost 1m for buying nation, and give thc 500k
+            #                dm me your thoughts on disc im never looking at this focus tree code again after today
+        }
+    }
+
+    focus = {
+        id = YFC_focus_crackdown_on_substances
+        relative_position_id = YFC_focus_new_monetary_avenues
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = {
+            focus = YFC_focus_meet_with_numismatia
+            focus = YFC_focus_disavow_raiders
+        }
+        prerequisite = { focus = YFC_focus_new_monetary_avenues }
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+
+        cost = 3
+        completion_reward = {
+            #spirit called *crack*down 
         }
     }
 
@@ -5068,7 +5121,8 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #makes trading routes less likely to fucking explode (ex. danger 2 goes from 50% to 66%, danger 1 goes to 81%, danger 0 stays 100%)
+            #probably some more stuff but i dont really know. numismatian relations??
         }
     }
 
@@ -5083,14 +5137,18 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #short 7 event long chain that either ends in thc getting portland & britain, portland & britain & ganymede, just portland, or nothing. teardrop will be trying to get those (not britain tho), as well as oflak and no objects sand
+            #its only possible for you to get nothing if you and teardrop agree not to expand into the eastern seaboard for the next 5 years
+            #7 events for thc, ill write the teardrop side when she actually has content
+            #ill get these ones done fast ok it wont be a repeat of the numis event chain
+            #teardrop is very hostile at first
         }
     }
 
     focus = {
         id = YFC_focus_take_up_arms
         relative_position_id = YFC_focus_new_monetary_avenues
-        x = 1
+        x = 0
         y = 2
         icon = GFX_focus_generic
 
@@ -5099,7 +5157,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #builds military factories for you #yay
         }
     }
 
@@ -5111,10 +5169,12 @@ focus_tree = {
         icon = GFX_focus_generic
 
         prerequisite = { focus = YFC_focus_take_up_arms }
+        prerequisite = { focus = YFC_focus_beakers_return }
 
         cost = 3
         completion_reward = {
-            
+            #beaker suggests that we start researching flight technology
+            #perhaps she starts out with helicopter research? eventually (out of demo) this will lead to the airship
         }
     }
 
@@ -5133,11 +5193,137 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            
+            #response to democratic question from hammer, presenting the idea of working on the city scale first
+            #a few weeks later, you recieve a late response from beaker, who tells you that the people will eventually get antsy if they dont see power change meaningfully, and if things start to get worse
+            #shes not hating on top hat or anything, basically js telling him to be careful
+            #gives stability and political power
+            #replaces anarchic lands with "city-government," which gives like 5% stability, 0.25 pp gain, +7% construction speed, but keeps economy and trade laws unchangeable (are they fully unchangeable? they should be)
         }
     }
 
-    
+    focus = {
+        id = YFC_focus_respect_autonomy
+        relative_position_id = YFC_focus_city_council_compromise
+        x = -3
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+
+        cost = 3
+        completion_reward = {
+            #cores navgornyv (if you have it), increases stability
+        }
+    }
+
+    focus = {
+        id = YFC_focus_the_numis_ideology #(numis as in numismatian)
+        relative_position_id = YFC_focus_city_council_compromise
+        x = -2
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+
+        cost = 3
+        completion_reward = {
+            #flavor event about a book called "The Numis Ideology" releasing in numismatia
+            #hammer and pipe have a copy of it that theyre reading and studying
+            #basically foreshadowing for the out of demo stuff
+            #you should probably make this one do something else but im not really sure what it should do
+        }
+    }
+
+    focus = {
+        id = YFC_focus_rural_representation
+        relative_position_id = YFC_focus_city_council_compromise
+        x = -1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+        mutually_exclusive = { focus = YFC_focus_grand_metropolises }
+
+        cost = 3
+        completion_reward = {
+            #moves you to civ economy
+            #gives spirit called "the ruralite" which gives lots of stability, and some other stuff that i cant think of right now
+        }
+    }
+
+    focus = {
+        id = YFC_focus_grand_metropolises
+        relative_position_id = YFC_focus_city_council_compromise
+        x = 1
+        y = 1
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+        mutually_exclusive = { focus = YFC_focus_rural_representation }
+
+        cost = 3
+        completion_reward = {
+            #moves you to part mobilization, gives you a spirit called "city crafting" which lowers stability but gives you construction speed for civs, infrastructure, mils, and railroads (balanced amnts for each)
+            #spirit also gives you political power and probably some other bullshit idk i hate spirits
+        }
+    }
+
+    focus = {
+        id = YFC_focus_beakers_return
+        relative_position_id = YFC_focus_city_council_compromise
+        x = 2
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+        cost = 3
+        completion_reward = {
+            #when do you complete "envy" focus? take that time, add 2 years, and then round up to may/december 24th/17th, and on that day, you will recieve an event saying that beaker has earned his degree, and is ready to return to the thc
+            #DO NOT round this date down after july btw. ex, if you complete envy in june, round to may, but if you complete it in august, round to december
+            #the event will say that shes having complications getting back home, and needs monetary help returning
+            #as such, this focus costs money (50k), and you get an event abt beaker returning 2 days after completing it
+            #event gives stability #yay
+        }
+    }
+
+    focus = {
+        id = YFC_focus_a_stable_society
+        relative_position_id = YFC_focus_city_council_compromise
+        x = 0
+        y = 3
+        icon = GFX_focus_generic
+
+        prerequisite = {
+            focus = YFC_focus_grand_metropolises
+            focus = YFC_focus_rural_representation
+        }
+        prerequisite = { focus = YFC_focus_city_council_compromise }
+        prerequisite = { focus = YFC_focus_beakers_return }
+        prerequisite = { focus = YFC_focus_the_numis_ideology }
+        prerequisite = { focus = YFC_focus_northern_economics }
+        prerequisite = { focus = YFC_focus_green_energy }
+
+        cost = 3
+        completion_reward = {
+            #hammer event, nothing more
+        }
+    }
+
+    focus = {
+        id = YFC_focus_to_the_future #To The Future!
+        relative_position_id = YFC_focus_a_stable_society
+        x = 0
+        y = 2
+        icon = GFX_focus_generic
+
+        prerequisite = { focus = YFC_focus_a_stable_society }
+        #should also require all other focuses in the branch to be done
+
+        cost = 3
+        completion_reward = {
+            #event with all the sectorials, just being themselves. theyre so happy yay!
+        }
+    }
 
 
     #############################
