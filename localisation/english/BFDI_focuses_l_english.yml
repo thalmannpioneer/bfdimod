@@ -249,7 +249,7 @@
  LSS_focus_encourage_local_growing_desc: ""
 
  LSS_focus_expand_rationing: "Expand Rationing"
- LSS_focus_expand_rationing_desc: ""
+ LSS_focus_expand_rationing_desc: "We need more farms setup quickly, lest more of the population starves to death. There is a good amount of land that is under 'residential' that can't as easily be used for farming. Let's put more focus into getting the population to grow their own food."
 
  LSS_focus_first_harvest: "First Harvest"
  LSS_focus_first_harvest_desc: ""
@@ -258,7 +258,7 @@
  LSS_focus_manufacture_tools_desc: "A good amount of modern industry and economy lies in the worker's tools. Since we are still limited in manufacturing and in jobs, we will get people employed into making tools to fuel more jobs. A great upward cycle!"
 
  LSS_focus_grant_land_rights: "Grant Land Rights"
- LSS_focus_grant_land_rights_desc: ""
+ LSS_focus_grant_land_rights_desc: "For smaller business to flourish, they need the space. Some of the land is being held under debates about its use. We shall settle these debates that the land should go to new, smaller business."
 
  LSS_focus_repurpose_vehicles: "Repurpose Vehicles"
  LSS_focus_repurpose_vehicles_desc: ""
@@ -267,7 +267,7 @@
  LSS_focus_create_new_businesses_desc: "Unemployment is catastrophically high. Our rough estimates have placed the number around 50%+ on the lower ends. Any more days could cause unspeakable damage to the already fairagle nation. We must create new jobs and employment opportunities as quickly as possible."
 
  LSS_focus_offer_land_to_companies: "Offer Land to Companies"
- LSS_focus_offer_land_to_companies_desc: ""
+ LSS_focus_offer_land_to_companies_desc: "Smaller business can wait, we need funds and legitimacy. Many companies that we have want land for their own growth and are willing to pay a great amount for it. Get the bidding going for who will get the lands."
 
  LSS_focus_make_grand_deals: "Make Grand Deals"
  LSS_focus_make_grand_deals_desc: ""
@@ -279,7 +279,7 @@
  LSS_focus_create_stimulus_checks_desc: "To get a functioning economy going, you need a basic supply and demand. The supply, while small, is there. However, the demand is still low as many don't want to spend their money. To curve this issue we still start giving money to people to spend around the island."
 
  LSS_focus_military_assistance: "Military Assistance"
- LSS_focus_military_assistance_desc: ""
+ LSS_focus_military_assistance_desc: "The military, still reorganizing and acting as police, do still have some available resources. We need more hands for stabilizing the nation and saving the population. Mark Milley won't be that upset that some of his men are working on civilian projects."
 
  LSS_focus_reestablish_the_dollar: "Reestablish the Dollar"
  LSS_focus_reestablish_the_dollar_desc: ""
@@ -1353,6 +1353,41 @@
  YFC_focus_tophat_clan: "§0Top Hat Clan§!"
  YFC_focus_tophat_clan_desc: "Hello. This is a broadcast from the newly formed Top Hat Clan, or THC (acronym intentional). We own you."
 
+ YFC_focus_the_nation: "The Nation" #ZDubbz
+ YFC_focus_the_nation_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_repossess_our_land: "Repossess Our Land" #ZDubbz
+ YFC_focus_repossess_our_land_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_instate_stabilization: "Instate Stabilization" #ZDubbz
+ YFC_focus_instate_stabilization_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_renters_relief: "Renters Relief" #ZDubbz
+ YFC_focus_renters_relief_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_civillian_infrastructure: "Civillian Infrastructure" #ZDubbz
+ YFC_focus_civillian_infrastructure_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_hire_city_planners: "Hire City Planners" #ZDubbz
+ YFC_focus_hire_city_planners_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_yoyleton_speech: "Yoyleton Speech" #ZDubbz
+ YFC_focus_yoyleton_speech_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_agriculturization: "Agriculturization" #ZDubbz
+ YFC_focus_agriculturization_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_peoniele_conservation: "Peoniele Conservation" #ZDubbz
+ YFC_focus_peoniele_conservation_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_northern_economics: "Northern Economics" #ZDubbz
+ YFC_focus_northern_economics_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ YFC_focus_green_energy: "Green Energy" #ZDubbz
+ YFC_focus_green_energy_desc: "(UNKNOWN, NEEDS A WRITER TO SEE)"
+
+ #I'll add more later I sleepy
+
  YFC_focus_reassess_geopolitics: "Reassess Geopolitics"
  YFC_focus_reassess_geopolitics_desc: "It is clear that we do not hold the same position internationally as we once did. Thus, it is time that we rethink our corporate strategies, in order to, not just become profitable again, but become the center of capitalistic trade, within the continent."
 
@@ -1490,6 +1525,15 @@
 
  YFC_focus_suppress_yoyleton: "Suppress Yoyleton"
  YFC_focus_suppress_yoyleton_desc: "Teardropper settlement efforts have managed to find themselves on our territory; in Yoyleton. And, here, they are more rebellious than they are anywhere else, openly calling for revolts agains the government, and... claiming they've been here longer than we have?! We will here none of it, we shall make sure these teardroppers can rebel no longer."
+
+ YFC_focus_before_setting_sail: "Before Setting Sail"
+ YFC_focus_before_setting_sail_desc: "We have nearly everything ready for some plundering in the seas!" #ZDubbz
+
+ YFC_focus_construct_the_naval_base: "Construct The Naval Base"
+ YFC_focus_construct_the_naval_base_desc: "For a grand Pirate fleet we will need a grand base to raid our foes" #ZDubbz
+
+ YFC_focus_pirate_life: "§YPirate Life§!"
+ YFC_focus_pirate_life_desc: "Let us rule these waves! Yarr!" #ZDubbz, also please keep the yarr somewhere or I will go homeless :sob:
 
  #Musketeers
  Musketeers_three_musketeers: "Three Musketeers"

@@ -3,7 +3,7 @@ decision_YFC_trade_category= {
 		available = {always = no}
 		icon = GFX_YFC_mission_get_food  
 		is_good = yes
-		days_mission_timeout = 75
+		days_mission_timeout = var_YFC_food_timer
 		selectable_mission = no
 		activation = { always = no }
 		timeout_effect = {

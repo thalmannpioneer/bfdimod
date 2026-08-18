@@ -124,6 +124,7 @@ set_variable = { var_YFC_merc_pick = 0 } #Used for YFC raiders side with merc di
 
 #TRADE
 set_country_flag = YFC_trade_allow_food #For Food
+set_variable = { var_YFC_food_timer = 90 }
 set_variable = { selected = 0 }
 
 add_to_array = { tradeable = BUN } #0

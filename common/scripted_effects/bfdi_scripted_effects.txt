@@ -1037,6 +1037,8 @@ YFC_calc_trade_risk_selling = {
                 }
                 YFC = {
                     clr_country_flag = YFC_trade_allow_food
+                    set_temp_variable = {temp_timer_var = {value = 1.1 subtract = YFC.stability multiply = 100}}
+                    set_variable = {var_YFC_food_timer = temp_timer_var}
                     activate_mission = YFC_Trade_food
                 }
             }
@@ -1139,6 +1141,8 @@ YFC_calc_trade_risk_selling = {
                 hidden_effect = {
                     YFC = {
                         clr_country_flag = YFC_trade_allow_food
+                        set_temp_variable = {temp_timer_var = {value = 1.1 subtract = YFC.stability multiply = 100}}
+                        set_variable = {var_YFC_food_timer = temp_timer_var}
                         activate_mission = YFC_Trade_food
                     }
                 }
