@@ -99,3 +99,36 @@ GPR_army = {
         value = 250
     }
 }
+
+GPR_fortnite = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_war = yes
+        193 = {
+			any_province_building_level = {
+				province = {
+					id = 1891
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 1891
+        value = 1000
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 40
+    }
+}

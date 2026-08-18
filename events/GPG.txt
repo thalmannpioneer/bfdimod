@@ -1928,7 +1928,7 @@ country_event = {
         add_to_variable = { var_GPG_war_progressbar = 10 }
         hidden_effect = { 
             GPG_on_lawnland_progressbar_change = yes 
-            28 - {
+            28 = {
                 add_compliance = -15
                 add_resistance = 40
             }
@@ -2115,6 +2115,16 @@ country_event = {
             }
             set_variable = { money_amount = -0.1 }
             add_stability = -0.1
+        }
+        hidden_effect = {
+            IF = { #Fuck you player (Also remove when GPR gets stuff)
+                limit = {is_ai = no}
+                GPR = {
+                    add_offsite_building = { type = arms_factory level = 2 }
+                    add_manpower = 20000
+                    army_experience = 50
+                }
+            }
         }
         BFDI_money_diplay_update = yes
     }
