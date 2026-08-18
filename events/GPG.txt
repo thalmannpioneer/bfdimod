@@ -2100,8 +2100,7 @@ country_event = {
         IF = {
             limit = {
                 NOT = {
-                    tag = GSR
-                    GSR = {has_completed_focus = GSR_focus_deconstruction}
+                    has_completed_focus = GSR_focus_deconstruction
                 }
             }
             custom_effect_tooltip = l_GPG_wipes_our_debt
@@ -2110,9 +2109,14 @@ country_event = {
         ELSE = {
             custom_effect_tooltip = l_GSR_wipes_our_debt #Anarchists can't get the stability to make money and being anarchists it maybe makes sense
         }    
-        set_variable = { money_amount = -0.1 }
+        IF = {
+            limit = {
+                check_variable = {money_amount < -0.1}
+            }
+            set_variable = { money_amount = -0.1 }
+            add_stability = -0.1
+        }
         BFDI_money_diplay_update = yes
-        add_stability = -0.1
     }
 }
 

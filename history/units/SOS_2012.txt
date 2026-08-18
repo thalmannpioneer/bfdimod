@@ -47,9 +47,9 @@ units = {
 			name = "Commercial Squadron"
 			location = 11102 # Objectburg Port
 
-            ship = { name = "HMAS Goiky" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } } }
-			ship = { name = "HMAS Plunge I" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
-            ship = { name = "HMAS Plunge II" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
+            ship = { name = "HMAS Goiky" pride_of_the_fleet = yes definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } } }
+			ship = { name = "HMAS Plunge I" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
+            ship = { name = "HMAS Plunge II" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOS version_name = "Cruiser" } }	}
 			ship = { name = "HMAS Pitfalls" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
             ship = { name = "HMAS Snowball" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
             ship = { name = "HMAS Tooth" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOS version_name = "Destroyer" } } }
