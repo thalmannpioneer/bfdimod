@@ -4798,18 +4798,6 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = YFC_focus_dummy
-        x = 5
-        y = 21
-        icon = GFX_focus_generic
-
-        cost = 3
-        completion_reward = {
-            # xp
-        }
-    }
-
     #national
 
     focus = {
@@ -4863,7 +4851,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_nation
         x = 0
         y = 1
-        icon = GFX_focus_YFC_instate_stabilization_shine
+        icon = GFX_focus_YFC_instate_stabilization
 
         prerequisite = { focus = YFC_focus_the_nation }
 
