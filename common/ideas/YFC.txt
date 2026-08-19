@@ -304,6 +304,15 @@ ideas = {
 				min_export = -0.2
 			}
 		}
+
+		idea_YFC_top_hat_prowess = {
+			picture = SOV_organize_wreckers #Replace later 
+			modifier = {
+				supply_consumption_factor = 0.25
+				army_org_factor = 0.1
+				attack_bonus_against_cores = 0.1
+			}
+		}
 	}
 
 	industrial_concern = {

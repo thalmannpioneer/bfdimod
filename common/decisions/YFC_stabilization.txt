@@ -1,0 +1,46 @@
+decision_YFC_stabilization_category = {
+	YFC_stabilization_order_military_restructuring = { 
+		icon = GFX_decisions_YFC_raid_request_donations
+      
+		fire_only_once = yes
+		cost = 35
+		days_remove = 120
+
+		visible = {
+			has_completed_focus = YFC_focus_tophat_clan
+		}
+
+		modifier = {
+			army_org_factor = -0.25
+			training_time_army_factor = 0.5
+			army_morale_factor = -0.5
+		}
+
+		remove_effect = {
+			remove_ideas = idea_YFC_neglectful_command
+			add_ideas = idea_YFC_top_hat_prowess
+		}
+
+		ai_will_do = {
+			base = 10 #Tbh no reason to not take it
+		}
+	}
+
+	YFC_stabilization_final_sector_restructures = { 
+		activation = {
+			NOT = {has_country_flag = l_YFC_sectors_remove}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_mission_YFC_eastern_game  #Update later!!!
+		is_good = yes
+		days_mission_timeout = 300 
+		timeout_effect = {
+			set_country_flag = YFC_Sectors_done
+			custom_effect_tooltip = l_YFC_sectors_remove
+			add_stability = 0.15
+			hidden_effect = {remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }}
+		}
+	}
+}

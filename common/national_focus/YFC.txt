@@ -4763,13 +4763,29 @@ focus_tree = {
         y = 9
         icon = GFX_focus_YFC_tophat_clan
 
-        cost = 5
+        cost = 1
 
         ai_will_do = {
-            base = 0 #For testing do not do this
+            base = -5 #For testing do not do this
         }
 
         completion_reward = {
+
+            #obv removes sectorial system (wont be replaced sorry), our sectors spirit, sectorial crackdown spirit, company reorganization spirit
+            #replaces neglectful command with "top hat's prowess" which gives lots of good military shit but fucks over supply lowkey
+
+			set_cosmetic_tag = YFC_TopHat_clan #TESTING REMOVE LATER!!!
+			retire_character = YFC_yellow_face 
+			add_country_leader_role = {
+				character = YFC_tophat
+				promote_leader = yes
+				country_leader = {
+					ideology = oligarchism
+					traits = { YFC_old_general }
+					desc = idea_YFC_TopHat_desc
+				}
+			}
+
             hidden_effect = {
                 news_event = {
                     id = bfdinews.43
@@ -4788,11 +4804,7 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
-            #obv removes sectorial system (wont be replaced sorry), our sectors spirit, sectorial crackdown spirit, company reorganization spirit
-            #replaces neglectful command with "top hat's prowess" which gives lots of good military shit but fucks over supply lowkey
-
-            #ZDubbz this is just a placeholder where would it go?
-            #Also I think we could have it to where influnce is disabled then later the system
+            # xp
         }
     }
 
