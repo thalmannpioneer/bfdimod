@@ -2205,6 +2205,156 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_the_state"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_state.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_instate_stabilization"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_instate_stabilization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_renters_relief"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_renters_relief.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_reformalize_borders"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_reformalize_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_decorporatization"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_decorporatization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_repossess_our_land"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_repossess_our_land.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_peoniele_conversation"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_peoniele_conversation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_meet_with_numismatia"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_meet_with_numismatia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_disavow_raiders"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_disavow_raiders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_kickstart_economy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_kickstart_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_yoyleton_speech"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_yoyleton_speech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_agriculturization"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_agriculturization.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_hire_city_planners"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_hire_city_planners.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_democratic_question"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_democratic_question.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_reopen_markets"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_reopen_markets.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_northern_economics"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_northern_economics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_council_compromise"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_council_compromise.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_new_monetary_avenues"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_new_monetary_avenues.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_great_goikean_trade"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_great_goikean_trade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_green_energy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_green_energy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_respect_autonomy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_respect_autonomy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_rural_representation"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_rural_representation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_grand_metropolises"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_grand_metropolises.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_teardrop_diplomacy"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_teardrop_diplomacy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_international_standards"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_international_standards.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_numis_ideology"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_numis_ideology.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_beakers_return"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_beakers_return.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_take_up_arms"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_take_up_arms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_beakers_idea"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_beakers_idea.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_a_stable_society"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_a_stable_society.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_to_the_future"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_to_the_future.dds"
+	}
 
 	#Musketeers#
 	

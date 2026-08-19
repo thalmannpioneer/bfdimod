@@ -4843,7 +4843,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_nation
         x = -2
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_repossess_our_land
 
         prerequisite = { focus = YFC_focus_the_nation }
 
@@ -4863,7 +4863,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_nation
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_instate_stabilization_shine
 
         prerequisite = { focus = YFC_focus_the_nation }
 
@@ -4885,7 +4885,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_nation
         x = 3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_renters_relief
 
         available = {
             custom_trigger_tooltip = {
@@ -4908,7 +4908,7 @@ focus_tree = {
         relative_position_id = YFC_focus_instate_stabilization
         x = 4
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_invest_into_infrastructure
 
         prerequisite = { focus = YFC_focus_renters_relief }
         prerequisite = { focus = YFC_focus_instate_stabilization }
@@ -4929,7 +4929,7 @@ focus_tree = {
         relative_position_id = YFC_focus_instate_stabilization
         x = 5
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_hire_city_planners
 
         prerequisite = { focus = YFC_focus_civillian_infrastructure }
 
@@ -4957,7 +4957,7 @@ focus_tree = {
         relative_position_id = YFC_focus_instate_stabilization
         x = -1
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_yoyleton_speech
 
         prerequisite = { focus = YFC_focus_instate_stabilization }
         prerequisite = { focus = YFC_focus_repossess_our_land }
@@ -4981,7 +4981,7 @@ focus_tree = {
         relative_position_id = YFC_focus_instate_stabilization
         x = 1
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_agriculturization
 
         prerequisite = { focus = YFC_focus_instate_stabilization }
         prerequisite = { focus = YFC_focus_peoniele_conservation }
@@ -5012,7 +5012,7 @@ focus_tree = {
         relative_position_id = YFC_focus_instate_stabilization
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_peoniele_conversation
 
         prerequisite = { focus = YFC_focus_instate_stabilization }
 
@@ -5033,7 +5033,7 @@ focus_tree = {
         relative_position_id = YFC_focus_yoyleton_speech
         x = 3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_northern_economics
 
         prerequisite = { focus = YFC_focus_yoyleton_speech }
         prerequisite = { focus = YFC_focus_hire_city_planners }
@@ -5087,7 +5087,7 @@ focus_tree = {
         relative_position_id = YFC_focus_peoniele_conservation
         x = -4
         y = 3
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_green_energy
 
         prerequisite = { focus = YFC_focus_peoniele_conservation }
         prerequisite = { focus = YFC_focus_repossess_our_land }
@@ -5171,7 +5171,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_state
         x = 2
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_kickstart_economy
 
         prerequisite = { focus = YFC_focus_the_state }
 
@@ -5197,7 +5197,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_state
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_decorporatization
 
         prerequisite = { focus = YFC_focus_the_state }
 
@@ -5215,7 +5215,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_state
         x = -3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_reformalize_borders
 
         prerequisite = { focus = YFC_focus_the_state }
 
@@ -5242,7 +5242,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reformalize_borders
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_meet_with_numismatia
 
         prerequisite = { focus = YFC_focus_reformalize_borders }
 
@@ -5277,7 +5277,7 @@ focus_tree = {
         relative_position_id = YFC_focus_meet_with_numismatia
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_democratic_question
 
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
         cost = 3
@@ -5297,7 +5297,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reformalize_borders
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_disavow_raiders
 
         prerequisite = { focus = YFC_focus_reformalize_borders }
 
@@ -5320,7 +5320,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_state
         x = -1
         y = 3
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_reopen_markets
 
         prerequisite = { focus = YFC_focus_decorporatization }
         prerequisite = {
@@ -5360,7 +5360,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reopen_markets
         x = 2
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_great_goikean_trade
 
         prerequisite = { focus = YFC_focus_reopen_markets }
         prerequisite = { focus = YFC_focus_kickstart_economy }
@@ -5380,7 +5380,7 @@ focus_tree = {
         relative_position_id = YFC_focus_reopen_markets
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_new_monetary_avenues
 
         prerequisite = { focus = YFC_focus_reopen_markets }
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
@@ -5406,7 +5406,7 @@ focus_tree = {
         relative_position_id = YFC_focus_new_monetary_avenues
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_trade_alternatives
 
         prerequisite = {
             focus = YFC_focus_meet_with_numismatia
@@ -5428,7 +5428,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_goikean_trade
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_international_standards
 
         prerequisite = { focus = YFC_focus_great_goikean_trade }
 
@@ -5446,7 +5446,7 @@ focus_tree = {
         relative_position_id = YFC_focus_great_goikean_trade
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_teardrop_diplomacy
 
         prerequisite = { focus = YFC_focus_great_goikean_trade }
 
@@ -5467,7 +5467,7 @@ focus_tree = {
         relative_position_id = YFC_focus_new_monetary_avenues
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_take_up_arms
 
         prerequisite = { focus = YFC_focus_teardrop_diplomacy }
         prerequisite = { focus = YFC_focus_new_monetary_avenues }
@@ -5491,7 +5491,7 @@ focus_tree = {
         relative_position_id = YFC_focus_take_up_arms
         x = 0
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_beakers_idea
 
         prerequisite = { focus = YFC_focus_take_up_arms }
         prerequisite = { focus = YFC_focus_beakers_return }
@@ -5513,7 +5513,7 @@ focus_tree = {
         relative_position_id = YFC_focus_the_democratic_question
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_council_compromise
 
         prerequisite = { focus = YFC_focus_hire_city_planners }
         prerequisite = { focus = YFC_focus_the_democratic_question }
@@ -5535,7 +5535,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = -3
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_respect_autonomy
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
 
@@ -5552,7 +5552,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = -2
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_numis_ideology
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
 
@@ -5572,7 +5572,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = -1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_rural_representation
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
         mutually_exclusive = { focus = YFC_focus_grand_metropolises }
@@ -5591,7 +5591,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = 1
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_grand_metropolises
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
         mutually_exclusive = { focus = YFC_focus_rural_representation }
@@ -5608,7 +5608,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = 2
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_beakers_return
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
         cost = 3
@@ -5628,7 +5628,7 @@ focus_tree = {
         relative_position_id = YFC_focus_city_council_compromise
         x = 0
         y = 3
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_a_stable_society
 
         prerequisite = {
             focus = YFC_focus_grand_metropolises
@@ -5653,7 +5653,7 @@ focus_tree = {
         relative_position_id = YFC_focus_a_stable_society
         x = 0
         y = 2
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_to_the_future
 
         prerequisite = { focus = YFC_focus_a_stable_society }
         #should also require all other focuses in the branch to be done
