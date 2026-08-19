@@ -4815,7 +4815,7 @@ focus_tree = {
         relative_position_id = YFC_focus_tophat_clan
         x = -6
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_nation
 
         prerequisite = { focus = YFC_focus_tophat_clan }
 
@@ -5008,7 +5008,7 @@ focus_tree = {
         relative_position_id = YFC_focus_tophat_clan
         x = 6
         y = 1
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_the_state
 
         prerequisite = { focus = YFC_focus_tophat_clan }
 

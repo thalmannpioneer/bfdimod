@@ -8,7 +8,7 @@ division_template = {
     }
     is_locked = yes
     division_cap = 1
-	priority = 2
+    priority = 2
 }
 
 division_template = {
@@ -19,20 +19,20 @@ division_template = {
         irregular_infantry = { x = 1 y = 0 }
     }
     division_cap = 15
-	priority = 0
+    priority = 0
 }
 
 units = {
-    
+
     fleet = { #So later me understand why the 2011 fleet works fine but the 2012 does not
-		name = "Royal David Navy"			
-		naval_base = 11861 # East Davidland
-		task_force = {
-			name = "David Fleet"
-			location = 11861 # East Davidland
+        name = "Royal David Navy"
+        naval_base = 11861 # East Davidland
+        task_force = {
+            name = "David Fleet"
+            location = 11861 # East Davidland
 
             ship = { name = "HMAS Davidland" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DAV version_name = "Big Placeholder Class" } } }
-			ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
             ship = { name = "HMAS Destroyer_Name_2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
             ship = { name = "HMAS Destroyer_Name_3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
             ship = { name = "HMAS Destroyer_Name_4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
@@ -43,17 +43,17 @@ units = {
             ship = { name = "HMAS Destroyer_Name_9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
             ship = { name = "HMAS Destroyer_Name_10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
             ship = { name = "HMAS Destroyer_Name_11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-		}				
-	}
+        }
+    }
 
-	division= {
+    division= {
         name = "Ever Great Majesty the King's and His Glorious Most Holy and Righteous Rapid Mobile Response Royal Guard Division"
         location = 341 # Davidland
         division_template = "Rapid Mobile Response Royal Guard Division"
         start_experience_factor = 0.65
         start_equipment_factor = 0.95
     }
-	division= {
+    division= {
         name = "Apalla Levy"
         location = 4111 # Apalla
         division_template = "Raised Levy"

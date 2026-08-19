@@ -7,24 +7,24 @@ BFDI_game_start = {
         }
     }
 
-    WGF = { load_oob = "WGF_2012" }
-    GMD = { load_oob = "GMD_2012" }
-    TBT = { load_oob = "TBT_2012" }
-    DPZ = { load_oob = "DPZ_2012" }
-    NRR = { load_oob = "NRR_2012" }
-    SEC = { load_oob = "SEC_2012" }
-    GPR = { load_oob = "GPR_2012" }
-    GPG = { load_oob = "GPG_2012" }
-    SRR = { load_oob = "SRR_2012" }
-    GTR = { load_oob = "GTR_2012" }
-    BUN = { load_oob = "BUN_2012" }
-    GGR = { load_oob = "GGR_2012" }
-    FFT = { load_oob = "FFT_2012" }
-    AGG = { load_oob = "AGG_2012" }
-    SGD = { load_oob = "SGD_2012" }
-    YFC = { load_oob = "YFC_2012" }
-    CRN = { load_oob = "CRN_2012" }
-    SOS = { load_oob = "SOS_2012" }
+    WGF = { set_oob = "WGF_2012" }
+    GMD = { set_oob = "GMD_2012" }
+    TBT = { set_oob = "TBT_2012" }
+    DPZ = { set_oob = "DPZ_2012" }
+    NRR = { set_oob = "NRR_2012" }
+    SEC = { set_oob = "SEC_2012" }
+    GPR = { set_oob = "GPR_2012" }
+    GPG = { set_oob = "GPG_2012" }
+    SRR = { set_oob = "SRR_2012" }
+    GTR = { set_oob = "GTR_2012" }
+    BUN = { set_oob = "BUN_2012" }
+    GGR = { set_oob = "GGR_2012" }
+    FFT = { set_oob = "FFT_2012" }
+    AGG = { set_oob = "AGG_2012" }
+    SGD = { set_oob = "SGD_2012" }
+    YFC = { set_oob = "YFC_2012" }
+    CRN = { set_oob = "CRN_2012" }
+    SOS = { set_oob = "SOS_2012" }
 
     set_global_flag = {
         flag = game_started

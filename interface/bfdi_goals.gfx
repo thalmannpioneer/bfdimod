@@ -2195,6 +2195,16 @@ SpriteTypes = {
 		name = "GFX_focus_YFC_pirate_life"
 		texturefile = "gfx/interface/goals/GFX_focus_YFC_pirate_life.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_nation"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_nation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_YFC_the_state"
+		texturefile = "gfx/interface/goals/GFX_focus_YFC_the_state.dds"
+	}
 
 	#Musketeers#
 	
