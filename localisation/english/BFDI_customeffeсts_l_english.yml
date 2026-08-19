@@ -133,7 +133,7 @@
  l_YFC_sectors_Beaker_leave: "§YDisables buffs and costs from the Science Sector for now...§!"
  l_YFC_sectors_TopHat_leave: "§YDisables buffs and costs from the Military Sector for now...§!"
  l_YFC_sectors_influence_gone: "§GEvery Sectors' Influence is now set to 1, permanently.§!"
- l_YFC_sectors_remove: "§RThe Sectors will be fully disabled.§!"
+ l_YFC_sectors_remove: "§RThe Sectors will be fully removed.§!"
  l_YFC_sectors_remove_blocky: "§YBlocky will sadly go fully back to Bunch, but not without a§! §Gparting gift:§!"
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
@@ -171,6 +171,9 @@
  l_YFC_allow_rails: "Improves §YAnarchic Lands§! National Spirit by:\n- §YRailway construction speed:§! §G+500%§!\n- §YSupply Hub construction speed:§! §G+500%§!"
  l_YFC_repair: "Improves §YAnarchic Lands§! National Spirit by:\n- §YFree Repair:§! §G+25%§!"
  l_YFC_pp_gain: "Improves §YAnarchic Lands§! National Spirit by:\n- §YPolitical Power Gain:§! §G+0.5§!"
+ l_YFC_our_land: "Improves §YAnarchic Lands§! National Spirit by:\n- §YPolitical Power Gain:§! §G+0.25§!\n- §YConstruction Speed:§! §G+425%§!\n- §YFree Repair:§! §R-425%§!"
+ l_YFC_city_planners: "Improves §YAnarchic Lands§! National Spirit by:\n- §YConstruction Speed:§! §G+20%§!\n- §YFree Repair:§! §R-20%§!"
+ l_YFC_bunch_anger: "§REraser may not like this action...§!"
  l_YFC_mercs_div: "§YUnlocks a new Mercenary Division that can be hired in decisions!§!"
  l_YFC_mercs_remove: "§RRemoves decisions to buy Mercenaries§!"
  l_YFC_mercs_upgrade_cav: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Combined Grape Affiliation Divisions.§!"

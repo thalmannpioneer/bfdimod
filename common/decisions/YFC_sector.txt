@@ -35,7 +35,12 @@ decision_YFC_sector_category = { #Watermelon
             }
 
             IF = {
-                limit = {has_completed_focus = YFC_focus_sectors_their_place}
+                limit = {
+                    OR = {
+                        has_completed_focus = YFC_focus_sectors_their_place
+                        has_completed_focus = YFC_focus_tophat_clan
+                    }
+                }
                 set_variable = { var_idea_YFC_TopHat_influence = 1 }
                 set_variable = { var_idea_YFC_Hammer_influence = 1 }
                 set_variable = { var_idea_YFC_Taser_influence = 1 }
@@ -203,6 +208,7 @@ decision_YFC_sector_category = { #Watermelon
                             has_idea = idea_YFC_Defiant_Hammer
                             has_idea = idea_YFC_Defiant_Taser
                             has_completed_focus = YFC_focus_sectors_their_place
+                            has_completed_focus = YFC_focus_tophat_clan
                         }
                     }
 
@@ -301,7 +307,7 @@ decision_YFC_sector_category = { #Watermelon
             NOT = {has_idea = idea_YFC_Debt_Crisis}
             NOT = {has_completed_focus = YFC_focus_the_sectorial_powderkeg}
             NOT = {has_completed_focus = YFC_focus_strike_the_headache}
-            NOT = { has_country_flag = YFC_Sectors_done }
+            NOT = {has_country_flag = YFC_Sectors_done }
         }
         available = {
             always = no
@@ -313,7 +319,7 @@ decision_YFC_sector_category = { #Watermelon
                     has_completed_focus = YFC_focus_the_sectorial_powderkeg
                     has_completed_focus = YFC_focus_strike_the_headache
                     has_country_flag = YFC_Sectors_done
-                }`
+                }
             }
 		}
         icon = GFX_YFC_mission_sector_issues  

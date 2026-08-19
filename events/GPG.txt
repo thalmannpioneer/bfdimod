@@ -885,10 +885,10 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GPG = {
-                    add_manpower = 80000
+                    add_manpower = 100000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 9000 # +2000 Since they suck
+                        amount = 11000 # +2000 Since they suck
                     }
                 }
             }
@@ -922,10 +922,10 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GSR = {
-                    add_manpower = 80000
+                    add_manpower = 100000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 7000
+                        amount = 9000
                     }
                 }
             }
@@ -959,10 +959,10 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GDR = {
-                    add_manpower = 80000
+                    add_manpower = 100000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 8000 # +1000 Since they suck
+                        amount = 10000 # +1000 Since they suck
                     }
                 }
             }
@@ -993,10 +993,10 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GFG = {
-                    add_manpower = 80000
+                    add_manpower = 100000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 7000
+                        amount = 9000
                     }
                 }
             }

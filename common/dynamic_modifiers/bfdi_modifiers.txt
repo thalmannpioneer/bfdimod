@@ -207,7 +207,7 @@ idea_YFC_anarchic_lands = {
     icon = GFX_idea_YFC_anarchic_lands
 
     political_power_gain = var_idea_YFC_anarchic_lands_PP
-    production_speed_buildings_factor = -5
+    production_speed_buildings_factor = var_idea_YFC_anarchic_lands_construction
     industry_free_repair_factor = var_idea_YFC_anarchic_lands_repair
     production_speed_rail_way_factor = var_idea_YFC_anarchic_lands_rail
     production_speed_supply_node_factor = var_idea_YFC_anarchic_lands_node

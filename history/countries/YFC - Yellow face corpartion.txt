@@ -67,6 +67,7 @@ set_popularities = {
 #Anarchic Lands Idea
 set_variable = { var_idea_YFC_anarchic_lands_repair = 5 }
 set_variable = { var_idea_YFC_anarchic_lands_PP = -0.75 }
+set_variable = { var_idea_YFC_anarchic_lands_construction = -5 }
 set_variable = { var_idea_YFC_anarchic_lands_rail = 0 }
 set_variable = { var_idea_YFC_anarchic_lands_node = 0 }
 

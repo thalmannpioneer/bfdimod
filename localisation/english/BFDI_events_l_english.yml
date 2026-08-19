@@ -1170,6 +1170,34 @@
  YFC_event.87.desc: "text text bla bla" #ZDubbz, should either be Yellow Face looking at the Pirate fleet and/or their first raid on a poor fishing boat. This also ends demo for raiders side
  YFC_event.87.a: "Onwards!" 
 
+ YFC_event.88.t: "YFC_focus_the_nation" 
+ YFC_event.88.desc: "text text bla bla" #ZDubbz
+ YFC_event.88.a: "" 
+
+ YFC_event.89.t: "YFC_focus_yoyleton_speech" 
+ YFC_event.89.desc: "text text bla bla" #ZDubbz
+ YFC_event.89.a: "" 
+
+ YFC_event.90.t: "YFC_focus_peoniele_conservation" 
+ YFC_event.90.desc: "text text bla bla" #ZDubbz
+ YFC_event.90.a: "" 
+
+ YFC_event.91.t: "YFC_focus_green_energy" 
+ YFC_event.91.desc: "text text bla bla" #ZDubbz
+ YFC_event.91.a: "" 
+
+ YFC_event.92.t: "YFC_focus_reformalize_borders" 
+ YFC_event.92.desc: "text text bla bla" #ZDubbz, think it would be cool if this is written as if Bunch wrote it to YFC 
+ YFC_event.92.a: "" 
+
+ YFC_event.93.t: "YFC_focus_meet_with_numismatia" 
+ YFC_event.93.desc: "text text bla bla" #ZDubbz, think it would be cool if this is written as if Bunch wrote it to YFC 
+ YFC_event.93.a: ""
+
+ YFC_event.94.t: "YFC_focus_the_democratic_question" 
+ YFC_event.94.desc: "text text bla bla" #ZDubbz, think it would be cool if this is written as if Bunch wrote it to YFC 
+ YFC_event.94.a: ""
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

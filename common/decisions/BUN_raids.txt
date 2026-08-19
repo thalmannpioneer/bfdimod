@@ -13,6 +13,8 @@ decision_BUN_raids_category = {
                 controller = {
                     NOT = {tag = EMP}
                     NOT = {is_guaranteed_by = BUN}
+                    NOT = {is_ally_with = BUN}
+                    NOT = {has_non_aggression_pact_with = BUN}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -153,6 +155,8 @@ decision_BUN_raids_category = {
                 controller = {
                     NOT = {tag = EMP}
                     NOT = {is_guaranteed_by = BUN}
+                    NOT = {is_ally_with = BUN}
+                    NOT = {has_non_aggression_pact_with = BUN}
                 }
             } 
             NOT = {is_puppet = yes}
@@ -293,6 +297,8 @@ decision_BUN_raids_category = {
                 controller = {
                     NOT = {tag = EMP}
                     NOT = {is_guaranteed_by = BUN}
+                    NOT = {is_ally_with = BUN}
+                    NOT = {has_non_aggression_pact_with = BUN}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -433,6 +439,8 @@ decision_BUN_raids_category = {
                 controller = {
                     NOT = {tag = EMP}
                     NOT = {is_guaranteed_by = BUN}
+                    NOT = {is_ally_with = BUN}
+                    NOT = {has_non_aggression_pact_with = BUN}
                 }
             } 
             NOT = {is_puppet = yes}
@@ -558,11 +566,116 @@ decision_BUN_raids_category = {
                 }
             }
             modifier = { #Grrr
-                add = 10
+                add = -50
                 AND = {
                     FROM = {controller = {tag = YFC}}
                     FROM = {controller = {has_completed_focus = YFC_focus_march_on_footpathburg}}
+                    FROM = {controller = {NOT = {has_completed_focus = YFC_focus_reformalize_borders}}}
                 }
+            }
+        }
+    }
+
+    BUN_raid_top_hat = {
+        icon = GFX_decision_generic_confiscation
+
+        visible = {
+            controls_state = 212
+            YFC = {has_completed_focus = YFC_focus_reformalize_borders}
+            has_war = no
+            NOT = {has_cosmetic_tag = BUN_revolt}
+            NOT = {has_cosmetic_tag = BUN_republic}
+        }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_raids_Active
+				NOT = {has_country_flag = BUN_Raid_Active}
+                has_border_war = no
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BUN_Raid_Active
+		}
+
+        fire_only_once = no
+        days_remove = 7
+        cost = 20
+        days_re_enable = 60
+        war_with_on_remove = controller
+
+        remove_effect = {
+            clr_country_flag = BUN_Raid_Active
+            201 = {
+                damage_building = {
+                    type = infrastructure
+                    damage = 1
+                }
+            }
+
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add_manpower = 2000
+            }
+
+            IF = {
+                limit = {
+                    YFC = {
+                        OR = {
+                            has_completed_focus = YFC_focus_demand_end_pillage
+                            has_completed_focus = YFC_focus_publicize_partnership
+                        }
+                        controls_state = 201
+                    }
+                }
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 212
+                        num_provinces = 1
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
+                        modifier = 0.45
+                    }
+                    defender = {
+                        state = 201
+                        num_provinces = 1
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
+                        dig_in_factor = 3
+                    }
+                }
+            }
+            ELSE = {
+                start_border_war = {
+                    change_state_after_war = no
+                    attacker = {
+                        state = 212
+                        num_provinces = 1
+                        on_win = BUN_borderwars.1
+                        on_lose = BUN_borderwars.2
+                        modifier = var_BUN_raiding_attack_stats
+                    }
+                    defender = {
+                        state = 201
+                        num_provinces = 1
+                        on_win = BUN_borderwars.3
+                        on_lose = BUN_borderwars.4
+                        dig_in_factor = 3
+                    }
+                }
+            }
+            set_variable = { var_BUN_raiding = 0 }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = { #Top Hat fucking sucks
+                add = 1000
+                has_political_power > 20
             }
         }
     }

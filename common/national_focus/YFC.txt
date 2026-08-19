@@ -2439,7 +2439,7 @@ focus_tree = {
                 create_faction = "Goiky Trade League"
                 add_to_faction = CRN
             }
-            add_stability = 0.05
+            add_stability = 0.1
             hidden_effect = {
                 CRN = {
                     set_country_flag = Allow_Musketeers
@@ -2451,7 +2451,6 @@ focus_tree = {
                     random_hours = 36
                 }
             }
-            add_stability = 0.01
             custom_effect_tooltip = l_GOI_unlock_focus
         }
 
@@ -3646,7 +3645,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -4266,7 +4265,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
+        allow_branch = { has_completed_focus = YFC_focus_the_sectorial_powderkeg }
 
         #hidden until close the markets, offset debt, and (either trade alternatives or tophats outlook) are finished
 
@@ -4478,11 +4477,13 @@ focus_tree = {
                     target = YFC
                     modifier = large_decrease
                 }
-                YFC = {
-                    diplomatic_relation = {
-                        country = PREV
-                        relation = embargo
-                        active = yes
+                hidden_effect = {
+                    YFC = {
+                        diplomatic_relation = {
+                            country = PREV
+                            relation = embargo
+                            active = yes
+                        }
                     }
                 }
             }
@@ -4756,6 +4757,7 @@ focus_tree = {
     #TOP HAT CLAN TERTIARY SECTION
     #############################
 
+    #Slight note to me YFC has about -50% stability and is either close to or in debt
 
     focus = {
         id = YFC_focus_tophat_clan
@@ -4821,6 +4823,14 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            add_stability = 0.05
+
+            country_event = {
+                id = YFC_event.88
+                hours = 1
+                random_hours = 2
+            }
+
             #this half of the tree is moreso focused on forging a quasi-national identity, essentially making people happy
             #this focus gives 5 stability and an event
             #by beaker's return you should have 60% stability if you did poorly, and nearly 80% if you did good
@@ -4839,6 +4849,11 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            custom_effect_tooltip = l_YFC_our_land
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = 4.25 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.25 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_construction = 4.25 }
+
             #removes all effects from anarchic lands except for political power, construction and trade/econ laws, changes pp gain from -0.75 to -0.50, changes construction speed to -75%
         }
     }
@@ -4860,6 +4875,8 @@ focus_tree = {
             #only costs manpower
 
             #ZDubbz Should this stay in trade or it's own category?
+
+            unlock_decision_tooltip = YFC_stabilization_policing
         }
     }
 
@@ -4870,11 +4887,19 @@ focus_tree = {
         y = 1
         icon = GFX_focus_generic
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
+            }
+        }
+
         prerequisite = { focus = YFC_focus_the_nation }
 
         cost = 3
         completion_reward = {
-            #heavy stability buff, costs money
+            subtract_from_variable = {money_amount = 5}
+            add_stability = 0.1
         }
     }
 
@@ -4893,6 +4918,9 @@ focus_tree = {
             #adds new decision to the stabilization category, that lets you build housing in your states, costs money
             #when all states have the housing, one final (expensive) decision called tenants rights
             #when tenants rights is done, you gain a spirit called "high quality housing," which gives you more monthly population
+
+            unlock_decision_tooltip = YFC_stabilization_housing_state
+            set_variable = {var_YFC_housing_progress}
         }
     }
 
@@ -4905,9 +4933,22 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_civillian_infrastructure }
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_200K
+                check_variable = { money_amount > 2 }
+            }
+        }
+
         cost = 3
         completion_reward = {
             #gives stability, costs money, changes anarchic laws' construction speed thing to -20%
+
+            add_stability = 0.05
+            custom_effect_tooltip = l_YFC_city_planners
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.2 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_construction = 0.2 }
+            subtract_from_variable = {money_amount = 2}
         }
     }
 
@@ -4925,7 +4966,13 @@ focus_tree = {
         completion_reward = {
             #top hat gives a speech in yoyleton, gives stability, greatly lowers resistance in yoyleton
 
-            #ZDubbz then when should yoyleton resistance start?
+            #ZDubbz is this an event?
+
+            country_event = {
+                id = YFC_event.89
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -4939,6 +4986,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_instate_stabilization }
         prerequisite = { focus = YFC_focus_peoniele_conservation }
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_600K
+                check_variable = { money_amount > 6 }
+            }
+        }
+
         cost = 3
         completion_reward = {
             #gives big stability (biggest in this part of tree), costs money
@@ -4946,6 +5000,10 @@ focus_tree = {
             #gives you more decisions in the stabilization category, lets you send farming resources to each state
 
             #ZDubbz since I coded food's timer to be based off of stability now (50% is about 60 days) I may do this or not
+
+            add_stability = 0.15
+            subtract_from_variable = {money_amount = 6}
+            unlock_decision_tooltip = YFC_stabilization_farming_state
         }
     }
 
@@ -4961,6 +5019,12 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #a letter to top hat telling him to conserve peoniele's beauty, gives stability
+
+            country_event = {
+                id = YFC_event.90
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -4974,11 +5038,47 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_yoyleton_speech }
         prerequisite = { focus = YFC_focus_hire_city_planners }
 
+        available = {
+            216 = {
+                OR = {
+                    resistance < 35
+                    is_core_of = YFC
+                }
+            }
+        }
+
         cost = 3
         completion_reward = {
             #cores yoyleton, gives the same effects as "expand northern trade" in to arms for capital
 
-            #ZDubbz should there be a resistance check? Like under 10% or something
+            custom_effect_tooltip = l_YFC_Trade_Bonus
+            IF = {
+                limit = {216 = {is_core_of = TBT}}
+                216 = {
+                    add_core_of = TBT
+                    remove_core_of = YFC
+                }
+            }
+            IF = {
+                limit = {country_exists = GMD}
+                add_opinion_modifier = { target = GMD modifier = medium_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = GMD
+                    add_opinion_modifier = { target = YFC modifier = medium_increase }
+                }
+            }
+            add_opinion_modifier = { target = TBT modifier = medium_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = TBT
+                add_opinion_modifier = { target = YFC modifier = medium_increase }
+            }
+            #add_opinion_modifier = { target = DAV modifier = medium_increase }
+            #every_country_with_original_tag = {
+            #    original_tag_to_check = DAV
+            #    add_opinion_modifier = { target = DAV modifier = medium_increase }
+            #}
+
+            hidden_effect = {set_variable = {tradeable^20 = 1}}
         }
     }
 
@@ -4998,6 +5098,51 @@ focus_tree = {
             #gives stability, adds a spirit called "clean skies" which quells resistence, adds a bit of monthly population
             # increases numis, ggrr south, greeny plains republic, & gb's opinion of you (or anprim if they are around)
             #cores peoniele, they send a letter thanking you (sectorial powderkeg should remove cores on every state but ridgeheart)
+
+            IF = {
+                limit = {country_exists = CRN}
+                add_opinion_modifier = { target = CRN modifier = small_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = CRN
+                    add_opinion_modifier = { target = YFC modifier = small_increase }
+                }
+            }
+            IF = {
+                limit = {country_exists = SRR}
+                add_opinion_modifier = { target = SRR modifier = small_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = SRR
+                    add_opinion_modifier = { target = YFC modifier = small_increase }
+                }
+            }
+            IF = {
+                limit = {country_exists = GPR}
+                add_opinion_modifier = { target = GPR modifier = small_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = GPR
+                    add_opinion_modifier = { target = YFC modifier = small_increase }
+                }
+            }
+            IF = {
+                limit = {country_exists = GTR}
+                add_opinion_modifier = { target = GTR modifier = small_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = GTR
+                    add_opinion_modifier = { target = YFC modifier = small_increase }
+                }
+            }
+
+            add_stability = 0.05
+            add_ideas = idea_YFC_clean_skies
+
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.91
+                    hours = 12
+                    days = 3
+                    random_hours = 48
+                }
+            }
         }
     }
 
@@ -5016,6 +5161,8 @@ focus_tree = {
         completion_reward = {
             #this branch would mainly be concerned with geopolitics and state organization
             #this focus gives 50 political power and an event
+
+            add_political_power = 50
         }
     }
 
@@ -5030,6 +5177,15 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            201 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+
             #lets you build civs (hidden spirit that makes them build 50% faster until anarchic lands is fully removed), sets economy to limited exports
 
             #ZDubbz might just add a modifer to anarchic lands then that
@@ -5047,6 +5203,9 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            remove_ideas = idea_YFC_no_more_advertisements_foundation
+            add_political_power = 20
+
             #removes "the company with a state" spirit, gives 15 political power
         }
     }
@@ -5062,9 +5221,19 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            add_political_power = 75
+            add_war_support = 0.05
+            custom_effect_tooltip = l_YFC_bunch_anger
             #re enables raiding from bunch, gives event around a week after completion, gives 75 political power
 
-            #ZDubbz how and why would bunch stop raiding you? In fact would he not raid more after his own ally just go removed?
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.92
+                    hours = 12
+                    days = 2
+                    random_hours = 48
+                }
+            }
         }
     }
 
@@ -5081,6 +5250,25 @@ focus_tree = {
         completion_reward = {
             #event, positive opinions from and to numismatia
             #hidden, in 3 months numismatia will send you 200k to help you industrialize (done through event)
+
+            IF = {
+                limit = {country_exists = CRN}
+                add_opinion_modifier = { target = CRN modifier = medium_increase }
+                every_country_with_original_tag = {
+                    original_tag_to_check = CRN
+                    add_opinion_modifier = { target = YFC modifier = medium_increase }
+                }
+            }
+
+            hidden_effect = {
+                country_event = {
+                    id = YFC_event.93
+                    hours = 12
+                    days = 90
+                    random_days = 15
+                    random_hours = 48
+                }
+            }
         }
     }
 
@@ -5095,6 +5283,12 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #event from top hat to the other sectors, saying he wants to implement democratic institutions, but believes that the yfc still lingers (hes just paranoid abt losing power lmao)
+
+            country_event = {
+                id = YFC_event.94
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5110,6 +5304,14 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #heavily decreases raider opinion of you, even more than it already (shouldve) decreased
+
+            add_opinion_modifier = { target = BUN modifier = large_decrease }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = large_decrease }
+            }
+
+            add_war_support = 0.05
         }
     }
 
@@ -5128,6 +5330,25 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            add_ideas = export_focus
+            hidden_effect = {
+                every_other_country = {
+                    limit = {
+                        NOT = { tag = EMP }
+                        NOT = { tag = BUN }
+                        is_embargoing = YFC
+                        is_embargoed_by = YFC
+                    }
+                    YFC = {
+                        diplomatic_relation = {
+                            country = PREV
+                            relation = embargo
+                            active = no
+                        }
+                    }
+                }
+            }
+
             #reopens the market mechanic, as it should, sends you to export focus
 
             #ZDubbz I'll also add decisions to talk to X nation to reopen trade, for the event they get more benifts to reopen then to not. AI will mostly pick yes
@@ -5147,6 +5368,10 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #moves you up to free trade yay!
+            add_ideas = free_trade
+
+            custom_effect_tooltip = l_money_gain_500K
+		    add_to_variable = { money_amount = 5 }
         }
     }
 
@@ -5193,6 +5418,8 @@ focus_tree = {
         cost = 3
         completion_reward = {
             #spirit called *crack*down
+
+            add_ideas = idea_YFC_crackdown
         }
     }
 
@@ -5247,6 +5474,14 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            201 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
             #builds military factories for you #yay
         }
     }

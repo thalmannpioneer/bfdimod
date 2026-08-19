@@ -307,9 +307,15 @@
 
  decision_YFC_stabilization_category: "Stabilization"
  decision_YFC_stabilization_category_desc: "Placeholder aura text here"
- YFC_stabilization_order_military_restructuring: "Order Military Restructuring"
- YFC_stabilization_final_sector_restructures: "§GFinal Sector Restructures§!"
+ YFC_stabilization_order_military_restructuring: "Order §RMilitary Restructuring§!"
+ YFC_stabilization_final_sector_restructures: "§YFinal Sector Restructures§!"
  YFC_stabilization_final_sector_restructures_desc: "With the company now turning into a full state, the reasons to keep the Sector system are fading. One way or another the old, rotten, Yellow Face system will go. We could delay it if we want, or maybe speed up its death..."
+ YFC_stabilization_policing: "Set Up §4Policing§! in §Y[FROM.GetName]§!"
+ YFC_stabilization_housing_state: "Build §GHousing§! in §Y[FROM.GetName]§!"
+ YFC_focus_agriculturization: "Expand §GFarming§! in §Y[FROM.GetName]§!"
+ YFC_stabilization_tenants_rights: "§GImprove§! §GTenants Rights§!"
+ YFC_stabilization_delay_reform: "Delay Reforms"
+ YFC_stabilization_push_reform: "Push Reforms"
 
  decision_CRN_BUN_category: "Building The Bunch"
  decision_CRN_BUN_category_desc: "Despite Yellow Face's claims, there is still a future for the Bunch! We must aid rebel groups to hopefully create a revolt against The Company!"

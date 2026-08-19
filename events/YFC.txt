@@ -2611,7 +2611,6 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 				id = 1984
 			}
 		}
-		add_manpower = 15000
 		set_variable = { var_YFC_merc_pick = 1 }
 		custom_effect_tooltip = l_YFC_mercs_remove
 
@@ -2634,9 +2633,6 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 				id = 1984
 			}
 		}
-		set_technology = {
-			tech_support = 1
-		}
 		set_variable = { var_YFC_merc_pick = 2 }
 		custom_effect_tooltip = l_YFC_mercs_remove
 		mark_focus_tree_layout_dirty = yes
@@ -2657,9 +2653,6 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 				count = 4
 				id = 1984
 			}
-		}
-		set_technology = {
-			gw_artillery = 1
 		}
 		set_variable = { var_YFC_merc_pick = 3 }
 		custom_effect_tooltip = l_YFC_mercs_remove
@@ -3199,6 +3192,13 @@ country_event = { #YFC_focus_march_on_footpathburg
 	option = { 
 		name = YFC_event.68.a
 
+		201 = {
+			damage_building = {
+                type = infrastructure
+                damage = 2
+            }
+		}
+
 		IF = {
 			limit = {has_completed_focus = YFC_focus_mass_firings}
 
@@ -3239,10 +3239,35 @@ country_event = { #YFC_focus_march_on_footpathburg
 					desc = idea_YFC_TopHat_desc
 				}
 			}
-			custom_effect_tooltip = l_money_gain_600K #Stealing YF money
-            add_to_variable = { money_amount = 6 }
+			custom_effect_tooltip = l_YFC_sectors_influence_gone
+			set_variable = { var_idea_YFC_Hammer_influence = 1 }
+			set_variable = { var_idea_YFC_Taser_influence = 1 }
+			set_variable = { var_idea_YFC_Pipe_influence = 1 }
+			set_variable = { var_idea_YFC_TopHat_influence = 1 }
+			set_variable = { var_idea_YFC_Beaker_influence = 1 }		
+			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
 				complete_national_focus = YFC_focus_tophat_clan
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Pipe}
+					remove_ideas = idea_YFC_Defiant_Pipe
+				}
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Hammer}
+					remove_ideas = idea_YFC_Defiant_Hammer
+				}
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Taser}
+					remove_ideas = idea_YFC_Defiant_Taser
+				}
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Top_Hat}
+					remove_ideas = idea_YFC_Defiant_Top_Hat
+				}
+				IF = {
+					limit = {has_idea = idea_YFC_Defiant_Beaker}
+					remove_ideas = idea_YFC_Defiant_Beaker
+				}	
 			}
 		}
 		hidden_effect = {
@@ -3813,6 +3838,125 @@ country_event = { #Pirate 2
 				play_song = "demo_end"
 			}
         }
+	}
+}
+
+country_event = { #YFC_focus_the_nation
+	id = YFC_event.88
+	title = YFC_event.88.t
+	desc = YFC_event.88.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.88.a
+	}
+}
+
+country_event = { #YFC_focus_yoyleton_speech
+	id = YFC_event.89
+	title = YFC_event.89.t
+	desc = YFC_event.89.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.89.a
+		add_stability = 0.2
+		216 = {
+			add_resistance = -35
+			add_compliance = 10
+		}
+	}
+}
+
+country_event = { #YFC_focus_peoniele_conservation
+	id = YFC_event.90
+	title = YFC_event.90.t
+	desc = YFC_event.90.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.90.a
+
+		add_political_power = 35
+	}
+}
+
+country_event = { #YFC_focus_green_energy
+	id = YFC_event.91
+	title = YFC_event.91.t
+	desc = YFC_event.91.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.91.a
+
+		add_war_support = 0.01
+	}
+}
+
+country_event = { #YFC_focus_reformalize_borders
+	id = YFC_event.92
+	title = YFC_event.92.t
+	desc = YFC_event.92.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.92.a
+	}
+}
+
+country_event = { #YFC_focus_meet_with_numismatia
+	id = YFC_event.93
+	title = YFC_event.93.t
+	desc = YFC_event.93.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.93.a
+
+		custom_effect_tooltip = l_money_gain_400K
+		add_to_variable = { money_amount = 4 }
+
+		hidden_effect = {
+			CRN = {subtract_from_variable = { money_amount = 4 }}
+		} 
+	}
+}
+
+country_event = { #YFC_focus_the_democratic_question
+	id = YFC_event.94
+	title = YFC_event.94.t
+	desc = YFC_event.94.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.94.a
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 
