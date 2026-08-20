@@ -602,7 +602,7 @@ decision_BUN_raids_category = {
         fire_only_once = no
         days_remove = 7
         cost = 20
-        days_re_enable = 60
+        days_re_enable = 120
         war_with_on_remove = controller
 
         remove_effect = {
@@ -610,7 +610,7 @@ decision_BUN_raids_category = {
             201 = {
                 damage_building = {
                     type = infrastructure
-                    damage = 1
+                    damage = 1.5
                 }
             }
 
@@ -618,7 +618,7 @@ decision_BUN_raids_category = {
                 limit = {
                     is_ai = yes
                 }
-                add_manpower = 2000
+                add_manpower = 2500
             }
 
             IF = {
@@ -635,14 +635,14 @@ decision_BUN_raids_category = {
                     change_state_after_war = no
                     attacker = {
                         state = 212
-                        num_provinces = 1
+                        num_provinces = 2
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = 0.45
                     }
                     defender = {
                         state = 201
-                        num_provinces = 1
+                        num_provinces = 2
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
                         dig_in_factor = 3
@@ -654,14 +654,14 @@ decision_BUN_raids_category = {
                     change_state_after_war = no
                     attacker = {
                         state = 212
-                        num_provinces = 1
+                        num_provinces = 2
                         on_win = BUN_borderwars.1
                         on_lose = BUN_borderwars.2
                         modifier = var_BUN_raiding_attack_stats
                     }
                     defender = {
                         state = 201
-                        num_provinces = 1
+                        num_provinces = 2
                         on_win = BUN_borderwars.3
                         on_lose = BUN_borderwars.4
                         dig_in_factor = 3

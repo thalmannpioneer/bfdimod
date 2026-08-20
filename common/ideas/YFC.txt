@@ -306,7 +306,7 @@ ideas = {
 		}
 
 		idea_YFC_top_hat_prowess = {
-			picture = SOV_organize_wreckers #Replace later 
+			picture = YFC_top_hat_prowess 
 			modifier = {
 				supply_consumption_factor = 0.25
 				army_org_factor = 0.1
@@ -315,7 +315,7 @@ ideas = {
 		}
 
 		idea_YFC_high_quality_housing = {
-			picture = SOV_organize_wreckers #Replace later 
+			picture = YFC_high_quality_housing 
 			modifier = {
 				monthly_population = 0.25
 				production_speed_infrastructure_factor = 0.1
@@ -324,7 +324,7 @@ ideas = {
 		}
 
 		idea_YFC_clean_skies = {
-			picture = SOV_organize_wreckers #Replace later 
+			picture = YFC_clean_skies
 			modifier = {
 				monthly_population = 0.1
 				resistance_target = -0.1

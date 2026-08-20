@@ -122,8 +122,6 @@ set_variable = {var_YFC_BUN_Anger = 1 } #Useless but needed for killing Neo-Bunc
 
 set_variable = { var_YFC_merc_amount = 4 } #Amount of merc divs YFC gets, increases by 2 every 3 years
 set_variable = { var_YFC_merc_pick = 0 } #Used for YFC raiders side with merc divs
-set_variable = { var_merc_usage_max = 1 } #Used for Top Hat merc selling
-set_variable = { var_merc_usage_current = 0 } #Used for Top Hat merc selling
 set_variable = { var_merc_timer = 180 } #Base merc timer
 
 #TRADE

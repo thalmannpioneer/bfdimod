@@ -210,6 +210,11 @@
  YFC_Trade_food: "§YGathering Food§!"
  YFC_Trade_drugs: "§YCreating Drugs§!"
  YFC_Trade_drugs_upgrade: "§YImprove Drug Creation Facilities§!"
+ YFC_Trade_merc_increase: "§GIncrease§! §YMercenary Deployment§!"
+ YFC_Trade_merc_halt: "§RStop§! §YMercenary Deployment§!"
+
+ other_trade_merc_opt: "Opt into Top Hat's Mercenaries System"
+ other_trade_merc_buy: "Purchase Mercenaries"
 
  decision_YFC_sector_category: "Our Sectors"
  l_decisions_sector_title: "§YOur Sectors§!"
@@ -312,8 +317,8 @@
  YFC_stabilization_final_sector_restructures_desc: "With the company now turning into a full state, the reasons to keep the Sector system are fading. One way or another the old, rotten, Yellow Face system will go. We could delay it if we want, or maybe speed up its death..."
  YFC_stabilization_policing: "Set Up §4Policing§! in §Y[FROM.GetName]§!"
  YFC_stabilization_housing_state: "Build §GHousing§! in §Y[FROM.GetName]§!"
- YFC_focus_agriculturization: "Expand §GFarming§! in §Y[FROM.GetName]§!"
- YFC_stabilization_tenants_rights: "§GImprove§! §GTenants Rights§!"
+ YFC_stabilization_farming_state: "Expand §GFarming§! in §Y[FROM.GetName]§!"
+ YFC_stabilization_tenants_rights: "§GImprove§! §GTenants' Rights§!"
  YFC_stabilization_delay_reform: "Delay Reforms"
  YFC_stabilization_push_reform: "Push Reforms"
 

@@ -1,4 +1,128 @@
 decision_other_trade_category = {
+
+	other_trade_merc_opt = {
+		icon = GFX_decisions_YFC_Trade_drugs_upgrade #Update later!
+
+        visible = {
+            YFC = {has_completed_focus = YFC_focus_new_monetary_avenues}
+        }
+
+        fire_only_once = yes
+        cost = 50
+
+		complete_effect = {
+			set_country_flag = other_trade_allow_merc
+			custom_effect_tooltip = l_YFC_mercs_div
+            division_template = {
+                name = "Top Hat Mercenaries"
+                is_locked = yes
+                template_counter = 3
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+                }
+            }
+		}
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                has_political_power > 300
+                add = 100
+            }
+			modifier = {
+                has_war = yes
+                add = 100
+            }
+        }
+	}
+
+	other_trade_merc_buy = {
+		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+
+		visible = {
+			has_country_flag = other_trade_allow_merc
+		}
+
+		available = {
+			surrender_progress < 0.5
+			custom_trigger_tooltip = {
+                tooltip = l_decisions_YFC_merc_ready
+                YFC = {check_variable = {var_merc_usage_current < var_merc_usage_max}}
+            }
+		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 5 }
+		}
+		custom_cost_text = decisions_cost_money_500k
+
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 180
+
+		complete_effect = {
+			subtract_from_variable = { money_amount = 5 }
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Top Hat Mercenaries\" division_template = \"Top Hat Mercenaries\" start_experience_factor = 0.95"
+					owner = ROOT
+					count = YFC.var_YFC_merc_amount
+				}
+			}
+			hidden_effect = {
+				YFC = {
+					add_to_variable = { money_amount = 2 }
+					add_to_variable = { var_merc_usage_current = 1}
+				}
+			}
+		}
+
+		remove_effect = {
+			delete_units = {
+				division_template = "Top Hat Mercenaries"
+				disband = no
+			}
+			hidden_effect = {
+				YFC = {
+					subtract_from_variable = { var_merc_usage_current = 1}
+				}
+			}
+		}
+
+		cancel_trigger = {
+			surrender_progress > 0.5
+        }
+        cancel_effect = {
+			delete_units = {
+				division_template = "Top Hat Mercenaries"
+				disband = no
+			}
+			hidden_effect = {
+				YFC = {
+					subtract_from_variable = { var_merc_usage_current = 1}
+				}
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50
+				has_war = yes
+				check_variable = {money_amount > 10}
+			}
+			modifier = {
+				add = 50
+				surrender_progress > 0.3
+			}
+		}
+	}
+
 	other_trade_AIUSE_BuyRequest = { #THE FOLLOWING UNDER THIS IS ONLY USED BY THE AI DO NOT ADD TEXT
 		icon = generic_research
 

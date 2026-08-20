@@ -116,9 +116,8 @@ decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
 		NOT = {tag = YFC}	
 	}
 	available = {
-		YFC = {has_completed_focus = YFC_focus_open_the_market}
 		country_exists = YFC
-		has_country_flag = YFC_trade_allow_other
+		hidden_trigger = {has_country_flag = YFC_trade_allow_other}
 		NOT = {
 			has_war_with = YFC
 			has_idea = undisturbed_isolation
@@ -131,7 +130,7 @@ decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
 	visible = { 
 		YFC = {has_completed_focus = YFC_focus_open_the_market}
 		country_exists = YFC
-		has_country_flag = YFC_trade_allow_other
+		hidden_trigger = {has_country_flag = YFC_trade_allow_other}
 		NOT = {
 			has_war_with = YFC
 			has_idea = undisturbed_isolation

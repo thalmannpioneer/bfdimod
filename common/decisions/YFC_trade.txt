@@ -62,6 +62,7 @@ decision_YFC_trade_category = {
         visible = {
             has_completed_focus = YFC_focus_new_monetary_avenues
             check_variable = {var_merc_timer > 60}
+            check_variable = {var_YFC_merc_pick = 0}
         }
 
         fire_only_once = no
@@ -70,6 +71,7 @@ decision_YFC_trade_category = {
         days_re_enable = 60
 
         remove_effect = {
+            custom_effect_tooltip = l_YFC_mercs_increase_deployment
             add_to_variable = {var_merc_usage_max = 1}
             subtract_from_variable = {var_merc_timer = -20}
         }
@@ -84,6 +86,39 @@ decision_YFC_trade_category = {
             modifier = {
                 has_war = no
                 check_variable = {var_merc_usage_max < 4}
+                add = 100
+            }
+        }
+    }
+
+    YFC_Trade_merc_halt = {
+        icon = GFX_decisions_YFC_Trade_drugs_upgrade #Update later!
+
+        visible = {
+            has_completed_focus = YFC_focus_new_monetary_avenues
+            check_variable = {var_merc_usage_max > 1}
+            check_variable = {var_YFC_merc_pick = 0}
+        }
+
+        fire_only_once = no
+        cost = 5
+        days_remove = 200
+        days_re_enable = 5
+
+		modifier = {
+			army_org_factor = -0.1
+		}
+
+        remove_effect = {
+            custom_effect_tooltip = l_YFC_mercs_halt_deployment
+            set_variable = {var_merc_usage_max = 1}
+            set_variable = {var_merc_timer = 180}
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                has_war = yes
                 add = 100
             }
         }

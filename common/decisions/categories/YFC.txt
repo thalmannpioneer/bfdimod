@@ -97,7 +97,7 @@ decision_YFC_stabilization_category = {
         }
     }
     priority = 10
-    icon = GFX_decision_category_YFC_raids #Update later
+    icon = GFX_decision_YFC_stabilization_category 
     visible_when_empty = no
-    #icon = GFX_decision_category_break_bunch 
+    #picture = GFX_decision_cat_YFC_BUN 
 }

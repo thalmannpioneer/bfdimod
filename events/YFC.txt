@@ -3960,6 +3960,54 @@ country_event = { #YFC_focus_the_democratic_question
 	}
 }
 
+country_event = { #YFC_focus_city_council_compromise ONE
+	id = YFC_event.95
+	title = YFC_event.95.t
+	desc = YFC_event.95.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.95.a
+		custom_effect_tooltip = l_YFC_city_gov
+		hidden_effect = {
+			remove_dynamic_modifier = {modifier = idea_YFC_anarchic_lands}
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = -0.45 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.75 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_construction = 0.62 }
+			add_dynamic_modifier = {modifier = idea_YFC_city_government}
+
+			country_event = {
+                id = YFC_event.96
+                hours = 14
+				days = 25
+                random_hours = 48
+            }
+		}
+	}
+}
+
+country_event = { #YFC_focus_city_council_compromise TWO
+	id = YFC_event.96
+	title = YFC_event.96.t
+	desc = YFC_event.96.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.96.a
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################

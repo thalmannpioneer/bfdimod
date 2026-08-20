@@ -789,6 +789,31 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_drugs_upgrade.dds"
 	}	
 
+	spriteType = {
+		name = "GFX_decision_YFC_stabilization_category"
+		textureFile = "gfx/interface/decisions/decision_YFC_stabilization_category.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mission_YFC_stabilization_final_sector_restructures"
+		textureFile = "gfx/interface/decisions/GFX_mission_YFC_stabilization_final_sector_restructures.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_order_military_restructuring"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_order_military_restructuring.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_delay_reform"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_delay_reform.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_push_reform"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_push_reform.dds"
+	}	
+
 	#BUN
 
 	spriteType = {

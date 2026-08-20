@@ -1,6 +1,6 @@
 decision_YFC_stabilization_category = {
 	YFC_stabilization_order_military_restructuring = { 
-		icon = GFX_decisions_YFC_raid_request_donations
+		icon = GFX_decisions_YFC_stabilization_order_military_restructuring
       
 		fire_only_once = yes
 		cost = 75
@@ -28,13 +28,15 @@ decision_YFC_stabilization_category = {
 
 	YFC_stabilization_final_sector_restructures = { 
 		activation = {
-			NOT = {has_country_flag = l_YFC_sectors_remove}
-			has_completed_focus = YFC_focus_tophat_clan
+			AND = {
+				NOT = {has_country_flag = YFC_Sectors_done}
+				has_completed_focus = YFC_focus_tophat_clan
+			}
 		}
 		available = {
 			always = no
 		}
-		icon = GFX_mission_YFC_eastern_game  #Update later!!!
+		icon = GFX_mission_YFC_stabilization_final_sector_restructures 
 		is_good = yes
 		days_mission_timeout = 300 
 		timeout_effect = {
@@ -46,7 +48,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_delay_reform = { 
-		icon = GFX_decisions_YFC_raid_request_donations
+		icon = GFX_decisions_YFC_stabilization_delay_reform
       
 		fire_only_once = no
 		cost = 30
@@ -68,7 +70,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_push_reform = { 
-		icon = GFX_decisions_YFC_raid_request_donations
+		icon = GFX_decisions_YFC_stabilization_push_reform
       
 		fire_only_once = no
 		cost = 30
@@ -81,7 +83,7 @@ decision_YFC_stabilization_category = {
 		}
 
 		remove_effect = {
-			add_days_mission_timeout = {mission = YFC_stabilization_final_sector_restructures days = -75}
+			add_days_mission_timeout = {mission = YFC_stabilization_final_sector_restructures days = -60}
 		}
 
 		ai_will_do = {

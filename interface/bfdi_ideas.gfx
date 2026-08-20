@@ -766,6 +766,22 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_at_the_finish_line.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_city_government
+		texturefile = gfx/interface/ideas/idea_YFC_city_government.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_top_hat_prowess
+		texturefile = gfx/interface/ideas/idea_YFC_top_hat_prowess.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_high_quality_housing
+		texturefile = gfx/interface/ideas/idea_YFC_high_quality_housing.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_clean_skies
+		texturefile = gfx/interface/ideas/idea_YFC_clean_skies.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_UDC
 		texturefile = gfx/interface/ideas/idea_YFC_UDC.dds
 	}

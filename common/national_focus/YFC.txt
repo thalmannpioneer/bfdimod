@@ -3411,7 +3411,6 @@ focus_tree = {
                         set_country_flag = right_path
                     }
                 }
-                #Also later me kickstart the sector fighting event chain
             }
         }
     }
@@ -4789,6 +4788,8 @@ focus_tree = {
 			}
 
             hidden_effect = {
+                set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
+                set_variable = {var_idea_YFC_anarchic_lands_node = 0}
                 news_event = {
                     id = bfdinews.43
                     days = 1
@@ -4838,7 +4839,7 @@ focus_tree = {
         cost = 3
         completion_reward = {
             custom_effect_tooltip = l_YFC_our_land
-            add_to_variable = { var_idea_YFC_anarchic_lands_repair = 4.25 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = -4.25 }
             add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.25 }
             add_to_variable = { var_idea_YFC_anarchic_lands_construction = 4.25 }
 
@@ -4908,7 +4909,7 @@ focus_tree = {
             #when tenants rights is done, you gain a spirit called "high quality housing," which gives you more monthly population
 
             unlock_decision_tooltip = YFC_stabilization_housing_state
-            set_variable = {var_YFC_housing_progress}
+            set_variable = {var_YFC_housing_progress = 0}
         }
     }
 
@@ -4934,7 +4935,7 @@ focus_tree = {
 
             add_stability = 0.05
             custom_effect_tooltip = l_YFC_city_planners
-            add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.2 }
+            add_to_variable = { var_idea_YFC_anarchic_lands_repair = -0.2 }
             add_to_variable = { var_idea_YFC_anarchic_lands_construction = 0.2 }
             subtract_from_variable = {money_amount = 2}
         }
@@ -5166,17 +5167,19 @@ focus_tree = {
         cost = 3
         completion_reward = {
             201 = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 3
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 3
                     instant_build = yes
                 }
             }
-
-            #lets you build civs (hidden spirit that makes them build 50% faster until anarchic lands is fully removed), sets economy to limited exports
-
-            #ZDubbz might just add a modifer to anarchic lands then that
+            custom_effect_tooltip = l_money_gain_200K
+		    add_to_variable = { money_amount = 2 }
+            IF = {
+                limit = {has_idea = closed_economy}
+                add_ideas = limited_exports
+            }
         }
     }
 
@@ -5193,6 +5196,9 @@ focus_tree = {
         completion_reward = {
             remove_ideas = idea_YFC_no_more_advertisements_foundation
             add_political_power = 20
+
+            custom_effect_tooltip = l_money_gain_100K
+		    add_to_variable = { money_amount = 1 }
 
             #removes "the company with a state" spirit, gives 15 political power
         }
@@ -5298,7 +5304,6 @@ focus_tree = {
                 original_tag_to_check = BUN
                 add_opinion_modifier = { target = YFC modifier = large_decrease }
             }
-
             add_war_support = 0.05
         }
     }
@@ -5370,22 +5375,27 @@ focus_tree = {
         y = 1
         icon = GFX_focus_YFC_new_monetary_avenues
 
+        available = {
+            has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+        }
+
         prerequisite = { focus = YFC_focus_reopen_markets }
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
 
         cost = 3
         completion_reward = {
             #lets you sell militias (mp, set up like food), mercenaries (other nations get decisions that go back to you), and spies (spirit that increases spy amnt by 1, immediately creates a spy agency for purchasing nation bc the ai will probably forget to make an actual spy agency)
-            #on mercenaries:
-            #                i feel like, the nation should, in their market decisions category, get a new decision that says like "opt in to top hat's mercenary system" or something
-            #                this costs 100k and gives top hat 100k (with an event saying x nation bought in to mercenary sysyem)
-            #                it gives you the purchasing nation normal mercenary decisions that yfc has typically
-            #                they cost the same, but only half goes back to the thc
-            #                so unnamed brotherhood would cost 1m for buying nation, and give thc 500k
-            #                dm me your thoughts on disc im never looking at this focus tree code again after today
-
-
-            #This will be fun to code...
+            custom_effect_tooltip = l_YFC_mercs_deployment
+            IF = {
+                limit = {check_variable = {var_YFC_merc_pick = 0}}
+                set_variable = { var_merc_usage_max = 1 } #Used for Top Hat merc selling get_var var_merc_usage_current
+                set_variable = { var_merc_usage_current = 0 } #Used for Top Hat merc sellin
+                unlock_decision_tooltip = YFC_Trade_merc_increase
+            }
+            ELSE = {
+                set_variable = { var_merc_usage_max = 3 }
+                set_variable = { var_merc_usage_current = 0 }
+            }
         }
     }
 
@@ -5505,6 +5515,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_hire_city_planners }
         prerequisite = { focus = YFC_focus_the_democratic_question }
+        prerequisite = { focus = YFC_focus_yoyleton_speech }
 
         cost = 3
         completion_reward = {
@@ -5513,6 +5524,12 @@ focus_tree = {
             #shes not hating on top hat or anything, basically js telling him to be careful
             #gives stability and political power
             #replaces anarchic lands with "city-government," which gives like 5% stability, 0.25 pp gain, +7% construction speed, but keeps economy and trade laws unchangeable (are they fully unchangeable? they should be)
+
+            country_event = {
+                id = YFC_event.95
+                hours = 1
+                random_hours = 2
+            }
 
             #ZDubbz I mean they can be changed if the play is to wait for 900 PP...
         }
