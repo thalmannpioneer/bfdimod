@@ -12,9 +12,18 @@ ideas = {
 		idea_FFT_freedom_or_death = {
 			picture = FFT_freedom_or_death
 			modifier = {
-				surrender_limit = 0.08 #Minor Balance since FFT has commanders now
+				surrender_limit = 0.08
 				army_core_defence_factor = 0.1
 				army_morale_factor = 0.1
+				war_support_factor = 0.5
+			}
+		}
+		idea_FFT_freedom_or_death_player = { #Used if AI is fighting a GGR player (remove later)
+			picture = FFT_freedom_or_death
+			modifier = {
+				surrender_limit = 0.15
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.25
 				war_support_factor = 0.5
 			}
 		}

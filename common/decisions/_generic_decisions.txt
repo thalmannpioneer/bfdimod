@@ -256,7 +256,7 @@
 		custom_cost_text = decisions_cost_money_500k
 
 		fire_only_once = no
-		days_remove = 180
+		days_remove = YFC.var_merc_timer
 		days_re_enable = 90
 
 		complete_effect = {
@@ -339,7 +339,7 @@
 		custom_cost_text = decisions_cost_money_1m
 
 		fire_only_once = no
-		days_remove = 180
+		days_remove = YFC.var_merc_timer
 		days_re_enable = 90
 
 		complete_effect = {
@@ -404,7 +404,7 @@
 		custom_cost_text = decisions_cost_money_1m
 
 		fire_only_once = no
-		days_remove = 180
+		days_remove = YFC.var_merc_timer
 		days_re_enable = 90
 
 		complete_effect = {

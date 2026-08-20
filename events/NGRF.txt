@@ -252,6 +252,21 @@ country_event = {
         name = WGF_event.14.a
         hidden_effect = {
             news_event = bfdinews.36
+
+            IF = { #Fuck you player (Also remove when GMD gets stuff)
+                limit = {
+                    is_ai = no
+                    GMD = {is_ai = yes}
+                }
+                GMD = {
+                    add_manpower = 25000
+                    army_experience = 25
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment
+                        amount = 2500
+                    }
+                }
+            }
         }
     }
 }

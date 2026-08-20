@@ -87,15 +87,24 @@ GPR_fall_back_furnace = { #If we have lost furnace pull back as we can't hold wi
 		has_war = yes
         NOT = {controls_state = 203}
         NOT = {has_contested_owner = 193}
+        controls_province = 10982
+        controls_province = 1392
+        controls_province = 2950
+        controls_province = 6162
+        controls_province = 4691
+        controls_province = 2436
+        controls_province = 5901
+        controls_province = 1646
+
         enemies_strength_ratio > 0.5
 	}
 	abort_when_not_enabled = yes
 
     ai_strategy = {
         type = put_unit_buffers
-        ratio = 5
+        ratio = 0.99
         states = {193}
-        subtract_fronts_from_need = yes
+        subtract_fronts_from_need = no
     }
     ai_strategy = {
 		type = build_army

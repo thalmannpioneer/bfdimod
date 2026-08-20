@@ -2118,7 +2118,10 @@ country_event = {
         }
         hidden_effect = {
             IF = { #Fuck you player (Also remove when GPR gets stuff)
-                limit = {is_ai = no}
+                limit = {
+                    is_ai = no
+                    GPR = {is_ai = yes}
+                }
                 GPR = {
                     add_offsite_building = { type = arms_factory level = 2 }
                     add_manpower = 20000

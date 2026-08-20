@@ -1191,7 +1191,19 @@ focus_tree = {
             }
 			country_event = GGR_event.12
 			hidden_effect = {
-				FFT = { add_ideas = idea_FFT_freedom_or_death }
+				IF = { #Fuck you player (Also remove when FFT gets stuff)
+					limit = {
+						is_ai = no
+						FFT = {is_ai = yes}
+					}
+					FFT = {
+						add_ideas = idea_FFT_freedom_or_death_player
+						add_manpower = 10000
+					}
+				}
+				ELSE = {
+					FFT = { add_ideas = idea_FFT_freedom_or_death }
+				}
 				add_threat = 2
 				country_event = {
 					id = GGR_event.13
