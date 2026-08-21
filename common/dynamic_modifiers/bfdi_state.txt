@@ -29,6 +29,20 @@ BUN_autonomous_state = {
     state_production_speed_buildings_factor = -0.1
 }
 
+YFC_autonomous_state = {
+    enable = { always = yes }
+
+    remove_trigger = {
+        country_exists = YFC
+    }
+
+    icon = GFX_decision_generic_decision
+
+    local_factories = -0.2
+    local_manpower = -0.2
+    state_resources_factor = -0.2
+}
+
 BUN_revolt_support = {
     enable = { always = yes }
 

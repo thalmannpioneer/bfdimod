@@ -92,7 +92,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_policing = { 
-		icon = GFX_decisions_YFC_BUN_infrastructure #Update later!!!
+		icon = GFX_decisions_YFC_stabilization_policing
 		state_target = yes
         targets = { 201 215 196 216 214 }
         on_map_mode = map_only
@@ -129,7 +129,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_housing_state = { 
-		icon = GFX_decisions_YFC_BUN_infrastructure #Update later!!!
+		icon = GFX_decisions_YFC_stabilization_housing_state
 		state_target = yes
         targets = { 201 215 196 216 }
         on_map_mode = map_only
@@ -167,7 +167,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_farming_state = { 
-		icon = GFX_decisions_YFC_BUN_infrastructure #Update later!!!
+		icon = GFX_decisions_YFC_stabilization_farming_state
 		state_target = yes
         targets = { 201 215 196 216 214 }
         on_map_mode = map_only
@@ -198,7 +198,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_tenants_rights = { 
-		icon = GFX_decisions_YFC_raid_request_donations #Update later!!
+		icon = GFX_decisions_YFC_stabilization_tenants_rights
       
 		fire_only_once = yes
 		custom_cost_trigger = {
@@ -224,6 +224,103 @@ decision_YFC_stabilization_category = {
 			modifier = {
 				add = 100
 				check_variable = {money_amount > 10}
+			}
+		}
+	}
+
+	YFC_stabilization_research_bicycle_infantry = { 
+		icon = GFX_decisions_YFC_stabilization_tenants_rights #Update later!
+      
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = {money_amount > 5}
+		}
+		custom_cost_text = decisions_cost_money_500k
+		days_remove = 180
+
+		visible = {
+			has_completed_focus = YFC_focus_beakers_idea
+		}
+
+		complete_effect = {
+			hidden_effect = {subtract_from_variable = {money_amount = 5}}
+		}
+
+		remove_effect = {
+			set_technology = { bicycle_infantry = 1 }
+
+			hidden_effect = {
+				division_template = {
+					name = "Fast Division"
+					regiments = {
+						bicycle_battalion = { x = 0 y = 0 }
+						bicycle_battalion = { x = 0 y = 1 }
+						bicycle_battalion = { x = 1 y = 0 }
+						bicycle_battalion = { x = 1 y = 1 }
+					}
+				}
+				201 = { #Maybe move later
+					create_unit = {
+						division = "name = \"Fast Division\" division_template = \"Fast Division\" start_experience_factor = 0.3"
+						owner = YFC
+						count = 1
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				check_variable = {money_amount > 15}
+			}
+		}
+	}
+
+	YFC_stabilization_research_aircraft = { 
+		icon = GFX_decisions_YFC_stabilization_tenants_rights #Update later!
+      
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = {money_amount > 10}
+		}
+		custom_cost_text = decisions_cost_money_1m
+		days_remove = 400
+
+		visible = {
+			has_completed_focus = YFC_focus_beakers_idea
+		}
+
+		complete_effect = {
+			hidden_effect = {subtract_from_variable = {money_amount = 10}}
+		}
+
+		remove_effect = {
+			201 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = air_equipment
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				check_variable = {money_amount > 15}
 			}
 		}
 	}

@@ -4790,10 +4790,18 @@ focus_tree = {
             hidden_effect = {
                 set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
                 set_variable = {var_idea_YFC_anarchic_lands_node = 0}
+                BUN = {add_manpower = 15000}
                 news_event = {
                     id = bfdinews.43
                     days = 1
                     random_hours = 36
+                }
+                country_event = {
+                    id = YFC_event.100
+                    days = 680 #She would already be in school for about 30ish days
+                    hours = 6
+                    random_hours = 48
+                    random_days = 5
                 }
             }
         }
@@ -5500,6 +5508,12 @@ focus_tree = {
             #perhaps she starts out with helicopter research? eventually (out of demo) this will lead to the airship
 
             #ZDubbz GTR and CRN will be building aircraft I feel we need something new then this, maybe the biycles or inf tech
+
+            country_event = {
+                id = YFC_event.97
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5549,6 +5563,20 @@ focus_tree = {
             #cores navgornyv (if you have it), increases stability
 
             #ZDubbz They already have cores... uh maybe something for yoyleton
+            add_stability = 0.05
+            216 = {
+                add_dynamic_modifier = {
+                    modifier = YFC_autonomous_state
+                }
+            }
+            IF = {
+                limit = { controls_state = 214 }
+                214 = {
+                    add_dynamic_modifier = {
+                        modifier = YFC_autonomous_state
+                    }
+                }
+            }
         }
     }
 
@@ -5568,7 +5596,11 @@ focus_tree = {
             #basically foreshadowing for the out of demo stuff
             #you should probably make this one do something else but im not really sure what it should do
 
-            #ZDubbz +1% democratic
+            country_event = {
+                id = YFC_event.98
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5584,6 +5616,28 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            add_ideas = civilian_economy
+            215 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            196 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            216 = { 
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
             #moves you to civ economy
             #gives spirit called "the ruralite" which gives lots of stability, and some other stuff that i cant think of right now
 
@@ -5603,6 +5657,8 @@ focus_tree = {
 
         cost = 3
         completion_reward = {
+            add_ideas = limited_conscription
+            add_manpower = 10000
             #moves you to part mobilization, gives you a spirit called "city crafting" which lowers stability but gives you construction speed for civs, infrastructure, mils, and railroads (balanced amnts for each)
             #spirit also gives you political power and probably some other bullshit idk i hate spirits
         }
@@ -5615,9 +5671,30 @@ focus_tree = {
         y = 2
         icon = GFX_focus_YFC_beakers_return
 
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_YFC_beaker_ready
+                has_country_flag = YFC_Beaker_stuck_in_school
+            }
+            custom_trigger_tooltip = {
+                tooltip = l_money_cost_100K
+                check_variable = { money_amount > 1 }
+            }
+        }
+
         prerequisite = { focus = YFC_focus_city_council_compromise }
         cost = 3
         completion_reward = {
+            add_stability = 0.05
+            subtract_from_variable = {money_amount = 1}
+
+            country_event = {
+                id = YFC_event.98
+                hours = 5
+                days = 2
+                random_hours = 48
+            }
+
             #when do you complete "envy" focus? take that time, add 2 years, and then round up to may/december 24th/17th, and on that day, you will recieve an event saying that beaker has earned his degree, and is ready to return to the thc
             #DO NOT round this date down after july btw. ex, if you complete envy in june, round to may, but if you complete it in august, round to december
             #the event will say that shes having complications getting back home, and needs monetary help returning
@@ -5650,6 +5727,12 @@ focus_tree = {
             #hammer event, nothing more
 
             #ZDubbz does it give anything?
+
+            country_event = {
+                id = YFC_event.99
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5668,6 +5751,12 @@ focus_tree = {
             #event with all the sectorials, just being themselves. theyre so happy yay!
 
             #ZDubbz anything else or is that it?
+
+            country_event = {
+                id = YFC_event.100
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 

@@ -1191,12 +1191,44 @@
  YFC_event.92.a: "" 
 
  YFC_event.93.t: "YFC_focus_meet_with_numismatia" 
- YFC_event.93.desc: "text text bla bla" #ZDubbz, think it would be cool if this is written as if Bunch wrote it to YFC 
+ YFC_event.93.desc: "text text bla bla" #ZDubbz
  YFC_event.93.a: ""
 
  YFC_event.94.t: "YFC_focus_the_democratic_question" 
- YFC_event.94.desc: "text text bla bla" #ZDubbz, think it would be cool if this is written as if Bunch wrote it to YFC 
+ YFC_event.94.desc: "text text bla bla" #ZDubbz
  YFC_event.94.a: ""
+
+ YFC_event.95.t: "YFC_focus_city_council_compromise ONE" 
+ YFC_event.95.desc: "text text bla bla" #ZDubbz
+ YFC_event.95.a: ""
+
+ YFC_event.96.t: "YFC_focus_city_council_compromise TWO" 
+ YFC_event.96.desc: "text text bla bla" #ZDubbz
+ YFC_event.96.a: ""
+
+ YFC_event.97.t: "YFC_focus_beakers_idea" 
+ YFC_event.97.desc: "text text bla bla" #ZDubbz since Thal had fun making bicycle infantry, you need to have Beaker (or someone else) bring up the idea of using bicycle infantry over cavalry and Top Hat agreeing to it. I will still keep the air tech though (but for heavy fighters)
+ YFC_event.97.a: ""
+
+ YFC_event.98.t: "YFC_focus_the_numis_ideology" 
+ YFC_event.98.desc: "text text bla bla" #ZDubbz
+ YFC_event.98.a: ""
+
+ YFC_event.99.t: "YFC_focus_a_stable_society" 
+ YFC_event.99.desc: "text text bla bla" #ZDubbz
+ YFC_event.99.a: ""
+
+ YFC_event.100.t: "YFC_focus_to_the_future" 
+ YFC_event.100.desc: "text text bla bla" #ZDubbz
+ YFC_event.100.a: ""
+
+ YFC_event.101.t: "Beaker is done with school" 
+ YFC_event.101.desc: "text text bla bla" #ZDubbz
+ YFC_event.101.a: ""
+
+ YFC_event.102.t: "YFC_focus_beakers_return" 
+ YFC_event.102.desc: "text text bla bla" #ZDubbz
+ YFC_event.102.a: ""
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."

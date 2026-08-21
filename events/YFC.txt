@@ -2246,7 +2246,7 @@ country_event = { #Eastern End.
 		if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
-			set_variable = { var_demo_end = 11 } #Update later
+			set_variable = { var_demo_end = 11 }
 			hidden_effect = {
 				play_song = "demo_end"
 			}
@@ -4005,6 +4005,123 @@ country_event = { #YFC_focus_city_council_compromise TWO
 			ideology = democratic
 			popularity = 0.05
 		}
+	}
+}
+
+country_event = { #YFC_focus_beakers_idea
+	id = YFC_event.97
+	title = YFC_event.97.t
+	desc = YFC_event.97.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.97.a
+
+		unlock_decision_tooltip = YFC_stabilization_research_bicycle_infantry
+		unlock_decision_tooltip = YFC_stabilization_research_aircraft
+
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = cat_heavy_fighter
+		}
+	}
+}
+
+country_event = { #YFC_focus_the_numis_ideology
+	id = YFC_event.98
+	title = YFC_event.98.t
+	desc = YFC_event.98.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.98.a
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+
+country_event = { #YFC_focus_a_stable_society
+	id = YFC_event.99
+	title = YFC_event.99.t
+	desc = YFC_event.99.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.99.a
+
+		add_political_power = 10
+	}
+}
+
+country_event = { #YFC_focus_to_the_future
+	id = YFC_event.100
+	title = YFC_event.100.t
+	desc = YFC_event.100.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.100.a
+
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
+		if = {
+            limit = { is_ai = no }
+            set_global_flag = demo_ended
+			set_variable = { var_demo_end = 13 }
+			hidden_effect = {
+				play_song = "demo_end"
+			}
+        }
+	}
+}
+
+country_event = { #Beaker is done with school
+	id = YFC_event.101
+	title = YFC_event.101.t
+	desc = YFC_event.101.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.101.a
+
+		custom_effect_tooltip = l_YFC_sectors_beaker_school_stuck
+		set_country_flag = YFC_Beaker_stuck_in_school
+	}
+}
+
+country_event = { #YFC_focus_beakers_return
+	id = YFC_event.102
+	title = YFC_event.102.t
+	desc = YFC_event.102.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.102.a
+
+		custom_effect_tooltip = l_YFC_sectors_beaker_back
 	}
 }
 

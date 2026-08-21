@@ -135,6 +135,8 @@
  l_YFC_sectors_influence_gone: "§GEvery Sectors' Influence is now set to 1, permanently.§!"
  l_YFC_sectors_remove: "§RThe Sectors will be fully removed.§!"
  l_YFC_sectors_remove_blocky: "§YBlocky will sadly go fully back to Bunch, but not without a§! §Gparting gift:§!"
+ l_YFC_sectors_beaker_school_stuck: "§YBeaker is waiting for a way back...§!"
+ l_YFC_sectors_beaker_back: "§GBeaker is now back!§!"
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
  l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"

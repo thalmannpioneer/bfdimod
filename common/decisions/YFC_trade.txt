@@ -57,7 +57,7 @@ decision_YFC_trade_category = {
     }
 
     YFC_Trade_merc_increase = {
-        icon = GFX_decisions_YFC_Trade_drugs_upgrade #Update later!
+        icon = GFX_decisions_YFC_Trade_merc_increase 
 
         visible = {
             has_completed_focus = YFC_focus_new_monetary_avenues
@@ -92,7 +92,7 @@ decision_YFC_trade_category = {
     }
 
     YFC_Trade_merc_halt = {
-        icon = GFX_decisions_YFC_Trade_drugs_upgrade #Update later!
+        icon = GFX_decisions_YFC_Trade_merc_halt 
 
         visible = {
             has_completed_focus = YFC_focus_new_monetary_avenues
