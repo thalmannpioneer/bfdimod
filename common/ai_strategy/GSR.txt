@@ -47,6 +47,10 @@ GSR_civil_war = {
 		id = infantry
 		value = 1000
 	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10
+	}
 }
 
 

@@ -3610,13 +3610,13 @@ focus_tree = {
                     country_event = {
                         id = YFC_event.9
                         days = 1
-                        random_days = 30
+                        random_days = 20
                         random_hours = 24
                     }
                 }
                 country_event = {
                     id = YFC_event.54
-                    days = 35
+                    days = 25
                     random_hours = 24
                 }
             }
@@ -4787,17 +4787,24 @@ focus_tree = {
 				}
 			}
 
+			set_variable = { var_idea_YFC_Beaker_cost = 0 }
+			set_variable = { var_idea_YFC_sectors_Beaker_research = 0 }
+ 			set_variable = { var_idea_YFC_sectors_Beaker_experience = 0 }
+			set_variable = { var_idea_YFC_Beaker_level = 0 }
+			clr_country_flag = YFC_Allow_Beaker
+
             hidden_effect = {
                 set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
                 set_variable = {var_idea_YFC_anarchic_lands_node = 0}
                 BUN = {add_manpower = 15000}
+                add_threat = 1
                 news_event = {
                     id = bfdinews.43
                     days = 1
                     random_hours = 36
                 }
                 country_event = {
-                    id = YFC_event.100
+                    id = YFC_event.101
                     days = 680 #She would already be in school for about 30ish days
                     hours = 6
                     random_hours = 48
@@ -4818,9 +4825,9 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_tophat_clan }
 
-        cost = 3
+        cost = 5
         completion_reward = {
-            add_stability = 0.05
+            add_stability = 0.1
 
             country_event = {
                 id = YFC_event.88
@@ -4864,7 +4871,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_nation }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #gives you map decisions that give you stability
             #for now, theres only "set up policing" for each state, and then, when youve set up policing in all states
@@ -4893,10 +4900,10 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_nation }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             subtract_from_variable = {money_amount = 5}
-            add_stability = 0.1
+            add_stability = 0.15
         }
     }
 
@@ -4910,7 +4917,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_renters_relief }
         prerequisite = { focus = YFC_focus_instate_stabilization }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #adds new decision to the stabilization category, that lets you build housing in your states, costs money
             #when all states have the housing, one final (expensive) decision called tenants rights
@@ -4937,11 +4944,11 @@ focus_tree = {
             }
         }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #gives stability, costs money, changes anarchic laws' construction speed thing to -20%
 
-            add_stability = 0.05
+            add_stability = 0.1
             custom_effect_tooltip = l_YFC_city_planners
             add_to_variable = { var_idea_YFC_anarchic_lands_repair = -0.2 }
             add_to_variable = { var_idea_YFC_anarchic_lands_construction = 0.2 }
@@ -4959,7 +4966,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_instate_stabilization }
         prerequisite = { focus = YFC_focus_repossess_our_land }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #top hat gives a speech in yoyleton, gives stability, greatly lowers resistance in yoyleton
 
@@ -4990,7 +4997,7 @@ focus_tree = {
             }
         }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #gives big stability (biggest in this part of tree), costs money
             #makes you produce 150 food per month instead of just 100
@@ -4998,7 +5005,7 @@ focus_tree = {
 
             #ZDubbz since I coded food's timer to be based off of stability now (50% is about 60 days) I may do this or not
 
-            add_stability = 0.15
+            add_stability = 0.2
             subtract_from_variable = {money_amount = 6}
             unlock_decision_tooltip = YFC_stabilization_farming_state
         }
@@ -5013,7 +5020,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_instate_stabilization }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #a letter to top hat telling him to conserve peoniele's beauty, gives stability
 
@@ -5044,7 +5051,7 @@ focus_tree = {
             }
         }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #cores yoyleton, gives the same effects as "expand northern trade" in to arms for capital
 
@@ -5090,7 +5097,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_repossess_our_land }
         #should also require city councils, but it makes the tree look ugly if i add it here
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #gives stability, adds a spirit called "clean skies" which quells resistence, adds a bit of monthly population
             # increases numis, ggrr south, greeny plains republic, & gb's opinion of you (or anprim if they are around)
@@ -5129,7 +5136,7 @@ focus_tree = {
                 }
             }
 
-            add_stability = 0.05
+            add_stability = 0.1
             add_ideas = idea_YFC_clean_skies
 
             hidden_effect = {
@@ -5154,12 +5161,12 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_tophat_clan }
 
-        cost = 3
+        cost = 5
         completion_reward = {
             #this branch would mainly be concerned with geopolitics and state organization
             #this focus gives 50 political power and an event
 
-            add_political_power = 50
+            add_political_power = 75
         }
     }
 
@@ -5172,13 +5179,22 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_state }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             201 = {
-                add_extra_state_shared_building_slots = 3
+                add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = industrial_complex
-                    level = 3
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            random_core_state = {
+                prioritize = { 196 215 216 214 }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
                     instant_build = yes
                 }
             }
@@ -5200,13 +5216,13 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_state }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             remove_ideas = idea_YFC_no_more_advertisements_foundation
             add_political_power = 20
 
-            custom_effect_tooltip = l_money_gain_100K
-		    add_to_variable = { money_amount = 1 }
+            custom_effect_tooltip = l_money_gain_200K
+		    add_to_variable = { money_amount = 2 }
 
             #removes "the company with a state" spirit, gives 15 political power
         }
@@ -5221,7 +5237,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_the_state }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             add_political_power = 75
             add_war_support = 0.05
@@ -5232,8 +5248,13 @@ focus_tree = {
                 country_event = {
                     id = YFC_event.92
                     hours = 12
-                    days = 2
+                    days = 3
                     random_hours = 48
+                }
+                add_opinion_modifier = { target = BUN modifier = large_decrease }
+                every_country_with_original_tag = {
+                    original_tag_to_check = BUN
+                    add_opinion_modifier = { target = YFC modifier = large_decrease }
                 }
             }
         }
@@ -5248,7 +5269,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_reformalize_borders }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #event, positive opinions from and to numismatia
             #hidden, in 3 months numismatia will send you 200k to help you industrialize (done through event)
@@ -5282,7 +5303,7 @@ focus_tree = {
         icon = GFX_focus_YFC_the_democratic_question
 
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
-        cost = 3
+        cost = 4
         completion_reward = {
             #event from top hat to the other sectors, saying he wants to implement democratic institutions, but believes that the yfc still lingers (hes just paranoid abt losing power lmao)
 
@@ -5303,7 +5324,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_reformalize_borders }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #heavily decreases raider opinion of you, even more than it already (shouldve) decreased
 
@@ -5329,8 +5350,10 @@ focus_tree = {
             focus = YFC_focus_disavow_raiders
         }
 
-        cost = 3
+        cost = 4
         completion_reward = {
+            custom_effect_tooltip = l_money_gain_200K
+		    add_to_variable = { money_amount = 2 }
             add_ideas = export_focus
             hidden_effect = {
                 every_other_country = {
@@ -5366,13 +5389,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_reopen_markets }
         prerequisite = { focus = YFC_focus_kickstart_economy }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #moves you up to free trade yay!
             add_ideas = free_trade
 
-            custom_effect_tooltip = l_money_gain_500K
-		    add_to_variable = { money_amount = 5 }
+            custom_effect_tooltip = l_money_gain_600K
+		    add_to_variable = { money_amount = 6 }
         }
     }
 
@@ -5390,7 +5413,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_reopen_markets }
         prerequisite = { focus = YFC_focus_meet_with_numismatia }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #lets you sell militias (mp, set up like food), mercenaries (other nations get decisions that go back to you), and spies (spirit that increases spy amnt by 1, immediately creates a spy agency for purchasing nation bc the ai will probably forget to make an actual spy agency)
             custom_effect_tooltip = l_YFC_mercs_deployment
@@ -5421,7 +5444,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_new_monetary_avenues }
         prerequisite = { focus = YFC_focus_city_council_compromise }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #spirit called *crack*down
 
@@ -5438,12 +5461,16 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_great_goikean_trade }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #makes trading routes less likely to fucking explode (ex. danger 2 goes from 50% to 66%, danger 1 goes to 81%, danger 0 stays 100%)
             #probably some more stuff but i dont really know. numismatian relations??
 
             #Pain to code but I got this
+
+            custom_effect_tooltip = l_YFC_trade_route_upgrade
+            custom_effect_tooltip = l_money_gain_200K
+		    add_to_variable = { money_amount = 2 }
         }
     }
 
@@ -5456,7 +5483,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_great_goikean_trade }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #short 7 event long chain that either ends in thc getting portland & britain, portland & britain & ganymede, just portland, or nothing. teardrop will be trying to get those (not britain tho), as well as oflak and no objects sand
             #its only possible for you to get nothing if you and teardrop agree not to expand into the eastern seaboard for the next 5 years
@@ -5478,9 +5505,10 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_teardrop_diplomacy }
         prerequisite = { focus = YFC_focus_new_monetary_avenues }
 
-        cost = 3
+        cost = 4
         completion_reward = {
-            201 = {
+            add_manpower = 5000
+            random_core_state = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = arms_factory
@@ -5502,7 +5530,14 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_take_up_arms }
         prerequisite = { focus = YFC_focus_beakers_return }
 
-        cost = 3
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = l_YFC_beaker_back
+                has_country_flag = YFC_Allow_Beaker
+            }
+        }
+
+        cost = 4
         completion_reward = {
             #beaker suggests that we start researching flight technology
             #perhaps she starts out with helicopter research? eventually (out of demo) this will lead to the airship
@@ -5531,7 +5566,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_the_democratic_question }
         prerequisite = { focus = YFC_focus_yoyleton_speech }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #response to democratic question from hammer, presenting the idea of working on the city scale first
             #a few weeks later, you recieve a late response from beaker, who tells you that the people will eventually get antsy if they dont see power change meaningfully, and if things start to get worse
@@ -5539,6 +5574,7 @@ focus_tree = {
             #gives stability and political power
             #replaces anarchic lands with "city-government," which gives like 5% stability, 0.25 pp gain, +7% construction speed, but keeps economy and trade laws unchangeable (are they fully unchangeable? they should be)
 
+            add_stability = 0.05
             country_event = {
                 id = YFC_event.95
                 hours = 1
@@ -5558,7 +5594,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #cores navgornyv (if you have it), increases stability
 
@@ -5589,7 +5625,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             #flavor event about a book called "The Numis Ideology" releasing in numismatia
             #hammer and pipe have a copy of it that theyre reading and studying
@@ -5614,7 +5650,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_city_council_compromise }
         mutually_exclusive = { focus = YFC_focus_grand_metropolises }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             add_ideas = civilian_economy
             215 = {
@@ -5655,7 +5691,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_city_council_compromise }
         mutually_exclusive = { focus = YFC_focus_rural_representation }
 
-        cost = 3
+        cost = 4
         completion_reward = {
             add_ideas = limited_conscription
             add_manpower = 10000
@@ -5674,7 +5710,10 @@ focus_tree = {
         available = {
             custom_trigger_tooltip = {
                 tooltip = l_YFC_beaker_ready
-                has_country_flag = YFC_Beaker_stuck_in_school
+                OR = {
+                    has_country_flag = YFC_Allow_Beaker
+                    has_country_flag = YFC_Beaker_stuck_in_school
+                }
             }
             custom_trigger_tooltip = {
                 tooltip = l_money_cost_100K
@@ -5683,13 +5722,13 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_city_council_compromise }
-        cost = 3
+        cost = 4
         completion_reward = {
             add_stability = 0.05
             subtract_from_variable = {money_amount = 1}
 
             country_event = {
-                id = YFC_event.98
+                id = YFC_event.102
                 hours = 5
                 days = 2
                 random_hours = 48
@@ -5722,12 +5761,12 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_northern_economics }
         prerequisite = { focus = YFC_focus_green_energy }
 
-        cost = 3
+        cost = 5
         completion_reward = {
             #hammer event, nothing more
 
             #ZDubbz does it give anything?
-
+            add_stability = 0.1
             country_event = {
                 id = YFC_event.99
                 hours = 1
@@ -5746,7 +5785,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_a_stable_society }
         #should also require all other focuses in the branch to be done
 
-        cost = 3
+        cost = 8
         completion_reward = {
             #event with all the sectorials, just being themselves. theyre so happy yay!
 

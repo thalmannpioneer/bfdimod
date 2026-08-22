@@ -3917,6 +3917,21 @@ country_event = { #YFC_focus_reformalize_borders
 
 	option = { 
 		name = YFC_event.92.a
+
+		hidden_effect = {
+			diplomatic_relation = {
+				country = BUN
+				relation = guarantee
+				active = no
+			}
+			BUN = {
+				diplomatic_relation = {
+					country = YFC
+					relation = guarantee
+					active = no
+				}
+			}
+		}
 	}
 }
 
@@ -3934,6 +3949,14 @@ country_event = { #YFC_focus_meet_with_numismatia
 
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+
+		CRN = {
+			diplomatic_relation = {
+				country = YFC
+				relation = embargo
+				active = no
+			}
+		}
 
 		hidden_effect = {
 			CRN = {subtract_from_variable = { money_amount = 4 }}
@@ -4122,6 +4145,99 @@ country_event = { #YFC_focus_beakers_return
 		name = YFC_event.102.a
 
 		custom_effect_tooltip = l_YFC_sectors_beaker_back
+		set_country_flag = YFC_Allow_Beaker
+	}
+}
+
+country_event = { #Top Hat askes other to reopen trade
+	id = YFC_event.103
+	title = YFC_event.103.t
+	desc = YFC_event.103.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.103.a
+
+		add_political_power = -50
+		diplomatic_relation = {
+            country = YFC
+            relation = embargo
+            active = no
+        }
+		hidden_effect = {
+			YFC = {
+				country_event = {
+                    id = YFC_event.104
+                    hours = 6
+                    random_hours = 100
+                }
+			}
+		}
+
+		ai_chance = {
+			base = 3
+			modifier = {
+				has_war = yes
+				add = 1000
+		 	}
+			modifier = {
+				check_variable = {money_amount > 15}
+				add = 5
+		 	}
+		}
+	}
+	option = { 
+		name = YFC_event.103.b
+		hidden_effect = {
+			YFC = {
+				country_event = {
+                    id = YFC_event.105
+                    hours = 6
+                    random_hours = 100
+                }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { #Other will reopen trade Top Hat
+	id = YFC_event.104
+	title = YFC_event.104.t
+	desc = YFC_event.104.desc
+	picture = GFX_GFG_event21
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.104.a
+
+		add_opinion_modifier = { target = FROM modifier = small_increase }
+        every_country_with_original_tag = {
+            original_tag_to_check = FROM
+            add_opinion_modifier = { target = YFC modifier = small_increase }
+        }
+	}
+}
+
+country_event = { #Other WILL NOT reopen trade Top Hat
+	id = YFC_event.105
+	title = YFC_event.105.t
+	desc = YFC_event.105.desc
+	picture = GFX_GFG_event22
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.105.a
 	}
 }
 

@@ -151,6 +151,7 @@
  l_YFC_trade_lost_sent: "§RYou will not make the expected profits in this sale.§!" #For YFC
  l_YFC_trade_lost_get: "§RYou will not receive the expected equipment in this sale.§!" #For YFC
  l_YFC_trade_lost_recive: "§RYou will still receive the expected equipment, but not have to pay for anything.§!" #For other
+ l_YFC_trade_route_upgrade: "§GIncreases chance of successful deliveries by 10%§!" #For other
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YUnlocks Coiny as an Army Chief!§!"
@@ -187,6 +188,7 @@
  l_YFC_mercs_halt_deployment: "§RSets how many nations can have active mercenaries to 1§!\n\n§GResets own mercenary deployment time to 180 days§!"
  l_YFC_SRI_demand_1: "§YWe will offer The Great Ridge government 500K dollars and protection for their resource rights. Their willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. If they do not agree we will not lose any money.§!"
  l_YFC_SRI_demand_2: "§YWe will demand The Great Ridge to be our puppet. Their willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. This will be harder for them to agree to than last time...§!"
+ l_YFC_TopHat_monetary: "§YEnables management of our economics!§!"
  l_YFC_PEN: "§YPen§! dies."
  l_YFC_ERASER: "§YEraser§! dies."
  l_YFC_BLOCKY: "§YBlocky§! dies."

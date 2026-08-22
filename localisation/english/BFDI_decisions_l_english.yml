@@ -212,6 +212,7 @@
  YFC_Trade_drugs_upgrade: "§YImprove Drug Creation Facilities§!"
  YFC_Trade_merc_increase: "§GIncrease§! §YMercenary Deployment§!"
  YFC_Trade_merc_halt: "§RStop§! §YMercenary Deployment§!"
+ YFC_Trade_request_retrading: "Request §Y[FROM.GetName]§! §GReopens Trade§!"
 
  other_trade_merc_opt: "Opt into Top Hat's Mercenaries System"
  other_trade_merc_buy: "Purchase Mercenaries"

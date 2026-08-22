@@ -967,6 +967,11 @@ YFC_calc_trade_risk_selling = {
         set_temp_variable = {deliver_chance = { value = 4 subtract = deliver_risk } }
     }
 
+    IF = {
+        limit = {YFC = {has_completed_focus = YFC_focus_international_standards}}
+        add_to_temp_variable = {deliver_chance = 1 }
+    }
+
     random_list = {
         deliver_chance = { #SHIPMENT MADE IT TO OTHER
             IF = {
@@ -1246,6 +1251,11 @@ YFC_calc_trade_risk_buying = {
     IF = {
         limit = {check_variable = {buying_item = 999}}
         add_to_temp_variable = {deliver_risk = 1 }
+    }
+
+    IF = {
+        limit = {YFC = {has_completed_focus = YFC_focus_international_standards}}
+        add_to_temp_variable = {deliver_chance = 1 }
     }
 
     random_list = {

@@ -95,7 +95,10 @@ decision_other_trade_category = {
 		}
 
 		cancel_trigger = {
-			surrender_progress > 0.5
+			OR = {
+				surrender_progress > 0.5
+				has_war_with = YFC
+			}
         }
         cancel_effect = {
 			delete_units = {

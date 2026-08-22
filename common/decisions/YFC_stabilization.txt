@@ -42,7 +42,9 @@ decision_YFC_stabilization_category = {
 		timeout_effect = {
 			set_country_flag = YFC_Sectors_done
 			custom_effect_tooltip = l_YFC_sectors_remove
-			add_stability = 0.15
+			custom_effect_tooltip = l_YFC_TopHat_monetary
+            clr_country_flag = disable_money_politics
+			add_stability = 0.25
 			hidden_effect = {remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }}
 		}
 	}
@@ -116,7 +118,8 @@ decision_YFC_stabilization_category = {
 		}
 
 		remove_effect = {
-			add_stability = 0.02
+			add_stability = 0.05
+			add_political_power = 10
         }
 
 		ai_will_do = {
@@ -153,7 +156,7 @@ decision_YFC_stabilization_category = {
 		}
 
 		remove_effect = {
-			add_stability = 0.02
+			add_stability = 0.05
 			add_to_variable = {var_YFC_housing_progress = 1}
         }
 
@@ -185,7 +188,7 @@ decision_YFC_stabilization_category = {
 
 		remove_effect = {
 			FROM = {add_manpower = 2500}
-			add_stability = 0.02
+			add_stability = 0.05
         }
 
 		ai_will_do = {
@@ -217,6 +220,14 @@ decision_YFC_stabilization_category = {
 
 		remove_effect = {
 			add_ideas = idea_YFC_high_quality_housing
+			random_core_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
 		}
 
 		ai_will_do = {
