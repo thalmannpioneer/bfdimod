@@ -13,13 +13,18 @@ YFC_hate_raiders = {
 		country_exists = BUN
 		has_war = no
 		NOT = {has_completed_focus = YFC_focus_a_look_inward}
-		NOT = {has_completed_focus = YFC_focus_YFC_funded_pillaging}
-		NOT = {has_completed_focus = YFC_focus_tophat_clan}
+		OR = {
+			has_completed_focus = YFC_focus_tophat_clan
+			NOT = {has_completed_focus = YFC_focus_YFC_funded_pillaging}
+		}
 	}
 
 	abort = {
 		OR = {
-			has_completed_focus = YFC_focus_YFC_funded_pillaging
+			AND = {
+				has_completed_focus = YFC_focus_YFC_funded_pillaging
+				NOT = {has_completed_focus = YFC_focus_tophat_clan}
+			}
             NOT = {country_exists = BUN}
 			has_war = yes
 			has_completed_focus = YFC_focus_a_look_inward
@@ -287,6 +292,11 @@ YFC_TopHat_build = {
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 100
+		value = 85
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = bicycle_battalion
+		value = 15
 	}
 }

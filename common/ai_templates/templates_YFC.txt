@@ -157,6 +157,42 @@ motorized_YFC = {
 	}
 }
 
+bicycle_YFC = {
+
+	available_for = {
+		YFC
+	}
+	
+	role = bicycle_battalion
+	
+	upgrade_prio = {
+		base = 1
+
+		modifier = {
+			factor = 5
+			NOT = { ai_has_role_template = bicycle_battalion }
+		}
+	}
+	
+	basic_motorized_infantry_YFC = {
+		division_names_group = YFC_BIC_01
+		
+		upgrade_prio = {
+			base = 1
+		}
+		
+		enable = {
+			has_tech = bicycle_infantry	
+        }
+
+		target_template = {
+			regiments = {
+				bicycle_battalion = 4
+			}
+		}
+	}
+}
+
 # Non-complete list of sub-units
 
 # REGIMENTS:

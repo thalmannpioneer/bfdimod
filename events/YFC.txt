@@ -2665,6 +2665,14 @@ country_event = { #YFC_focus_permanent_mercenary_purchase event
 	option = { #Nothing
 		name = YFC_event.56.d
 		army_experience = 50
+
+		ai_chance = {
+			base = 1
+			modifier = { #Make more money
+				has_completed_focus = YFC_focus_tophat_clan
+				add = 100
+			}
+		}
 	}
 }
 
@@ -4184,6 +4192,14 @@ country_event = { #Top Hat askes other to reopen trade
 				add = 1000
 		 	}
 			modifier = {
+				has_political_power < 100
+				add = -1.5
+		 	}
+			modifier = {
+				has_political_power < 50
+				add = -1
+		 	}
+			modifier = {
 				check_variable = {money_amount > 15}
 				add = 5
 		 	}
@@ -4238,6 +4254,20 @@ country_event = { #Other WILL NOT reopen trade Top Hat
 
 	option = { 
 		name = YFC_event.105.a
+	}
+}
+
+country_event = { #YFC_focus_the_state which I DID NOT FORGET till now
+	id = YFC_event.106
+	title = YFC_event.106.t
+	desc = YFC_event.106.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.106.a
 	}
 }
 

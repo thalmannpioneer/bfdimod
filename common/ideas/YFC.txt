@@ -269,6 +269,10 @@ ideas = {
 				country_resource_coal = 12
 				local_resources_factor = 0.1
 			}
+			targeted_modifier = {
+                tag = BUN
+                trade_cost_for_target_factor = -0.2
+            }
 		}
 
 		idea_YFC_real_raider_force = { 

@@ -914,9 +914,21 @@ focus_tree = {
             }
 
             hidden_effect = {
-                BUN = {
-                    add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
+                IF = {
+                    limit = {
+                        YFC = {is_ai = no}
+                        BUN = {is_ai = yes}
+                    }
+                    BUN = {
+                        add_war_support = 0.1
+                    }
                 }
+                ELSE = {
+                    BUN = {
+                        add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
+                    }
+                }
+
                 CRN = {
                     country_event = {
                         id = YFC_event.6
@@ -4644,7 +4656,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_last_of_the_layoffs }
 
-        cost = 3
+        cost = 2
 
         completion_reward = {
             add_stability = 0.15
@@ -4665,7 +4677,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_last_of_the_layoffs }
 
-        cost = 3
+        cost = 2
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_pp_gain
@@ -4689,7 +4701,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_create_checkpoints }
         prerequisite = { focus = YFC_focus_establish_the_correct_leadership }
 
-        cost = 3
+        cost = 2
 
         completion_reward = {
             add_political_power = 25
@@ -4715,7 +4727,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_sectors_their_place }
 
-        cost = 6
+        cost = 4
 
         completion_reward = {
             country_event = {
@@ -5167,6 +5179,12 @@ focus_tree = {
             #this focus gives 50 political power and an event
 
             add_political_power = 75
+
+            country_event = {
+                id = YFC_event.106
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5354,6 +5372,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_200K
 		    add_to_variable = { money_amount = 2 }
+            custom_effect_tooltip = l_YFC_trade_reopen
             add_ideas = export_focus
             hidden_effect = {
                 every_other_country = {
@@ -5417,13 +5436,15 @@ focus_tree = {
         completion_reward = {
             #lets you sell militias (mp, set up like food), mercenaries (other nations get decisions that go back to you), and spies (spirit that increases spy amnt by 1, immediately creates a spy agency for purchasing nation bc the ai will probably forget to make an actual spy agency)
             custom_effect_tooltip = l_YFC_mercs_deployment
+            set_country_flag = YFC_trade_allow_manpower
+            set_country_flag = YFC_trade_allow_spies
             IF = {
                 limit = {check_variable = {var_YFC_merc_pick = 0}}
                 set_variable = { var_merc_usage_max = 1 } #Used for Top Hat merc selling get_var var_merc_usage_current
                 set_variable = { var_merc_usage_current = 0 } #Used for Top Hat merc sellin
                 unlock_decision_tooltip = YFC_Trade_merc_increase
             }
-            ELSE = {
+            ELSE = { #Top Hat is locked at three
                 set_variable = { var_merc_usage_max = 3 }
                 set_variable = { var_merc_usage_current = 0 }
             }
@@ -5766,7 +5787,6 @@ focus_tree = {
             #hammer event, nothing more
 
             #ZDubbz does it give anything?
-            add_stability = 0.1
             country_event = {
                 id = YFC_event.99
                 hours = 1
@@ -6933,7 +6953,7 @@ focus_tree = {
                     set_country_flag = Confirmed_Trade_Buying
                     set_variable = { THIS.buying_item = 999}
                     set_variable = { THIS.buying_amount = 50 }
-                    set_temp_variable_to_random = {var = MATH_COST_var min = 2 max = 5 integer = yes}
+                    set_temp_variable_to_random = {var = MATH_COST_var min = 3 max = 5 integer = yes}
                     multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
                     add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 }

@@ -452,9 +452,9 @@ decision_YFC_trade_category = {
         }
 
         fire_only_once = no
-        days_remove = 5
+        days_remove = 7
         days_re_enable = 300
-        cost = 35
+        cost = 50
 
         remove_effect = {
             FROM = {
@@ -529,6 +529,10 @@ decision_YFC_trade_category = {
                     ROOT = {has_country_flag = YFC_trade_allow_food}
                     FROM = { check_variable = { buying_item = 6 }}
                 }
+                AND = {
+                    ROOT = {has_country_flag = YFC_trade_allow_drugs}
+                    FROM = { check_variable = { buying_item = 999 }}
+                }
             }
         }
 
@@ -593,6 +597,10 @@ decision_YFC_trade_category = {
             modifier = { #Since food is free just sell it
                 add = 10
                 FROM = { check_variable = { buying_item = 6 }}
+            }
+            modifier = { #Since drugs is free just sell it
+                add = 10
+                FROM = { check_variable = { buying_item = 999 }}
             }
         }
     }

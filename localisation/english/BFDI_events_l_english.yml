@@ -1230,17 +1230,21 @@
  YFC_event.102.desc: "text text bla bla" #ZDubbz
  YFC_event.102.a: ""
 
- YFC_event.103.t: "YFC_focus_beakers_return" 
+ YFC_event.103.t: "Top Hat requests a reopening of trade." 
  YFC_event.103.desc: "text text bla bla" #ZDubbz
  YFC_event.103.a: ""
 
- YFC_event.104.t: "YFC_focus_beakers_return" 
+ YFC_event.104.t: "[FROM.GetName] accepts a reopening of trade!" 
  YFC_event.104.desc: "text text bla bla" #ZDubbz
- YFC_event.104.a: ""
+ YFC_event.104.a: "Great News!"
 
- YFC_event.105.t: "YFC_focus_beakers_return" 
+ YFC_event.105.t: "[FROM.GetName] rejects a reopening of trade!" 
  YFC_event.105.desc: "text text bla bla" #ZDubbz
- YFC_event.105.a: ""
+ YFC_event.105.a: "Such an outdated way of thinking..."
+
+ YFC_event.106.t: "YFC_focus_the_state which I DID NOT FORGET till now" 
+ YFC_event.106.desc: "text text bla bla" #ZDubbz
+ YFC_event.106.a: ""
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."

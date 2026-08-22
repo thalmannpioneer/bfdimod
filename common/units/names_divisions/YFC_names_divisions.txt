@@ -80,3 +80,32 @@ YFC_MOT_01 = {
 		20 = { "%dth Protection Guards (mot.)" }
 	}
 }
+
+YFC_BIC_01 = {
+	name = "Bicycle Divisions"
+
+	for_countries = { YFC }
+
+	can_use = { always = yes }
+
+	division_types = { "bicycle_battalion" }
+
+	fallback_name = "%d. Rapid Response Unit"
+	ordered = {
+		1 = { "%dst Rapid Response Unit" }
+		2 = { "%dnd Rapid Response Unit" }
+		3 = { "%drd Rapid Response Unit" }
+		4 = { "%dth Rapid Response Unit" }
+		5 = { "%dth Rapid Response Unit" }
+		6 = { "%dth Rapid Response Unit" }
+		7 = { "%dth Rapid Response Unit" }
+		8 = { "%dth Rapid Response Unit" }
+		9 = { "%dth Rapid Response Unit" }
+		10 = { "%dth Rapid Response Unit" }
+		11 = { "%dth Rapid Response Unit" }
+		12 = { "%dth Rapid Response Unit" }
+		13 = { "%dth Rapid Response Unit" }
+		14 = { "%dth Rapid Response Unit" }
+		15 = { "%dth Rapid Response Unit" }
+	}
+}

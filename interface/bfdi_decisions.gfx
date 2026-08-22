@@ -464,6 +464,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_YFC_trade_manpower"
+		textureFile = "gfx/interface/YFC_trade_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_trade_spies"
+		textureFile = "gfx/interface/YFC_trade_spies.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_Trade_merc_increase"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_merc_increase.dds"
 	}

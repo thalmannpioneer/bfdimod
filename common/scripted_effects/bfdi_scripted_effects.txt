@@ -1277,7 +1277,7 @@ YFC_calc_trade_risk_buying = {
                 set_country_flag = Confirmed_Trade_Buying
 				set_variable = { ROOT.buying_item = 999}
 				set_variable = { ROOT.buying_amount = 50 }
-                set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
+                set_temp_variable_to_random = {var = MATH_COST_var min = 3 max = 5 integer = yes}
 				multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 				add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
             }
@@ -1376,7 +1376,7 @@ YFC_calc_trade_risk_buying = {
                 clr_country_flag = ongoing_trade_offer
                 set_variable = { ROOT.buying_item = 999}
 				set_variable = { ROOT.buying_amount = 50 }
-                set_temp_variable_to_random = {var = MATH_COST_var min = 1 max = 5 integer = yes}
+                set_temp_variable_to_random = {var = MATH_COST_var min = 3 max = 5 integer = yes}
 				multiply_temp_variable = {MATH_COST_var = ROOT.buying_amount}
 				add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 add_political_power = -1

@@ -29,8 +29,16 @@ defined_text = {
 		localization_key = GFX_YFC_trade_food 
 	}
 	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 7 } }
+		localization_key = GFX_YFC_trade_manpower 
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 8 } }
+		localization_key = GFX_YFC_trade_spies 
+	}
+	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 999 } }
-		localization_key = GFX_YFC_trade_drugs #Update later!!!!
+		localization_key = GFX_YFC_trade_drugs
 	}
 }
 
@@ -75,7 +83,15 @@ defined_text = {
 	}
 	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 6 } }
-		localization_key = "1K"
+		localization_key = "1K" #Update later
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 7 } }
+		localization_key = "1K" #Update later
+	}
+	text = {
+		trigger = { check_variable = { ROOT.equipment_list^i = 8 } }
+		localization_key = "1K" #Update later
 	}
 	text = {
 		trigger = { check_variable = { ROOT.equipment_list^i = 999 } }
@@ -204,6 +220,36 @@ defined_text = {
 			}
 		}
 		localization_key =  GFX_YFC_trade_food 
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 7 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 7 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key =  GFX_YFC_trade_manpower 
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.selling_item = 8 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { selling_item = 8 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key =  GFX_YFC_trade_spies 
 	}
 	text = {
 		trigger = { 
@@ -343,6 +389,36 @@ defined_text = {
 			}
 		}
 		localization_key = GFX_YFC_trade_food
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 7 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 7 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key = GFX_YFC_trade_manpower
+	}
+	text = {
+		trigger = { 
+			OR = {
+				AND = {
+					check_variable = { THIS.buying_item = 8 } 
+					NOT = {tag = YFC}
+				}
+				AND = {
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 8 }}
+					tag = YFC
+				}
+			}
+		}
+		localization_key = GFX_YFC_trade_spies
 	}
 	text = {
 		trigger = { 
@@ -738,6 +814,14 @@ defined_text = {
 				AND = {
 					YFC = {has_country_flag = YFC_trade_allow_food}
 					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
+				}
+				AND = { #UPDATE LATER!
+					YFC = {has_country_flag = YFC_trade_allow_food}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 7 }}
+				}
+				AND = { #UPDATE LATER!
+					YFC = {has_country_flag = YFC_trade_allow_food}
+					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 8 }}
 				}
 				AND = {
                     YFC = {has_country_flag = YFC_trade_allow_drugs}

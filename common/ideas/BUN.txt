@@ -15,6 +15,10 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.35
 			}
+			targeted_modifier = {
+                tag = YFC
+                trade_cost_for_target_factor = -0.2
+            }
 		}
 
 		idea_BUN_renewed_resolve = {

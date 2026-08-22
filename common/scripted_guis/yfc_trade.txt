@@ -244,6 +244,20 @@ scripted_gui = { #I AM SANE
                     array = ROOT.equipment_list
                     value = 6
                 }
+                IF = {
+                    limit = {YFC = {has_country_flag = YFC_trade_allow_manpower}} 
+                    add_to_array = {
+                        array = ROOT.equipment_list
+                        value = 7
+                    }
+                }
+                IF = {
+                    limit = {YFC = {has_country_flag = YFC_trade_allow_spies}} 
+                    add_to_array = {
+                        array = ROOT.equipment_list
+                        value = 8
+                    }
+                }
             }
 
             selling_item_button_increase_X_click = {

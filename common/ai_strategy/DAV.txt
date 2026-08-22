@@ -24,6 +24,33 @@ DAV_invade_TBT = {
 		id = mtg_transport
 		value = 2000
 	}
+
+	ai_strategy = {
+		type = naval_invasion_dominance_weight
+		value = 40
+	}
+
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = NAVAL_MISSION_PATROL
+		value = -100
+	}
+
+	ai_strategy = {
+		type = naval_dominance
+		id = 19 
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_dominance
+		id = 12 
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_dominance
+		id = 15 
+		value = 100
+	}
 }
 
 DAV_invade_WGF = {
@@ -45,6 +72,33 @@ DAV_invade_WGF = {
 		type = research_weight_factor
 		id = mtg_transport
 		value = 2000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_dominance_weight
+		value = 40
+	}
+
+	ai_strategy = {
+		type = naval_mission_threshold
+		id = NAVAL_MISSION_PATROL
+		value = -100
+	}
+
+	ai_strategy = {
+		type = naval_dominance
+		id = 19 
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_dominance
+		id = 12 
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_dominance
+		id = 15 
+		value = 100
 	}
 }
 
