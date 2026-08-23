@@ -585,8 +585,13 @@ decision_YFC_trade_category = {
                     has_idea = undisturbed_isolation
                     has_idea = isolation
                     has_idea = closed_economy
-                    is_embargoed_by = YFC
-                    is_embargoing = YFC
+                }
+                OR = {
+                    NOT = {
+                        is_embargoing = YFC
+                        is_embargoed_by = YFC
+                    }
+                    FROM = { check_variable = { buying_item = 999 }}
                 }
             }
             OR = {

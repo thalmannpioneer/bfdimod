@@ -1060,6 +1060,13 @@ YFC_calc_trade_risk_selling = {
                 IF = {
 					limit = {has_dlc = "La Resistance"}
 					add_ideas = idea_YFC_trade_spies_DLC
+                    IF = {
+                        limit = {
+                            is_ai = yes
+                            has_intelligence_agency = no
+                        }
+                        create_intelligence_agency = yes
+                    }
 				}
 				ELSE = {
 					add_ideas = idea_YFC_trade_spies_non_DLC
@@ -1187,6 +1194,13 @@ YFC_calc_trade_risk_selling = {
                 IF = {
 					limit = {has_dlc = "La Resistance"}
 					add_ideas = idea_YFC_trade_spies_DLC
+                    IF = {
+                        limit = {
+                            is_ai = yes
+                            has_intelligence_agency = no
+                        }
+                        create_intelligence_agency = yes
+                    }
 				}
 				ELSE = {
 					add_ideas = idea_YFC_trade_spies_non_DLC

@@ -229,7 +229,7 @@
  l_YFC_eastern_loseall_5: "§ROur control in every contested state will decrease by 5%!§!"
  l_YFC_eastern_loseall_10: "§ROur control in every contested state will decrease by 10%!§!"
  l_YFC_eastern_to_portland: "§YOur control in [232.GetName], [230.GetName], and [228.GetName] will be increased by 25%!§!"
- l_YFC_eastern_borderwar_buff: "§YIncreases our modifier in Eastern Game border conflicts by 150%!§!"
+ l_YFC_eastern_borderwar_buff: "§YIncreases our modifier in Eastern Game border conflicts by 200%!§!"
  l_YFC_eastern_borderwar_disable: "§YDisables the option for both sides to border war with each other in the east.§! §RFor now.§!"
  l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"

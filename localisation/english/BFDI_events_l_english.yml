@@ -1245,6 +1245,52 @@
  YFC_event.106.desc: "text text bla bla" #ZDubbz
  YFC_event.106.a: ""
 
+ #ZDubbz HERE IS HOW THE 7 EVENTS WILL GO:
+ #Each event has three options: One that increase the chance of getting the east but harms the nation (A), One that does nothing (B), One that buffs the nation but harms the chances of getting the east (C)
+ #The starting events (Like 2-3) should have more buffs for both A and C
+ #Put the effects for what should be put in each option
+ #Effects should still stay basic though, like money, pp, etc.
+
+ YFC_event.107.t: "YFC_focus_teardrop_diplomacy ONE" 
+ YFC_event.107.desc: "text text bla bla" #ZDubbz
+ YFC_event.107.a: ""
+ YFC_event.107.b: ""
+ YFC_event.107.c: ""
+
+ YFC_event.108.t: "YFC_focus_teardrop_diplomacy TWO" 
+ YFC_event.108.desc: "text text bla bla" #ZDubbz
+ YFC_event.108.a: ""
+ YFC_event.108.b: ""
+ YFC_event.108.c: ""
+
+ YFC_event.109.t: "YFC_focus_teardrop_diplomacy THREE" 
+ YFC_event.109.desc: "text text bla bla" #ZDubbz
+ YFC_event.109.a: ""
+ YFC_event.109.b: ""
+ YFC_event.109.c: ""
+
+ YFC_event.110.t: "YFC_focus_teardrop_diplomacy FOUR" 
+ YFC_event.110.desc: "text text bla bla" #ZDubbz
+ YFC_event.110.a: ""
+ YFC_event.110.b: ""
+ YFC_event.110.c: ""
+
+ YFC_event.111.t: "YFC_focus_teardrop_diplomacy FIVE" 
+ YFC_event.111.desc: "text text bla bla" #ZDubbz
+ YFC_event.111.a: ""
+ YFC_event.111.b: ""
+ YFC_event.111.c: ""
+
+ YFC_event.112.t: "YFC_focus_teardrop_diplomacy SIX" 
+ YFC_event.112.desc: "text text bla bla" #ZDubbz
+ YFC_event.112.a: ""
+ YFC_event.112.b: ""
+ YFC_event.112.c: ""
+
+ YFC_event.113.t: "YFC_focus_teardrop_diplomacy FINAL" #Add more options if you wish
+ YFC_event.113.desc: "text text bla bla" #ZDubbz
+ YFC_event.113.a: ""
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

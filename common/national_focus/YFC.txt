@@ -3356,6 +3356,7 @@ focus_tree = {
 
         available = {
             has_completed_focus = YFC_focus_the_grapes_and_the_cherries
+            hidden_trigger = {NOT = {has_completed_focus = YFC_focus_new_monetary_avenues}}
         }
 
         cost = 6
@@ -3898,7 +3899,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
+        allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
 
         cost = 5
         completion_reward = {
@@ -3915,7 +3916,7 @@ focus_tree = {
 
 
         ai_will_do = {
-            base = 5
+            base = 50 #Deal with the Chaos
         }
 
         prerequisite = { focus = YFC_focus_strike_the_headache }
@@ -4447,7 +4448,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_company_restructuring focus = YFC_focus_mass_firings }
 
-        cost = 4
+        cost = 2
         completion_reward = {
             country_event = {
                 id = YFC_event.59
@@ -4805,7 +4806,13 @@ focus_tree = {
 			set_variable = { var_idea_YFC_Beaker_level = 0 }
 			clr_country_flag = YFC_Allow_Beaker
 
+           
             hidden_effect = {
+                set_variable = { var_Sector_remove_timer = 300 }
+                IF = {
+                    has_completed_focus = YFC_focus_hoard_gold
+                    add_to_variable = {var_Sector_remove_timer = 200}
+                }
                 set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
                 set_variable = {var_idea_YFC_anarchic_lands_node = 0}
                 BUN = {add_manpower = 15000}
@@ -5515,6 +5522,12 @@ focus_tree = {
             #teardrop is very hostile at first
 
             #ZDubbz after the chain is done should TBT start the east game just on their own or?
+
+            country_event = {
+                id = YFC_event.107
+                hours = 1
+                random_hours = 2
+            }
         }
     }
 
@@ -5864,7 +5877,7 @@ focus_tree = {
                 country_event = { #Starts East Game
                     id = YFC_event.44
                     days = 300
-                    random_days = 200
+                    random_days = 100
                     hours = 12
                     random_hours = 100
                 }
@@ -6224,7 +6237,6 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_strength_in_skill }
         prerequisite = { focus = YFC_focus_strength_in_power }
-        prerequisite = { focus = YFC_focus_promote_blocky }
 
         cost = 8
 
@@ -6258,11 +6270,11 @@ focus_tree = {
                             has_completed_focus = YFC_focus_locked_on_land
                             has_completed_focus = YFC_focus_way_to_seas
                         }
-                        country_event = {
-                            id = YFC_event.86
-                            days = 7
-                            random_hours = 48
-                        }
+                    }
+                    country_event = {
+                        id = YFC_event.86
+                        days = 7
+                        random_hours = 48
                     }
                 }
             }
@@ -6308,6 +6320,7 @@ focus_tree = {
         cost = 2 #Maybe change later
 
         completion_reward = {
+            add_manpower = 5000
             unlock_decision_tooltip = YFC_raid_force_conscript_locals
         }
     }
@@ -6329,6 +6342,10 @@ focus_tree = {
         cost = 2 #Maybe change later
 
         completion_reward = {
+            add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+			}
             unlock_decision_tooltip = YFC_raid_guns
         }
     }
@@ -6678,11 +6695,11 @@ focus_tree = {
                             has_completed_focus = YFC_focus_locked_on_land
                             has_completed_focus = YFC_focus_way_to_seas
                         }
-                        country_event = {
-                            id = YFC_event.86
-                            days = 7
-                            random_hours = 48
-                        }
+                    }
+                    country_event = {
+                        id = YFC_event.86
+                        days = 7
+                        random_hours = 48
                     }
                 }
             }
@@ -7020,7 +7037,8 @@ focus_tree = {
 
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_borderwar_buff
-            add_to_variable = {eastern_borderwar_var = 1.5}
+            army_experience = 25
+            add_to_variable = {eastern_borderwar_var = 2}
         }
     }
 
@@ -7081,6 +7099,7 @@ focus_tree = {
 
         allow_branch = {
             NOT = {has_completed_focus = YFC_focus_locked_on_land}
+            has_completed_focus = {YFC_focus_issues_in_east}
         }
 
         completion_reward = {
@@ -7092,11 +7111,11 @@ focus_tree = {
                             has_completed_focus = YFC_focus_bandit_pack
                             has_completed_focus = YFC_focus_acknowledge_our_shortcomings
                         }
-                        country_event = {
-                            id = YFC_event.86
-                            days = 7
-                            random_hours = 48
-                        }
+                    }
+                    country_event = {
+                        id = YFC_event.86
+                        days = 7
+                        random_hours = 48
                     }
                 }
             }
@@ -7123,6 +7142,7 @@ focus_tree = {
 
         allow_branch = {
             NOT = {has_completed_focus = YFC_focus_way_to_seas}
+            has_completed_focus = {YFC_focus_issues_in_east}
         }
 
         mutually_exclusive = { focus = YFC_focus_way_to_seas }
@@ -7147,11 +7167,11 @@ focus_tree = {
                             has_completed_focus = YFC_focus_bandit_pack
                             has_completed_focus = YFC_focus_acknowledge_our_shortcomings
                         }
-                        country_event = {
-                            id = YFC_event.86
-                            days = 7
-                            random_hours = 48
-                        }
+                    }
+                    country_event = {
+                        id = YFC_event.86
+                        days = 7
+                        random_hours = 48
                     }
                 }
             }
@@ -7185,7 +7205,7 @@ focus_tree = {
             add_stability = -0.05
             216 = {
                 add_compliance = 15
-                add_resistance_target = -20
+                add_resistance_target = -30
             }
         }
     }

@@ -53,10 +53,6 @@ GPR_Scare_GSR = { #Place troops on the border for the... um... aura?
 		id = infantry
 		value = 30
 	}
-    ai_strategy = {
-		type = garrison_reinforcement_priority
-		value = -10
-	}
 }
 
 GPR_Scare_GFG = { #Place troops on the border for the... um... aura?

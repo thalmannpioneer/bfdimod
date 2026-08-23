@@ -294,6 +294,7 @@ ideas = {
 			picture = YFC_real_raider_force
 			modifier = {
 				experience_gain_army_factor = 0.25
+				equipment_capture_factor = 0.05
 			}
 		}
 

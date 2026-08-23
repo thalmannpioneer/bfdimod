@@ -3851,7 +3851,10 @@ country_event = { #Pirate 2
 	option = { 
 		name = YFC_event.87.a
 		custom_effect_tooltip = l_YFC_pirate_unlock
-		
+		add_manpower = 10000
+
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
 		if = {
             limit = { is_ai = no }
             set_global_flag = demo_ended
@@ -4282,6 +4285,201 @@ country_event = { #YFC_focus_the_state which I DID NOT FORGET till now
 
 	option = { 
 		name = YFC_event.106.a
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy ONE
+	id = YFC_event.107
+	title = YFC_event.107.t
+	desc = YFC_event.107.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.107.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.107.b
+		hidden_effect = {
+			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.107.c
+		hidden_effect = {
+			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy TWO
+	id = YFC_event.108
+	title = YFC_event.108.t
+	desc = YFC_event.108.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.108.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.108.b
+		hidden_effect = {
+			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.108.c
+		hidden_effect = {
+			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy THREE
+	id = YFC_event.109
+	title = YFC_event.109.t
+	desc = YFC_event.109.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.109.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.109.b
+		hidden_effect = {
+			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.109.c
+		hidden_effect = {
+			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FOUR
+	id = YFC_event.110
+	title = YFC_event.110.t
+	desc = YFC_event.110.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.110.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.110.b
+		hidden_effect = {
+			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.110.c
+		hidden_effect = {
+			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FIVE
+	id = YFC_event.111
+	title = YFC_event.111.t
+	desc = YFC_event.111.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.111.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.111.b
+		hidden_effect = {
+			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.111.c
+		hidden_effect = {
+			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy SIX
+	id = YFC_event.112
+	title = YFC_event.112.t
+	desc = YFC_event.112.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.112.a
+
+		hidden_effect = {
+			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.112.b
+		hidden_effect = {
+			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+		}
+	}
+	option = { 
+		name = YFC_event.112.c
+		hidden_effect = {
+			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+		}		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FINAL
+	id = YFC_event.113
+	title = YFC_event.113.t
+	desc = YFC_event.113.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.113.a
+
 	}
 }
 

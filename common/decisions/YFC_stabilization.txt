@@ -38,7 +38,7 @@ decision_YFC_stabilization_category = {
 		}
 		icon = GFX_mission_YFC_stabilization_final_sector_restructures 
 		is_good = yes
-		days_mission_timeout = 300 
+		days_mission_timeout = var_Sector_remove_timer 
 		timeout_effect = {
 			set_country_flag = YFC_Sectors_done
 			custom_effect_tooltip = l_YFC_sectors_remove
@@ -60,6 +60,7 @@ decision_YFC_stabilization_category = {
 		visible = {
 			has_completed_focus = YFC_focus_tophat_clan
 			has_active_mission = YFC_stabilization_final_sector_restructures
+			NOT = {has_completed_focus = YFC_focus_hoard_gold}
 		}
 
 		remove_effect = {
@@ -82,6 +83,7 @@ decision_YFC_stabilization_category = {
 		visible = {
 			has_completed_focus = YFC_focus_tophat_clan
 			has_active_mission = YFC_stabilization_final_sector_restructures
+			NOT = {has_completed_focus = YFC_focus_hoard_gold}
 		}
 
 		remove_effect = {

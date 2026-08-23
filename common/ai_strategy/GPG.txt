@@ -44,6 +44,10 @@ GPG_civil_war = {
 		id = infantry
 		value = 1000
 	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10
+	}
 }
 
 GPG_GPR_trade = {
@@ -97,6 +101,10 @@ GPG_cabinet_war = {
         id = infantry
         value = 1000
     }
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = -10
+	}
 }
 
 ## INDUSTRY ##
