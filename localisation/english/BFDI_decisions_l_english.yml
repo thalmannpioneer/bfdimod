@@ -209,6 +209,9 @@
  YFC_Trade_bunch_steal: "Exploit §8Bunch's Resources§!"
  YFC_Trade_food: "§YGathering Food§!"
  YFC_Trade_drugs: "§YCreating Drugs§!"
+ YFC_Trade_manpower: "§YAssembling Militias§!"
+ YFC_Trade_spies: "§YAssembling Spies§!"
+ YFC_Trade_build_spies: "Build §YSpy Agency§!"
  YFC_Trade_drugs_upgrade: "§YImprove Drug Creation Facilities§!"
  YFC_Trade_merc_increase: "§GIncrease§! §YMercenary Deployment§!"
  YFC_Trade_merc_halt: "§RStop§! §YMercenary Deployment§!"
@@ -322,6 +325,7 @@
  YFC_stabilization_tenants_rights: "§GImprove§! §GTenants' Rights§!"
  YFC_stabilization_delay_reform: "Delay Reforms"
  YFC_stabilization_push_reform: "Push Reforms"
+ YFC_stabilization_develop_resources: "Resources Development in §g[201.GetName]§!"
  YFC_stabilization_research_bicycle_infantry: "Research Bicycle Infantry"
  YFC_stabilization_research_aircraft: "Research Aircraft"
 

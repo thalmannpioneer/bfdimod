@@ -1047,6 +1047,28 @@ YFC_calc_trade_risk_selling = {
                     activate_mission = YFC_Trade_food
                 }
             }
+            ELSE_IF = {
+                limit = {check_variable = {buying_item = 7}}
+                add_manpower = 5000
+                YFC = {
+                    clr_country_flag = YFC_trade_allow_militias
+                    activate_mission = YFC_Trade_manpower
+                }
+            }
+            ELSE_IF = {
+                limit = {check_variable = {buying_item = 8}}
+                IF = {
+					limit = {has_dlc = "La Resistance"}
+					add_ideas = idea_YFC_trade_spies_DLC
+				}
+				ELSE = {
+					add_ideas = idea_YFC_trade_spies_non_DLC
+				}
+                YFC = {
+                    clr_country_flag = YFC_trade_allow_sending_spies
+                    activate_mission = YFC_Trade_spies
+                }
+            }
 
             clr_country_flag = ongoing_trade_offer
             clr_country_flag = Confirmed_Trade_Buying
@@ -1150,6 +1172,28 @@ YFC_calc_trade_risk_selling = {
                         set_variable = {var_YFC_food_timer = temp_timer_var}
                         activate_mission = YFC_Trade_food
                     }
+                }
+            }
+            ELSE_IF = {
+                limit = {check_variable = {buying_item = 7}}
+                add_manpower = 5000
+                YFC = {
+                    clr_country_flag = YFC_trade_allow_militias
+                    activate_mission = YFC_Trade_manpower
+                }
+            }
+            ELSE_IF = {
+                limit = {check_variable = {buying_item = 8}}
+                IF = {
+					limit = {has_dlc = "La Resistance"}
+					add_ideas = idea_YFC_trade_spies_DLC
+				}
+				ELSE = {
+					add_ideas = idea_YFC_trade_spies_non_DLC
+				}
+                YFC = {
+                    clr_country_flag = YFC_trade_allow_sending_spies
+                    activate_mission = YFC_Trade_spies
                 }
             }
 

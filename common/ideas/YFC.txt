@@ -51,6 +51,21 @@ ideas = {
 			}
 		}
 
+		idea_YFC_trade_spies_DLC = { #Has DLC
+			picture = YFC_food_imports #Update later!!!!
+			modifier = {
+				operative_slot = 1
+			}
+		}
+
+		idea_YFC_trade_spies_non_DLC = { #Has no DLC
+			picture = YFC_food_imports #Update later!!!!
+			modifier = {
+				recon_factor = 0.25
+				recon_factor_while_entrenched = 0.1
+			}
+		}
+
 		idea_YFC_Bunch_Insurgency  = {
 			picture = YFC_bunch_insurgency #Replaced :3
 			modifier = {

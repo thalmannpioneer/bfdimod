@@ -4866,6 +4866,7 @@ focus_tree = {
         cost = 3
         completion_reward = {
             custom_effect_tooltip = l_YFC_our_land
+            unlock_decision_tooltip = YFC_stabilization_develop_resources
             add_to_variable = { var_idea_YFC_anarchic_lands_repair = -4.25 }
             add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.25 }
             add_to_variable = { var_idea_YFC_anarchic_lands_construction = 4.25 }
@@ -5436,8 +5437,9 @@ focus_tree = {
         completion_reward = {
             #lets you sell militias (mp, set up like food), mercenaries (other nations get decisions that go back to you), and spies (spirit that increases spy amnt by 1, immediately creates a spy agency for purchasing nation bc the ai will probably forget to make an actual spy agency)
             custom_effect_tooltip = l_YFC_mercs_deployment
-            set_country_flag = YFC_trade_allow_manpower
-            set_country_flag = YFC_trade_allow_spies
+            set_country_flag = YFC_trade_allow_manpower #For Trade system
+            set_country_flag = YFC_trade_allow_militias
+            unlock_decision_tooltip = YFC_Trade_build_spies
             IF = {
                 limit = {check_variable = {var_YFC_merc_pick = 0}}
                 set_variable = { var_merc_usage_max = 1 } #Used for Top Hat merc selling get_var var_merc_usage_current
@@ -6281,7 +6283,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_way_of_raiders }
 
-        cost = 5 #Maybe change later
+        cost = 3 #Maybe change later
 
         completion_reward = {
             army_experience = 25
@@ -6303,7 +6305,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_prepare_for_strikes }
 
-        cost = 3 #Maybe change later
+        cost = 2 #Maybe change later
 
         completion_reward = {
             unlock_decision_tooltip = YFC_raid_force_conscript_locals
@@ -6324,7 +6326,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_prepare_for_strikes }
 
-        cost = 3 #Maybe change later
+        cost = 2 #Maybe change later
 
         completion_reward = {
             unlock_decision_tooltip = YFC_raid_guns
@@ -6346,7 +6348,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_acquire_the_firepower }
         prerequisite = { focus = YFC_focus_acquire_the_people }
 
-        cost = 5
+        cost = 2
 
         completion_reward = {
             unlock_decision_tooltip = YFC_raid_training
@@ -6372,7 +6374,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_train_with_bunch }
 
-        cost = 5
+        cost = 4
 
         completion_reward = {
             country_event = {
