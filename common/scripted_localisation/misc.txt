@@ -169,3 +169,19 @@ defined_text = {
         localization_key = l_decisions_sector_unknown_title
     }
 } 
+
+defined_text = {
+	name = YFC_debt_event_text
+	text = {
+		trigger = {
+			NOT = {has_country_flag = YFC_Sectors_done}
+		}
+		localization_key = l_YFC_sectors_debt_event
+	}
+	text = {
+		trigger = {
+			has_completed_focus = YFC_focus_big_yoyleton
+		}
+		localization_key = ""
+	}
+}

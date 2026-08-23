@@ -1,4 +1,58 @@
 decision_YFC_trade_category = {
+    YFC_trade_raider_pay = {
+        is_good = no
+        activation = {
+            NOT = {has_idea = idea_YFC_Debt_Crisis}
+            has_country_flag = YFC_Sectors_done 
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                has_idea = idea_YFC_Debt_Crisis 
+            }
+		}
+        icon = GFX_YFC_mission_sector_pay  
+        days_mission_timeout = 35
+        timeout_effect = {
+            #Money Taken
+            custom_effect_tooltip = l_YFC_payment_raiders
+            subtract_from_variable = { money_amount = 0.075 }
+            
+            IF = {
+                limit = {has_completed_focus = YFC_focus_hoard_gold}
+                custom_effect_tooltip = l_YFC_sectors_Gold
+                subtract_from_variable = { money_amount = 1 }
+            }
+        }
+	}
+
+    YFC_trade_raider_failing_payments = {
+        is_good = no
+        activation = {
+            check_variable = { money_amount < -3 }
+            NOT = {has_idea = idea_YFC_Debt_Crisis}  
+            has_country_flag = YFC_Sectors_done 
+        }
+        cancel_trigger = {
+            hidden_trigger = {
+                check_variable = { money_amount > 0 }
+            }
+		}
+        available = {
+            always = no
+        }
+        icon = GFX_mission_YFC_sector_failing_payments
+        days_mission_timeout = 120
+        timeout_effect = {
+            custom_effect_tooltip = l_YFC_trade_Debt
+            hidden_effect = {
+                country_event = YFC_sector.21
+            }    
+        }
+	}
+
 	YFC_Trade_food = { 
 		available = {always = no}
 		icon = GFX_YFC_mission_get_food  

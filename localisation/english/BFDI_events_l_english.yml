@@ -1638,7 +1638,7 @@
  YFC_sector.20.a: "Curse them!"
 
  YFC_sector.21.t: "Economic Report: EMERGENCY!"
- YFC_sector.21.desc: "Chaos.\nThere has been nothing but chaos at headquarters today. Our economic analysts didn't want to believe it. Our financial advisors didn't want to believe it. Not even the sectorials wanted to believe it. But it is true. The Yellow Face Corporation is not just losing money, it is in debt. Salaries can't be paid, projects can't be funded, the free market may even crumble under the weight of the company. We've already began filing for bankruptcy, but the filers themselves are scared to do it; they know that many of them will be laid off. Either the company needs to downsize, or we need to turn a profit, and fast."
+ YFC_sector.21.desc: "Chaos.\nThere has been nothing but chaos at headquarters today. Our economic analysts didn't want to believe it. Our financial advisors didn't want to believe it. [YFC_debt_event_text]But it is sadly true. The Yellow Face Corporation is not just losing money, it is in debt. Salaries can't be paid, projects can't be funded, the free market may even crumble under the weight of the company. We've already began filing for bankruptcy, but the filers themselves are scared to do it; they know that many of them will be laid off. Either the company needs to downsize, or we need to turn a profit, and fast." #YFC_debt_event_text is used if Sectors are still around or not
  YFC_sector.21.a: "An Unprecedented Disaster!"
 
 # BUN_YFC

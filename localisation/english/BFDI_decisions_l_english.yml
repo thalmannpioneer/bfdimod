@@ -216,6 +216,9 @@
  YFC_Trade_merc_increase: "§GIncrease§! §YMercenary Deployment§!"
  YFC_Trade_merc_halt: "§RStop§! §YMercenary Deployment§!"
  YFC_Trade_request_retrading: "Request §Y[FROM.GetName]§! §GReopens Trade§!"
+ YFC_trade_raider_pay: "§RCompany Payments§!"
+ YFC_trade_raider_failing_payments: "§RFailing Payments§!"
+ YFC_trade_raider_failing_payments_desc: "Reports have flooded us that we are running out of money! We need to fix this issue quickly or we will have much bigger issues in the future!"
 
  other_trade_merc_opt: "Opt into Top Hat's Mercenaries System"
  other_trade_merc_buy: "Purchase Mercenaries"

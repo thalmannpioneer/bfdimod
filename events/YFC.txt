@@ -4479,7 +4479,6 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL
 
 	option = { 
 		name = YFC_event.113.a
-
 	}
 }
 
