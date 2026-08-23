@@ -37,7 +37,28 @@ country_event = {
 country_event = { 
 	id = BUN_YFC.2
 	title = BUN_YFC.2.t
-	desc = BUN_YFC.2.desc
+
+	desc = {
+		text = BUN_YFC.2.desc.a #Normal
+		trigger = {
+			NOT = {controls_state = 212}
+			NOT = {controls_state = 85}
+			NOT = {controls_state = 217}
+			NOT = {controls_state = 218}
+		}
+	}
+	desc = {
+		text = BUN_YFC.2.desc.b #YFC holds some land
+		trigger = {
+			OR = {
+				controls_state = 212
+				controls_state = 85
+				controls_state = 217
+				controls_state = 218
+			}
+		}
+	}
+
 	picture = GFX_BUN_YFC2
 
 	fire_only_once = no
@@ -49,9 +70,15 @@ country_event = {
 
 	option = {
 		name = BUN_YFC.2.a
-		add_war_support = -0.1
-		add_stability = -0.25
-		add_political_power = -150
+		IF = {
+			limit = {
+				NOT = {controls_state = 212}
+				NOT = {controls_state = 85}
+			}
+			add_war_support = -0.1
+			add_stability = -0.25
+			add_political_power = -150
+		}
 		white_peace = BUN
 		IF = {
 			limit = {
@@ -59,20 +86,31 @@ country_event = {
 			}
 			white_peace = CRN
 		}
+
 		BUN = {
-			transfer_state = 212
-			transfer_state = 85
 			IF = {
 				limit = {
-					CRN = {
-						AND = {
-							NOT = {controls_state = 217}
-							NOT = {controls_state = 218}
-						}
-					}
+					controls_state = 212
+				}
+				transfer_state = 212
+			}
+			IF = {
+				limit = {
+					controls_state = 85
+				}
+				transfer_state = 85
+			}
+			IF = {
+				limit = {
+					controls_state = 218
+				}
+				transfer_state = 218
+			}
+			IF = {
+				limit = {
+					controls_state = 217
 				}
 				transfer_state = 217
-				transfer_state = 218
 			}
 		}	
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss

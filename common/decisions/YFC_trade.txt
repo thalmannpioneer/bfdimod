@@ -25,6 +25,95 @@ decision_YFC_trade_category = {
 		}
 	}
 
+    YFC_Trade_manpower = { 
+		icon = GFX_YFC_mission_get_drugs #Update later
+		is_good = yes
+		days_mission_timeout = 200
+		selectable_mission = yes
+		activation = { always = no }
+
+        custom_cost_trigger = {
+            has_manpower > 4999
+        }
+        custom_cost_text = decisions_cost_mp_5000
+        complete_effect = {
+            custom_effect_tooltip = l_YFC_trade_get_manpower
+            set_country_flag = YFC_trade_allow_militias
+            hidden_effect = {
+                add_manpower = -5000
+            }
+        }
+		timeout_effect = {
+			custom_effect_tooltip = l_YFC_trade_get_manpower
+            set_country_flag = YFC_trade_allow_militias
+		}
+
+        ai_will_do = {
+            base = 0
+        }
+	}
+
+	YFC_Trade_spies = { 
+		available = {always = no}
+		icon = GFX_YFC_mission_get_drugs #Update later
+		is_good = yes
+		days_mission_timeout = 300
+		selectable_mission = no
+		activation = { always = no }
+		timeout_effect = {
+			custom_effect_tooltip = l_YFC_trade_get_spies
+            set_country_flag = YFC_trade_allow_sending_spies
+		}
+	}
+
+    YFC_Trade_build_spies = {
+        icon = GFX_decisions_YFC_buy_tech #Update later!!!
+
+        visible = {
+            has_completed_focus = YFC_focus_new_monetary_avenues
+        }
+
+        custom_cost_trigger = {
+            check_variable = { money_amount > 3 }
+        }
+        custom_cost_text = decisions_cost_money_300k
+
+        fire_only_once = yes
+        days_remove = 35
+
+        complete_effect = {
+            subtract_from_variable = { money_amount = 3 }
+        }
+
+        remove_effect = {
+            IF = {
+                limit = {
+                    has_dlc = "La Resistance"
+                }
+                create_intelligence_agency = {
+                    name = "The Green Eyes"
+                    icon = GFX_agency_icon_YFC_green_eye
+                }
+                custom_effect_tooltip = l_YFC_unlock_spies
+            }
+            ELSE = {
+                army_experience = 25
+                add_political_power = 50
+                custom_effect_tooltip = l_YFC_unlock_spies
+            }
+            set_country_flag = YFC_trade_allow_spies #For Trade system
+            set_country_flag = YFC_trade_allow_sending_spies
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                check_variable = { money_amount > 5 }
+                add = 50
+            }
+        }
+    }
+
     YFC_Trade_drugs_upgrade = {
         icon = GFX_decisions_YFC_Trade_drugs_upgrade
 
@@ -530,6 +619,10 @@ decision_YFC_trade_category = {
                     FROM = { check_variable = { buying_item = 6 }}
                 }
                 AND = {
+                    ROOT = {has_country_flag = YFC_trade_allow_militias}
+                    FROM = { check_variable = { buying_item = 7 }}
+                }
+                AND = {
                     ROOT = {has_country_flag = YFC_trade_allow_drugs}
                     FROM = { check_variable = { buying_item = 999 }}
                 }
@@ -598,8 +691,12 @@ decision_YFC_trade_category = {
                 add = 10
                 FROM = { check_variable = { buying_item = 6 }}
             }
-            modifier = { #Since drugs is free just sell it
+            modifier = { #Since manpower is freeish just sell it
                 add = 10
+                FROM = { check_variable = { buying_item = 7 }}
+            }
+            modifier = { #Since drugs is free just sell it
+                add = 20
                 FROM = { check_variable = { buying_item = 999 }}
             }
         }

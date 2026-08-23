@@ -252,7 +252,16 @@ scripted_gui = { #I AM SANE
                     }
                 }
                 IF = {
-                    limit = {YFC = {has_country_flag = YFC_trade_allow_spies}} 
+                    limit = {
+                        YFC = {has_country_flag = YFC_trade_allow_spies}
+                        OR = {
+                            has_intelligence_agency = yes
+                            NOT = {has_dlc = "La Resistance"}
+                            is_ai = yes
+                        }
+                        NOT = {has_idea = idea_YFC_trade_spies_DLC}
+						NOT = {has_idea = idea_YFC_trade_spies_non_DLC}
+                    } 
                     add_to_array = {
                         array = ROOT.equipment_list
                         value = 8
@@ -425,6 +434,22 @@ scripted_gui = { #I AM SANE
                         }
                     }
                     set_temp_variable = { MATH_COST_var = 1 }
+                    multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
+                    add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+                }
+                ELSE_IF = {
+                    limit = {
+                        check_variable = { THIS.buying_item = 7 }
+                    }
+                    set_temp_variable = { MATH_COST_var = 2 }
+                    multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
+                    add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
+                }
+                ELSE_IF = {
+                    limit = {
+                        check_variable = { THIS.buying_item = 8 }
+                    }
+                    set_temp_variable = { MATH_COST_var = 5 }
                     multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
                     add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 }
@@ -852,6 +877,14 @@ scripted_gui = {
                     AND = {
                         YFC = {has_country_flag = YFC_trade_allow_food}
                         var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
+                    }
+                    AND = {
+                        YFC = {has_country_flag = YFC_trade_allow_militias}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 7 }}
+                    }
+                    AND = {
+                        YFC = {has_country_flag = YFC_trade_allow_sending_spies}
+                        var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 8 }}
                     }
                     AND = {
                         YFC = {has_country_flag = YFC_trade_allow_drugs}

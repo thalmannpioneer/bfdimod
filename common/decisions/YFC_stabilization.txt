@@ -239,6 +239,41 @@ decision_YFC_stabilization_category = {
 		}
 	}
 
+    YFC_stabilization_develop_resources = {
+		icon = GFX_decisions_YFC_stabilization_tenants_rights #Update later!
+      
+		fire_only_once = yes
+
+		cost = 100
+
+		days_remove = 180
+
+		visible = {
+			has_completed_focus = YFC_focus_repossess_our_land
+		}
+
+		available = {
+			has_tech = excavation2
+		}
+
+		remove_effect = {
+			201 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_political_power > 125
+			}
+		}
+	}
+
 	YFC_stabilization_research_bicycle_infantry = { 
 		icon = GFX_decisions_YFC_stabilization_tenants_rights #Update later!
       

@@ -1408,6 +1408,20 @@ country_event = { #YFC Sell
 					days = 90
 				}
 			}
+			ELSE_IF = {
+				limit = {check_variable = {buying_item = 7}} 
+				add_manpower = 5000
+			}
+			ELSE_IF = {
+				limit = {check_variable = {buying_item = 8}} 
+				IF = {
+					limit = {has_dlc = "La Resistance"}
+					add_ideas = idea_YFC_trade_spies_DLC
+				}
+				ELSE = {
+					add_ideas = idea_YFC_trade_spies_non_DLC
+				}
+			}
 		}
 
 		hidden_effect = {

@@ -54,6 +54,8 @@
  decisions_cost_mp_250_blocked: "£manpower_texticon §R250§!"
  decisions_cost_mp_1000: "£manpower_texticon §Y1000§!"
  decisions_cost_mp_1000_blocked: "£manpower_texticon §R1000§!"
+ decisions_cost_mp_5000: "£manpower_texticon §Y5000§!"
+ decisions_cost_mp_5000_blocked: "£manpower_texticon §R5000§!"
  decisions_cost_mp_500_pp_50: "£manpower_texticon §Y500§!  £pol_power  §Y50§!"
  decisions_cost_mp_500_pp_50_blocked: "£manpower_texticon §R500§!  £pol_power  §R50§!"
  decisions_cost_mp_2000_pp_100: "£manpower_texticon §Y2000§!  £pol_power  §Y100§!"

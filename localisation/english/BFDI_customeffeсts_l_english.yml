@@ -144,15 +144,21 @@
  l_YFC_trade_invite_fail: "§YThe Yellow Face Market decisions will be unlocked if the following is completed:§!§G\n\n-Our economy law is not on isolation\n-Our trade law is not closed economy\n-We are not at war with The Yellow Face Corporation\n-We are not embargoing or being embargoed by The Yellow Face Corporation§!"
  l_YFC_trade_buying_normal: "[?ROOT.buying_amount] equipment"
  l_YFC_trade_buying_food: "Food Shipments"
+ l_YFC_trade_buying_manpower: "Militias"
+ l_YFC_trade_buying_spies: "Spies"
  l_YFC_trade_get_food: "§YAllows for another export of food.§!"
  l_YFC_trade_get_drugs_unlock: "§LEnables drug selling to any nations that have embargoed us and/or we have embargoed. Acts similar to food exports expect more... forced. The chance for failed delivery with drugs is increased by 10%§!\n\n§YTake a look in the YFC trade menu!§!"
  l_YFC_trade_get_drugs: "§YAllows for another export of drugs.§!"
+ l_YFC_trade_get_manpower: "§YAllows for another sending of militias.§!"
+ l_YFC_trade_get_spies: "§YAllows for another sending of spies.§!"
  l_YFC_trade_get_drugs_upgrade: "§GDecreases the time it takes to create drugs by 20 days§! (Current Time: [?YFC_trade_drug_timer_var|Y0])"
  l_YFC_trade_lost_sent: "§RYou will not make the expected profits in this sale.§!" #For YFC
  l_YFC_trade_lost_get: "§RYou will not receive the expected equipment in this sale.§!" #For YFC
  l_YFC_trade_lost_recive: "§RYou will still receive the expected equipment, but not have to pay for anything.§!" #For other
  l_YFC_trade_route_upgrade: "§GIncreases chance of successful deliveries by 10%§!" #For other
  l_YFC_trade_reopen: "§GAllow us to request nations that have embargoed us to reopen trade§!"
+ l_YFC_mercs_deployment: "§YAllows foreign nations to purchase our Mercenaries. This comes at no cost to us if they purchase.§!\n§YUnlocks the selling of militias!§!"
+ l_YFC_unlock_spies: "§YUnlocks the selling of spies!§!"
 
  l_YFC_raids1: "§YOpens decisions for raiding!§!"
  l_YFC_foreign_advisor: "§YUnlocks Coiny as an Army Chief!§!"
@@ -184,7 +190,6 @@
  l_YFC_mercs_upgrade_cav: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Combined Grape Affiliation Divisions.§!"
  l_YFC_mercs_upgrade_inf: "§YAdds Support Artillery and a Artillery battalion to future Unnamed Mercenary Brotherhood Divisions.§!"
  l_YFC_mercs_upgrade_amount: "§YMercenary hires will now grant 2 additional divisions.§!"
- l_YFC_mercs_deployment: "§YAllows foreign nations to purchase our Mercenaries. This comes at no cost to us if they purchase.§!\n§YUnlocks the selling of militias!§!\n§YUnlocks the selling of spies!§!"
  l_YFC_mercs_increase_deployment: "§GIncrease how many nations can have active mercenaries by 1§! (Currently: [?var_merc_usage_max|Y0])\n\n§RDecreases own mercenary deployment time by 20 days§!"
  l_YFC_mercs_halt_deployment: "§RSets how many nations can have active mercenaries to 1§!\n\n§GResets own mercenary deployment time to 180 days§!"
  l_YFC_SRI_demand_1: "§YWe will offer The Great Ridge government 500K dollars and protection for their resource rights. Their willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. If they do not agree we will not lose any money.§!"

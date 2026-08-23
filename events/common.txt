@@ -183,7 +183,7 @@ country_event = {
                     is_locked = yes
                     division_cap = 1
                     regiments = {
-                        infantry = { x = 0 y = 0 }
+                        motorized = { x = 0 y = 0 }
                         mot_anti_air_brigade = { x = 1 y = 0 }
                         mot_anti_air_brigade = { x = 1 y = 1 }
                         mot_artillery_brigade = { x = 2 y = 0 }

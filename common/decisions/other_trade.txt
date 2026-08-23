@@ -257,6 +257,25 @@ decision_other_trade_category = {
 					}
 					add_to_temp_variable = { Trade_Buying_Food_var = 15 }
 				}
+				IF = {
+					limit = {
+						YFC = {has_completed_focus = YFC_focus_new_monetary_avenues}
+						OR = {
+							has_war = yes
+							has_manpower < 10000
+							has_army_manpower = {size < 20000}
+						}
+					}
+					add_to_temp_variable = { Trade_Buying_Manpower_var = 15 }
+				}
+				IF = {
+					limit = {
+						YFC = {has_country_flag = YFC_trade_allow_spies}
+						NOT = {has_idea = idea_YFC_trade_spies_DLC}
+						NOT = {has_idea = idea_YFC_trade_spies_non_DLC}
+					}
+					add_to_temp_variable = { Trade_Buying_Spies_var = 10 }
+				}
 				random_list = {
 					Trade_Buying_Support_var = { #Support
 						set_country_flag = Confirmed_Trade_Buying
@@ -321,6 +340,18 @@ decision_other_trade_category = {
 					Trade_Buying_Food_var = { #Food
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 6 }
+						set_variable = { ROOT.buying_amount = 100 }
+						add_to_array = {array = YFC.selling_cost value = 100 index = YFC_trade_nation_pos_var}
+					}
+					Trade_Buying_Manpower_var = { #Manpower
+						set_country_flag = Confirmed_Trade_Buying
+						set_variable = { ROOT.buying_item = 7 }
+						set_variable = { ROOT.buying_amount = 100 }
+						add_to_array = {array = YFC.selling_cost value = 100 index = YFC_trade_nation_pos_var}
+					}
+					Trade_Buying_Manpower_var = { #Spies
+						set_country_flag = Confirmed_Trade_Buying
+						set_variable = { ROOT.buying_item = 8 }
 						set_variable = { ROOT.buying_amount = 100 }
 						add_to_array = {array = YFC.selling_cost value = 100 index = YFC_trade_nation_pos_var}
 					}

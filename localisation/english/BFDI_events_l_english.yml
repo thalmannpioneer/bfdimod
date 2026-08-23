@@ -1607,7 +1607,8 @@
  BUN_YFC.1.b: "The Bunch, forever and always!"
 
  BUN_YFC.2.t: "Our Darkest Day." #YFC sees this
- BUN_YFC.2.desc: "This was probably the easiest task we've had to do in the time that this corporation has existed. Employee purges are certainly in order, there's no reason this situation should've gotten out of hand. Layoffs in every sector, immediately! \nWe can't believe this, but somehow, Bunchivist sympathizers, or \"Neo-Bunchivists,\" as they're calling themselves, have regained contorl of all their lost lands. De facto, they're theirs, but de jure, they're still ours. Lets get control back, and kill that communist scum!"
+ BUN_YFC.2.desc.a: "This was probably the easiest task we've had to do in the time that this corporation has existed. Employee purges are certainly in order, there's no reason this situation should've gotten out of hand. Layoffs in every sector, immediately! \nWe can't believe this, but somehow, Bunchivist sympathizers, or \"Neo-Bunchivists,\" as they're calling themselves, have regained contorl of all their lost lands. De facto, they're theirs, but de jure, they're still ours. Lets get control back, and kill that communist scum!"
+ BUN_YFC.2.desc.b: "This was probably the easiest task we've had to do in the time that this corporation has existed. Employee purges are certainly in order, there's no reason we lost this situation. Layoffs in every sector, immediately! \nWe can't believe this, but somehow, Bunchivist sympathizers, or \"Neo-Bunchivists,\" as they're calling themselves, still hold some elements of all their lost lands. De facto, they're theirs, but de jure, they're still ours. Lets get control back, and kill that communist scum!"
  BUN_YFC.2.a: "Who to blame...?"
 
  BUN_YFC.3.t: "An interesting discovery."
