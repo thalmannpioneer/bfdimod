@@ -1126,47 +1126,47 @@
  YFC_event.77.desc: "As a part of our measure to train with the raider-state, we have instituted a practice join raid on a random city. We were, indeed, so successful, that the local city government wrote a report about this. It is reproduced below:\n\nRAID! At the northern border\nNearly my entire settlement has been displaced or injured! Raiders, bearing a strange yellow banner, led an incursion into our small town, burning buildings, injuring fellow citygoers, and stealing our most prized possessions. The events of the night were so surprising, just that morning, I had been tending to my garden, and appreciating the life given to me by the state. And now, it has been violently taken away from me. Though it is now morning, and the raiders are now gone, I am unsure of the whereabouts of many of the settlement's inhabitants. The hospital is filled with objects, and our only doctor, who miraculously was out of town during the raid, is being worked so feverously, you'd think he was sick! Please, send forces and medical professionals north, we need the help of the state, immediately!"
  YFC_event.77.a: "We'll be back, for even more of your wealth!" 
 
- YFC_event.78.t: "Raiding text" 
+ YFC_event.78.t: "Something New"
  YFC_event.78.desc: "The warehouse had been all but vacated. As a mercenary, a part of a wider company, USB, was not unfamiliar with the Yellow Face Corporation. Some years ago, his company had been bought by the Yellow Facers, and, now, he works, part time, as a soldier. Today, he was preparing to take part in the raiding of a settlement. It was a new sort of thing. You'd go in, scare some objects, steal some things, then get out as soon as possible. Not much to get worked up over, simple stuff, honestly. Everyone else in his company had already left, in order to listen to some orders that Eraser was going to give, but USB had come late, so, he was stuck preparing some extra things for the company, as a punishment. The only one who had decided to give him company was his friend Plug. Plug was a nice guy, the two had known each other for a couple of years now. He wasn't the type to give you much of anything to think about, after speaking to him. He was a really simple person, but nice to have around.\nUSB finished polishing all of the rifles in the warehouse, it was probably time for him to go."
  YFC_event.78.a: "Drop and give me twenty, soldier!" 
 
- YFC_event.79.t: "Top Hat text" 
- YFC_event.79.desc: "Wake up me" #Work either me or ZDubbz, an random event thrown in the chaos, should be before powerderkeg. It is about TopHat either not working with Yellow Face or making hidden moves. 
- YFC_event.79.a: "..." 
+ YFC_event.79.t: "Brigade" 
+ YFC_event.79.desc: "The Yellow Face Corporation typically published newspapers every monday, to be given to the employees of the corporation. These newspapers were intended to provide mostly accurate, nearly correct narratives about international, and local occurrences. Of course, due to this, the newspapers, though produced by the corporation at large, were mainly edited by employees who were not a part of any sector. Thus, the newspapers were about as popular as newspapers typically were, most objects bringing them to work every monday morning (and throwing them somewhere on the ground every monday afternoon...).\n\nSaturday morning, a fiasco had happened in Podgornyv. A large explosion came out of nowhere, killing three objects, wounding fourteen. Apparently, the Bunchivist who had committed such a violent crime, Tree Stump, did so in order to \"protect his private property,\" so, Eraser's very limited court system found him not guilty near instantaneously. A horrible tragedy, yes, but, to Top Hat, it was a golden opportunity. This was, so clearly, such a horrible thing! The fact that Eraser was attempting to sweep this under the rug, to him, it was a perfect opportunity to highlight the inefficiency of the Bunchivist system. And so, he rushed to his contacts. He spoke to many of the objects who took part in newspaper editing, ranting and raving about this event for as long as he could. The newspaper officials stated that it would be \"quite out of line for them to publish a story that painted the Bunch negatively,\" and that Top Hat was \"contradicting Yellow Face's authority,\" but his persistence would pay off. That monday morning, the paper didn't only publish that story, it made the front page."
+ YFC_event.79.a: "What is the matter with him?!" 
 
- YFC_event.80.t: "The Final Fate of The Sectors" #ZDubbz
- YFC_event.80.desc.a: "It seems that the Sectors have decided that it is best for them to leave the company. Before they left they collectively made a letter for us. \n\n'Dear Yellow Face,\nAfter much deliberation between the three of us, we have decided to walk away from the company. It may or may not be a shock to you, but best we go before the worst comes for us, don't look for us.\n\nSigned, Your Victims.'\n\nThe letter was left in Hammer's office; no signs of the Sectors have been seen for a few days as it appears they fled." #ZDubbz if you want to
- YFC_event.80.desc.b: "Wake up me" #ZDubbz, it is where the Sector are thinking about leaving and a meeting is held. From here the player can either remove them or have them stay.
- YFC_event.80.a: "Makes it easier for us!" #They quit
- YFC_event.80.b: "fire" #YFC fires them
- YFC_event.80.c: "keep" #YFC keeps them
+ YFC_event.80.t: "The Final Fate of The Sectorials"
+ YFC_event.80.desc.a: "Hammer's office has become somewhat of a hotspot, today. Well, old office, that is; the remaining sectorials have, collectively, made the decision to desert the company. Luckily, due entirely to our skillful dismantling of the sectorials' hold over the corporation, this departure will have nearly no effect upon common employees. The remaining sectorials have left, for Yellow Face, a letter, which they signed, and taped to the computer in Hammer's office, hence the crowds in front of it. The letter reads:\n\"Yellow Face,\n\nAfter much deliberation between the three of us, we have recognized that there is only one conclusion which we can come to: an ultimate severance of our partnership. This action may or may not be surprising to you, however, the writing on the wall has, for us, been apparent since you decided to work with Eraser. We have, in reality, never supported your actions, and, are glad to be free of your yoke. Do not attempt to find us, or reason with us, as, we do not want to be reasoned with.\n\nHammer, Pipe, Taser\"\nThere were no reported sightings of the former sectorials throughout the day, thus, it seems as if they are, entirely, gone."
+ YFC_event.80.desc.b: "Yellow Face,\n\nPipe, Taser, and I had a meeting today, alone. We were, to put it shortly, very unsure as to what our future as sectorials would be, or, if we would even continue to be sectorials. Our time here has been tumultuous, what with the arguments, the pay cuts, and that whole thing with Top Hat. I won't lie and say that none of us have held any animosity towards you, however, we aren't entirely against working with you, in the future. On the one hand, sure, our time hasn't been the best, but, on the other? This is all that we've been doing for years, we don't really know where else we might go after this. We talked in circles for hours, and, eventually, Pipe, and Taser, asked me for my opinion..."
+ YFC_event.80.a: "Good riddance!" #They quit
+ YFC_event.80.b: "I, of course, said we should stay." #YFC fires them
+ YFC_event.80.c: "I made the decision to depart." #YFC keeps them
 
  YFC_event.81.t: "Yoyleton Lost" 
- YFC_event.81.desc: "Wake up me" #ZDubbz, The teardrop popultion in Yoyleton and surrounding areas have become sick of the company's lack of care/chaos. As such the area has slighty turned into Protest and Riots. YFC does not fully control the area anymore
+ YFC_event.81.desc: "In the recent chaos, we have managed to neglect the population of Yoyleton. Yoyleton, though it was once a near empty settlement, is now settled by a swath of teardroppers. It, by no means, has a large population, however, it has a vocal one, and this vocal populace has sent us many requests for new water features around the city. Of course, there have been far more important matters withing Footpathburg, so, we have largely ignored their requests. This has upset them, and now, for some reason, they are declaring the corporation too weak to even govern! This ridiculous statement is likely the result of the feeble brains the average teardropper has, but, this, too, is not just a statement. It seems as if everyone is predisposed to violence, these days, as even these teardroppers have begun striking, and rioting. For now, it seems as if we will not be able to properly extract wealth from Yoyleton, let alone properly administer it. Only time will tell when it falls back in line, but, for now, we must attempt to supress them, lest this turn into anything substantial."
  YFC_event.81.a: "Ungrateful." 
 
- YFC_event.82.t: "Drug Shipment successful!" 
- YFC_event.82.desc: "Wake up me" #ZDubbz, or maybe have no text, your pick
+ YFC_event.82.t: "Drug Shipment Successful!" 
+ YFC_event.82.desc: "Our shipment of illicit substances has \"hit the streets\" of the region to which we have deployed them. The populace is sure to soon become reliant on subsequent shipments, thus, we have, already, through virtually no effort, gained frequent customers."
  YFC_event.82.a: "Excellent." 
 
- YFC_event.83.t: "Drug Shipment failed!" 
- YFC_event.83.desc: "Wake up me" #ZDubbz
+ YFC_event.83.t: "Drug Shipment Failed!" 
+ YFC_event.83.desc: "Our shipment of illicit substances has failed to fulfill its transportation to (insert nation name). Some ruffian or other has likely intercepted the package, and is partaking in whims beyond our wildest dreams, without a care in the world. Lucky guy, we suppose, but, still, we will not be gaining any money from this endeavor, thus, making it a failure."
  YFC_event.83.a: "Not excellent."
 
- YFC_event.84.t: "In a mere house..." 
- YFC_event.84.desc: "Wake up me" #ZDubbz, okay a bit out there but have these be from two unnamed objects who are making drugs. Like breaking bad (Which I never watched). 
- YFC_event.84.a: "." 
+ YFC_event.84.t: "Bakerson" 
+ YFC_event.84.desc: "\"Could you chill the fuck out dude?\" As a top goon of the company, Bacon was always up to weird things, but Sour Cream was *not* expecting to be asked to help him make crack at nine in the morning.\n\nSour Cream liked to consider herself a relatively well adjusted object, but she was always finding herself in these random ass situations. \"What do you mean 'chill out' do you not hear yourself?!\" Seriously, who asks someone to come over and bring \"a spoon, and a strong stomach\" without expecting to be asked follow up questions? This was her mom's good spoon too, she was so gonna get in trouble for this.\n\nBacon, sitting at his kitchen table, with an assortment of baking soda, cocaine, and a lighter in front of him, sighed so hard you'd think he was actually in the right. \"I swear to glob bro, just give me the fucking spoon.\" He started attempting to turn the lighter on, clearly struggling. Under his breath, he mumbled, \"don't know why you're pretending like you haven't had drugs before...\"\n\n\"I haven't????\"\n\n\"I've SEEN you take DayQuil before bro, you're not fooling anyone.\" Finally, the lighter flicked to life, and Bacon started grabbing for the spoon, now set carefully down on the table. \"I'm gonna make so much off of this.\"" #thal, DayQuil is a popular medicine that people take when they're sick with like a cold, or something very mild. the joke is that it's very obviously not comparable to crack fucking cocaine, so please use a similar medicine to reflect that in the russian loc
+ YFC_event.84.a: "\"What is wrong with you?\""
 
- YFC_event.85.t: "Let them run wild" 
- YFC_event.85.desc: "text text bla bla" #ZDubbz, what we already talked about. Yellow Face let's prisoners run wild in Teardrop lands causing a pause to the east. Could be done from a view of a prisoner/guard/local. Just nothing that the foucs desc already does
+ YFC_event.85.t: "Running Wild!" 
+ YFC_event.85.desc: "\"You're free to go, kid.\"\n\nAcid Drop (that being, acid of the hallucinogenic variety) wasn't exactly the most well behaved inmate. They had already been in for murder (it was accidental, they swear!), and had gotten into fights pretty frequently during their time incarcerated. They were a frequent visitor of solitary confinement, often getting into scuffles with other inmates over the (admittedly terrible) prison food that was served. It wasn't like they were planning on stopping these shenanigans either, so, why they were released was beyond them. Regardless, they were taking this opportunity in stride. There were a couple people outside of this place that needed to be taught a couple of lessons, and Acid Drop would've been damned if they didn't get to go out there and teach.\n\nAs they looked around the facility, they realized that nearly everyone was getting released. From people in for stealing, to people in for treason, former prisoners were leaving the facility in droves, and, as Acid Drop followed with them, they realized that they had never seen the object who had \"released\" them, before. Had that even been a Beach Territory official? Regardless, they had some business to attend to, and, seemingly, so did many of the other inmates, fleeing the facility with them."
  YFC_event.85.a: "Have fun with this Teardrop!" 
 
  YFC_event.86.t: "Marching On The Waves" 
- YFC_event.86.desc: "text text bla bla" #ZDubbz, after east is done and one of the other paths is done. tbh I don't have a great idea for this so I could be them building/training the fleet. Just again should not just be a focus desc
- YFC_event.86.a: "About Ready." 
+ YFC_event.86.desc: "\"Water's real rickety, ain't it?\" \n\nUSB had no idea why he decided to become a pirate. It wasn't like the pay was any higher for being out at sea, and being a foot soldier was way easier. He was deathly afraid of the ocean too -- what was he thinking?! He started feeling nauseous at his superior's comment. Who the hell talks about how dangerous the water seems right before a naval drill? He hated being a stupid mercenary for the company, but, hey, it paid the bills, and they only had to work every other week. Where else could you find a career like that? ...That's how they rationalized it.\n\n\"Formaaaaaa-tion!\" At once, the boat's motor sputtered to life, and USB fell onto the boat's deck. Great."
+ YFC_event.86.a: "Ready, sir!" 
 
  YFC_event.87.t: "Pirate 101" 
- YFC_event.87.desc: "text text bla bla" #ZDubbz, should either be Yellow Face looking at the Pirate fleet and/or their first raid on a poor fishing boat. This also ends demo for raiders side
+ YFC_event.87.desc: "Throughout his training, USB had, repeatedly, been given these instructions:\n-Find a target,\n-Speed towards it,\n-Lower the Beach Territory flag; raise the Yellow Facer one,\n-Intimidate them with gunfire,\n-acquire any and all wealth as peacefully as possible,\n-Don't hesitate to use violence,\n-Get out as fast as possible,\n\nUSB's first proper pirating adventure was today. For weeks, they'd been doing drills, over and over again; his fear of the ocean had essentially been beaten out of him. With steeled resolve, he gazed upon the horizon, and spotted a quaint fishing vessel. He knew that that'd be the day's target. For some abysmally unknown reason, he was placed as the captain of the leading boat that day, because, somehow, literally every person who had actual experience was gone that day. He put the motor to the highest setting, and rushed in, a small fleet following close behind him. Nearly, his boat crashed into the fisherman's, and, nearly, he forgot to give the signal to raise the Yellow Facer's flag, but, by some farfetched chance, he managed to execute the instructions properly. The gunfire, as intended, missed the fisherman, but scared him into forking over all of his fish, and the money he had made the past few weeks. Quickly, the fleet escaped over the horizon. USB has done it."
  YFC_event.87.a: "Onwards!" 
 
  YFC_event.88.t: "YFC_focus_the_nation" 
@@ -1334,7 +1334,7 @@
  YFC_borderwars.10.c: "Recurited captives!"
  YFC_borderwars.10.d: "Trains!"
 
- YFC_borderwars.11.t: "Raiders Plundered!" #ZDubbz no fucking clue why I put placeholder as if you could read my find :sob: 
+ YFC_borderwars.11.t: "Your Peripheral Vision" #ZDubbz no fucking clue why I put placeholder as if you could read my find :sob: 
  YFC_borderwars.11.desc: "Placeholder Placeholder Placeholder" #This is after the special YFC can do angaist a nation from the view of the other nation. Should just be that raiders broke through after so many raiders and caused damage/chaos
  YFC_borderwars.11.a: "Placeholder"
  
@@ -1617,24 +1617,24 @@
  YFC_sector.15.b: "Side with Hammer"
  YFC_sector.15.c: "Side with Beaker"
 
- YFC_sector.16.t: "...Top Hat seizes some control!" #zdubbz
- YFC_sector.16.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
- YFC_sector.16.a: "Curse them!"
+ YFC_sector.16.t: "...Top Hat seizes some control!"
+ YFC_sector.16.desc: "Due entirely to the high influence that Top Hat has managed to gain over the company, Top Hat has seized a high amount of power within the Yellow Face Corporation. Unfortunately, this means that he will no longer be subservient to our wants, and we will be unable to keep him in line for quite some time, as, he can simply force the employees to oust anyone he so chooses, due to this power. We will §Rno longer benefit from what he brings to the company§!, though, luckily, he will not be able to contain this level of power forever. We are actively working on dismantling his influence, and, expect to see a return to form from him, soon."
+ YFC_sector.16.a: "Curse him!"
 
- YFC_sector.17.t: "...Pipe seizes some control!" #zdubbz
- YFC_sector.17.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.17.t: "...Pipe seizes some control!"
+ YFC_sector.17.desc: "Due entirely to the high influence that Pipe has managed to gain over the company, Pipe has seized a high amount of power within the Yellow Face Corporation. Unfortunately, this means that they will no longer be subservient to our wants, and we will be unable to keep them in line for quite some time, as, they can simply force the employees to oust anyone they so choose, due to this power. We will §Rno longer benefit from what they bring to the company§!, though, luckily, they will not be able to contain this level of power forever. We are actively working on dismantling their influence, and, expect to see a return to form from them, soon."
  YFC_sector.17.a: "Curse them!"
 
- YFC_sector.18.t: "...Beaker seizes some control!" #zdubbz
- YFC_sector.18.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
- YFC_sector.18.a: "Curse them!"
+ YFC_sector.18.t: "...Beaker seizes some control!"
+ YFC_sector.18.desc: "Due entirely to the high influence that Beaker has managed to gain over the company, Beaker has seized a high amount of power within the Yellow Face Corporation. Unfortunately, this means that she will no longer be subservient to our wants, and we will be unable to keep him in line for quite some time, as, she can simply force the employees to oust anyone he so chooses, due to this power. We will §Rno longer benefit from what she brings to the company§!, though, luckily, he will not be able to contain this level of power forever. We are actively working on dismantling her influence, and, expect to see a return to form from him, soon."
+ YFC_sector.18.a: "Curse her!"
 
- YFC_sector.19.t: "...Hammer seizes some control!" #zdubbz
- YFC_sector.19.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
- YFC_sector.19.a: "Curse them!"
+ YFC_sector.19.t: "...Hammer seizes some control!"
+ YFC_sector.19.desc: "Due entirely to the high influence that Hammer has managed to gain over the company, Hammer has seized a high amount of power within the Yellow Face Corporation. Unfortunately, this means that he will no longer be subservient to our wants, and we will be unable to keep him in line for quite some time, as, he can simply force the employees to oust anyone he so chooses, due to this power. We will §Rno longer benefit from what he brings to the company§!, though, luckily, he will not be able to contain this level of power forever. We are actively working on dismantling his influence, and, expect to see a return to form from him, soon."
+ YFC_sector.19.a: "Curse him!"
 
- YFC_sector.20.t: "...Taser seizes some control!" #zdubbz
- YFC_sector.20.desc: "Some sort of text that explains that this sector has taken more authority and it will take some time to get them back in line. For now suffer lmao!!!!"
+ YFC_sector.20.t: "...Taser seizes some control!"
+ YFC_sector.20.desc: "Due entirely to the high influence that Taser has managed to gain over the company, Taser has seized a high amount of power within the Yellow Face Corporation. Unfortunately, this means that they will no longer be subservient to our wants, and we will be unable to keep them in line for quite some time, as, they can simply force the employees to oust anyone they so choose, due to this power. We will §Rno longer benefit from what they bring to the company§!, though, luckily, they will not be able to contain this level of power forever. We are actively working on dismantling their influence, and, expect to see a return to form from them, soon."
  YFC_sector.20.a: "Curse them!"
 
  YFC_sector.21.t: "Economic Report: EMERGENCY!"
@@ -2170,10 +2170,10 @@
  bfdinews.41.c: "Maybe we should cut trade..."
  bfdinews.41.d: "This could work..."
 
- bfdinews.42.t: "Bandits Unite!" #ZDubbz if you want to
- bfdinews.42.desc: "One of our remaining correspondents has reported the creation of a military and economic alliance in the South. Created by The Yellow Face Corporation, now self renamed to Yellow Face Raiders, and Eraser's Bunch, the alliance calls itself the 'Bandit Pack'. While its goals are unclear, it seems to wish great profit to themselves by the destruction of its neighbors. Yellow Face blamed both neighbors and his own staff of having to reach this stage. We will keep reporting as the two start making more serious moves... "
+ bfdinews.42.t: "Bandits Unite!"
+ bfdinews.42.desc: "One of our remaining correspondents has reported the creation of a military and economic alliance in the South of the continent. Created by the group, formerly known as the Yellow Face Corporation, though, now calling itself the Yellow Face Raiders, and Eraser's Bunch. The alliance calls itself the \"Bandit Pack,\" and, while its goals are unclear, it seemingly wishes to enrich itself by destroying the settlments of its neighbors. When asked, Yellow Face cited nearby nations, and his \"idiotic former staff,\" as his reason for taking such drastic, radical moves. We will keep reporting on the geopolitics of this particularly unstable region, as the two begin to make more serious moves... "
  bfdinews.42.a: "Take the backstabbers' wealth!" #YFC/BUN
- bfdinews.42.b: "A storm is brewing..." #Neighbors
+ bfdinews.42.b: "We should start readying defenses." #Neighbors
  bfdinews.42.c: "A storm grows in the South." #Anyone else
 
  bfdinews.43.t: "Top Hat Takeover!" #if you want to bro i already wrote this ToT
