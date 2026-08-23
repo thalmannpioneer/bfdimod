@@ -3656,7 +3656,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        #allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -3708,7 +3708,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_entice_the_sectors
         relative_position_id = YFC_focus_mass_firings
-        x = -2
+        x = -1
         y = 1
         icon = GFX_focus_YFC_entice_the_sectors
 
@@ -3898,7 +3898,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
+        #allow_branch = { has_completed_focus = YFC_focus_strike_the_headache }
 
         cost = 5
         completion_reward = {
