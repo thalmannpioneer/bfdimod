@@ -22,14 +22,22 @@ division_template = {
     priority = 0
 }
 
-units = {
+division_template = { #Might one day remove this but for now DAV may need this
+    name = "Royal Division"
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+    }
+}
 
+units = {
     fleet = { #So later me understand why the 2011 fleet works fine but the 2012 does not
         name = "Royal David Navy"
-        naval_base = 11861 # East Davidland
+        naval_base = 11899 # East Davidland 11861 as backup
         task_force = {
             name = "David Fleet"
-            location = 11861 # East Davidland
+            location = 11899 # East Davidland 11861 as backup
 
             ship = { name = "HMAS Davidland" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DAV version_name = "Big Placeholder Class" } } }
             ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }

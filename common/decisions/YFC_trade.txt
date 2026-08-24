@@ -628,7 +628,7 @@ decision_YFC_trade_category = {
             THIS = {is_ai = yes}
         }
 
-        targets = { BUN CRN DAV FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ)
+        targets = { BUN CRN FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ DAV)
         targets_dynamic = yes
         target_trigger = {
             FROM = {
@@ -700,9 +700,18 @@ decision_YFC_trade_category = {
                 set_variable = { selling_X^FROM.YFC_trade_nation_pos_var = 1.3 }
                 FROM = {
                     set_country_flag = ongoing_trade_offer
-                    country_event = {
-                        id = YFC_event.36
-                        hours = 1
+                    IF = {
+                        limit = {check_variable = {buying_item = 999}}
+                        country_event = {
+                            id = YFC_hidden_event.3
+                            hours = 1
+                        }
+                    }
+                    ELSE = {
+                        country_event = {
+                            id = YFC_event.36
+                            hours = 1
+                        }
                     }
                 }
             }
@@ -713,6 +722,7 @@ decision_YFC_trade_category = {
             modifier = {
                 add = -1000
                 NOT = {has_completed_focus = YFC_focus_money_arms_capital}
+                NOT = {has_completed_focus = YFC_focus_numismatian_split}
             }
             modifier = {
                 add = 2
@@ -755,7 +765,7 @@ decision_YFC_trade_category = {
                 FROM = { check_variable = { buying_item = 7 }}
             }
             modifier = { #Since drugs is free just sell it
-                add = 20
+                add = 25
                 FROM = { check_variable = { buying_item = 999 }}
             }
         }
@@ -775,7 +785,7 @@ decision_YFC_trade_category = {
             THIS = {is_ai = yes}
         }
 
-        targets = { BUN CRN DAV FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ)
+        targets = { BUN CRN FFT GDR GFG GGR GMD GPG GSR GTR SMG SPL SRI SRR UGA } #500 Nations (Blocked ones are: AGG GPR NRR SEC SGD SOS TBT WGF DPZ DAV)
         targets_dynamic = yes
         target_trigger = {
             FROM = {

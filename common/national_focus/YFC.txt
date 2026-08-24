@@ -67,8 +67,9 @@ focus_tree = {
                             tag = SOS
                             tag = WGF
                             tag = DPZ
-                            tag = DAV #Maybe remove later?
+                            tag = DAV Maybe remove later?
                             tag = EMP
+                            tag = LSS
                         }
                     }
                     set_country_flag = YFC_trade_allow_other
@@ -5421,8 +5422,8 @@ focus_tree = {
             #moves you up to free trade yay!
             add_ideas = free_trade
 
-            custom_effect_tooltip = l_money_gain_600K
-		    add_to_variable = { money_amount = 6 }
+            custom_effect_tooltip = l_money_gain_400K
+		    add_to_variable = { money_amount = 4 }
         }
     }
 
@@ -5499,8 +5500,6 @@ focus_tree = {
             #Pain to code but I got this
 
             custom_effect_tooltip = l_YFC_trade_route_upgrade
-            custom_effect_tooltip = l_money_gain_200K
-		    add_to_variable = { money_amount = 2 }
         }
     }
 
@@ -7099,7 +7098,7 @@ focus_tree = {
 
         allow_branch = {
             NOT = {has_completed_focus = YFC_focus_locked_on_land}
-            has_completed_focus = {YFC_focus_issues_in_east}
+            has_completed_focus = YFC_focus_issues_in_east
         }
 
         completion_reward = {
@@ -7142,7 +7141,7 @@ focus_tree = {
 
         allow_branch = {
             NOT = {has_completed_focus = YFC_focus_way_to_seas}
-            has_completed_focus = {YFC_focus_issues_in_east}
+            has_completed_focus = YFC_focus_issues_in_east
         }
 
         mutually_exclusive = { focus = YFC_focus_way_to_seas }
@@ -7230,7 +7229,7 @@ focus_tree = {
         }
 
         ai_will_do = {
-            base = 5
+            base = 25
         }
 
         prerequisite = { focus = YFC_focus_bandit_pack focus = YFC_focus_acknowledge_our_shortcomings }
@@ -7251,7 +7250,7 @@ focus_tree = {
         icon = GFX_focus_YFC_construct_the_naval_base
 
         ai_will_do = {
-            base = 5
+            base = 25
         }
 
         prerequisite = { focus = YFC_focus_before_setting_sail }
@@ -7352,7 +7351,7 @@ focus_tree = {
         icon = GFX_focus_YFC_pirate_life
 
         ai_will_do = {
-            base = 5
+            base = 25
         }
 
         prerequisite = { focus = YFC_focus_construct_the_naval_base }

@@ -1342,7 +1342,7 @@ country_event = { #YFC Sell
 
 		effect_tooltip = {
 			IF = {
-				limit = {check_variable = {buying_item = 0}} 
+				limit = {check_variable = {buying_item = 0 }} 
 				YFC = {
 					send_equipment = {
 						equipment = infantry_equipment
@@ -1352,7 +1352,7 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 1}} 
+				limit = {check_variable = {buying_item = 1 }} 
 				YFC = {
 					send_equipment = {
 						equipment = support_equipment_1
@@ -1362,7 +1362,7 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 2}} 
+				limit = {check_variable = {buying_item = 2 }} 
 				YFC = {
 					send_equipment = {
 						equipment = motorized_equipment
@@ -1372,7 +1372,7 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 3}} 
+				limit = {check_variable = {buying_item = 3 }} 
 				YFC = {
 					send_equipment = {
 						equipment = artillery_equipment
@@ -1382,7 +1382,7 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 4}} 
+				limit = {check_variable = {buying_item = 4 }} 
 				YFC = {
 					send_equipment = {
 						equipment = anti_air_equipment
@@ -1392,7 +1392,7 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 5}} 
+				limit = {check_variable = {buying_item = 5 }} 
 				YFC = {
 					send_equipment = {
 						equipment = anti_tank_equipment
@@ -1402,18 +1402,18 @@ country_event = { #YFC Sell
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 6}} 
+				limit = {check_variable = {buying_item = 6 }} 
 				add_timed_idea = {
 					idea = idea_YFC_trade_food
 					days = 90
 				}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 7}} 
-				add_manpower = 5000
+				limit = {check_variable = {buying_item = 7 }} 
+				ROOT = {add_manpower = 5000}
 			}
 			ELSE_IF = {
-				limit = {check_variable = {buying_item = 8}} 
+				limit = {check_variable = {buying_item = 8 }} 
 				IF = {
 					limit = {has_dlc = "La Resistance"}
 					add_ideas = idea_YFC_trade_spies_DLC
@@ -4518,7 +4518,7 @@ country_event = {
 		IF = {
 			limit = {is_ai = yes}
 			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
-			add_manpower = 2000
+			add_manpower = 2500
 		}
 	}
 }
@@ -4539,7 +4539,7 @@ country_event = {
 		clr_country_flag = YFC_Raid_Active
 		IF = {
 			limit = {is_ai = yes}
-			add_manpower = 1000
+			add_manpower = 2000
 		}
 	}
 }

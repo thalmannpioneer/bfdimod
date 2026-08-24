@@ -79,7 +79,9 @@ TBT_low_pop = {
     enable = { always = yes }
 
     remove_trigger = {
-        is_core_of = TBT
+        ROOT = {
+            is_core_of = TBT
+        }
         TBT = {
             has_war = no
             has_border_war = no
@@ -99,7 +101,9 @@ TBT_med_pop = {
     enable = { always = yes }
 
     remove_trigger = {
-        is_core_of = TBT
+        ROOT = {
+            is_core_of = TBT
+        }
         TBT = {
             has_war = no
             has_border_war = no
@@ -120,7 +124,9 @@ TBT_high_pop = {
     enable = { always = yes }
 
     remove_trigger = {
-        is_core_of = TBT
+        ROOT = {
+            is_core_of = TBT
+        }
         TBT = {
             has_war = no
             has_border_war = no
@@ -145,6 +151,10 @@ modifier_GTR_city_council = {
 
     local_building_slots_factor = 0.5
     mobilization_speed = 0.5
+
+    remove_trigger = {
+        NOT = {country_exists = GTR}
+    }
 }
 
 modifier_GTR_state_infected = {

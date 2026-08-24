@@ -181,13 +181,21 @@ guiTypes = {
         }
         iconType = {
             name = "background_equipment_box_item"
-            position = { x = 90 y = 30 }
+            position = { x = 90 y = 29 }
         }
         iconType = {
             name = "other_trade_list_equipment_fake"
             position = { x = 290 y = 30 }
             quadTextureSprite = "GFX_naval_increase_amount"
         }
+		instantTextboxType = {
+			name = "other_trade_list_equipment_cost"
+			text = "[equipment_cost_trade]"
+			position = { x = 220 y = 64 }
+			maxWidth = 60
+			format = centre
+			font = hoi_18header
+		}
 		buttonType = {
 			name = "other_trade_list_equipment_button_select"
 			position = { x = 0 y = 0 }

@@ -54,6 +54,10 @@ decision_other_trade_category = {
                 tooltip = l_decisions_YFC_merc_ready
                 YFC = {check_variable = {var_merc_usage_current < var_merc_usage_max}}
             }
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_divs
+				NOT = {has_country_flag = has_active_mercenaries}
+			}
 		}
 
 		custom_cost_trigger = {
@@ -67,6 +71,7 @@ decision_other_trade_category = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 5 }
+			set_country_flag = has_active_mercenaries
 			capital_scope = {
 				create_unit = {
 					division = "name = \"Top Hat Mercenaries\" division_template = \"Top Hat Mercenaries\" start_experience_factor = 0.95"
@@ -83,6 +88,7 @@ decision_other_trade_category = {
 		}
 
 		remove_effect = {
+			clr_country_flag = has_active_mercenaries
 			delete_units = {
 				division_template = "Top Hat Mercenaries"
 				disband = no
@@ -122,6 +128,123 @@ decision_other_trade_category = {
 			modifier = {
 				add = 50
 				surrender_progress > 0.3
+			}
+		}
+	}
+
+	other_trade_merc_arty_upgrade = {
+		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+
+		visible = {
+			has_country_flag = other_trade_allow_merc
+		}
+
+		available = {
+			has_tech = gw_artillery
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_divs
+				NOT = {has_country_flag = has_active_mercenaries}
+			}
+		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+		}
+		custom_cost_text = decisions_cost_money_1m
+
+		fire_only_once = yes
+		days_remove = 90
+
+		complete_effect = {
+			set_country_flag = has_active_mercenaries
+			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {
+				YFC = {
+					add_to_variable = { money_amount = 4 }
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_other_trade_mercs_upgrade_arty
+			clr_country_flag = has_active_mercenaries
+			hidden_effect = {
+                add_units_to_division_template = {
+                    template_name = "Top Hat Mercenaries"
+                    regiments = {
+                        artillery_brigade = 3
+                    }
+                    support = {
+                        artillery = 0
+                    }
+                }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_war = no
+				check_variable = {money_amount > 50}
+			}
+		}
+	}
+
+	other_trade_merc_support_upgrade = {
+		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+
+		visible = {
+			has_country_flag = other_trade_allow_merc
+		}
+
+		available = {
+			has_tech = tech_support
+			custom_trigger_tooltip = {
+				tooltip = l_decisions_YFC_divs
+				NOT = {has_country_flag = has_active_mercenaries}
+			}
+		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+		}
+		custom_cost_text = decisions_cost_money_1m
+
+		fire_only_once = yes
+		days_remove = 90
+
+		complete_effect = {
+			set_country_flag = has_active_mercenaries
+			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {
+				YFC = {
+					add_to_variable = { money_amount = 4 }
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_other_trade_mercs_upgrade_support
+			clr_country_flag = has_active_mercenaries
+			hidden_effect = {
+               add_units_to_division_template = {
+                    template_name = "Top Hat Mercenaries"
+                    support = {
+                        engineer = 0
+                        recon = 0
+                        military_police = 0
+                    }
+                }
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				has_war = no
+				check_variable = {money_amount > 50}
 			}
 		}
 	}
@@ -207,6 +330,8 @@ decision_other_trade_category = {
 				set_temp_variable = { Trade_Buying_AntiAir_var = 0 }		
 				set_temp_variable = { Trade_Buying_AntiTank_var = 0 }			
 				set_temp_variable = { Trade_Buying_Food_var = 0 }
+				set_temp_variable = { Trade_Buying_Manpower_var = 0 }
+				set_temp_variable = { Trade_Buying_Spies_var = 0 }
 				IF = {
 					limit = {has_equipment = {infantry_equipment < 2000}}
 					add_to_temp_variable = { Trade_Buying_Inf_var = 100 }
@@ -347,13 +472,13 @@ decision_other_trade_category = {
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 7 }
 						set_variable = { ROOT.buying_amount = 100 }
-						add_to_array = {array = YFC.selling_cost value = 100 index = YFC_trade_nation_pos_var}
+						add_to_array = {array = YFC.selling_cost value = 200 index = YFC_trade_nation_pos_var}
 					}
-					Trade_Buying_Manpower_var = { #Spies
+					Trade_Buying_Spies_var = { #Spies
 						set_country_flag = Confirmed_Trade_Buying
 						set_variable = { ROOT.buying_item = 8 }
 						set_variable = { ROOT.buying_amount = 100 }
-						add_to_array = {array = YFC.selling_cost value = 100 index = YFC_trade_nation_pos_var}
+						add_to_array = {array = YFC.selling_cost value = 500 index = YFC_trade_nation_pos_var}
 					}
 					1 = {
 						clr_country_flag = Confirmed_Trade_Buying

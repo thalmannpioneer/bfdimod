@@ -1049,7 +1049,7 @@ YFC_calc_trade_risk_selling = {
             }
             ELSE_IF = {
                 limit = {check_variable = {buying_item = 7}}
-                add_manpower = 5000
+                ROOT = {add_manpower = 5000}
                 YFC = {
                     clr_country_flag = YFC_trade_allow_militias
                     activate_mission = YFC_Trade_manpower
@@ -1183,7 +1183,7 @@ YFC_calc_trade_risk_selling = {
             }
             ELSE_IF = {
                 limit = {check_variable = {buying_item = 7}}
-                add_manpower = 5000
+                ROOT = {add_manpower = 5000}
                 YFC = {
                     clr_country_flag = YFC_trade_allow_militias
                     activate_mission = YFC_Trade_manpower

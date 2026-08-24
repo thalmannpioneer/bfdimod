@@ -1,7 +1,6 @@
 #DAV AI 101
 #Change if you want to!!!!
 
-
 ## ARMY PLACEMENT ##
 
 DAV_invade_TBT = {
@@ -26,30 +25,26 @@ DAV_invade_TBT = {
 	}
 
 	ai_strategy = {
+		type = consider_weak
+		id = TBT
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = goiky_navy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = goiky_navy
+		value = 2
+	}
+
+	ai_strategy = {
 		type = naval_invasion_dominance_weight
-		value = 40
-	}
-
-	ai_strategy = {
-		type = naval_mission_threshold
-		id = NAVAL_MISSION_PATROL
-		value = -100
-	}
-
-	ai_strategy = {
-		type = naval_dominance
-		id = 19 
-		value = 100
-	}
-	ai_strategy = {
-		type = naval_dominance
-		id = 12 
-		value = 100
-	}
-	ai_strategy = {
-		type = naval_dominance
-		id = 15 
-		value = 100
+		value = 50
 	}
 }
 
@@ -75,30 +70,26 @@ DAV_invade_WGF = {
 	}
 
 	ai_strategy = {
+		type = consider_weak
+		id = WGF
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = goiky_navy
+		value = 100
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+		area = goiky_navy
+		value = 2
+	}
+
+	ai_strategy = {
 		type = naval_invasion_dominance_weight
-		value = 40
-	}
-
-	ai_strategy = {
-		type = naval_mission_threshold
-		id = NAVAL_MISSION_PATROL
-		value = -100
-	}
-
-	ai_strategy = {
-		type = naval_dominance
-		id = 19 
-		value = 100
-	}
-	ai_strategy = {
-		type = naval_dominance
-		id = 12 
-		value = 100
-	}
-	ai_strategy = {
-		type = naval_dominance
-		id = 15 
-		value = 100
+		value = 50
 	}
 }
 
@@ -111,7 +102,7 @@ DAV_boat = {
 	}
 	enable = {
 		has_war = no
-		dockyard < 5
+		dockyard < 7
 	}
 	abort_when_not_enabled = yes
 
@@ -122,3 +113,54 @@ DAV_boat = {
 	}
 }
 
+DAV_nav_role_ratios = {
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 90
+	}
+}
+
+DAV_nav_role_ratios = {
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		has_dlc = "Man the Guns"
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 70
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 20
+	}
+}

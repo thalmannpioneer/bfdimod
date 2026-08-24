@@ -20,6 +20,7 @@ areas = {
     snow_plateau = {
         strategic_regions = {
             6
+            
         }
     }
 
@@ -28,6 +29,16 @@ areas = {
             1 
             2
             9
+        }
+    }
+
+    goiky_navy = {
+        strategic_regions = {
+            14 
+            15 
+            19 
+            12 
+            13
         }
     }
 

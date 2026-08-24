@@ -222,6 +222,8 @@
 
  other_trade_merc_opt: "Opt into Top Hat's Mercenaries System"
  other_trade_merc_buy: "Purchase Mercenaries"
+ other_trade_merc_arty_upgrade: "Add Artillery to Mercenaries"
+ other_trade_merc_support_upgrade: "Add Support to Mercenaries"
 
  decision_YFC_sector_category: "Our Sectors"
  l_decisions_sector_title: "§YOur Sectors§!"

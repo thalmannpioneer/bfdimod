@@ -1,0 +1,125 @@
+DAV_StrikeForce_1 = {
+	allowed = {
+		original_tag = DAV
+	}
+	ai_will_do = {
+		factor = 30
+	}
+	keep_updated = yes
+	mission = { naval_strike }
+	min_composition = {
+		battleship = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 8
+		}
+	}
+	
+	optimal_composition = {
+		battleship = {
+			amount = 2
+		}
+		destroyer = {
+			amount = 20
+		}
+	}
+}
+
+DAV_PatrolReconForce_1 = {
+	allowed = {
+		original_tag = DAV
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	mission = { naval_patrol }
+	min_composition = {
+		destroyer = {
+			amount = 1
+		}
+	}	
+	optimal_composition = {
+		#light_cruiser = {
+		#	amount = 3
+		#}
+		destroyer = {
+			amount = 6
+		}
+	}
+}
+
+DAV_PatrolDominanceForce_1 = {
+	allowed = {
+		original_tag = DAV
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	mission = { naval_patrol }
+	min_composition = {
+		#heavy_cruiser = {
+		#	amount = 1
+		#}
+		destroyer = {
+			amount = 2
+		}
+	}
+
+	optimal_composition = {
+		#heavy_cruiser = {
+		#	amount = 2
+		#}
+		#light_cruiser = {
+		#	amount = 1
+		#}
+		destroyer = {
+			amount = 8
+		}
+	}
+}
+
+DAV_NavalInvasionSupport_1 = {
+	allowed = {
+		original_tag = DAV
+	}
+	ai_will_do = {
+		factor = 5
+	}	
+	mission = { naval_invasion_support }
+	min_composition = {
+		battleship = {
+			amount = 1
+		}		
+	}
+
+	optimal_composition = {
+		battleship = {
+			amount = 1
+		}
+		destroyer = {
+			amount = 10
+		}
+	}
+}
+
+DAV_ConvoyEscort_1 = {
+	allowed = {
+		original_tag = DAV
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	mission = { convoy_escort }
+	min_composition = {
+		destroyer = {
+			amount = 4
+		}
+	}
+	
+	optimal_composition = {
+		destroyer = {
+			amount = 8
+		}
+	}
+}
