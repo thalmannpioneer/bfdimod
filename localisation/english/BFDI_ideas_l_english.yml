@@ -248,7 +248,7 @@
  idea_YFC_Debt_Crisis_desc: "§RThe Crisis will be removed once we no longer have debt.§!" 
  idea_YFC_United_Clash: "Defense Contractors"
  idea_YFC_Bunch_Insurgency: "§OBunch Insurgency§!"
- idea_YFC_Stolen_Guns: "Unknown Production Issues"
+ idea_YFC_Stolen_Guns: "Unknown Production Issues" #For GMD
  idea_YFC_Stolen_Guns_desc: "It's unclear why, but we are only making a fraction of equipment we are supposed to be making. Investigations are being done to find the source of this issue but will take some time. For now, it will be eating at our military growth."
  idea_YFC_show_no_mercy: "Show No Mercy"
  idea_YFC_economic_isolation: "Sectorial Infighting"
@@ -261,12 +261,14 @@
  idea_YFC_real_raider_force: "Real Raider Force" 
  idea_YFC_expanding_the_waves: "Expanding The Waves" 
  idea_YFC_learning_the_waves: "Learning The Waves" 
- idea_YFC_active_pirates: "§RActive Pirates§!" 
+ idea_YFC_active_pirates: "§RActive Pirates§!" #Attacks losers
  idea_YFC_top_hat_prowess: "Top Hat's Prowess" 
  idea_YFC_high_quality_housing: "High Quality Housing" 
  idea_YFC_clean_skies: "Clean Skies" 
  idea_YFC_crackdown: "'Crack'down" 
  idea_YFC_city_government: "City Government" 
+ idea_YFC_unnamed_tactics: "Unnamed's Tactics" 
+ idea_YFC_grapes_tactics: "Grapes' Tactics" 
 
  idea_Musketeers_OWN: "OWN"
  idea_Musketeers_UDC: "UDC"

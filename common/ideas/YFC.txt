@@ -290,6 +290,22 @@ ideas = {
             }
 		}
 
+		idea_YFC_unnamed_tactics = { 
+			picture = YFC_real_raider_force #Update later!
+			modifier = {
+				land_reinforce_rate = 0.05
+				terrain_penalty_reduction = 0.05
+			}
+		}
+
+		idea_YFC_grapes_tactics = { 
+			picture = YFC_real_raider_force #Update later!
+			modifier = {
+				no_supply_grace = 48
+				supply_consumption_factor = -0.1
+			}
+		}
+
 		idea_YFC_real_raider_force = { 
 			picture = YFC_real_raider_force
 			modifier = {

@@ -466,28 +466,7 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            every_army_leader = {
-                IF = {
-                    limit = {
-                        is_field_marshal = yes
-                    }
-                    add_trait = {
-                        character = FROM
-                        trait = logistics_wizard
-                    }
-                }
-                ELSE = {
-                    add_trait = {
-                        character = FROM
-                        trait = commando
-                    }
-                }
-                add_trait = {
-                    character = FROM
-                    trait = scavenger
-                }
-                add_logistics = 2
-            }
+            add_ideas = idea_YFC_grapes_tactics
         }
     }
 
@@ -514,20 +493,7 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
-            army_experience = 100
-            add_command_power = 100
-            every_army_leader = {
-                add_trait = {
-                    character = FROM
-                    trait = infantry_leader
-                }
-                add_trait = {
-                    character = FROM
-                    trait = organizer
-                }
-                add_planning = 2
-                add_attack = 1
-            }
+            add_ideas = idea_YFC_unnamed_tactics
         }
     }
 
@@ -6165,10 +6131,19 @@ focus_tree = {
 
         completion_reward = {
             YFC_yellow_face = {
-                add_skill_level = 1
+                add_attack = 2
+                add_trait = {
+                    character = FROM
+                    trait = organizer
+                }
             }
             YFC_david = {
-                add_skill_level = 2
+                add_skill_level = 1
+                add_attack = 2
+                add_trait = {
+                    character = FROM
+                    trait = scavenger
+                }
             }
             add_doctrine_cost_reduction = {
                 cost_reduction = 0.95
