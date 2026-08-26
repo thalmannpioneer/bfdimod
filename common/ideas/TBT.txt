@@ -15,7 +15,7 @@ ideas = {
 		}
 
 		idea_TBT_eastern_blocked = {
-			picture = common_unplayable #Update later!!!!!!!
+			picture = TBT_eastern_blocked
 		}
 	}
 }

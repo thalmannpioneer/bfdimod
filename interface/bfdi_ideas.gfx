@@ -103,6 +103,10 @@ spriteTypes = {
 		name = GFX_idea_TBT_silent_state
 		texturefile = gfx/interface/ideas/idea_TBT_silent_state.dds
 	}
+	spriteType = {
+		name = GFX_idea_TBT_eastern_blocked
+		texturefile = gfx/interface/ideas/idea_TBT_eastern_blocked.dds
+	}
 	
 	spriteType = {
 		name = GFX_idea_GPG_questionable_future
@@ -804,6 +808,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_YFC_grapes_tactics
 		texturefile = gfx/interface/ideas/idea_YFC_grapes_tactics.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_trade_spies
+		texturefile = gfx/interface/ideas/idea_YFC_trade_spies.dds
+	}	
+	spriteType = {
+		name = GFX_idea_YFC_Stolen_Guns
+		texturefile = gfx/interface/ideas/idea_YFC_Stolen_Guns.dds
 	}	
 	spriteType = {
 		name = GFX_idea_YFC_UDC
@@ -879,6 +891,11 @@ spriteTypes = {
 		name = GFX_idea_generic_militarization
 		texturefile = gfx/interface/ideas/idea_generic_militarization.dds
 	}
+
+	spriteType = {
+		name = GFX_idea_SRI_ridge_war
+		texturefile = gfx/interface/ideas/idea_SRI_ridge_war.dds
+	}	
 
 	spriteType = {
 		name = GFX_idea_common_yoylite_nation

@@ -202,7 +202,7 @@
 		}
 
 		fire_only_once = no
-		days_re_enable = 20
+		days_re_enable = 15
 
 		complete_effect = {
 			add_manpower = -4000
@@ -218,7 +218,7 @@
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_manpower > 30000
+				has_manpower > 35000
 				add = 5
 			}
 			modifier = {
@@ -1102,6 +1102,7 @@ war_measures = {
 		modifier = {
 			mobilization_speed = 0.5
 			training_time_army_factor = -0.25
+			weekly_manpower = 500
 		}
 
 		complete_effect = {

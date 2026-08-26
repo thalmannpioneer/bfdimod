@@ -258,7 +258,7 @@ decision_TBT_eastern_category = {
 			base = 0
 			modifier = {
 				add = 50
-				has_manpower > 3000
+				has_manpower > 1000
 			}
 			modifier = {
 				add = 50

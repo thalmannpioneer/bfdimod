@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		idea_SRI_ridge_war = { 
-			picture = ast_volunteer_defence_corps #Maybe make but this is not important
+			picture = SRI_ridge_war
 			modifier = {
 				surrender_limit = 0.05
 				army_core_defence_factor = 0.2

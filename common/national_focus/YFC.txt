@@ -7280,6 +7280,8 @@ focus_tree = {
                         level = 1
                         instant_build = yes
                     }
+                    add_core_of = YFC
+				    remove_core_of = EMP
                 }
             }
             ELSE_IF = {
@@ -7304,6 +7306,8 @@ focus_tree = {
                         level = 1
                         instant_build = yes
                     }
+                    add_core_of = YFC
+				    remove_core_of = EMP
                 }
             }
             ELSE = { #Portland, meh
