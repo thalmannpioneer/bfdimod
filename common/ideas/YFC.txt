@@ -187,7 +187,7 @@ ideas = {
 		}
 
 		idea_YFC_economic_isolation = {
-			picture = YFC_economic_isolation #Replace later 
+			picture = YFC_economic_isolation 
 			modifier = {
 				stability_factor = -0.1
 				stability_weekly = -0.01
@@ -197,7 +197,7 @@ ideas = {
 		}
 
 		idea_YFC_sectorial_crackdown = { #Hoi4 is dumb so I have to do this
-			picture = YFC_economic_isolation #Do the same as idea_YFC_economic_isolation
+			picture = YFC_economic_isolation 
 			modifier = {
 				stability_factor = -0.25
 			}
@@ -212,7 +212,7 @@ ideas = {
 			}
 		}
 
-		idea_YFC_at_the_finish_line = { #Close to gaining the compliance but also growing resistance, so a race to the end. Given at last of annex events
+		idea_YFC_at_the_finish_line = {
 			picture = YFC_at_the_finish_line 
 			modifier = {
 				compliance_growth = 1.5
@@ -238,7 +238,7 @@ ideas = {
 		}
 
 
-		idea_YFC_operation_enforcement = { #Last ditch attack by YFC during revolt, ALL IN!!!!!. Given by choice in a event where a ceasefire could be made
+		idea_YFC_operation_enforcement = { 
 			picture = YFC_operation_enforcement
 			targeted_modifier = {
 				tag = BUN
@@ -291,7 +291,7 @@ ideas = {
 		}
 
 		idea_YFC_unnamed_tactics = { 
-			picture = YFC_real_raider_force #Update later!
+			picture = YFC_unnamed_tactics
 			modifier = {
 				land_reinforce_rate = 0.05
 				terrain_penalty_reduction = 0.05
@@ -299,7 +299,7 @@ ideas = {
 		}
 
 		idea_YFC_grapes_tactics = { 
-			picture = YFC_real_raider_force #Update later!
+			picture = YFC_grapes_tactics
 			modifier = {
 				no_supply_grace = 48
 				supply_consumption_factor = -0.1
@@ -315,7 +315,7 @@ ideas = {
 		}
 
 		idea_YFC_expanding_the_waves = { 
-			picture = YFC_real_raider_force #Update later
+			picture = YFC_expanding_the_waves
 			modifier = {
 				industrial_capacity_dockyard = 0.2
 				experience_gain_navy = 0.02
@@ -323,7 +323,7 @@ ideas = {
 		}
 
 		idea_YFC_learning_the_waves = { 
-			picture = YFC_real_raider_force #Update later
+			picture = YFC_learning_the_waves
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 				experience_gain_navy = 0.01
@@ -331,7 +331,7 @@ ideas = {
 		}
 
 		idea_YFC_active_pirates = {
-			picture = SOV_organize_wreckers #Replace later 
+			picture = YFC_active_pirates
 			modifier = {
 				naval_accidents_chance = 0.5
 				consumer_goods_factor = 0.35
@@ -369,7 +369,7 @@ ideas = {
 		}
 
 		idea_YFC_crackdown = {
-			picture = SOV_organize_wreckers #Replace later 
+			picture = YFC_crackdown 
 			modifier = {
 				stability_factor = -0.05
 				consumer_goods_factor = -0.1

@@ -750,6 +750,18 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_real_raider_force.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_active_pirates
+		texturefile = gfx/interface/ideas/idea_YFC_active_pirates.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_expanding_the_waves
+		texturefile = gfx/interface/ideas/idea_YFC_expanding_the_waves.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_learning_the_waves
+		texturefile = gfx/interface/ideas/idea_YFC_learning_the_waves.dds
+	}	
+	spriteType = {
 		name = GFX_idea_YFC_bunch_insurgency
 		texturefile = gfx/interface/ideas/idea_YFC_bunch_insurgency.dds
 	}
@@ -781,6 +793,18 @@ spriteTypes = {
 		name = GFX_idea_YFC_clean_skies
 		texturefile = gfx/interface/ideas/idea_YFC_clean_skies.dds
 	}
+	spriteType = {
+		name = GFX_idea_YFC_crackdown
+		texturefile = gfx/interface/ideas/idea_YFC_crackdown.dds
+	}	
+	spriteType = {
+		name = GFX_idea_YFC_unnamed_tactics
+		texturefile = gfx/interface/ideas/idea_YFC_unnamed_tactics.dds
+	}	
+	spriteType = {
+		name = GFX_idea_YFC_grapes_tactics
+		texturefile = gfx/interface/ideas/idea_YFC_grapes_tactics.dds
+	}	
 	spriteType = {
 		name = GFX_idea_YFC_UDC
 		texturefile = gfx/interface/ideas/idea_YFC_UDC.dds

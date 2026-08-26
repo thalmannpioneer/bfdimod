@@ -483,15 +483,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_merc_halt.dds"
 	}
 
-	#spriteType = {
-	#	name = "GFX_decisions_YFC_other_mercenary_opt"
-	#	textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
-	#}
+	spriteType = {
+		name = "GFX_decisions_YFC_other_mercenary_opt"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_other_mercenary_opt.dds"
+	}
 
-	#spriteType = {
-	#	name = "GFX_decisions_YFC_other_mercenary_buy"
-	#	textureFile = "gfx/interface/decisions/GFX_decisions_YFC_cherry_mercenary.dds"
-	#}
+	spriteType = {
+		name = "GFX_decisions_YFC_other_mercenary_buy"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_other_mercenary_buy.dds"
+	}
 
 	spriteType = {
 		name = "GFX_YFC_mission_get_food"

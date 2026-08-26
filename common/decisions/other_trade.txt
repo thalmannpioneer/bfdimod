@@ -1,7 +1,7 @@
 decision_other_trade_category = {
 
 	other_trade_merc_opt = {
-		icon = GFX_decisions_YFC_Trade_drugs_upgrade #Update later!
+		icon = GFX_decisions_YFC_other_mercenary_opt
 
         visible = {
             YFC = {has_completed_focus = YFC_focus_new_monetary_avenues}
@@ -42,7 +42,7 @@ decision_other_trade_category = {
 	}
 
 	other_trade_merc_buy = {
-		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+		icon = GFX_decisions_YFC_other_mercenary_buy
 
 		visible = {
 			has_country_flag = other_trade_allow_merc
