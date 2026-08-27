@@ -723,7 +723,7 @@ naval_capital_battleship = {
 		factor = 500
 		modifier = {
 			factor = 0
-			num_of_naval_factories < 35
+			num_of_naval_factories < 5 #Used to be 35 but changed for DAV
 		}
 	}
 	

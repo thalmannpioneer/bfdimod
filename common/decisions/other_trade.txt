@@ -133,7 +133,7 @@ decision_other_trade_category = {
 	}
 
 	other_trade_merc_arty_upgrade = {
-		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+		icon = GFX_decisions_YFC_other_trade_merc_arty_upgrade
 
 		visible = {
 			has_country_flag = other_trade_allow_merc
@@ -192,7 +192,7 @@ decision_other_trade_category = {
 	}
 
 	other_trade_merc_support_upgrade = {
-		icon = GFX_decisions_YFC_cherry_mercenary #Update later!
+		icon = GFX_decisions_YFC_other_trade_merc_support_upgrade
 
 		visible = {
 			has_country_flag = other_trade_allow_merc

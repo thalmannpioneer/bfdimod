@@ -37,11 +37,17 @@ DAV_invade_TBT = {
 	}
 
 	ai_strategy = {
-		type = invasion_unit_request
-		area = goiky_navy
-		value = 2
+		type = naval_invasion_focus
+		value = 50
 	}
 
+	ai_strategy = {
+		type = invasion_unit_request
+
+		tag = TBT
+
+		value = 100
+	}
 	ai_strategy = {
 		type = naval_invasion_dominance_weight
 		value = 50
@@ -82,9 +88,16 @@ DAV_invade_WGF = {
 	}
 
 	ai_strategy = {
+		type = naval_invasion_focus
+		value = 50
+	}
+
+	ai_strategy = {
 		type = invasion_unit_request
-		area = goiky_navy
-		value = 2
+
+		tag = WGF
+
+		value = 100
 	}
 
 	ai_strategy = {

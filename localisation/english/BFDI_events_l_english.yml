@@ -1146,11 +1146,11 @@
  YFC_event.81.a: "Ungrateful." 
 
  YFC_event.82.t: "Drug Shipment Successful!" 
- YFC_event.82.desc: "Our shipment of illicit substances has \"hit the streets\" of the region to which we have deployed them. The populace is sure to soon become reliant on subsequent shipments, thus, we have, already, through virtually no effort, gained frequent customers."
+ YFC_event.82.desc: "Our shipment of illicit substances has \"hit the streets\" in [FROM.GetName]. The populace is sure to soon become reliant on subsequent shipments, thus, we have, already, through virtually no effort, gained frequent customers."
  YFC_event.82.a: "Excellent." 
 
  YFC_event.83.t: "Drug Shipment Failed!" 
- YFC_event.83.desc: "Our shipment of illicit substances has failed to fulfill its transportation to (insert nation name). Some ruffian or other has likely intercepted the package, and is partaking in whims beyond our wildest dreams, without a care in the world. Lucky guy, we suppose, but, still, we will not be gaining any money from this endeavor, thus, making it a failure."
+ YFC_event.83.desc: "Our shipment of illicit substances has failed to fulfill its transportation to [FROM.GetName]. Some ruffian or other has likely intercepted the package, and is partaking in whims beyond our wildest dreams, without a care in the world. Lucky guy, we suppose, but, still, we will not be gaining any money from this endeavor, thus, making it a failure."
  YFC_event.83.a: "Not excellent."
 
  YFC_event.84.t: "Bakerson" 

@@ -104,3 +104,24 @@ units = {
         start_equipment_factor = 0.05
     }
 }
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = DAV
+		}
+		requested_factories = 6
+		progress = 0.25
+		efficiency = 45
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = CAN
+		}
+		requested_factories = 1
+		progress = 0.53
+		efficiency = 25
+	}
+}

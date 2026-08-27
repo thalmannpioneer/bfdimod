@@ -402,7 +402,7 @@ decision_YFC_raids_category = {
 	}
 
 	YFC_raid_nation = {
-		icon = GFX_decision_infiltrate_state
+		icon = GFX_decisions_YFC_raid_nation
 
 		available = { 
 			has_manpower > 3000
@@ -480,8 +480,8 @@ decision_YFC_raids_category = {
 		}
 	}
 
-	YFC_pirate_nation = { #This will be most likly changed later
-		icon = GFX_decision_SWE_set_navy_budget
+	YFC_pirate_nation = { 
+		icon = GFX_decisions_YFC_pirate_nation
 
 		available = { 
 			has_manpower > 1500
@@ -498,9 +498,6 @@ decision_YFC_raids_category = {
 		targets_dynamic = yes
 		target_trigger = {
 			country_exists = FROM
-			FROM = {
-				always = yes #Maybe change
-			}
 		}
 
 		fire_only_once = no
@@ -523,6 +520,7 @@ decision_YFC_raids_category = {
 					country_event = {
 						id = YFC_borderwars.12
 						hours = 2
+						random_hours = 8
 					}
 				}
 			}

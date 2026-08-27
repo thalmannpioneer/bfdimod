@@ -14,7 +14,7 @@ decision_YFC_eastern_category = {
 		available = {
 			always = no
 		}
-		icon = GFX_mission_YFC_eastern_game  #Update later!!!
+		icon = GFX_mission_YFC_eastern_game
 		is_good = yes
 		days_mission_timeout = 550 #540
 		timeout_effect = {

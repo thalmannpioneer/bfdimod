@@ -494,6 +494,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_YFC_other_trade_merc_arty_upgrade"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_other_trade_merc_arty_upgrade.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_other_trade_merc_support_upgrade"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_other_trade_merc_support_upgrade.dds"
+	}
+
+	spriteType = {
 		name = "GFX_YFC_mission_get_food"
 		textureFile = "gfx/interface/decisions/GFX_YFC_mission_get_food.dds"
 	}
@@ -602,6 +612,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_buy_tech"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_buy_tech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_Trade_manpower"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_Trade_manpower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YFC_mission_Trade_spies"
+		textureFile = "gfx/interface/decisions/GFX_YFC_mission_Trade_spies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_Trade_build_spies"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_build_spies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_Trade_request_retrading"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_request_retrading.dds"
 	}
 
 	spriteType = {
@@ -809,6 +839,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_request_donations.dds"
 	}
 
+		spriteType = {
+		name = "GFX_decisions_YFC_raid_nation"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_nation.dds"
+	}
+
+		spriteType = {
+		name = "GFX_decisions_YFC_pirate_nation"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_pirate_nation.dds"
+	}
+
 	spriteType = {
 		name = "GFX_YFC_mission_get_drugs"
 		textureFile = "gfx/interface/decisions/GFX_YFC_mission_get_drugs.dds"
@@ -862,6 +902,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decisions_YFC_stabilization_tenants_rights"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_tenants_rights.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_develop_resources"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_develop_resources.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_research_bicycle_infantry"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_research_bicycle_infantry.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_decisions_YFC_stabilization_research_aircraft"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_research_aircraft.dds"
 	}	
 
 	#BUN
