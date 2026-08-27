@@ -3510,7 +3510,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
+        allow_branch = { has_completed_focus = YFC_focus_the_first_embargo }
 
         cost = 3
         completion_reward = {
@@ -3531,7 +3531,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
+        allow_branch = { has_completed_focus = YFC_focus_numismatian_split }
 
         cost = 3
         completion_reward = {
@@ -3624,7 +3624,7 @@ focus_tree = {
             }
         }
 
-        #allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
 
         cost = 5
         completion_reward = {
@@ -3669,6 +3669,7 @@ focus_tree = {
                 days = 200
             }
             custom_effect_tooltip = l_YFC_raid_yellow_takeover
+            custom_effect_tooltip = l_GOI_unlock_focus
             mark_focus_tree_layout_dirty = yes
         }
     }
@@ -4062,6 +4063,7 @@ focus_tree = {
                 days = 200
             }
             custom_effect_tooltip = l_YFC_raid_sector_takeover
+            custom_effect_tooltip = l_GOI_unlock_focus
             mark_focus_tree_layout_dirty = yes
         }
     }
@@ -4750,36 +4752,20 @@ focus_tree = {
             base = -5 #For testing do not do this
         }
 
+        available = {
+            hidden_trigger = {
+                has_completed_focus = YFC_focus_tophat_clan
+            }
+        }
+
+        allow_branch = { has_completed_focus = YFC_focus_tophat_clan }
+
         completion_reward = {
 
             #obv removes sectorial system (wont be replaced sorry), our sectors spirit, sectorial crackdown spirit, company reorganization spirit
             #replaces neglectful command with "top hat's prowess" which gives lots of good military shit but fucks over supply lowkey
 
-			set_cosmetic_tag = YFC_TopHat_clan #TESTING REMOVE LATER!!!
-			retire_character = YFC_yellow_face 
-			add_country_leader_role = {
-				character = YFC_tophat
-				promote_leader = yes
-				country_leader = {
-					ideology = oligarchism
-					traits = { YFC_old_general }
-					desc = idea_YFC_TopHat_desc
-				}
-			}
-
-			set_variable = { var_idea_YFC_Beaker_cost = 0 }
-			set_variable = { var_idea_YFC_sectors_Beaker_research = 0 }
- 			set_variable = { var_idea_YFC_sectors_Beaker_experience = 0 }
-			set_variable = { var_idea_YFC_Beaker_level = 0 }
-			clr_country_flag = YFC_Allow_Beaker
-
-           
             hidden_effect = {
-                set_variable = { var_Sector_remove_timer = 300 }
-                IF = {
-                    has_completed_focus = YFC_focus_hoard_gold
-                    add_to_variable = {var_Sector_remove_timer = 200}
-                }
                 set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
                 set_variable = {var_idea_YFC_anarchic_lands_node = 0}
                 BUN = {add_manpower = 15000}
@@ -4880,8 +4866,8 @@ focus_tree = {
 
         available = {
             custom_trigger_tooltip = {
-                tooltip = l_money_cost_500K
-                check_variable = { money_amount > 5 }
+                tooltip = l_money_cost_400K
+                check_variable = { money_amount > 4 }
             }
         }
 
@@ -4926,8 +4912,8 @@ focus_tree = {
 
         available = {
             custom_trigger_tooltip = {
-                tooltip = l_money_cost_200K
-                check_variable = { money_amount > 2 }
+                tooltip = l_money_cost_100K
+                check_variable = { money_amount > 1 }
             }
         }
 
@@ -5466,6 +5452,7 @@ focus_tree = {
             #Pain to code but I got this
 
             custom_effect_tooltip = l_YFC_trade_route_upgrade
+            add_political_power = 25
         }
     }
 
@@ -6912,10 +6899,6 @@ focus_tree = {
         x = 0
         y = 3
         icon = GFX_focus_YFC_trade_alternatives
-
-        available = {
-            is_neighbor_of = TBT
-        }
 
         ai_will_do = {
             base = 15 #Deal with east

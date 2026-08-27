@@ -204,14 +204,14 @@ decision_YFC_raids_category = {
 		}
 
 		available = {
-			has_army_experience > 50
+			has_army_experience > 45
 		}
 
 		days_remove = 90
 		days_re_enable = 15
 
 		complete_effect = {
-			army_experience = -50
+			army_experience = -45
         }
 
 		remove_effect = {
@@ -433,11 +433,11 @@ decision_YFC_raids_category = {
 
 		remove_effect = {
 			army_experience = 10
-			set_temp_variable = { Raid_Chance_Fail = 10 }
+			set_temp_variable = { Raid_Chance_Fail = 5 }
 			IF = {
 				limit = {
 					FROM = {
-						check_variable = {var_YCF_raid_attacks > 10}
+						check_variable = {var_YCF_raid_attacks > 5}
 					}
 					set_temp_variable = { Raid_Chance_Fail = 0 }
 				}
@@ -474,7 +474,7 @@ decision_YFC_raids_category = {
 			modifier = {
 				add = 10
 				FROM = {
-					check_variable = {var_YCF_raid_attacks > 4}
+					check_variable = {var_YCF_raid_attacks > 3}
 				}
 			}
 		}

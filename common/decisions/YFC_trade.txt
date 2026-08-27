@@ -3,6 +3,8 @@ decision_YFC_trade_category = {
         is_good = no
         activation = {
             NOT = {has_idea = idea_YFC_Debt_Crisis}
+            NOT = {has_completed_focus = YFC_focus_tophat_clan}
+            has_completed_focus = YFC_focus_way_of_raiders
             has_country_flag = YFC_Sectors_done 
         }
         available = {
@@ -10,7 +12,10 @@ decision_YFC_trade_category = {
         }
         cancel_trigger = {
             hidden_trigger = {
-                has_idea = idea_YFC_Debt_Crisis 
+                OR = {
+                    has_completed_focus = YFC_focus_tophat_clan
+                    has_idea = idea_YFC_Debt_Crisis 
+                }
             }
 		}
         icon = GFX_YFC_mission_sector_pay  
@@ -33,11 +38,16 @@ decision_YFC_trade_category = {
         activation = {
             check_variable = { money_amount < -3 }
             NOT = {has_idea = idea_YFC_Debt_Crisis}  
+            NOT = {has_completed_focus = YFC_focus_tophat_clan}
+            has_completed_focus = YFC_focus_way_of_raiders
             has_country_flag = YFC_Sectors_done 
         }
         cancel_trigger = {
             hidden_trigger = {
-                check_variable = { money_amount > 0 }
+                OR = {
+                    has_completed_focus = YFC_focus_tophat_clan
+                    has_idea = idea_YFC_Debt_Crisis 
+                }
             }
 		}
         available = {
@@ -177,9 +187,9 @@ decision_YFC_trade_category = {
         }
 
         fire_only_once = no
-        cost = 40
+        cost = 50
         days_remove = 20
-        days_re_enable = 100
+        days_re_enable = 60
 
         remove_effect = {
             custom_effect_tooltip = l_YFC_trade_get_drugs_upgrade

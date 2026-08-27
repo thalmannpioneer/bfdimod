@@ -130,7 +130,6 @@ set_variable = { var_YFC_food_timer = 90 }
 set_variable = { selected = 0 }
 
 set_variable = {trade_buying_manpower_var = 0} #No fucking clue where this is
-set_gol
 
 add_to_array = { tradeable = BUN } #0
 add_to_array = { tradeable = CRN } #1

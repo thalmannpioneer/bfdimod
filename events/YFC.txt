@@ -380,6 +380,8 @@ country_event = { #Embargo event for all nations
 			set_variable = {selling_item = -1}
 			set_variable = { buying_amount = 0 }
             set_variable = { selling_amount = 0 }
+			clr_country_flag = Confirmed_Trade_Selling
+			clr_country_flag = Confirmed_Trade_Buying
 		}
 		ai_chance = {
 			base = 3 #About 1/3 any other nation says no to embargo
@@ -416,6 +418,12 @@ country_event = { #Embargo event for all nations
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
 		hidden_effect = {
+			set_variable = {buying_item = -1}
+			set_variable = {selling_item = -1}
+			set_variable = { buying_amount = 0 }
+            set_variable = { selling_amount = 0 }
+			clr_country_flag = Confirmed_Trade_Selling
+			clr_country_flag = Confirmed_Trade_Buying
 			YFC = {country_event = YFC_event.10}
 		}
 	}
@@ -435,10 +443,16 @@ country_event = { #Embargo event for all nations
 			add_opinion_modifier = { target = CRN modifier = large_decrease }
 		}
 		hidden_effect = {
+			set_variable = {buying_item = -1}
+			set_variable = {selling_item = -1}
+			set_variable = { buying_amount = 0 }
+            set_variable = { selling_amount = 0 }
+			clr_country_flag = Confirmed_Trade_Selling
+			clr_country_flag = Confirmed_Trade_Buying
 			YFC = {country_event = YFC_event.10}
 			news_event = {
 				id = bfdinews.41
-				days = 2
+				days = 3
 				random_hours = 24
 			}
 		}
@@ -456,6 +470,12 @@ country_event = { #Embargo event for all nations
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
 		hidden_effect = {
+			set_variable = {buying_item = -1}
+			set_variable = {selling_item = -1}
+			set_variable = { buying_amount = 0 }
+            set_variable = { selling_amount = 0 }
+			clr_country_flag = Confirmed_Trade_Selling
+			clr_country_flag = Confirmed_Trade_Buying
 			YFC = {country_event = YFC_event.10}
 		}
 	}
@@ -3266,9 +3286,15 @@ country_event = { #YFC_focus_march_on_footpathburg
 			set_variable = { var_idea_YFC_Taser_influence = 1 }
 			set_variable = { var_idea_YFC_Pipe_influence = 1 }
 			set_variable = { var_idea_YFC_TopHat_influence = 1 }
-			set_variable = { var_idea_YFC_Beaker_influence = 1 }		
+			set_variable = { var_idea_YFC_Beaker_influence = 1 }	
+			unlock_decision_category_tooltip = decision_YFC_stabilization_category	
 			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
+				set_variable = { var_Sector_remove_timer = 300 }
+                IF = {
+                    limit = {has_completed_focus = YFC_focus_hoard_gold}
+                    add_to_variable = {var_Sector_remove_timer = 300}
+                }
 				complete_national_focus = YFC_focus_tophat_clan
 				IF = {
 					limit = {has_idea = idea_YFC_Defiant_Pipe}
@@ -3665,6 +3691,12 @@ country_event = { #Sectors Quit/Fire
 		trigger = {
 			has_country_flag = YFC_Sectors_fire
 		}
+	}
+	option = { #If YFC Keeps Sectors
+		name = YFC_event.80.c
+		trigger = {
+			has_country_flag = YFC_Sectors_fire
+		}
 		set_country_flag = YFC_Sectors_done
 		custom_effect_tooltip = l_YFC_sectors_remove
 		IF = {
@@ -3680,12 +3712,6 @@ country_event = { #Sectors Quit/Fire
 			retire_character = YFC_hammer
 			retire_character = YFC_taser
 			remove_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
-		}
-	}
-	option = { #If YFC Keeps Sectors
-		name = YFC_event.80.c
-		trigger = {
-			has_country_flag = YFC_Sectors_fire
 		}
 	}	
 }
@@ -4907,17 +4933,19 @@ country_event = {
 			days = 180
 		}
 		effect_tooltip = {
-			3 = {
-				custom_effect_tooltip = l_money_lose_100K
-				subtract_from_variable = { money_amount = 1 }
-			}
-			4 = {
-				custom_effect_tooltip = l_money_lose_200K
-				subtract_from_variable = { money_amount = 2 }
-			}
-			5 = {
-				custom_effect_tooltip = l_money_lose_300K
-				subtract_from_variable = { money_amount = 3 }
+			random_list = {
+				3 = {
+					custom_effect_tooltip = l_money_lose_100K
+					subtract_from_variable = { money_amount = 1 }
+				}
+				4 = {
+					custom_effect_tooltip = l_money_lose_200K
+					subtract_from_variable = { money_amount = 2 }
+				}
+				5 = {
+					custom_effect_tooltip = l_money_lose_300K
+					subtract_from_variable = { money_amount = 3 }
+				}
 			}
 		}
 	}
@@ -4941,28 +4969,30 @@ country_event = {
 			amount = 10
 		}
 
-		3 = {
-			custom_effect_tooltip = l_money_gain_100K
-			add_to_variable = { money_amount = 1 }
+		random_list = {
+			3 = {
+				custom_effect_tooltip = l_money_gain_100K
+				add_to_variable = { money_amount = 1 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 1 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 1 }}
+				}
 			}
-		}
-		4 = {
-			custom_effect_tooltip = l_money_gain_200K
-			add_to_variable = { money_amount = 2 }
+			4 = {
+				custom_effect_tooltip = l_money_gain_200K
+				add_to_variable = { money_amount = 2 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 2 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 2 }}
+				}
 			}
-		}
-		5 = {
-			custom_effect_tooltip = l_money_gain_300K
-			add_to_variable = { money_amount = 3 }
+			5 = {
+				custom_effect_tooltip = l_money_gain_300K
+				add_to_variable = { money_amount = 3 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 3 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 3 }}
+				}
 			}
 		}
 	}
@@ -5025,17 +5055,19 @@ country_event = {
 			days = 90
 		}
 		effect_tooltip = {
-			5 = {
-				custom_effect_tooltip = l_money_lose_100K
-				subtract_from_variable = { money_amount = 1 }
-			}
-			4 = {
-				custom_effect_tooltip = l_money_lose_200K
-				subtract_from_variable = { money_amount = 2 }
-			}
-			3 = {
-				custom_effect_tooltip = l_money_lose_300K
-				subtract_from_variable = { money_amount = 3 }
+			random_list = {
+				5 = {
+					custom_effect_tooltip = l_money_lose_100K
+					subtract_from_variable = { money_amount = 1 }
+				}
+				4 = {
+					custom_effect_tooltip = l_money_lose_200K
+					subtract_from_variable = { money_amount = 2 }
+				}
+				3 = {
+					custom_effect_tooltip = l_money_lose_300K
+					subtract_from_variable = { money_amount = 3 }
+				}
 			}
 		}
 	}
@@ -5072,28 +5104,30 @@ country_event = {
 			amount = boats_regain
 		}
 
-		5 = {
-			custom_effect_tooltip = l_money_gain_100K
-			add_to_variable = { money_amount = 1 }
+		random_list = {
+			5 = {
+				custom_effect_tooltip = l_money_gain_100K
+				add_to_variable = { money_amount = 1 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 1 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 1 }}
+				}
 			}
-		}
-		4 = {
-			custom_effect_tooltip = l_money_gain_200K
-			add_to_variable = { money_amount = 2 }
+			4 = {
+				custom_effect_tooltip = l_money_gain_200K
+				add_to_variable = { money_amount = 2 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 2 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 2 }}
+				}
 			}
-		}
-		3 = {
-			custom_effect_tooltip = l_money_gain_300K
-			add_to_variable = { money_amount = 3 }
+			3 = {
+				custom_effect_tooltip = l_money_gain_300K
+				add_to_variable = { money_amount = 3 }
 
-			hidden_effect = {
-				FROM = {subtract_from_variable = { money_amount = 3 }}
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 3 }}
+				}
 			}
 		}
 	}
