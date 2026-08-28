@@ -319,8 +319,8 @@
  YFC_eastern_settlement: "§GInvite Settlers§! to §Y[FROM.GetName]§!"
  YFC_eastern_prospect: "§LResources Development§! in §Y[FROM.GetName]§!"
 
- decision_YFC_stabilization_category: "Stabilization"
- decision_YFC_stabilization_category_desc: "Placeholder aura text here"
+ decision_YFC_stabilization_category: "§0Stabilization§!"
+ decision_YFC_stabilization_category_desc: "The Yellow Facer menace has done these lands a grand injustice, leaving them disorganized and unfortuned for years, all in efforts to accrue and extract wealth. Now, as any, is the best time to undo this injustice, to correct these mistakes, to compound this atomized excuse of a society, to unite these lands under a common banner, that of the Top Hat Clan."
  YFC_stabilization_order_military_restructuring: "Order §RMilitary Restructuring§!"
  YFC_stabilization_final_sector_restructures: "§YFinal Sector Restructures§!"
  YFC_stabilization_final_sector_restructures_desc: "With the company now turning into a full state, the reasons to keep the Sector system are fading. One way or another the old, rotten, Yellow Face system will go. We could delay it if we want, or maybe speed up its death..."
