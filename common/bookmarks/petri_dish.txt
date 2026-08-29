@@ -291,7 +291,7 @@ bookmarks = {
                 }
             }
             YFC = {
-                add_manpower = 6000 #Until Thal can find why manpower is fucked this is the temp plan
+                add_manpower = 9000 #Until Thal can find why manpower is fucked this is the temp plan
 
                 transfer_state = 196
                 transfer_state = 201

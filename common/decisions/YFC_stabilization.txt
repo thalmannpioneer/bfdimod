@@ -140,7 +140,7 @@ decision_YFC_stabilization_category = {
         on_map_mode = map_only
         
 		visible = {
-			has_completed_focus = YFC_focus_instate_stabilization
+			has_completed_focus = YFC_focus_civillian_infrastructure
 			controls_state = FROM
 		}
 

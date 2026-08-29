@@ -577,24 +577,6 @@ focus_tree = {
             }
             custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
-                IF = { #Move later
-                    limit = {GGR = {is_ai = yes}}
-                    GGR = {
-                        add_equipment_to_stockpile = {
-                            type = infantry_equipment
-                            amount = 1500
-                        }
-                        add_political_power = 50
-                    }
-                }
-                ELSE = {
-                    GGR = {
-                        add_equipment_to_stockpile = {
-                            type = infantry_equipment
-                            amount = 250
-                        }
-                    }
-                }
                 BUN = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
                 CRN = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
                 SRR = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
@@ -5374,8 +5356,8 @@ focus_tree = {
             #moves you up to free trade yay!
             add_ideas = free_trade
 
-            custom_effect_tooltip = l_money_gain_400K
-		    add_to_variable = { money_amount = 4 }
+            custom_effect_tooltip = l_money_gain_600K
+		    add_to_variable = { money_amount = 6 }
         }
     }
 
@@ -5495,6 +5477,10 @@ focus_tree = {
 
         cost = 4
         completion_reward = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+            }
             add_manpower = 5000
             random_core_state = {
                 add_extra_state_shared_building_slots = 1
@@ -5713,6 +5699,7 @@ focus_tree = {
         cost = 4
         completion_reward = {
             add_stability = 0.05
+            add_research_slot = 1
             subtract_from_variable = {money_amount = 1}
 
             country_event = {
@@ -5822,6 +5809,28 @@ focus_tree = {
 
         completion_reward = {
             hidden_effect = {
+                IF = { #Move later
+                    limit = {
+                        GGR = {is_ai = yes}
+                        country_exists = GGR
+                    }
+                    GGR = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment
+                            amount = 1500
+                        }
+                        add_political_power = 50
+                    }
+                }
+                ELSE_IF = {
+                    limit = {country_exists = GGR}
+                    GGR = {
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment
+                            amount = 250
+                        }
+                    }
+                }
                 set_country_leader_portrait = {
                     portrait = GFX_YFC_crack_face
                 }

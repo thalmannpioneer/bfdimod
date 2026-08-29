@@ -218,6 +218,12 @@ leader_traits = {
         research_speed_factor = 0.05
     }
 
+    YFC_graduate_researcher = {
+        sprite = 13
+
+        research_speed_factor = 0.15
+    }
+
     YFC_railway_enthusiast = {
         sprite = 13
 
@@ -229,8 +235,8 @@ leader_traits = {
         sprite = 5
 
         army_speed_factor = 0.1
-        army_org_regain = 0.05
         org_loss_when_moving = -0.25
+        new_mobile_warfare_mastery_gain_factor = 0.1
     }
 
     YFC_bounty_hunter = {

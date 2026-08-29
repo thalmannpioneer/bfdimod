@@ -43,7 +43,7 @@ GGR_protect_YFC = {
     ai_strategy = {
         type = prepare_for_war
         id = YFC
-        value = 50
+        value = 25
     }
 }
 

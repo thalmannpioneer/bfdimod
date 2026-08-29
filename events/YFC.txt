@@ -2930,7 +2930,6 @@ country_event = { #YFC_focus_tophats_outlook
 country_event = { #YFC_focus_the_sectorial_powderkeg
 	id = YFC_event.64
 	title = YFC_event.64.t
-	desc = YFC_event.64.desc
 	picture = GFX_YFC_event64
 
 	desc = {
@@ -3293,7 +3292,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 				set_variable = { var_Sector_remove_timer = 300 }
                 IF = {
                     limit = {has_completed_focus = YFC_focus_hoard_gold}
-                    add_to_variable = {var_Sector_remove_timer = 300}
+                    add_to_variable = {var_Sector_remove_timer = 200}
                 }
 				complete_national_focus = YFC_focus_tophat_clan
 				IF = {
@@ -4197,6 +4196,19 @@ country_event = { #YFC_focus_beakers_return
 
 		custom_effect_tooltip = l_YFC_sectors_beaker_back
 		set_country_flag = YFC_Allow_Beaker
+
+		hidden_effect = {
+			YFC_beaker = {
+				remove_trait = {
+					slot = political_advisor
+					trait = YFC_diy_expert
+				}
+				add_trait = {
+					slot = political_advisor
+					trait = YFC_graduate_researcher
+				}
+			}
+		}
 	}
 }
 

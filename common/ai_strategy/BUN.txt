@@ -57,22 +57,22 @@ BUN_friend_CRN_YFC = {
 	ai_strategy = {
 		type = alliance
 		id = CRN
-		value = 200
+		value = 2000
 	}
 	ai_strategy = {
 		type = befriend
 		id = CRN
-		value = 200
+		value = 2000
 	}
     ai_strategy = {
 		type = alliance
 		id = YFC
-		value = 200
+		value = 2000
 	}
 	ai_strategy = {
 		type = befriend
 		id = YFC
-		value = 200
+		value = 2000
 	}
 }
 
@@ -89,11 +89,11 @@ BUN_friend_YFC = {
     ai_strategy = {
 		type = alliance
 		id = YFC
-		value = 200
+		value = 2000
 	}
 	ai_strategy = {
 		type = befriend
 		id = YFC
-		value = 200
+		value = 2000
 	}
 }

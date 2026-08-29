@@ -82,15 +82,21 @@ characters = {
             traits = { YFC_follower_of_mobile_warfare }
 			on_add = {
                 owner = {
-					custom_effect_tooltip = l_YFC_sectors_Hire
-					add_to_variable = { var_idea_YFC_TopHat_influence = 2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						custom_effect_tooltip = l_YFC_sectors_Hire
+						add_to_variable = { var_idea_YFC_TopHat_influence = 2 }
+					}	
 				}
             }
             on_remove = {
                 owner = {
-					add_political_power = 65 #Fire give
-					custom_effect_tooltip = l_YFC_sectors_Fire
-					add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						add_political_power = 65 #Fire give
+						custom_effect_tooltip = l_YFC_sectors_Fire
+						add_to_variable = { var_idea_YFC_TopHat_influence = -2 }
+					}	
 				}
             }
 			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
@@ -113,16 +119,22 @@ characters = {
             on_add = {
                 owner = {
 					add_research_slot = 1
-					custom_effect_tooltip = l_YFC_sectors_Hire
-					add_to_variable = { var_idea_YFC_Beaker_influence = 2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						custom_effect_tooltip = l_YFC_sectors_Hire
+						add_to_variable = { var_idea_YFC_Beaker_influence = 2 }
+					}	
 				}
             }
             on_remove = {
                 owner = {
 					add_research_slot = -1
-					add_political_power = 65 #Fire give
-					custom_effect_tooltip = l_YFC_sectors_Fire
-					add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						add_political_power = 65 #Fire give
+						custom_effect_tooltip = l_YFC_sectors_Fire
+						add_to_variable = { var_idea_YFC_Beaker_influence = -2 }
+					}	
 				}
             }
 			available = { hidden_trigger = { has_country_flag = YFC_Allow_Beaker } }
@@ -150,9 +162,12 @@ characters = {
             }
             on_remove = {
                 owner = {
-					add_political_power = 65 #Fire give
-					custom_effect_tooltip = l_YFC_sectors_Fire
-					add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						add_political_power = 65 #Fire give
+						custom_effect_tooltip = l_YFC_sectors_Fire
+						add_to_variable = { var_idea_YFC_Hammer_influence = -2 }
+					}	
 				}
             }
 			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
@@ -174,15 +189,21 @@ characters = {
         	traits = { YFC_apprentice_of_terror }
 			on_add = {
                 owner = {
-					custom_effect_tooltip = l_YFC_sectors_Hire
-					add_to_variable = { var_idea_YFC_Taser_influence = 2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						custom_effect_tooltip = l_YFC_sectors_Hire
+						add_to_variable = { var_idea_YFC_Taser_influence = 2 }
+					}	
 				}
             }
             on_remove = {
                 owner = {
-					add_political_power = 65 #Fire give
-					custom_effect_tooltip = l_YFC_sectors_Fire
-					add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+					IF = {
+						limit = {NOT = {has_country_flag = YFC_Sectors_done}}
+						add_political_power = 65 #Fire give
+						custom_effect_tooltip = l_YFC_sectors_Fire
+						add_to_variable = { var_idea_YFC_Taser_influence = -2 }
+					}	
 				}
             }
 			available = { hidden_trigger = { has_completed_focus = YFC_focus_establish_sectorialism } }
