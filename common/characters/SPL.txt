@@ -3,7 +3,7 @@ characters = {
 		name = SPL_woody
 		portraits = { civilian = { large = GFX_SPL_woody } }
 		country_leader = {
-			ideology = centrism
+			ideology = interim_government
 		}
 	}
 }

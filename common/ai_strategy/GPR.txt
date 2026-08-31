@@ -135,7 +135,9 @@ GPR_army = {
     }
 }
 
-GPR_fortnite = {
+## FORTS ##
+
+GPR_fortnite_greenport = {
     #Build forts in captial when at war
     allowed = {
         original_tag = GPR
@@ -143,6 +145,7 @@ GPR_fortnite = {
     enable = {
         has_war = yes
         193 = {
+            is_controlled_by = GPR
 			any_province_building_level = {
 				province = {
 					id = 1891
@@ -159,11 +162,113 @@ GPR_fortnite = {
         type = build_building
         id = bunker
         target = 1891
-        value = 1000
+        value = 2000
     }
     ai_strategy = {
         type = build_army
         id = infantry
         value = 20
+    }
+}
+
+GPR_fortnite_greenport_outskirts_north = {
+    #Build forts near captial when at war
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_war = yes
+        193 = {
+            is_controlled_by = GPR
+			any_province_building_level = {
+				province = {
+					id = 5253
+					limit_to_border = no
+				}
+				building = bunker
+				level < 0
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 5253
+        value = 1000
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 5
+    }
+}
+
+GPR_fortnite_greenport_outskirts_south = {
+    #Build forts near captial when at war
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_war = yes
+        193 = {
+            is_controlled_by = GPR
+			any_province_building_level = {
+				province = {
+					id = 10856
+					limit_to_border = no
+				}
+				building = bunker
+				level < 0
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 10856
+        value = 1000
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 5
+    }
+}
+
+GPR_fortnite_greenport_outskirts_river = {
+    #Build forts near captial when at war
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_war = yes
+        193 = {
+            is_controlled_by = GPR
+			any_province_building_level = {
+				province = {
+					id = 1010
+					limit_to_border = no
+				}
+				building = bunker
+				level < 0
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 1010
+        value = 1000
+    }
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 5
     }
 }

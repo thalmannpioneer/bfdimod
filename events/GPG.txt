@@ -784,13 +784,13 @@ country_event = {
         mark_focus_tree_layout_dirty = yes
         remove_country_leader_role = {
             character = GPG_recommended_characters_council
-            ideology = centrism
+            ideology = interim_government
         }
         add_country_leader_role = {
             character = GPG_fries
             promote_leader = yes
             country_leader = {
-                ideology = centrism
+                ideology = interim_government
             }
         }
         remove_mission = GPG_mission_second_congress
@@ -1053,13 +1053,13 @@ country_event = {
         remove_mission = GPG_mission_second_congress
         remove_country_leader_role = {
             character = GPG_recommended_characters_council
-            ideology = centrism
+            ideology = interim_government
         }
         add_country_leader_role = {
             character = GPG_transitional_government
             promote_leader = yes
             country_leader = {
-                ideology = centrism
+                ideology = interim_government
             }
         }
         hidden_effect = {
@@ -1114,13 +1114,13 @@ country_event = {
         remove_mission = GPG_mission_second_congress
         remove_country_leader_role = {
             character = GPG_recommended_characters_council
-            ideology = centrism
+            ideology = interim_government
         }
         add_country_leader_role = {
             character = GPG_transitional_government
             promote_leader = yes
             country_leader = {
-                ideology = centrism
+                ideology = interim_government
             }
         }
         hidden_effect = {
@@ -1951,7 +1951,7 @@ country_event = {
             character = GPG_recommended_characters_council
             promote_leader = yes
             country_leader = {
-                ideology = centrism
+                ideology = interim_government
                 desc = GPG_recommended_characters_council_desc
             }
         }

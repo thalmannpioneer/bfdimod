@@ -4,7 +4,7 @@ characters = {
 		portraits = { civilian = { large = GFX_SGD_robot_flower } }
 		country_leader = {
 			desc = SGD_robot_flower_desc
-			ideology = oligarchism
+			ideology = interim_government #Used to be oligarchism 
 		}
 	}
 }

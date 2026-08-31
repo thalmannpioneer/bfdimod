@@ -3275,7 +3275,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 				character = YFC_tophat
 				promote_leader = yes
 				country_leader = {
-					ideology = oligarchism
+					ideology = interim_government
 					traits = { YFC_old_general }
 					desc = idea_YFC_TopHat_desc
 				}
@@ -3631,7 +3631,7 @@ country_event = { #One random TopHat one
 	is_triggered_only = yes
 
 	immediate = {
-        set_variable = { var_add_to_sector = 3 }
+        set_variable = { var_add_to_sector = 4 }
     }
 
 	option = { 
@@ -4556,7 +4556,7 @@ country_event = {
 		IF = {
 			limit = {is_ai = yes}
 			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
-			add_manpower = 2500
+			add_manpower = 2000
 		}
 	}
 }
@@ -4577,7 +4577,7 @@ country_event = {
 		clr_country_flag = YFC_Raid_Active
 		IF = {
 			limit = {is_ai = yes}
-			add_manpower = 2000
+			add_manpower = 1500
 		}
 	}
 }

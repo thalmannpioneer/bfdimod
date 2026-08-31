@@ -521,7 +521,17 @@ on_actions = {
                     }
                     set_global_flag = fall_of_foot
                 }
-                #set_global_flag = cap_alliance #Update later me
+                if = {
+                    limit = {has_cosmetic_tag = YFC_raiders}
+                    set_global_flag = cap_yellowfaceraiders
+                }
+                else_if = {
+                    limit = {has_cosmetic_tag = YFC_TopHat_clan}
+                    set_global_flag = cap_tophat
+                }
+                else = {
+                    set_global_flag = cap_yellowface
+                }
             }
             else_if = { #GOLF BALL
                 limit = {
@@ -555,7 +565,7 @@ on_actions = {
                     }
                     set_global_flag = fall_of_university
                 }
-                #set_global_flag = cap_alliance #Update later me
+                set_global_flag = cap_golfball 
             }
             else_if = { #BUNCH
                 limit = {

@@ -138,6 +138,7 @@
  l_YFC_sectors_beaker_school_stuck: "§YBeaker is waiting for a way back...§!"
  l_YFC_sectors_beaker_back: "§GBeaker is now back!§!"
  l_YFC_sectors_debt_event: "Not even the sectorials wanted to believe it."
+ l_YFC_Sector_current_event: "\n\n§2Currently, Sector Influence is the following:§!\nMilitary Sector Influence: §R[?var_idea_YFC_TopHat_influence]§!\nRail Sector Influence: §R[?var_idea_YFC_Pipe_influence]§!\nScience Sector Influence: §R[?var_idea_YFC_Beaker_influence]§!\nConstruction Sector Influence: §R[?var_idea_YFC_Hammer_influence]§!\nElectronic Sector Influence: §R[?var_idea_YFC_Taser_influence]§!"
 
  l_YFC_trade_buying: "§YThis transaction will cost§! §R[?trade_cost_show_var]K dollars§!"
  l_YFC_trade_selling: "§YYellow Face will pay§! §G[?trade_cost_show_var]K dollars§!"

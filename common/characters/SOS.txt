@@ -3,7 +3,7 @@ characters = {
 		name = SOS_anchor
 		portraits = { civilian = { large = GFX_SOS_anchor } }
 		country_leader = {
-		ideology = centrism
+		ideology = interim_government #Maybe change later?
 		desc = SOS_anchor_desc
 		}
 	}

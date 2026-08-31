@@ -5,7 +5,7 @@ characters = {
             civilian = { large = GFX_GTR_golfball }
         }
         country_leader = {
-            ideology = technocratism
+            ideology = interim_government
             desc = GTR_golfball_desc
         }
         scientist = {

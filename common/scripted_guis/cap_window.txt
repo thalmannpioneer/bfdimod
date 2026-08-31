@@ -71,6 +71,22 @@ scripted_gui = {
 					flag = cap_bunchrepublic
 					value = 0
 				}
+				set_global_flag = {
+					flag = cap_yellowface
+					value = 0
+				}
+				set_global_flag = {
+					flag = cap_yellowfaceraiders
+					value = 0
+				}
+				set_global_flag = {
+					flag = cap_tophat
+					value = 0
+				}
+				set_global_flag = {
+					flag = cap_golfball
+					value = 0
+				}
 			}
 		}
 	}

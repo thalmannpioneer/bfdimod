@@ -56,4 +56,20 @@ defined_text = {
 		trigger = { has_global_flag = cap_bunchrepublic }
 		localization_key = cap_window_desc_bunchrepublic
 	}
+		text = {
+		trigger = { has_global_flag = cap_yellowface }
+		localization_key = cap_window_desc_yellowface
+	}
+		text = {
+		trigger = { has_global_flag = cap_yellowfaceraiders }
+		localization_key = cap_window_desc_yellowfaceraiders
+	}
+		text = {
+		trigger = { has_global_flag = cap_tophat }
+		localization_key = cap_window_desc_tophat
+	}
+		text = {
+		trigger = { has_global_flag = cap_golfball }
+		localization_key = cap_window_desc_golfball
+	}
 }

@@ -181,7 +181,7 @@ decision_BUN_raids_category = {
                 limit = {
                     is_ai = yes
                 }
-                add_manpower = 2500
+                add_manpower = 2000
             }
 
             IF = {
@@ -308,7 +308,7 @@ decision_BUN_raids_category = {
                 limit = {
                     is_ai = yes
                 }
-                add_manpower = 2500
+                add_manpower = 2000
             }
 
             IF = {
@@ -435,7 +435,7 @@ decision_BUN_raids_category = {
                 limit = {
                     is_ai = yes
                 }
-                add_manpower = 2500
+                add_manpower = 2000
             }
 
             IF = {

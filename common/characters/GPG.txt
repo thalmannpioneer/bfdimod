@@ -3,7 +3,7 @@ characters = {
 		name = GPG_recommended_characters_council
 		portraits = { civilian = { large = GFX_GPG_recommended_characters_council } }
 		country_leader = {
-			ideology = centrism
+			ideology = interim_government
 			desc = GPG_recommended_characters_council_desc
 		}
 	}

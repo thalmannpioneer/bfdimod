@@ -116,6 +116,7 @@ focus_tree = {
             add_stability = 0.05
             set_cosmetic_tag = GPG_republic
             country_event = GPG_event.52
+            hidden_effect = {set_country_leader_ideology = centrism}
         }
     }
 

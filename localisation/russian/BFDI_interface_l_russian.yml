@@ -48,16 +48,16 @@
  cap_window_participiants: "[winning_country.GetNameWithFlag] Побеждает [losing_country.GetNameWithFlag] в Битве За Гойки"
  
  cap_window_desc_coiny: "Файри снова в победителях."
- cap_window_desc_firey: "Последний шлепок."
+ cap_window_desc_firey: "Последний шлепок." #Thal this was updated in English
  cap_window_desc_flower: "Фловер вновь исключили в самом начале."
  cap_window_desc_icy: "Ещё одна причина для мести."
  cap_window_desc_rocky: "В Снежном Плато установился порядок."
- cap_window_desc_snowball: "Анархия не знает границ!"
+ cap_window_desc_snowball: "Анархия не знает границ!" #Thal this was updated in English
  cap_window_desc_taco: "Тако поджарили."
  cap_window_desc_ruby: "Больше никаких сладостей для Руби."
  cap_window_desc_fanny: "Я НЕНАВИЖУ ПРОИГРЫВАТЬ!"
  cap_window_desc_republic: "Солнце больше не взойдёт на Кэслендом."
- cap_window_desc_alliance: "Карандаш сломался."
+ cap_window_desc_alliance: "Карандаш сломался." #Thal this was updated in English
  
  cap_window_close_button: "Тёмные времена."
  

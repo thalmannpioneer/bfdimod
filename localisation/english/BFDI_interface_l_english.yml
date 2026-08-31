@@ -41,7 +41,7 @@
  demo_end_GTR_title_2: "Technocracy §grises from the ashes...§!"
  demo_end_YFC_title_1: "§YThe Company's§! §Gagenda advances...§!"
  demo_end_YFC_title_2: "§RThe Raiders§! §YGrow More§! §RPowerful...§!" #Raider
- demo_end_YFC_title_3: "§0For a Better Tomorrow!§!" #Top Hat
+ demo_end_YFC_title_3: "§0The Top Hat Clan looks to the skies...§!" #Top Hat
  demo_end_text_title: "§YDemo ends here. For now.§!"
  demo_end_text: "Thanks for playing! If you like the mod, put a like on Steam and add it to your bookmarks. Also you can join the §1Discord server§!.\n\nThe mod team will keep working on the development of the mod and many aspects of the lore and gameplay will be reworked in the future. The current version of the mod §Rdoes not show the final product.§!\n\nIf you have skills in writing, graphics or in HOI4 modding generally, you can apply to mod's dev team on our §1Discord server§!."
  demo_end_text_thank: "§7With love, The Kameshek Team§!"
@@ -57,7 +57,7 @@
  cap_window_desc_flower: "Flower got kicked on the start, again."
  cap_window_desc_icy: "Another reason for revenge."
  cap_window_desc_rocky: "Order has been established in the Snowy Plateau."
- cap_window_desc_snowball: "Anarchy knows no borders!"
+ cap_window_desc_snowball: "The oppressor is now the oppressed."
  cap_window_desc_taco: "Taco got fried."
  cap_window_desc_ruby: "No more sweets for Ruby."
  cap_window_desc_fanny: "I HATE LOSING!"
@@ -66,6 +66,10 @@
  cap_window_desc_eraser: "Raiding their neighbors was not the wisest."
  cap_window_desc_neobunch: "Fought to the last object for a lost vision."
  cap_window_desc_bunchrepublic: "Still guilty of their past."
+ cap_window_desc_yellowface: "They put all their eggs into the wrong basket."
+ cap_window_desc_yellowfaceraiders: "Played an unsustainable strategy."
+ cap_window_desc_tophat: "Change in leadership does not save an already sinking ship." 
+ cap_window_desc_golfball: "Knowledge only has so much power."
  
  cap_window_close_button: "Dark times."
  
