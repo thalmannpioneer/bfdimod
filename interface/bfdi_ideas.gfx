@@ -107,6 +107,18 @@ spriteTypes = {
 		name = GFX_idea_TBT_eastern_blocked
 		texturefile = gfx/interface/ideas/idea_TBT_eastern_blocked.dds
 	}
+	spriteType = {
+		name = GFX_modifier_TBT_low_pop
+		textureFile = gfx/interface/ideas/modifier_TBT_low_pop.dds
+	}
+	spriteType = {
+		name = GFX_modifier_TBT_med_pop
+		textureFile = gfx/interface/ideas/modifier_TBT_med_pop.dds
+	}
+	spriteType = {
+		name = GFX_modifier_TBT_high_pop
+		textureFile = gfx/interface/ideas/modifier_TBT_high_pop.dds
+	}
 	
 	spriteType = {
 		name = GFX_idea_GPG_questionable_future
@@ -659,7 +671,23 @@ spriteTypes = {
 		name = GFX_idea_BUN_greenville_treaty
 		texturefile = gfx/interface/ideas/idea_BUN_greenville_treaty.dds
 	}
-	
+	spriteType = {
+		name = GFX_modifier_BUN_lesser_state
+		textureFile = gfx/interface/ideas/modifier_BUN_lesser_state.dds
+	}
+	spriteType = {
+		name = GFX_modifier_BUN_autonomous_state
+		textureFile = gfx/interface/ideas/modifier_BUN_autonomous_state.dds
+	}
+	spriteType = {
+		name = GFX_modifier_BUN_revolt_support
+		textureFile = gfx/interface/ideas/modifier_BUN_revolt_support.dds
+	}
+	spriteType = {
+		name = GFX_modifier_BUN_rampant_raids
+		textureFile = gfx/interface/ideas/modifier_BUN_rampant_raids.dds
+	}
+
 	spriteType = {
 		name = GFX_idea_NRR_between_two_fires
 		texturefile = gfx/interface/ideas/idea_NRR_between_two_fires.dds
@@ -872,6 +900,10 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_YFC_Eraser
 		texturefile = gfx/interface/ideas/idea_YFC_Eraser.dds
+	}
+	spriteType = {
+		name = GFX_modifier_YFC_autonomous_state
+		textureFile = gfx/interface/ideas/modifier_YFC_autonomous_state.dds
 	}
 
 	spriteType = {

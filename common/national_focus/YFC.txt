@@ -3932,8 +3932,9 @@ focus_tree = {
         completion_reward = {
             country_event = {
                 id = YFC_event.67
-                hours = 1
-                random_hours = 2
+                days = 2
+                hours = 6
+                random_hours = 48
             }
         }
     }
@@ -4323,6 +4324,12 @@ focus_tree = {
             hidden_effect = {
                 country_event = {
                     id = YFC_event.67
+                    days = 2
+                    hours = 12
+                    random_hours = 36
+                }
+                country_event = {
+                    id = YFC_event.81
                     days = 7
                     hours = 12
                     random_hours = 36

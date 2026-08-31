@@ -526,9 +526,9 @@
  GTR_development_invest_mils: "Expand §GMilitary Industry§!"
 
  #TBT State Modifiers 
- TBT_low_pop: "Minor Teardroppers Population"
- TBT_med_pop: "Moderate Teardroppers Population"
- TBT_high_pop: "Major Teardroppers Population"
+ TBT_low_pop: "Minor Teardropper Population"
+ TBT_med_pop: "Moderate Teardropper Population"
+ TBT_high_pop: "Major Teardropper Population"
 
  #Bullshit
  decision_GGR_civil_war_category: "Fate of the Snowy Plateau"
