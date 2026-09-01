@@ -782,15 +782,17 @@ on_actions = {
         }
     }
 	
-	on_weekly_YFC = { #TRADE RELATIONS CALCULATOR
-		effect = {
-			YFC_calc_trade_relations_loop = yes
-		}
-	}
-
-    on_weekly = { #AI logic for money politics
+    on_weekly = { 
         effect = {
-            if = {
+            if = { #Used for weekly free guns
+                limit = {has_country_flag = BFDI_20_guns_weekly}
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_0
+                    amount = 20
+                    producer = ROOT
+                }
+            }
+            if = { #AI logic for money politics
                 limit = {
                     is_ai = yes
                     NOT = { has_idea = idea_common_bankruptcy }
@@ -943,9 +945,10 @@ on_actions = {
         }
     }
 
-    on_weekly_YFC = { #EASTERN MECHANIC
+    on_weekly_YFC = { 
         effect = {
-            if = {
+            YFC_calc_trade_relations_loop = yes #TRADE RELATIONS CALCULATOR
+            if = { #EASTERN MECHANIC
                 limit = { 
                     OR = {
                         has_completed_focus = YFC_focus_see_to_the_eastern_front

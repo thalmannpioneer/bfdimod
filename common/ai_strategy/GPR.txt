@@ -186,7 +186,7 @@ GPR_fortnite_greenport_outskirts_north = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 0
+				level < 1
 			}
 		}
     }
@@ -220,7 +220,7 @@ GPR_fortnite_greenport_outskirts_south = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 0
+				level < 1
 			}
 		}
     }
@@ -254,7 +254,7 @@ GPR_fortnite_greenport_outskirts_river = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 0
+				level < 1
 			}
 		}
     }

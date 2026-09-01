@@ -53,6 +53,7 @@ decision_BUN_raids_category = {
             if = {
                 limit = {
                     is_ai = yes
+                    has_army_manpower = {size < 50000}
                 }
                 add_manpower = 2500
             }
@@ -180,6 +181,7 @@ decision_BUN_raids_category = {
             if = {
                 limit = {
                     is_ai = yes
+                    has_army_manpower = {size < 50000}
                 }
                 add_manpower = 2000
             }
@@ -307,6 +309,7 @@ decision_BUN_raids_category = {
             if = {
                 limit = {
                     is_ai = yes
+                    has_army_manpower = {size < 50000}
                 }
                 add_manpower = 2000
             }
@@ -434,6 +437,7 @@ decision_BUN_raids_category = {
             if = {
                 limit = {
                     is_ai = yes
+                    has_army_manpower = {size < 50000}
                 }
                 add_manpower = 2000
             }
@@ -557,6 +561,7 @@ decision_BUN_raids_category = {
             if = {
                 limit = {
                     is_ai = yes
+                    has_army_manpower = {size < 50000}
                 }
                 add_manpower = 4500
             }

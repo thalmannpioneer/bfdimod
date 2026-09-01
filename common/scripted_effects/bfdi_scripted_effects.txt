@@ -833,6 +833,64 @@ YFC_pirates_GMD = {
     }
 }
 
+YFC_pirates_TBT = {
+    if = { #Zero boats
+        limit = {
+            ships_in_state_ports = {size < 1 state = 168}
+        }
+        country_event = YFC_borderwars.13
+    }
+    else_if = { #1-5 boats
+        limit = {
+            ships_in_state_ports = {size > 0 state = 168}
+            ships_in_state_ports = {size < 6 state = 168}
+        }
+        random_list = {
+            80 = {country_event = YFC_borderwars.15}
+            20 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #6-10 boats
+        limit = {
+            ships_in_state_ports = {size > 5 state = 168}
+            ships_in_state_ports = {size < 11 state = 168}
+        }
+        random_list = {
+            60 = {country_event = YFC_borderwars.15}
+            40 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #11-15 boats
+        limit = {
+            ships_in_state_ports = {size > 10 state = 168}
+            ships_in_state_ports = {size < 16 state = 168}
+        }
+        random_list = {
+            40 = {country_event = YFC_borderwars.15}
+            60 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #16-20 boats
+        limit = {
+            ships_in_state_ports = {size > 16 state = 168}
+            ships_in_state_ports = {size < 21 state = 168}
+        }
+        random_list = {
+            20 = {country_event = YFC_borderwars.15}
+            80 = {country_event = YFC_borderwars.17}
+        }
+    }
+    else_if = { #20+ boats
+        limit = {
+            ships_in_state_ports = {size > 20 state = 168}
+        }
+        random_list = {
+            5 = {country_event = YFC_borderwars.15}
+            95 = {country_event = YFC_borderwars.17}
+        }
+    }
+}
+
 YFC_calc_trade_relations_loop = {
     set_temp_variable = { temp = 0 }
     YFC_calc_trade_update_nation = yes
@@ -1321,9 +1379,10 @@ YFC_calc_trade_risk_buying = {
 
             IF = {
                 limit = {check_variable = {buying_item = 999}}
+                set_variable = { trade_cost_show_var = YFC.selling_cost^ROOT.YFC_trade_nation_pos_var }
                 YFC = {
                     clr_country_flag = YFC_trade_allow_drugs
-                    add_to_variable = {money_amount = trade_cost_show_var}
+                    add_to_variable = {money_amount = ROOT.trade_cost_show_var}
                     country_event = {
                         id = YFC_event.82
                         hours = 3

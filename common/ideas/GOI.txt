@@ -81,12 +81,19 @@ ideas = {
 				compliance_growth = 0.25
 				ai_desired_divisions_factor = 2.5
 				ai_focus_aggressive_factor = 0.5
+				custom_modifier_tooltip = l_modifier_gain_20_guns_weekly
 			}
 			cancel = {
 				OR = {
 					is_ai = no
 					has_war = no
 				}
+			}
+			on_remove = {
+				clr_country_flag = BFDI_20_guns_weekly
+			}
+			on_add = {
+				set_country_flag = BFDI_20_guns_weekly
 			}
 		}
 

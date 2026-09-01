@@ -165,7 +165,7 @@ ideas = {
 			on_remove = {
 				IF = {
 					limit = {
-						NOT = {check_variable = { var_idea_YFC_sectors_TopHat_type < 2 }}
+						check_variable = { var_idea_YFC_sectors_TopHat_type > 2 }
 					}
 					set_variable = { var_idea_YFC_TopHat_level = 1 }
 					set_variable = { var_idea_YFC_TopHat_cost = 20 }
@@ -280,14 +280,19 @@ ideas = {
 		idea_YFC_snowpath = { 
 			picture = YFC_snowpath
 			modifier = {
-				country_resource_steel = 8
-				country_resource_coal = 12
-				local_resources_factor = 0.1
+				custom_modifier_tooltip = l_modifier_gain_20_guns_weekly
 			}
 			targeted_modifier = {
                 tag = BUN
                 trade_cost_for_target_factor = -0.2
             }
+			on_remove = {
+				clr_country_flag = BFDI_20_guns_weekly
+			}
+			on_add = {
+				set_country_flag = BFDI_20_guns_weekly
+			}
+			cancel = {NOT = {country_exists = BUN}}
 		}
 
 		idea_YFC_unnamed_tactics = { 

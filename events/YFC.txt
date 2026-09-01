@@ -3320,6 +3320,16 @@ country_event = { #YFC_focus_march_on_footpathburg
 		hidden_effect = {
 			201 = {set_demilitarized_zone = no}
 			225 = {set_demilitarized_zone = no}
+
+			random = {
+				chance = 50
+				YFC_david = {
+					add_timed_unit_leader_trait = {
+						trait = wounded
+						days = 45
+					}
+				}
+			}
 		}
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -4947,16 +4957,16 @@ country_event = {
 		effect_tooltip = {
 			random_list = {
 				3 = {
-					custom_effect_tooltip = l_money_lose_100K
-					subtract_from_variable = { money_amount = 1 }
-				}
-				4 = {
 					custom_effect_tooltip = l_money_lose_200K
 					subtract_from_variable = { money_amount = 2 }
 				}
-				5 = {
+				4 = {
 					custom_effect_tooltip = l_money_lose_300K
 					subtract_from_variable = { money_amount = 3 }
+				}
+				5 = {
+					custom_effect_tooltip = l_money_lose_400K
+					subtract_from_variable = { money_amount = 4 }
 				}
 			}
 		}
@@ -4975,7 +4985,7 @@ country_event = {
 	option = {
 		name = YFC_borderwars.14.a
 		
-		has_manpower = 1500
+		add_manpower = 1500
 		add_equipment_to_stockpile = {
 			type = convoy
 			amount = 10
@@ -4983,14 +4993,6 @@ country_event = {
 
 		random_list = {
 			3 = {
-				custom_effect_tooltip = l_money_gain_100K
-				add_to_variable = { money_amount = 1 }
-
-				hidden_effect = {
-					FROM = {subtract_from_variable = { money_amount = 1 }}
-				}
-			}
-			4 = {
 				custom_effect_tooltip = l_money_gain_200K
 				add_to_variable = { money_amount = 2 }
 
@@ -4998,12 +5000,20 @@ country_event = {
 					FROM = {subtract_from_variable = { money_amount = 2 }}
 				}
 			}
-			5 = {
+			4 = {
 				custom_effect_tooltip = l_money_gain_300K
 				add_to_variable = { money_amount = 3 }
 
 				hidden_effect = {
 					FROM = {subtract_from_variable = { money_amount = 3 }}
+				}
+			}
+			5 = {
+				custom_effect_tooltip = l_money_gain_400K
+				add_to_variable = { money_amount = 4 }
+
+				hidden_effect = {
+					FROM = {subtract_from_variable = { money_amount = 4 }}
 				}
 			}
 		}
@@ -5110,7 +5120,7 @@ country_event = {
 			integer = yes
 		}
 
-		has_manpower = manpower_regain
+		add_manpower = manpower_regain
 		add_equipment_to_stockpile = {
 			type = convoy
 			amount = boats_regain
@@ -5233,7 +5243,7 @@ country_event = {
 			integer = yes
 		}
 
-		has_manpower = manpower_regain
+		add_manpower = manpower_regain
 		add_equipment_to_stockpile = {
 			type = convoy
 			amount = boats_regain
@@ -5901,7 +5911,7 @@ country_event = { #Annex Events 4
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		85 = {
-			add_compliance = 45
+			add_compliance = 55
 			set_demilitarized_zone = yes
 			add_dynamic_modifier = {
 				modifier = BUN_autonomous_state

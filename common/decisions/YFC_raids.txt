@@ -79,7 +79,11 @@ decision_YFC_raids_category = {
 			}
 			modifier = {
 				add = 100
-				has_manpower < 2000
+				has_manpower < 2000 
+			}
+			modifier = {
+				add = -1000
+				has_army_manpower = {size < 50000}
 			}
 		}
 	}
@@ -494,19 +498,19 @@ decision_YFC_raids_category = {
 			has_completed_focus = YFC_focus_pirate_life
 		}
 
-		targets = { TBT DAV GGR } 
+		targets = { TBT DAV GMD } 
 		targets_dynamic = yes
 		target_trigger = {
 			country_exists = FROM
 		}
 
 		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 250
-		cost = 50
+		days_remove = 30
+		days_re_enable = 300
+		cost = 75
 
 		complete_effect = {
-			has_manpower = -1500
+			add_manpower = -1500
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = -10

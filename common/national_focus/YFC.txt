@@ -233,7 +233,15 @@ focus_tree = {
             base = 1
             modifier = {
                 factor = 6
-                has_manpower < 1000
+                has_manpower < 100
+            }
+            modifier = {
+                factor = 4
+                OR = {
+                    has_completed_focus = YFC_focus_YFC_funded_pillaging
+                    has_completed_focus = YFC_focus_tophat_clan
+                    has_completed_focus = YFC_focus_a_look_inward
+                }
             }
         }
     }
@@ -275,10 +283,18 @@ focus_tree = {
             }
         }
         ai_will_do = {
-            base = 2
+            base = 1
             modifier = {
                 factor = 6
-                has_manpower < 1000
+                has_manpower < 100
+            }
+            modifier = {
+                factor = 4
+                OR = {
+                    has_completed_focus = YFC_focus_YFC_funded_pillaging
+                    has_completed_focus = YFC_focus_tophat_clan
+                    has_completed_focus = YFC_focus_a_look_inward
+                }
             }
         }
     }
@@ -577,9 +593,9 @@ focus_tree = {
             }
             custom_effect_tooltip = l_GOI_unlock_focus
             hidden_effect = {
-                BUN = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
-                CRN = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
-                SRR = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids
+                BUN = {add_manpower = 10000} #So Bunch does not blow up their army from 1000 raids, remove later
+                CRN = {add_manpower = 15000} #So Bunch does not blow up their army from 1000 raids, remove later
+                SRR = {add_manpower = 15000} #So Bunch does not blow up their army from 1000 raids, remove later
             }
             mark_focus_tree_layout_dirty = yes
         }
@@ -3396,9 +3412,9 @@ focus_tree = {
         }
         cost = 6
         completion_reward = {
-            custom_effect_tooltip = l_money_gain_3M
+            custom_effect_tooltip = l_money_gain_4M
             custom_effect_tooltip = l_YFC_sectors_Gold_Take
-            add_to_variable = { money_amount = 30 }
+            add_to_variable = { money_amount = 40 }
             IF = {
                 limit = {is_ai = yes}
                 add_to_variable = { money_amount = 15 }
@@ -5816,37 +5832,15 @@ focus_tree = {
 
         completion_reward = {
             hidden_effect = {
-                IF = { #Move later
-                    limit = {
-                        GGR = {is_ai = yes}
-                        country_exists = GGR
-                    }
-                    GGR = {
-                        add_equipment_to_stockpile = {
-                            type = infantry_equipment
-                            amount = 1500
-                        }
-                        add_political_power = 50
-                    }
-                }
-                ELSE_IF = {
-                    limit = {country_exists = GGR}
-                    GGR = {
-                        add_equipment_to_stockpile = {
-                            type = infantry_equipment
-                            amount = 250
-                        }
-                    }
-                }
                 set_country_leader_portrait = {
                     portrait = GFX_YFC_crack_face
                 }
                 set_cosmetic_tag = YFC_raiders
                 country_event = { #Starts East Game
                     id = YFC_event.44
-                    days = 300
-                    random_days = 100
-                    hours = 12
+                    days = 275
+                    random_days = 50
+                    hours = 24
                     random_hours = 100
                 }
             }
@@ -5959,11 +5953,11 @@ focus_tree = {
         cost = 5 #Maybe change later
 
         completion_reward = {
-            add_stability = 0.05
-            add_manpower = 2000
+            custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
             201 = {add_manpower = 478}
-            215 = {add_manpower = 4373}
-            196 = {add_manpower = 592}
+            215 = {add_manpower = 6373}
+            196 = {add_manpower = 1592}
 
             hidden_effect = {
                 BUN = {
@@ -6042,6 +6036,7 @@ focus_tree = {
             BUN = {
                 add_ideas = idea_BUN_snowpath
             }
+            set_country_flag = BFDI_20_guns_weekly_BUN
         }
     }
 
@@ -7224,7 +7219,7 @@ focus_tree = {
         icon = GFX_focus_YFC_construct_the_naval_base
 
         ai_will_do = {
-            base = 25
+            base = 35
         }
 
         prerequisite = { focus = YFC_focus_before_setting_sail }
@@ -7325,11 +7320,11 @@ focus_tree = {
         id = YFC_focus_pirate_life
         relative_position_id = YFC_focus_construct_the_naval_base
         x = 0
-        y = 1
+        y = 2
         icon = GFX_focus_YFC_pirate_life
 
         ai_will_do = {
-            base = 25
+            base = 35
         }
 
         prerequisite = { focus = YFC_focus_construct_the_naval_base }

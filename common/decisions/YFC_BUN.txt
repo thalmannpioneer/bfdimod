@@ -73,7 +73,7 @@ decision_YFC_BUN_category = {
 							}
 						}
 					}
-					BUN {controls_state = 201}
+					BUN = {controls_state = 201}
 				}
 			}
 		}

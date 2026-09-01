@@ -23,7 +23,7 @@ decision_YFC_trade_category = {
         timeout_effect = {
             #Money Taken
             custom_effect_tooltip = l_YFC_payment_raiders
-            subtract_from_variable = { money_amount = 0.075 }
+            subtract_from_variable = { money_amount = 0.07 }
             
             IF = {
                 limit = {has_completed_focus = YFC_focus_hoard_gold}
@@ -187,7 +187,7 @@ decision_YFC_trade_category = {
         }
 
         fire_only_once = no
-        cost = 50
+        cost = 75
         days_remove = 20
         days_re_enable = 60
 
@@ -203,7 +203,7 @@ decision_YFC_trade_category = {
         ai_will_do = {
             base = 0
             modifier = {
-                has_political_power > 150
+                has_political_power > 155
                 add = 100
             }
         }
