@@ -1301,6 +1301,7 @@ country_event = {
                 target = GDR
                 type = annex_everything
             }
+            add_civil_war_target = GDR
             add_popularity = {
                 ideology = democratic
                 popularity = -0.5
@@ -1324,6 +1325,7 @@ country_event = {
                         target = GSR
                         type = annex_everything
                     }
+                    add_civil_war_target = GSR
                 }
                 if = {
                     limit = { country_exists = GFG }
@@ -1331,19 +1333,7 @@ country_event = {
                         target = GFG
                         type = annex_everything
                     }
-                }
-                if = { #Minor buff to the AI
-                    limit = {
-                        GPG = {is_ai = yes}
-                    }
-                    145 = {
-                        add_extra_state_shared_building_slots = 1
-                        add_building_construction = {
-                            type = arms_factory
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
+                    add_civil_war_target = GFG
                 }
             }
         }
@@ -1371,6 +1361,7 @@ country_event = {
                 target = GSR
                 type = annex_everything
             }
+            add_civil_war_target = GSR
             add_popularity = {
                 ideology = communism
                 popularity = -0.5
@@ -1393,6 +1384,7 @@ country_event = {
                         target = GDR
                         type = annex_everything
                     }
+                    add_civil_war_target = GDR
                 }
                 if = {
                     limit = { country_exists = GFG }
@@ -1400,19 +1392,7 @@ country_event = {
                         target = GFG
                         type = annex_everything
                     }
-                }
-                if = { #Minor buff to the AI
-                    limit = {
-                        GPG = {is_ai = yes}
-                    }
-                    10 = {
-                        add_extra_state_shared_building_slots = 1
-                        add_building_construction = {
-                            type = arms_factory
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
+                    add_civil_war_target = GFG
                 }
             }
         }
@@ -1439,6 +1419,7 @@ country_event = {
                 target = GFG
                 type = annex_everything
             }
+            add_civil_war_target = GFG
             add_popularity = {
                 ideology = fascism
                 popularity = -0.5
@@ -1475,6 +1456,7 @@ country_event = {
                         target = GDR
                         type = annex_everything
                     }
+                    add_civil_war_target = GDR
                 }
                 if = {
                     limit = { country_exists = GSR }
@@ -1482,19 +1464,7 @@ country_event = {
                         target = GSR
                         type = annex_everything
                     }
-                }
-                if = { #Minor buff to the AI
-                    limit = {
-                        GPG = {is_ai = yes}
-                    }
-                    158 = {
-                        add_extra_state_shared_building_slots = 1
-                        add_building_construction = {
-                            type = arms_factory
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
+                    add_civil_war_target = GSR
                 }
             }
         }

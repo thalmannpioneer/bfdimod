@@ -785,10 +785,10 @@ on_actions = {
     on_weekly = { 
         effect = {
             if = { #Used for weekly free guns
-                limit = {has_country_flag = BFDI_20_guns_weekly}
+                limit = {has_country_flag = BFDI_25_guns_weekly}
                 add_equipment_to_stockpile = {
                     type = infantry_equipment_0
-                    amount = 20
+                    amount = 25
                     producer = ROOT
                 }
             }

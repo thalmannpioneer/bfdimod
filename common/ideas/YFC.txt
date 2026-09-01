@@ -280,17 +280,17 @@ ideas = {
 		idea_YFC_snowpath = { 
 			picture = YFC_snowpath
 			modifier = {
-				custom_modifier_tooltip = l_modifier_gain_20_guns_weekly
+				custom_modifier_tooltip = l_modifier_gain_25_guns_weekly
 			}
 			targeted_modifier = {
                 tag = BUN
                 trade_cost_for_target_factor = -0.2
             }
 			on_remove = {
-				clr_country_flag = BFDI_20_guns_weekly
+				clr_country_flag = BFDI_25_guns_weekly
 			}
 			on_add = {
-				set_country_flag = BFDI_20_guns_weekly
+				set_country_flag = BFDI_25_guns_weekly
 			}
 			cancel = {NOT = {country_exists = BUN}}
 		}

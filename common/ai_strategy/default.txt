@@ -57,6 +57,29 @@ BFDI_coast_stop = {
 	}
 }
 
+BFDI_EMP_chill = {
+	#EMP can't do anything 
+	enable = {
+		NOT = {original_tag = EMP}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = EMP
+		value = -2000
+	}
+	ai_strategy = {
+		type = conquer
+		id = EMP
+		value = -2000
+	}
+	ai_strategy = {
+		type = ignore
+		id = EMP
+		value = 2000
+	}
+}
+
 
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable

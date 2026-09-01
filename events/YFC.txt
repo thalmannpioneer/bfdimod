@@ -1978,10 +1978,17 @@ country_event = {
 
     option = { 
 		name = YFC_event.43.a
-		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
-		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
-		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
-		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+			IF = {
+			limit = {
+				NOT = {has_country_flag = YFC_Sectors_done}
+				NOT = {has_completed_focus = YFC_focus_way_of_raiders}
+			}
+			add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+			custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
+			add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
+			custom_effect_tooltip = l_YFC_sectors_Taser_Gain
+		}
+
 		add_opinion_modifier = { target = SRI modifier = large_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = SRI
@@ -1994,8 +2001,15 @@ country_event = {
 	}
 	option = { 
 		name = YFC_event.43.b
-		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
-		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		IF = {
+			limit = {
+				NOT = {has_country_flag = YFC_Sectors_done}
+				NOT = {has_completed_focus = YFC_focus_way_of_raiders}
+				check_variable = { var_idea_YFC_sectors_TopHat_type > 2 }
+			}
+			add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
+			custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
+		}
 		declare_war_on = {
 			target = SRI
 			type = puppet_wargoal_focus
@@ -4566,7 +4580,10 @@ country_event = {
 		IF = {
 			limit = {is_ai = yes}
 			add_to_variable = { money_amount = 2 } #Small boost for YFC AI
-			add_manpower = 2000
+			IF = {
+				limit = {has_army_manpower = {size < 50000}}
+				add_manpower = 2000
+			}
 		}
 	}
 }
@@ -4586,7 +4603,10 @@ country_event = {
 		army_experience = 10
 		clr_country_flag = YFC_Raid_Active
 		IF = {
-			limit = {is_ai = yes}
+			limit = {
+				is_ai = yes
+				has_army_manpower = {size < 50000}
+			}
 			add_manpower = 1500
 		}
 	}
@@ -7575,7 +7595,7 @@ country_event = { #Noo my money was taken by debt! :(
  		set_variable = { var_idea_YFC_sectors_Pipe_supply = 0.05 }
 		set_variable = { var_idea_YFC_sectors_Hammer_construction = -0.05 }
  		set_variable = { var_idea_YFC_sectors_Hammer_repair = -0.1 }
-		set_variable = { var_idea_YFC_sectors_Taser_resistance = 0.05 }
+		set_variable = { var_idea_YFC_sectors_Taser_resistance = 0.1 }
  		set_variable = { var_idea_YFC_sectors_Taser_pp = -0.1 }
 	}
 }

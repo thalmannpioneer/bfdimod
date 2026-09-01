@@ -189,6 +189,9 @@ gpg_civil_war = {
             target = GPG
             type = annex_everything
         }
+        add_civil_war_target = GDR
+        add_civil_war_target = GFG
+        add_civil_war_target = GPG
         country_event = {
             id = GSR_event.1
             days = 5
@@ -212,6 +215,9 @@ gpg_civil_war = {
             target = GPG
             type = annex_everything
         }
+        add_civil_war_target = GSR
+        add_civil_war_target = GFG
+        add_civil_war_target = GPG
         country_event = {
             id = GDR_event.1
             days = 5
@@ -249,6 +255,9 @@ gpg_civil_war = {
             target = GPG
             type = annex_everything
         }
+        add_civil_war_target = GSR
+        add_civil_war_target = GFG
+        add_civil_war_target = GPG
         country_event = {
             id = GFG_event.1
             days = 5
@@ -1380,6 +1389,8 @@ YFC_calc_trade_risk_buying = {
             IF = {
                 limit = {check_variable = {buying_item = 999}}
                 set_variable = { trade_cost_show_var = YFC.selling_cost^ROOT.YFC_trade_nation_pos_var }
+                divide_variable = { trade_cost_show_var = 100 }
+                
                 YFC = {
                     clr_country_flag = YFC_trade_allow_drugs
                     add_to_variable = {money_amount = ROOT.trade_cost_show_var}
