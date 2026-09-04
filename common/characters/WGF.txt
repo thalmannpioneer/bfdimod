@@ -12,7 +12,7 @@ characters = {
 			desc = WGF_firey_desc
 		}
 		field_marshal = {
-			traits = { politically_connected war_hero trait_cautious }
+			traits = { country_leader war_hero trait_cautious tough }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 1

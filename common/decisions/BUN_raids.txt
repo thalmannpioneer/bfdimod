@@ -15,6 +15,7 @@ decision_BUN_raids_category = {
                     NOT = {is_guaranteed_by = BUN}
                     NOT = {is_ally_with = BUN}
                     NOT = {has_non_aggression_pact_with = BUN}
+                    NOT = {is_puppet_of = YFC}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -143,6 +144,7 @@ decision_BUN_raids_category = {
                     NOT = {is_guaranteed_by = BUN}
                     NOT = {is_ally_with = BUN}
                     NOT = {has_non_aggression_pact_with = BUN}
+                    NOT = {is_puppet_of = YFC}
                 }
             } 
             NOT = {is_puppet = yes}
@@ -271,6 +273,7 @@ decision_BUN_raids_category = {
                     NOT = {is_guaranteed_by = BUN}
                     NOT = {is_ally_with = BUN}
                     NOT = {has_non_aggression_pact_with = BUN}
+                    NOT = {is_puppet_of = YFC}
                 }
             }  
             NOT = {is_puppet = yes}
@@ -399,6 +402,7 @@ decision_BUN_raids_category = {
                     NOT = {is_guaranteed_by = BUN}
                     NOT = {is_ally_with = BUN}
                     NOT = {has_non_aggression_pact_with = BUN}
+                    NOT = {is_puppet_of = YFC}
                 }
             } 
             NOT = {is_puppet = yes}

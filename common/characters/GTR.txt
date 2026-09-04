@@ -78,7 +78,7 @@ characters = {
             defense_skill = 2
             planning_skill = 1
             logistics_skill = 2
-            traits = { trait_cautious }
+            traits = { trait_cautious fast_learner }
         }
     }
     GTR_swappy = {

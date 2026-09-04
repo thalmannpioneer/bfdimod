@@ -12,7 +12,7 @@ characters = {
 			desc = YFC_yellow_face_desc
 		}
 		field_marshal = {
-			traits = { offensive_doctrine politically_connected }
+			traits = { offensive_doctrine country_leader tough }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -36,7 +36,22 @@ characters = {
 			traits = { infantry_officer }
 		}
 	}
-
+	YFC_price_tag = {
+		name = YFC_price_tag
+		portraits = { 
+			army = { 
+				large = GFX_YFC_price_tag
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			traits = { expert_requisitioner armless }
+		}
+	}
 	YFC_Coiny = {
 		name = YFC_Coiny
 		portraits = { 

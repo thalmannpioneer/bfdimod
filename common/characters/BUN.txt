@@ -12,7 +12,7 @@ characters = {
 			ideology = despotism
 		}
 		field_marshal = {
-			traits = { trait_reckless politically_connected guerilla_fighter }
+			traits = { trait_reckless guerilla_fighter country_leader expert_requisitioner }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -40,7 +40,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
-			traits = { irregulars_officer guerilla_fighter }
+			traits = { irregulars_officer guerilla_fighter expert_requisitioner }
 		}
 	}
 
@@ -58,7 +58,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-			traits = { politically_connected cavalry_officer }
+			traits = { politically_connected cavalry_officer expert_requisitioner }
 		}
 		advisor = {
 			slot = political_advisor

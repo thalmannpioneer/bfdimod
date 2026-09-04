@@ -68,7 +68,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-			traits = { politically_connected infantry_officer }
+			traits = { politically_connected infantry_officer fragile }
 		}
 	}
 }

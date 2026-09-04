@@ -115,7 +115,7 @@ focus_tree = {
             hidden_effect = {
                 add_field_marshal_role = {
                     character = YFC_tophat
-                    traits = { politically_connected armor_officer trait_reckless organisational_leader }
+                    traits = { politically_connected trait_reckless organisational_leader trained }
                     skill = 2
                     attack_skill = 2
                     defense_skill = 2
@@ -3360,6 +3360,7 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            custom_effect_tooltip = l_YFC_scray_threat
             add_political_power = 50
             add_opinion_modifier = { target = BUN modifier = medium_increase }
             every_country_with_original_tag = {
@@ -4377,7 +4378,7 @@ focus_tree = {
             base = 50 #Deal with the Chaos
         }
 
-        cost = 2
+        cost = 3
         completion_reward = {
             country_event = {
                 id = YFC_event.68
@@ -5037,8 +5038,8 @@ focus_tree = {
             IF = {
                 limit = {216 = {is_core_of = TBT}}
                 216 = {
-                    add_core_of = TBT
-                    remove_core_of = YFC
+                    add_core_of = YFC
+                    remove_core_of = TBT
                 }
             }
             IF = {
@@ -6242,6 +6243,7 @@ focus_tree = {
                             has_completed_focus = YFC_focus_locked_on_land
                             has_completed_focus = YFC_focus_way_to_seas
                         }
+                        NOT = {has_completed_focus = YFC_focus_before_setting_sail}
                     }
                     country_event = {
                         id = YFC_event.86
@@ -6271,7 +6273,6 @@ focus_tree = {
 
         completion_reward = {
             army_experience = 25
-            add_political_power = 15
         }
     }
 
@@ -6667,6 +6668,7 @@ focus_tree = {
                             has_completed_focus = YFC_focus_locked_on_land
                             has_completed_focus = YFC_focus_way_to_seas
                         }
+                        NOT = {has_completed_focus = YFC_focus_before_setting_sail}
                     }
                     country_event = {
                         id = YFC_event.86
@@ -7079,6 +7081,7 @@ focus_tree = {
                             has_completed_focus = YFC_focus_bandit_pack
                             has_completed_focus = YFC_focus_acknowledge_our_shortcomings
                         }
+                        NOT = {has_completed_focus = YFC_focus_before_setting_sail}
                     }
                     country_event = {
                         id = YFC_event.86
@@ -7135,6 +7138,7 @@ focus_tree = {
                             has_completed_focus = YFC_focus_bandit_pack
                             has_completed_focus = YFC_focus_acknowledge_our_shortcomings
                         }
+                        NOT = {has_completed_focus = YFC_focus_before_setting_sail}
                     }
                     country_event = {
                         id = YFC_event.86
@@ -7172,8 +7176,8 @@ focus_tree = {
         completion_reward = {
             add_stability = -0.05
             216 = {
-                add_compliance = 15
-                add_resistance_target = -30
+                add_compliance = 20
+                add_resistance_target = -35
             }
         }
     }

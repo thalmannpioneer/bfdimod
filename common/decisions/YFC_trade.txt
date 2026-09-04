@@ -187,9 +187,9 @@ decision_YFC_trade_category = {
         }
 
         fire_only_once = no
-        cost = 75
+        cost = 100
         days_remove = 20
-        days_re_enable = 60
+        days_re_enable = 30
 
         remove_effect = {
             custom_effect_tooltip = l_YFC_trade_get_drugs_upgrade

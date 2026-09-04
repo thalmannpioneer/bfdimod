@@ -7,7 +7,7 @@ characters = {
 			ideology = anarchist_communism
 		}
 		field_marshal = {
-			traits = { politically_connected war_hero brave guerilla_fighter }
+			traits = { war_hero brave guerilla_fighter country_leader armless }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 3
@@ -28,7 +28,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
-			traits = { guerilla_fighter }
+			traits = { guerilla_fighter fragile expert_requisitioner }
 		}
 	}
 }

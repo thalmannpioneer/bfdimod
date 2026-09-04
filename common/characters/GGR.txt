@@ -7,11 +7,11 @@ characters = {
 			desc = GGR_snowball_desc
 		}
 		field_marshal = {
-			traits = { offensive_doctrine trait_reckless politically_connected }
-			skill = 5
+			traits = { offensive_doctrine trait_reckless trained country_leader }
+			skill = 3
 			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 5
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 3
 		}
 	}
@@ -30,7 +30,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 4
-			traits = { war_hero infantry_officer }
+			traits = { war_hero infantry_officer trained }
 			visible = { has_country_flag = grassy_appear }
 		}
 	}

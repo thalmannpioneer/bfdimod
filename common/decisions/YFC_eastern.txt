@@ -743,7 +743,7 @@ decision_YFC_eastern_category = {
 		cost = 25
 		fire_only_once = no
 		days_remove = 10
-		days_re_enable = 120
+		days_re_enable = 90
 
 		remove_effect = {
 			IF = {

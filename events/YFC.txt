@@ -1478,15 +1478,15 @@ country_event = { #YFC Sell
 		 	}
 			modifier = {
 				check_variable = { money_amount < 10 } 
-				add = -1
+				add = -2
 		 	}
 			modifier = {
 				check_variable = { money_amount < 0 } 
-				add = -4
+				add = -20
 		 	}
 			modifier = {
 				check_variable = { money_amount < -10 } 
-				add = -10
+				add = -1000
 		 	}
 			modifier = {
 				has_war = yes
@@ -1780,6 +1780,10 @@ country_event = {
 				has_army_size = {size > 3}
 			}
 			modifier = {
+				add = 10
+				has_army_size = {size < 1}
+			}
+			modifier = {
 				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
 				add = -2
 		 	}
@@ -1839,6 +1843,13 @@ country_event = {
 			}
 			custom_effect_tooltip = l_money_lose_500K
 			subtract_from_variable = { money_amount = 5 }
+		}
+		IF = {
+			limit = {
+				YFC = {has_completed_focus = YFC_focus_demand_great_ridge_tribute}
+			}
+			custom_effect_tooltip = l_money_gain_500K
+            add_to_variable = { money_amount = 5 }
 		}
 		add_opinion_modifier = { target = SRI modifier = large_increase }
 		every_country_with_original_tag = {
@@ -3186,12 +3197,11 @@ country_event = { #YFC_focus_pride
 	option = { 
 		name = YFC_event.67.a
 
-		add_stability = -0.1
-
-		IF = {
-			limit = {has_completed_focus = YFC_focus_mass_firings}
-			add_war_support = 0.05
+		trigger = {
+			NOT = {has_completed_focus = YFC_focus_mass_firings}
 		}
+
+		add_stability = -0.1
 
 		225 = {
 			if = {
@@ -3220,6 +3230,69 @@ country_event = { #YFC_focus_pride
                 count = 1
             }
         }
+
+		hidden_effect = {
+			country_event = {
+                id = YFC_event.67a
+				days = 7
+                hours = 1
+                random_hours = 12
+            }
+		}
+	}
+	option = { 
+		name = YFC_event.67.b
+
+		add_stability = -0.05
+
+		trigger = {
+			has_completed_focus = YFC_focus_mass_firings
+		}
+		add_war_support = 0.05
+
+		225 = {
+			if = {
+				limit = { is_owned_by = EMP }
+				add_core_of = YFC
+				transfer_state_to = YFC
+				remove_core_of = EMP
+				set_demilitarized_zone = no
+				add_victory_points = {
+					province = 10828
+					value = 1
+				}
+			}
+		}
+		division_template = {
+			name = "Portland Garrison"
+            division_names_group = YFC_Cav_01
+			regiments = {
+				cavalry = { x = 0 y = 0 }
+			}
+		}
+        225 = {
+            create_unit = {
+                division = "name = \"Portland Garrison\" division_template = \"Portland Garrison\" start_experience_factor = 0.1"
+                owner = YFC
+                count = 1
+            }
+        }
+	}
+}
+
+country_event = { #YFC_focus_pride part 2
+	id = YFC_event.67a
+	title = YFC_event.67a.t
+	desc = YFC_event.67a.desc
+	picture = GFX_YFC_event67
+	
+	fire_only_once = no
+	is_triggered_only = yes
+ 
+	option = { 
+		name = YFC_event.67a.a
+
+		add_political_power = -5
 	}
 }
 
@@ -3294,6 +3367,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 					desc = idea_YFC_TopHat_desc
 				}
 			}
+
 			custom_effect_tooltip = l_YFC_sectors_influence_gone
 			set_variable = { var_idea_YFC_Hammer_influence = 1 }
 			set_variable = { var_idea_YFC_Taser_influence = 1 }
@@ -3303,6 +3377,17 @@ country_event = { #YFC_focus_march_on_footpathburg
 			unlock_decision_category_tooltip = decision_YFC_stabilization_category	
 			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
+				YFC_tophat = {
+			        add_trait = {
+                        character = FROM
+                        trait = country_leader
+                    }
+                    remove_trait = {
+                        slot = political_advisor
+                        trait = politically_connected
+                    }
+				}
+
 				set_variable = { var_Sector_remove_timer = 300 }
                 IF = {
                     limit = {has_completed_focus = YFC_focus_hoard_gold}
@@ -3338,6 +3423,15 @@ country_event = { #YFC_focus_march_on_footpathburg
 			random = {
 				chance = 50
 				YFC_david = {
+					add_timed_unit_leader_trait = {
+						trait = wounded
+						days = 45
+					}
+				}
+			}
+			random = {
+				chance = 50
+				YFC_price_tag = {
 					add_timed_unit_leader_trait = {
 						trait = wounded
 						days = 45
@@ -3417,8 +3511,9 @@ country_event = { #YFC_focus_fate_of_top_hat
 	option = { #Kill him, removes any chance for him to come back BUT Beaker is not coming back and the Sectors quit (later) 
 		name = YFC_event.71.a
 
-		add_war_support = 0.1
+		add_war_support = 0.2
 		add_stability = -0.1
+		add_political_power = 100
 		custom_effect_tooltip = l_YFC_TOPHAT
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
 		set_country_flag = YFC_Sectors_quit
@@ -3426,8 +3521,9 @@ country_event = { #YFC_focus_fate_of_top_hat
 	option = { #Imprison him, the normal one with the normal stuff. Sectors will be fired down the road in normal time. Top Hat may come back as an enemy though I'm not sure how
 		name = YFC_event.71.b
 
+		add_war_support = 0.05
 		add_stability = 0.05
-		add_political_power = 100
+		add_political_power = 50
 
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 0}
 		hidden_effect = {
@@ -3441,8 +3537,7 @@ country_event = { #YFC_focus_fate_of_top_hat
 		name = YFC_event.71.c
 
 		add_stability = 0.15
-		add_political_power = 150
-
+		
 		set_variable = {var_idea_YFC_sectors_TopHat_type = 1}
 		set_country_flag = YFC_Sectors_fire
 	}
@@ -5597,6 +5692,7 @@ country_event = {
 				remove_ideas = idea_BUN_criminal_state
 				retire_country_leader = yes
 				add_country_leader_trait = insurgent_leader
+				add_country_leader_trait = country_leader
 				country_lock_all_division_template = yes
 				set_cosmetic_tag = BUN_revolt
 				add_offsite_building = { type = arms_factory level = 2 }
@@ -6623,6 +6719,16 @@ country_event = { #Election YFC Wins!
 						ideology = moderatism
 					}
 				}
+				BUN_blocky = {
+			        add_trait = {
+                        character = FROM
+                        trait = country_leader
+                    }
+                    remove_trait = {
+                        slot = political_advisor
+                        trait = politically_connected
+                    }
+				}
 				add_timed_idea = {
 					idea = idea_BUN_adjusting_rebuilding
 					days = 500
@@ -6663,6 +6769,16 @@ country_event = { #Election CRN Wins!
 					country_leader = {
 						ideology = liberalism
 					}
+				}
+				BUN_eraser = {
+			        add_trait = {
+                        character = FROM
+                        trait = politically_connected
+                    }
+                    remove_trait = {
+                        slot = political_advisor
+                        trait = country_leader
+                    }
 				}
 				add_timed_idea = {
 					idea = idea_BUN_adjusting_rebuilding

@@ -11,7 +11,7 @@ characters={
 			desc = CRN_credit_card_desc
 		}
 		field_marshal = {
-			traits = { old_guard politically_connected war_hero defensive_doctrine }
+			traits = { old_guard war_hero defensive_doctrine trained country_leader }
 			skill = 4
 			attack_skill = 1
 			defense_skill = 3

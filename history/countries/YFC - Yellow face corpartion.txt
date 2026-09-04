@@ -40,12 +40,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
     type = artillery_equipment_1
-    amount = 200
+    amount = 300
     producer = YFC
 }
 add_equipment_to_stockpile = {
     type = support_equipment_1
-    amount = 300
+    amount = 400
     producer = YFC
 }
 
@@ -280,6 +280,7 @@ add_to_array = {
 
 recruit_character = YFC_yellow_face
 recruit_character = YFC_david
+recruit_character = YFC_price_tag
 recruit_character = YFC_Coiny
 recruit_character = YFC_tophat
 recruit_character = YFC_beaker

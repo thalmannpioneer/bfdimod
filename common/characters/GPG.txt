@@ -183,7 +183,6 @@ characters = {
 		}
 	}
 	
-	#TRANS XD
 	GPG_saw = {
 		name = GPG_saw
 		portraits = { civilian = { small = GFX_idea_GPG_saw } }
@@ -215,10 +214,11 @@ characters = {
 		}
 		corps_commander = {
 			skill = 1
-			attack_skill = 2
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 3
+			traits = { armless unlucky }
 		}
 	}
 
@@ -236,7 +236,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 6
-			traits = { politically_connected cavalry_officer }
+			traits = { politically_connected cavalry_officer fast_learner flight expert_requisitioner armless }
 		}
 	}
 	

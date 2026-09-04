@@ -1,0 +1,75 @@
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_fast_learner"
+		texturefile = "gfx/interface/traits/personal/trait_fast_learner.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_fragile"
+		texturefile = "gfx/interface/traits/personal/trait_fragile.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_tough"
+		texturefile = "gfx/interface/traits/personal/trait_tough.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_trained"
+		texturefile = "gfx/interface/traits/personal/trait_trained.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_country_leader"
+		texturefile = "gfx/interface/traits/personal/trait_country_leader.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_flight"
+		texturefile = "gfx/interface/traits/personal/trait_flight.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_genuinely_incompetent"
+		texturefile = "gfx/interface/traits/personal/trait_genuinely_incompetent.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_expert_requisitioner"
+		texturefile = "gfx/interface/traits/personal/trait_expert_requisitioner.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_armless"
+		texturefile = "gfx/interface/traits/personal/trait_armless.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_medical_experience"
+		texturefile = "gfx/interface/traits/personal/trait_medical_experience.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_unlucky"
+		texturefile = "gfx/interface/traits/personal/trait_unlucky.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_trait_scarred"
+		texturefile = "gfx/interface/traits/personal/trait_scarred.dds"
+		legacy_lazy_load = no
+	}
+}

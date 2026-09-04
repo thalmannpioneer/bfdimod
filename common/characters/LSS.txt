@@ -22,7 +22,7 @@ characters = {
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 7
-			traits = { infantry_officer armor_officer organizer commando }
+			traits = { infantry_officer armor_officer organizer commando medical_experience }
 		}
 	}
 
@@ -107,7 +107,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
-			traits = { trait_cautious jaeger trickster  }
+			traits = { trait_cautious jaeger trickster unlucky }
 		}
 	}
 

@@ -273,7 +273,7 @@ ideas = {
 		idea_YFC_BUN_tech = { 
 			picture = YFC_BUN_tech
 			modifier = {
-				research_speed_factor = -0.75
+				research_speed_factor = -0.6
 			}
 		}
 

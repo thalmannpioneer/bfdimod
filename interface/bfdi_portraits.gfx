@@ -317,27 +317,27 @@ spriteTypes = {
 		name = "GFX_SRI_sketchpad"
 		texturefile = "gfx/leaders/SRI/SRI_sketchpad.dds"
 	}
-
 	spriteType = {
 		name = "GFX_SRI_YFC_committee"
 		texturefile = "gfx/leaders/SRI/SRI_YFC_committee.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_YFC_yellow_face"
 		texturefile = "gfx/leaders/YFC/YFC_yellow_face.dds"
 	}
-
 	spriteType = {
 		name = "GFX_YFC_crack_face"
 		texturefile = "gfx/leaders/YFC/YFC_crack_face.dds"
 	}
-
 	spriteType = {
 		name = "GFX_YFC_david"
 		texturefile = "gfx/leaders/YFC/YFC_david.dds"
 	}
-
+	spriteType = {
+		name = "GFX_YFC_price_tag"
+		texturefile = "gfx/leaders/YFC/YFC_price_tag.dds"
+	}
 	spriteType = {
 		name = "GFX_YFC_tophat"
 		texturefile = "gfx/leaders/YFC/YFC_tophat.dds"

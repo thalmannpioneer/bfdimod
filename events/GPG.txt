@@ -1488,7 +1488,23 @@ country_event = {
             defense_skill = 2
             planning_skill = 2
             logistics_skill = 1
-            traits = { politically_connected harsh_leader infantry_officer }
+            traits = { politically_connected harsh_leader infantry_officer } #country_leader
+        }
+
+        hidden_effect = {
+            GPG_fries = {
+                IF = {
+                    limit = {is_country_leader = yes}
+                    add_trait = {
+                        character = FROM
+                        trait = country_leader
+                    }
+                    remove_trait = {
+                        slot = political_advisor
+                        trait = politically_connected
+                    }
+                }
+            }
         }
     }
 }
