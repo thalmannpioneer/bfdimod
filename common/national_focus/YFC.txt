@@ -4971,8 +4971,8 @@ focus_tree = {
 
         available = {
             custom_trigger_tooltip = {
-                tooltip = l_money_cost_600K
-                check_variable = { money_amount > 6 }
+                tooltip = l_money_cost_500K
+                check_variable = { money_amount > 5 }
             }
         }
 
@@ -5241,6 +5241,7 @@ focus_tree = {
                     original_tag_to_check = BUN
                     add_opinion_modifier = { target = YFC modifier = large_decrease }
                 }
+                BUN = {add_manpower = 10000}
             }
         }
     }
@@ -6136,7 +6137,7 @@ focus_tree = {
                     trait = organizer
                 }
             }
-            YFC_david = {
+            YFC_price_tag = {
                 add_skill_level = 1
                 add_attack = 2
                 add_trait = {
@@ -6208,6 +6209,10 @@ focus_tree = {
             base = 5
         }
 
+        available = {
+            has_political_power > 50
+        }
+
         prerequisite = { focus = YFC_focus_strength_in_skill }
         prerequisite = { focus = YFC_focus_strength_in_power }
 
@@ -6215,6 +6220,7 @@ focus_tree = {
 
         completion_reward = {
             add_stability = 0.1
+            add_political_power = -50
             YFC = {
                 create_faction = "Bandit Pack"
                 add_to_faction = BUN
@@ -6445,12 +6451,14 @@ focus_tree = {
 
         available = {
             hidden_trigger = {
+                has_completed_focus = YFC_focus_way_of_raiders
                 NOT = {country_exists = GGR}
                 country_exists = SRI
                 SRI = {has_war = no}
             }
         }
         allow_branch = {
+            has_completed_focus = YFC_focus_way_of_raiders
             NOT = {country_exists = GGR}
             country_exists = SRI
             SRI = {has_war = no}
@@ -6639,6 +6647,7 @@ focus_tree = {
                 uses = 2
                 category = motorized_equipment
             }
+            unlock_decision_category_tooltip = YFC_raid_trucks
         }
     }
 
@@ -6857,7 +6866,7 @@ focus_tree = {
         cost = 4
 
         completion_reward = {
-            add_political_power = 50
+            add_political_power = 25
             country_event = {
                 id = YFC_event.45
                 hours = 1

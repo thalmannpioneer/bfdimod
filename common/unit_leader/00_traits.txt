@@ -3517,7 +3517,7 @@ leader_traits = {
         planning_skill_factor = 2
 
         new_commander_weight = {
-            factor = 0.5
+            factor = 0.35
             modifier = {
                 has_trait = genuinely_incompetent
                 factor = 0
@@ -3530,6 +3530,10 @@ leader_traits = {
         trait_type = personality_trait
 
         defense_skill_factor = 1
+
+        non_shared_modifier = {
+            reassignment_duration_factor = -0.1
+        }
 
         modifier = {
             wounded_chance_factor = -5
@@ -3582,7 +3586,7 @@ leader_traits = {
         }
 
         new_commander_weight = {
-            factor = 0.25
+            factor = 0.35
         }
     }
 
@@ -3663,7 +3667,7 @@ leader_traits = {
         }
 
         new_commander_weight = {
-            factor = 0.5
+            factor = 0.25
             modifier = {
                 has_trait = medical_experience
                 factor = 0
@@ -3700,7 +3704,7 @@ leader_traits = {
         }
 
         new_commander_weight = {
-            factor = 0.5
+            factor = 0.25
             modifier = {
                 has_trait = expert_requisitioner
                 factor = 0
@@ -3738,15 +3742,19 @@ leader_traits = {
             factor = 0.05
             modifier = {
                 date > 2016.01.01
-                factor = 0.5
+                factor = 1.5
             }
             modifier = {
                 date > 2018.01.01
-                factor = 0.5
+                factor = 2
             }
             modifier = {
                 date > 2020.01.01
-                factor = 1
+                factor = 3
+            }
+            modifier = {
+                date > 2020.01.01
+                factor = 5
             }
         }
     }

@@ -780,7 +780,6 @@ defined_text = {
 				has_country_flag = Confirmed_Trade_Buying
                 NOT = {
                     has_country_flag = ongoing_trade_offer
-                    has_war_with = YFC
                     has_idea = undisturbed_isolation
                     has_idea = isolation
                     has_idea = closed_economy
@@ -788,8 +787,11 @@ defined_text = {
                 }
                 OR = {
                     AND = {
-                        NOT = {is_embargoed_by = YFC}                       
-                        NOT = {is_embargoing = YFC}
+                        NOT = {
+							is_embargoed_by = YFC
+							is_embargoing = YFC
+							has_war_with = YFC
+						}                       
                     }
                     check_variable = { buying_item = 999 }
                 }

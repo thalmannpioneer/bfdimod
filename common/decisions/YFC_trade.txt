@@ -645,7 +645,6 @@ decision_YFC_trade_category = {
                 has_country_flag = Confirmed_Trade_Buying
                 NOT = {
                     has_country_flag = ongoing_trade_offer
-                    has_war_with = YFC
                     has_idea = undisturbed_isolation
                     has_idea = isolation
                     has_idea = closed_economy
@@ -654,6 +653,7 @@ decision_YFC_trade_category = {
                     NOT = {
                         is_embargoing = YFC
                         is_embargoed_by = YFC
+                        has_war_with = YFC
                     }
                     FROM = { check_variable = { buying_item = 999 }}
                 }

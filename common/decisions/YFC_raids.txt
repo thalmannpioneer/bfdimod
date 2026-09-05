@@ -161,6 +161,35 @@ decision_YFC_raids_category = {
 		}
 	}
 
+	YFC_raid_trucks = { 
+		icon = GFX_decisions_YFC_raid_buy_guns #Update later!
+      
+		fire_only_once = no
+
+		cost = 100
+		days_remove = 20
+		days_re_enable = 400
+
+		visible = {
+			has_completed_focus = YFC_focus_new_motorization
+		}
+
+		available = {
+			has_tech = motorised_infantry
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 500
+			}
+		}
+
+		ai_will_do = {
+			base = 0 #Since the AI can't build this don't bother for now
+		}
+	}
+
 	YFC_raid_training = { 
 		icon = GFX_decisions_YFC_raid_trainings
       
@@ -215,14 +244,14 @@ decision_YFC_raids_category = {
 		}
 
 		available = {
-			has_army_experience > 45
+			has_army_experience > 40
 		}
 
 		days_remove = 90
 		days_re_enable = 15
 
 		complete_effect = {
-			army_experience = -45
+			army_experience = -40
         }
 
 		remove_effect = {

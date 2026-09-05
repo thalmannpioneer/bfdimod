@@ -1399,8 +1399,16 @@ YFC_calc_trade_risk_buying = {
                         hours = 3
                     }
                 }
-                add_stability = -0.005
-                add_political_power = -5
+                IF = {
+                    limit = {has_war = yes}
+                    add_stability = -0.01
+                    add_war_support = -0.005
+                    add_political_power = -25
+                }
+                ELSE = {
+                    add_stability = -0.005
+                    add_political_power = -5
+                }
                 clr_country_flag = ongoing_trade_offer
                 set_country_flag = Confirmed_Trade_Buying
 				set_variable = { ROOT.buying_item = 999}
@@ -1509,6 +1517,7 @@ YFC_calc_trade_risk_buying = {
 				add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
                 add_political_power = -1
                 YFC = {
+                    clr_country_flag = YFC_trade_allow_drugs
                     country_event = {
                         id = YFC_event.83
                         hours = 3
@@ -1523,7 +1532,6 @@ YFC_calc_trade_risk_buying = {
                 add_to_variable = {money_amount = trade_cost_show_var}
 
                 YFC = {
-                    clr_country_flag = YFC_trade_allow_drugs
                     subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
                     country_event = {
                         id = YFC_event.73

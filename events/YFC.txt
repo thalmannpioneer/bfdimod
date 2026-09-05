@@ -3283,7 +3283,7 @@ country_event = { #YFC_focus_pride
 country_event = { #YFC_focus_pride part 2
 	id = YFC_event.67a
 	title = YFC_event.67a.t
-	desc = YFC_event.67a.desc
+	desc = YFC_event.67a.desc.a
 	picture = GFX_YFC_event67
 	
 	fire_only_once = no
@@ -3421,7 +3421,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 			225 = {set_demilitarized_zone = no}
 
 			random = {
-				chance = 50
+				chance = 30
 				YFC_david = {
 					add_timed_unit_leader_trait = {
 						trait = wounded
@@ -3430,7 +3430,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 				}
 			}
 			random = {
-				chance = 50
+				chance = 45
 				YFC_price_tag = {
 					add_timed_unit_leader_trait = {
 						trait = wounded
