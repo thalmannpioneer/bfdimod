@@ -45,6 +45,7 @@ ideas = {
                 weekly_manpower = -200
                 army_core_attack_factor = 0.35
                 army_core_defence_factor = -0.35
+                out_of_supply_factor = -0.2
                 ai_focus_aggressive_factor = 5
                 monthly_population = -1.5
             }

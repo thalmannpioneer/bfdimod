@@ -286,7 +286,7 @@ country_event = {
 						}
 						add_field_marshal_role = {
 							character = SMG_one_joke
-							traits = { adaptable inspirational_bagpiper tough country_leader armless }
+							traits = { adaptable inspirational_bagpiper tough country_leader armless unlucky flight fast_learner }
 							skill = 9
 							attack_skill = 10
 							defense_skill = 10

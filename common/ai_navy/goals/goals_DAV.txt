@@ -5,8 +5,8 @@ DAV_naval_invasion_support = {
         DAV
     }
 
-    min_priority = 15
-    max_priority = 30
+    min_priority = 1
+    max_priority = 75
 }
 
 DAV_invasion_defense = {
@@ -16,8 +16,8 @@ DAV_invasion_defense = {
         DAV
     }
 
-    min_priority = 15
-    max_priority = 25
+    min_priority = 1
+    max_priority = 75
 }
 
 DAV_coast_defense = {
@@ -28,7 +28,7 @@ DAV_coast_defense = {
     }
 
     min_priority = 1
-    max_priority = 12
+    max_priority = 75
 }
 
 DAV_convoy_protection = {
@@ -39,7 +39,7 @@ DAV_convoy_protection = {
     }
 
     min_priority = 1
-    max_priority = 5
+    max_priority = 75
 }
 
 DAV_naval_dominance = {
@@ -49,8 +49,8 @@ DAV_naval_dominance = {
         DAV
     }
 
-    min_priority = 10
-    max_priority = 20
+    min_priority = 1
+    max_priority = 75
 }
 
 DAV_training = {
@@ -60,6 +60,6 @@ DAV_training = {
         DAV
     }
 
-    min_priority = 15
-    max_priority = 30
+    min_priority = 1
+    max_priority = 150
 }

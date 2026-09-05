@@ -43,7 +43,6 @@ ideas = {
 				industrial_capacity_factory = 0.3
 				training_time_army_factor = -0.5
 				war_support_factor = 0.2
-				weekly_manpower = 2500
 				out_of_supply_factor = -0.35
 				conscription = 0.75
 				equipment_capture = 0.25
@@ -74,14 +73,14 @@ ideas = {
 			picture = RAJ_uranium_tipped_bullets
 			modifier = {
 				surrender_limit = 0.05
-				out_of_supply_factor = -0.1
+				out_of_supply_factor = -0.15
 				industrial_capacity_factory = 0.15
-				weekly_manpower = 1500
 				conscription = 0.2
 				compliance_growth = 0.25
 				ai_desired_divisions_factor = 3
 				ai_focus_aggressive_factor = 1
 				custom_modifier_tooltip = l_modifier_gain_25_guns_weekly
+				custom_modifier_tooltip = l_modifier_250_MP_state
 			}
 			cancel = {
 				OR = {
@@ -91,9 +90,11 @@ ideas = {
 			}
 			on_remove = {
 				clr_country_flag = BFDI_25_guns_weekly
+				clr_country_flag = BFDI_250_MP_state
 			}
 			on_add = {
 				set_country_flag = BFDI_25_guns_weekly
+				set_country_flag = BFDI_250_MP_state
 			}
 		}
 

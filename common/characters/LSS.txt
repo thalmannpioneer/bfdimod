@@ -22,7 +22,7 @@ characters = {
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 7
-			traits = { infantry_officer armor_officer organizer commando medical_experience }
+			traits = { infantry_officer armor_officer organizer commando medical_experience trained }
 		}
 	}
 
@@ -39,7 +39,7 @@ characters = {
 			defense_skill = 5
 			planning_skill = 6
 			logistics_skill = 5
-			traits = { armor_officer organizer commando panzer_leader fast_planner skilled_staffer }
+			traits = { armor_officer organizer commando panzer_leader fast_planner skilled_staffer trained }
 		}
 	}
 
@@ -56,7 +56,7 @@ characters = {
 			defense_skill = 6
 			planning_skill = 4
 			logistics_skill = 7
-			traits = { armor_officer organizer commando panzer_leader cavalry_officer }
+			traits = { armor_officer organizer commando panzer_leader cavalry_officer trained }
 		}
 	}
 
@@ -73,7 +73,7 @@ characters = {
 			defense_skill = 3
 			planning_skill = 6
 			logistics_skill = 5
-			traits = { engineer_officer trait_engineer }
+			traits = { engineer_officer trait_engineer trained }
 		}
 	}
 
@@ -90,7 +90,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 8
-			traits = { commando paratrooper  }
+			traits = { commando paratrooper trained  }
 		}
 	}
 

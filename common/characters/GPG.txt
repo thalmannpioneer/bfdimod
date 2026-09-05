@@ -231,11 +231,11 @@ characters = {
 			} 
 		}
 		corps_commander = {
-			skill = 1 #Nerfed due to other civil war commanders having low skill. Gains +1 skill in focus tree
+			skill = 1
 			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 6
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 5
 			traits = { politically_connected cavalry_officer fast_learner flight expert_requisitioner armless }
 		}
 	}

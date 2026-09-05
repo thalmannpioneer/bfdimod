@@ -15,7 +15,7 @@ decision_BUN_Revolt_category = {
 			always = no
 		}
 		cancel_trigger = {
-            NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+            BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
 		}
 		icon = GFX_mission_BUN_Revolt_Ticking  
 		is_good = no
@@ -77,7 +77,7 @@ decision_BUN_Revolt_category = {
 		}
 		cancel_trigger = {
 			OR = {
-				NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+				BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
 				YFC = {
 					OR = {
 						controls_state = 85
@@ -128,7 +128,7 @@ decision_BUN_Revolt_category = {
 		}
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		complete_effect = {
@@ -174,7 +174,7 @@ decision_BUN_Revolt_category = {
 		days_remove = 35
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		remove_effect = {
@@ -213,7 +213,7 @@ decision_BUN_Revolt_category = {
 		}
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		ai_will_do = {
@@ -249,7 +249,7 @@ decision_BUN_Revolt_category = {
 		}
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		ai_will_do = {
@@ -285,7 +285,7 @@ decision_BUN_Revolt_category = {
 		}
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		ai_will_do = {
@@ -320,7 +320,7 @@ decision_BUN_Revolt_category = {
 		}
 
 		cancel_trigger = {
-			NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+			BUN = {NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}}
         }
 
 		ai_will_do = {
@@ -354,7 +354,7 @@ decision_BUN_Revolt_category = {
 		cancel_trigger = {
 			OR = {
 				has_active_mission = BUN_Revolt_Victory
-				NOT = {has_dynamic_modifier { modifier = idea_BUN_Ticking_Bomb }}
+				NOT = {has_dynamic_modifier = { modifier = idea_BUN_Ticking_Bomb }}
 			}	
         }
 

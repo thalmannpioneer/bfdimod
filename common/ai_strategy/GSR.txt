@@ -48,8 +48,8 @@ GSR_civil_war = {
 		value = 1000
 	}
 	ai_strategy = {
-		type = garrison_reinforcement_priority
-		value = -10
+		type = garrison
+		value = -20
 	}
 }
 

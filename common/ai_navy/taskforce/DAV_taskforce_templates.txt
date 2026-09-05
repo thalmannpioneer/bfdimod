@@ -3,7 +3,7 @@ DAV_StrikeForce_1 = {
 		original_tag = DAV
 	}
 	ai_will_do = {
-		factor = 30
+		factor = 200
 	}
 	keep_updated = yes
 	mission = { naval_strike }
@@ -12,16 +12,16 @@ DAV_StrikeForce_1 = {
 			amount = 1
 		}
 		destroyer = {
-			amount = 8
+			amount = 4
 		}
 	}
 	
 	optimal_composition = {
 		battleship = {
-			amount = 2
+			amount = 1
 		}
 		destroyer = {
-			amount = 20
+			amount = 16
 		}
 	}
 }
@@ -31,12 +31,13 @@ DAV_PatrolReconForce_1 = {
 		original_tag = DAV
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 35
 	}
+	keep_updated = yes
 	mission = { naval_patrol }
 	min_composition = {
 		destroyer = {
-			amount = 1
+			amount = 4
 		}
 	}	
 	optimal_composition = {
@@ -44,7 +45,7 @@ DAV_PatrolReconForce_1 = {
 		#	amount = 3
 		#}
 		destroyer = {
-			amount = 6
+			amount = 16
 		}
 	}
 }
@@ -54,9 +55,10 @@ DAV_PatrolDominanceForce_1 = {
 		original_tag = DAV
 	}
 	ai_will_do = {
-		factor = 5
+		factor = 35
 	}
 	mission = { naval_patrol }
+	keep_updated = yes
 	min_composition = {
 		#heavy_cruiser = {
 		#	amount = 1
@@ -67,14 +69,11 @@ DAV_PatrolDominanceForce_1 = {
 	}
 
 	optimal_composition = {
-		#heavy_cruiser = {
-		#	amount = 2
-		#}
-		#light_cruiser = {
-		#	amount = 1
-		#}
+		battleship = {
+			amount = 1
+		}
 		destroyer = {
-			amount = 8
+			amount = 16
 		}
 	}
 }
@@ -84,13 +83,17 @@ DAV_NavalInvasionSupport_1 = {
 		original_tag = DAV
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 75
 	}	
+	keep_updated = yes
 	mission = { naval_invasion_support }
 	min_composition = {
 		battleship = {
 			amount = 1
-		}		
+		}	
+		destroyer = {
+			amount = 2
+		}	
 	}
 
 	optimal_composition = {
@@ -98,7 +101,7 @@ DAV_NavalInvasionSupport_1 = {
 			amount = 1
 		}
 		destroyer = {
-			amount = 10
+			amount = 16
 		}
 	}
 }
@@ -113,7 +116,7 @@ DAV_ConvoyEscort_1 = {
 	mission = { convoy_escort }
 	min_composition = {
 		destroyer = {
-			amount = 4
+			amount = 2
 		}
 	}
 	

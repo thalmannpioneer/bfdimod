@@ -87,8 +87,9 @@ if = {
 	set_oob = "DAV_2012"
 }
 
-add_manpower = 25000 #Big army
+add_manpower = 35000 #Big army
 
+add_ideas = limited_exports
 add_ideas = idea_DAV_the_thousand_year_throne
 add_ideas = idea_common_unplayable
 

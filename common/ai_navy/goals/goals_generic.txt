@@ -9,17 +9,6 @@ generic_naval_invasion_support = {
     max_priority = 14
 }
 
-generic_mine_sweeping = {
-    objective_type = mines_sweeping
-
-    blocked_for = {
-        DAV
-    }
-
-    min_priority = 2
-    max_priority = 8
-}
-
 generic_invasion_defense = {
     objective_type = naval_invasion_defense
 
@@ -73,17 +62,6 @@ generic_naval_dominance = {
 
     min_priority = 1
     max_priority = 13
-}
-
-generic_mine_laying = {
-    objective_type = mines_planting
-
-    blocked_for = {
-        DAV
-    }
-
-    min_priority = 2
-    max_priority = 8
 }
 
 generic_training = {

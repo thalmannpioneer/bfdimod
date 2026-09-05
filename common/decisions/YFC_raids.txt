@@ -71,7 +71,7 @@ decision_YFC_raids_category = {
 			hidden_effect = {
 				BUN = {
 					IF = {
-						limit = {has_army_manpower = {size < 50000}}
+						limit = {has_army_manpower = {size < 65000}}
 						add_manpower = 3500
 					}
 				}
@@ -90,7 +90,7 @@ decision_YFC_raids_category = {
 			}
 			modifier = {
 				add = -1000
-				has_army_manpower = {size < 50000}
+				has_army_manpower = {size < 60000}
 			}
 		}
 	}
@@ -360,6 +360,15 @@ decision_YFC_raids_category = {
 				AND = {
 					FROM = {controller = {is_ai = no}}
 					FROM = {controller = {has_war = yes}}
+				}
+			}
+			modifier = {
+				add = -25
+				AND = {
+					FROM = {controller = {tag = SRI}}
+					24 = {
+						has_resources_rights = {receiver = YFC}
+					}
 				}
 			}
 		}

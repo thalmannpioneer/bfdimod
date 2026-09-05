@@ -2408,6 +2408,8 @@ focus_tree = {
         }
 
         prerequisite = { focus = YFC_focus_fully_cored }
+        prerequisite = { focus = YFC_focus_money_arms_capital }
+        
         cost = 5
         completion_reward = {
             set_country_flag = Allow_Musketeers
@@ -5082,39 +5084,6 @@ focus_tree = {
             # increases numis, ggrr south, greeny plains republic, & gb's opinion of you (or anprim if they are around)
             #cores peoniele, they send a letter thanking you (sectorial powderkeg should remove cores on every state but ridgeheart)
 
-            IF = {
-                limit = {country_exists = CRN}
-                add_opinion_modifier = { target = CRN modifier = small_increase }
-                every_country_with_original_tag = {
-                    original_tag_to_check = CRN
-                    add_opinion_modifier = { target = YFC modifier = small_increase }
-                }
-            }
-            IF = {
-                limit = {country_exists = SRR}
-                add_opinion_modifier = { target = SRR modifier = small_increase }
-                every_country_with_original_tag = {
-                    original_tag_to_check = SRR
-                    add_opinion_modifier = { target = YFC modifier = small_increase }
-                }
-            }
-            IF = {
-                limit = {country_exists = GPR}
-                add_opinion_modifier = { target = GPR modifier = small_increase }
-                every_country_with_original_tag = {
-                    original_tag_to_check = GPR
-                    add_opinion_modifier = { target = YFC modifier = small_increase }
-                }
-            }
-            IF = {
-                limit = {country_exists = GTR}
-                add_opinion_modifier = { target = GTR modifier = small_increase }
-                every_country_with_original_tag = {
-                    original_tag_to_check = GTR
-                    add_opinion_modifier = { target = YFC modifier = small_increase }
-                }
-            }
-
             add_stability = 0.1
             add_ideas = idea_YFC_clean_skies
 
@@ -5124,6 +5093,38 @@ focus_tree = {
                     hours = 12
                     days = 3
                     random_hours = 48
+                }
+                IF = {
+                    limit = {country_exists = CRN}
+                    add_opinion_modifier = { target = CRN modifier = small_increase }
+                    every_country_with_original_tag = {
+                        original_tag_to_check = CRN
+                        add_opinion_modifier = { target = YFC modifier = small_increase }
+                    }
+                }
+                IF = {
+                    limit = {country_exists = SRR}
+                    add_opinion_modifier = { target = SRR modifier = small_increase }
+                    every_country_with_original_tag = {
+                        original_tag_to_check = SRR
+                        add_opinion_modifier = { target = YFC modifier = small_increase }
+                    }
+                }
+                IF = {
+                    limit = {country_exists = GPR}
+                    add_opinion_modifier = { target = GPR modifier = small_increase }
+                    every_country_with_original_tag = {
+                        original_tag_to_check = GPR
+                        add_opinion_modifier = { target = YFC modifier = small_increase }
+                    }
+                }
+                IF = {
+                    limit = {country_exists = GTR}
+                    add_opinion_modifier = { target = GTR modifier = small_increase }
+                    every_country_with_original_tag = {
+                        original_tag_to_check = GTR
+                        add_opinion_modifier = { target = YFC modifier = small_increase }
+                    }
                 }
             }
         }
@@ -5355,6 +5356,14 @@ focus_tree = {
                             country = PREV
                             relation = embargo
                             active = no
+                        }
+                    }
+                    IF = {
+                        limit = {country_exists = YFC}
+                        add_opinion_modifier = { target = YFC modifier = large_increase }
+                        every_country_with_original_tag = {
+                            original_tag_to_check = ROOT
+                            add_opinion_modifier = { target = ROOT modifier = large_increase }
                         }
                     }
                 }
@@ -6647,7 +6656,7 @@ focus_tree = {
                 uses = 2
                 category = motorized_equipment
             }
-            unlock_decision_category_tooltip = YFC_raid_trucks
+            unlock_decision_tooltip = YFC_raid_trucks
         }
     }
 
