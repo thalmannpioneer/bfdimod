@@ -2680,7 +2680,7 @@
  CHANGE_ADVISOR:1 "\nЭтого советника можно заменить, щелкнув здесь и выбрав замену."
  league_of_nations_member_idea:0 "Член Лиги Наций"
  LoN_disbanded_flag:0 "Лига Наций более не активна"
-
+ 
  organization_of_african_unity_member_idea:0 "Член Организации африканского единства"
  RAJ_industrialized_personnel:0 "Интегрированная сельская рабочая сила"
  ROM_white_squadron:0 "Белая эскадрилья"
@@ -2696,8 +2696,8 @@
  CAN_true_revolution:0 "Истинная революция"
  CAN_booming_economy:0 "Стремительно растущая экономика"
  CAN_booming_economy_desc:0 "Теперь, когда Великая депрессия окончательно осталась в прошлом, наша экономика перешла к стремительному росту, подстегиваемая высоким глобальным спросом."
-
-# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ 
+ # === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
  SPR_louis_gonzalez_ubieta:0 "Луис Гонсалес де Убиета"
  SPR_miguel_buiza_femandez_palacios:0 "Мигель Буиса Фернандес-Паласиос"
  MEX_pablo_m_valenzuela:1 "Пабло Масиас"
@@ -2710,3 +2710,6 @@
  generic_democratic_reformer:0 "Политик-демократ"
  generic_fascist_demagogue:0 "Политик-фашист"
  GRE_georgios_papandreou_bftb:0 "Георгиос Папандреу"
+ 
+ 
+ ###TO TRANSLATE###

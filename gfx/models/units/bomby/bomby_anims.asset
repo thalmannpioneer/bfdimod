@@ -19,3 +19,12 @@ animation = {
 	name = "bomby_attack_rider"
 	file = "bomby_attack_rider.anim"
 }
+
+animation = {
+	name = "bomby_bicycle_idle"
+	file = "bomby_bicycle_idle.anim"
+}
+animation = {
+	name = "bomby_bicycle_move"
+	file = "bomby_bicycle_move.anim"
+}

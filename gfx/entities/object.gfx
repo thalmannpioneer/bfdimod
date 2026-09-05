@@ -8,7 +8,11 @@ objectTypes = {
 		animation = { id = "move"			type = "bomby_walk" }
 		animation = { id = "idle_rider"     type = "bomby_idle_rider" }
 		animation = { id = "attack_rider"     type = "bomby_attack_rider" }
-			
+		animation = { id = "bicycle_idle_2"		type = "bomby_bicycle_idle" }
+		animation = { id = "bicycle_idle"		type = "bomby_bicycle_idle" }
+		animation = { id = "bicycle_move"		type = "bomby_bicycle_move" }
+		animation = { id = "bicycle_move_2"		type = "bomby_bicycle_move" }
+		animation = { id = "bicycle_retreat"	type = "bomby_bicycle_move" }
 	}
 	
 	pdxmesh = {

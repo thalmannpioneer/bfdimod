@@ -1100,10 +1100,10 @@
  YFC_focus_spread_out_sectors_desc: "Most sectorial debates come from pure proximity; our secotrials are far too close to each other for civil conversations to be had. Perhaps a zoom call or two would pacify them. Of course, none of them would listen to this will unless we gave them an incentive to move. That is to say, we should build them facilities further away from each other. For your sake and mine. Seriously, their fighting is so goddamn annoying that I might actually go insane."
 
  YFC_focus_peoniele_the_second_city: "Peoniele the Second City"
- YFC_focus_peoniele_the_second_city_desc: "Ah, Peoniele. What with her flower fields, roilling hills, and massive buildings. The massive buildings are really the best part."
+ YFC_focus_peoniele_the_second_city_desc: "Ah, Peoniele. What with her flower fields, rolling hills, and massive buildings. The massive buildings are really the best part."
 
  YFC_focus_big_yoyleton: "Big Yoyleton"
- YFC_focus_big_yoyleton_desc: "Yoyleton has the posibility to be a bastion of free trade if we play our cards right. Let us hope that things work as they should."
+ YFC_focus_big_yoyleton_desc: "Yoyleton has the possibility to be a bastion of free trade if we play our cards right. Let us hope that things work as they should."
 
  YFC_focus_population_boom: "§GPopulation Boom§!"
  YFC_focus_population_boom_desc: "Our investments seem to have people flocking to our cities in large amounts! These migrants can only bring one thing: profits."
@@ -1240,7 +1240,7 @@
  YFC_focus_build_ports_other_desc: "We have already established trade routes through the Sea of St. Rocky, however, with our stronger footholds in the Eastern Seaboard, we can bolster trade through the sea, making it easier, and more viable. In turn, we will profit more from trading with the Davidians, and likely the Military District as well."
 
  YFC_focus_accidental_mistakes: "\"Mistakes\""
- YFC_focus_accidental_mistakes_desc: "We can, very easily, \"acidentally\" sabatoge the supply routes of the teardroppers, forcing some of them to slow their advances, all while keeping international forces outside of the conflict."
+ YFC_focus_accidental_mistakes_desc: "We can, very easily, \"accidentally\" sabotage the supply routes of the teardroppers, forcing some of them to slow their advances, all while keeping international forces outside of the conflict."
 
  YFC_focus_who_dares_wins: "§YWho Dares, Wins§!"
  YFC_focus_who_dares_wins_desc: "Well, from this point, there is not much to be done. We have allocated most of our free resources, we have committed men, we have made advertisements, and now, finally, there is only one thing to do: Play the game."
@@ -1537,7 +1537,7 @@
  YFC_focus_setup_staging_grounds_desc: "Of course, it would be... far better to raid from actual roads and rails, with actual transportation, rather than attempting to hike through bushes and forests to attack our opponents. Building infrastructure can easily go quite the mile (or kilometer?), so, let us do just that."
 
  YFC_focus_demand_great_ridge_tribute: "Demand Great Ridge Tribute"
- YFC_focus_demand_great_ridge_tribute_desc: "" #ZDubbz, close to normal side just that we are flat out demanding the rights or face war. 
+ YFC_focus_demand_great_ridge_tribute_desc: "Snowball's etatist regime in the south suffered the predictable collapse, and on its rotting corpse arose all sorts of maggots, living out their short days by trying to eat eachother. One such failed-state is located in the resource-rich Great Ridge region, where weaklings and slaves thought they could demand the right to freedom. It was time to put them under our boot and show them what true freedom means."
 
  YFC_focus_follow_easers_strategy: "Follow Easer's Strategy"
  YFC_focus_follow_easers_strategy_desc: "Eraser, the competant man, has, for a long time, had a working strategy with regards to raiding. It is simple, distract, infiltrate, and go from the center of a settlement, outwards, driving people away from the settlement, and, gaining the raiding party a substantial amount of wealth. This strategy has worked well in the past, and, though some settlements are better learning how to repell this type of stunt, it's not as if it is broken."
@@ -1597,13 +1597,13 @@
  YFC_focus_suppress_yoyleton_desc: "Teardropper settlement efforts have managed to find themselves on our territory; in Yoyleton. And, here, they are more rebellious than they are anywhere else, openly calling for revolts agains the government, and... claiming they've been here longer than we have?! We will here none of it, we shall make sure these teardroppers can rebel no longer."
 
  YFC_focus_before_setting_sail: "Before Setting Sail"
- YFC_focus_before_setting_sail_desc: "We have nearly everything ready for some plundering in the seas!" #ZDubbz
+ YFC_focus_before_setting_sail_desc: "Having secured Portland, and thus direct access to the richest sea of Goiky, we can apply our raiding tradition to the sea by forming our own small fleet! The potential profit from plundering Davidian convoys is enormous, and we cannot pass up such a rewarding opportunity."
 
  YFC_focus_construct_the_naval_base: "Construct The Naval Base"
- YFC_focus_construct_the_naval_base_desc: "For a grand Pirate fleet we will need a grand base to raid our foes" #ZDubbz
+ YFC_focus_construct_the_naval_base_desc: "We should redirect some of the stolen funds toward building a decent (by our standards) shipyard in Portland, and also send a workforce there to begin construction of our magnificent navy! Naturally, the lower ranks will pay for everything; they're just parasites, after all."
 
  YFC_focus_pirate_life: "§YPirate Life§!"
- YFC_focus_pirate_life_desc: "Let us rule these waves! Yarr!" #ZDubbz, also please keep the yarr somewhere or I will go homeless :sob:
+ YFC_focus_pirate_life_desc: "All of Goiky will know the fear of our raids, on land and at sea! Our valiant raiders will plunder caravans, and our great pirate fleet will drown the rich and poor snot who dare venture into our seas without proper protection!\n\n§RLet's fill our coffers to the brim! Let the rum flow! Yarrrr!!§!"
 
  #Musketeers
  Musketeers_three_musketeers: "Three Musketeers"

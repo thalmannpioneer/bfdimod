@@ -84,7 +84,7 @@
  NRR: "Администрация ВГЖД - Север"
  NRR_ADJ: "ВГЖД - Север"
  NRR_DEF: "ВГЖД"
-
+ 
  AGG: "Всегойкийское Правительство Восстановления"
  AGG_ADJ: "Правительство Восстановления"
  AGG_DEF: "ВПВ"
@@ -116,3 +116,32 @@
  UGA: "Первобытная Зона"
  UGA_ADJ: "Первобытная Зона"
  UGA_DEF: "Первобытн."
+ 
+ DAV: "Королевство Девидленд"
+ DAV_ADJ: "Девидленд"
+ DAV_DEF: "Давидийск."
+ DAV_communism: "Освободительный Фронт"
+ DAV_communism_ADJ: "Девидленд"
+ DAV_communism_DEF: "Давидийск."
+ 
+ LSS: "Штат Техас"
+ LSS_neutrality: "Чрезвычайный Комитет"
+ LSS_DEF: "Техас"
+ LSS_ADJ: "Техасск."
+ BUN_revolt: "Новая Банда"
+ BUN_revolt_DEF: "Банда"
+ BUN_revolt_ADJ: "Бандитск."
+ BUN_republic: "Республика Банд"
+ BUN_republic_DEF: "Банда"
+ BUN_republic_ADJ: "Бандитск."
+ YFC_TopHat_clan: "Клан Топхэта"
+ YFC_TopHat_clan_ADJ: "Клан"
+ YFC_TopHat_clan_DEF: "Клан."
+ YFC_raiders: "Рейдеры Йелоу Фейса"
+ YFC_raiders_ADJ: "Рейдеры"
+ YFC_raiders_DEF: "Рейдерск."
+ CRN: "Капиталистическая Республика Нумизматия"
+ CRN_ADJ: "Нумизматийск."
+ CRN_DEF: "Нумизматия"
+ 
+ ###TO TRANSLATE###

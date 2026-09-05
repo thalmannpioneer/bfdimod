@@ -347,7 +347,7 @@
  CRN_BUN_218_Infrastructure: "Build §GInfrastructure§! in §YSnowy Pre-Plateau§!"
  CRN_BUN_Secretly_Funnel: "Secretly Funnel §RWeapons§! to §YBunch Rebels§!"
  CRN_BUN_Provide: "Provide §RWeapons§! to §YBunch Rebels§!"
- CRN_BUN_Sleep_Cells: "Ablisablish §RSleeper Cells§! in our §YOccupation Zone§!"
+ CRN_BUN_Sleep_Cells: "Establish §RSleeper Cells§! in our §YOccupation Zone§!"
  CRN_BUN_Send_Zone: "Send our §GOccupation Zone§! to the §YNeo-Bunchivists§!"
  CRN_BUN_Deal: "Sign an §GAgreement§! with §YNeo-Bunch§!"
  CRN_BUN_Deal_desc: "Neo-Bunch is in need of Advisors that can improve their mostly underequipped and untrained army. While we are in need with the growing Communist presence. So logical a deal can be made, our advisors for them to remove... some rivals."
@@ -359,7 +359,7 @@
  CRN_BUN_Revolt_Victory_desc: "Neo-Bunch holds all of their states! Should they just hold on a little longer, Yellow Face will have to accept their independence and our efforts!"
 
  decision_CRN_foster_category: "Fostering A New Bunch"
- decision_CRN_foster_category_desc: "Something bla bla I'll get an idea later xd \n\n§RCURRENT @BUN ERASER SUPPORT:§! [?YFC.var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?YFC.var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?YFC.var_foster_CRN_support|Y1]"
+ decision_CRN_foster_category_desc: "Time for an election season! Through funding and campaigning, we may be able to place our influence in the Bunch. May the one with the biggest budget win!\n\n§RCURRENT @BUN ERASER SUPPORT:§! [?YFC.var_foster_BUN_support|Y1]\n§8CURRENT @YFC BLOCKY SUPPORT:§! [?YFC.var_foster_YFC_support|Y1]\n§7CURRENT @CRN PEN SUPPORT:§! [?YFC.var_foster_CRN_support|Y1]"
  CRN_foster_Countdown: "§YUpcoming Election§!"
  CRN_foster_propaganda: "Create §GPro-Pen Propaganda§!"
  CRN_foster_gaining_support: "Growing §RPro-Eraser Support§!"
