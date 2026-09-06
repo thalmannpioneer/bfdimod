@@ -23,7 +23,8 @@ focus_tree = {
         icon = GFX_focus_YFC_consolidate_power
 
         available = { hidden_trigger = { NOT = { has_global_flag = focus_take_prevention } } }
-
+        allow_branch = { NOT = { has_completed_focus = YFC_focus_tophat_clan } }
+        
         ai_will_do = {
             base = 10
         }
@@ -529,6 +530,7 @@ focus_tree = {
         }
 
         allow_branch = { has_completed_focus = YFC_focus_establish_sectorialism }
+        allow_branch = { NOT = { has_completed_focus = YFC_focus_tophat_clan } }
 
         cost = 6
         completion_reward = {
@@ -3626,6 +3628,7 @@ focus_tree = {
         }
 
         allow_branch = { has_completed_focus = YFC_focus_the_great_recession }
+        allow_branch = { NOT = { has_completed_focus = YFC_focus_tophat_clan } }
 
         cost = 5
         completion_reward = {
@@ -4751,7 +4754,7 @@ focus_tree = {
     focus = {
         id = YFC_focus_tophat_clan
         x = 17
-        y = 9
+        y = 0
         icon = GFX_focus_YFC_tophat_clan
 
         cost = 1
