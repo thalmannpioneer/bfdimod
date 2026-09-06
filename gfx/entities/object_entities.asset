@@ -124,6 +124,14 @@ entity = {
 }
 
 entity = {
+	name = "backpack_generic_entity"
+	pdxmesh = "generic_backpack_mesh"
+	scale = 1
+	
+	get_state_from_parent = yes
+}
+
+entity = {
 	name = "helmet_generic_entity"
 	pdxmesh = "generic_helmet_mesh"
 	scale = 1

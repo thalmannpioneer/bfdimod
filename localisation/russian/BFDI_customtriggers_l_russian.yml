@@ -94,5 +94,10 @@
  l_money_cost_400K: "Стоит §G400 тыс. долларов§!"
  l_money_cost_600K: "Стоит §G600 тыс. долларов§!"
  l_money_cost_1M_5: "Стоит §G1.5 млн долларов§!"
+ l_decisions_YFC_merc_ready: "Внешние страны не покупали слишком много наёмников"
+ l_YFC_beaker_ready: "Бикер закончила школу"
+ l_YFC_beaker_back: "Бикер вернулась в Футпатхбург"
+ decisions_cost_mp_5000: "£manpower_texticon §Y5000§!"
+ decisions_cost_mp_5000_blocked: "£manpower_texticon §R5000§!"
  
  ###TO TRANSLATE###

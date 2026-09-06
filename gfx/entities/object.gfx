@@ -23,6 +23,11 @@ objectTypes = {
 	}
 	
 	pdxmesh = {
+		name = "generic_backpack_mesh"
+		file = "gfx/models/units/bomby/backpack_default.mesh"
+	}
+	
+	pdxmesh = {
 		name = "generic_helmet_mesh"
 		file = "gfx/models/units/bomby/helmet_default.mesh"
 	}

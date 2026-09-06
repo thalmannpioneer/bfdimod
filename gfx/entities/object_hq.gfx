@@ -1,0 +1,23 @@
+objectTypes = {
+	pdxmesh = {
+		name = "object_gfx_army_headquarters_mesh"
+		file = "gfx/models/units/bomby/bomby.mesh"
+
+		animation = { id = "idle"			type = "bomby_idle" }
+		animation = { id = "notes"			type = "bomby_idle" }
+		animation = { id = "scout"			type = "bomby_idle" }
+		animation = { id = "stance"			type = "bomby_idle" }
+		animation = { id = "brush"			type = "bomby_idle" }
+		animation = { id = "attack01"			type = "bomby_attack" }
+		animation = { id = "attack02"			type = "bomby_attack" }
+		animation = { id = "support_attack"	type = "bomby_attack" }
+		animation = { id = "charge_pistol"		type = "bomby_attack" }
+		animation = { id = "charge_pistol_shoot"	type = "bomby_attack" }
+		animation = { id = "move"			type = "bomby_walk" }
+		animation = { id = "retreat"		type = "bomby_walk" }
+		animation = { id = "death"			type = "bomby_idle" }
+		animation = { id = "training"		type = "bomby_idle" }
+		animation = { id = "jumping_jacks"	type = "bomby_idle" }
+		animation = { id = "pushup"			type = "bomby_idle" }
+	}
+}

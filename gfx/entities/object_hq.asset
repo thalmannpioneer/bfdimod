@@ -1,0 +1,64 @@
+entity = {
+	name = "object_gfx_army_headquarters_entity"
+	pdxmesh = "object_gfx_army_headquarters_mesh"
+
+	default_state = "idle"
+	state = { name = "attack"			animation = "charge_pistol" 					animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 2 propagate_state = { gunhold = "attack" } }
+	state = { name = "attack"			animation = "charge_pistol_shoot" 			animation_blend_time = 0.0  animation_speed = 1.0 looping = no next_state = "attack" chance = 1 propagate_state = { gunhold = "attack" } }
+	#state = { name = "defend"			animation = "attack01" 			animation_blend_time = 0.3  animation_speed = 1.0 chance = 1}
+	state = { name = "defend"			animation = "attack02" 			animation_blend_time = 0.3  animation_speed = 1.0 chance = 1 propagate_state = { gunhold = "attack" } }
+	state = { name = "support_attack"	animation = "support_attack" 	animation_blend_time = 0.3 animation_speed = 1.0 propagate_state = { gunhold = "attack" } }
+	state = { name = "move"				animation = "move" 				animation_blend_time = 0.0 animation_speed = 1.0 chance = 1
+		event = { sound = { soundeffect = "infantry_move_animation" } }
+	}
+	state = { name = "retreat"			animation = "retreat" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "death"			animation = "death" 			animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "idle"				animation = "idle"       		animation_blend_time = 0.3 animation_speed = 1.0 chance = 5 looping = no }
+	state = { name = "idle"				animation = "scout"		animation_blend_time = 0.3 animation_speed = 0.8 chance = 1 looping = no }
+	state = { name = "idle"				animation = "notes"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "idle"				animation = "stance"		animation_blend_time = 0.3 animation_speed = 0.8 chance = 1 looping = no }
+	state = { name = "idle"				animation = "brush"		animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"				animation = "training" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 2 looping = no }
+	state = { name = "training"				animation = "jumping_jacks" 	animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+	state = { name = "training"				animation = "pushup" 			animation_blend_time = 0.3 animation_speed = 1.0 chance = 1 looping = no }
+
+	attach = { 	name = "gunhold" rifle = "ENG_army_weapon_pistol_right_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_generic_entity" }
+	attach = { name = "backpack" backpack = "backpack_generic_entity" }
+	scale = 1.5
+}
+entity = {
+	clone = "object_gfx_army_headquarters_entity"
+	name = "object_gfx_ngrf_army_headquarters_entity"
+	
+	attach = { 	name = "gunhold" rifle = "SOV_army_weapon_pistol_right_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_ngrf_entity" }
+	
+	version = 1
+}
+entity = {
+	clone = "object_gfx_army_headquarters_entity"
+	name = "object_gfx_reich_army_headquarters_entity"
+	
+	attach = { 	name = "gunhold" rifle = "GER_army_weapon_pistol_right_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_reich_entity" }
+	
+	version = 1
+}
+entity = {
+	clone = "object_gfx_army_headquarters_entity"
+	name = "object_gfx_gtr_army_headquarters_entity"
+	
+	attach = { 	name = "gunhold" rifle = "USA_army_weapon_pistol_right_entity" }
+	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
+	
+	version = 1
+}
+entity = {
+	clone = "object_gfx_army_headquarters_entity"
+	name = "object_gfx_yfc_army_headquarters_entity"
+	
+	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
+	
+	version = 1
+}
