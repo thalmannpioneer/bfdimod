@@ -3,6 +3,33 @@
 
 ## ARMY PLACEMENT ##
 
+DAV_stop_invade = {
+    #Hold a bit for... aura? I don't fucking know...
+	allowed = {
+		original_tag = DAV
+	}
+	enable = {
+		date < 2020.01.01
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = goiky_navy
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_dominance_weight
+		value = -1000
+	}
+}
+
 DAV_invade_TBT = {
     #...
 	allowed = {

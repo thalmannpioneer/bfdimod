@@ -1506,4 +1506,9 @@ SpriteTypes = {
 		name = GFX_common_event4
 		textureFile = gfx/event_pictures/common_event_4.dds
 	}
+
+	spriteType = {
+		name = GFX_uncommon_event3
+		textureFile = gfx/event_pictures/uncommon_event3.dds
+	}
 }

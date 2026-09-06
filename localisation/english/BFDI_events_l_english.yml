@@ -1686,12 +1686,12 @@
 
 # BUN_borderwars
 
- BUN_borderwars.1.t: "Placeholder Bunch Win"
- BUN_borderwars.1.desc: "Bunch Raiders won lol easy also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder"
+ BUN_borderwars.1.t: "Placeholder Bunch Win" #ZDubbz if you want to
+ BUN_borderwars.1.desc: "Bunch Raiders won lol easy also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder" #Bunch raid won from BUN POV
  BUN_borderwars.1.a: "Placing Holders" 
 
- BUN_borderwars.2.t: "Placeholder Bunch Loss"
- BUN_borderwars.2.desc: "Bunch Raiders lost rigged also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder"
+ BUN_borderwars.2.t: "Placeholder Bunch Loss" #ZDubbz if you want to
+ BUN_borderwars.2.desc: "Bunch Raiders lost rigged also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder" #Bunch raid failed from BUN POV
  BUN_borderwars.2.a: "Placing Holders" 
 
  BUN_borderwars.3.t: "Raiders Repelled"

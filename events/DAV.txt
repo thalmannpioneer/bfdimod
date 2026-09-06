@@ -13,8 +13,8 @@ country_event = {
 	immediate = {
         add_political_power = -1000
 
-        set_stability = -0.42
-        set_war_support = 0.02
+        set_stability = -0.5
+        set_war_support = -0.1
         set_variable = { money_amount = -102.562 }
         set_country_flag = disable_money_politics
         set_variable = { var_schooling_slider_pure = 25 }

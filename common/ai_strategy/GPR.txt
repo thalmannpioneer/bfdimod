@@ -167,7 +167,7 @@ GPR_fortnite_greenport = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 3
+				level < 4
 			}
 		}
     }

@@ -8,14 +8,12 @@ state={
 	history={
 		owner = GOI
 		add_core_of = GOI
-		victory_points = {
-			2673 2
-		}
-		victory_points = {
-			5987 2
-		}
+		victory_points = {2673 2}
+		victory_points = {5987 3}
+		victory_points = {10313 5}
 		buildings = {
 			infrastructure = 1
+			10313 = {naval_base = 3}
 		}
 	}
 	manpower= 8021

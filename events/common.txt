@@ -93,7 +93,6 @@ country_event = {
     id = uncommon_event.999
     title = uncommon_event.999.t
     desc = uncommon_event.999.desc
-    picture = GFX_Temp_event
 
     is_triggered_only = yes
 
@@ -282,7 +281,6 @@ country_event = {
     id = uncommon_event.1
     title = uncommon_event.1.t
     desc = uncommon_event.1.desc
-    picture = GFX_Temp_event
 
     is_triggered_only = yes
 
@@ -307,7 +305,6 @@ country_event = {
     id = uncommon_event.2
     title = uncommon_event.2.t
     desc = uncommon_event.2.desc
-    picture = GFX_Temp_event
 
     is_triggered_only = yes
 
@@ -387,7 +384,7 @@ country_event = {
     id = uncommon_event.3
     title = uncommon_event.3.t
     desc = uncommon_event.3.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -429,7 +426,7 @@ country_event = {
     id = uncommon_event.4
     title = uncommon_event.4.t
     desc = uncommon_event.4.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -444,7 +441,7 @@ country_event = {
     id = uncommon_event.5
     title = uncommon_event.5.t
     desc = uncommon_event.5.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -499,7 +496,7 @@ country_event = {
     id = uncommon_event.6
     title = uncommon_event.6.t
     desc = uncommon_event.6.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -560,7 +557,7 @@ country_event = {
     id = uncommon_event.8
     title = uncommon_event.8.t
     desc = uncommon_event.8.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -575,7 +572,7 @@ country_event = {
     id = uncommon_event.9
     title = uncommon_event.9.t
     desc = uncommon_event.9.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -599,7 +596,7 @@ country_event = {
     id = uncommon_event.10
     title = uncommon_event.10.t
     desc = uncommon_event.10.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -613,7 +610,7 @@ country_event = {
     id = uncommon_event.11
     title = uncommon_event.11.t
     desc = uncommon_event.11.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -650,7 +647,7 @@ country_event = {
     id = uncommon_event.12
     title = uncommon_event.12.t
     desc = uncommon_event.12.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
@@ -674,7 +671,7 @@ country_event = {
     id = uncommon_event.13
     title = uncommon_event.13.t
     desc = uncommon_event.13.desc
-    picture = GFX_Temp_event
+    picture = GFX_uncommon_event3
 
     is_triggered_only = yes
 
