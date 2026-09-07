@@ -1,7 +1,7 @@
 decision_GTR_development_category = {
     GTR_development_outcome_mission = { #it actually shouldve been in bop decisions but animation doesnt work there :(
         priority = 100
-        days_mission_timeout = 1600
+        days_mission_timeout = 1400
         timeout_effect = {
             custom_effect_tooltip = l_GTR_outcome
             hidden_effect = {

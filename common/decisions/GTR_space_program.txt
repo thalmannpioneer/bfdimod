@@ -4,6 +4,7 @@ decision_GTR_space_program_category = {
         days_mission_timeout = 300
         timeout_effect = {
             custom_effect_tooltip = l_GTR_launch
+            add_political_power = -35
             hidden_effect = {
                 country_event = GTR_event.57
             }
@@ -13,7 +14,7 @@ decision_GTR_space_program_category = {
             hidden_effect = {
                 country_event = {
                     id = GTR_event.57
-                    days = 3
+                    days = 1
                     random_hours = 12
                 }
             }

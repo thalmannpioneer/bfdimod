@@ -118,6 +118,7 @@ decision_GTR_project_1_category = {
             }
         }
         complete_effect = {
+            add_stability = -0.01
             add_days_mission_timeout = {
                 mission = GTR_project1_outbreak_mission
                 days = -10

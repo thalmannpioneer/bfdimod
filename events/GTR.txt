@@ -1587,6 +1587,7 @@ country_event = {
     option = {
         name = GTR_event.58.a
         custom_effect_tooltip = l_GTR_thats_cool
+        add_political_power = 65
     }
 }
 
@@ -1601,6 +1602,7 @@ country_event = {
     option = {
         name = GTR_event.59.a
         custom_effect_tooltip = l_GTR_bad_spaceship_outcome
+        add_political_power = -25
     }
 }
 
