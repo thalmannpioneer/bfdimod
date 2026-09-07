@@ -40,7 +40,7 @@
  WGF_focus_peoples_object_show_desc: "To distract people, we will launch our own object show. Not nearly as large-scale as BFDI, but promoting the ideals of our glorious socialist system."
  
  WGF_focus_development_of_theory: "Development of the theory"
- WGF_focus_development_of_theory_desc: "Without good theory there can be no practice. It is necessary to study the contradictions of Goiky’s pre-anarchist society, because it is obvious that the disappearance of the dream island was only the trigger for the entire mass of problems that have accumulated in Goiky’s society."
+ WGF_focus_development_of_theory_desc: "Without good theory there can be no practice. It is necessary to study the contradictions of Goiky's pre-anarchist society, because it is obvious that the disappearance of the dream island was only the trigger for the entire mass of problems that have accumulated in Goiky's society."
  
  WGF_focus_investigation: "Investigation"
  WGF_focus_investigation_desc: "It is necessary to study the chain of events after the disappearance of the island. Leafy's fate is still not entirely clear."
@@ -140,7 +140,7 @@
  GGR_focus_industrialization_desc: "No matter how hard it is to admit it, the Plateau is one of the poorest regions of modern Goiky. It has an incredibly low population density and virtually no industry. The bastards from Casland deprived us of any technology, realizing their worthlessness, but we will still show them what the objects of the Snowy Plains are capable of."
  
  GGR_focus_are_you_smarter_than_a_snowball: "Are you smarter than a Snowball?"
- GGR_focus_are_you_smarter_than_a_snowball_desc: "There can be no economy without technological progress. The Snowy Plateau is filled with geniuses every year, so let’s direct this national impulse in the right direction."
+ GGR_focus_are_you_smarter_than_a_snowball_desc: "There can be no economy without technological progress. The Snowy Plateau is filled with geniuses every year, so let's direct this national impulse in the right direction."
  
  GGR_focus_snowy_vexels: "Snowy Vexels"
  GGR_focus_snowy_vexels_desc: "Giving debt to yourself is a very effective means of economic growth, albeit dangerous. But we'll be careful, right?"
@@ -170,7 +170,7 @@
  GGR_focus_mass_mobilization_desc: "All objects of the Snowy Plateau must hold weapons in their hands against their enemies. Tenfold numerical superiority will open the door to any victory for us."
  
  GGR_focus_penal_battalions: "Penal battalions"
- GGR_focus_penal_battalions_desc: "National traitors and low-grade objects can be rounded up into the army and sent to the enemy’s embrasures in order to atone for their guilt before society."
+ GGR_focus_penal_battalions_desc: "National traitors and low-grade objects can be rounded up into the army and sent to the enemy's embrasures in order to atone for their guilt before society."
  
  GGR_focus_expand_militia: "Expand militia"
  GGR_focus_expand_militia_desc: "'Irregular units' can carry out not only front-line tasks, but also expand their powers to 'pacify' small settlements and anarchic self-governments in our rear. An important task will be its expansion."
@@ -399,8 +399,8 @@
  GPG_focus_fanny_emotional_stability_question: "Question about Fanny's stability"
  GPG_focus_fanny_emotional_stability_question_desc: "Fanny is perhaps the most emotionally unstable council member. It is worth 'making a recommendation' to the cabinet to exclude her from the RCC."
  
- GPG_focus_trans: "The Strangest of Reactionaries"
- GPG_focus_trans_desc: "The presence of Saw on the council from the fascist faction raises questions in our cabinet and even in their supporter base. How and why does an object of indeterminate gender speak on behalf of the reactionary faction? It will be for the greater good for the state and possibly even for the Iron Hand that we get rid of this hypocritical councilman. Not councilwoman, because we do not recognize violations of the cultural order."
+ GPG_focus_trans: "Depose Saw"
+ GPG_focus_trans_desc: "The presence of Saw in the council's fascist faction raises the highest of concerns. How, and why, would a transgender object speak on behalf of such a faction? Iron Hand has been known to support the Snowy Plateau's policies and ideology, yet, the Snowy Plateau has also been known to supress the freedom of expression of transgender objects. This contradictory object must be deposed, for her own sake."
  
  GPG_focus_ban_fascist_faction: "§LBreak the Iron Hand§!"
  GPG_focus_ban_fascist_faction_desc: "There is not a question that the Iron Hand was preparing a military coup in Casland, but the valiant cabinet put a stop to it. This faction will be expelled from the council, and its members will be investigated and put to court for this attempted treason."
@@ -409,7 +409,7 @@
  GPG_focus_no_more_factions_desc: "Factionalism was a disease that proliferated in the council and radicalized the minds of its members for way too long. But now, thanks to our efforts, we have eradicated this plague. Now, our cabinet is as healthy as ever, in sensibility and rationality. No more will we be divided by the left-and-right political spectrum. No more will we fight eachother for having different opinions. Now, we are united, stronger than ever, and we will never give up this sense of unity. Ever."
  #GPG CW TREE
  GPG_focus_fight_for_stability: "§YBattle for Stability!§!"
- GPG_focus_fight_for_stability_desc: "These damn radicals, we tried to come to an agreement with them in the council, we tried to come to an agreement with them at the congress, but it didn’t lead to anything. The time has come to put an end to these destructive cliques and carry the victorious banner of Goika on the bayonet!"
+ GPG_focus_fight_for_stability_desc: "These damn radicals, we tried to come to an agreement with them in the council, we tried to come to an agreement with them at the congress, but it didn't lead to anything. The time has come to put an end to these destructive cliques and carry the victorious banner of Goika on the bayonet!"
  
  GPG_focus_council_of_the_one_faction: "One faction council"
  GPG_focus_council_of_the_one_faction_desc: "No more factionalism! All conflicts in the council will henceforth be resolved within the framework of one general paradigm of maintaining stability."
@@ -708,7 +708,7 @@
  GSR_focus_slow_retirement_desc: "Victory has been achieved. Objects are tired of wartime. The time has come to gradually move away from the practice of war communism and focus on improving the quality of life of our objects."
  
  GSR_focus_sweets_monopoly: "Sweets monopoly"
- GSR_focus_sweets_monopoly_desc: "According to Ruby’s proposal in the presidium, the state will introduce full control over the production and sale of sweet and sweetened products."
+ GSR_focus_sweets_monopoly_desc: "According to Ruby's proposal in the presidium, the state will introduce full control over the production and sale of sweet and sweetened products."
  
  GSR_focus_new_economic_policy: "§7New Economic Policy§!"
  GSR_focus_new_economic_policy_desc: "It's time to get rid of enormous military spendings and military communism."
@@ -873,13 +873,13 @@
  GFG_focus_greeny_plains_terror_desc: "Traitors and bandits must be brutally crushed by our mighty hand. And under no circumstances should you show weakness now."
  
  GFG_focus_operation_east: "Eastern Operation"
- GFG_focus_operation_east_desc: "Communists among the workers of Greenmine, cells of democrats in the fields of the Greeny Plains, the time has come to put an end to these national traitors. National Ressurection Forces will roll through the eastern regions, and it won’t matter if a couple of innocent objects will suffer."
+ GFG_focus_operation_east_desc: "Communists among the workers of Greenmine, cells of democrats in the fields of the Greeny Plains, the time has come to put an end to these national traitors. National Ressurection Forces will roll through the eastern regions, and it won't matter if a couple of innocent objects will suffer."
  
  GFG_focus_autarky: "Autarky"
  GFG_focus_autarky_desc: "Our national mission does not need anyone other than us and our objects. To do this, it is necessary to ensure complete economic independence."
  
  GFG_focus_traitors_work: "Traitor's Work"
- GFG_focus_traitors_work_desc: "Forced labour will greatly help to quickly cope with the ruins of the Civil War. And besides, we don’t feel sorry for traitors."
+ GFG_focus_traitors_work_desc: "Forced labour will greatly help to quickly cope with the ruins of the Civil War. And besides, we don't feel sorry for traitors."
  
  GFG_focus_enemys_treasures: "Enemy's Treasures"
  GFG_focus_enemys_treasures_desc: "The state treasury must be replenished from the assets of national traitors."
