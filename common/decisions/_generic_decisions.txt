@@ -195,6 +195,7 @@
 		visible = {
 			tag = TBT
 			controls_state = 168
+			is_ai = yes
 		}
 
 		available = {
@@ -202,7 +203,7 @@
 		}
 
 		fire_only_once = no
-		days_re_enable = 15
+		days_re_enable = 10
 
 		complete_effect = {
 			add_manpower = -4000

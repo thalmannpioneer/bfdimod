@@ -99,6 +99,13 @@ country_event = {
 			}
 			add_manpower = manpower_regain
 		}
+		173 = {
+			add_dynamic_modifier = { 
+				modifier = TBT_low_pop 
+				scope = TBT
+			}
+			add_manpower = manpower_regain
+		}
 		country_event = {
 			id = TBT_hidden_event.4
 			days = 250
@@ -167,6 +174,14 @@ country_event = {
 			}
 			add_manpower = manpower_regain
 		}
+		173 = {
+			remove_dynamic_modifier = { modifier = TBT_low_pop }
+			add_dynamic_modifier = { 
+				modifier = TBT_med_pop 
+				scope = TBT
+			}
+			add_manpower = manpower_regain
+		}
 		country_event = {
 			id = TBT_hidden_event.6
 			days = 250
@@ -208,7 +223,7 @@ country_event = {
 	}
 }
 
-country_event = { #Remove later when TBT gets content!!!!
+country_event = { #Remove later when TBT gets content!!!! (We hate YFC)
 	id = TBT_hidden_event.7
 	
 	hidden = yes
@@ -226,5 +241,23 @@ country_event = { #Remove later when TBT gets content!!!!
 			original_tag_to_check = YFC
 			add_opinion_modifier = { target = TBT modifier = large_decrease }
 		}
+	}
+}
+
+country_event = { #Remove later when TBT gets content!!!! (Grab East)
+	id = TBT_hidden_event.8
+	
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		180 = {
+			transfer_state_to = TBT
+			add_core_of = TBT
+			remove_core_of = EMP
+			set_demilitarized_zone = no
+		}
+		TBT = {add_manpower = 15000}
 	}
 }

@@ -7,6 +7,14 @@ characters = {
 			traits = { SHX_model_governor conservative_nationalist }
 			desc = LSS_Leader_desc
 		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+			traits = { genuinely_incompetent country_leader }
+		}
 	}
 
 	LSS_Rodriguez = {

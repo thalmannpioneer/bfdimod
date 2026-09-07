@@ -2067,13 +2067,7 @@ country_event = { #To the east
 				}
 				complete_national_focus = YFC_focus_see_to_the_eastern_front
 				add_threat = 0.5
-				180 = {
-					transfer_state_to = TBT
-					add_core_of = TBT
-					remove_core_of = EMP
-					set_demilitarized_zone = no
-				}
-				TBT = {add_manpower = 10000}
+				
 				country_event = {
 					id = YFC_event.49
 					days = 150
@@ -2097,13 +2091,6 @@ country_event = { #To the east
 				limit = {has_completed_focus = YFC_focus_way_of_raiders}
 				complete_national_focus = YFC_focus_issues_in_east
 				add_threat = 1
-				180 = {
-					transfer_state_to = TBT
-					add_core_of = TBT
-					remove_core_of = EMP
-					set_demilitarized_zone = no
-				}
-				TBT = {add_manpower = 15000}
 			}
 		}
 	}
@@ -3364,7 +3351,7 @@ country_event = { #YFC_focus_march_on_footpathburg
 				country_leader = {
 					ideology = interim_government
 					traits = { YFC_old_general }
-					desc = idea_YFC_TopHat_desc
+					desc = YFC_tophat_desc
 				}
 			}
 

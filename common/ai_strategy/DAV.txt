@@ -9,7 +9,7 @@ DAV_stop_invade = {
 		original_tag = DAV
 	}
 	enable = {
-		date < 2020.01.01
+		longest_war_length < 6
 	}
 	abort_when_not_enabled = yes
 
@@ -37,7 +37,7 @@ DAV_invade_TBT = {
 	}
 	enable = {
 		has_war_with = TBT
-		date > 2020.01.01
+		longest_war_length > 6
 	}
 	abort_when_not_enabled = yes
 
@@ -89,7 +89,7 @@ DAV_invade_WGF = {
 	}
 	enable = {
 		has_war_with = WGF
-		date > 2020.01.01		
+		longest_war_length > 6	
 	}
 	abort_when_not_enabled = yes
 
@@ -144,7 +144,7 @@ DAV_boat = {
 	}
 	enable = {
 		has_war = no
-		dockyard < 7
+		dockyard < 11
 	}
 	abort_when_not_enabled = yes
 

@@ -5,22 +5,20 @@ DAV_dominance_fleet_1 = {
 		DAV_PatrolDominanceForce_1 = 1
 	}	
 	optional_taskforces = {
-		DAV_PatrolReconForce_1 = 1
-		DAV_PatrolDominanceForce_1 = 1
+		DAV_PatrolDominanceForce_1 = 2 #Maybe lower 
 	}
 }
 
-DAV_dominance_fleet_2 = {
-	required_taskforces = {
-		DAV_StrikeForce_1 = 1
-		DAV_PatrolReconForce_1 = 1
-		DAV_PatrolDominanceForce_1 = 1
-	}	
-	optional_taskforces = {
-		DAV_PatrolReconForce_1 = 1
-		DAV_PatrolDominanceForce_1 = 1
-	}
-}
+#DAV_dominance_fleet_2 = { #I might bring this back but for now one works
+#	required_taskforces = {
+#		DAV_StrikeForce_1 = 1
+#		DAV_PatrolReconForce_1 = 1
+#		DAV_PatrolDominanceForce_1 = 1
+#	}	
+#	optional_taskforces = {
+#		DAV_PatrolDominanceForce_1 = 1
+#	}
+#}
 
 DAV_escort_fleet_3 = {
 	required_taskforces = {
@@ -28,7 +26,6 @@ DAV_escort_fleet_3 = {
 	}
 	optional_taskforces = {
 		DAV_ConvoyEscort_1 = 2
-		DAV_PatrolReconForce_1 = 2
 	}
 }
 

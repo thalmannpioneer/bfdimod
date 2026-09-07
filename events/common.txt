@@ -120,10 +120,7 @@ country_event = {
 			}
 
             hidden_effect = {
-
                 set_country_flag = LSS_attack_losers
-
-                
 
                 division_template = {
                     name = "Military Police"
@@ -460,12 +457,6 @@ country_event = {
                     traits = { SHX_model_governor conservative_nationalist }
                 }
             }
-            country_event = { #Remove One Day...
-				id = uncommon_event.999
-                days = 270
-				hours = 12
-				random_hours = 12
-			}
             country_event = {
 				id = uncommon_event.6
                 days = 7
