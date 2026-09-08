@@ -60,6 +60,8 @@ set_variable = { var_GTR_shuttle_frame = 1 }
 set_variable = { var_GTR_fuel_frame = 1 }
 set_variable = { var_GTR_engine_frame = 1 }
 
+set_variable = { var_GTR_development_cooldown = 60 }
+
 add_ideas = undisturbed_isolation
 add_ideas = disarmed_nation
 add_ideas = closed_economy

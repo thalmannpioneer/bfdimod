@@ -43,6 +43,9 @@ ideas = {
 		}
 		idea_WGF_coinflip = {
 			picture = WGF_coinflip
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.25
+			}
 			targeted_modifier = {
 				tag = GMD
 				attack_bonus_against = 0.75 #Rework this when GMD get's stuff!

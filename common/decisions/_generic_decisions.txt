@@ -189,8 +189,34 @@
 		}
 	}
 
+	DAV_fix_all_issues = { 
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		visible = {
+			tag = DAV
+		}
+
+		available = {
+			date > 2018.1.01
+			has_war = no
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = l_money_gain_10M
+			add_to_variable = {money_amount = 100}
+			add_stability = 0.5
+			clr_country_flag = disable_money_politics
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
 	TBT_units = { #placeholder spawn unit stuff 
-		icon = GFX_decisions_YFC_cherry_mercenary
+		icon = GFX_decision_generic_prepare_civil_war
 
 		visible = {
 			tag = TBT

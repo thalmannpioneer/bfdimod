@@ -3,6 +3,7 @@ idea_WGF_red_army = {
 
     army_org_factor = 0.05
     political_power_gain = 0.25
+    heat_attrition_factor = -0.25
     conscription = var_idea_WGF_red_army_conscription
 }
 
@@ -62,6 +63,7 @@ idea_GGR_snowy_vexels = {
 idea_GGR_verschneitwehr = {
     icon = GFX_idea_GGR_verschneitwehr
 
+    winter_attrition_factor = -0.25
     experience_gain_army = var_GGR_vsnw_eg
     conscription = var_GGR_vsnw_rp
     terrain_penalty_reduction = var_GGR_vsnw_tp

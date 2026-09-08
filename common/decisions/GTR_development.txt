@@ -115,7 +115,7 @@ decision_GTR_development_category = {
     GTR_development_invest_civs = {
         icon = GFX_decisions_GTR_development_invest_civs
         days_remove = 50
-        days_re_enable = 100
+        days_re_enable = var_GTR_development_cooldown
         ai_will_do = {
             base = 10
         }
@@ -127,7 +127,10 @@ decision_GTR_development_category = {
             }
         }
         custom_cost_text = decisions_cost_money_100k
-        complete_effect = { add_to_variable = { money_amount = -1 } }
+        complete_effect = { 
+            add_to_variable = { money_amount = -1 } 
+            add_to_variable = {var_GTR_development_cooldown = 30}
+        }
         remove_effect = {
             random_owned_state = {
                 add_extra_state_shared_building_slots = 1
@@ -147,7 +150,7 @@ decision_GTR_development_category = {
     GTR_development_invest_mils = {
         icon = GFX_decisions_GTR_development_invest_mils
         days_remove = 50
-        days_re_enable = 100
+        days_re_enable = var_GTR_development_cooldown
         ai_will_do = {
             base = 10
             modifier = {
@@ -163,7 +166,10 @@ decision_GTR_development_category = {
             }
         }
         custom_cost_text = decisions_cost_money_100k
-        complete_effect = { add_to_variable = { money_amount = -1 } }
+        complete_effect = { 
+            add_to_variable = { money_amount = -1 } 
+            add_to_variable = {var_GTR_development_cooldown = 30}
+        }
         remove_effect = {
             random_owned_state = {
                 limit = {

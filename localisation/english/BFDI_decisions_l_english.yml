@@ -3,6 +3,9 @@
  debug_conquest_desc: "§tWARNING!§! YOUR PC MIGHT EXPLODE FROM ALL THE WARS! MIGHT ALSO BREAK SOME OF THE FOCUSES SO GOOD LUCK!"
  debug_nuke_everything_desc: "Do I really need to explain...?"
 
+ DAV_fix_all_issues: "Fix Davidland's Problems"
+ DAV_fix_all_issues_desc: "Will be removed later since black magic is bullshit"
+
  targeted_white_peace: "White Peace with [FROM.GetName]"
  targeted_white_peace_desc: "With no way to reach them, the time is now to reach an agreement to end this useless war."
 

@@ -119,7 +119,7 @@ GPR_fall_back_furnace = { #If we have lost furnace pull back as we can't hold wi
     }
     ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = 1000
+		value = 2000
 	}
     ai_strategy = {
 		type = build_army

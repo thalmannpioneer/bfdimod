@@ -5,16 +5,42 @@ strategic_region={
 		11861 11863 11864 11865 11866 11867 11868 11869 11870 11871 11872 11873 11874 11875 11876 11877 11878 11879 11880 11881 11882 11883 11884 11885 11886 11887 11888 11889 11890 11891 11892 11893 11894 11895 11896 11897 11898 11899 11900 11901 
 	}
 	weather={
-		period={
-			between={ 0.0 30.11 }
-			temperature={ 15.0 30.0 }
+		period = {
+			between = { 0.0 30.4 }
+			temperature = { 22.0 26.0 }
 			no_phenomenon = 0.500
-			rain_light = 0.500
-			rain_heavy = 1.000
+			rain_light = 0.200
+			rain_heavy = 0.050
 			snow = 0.000
 			blizzard = 0.000
 			arctic_water = 0.000
-			mud = 0.300
+			mud = 0.100
+			sandstorm = 0.000
+			min_snow_level = 0.000
+		}
+		period = {
+			between = { 0.5 30.9 }
+			temperature = { 28.0 36.0 }
+			no_phenomenon = 0.500
+			rain_light = 1.000
+			rain_heavy = 2.000
+			snow = 0.000
+			blizzard = 0.000
+			arctic_water = 0.000
+			mud = 1.500
+			sandstorm = 0.000
+			min_snow_level = 0.000
+		}
+		period = {
+			between = { 0.10 30.11 }
+			temperature = { 22.0 26.0 }
+			no_phenomenon = 0.500
+			rain_light = 0.200
+			rain_heavy = 0.050
+			snow = 0.000
+			blizzard = 0.000
+			arctic_water = 0.000
+			mud = 0.100
 			sandstorm = 0.000
 			min_snow_level = 0.000
 		}

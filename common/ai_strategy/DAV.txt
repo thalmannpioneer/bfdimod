@@ -9,7 +9,7 @@ DAV_stop_invade = {
 		original_tag = DAV
 	}
 	enable = {
-		longest_war_length < 6
+		longest_war_length < 8
 	}
 	abort_when_not_enabled = yes
 
@@ -37,7 +37,7 @@ DAV_invade_TBT = {
 	}
 	enable = {
 		has_war_with = TBT
-		longest_war_length > 6
+		longest_war_length > 8
 	}
 	abort_when_not_enabled = yes
 
@@ -89,7 +89,7 @@ DAV_invade_WGF = {
 	}
 	enable = {
 		has_war_with = WGF
-		longest_war_length > 6	
+		longest_war_length > 8
 	}
 	abort_when_not_enabled = yes
 
