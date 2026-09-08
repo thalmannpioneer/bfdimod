@@ -8,10 +8,10 @@ state={
 		owner = GOI
 		add_core_of = GOI
 		victory_points = {
-			10763 1
+			10763 2
 		}
 	}
-	manpower = 1052
+	manpower = 4052
 	buildings_max_level_factor=1
 	state_category=pastoral
 	local_supplies=0

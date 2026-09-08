@@ -44,11 +44,28 @@ ideas = {
 		idea_WGF_coinflip = {
 			picture = WGF_coinflip
 			modifier = {
-				acclimatization_hot_climate_gain_factor = 0.25
+				acclimatization_hot_climate_gain_factor = 0.1
 			}
 			targeted_modifier = {
 				tag = GMD
-				attack_bonus_against = 0.75 #Rework this when GMD get's stuff!
+				attack_bonus_against = 0.5 
+			}
+			on_remove = {
+				if = {
+					limit = { country_exists = GMD }
+					country_event = WGF_event.19
+				}
+			}
+		}
+		idea_WGF_coinflip_ai = { #WGF AI version
+			picture = WGF_coinflip
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.25
+				no_supply_grace = 48
+			}
+			targeted_modifier = {
+				tag = GMD
+				attack_bonus_against = 0.75 
 			}
 			on_remove = {
 				if = {

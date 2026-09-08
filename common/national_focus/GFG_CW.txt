@@ -204,7 +204,7 @@ focus_tree = {
 					defense_skill = 3
 					planning_skill = 1
 					logistics_skill = 2
-					traits = { trained }
+					traits = { trained armless }
 				}
 				load_focus_tree = GFG_postcw_focus_tree
 				country_event = GFG_event.2

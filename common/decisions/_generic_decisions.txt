@@ -206,7 +206,7 @@
 		complete_effect = {
 			custom_effect_tooltip = l_money_gain_10M
 			add_to_variable = {money_amount = 100}
-			add_stability = 0.5
+			add_stability = 0.25
 			clr_country_flag = disable_money_politics
 		}
 

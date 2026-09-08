@@ -835,10 +835,20 @@ focus_tree = {
                     target = GMD
                     type = annex_everything
                 }
-                add_timed_idea = {
-                    idea = idea_WGF_coinflip
-                    days = 210
+                IF = {
+                    limit = {is_ai = no}
+                    add_timed_idea = {
+                        idea = idea_WGF_coinflip
+                        days = 210
+                    }
                 }
+                ELSE = {
+                    add_timed_idea = {
+                        idea = idea_WGF_coinflip_ai
+                        days = 210
+                    }
+                }
+
                 IF = {
                     limit = {
                         YFC = {has_completed_focus = YFC_focus_buy_defense_trainings}
