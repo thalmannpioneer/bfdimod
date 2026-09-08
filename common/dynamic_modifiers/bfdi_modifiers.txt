@@ -3,7 +3,7 @@ idea_WGF_red_army = {
 
     army_org_factor = 0.05
     political_power_gain = 0.25
-    heat_attrition_factor = -0.25
+    heat_attrition_factor = -0.1
     conscription = var_idea_WGF_red_army_conscription
 }
 

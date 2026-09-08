@@ -8,7 +8,7 @@ strategic_region={
 	weather={
 		period={ #Redone by Pun, we shall see how this goes...
 			between={ 0.0 30.0 } #Jan
-			temperature={ 10.0 14.0 }
+			temperature={ 5.0 12.0 }
 			no_phenomenon=0.500
 			rain_light=0.500
 			rain_heavy=0.000
@@ -21,7 +21,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.1 27.1 } #Feb
-			temperature={ 8.0 14.0 }
+			temperature={ -2.0 10.0 }
 			no_phenomenon=0.500
 			rain_light=0.650
 			rain_heavy=0.000
@@ -34,7 +34,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.2 30.2 } #Mar
-			temperature={ 10.0 14.0 }
+			temperature={ 6.0 14.0 }
 			no_phenomenon=0.500
 			rain_light=0.500
 			rain_heavy=0.000
@@ -46,8 +46,8 @@ strategic_region={
 			min_snow_level=0.000
 		}
 		period={
-			between={ 0.3 29.3 } #Apr
-			temperature={ 14.0 19.0 }
+			between={ 0.3 29.3 } #Apr (Minor)
+			temperature={ 10.0 16.0 }
 			no_phenomenon=0.500
 			rain_light=0.250
 			rain_heavy=0.000
@@ -60,7 +60,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.4 30.4 } #May
-			temperature={ 17.0 25.0 }
+			temperature={ 15.0 20.0 }
 			no_phenomenon=0.500
 			rain_light=0.100
 			rain_heavy=0.150
@@ -73,7 +73,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.5 29.5 } #Jun
-			temperature={ 21.0 29.0 }
+			temperature={ 17.0 26.0 }
 			no_phenomenon=0.500
 			rain_light=0.000
 			rain_heavy=0.000
@@ -86,7 +86,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.6 30.6 } #Jul
-			temperature={ 23.0 30.0 }
+			temperature={ 19.0 30.0 }
 			no_phenomenon=0.500
 			rain_light=0.000
 			rain_heavy=0.000
@@ -99,7 +99,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.7 30.7 } #Aug
-			temperature={ 24.0 31.0 }
+			temperature={ 20.0 31.0 }
 			no_phenomenon=0.500
 			rain_light=0.000
 			rain_heavy=0.000
@@ -112,7 +112,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.8 29.8 } #Sep
-			temperature={ 20.0 27.0 }
+			temperature={ 17.0 26.0 }
 			no_phenomenon=0.500
 			rain_light=0.100
 			rain_heavy=0.000
@@ -124,8 +124,8 @@ strategic_region={
 			min_snow_level=0.000
 		}
 		period={
-			between={ 0.9 30.9 } #Oct
-			temperature={ 16.0 24.0 }
+			between={ 0.9 30.9 } #Oct (Major)
+			temperature={ 14.0 22.0 }
 			no_phenomenon=0.500
 			rain_light=0.250
 			rain_heavy=0.000
@@ -138,7 +138,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.10 29.10 } #Nov
-			temperature={ 12.0 19.0 }
+			temperature={ 12.0 18.0 }
 			no_phenomenon=0.500
 			rain_light=0.500
 			rain_heavy=0.050
@@ -151,7 +151,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.11 30.11 } #Dec
-			temperature={ 10.0 16.0 }
+			temperature={ 8.0 16.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
 			rain_heavy=0.150

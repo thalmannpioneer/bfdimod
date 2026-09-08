@@ -5141,7 +5141,7 @@ country_event = {
 					state = 130
 					region = 19
 					limit = { tag = DAV }
-					str_damage = 0.4
+					str_damage = 0.1
 					ratio = yes
 					navy = yes
 				}
@@ -5152,7 +5152,7 @@ country_event = {
 					state = 168
 					region = 12
 					limit = { tag = TBT }
-					str_damage = 0.4
+					str_damage = 0.1
 					ratio = yes
 					navy = yes
 				}
@@ -5163,7 +5163,7 @@ country_event = {
 					state = 173
 					region = 12
 					limit = { tag = GMD }
-					str_damage = 0.4
+					str_damage = 0.1
 					ratio = yes
 					navy = yes
 				}
@@ -5276,7 +5276,7 @@ country_event = {
 					state = 130
 					region = 19
 					limit = { tag = DAV }
-					str_damage = 0.1
+					str_damage = 0.05
 					ratio = yes
 					navy = yes
 				}
@@ -5287,7 +5287,7 @@ country_event = {
 					state = 168
 					region = 12
 					limit = { tag = TBT }
-					str_damage = 0.1
+					str_damage = 0.05
 					ratio = yes
 					navy = yes
 				}
@@ -5298,7 +5298,7 @@ country_event = {
 					state = 173
 					region = 12
 					limit = { tag = GMD }
-					str_damage = 0.1
+					str_damage = 0.05
 					ratio = yes
 					navy = yes
 				}
