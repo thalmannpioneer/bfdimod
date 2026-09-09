@@ -107,6 +107,7 @@ infantry_GPG = {
 
 			regiments = {
 				infantry = 5
+				artillery = 1
 			}
 		}
 
@@ -148,6 +149,7 @@ infantry_GPG = {
 
 			regiments = {
 				infantry = 5
+				artillery = 1
 			}
 
 			regimental_support = {

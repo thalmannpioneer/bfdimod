@@ -854,8 +854,8 @@ on_actions = {
                         check_variable = { var_ai_moves < 5 }
 
                         OR = {
-                            check_variable = { var_display_final_change > 50 }
-                            check_variable = { var_display_final_change_stage > 1 }
+                            check_variable = { var_display_final_change > 100 }
+                            check_variable = { var_display_final_change_stage > 2 }
                         }
 
                         OR = {

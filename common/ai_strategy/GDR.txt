@@ -91,6 +91,11 @@ GDR_high_support = {
 	}
 	ai_strategy = {
 		type = research_weight_factor
+		id = tech_signal_company
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
 		id = tech_military_police
 		value = 1000
 	}

@@ -336,7 +336,7 @@ bookmarks = {
                 224 = { set_demilitarized_zone = no }
             }
             224 = {
-                add_manpower = 45692
+                add_manpower = 75692
                 add_victory_points = {
                     province = 51
                     value = 25

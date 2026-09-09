@@ -79,7 +79,7 @@ ideas = {
 				conscription = 0.2
 				compliance_growth = 0.25
 				ai_desired_divisions_factor = 5
-				ai_focus_aggressive_factor = 1
+				ai_focus_aggressive_factor = 3
 				custom_modifier_tooltip = l_modifier_gain_25_guns_weekly
 				custom_modifier_tooltip = l_modifier_250_MP_state
 			}

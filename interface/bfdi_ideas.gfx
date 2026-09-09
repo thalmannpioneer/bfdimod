@@ -702,7 +702,11 @@ spriteTypes = {
 		name = GFX_idea_DAV_the_thousand_year_throne
 		texturefile = gfx/interface/ideas/idea_DAV_the_thousand_year_throne.dds
 	}
-	
+	spriteType = {
+		name = GFX_idea_DAV_david_mc_auther
+		texturefile = gfx/interface/ideas/idea_DAV_david_mc_auther.dds
+	}
+
 	spriteType = {
 		name = GFX_idea_AGG_revenge
 		texturefile = gfx/interface/ideas/idea_AGG_revenge.dds
@@ -854,7 +858,7 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_OWN.dds
 	}
 	spriteType = {
-		name = GFX_idea_YFC_lewis #Unused
+		name = GFX_idea_YFC_lewis 
 		texturefile = gfx/interface/ideas/idea_YFC_lewis.dds
 	}
 	spriteType = {
@@ -862,7 +866,7 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_coiny.dds
 	}
 	spriteType = {
-		name = GFX_idea_YFC_dora #Unused
+		name = GFX_idea_YFC_dora 
 		texturefile = gfx/interface/ideas/idea_YFC_dora.dds
 	}
 	spriteType = {

@@ -7,4 +7,47 @@ characters = {
 			desc = DAV_king_david_desc
 		}
 	}
+	DAV_lewis = {
+		name = DAV_lewis
+		portraits = { 
+			civilian = { 
+				small = GFX_idea_YFC_lewis	
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = idea_YFC_lewis
+			ledger = civilian
+			traits = { popular_figurehead }
+		}
+	}
+	DAV_dora = {
+		name = DAV_dora
+		portraits = { 
+			civilian = { 
+				small = GFX_idea_YFC_dora	
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = idea_YFC_dora
+			ledger = civilian
+			traits = { special_authorities }
+		}
+	}
+	DAV_david_mc_auther = {
+		name = DAV_david_mc_auther
+		portraits = { 
+			civilian = { 
+				small = GFX_idea_DAV_david_mc_auther
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = idea_DAV_david_mc_auther
+			ledger = army
+			traits = { army_artillery_2 }
+			cost = 150
+		}
+	}
 }	

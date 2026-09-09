@@ -785,7 +785,7 @@ country_event = {
             remove_state_core = 224
         }
         224 = {
-            add_manpower = 45692
+            add_manpower = 75692
             add_victory_points = {
                 province = 51
                 value = 25

@@ -118,6 +118,8 @@ motorized_GDR = {
 				mot_recon = 1
 				logistics_company = 1
 				engineer = 1
+				artillery = 1
+				signal_company = 1
 			}
 			
 			regiments = {
