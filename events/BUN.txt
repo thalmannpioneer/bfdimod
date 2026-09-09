@@ -627,3 +627,18 @@ country_event = {
 		}	
 	}
 }
+
+country_event = {
+	#BUN raiding warning
+	id = BUN_borderwars.5
+	title = BUN_borderwars.5.t
+	desc = BUN_borderwars.5.desc
+	picture = GFX_YFC_raids1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = BUN_borderwars.5.a
+	}
+}

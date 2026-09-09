@@ -34,6 +34,17 @@ decision_BUN_raids_category = {
 
 		complete_effect = {
 			set_country_flag = BUN_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            days = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
         fire_only_once = no
@@ -163,6 +174,17 @@ decision_BUN_raids_category = {
 
 		complete_effect = {
 			set_country_flag = BUN_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
         fire_only_once = no
@@ -292,6 +314,17 @@ decision_BUN_raids_category = {
 
 		complete_effect = {
 			set_country_flag = BUN_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
         fire_only_once = no
@@ -421,6 +454,17 @@ decision_BUN_raids_category = {
 
 		complete_effect = {
 			set_country_flag = BUN_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
         fire_only_once = no
@@ -545,6 +589,17 @@ decision_BUN_raids_category = {
 
 		complete_effect = {
 			set_country_flag = BUN_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
         fire_only_once = no

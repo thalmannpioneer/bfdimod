@@ -27,7 +27,7 @@ strategic_region={
 			snow=3.000
 			blizzard=2.500
 			arctic_water=0.000
-			mud=0.500
+			mud=0.650
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -53,7 +53,7 @@ strategic_region={
 			snow=0.500
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.500
+			mud=0.650
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -127,11 +127,11 @@ strategic_region={
 			temperature={ -2.0 10.0 }
 			no_phenomenon=0.500
 			rain_light=1.000
-			rain_heavy=2.000
+			rain_heavy=2.500
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=1.000
+			mud=1.500
 			sandstorm=0.000
 			min_snow_level=0.000
 		}

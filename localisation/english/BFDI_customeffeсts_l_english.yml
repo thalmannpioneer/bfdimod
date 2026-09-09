@@ -164,6 +164,10 @@
  l_YFC_payment_raiders: "§RWho said the payments stop?§!\n§YWe will need to pay 70K a month to keep the company running.§!"
  l_YFC_trade_Debt: "§RWe will run out of funds to run parts of the Company itself.§!"
 
+ l_YFC_trade_info_drugs: "\n\n§YDrugs:§! Provides money to us and nothing to \"purchasing\" country. Can be exported to anyone, even if they embargoed us. Cooldown can be reduced."
+ l_YFC_trade_info_manpower: "\n\n§YMilitia (Shown as the Grape):§! Provides manpower to purchasing country. Cooldown can be skipped with manpower."
+ l_YFC_trade_info_spies: "\n\n§YSpies (Shown as the Papers):§! Provides intelligence buff to purchasing country. Longest cooldown."
+
  l_other_trade_mercs_upgrade_support: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Mercenary Divisions.§!"
  l_other_trade_mercs_upgrade_arty: "§YAdds Support Artillery and a Artillery battalion to future Mercenary Divisions.§!"
 

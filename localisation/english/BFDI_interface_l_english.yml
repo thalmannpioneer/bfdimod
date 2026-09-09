@@ -129,6 +129,8 @@
  l_negdiff_notification_tt: "§tNegative Balance!§!"
  l_negdiff_notification_tt_delayed: "§GRight-click to dismiss§!"
  
+ l_YFC_trade_relation_embargoed: "EMBARGOED"
+ l_YFC_trade_relation_blocked: "§RBad Trade Relations§!"
  l_YFC_trade_relation_bad: "§RBad Trade Relations§!"
  l_YFC_trade_relation_neutral: "§gNeutral Trade Relations§!"
  l_YFC_trade_relation_good: "§7Good Trade Relations§!"

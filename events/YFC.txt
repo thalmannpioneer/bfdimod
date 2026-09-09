@@ -482,7 +482,7 @@ country_event = { #Embargo event for all nations
 }
 
 country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR, GMD, and CRN
-	id = YFC_event.10
+	id = YFC_event.10 
 	title = {
 		text = YFC_event.10.t.a 
 		trigger = {
@@ -565,7 +565,11 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			original_tag_to_check = FROM
 			add_opinion_modifier = { target = YFC modifier = large_decrease }
 		}
-		complete_national_focus = YFC_focus_numismatian_split
+		custom_effect_tooltip = custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			complete_national_focus = YFC_focus_numismatian_split
+		}
+		
 		mark_focus_tree_layout_dirty = yes
 	}
 }
@@ -3442,8 +3446,18 @@ country_event = { #YFC_focus_debt_restructuring
 	option = { 
 		name = YFC_event.69.a
 
-        custom_effect_tooltip = l_money_gain_800K
-        add_to_variable = { money_amount = 8 }
+		if = {
+			limit = {
+				check_variable = {money_amount > 5}
+			}
+			custom_effect_tooltip = l_money_gain_800K
+        	add_to_variable = { money_amount = 8 }
+		}
+		else = {
+			custom_effect_tooltip = l_money_gain_1M
+       		add_to_variable = { money_amount = 10 }
+		}
+
 		add_stability = -0.25
 		add_political_power = -100
 	}

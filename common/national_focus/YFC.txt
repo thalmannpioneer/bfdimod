@@ -4179,8 +4179,18 @@ focus_tree = {
 
         cost = 4
         completion_reward = {
-            custom_effect_tooltip = l_money_gain_600K
-            add_to_variable = { money_amount = 6 }
+            if = {
+                limit = {
+                    check_variable = {money_amount > 5}
+                }
+                custom_effect_tooltip = l_money_gain_600K
+                add_to_variable = { money_amount = 6 }
+            }
+            else = {
+                custom_effect_tooltip = l_money_gain_800K
+                add_to_variable = { money_amount = 8 }
+            }
+
 
             hidden_effect = {
                 country_event = {

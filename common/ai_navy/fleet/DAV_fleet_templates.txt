@@ -2,10 +2,12 @@ DAV_dominance_fleet_1 = {
 	required_taskforces = {
 		DAV_StrikeForce_1 = 1
 		DAV_PatrolReconForce_1 = 1
-		DAV_PatrolDominanceForce_1 = 1
+		DAV_PatrolDominanceForce_1 = 2
 	}	
 	optional_taskforces = {
-		DAV_PatrolDominanceForce_1 = 2 #Maybe lower 
+		DAV_StrikeForce_1 = 1
+		DAV_PatrolReconForce_1 = 1
+		DAV_PatrolDominanceForce_1 = 1 
 	}
 }
 

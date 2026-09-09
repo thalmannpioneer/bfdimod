@@ -437,7 +437,7 @@ decision_YFC_sector_category = { #Watermelon
 		}
 
 		fire_only_once = no
-		days_remove = 150
+		days_remove = 120
 		days_re_enable = 30
 
         modifier = {

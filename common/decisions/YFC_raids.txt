@@ -311,6 +311,17 @@ decision_YFC_raids_category = {
 
 		complete_effect = {
 			set_country_flag = YFC_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }
 		}
 
 		remove_effect = {
@@ -404,6 +415,17 @@ decision_YFC_raids_category = {
 		days_remove = 10
 		complete_effect = {
 			set_country_flag = YFC_Raid_Active
+            hidden_effect = {
+                FROM = {
+                    controller = {
+                        country_event = {
+                            id = BUN_borderwars.5
+                            hours = 12
+                            random_hours = 12
+                        }
+                    }
+                }
+            }			
 		}
 
 		remove_effect = {
