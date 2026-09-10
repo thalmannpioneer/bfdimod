@@ -129,7 +129,7 @@ decision_GTR_development_category = {
         custom_cost_text = decisions_cost_money_100k
         complete_effect = { 
             add_to_variable = { money_amount = -1 } 
-            add_to_variable = {var_GTR_development_cooldown = 30}
+            add_to_variable = {var_GTR_development_cooldown = 45}
         }
         remove_effect = {
             random_owned_state = {
@@ -168,7 +168,7 @@ decision_GTR_development_category = {
         custom_cost_text = decisions_cost_money_100k
         complete_effect = { 
             add_to_variable = { money_amount = -1 } 
-            add_to_variable = {var_GTR_development_cooldown = 30}
+            add_to_variable = {var_GTR_development_cooldown = 45}
         }
         remove_effect = {
             random_owned_state = {

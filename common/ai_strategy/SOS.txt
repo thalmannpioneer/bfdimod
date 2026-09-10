@@ -1,0 +1,28 @@
+#SOS AI 101
+#Change if you want to!!!!
+
+## ARMY PLACEMENT ##
+
+## INDUSTRY ##
+
+SOS_army = {
+    #Build a force
+    allowed = {
+        original_tag = SOS
+    }
+    enable = {
+        has_army_size = {
+            size < 12
+        }
+        has_war = no
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_army
+        id = infantry
+        value = 250
+    }
+}
+
+## FORTS ##

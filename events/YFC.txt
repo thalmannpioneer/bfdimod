@@ -3582,8 +3582,7 @@ country_event = { #YFC Market shipment failed to make it to them
 		trigger = {
 			NOT = {tag = YFC}
 		}
-
-		add_political_power = -25
+		custom_effect_tooltip = l_YFC_trade_lost_recive
 		add_opinion_modifier = { target = YFC modifier = small_decrease }
         every_country_with_original_tag = {
             original_tag_to_check = YFC
