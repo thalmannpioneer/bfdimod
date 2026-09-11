@@ -421,7 +421,7 @@
  decision_YFC_eastern_category: "Великая Восточная Игра"
  YFC_eastern_Countdown: "§YВеликая Восточная Игра§!"
  YFC_eastern_SelectInfo: "§LНажмите на любой регион!§!"
- YFC_eastern_Countdown_desc: "Мы должны как можно быстрее захватить как можно больше земель на востоке!"
+ YFC_eastern_Countdown_desc: "[YFC_eastern_goal]"
  YFC_eastern_invest: "§GВложиться§! в §Y[FROM.GetName]§!"
  YFC_eastern_manpower: "§GПослать Солдат§! в §Y[FROM.GetName]§!"
  YFC_eastern_seize: "§RПрисоединить§! §Y[FROM.GetName]§!"

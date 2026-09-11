@@ -155,7 +155,7 @@ decision_GTR_development_category = {
             base = 10
             modifier = {
                 factor = 2
-                arms_factory < 1
+                arms_factory < 4
             }
         }
         custom_cost_trigger = {

@@ -7394,6 +7394,31 @@ focus_tree = {
                     }
                 }
             }
+
+            hidden_effect = {
+                every_state = {
+                    limit = {
+                        OR = {
+                            state = 229 #???
+                            state = 232 #???
+                            state = 228 #???
+                            state = 225 #Portland
+                            state = 230 #???
+                            state = 226 #Ofalk
+                            state = 192 #???
+                            state = 231 #???
+                            state = 227 #Ganymede
+                        }
+                    }
+                    IF = {
+                        limit = {
+                            is_controlled_by = YFC
+                        }
+                        add_compliance = 10
+                        add_resistance_target = -15
+                    }
+                }
+            }
         }
     }
 
