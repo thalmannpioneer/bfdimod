@@ -1644,4 +1644,11 @@
  generic_focus_army_desc: "Наша армия довольно маленькая, не так ли?"
  generic_focus_researches_desc: "Скорость создания технологических инноваций у нас довольно низкая, не так ли?"
  
+ LSS_focus_create_emergency_services: "Новые Срочные Службы"
+ LSS_focus_create_emergency_services_desc: ""
+ LSS_focus_crisis_stalemated: "§YКризис зашёл в тупик§!"
+ LSS_focus_crisis_stalemated_desc: ""
+ LSS_focus_buying_time: "Время Покупать"
+ LSS_focus_buying_time_desc: ""
+ 
  ###TO TRANSLATE###
