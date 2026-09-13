@@ -7,6 +7,7 @@ decisions_BFDI_debug = {
             is_debug = yes
         }
         available = {
+            tag = GOI
             is_debug = yes
             is_ai = no
             NOT = {

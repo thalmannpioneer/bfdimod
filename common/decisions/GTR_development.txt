@@ -1,7 +1,7 @@
 decision_GTR_development_category = {
     GTR_development_outcome_mission = { #it actually shouldve been in bop decisions but animation doesnt work there :(
         priority = 100
-        days_mission_timeout = 1400
+        days_mission_timeout = 1200
         timeout_effect = {
             custom_effect_tooltip = l_GTR_outcome
             hidden_effect = {
@@ -9,12 +9,12 @@ decision_GTR_development_category = {
                     limit = {
                         power_balance_value = {
                             id = GTR_power_balance
-                            value > 0.5
+                            value > 0.45
                         }
                     }
                     country_event = {
                         id = GTR_event.38
-                        days = 10
+                        days = 2
                         random_days = 3
                         random_hours = 12
                     }
@@ -23,12 +23,12 @@ decision_GTR_development_category = {
                     limit = {
                         power_balance_value = {
                             id = GTR_power_balance
-                            value < -0.5
+                            value < -0.45
                         }
                     }
                     country_event = {
                         id = GTR_event.36
-                        days = 10
+                        days = 2
                         random_days = 3
                         random_hours = 12
                     }
@@ -36,7 +36,7 @@ decision_GTR_development_category = {
                 else = {
                     country_event = {
                         id = GTR_event.61
-                        days = 10
+                        days = 2
                         random_days = 3
                         random_hours = 12
                     }

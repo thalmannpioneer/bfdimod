@@ -258,6 +258,7 @@
  l_UDC_Give: "Adds §YUDC§!, which grants\nDivision Organization: §G+5%§!\nArmy Experience Gain: §G+25%§!"
  l_UDC: "§YImproves UDC National Spirit!§!"
 
+ l_GTR_its_over_sob: "§YGolf Ball§! dies." #Somehow this was removed randomly so I forgot what the old name was...
  l_GTR_project1_start: "Work on the §4Project #1§! begins.\n\n§tCheck your decisions tab!§!"
  l_GTR_adds_progress_stage1: "Speeds up §3Research work§! on The Project!"
  l_GTR_adds_progress_stage2: "Speeds up §9Resource extraction§! for The Project!"

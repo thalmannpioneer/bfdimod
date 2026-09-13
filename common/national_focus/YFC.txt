@@ -881,7 +881,7 @@ focus_tree = {
             }
 
             hidden_effect = {
-                IF = {
+                IF = { #Fuck you player
                     limit = {
                         YFC = {is_ai = no}
                         BUN = {is_ai = yes}
@@ -892,7 +892,7 @@ focus_tree = {
                 }
                 ELSE = {
                     BUN = {
-                        add_war_support = -0.35 #Okay so since I NEED YFC to win at the moment, this will be here till Bunch gets their own stuff.
+                        add_war_support = -0.3 #Okay so since I NEED YFC AI to win at the moment, this will be here till Bunch gets their own stuff.
                     }
                 }
 

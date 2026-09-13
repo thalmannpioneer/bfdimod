@@ -9,23 +9,24 @@ GTR_Inf_01 = {
 
 	division_types = { "infantry" }
 
-	fallback_name = "%d Brigade"
+	fallback_name = "%d. Brigade"
 	ordered = {
 		1 = { "%dst 'Laboratory' Brigade" }
-		2 = { "%dst 'Progress' Brigade" }
-		3 = { "%dst 'Logarithmic' Brigade" }
-		4 = { "%dst 'Electron' Brigade" }
-		5 = { "%dst 'Bookcover' Brigade" }
-		6 = { "%dst 'Nerdball' Brigade" }
-		7 = { "%dst 'Derivative' Brigade" }
-		8 = { "%dst 'Gearband' Brigade" }
-		9 = { "%dst 'Recursive' Brigade" }
-		10 = { "%dst 'Neuroglia' Brigade" }
+		2 = { "%dnd 'Progress' Brigade" }
+		3 = { "%drd 'Logarithmic' Brigade" }
+		4 = { "%dth 'Electron' Brigade" }
+		5 = { "%dth 'Bookcover' Brigade" }
+		6 = { "%dth 'Nerdball' Brigade" }
+		7 = { "%dth 'Derivative' Brigade" }
+		8 = { "%dth 'Gearband' Brigade" }
+		9 = { "%dth 'Recursive' Brigade" }
+		10 = { "%dth 'Neuroglia' Brigade" }
+		11 = { "%dth 'Variable' Brigade" }
+		12 = { "%dth 'Theory' Brigade" }
+		13 = { "%dth 'Control' Brigade" }
+		14 = { "%dth 'Observation' Brigade" }
+		15 = { "%dth 'Gravity' Brigade" }
+		16 = { "%dth 'Hypothesis' Brigade" }
 	}
 }
 
-
-
-
-
-	

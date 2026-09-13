@@ -2,7 +2,7 @@
 
 capital = 206
 
-set_research_slots = 1
+set_research_slots = 0 
 
 set_technology = { basic_train = 1 }
 if = {
