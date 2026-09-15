@@ -8,3 +8,13 @@
  GTR_bop_range_slight_noocracy: "Slight §2Noocracy§!"
  GTR_bop_range_moderate_noocracy: "Moderate §2Noocracy§!"
  GTR_bop_range_strong_noocracy: "§2Rule of the Smartest§!"
+
+ LSS_power_balance: "§YGovernor Support§!"
+ LSS_bop_low_support_side: "§RLow Support§!"
+ LSS_bop_high_support_side: "§GHigh Support§!"
+ LSS_bop_range_slight_low_support: "Mild Unconfidence"
+ LSS_bop_range_moderate_low_support: "Growing Disfactaction "
+ LSS_bop_range_high_low_support: "§RRumors of Impeachment§!"
+ LSS_bop_range_slight_high_support: "Content Population"
+ LSS_bop_range_moderate_high_support: "High Popularity"
+ LSS_bop_range_high_high_support: "§GThat's My Fucking Governor!§!"

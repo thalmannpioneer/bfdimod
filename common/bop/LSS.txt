@@ -1,0 +1,80 @@
+LSS_power_balance = {
+    initial_value = 0.0
+    left_side = LSS_bop_low_support_side
+    right_side = LSS_bop_high_support_side
+    decision_category = decision_LSS_power_balance_category
+
+    side = {
+        id = LSS_bop_low_support_side
+        icon = GFX_LSS_bop_low_support_side
+        range = {
+            id = LSS_bop_range_slight_low_support
+            min = -0.3
+            max = 0
+            modifier = {
+                political_power_gain = -0.05
+                stability_factor = -0.05
+                party_popularity_stability_factor = -0.05
+            }
+        }
+        range = {
+            id = LSS_bop_range_moderate_low_support
+            min = -0.7
+            max = -0.3
+            modifier = {
+                political_power_gain = -0.1
+                stability_factor = -0.1
+                party_popularity_stability_factor = -0.1
+            }
+        }
+        range = {
+            id = LSS_bop_range_high_low_support
+            min = -1
+            max = -0.7
+            modifier = {
+                political_power_gain = -0.25
+                stability_factor = -0.15
+                party_popularity_stability_factor = -0.15
+            }
+        }
+    }
+
+    side = {
+        id = LSS_bop_high_support_side
+        icon = GFX_LSS_bop_high_support_side
+        range = {
+            id = LSS_bop_range_slight_high_support
+            min = 0
+            max = 0.3
+            modifier = {
+                political_power_gain = 0.1
+                stability_factor = 0.05
+                party_popularity_stability_factor = 0.05
+                war_support_factor = 0.1
+            }
+        }
+        range = {
+            id = LSS_bop_range_moderate_high_support
+            min = 0.3
+            max = 0.7
+            modifier = {
+                political_power_gain = 0.2
+                stability_factor = 0.1
+                party_popularity_stability_factor = 0.2
+                war_support_factor = 0.2
+            }
+        }
+        range = {
+            id = LSS_bop_range_high_high_support
+            min = 0.7
+            max = 1
+            modifier = {
+                political_power_gain = 0.25
+                stability_factor = 0.2
+                party_popularity_stability_factor = 0.25
+                war_support_factor = 0.25
+                army_core_defence_factor = 0.1
+            }
+        }
+    }
+}

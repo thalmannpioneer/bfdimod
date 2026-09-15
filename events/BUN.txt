@@ -87,32 +87,48 @@ country_event = {
 			white_peace = CRN
 		}
 
-		BUN = {
-			IF = {
-				limit = {
-					controls_state = 212
-				}
-				transfer_state = 212
-			}
-			IF = {
-				limit = {
-					controls_state = 85
-				}
-				transfer_state = 85
-			}
-			IF = {
-				limit = {
+		hidden_effect = {
+			BUN = {
+				IF = {
+					limit = {
+						controls_state = 212
+					}
+					transfer_state = 212
 					controls_state = 218
 				}
-				transfer_state = 218
-			}
-			IF = {
-				limit = {
-					controls_state = 217
+				ELSE = {
+					212 = { 
+						add_resistance = 35
+						add_compliance = -40
+					}
 				}
-				transfer_state = 217
-			}
-		}	
+				IF = {
+					limit = {
+						controls_state = 85
+					}
+					transfer_state = 85
+				}
+				ELSE = {
+					85 = { 
+						add_resistance = 35
+						add_compliance = -40
+					}
+				}
+				IF = {
+					limit = {
+						controls_state = 218
+					}
+					transfer_state = 218
+				}
+				IF = {
+					limit = {
+						controls_state = 217
+					}
+					transfer_state = 217
+				}
+			}	
+		}
+
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 		custom_effect_tooltip = l_GOI_unlock_focus

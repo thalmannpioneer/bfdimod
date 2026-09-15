@@ -565,7 +565,7 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 			original_tag_to_check = FROM
 			add_opinion_modifier = { target = YFC modifier = large_decrease }
 		}
-		custom_effect_tooltip = custom_effect_tooltip = l_GOI_unlock_focus
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			complete_national_focus = YFC_focus_numismatian_split
 		}

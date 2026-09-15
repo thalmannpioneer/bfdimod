@@ -1187,9 +1187,9 @@
  LSS_focus_setup_the_livestock: "Создать Поголовье"
  LSS_focus_setup_the_livestock_desc: "Странно, что телепортация, похоже, перенесла из нашего мира всё подряд. Овцы, коровы, свиньи и ещё несколько животных были перенесены. При правильном содержании они могли бы стать хорошим источником пищи. Давайте займёмся фермами и амбарами."
  LSS_focus_encourage_local_growing: "Продвигать Подсобное Хозяйство"
- LSS_focus_encourage_local_growing_desc: ""
+ LSS_focus_encourage_local_growing_desc: "Нам нужно как можно скорее создать больше ферм, иначе еще больше населения умрет от голода. Есть значительная часть земли, застроенной жилыми домами, которую сложно использовать для сельского хозяйства. Давайте сосредоточимся на том, чтобы населению приходилось выращивать собственную еду."
  LSS_focus_expand_rationing: "Увеличение Рационов"
- LSS_focus_expand_rationing_desc: "Нам нужно как можно скорее создать больше ферм, иначе еще больше населения умрет от голода. Есть значительная часть земли, застроенной жилыми домами, которую сложно использовать для сельского хозяйства. Давайте сосредоточимся на том, чтобы населению приходилось выращивать собственную еду."
+ LSS_focus_expand_rationing_desc: "" #Thal this was updated
  LSS_focus_first_harvest: "Первый Урожай"
  LSS_focus_first_harvest_desc: ""
  LSS_focus_manufacture_tools: "Сборка Инструментов"
@@ -1197,13 +1197,13 @@
  LSS_focus_grant_land_rights: "Собственность на Землю"
  LSS_focus_grant_land_rights_desc: "Для процветания малого бизнеса необходимо пространство. Использование части земли вызывает споры. Мы разрешим эти споры, и земля будет передана новым, более мелким предприятиям."
  LSS_focus_repurpose_vehicles: "Переоборудовать Транспорт"
- LSS_focus_repurpose_vehicles_desc: ""
+ LSS_focus_repurpose_vehicles_desc: "" #Thal this was updated
  LSS_focus_create_new_businesses: "Новые Бизнесы"
  LSS_focus_create_new_businesses_desc: "Уровень безработицы катастрофически высок. По нашим приблизительным оценкам, он составляет около 50% и выше. Ещё несколько дней безработицы могут нанести непоправимый ущерб и без того благополучной стране. Мы должны как можно быстрее создать новые рабочие места и возможности для трудоустройства."
  LSS_focus_offer_land_to_companies: "Продать Землю Компаниям"
  LSS_focus_offer_land_to_companies_desc: "Малый бизнес может подождать, нам нужны средства и легитимность. Многие компании, которые у нас есть, хотят приобрести землю для собственного развития и готовы за неё заплатить большие деньги. Начнём торги за право владения землёй."
  LSS_focus_make_grand_deals: "Большие Сделки"
- LSS_focus_make_grand_deals_desc: ""
+ LSS_focus_make_grand_deals_desc: "" #Thal this was updated
  LSS_focus_build_housing: "Жилая Застройка"
  LSS_focus_build_housing_desc: ""
  LSS_focus_create_stimulus_checks: "Стимуляция"
@@ -1211,7 +1211,7 @@
  LSS_focus_military_assistance: "Помощь Военных"
  LSS_focus_military_assistance_desc: "Военные, всё ещё находящиеся в процессе реорганизации и выполняющие функции полиции, всё ещё располагают некоторыми ресурсами. Нам нужно больше рук для стабилизации страны и спасения населения. Марк Милли не будет сильно расстроен тем, что часть его подчиненных работает над гражданскими проектами."
  LSS_focus_reestablish_the_dollar: "Восстановление Доллара"
- LSS_focus_reestablish_the_dollar_desc: ""
+ LSS_focus_reestablish_the_dollar_desc: "" #Thal this was updated
  YFC_focus_consolidate_power: "§YСконцентрировать Власть§!"
  YFC_focus_consolidate_power_desc: "Нам необходимо обеспечить легитимность как в компании, так и в государстве."
  YFC_focus_open_the_market: "Открыть Рынки!"

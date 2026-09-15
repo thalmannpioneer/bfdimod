@@ -181,6 +181,9 @@
  LSS_robots_for_manufacturing: "Use Robots for Manufacturing"
  LSS_robots_for_the_wealthy: "Sell Robots to The Wealthy"
  
+ LSS_placeholder_decision: "...?"
+ LSS_placeholder_decision_desc: "You have to trust me! I did not put the effort into a power struggle system just to not use it!!!!"
+
  decisions_GDR_congress_category: "§7Democratic Congress§!"
  l_GDR_congress_desc: "§7Greeny Plains§! objects are ready for unification.\nThere's only one question left."
  l_GDR_congress_desc2: "§YWhere the Capital will be?§!"

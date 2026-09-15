@@ -369,9 +369,19 @@ country_event = {
 
         hidden_effect = {
             add_to_variable = {unknown_emp_var = 1}
-            country_event = {
-                id = uncommon_event.2
-                hours = unknown_emp_var
+            IF = {
+                limit = {check_variable = { unknown_emp_var = 14 }}
+                country_event = {
+                    id = uncommon_event.2
+                    days = 2
+                    hours = 6
+                }
+            }
+            ELSE = {
+                country_event = {
+                    id = uncommon_event.2
+                    hours = unknown_emp_var
+                }
             }
         }
     }
@@ -469,6 +479,11 @@ country_event = {
 				hours = 48
 				random_hours = 100
 			}
+
+            set_power_balance = {
+                id = LSS_power_balance
+                set_value = 0.25
+            }
 
             mark_focus_tree_layout_dirty = yes
         }

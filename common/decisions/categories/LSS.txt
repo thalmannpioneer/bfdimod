@@ -21,3 +21,7 @@ decision_LSS_stabilizing_category = {
 	icon = GFX_decision_category_generic_crisis
 	visible_when_empty = yes
 }
+
+decision_LSS_power_balance_category = {
+    allowed = { tag = LSS }
+}

@@ -7,4 +7,13 @@ spriteTypes = {
         name = "GFX_GTR_bop_golfball_side"
         textureFile = "gfx/interface/bop/GTR_bop_golfball_side.dds"
     }
+
+        spriteType = {
+        name = "GFX_LSS_bop_low_support_side"
+        textureFile = "gfx/interface/bop/LSS_bop_low_support_side.dds"
+    }
+        spriteType = {
+        name = "GFX_LSS_bop_high_support_side"
+        textureFile = "gfx/interface/bop/LSS_bop_high_support_side.dds"
+    }
 }

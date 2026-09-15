@@ -1,0 +1,15 @@
+decision_LSS_power_balance_category = {
+    LSS_placeholder_decision = {
+        cost = 0
+
+        available = {
+            always = no
+        }
+
+        complete_effect = {
+
+        }
+
+        icon = GFX_decision_generic_USA_flag
+    }
+}

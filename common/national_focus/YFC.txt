@@ -2360,6 +2360,8 @@ focus_tree = {
             }
         }
 
+        mutually_exclusive = { focus = YFC_focus_stalled_plans }
+
         prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
         prerequisite = { focus = YFC_focus_ban_theft }
 
@@ -2466,12 +2468,14 @@ focus_tree = {
         relative_position_id = YFC_focus_clamp_down_on_bunchivism
         x = 3
         y = 5
-        icon = GFX_focus_generic
+        icon = GFX_focus_YFC_stalled_plans
 
         allow_branch = { has_completed_focus = YFC_focus_stalled_plans }
 
         prerequisite = { focus = YFC_focus_remove_oligarchical_sentiment }
         prerequisite = { focus = YFC_focus_ban_theft }
+
+        mutually_exclusive = { focus = YFC_focus_fully_cored }
 
         cost = 5
         completion_reward = {
