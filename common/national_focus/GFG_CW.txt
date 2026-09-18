@@ -195,7 +195,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GFG_loads_focus_tree
-
+			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = { 
 				add_corps_commander_role = {
 					character = GFG_yoyle_berry

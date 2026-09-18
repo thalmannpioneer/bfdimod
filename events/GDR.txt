@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = GDR_event.1.a
 		add_political_power = 25
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
@@ -167,11 +168,15 @@ country_event = {
 	
 	option = {
 		name = GDR_event.9.a
+
 		activate_mission = decisions_GDR_congress_mission_negs
 		custom_effect_tooltip = l_GDR_congress_open
 		set_country_flag = democratic_congress_decisions_opened
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			complete_national_focus = focus_GDR_democratic_congress
+		}
 		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = focus_GDR_democratic_congress
 	}
 }
 

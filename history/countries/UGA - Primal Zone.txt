@@ -19,7 +19,7 @@ set_war_support = -1
 add_equipment_to_stockpile = {
     type = train_equipment_1
     amount = 3
-    producer = GOI
+    producer = GTR
 }
 
 set_politics = {
@@ -34,3 +34,7 @@ set_popularities = {
 }
 
 recruit_character = UGA_mammal_bone
+
+add_ideas = closed_economy
+add_ideas = isolation
+add_ideas = disarmed_nation

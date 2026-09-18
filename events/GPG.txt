@@ -1204,6 +1204,7 @@ country_event = {
         activate_mission = GPG_mission_deal_with_democrats
         activate_mission = GPG_mission_deal_with_toilers_front
         activate_mission = GPG_mission_deal_with_iron_hand
+        custom_effect_tooltip = l_GOI_unlock_focus
         hidden_effect = {
             set_country_flag = gpg_provgov_second_tree
             mark_focus_tree_layout_dirty = yes
@@ -1490,7 +1491,7 @@ country_event = {
             logistics_skill = 1
             traits = { politically_connected harsh_leader infantry_officer } #country_leader
         }
-
+        custom_effect_tooltip = l_GOI_unlock_focus
         hidden_effect = {
             GPG_fries = {
                 IF = {

@@ -102,7 +102,7 @@ GPR_fall_back_furnace = { #If we have lost furnace pull back as we can't hold wi
 
     ai_strategy = {
         type = put_unit_buffers
-        ratio = 5
+        ratio = 10
         states = {193}
         subtract_fronts_from_need = no
     }
@@ -111,15 +111,15 @@ GPR_fall_back_furnace = { #If we have lost furnace pull back as we can't hold wi
         country_trigger = {
             has_war_with = GPR
         }
-        value = -2000
+        value = -5000
     }
     ai_strategy = {
         type = garrison
-        value = 2000
+        value = 5000
     }
     ai_strategy = {
 		type = garrison_reinforcement_priority
-		value = 2000
+		value = 5000
 	}
     ai_strategy = {
 		type = build_army

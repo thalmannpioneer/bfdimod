@@ -343,6 +343,7 @@ focus_tree = {
                     add_opinion_modifier = { target = WGF modifier = large_decrease }
                 }
             }
+            custom_effect_tooltip = l_GOI_unlock_focus
             mark_focus_tree_layout_dirty = yes
         }
     }

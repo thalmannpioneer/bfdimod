@@ -209,6 +209,7 @@ armored_GGR = {
 			regiments = {
 				light_armor = 4
 				motorized = 3
+				mot_artillery_brigade = 1
 			}
 
 			regimental_support = {
@@ -263,6 +264,7 @@ armored_GGR = {
 				medium_armor = 2
 				light_armor = 2
 				motorized = 4
+				mot_artillery_brigade = 1
 			}
 
 			regimental_support = {

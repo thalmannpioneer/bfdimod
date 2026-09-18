@@ -779,7 +779,7 @@ on_actions = {
 	
     on_weekly = { 
         effect = {
-            if = { #Used for weekly free guns
+            if = { #Used for weekly free guns (25)
                 limit = {has_country_flag = BFDI_25_guns_weekly}
                 add_equipment_to_stockpile = {
                     type = infantry_equipment_0
@@ -787,7 +787,15 @@ on_actions = {
                     producer = ROOT
                 }
             }
-            if = { #Used for weekly free mp
+            if = { #Used for weekly free guns (100)
+                limit = {has_country_flag = BFDI_100_guns_weekly}
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment_0
+                    amount = 100
+                    producer = ROOT
+                }
+            }
+            if = { #Used for weekly free mp (250 per state)
                 limit = {has_country_flag = BFDI_250_MP_state}
                 set_temp_variable = { var_weekly_free_mp = { value = 250 multiply = ROOT.controlled_states^num}}
                 add_manpower = var_weekly_free_mp

@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = GFG_event.1.a
 		add_war_support = 0.05
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
@@ -24,7 +25,12 @@ country_event = {
 	
 	option = {
 		name = GFG_event.2.a
-		complete_national_focus = GFG_focus_green_grass_black_flag
+
+		custom_effect_tooltip = l_GOI_unlock_focus
+
+		hidden_effect = {
+			complete_national_focus = GFG_focus_green_grass_black_flag
+		}
 	}
 }
 
@@ -51,11 +57,15 @@ country_event = {
 	
 	option = {
 		name = GFG_event.4.a
+
 		custom_effect_tooltip = l_GFG_event4_fascist
 		set_country_flag = fascist_path
-		complete_national_focus = GFG_focus_neverending_victory
-		mark_focus_tree_layout_dirty = yes
+		
 		add_stability = 0.1
+		complete_national_focus = GFG_focus_neverending_victory
+		custom_effect_tooltip = l_GOI_unlock_focus
+
+		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -67,12 +77,16 @@ country_event = {
 	
 	option = {
 		name = GFG_event.4.b
+
 		custom_effect_tooltip = l_GFG_event4_esoteric
 		set_country_flag = esoteric_path
-		complete_national_focus = GFG_focus_neverending_terror
-		mark_focus_tree_layout_dirty = yes
+		
 		add_stability = 0.05
 		add_war_support = 0.05
+		complete_national_focus = GFG_focus_neverending_terror
+		custom_effect_tooltip = l_GOI_unlock_focus
+
+		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -106,6 +120,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			complete_national_focus = GFG_focus_i_hate_you
 			random_list = {
 				99 = {
 					add_country_leader_role = {
@@ -129,8 +144,7 @@ country_event = {
 				}
 			}
 		}
-
-		complete_national_focus = GFG_focus_i_hate_you
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
@@ -314,10 +328,14 @@ country_event = {
 	
 	option = {
 		name = GFG_event.10.a
+
 		set_country_flag = expansion_tree
-		mark_focus_tree_layout_dirty = yes
-		complete_national_focus = GFG_focus_greeny_plains_claims
 		GPR = { every_owned_state = { add_claim_by = GFG } }
+		custom_effect_tooltip = l_GOI_unlock_focus
+		hidden_effect = {
+			complete_national_focus = GFG_focus_greeny_plains_claims
+		}
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -366,14 +384,16 @@ country_event = {
 	
 	option = {
 		name = GFG_event.13.a
-		complete_national_focus = GFG_focus_loyalty_to_ancestors
+
 		set_politics = {
 			ruling_party = radical_thoughts
 			elections_allowed = no
 		}
 		hidden_effect = {
 			set_cosmetic_tag = GFG_esoteric
+			complete_national_focus = GFG_focus_loyalty_to_ancestors
 		}
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 

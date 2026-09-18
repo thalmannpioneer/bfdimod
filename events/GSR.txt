@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = GSR_event.1.a
 		add_political_power = 25
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
@@ -25,6 +26,7 @@ country_event = {
 	option = {
 		name = GSR_event.2.a
 		complete_national_focus = GSR_focus_successful_revolution
+		custom_effect_tooltip = l_GOI_unlock_focus
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -36,6 +38,8 @@ country_event = {
 	option = {
 		name = GSR_event.2.b
 		complete_national_focus = GSR_focus_objects_liberation
+		custom_effect_tooltip = l_GOI_unlock_focus
+
 		ai_chance = {
 			base = 1
 			modifier = {
@@ -117,7 +121,9 @@ country_event = {
 		custom_effect_tooltip = l_GSR_ruby_runs_away
 		add_stability = -0.05
 		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
+			complete_national_focus = GSR_focus_first_coucils_congress
 			news_event = {
 				id = bfdinews.21
 				days = 2
@@ -132,7 +138,9 @@ country_event = {
 						chance = 50
 						country_event = {
 							id = WGF_event.18
-							days = 30
+							days = 10
+							random_days = 25
+							random_hours = 48
 						}
 					}
 				}
@@ -151,7 +159,11 @@ country_event = {
 	
 	option = {
 		name = GSR_event.6.a
-		complete_national_focus = GSR_focus_first_congress_ruby
+		custom_effect_tooltip = l_GOI_unlock_focus
+
+		hidden_effect = {
+			complete_national_focus = GSR_focus_first_congress_ruby
+		}
 		mark_focus_tree_layout_dirty = yes
 	}
 }

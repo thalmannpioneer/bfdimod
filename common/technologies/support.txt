@@ -191,27 +191,27 @@ technologies = {
 
     tech_engineers2 = {
 
-        engineer = {
-            entrenchment = 0.50
-            fort = {
-                defence = 0.10
-                attack = 0.10
-            }
-        }
+		engineer = {
+			entrenchment = 0.50
+			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
 
-        assault_engineer = {
-            breakthrough = 0.1
-            fort = {
-                attack = 0.15
-            }
-        }
+		assault_engineer = {
+			breakthrough = 0.1
+			fort = {
+				attack = 0.15
+			}
+		}
 
-        armored_engineer = {
-            entrenchment = 1
-            fort = {
-                defence = 0.15
-            }
-        }
+		armored_engineer = {
+			entrenchment = 1
+			fort = {
+				defence = 0.15
+			}
+		}
 
         enable_equipment_modules = {
             dozer_blade
@@ -285,54 +285,54 @@ technologies = {
             lc_obstacle_clearance_gear #Module for Land Cruiser
         }
 
-        engineer = {
-            entrenchment = 0.50
-            river = {
-                attack = 0.1
-                defence = 0.10
-            }
-        }
+		engineer = {
+			entrenchment = 0.50
+			river = {
+				attack = 0.1
+				defence = 0.10
+			}
+		}
 
-        assault_engineer = {
-            breakthrough = 0.1
-            river = {
-                attack = 0.1
-            }
-        }
+		assault_engineer = {
+			breakthrough = 0.1
+			river = {
+				attack = 0.1
+			}
+		}
 
-        armored_engineer = {
-            entrenchment = 1
-            river = {
-                attack = 0.05
-                defence = 0.05
-                movement = 0.15
-            }
-        }
+		armored_engineer = {
+			entrenchment = 1
+			river = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.15
+			}
+		}
 
-        light_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
-        medium_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
-        heavy_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
+		light_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
+		medium_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
         path = {
             leads_to_tech = tech_engineers4
             research_cost_coeff = 1
@@ -377,53 +377,53 @@ technologies = {
 
     tech_engineers4 = {
 
-        engineer = {
-            entrenchment = 0.50
-            urban = {
-                attack = 0.1
-                defence = 0.1
-            }
-        }
+		engineer = {
+			entrenchment = 0.50
+			urban = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
 
-        assault_engineer = {
-            breakthrough = 0.1
-            urban = {
-                attack = 0.15
-            }
-        }
+		assault_engineer = {
+			breakthrough = 0.1
+			urban = {
+				attack = 0.1
+			}
+		}
 
-        armored_engineer = {
-            entrenchment = 1
-            urban = {
-                defence = 0.15
-                movement = 0.15
-            }
-        }
+		armored_engineer = {
+			entrenchment = 1
+			urban = {
+				defence = 0.15
+				movement = 0.15
+			}
+		}
 
-        light_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
-        medium_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
-        heavy_flame_tank = {
-            urban = {
-                attack = 0.1
-            }
-            fort = {
-                attack = 0.10
-            }
-        }
+		light_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
+		medium_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			urban = {
+				attack = 0.05
+			}
+			fort = {
+				attack = 0.1
+			}
+		}
         research_cost = 2.0
         start_year = 2021
         folder = {

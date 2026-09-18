@@ -178,6 +178,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GPG_loads_new_focus_tree
+			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
 				if = {
 					limit = { has_country_flag = fries_dictatorship_path }

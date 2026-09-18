@@ -36,15 +36,15 @@ country_lock_all_division_template = yes
 
 country_event = {
     id = GOI_event.5
-    days = 114
+    days = 110
     random_hours = 12
 }
 
 news_event = {
     id = bfdinews.37
     days = 20
-    random_days = 5
-    random_hours = 12
+    random_days = 15
+    random_hours = 48
 }
 
 set_stability = 0

@@ -80,7 +80,7 @@ ideas = {
 				compliance_growth = 0.25
 				ai_desired_divisions_factor = 5
 				ai_focus_aggressive_factor = 5
-				custom_modifier_tooltip = l_modifier_gain_25_guns_weekly
+				custom_modifier_tooltip = l_modifier_gain_100_guns_weekly
 				custom_modifier_tooltip = l_modifier_250_MP_state
 			}
 			cancel = {
@@ -90,11 +90,11 @@ ideas = {
 				}
 			}
 			on_remove = {
-				clr_country_flag = BFDI_25_guns_weekly
+				clr_country_flag = BFDI_100_guns_weekly
 				clr_country_flag = BFDI_250_MP_state
 			}
 			on_add = {
-				set_country_flag = BFDI_25_guns_weekly
+				set_country_flag = BFDI_100_guns_weekly
 				set_country_flag = BFDI_250_MP_state
 			}
 		}

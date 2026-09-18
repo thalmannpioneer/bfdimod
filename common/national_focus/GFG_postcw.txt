@@ -200,7 +200,7 @@ focus_tree = {
                 load_focus_tree = GFG_postcw2_focus_tree
                 country_event = {
                     id = GFG_event.5
-                    days = 2
+                    days = 1
                 }
             }
         }
@@ -368,7 +368,7 @@ focus_tree = {
                 load_focus_tree = GFG_postcw2_focus_tree
                 country_event = {
                     id = GFG_event.13
-                    days = 5
+                    days = 1
                 }
                 news_event = {
                     id = bfdinews.23

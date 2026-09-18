@@ -10,6 +10,7 @@ country_event = {
 
     option = {
         name = WGF_event.1.a
+        custom_effect_tooltip = l_GOI_unlock_focus
     }
 }
 
@@ -100,6 +101,7 @@ country_event = {
 
     option = {
         name = WGF_event.6.a
+        custom_effect_tooltip = l_GOI_unlock_focus
     }
 }
 

@@ -231,15 +231,6 @@ focus_tree = {
                 remove_idea = idea_GSR_military_communism
                 add_idea = idea_GSR_new_economic_policy
             }
-            hidden_effect = {
-                if = {
-                    limit = { has_completed_focus = GSR_focus_casland_process }
-                    country_event = {
-                        id = GSR_event.6
-                        days = 10
-                    }
-                }
-            }
         }
     }
 
@@ -801,7 +792,6 @@ focus_tree = {
 
         allow_branch = {
             has_completed_focus = GSR_focus_objects_communities
-            has_completed_focus = GSR_focus_new_economic_policy
         }
 
         cost = 1

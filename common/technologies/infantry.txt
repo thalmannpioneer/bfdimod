@@ -229,15 +229,24 @@ technologies = {
 
     infantry_at = {
 
-        category_all_infantry = {
-            hard_attack = 0.25
-            ap_attack = 1
-        }
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
 
-        category_cavalry = {
-            hard_attack = 0.1
-            ap_attack = 0.4
-        }
+		category_cavalry = {
+			hard_attack = 0.1
+			ap_attack = 0.4
+		}
+
+		fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
+		mot_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
 
         path = {
             leads_to_tech = infantry_at2
@@ -277,15 +286,23 @@ technologies = {
 
     infantry_at2 = {
 
-        category_all_infantry = {
-            hard_attack = 0.25
-            ap_attack = 1
-        }
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
 
-        category_cavalry = {
-            hard_attack = 0.1
-            ap_attack = 0.4
-        }
+		category_cavalry = {
+			hard_attack = 0.1
+			ap_attack = 0.4
+		}
+		fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
+		mot_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
 
         research_cost = 1.5
         start_year = 2019
@@ -1484,10 +1501,6 @@ technologies = {
 
     support_weapons2 = {
 
-		field_guns = {
-			defense = 0.1
-			soft_attack = 0.1
-		}
 		fire_support = {
 			defense = 0.15
 			breakthrough = 0.15
@@ -1564,11 +1577,6 @@ technologies = {
 
     support_weapons3 = {
 
-		field_guns = {
-			defense = 0.1
-			soft_attack = 0.1
-		}
-
 		fire_support = {
 			defense = 0.15
 			breakthrough = 0.15
@@ -1644,11 +1652,6 @@ technologies = {
     }
 
     support_weapons4 = {
-
-		field_guns = {
-			defense = 0.1
-			soft_attack = 0.1
-		}
 
 		fire_support = {
 			defense = 0.15

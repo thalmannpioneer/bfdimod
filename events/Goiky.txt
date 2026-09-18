@@ -66,6 +66,8 @@ country_event = {
 
     is_triggered_only = yes
 
+    timeout_days = 7
+
     option = {
         name = GOI_event.5.a
         add_political_power = -1000
@@ -109,7 +111,7 @@ country_event = {
             }
             country_event = {
                 id = GOI_event.6
-                days = 5
+                days = 3
                 random_days = 5
                 random_hours = 12
             }
@@ -125,6 +127,8 @@ country_event = {
 
     is_triggered_only = yes
 
+    timeout_days = 7
+
     option = {
         name = GOI_event.6.a
         custom_effect_tooltip = l_GOI_event6_ce
@@ -132,7 +136,7 @@ country_event = {
             every_owned_state = { set_demilitarized_zone = yes }
             country_event = {
                 id = GOI_event.7
-                days = 10
+                days = 5
                 random_hours = 12
             }
         }
@@ -146,6 +150,8 @@ country_event = {
     picture = GFX_GOI_event7
 
     is_triggered_only = yes
+
+    timeout_days = 7
 
     option = {
         name = GOI_event.7.a
@@ -237,7 +243,7 @@ country_event = {
             }
             country_event = {
                 id = GOI_event.8
-                days = 20
+                days = 17
             }
         }
     }
@@ -250,6 +256,8 @@ country_event = {
     picture = GFX_GOI_event8
 
     is_triggered_only = yes
+
+    timeout_days = 7
 
     option = {
         name = GOI_event.8.a

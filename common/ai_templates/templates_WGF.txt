@@ -154,7 +154,7 @@ infantry_WGF = {
 
 			regiments = {
 				infantry = 5
-				artillery_brigade = 1
+				artillery_brigade = 2
 			}
 
 			regimental_support = {

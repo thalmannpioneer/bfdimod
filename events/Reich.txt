@@ -29,6 +29,7 @@ country_event = {
             relation = embargo
         	active = yes
         }
+		custom_effect_tooltip = l_GOI_unlock_focus
 	}
 }
 
