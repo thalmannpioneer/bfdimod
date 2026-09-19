@@ -8,15 +8,16 @@ characters={
 		}
 		country_leader={
 			ideology = conservatism #Ronald Reagan fr fr
+			traits = { YFC_old_general }
 			desc = CRN_credit_card_desc
 		}
 		field_marshal = {
 			traits = { old_guard war_hero defensive_doctrine trained country_leader }
-			skill = 4
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 3
+			skill = 5
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 5
 		}
 	}
 

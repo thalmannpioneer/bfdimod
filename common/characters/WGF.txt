@@ -34,7 +34,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_WGF_fsb
-			ledger = army
+			ledger = civilian
 			traits = { ideological_crusader }
 		}
 	}
@@ -45,7 +45,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_WGF_cake
-			ledger = army
+			ledger = civilian
 			traits = { silent_workhorse }
 		}
 	}
@@ -56,7 +56,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_WGF_calculator
-			ledger = army
+			ledger = civilian
 			traits = { captain_of_industry }
 			available = { has_completed_focus = WGF_focus_quarterly_planning }
 		}
@@ -68,7 +68,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_WGF_backpack
-			ledger = army
+			ledger = civilian
 			traits = { popular_figurehead }
 			available = { hidden_trigger = { has_country_flag = WGF_expeditors_resсued } }
 			visible = { hidden_trigger = { has_country_flag = WGF_expeditors_resсued } }

@@ -53,7 +53,7 @@ strategic_region={
 			snow=0.500
 			blizzard=0.000
 			arctic_water=0.000
-			mud=0.650
+			mud=0.750
 			sandstorm=0.000
 			min_snow_level=0.000
 		}
@@ -131,7 +131,7 @@ strategic_region={
 			snow=0.000
 			blizzard=0.000
 			arctic_water=0.000
-			mud=1.500
+			mud=1.750
 			sandstorm=0.000
 			min_snow_level=0.000
 		}

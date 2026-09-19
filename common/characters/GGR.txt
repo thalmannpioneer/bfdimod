@@ -4,6 +4,7 @@ characters = {
 		portraits = { civilian = { large = GFX_GGR_snowball } }
 		country_leader = {
 			ideology = gen_nazism
+			traits = { warmonger }
 			desc = GGR_snowball_desc
 		}
 		field_marshal = {
@@ -43,7 +44,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = idea_GGR_woody
-			ledger = army
+			ledger = civilian
 			traits = { shy_civil_servant }
 		}
 	}
@@ -53,12 +54,12 @@ characters = {
 		portraits = {
 			civilian = { small = GFX_idea_GGR_crayon }
 		}
-		advisor = {
-			slot = political_advisor
-			idea_token = idea_GGR_crayon
-			ledger = army
-			traits = { popular_figurehead }
-			visible = { has_completed_focus = GGR_focus_demonstrative_democracy }
+	}
+
+	GGR_stick_grenade = {
+		name = GGR_stick_grenade
+		portraits = {
+			civilian = { small = GFX_idea_GGR_stick_grenade }
 		}
 	}
 }

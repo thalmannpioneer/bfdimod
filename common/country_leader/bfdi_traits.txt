@@ -154,6 +154,7 @@ leader_traits = {
         production_speed_industrial_complex_factor = 0.2
         production_speed_arms_factory_factor = -0.2
         consumer_goods_factor = 0.1
+        ai_focus_peaceful_factor = 0.5
     }
 
     golfball_vision = {
@@ -165,6 +166,7 @@ leader_traits = {
         consumer_goods_factor = -0.1
         party_popularity_stability_factor = 0.2
         offensive_war_stability_factor = 0.2
+        ai_focus_peaceful_factor = -0.5
     }
 
     GTR_nuclear_scientist = {
@@ -179,7 +181,7 @@ leader_traits = {
     GTR_civilian_scientist = {
         sprite = 14
 
-        ai_will_do = { #Why does this not work Hoi4 why???????????
+        ai_will_do = { 
             base = 1
         }
     }
@@ -260,5 +262,6 @@ leader_traits = {
         political_power_factor = -0.15
         max_command_power = 50
         planning_speed = 0.1
+        ai_focus_peaceful_factor = -0.15
     }
 }

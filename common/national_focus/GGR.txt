@@ -529,8 +529,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 5000
 			custom_effect_tooltip = l_GGR_improves_vsnw
+			add_manpower = 5000
 			add_to_variable = { var_GGR_vsnw_rp = 0.01 }
 		}
 	}
@@ -603,8 +603,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = 5000
 			custom_effect_tooltip = l_GGR_improves_vsnw
+			add_manpower = 5000
 			add_to_variable = { var_GGR_vsnw_rp = 0.01 }
 			add_to_variable = { var_GGR_vsnw_of = -0.05 }
 		}
@@ -653,6 +653,16 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GGR_improves_vsnw
+			add_advisor_role = {
+                character = GGR_stick_grenade
+				advisor = {
+					slot = high_command
+					idea_token = idea_GGR_stick_grenade
+					ledger = army
+					traits = { army_commando_1 }
+					cost = 150
+				}
+            }
 			add_to_variable = { var_GGR_vsnw_tp = 0.05 }
 		}
 	}
@@ -674,6 +684,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GGR_improves_vsnw
+			army_experience = 25
 			add_to_variable = { var_GGR_vsnw_ra = 0.05 }
 		}
 	}
@@ -756,7 +767,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = l_GGR_demonstrative_democracy
+			add_advisor_role = {
+                character = GGR_crayon
+				advisor = {
+					slot = political_advisor
+					idea_token = idea_GGR_crayon
+					ledger = civilian
+					traits = { popular_figurehead }
+					visible = { has_completed_focus = GGR_focus_demonstrative_democracy }
+				}
+            }
 			set_party_name = {
 				ideology = neutrality
 				long_name = GGR_neutral_party_after_focus_long

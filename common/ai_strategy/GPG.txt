@@ -46,7 +46,7 @@ GPG_civil_war = {
 	}
 	ai_strategy = {
 		type = garrison
-		value = -20
+		value = -25
 	}
 }
 

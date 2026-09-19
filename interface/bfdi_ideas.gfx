@@ -600,6 +600,10 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_GGR_crayon.dds
 	}
 	spriteType = {
+		name = GFX_idea_GGR_stick_grenade
+		texturefile = gfx/interface/ideas/idea_GGR_stick_grenade.dds
+	}
+	spriteType = {
 		name = GFX_idea_GGR_peoples_support
 		texturefile = gfx/interface/ideas/idea_GGR_peoples_support.dds
 	}
