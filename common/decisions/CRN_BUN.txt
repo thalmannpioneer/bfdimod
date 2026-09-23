@@ -659,83 +659,85 @@ decision_CRN_BUN_category = {
 		}
 	}
 
-	CRN_BUN_Opportunity = {
-		activation = {
-			country_exists = BUN
-			hidden_trigger = {
-    			has_country_flag = CRN_BUN_Sent_Aid
-			}	
-			BUN = {
-                has_dynamic_modifier = {
-                    modifier = idea_BUN_Ticking_Bomb
-                }
-			}
-			NOT = {CRN = {has_war_with = YFC}}
-		}
-		available = {
-			hidden_trigger = {
-    			has_country_flag = CRN_BUN_Sent_Aid
-			}	
-		}
-		cancel_trigger = {
-			NOT = {country_exists = BUN}
-			NOT = {BUN = {has_war_with = YFC}}
-			hidden_trigger = {NOT = {has_country_flag = CRN_BUN_Sent_Aid}}
-		}
-		icon = GFX_decision_generic_assassination  
-		is_good = no
-		selectable_mission = yes
-		days_mission_timeout = 120
-		complete_effect = {
-			add_political_power = -250
-			add_stability = -0.1
-			add_war_support = -0.3
-			add_threat = 2.5
-			declare_war_on = {
-				target = YFC
-				type = topple_government
-			}
-			create_faction = "Anti-Yellow Face Alliance"
-			add_to_faction = BUN
-			hidden_effect = {
-				clr_country_flag = CRN_BUN_Sent_Aid
-				IF = {
-					limit = {
-						YFC = {is_ai = yes}
-					}
-					216 = {
-						create_unit = {
-							division = "name = \"Military Police\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.2 start_experience_factor = 0.05"
-							owner = YFC
-							count = 2
-							id = 1967
-						}
-					}
-					YFC = {
-						add_offsite_building = { type = arms_factory level = 1 }
-						add_manpower = 5000
-					}
-				}
-			}
-		}
-		timeout_effect = {
-			hidden_effect = {
-				clr_country_flag = CRN_BUN_Sent_Aid
-			}
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 100
-				BUN = {surrender_progress > 0.7}
-			}
-			modifier = {
-				add = 100
-				AND = {
-					BUN = {is_ai = no}
-					YFC = {is_ai = yes}
-				}
-			}
-		}
-	}
+	#Tbh this does not fit but I'll keep it here for maybe later CRN content
+
+	#CRN_BUN_Opportunity = {
+	#	activation = {
+	#		country_exists = BUN
+	#		hidden_trigger = {
+    #			has_country_flag = CRN_BUN_Sent_Aid
+	#		}	
+	#		BUN = {
+    #            has_dynamic_modifier = {
+    #                modifier = idea_BUN_Ticking_Bomb
+    #            }
+	#		}
+	#		NOT = {CRN = {has_war_with = YFC}}
+	#	}
+	#	available = {
+	#		hidden_trigger = {
+    #			has_country_flag = CRN_BUN_Sent_Aid
+	#		}	
+	#	}
+	#	cancel_trigger = {
+	#		NOT = {country_exists = BUN}
+	#		NOT = {BUN = {has_war_with = YFC}}
+	#		hidden_trigger = {NOT = {has_country_flag = CRN_BUN_Sent_Aid}}
+	#	}
+	#	icon = GFX_decision_generic_assassination  
+	#	is_good = no
+	#	selectable_mission = yes
+	#	days_mission_timeout = 120
+	#	complete_effect = {
+	#		add_political_power = -250
+	#		add_stability = -0.1
+	#		add_war_support = -0.3
+	#		add_threat = 2.5
+	#		declare_war_on = {
+	#			target = YFC
+	#			type = topple_government
+	#		}
+	#		create_faction = "Anti-Yellow Face Alliance"
+	#		add_to_faction = BUN
+	#		hidden_effect = {
+	#			clr_country_flag = CRN_BUN_Sent_Aid
+	#			IF = {
+	#				limit = {
+	#					YFC = {is_ai = yes}
+	#				}
+	#				216 = {
+	#					create_unit = {
+	#						division = "name = \"Military Police\" division_template = \"Cavalry Guards\" start_equipment_factor = 0.2 start_experience_factor = 0.05"
+	#						owner = YFC
+	#						count = 2
+	#						id = 1967
+	#					}
+	#				}
+	#				YFC = {
+	#					add_offsite_building = { type = arms_factory level = 1 }
+	#					add_manpower = 5000
+	#				}
+	#			}
+	#		}
+	#	}
+	#	timeout_effect = {
+	#		hidden_effect = {
+	#			clr_country_flag = CRN_BUN_Sent_Aid
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		base = 0
+	#		modifier = {
+	#			add = 100
+	#			BUN = {surrender_progress > 0.7}
+	#		}
+	#		modifier = {
+	#			add = 100
+	#			AND = {
+	#				BUN = {is_ai = no}
+	#				YFC = {is_ai = yes}
+	#			}
+	#		}
+	#	}
+	#}
 }

@@ -16,6 +16,20 @@ characters = {
 		}
 	}
 
+	SMG_stick_grenade = { #Runs to Grassy if GGR dies
+		name = GGR_stick_grenade
+		portraits = {
+			civilian = { small = GFX_idea_GGR_stick_grenade }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = idea_GGR_stick_grenade
+			ledger = army
+			traits = { army_commando_1 }
+			cost = 150
+		}
+	}
+
 	SMG_one_joke = {
 		#What...? how... HOW DID SHE GET HERE??!?!!?!?!?!?!!?!?!?!?!?!?!?!?!?!?!?!? OH NOOOOO!!!!!!!-
 		name = SMG_one_joke

@@ -172,4 +172,49 @@ decision_GPG_civilwar_category = {
 			}
 		}
 	}
+
+	GPG_decision_AI_cheating = { #Will be used to pushed the selected winner to win
+
+		icon = generic_industry
+
+        available = {
+			is_ai = yes
+			has_idea = idea_GPG_drawn_out_war
+            has_country_flag =  GPG_civilwar_allow_cheat
+			has_war = yes
+        }
+        visible = {
+			is_ai = yes
+			has_idea = idea_GPG_drawn_out_war
+            has_country_flag =  GPG_civilwar_allow_cheat
+			has_war = yes
+        }
+        cost = 0
+        days_remove = -1
+        remove_trigger = {
+			OR = {
+				is_ai = no
+				has_war = no
+				NOT = {has_idea = idea_GPG_drawn_out_war}
+			}
+        }
+        modifier = {
+			training_time_army_factor = -0.5
+            weekly_manpower = 200
+            army_core_attack_factor = 0.5
+            army_core_defence_factor = 0.1
+            out_of_supply_factor = -0.35
+            ai_focus_aggressive_factor = 5
+        }
+        ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			add_manpower = 10000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+            }
+        }
+   	}
 }

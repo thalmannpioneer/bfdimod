@@ -839,14 +839,19 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_request_donations.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_decisions_YFC_raid_nation"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_nation.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_decisions_YFC_pirate_nation"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_pirate_nation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decisions_YFC_raid_trucks"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_raid_trucks.dds"
 	}
 
 	spriteType = {

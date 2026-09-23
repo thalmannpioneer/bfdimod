@@ -204,6 +204,10 @@ focus_tree = {
         y = 3
         icon = GFX_focus_GSR_new_economic_policy
 
+        available = {
+            has_idea = idea_GSR_military_communism
+        }
+
         offset = {
             x = -3
             trigger = {
@@ -223,7 +227,14 @@ focus_tree = {
         cost = 6
 
         ai_will_do = {
-            base = 10
+            base = 0
+			modifier = {
+				add = 10
+                OR = {
+                    num_divisions > 20
+				    has_equipment = {infantry_equipment > 2500} 
+                }
+			}
         }
 
         completion_reward = {

@@ -205,7 +205,7 @@
  l_YFC_mercs_upgrade_amount: "§YMercenary hires will now grant 2 additional divisions.§!"
  l_YFC_mercs_increase_deployment: "§GIncrease how many nations can have active mercenaries by 1§! (Currently: [?var_merc_usage_max|Y0])\n\n§RDecreases own mercenary deployment time by 20 days§!"
  l_YFC_mercs_halt_deployment: "§RSets how many nations can have active mercenaries to 1§!\n\n§GResets own mercenary deployment time to 180 days§!"
- l_YFC_SRI_demand_1: "§LWe will offer The Great Ridge government§! §Y500K dollars and protection for their resource rights.§! §LTheir willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. If they do not agree we will not lose any money.§!"
+ l_YFC_SRI_demand_1: "§YWe will offer The Great Ridge 500K dollars and protection for their resource rights.§! §LTheir willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. If they do not agree we will not lose any money.§!"
  l_YFC_SRI_demand_2: "§YWe will demand The Great Ridge to be our puppet.§! §LTheir willingness to agree depends on our strength both economically and militarily, their own strength, and the situation around both of us. This will be harder for them to agree to than last time...§!"
  l_YFC_TopHat_monetary: "§YEnables management of our economics!§!"
  l_YFC_PEN: "§YPen§! dies."

@@ -42,17 +42,17 @@ units = {
             location = 11899 # East Davidland 11861 as backup
 
             ship = { name = "HMAS Davidland" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = DAV version_name = "Big Placeholder Class" } } }
-            ship = { name = "HMAS Destroyer_Name_1" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_2" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_3" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_4" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_5" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_6" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_7" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_8" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_9" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_10" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
-            ship = { name = "HMAS Destroyer_Name_11" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Entown" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Longbridge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Quane" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Apalla" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Erdinia" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Wicontra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Yalope" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Veinte" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Compoño" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Naryn" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
+            ship = { name = "HMAS Seesea" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = DAV version_name = "IV Fracturam Second Edition" } } }
         }
     }
 

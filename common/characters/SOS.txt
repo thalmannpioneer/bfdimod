@@ -3,8 +3,16 @@ characters = {
 		name = SOS_anchor
 		portraits = { civilian = { large = GFX_SOS_anchor } }
 		country_leader = {
-		ideology = interim_government #Maybe change later?
-		desc = SOS_anchor_desc
+			ideology = interim_government #Maybe change later?
+			desc = SOS_anchor_desc
+		}
+		navy_leader={
+			traits = { navy_career_officer } #Might add more later
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 5
 		}
 	}
 	

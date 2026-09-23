@@ -29,3 +29,42 @@ SGD_attack = { #ATTACK!!!
 		manual_attack = yes
 	}
 }
+
+SGD_Scare_GSR = { 
+
+    allowed = {
+		original_tag = SGD
+	}
+	enable = {
+		has_war = no
+        OR = {
+            GSR = {has_completed_focus = GSR_focus_take_what_ours}
+            GSR = {has_completed_focus = GSR_focus_deconstruction}
+        }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = GSR
+        value = 200
+    }
+}
+
+SGD_Scare_GFG = { 
+
+    allowed = {
+		original_tag = SGD
+	}
+	enable = {
+		has_war = no
+		NOT = {has_non_aggression_pact_with = GFG}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = prepare_for_war
+        id = GFG
+        value = 200
+    }
+}

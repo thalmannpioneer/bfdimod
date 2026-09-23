@@ -249,6 +249,8 @@ joint_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
+		custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
 		add_to_variable = { var_own_local_resources_factor = 0.1 }
 		add_to_variable = { var_own_production_lack_of_resource = -0.05 }
 	}
@@ -297,6 +299,8 @@ joint_focus = {
 
 	completion_reward = {
 		custom_effect_tooltip = l_OWN
+		custom_effect_tooltip = l_money_gain_100K
+        add_to_variable = { money_amount = 1 }
 		add_to_variable = { var_own_trade_opinion_factor = 0.25 }
 		add_to_variable = { var_own_min_export = 0.1 }
 		add_to_variable = { var_own_consumer_goods_factor = -0.1 }

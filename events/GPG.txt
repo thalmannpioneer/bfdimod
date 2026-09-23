@@ -885,10 +885,11 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GPG = {
-                    add_manpower = 120000
+                    set_country_flag = GPG_civilwar_allow_cheat
+                    add_manpower = 10000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 11000 # +2000 Since they suck
+                        amount = 1000
                     }
                 }
             }
@@ -922,10 +923,11 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GSR = {
-                    add_manpower = 120000
+                    set_country_flag = GPG_civilwar_allow_cheat
+                    add_manpower = 10000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 9000
+                        amount = 1000
                     }
                 }
             }
@@ -959,10 +961,11 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GDR = {
-                    add_manpower = 120000
+                    set_country_flag = GPG_civilwar_allow_cheat
+                    add_manpower = 10000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 10000 # +1000 Since they suck
+                        amount = 1000
                     }
                 }
             }
@@ -993,10 +996,11 @@ country_event = { #I've given up this ai is soo bad :((((
             if = {
                 limit = {is_ai = yes}
                 GFG = {
-                    add_manpower = 120000
+                    set_country_flag = GPG_civilwar_allow_cheat
+                    add_manpower = 10000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 9000
+                        amount = 1000
                     }
                 }
             }

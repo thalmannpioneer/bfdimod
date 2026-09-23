@@ -3,7 +3,7 @@ state={
 	id=214
 	name="STATE_214"
 	resources={
-		coal = 3
+		coal = 10
 	}
 	provinces={
 		171 438 927 1256 1576 2043 2783 2799 3162 4221 5159 11077 11078 11094 11120 11126 11136 11141 
@@ -17,7 +17,7 @@ state={
 			infrastructure = 3
 		}
 	}
-	manpower=132145
+	manpower=122145
 	state_category=city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -475,6 +475,7 @@ focus_tree = {
         }
 
         completion_reward = {
+            add_manpower = 5000
             custom_effect_tooltip = l_WGF_closer_war
             add_to_variable = { var_WGF_war_closeness = 10 }
             custom_effect_tooltip = l_WGF_focus_all_objects_serving
