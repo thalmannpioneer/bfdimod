@@ -704,6 +704,9 @@ focus_tree = {
                 target = WGF
                 modifier = medium_decrease
             }
+            hidden_effect = {
+                add_threat = 0.5
+            }
         }
     }
 
@@ -846,7 +849,7 @@ focus_tree = {
 
         prerequisite = { focus = GSR_focus_deconstruction }
 
-        available = { has_political_power > 50 }
+        available = { has_political_power > 35 }
 
         cost = 8
 
@@ -857,10 +860,7 @@ focus_tree = {
         completion_reward = {
             country_event = GSR_event.12
 
-            if = {
-                limit = { NOT = {is_ai = yes}}
-                add_political_power = -50
-            }
+            add_political_power = -35
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -876,7 +876,7 @@ focus_tree = {
 
         prerequisite = { focus = GSR_focus_deconstruction }
 
-        available = { has_political_power > 50 }
+        available = { has_political_power > 35 }
 
         cost = 8
 
@@ -886,10 +886,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.13
-            if = {
-                limit = { NOT = {is_ai = yes}}
-                add_political_power = -50
-            }
+            add_political_power = -35
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -905,7 +902,7 @@ focus_tree = {
 
         prerequisite = { focus = GSR_focus_deconstruction }
 
-        available = { has_political_power > 50 }
+        available = { has_political_power > 35 }
 
         cost = 8
 
@@ -915,10 +912,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.14
-            if = {
-                limit = { NOT = {is_ai = yes}}
-                add_political_power = -50
-            }
+            add_political_power = -35
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -934,7 +928,7 @@ focus_tree = {
 
         prerequisite = { focus = GSR_focus_deconstruction }
 
-        available = { has_political_power > 50 }
+        available = { has_political_power > 35 }
 
         cost = 8
 
@@ -944,10 +938,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.15
-            if = {
-                limit = { NOT = {is_ai = yes}}
-                add_political_power = -50
-            }
+            add_political_power = -35
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -963,7 +954,7 @@ focus_tree = {
 
         prerequisite = { focus = GSR_focus_deconstruction }
 
-        available = { has_political_power > 50 }
+        available = { has_political_power > 35 }
 
         cost = 8
 
@@ -973,10 +964,7 @@ focus_tree = {
 
         completion_reward = {
             country_event = GSR_event.16
-            if = {
-                limit = { NOT = {is_ai = yes}}
-                add_political_power = -50
-            }
+            add_political_power = -35
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.05
@@ -1039,6 +1027,14 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = idea_GSR_no_government
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
             hidden_effect = {
                 country_event = {
                     id = GSR_event.17

@@ -47,7 +47,7 @@ SGD_Scare_GSR = {
 	ai_strategy = {
         type = prepare_for_war
         id = GSR
-        value = 200
+        value = 50
     }
 }
 
@@ -65,6 +65,6 @@ SGD_Scare_GFG = {
 	ai_strategy = {
         type = prepare_for_war
         id = GFG
-        value = 200
+        value = 50
     }
 }

@@ -42,7 +42,7 @@ if = {
     }
 
     create_equipment_variant = {
-        name = "Big Placeholder Class"
+        name = "Davidland Class"
         type = ship_hull_heavy_1
         parent_version = 0
         modules = {

@@ -1045,6 +1045,8 @@ focus_tree = {
 					country_event = {
 						id = GSR_event.11
 						days = 30
+						random_days = 100
+						random_hours = 48
 					}
 				}
 				news_event = {

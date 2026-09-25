@@ -230,6 +230,7 @@ country_event = {
 	
 	option = {
 		name = GSR_event.10.a
+		army_experience = 15
 		add_war_support = 0.1
 	}
 }
@@ -413,9 +414,9 @@ country_event = {
 			add_threat = 2
 			country_event = {
 				id = GSR_event.11
-				days = 20
-				random_days = 10
-				random_hours = 12
+				days = 30
+				random_days = 100
+				random_hours = 48
 			}
 		}
 	}
