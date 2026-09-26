@@ -29,11 +29,13 @@ country_event = {
 		name = YFC_event.2.a
 		custom_effect_tooltip = l_money_lose_100K
 		subtract_from_variable = { money_amount = 1 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_event.2.b
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 		BUN = {subtract_from_variable = { money_amount = 3 }}
 		201 = {
 			add_dynamic_modifier = {
@@ -55,6 +57,7 @@ country_event = {
 		name = YFC_event.3.a
 		custom_effect_tooltip = l_money_lose_500K
 		subtract_from_variable = { money_amount = 5 }
+		BFDI_money_diplay_update = yes
 		SRR = {add_to_variable = { money_amount = 5 }}
 		214 = {
 			if = {
@@ -417,6 +420,7 @@ country_event = { #Embargo event for all nations
         }
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			set_variable = {buying_item = -1}
 			set_variable = {selling_item = -1}
@@ -469,6 +473,7 @@ country_event = { #Embargo event for all nations
         }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			set_variable = {buying_item = -1}
 			set_variable = {selling_item = -1}
@@ -529,6 +534,7 @@ country_event = { #Tells YFC who embargo them, will also unlock focuses for GGR,
 		}
 		custom_effect_tooltip = l_money_lose_50K
 		subtract_from_variable = { money_amount = 0.5 }
+		BFDI_money_diplay_update = yes
 		add_opinion_modifier = { target = FROM modifier = large_decrease }
 		every_country_with_original_tag = {
 			original_tag_to_check = FROM
@@ -585,11 +591,13 @@ country_event = {
 
 	option = { 
 		name = YFC_event.11.a
+		add_political_power = 50
 	}
 	option = { 
 		name = YFC_event.11.b
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		random = {
 			chance = 25
 			custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
@@ -602,6 +610,7 @@ country_event = {
 		name = YFC_event.11.c
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+		BFDI_money_diplay_update = yes
 		random = {
 			chance = 50
 			custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
@@ -614,6 +623,7 @@ country_event = {
 		name = YFC_event.11.d
 		custom_effect_tooltip = l_money_gain_700K
 		add_to_variable = { money_amount = 7 }
+		BFDI_money_diplay_update = yes
 		random = {
 			chance = 75
 			custom_effect_tooltip = l_YFC_BUN_foster_gain_bad
@@ -637,6 +647,7 @@ country_event = {
 		name = YFC_event.12.a 
 		custom_effect_tooltip = l_money_gain_100K
 		add_to_variable = { money_amount = 1 }
+		BFDI_money_diplay_update = yes
 		add_stability = 0.01
 		216 = {
 			add_manpower = 13754
@@ -697,6 +708,7 @@ country_event = {
 		name = YFC_event.14.a
 		custom_effect_tooltip = l_money_gain_800K
 		add_to_variable = { money_amount = 8 }
+		BFDI_money_diplay_update = yes
 		add_political_power = 50
 	}
 }
@@ -716,7 +728,7 @@ country_event = {
 			YFC = {
 				country_event = {
 					id = YFC_event.16
-					days = 120 #Waiting is so cool
+					days = 160 #Waiting is so cool
 					random_hours = 48
 				}
 			}	
@@ -726,6 +738,7 @@ country_event = {
 		name = YFC_event.15.b
 		custom_effect_tooltip = l_money_lose_500K
 		subtract_from_variable = { money_amount = 5 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -751,6 +764,7 @@ country_event = {
 		name = YFC_event.16.a
 		custom_effect_tooltip = l_money_gain_600K
 		add_to_variable = { money_amount = 6 }
+		BFDI_money_diplay_update = yes
 		225 = {
 			if = {
 				limit = { is_owned_by = EMP }
@@ -961,6 +975,7 @@ country_event = {
 		name = YFC_event.22.a
 		custom_effect_tooltip = l_money_lose_300K
 		subtract_from_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 1 }
 		}
@@ -970,6 +985,7 @@ country_event = {
 		name = YFC_event.22.b
 		custom_effect_tooltip = l_money_lose_600K
 		subtract_from_variable = { money_amount = 6 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 2 }
 		}
@@ -982,6 +998,7 @@ country_event = {
 		name = YFC_event.22.c
 		custom_effect_tooltip = l_money_lose_900K
 		subtract_from_variable = { money_amount = 9 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			add_to_variable = { var_YFC_upgrade_level = 3 }
 		}
@@ -1005,6 +1022,7 @@ country_event = {
 		add_stability = -0.06
 		custom_effect_tooltip = l_money_gain_1M
 		add_to_variable = { money_amount = 10 }
+		BFDI_money_diplay_update = yes
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 50} 
@@ -1028,6 +1046,7 @@ country_event = {
 		add_stability = -0.03
 		custom_effect_tooltip = l_money_gain_800K
 		add_to_variable = { money_amount = 8 }
+		BFDI_money_diplay_update = yes
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 65} 
@@ -1051,6 +1070,7 @@ country_event = {
 		add_stability = 0.02
 		custom_effect_tooltip = l_money_gain_1M
 		add_to_variable = { money_amount = 10 }
+		BFDI_money_diplay_update = yes
 
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 75} 
@@ -1106,6 +1126,7 @@ country_event = {
 		name = YFC_event.27.a
 		custom_effect_tooltip = l_money_gain_1M
 		add_to_variable = { money_amount = 10 }
+		BFDI_money_diplay_update = yes
 
 		set_temp_variable = { ADDPOP2 = 216.state_population_k }
 		multiply_temp_variable = {ADDPOP2 = 85} 
@@ -1195,6 +1216,7 @@ country_event = {
 
 		custom_effect_tooltip = l_money_gain_900K
 		add_to_variable = { money_amount = 9 }
+		BFDI_money_diplay_update = yes
 		add_stability = -0.02
 		set_temp_variable = { ADDPOP = 196.state_population_k }
 		multiply_temp_variable = {ADDPOP = 60} 
@@ -1286,6 +1308,7 @@ country_event = {
 		name = YFC_event.33.a
 		custom_effect_tooltip = l_money_lose_2M
 		subtract_from_variable = { money_amount = 20 }
+		BFDI_money_diplay_update = yes
 		add_offsite_building = { type = arms_factory level = 1 }
 
 		ai_chance = {
@@ -1477,16 +1500,16 @@ country_event = { #YFC Sell
 				add = -3
 		 	}
 			modifier = {
-				YFC = {is_ai = yes} 
+				YFC = {is_ai = no} 
 				add = 1
 		 	}
 			modifier = {
 				check_variable = { money_amount < 10 } 
-				add = -2
+				add = -1
 		 	}
 			modifier = {
 				check_variable = { money_amount < 0 } 
-				add = -20
+				add = -10
 		 	}
 			modifier = {
 				check_variable = { money_amount < -10 } 
@@ -1518,15 +1541,11 @@ country_event = { #YFC Sell
 		 	}
 			modifier = {
 				check_variable = { YFC.tradeable_relation^YFC.selected = 0 }
-				add = -2
-		 	}
-			modifier = {
-				check_variable = { YFC.tradeable_relation^YFC.selected = 1 }
-				add = -0.5
+				add = -1
 		 	}
 			modifier = {
 				check_variable = { YFC.tradeable_relation^YFC.selected = 3 }
-				add = 1.5
+				add = 2
 		 	}
 		}	
 	}
@@ -1743,6 +1762,7 @@ country_event = {
 			YFC = {give_guarantee = ROOT}
 			custom_effect_tooltip = l_money_gain_500K
 			add_to_variable = { money_amount = 5 }
+			BFDI_money_diplay_update = yes
 		}
 		hidden_effect = {
 			YFC = {
@@ -1847,6 +1867,7 @@ country_event = {
 			}
 			custom_effect_tooltip = l_money_lose_500K
 			subtract_from_variable = { money_amount = 5 }
+			BFDI_money_diplay_update = yes
 		}
 		IF = {
 			limit = {
@@ -1854,6 +1875,7 @@ country_event = {
 			}
 			custom_effect_tooltip = l_money_gain_500K
             add_to_variable = { money_amount = 5 }
+			BFDI_money_diplay_update = yes
 		}
 		add_opinion_modifier = { target = SRI modifier = large_increase }
 		every_country_with_original_tag = {
@@ -2138,6 +2160,7 @@ country_event = { #YFC_focus_procure_funds
 		name = YFC_event.46.a
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
@@ -2150,6 +2173,7 @@ country_event = { #YFC_focus_procure_funds
 		add_political_power = -50
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
@@ -2163,6 +2187,7 @@ country_event = { #YFC_focus_procure_funds
 		add_political_power = -100
 		custom_effect_tooltip = l_money_gain_600K
 		add_to_variable = { money_amount = 6 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_sectors_Taser_Gain
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 	}
@@ -2356,6 +2381,7 @@ country_event = { #Eastern End.
 
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 	}
 }
 
@@ -2443,6 +2469,7 @@ country_event = { #Eastern Event #2
 		name = YFC_event.50.a
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
 		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
@@ -2603,6 +2630,7 @@ country_event = { #YFC_focus_allow_raiding_into_traitors event
 		add_ideas = idea_YFC_economic_isolation
 		custom_effect_tooltip = l_money_lose_2M
 		subtract_from_variable = { money_amount = 20 }
+		BFDI_money_diplay_update = yes
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
@@ -2760,23 +2788,27 @@ country_event = { # YFC_focus_shuffle_around_funds event
 		add_stability = -0.02
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 	}
 	option = { 
 		name = YFC_event.58.b
 		add_stability = -0.04
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+		BFDI_money_diplay_update = yes
 	}
 	option = { 
 		name = YFC_event.58.c
 		add_stability = -0.06
 		custom_effect_tooltip = l_money_gain_700K
 		add_to_variable = { money_amount = 7 }
+		BFDI_money_diplay_update = yes
 	}
 	option = { 
 		name = YFC_event.58.d
 		custom_effect_tooltip = l_money_gain_100K
 		add_to_variable = { money_amount = 1 }
+		BFDI_money_diplay_update = yes
 	}
 }
 
@@ -2808,6 +2840,7 @@ country_event = { #YFC_focus_trade_alternatives
 		name = YFC_event.60.a
         custom_effect_tooltip = l_money_gain_50K
     	add_to_variable = { money_amount = 0.5 }
+		BFDI_money_diplay_update = yes
 	}
 }
 
@@ -3136,6 +3169,7 @@ country_event = { #YFC_focus_envy
 			limit = {has_completed_focus = YFC_focus_mass_firings}
 			custom_effect_tooltip = l_money_lose_200K
 		    subtract_from_variable = { money_amount = 2 }
+			BFDI_money_diplay_update = yes
 		}
 
 		custom_effect_tooltip = l_YFC_sectors_Beaker_leave
@@ -3457,7 +3491,7 @@ country_event = { #YFC_focus_debt_restructuring
 			custom_effect_tooltip = l_money_gain_1M
        		add_to_variable = { money_amount = 10 }
 		}
-
+		BFDI_money_diplay_update = yes
 		add_stability = -0.25
 		add_political_power = -100
 	}
@@ -3916,6 +3950,7 @@ country_event = { #YFC Drug event start
 		name = YFC_event.84.a
 		custom_effect_tooltip = l_money_gain_100K
         add_to_variable = { money_amount = 1 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_trade_get_drugs_unlock
 		unlock_decision_tooltip = YFC_Trade_drugs_upgrade
 	}
@@ -4117,6 +4152,7 @@ country_event = { #YFC_focus_meet_with_numismatia
 
 		custom_effect_tooltip = l_money_gain_400K
 		add_to_variable = { money_amount = 4 }
+		BFDI_money_diplay_update = yes
 
 		CRN = {
 			diplomatic_relation = {
@@ -4661,14 +4697,17 @@ country_event = {
 			50 = {
 				custom_effect_tooltip = l_money_gain_50K
 				add_to_variable = { money_amount = 0.5 }
+				BFDI_money_diplay_update = yes
 			}
 			35 = {
 				custom_effect_tooltip = l_money_gain_100K
 				add_to_variable = { money_amount = 1 }
+				BFDI_money_diplay_update = yes
 			}
 			15 = {
 				custom_effect_tooltip = l_money_gain_200K
 				add_to_variable = { money_amount = 2 }
+				BFDI_money_diplay_update = yes
 			}
 		}
 		IF = {
@@ -4891,6 +4930,7 @@ country_event = {
 		name = YFC_borderwars.10.a
 		custom_effect_tooltip = l_money_gain_600K
 		add_to_variable = { money_amount = 6 }
+		BFDI_money_diplay_update = yes
 		FROM = {
 			custom_effect_tooltip = l_money_lose_600K
 			subtract_from_variable = { money_amount = 6 }
@@ -4981,6 +5021,7 @@ country_event = {
 
 		custom_effect_tooltip = l_money_gain_200K
 		add_to_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		add_equipment_to_stockpile = {
 			type = train_equipment_1
 			producer = SRR
@@ -5131,6 +5172,7 @@ country_event = {
 				}
 			}
 		}
+		BFDI_money_diplay_update = yes
 	}
 }
 
@@ -5266,6 +5308,7 @@ country_event = {
 				}
 			}
 		}
+		BFDI_money_diplay_update = yes
 	}
 }
 
@@ -5824,6 +5867,7 @@ country_event = { #Annex Events 1
 		name = YFC_BUN.9.c
 		custom_effect_tooltip = l_money_lose_200K
 		subtract_from_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		add_political_power = 25
 		85 = {add_compliance = 7.5}
 		212 = {add_compliance = 7.5}
@@ -5869,6 +5913,7 @@ country_event = { #Annex Events 2
 		add_political_power = 35
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
 		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
@@ -5888,6 +5933,7 @@ country_event = { #Annex Events 2
 		name = YFC_BUN.10.b
 		custom_effect_tooltip = l_money_gain_100K
 		add_to_variable = { money_amount = 1 }
+		BFDI_money_diplay_update = yes
 		add_political_power = -25
 		85 = {add_compliance = 2.5}
 		212 = {add_compliance = 2.5}
@@ -5909,6 +5955,7 @@ country_event = { #Annex Events 2
 		name = YFC_BUN.10.c
 		custom_effect_tooltip = l_money_lose_200K
 		subtract_from_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		85 = {add_compliance = 5}
 		212 = {add_compliance = 5}
 		#Would cost money when added
@@ -6336,6 +6383,7 @@ country_event = { #Annex Events 7
 		212 = {add_compliance = 5}
 		custom_effect_tooltip = l_money_lose_500K
 		subtract_from_variable = { money_amount = 5 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			country_event = {
 				id = YFC_BUN.16
@@ -6355,6 +6403,7 @@ country_event = { #Annex Events 7
 		212 = {add_compliance = -1}
 		custom_effect_tooltip = l_money_lose_200K
 		subtract_from_variable = { money_amount = 2 }
+		BFDI_money_diplay_update = yes
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
 		hidden_effect = {
@@ -6498,6 +6547,7 @@ country_event = {
 		add_political_power = -50
 		custom_effect_tooltip = l_money_gain_500K
 		add_to_variable = { money_amount = 5 }
+		BFDI_money_diplay_update = yes
 		hidden_effect = {
 			YFC = {
 				country_event = {
@@ -6848,6 +6898,7 @@ country_event = { #Debate event #1
 		}
 		custom_effect_tooltip = l_money_lose_300K
 		subtract_from_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 		custom_effect_tooltip = l_YFC_sectors_Hammer_Gain
 		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
 		hidden_effect = {
@@ -6884,6 +6935,7 @@ country_event = { #Debate event #2
 		}
 		custom_effect_tooltip = l_money_gain_700K
 		add_to_variable = { money_amount = 7 }
+		BFDI_money_diplay_update = yes
 		BUN = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -7225,7 +7277,7 @@ country_event = { #Taser vs Beaker
 	}
 }
 
-country_event = { #Top Hat vs Pipe
+country_event = { #Top Hat vs Pipe (Beaker now since ZDubbz can't read)
 	id = YFC_sector.5
 	title = YFC_sector.5.t
     desc = YFC_sector.5.desc
@@ -7241,15 +7293,15 @@ country_event = { #Top Hat vs Pipe
     option = {
 		name = YFC_sector.5.a
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Gain
-		custom_effect_tooltip = l_YFC_sectors_Pipe_Loss
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Loss
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
-		subtract_from_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector2 }
+		subtract_from_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector2 }
 	}
 	option = {
 		name = YFC_sector.5.b
 		custom_effect_tooltip = l_YFC_sectors_TopHat_Loss
-		custom_effect_tooltip = l_YFC_sectors_Pipe_Gain
-		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
+		custom_effect_tooltip = l_YFC_sectors_Beaker_Gain
+		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
 		subtract_from_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector2 }
 	}
 }
@@ -7275,6 +7327,7 @@ country_event = { #Top Hat
 		add_to_variable = { var_idea_YFC_TopHat_influence = var_add_to_sector }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_sector.6.b
@@ -7299,6 +7352,7 @@ country_event = { #Pipe
 		add_to_variable = { var_idea_YFC_Pipe_influence = var_add_to_sector }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_sector.7.b
@@ -7323,6 +7377,7 @@ country_event = { #Beaker
 		add_to_variable = { var_idea_YFC_Beaker_influence = var_add_to_sector }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_sector.8.b
@@ -7347,6 +7402,7 @@ country_event = { #Hammer
 		add_to_variable = { var_idea_YFC_Hammer_influence = var_add_to_sector }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_sector.9.b
@@ -7371,6 +7427,7 @@ country_event = { #Taser
 		add_to_variable = { var_idea_YFC_Taser_influence = var_add_to_sector }
 		custom_effect_tooltip = l_money_gain_300K
 		add_to_variable = { money_amount = 3 }
+		BFDI_money_diplay_update = yes
 	}
 	option = {
 		name = YFC_sector.10.b
@@ -7657,7 +7714,7 @@ country_event = { #Noo my money was taken by debt! :(
     
     option = {
 		name = YFC_sector.21.a
-
+		unlock_decision_tooltip = YFC_sector_minor_payments
 		add_ideas = idea_YFC_Debt_Crisis
 
 		IF = {

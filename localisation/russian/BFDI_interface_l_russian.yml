@@ -84,7 +84,7 @@
  l_diplay_final_profit_thousands: "[?var_display_final_profit|.2] тыс."
  l_diplay_final_profit_millions: "[?var_display_final_profit|.2] млн"
  l_diplay_final_profit_billions: "[?var_display_final_profit|.2] млрд"
- l_economic_profit_rate_tt: "[WAR_MODIFIER][COMMUNISM_MODIFIER][ISOLATION_MODIFIER]Стабильность: §R[?THIS.stability|%]§!"
+ l_economic_profit_rate_tt: "[WAR_MODIFIER][COMMUNISM_MODIFIER][ISOLATION_MODIFIER]Стабильность: §R[?THIS.stability|%]§!" #Thal this was updated in English
  l_economic_profit_rate_tt_delayed: "Модификатор достигается перемножением всех факторов."
  l_economic_profit_rate_war: "Война: §R50%§!\n"
  l_economic_profit_rate_communism: "Плановая Экономика: §R80%§!\n"

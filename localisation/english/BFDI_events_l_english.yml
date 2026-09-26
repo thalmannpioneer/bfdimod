@@ -1777,8 +1777,9 @@
 
  GTR_event.17.t: "Aid for Announcergrad?"
  GTR_event.17.desc: "We've heard news of a harsh situation in Announcergrad, even more harsh than the in rest of Goiky. Will we send some aid to those poor objects?"
- GTR_event.17.a: "Fine."
- GTR_event.17.b: "Not our jurisdiction."
+ GTR_event.17.a: "Fine. Send rescue and construction teams."
+ GTR_event.17.b: "Fine. Send monetary aid."
+ GTR_event.17.c: "Not our jurisdiction."
 
  GTR_event.18.t: "Aid arrived!"
  GTR_event.18.desc: "We have received humanitarian aid from sympathetic objects in [FROM.GetName]!"

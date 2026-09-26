@@ -336,6 +336,7 @@ focus_tree = {
         cost = 6
         completion_reward = {
             subtract_from_variable = { money_amount = 15 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_mercs_upgrade_cav
             IF = {
                 limit = {
@@ -397,6 +398,7 @@ focus_tree = {
         cost = 6
         completion_reward = {
             subtract_from_variable = { money_amount = 15 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_mercs_upgrade_inf
             IF = {
                 limit = {
@@ -739,6 +741,7 @@ focus_tree = {
 
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
             division_template = {
                 name = "Militia"
                 is_locked = yes
@@ -860,6 +863,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             subtract_from_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_foreign_advisor
             army_experience = 10
             add_ideas = idea_YFC_United_Clash
@@ -1114,6 +1118,8 @@ focus_tree = {
             add_to_variable = { var_idea_YFC_anarchic_lands_repair = 0.25 }
             custom_effect_tooltip = l_money_gain_100K
             add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
+            custom_effect_tooltip = l_GOI_unlock_focus
             mark_focus_tree_layout_dirty = yes
         }
 
@@ -1147,6 +1153,7 @@ focus_tree = {
             add_political_power = 25
             custom_effect_tooltip = l_money_gain_100K
             add_to_variable = { money_amount = 1 }
+            BFDI_money_diplay_update = yes
             hidden_effect = {
                 set_variable = { var_YFC_upgrade_level = 0 }
             }
@@ -1201,6 +1208,7 @@ focus_tree = {
             ELSE = {
                 custom_effect_tooltip = l_money_gain_800K
                 add_to_variable = { money_amount = 8 }
+                BFDI_money_diplay_update = yes
                 add_political_power = -100
             }
         }
@@ -1694,8 +1702,8 @@ focus_tree = {
 
         available = {
             custom_trigger_tooltip = {
-                tooltip = l_money_cost_100K
-                check_variable = { money_amount > 1 }
+                tooltip = l_money_cost_200K
+                check_variable = { money_amount > 2 }
             }
             hidden_trigger = {
                 has_completed_focus = YFC_focus_foster_new_society
@@ -1719,7 +1727,8 @@ focus_tree = {
             custom_effect_tooltip = l_YFC_pp_gain
             add_stability = 0.05
             add_to_variable = { var_idea_YFC_anarchic_lands_PP = 0.5 }
-            subtract_from_variable = { money_amount = 1 }
+            subtract_from_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             85 = {
                 add_compliance = 10
                 add_resistance = -15
@@ -1854,6 +1863,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_200K
             add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
         }
 
         ai_will_do = {
@@ -1950,6 +1960,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_300K
             add_to_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
             add_manpower = 1000
             add_political_power = -50
         }
@@ -2218,6 +2229,7 @@ focus_tree = {
 
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
             if = {
                 limit = {
                     has_dlc = "La Resistance"
@@ -2806,9 +2818,7 @@ focus_tree = {
             }
             add_political_power = 50
             subtract_from_variable = { money_amount = -3 }
-
-            #So I may make this where the player does not gain warships but smaller ships or something
-            #More so that YFC's navy would be stuck without a port at this rate
+            BFDI_money_diplay_update = yes
         }
         ai_will_do = {
             base = 5
@@ -3065,6 +3075,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_eastern_gainall_10
             hidden_effect = {
                 every_state = {
@@ -3295,6 +3306,7 @@ focus_tree = {
         cost = 5
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
             hidden_effect = {
                 BUN = {add_to_variable = { money_amount = 3 }}
             }
@@ -3350,6 +3362,7 @@ focus_tree = {
                 }
             }
             subtract_from_variable = {money_amount = 10}
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -3458,6 +3471,7 @@ focus_tree = {
             custom_effect_tooltip = l_money_gain_4M
             custom_effect_tooltip = l_YFC_sectors_Gold_Take
             add_to_variable = { money_amount = 40 }
+            BFDI_money_diplay_update = yes
             IF = {
                 limit = {is_ai = yes}
                 add_to_variable = { money_amount = 15 }
@@ -3498,6 +3512,7 @@ focus_tree = {
                 }
             }
             subtract_from_variable = {money_amount = 5}
+            BFDI_money_diplay_update = yes
             YFC = { give_guarantee = BUN }
             BUN = { give_guarantee = YFC }
         }
@@ -3740,6 +3755,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
             subtract_from_variable = { money_amount = 5 }
+            BFDI_money_diplay_update = yes
             remove_ideas = idea_YFC_economic_isolation
         }
     }
@@ -3862,6 +3878,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_lose_200K
             subtract_from_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             country_event = {
                 id = YFC_event.63
                 hours = 1
@@ -4056,6 +4073,7 @@ focus_tree = {
             add_stability = 0.25
             custom_effect_tooltip = l_money_gain_400K #Stealing TopHat money
             add_to_variable = { money_amount = 4 }
+            BFDI_money_diplay_update = yes
             country_event = {
                 id = YFC_event.71
                 hours = 1
@@ -4100,6 +4118,7 @@ focus_tree = {
             add_stability = -0.05
             custom_effect_tooltip = l_money_gain_400K
             add_to_variable = { money_amount = 4 }
+            BFDI_money_diplay_update = yes
             add_timed_idea = {
                 idea = idea_YFC_company_reorganization
                 days = 225
@@ -4139,6 +4158,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_lose_500K
             subtract_from_variable = { money_amount = 5 }
+            BFDI_money_diplay_update = yes
             add_stability = 0.1
         }
     }
@@ -4203,7 +4223,7 @@ focus_tree = {
                 custom_effect_tooltip = l_money_gain_800K
                 add_to_variable = { money_amount = 8 }
             }
-
+            BFDI_money_diplay_update = yes
 
             hidden_effect = {
                 country_event = {
@@ -4509,6 +4529,7 @@ focus_tree = {
             add_stability = 0.05
             custom_effect_tooltip = l_money_gain_400K
             add_to_variable = { money_amount = 4 }
+            BFDI_money_diplay_update = yes
             add_ideas = closed_economy
             every_other_country = {
                 limit = {
@@ -4935,6 +4956,7 @@ focus_tree = {
         cost = 4
         completion_reward = {
             subtract_from_variable = {money_amount = 5}
+            BFDI_money_diplay_update = yes
             add_stability = 0.15
         }
     }
@@ -4985,6 +5007,7 @@ focus_tree = {
             add_to_variable = { var_idea_YFC_anarchic_lands_repair = -0.2 }
             add_to_variable = { var_idea_YFC_anarchic_lands_construction = 0.2 }
             subtract_from_variable = {money_amount = 2}
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -5039,6 +5062,7 @@ focus_tree = {
 
             add_stability = 0.2
             subtract_from_variable = {money_amount = 6}
+            BFDI_money_diplay_update = yes
             unlock_decision_tooltip = YFC_stabilization_farming_state
         }
     }
@@ -5237,6 +5261,7 @@ focus_tree = {
             }
             custom_effect_tooltip = l_money_gain_200K
 		    add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             IF = {
                 limit = {has_idea = closed_economy}
                 add_ideas = limited_exports
@@ -5260,6 +5285,7 @@ focus_tree = {
 
             custom_effect_tooltip = l_money_gain_200K
 		    add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
 
             #removes "the company with a state" spirit, gives 15 political power
         }
@@ -5392,6 +5418,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_200K
 		    add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_trade_reopen
             add_ideas = export_focus
             hidden_effect = {
@@ -5443,6 +5470,7 @@ focus_tree = {
 
             custom_effect_tooltip = l_money_gain_600K
 		    add_to_variable = { money_amount = 6 }
+            BFDI_money_diplay_update = yes
 
             hidden_effect = {
                 TBT = {
@@ -5797,6 +5825,7 @@ focus_tree = {
             add_stability = 0.05
             add_research_slot = 1
             subtract_from_variable = {money_amount = 1}
+            BFDI_money_diplay_update = yes
 
             country_event = {
                 id = YFC_event.102
@@ -6035,6 +6064,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_200K
             add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             201 = {add_manpower = 478}
             215 = {add_manpower = 6373}
             196 = {add_manpower = 1592}
@@ -6111,6 +6141,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_200K
             add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             add_ideas = idea_YFC_snowpath
             add_stability = 0.05
             BUN = {
@@ -6143,6 +6174,7 @@ focus_tree = {
             add_stability = 0.05
             custom_effect_tooltip = l_money_gain_200K
             add_to_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
             build_railway = {
                 level = 2
                 start_state = 201
@@ -6180,6 +6212,7 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_money_gain_400K
             add_to_variable = { money_amount = 4 }
+            BFDI_money_diplay_update = yes
             custom_effect_tooltip = l_YFC_raid_BUN_upgrade
             hidden_effect = {
                 BUN = {add_to_variable = {var_BUN_raiding_attack_stats = 0.5}}
@@ -6517,6 +6550,7 @@ focus_tree = {
             }
             add_to_variable = {var_idea_YFC_raid_modifer = 0.05}
             subtract_from_variable = {money_amount = 2}
+            BFDI_money_diplay_update = yes
         }
     }
 
@@ -6924,6 +6958,7 @@ focus_tree = {
             add_stability = -0.05
             custom_effect_tooltip = l_money_gain_300K
             add_to_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
         }
     }
 

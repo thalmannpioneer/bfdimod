@@ -83,7 +83,6 @@ ideas = {
 				resistance_growth = 0.5
 				army_morale_factor = -0.25
 				planning_speed = -0.2
-				political_power_factor = -0.25
 				stability_factor = -0.1
 			}
 			on_remove = {
@@ -98,7 +97,7 @@ ideas = {
 				army_speed_factor = -0.35
 				supply_consumption_factor = 0.3
 				consumer_goods_factor = 0.5
-				political_power_factor = -0.5
+				political_power_factor = -0.2
 				stability_factor = -0.1
 			}
 			on_remove = {
@@ -113,7 +112,7 @@ ideas = {
 				experience_gain_army_factor = -0.95
 				research_speed_factor = -0.25
 				consumer_goods_factor = 0.75
-				political_power_factor = -0.5
+				political_power_factor = -0.2
 				stability_factor = -0.1
 			}
 			on_remove = {
@@ -128,7 +127,7 @@ ideas = {
 				production_speed_buildings_factor = -0.75
 				monthly_population = -0.95
 				consumer_goods_factor = 0.5
-				political_power_factor = -0.5
+				political_power_factor = -0.2
 				stability_factor = -0.1
 			}
 			on_remove = {
@@ -142,7 +141,7 @@ ideas = {
 			modifier = {
 				compliance_growth = -0.5
 				resistance_target = 0.1
-				political_power_factor = -1
+				political_power_factor = -0.75
 				stability_factor = -0.2
 			}
 			on_remove = {
@@ -154,7 +153,7 @@ ideas = {
 		idea_YFC_Debt_Crisis = {
 			picture = YFC_debt_crisis 
 			modifier = {
-				political_power_factor = -0.75
+				political_power_factor = -0.5
 				stability_factor = -0.25
 				war_support_factor = -0.1
 				training_time_factor = 5

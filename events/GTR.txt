@@ -470,10 +470,48 @@ country_event = {
             base = 10
             modifier = {
                 has_war = yes
-                factor = 0
+                factor = 0.5
+            }
+            modifier = {
+                has_political_power < 75
+                factor = 0.05
             }
         }
         add_political_power = -50
+        GTR = {
+            country_event = {
+                id = GTR_event.18
+                days = 4
+                random_days = 3
+                random_hours = 12
+            }
+        }
+        add_opinion_modifier = {
+            target = GTR
+            modifier = medium_increase
+        }
+        GTR = {
+            add_opinion_modifier = {
+                target = PREV
+                modifier = medium_increase
+            }
+        }
+    }
+    option = {
+        name = GTR_event.17.b
+        ai_chance = {
+            base = 10
+            modifier = {
+                has_war = yes
+                factor = 0.5
+            }
+            modifier = {
+                check_variable = {money_amount < 5}
+                factor = 0.05
+            }
+        }
+        custom_effect_tooltip = l_money_lose_300K
+        subtract_from_variable = { money_amount = 3 }
         GTR = {
             country_event = {
                 id = GTR_event.18

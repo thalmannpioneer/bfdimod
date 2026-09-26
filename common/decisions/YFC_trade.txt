@@ -54,6 +54,7 @@ decision_YFC_trade_category = {
                 custom_effect_tooltip = l_YFC_sectors_Gold
                 subtract_from_variable = { money_amount = 1 }
             }
+            BFDI_money_diplay_update = yes
         }
 	}
 
@@ -171,6 +172,7 @@ decision_YFC_trade_category = {
 
         complete_effect = {
             subtract_from_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
         }
 
         remove_effect = {
@@ -323,6 +325,7 @@ decision_YFC_trade_category = {
             add_research_slot = 2
             subtract_from_variable = { money_amount = 10 }
             hidden_effect = {add_political_power = -10}
+            BFDI_money_diplay_update = yes
         }
 
         remove_effect = {
@@ -374,6 +377,7 @@ decision_YFC_trade_category = {
 
         complete_effect = {
             subtract_from_variable = { money_amount = 2 }
+            BFDI_money_diplay_update = yes
         }
 
         remove_effect = {
@@ -428,11 +432,13 @@ decision_YFC_trade_category = {
         complete_effect = {
             custom_effect_tooltip = l_money_gain_1M
             add_to_variable = { money_amount = 10 }
+            BFDI_money_diplay_update = yes
         }
 
         remove_effect = {
             custom_effect_tooltip = l_money_lose_1_5M
             subtract_from_variable = { money_amount = 15 }
+            BFDI_money_diplay_update = yes
         }
 
         ai_will_do = {
@@ -550,6 +556,7 @@ decision_YFC_trade_category = {
             }
             custom_effect_tooltip = l_money_gain_300K
             add_to_variable = { money_amount = 3 }
+            BFDI_money_diplay_update = yes
         }
 
         ai_will_do = {
@@ -587,6 +594,7 @@ decision_YFC_trade_category = {
             add_to_variable = { money_amount = 3 }
             add_manpower = 1000
             add_stability = -0.1
+            BFDI_money_diplay_update = yes
         }
 
         ai_will_do = {

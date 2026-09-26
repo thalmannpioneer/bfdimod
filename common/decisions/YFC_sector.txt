@@ -206,16 +206,13 @@ decision_YFC_sector_category = { #Watermelon
                 add_to_variable = { var_idea_YFC_Taser_influence = 1 }
             }
             
+            BFDI_money_diplay_update = yes
+
             #Now Check if the player sucks at management of the Sectors 
             hidden_effect = {
                 IF = {
                     limit = {
                         NOT = {
-                            has_idea = idea_YFC_Defiant_Top_Hat
-                            has_idea = idea_YFC_Defiant_Pipe
-                            has_idea = idea_YFC_Defiant_Beaker
-                            has_idea = idea_YFC_Defiant_Hammer
-                            has_idea = idea_YFC_Defiant_Taser
                             has_completed_focus = YFC_focus_sectors_their_place
                             has_completed_focus = YFC_focus_tophat_clan
                         }
@@ -447,6 +444,7 @@ decision_YFC_sector_category = { #Watermelon
 		remove_effect = {
             custom_effect_tooltip = l_money_gain_500K
 		    add_to_variable = { money_amount = 5 }
+            BFDI_money_diplay_update = yes
         }
 
 		ai_will_do = {

@@ -333,12 +333,16 @@ decision_other_trade_category = {
 				set_temp_variable = { Trade_Buying_Manpower_var = 0 }
 				set_temp_variable = { Trade_Buying_Spies_var = 0 }
 				IF = {
-					limit = {has_equipment = {infantry_equipment < 2000}}
+					limit = {
+						has_equipment = {infantry_equipment < 2000}
+						check_variable = {money_amount > 8}
+					}
 					add_to_temp_variable = { Trade_Buying_Inf_var = 100 }
 				}
 				IF = {
 					limit = {
 						has_equipment = {support_equipment_1 < 500}
+						check_variable = {money_amount > 5}
 						has_tech = tech_support
 					}
 					add_to_temp_variable = { Trade_Buying_Support_var = 50 }
@@ -346,6 +350,7 @@ decision_other_trade_category = {
 				IF = {
 					limit = {
 						has_equipment = {motorized_equipment < 250}
+						check_variable = {money_amount > 8}
 						has_tech = tech_trucks
 					}
 					add_to_temp_variable = { Trade_Buying_Truck_var = 30 }
@@ -353,6 +358,7 @@ decision_other_trade_category = {
 				IF = {
 					limit = {
 						has_equipment = {artillery_equipment < 250}
+						check_variable = {money_amount > 8}
 						has_tech = gw_artillery
 					}
 					add_to_temp_variable = { Trade_Buying_Arty_var = 30 }
@@ -360,6 +366,7 @@ decision_other_trade_category = {
 				IF = {
 					limit = {
 						has_equipment = {anti_air_equipment < 250}
+						check_variable = {money_amount > 8}
 						has_tech = interwar_antiair
 					}
 					add_to_temp_variable = { Trade_Buying_AntiAir_var = 20 }
@@ -367,6 +374,7 @@ decision_other_trade_category = {
 				IF = {
 					limit = {
 						has_equipment = {anti_tank_equipment < 250}
+						check_variable = {money_amount > 8}
 						has_tech = interwar_antitank
 					}
 					add_to_temp_variable = { Trade_Buying_AntiTank_var = 20 }
@@ -378,6 +386,7 @@ decision_other_trade_category = {
 							has_manpower < 10000
 							has_army_manpower = {size < 20000}
 						}
+						check_variable = {money_amount > 5}
 						NOT = {has_idea = idea_YFC_trade_food}
 					}
 					add_to_temp_variable = { Trade_Buying_Food_var = 15 }
@@ -390,6 +399,7 @@ decision_other_trade_category = {
 							has_manpower < 10000
 							has_army_manpower = {size < 20000}
 						}
+						check_variable = {money_amount > 10}
 					}
 					add_to_temp_variable = { Trade_Buying_Manpower_var = 15 }
 				}
@@ -398,6 +408,7 @@ decision_other_trade_category = {
 						YFC = {has_country_flag = YFC_trade_allow_spies}
 						NOT = {has_idea = idea_YFC_trade_spies_DLC}
 						NOT = {has_idea = idea_YFC_trade_spies_non_DLC}
+						check_variable = {money_amount > 10}
 					}
 					add_to_temp_variable = { Trade_Buying_Spies_var = 10 }
 				}

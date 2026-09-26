@@ -155,6 +155,7 @@ decision_YFC_stabilization_category = {
 
 		complete_effect = {
 			hidden_effect = {subtract_from_variable = {money_amount = 2}}
+			BFDI_money_diplay_update = yes
 		}
 
 		remove_effect = {
@@ -218,6 +219,7 @@ decision_YFC_stabilization_category = {
 
 		complete_effect = {
 			hidden_effect = {subtract_from_variable = {money_amount = 8}}
+			BFDI_money_diplay_update = yes
 		}
 
 		remove_effect = {
@@ -292,6 +294,7 @@ decision_YFC_stabilization_category = {
 
 		complete_effect = {
 			hidden_effect = {subtract_from_variable = {money_amount = 5}}
+			BFDI_money_diplay_update = yes
 		}
 
 		remove_effect = {
@@ -343,6 +346,7 @@ decision_YFC_stabilization_category = {
 
 		complete_effect = {
 			hidden_effect = {subtract_from_variable = {money_amount = 10}}
+			BFDI_money_diplay_update = yes
 		}
 
 		remove_effect = {

@@ -127,6 +127,7 @@ decision_YFC_eastern_category = {
 			YFC = {
 				custom_effect_tooltip = l_money_gain_50K
             	add_to_variable = { money_amount = 0.5 }
+				BFDI_money_diplay_update = yes
 			}
         }
 
@@ -178,6 +179,7 @@ decision_YFC_eastern_category = {
 			add_manpower = 1500
 			custom_effect_tooltip = l_money_gain_200K
 			add_to_variable = { money_amount = 2 }
+			BFDI_money_diplay_update = yes
 			FROM = {
 				add_building_construction = {
 					type = naval_base
@@ -235,6 +237,7 @@ decision_YFC_eastern_category = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 2 }
+			BFDI_money_diplay_update = yes
         }
 
 		remove_effect = {
@@ -322,6 +325,7 @@ decision_YFC_eastern_category = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 2 }
+			BFDI_money_diplay_update = yes
         }
 
 		remove_effect = {
@@ -446,6 +450,7 @@ decision_YFC_eastern_category = {
 			custom_effect_tooltip = l_YFC_eastern_action_use
 			clr_country_flag = eastern_action_ready
 			subtract_from_variable = { money_amount = 0.5 }
+			BFDI_money_diplay_update = yes
         }
 
 		ai_will_do = {

@@ -677,29 +677,42 @@ BFDI_calculate_combined_modifier = {
     set_variable = { combined_modifier = 1 }
     IF = {
         limit = {
-            has_war = yes
-        }
-        multiply_variable = {combined_modifier = 0.5} #War bad for the profits >:/
-    }
-    IF = {
-        limit = {
-            has_government = communism
-        }
-        multiply_variable = {combined_modifier = 0.8} #I'll think on how to make the crashes work
-    }
-    IF = {
-        limit = {
-            has_idea = undisturbed_isolation
-        }
-        multiply_variable = {combined_modifier = 0.2}
-    }
-    IF = {
-        limit = {
-            has_stability < 0.01
+            AND = {
+                has_war = yes 
+                has_stability < -0.25
+            }
         }
         multiply_variable = {combined_modifier = 0}
     }
-    multiply_variable = { combined_modifier = THIS.stability } #Stability modifier
+    ELSE = {
+        IF = {
+            limit = {
+                has_war = yes
+            }
+            multiply_variable = {combined_modifier = 0.5} #War bad for the profits >:/
+        }
+        IF = {
+            limit = {
+                has_government = communism
+            }
+            multiply_variable = {combined_modifier = 0.8} #I'll think on how to make the crashes work
+        }
+        IF = {
+            limit = {
+                has_idea = undisturbed_isolation
+            }
+            multiply_variable = {combined_modifier = 0.2}
+        }
+        IF = {
+            limit = {
+                has_stability < 0.1
+            }
+            multiply_variable = {combined_modifier = 0.1}
+        }
+        ELSE = {
+            multiply_variable = { combined_modifier = THIS.stability } #Stability modifier
+        }
+    }
 }
 
 BFDI_economics_init = {

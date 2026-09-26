@@ -101,7 +101,15 @@ defined_text = {
 defined_text = {
     name = WAR_MODIFIER
     text = {
-        trigger = { has_war = yes }
+        trigger = { 
+            has_war = yes 
+            NOT = {
+                AND = {
+                    has_war = yes 
+                    has_stability < -0.25
+                }
+            }
+        }
         localization_key = l_economic_profit_rate_war
     }
     text = {
@@ -111,7 +119,15 @@ defined_text = {
 defined_text = {
     name = COMMUNISM_MODIFIER
     text = {
-        trigger = { has_government = communism }
+        trigger = { 
+            has_government = communism 
+            NOT = {
+                AND = {
+                    has_war = yes 
+                    has_stability < -0.25
+                }
+            }
+        }
         localization_key = l_economic_profit_rate_communism
     }
     text = {
@@ -121,11 +137,39 @@ defined_text = {
 defined_text = {
     name = ISOLATION_MODIFIER
     text = {
-        trigger = { has_idea = undisturbed_isolation }
+        trigger = { 
+            has_idea = undisturbed_isolation 
+            has_idea = isolation
+            NOT = {
+                AND = {
+                    has_war = yes 
+                    has_stability < -0.25
+                }
+            }
+        }
         localization_key = l_economic_profit_rate_isolation
     }
     text = {
         localization_key = ""
+    }
+}
+defined_text = {
+    name = STABILITY_MODIFIER 
+    text = {
+        trigger = { 
+            has_war = yes 
+            has_stability < -0.25
+        }
+        localization_key = l_economic_profit_rate_unstainable_war
+    }
+    text = {
+        trigger = {  
+            has_stability < 0.1
+        }
+        localization_key = l_economic_profit_rate_stability_poor
+    }
+    text = {
+        localization_key = l_economic_profit_rate_stability
     }
 }
 

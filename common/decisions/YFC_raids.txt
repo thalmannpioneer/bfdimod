@@ -33,7 +33,7 @@ decision_YFC_raids_category = {
 				custom_effect_tooltip = l_money_gain_300K
 		    	add_to_variable = { money_amount = 3 }
 			}
-
+			BFDI_money_diplay_update = yes
 		}
 
 		ai_will_do = {
@@ -114,6 +114,7 @@ decision_YFC_raids_category = {
 
 		complete_effect = {
 			subtract_from_variable = { money_amount = 5 }
+			BFDI_money_diplay_update = yes
         }
 
 		remove_effect = {
@@ -214,6 +215,7 @@ decision_YFC_raids_category = {
 			hidden_effect = {
 				BUN = {add_to_variable = { money_amount = 4 }}
 			}
+			BFDI_money_diplay_update = yes
         }
 
 		remove_effect = {
