@@ -532,7 +532,7 @@ country_event = {
         }
     }
     option = {
-        name = GTR_event.17.b
+        name = GTR_event.17.c
         ai_chance = { base = 10 }
     }
 }

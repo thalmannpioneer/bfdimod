@@ -1480,7 +1480,7 @@ country_event = { #YFC Sell
 		}
 
 		ai_chance = {
-			base = 0
+			base = 0.1
 			modifier = {
 				check_variable = { buying_item = 0 }
 				has_equipment = {infantry_equipment < 100}
@@ -1492,27 +1492,36 @@ country_event = { #YFC Sell
 				add = 2
 		 	}
 			modifier = {
-				check_variable = { money_amount > trade_cost_temp_var } 
-				add = 2
-		 	}
-			modifier = {
-				check_variable = { money_amount < trade_cost_temp_var } 
-				add = -3
-		 	}
-			modifier = {
-				YFC = {is_ai = no} 
+				check_variable = { buying_item = 6 }
+				has_manpower < 20000
 				add = 1
 		 	}
 			modifier = {
+				YFC = {is_ai = no} 
+				add = 1.5
+		 	}
+			modifier = {
+				YFC = {is_ai = yes} 
+				add = 0.5
+		 	}
+			#modifier = {
+			#	check_variable = { money_amount > trade_cost_temp_var } 
+			#	add = 2
+		 	#}
+			#modifier = {
+			#	check_variable = { money_amount < trade_cost_temp_var } 
+			#	add = -3
+		 	#}
+			modifier = {
 				check_variable = { money_amount < 10 } 
-				add = -1
+				add = -2
+		 	}
+			modifier = {
+				check_variable = { money_amount < 5 } 
+				add = -25
 		 	}
 			modifier = {
 				check_variable = { money_amount < 0 } 
-				add = -10
-		 	}
-			modifier = {
-				check_variable = { money_amount < -10 } 
 				add = -1000
 		 	}
 			modifier = {
@@ -1521,19 +1530,19 @@ country_event = { #YFC Sell
 		 	}
 			modifier = {
 				has_war = no
-				add = -2
+				add = -1
 		 	}
 			modifier = {
 				surrender_progress > 0
-				add = 2
+				add = 1
 		 	}
 			modifier = {
 				surrender_progress > 0.4
-				add = 3
+				add = 2
 		 	}
 			modifier = {
 				surrender_progress > 0.8
-				add = 5
+				add = 4
 		 	}
 			modifier = {
 				longest_war_length > 6
@@ -1562,7 +1571,7 @@ country_event = { #YFC Sell
 		}
 
 		ai_chance = {
-			base = 0.1
+			base = 0.5
 		}
 	}
 }

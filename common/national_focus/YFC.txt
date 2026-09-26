@@ -1609,6 +1609,7 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
+            unlock_decision_category_tooltip = decision_YFC_BUN_category
             mark_focus_tree_layout_dirty = yes
         }
 
@@ -1632,6 +1633,7 @@ focus_tree = {
 
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
+            unlock_decision_category_tooltip = decision_YFC_foster_category
             85 = {add_compliance = 20}
             212 = {add_compliance = 20}
             217 = {add_compliance = 20}
@@ -2541,6 +2543,7 @@ focus_tree = {
 
         cost = 5
         completion_reward = {
+            unlock_decision_category_tooltip = decision_YFC_eastern_category
             mark_focus_tree_layout_dirty = yes
             hidden_effect = { #All the vars of support
                 set_variable = { selected_eastern_state = 230 }
@@ -4844,7 +4847,7 @@ focus_tree = {
         allow_branch = { has_completed_focus = YFC_focus_tophat_clan }
 
         completion_reward = {
-
+            unlock_decision_category_tooltip = decision_YFC_stabilization_category
             hidden_effect = {
                 set_variable = {var_idea_YFC_anarchic_lands_rail = 0}
                 set_variable = {var_idea_YFC_anarchic_lands_node = 0}
@@ -6827,6 +6830,7 @@ focus_tree = {
 
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
+            unlock_decision_category_tooltip = decision_YFC_eastern_category
             hidden_effect = { #All the vars of support
                 set_variable = { selected_eastern_state = 230 }
                 var:selected_eastern_state = {
