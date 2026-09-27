@@ -45,6 +45,10 @@ CRN_BUN_war = {
 	}
 	enable = {
 		has_war_with = BUN
+		war_length_with = {
+			tag = BUN
+			months > 2
+		}
 	}
 
 	abort = {

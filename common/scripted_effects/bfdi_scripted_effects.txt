@@ -1792,3 +1792,68 @@ YFC_update_eastern_states = {
     }
 }
 
+BUN_end_border_wars = {
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 85
+                defender = 214
+            }   
+        }
+        finalize_border_war = { attacker_win = no attacker = 85 defender = 214 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 85
+                defender = 210
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 85 defender = 210 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 85
+                defender = 202
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 85 defender = 202 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 217
+                defender = 220
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 217 defender = 220 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 217
+                defender = 222
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 217 defender = 222 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 218
+                defender = 222
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 218 defender = 222 }
+    }
+    IF = {
+        limit = {
+            has_border_war_between = {
+                attacker = 212
+                defender = 24
+            }
+        }
+        finalize_border_war = { attacker_win = no attacker = 212 defender = 24 }
+    }                           
+}

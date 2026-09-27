@@ -737,7 +737,7 @@ focus_tree = {
 
         allow_branch = { has_completed_focus = YFC_focus_demand_end_pillage }
         prerequisite = { focus = YFC_focus_demand_end_pillage }
-        cost = 6
+        cost = 8
 
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
@@ -745,7 +745,7 @@ focus_tree = {
             division_template = {
                 name = "Militia"
                 is_locked = yes
-                division_cap = 6
+                division_cap = 4
                 priority = 0
                 template_counter = 0
                 regiments = {
@@ -758,11 +758,11 @@ focus_tree = {
             201 = {
                 create_unit = {
                     division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
-                    count = 6
+                    count = 4
                     owner = YFC
                 }
             }
-            add_manpower = 5000
+            add_manpower = 4000
         }
 
         ai_will_do = {
@@ -905,7 +905,7 @@ focus_tree = {
                         add_war_support = -0.3 #Okay so since I NEED YFC AI to win at the moment, this will be here till Bunch gets their own stuff.
                     }
                 }
-
+                BUN = {BUN_end_border_wars = yes}
                 CRN = {
                     country_event = {
                         id = YFC_event.6
@@ -3279,6 +3279,7 @@ focus_tree = {
         completion_reward = {
             country_event = YFC_event.53
             add_political_power = 25
+            set_variable = {tradeable^16 = 1}
         }
     }
 
@@ -3518,6 +3519,13 @@ focus_tree = {
             BFDI_money_diplay_update = yes
             YFC = { give_guarantee = BUN }
             BUN = { give_guarantee = YFC }
+
+            IF = {
+                limit = {
+                    NOT = {check_variable = {tradeable^16 = 0}}
+                }
+                subtract_from_variable = {tradeable^16 = 1}
+            }
         }
     }
 
@@ -5439,12 +5447,17 @@ focus_tree = {
                             active = no
                         }
                     }
-                    IF = {
-                        limit = {country_exists = YFC}
-                        add_opinion_modifier = { target = YFC modifier = large_increase }
-                        every_country_with_original_tag = {
-                            original_tag_to_check = ROOT
-                            add_opinion_modifier = { target = ROOT modifier = large_increase }
+                    add_opinion_modifier = { target = YFC modifier = large_increase }
+                    remove_opinion_modifier = {
+                        target = YFC
+                        modifier = large_decrease
+                    }
+                    every_country_with_original_tag = {
+                        original_tag_to_check = YFC
+                        add_opinion_modifier = { target = ROOT modifier = large_increase }
+                        remove_opinion_modifier = {
+                            target = ROOT
+                            modifier = large_decrease
                         }
                     }
                 }
@@ -5981,6 +5994,12 @@ focus_tree = {
                 original_tag_to_check = BUN
                 add_opinion_modifier = { target = YFC modifier = large_increase }
             }
+            IF = {
+                limit = {
+                    NOT = {check_variable = {tradeable^16 = 0}}
+                }
+                subtract_from_variable = {tradeable^16 = 1}
+            }
         }
     }
 
@@ -6151,6 +6170,12 @@ focus_tree = {
                 add_ideas = idea_BUN_snowpath
             }
             set_country_flag = BFDI_20_guns_weekly_BUN
+            IF = {
+                limit = {
+                    NOT = {check_variable = {tradeable^16 = 0}}
+                }
+                subtract_from_variable = {tradeable^16 = 1}
+            }
         }
     }
 
@@ -6905,6 +6930,12 @@ focus_tree = {
                     hours = 12
                     random_hours = 48
                 }
+                IF = {
+                    limit = {
+                        NOT = {check_variable = {tradeable^21 = 0}}
+                    }
+                    subtract_from_variable = {tradeable^21 = 1}
+                }
             }
         }
     }
@@ -7215,6 +7246,12 @@ focus_tree = {
                         random_hours = 48
                     }
                 }
+                IF = {
+                    limit = {
+                        NOT = {check_variable = {tradeable^21 = 0}}
+                    }
+                    subtract_from_variable = {tradeable^21 = 1}
+                }
             }
         }
     }
@@ -7341,7 +7378,12 @@ focus_tree = {
         cost = 3 #Maybe change later
 
         completion_reward = {
-
+            IF = {
+                limit = {
+                    NOT = {check_variable = {tradeable^21 = 0}}
+                }
+                subtract_from_variable = {tradeable^21 = 1}
+            }
         }
     }
 

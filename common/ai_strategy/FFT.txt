@@ -1,0 +1,40 @@
+#FFT AI 101
+#Change if you want to!!!!
+
+
+## ARMY PLACEMENT ##
+
+## INDUSTRY ##
+
+## BUILDS ##
+
+## FORTS ##
+
+FFT_fortnite_gorge_town = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = FFT
+    }
+    enable = {
+        has_contested_owner = 169
+        has_war = yes
+        169 = {
+			any_province_building_level = {
+				province = {
+					id = 711
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 711
+        value = 2000
+    }
+}

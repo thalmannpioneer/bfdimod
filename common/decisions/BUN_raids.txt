@@ -53,6 +53,16 @@ decision_BUN_raids_category = {
         days_re_enable = 360
         war_with_on_remove = controller
 
+      	cancel_trigger = {
+            OR = {
+                has_war = yes
+                has_border_war = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = BUN_Raid_Active
+        }  
+
         remove_effect = {
             clr_country_flag = BUN_Raid_Active
             FROM = {
@@ -131,6 +141,10 @@ decision_BUN_raids_category = {
                 has_army_size = {size < 1}
             }
             modifier = {
+                add = -100
+                YFC = {has_completed_focus = YFC_focus_buy_defense_trainings}
+            }
+            modifier = {
                 add = -10
                 AND = {
                     FROM = {controller = {is_ai = no}}
@@ -192,6 +206,16 @@ decision_BUN_raids_category = {
         cost = 20
         days_re_enable = 360
         war_with_on_remove = controller
+
+      	cancel_trigger = {
+            OR = {
+                has_war = yes
+                has_border_war = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = BUN_Raid_Active
+        } 
 
         remove_effect = {
             clr_country_flag = BUN_Raid_Active
@@ -269,6 +293,10 @@ decision_BUN_raids_category = {
             modifier = {
                 add = -100
                 has_army_size = {size < 1}
+            }
+            modifier = {
+                add = -100
+                YFC = {has_completed_focus = YFC_focus_buy_defense_trainings}
             }
             modifier = {
                 add = -10
@@ -333,6 +361,16 @@ decision_BUN_raids_category = {
         days_re_enable = 360
         war_with_on_remove = controller
 
+      	cancel_trigger = {
+            OR = {
+                has_war = yes
+                has_border_war = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = BUN_Raid_Active
+        } 
+
         remove_effect = {
             clr_country_flag = BUN_Raid_Active
             FROM = {
@@ -409,6 +447,10 @@ decision_BUN_raids_category = {
             modifier = {
                 add = -100
                 has_army_size = {size < 1}
+            }
+            modifier = {
+                add = -100
+                YFC = {has_completed_focus = YFC_focus_buy_defense_trainings}
             }
             modifier = {
                 add = -10
@@ -473,6 +515,16 @@ decision_BUN_raids_category = {
         days_re_enable = 360
         war_with_on_remove = controller
 
+      	cancel_trigger = {
+            OR = {
+                has_war = yes
+                has_border_war = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = BUN_Raid_Active
+        } 
+
         remove_effect = {
             clr_country_flag = BUN_Raid_Active
             FROM = {
@@ -557,6 +609,10 @@ decision_BUN_raids_category = {
                     FROM = {controller = {has_war = yes}}
                 }
             }
+            modifier = {
+                add = -100
+                YFC = {has_completed_focus = YFC_focus_buy_defense_trainings}
+            }
             modifier = { #Grrr
                 add = -50
                 AND = {
@@ -607,6 +663,16 @@ decision_BUN_raids_category = {
         cost = 20
         days_re_enable = 125
         war_with_on_remove = controller
+
+      	cancel_trigger = {
+            OR = {
+                has_war = yes
+                has_border_war = yes
+            }
+        }
+        cancel_effect = {
+            clr_country_flag = BUN_Raid_Active
+        } 
 
         remove_effect = {
             clr_country_flag = BUN_Raid_Active

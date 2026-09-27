@@ -10,10 +10,10 @@ division_template = {
 
 units = {
 	division= {
-        name = "Lab security"
+        name = "Lab Security"
         location = 3545 # Lab
-        division_template = "Lab security"
-        start_experience_factor = 0.5
+        division_template = "Security Forces"
+        start_experience_factor = 0.2
         start_equipment_factor = 1
     }
 }

@@ -29,7 +29,7 @@ units = {
         location = 3944 # GGRR - S Border
         division_template = "Eraser's bunch"
         start_experience_factor = 0.8
-        start_equipment_factor = 0.6
+        start_equipment_factor = 0.95
     }
 	division= {
         name = "Podgornyv Bandits"

@@ -460,3 +460,33 @@ GGR_build_after_FFT = {
     }
 }
 
+## FORTS ##
+
+GGR_fortnite_schneehorn = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = GGR
+    }
+    enable = {
+        has_contested_owner = 15
+        has_war = yes
+        15 = {
+			any_province_building_level = {
+				province = {
+					id = 4731
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 4731
+        value = 2000
+    }
+}

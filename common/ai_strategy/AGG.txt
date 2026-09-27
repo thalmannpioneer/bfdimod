@@ -68,3 +68,35 @@ AGG_Scare_GFG = {
         value = 50
     }
 }
+
+## FORTS ##
+
+AGG_fortnite_gorge_town = {
+    #Build forts in frontline city when at war
+    allowed = {
+        original_tag = AGG
+    }
+    enable = {
+        has_contested_owner = 183
+        has_war = yes
+		NOT = {has_war_with = SGD}
+        183 = {
+			any_province_building_level = {
+				province = {
+					id = 11304
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 11304
+        value = 2000
+    }
+}
