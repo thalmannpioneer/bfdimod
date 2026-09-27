@@ -734,7 +734,7 @@
 #YFC
 
  YFC_event.1.t: "The Company with a State"
- YFC_event.1.desc: "We, The Yellow Face Corporation, have decided that we need our own place to conduct business operations. Our employees have taken a pledge to live in one of the many cities the Corporation has control of (and of course we threatened to lower pay if they refused), but the government's legitimacy is still quite low. It is important that we allow other companies to reside in our nation, and allow a free and fair market to prosper. After all, we don't want to have everything be government owned, less we fall into socialism.\n\n§RFor now, we must balance our limited amount of money and equipment correctly...§!" #Minor way of telling the player to not waste their money
+ YFC_event.1.desc: "We, The Yellow Face Corporation, have decided that we need our own place to conduct business operations. Our employees have taken a pledge to live in one of the many cities the Corporation has control of (and of course we threatened to lower pay if they refused), but the government's legitimacy is still quite low. It is important that we allow other companies to reside in our nation, and allow a free and fair market to prosper, §Rsince our ONLY goal is to make as much money, as possible!§! And, of course, we don't want to have everything be government owned, less we fall into socialism.\n\n§RFor now, we must balance our limited amount of money and equipment correctly...§!" #Minor way of telling the player to not waste their money
  YFC_event.1.a: "Better Dead Than Red!"
 
  YFC_event.2.t: "The Southern Bandits"
@@ -902,8 +902,8 @@
  YFC_event.34.a: "Great!"
 
  YFC_event.35.t: "[FROM.GetName] have denied our deal!" #Don't rewrite
- YFC_event.35.desc: ""
- YFC_event.35.a: "Huh."
+ YFC_event.35.desc: "Unfortunately, [FROM.GetName] has denied our deal! Perhaps, we could try lowering the price of our goods, or improving our trade relations with them."
+ YFC_event.35.a: "Their loss!"
 
  YFC_event.36.t: "New Yellow Face Deal!" #Don't rewrite (For buying X stuff)
  YFC_event.36.desc: "We have received a new deal from the Yellow Face Corporation which is the following:\n\n§GYellow Face is willing to sell [selling_deal_equipment_type] that we have requested.§!\n\n§RFor [?trade_cost_show_var]K dollars.§!\n\nShould we take the deal?"
@@ -1174,7 +1174,7 @@
  YFC_event.88.a: "Implant the idea, cure the economy!" 
 
  YFC_event.89.t: "The Speech in Yoyleton" 
- YFC_event.89.desc: "Top Hat gave a long, passionate speech in Yoyleton recently, speaking for nearly twenty minutes about what the people are to have. An excerpt of the transcript has been reproduced below:\n\n\"For far too long, this city has been neglected. Yoyleton has been, and always will be, one of the most important cities in Eastern Goiky; overlooking it has been a grave mistake, for all of us. Just today, I have seen countless, horrid sights. I have seen struggle, strife, and mass hunger. This, obviously, is unbecoming of a city who has been such a vital part of international trade routes. Any righteous ruler would immediately recognize that a city's populace deserves to see the profits that it creates. Within the coming weeks, we will be working hastily, and without rest, to ensure the stability and safety of all citizens within our realm.\"\n\nThis speech, when it was finished, was met with loud applause from the crowd. It was held in the city center of Yoyleton, to an audience of random, every day objects, so, it was rather surprising to see such a fervent reaction rise from the crowd. Soon afterwards, as Top Hat was making his departure from the area, he reportedly saw our citizens waving that glorious purple banner throughout settlement."
+ YFC_event.89.desc: "Top Hat gave a long, passionate speech in Yoyleton recently, speaking for nearly twenty minutes about what the people are to have. An excerpt of the transcript has been reproduced below:\n\n\"For far too long, this city has been neglected. Yoyleton has been, and always will be, one of the most important cities in Eastern Goiky; overlooking it has been a grave mistake, for all of us. Just today, I have seen countless, horrid sights. I have seen struggle, strife, and mass hunger. This, obviously, is unbecoming of a city who has been such a vital part of international trade routes. Any righteous ruler would immediately recognize that a city's populace deserves to see the profits that it creates. Within the coming weeks, we will be working hastily, and without rest, to ensure the stability and safety of all citizens within our realm.\"\n\nThis speech, when it was finished, was met with loud applause from the crowd. It was held in the city center of Yoyleton, to an audience of random, every day objects, so, it was rather surprising to see such a fervent reaction rise from the crowd. Soon afterwards, as Top Hat was making his departure from the area, he reportedly saw our citizens waving that glorious purple banner throughout the settlement."
  YFC_event.89.a: "Rile them up!"
 
  YFC_event.90.t: "S.O.S. - Save Our Soil!" 
@@ -1205,27 +1205,27 @@
  YFC_event.96.desc: "Top Hat, Hammer, Pipe, Taser,\n\nIt's been a while.\nSorry I haven't been keeping much in touch. School's great, but it's been real hard trying to find free time at all, no less trying to find time to write letters to Footpathburg. I'm not entirely sure what the situation over there is, and I'm sure that this letter's gonna reach you guys a bit late, but, from what I've heard, there's been some buzz about democracy. I'm sure Hammer's already made up some big solution to whatever problem there might've been, but, I can say for sure that most objects will eventually want more. You guys obviously didn't make democracy national, Top Hat wouldn't allow that in a million years, but you guys will need to eventually. See, where I am, the objects are getting real feisty, because they all feel like the government isn't democratic enough. Isn't that crazy? These objects, who have lead much freer lives than the average person in Footpathburg, is still complaining about how \"unfair\" their systems are. They'll just keep wanting to be freer and freer, and you all have to be prepared for that, because, democracy is something it seems like objects are willing to die for.\nThat's all from me about this political stuff. I hope you're all doing well, I've gotta get back to studying. There's lots of ruckus here about bikes.\n\nBeaker"
  YFC_event.96.a: "Interesting..."
 
- YFC_event.97.t: "YFC_focus_beakers_idea" 
+ YFC_event.97.t: "Beaker's Theories on Warfare" 
  YFC_event.97.desc: "text text bla bla" #ZDubbz since Thal had fun making bicycle infantry, you need to have Beaker (or someone else) bring up the idea of using bicycle infantry over cavalry and Top Hat agreeing to it. I will still keep the air tech though (but for heavy fighters)
  YFC_event.97.a: ""
 
- YFC_event.98.t: "YFC_focus_the_numis_ideology" 
+ YFC_event.98.t: "The Numis Ideology" 
  YFC_event.98.desc: "text text bla bla" #ZDubbz
  YFC_event.98.a: ""
 
- YFC_event.99.t: "YFC_focus_a_stable_society" 
+ YFC_event.99.t: "A Stable Society" 
  YFC_event.99.desc: "text text bla bla" #ZDubbz
  YFC_event.99.a: ""
 
- YFC_event.100.t: "YFC_focus_to_the_future" 
+ YFC_event.100.t: "To The Future!" 
  YFC_event.100.desc: "text text bla bla" #ZDubbz
  YFC_event.100.a: ""
 
- YFC_event.101.t: "Beaker is done with school" 
- YFC_event.101.desc: "text text bla bla" #ZDubbz
- YFC_event.101.a: ""
+ YFC_event.101.t: "Graduation" 
+ YFC_event.101.desc: "Top Hat, Hammer, Pipe, Taser,\n\nHey, it's been a while, but, I think I'm ready to come back. I've finished my bachelor's degree, and I'm feeling a bit homesick. I've missed you guys a whole lot, even though I haven't been showing it much. I learned so much in college, and I can't wait to share my new ideas with you guys. Now, I would be on my way to getting a train ticket right now, but here's the problem, I don't exactly have a way to get to Footpathburg. Due to the fiasco with Yellow Face, all trains to Footpathburg have been halted for years now, and I can't get back unless one of you can get the railroads to open up a new route, or something. Maybe ask Pipe to do it, I know they could strong arm their way into a good deal. Anyways, I'll be waiting here on campus while you guys get the resources together, please get me back as soon as possible. I dont have all my life to wait!\n\nBeaker" 
+ YFC_event.101.a: "You'll be home soon enough!!!"
 
- YFC_event.102.t: "YFC_focus_beakers_return" 
+ YFC_event.102.t: "Beaker's Return" 
  YFC_event.102.desc: "text text bla bla" #ZDubbz
  YFC_event.102.a: ""
 
@@ -1570,19 +1570,19 @@
  YFC_sector.6.b: "This would set a horrible precedent!"
 
  YFC_sector.7.t: "Sector Update: Purchasing the Government?" 
- YFC_sector.7.desc: "Pipe came to Yellow Faces's office late last night, with a large blanket. They said that they wanted some light company reforms A-S-A-P, and untied the blanket to reveal incredible amounts of money. From where exactly they procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Pipe, however, it could also be beneficial for us in the short term. [YFC_Sector_Event_Text]"
- YFC_sector.7.a: "Let us Profit."
+ YFC_sector.7.desc: "Pipe came to Yellow Faces's office late last night, with a large, tied up blanket. They said that they wanted some light company reforms A-S-A-P, and untied the blanket to reveal incredible amounts of money. From where exactly they procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Pipe, however, it could also be beneficial for us in the short term. [YFC_Sector_Event_Text]"
+ YFC_sector.7.a: "Let us profit."
  YFC_sector.7.b: "This would set a horrible precedent!"
 
  YFC_sector.8.t: "Sector Update: Purchasing the Government?"
  YFC_sector.8.desc: "Beaker came to Yellow Faces's office late last night, with a large dufflebag. She said that he wanted more employees to be hired to her sector, and opened the bag to reveal incredible amounts of money. From where exactly he procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Beaker, however, it could also be beneficial for us in the short term. [YFC_Sector_Event_Text]"
- YFC_sector.8.a: "Let us Profit."
+ YFC_sector.8.a: "Let us profit."
  YFC_sector.8.b: "This would set a horrible precedent!"
 
- YFC_sector.9.t: "Hammer Bribe" #Zdubbz for sake of having Sector being balanced, find a way. Maybe just have a worker that works for Hammer offer the bribe or present a diffrent thing Hammer would give 
- YFC_sector.9.desc: "Hammer wants to Bribe us"
- YFC_sector.9.a: "Take the Bribe"
- YFC_sector.9.b: "Decline the Bribe"
+ YFC_sector.9.t: "Sector Update: Purchasing the Government?"
+ YFC_sector.9.desc: "An employee from Hammer's Construction Sector came into Yellow Face's office late last night, carrying a shoddy suitcase. They said that they wanted more options for the complementary lunch that Hammer's employees typically recieve, and unzipped the suitcase to reveal incredible amounts of money. From where exactly this money was acquired, we know not, however, what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Hammer (despite the fact that he's not even present?!), however, it could also be beneficial for us in the short term. [YFC_Sector_Event_Text]"
+ YFC_sector.9.a: "Let us profit."
+ YFC_sector.9.b: "This would set a horrible precedent!"
 
  YFC_sector.10.t: "Sector Update: Purchasing the Government?" 
  YFC_sector.10.desc: "Taser came to Yellow Faces's office late last night, with a large dufflebag. They said that they needed higher corporate focus on their sector, and opened the bag to reveal incredible amounts of money. From where exactly they procured this equity, we know not, however what we do know is that the amounts could greatly benefit us. Taking this money would most certainly make the government at least a small amount more reliant on Taser, however, it could also be beneficial for us in the short term. [YFC_Sector_Event_Text]"
@@ -1686,13 +1686,13 @@
 
 # BUN_borderwars
 
- BUN_borderwars.1.t: "Placeholder Bunch Win" #ZDubbz if you want to
- BUN_borderwars.1.desc: "Bunch Raiders won lol easy also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder" #Bunch raid won from BUN POV
- BUN_borderwars.1.a: "Placing Holders" 
+ BUN_borderwars.1.t: "Placeholder Bunch Win" #will do with bunch update
+ BUN_borderwars.1.desc: "Hell yeah we won the raid!"
+ BUN_borderwars.1.a: "Incredible......" 
 
- BUN_borderwars.2.t: "Placeholder Bunch Loss" #ZDubbz if you want to
- BUN_borderwars.2.desc: "Bunch Raiders lost rigged also placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder" #Bunch raid failed from BUN POV
- BUN_borderwars.2.a: "Placing Holders" 
+ BUN_borderwars.2.t: "Placeholder Bunch Loss" #will do with bunch update
+ BUN_borderwars.2.desc: "Oh no,, we lost the raid!" #Bunch raid failed from BUN POV
+ BUN_borderwars.2.a: "Blame Pen!" 
 
  BUN_borderwars.3.t: "Raiders Repelled"
  BUN_borderwars.3.desc: "Despite the sudden attack by the raiders, we were able to defend from their vicious assaults. After a few hours of engagement we managed to get the upperhand over them. Now they turn tail and flee back to their bandit country. We have won for now, but they will be back."
@@ -1702,8 +1702,8 @@
  BUN_borderwars.4.desc: "When our forces arrived, they found themselves quickly under bandit fire. Despite our best efforts, our forces were overrun and the bandits broke through. This resulted in the nearby towns and villages being set ablaze and much of the equipment was stolen. The bandits have left, but there are still ashes in the air."
  BUN_borderwars.4.a: "We cannot allow more raids to happen!"
 
- BUN_borderwars.5.t: "[From.GetAdjective] Movements Spotted!" #ZDubbz
- BUN_borderwars.5.desc: "It seems that [From.GetName] will raid soon" #Warning to other nations that raiders (Since I will also use this for YFC) will raid them soon
+ BUN_borderwars.5.t: "[From.GetAdjective] Movements Spotted!"
+ BUN_borderwars.5.desc: "Our reconnaissance has spotted suspicious military movements at our border. It is likely that, soon, [From.GetName] will attempt to start a raid into our territory. We must be prepared." #Warning to other nations that raiders (Since I will also use this for YFC) will raid them soon
  BUN_borderwars.5.a: "Protect the border!" 
 
 # GTR

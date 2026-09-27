@@ -4844,7 +4844,7 @@ focus_tree = {
             }
         }
 
-        allow_branch = { has_completed_focus = YFC_focus_tophat_clan }
+        #allow_branch = { has_completed_focus = YFC_focus_tophat_clan }
 
         completion_reward = {
             unlock_decision_category_tooltip = decision_YFC_stabilization_category
