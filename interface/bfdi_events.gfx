@@ -829,8 +829,98 @@ SpriteTypes = {
 	}
 	
 	spriteType = {
+		name = GFX_YFC_event76
+		texturefile = gfx/event_pictures/YFC_event76.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event77
+		texturefile = gfx/event_pictures/YFC_event77.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event78
+		texturefile = gfx/event_pictures/YFC_event78.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event79
+		texturefile = gfx/event_pictures/YFC_event79.dds
+	}
+	
+	spriteType = {
 		name = GFX_YFC_event80
 		texturefile = gfx/event_pictures/YFC_event80.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event81
+		texturefile = gfx/event_pictures/YFC_event81.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event84
+		texturefile = gfx/event_pictures/YFC_event84.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event85
+		texturefile = gfx/event_pictures/YFC_event85.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event86
+		texturefile = gfx/event_pictures/YFC_event86.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event87
+		texturefile = gfx/event_pictures/YFC_event87.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event88
+		texturefile = gfx/event_pictures/YFC_event88.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event89
+		texturefile = gfx/event_pictures/YFC_event89.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event90
+		texturefile = gfx/event_pictures/YFC_event90.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event91
+		texturefile = gfx/event_pictures/YFC_event91.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event92
+		texturefile = gfx/event_pictures/YFC_event92.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event93
+		texturefile = gfx/event_pictures/YFC_event93.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event94
+		texturefile = gfx/event_pictures/YFC_event94.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event95
+		texturefile = gfx/event_pictures/YFC_event95.dds
+	}
+	
+	spriteType = {
+		name = GFX_YFC_event96
+		texturefile = gfx/event_pictures/YFC_event96.dds
 	}
 	
 	spriteType = {
