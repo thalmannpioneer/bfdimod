@@ -332,13 +332,13 @@ decision_YFC_sector_category = { #Watermelon
         days_mission_timeout = 150
         timeout_effect = {
             hidden_effect = {
-                set_temp_variable = {bribe_chance_var = 1}
+                set_temp_variable = {bribe_chance_var = 0.5}
                 IF = {
-                    limit = {check_variable = {money_amount < 10}}
-                    set_temp_variable = {bribe_chance_var = 5}
+                    limit = {check_variable = {money_amount < 8}}
+                    set_temp_variable = {bribe_chance_var = 3}
                 }
                 ELSE_IF = {
-                    limit = {check_variable = {money_amount > 30}}
+                    limit = {check_variable = {money_amount > 20}}
                     set_temp_variable = {bribe_chance_var = 0}
                 }
                 random_list = {

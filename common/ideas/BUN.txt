@@ -25,9 +25,9 @@ ideas = {
 			picture = BUN_renewed_resolve
 			modifier = {
 				army_core_attack_factor = 0.5
-				army_core_defence_factor = 2
+				army_core_defence_factor = 2.5
 				war_support_factor = 0.25
-				ai_focus_aggressive_factor = 1
+				ai_focus_aggressive_factor = 5
 			}
 			cancel = {
 				NOT = { country_exists = BUN }
@@ -128,13 +128,12 @@ ideas = {
 		idea_BUN_victorious_in_blood = { 
 			picture = BUN_victorious_in_blood
 			modifier = {
-				offensive_war_stability_factor = -0.35
-				defensive_war_stability_factor = 0.35
+				attack_bonus_against_cores = -0.75
+				army_core_defence_factor = 0.5
 				mobilization_speed = -0.25
 				economy_cost_factor = 0.65
 				trade_laws_cost_factor = 0.2
 				mobilization_laws_cost_factor = 0.9
-				attack_bonus_against_cores = -0.3
 			}
 		}
 	}

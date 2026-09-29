@@ -141,7 +141,7 @@
  decisions_GTR_project1_stage1_desc: "От нас зависит судьба всего §7Гойки§!.\n\nМы обязаны всё тщательно проработать и спланировать, иначе все надежды будут сокрушены."
  decisions_GTR_project1_stage1_progress_weekly: "Еженедельный прогресс: §4[?var_GTR_weekly_progress_stage1]%§!"
  decisions_GTR_project1_stage2_title: "СТАДИЯ 2: §YРЕСУРСЫ§!"
- decisions_GTR_project1_stage2_desc: "Проект требует больших вложений широкого спектра §9ресурсов§!.\n\nМы должны достать их любой ценой, ради §7Гойки§!."
+ decisions_GTR_project1_stage2_desc: "Проект требует больших вложений широкого спектра §9ресурсов§!.\n\nМы должны достать их любой ценой, ради §7Гойки§!." #Thal this was updated in english
  decisions_GTR_project1_stage2_progress_weekly: "Еженедельный прогресс: §Y[?var_GTR_weekly_progress_stage2]%§!"
  decisions_GTR_project1_stage3_title: "СТАДИЯ 3: §tСБОРКА§!"
  decisions_GTR_project1_stage3_desc: "Все приготовления сделаны.\n\nСейчас или никогда, мы вытащим §7Гойки§! из пучины кризиса и анархии. §RОбъединим ингредиенты.§!"

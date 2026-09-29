@@ -200,9 +200,9 @@ decision_GPG_civilwar_category = {
         }
         modifier = {
 			training_time_army_factor = -0.5
-            weekly_manpower = 200
+            weekly_manpower = 500
             army_core_attack_factor = 0.5
-            army_core_defence_factor = 0.1
+            army_core_defence_factor = 0.3
             out_of_supply_factor = -0.35
             ai_focus_aggressive_factor = 5
         }
@@ -210,10 +210,10 @@ decision_GPG_civilwar_category = {
 			base = 100
 		}
 		complete_effect = {
-			add_manpower = 10000
+			add_manpower = 20000
             add_equipment_to_stockpile = {
                 type = infantry_equipment
-                amount = 2000
+                amount = 3000
             }
         }
    	}
