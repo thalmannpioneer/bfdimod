@@ -281,7 +281,7 @@ country_event = {
 
 	option = {
 		name = YFC_event.8.a
-		manpower = -261
+		add_manpower = -261
 		add_war_support = 0.05
 
 		custom_effect_tooltip = l_YFC_border_defence
@@ -1483,7 +1483,7 @@ country_event = { #YFC Sell
 		}
 
 		ai_chance = {
-			base = 1
+			base = 1.5
 			modifier = {
 				check_variable = { buying_item = 0 }
 				has_equipment = {infantry_equipment < 5000}
@@ -1503,10 +1503,6 @@ country_event = { #YFC Sell
 				check_variable = { buying_item = 6 }
 				has_manpower < 25000
 				add = 1
-		 	}
-			modifier = {
-				YFC = {is_ai = no} 
-				add = 1.5
 		 	}
 			modifier = {
 				YFC = {is_ai = yes} 
@@ -1554,12 +1550,18 @@ country_event = { #YFC Sell
 				add = 4
 		 	}
 			modifier = {
-				check_variable = { YFC.tradeable_relation^YFC.selected = 0 }
-				add = -1
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 2 }}
+				}
+				add = 1
 		 	}
 			modifier = {
-				check_variable = { YFC.tradeable_relation^YFC.selected = 3 }
+				YFC = {check_variable = { tradeable_relation^selected = 3 }}
 				add = 2
+		 	}
+			modifier = {
+				check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var < 1 }
+				add = 0.5
 		 	}
 		}	
 	}
@@ -1577,6 +1579,27 @@ country_event = { #YFC Sell
 
 		ai_chance = {
 			base = 0.5
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 0 }}
+					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var > 1 }
+				}
+				add = 3
+		 	}
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 1 }}
+					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var > 1.2 }
+				}
+				add = 1.5
+		 	}
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 2 }}
+					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var = 1.5 }
+				}
+				add = 1
+		 	}
 		}
 	}
 }

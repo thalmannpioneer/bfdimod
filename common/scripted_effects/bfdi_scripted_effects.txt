@@ -1162,6 +1162,7 @@ YFC_calc_trade_risk_selling = {
             divide_variable = { trade_cost_show_var = 100 }
 
             subtract_from_variable = { money_amount = trade_cost_show_var }
+
             IF = {
                 limit = {
                     YFC = {has_completed_focus = YFC_focus_expand_northern_trade}
@@ -1175,6 +1176,7 @@ YFC_calc_trade_risk_selling = {
                 YFC = {add_to_variable = {money_amount = bonus_money_var}}
             }
             YFC = {
+                add_to_variable = {tradeable_count^selected = 2}
                 add_to_variable = {money_amount = ROOT.trade_cost_show_var}
                 country_event = {
                     id = YFC_event.34
@@ -1546,6 +1548,7 @@ YFC_calc_trade_risk_buying = {
 
                 YFC = {
                     subtract_from_variable = { money_amount = ROOT.trade_cost_show_var }
+                    add_to_variable = {tradeable_count^selected = 2}
                     country_event = {
                         id = YFC_event.73
                         hours = 2
