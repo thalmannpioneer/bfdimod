@@ -33,14 +33,15 @@ set_popularities = {
 	neutrality = 4
 }
 
-set_stability = 0.5
-set_war_support = 0.5
+set_stability = -0.15
+set_war_support = 0.74
 
 set_variable = { var_demo_end = 2 }
 
 recruit_character = SMG_grassy
 recruit_character = SMG_one_joke
 recruit_character = SMG_stick_grenade
+recruit_character = SMG_sidewalky
 
 
 

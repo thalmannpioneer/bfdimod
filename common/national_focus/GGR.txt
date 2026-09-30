@@ -686,6 +686,15 @@ focus_tree = {
 			custom_effect_tooltip = l_GGR_improves_vsnw
 			army_experience = 25
 			add_to_variable = { var_GGR_vsnw_ra = 0.05 }
+			add_corps_commander_role = {
+                character = GGR_sidewalky
+				skill = 1
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 1
+				logistics_skill = 1
+				traits = { brave tough trained }
+            }
 		}
 	}
 	

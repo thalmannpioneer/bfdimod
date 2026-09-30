@@ -169,7 +169,7 @@ characters = {
 		}
 	}
 
-	GPG_income_tax_return_document = { #From @barelysilver
+	GPG_income_tax_return_document = { #From @barelysilver (MOVE LATER WHEN SOS GETS CONTENT)
 		name = GPG_income_tax_return_document
 		portraits = { civilian = { small = GFX_idea_GPG_itrd } }
 		advisor = {

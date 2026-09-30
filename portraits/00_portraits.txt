@@ -83,13 +83,20 @@ continent = {
 	
 	operative = {
         female = {
-            "GFX_Portrait_Goiky_Generic_spy_1"
-            "GFX_Portrait_Goiky_Generic_spy_2"
+            "GFX_Portrait_Goiky_Generic_spy_1" 
+            "GFX_Portrait_Goiky_Generic_spy_2" 
+			"GFX_Portrait_Goiky_Generic_spy_3"
+			"GFX_Portrait_Goiky_Generic_spy_4"
+			"GFX_Portrait_Goiky_Generic_spy_888"
+			"GFX_Portrait_Goiky_Generic_spy_999"
         }
         male = {
-            #Update when male spies are added!
-            "GFX_Portrait_Goiky_Generic_spy_1"
-            "GFX_Portrait_Goiky_Generic_spy_2"
+            "GFX_Portrait_Goiky_Generic_spy_1" 
+            "GFX_Portrait_Goiky_Generic_spy_2" 
+			"GFX_Portrait_Goiky_Generic_spy_3" 
+			"GFX_Portrait_Goiky_Generic_spy_4"
+			"GFX_Portrait_Goiky_Generic_spy_888"
+			"GFX_Portrait_Goiky_Generic_spy_999"
         }
     }
 
@@ -103,6 +110,86 @@ continent = {
 			"GFX_Portrait_Goiky_Generic_scientist_1"
 			"GFX_Portrait_Goiky_Generic_scientist_2"
 			"GFX_Portrait_Goiky_Generic_scientist_3"
+		}
+	}
+}
+
+GGR = {
+	army = {
+		male = {
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+			"GFX_Portrait_Goiky_Generic_land_6"
+			"GFX_Portrait_Goiky_Generic_land_7"
+			"GFX_Portrait_Goiky_Generic_land_8"
+		}
+		female = {
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+			"GFX_Portrait_Goiky_Generic_land_6"
+			"GFX_Portrait_Goiky_Generic_land_7"
+			"GFX_Portrait_Goiky_Generic_land_8"
+		}
+	}
+	
+	navy = {
+		male = { 
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+			"GFX_Portrait_Goiky_Generic_land_6"
+			"GFX_Portrait_Goiky_Generic_land_7"
+			"GFX_Portrait_Goiky_Generic_land_8"
+		}
+		female = {
+			"GFX_Portrait_Goiky_Generic_land_1"
+			"GFX_Portrait_Goiky_Generic_land_2"
+			"GFX_Portrait_Goiky_Generic_land_3"
+			"GFX_Portrait_Goiky_Generic_land_4"
+			"GFX_Portrait_Goiky_Generic_land_5"
+			"GFX_Portrait_Goiky_Generic_land_6"
+			"GFX_Portrait_Goiky_Generic_land_7"
+			"GFX_Portrait_Goiky_Generic_land_8"
+		}
+	}
+	
+	operative = {
+        female = {
+            #"GFX_Portrait_Goiky_Generic_spy_1" #Armless
+            #"GFX_Portrait_Goiky_Generic_spy_2" #Armless
+			#"GFX_Portrait_Goiky_Generic_spy_3" #Armless
+			"GFX_Portrait_Goiky_Generic_spy_4"
+			"GFX_Portrait_Goiky_Generic_spy_888"
+			"GFX_Portrait_Goiky_Generic_spy_999"
+        }
+        male = {
+            #"GFX_Portrait_Goiky_Generic_spy_1" #Armless
+            #"GFX_Portrait_Goiky_Generic_spy_2" #Armless
+			#"GFX_Portrait_Goiky_Generic_spy_3" #Armless
+			"GFX_Portrait_Goiky_Generic_spy_4"
+			"GFX_Portrait_Goiky_Generic_spy_888"
+			"GFX_Portrait_Goiky_Generic_spy_999"
+        }
+    }
+
+	scientist = {
+		female = {
+			"GFX_Portrait_Goiky_Generic_scientist_1"
+			"GFX_Portrait_Goiky_Generic_scientist_2"
+			#"GFX_Portrait_Goiky_Generic_scientist_3" #Armless
+		}
+		male = {
+			"GFX_Portrait_Goiky_Generic_scientist_1"
+			"GFX_Portrait_Goiky_Generic_scientist_2"
+			#"GFX_Portrait_Goiky_Generic_scientist_3" #Armless
 		}
 	}
 }

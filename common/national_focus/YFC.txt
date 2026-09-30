@@ -3320,6 +3320,55 @@ focus_tree = {
     }
 
     focus = {
+        id = YFC_focus_great_business_partnership
+        relative_position_id = YFC_focus_diverting_funds
+        x = 1
+        y = 1
+        icon = GFX_focus_YFC_great_business_partnership
+        prerequisite = { focus = YFC_focus_establish_formal_connection }
+        prerequisite = { focus = YFC_focus_diverting_funds }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = l_YFC_scray_threat
+            add_political_power = 50
+            add_opinion_modifier = { target = BUN modifier = medium_increase }
+            every_country_with_original_tag = {
+                original_tag_to_check = BUN
+                add_opinion_modifier = { target = YFC modifier = medium_increase }
+            }
+            hidden_effect = {
+                GGR = { #Embargo event
+                    country_event = {
+                        id = YFC_event.9
+                        days = 15
+                        random_hours = 48
+                    }
+                }
+                CRN = { #Embargo event
+                    country_event = {
+                        id = YFC_event.9
+                        days = 18
+                        random_hours = 48
+                    }
+                }
+                random_list = {
+                    60 = {
+                        set_country_flag = left_path
+                    }
+                    50 = {
+                        set_country_flag = right_path
+                    }
+                }
+            }
+        }
+    }
+
+    focus = {
         id = YFC_focus_sectorial_meddling
         relative_position_id = YFC_focus_great_business_partnership
         x = -2
@@ -3399,55 +3448,6 @@ focus_tree = {
                 OR = {
                     has_completed_focus = YFC_focus_invest_in_speed
                     has_completed_focus = YFC_focus_invest_in_power
-                }
-            }
-        }
-    }
-
-    focus = {
-        id = YFC_focus_great_business_partnership
-        relative_position_id = YFC_focus_diverting_funds
-        x = 1
-        y = 1
-        icon = GFX_focus_YFC_great_business_partnership
-        prerequisite = { focus = YFC_focus_establish_formal_connection }
-        prerequisite = { focus = YFC_focus_diverting_funds }
-
-        ai_will_do = {
-            base = 10
-        }
-
-        cost = 5
-        completion_reward = {
-            custom_effect_tooltip = l_YFC_scray_threat
-            add_political_power = 50
-            add_opinion_modifier = { target = BUN modifier = medium_increase }
-            every_country_with_original_tag = {
-                original_tag_to_check = BUN
-                add_opinion_modifier = { target = YFC modifier = medium_increase }
-            }
-            hidden_effect = {
-                GGR = { #Embargo event
-                    country_event = {
-                        id = YFC_event.9
-                        days = 15
-                        random_hours = 48
-                    }
-                }
-                CRN = { #Embargo event
-                    country_event = {
-                        id = YFC_event.9
-                        days = 18
-                        random_hours = 48
-                    }
-                }
-                random_list = {
-                    60 = {
-                        set_country_flag = left_path
-                    }
-                    50 = {
-                        set_country_flag = right_path
-                    }
                 }
             }
         }
@@ -5595,8 +5595,6 @@ focus_tree = {
             #ill get these ones done fast ok it wont be a repeat of the numis event chain
             #teardrop is very hostile at first
 
-            #ZDubbz after the chain is done should TBT start the east game just on their own or?
-
             country_event = {
                 id = YFC_event.107
                 hours = 1
@@ -5619,9 +5617,8 @@ focus_tree = {
         completion_reward = {
             add_equipment_to_stockpile = {
                 type = infantry_equipment
-                amount = 1000
+                amount = 1500
             }
-            add_manpower = 5000
             random_core_state = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {

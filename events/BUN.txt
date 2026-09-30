@@ -94,7 +94,7 @@ country_event = {
 						controls_state = 212
 					}
 					transfer_state = 212
-					controls_state = 218
+					transfer_state = 218
 				}
 				ELSE = {
 					212 = { 

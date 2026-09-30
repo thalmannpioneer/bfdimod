@@ -1550,9 +1550,7 @@ country_event = { #YFC Sell
 				add = 4
 		 	}
 			modifier = {
-				AND = {
-					YFC = {check_variable = { tradeable_relation^selected = 2 }}
-				}
+				YFC = {check_variable = { tradeable_relation^selected = 2 }}
 				add = 1
 		 	}
 			modifier = {
@@ -1737,16 +1735,16 @@ country_event = { #YFC trade event other country POV buying
 				add = -5
 		 	}
 			modifier = {
-				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 0 }}
-				add = -2
+				YFC = {check_variable = { tradeable_relation^selected = 2 }}
+				add = 1
 		 	}
 			modifier = {
-				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 1 }}
-				add = -0.5
+				YFC = {check_variable = { tradeable_relation^selected = 3 }}
+				add = 2
 		 	}
 			modifier = {
-				YFC = {check_variable = { YFC.tradeable_relation^YFC.selected = 3 }}
-				add = 1.5
+				check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var < 1 }
+				add = 0.5
 		 	}
 		}	
 	}
@@ -1763,7 +1761,28 @@ country_event = { #YFC trade event other country POV buying
 		}
 
 		ai_chance = {
-			base = 0.1
+			base = 0.5
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 0 }}
+					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var < 1 }
+				}
+				add = 3
+		 	}
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 1 }}
+					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var < 0.8 }
+				}
+				add = 1.5
+		 	}
+			modifier = {
+				AND = {
+					YFC = {check_variable = { tradeable_relation^selected = 2 }}
+					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var = 0.5 }
+				}
+				add = 1
+		 	}
 		}
 	}
 }

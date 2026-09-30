@@ -30,6 +30,23 @@ characters = {
 		}
 	}
 
+	SMG_sidewalky = { #From @padirian
+		name = GGR_sidewalky
+		portraits = { 
+			army = { 
+				large = GFX_SRR_sidewalky #shhh
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+			traits = { brave tough trained }
+		}
+	}
+
 	SMG_one_joke = {
 		#What...? how... HOW DID SHE GET HERE??!?!!?!?!?!?!!?!?!?!?!?!?!?!?!?!?!?!? OH NOOOOO!!!!!!!-
 		name = SMG_one_joke

@@ -36,6 +36,15 @@ characters = {
 		}
 	}
 	
+	GGR_sidewalky = { #From @padirian
+		name = GGR_sidewalky
+		portraits = { 
+			army = { 
+				large = GFX_SRR_sidewalky #shhh
+			} 
+		}
+	}
+
 	GGR_woody = {
 		name = GGR_woody
 		portraits = {

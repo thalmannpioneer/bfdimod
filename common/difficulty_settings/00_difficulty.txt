@@ -101,4 +101,10 @@ difficulty_settings = {
 		countries = { CRN }
 		multiplier = 2.0
 	}
+	difficulty_setting = {
+		key = "custom_diff_strong_DAV"
+		modifier = diff_strong_ai_generic
+		countries = { DAV }
+		multiplier = 2.0
+	}
 }

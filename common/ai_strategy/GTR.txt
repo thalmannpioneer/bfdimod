@@ -112,9 +112,20 @@ GTR_fighters = {
     }
     abort_when_not_enabled = yes
 
+    #ai_strategy = {
+    #    type = desired_divisions
+    #    value = 0
+    #}
+
     ai_strategy = {
-        type = desired_divisions
-        value = 0
+        type = build_army
+        id = infantry  
+        value = 0   
+    }
+    ai_strategy = {
+        type = build_army
+        id = garrison  
+        value = 0   
     }
 
 	ai_strategy = {
@@ -212,9 +223,20 @@ GTR_bombers = {
     }
     abort_when_not_enabled = yes
 
+    #ai_strategy = {
+    #    type = desired_divisions
+    #    value = 0
+    #}
+
     ai_strategy = {
-        type = desired_divisions
-        value = 0
+        type = build_army
+        id = infantry  
+        value = 0   
+    }
+    ai_strategy = {
+        type = build_army
+        id = garrison  
+        value = 0   
     }
 
 	ai_strategy = {

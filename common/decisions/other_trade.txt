@@ -631,49 +631,62 @@ decision_other_trade_category = {
 				set_temp_variable = { Trade_Selling_Arty_var = 0 }		
 				set_temp_variable = { Trade_Selling_AntiTank_var = 0 }	
 				set_temp_variable = { Trade_Selling_AntiAir_var = 0 }		
-				set_temp_variable = { Trade_Selling_Inf_var = 0 }		
+				set_temp_variable = { Trade_Selling_Inf_var = 0 }
+				set_temp_variable = { Trade_non_selling_var = 1 }			
 				IF = { #Support Check
 					limit = {
-						has_equipment = {support_equipment_1 > 500}
+						has_equipment = {support_equipment_1 > 1000}
 						NOT = {check_variable = { buying_item = 1 }}
 					}
 					add_to_temp_variable = { Trade_Selling_Support_var = 35 }
 				}
 				IF = { #Trucks Check
 					limit = {
-						check_variable = {num_equipment@motorized_equipment > 500}
+						check_variable = {num_equipment@motorized_equipment > 1000}
 						NOT = {check_variable = { buying_item = 2 }}
 					}
 					add_to_temp_variable = { Trade_Selling_Truck_var = 25 }
 				}
 				IF = { #Arty Check
 					limit = {
-						check_variable = {num_equipment@artillery_equipment > 500}
+						check_variable = {num_equipment@artillery_equipment > 2000}
 						NOT = {check_variable = { buying_item = 3 }}
 					}
 					add_to_temp_variable = { Trade_Selling_Arty_var = 25 }
 				}
 				IF = { #Anti_Air Check
 					limit = {
-						check_variable = {num_equipment@anti_air_equipment > 500}
+						check_variable = {num_equipment@anti_air_equipment > 1000}
 						NOT = {check_variable = { buying_item = 4 }}
 					}
 					add_to_temp_variable = { Trade_Selling_AntiAir_var = 25 }
 				}
 				IF = { #Anti_Tank Check
 					limit = {
-						check_variable = {num_equipment@anti_tank_equipment > 500}
+						check_variable = {num_equipment@anti_tank_equipment > 1000}
 						NOT = {check_variable = { buying_item = 5 }}
 					}
 					add_to_temp_variable = { Trade_Selling_AntiTank_var = 25 }
 				}	
 				IF = { #Inf Check
 					limit = {
-						check_variable = {num_equipment@infantry_equipment > 1000}
+						check_variable = {num_equipment@infantry_equipment > 3000}
 						NOT = {check_variable = { buying_item = 0 }}
 					}
 					add_to_temp_variable = { Trade_Selling_Inf_var = 40 }
-				}				
+				}	
+				IF = { #War Check
+					limit = {
+						has_war = yes
+					}
+					add_to_temp_variable = { Trade_non_selling_var = 100 }
+				}
+				IF = { #Losing Check
+					limit = {
+						surrender_progress > 0.05
+					}
+					add_to_temp_variable = { Trade_non_selling_var = 10000 }
+				}					
 				random_list = {
 					Trade_Selling_Support_var = { #Support
 						set_country_flag = Confirmed_Trade_Selling
@@ -735,7 +748,7 @@ decision_other_trade_category = {
 						multiply_temp_variable = {MATH_COST_var = ROOT.selling_amount}
 						add_to_array = {array = YFC.buying_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}
 					}
-					1 = {
+					Trade_non_selling_var = {
 						clr_country_flag = Confirmed_Trade_Selling
 						set_variable = {THIS.selling_item = -1}
 						set_variable = {ROOT.selling_amount = 0 }

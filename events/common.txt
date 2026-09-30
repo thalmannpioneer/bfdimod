@@ -636,7 +636,7 @@ country_event = {
             
             IF = {
                 limit = {is_ai = yes}
-                set_grand_doctrine = mobile_warfare
+                set_grand_doctrine = new_mobile_warfare
             }
 
             country_event = {
