@@ -199,7 +199,7 @@ decision_GPG_civilwar_category = {
 			}
         }
         modifier = {
-			training_time_army_factor = -0.5
+			training_time_army_factor = -0.25
             weekly_manpower = 500
             army_core_attack_factor = 0.25
             army_core_defence_factor = 0.3

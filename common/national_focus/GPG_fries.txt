@@ -22,9 +22,6 @@ focus_tree = {
 
         completion_reward = {
             add_political_power = 15
-            hidden_effect = {
-                set_country_leader_ideology = centrism
-            }
         }
     }
 
@@ -113,6 +110,9 @@ focus_tree = {
             add_stability = 0.05
             set_country_flag = congress_ended
             country_event = GPG_event.52
+            hidden_effect = {
+                set_country_leader_ideology = centrism
+            }
         }
     }
 
@@ -346,11 +346,7 @@ focus_tree = {
         }
 
         completion_reward = {
-            add_trait = {
-                character = GPG_fries
-                ideology = centrism
-                trait = special_authorities
-            }
+            add_country_leader_trait = special_authorities
         }
     }
 

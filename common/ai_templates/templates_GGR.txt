@@ -397,6 +397,10 @@ mountaineers_GGR = {
 				mountaineers = 4
 				artillery_brigade = 1
 			}
+
+			regimental_support = {
+				field_guns = 1
+			}
 		}
 	}
 }

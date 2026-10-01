@@ -1383,16 +1383,6 @@ technologies = {
 				factor = 2
 			}
 			
-			modifier = {				
-				OR = {
-					tag = USA
-					tag = ENG
-					tag = JAP
-					tag = ITA
-				}
-				factor = 5
-			}
-			
 			modifier = {
 				factor = 2
 				date > 1938.1.1

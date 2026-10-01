@@ -165,66 +165,21 @@ WGF_trucks = {
 	}
 }
 
-WGF_our_army = {
-    #WGF's build
+WGF_marines = {
+    #WGF will get marines after coiny 
 	allowed = {
 		original_tag = WGF
 	}
 	enable = {
-		always = yes #May be changed later...
+		NOT = {country_exists = GMD}
+		NOT = {has_tech = marines}
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
-		type = equipment_production_surplus_management
-		id = infantry_equipment
-		value = 2
-	}
-
-	ai_strategy = {
-		type = equipment_production_surplus_management
-		id = support_equipment
-		value = 1
-	}
-
-	ai_strategy = {
-		type = equipment_production_surplus_management
-		id = artillery_equipment
-		value = 1
-	}
-
-	ai_strategy = {
-		type = equipment_production_surplus_management
-		id = anti_air_equipment
-		value = 0.1
-	}
-
-	ai_strategy = {
-		type = equipment_production_surplus_management
-		id = anti_tank_equipment
-		value = 0.1
-	}
-
-	ai_strategy = {
-        type = equipment_production_surplus_management
-        id = motorized_equipment
-        value = 0.1
-    }
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 95
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 5
-	}
-
-	ai_strategy = {
-		type = min_wanted_supply_trucks
-		value = 200
+		type = research_weight_factor
+		id = marines
+		value = 1000
 	}
 }
 
@@ -291,4 +246,74 @@ WGF_supply = {
         target = 5207
         value = 1000
     }
+}
+
+## Builds ##
+
+WGF_our_army = {
+    #WGF's build
+	allowed = {
+		original_tag = WGF
+	}
+	enable = {
+		always = yes #May be changed later...
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = infantry_equipment
+		value = 2
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = support_equipment
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = artillery_equipment
+		value = 1
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = anti_air_equipment
+		value = 0.1
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = anti_tank_equipment
+		value = 0.1
+	}
+
+	ai_strategy = {
+        type = equipment_production_surplus_management
+        id = motorized_equipment
+        value = 0.1
+    }
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 90
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 5
+	}
+
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 200
+	}
 }

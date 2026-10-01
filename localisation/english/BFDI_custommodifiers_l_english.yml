@@ -6,5 +6,8 @@
  l_modifier_gain_100_guns_weekly: "Infantry Equipment per Week: §G+100§!"
  l_modifier_250_MP_state: "Weekly Manpower per Controlled State: §G+250§!"
 
+ l_modifier_trait_fragile: "§RIncreases§! recovery time from §RWounded§! by §R90 days§!"
+ l_modifier_trait_tough: "§GDecreases§! recovery time from §RWounded§! by §G45 days§!"
+
  l_modifier_lock_divisions: "§tLocks division training§!"
  l_bankruptcy_block_eco: "§tLocks economic policies.§! We can get out of a bankruptcy by making a §7Positive Balance§!."

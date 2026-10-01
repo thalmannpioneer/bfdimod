@@ -576,17 +576,18 @@ technologies = {
         }
 
         ai_will_do = {
-            factor = 0.7
+            factor = 0.8
 
             modifier = {
-				factor = 5
-				tag = SOS
-			}
-
-            modifier = {
-				factor = 5
+				factor = 50
 				tag = DAV
 			}
+
+            modifier = {
+                factor = 10
+                tag = WGF
+                NOT = {country_exists = GMD}
+            }
         }
     }
 

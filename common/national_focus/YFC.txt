@@ -1304,6 +1304,16 @@ focus_tree = {
                 amount = 250
                 producer = YFC
             }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = cat_anti_tank
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = cat_anti_air
+            }
         }
 
         ai_will_do = {
@@ -7401,6 +7411,11 @@ focus_tree = {
 
         completion_reward = {
             navy_experience = 25
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = dd_tech
+            }
             IF = {
                 limit = { #Portland, Great
                     225 = {

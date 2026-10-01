@@ -93,10 +93,7 @@ technologies = {
 
 			modifier = {
 				factor = 4
-				OR = {
-					tag = SOS
-					tag = DAV
-				}
+				tag = SOS
 			}
 			modifier = {
 				has_war = yes

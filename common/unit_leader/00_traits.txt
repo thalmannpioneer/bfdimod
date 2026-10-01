@@ -3536,8 +3536,9 @@ leader_traits = {
         }
 
         modifier = {
-            wounded_chance_factor = -5
+            wounded_chance_factor = -1
             planning_speed = -0.1
+            custom_modifier_tooltip = l_modifier_trait_fragile
         }
 
         new_commander_weight = {
@@ -3556,8 +3557,9 @@ leader_traits = {
         attack_skill_factor = 1
 
         modifier = {
-            wounded_chance_factor = -1
+            wounded_chance_factor = -0.1
             experience_loss_factor = -0.05
+            custom_modifier_tooltip = l_modifier_trait_tough
         }
 
         new_commander_weight = {

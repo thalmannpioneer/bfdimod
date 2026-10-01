@@ -1201,6 +1201,12 @@ technologies = {
             }
 
             modifier = {
+                factor = 3
+                tag = WGF
+                NOT = {country_exists = GMD}
+            }
+
+            modifier = {
                 factor = 1.25
                 date > 2015.1.1
             }

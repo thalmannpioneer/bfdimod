@@ -51,20 +51,60 @@ WGF_Cav_01 = {
 
 	can_use = { always = yes }
 
-	division_types = { "cavalry"  }
+	division_types = { "cavalry" }
 
-	fallback_name = "%dya Cavalry"
+	fallback_name = "%dya Cavalry Brigade"
 
 	ordered = {
 		1 = { "%dya 'People's' Cavalry" }
 		2 = { "%dya 'Farmers' Cavalry" }
 		3 = { "%dya 'Yellow' Cavalry" }
-		4 = { "%dya Cavalry" }
-		5 = { "%dya Cavalry" }
-		6 = { "%dya Cavalry" }
-		7 = { "%dya Cavalry" }
-		8 = { "%dya Cavalry" }
-		9 = { "%dya Cavalry" }
-		10 = { "%dya Cavalry" }
+		4 = { "%dya Cavalry Brigade" }
+		5 = { "%dya Cavalry Brigade" }
+		6 = { "%dya Cavalry Brigade" }
+		7 = { "%dya Cavalry Brigade" }
+		8 = { "%dya Cavalry Brigade" }
+		9 = { "%dya Cavalry Brigade" }
+		10 = { "%dya Cavalry Brigade" }
+		11 = { "%dya Cavalry Brigade" }
+		12 = { "%dya Cavalry Brigade" }
+		13 = { "%dya Cavalry Brigade" }
+		14 = { "%dya Cavalry Brigade" }
+		15 = { "%dya Cavalry Brigade" }
 	}
 }	
+
+WGF_MAR_01 = {
+	name = "Marine Division"
+
+	for_countries = { WGF }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	link_numbering_with = { WGF_INF_01 }
+
+	fallback_name = "%dya Morskoi Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dya Morskoi Brigade" }
+		2 = { "%dya Morskoi Brigade" }
+		3 = { "%dya Morskoi Brigade" }
+		4 = { "%dya Morskoi Brigade" }
+		5 = { "%dya Morskoi Brigade" }
+		6 = { "%dya Morskoi Brigade" }
+		7 = { "%dya Morskoi Brigade" }
+		8 = { "%dya Morskoi Brigade" }
+		9 = { "%dya Morskoi Brigade" }
+		10 = { "%dya Morskoi Brigade" }
+		11 = { "%dya Morskoi Brigade" }
+		12 = { "%dya Morskoi Brigade" }
+		13 = { "%dya Morskoi Brigade" }
+		14 = { "%dya Morskoi Brigade" }
+		15 = { "%dya Morskoi Brigade" }
+	}
+}
