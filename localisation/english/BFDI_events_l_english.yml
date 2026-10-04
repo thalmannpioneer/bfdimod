@@ -1252,45 +1252,61 @@
  #Put the effects for what should be put in each option
  #Effects should still stay basic though, like money, pp, etc.
 
+ #the territories you can gain are divided into 3 categories: inland-coastal, ports, and britain specifically. you start with a 50% chance of getting the inland-coastal territories, 30% chance of getting britain (if you get portland), and 15% chance of getting the ports. when ending A is achieved, the game should look at each state (except britain), take its category (i-c or, port), and use that chance to determine who gets it. ensure that teardrop cannot get popper coast if she does not have large coast OR ear coast & ensure teardrop cannot get tidewater if she does not have no object's sand & ensure teardrop cannot get ear coast, popper coast, or large coast if she does not have either ofalk or ganymede to prevent border gore . if thc gains portland, use the britain chance to determine if it gets to have britain as well. if teardrop gets portland, she gets britain too, regardless of britain chance.
+
+ #PLEASE READ THE ENTIRE ABOVE PARAGRAPH, IT IS IMPORTANT. DM IF YOU HAVE QUESTIONS
+
  YFC_event.107.t: "The East?" 
  YFC_event.107.desc: "So, an interesting suggestion has recently come to us. Pipe, the one who doesn't speak much, has requesteed that we look into the Eastern Seaboard, as a potential vehicle through which we would focus on international trading endeavors. They've stated that, if it is secured, we could easily trade with northern states in Goiky, and with Davidland. Now, this idea is all fine and dandy -- great, even -- but there lies one little problem in the way of this. The Beach Territory, with her ever expansionist regime, has set its eyes on this same piece of territory that we are planning to seek. Though it is typical for nations who compete over the same strip of land to fight for their claims, and, as much as Top Hat would like to bring war to the Eastern Seaboard, we are not in the position to use military force against any other nation. Our forces are far too weak, and our nation is far too unstable, for this idea to end up working in our favor. So, we are forced to attempt to negotiate with the teardroppers, in attempts to divide up the land in a \"fair\" and \"equal\" manner. One question does remain though; how exactly should we go about our negotiations?"
- YFC_event.107.a: "Let's ensure we aren't too agressive." #makes all A options work better & C options work worse
- YFC_event.107.b: "We ought to take a measured, balanced approach." #does nothing
- YFC_event.107.c: "Our Realm deserves aggressive expansion." #makes all C options work better & A options work worse
+ YFC_event.107.a: "Let's ensure we aren't too agressive." # -> event.108, makes all A options work better & C options work worse
+ YFC_event.107.b: "We ought to take a measured, balanced approach." # -> event.108, does nothing for now, eventually allows you to refuse to finish negotiations 
+ YFC_event.107.c: "Our Realm deserves aggressive expansion." # -> event.108, makes all C options work better & A options work worse
 
- YFC_event.108.t: "YFC_focus_teardrop_diplomacy TWO" 
- YFC_event.108.desc: "text text bla bla" #ZDubbz
- YFC_event.108.a: ""
- YFC_event.108.b: ""
- YFC_event.108.c: ""
+ YFC_event.108.t: "The East: Hostility from Teardrop?" 
+ YFC_event.108.desc: "A short while ago, we sent Teardrop, head of the Beach Territory, a letter, asking if it would be in our collective cards to negotiate control over the Eastern Seaboard. Teardrop responded rather harshly, stating in her letter that we were \"trying to ruin teardroppers' lives, within and outside of the Beach Territory,\" and \"didn't support teardropper irridentism (of course we don't??).\" Additionally, she claimed that she would \"never in a million years work with [our] excuse of a state.\" Now, obviously, she has shared with us some extraordinary disrespectful words, however, she never properly attacked any of the real suggestions we made. Perhaps, by attempting to calm her down, we can properly speak of what we have brought to the table. ... Or maybe, she doesn't deserve that. What with her insulting of us, who does she think she is?"
+ YFC_event.108.a: "We should pacify her." # -> event.109, -15 pp, increases chance of gaining Britain if Portland is gained 
+ YFC_event.108.b: "Maybe, if we send the same letter again, she'll be confused enough to read it normally." # -> event.109
+ YFC_event.108.c: "We should put her in her place!" #if 107.a was picked and you click this -> event.114. else, -> event.109, lowers chance of getting multiple inland-coastal territories, heightens chance of getting 2 ports, heightens
 
- YFC_event.109.t: "YFC_focus_teardrop_diplomacy THREE" 
- YFC_event.109.desc: "text text bla bla" #ZDubbz
- YFC_event.109.a: ""
- YFC_event.109.b: ""
- YFC_event.109.c: ""
+ YFC_event.109.t: "The East: Ganymede" 
+ YFC_event.109.desc: "Luckily, it seems as if our strategy has worked; Teardrop, though still clearly antagonistic, she is much more receptive to our actual plan to negotiate over the vital territory to our east. Through her ravings, she did give us a coherent point: how necessary is it that the Beach Territory gains Ganymede? This question can, easily, be coopted for our wants. If we push on this point, we can easily guarantee that Ganymede becomes ours upon diplomacy's peaceful conclusion, however, our claim on Ganymede would, certainly, be far stronger if we did not claim any additional ports, from it. Though, with Ganymede's distance from Davidland, and northern Goiky, would it be the smartest choice to strong-arm Ganymede out of discussions? Ganymede is a very nice, pretty city, and we would certainly not be upset to have it in our possession."
+ YFC_event.109.a: "Only one port is necessary." #if 107.c was picked -> event.115, but THC gets ganymede & large coast. else, -> event.110, +7% stab, +20pp, guaranteed that you will not get Oflak, significantly lower chance of getting Portland, guarantees you will get ganymede if ending A is achieved
+ YFC_event.109.b: "We should be vague in our response. Confusing the enemy, that sort." # -> event.110
+ YFC_event.109.c: "All three ports are vital to us." # if 107.a was picked -> event.110, -35pp. else if 107.c was picked -> event.110, -15pp, + 12 nav experience, noticeably increases chance of getting ports. else, -> event.110 -15pp, +12 nav experience, slightly increases port chance, lowers britain chance
 
- YFC_event.110.t: "YFC_focus_teardrop_diplomacy FOUR" 
+ YFC_event.110.t: "The East: Demilitarization?" 
  YFC_event.110.desc: "text text bla bla" #ZDubbz
- YFC_event.110.a: ""
- YFC_event.110.b: ""
- YFC_event.110.c: ""
+ YFC_event.110.a: "Full demilitarization!"
+ YFC_event.110.b: "Demilitarize the ports, keep the inner lands lawless."
+ YFC_event.110.c: "The Rapid Response divisions rush to the coast..." #demilitarizes the eastern seaboard, gives you military access to emp, lets you increase the chance that you get a state if you have 6 divs in the state (decision called "occupy x state"), only lets you do this once ever (cant occupy multiple states)
 
- YFC_event.111.t: "YFC_focus_teardrop_diplomacy FIVE" 
+ YFC_event.111.t: "The East: Inland-Coastal Territories" 
  YFC_event.111.desc: "text text bla bla" #ZDubbz
- YFC_event.111.a: ""
- YFC_event.111.b: ""
- YFC_event.111.c: ""
+ YFC_event.111.a: "We only need to connect our core Realm to a port."
+ YFC_event.111.b: "We could split the territories, north and south."
+ YFC_event.111.c: "The teardroppers can't even live there!"
 
- YFC_event.112.t: "YFC_focus_teardrop_diplomacy SIX" 
+ YFC_event.112.t: "The East: Shared Resource Rights?" 
  YFC_event.112.desc: "text text bla bla" #ZDubbz
  YFC_event.112.a: ""
- YFC_event.112.b: ""
+ YFC_event.112.b: "We should postpone further discussions..." # -> event.116, make this text red, can only appear if 107.b was chosen
  YFC_event.112.c: ""
 
- YFC_event.113.t: "YFC_focus_teardrop_diplomacy FINAL" #Add more options if you wish
+ YFC_event.113.t: "The East: Teardrop's Apology" #ending A
  YFC_event.113.desc: "text text bla bla" #ZDubbz
- YFC_event.113.a: ""
+ YFC_event.113.a: "Send her our regards." #heavy relations increase with teardrop, gain political power, +3% stab, makes the sea route have a danger of 0
+
+ YFC_event.114.t: "The East: Teardrop Cuts Diplomatic Ties?!" #ending B
+ YFC_event.114.desc: "Teardrop has written an open letter, directed towards our realm, claiming that, both our government and our people, are \"stupid expansionist assholes.\" Within this very letter, she dictated that her people are to block any and all Top Hat Clan vessels from entering her ports, and attempting to send messages to the government in Farbeach. This, honestly, comes at no surprise to many in the capital, seeing as we have not exactly shyed away from antagonizing her; many have already taken to criticizing our aggressive approach. For now, the situation between our two nations (one not as great as the other) does seem rather tense, and many do not see stability in the future. Only time will tell how Teardrop may escalate our current standing. It very well does seem as if a crisis could soon be afoot..."
+ YFC_event.114.a: "What a brute." #lose political power, teardrop embargoes you, gain a sizeable amnt of war support
+
+ YFC_event.115.t: "The East: Teardrop Siezes the Board?!" #ending C
+ YFC_event.115.desc: "Unfortunately, it seems as if Teardrop no longer respects the wishes of our great nation. She has all but ignored the majority of the contents of our most recent message, and has troops and civilians deployed all throughout the Eastern Seaboard. Settlements are becoming rife with teardroppers, rejoicing over the fact that they now get to live in smaller, less crowded communities. This, of course, is horrible for us: how have we so easily missed the mark in our negotiations? Our failure to properly negotiate terms in the east that were beneficial to us paints to Goiky a clear picture: that our state is not something to be considered an equal. If negotiational weakness is perpetuated by any member of government in the future, we will have a very hard time gaining legitimacy on the world stage."
+ YFC_event.115.a: "Did that just happen? Really?" #lose stability, heavy relations decrease with teardrop
+
+ YFC_event.116.t: "The East: Diplomacy Postponed!" #ending D (rare!!!)
+ YFC_event.116.desc: "It seems we have negotiated perfectly. Though it is very clear that, for the time being, any attempt at an armed conflict against the teardroppers would result in many objective losses, this fact says nothing of the future. The teardroppers, though strong in numbers, and in strategy, are not strong in material (and certainly aren't stronger than us in strategy!). In the near future, it is very likely that we would be able to best the Beach Territory in war, which is precisely why this result is so meaningful to us. Not only do we essentially have a guarantee that war is to be waged on our terms, we have gotten this guarantee under the nose of Teardrop herself! Now, more than ever, is a most wonderful opportunity to build our economic and military forces, as to turn this frozen negotiation into a burning sort of conflict. The Board shall be ours soon enough."
+ YFC_event.116.a: "Golly, that's out of demo, isn't it..?" #+15 war experience, 1 year research bonus on marines and transport ships, small relations increase with teardrop
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
