@@ -418,6 +418,7 @@ focus_tree = {
 
         completion_reward = {
             add_war_support = 0.05
+            random_country_division = {promote_officer_to_general = yes}
             add_dynamic_modifier = { modifier = idea_WGF_red_army }
         }
     }

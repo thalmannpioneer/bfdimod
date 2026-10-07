@@ -4576,20 +4576,28 @@ country_event = { #YFC_focus_teardrop_diplomacy ONE
 	option = { 
 		name = YFC_event.107.a
 
+		set_country_flag = YFC_east_picked_upper
+
 		hidden_effect = {
-			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.108 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.107.b
+
+		set_country_flag = YFC_east_picked_middle
+
 		hidden_effect = {
-			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.108 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.107.c
+
+		set_country_flag = YFC_east_picked_lower
+
 		hidden_effect = {
-			country_event = {id = YFC_event.108 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.108 days = 3 hours = 6 random_hours = 100}
 		}		
 	}
 }
@@ -4603,24 +4611,41 @@ country_event = { #YFC_focus_teardrop_diplomacy TWO
 	fire_only_once = no
 	is_triggered_only = yes
 
+
 	option = { 
 		name = YFC_event.108.a
-
+		add_political_power = -15
+		custom_effect_tooltip = l_YFC_eastern_increase_britain
+		add_to_variable = {var_east_britain_chance = 15}
 		hidden_effect = {
-			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.109 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.108.b
 		hidden_effect = {
-			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.109 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.108.c
-		hidden_effect = {
-			country_event = {id = YFC_event.109 hours = 6 random_hours = 48}
-		}		
+
+		IF = {
+			limit = {has_country_flag = YFC_east_picked_upper}
+			custom_effect_tooltip = l_YFC_eastern_end_talks
+			hidden_effect = {
+				country_event = {id = YFC_event.114 days = 3 hours = 6 random_hours = 100}
+			}
+		}	
+		ELSE = {
+			custom_effect_tooltip = l_YFC_eastern_increase_ports
+			add_to_variable = {var_east_ports_chance = 15}
+			custom_effect_tooltip = l_YFC_eastern_decrease_inland
+			subtract_from_variable = {var_east_inland_coastal_chance = 15}
+			hidden_effect = {
+				country_event = {id = YFC_event.109 days = 3 hours = 6 random_hours = 100}
+			}
+		}	
 	}
 }
 
@@ -4636,21 +4661,68 @@ country_event = { #YFC_focus_teardrop_diplomacy THREE
 	option = { 
 		name = YFC_event.109.a
 
-		hidden_effect = {
-			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
+		IF = {
+			limit = {has_country_flag = YFC_east_picked_lower}
+			custom_effect_tooltip = l_YFC_eastern_end_talks
+			hidden_effect = {
+				country_event = {id = YFC_event.115 days = 3 hours = 6 random_hours = 100}
+				231 = {
+					transfer_state_to = YFC
+					set_demilitarized_zone = no
+				}
+				227 = {
+					transfer_state_to = YFC
+					set_demilitarized_zone = no
+				}
+			}
+		}	
+		ELSE = {
+			add_stability = 0.07
+			add_political_power = 20
+			custom_effect_tooltip = l_YFC_eastern_port_agreement
+			set_country_flag = YFC_east_port_agreement
+			hidden_effect = {
+				country_event = {id = YFC_event.110 days = 3 hours = 6 random_hours = 100}
+			}
 		}
 	}
 	option = { 
 		name = YFC_event.109.b
 		hidden_effect = {
-			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.110 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.109.c
-		hidden_effect = {
-			country_event = {id = YFC_event.110 hours = 6 random_hours = 48}
-		}		
+		IF = {
+			limit = {has_country_flag = YFC_east_picked_upper}
+			add_political_power = -35
+			hidden_effect = {
+				country_event = {id = YFC_event.110 days = 3 hours = 6 random_hours = 100}
+			}
+		}
+		ELSE_IF = {
+			limit = {has_country_flag = YFC_east_picked_lower}
+			add_political_power = -15
+			navy_experience = 12
+			custom_effect_tooltip = l_YFC_eastern_increase_ports
+			add_to_variable = {var_east_ports_chance = 25}
+			hidden_effect = {
+				country_event = {id = YFC_event.110 days = 3 hours = 6 random_hours = 100}
+			}
+		}	
+		ELSE = {
+			add_political_power = -15
+			navy_experience = 12
+			custom_effect_tooltip = l_YFC_eastern_increase_ports
+			add_to_variable = {var_east_ports_chance = 15}
+			custom_effect_tooltip = l_YFC_eastern_decrease_britain
+			subtract_from_variable = {var_east_britain_chance = 15}
+
+			hidden_effect = {
+				country_event = {id = YFC_event.110 days = 3 hours = 6 random_hours = 100}
+			}
+		}	
 	}
 }
 
@@ -4667,19 +4739,19 @@ country_event = { #YFC_focus_teardrop_diplomacy FOUR
 		name = YFC_event.110.a
 
 		hidden_effect = {
-			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.111 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.110.b
 		hidden_effect = {
-			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.111 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.110.c
 		hidden_effect = {
-			country_event = {id = YFC_event.111 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.111 days = 3 hours = 6 random_hours = 100}
 		}		
 	}
 }
@@ -4697,19 +4769,19 @@ country_event = { #YFC_focus_teardrop_diplomacy FIVE
 		name = YFC_event.111.a
 
 		hidden_effect = {
-			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.112 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.111.b
 		hidden_effect = {
-			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.112 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.111.c
 		hidden_effect = {
-			country_event = {id = YFC_event.112 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.112 days = 3 hours = 6 random_hours = 100}
 		}		
 	}
 }
@@ -4727,24 +4799,30 @@ country_event = { #YFC_focus_teardrop_diplomacy SIX
 		name = YFC_event.112.a
 
 		hidden_effect = {
-			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.113 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.112.b
+
+		trigger = {
+			has_country_flag = YFC_east_picked_middle
+		}
+
+		custom_effect_tooltip = l_YFC_eastern_end_talks
 		hidden_effect = {
-			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.116 days = 3 hours = 6 random_hours = 100}
 		}
 	}
 	option = { 
 		name = YFC_event.112.c
 		hidden_effect = {
-			country_event = {id = YFC_event.113 hours = 6 random_hours = 48}
+			country_event = {id = YFC_event.113 days = 3 hours = 6 random_hours = 100}
 		}		
 	}
 }
 
-country_event = { #YFC_focus_teardrop_diplomacy FINAL
+country_event = { #YFC_focus_teardrop_diplomacy FINAL A
 	id = YFC_event.113
 	title = YFC_event.113.t
 	desc = YFC_event.113.desc
@@ -4755,6 +4833,109 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL
 
 	option = { 
 		name = YFC_event.113.a
+
+		
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FINAL B
+	id = YFC_event.114
+	title = YFC_event.114.t
+	desc = YFC_event.114.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.114.a
+
+		add_political_power = -75
+		add_war_support = 0.1
+
+		TBT = {send_embargo = YFC}
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FINAL C
+	id = YFC_event.115
+	title = YFC_event.115.t
+	desc = YFC_event.115.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					OR = {
+						state = 229
+						state = 232
+						state = 228
+						state = 225
+						state = 230
+						state = 226
+						state = 192
+						state = 231
+						state = 227
+					}
+				}
+				IF = {
+					limit = { 
+						NOT = {is_controlled_by = YFC}
+					}
+					transfer_state_to = TBT
+					set_demilitarized_zone = no
+					add_core_of = TBT
+					remove_core_of = EMP
+				}
+			}
+		}
+	}
+
+	option = { 
+		name = YFC_event.115.a
+
+		add_stability = -0.07
+		add_opinion_modifier = { target = TBT modifier = large_decrease }
+        every_country_with_original_tag = {
+            original_tag_to_check = TBT
+            add_opinion_modifier = { target = YFC modifier = large_decrease }
+        }
+	}
+}
+
+country_event = { #YFC_focus_teardrop_diplomacy FINAL D
+	id = YFC_event.116
+	title = YFC_event.116.t
+	desc = YFC_event.116.desc
+	picture = GFX_Temp_event
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.116.a
+
+		army_experience = 15
+		add_tech_bonus = {
+            bonus = 1 
+            uses = 1
+            category = marines
+        }
+		add_tech_bonus = {
+            bonus = 1 
+            uses = 1
+            category = tp_tech
+        }
+
+		add_opinion_modifier = { target = TBT modifier = small_increase }
+        every_country_with_original_tag = {
+            original_tag_to_check = TBT
+            add_opinion_modifier = { target = YFC modifier = small_increase }
+        }
 	}
 }
 

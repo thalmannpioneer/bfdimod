@@ -88,6 +88,10 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 20000
 			army_experience = 85
+
+			random_country_division = {promote_officer_to_general = yes}
+			random_country_division = {promote_officer_to_general = yes}
+
 			if = {
 				limit = {
 					OR = {

@@ -2379,6 +2379,7 @@ focus_tree = {
 
         completion_reward = {
             army_experience = 25
+            random_country_division = {promote_officer_to_general = yes}
             GTR_calculator = {
                 add_skill_level = 2
             }

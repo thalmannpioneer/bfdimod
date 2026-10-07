@@ -5412,7 +5412,14 @@ focus_tree = {
         cost = 4
         completion_reward = {
             #heavily decreases raider opinion of you, even more than it already (shouldve) decreased
-
+            201 = {
+                IF = {
+                    limit = {has_dynamic_modifier = {modifier = BUN_rampant_raids}}
+                    remove_dynamic_modifier = {
+                        modifier = BUN_rampant_raids
+                    }
+                }
+            }
             add_opinion_modifier = { target = BUN modifier = large_decrease }
             every_country_with_original_tag = {
                 original_tag_to_check = BUN
@@ -5605,10 +5612,14 @@ focus_tree = {
             #ill get these ones done fast ok it wont be a repeat of the numis event chain
             #teardrop is very hostile at first
 
+            set_variable = {var_east_britain_chance = 30}
+            set_variable = {var_east_ports_chance = 15}
+            set_variable = {var_east_inland_coastal_chance = 50}
+
             country_event = {
                 id = YFC_event.107
-                hours = 1
-                random_hours = 2
+                hours = 6
+                random_hours = 12
             }
         }
     }

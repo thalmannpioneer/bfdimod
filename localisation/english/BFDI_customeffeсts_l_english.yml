@@ -249,6 +249,12 @@
  l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
  l_YFC_eastern_borderwar_loss: "§ROur future attack/defence bonus in border wars will be decreased by 25%!§!\n§RThe enemies' future attack/defence bonus in border wars will be increased by 25%!§!"
+ l_YFC_eastern_end_talks: "§YEnds negotiations immediately§!, §Routcome is unknown.§!"
+ l_YFC_eastern_increase_britain: "§GIncreases the chance§! of controlling §Y[228.GetName]§!"
+ l_YFC_eastern_increase_ports: "§GIncreases the chance§! of controlling §Y[226.GetName]§! and §Y[227.GetName]§!"
+ l_YFC_eastern_decrease_inland: "§RDecreases the chance§! of controlling the §YInland-Coastal Territories§!"
+ l_YFC_eastern_decrease_britain: "§RDecreases the chance§! of controlling §Y[228.GetName]§!"=
+ l_YFC_eastern_port_agreement: "§tYou will lose the chance to get [226.GetName] but will guarantee getting [227.GetName] should negotiations go smoothly...§!"
 
  l_BUN_YFC_1: "Modifies §YOn a Ticking Timed Bomb§! National Spirit by:\n- §YAll Modifiers§! §R-25%§!"
 

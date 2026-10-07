@@ -578,13 +578,10 @@ leader_traits = {
         }
 
         modifier = {
-            modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+            modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
             modifier_army_sub_unit_cavalry_speed_factor = 0.05
             modifier_army_sub_unit_camelry_speed_factor = 0.05
             out_of_supply_factor = -0.1
-            desert = {
-                movement = 0.1
-            }
         }
 
         new_commander_weight = {
@@ -3504,7 +3501,9 @@ leader_traits = {
         }
     }
 
-    #BFDI TRAITS
+    ##################################
+    # BFDI traits
+    ##################################
 
     fast_learner = {
         type = land
@@ -3603,7 +3602,7 @@ leader_traits = {
 
         modifier = {
             army_org_regain = 0.1
-            planning_speed = -0.25
+            planning_speed = -0.35
             army_org_factor = 0.05
         }
 

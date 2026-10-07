@@ -1289,7 +1289,7 @@
  YFC_event.112.t: "The East: Shared Resource Rights?" 
  YFC_event.112.desc: "text text bla bla" #ZDubbz
  YFC_event.112.a: ""
- YFC_event.112.b: "We should postpone further discussions..." # -> event.116, make this text red, can only appear if 107.b was chosen
+ YFC_event.112.b: "§RWe should postpone further discussions...§!" # -> event.116, make this text red, can only appear if 107.b was chosen
  YFC_event.112.c: ""
 
  YFC_event.113.t: "The East: Teardrop's Apology" #ending A
