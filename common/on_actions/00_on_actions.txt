@@ -1163,6 +1163,16 @@ on_actions = {
                         days = 90
                     }  
                 }
+                IF = {
+                    limit = {NOT = { has_trait = scarred }}
+                    random = {
+                        chance = 1
+                        add_trait = {
+                            character = FROM
+                            trait = scarred
+                        }
+                    }
+                }
 			}
 		}
 	}
@@ -1199,6 +1209,16 @@ on_actions = {
                         days = 90
                     }  
                 }
+                IF = {
+                    limit = {NOT = { has_trait = scarred }}
+                    random = {
+                        chance = 1
+                        add_trait = {
+                            character = FROM
+                            trait = scarred
+                        }
+                    }
+                }
 			}
 		}
 	}
@@ -1217,6 +1237,16 @@ on_actions = {
 			if = {
 				limit = { can_be_captured = yes }
 				capture_by = FROM
+                IF = {
+                    limit = {NOT = { has_trait = scarred }}
+                    random = {
+                        chance = 1
+                        add_trait = {
+                            character = FROM
+                            trait = scarred
+                        }
+                    }
+                }
 			}
 			else = {
 				# uncapturable leaders (e.g. country leaders) get wounded instead
@@ -1241,6 +1271,16 @@ on_actions = {
                             trait = wounded
                             days = 90
                         }  
+                    }
+                    IF = {
+                        limit = {NOT = { has_trait = scarred }}
+                        random = {
+                            chance = 1
+                            add_trait = {
+                                character = FROM
+                                trait = scarred
+                            }
+                        }
                     }
 				}
 			}

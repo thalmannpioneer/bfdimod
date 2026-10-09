@@ -65,16 +65,15 @@ infantry_YFC = {
 			base = 1
 			modifier = {
 				factor = 3
-				has_army_manpower = {size > 20000}
-				arms_factory > 5
-
+				has_army_manpower = {size > 15000}
+				arms_factory > 2
 			}
 		}
 
 		target_template = {
 
 			support = {
-				recon = 1
+				artillery = 1
 			}
 
 			regiments = {
@@ -186,8 +185,16 @@ bicycle_YFC = {
         }
 
 		target_template = {
+			support = {
+				artillery = 1
+			}
+
 			regiments = {
 				bicycle_battalion = 4
+			}
+
+			regimental_support = {
+				field_guns = 1
 			}
 		}
 	}

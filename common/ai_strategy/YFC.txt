@@ -177,6 +177,24 @@ YFC_trucks = {
 	}
 }
 
+YFC_militarize = {
+    #Tells Top Hat to build mils
+	allowed = {
+		original_tag = YFC
+	}
+	enable = {
+		arms_factory < 3
+		has_completed_focus = YFC_focus_tophat_clan
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 300
+	}
+}
+
 ## BUILDS ##
 
 YFC_build = {

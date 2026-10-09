@@ -80,6 +80,81 @@ BFDI_EMP_chill = {
 	}
 }
 
+BFDI_air_base = {
+	enable = {
+		NOT = {
+			original_tag = EMP
+			original_tag = GTR
+			original_tag = YFC
+		}
+		date > 2019.01.01
+		air_base < 2
+		arms_factory > 25
+		has_air_experience > 5
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = building_target
+		id = air_base
+		value = 300
+	}
+}
+
+BFDI_air = {
+	enable = {
+		NOT = {
+			original_tag = EMP
+			original_tag = GTR
+			original_tag = YFC
+		}
+		has_deployed_air_force_size = {
+            size < 100
+            type = fighter
+        }
+		date > 2019.01.01
+		air_base > 1
+		arms_factory > 25
+		has_air_experience > 5
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 2000
+	}
+    ai_strategy = {
+        type = air_factory_balance
+        value = 1000
+    }
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 2 
+	}
+
+    ai_strategy = { #No BBA
+        type = research_weight_factor
+        id = early_fighter
+        value = 10000
+    }
+    ai_strategy = { #With BBA
+        type = research_weight_factor
+        id = iw_small_airframe
+        value = 10000
+    }
+    ai_strategy = { #With BBA
+        type = research_weight_factor
+        id = aa_lmg
+        value = 10000
+    }
+    ai_strategy = { #With BBA
+        type = research_weight_factor
+        id = engines_1
+        value = 10000
+    }
+}
 
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
