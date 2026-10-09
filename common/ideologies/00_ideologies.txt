@@ -264,10 +264,12 @@ ideologies = {
 
 			yellow_face_company = {
 				can_be_randomly_selected = no
+				color = { 179 180 22 } 
 			}
 
 			empty = {
 				can_be_randomly_selected = no
+				color = { 58 58 58 } 
 			}
 
 			japan_militarism_ideology = {

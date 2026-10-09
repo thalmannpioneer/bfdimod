@@ -208,6 +208,56 @@ GTR_fuel = {
 	}
 }
 
+GTR_backup_airbase_plains = {
+    #Build a backup airbase just in case
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+        has_deployed_air_force_size = {
+            size > 90
+            type = fighter
+        }
+        75 = {
+            is_controlled_by = GTR
+            air_base < 1
+        }
+	}
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = air_base
+        target = 75
+        value = 1000
+    }
+}
+
+GTR_backup_airbase_heart = {
+    #Build a backup airbase just in case
+	allowed = {
+		original_tag = GTR
+	}
+	enable = {
+        has_deployed_air_force_size = {
+            size > 90
+            type = fighter
+        }
+        77 = {
+            is_controlled_by = GTR
+            air_base < 1
+        }
+	}
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = air_base
+        target = 77
+        value = 1000
+    }
+}
+
 GTR_bombers = {
     #We have nukes so we need a cool plane to nuke people
     allowed = {

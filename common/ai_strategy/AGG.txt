@@ -77,7 +77,6 @@ AGG_fortnite_gorge_town = {
         original_tag = AGG
     }
     enable = {
-        has_contested_owner = 183
         has_war = yes
 		NOT = {has_war_with = SGD}
         183 = {
@@ -97,6 +96,6 @@ AGG_fortnite_gorge_town = {
         type = build_building
         id = bunker
         target = 11304
-        value = 2000
+        value = 3000
     }
 }

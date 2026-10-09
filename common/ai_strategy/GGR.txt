@@ -468,8 +468,13 @@ GGR_fortnite_schneehorn = {
         original_tag = GGR
     }
     enable = {
-        has_contested_owner = 15
         has_war = yes
+        OR = {
+            has_contested_owner = 33
+            has_contested_owner = 24
+            has_contested_owner = 143
+            has_contested_owner = 15
+        }
         15 = {
 			any_province_building_level = {
 				province = {
@@ -487,6 +492,6 @@ GGR_fortnite_schneehorn = {
         type = build_building
         id = bunker
         target = 4731
-        value = 2000
+        value = 3000
     }
 }
