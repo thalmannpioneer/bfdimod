@@ -87,10 +87,9 @@ BFDI_air_base = {
 			original_tag = GTR
 			original_tag = YFC
 		}
-		date > 2019.01.01
+		date > 2018.05.01
 		air_base < 2
 		arms_factory > 25
-		has_air_experience > 5
 	}
 	abort_when_not_enabled = yes
 
@@ -112,10 +111,9 @@ BFDI_air = {
             size < 100
             type = fighter
         }
-		date > 2019.01.01
+		date > 2018.05.01
 		air_base > 1
 		arms_factory > 25
-		has_air_experience > 5
 	}
 	abort_when_not_enabled = yes
 
@@ -124,14 +122,11 @@ BFDI_air = {
 		id = fighter
 		value = 2000
 	}
-    ai_strategy = {
-        type = air_factory_balance
-        value = 1000
-    }
+
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = fighter
-		value = 2 
+		value = 5 
 	}
 
     ai_strategy = { #No BBA

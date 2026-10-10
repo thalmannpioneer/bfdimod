@@ -135,6 +135,58 @@ DAV_invade_WGF = {
 	}
 }
 
+DAV_invade_DAV = {
+    #...
+	allowed = {
+		tag = DAV
+	}
+	enable = {
+		has_civil_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = DAV
+		value = 1000
+	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = mtg_landing_craft
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = DAV
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = goiky_navy
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 50
+	}
+
+	ai_strategy = {
+		type = invasion_unit_request
+
+		tag = DAV
+
+		value = 100
+	}
+
+	ai_strategy = {
+		type = naval_invasion_dominance_weight
+		value = 50
+	}
+}
+
 ## INDUSTRY ##
 
 DAV_boat = {

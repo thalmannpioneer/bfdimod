@@ -116,6 +116,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+        on_research_complete = {
+			air_experience = 15 #Remove later when nations get naturally get air xp
+        }	
+
 		research_cost = 2
 		start_year = 2015 #Changed
 		folder = {
@@ -138,11 +142,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				is_major = yes
+			}
+			modifier = {
+				num_of_military_factories < 7
+				NOT = {tag = GTR}
+				factor = 0.1
 			}
 			modifier = {
 				factor = 10000

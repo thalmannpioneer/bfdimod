@@ -58,7 +58,7 @@ decisions_BFDI_debug = {
                     country_lock_all_division_template = no
                     add_timed_idea = {
                         idea = idea_debug_battle_royale
-                        days = 1000
+                        days = 650
                     }
                     if = {
                         limit = {

@@ -86,7 +86,7 @@ AGG_fortnite_gorge_town = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 1
+				level < 2
 			}
 		}
     }

@@ -20,6 +20,31 @@ garrison_WGF = {
 	}
 
 
+	garrison_early_WGF = {
+		division_names_group = WGF_INF_01
+		reinforce_prio = 0
+		custom_icon = 7
+
+		upgrade_prio = {
+			base = 2
+		}
+
+		can_upgrade_in_field = {
+            has_equipment = { artillery_equipment > 25 }
+        }
+
+		target_template = {
+
+			regiments = {
+				infantry = 3 
+			}
+		}
+
+		replace_at_match = 0.75
+        replace_with = garrison_WGF
+        target_min_match = 0.75
+	}
+
 	garrison_WGF = {
 		division_names_group = WGF_INF_01
 		reinforce_prio = 0
@@ -29,7 +54,8 @@ garrison_WGF = {
 			base = 2
 
 			modifier = {
-				factor = 1
+				factor = 2
+				arms_factory > 6
 			}
 		}
 
@@ -37,6 +63,8 @@ garrison_WGF = {
 
 			support = {
 				military_police = 1
+				engineer = 1
+				recon = 1
 			}
 
 			regiments = {

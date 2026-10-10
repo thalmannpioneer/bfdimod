@@ -886,10 +886,10 @@ country_event = { #I've given up this ai is soo bad :((((
                 limit = {is_ai = yes}
                 GPG = {
                     set_country_flag = GPG_civilwar_allow_cheat
-                    add_manpower = 10000
+                    add_manpower = 30000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 1000
+                        amount = 4000
                     }
                 }
             }
@@ -907,7 +907,7 @@ country_event = { #I've given up this ai is soo bad :((((
         ai_chance = {
             base = 5
             modifier = {
-                add = 100
+                add = 500
                 OR = {
                     has_country_flag = fries_path
                     has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_NO_FRIES }
@@ -924,10 +924,10 @@ country_event = { #I've given up this ai is soo bad :((((
                 limit = {is_ai = yes}
                 GSR = {
                     set_country_flag = GPG_civilwar_allow_cheat
-                    add_manpower = 10000
+                    add_manpower = 30000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 1000
+                        amount = 4000
                     }
                 }
             }
@@ -946,7 +946,7 @@ country_event = { #I've given up this ai is soo bad :((((
         ai_chance = {
             base = 5
             modifier = {
-                add = 100
+                add = 500
                 OR = {
                     has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_SOCIALIST }
                     has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_ANARCHIST }
@@ -962,10 +962,10 @@ country_event = { #I've given up this ai is soo bad :((((
                 limit = {is_ai = yes}
                 GDR = {
                     set_country_flag = GPG_civilwar_allow_cheat
-                    add_manpower = 10000
+                    add_manpower = 30000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 1000
+                        amount = 4000
                     }
                 }
             }
@@ -984,7 +984,7 @@ country_event = { #I've given up this ai is soo bad :((((
         ai_chance = {
             base = 5
             modifier = {
-                add = 100
+                add = 500
                 has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_DEMOCRATIC }
             }
         }
@@ -997,10 +997,10 @@ country_event = { #I've given up this ai is soo bad :((((
                 limit = {is_ai = yes}
                 GFG = {
                     set_country_flag = GPG_civilwar_allow_cheat
-                    add_manpower = 10000
+                    add_manpower = 30000
                     add_equipment_to_stockpile = {
                         type = infantry_equipment
-                        amount = 1000
+                        amount = 4000
                     }
                 }
             }
@@ -1029,7 +1029,7 @@ country_event = { #I've given up this ai is soo bad :((((
         ai_chance = {
             base = 5
             modifier = {
-                add = 100
+                add = 500
                 OR = {
                     has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_FASCIST }
                     has_game_rule = { rule = GPG_ai_behavior option = CIVIL_WAR_YOYLELANDIA }

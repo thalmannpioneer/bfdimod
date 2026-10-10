@@ -317,3 +317,37 @@ WGF_our_army = {
 		value = 200
 	}
 }
+
+## FORTS ##
+
+WGF_fortnite_north_goikyland = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = WGF
+    }
+    enable = {
+        has_war = yes
+        OR = {
+            has_contested_owner = 177
+            has_contested_owner = 167
+        }
+        177 = {
+			any_province_building_level = {
+				province = {
+					id = 2533
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 2533
+        value = 3000
+    }
+}

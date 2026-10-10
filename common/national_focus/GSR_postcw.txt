@@ -1023,6 +1023,10 @@ focus_tree = {
 				add = 10
 				num_divisions > 40
 			}
+            modifier = {
+				add = 10
+				date > 2017.05.01 #Okay you gotta get a move on
+			}
 		}
 
         completion_reward = {
