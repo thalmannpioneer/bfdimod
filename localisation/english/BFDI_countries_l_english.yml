@@ -1,7 +1,7 @@
 ﻿l_english:
  GOI: "Goiky"
  GOI_DEF: "Goiky"
- GOI_ADJ: "Goikish"
+ GOI_ADJ: "Goikean"
  GOI_anarchy: "."
  GOI_emp: " "
  
@@ -40,26 +40,26 @@
  
  GPG: "Goiky Provisional Government"
  GPG_DEF: "Republic"
- GPG_ADJ: "Goikish"
+ GPG_ADJ: "Goikean"
  GPG_republic: "Goiky Republic"
  GPG_fries_cw: "Transitional government"
  
  GDR: "Democrats"
  GDR_DEF: "Democrats"
- GDR_ADJ: "Goikish"
+ GDR_ADJ: "Goikean"
  GDR_republic: "Goiky Democratic Republic"
  GDR_federation: "Greeny Plains Federation"
  
  GSR: "Toilers Front"
  GSR_DEF: "GPSR"
- GSR_ADJ: "Goikish"
+ GSR_ADJ: "Goikean"
  GSR_post_cw: "Greeny Plains Socialist Republic"
  GSR_anarchist: "Union of Anarchist Councils"
  GSR_anarchist_DEF: "UAC"
  
  GFG: "Iron Hand"
  GFG_DEF: "Goiky State"
- GFG_ADJ: "Goikish"
+ GFG_ADJ: "Goikean"
  GFG_government: "National Resurrection Government"
  GFG_goiky: "Goiky"
  GFG_esoteric: "Terra Yoylelandia"
@@ -72,7 +72,7 @@
 
  GGR: "Großgoikysreich"
  GGR_DEF: "Großgoikysreich"
- GGR_ADJ: "Großgoikian"
+ GGR_ADJ: "Hochebener"
  
  FFT: "Free Territory"
  FFT_DEF: "Free Territory"
@@ -96,7 +96,7 @@
  NRR_DEF: "GGRR - North"
  NRR_ADJ: "GGRR"
 
- AGG: "All-Goikian Restoration Government"
+ AGG: "All-Goikean Restoration Government"
  AGG_ADJ: "Restoration Government"
  AGG_DEF: "Restoration Government"
  
