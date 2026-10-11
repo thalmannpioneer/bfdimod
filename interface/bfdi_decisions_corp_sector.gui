@@ -98,7 +98,7 @@ guiTypes = {
 					position = { x = 5 y = 375 }
 					maxWidth = 250
 					format = centre
-					font = hoi_18header
+					font = hoi_18mbs
 				}
 
 				buttonType = {
@@ -158,7 +158,7 @@ guiTypes = {
 					position = { x = 260 y = 375 }
 					maxWidth = 250
 					format = centre
-					font = hoi_18header
+					font = hoi_18mbs
 				}
 
 				buttonType = {
@@ -226,7 +226,7 @@ guiTypes = {
 					position = { x = 5 y = 375 }
 					maxWidth = 250
 					format = centre
-					font = hoi_18header
+					font = hoi_18mbs
 				}
 
 				buttonType = {
@@ -286,7 +286,7 @@ guiTypes = {
 					position = { x = 260 y = 810 }
 					maxWidth = 250
 					format = centre
-					font = hoi_18header
+					font = hoi_18mbs
 				}
 
 				buttonType = {
@@ -346,7 +346,7 @@ guiTypes = {
 					position = { x = 135 y = 810 }
 					maxWidth = 250
 					format = centre
-					font = hoi_18header
+					font = hoi_18mbs
 				}
 
 				buttonType = {
