@@ -89,8 +89,16 @@ focus_tree = {
 			add_manpower = 20000
 			army_experience = 85
 
-			random_country_division = {promote_officer_to_general = yes}
-			random_country_division = {promote_officer_to_general = yes}
+			IF = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				random_country_division = {promote_officer_to_general = yes}
+				random_country_division = {promote_officer_to_general = yes}
+			}
+			ELSE = {
+				add_command_power = 50
+			}
 
 			if = {
 				limit = {

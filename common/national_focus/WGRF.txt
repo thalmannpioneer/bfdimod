@@ -418,7 +418,15 @@ focus_tree = {
 
         completion_reward = {
             add_war_support = 0.05
-            random_country_division = {promote_officer_to_general = yes}
+            IF = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				random_country_division = {promote_officer_to_general = yes}
+			}
+			ELSE = {
+				add_command_power = 50
+			}
             add_dynamic_modifier = { modifier = idea_WGF_red_army }
         }
     }

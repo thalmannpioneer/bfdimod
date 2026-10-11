@@ -138,7 +138,7 @@ DAV_invade_WGF = {
 DAV_invade_DAV = {
     #...
 	allowed = {
-		tag = DAV
+		original_tag = DAV
 	}
 	enable = {
 		has_civil_war = yes
@@ -157,12 +157,6 @@ DAV_invade_DAV = {
 	}
 
 	ai_strategy = {
-		type = consider_weak
-		id = DAV
-		value = 100
-	}
-
-	ai_strategy = {
 		type = area_priority
 		id = goiky_navy
 		value = 1000
@@ -170,20 +164,12 @@ DAV_invade_DAV = {
 
 	ai_strategy = {
 		type = naval_invasion_focus
-		value = 50
-	}
-
-	ai_strategy = {
-		type = invasion_unit_request
-
-		tag = DAV
-
 		value = 100
 	}
 
 	ai_strategy = {
 		type = naval_invasion_dominance_weight
-		value = 50
+		value = 100
 	}
 }
 
@@ -195,7 +181,10 @@ DAV_boat = {
 		original_tag = DAV
 	}
 	enable = {
-		has_war = no
+		OR = {	
+			has_war = no
+			has_civil_war = yes
+		}
 		dockyard < 11
 	}
 	abort_when_not_enabled = yes

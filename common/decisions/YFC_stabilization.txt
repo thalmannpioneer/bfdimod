@@ -26,6 +26,66 @@ decision_YFC_stabilization_category = {
 		}
 	}
 
+	YFC_stabilization_east_take = { 
+		icon = GFX_decisions_YFC_stabilization_order_military_restructuring #Update later!
+      
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+
+		visible = {
+			has_country_flag = YFC_east_occupy_unlock
+		}
+
+		available = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				OR = {
+					divisions_in_state = {
+						size > 5
+						state = 230
+					}
+					divisions_in_state = {
+						size > 5
+						state = 192
+					}
+				}
+			}
+        }
+		cancel_trigger = {
+			IF = {
+				limit = {
+					is_ai = no
+				}
+				NOT = {
+					OR = {
+						divisions_in_state = {
+							size > 5
+							state = 230
+						}
+						divisions_in_state = {
+							size > 5
+							state = 192
+						}
+					}
+				}
+			}
+        }
+
+		remove_effect = {
+			custom_effect_tooltip = l_YFC_eastern_increase_inland
+			add_to_variable = {var_east_inland_coastal_chance = 15}
+			add_war_support = 0.05
+			clr_country_flag = YFC_east_occupy_unlock
+		}
+
+		ai_will_do = {
+			base = 10 #Tbh no reason to not take it
+		}
+	}
+
 	YFC_stabilization_final_sector_restructures = { 
 		activation = {
 			AND = {

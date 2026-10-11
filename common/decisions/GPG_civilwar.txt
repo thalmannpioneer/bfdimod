@@ -201,11 +201,11 @@ decision_GPG_civilwar_category = {
         }
         modifier = {
 			training_time_army_factor = -0.25
-            weekly_manpower = 500
-            army_core_attack_factor = 0.25
+            weekly_manpower = 650
+            army_core_attack_factor = 0.35
             army_core_defence_factor = 0.35
             out_of_supply_factor = -0.35
-			equipment_capture = 0.35
+			equipment_capture = 0.5
             ai_focus_aggressive_factor = 5
         }
         ai_will_do = {

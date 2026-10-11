@@ -699,7 +699,10 @@ BFDI_calculate_combined_modifier = {
         }
         IF = {
             limit = {
-                has_idea = undisturbed_isolation
+                OR = {
+                    has_idea = undisturbed_isolation
+                    has_idea = isolation
+                }
             }
             multiply_variable = {combined_modifier = 0.2}
         }
@@ -1792,6 +1795,258 @@ YFC_update_eastern_states = {
     if = {
         limit = { 227 = { is_owned_by = TBT } }
         set_variable = { var_eastern_state_9 = 5 }
+    }
+}
+
+YFC_ending_a_eastern_states = {
+    #Update chances
+
+    set_temp_variable = {var_east_britain_chance_TBT = { value = 100 subtract = var_east_britain_chance } }
+
+    set_temp_variable = {var_east_ports_chance_TBT = { value = 100 subtract = var_east_ports_chance } }
+
+    set_temp_variable = {var_east_inland_coastal_chance_TBT = { value = 100 subtract = var_east_inland_coastal_chance } }
+
+    #Agreements
+
+    IF = {
+        limit = {has_country_flag = YFC_east_port_agreement}
+        227 = {transfer_state_to = YFC}
+        226 = {
+            transfer_state_to = TBT
+            add_core_of = TBT
+			remove_core_of = EMP
+        }
+    }
+
+    IF = {
+        limit = {has_country_flag = YFC_east_ear_agreement}
+        230 = {transfer_state_to = YFC}
+    }
+    ELSE_IF = {
+        limit = {has_country_flag = YFC_east_inland_TBT_agreement}
+        229 = {
+            transfer_state_to = TBT
+            add_core_of = TBT
+			remove_core_of = EMP
+        }
+        232 = {
+            transfer_state_to = TBT
+            add_core_of = TBT
+			remove_core_of = EMP
+        }
+        230 = {
+            transfer_state_to = TBT
+            add_core_of = TBT
+			remove_core_of = EMP
+        }
+    }
+
+    set_temp_variable = {var_east_moves = 0}
+    add_to_temp_variable = {break_var = 0}
+
+    while_loop_effect = { #Hand off states
+        limit = {
+            check_variable = { var_east_moves < 10 }
+            OR = {
+                229 = {is_controlled_by = EMP}
+                232 = {is_controlled_by = EMP}
+                228 = {is_controlled_by = EMP}
+                225 = {is_controlled_by = EMP}
+                230 = {is_controlled_by = EMP}
+                226 = {is_controlled_by = EMP}
+                192 = {is_controlled_by = EMP}
+                231 = {is_controlled_by = EMP}
+                227 = {is_controlled_by = EMP}
+            }
+        }
+
+        break = break_var
+
+        add_to_temp_variable = {var_east_moves = 1}
+        
+        every_state = { #Inland
+            limit = { 
+                OR = {
+                    state = 229
+                    state = 232
+                    state = 228
+                    state = 230
+                    state = 192
+                    state = 231
+                }
+            }
+
+            IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+
+                random_list = {
+                    var_east_inland_coastal_chance = {
+                        transfer_state_to = YFC
+                    }
+                    var_east_inland_coastal_chance_TBT = {
+                        transfer_state_to = TBT
+                        add_core_of = TBT
+                        remove_core_of = EMP
+                    }
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_inland_coastal_chance
+                    transfer_state_to = YFC
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_inland_coastal_chance_TBT
+                    transfer_state_to = TBT
+                    add_core_of = TBT
+                    remove_core_of = EMP
+                }
+            }
+        }
+
+        every_state = { #Ports
+            limit = { 
+                 OR = {
+                    state = 225
+                    state = 226
+                    state = 227
+                }
+            }
+            IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+
+                random_list = {
+                    var_east_ports_chance = {
+                        transfer_state_to = YFC
+                    }
+                    var_east_ports_chance_TBT = {
+                        transfer_state_to = TBT
+                        add_core_of = TBT
+                        remove_core_of = EMP
+                    }
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_ports_chance
+                    transfer_state_to = YFC
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_ports_chance_TBT
+                    transfer_state_to = TBT
+                    add_core_of = TBT
+                    remove_core_of = EMP
+                }
+            }
+        }
+
+        228 = {
+            IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+
+                random_list = {
+                    var_east_britain_chance = {
+                        transfer_state_to = YFC
+                    }
+                    var_east_britain_chance_TBT = {
+                        transfer_state_to = TBT
+                        add_core_of = TBT
+                        remove_core_of = EMP
+                    }
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = YFC
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_britain_chance
+                    transfer_state_to = YFC
+                }
+            }
+            ELSE_IF = {
+                limit = {
+                    is_controlled_by = EMP
+                    num_owned_neighbour_states = {
+                        owner = TBT
+                        count > 0
+                    }
+                }
+                random = {
+                    chance = var_east_britain_chance_TBT
+                    transfer_state_to = TBT
+                    add_core_of = TBT
+                    remove_core_of = EMP
+                }
+            }
+        }
     }
 }
 
