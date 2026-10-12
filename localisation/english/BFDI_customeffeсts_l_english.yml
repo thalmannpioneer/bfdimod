@@ -249,6 +249,8 @@
  l_YFC_eastern_borderwar_enable: "§GReenables the border war decision for only you.§!"
  l_YFC_eastern_borderwar_win: "§GOur future attack/defence bonus in border wars will be increased by 25%!§!\n§GThe enemies' future attack/defence bonus in border wars will be decreased by 25%!§!"
  l_YFC_eastern_borderwar_loss: "§ROur future attack/defence bonus in border wars will be decreased by 25%!§!\n§RThe enemies' future attack/defence bonus in border wars will be increased by 25%!§!"
+ l_YFC_eastern_upper_talks: "§GIncreases effectiveness§! of all §Yupper options§! in future east events!\n\n§RDecreases effectiveness§! of all §Ylower options§! in future east events!"
+ l_YFC_eastern_lower_talks: "§GIncreases effectiveness§! of all §Ylower options§! in future east events!\n\n§RDecreases effectiveness§! of all §Yupper options§! in future east events!"
  l_YFC_eastern_end_talks: "§YEnds negotiations immediately§!, §Routcome is unknown.§!"
  l_YFC_eastern_increase_britain: "§GIncreases the chance§! of controlling §Y[228.GetName]§!"
  l_YFC_eastern_increase_ports: "§GIncreases the chance§! of controlling §Y[226.GetName]§! and §Y[227.GetName]§!"

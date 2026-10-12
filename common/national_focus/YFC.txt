@@ -5618,8 +5618,8 @@ focus_tree = {
 
             country_event = {
                 id = YFC_event.107
-                hours = 6
-                random_hours = 12
+                hours = 12
+                random_hours = 24
             }
         }
     }
