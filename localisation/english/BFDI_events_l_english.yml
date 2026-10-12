@@ -1314,9 +1314,9 @@
  YFC_event.117.desc: "Following our accidentally poor, and choice words, Teardrop has outwardly rejected our attempts to coax her into demilitarizing the Eastern Seaboard. This is a horrible loss for us, seeing as we were unable to properly pressure her into doing our bidding. Though this loss is, well, a loss, it is not the worst one we could have made. Discussion will likely still continue, in the near future. We simply need to be, surprisingly, less careful on how we go about things."
  YFC_event.117.a: "Dammit!" # -> event.111
 
- YFC_event.118.t: "IMPORTANT" #ZDubbz, this could really be anything you want. I feel it could fit as an intro to the sectors/characters of the YFC lore wise. Like they just met for the first time or something. The only thing is do not yell at the player, the tooltip I put does that
- YFC_event.118.desc: ""
- YFC_event.118.a: ""  
+ YFC_event.118.t: "Our Benefactors" #ZDubbz, this could really be anything you want. I feel it could fit as an intro to the sectors/characters of the YFC lore wise. Like they just met for the first time or something. The only thing is do not yell at the player, the tooltip I put does that
+ YFC_event.118.desc: "\"Well... uhm... meet each other! I've got important -- very important! -- business meetings to attend to.\"\n\nAnd with that, Yellow Face was off, presumably not to anything important whatsoever. Behind him, he left the five new executive employees, to talk amongst each other: Top Hat, Beaker, Pipe, Hammer, and Taser. The group were in a random mneeting room, at the top floor of the newly designed and built corporate headquarters. Beaker broke the silence first: \"Well, how are you all doing?\" The basic question garnered a bunch of basic \"good\"s in response.\n\nThe room, for a long while, was stale with awkwardness. None of these objects had much of anything to talk about."
+ YFC_event.118.a: "Uh, pleased to meet you?"
 
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
