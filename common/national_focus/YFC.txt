@@ -133,6 +133,13 @@ focus_tree = {
                 add_dynamic_modifier = { modifier = idea_YFC_our_benefactors }
                 set_country_flag = YFC_Allow_Beaker
                 set_variable = { var_idea_YFC_sectors_TopHat_type = 2 }
+                country_event = {
+                    id = YFC_event.118
+                    days = 5
+                    random_days = 10
+                    hours = 12
+                    random_hours = 48
+                }
             }
             custom_effect_tooltip = l_YFC_allow_rails
             custom_effect_tooltip = l_GOI_unlock_focus

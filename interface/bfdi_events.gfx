@@ -924,6 +924,11 @@ SpriteTypes = {
 	}
 	
 	spriteType = {
+		name = GFX_YFC_event118
+		texturefile = gfx/event_pictures/YFC_event118.dds
+	}
+
+	spriteType = {
 		name = GFX_YFC_BUN1
 		textureFile = gfx/event_pictures/YFC_BUN1.dds
 	}

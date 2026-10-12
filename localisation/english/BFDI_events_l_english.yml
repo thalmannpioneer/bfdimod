@@ -1314,6 +1314,10 @@
  YFC_event.117.desc: "Following our accidentally poor, and choice words, Teardrop has outwardly rejected our attempts to coax her into demilitarizing the Eastern Seaboard. This is a horrible loss for us, seeing as we were unable to properly pressure her into doing our bidding. Though this loss is, well, a loss, it is not the worst one we could have made. Discussion will likely still continue, in the near future. We simply need to be, surprisingly, less careful on how we go about things."
  YFC_event.117.a: "Dammit!" # -> event.111
 
+ YFC_event.118.t: "IMPORTANT" #ZDubbz, this could really be anything you want. I feel it could fit as an intro to the sectors/characters of the YFC lore wise. Like they just met for the first time or something. The only thing is do not yell at the player, the tooltip I put does that
+ YFC_event.118.desc: ""
+ YFC_event.118.a: ""  
+
  YFC_borderwars.1.t: "Success!"
  YFC_borderwars.1.desc: "The raid was a success! We quickly subjugated the population, inspiring fear in the objects of the city. Though the fires in the distance burn high, our profit soar higher."
  YFC_borderwars.1.a: "There's more where that came from!"

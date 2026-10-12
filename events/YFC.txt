@@ -5129,6 +5129,22 @@ country_event = { #YFC_focus_teardrop_diplomacy Teardrop hates demilitarized!
 	}
 }
 
+country_event = { #Yell at player event
+	id = YFC_event.118
+	title = YFC_event.118.t
+	desc = YFC_event.118.desc
+	picture = GFX_YFC_event118
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { 
+		name = YFC_event.118.a
+
+		custom_effect_tooltip = l_YFC_important
+	}
+}
+
 ###############################################################################
 ########RAIDS EVENTS###############################################################################
 ###############################################################################
