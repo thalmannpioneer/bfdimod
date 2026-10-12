@@ -80,6 +80,7 @@ guiTypes = {
                 maxWidth = 330
                 font = hoi_18mbs
                 format = center
+                pdx_tooltip = l_economic_profit_pop_tooltip
             }
 
             instantTextBoxType = {
