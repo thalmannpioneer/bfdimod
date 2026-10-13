@@ -889,3 +889,58 @@ defined_text = {
 		localization_key = ""
 	}
 }
+
+defined_text = {
+	name = yfc_map_icon
+	text = {
+		trigger = { has_cosmetic_tag = YFC_TopHat_clan }
+		localization_key = GFX_corp_trade_thc
+	}
+	text = {
+		localization_key = GFX_corp_trade_yfc
+	}
+}
+
+defined_text = {
+	name = yfc_bun2_map_icon
+	text = {
+		trigger = { has_cosmetic_tag = YFC_TopHat_clan }
+		localization_key = GFX_corp_trade_thc_bun2
+	}
+	text = {
+		localization_key = GFX_corp_trade_yfc_bun2
+	}
+}
+
+defined_text = {
+	name = yfc_bun_map_icon
+	text = {
+		trigger = { has_cosmetic_tag = YFC_TopHat_clan }
+		localization_key = GFX_corp_trade_thc_bun
+	}
+	text = {
+		localization_key = GFX_corp_trade_yfc_bun
+	}
+}
+
+defined_text = {
+	name = yfc_sri_map_icon
+	text = {
+		trigger = { has_cosmetic_tag = YFC_TopHat_clan }
+		localization_key = GFX_corp_trade_thc_sri
+	}
+	text = {
+		localization_key = GFX_corp_trade_yfc_sri
+	}
+}
+
+defined_text = {
+	name = yfc_nagornyv_map_icon
+	text = {
+		trigger = { has_cosmetic_tag = YFC_TopHat_clan }
+		localization_key = GFX_corp_trade_thc_nagornyv
+	}
+	text = {
+		localization_key = GFX_corp_trade_yfc_nagornyv
+	}
+}

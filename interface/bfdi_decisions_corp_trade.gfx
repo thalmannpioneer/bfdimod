@@ -31,6 +31,32 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_corp_trade_thc"
+		textureFile = "gfx/interface/decisions/YFC_trade/THC.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_thc_bun"
+		textureFile = "gfx/interface/decisions/YFC_trade/THC_BUN.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_thc_bun2"
+		textureFile = "gfx/interface/decisions/YFC_trade/THC_BUN2.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_thc_nagornyv"
+		textureFile = "gfx/interface/decisions/YFC_trade/THC_nagornyv.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_corp_trade_thc_sri"
+		textureFile = "gfx/interface/decisions/YFC_trade/THC_SRI.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
 		name = "GFX_corp_trade_bun"
 		textureFile = "gfx/interface/decisions/YFC_trade/BUN.dds"
 		noOfFrames = 1

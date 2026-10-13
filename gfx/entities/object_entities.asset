@@ -580,7 +580,7 @@ entity = {
 	name = "object_gfx_ngrf_bicycle_rider_rifle_entity"
 	pdxmesh = "bomby_mesh"
 
-	attach = { 	name = "gunhold"	rifle = "rifle_reich_entity" }
+	attach = { 	name = "rifle1"	rifle = "rifle_ngrf_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_ngrf_entity" }
 
 	scale = 2.0
@@ -590,7 +590,7 @@ entity = {
 	name = "object_gfx_reich_bicycle_rider_rifle_entity"
 	pdxmesh = "bomby_mesh"
 
-	attach = { 	name = "gunhold"	rifle = "rifle_reich_entity" }
+	attach = { 	name = "rifle1"	rifle = "rifle_reich_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_reich_entity" }
 
 	scale = 2.0
@@ -600,7 +600,7 @@ entity = {
 	name = "object_gfx_gtr_bicycle_rider_rifle_entity"
 	pdxmesh = "bomby_mesh"
 
-	attach = { 	name = "gunhold"	rifle = "rifle_gtr_entity" }
+	attach = { 	name = "rifle1"	rifle = "rifle_gtr_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_gtr_entity" }
 
 	scale = 2.0
@@ -610,7 +610,7 @@ entity = {
 	name = "object_gfx_yfc_bicycle_rider_rifle_entity"
 	pdxmesh = "bomby_mesh"
 
-	attach = { 	name = "gunhold"	rifle = "rifle_yfc_entity" }
+	attach = { 	name = "rifle1"	rifle = "rifle_generic_entity" }
 	attach = { 	name = "helmet"	helmet = "helmet_yfc_entity" }
 
 	scale = 2.0
@@ -635,7 +635,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_rifle_combined_entity"
 	name = "object_gfx_ngrf_bicycle_rifle_combined_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_vehicle_mesh"
 
 	attach = { 	name = "rider"	bike_center = "object_gfx_ngrf_bicycle_rider_rifle_entity" }
 
@@ -644,7 +644,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_rifle_combined_entity"
 	name = "object_gfx_reich_bicycle_rifle_combined_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_vehicle_mesh"
 
 	attach = { 	name = "rider"	bike_center = "object_gfx_reich_bicycle_rider_rifle_entity" }
 
@@ -653,7 +653,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_rifle_combined_entity"
 	name = "object_gfx_gtr_bicycle_rifle_combined_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_vehicle_mesh"
 
 	attach = { 	name = "rider"	bike_center = "object_gfx_gtr_bicycle_rider_rifle_entity" }
 
@@ -662,7 +662,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_rifle_combined_entity"
 	name = "object_gfx_yfc_bicycle_rifle_combined_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_vehicle_mesh"
 
 	attach = { 	name = "rider"	bike_center = "object_gfx_yfc_bicycle_rider_rifle_entity" }
 
@@ -689,7 +689,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_entity"
 	name = "object_gfx_ngrf_bicycle_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_frame_mesh"
 
 	attach = { 	name = "infantry"		infantry = "object_gfx_ngrf_bicycle_rider_rifle_entity" }
 	attach = { 	name = "combined"		combined = "object_gfx_ngrf_bicycle_rifle_combined_entity" }
@@ -698,7 +698,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_entity"
 	name = "object_gfx_reich_bicycle_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_frame_mesh"
 
 	attach = { 	name = "infantry"		infantry = "object_gfx_reich_bicycle_rider_rifle_entity" }
 	attach = { 	name = "combined"		combined = "object_gfx_reich_bicycle_rifle_combined_entity" }
@@ -707,7 +707,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_entity"
 	name = "object_gfx_gtr_bicycle_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_frame_mesh"
 
 	attach = { 	name = "infantry"		infantry = "object_gfx_gtr_bicycle_rider_rifle_entity" }
 	attach = { 	name = "combined"		combined = "object_gfx_gtr_bicycle_rifle_combined_entity" }
@@ -716,7 +716,7 @@ entity = {
 entity = {
 	clone = "object_gfx_bicycle_entity"
 	name = "object_gfx_yfc_bicycle_entity"
-	pdxmesh = "bomby_mesh"
+	pdxmesh = "bicycle_frame_mesh"
 
 	attach = { 	name = "infantry"		infantry = "object_gfx_yfc_bicycle_rider_rifle_entity" }
 	attach = { 	name = "combined"		combined = "object_gfx_yfc_bicycle_rifle_combined_entity" }

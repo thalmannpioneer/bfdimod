@@ -578,6 +578,12 @@ scripted_gui = {
         properties = {
             equipment_sell_item = { image = "[equipment_type_selling]" }
             equipment_buy_item = { image = "[equipment_type_buying]" }
+			
+			yfc = { image = "[yfc_map_icon]" }
+			yfc_bun2 = { image = "[yfc_bun2_map_icon]" }
+			yfc_bun = { image = "[yfc_bun_map_icon]" }
+			yfc_sri = { image = "[yfc_sri_map_icon]" }
+			yfc_nagornyv = { image = "[yfc_nagornyv_map_icon]" }
         }
 
         triggers = {

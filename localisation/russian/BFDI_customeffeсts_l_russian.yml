@@ -321,3 +321,16 @@
  l_money_gain_4M: "Мы получим §G4 млн Долларов§!"
  
  ###TO TRANSLATE###
+ 
+ l_YFC_trade_info_drugs: "\n\n§YDrugs:§! Provides money to us and nothing to \"purchasing\" country. Can be exported to anyone, even if they embargoed us. Cooldown can be reduced."
+ l_YFC_trade_info_manpower: "\n\n§YMilitia (Shown as the Grape):§! Provides manpower to purchasing country. Cooldown can be skipped with manpower."
+ l_YFC_trade_info_spies: "\n\n§YSpies (Shown as the Papers):§! Provides intelligence buff to purchasing country. Longest cooldown."
+ l_YFC_eastern_end_goal_normal: "§YWe must hurry to get as much land as possible.§! §LBetter we have it then the ugly Teardroppers!§!"
+ l_YFC_eastern_end_goal_raider: "§YWe must hurry to get a land connection with either a new or already controlled port.§! §LTeardrop will outgain us so focus on that connection!§!"
+ l_YFC_eastern_end_talks: "§YEnds negotiations immediately§!, §Routcome is unknown.§!"
+ l_YFC_eastern_increase_britain: "§GIncreases the chance§! of controlling §Y[228.GetName]§!"
+ l_YFC_eastern_increase_ports: "§GIncreases the chance§! of controlling §Y[226.GetName]§! and §Y[227.GetName]§!"
+ l_YFC_eastern_decrease_inland: "§RDecreases the chance§! of controlling the §YInland-Coastal Territories§!"
+ l_YFC_eastern_decrease_britain: "§RDecreases the chance§! of controlling §Y[228.GetName]§!"=
+ l_YFC_eastern_port_agreement: "§tYou will lose the chance to get [226.GetName] but will guarantee getting [227.GetName] should negotiations go smoothly...§!"
+ l_GTR_its_over_sob: "§YGolf Ball§! dies." #Somehow this was removed randomly so I forgot what the old name was...

@@ -217,3 +217,16 @@ defined_text = {
 		localization_key = l_YFC_eastern_end_goal_normal
 	}
 }
+
+defined_text = {
+	name = YFC_MARKET_DECISIONS_CATEGORY
+	text = {
+		trigger = {
+			YFC = { has_cosmetic_tag = YFC_TopHat_clan }
+		}
+		localization_key = decision_YFC_trade_category_th
+	}
+	text = {
+		localization_key = decision_YFC_trade_category_yf
+	}
+}
