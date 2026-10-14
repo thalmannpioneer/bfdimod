@@ -138,8 +138,10 @@ defined_text = {
     name = ISOLATION_MODIFIER
     text = {
         trigger = { 
-            has_idea = undisturbed_isolation 
-            has_idea = isolation
+            OR = {
+                has_idea = undisturbed_isolation 
+                has_idea = isolation
+            }
             NOT = {
                 AND = {
                     has_war = yes 

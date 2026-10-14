@@ -1916,7 +1916,7 @@ YFC_ending_a_eastern_states = {
                 random_list = {
                     YFC.var_east_inland_coastal_chance = {
                         transfer_state_to = YFC
-                        YFC = {add_to_variable = {var_east_inland_coastal_chance = -1}}
+                        YFC = {add_to_variable = {var_east_inland_coastal_chance = -3}}
                     }
                     YFC.var_east_inland_coastal_chance_TBT = {
                         YFC = {add_to_variable = {var_east_inland_coastal_chance = 2}}
@@ -1974,7 +1974,7 @@ YFC_ending_a_eastern_states = {
                 random_list = {
                     YFC.var_east_ports_chance = {
                         transfer_state_to = YFC
-                        YFC = {add_to_variable = {var_east_ports_chance = -1}}
+                        YFC = {add_to_variable = {var_east_ports_chance = -5}}
                     }
                     YFC.var_east_ports_chance_TBT = {
                         YFC = {add_to_variable = {var_east_ports_chance = 2}}

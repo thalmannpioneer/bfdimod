@@ -7540,7 +7540,7 @@ focus_tree = {
                             is_controlled_by = YFC
                         }
                         add_compliance = 10
-                        add_resistance_target = -15
+                        add_resistance_target = -20
                     }
                 }
             }

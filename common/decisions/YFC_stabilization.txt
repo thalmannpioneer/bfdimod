@@ -437,4 +437,56 @@ decision_YFC_stabilization_category = {
 			}
 		}
 	}
+
+	YFC_stabilization_eastern_core = { 
+		icon = GFX_decision_SWE_set_army_budget #Update later!
+		state_target = yes
+        targets = { 229 232 230 228 225 230 226 192 231 227 }
+        on_map_mode = map_and_decisions_view
+        
+		visible = {
+			controls_state = FROM
+			FROM = {
+				NOT = {is_core_of = ROOT}
+			}
+		}
+
+		available = {
+			controls_state = FROM
+			FROM = {
+				compliance > 15
+				hidden_trigger = {
+					NOT = {is_core_of = ROOT}
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {state = FROM}
+		}
+
+		cost = 35
+
+		fire_only_once = yes
+
+		days_remove = 60
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+				remove_core_of = EMP
+				add_dynamic_modifier = {
+                    modifier = YFC_autonomous_state
+                }
+			}
+        }
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				has_political_power > 75
+			}
+		}
+	}
 }

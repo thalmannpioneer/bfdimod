@@ -4999,6 +4999,18 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL A
         }
 
 		hidden_effect = {
+			EMP = {
+				diplomatic_relation = {
+					country = TBT
+					relation = military_access
+					active = no
+				}
+				diplomatic_relation = {
+					country = YFC
+					relation = military_access
+					active = no
+				}
+			}
 			YFC_ending_a_eastern_states = yes
 		}
 	}
