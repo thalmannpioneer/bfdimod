@@ -48,16 +48,16 @@
  cap_window_participiants: "[winning_country.GetNameWithFlag] Побеждает [losing_country.GetNameWithFlag] в Битве За Гойки"
  
  cap_window_desc_coiny: "Файри снова в победителях."
- cap_window_desc_firey: "Последний шлепок." #Thal this was updated in English
+ cap_window_desc_firey: "Огонь революции затушен."
  cap_window_desc_flower: "Фловер вновь исключили в самом начале."
  cap_window_desc_icy: "Ещё одна причина для мести."
  cap_window_desc_rocky: "В Снежном Плато установился порядок."
- cap_window_desc_snowball: "Анархия не знает границ!" #Thal this was updated in English
+ cap_window_desc_snowball: "Угнетатель угнетён."
  cap_window_desc_taco: "Тако поджарили."
  cap_window_desc_ruby: "Больше никаких сладостей для Руби."
  cap_window_desc_fanny: "Я НЕНАВИЖУ ПРОИГРЫВАТЬ!"
  cap_window_desc_republic: "Солнце больше не взойдёт на Кэслендом."
- cap_window_desc_alliance: "Карандаш сломался." #Thal this was updated in English
+ cap_window_desc_alliance: "Боролись вмете, пали поодиночке."
  
  cap_window_close_button: "Тёмные времена."
  
@@ -84,7 +84,7 @@
  l_diplay_final_profit_thousands: "[?var_display_final_profit|.2] тыс."
  l_diplay_final_profit_millions: "[?var_display_final_profit|.2] млн"
  l_diplay_final_profit_billions: "[?var_display_final_profit|.2] млрд"
- l_economic_profit_rate_tt: "[WAR_MODIFIER][COMMUNISM_MODIFIER][ISOLATION_MODIFIER]Стабильность: §R[?THIS.stability|%]§!" #Thal this was updated in English
+ l_economic_profit_rate_tt: "[WAR_MODIFIER][COMMUNISM_MODIFIER][ISOLATION_MODIFIER]Стабильность: §R[?THIS.stability|%]§!"
  l_economic_profit_rate_tt_delayed: "Модификатор достигается перемножением всех факторов."
  l_economic_profit_rate_war: "Война: §R50%§!\n"
  l_economic_profit_rate_communism: "Плановая Экономика: §R80%§!\n"
@@ -121,9 +121,9 @@
  l_YFC_route_fft: "Лесной Путь"
  l_YFC_route_gpg: "Дорога к Сердцу"
  l_YFC_route_gtr: "Университетская Тропинка"
- l_YFC_route_gmd: "Трудная Дорога"
+ l_YFC_route_gmd: "Тафроуд"
  l_YFC_route_tbt: "Песчаный Путь"
- l_YFC_route_sea: "Водный Маршрут"
+ l_YFC_route_sea: "По воде"
  l_YFC_route_good: "§7Хороший Путь§!"
  l_YFC_route_mid: "§YНормальный Путь§!"
  l_YFC_route_bad: "§tПлохой Путь§!"
@@ -146,7 +146,7 @@
  l_YFC_trade_help_tt: "Нужна помощь?"
  l_YFC_trade_help_tt_d: "Торговая Панель §YYellow Face Corporation§! (c) предоставляет возможность §7покупать§! и §tпродавать§! еду и сняряжение дружественным странам.\n\nДля этого §2кликните на любую страну на карте§! и начните торговать!\n\n§5Кликните на любой маршрут§!, чтобы узнать его качество.\nОт качества маршрута зависит §2Успех доставки.§!\n§t50% - Плохой Маршрут§!\n§Y75% - Нормальный Маршрут§!\n§790% - Хороший Маршрут§!" #Thal this was updated this in english
  l_YFC_trade_cross: "§tX§!"
- l_YFC_other_trade_help_tt_d: "Дорогой Клиент компании §YYellow Face Corporation§! (c)!\nВ этой панели вы можете §7покупать§! и §tпродавать§! еду и снаряжение у нашей Компании по невероятно выгодным ценам. Всего лишь выберите то, что желаете приобрести или продать и нажмите соответствующую кнопку.\nПокупая §9Еду§! в нашей Компании, вы обеспечиваете свой режим стабильностью и ростом!" #Thal this was updated this in english
+ l_YFC_other_trade_help_tt_d: "Дорогой Клиент компании §YYellow Face Corporation§! (c)!\nВ этой панели вы можете §7покупать§! и §tпродавать§! еду и снаряжение у нашей Компании по невероятно выгодным ценам. Всего лишь выберите то, что желаете приобрести или продать и нажмите соответствующую кнопку.\nПокупая §9Еду§! в нашей Компании, вы обеспечиваете свой режим стабильностью и ростом!"
  
  YFC_eastern_state: "[target_eastern_state.GetName]"
  YFC_eastern_influence: "[YFC_EASTERN_INFLUENCE]"
@@ -164,7 +164,7 @@
  cap_window_desc_eraser: "Рейдить своих соседей было ошибкой."
  cap_window_desc_neobunch: "Сражались до последнего обджекта, а за что?"
  cap_window_desc_bunchrepublic: "Всё ещё стыдятся за прошлое."
- l_money_thousands: "[?display_money|.2+] тыс."
+ l_money_thousands: "[?display_money|.2+] т"
  l_money_millions: "[?display_money|.2+] млн"
  l_money_billions: "[?display_money|.2+] млрд"
  l_display_final_profit_thousands: "[?var_display_final_profit|.2] тыс."
@@ -188,3 +188,7 @@
  l_YFC_trade_relation_embargoed: "ЭМБАРГО"
  l_YFC_trade_relation_blocked: "§RПлохие Торговые Отношения§!"
  YFC_sector_help_text: "Система Секторов даёт §25 Секторов§! с §GБонусами§! и §RИздержками§! для компании.\n\nКаждый §2Сектор§! даёт §G2 Модификатора§! которые перемножены на §YСилу.§! §YСила§! варьируется от 1 до 5.\n\n§2Сектора§! ожидают §RВыплаты§! за их работу, поэтому мы должны §Rплатить каждому Сектору§! каждый месяц в зависимости от их §YСилы.§!\n\nСледите за §RВлиянием§! §2Секторов§!, ведь если оно вырастет слишком сильно, §RЕго будет сложно опустить.§!\n\nНажимайте кнопки в интерфейсе для контроля их §YСилы.§!\n\nУдачи!"
+ 
+ ###TO TRANSLATE###
+ 
+ l_economic_profit_pop_tooltip: "We receive §Y$100,000 of tax per million objects;§! with a total population of §Y[?ROOT.max_manpower_k|.2]K§! objects, we collect §7$[POP_PROFIT]§! of tax money per month."
