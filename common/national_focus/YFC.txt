@@ -5645,7 +5645,8 @@ focus_tree = {
         completion_reward = {
             add_equipment_to_stockpile = {
                 type = infantry_equipment
-                amount = 1500
+                amount = 2000
+                producer = YFC
             }
             capital_scope = {
                 add_extra_state_shared_building_slots = 1
@@ -7123,7 +7124,7 @@ focus_tree = {
                     }
                     set_country_flag = Confirmed_Trade_Buying
                     set_variable = { THIS.buying_item = 999}
-                    set_variable = { THIS.buying_amount = 50 }
+                    set_variable = { THIS.buying_amount = 100 }
                     set_temp_variable_to_random = {var = MATH_COST_var min = 3 max = 5 integer = yes}
                     multiply_temp_variable = {MATH_COST_var = THIS.buying_amount}
                     add_to_array = {array = YFC.selling_cost value = MATH_COST_var index = YFC_trade_nation_pos_var}

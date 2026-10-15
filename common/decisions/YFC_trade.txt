@@ -1,6 +1,6 @@
 decision_YFC_trade_category = {
     YFC_Trade_info = {
-        icon = GFX_decisions_YFC_Trade_exploit_bunch_resources #Update later!
+        icon = GFX_decisions_YFC_Trade_info
 
         visible = {
             has_completed_focus = YFC_focus_open_the_market
@@ -47,12 +47,12 @@ decision_YFC_trade_category = {
         timeout_effect = {
             #Money Taken
             custom_effect_tooltip = l_YFC_payment_raiders
-            subtract_from_variable = { money_amount = 0.07 }
+            subtract_from_variable = { money_amount = 0.5 }
             
             IF = {
                 limit = {has_completed_focus = YFC_focus_hoard_gold}
                 custom_effect_tooltip = l_YFC_sectors_Gold
-                subtract_from_variable = { money_amount = 1 }
+                subtract_from_variable = { money_amount = 0.5 }
             }
             BFDI_money_diplay_update = yes
         }

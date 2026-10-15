@@ -871,8 +871,18 @@ defined_text = {
 defined_text = {
 	name = trade_manpower_info
 	text = {
-		trigger = { has_country_flag = YFC_trade_allow_manpower }
+		trigger = { 
+			has_country_flag = YFC_trade_allow_manpower 
+			tag = YFC
+		}
 		localization_key = l_YFC_trade_info_manpower
+	}
+	text = {
+		trigger = { 
+			YFC = {has_country_flag = YFC_trade_allow_manpower}
+			NOT = {tag = YFC}
+		}
+		localization_key = l_other_trade_info_manpower
 	}
 	text = {
 		localization_key = ""
@@ -882,8 +892,27 @@ defined_text = {
 defined_text = {
 	name = trade_spies_info
 	text = {
-		trigger = { has_country_flag = YFC_trade_allow_spies }
+		trigger = { 
+			has_country_flag = YFC_trade_allow_spies 
+			tag = YFC
+		}
 		localization_key = l_YFC_trade_info_spies
+	}
+	text = {
+		trigger = { 
+			YFC = {has_country_flag = YFC_trade_allow_spies}
+			NOT = {tag = YFC}
+			NOT = {has_dlc = "La Resistance"}
+		}
+		localization_key = l_other_trade_info_spies
+	}
+	text = {
+		trigger = { 
+			YFC = {has_country_flag = YFC_trade_allow_spies}
+			NOT = {tag = YFC}
+			has_dlc = "La Resistance"
+		}
+		localization_key = l_other_trade_info_spies_dlc
 	}
 	text = {
 		localization_key = ""

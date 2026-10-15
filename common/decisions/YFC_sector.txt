@@ -31,7 +31,7 @@ decision_YFC_sector_category = { #Watermelon
             IF = {
                 limit = {has_completed_focus = YFC_focus_hoard_gold}
                 custom_effect_tooltip = l_YFC_sectors_Gold
-                subtract_from_variable = { money_amount = 1 }
+                subtract_from_variable = { money_amount = 0.5 }
             }
 
             IF = {

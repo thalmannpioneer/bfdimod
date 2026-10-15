@@ -40,6 +40,6 @@ decision_BUN_Revolt_category = {
 	}
 	priority = 15
 	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
-	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	icon = GFX_decision_BUN_Revolt_category
 	visible_when_empty = yes
 }

@@ -474,6 +474,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_decisions_YFC_Trade_info"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_info.dds"
+	}
+
+	spriteType = {
 		name = "GFX_decisions_YFC_Trade_merc_increase"
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_Trade_merc_increase.dds"
 	}
@@ -925,6 +930,11 @@ spriteTypes = {
 	}	
 
 	#BUN
+
+	spriteType = {
+		name = "GFX_decision_BUN_Revolt_category"
+		textureFile = "gfx/interface/decisions/decision_BUN_Revolt_category.dds"
+	}
 
 	spriteType = {
 		name = "GFX_mission_BUN_Victory"

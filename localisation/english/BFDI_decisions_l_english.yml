@@ -9,6 +9,8 @@
  targeted_white_peace: "White Peace with [FROM.GetName]"
  targeted_white_peace_desc: "With no way to reach them, the time is now to reach an agreement to end this useless war."
 
+ invest_stabilization: "§YDeploy Stabilization Measures§!"
+ invest_stabilization_desc: "With our economy in freefall, we must make decisive actions to rescue it!"
  invest_energy_stations: "Subsidize Civilian Energy"
  invest_construction: "Subsidize Construction"
  invest_infrastructure: "Subsidize Infrastructure"
@@ -231,6 +233,9 @@
  YFC_trade_raider_pay: "§RCompany Payments§!"
  YFC_trade_raider_failing_payments: "§RFailing Payments§!"
  YFC_trade_raider_failing_payments_desc: "Reports have flooded us that we are running out of money! We need to fix this issue quickly or we will have much bigger issues in the future!"
+
+ other_trade_info: "§GAdditional Import Information§!"
+ other_trade_info_desc: "Along with the normal military equipment, you can also import:\n\n§YFood:§! Provides the following:\nMonthly Population: §G+10%§!\nConsumer Goods Factories factor: §Y-10%§!\nStability: §G+5%§!\nCasualty Trickleback: §G+10%§![trade_drug_info] [trade_manpower_info] [trade_spies_info]"
 
  other_trade_merc_opt: "Opt into Top Hat's Mercenaries System"
  other_trade_merc_buy: "Purchase Mercenaries"

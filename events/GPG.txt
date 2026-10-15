@@ -102,9 +102,9 @@ country_event = {
             country_event = {
                 id = GPG_event.7
                 hours = 1
-                days = 7
-                random_days = 10
-                random_hours = 48
+                days = 5
+                random_days = 5
+                random_hours = 60
             }
             add_threat = 2.5
             news_event = {

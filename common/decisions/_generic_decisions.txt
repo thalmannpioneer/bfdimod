@@ -472,6 +472,44 @@
 #If any are trash you may change or remove them!
 
 economy_decisions = {
+	invest_stabilization = {
+		icon = GFX_decision_gre_paying_ifc_debt
+
+		visible = { 
+			has_idea = idea_common_bankruptcy
+			has_stability < 0
+			has_war = no
+		}
+
+		remove_trigger = {
+			OR = {
+				has_stability > 0.35
+				NOT = {has_idea = idea_common_bankruptcy}
+				has_war = yes
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		days_remove = -1
+		days_re_enable = 1000
+
+		ai_will_do = {
+			base = 1000 #Buddy save yourself	
+		}
+
+		modifier = {
+			political_power_gain = -1
+			stability_weekly = 0.05
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = l_money_gain_200K
+            add_to_variable = { money_amount = 2 }
+		}
+	}
+
 	invest_energy_stations = {
 		icon = GFX_decision_generic_electricity
 

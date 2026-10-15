@@ -120,7 +120,6 @@ decision_YFC_stabilization_category = {
 		visible = {
 			has_completed_focus = YFC_focus_tophat_clan
 			has_active_mission = YFC_stabilization_final_sector_restructures
-			NOT = {has_completed_focus = YFC_focus_hoard_gold}
 		}
 
 		remove_effect = {
@@ -143,7 +142,6 @@ decision_YFC_stabilization_category = {
 		visible = {
 			has_completed_focus = YFC_focus_tophat_clan
 			has_active_mission = YFC_stabilization_final_sector_restructures
-			NOT = {has_completed_focus = YFC_focus_hoard_gold}
 		}
 
 		remove_effect = {

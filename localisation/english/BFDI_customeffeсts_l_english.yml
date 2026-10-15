@@ -129,7 +129,7 @@
  l_YFC_sectors_Fire: "§GDecreases influence of fired Sector by 2§!\n" #Advisor Fire
  l_YFC_sectors_All_Lower: "§GEvery Sectors' influence will decrease by 2§!"
  l_YFC_sectors_Debt: "§RWe will run out of funds to not only pay the Sectors, but also run parts of the Company itself.§!"
- l_YFC_sectors_Gold_Take: "§RHowever, Sectoral costs are increased by $100K permanently.§!"
+ l_YFC_sectors_Gold_Take: "§RHowever, Sectoral costs are increased by $50K permanently.§!"
  l_YFC_sectors_Gold: "§RYou also pay $100K for the gold you took.§!"
  l_YFC_sectors_Beaker_leave: "§LDisables buffs and costs from the§! §YScience Sector.§!"
  l_YFC_sectors_TopHat_leave: "§LDisables buffs and costs from the§! §YMilitary Sector.§!"
@@ -162,12 +162,16 @@
  l_YFC_trade_reopen: "§GAllow us to request nations that have embargoed us to reopen trade§!"
  l_YFC_mercs_deployment: "§YAllows foreign nations to purchase our Mercenaries.§! This comes at no cost to us if they purchase.\n§YUnlocks the selling of militias!§!"
  l_YFC_unlock_spies: "§YUnlocks the selling of spies!§!"
- l_YFC_payment_raiders: "Who said the payments stop?\n§YWe will need to pay§! §R70K§! §Ya month to keep the company running.§!"
+ l_YFC_payment_raiders: "Who said the payments stop?\n§YWe will need to pay§! §R50K§! §Ya month to keep the company running.§!"
  l_YFC_trade_Debt: "§RWe will run out of funds to run parts of the Company itself.§!"
 
  l_YFC_trade_info_drugs: "\n\n§YDrugs:§! Provides money to us and nothing to \"purchasing\" country. Can be exported to anyone, even if they embargoed us. Cooldown can be reduced."
  l_YFC_trade_info_manpower: "\n\n§YMilitia (Shown as the Grape):§! Provides manpower to purchasing country. Cooldown can be skipped with manpower."
  l_YFC_trade_info_spies: "\n\n§YSpies (Shown as the Papers):§! Provides intelligence buff to purchasing country. Longest cooldown."
+
+ l_other_trade_info_manpower: "\n\n§YMilitia (Shown as the Grape):§! Provides +5000 manpower."
+ l_other_trade_info_spies: "\n\n§YSpies (Shown as the Papers):§! Provides the following:\nReconnaissance: §G+25%§!\nRecon Bonus While Entrenched: §G+10%§!"
+ l_other_trade_info_spies_dlc: "\n\n§YSpies (Shown as the Papers):§! Provides the following:\nOperative slots: §G+1§!
 
  l_other_trade_mercs_upgrade_support: "§YAdds Engineer, Cavalry Recon, and Military Police Support Companies to future Mercenary Divisions.§!"
  l_other_trade_mercs_upgrade_arty: "§YAdds Support Artillery and a Artillery battalion to future Mercenary Divisions.§!"

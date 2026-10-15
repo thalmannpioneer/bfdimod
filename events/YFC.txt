@@ -3497,10 +3497,10 @@ country_event = { #YFC_focus_march_on_footpathburg
                     }
 				}
 
-				set_variable = { var_Sector_remove_timer = 300 }
+				set_variable = { var_Sector_remove_timer = 450 }
                 IF = {
                     limit = {has_completed_focus = YFC_focus_hoard_gold}
-                    add_to_variable = {var_Sector_remove_timer = 200}
+                    add_to_variable = {var_Sector_remove_timer = 250}
                 }
 				complete_national_focus = YFC_focus_tophat_clan
 				IF = {
