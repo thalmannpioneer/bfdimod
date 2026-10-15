@@ -1132,6 +1132,66 @@ propaganda_efforts = {
 }
 
 war_measures = {
+	enact_price_controls = {
+		icon = GFX_decision_RAJ_famine
+
+		visible = { 
+			has_war = yes
+		}
+
+		available = {
+			longest_war_length > 6
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+
+		remove_trigger = {
+			OR = {
+				has_war = no
+				has_idea = idea_common_bankruptcy
+			}
+		}
+
+		custom_cost_trigger = {
+			check_variable = { money_amount > 10 }
+			has_political_power > 34
+		}
+		custom_cost_text = decisions_cost_money_1m_pp_35
+
+		fire_only_once = no
+		days_remove = -1
+		days_re_enable = 10
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_stability < 0.5
+				add = 10
+			}
+			modifier = {
+				has_war_support < 0.5
+				add = 10
+			}
+		}
+
+		modifier = {
+            stability_weekly = 0.001
+            war_support_weekly = 0.001
+			consumer_goods_factor = 0.15
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+			subtract_from_variable = { money_amount = 10 }
+			hidden_effect = {add_political_power = -35}
+		}
+	}
+
+	#I might add more decisions to counter stability_weekly/war_support_weekly later...
+
 	invest_mobilization = {
 		icon = GFX_decision_generic_protection
 
@@ -1168,6 +1228,7 @@ war_measures = {
 			mobilization_speed = 0.5
 			training_time_army_factor = -0.25
 			weekly_manpower = 500
+			war_support_weekly = 0.005
 		}
 
 		complete_effect = {
@@ -1261,6 +1322,7 @@ war_measures = {
 		modifier = {
 			defence = 0.2
 			dig_in_speed_factor = 0.5
+			war_support_weekly = 0.002
 		}
 
 		complete_effect = {
@@ -1329,7 +1391,7 @@ war_measures = {
 
 			modifier = {
 				factor = 3
-				has_manpower < 100000
+				has_manpower < 20000
 			}
 		}
 		complete_effect = {
