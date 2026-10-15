@@ -372,7 +372,6 @@ decision_YFC_trade_category = {
 
         modifier = {
             political_power_gain = -0.5
-            stability_factor = -0.1
         }
 
         complete_effect = {

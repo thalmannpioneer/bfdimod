@@ -1136,6 +1136,7 @@ war_measures = {
 		icon = GFX_decision_RAJ_famine
 
 		visible = { 
+			has_country_flag = has_money_system
 			has_war = yes
 		}
 
@@ -1198,6 +1199,10 @@ war_measures = {
 		visible = { 
 			has_country_flag = has_money_system
 			has_war = yes
+			longest_war_length < 8
+		}
+
+		available = {
 			longest_war_length < 8
 		}
 

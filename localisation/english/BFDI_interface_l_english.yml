@@ -106,7 +106,7 @@
  l_economic_profit_rate_communism: "Planned Economy: §R80%§!\n"
  l_economic_profit_rate_isolation: "Isolation: §R20%§!\n"
  l_economic_profit_rate_unstainable_war: "§RUNSTAINABLE WAR: 0%§!\n"
- l_economic_profit_rate_stability: "Stability: §R[?THIS.stability]x§!\n"
+ l_economic_profit_rate_stability: "Stability: §R[?THIS.stability|.2]x§!\n"
  l_economic_profit_rate_stability_poor: "Stability: §R0.1x§!\n"
  l_economic_deficit_title: "§RExpenses§!"
  l_economic_deficit_schools: "Expenses from §6Schooling§!: §R$[?var_schooling_mc_display]K§!"
