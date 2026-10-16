@@ -1375,6 +1375,7 @@ focus_tree = {
                     modifier = modifier_GTR_city_council
                 }
             }
+            add_stability = 0.05
             add_power_balance_value = {
                 id = GTR_power_balance
                 value = -0.05
@@ -1525,6 +1526,7 @@ focus_tree = {
 
         completion_reward = {
             custom_effect_tooltip = l_GTR_changes_noocracy
+            add_stability = 0.05
             add_to_variable = { var_idea_GTR_noocracy_sf = -0.05 }
             add_to_variable = { var_idea_GTR_noocracy_ppg = 0.1 }
             add_to_variable = { var_idea_GTR_noocracy_rs = 0.05 }
@@ -1903,7 +1905,7 @@ focus_tree = {
                         id = GTR_power_balance
                     }
                 }
-                has_stability > 0.3
+                has_stability > 0.25
             }
         }
         cancel_if_invalid = yes

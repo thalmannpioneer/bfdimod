@@ -762,10 +762,18 @@ focus_tree = {
                     militia = { x = 1 y = 1 }
                 }
             }
+            set_temp_variable = {var_YFC_militia_amount = 4}
+            IF = {
+                limit = {
+                    is_ai = yes
+                    BUN = {is_ai = yes}
+                }
+                add_to_temp_variable = {var_YFC_militia_amount = 2}
+            }
             201 = {
                 create_unit = {
                     division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.1"
-                    count = 4
+                    count = var_YFC_militia_amount
                     owner = YFC
                 }
             }

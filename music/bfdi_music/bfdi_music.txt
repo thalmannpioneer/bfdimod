@@ -13,35 +13,15 @@
 
 music_station = "bfdi_music_MMCT"
 
-music = {
-    song = "eliminating_MMCT" #Very peaceful
-    chance = {
-        base = 1
-        modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
-        modifier = { factor = 0 threat > 0.5 }
-        modifier = {
-            factor = 0
-            GOI = {
-                exists = yes
-                has_cosmetic_tag = GOI_anarchy
-            }
-        }
-        modifier = {
-            factor = 0
-            tag = GTR
-            has_cosmetic_tag = GTR_collapse
-        }
-    }
-}
+#Kevin MacLeod
 
 music = {
     song = "new_friendly_MMCT" #Slight war or tension
     chance = {
         base = 1
         modifier = { factor = 0.5 has_war = no }
-        modifier = { factor = 0.25 threat < 0.25 }
-        modifier = { factor = 1.1 threat > 0.25 }
+        modifier = { factor = 0.25 threat < 0.2 }
+        modifier = { factor = 1.1 threat > 0.2 }
         modifier = { factor = 1.2 threat > 0.5 }
         modifier = { factor = 0 surrender_progress > 0.1 }
         modifier = {
@@ -71,8 +51,8 @@ music = {
     chance = {
         base = 1
         modifier = { factor = 0.5 has_war = no }
-        modifier = { factor = 0.25 threat < 0.25 }
-        modifier = { factor = 1.1 threat > 0.25 }
+        modifier = { factor = 0.25 threat < 0.2 }
+        modifier = { factor = 1.1 threat > 0.2 }
         modifier = { factor = 1.2 threat > 0.5 }
         modifier = { factor = 0 surrender_progress > 0.1 }
         modifier = {
@@ -86,45 +66,11 @@ music = {
 }
 
 music = {
-    song = "unreal_super_hero_3_MMCT" #Very peaceful
-    chance = {
-        base = 1
-        modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
-        modifier = { factor = 0 threat > 0.5 }
-        modifier = {
-            factor = 0
-            GOI = {
-                exists = yes
-                has_cosmetic_tag = GOI_anarchy
-            }
-        }
-        modifier = {
-            factor = 0
-            tag = GTR
-            has_cosmetic_tag = GTR_collapse
-        }
-    }
-}
-
-music = {
-    song = "bfdia_5b_MMCT" #Tension or start of war
-    chance = {
-        base = 1
-        modifier = { factor = 0.1 has_war = no }
-        modifier = { factor = 2 longest_war_length > 3 }
-        modifier = { factor = 0 threat < 0.25 }
-        modifier = { factor = 0.5 threat > 0.25 }
-        modifier = { factor = 0.75 threat > 0.5 }
-    }
-}
-
-music = {
     song = "fig_leaf_times_two_MMCT" #Very peaceful
     chance = {
         base = 1
         modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
+        modifier = { factor = 0.5 threat > 0.2 }
         modifier = { factor = 0 threat > 0.5 }
         modifier = {
             factor = 0
@@ -146,7 +92,7 @@ music = {
     chance = {
         base = 1
         modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
+        modifier = { factor = 0.5 threat > 0.2 }
         modifier = { factor = 0 threat > 0.5 }
         modifier = {
             factor = 0
@@ -186,42 +132,7 @@ music = {
         base = 1
         modifier = { factor = 1 has_global_flag = demo_ended }
         modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
-        modifier = { factor = 0 threat > 0.5 }
-        modifier = {
-            factor = 0
-            GOI = {
-                exists = yes
-                has_cosmetic_tag = GOI_anarchy
-            }
-        }
-        modifier = {
-            factor = 0
-            tag = GTR
-            has_cosmetic_tag = GTR_collapse
-        }
-    }
-}
-
-music = {
-    song = "bnob_MMCT" #Slight war or tension
-    chance = {
-        base = 1
-        modifier = { factor = 0.5 has_war = no }
-        modifier = { factor = 0.25 threat < 0.25 }
-        modifier = { factor = 1.1 threat > 0.25 }
-        modifier = { factor = 1.2 threat > 0.5 }
-        modifier = { factor = 0 surrender_progress > 0.1 }
-    }
-}
-
-music = {
-    song = "wherever_u_communicate_MMCT" #Very peaceful/after demo
-    chance = {
-        base = 1
-        modifier = { factor = 1 has_global_flag = demo_ended }
-        modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0.5 threat > 0.25 }
+        modifier = { factor = 0.5 threat > 0.2 }
         modifier = { factor = 0 threat > 0.5 }
         modifier = {
             factor = 0
@@ -253,8 +164,8 @@ music = {
     chance = {
         base = 1
         modifier = { factor = 0.5 has_war = no }
-        modifier = { factor = 0.25 threat < 0.25 }
-        modifier = { factor = 1.1 threat > 0.25 }
+        modifier = { factor = 0.25 threat < 0.2 }
+        modifier = { factor = 1.1 threat > 0.2 }
         modifier = { factor = 1.2 threat > 0.5 }
     }
 }
@@ -298,10 +209,94 @@ music = {
     chance = {
         base = 1
         modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0 threat < 0.15 }
-        modifier = { factor = 1.25 threat > 0.15 }
-        modifier = { factor = 1 threat > 0.25 }
-        modifier = { factor = 0.5 threat > 0.5 }
+        modifier = { factor = 0 threat > 0.15 }
+        modifier = { factor = 1.25 threat < 0.15 }
+        modifier = {
+            factor = 0
+            GOI = {
+                exists = yes
+                has_cosmetic_tag = GOI_anarchy
+            }
+        }
+        modifier = {
+            factor = 0
+            tag = GTR
+            has_cosmetic_tag = GTR_collapse
+        }
+    }
+}
+
+#YOYLECAKE Michael
+
+music = {
+    song = "bnob_MMCT" #Slight war or tension
+    chance = {
+        base = 1
+        modifier = { factor = 0.5 has_war = no }
+        modifier = { factor = 0.25 threat < 0.2 }
+        modifier = { factor = 1.1 threat > 0.2 }
+        modifier = { factor = 1.2 threat > 0.5 }
+        modifier = { factor = 0 surrender_progress > 0.1 }
+    }
+}
+
+music = {
+    song = "wherever_u_communicate_MMCT" #Very peaceful/after demo
+    chance = {
+        base = 1
+        modifier = { factor = 1 has_global_flag = demo_ended }
+        modifier = { factor = 0 has_war = yes }
+        modifier = { factor = 0.5 threat > 0.2 }
+        modifier = { factor = 0 threat > 0.5 }
+        modifier = {
+            factor = 0
+            GOI = {
+                exists = yes
+                has_cosmetic_tag = GOI_anarchy
+            }
+        }
+        modifier = {
+            factor = 0
+            tag = GTR
+            has_cosmetic_tag = GTR_collapse
+        }
+    }
+}
+
+#PS3tronic
+
+music = {
+    song = "idfb_theme_80s_remix_MMCT" #Peaceful Technocratic vibes
+    chance = {
+        base = 1
+        modifier = { factor = 0 has_war = yes }
+        modifier = { factor = 0 threat > 0.15 }
+        modifier = { factor = 1.25 threat < 0.15 }
+        modifier = { factor = 2 tag = GTR }
+        modifier = {
+            factor = 0
+            GOI = {
+                exists = yes
+                has_cosmetic_tag = GOI_anarchy
+            }
+        }
+        modifier = {
+            factor = 0
+            tag = GTR
+            has_cosmetic_tag = GTR_collapse
+        }
+    }
+}
+
+#Unknown/Not Writen 
+
+music = {
+    song = "eliminating_MMCT" #Very peaceful
+    chance = {
+        base = 1
+        modifier = { factor = 0 has_war = yes }
+        modifier = { factor = 0.5 threat > 0.2 }
+        modifier = { factor = 0 threat > 0.5 }
         modifier = {
             factor = 0
             GOI = {
@@ -318,15 +313,12 @@ music = {
 }
 
 music = {
-    song = "idfb_theme_80s_remix_MMCT" #Peaceful Technocratic vibes
+    song = "unreal_super_hero_3_MMCT" #Very peaceful
     chance = {
         base = 1
         modifier = { factor = 0 has_war = yes }
-        modifier = { factor = 0 threat < 0.15 }
-        modifier = { factor = 1.25 threat > 0.15 }
-        modifier = { factor = 1 threat > 0.25 }
-        modifier = { factor = 0.5 threat > 0.5 }
-        modifier = { factor = 2 tag = GTR }
+        modifier = { factor = 0.5 threat > 0.2 }
+        modifier = { factor = 0 threat > 0.5 }
         modifier = {
             factor = 0
             GOI = {
@@ -339,5 +331,17 @@ music = {
             tag = GTR
             has_cosmetic_tag = GTR_collapse
         }
+    }
+}
+
+music = {
+    song = "bfdia_5b_MMCT" #Tension or start of war
+    chance = {
+        base = 1
+        modifier = { factor = 0.1 has_war = no }
+        modifier = { factor = 2 longest_war_length > 3 }
+        modifier = { factor = 0 threat < 0.25 }
+        modifier = { factor = 0.5 threat > 0.25 }
+        modifier = { factor = 0.75 threat > 0.5 }
     }
 }

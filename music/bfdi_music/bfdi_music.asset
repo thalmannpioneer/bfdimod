@@ -5,61 +5,43 @@
 #Please confirm the output is as expected before testing in-game.
 #And remember to change the .dds of your radio station thumbnail in the gfx folder!
 
-music = {
-    name = "eliminating_MMCT"
-    file = "eliminating.ogg"
-    volume = 1
-}
-
-music = {
+music = { #Kevin MacLeod
     name = "new_friendly_MMCT"
     file = "new_friendly.ogg"
     volume = 1
 }
 
-music = {
+music = { #Kevin MacLeod
     name = "chee_zee_cave_MMCT"
     file = "chee_zee_cave.ogg"
     volume = 1
 }
 
-music = {
+music = { #Kevin MacLeod
     name = "rocket_MMCT"
     file = "rocket.ogg"
     volume = 1
 }
 
-music = {
-    name = "unreal_super_hero_3_MMCT"
-    file = "unreal_super_hero_3.ogg"
-    volume = 1
-}
-
-music = {
-    name = "bfdia_5b_MMCT"
-    file = "bfdia_5b.ogg"
-    volume = 1
-}
-
-music = {
+music = { #Kevin MacLeod
 	name = "fig_leaf_times_two_MMCT"
 	file = "fig_leaf_times_two.ogg"
 	volume = 1
 }
 
-music = {
+music = { #Kevin MacLeod
 	name = "bit_quest_MMCT"
 	file = "bit_quest.ogg"
 	volume = 1
 }
 
-music = {
+music = { #Kevin MacLeod
 	name = "not_as_it_seems_MMCT"
 	file = "not_as_it_seems.ogg"
 	volume = 1
 }
 
-music = {
+music = { #Kevin MacLeod
 	name = "mister_exposition_MMCT"
 	file = "mister_exposition.ogg"
 	volume = 1
@@ -113,8 +95,27 @@ music = {
 	volume = 2
 }
 
-music = {
+music = { #PS3tronic
 	name = "idfb_theme_80s_remix_MMCT"
 	file = "idfb_theme_80s_remix.ogg"
 	volume = 2
 }
+
+music = { #???
+    name = "unreal_super_hero_3_MMCT"
+    file = "unreal_super_hero_3.ogg"
+    volume = 1
+}
+
+music = { #???
+    name = "bfdia_5b_MMCT"
+    file = "bfdia_5b.ogg"
+    volume = 1
+}
+
+music = { #???
+    name = "eliminating_MMCT"
+    file = "eliminating.ogg"
+    volume = 1
+}
+

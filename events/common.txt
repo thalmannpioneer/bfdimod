@@ -686,3 +686,26 @@ country_event = {
         add_stability = -0.01
     }
 }
+
+country_event = {
+    id = uncommon_event.14
+    title = uncommon_event.14.t
+    desc = uncommon_event.14.desc
+    picture = GFX_uncommon_event3
+
+    is_triggered_only = yes
+
+    option = {
+        name = uncommon_event.14.a
+
+        custom_effect_tooltip = l_LSS_lackof
+
+		add_to_variable = { var_idea_LSS_lackof_monthly_population = 2.5 }
+		add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.05 }
+        add_to_variable = { var_idea_LSS_lackof_consumer_goods_factor = -0.05 }
+
+		hidden_effect = {
+			LSS_lack_check = yes
+		}	
+    }
+}
