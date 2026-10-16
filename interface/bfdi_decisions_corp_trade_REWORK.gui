@@ -11,7 +11,13 @@ guiTypes = {
             position = { x = -25 y = 0 }
         }
 		
-		iconType = {
+		iconType = [
+			name = "help_emph"
+			spriteType = "GFX_decisions_star_animated"
+			position = { x = -10 y = -27 }
+		}
+		
+		buttonType = {
 			name = "help"
 			spriteType = "GFX_corp_help"
 			position = { x = 10 y = -20 }

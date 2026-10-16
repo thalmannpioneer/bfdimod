@@ -1,45 +1,45 @@
 decision_BUN_raids_category = {
-	allowed = { tag = BUN }
-	
-	visible = { 
-		OR = {
-			is_ai = no
-			AND = {
-				is_ai = yes
-				check_variable = {
-					var_currently_raiding = 0
-				}
-				num_divisions > 2
-				has_army_size = {
-					size > 0
-				}
-			}
-		}
-		NOT = {has_cosmetic_tag = BUN_revolt}
-	}
-	priority = 10
-	icon = decision_category_operation_coinflip
-	visible_when_empty = no
+    allowed = { tag = BUN }
+
+    visible = {
+        OR = {
+            is_ai = no
+            AND = {
+                is_ai = yes
+                check_variable = {
+                    var_currently_raiding = 0
+                }
+                num_divisions > 2
+                has_army_size = {
+                    size > 0
+                }
+            }
+        }
+        NOT = {has_cosmetic_tag = BUN_revolt}
+    }
+    priority = 10
+    icon = decision_category_operation_coinflip
+    visible_when_empty = no
 }
 
 decision_BUN_Revolt_category = {
-	allowed = { tag = BUN }
-	available = {
+    allowed = { tag = BUN }
+    available = {
         country_exists = BUN
-		AND = {
-			has_dynamic_modifier = {modifier = idea_BUN_Ticking_Bomb}
-			has_war_with = YFC
-		}
-	}
-	visible = { 
+        AND = {
+            has_dynamic_modifier = {modifier = idea_BUN_Ticking_Bomb}
+            has_war_with = YFC
+        }
+    }
+    visible = {
         country_exists = BUN
-		AND = {
-			has_dynamic_modifier = {modifier = idea_BUN_Ticking_Bomb}
-			has_war_with = YFC
-		}
-	}
-	priority = 15
-	picture = GFX_decision_cat_GFG_reconstruction #Change later plz
-	icon = GFX_decision_BUN_Revolt_category
-	visible_when_empty = yes
+        AND = {
+            has_dynamic_modifier = {modifier = idea_BUN_Ticking_Bomb}
+            has_war_with = YFC
+        }
+    }
+    priority = 15
+    picture = GFX_decision_cat_BUN_revolt
+    icon = GFX_decision_BUN_Revolt_category
+    visible_when_empty = yes
 }

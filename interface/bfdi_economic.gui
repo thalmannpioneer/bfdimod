@@ -331,6 +331,14 @@ guiTypes = {
                     position = { x = 277 y = 0 }
                 }
             }
+			
+			iconType = {
+				name = "block"
+				spriteType = GFX_economic_policies_block
+				position = { x = 0 y = 0 }
+				scale = 0.7
+				pdx_tooltip = l_economic_policies_blocked
+			}
         }
     }
 }

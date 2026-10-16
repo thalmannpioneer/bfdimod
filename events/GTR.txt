@@ -225,6 +225,10 @@ country_event = {
     picture = GFX_GTR_event10
 
     is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { play_song = "floating_cities_MMCT" }
+	}
 
     option = {
         name = GTR_event.10.a

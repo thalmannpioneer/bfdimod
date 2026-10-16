@@ -31,8 +31,14 @@ guiTypes = {
 				format = centre
 				font = hoi_36header
 			}
+			
+			iconType = [
+				name = "help_emph"
+				spriteType = "GFX_decisions_star_animated"
+				position = { x = 400 y = -5 }
+			}
 
-			iconType = {
+			buttonType = {
 				name = "help"
 				spriteType = "GFX_corp_help"
 				position = { x = 420 y = 0 }

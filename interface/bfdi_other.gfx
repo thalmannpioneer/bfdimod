@@ -105,4 +105,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/agency_icon_YFC_green_eye.dds"
 		noOfFrames = 2
 	}
+	
+	spriteType = {
+		name = "GFX_economic_policies_block"
+		texturefile = "gfx/interface/economic_policies_block.dds"
+	}
 }

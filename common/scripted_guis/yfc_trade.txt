@@ -587,6 +587,8 @@ scripted_gui = {
         }
 
         triggers = {
+			help_emph_visible = { NOT = { has_country_flag = trade_help_checked } }
+		
             notif_gmd_visible = {
                 GMD = {
                     exists = yes
@@ -1082,6 +1084,10 @@ scripted_gui = {
             #Blowing up the block stuff for now
         }
         effects = {
+			help_click = {
+				set_country_flag = trade_help_checked
+			}
+		
             equipment_buy_inc_click = {
                 var:YFC.tradeable^YFC.selected = {
                     set_temp_variable = { Nation_Pos = THIS.YFC_trade_nation_pos_var }

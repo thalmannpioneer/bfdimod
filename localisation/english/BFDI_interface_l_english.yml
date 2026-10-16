@@ -47,7 +47,7 @@
  demo_end_text_thank: "§7With love, The Kameshek Team§!"
  demo_end_button_text: "Thanks!"
  demo_end_credits_title: "Credits"
- demo_end_credits_text: "§Ythalmannpioneer§!\n(Creator, Map Design, Focus Icons, GFX, Portraits, Flag Design, Programming, Game Design)\n\n§YZDubbz§!\n(Events, Path Design, Game Design, Map Design)\n\n§YPun§!\n(Programming, Game Design)\n\n§YBarelySilver/Starling§!\n(Focus GFX)\n\n§YDaymare§!\n(Illustrated Loading Screen)\n\n§YKind of Human§!\n(Misc. Icons)\n\n§YDabaman§!\n(Focus GFX)\n\n§YPadirian§!\n(Misc. Icons)\n\n§YLither§!\n(Additional Portraits)\n\n§YWhereIsTheI§!\n(Additional Portrait)\n\n§YEl Pastita§!\n(Additional Map Design)\n\n§YIridium§!\n(Additional Flags)\n\n§YAyhem Mayhem§!\n(Money Icon)\n\n§7And all BFDI Community. An enourmous number of assets for this mod were taken from the internet. Thank you all.§!"
+ demo_end_credits_text: "§Ythalmannpioneer§!\n(Creator, Map Design, GFX, Programming, Game Design)\n\n§YZDubbz§!\n(Events, Path Design, Game Design, Map Design)\n\n§YPun§!\n(Programming, Game Design, Map Design)\n\n§YPadirian§!\n(Misc. Icons)\n\n§YBarelySilver/Starling§!\n(Focus GFX)\n\n§YDaymare§!\n(Illustrated Loading Screen)\n\n§YKind of Human§!\n(Misc. Icons)\n\n§YDabaman§!\n(Focus GFX)\n\n§YLither§!\n(Additional Portraits)\n\n§YWhereIsTheI§!\n(Additional Portrait)\n\n§YEl Pastita§!\n(Additional Map Design)\n\n§YIridium§!\n(Additional Flags)\n\n§YAyhem Mayhem§!\n(Money Icon)\n\n§YKael§!\n(Loading screen artist)\n\n§YLatteum§!\n(Loading screen artist)\n\n§7And all BFDI Community. An enourmous number of assets for this mod were taken from the internet. Thank you all.§!"
  
  cap_window_title: "Another defeat in Goiky"
  cap_window_participiants: "[winning_country.GetNameWithFlag]   Won   [losing_country.GetNameWithFlag]   in the Battle for Goiky"
@@ -132,6 +132,7 @@
  l_healthcare_tooltip: "Stability: [?var_healthcare_sf|%+]\nMonthly Population Growth: [?var_healthcare_mp|%+]\nMonthly Spending: §Y[?var_healthcare_mc_display]K§!"
  l_negdiff_notification_tt: "§tNegative Balance!§!"
  l_negdiff_notification_tt_delayed: "§GRight-click to dismiss§!"
+ l_economic_policies_blocked: "§tYour country is not capable of applying economic regulations right now.§!"
  
  l_YFC_trade_relation_embargoed: "EMBARGOED"
  l_YFC_trade_relation_blocked: "§RBad Trade Relations§!"
@@ -172,7 +173,7 @@
  l_YFC_trade_spr_tt: "[CORP_SPL_TT]"
  l_YFC_trade_tbt_tt: "[CORP_TBT_TT]"
  l_YFC_trade_gmd_tt: "[CORP_GMD_TT]"
- l_YFC_trade_help_tt: "Need some help?"
+ l_YFC_trade_help_tt: "Click to remove the animation!"
  l_YFC_trade_help_tt_d: "The Yellow Face Corporation Trading Menu (c) offers you a great opportunity to §7Sell§! and §tBuy§! equipment.\n\nJust §2Click on any nation on the map below§! and start doing business!\n\nYou can also §RHover on any route on the map§! to see its passability.\n§2Success rate of the delivery§! is defined by this property.\n§t50% - Bad Route(2)§!\n§Y75% - Normal Route(1)§!\n§7100% - Good Route(0)§!\n\nThe routes' risk changes as global events unfold so be sure to check every once in a while!\n\nAlso look at §GAdditional Export Information§! For guides on some of the special things you can export!\n\nGood luck!"
  l_YFC_trade_cross: "§tX§!"
  l_YFC_other_trade_help_tt_d: "Dear Customer of the Yellow Face Corporation (c)!\nIn this panel you can §7buy§! and §tsell§! food and equipment to our Company with really good prices. §YJust select anything you want to trade for and the amount with the corresponding buttons!§!"

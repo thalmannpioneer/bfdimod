@@ -1339,4 +1339,21 @@ spriteTypes = {
 		name = "GFX_decisions_GTR_development_invest_mils"
 		textureFile = "gfx/interface/decisions/GFX_decisions_GTR_development_invest_mils.dds"
 	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_decisions_star_animated"
+		textureFile = "gfx/interface/decisions/star_animated.dds"
+		noOfFrames = 19
+		loadType = "INGAME"
+		allwaystransparent = yes
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	
+	spriteType = {
+		name = "GFX_decision_cat_BUN_revolt"
+		textureFile = "gfx/interface/decisions/decision_cat_BUN_revolt.dds"
+	}
 }

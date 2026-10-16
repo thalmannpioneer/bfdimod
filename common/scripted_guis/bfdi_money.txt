@@ -35,6 +35,11 @@ scripted_gui = {
                     subtract_from_variable = { var_tax_slider = 1 }
                     subtract_from_variable = { var_taxation_cgf = 0.05 }
                     subtract_from_variable = { var_taxation_mgfp = 0.25 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -45,6 +50,11 @@ scripted_gui = {
                     add_to_variable = { var_tax_slider = 1 }
                     add_to_variable = { var_taxation_cgf = 0.05 }
                     add_to_variable = { var_taxation_mgfp = 0.25 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -58,6 +68,11 @@ scripted_gui = {
                     subtract_from_variable = { var_schooling_srbf = 0.1 }
                     subtract_from_variable = { var_schooling_mc = 0.1 }
                     subtract_from_variable = { var_schooling_mc_display = 10 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -70,6 +85,11 @@ scripted_gui = {
                     add_to_variable = { var_schooling_srbf = 0.1 }
                     add_to_variable = { var_schooling_mc = 0.1 }
                     add_to_variable = { var_schooling_mc_display = 10 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -83,6 +103,11 @@ scripted_gui = {
                     subtract_from_variable = { var_healthcare_mp = 0.1 }
                     subtract_from_variable = { var_healthcare_mc = 0.1 }
                     subtract_from_variable = { var_healthcare_mc_display = 10 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -95,6 +120,11 @@ scripted_gui = {
                     add_to_variable = { var_healthcare_mp = 0.1 }
                     add_to_variable = { var_healthcare_mc = 0.1 }
                     add_to_variable = { var_healthcare_mc_display = 10 }
+					set_country_flag = {
+						flag = money_change_politics_block
+						days = 3
+						value = 1
+					}
                     BFDI_calculate_money_stats = yes
                 }
             }
@@ -113,29 +143,42 @@ scripted_gui = {
         }
 
         triggers = {
+			block_visible = {
+				OR = {
+					has_idea = idea_common_bankruptcy
+					has_country_flag = disable_money_politics
+					has_country_flag = money_change_politics_block
+				}
+			}
             slider_decrease__tax_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
             slider_increase__tax_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
             slider_decrease__schooling_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
             slider_increase__schooling_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
             slider_decrease__healthcare_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
             slider_increase__healthcare_click_enabled = {
                 NOT = { has_idea = idea_common_bankruptcy }
                 NOT = { has_country_flag = disable_money_politics }
+				NOT = { has_country_flag = money_change_politics_block }
             }
         }
 

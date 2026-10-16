@@ -72,7 +72,49 @@ music = {
 }
 
 music = {
+	name = "bit_quest_MMCT"
+	file = "bit_quest.ogg"
+	volume = 1
+}
+
+music = {
 	name = "wherever_u_communicate_MMCT"
 	file = "wherever_u_communicate.ogg"
-	volume = 1
+	volume = 0.8
+}
+
+music = {
+	name = "suave_standpipe_MMCT"
+	file = "suave_standpipe.ogg"
+	volume = 2
+}
+
+music = {
+	name = "danse_macabre_MMCT"
+	file = "danse_macabre.ogg"
+	volume = 2
+}
+
+music = {
+	name = "floating_cities_MMCT"
+	file = "floating_cities.ogg"
+	volume = 3
+}
+
+music = {
+	name = "giant_wyrm_MMCT"
+	file = "giant_wyrm.ogg"
+	volume = 3
+}
+
+music = {
+	name = "leopard_print_elevator_MMCT"
+	file = "leopard_print_elevator.ogg"
+	volume = 2
+}
+
+music = {
+	name = "idfb_theme_80s_remix_MMCT"
+	file = "idfb_theme_80s_remix.ogg"
+	volume = 2
 }
