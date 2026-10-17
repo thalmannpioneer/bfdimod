@@ -833,7 +833,7 @@ defined_text = {
 					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 5 }}
 				}
 				AND = {
-					YFC = {has_country_flag = YFC_trade_allow_food}
+					YFC = {check_variable = {var_YFC_food_amount > 0}}
 					var:YFC.tradeable^YFC.selected = { check_variable = { buying_item = 6 }}
 				}
 				AND = { 

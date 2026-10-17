@@ -48,7 +48,7 @@ guiTypes = {
 				name = "Selling_Confirm_Button"
 				position = { x = 20 y = 40 }
 				quadTextureSprite ="GFX_icon_button_46x46"
-				buttonText = "Sell" #UPDATE LATER
+				buttonText = l_decisions_trade_selltext
 				buttonFont = "hoi_18mbs"
 				clicksound = click_ok
 				oversound = ui_menu_over
@@ -59,7 +59,7 @@ guiTypes = {
 				name = "Buying_Confirm_Button"
 				position = { x = 20 y = 130 }
 				quadTextureSprite ="GFX_icon_button_46x46"
-				buttonText = "Buy" #UPDATE LATER
+				buttonText = l_decisions_trade_buytext
 				buttonFont = "hoi_18mbs"
 				clicksound = click_ok
 				oversound = ui_menu_over
