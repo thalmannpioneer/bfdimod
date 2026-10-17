@@ -3732,44 +3732,18 @@ country_event = { #YFC Market shipment failed to make it to us
 country_event = { #YFC aftermath
 	id = YFC_event.74
 	title = YFC_event.74.t
-	picture = GFX_Temp_event
-
-	desc = {
-		text = YFC_event.74.desc.a #Left side
-		trigger = {
-			has_completed_focus = YFC_focus_mass_firings
-		}
-	}
-	desc = {
-		text = YFC_event.74.desc.b #Right side
-		trigger = {
-			NOT = {has_completed_focus = YFC_focus_mass_firings}
-		}
-	}
+	picture = GFX_YFC_event74
+	desc = YFC_event.74.desc.a #Left side
 
 	fire_only_once = no
 	is_triggered_only = yes
 
 	option = { #Left Side
 		name = YFC_event.74.a
-		trigger = {
-			has_completed_focus = YFC_focus_mass_firings
-		}
 		add_political_power = 50
 		custom_effect_tooltip = l_GOI_unlock_focus
 		hidden_effect = {
 			complete_national_focus = YFC_focus_last_of_the_layoffs
-		}
-		mark_focus_tree_layout_dirty = yes
-	}
-	option = { #Right side
-		name = YFC_event.74.b
-		trigger = {
-			NOT = {has_completed_focus = YFC_focus_mass_firings}
-		}
-		custom_effect_tooltip = l_GOI_unlock_focus
-		hidden_effect = {
-			
 		}
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -4342,7 +4316,7 @@ country_event = { #YFC_focus_beakers_idea
 	id = YFC_event.97
 	title = YFC_event.97.t
 	desc = YFC_event.97.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event97
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4365,7 +4339,7 @@ country_event = { #YFC_focus_the_numis_ideology
 	id = YFC_event.98
 	title = YFC_event.98.t
 	desc = YFC_event.98.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event98
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4385,7 +4359,7 @@ country_event = { #YFC_focus_a_stable_society
 	id = YFC_event.99
 	title = YFC_event.99.t
 	desc = YFC_event.99.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event99
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4401,7 +4375,7 @@ country_event = { #YFC_focus_to_the_future
 	id = YFC_event.100
 	title = YFC_event.100.t
 	desc = YFC_event.100.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event100
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4426,7 +4400,7 @@ country_event = { #Beaker is done with school
 	id = YFC_event.101
 	title = YFC_event.101.t
 	desc = YFC_event.101.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event101
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4443,7 +4417,7 @@ country_event = { #YFC_focus_beakers_return
 	id = YFC_event.102
 	title = YFC_event.102.t
 	desc = YFC_event.102.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event102
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4473,7 +4447,7 @@ country_event = { #Top Hat askes other to reopen trade
 	id = YFC_event.103
 	title = YFC_event.103.t
 	desc = YFC_event.103.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event103
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4584,7 +4558,7 @@ country_event = { #YFC_focus_the_state which I DID NOT FORGET till now
 	id = YFC_event.106
 	title = YFC_event.106.t
 	desc = YFC_event.106.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event88
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4598,7 +4572,7 @@ country_event = { #YFC_focus_teardrop_diplomacy ONE
 	id = YFC_event.107
 	title = YFC_event.107.t
 	desc = YFC_event.107.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event44
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4638,7 +4612,7 @@ country_event = { #YFC_focus_teardrop_diplomacy TWO
 	id = YFC_event.108
 	title = YFC_event.108.t
 	desc = YFC_event.108.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event108
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4685,7 +4659,7 @@ country_event = { #YFC_focus_teardrop_diplomacy THREE
 	id = YFC_event.109
 	title = YFC_event.109.t
 	desc = YFC_event.109.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event109
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4762,7 +4736,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FOUR
 	id = YFC_event.110
 	title = YFC_event.110.t
 	desc = YFC_event.110.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event110
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4856,7 +4830,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FIVE
 	id = YFC_event.111
 	title = YFC_event.111.t
 	desc = YFC_event.111.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event111
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4928,7 +4902,7 @@ country_event = { #YFC_focus_teardrop_diplomacy SIX
 	id = YFC_event.112
 	title = YFC_event.112.t
 	desc = YFC_event.112.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event112
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -4973,7 +4947,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL A
 	id = YFC_event.113
 	title = YFC_event.113.t
 	desc = YFC_event.113.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event113
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -5064,7 +5038,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL B
 	id = YFC_event.114
 	title = YFC_event.114.t
 	desc = YFC_event.114.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event114
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -5092,7 +5066,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL C
 	id = YFC_event.115
 	title = YFC_event.115.t
 	desc = YFC_event.115.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event115
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -5154,7 +5128,7 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL D
 	id = YFC_event.116
 	title = YFC_event.116.t
 	desc = YFC_event.116.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event116
 
 	fire_only_once = no
 	is_triggered_only = yes
@@ -5195,7 +5169,7 @@ country_event = { #YFC_focus_teardrop_diplomacy Teardrop hates demilitarized!
 	id = YFC_event.117
 	title = YFC_event.117.t
 	desc = YFC_event.117.desc
-	picture = GFX_Temp_event
+	picture = GFX_YFC_event117
 
 	fire_only_once = no
 	is_triggered_only = yes

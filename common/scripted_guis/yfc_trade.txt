@@ -35,10 +35,14 @@ scripted_gui = { #I AM SANE
         }
 
         triggers = {
+			help_emph_visible = {
+				NOT = { ROOT = { has_country_flag = trade_help_checked } }
+			}
+		
             picking_equipment_window_visible = {
                 OR = {
-                    has_country_flag = Selling_Menu
-                    has_country_flag = Buying_Menu
+                    ROOT = { has_country_flag = Selling_Menu }
+                    ROOT = { has_country_flag = Buying_Menu }
                 }
             }
             background_equipment_box_selling_item_visible = {
@@ -124,6 +128,10 @@ scripted_gui = { #I AM SANE
         }
 
         effects = {
+			help_click = {
+				ROOT = { set_country_flag = trade_help_checked }
+			}
+		
             Selling_Button_click = {
                 ROOT = {
                     IF = {

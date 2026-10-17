@@ -19,10 +19,17 @@ guiTypes = {
         }
 		
 		iconType = {
+			scale = 0.7
+			name = "help_emph"
+			spriteType = "GFX_decisions_star_animated"
+			position = { x = 420 y = 0 }
+		}
+		
+		buttonType = {
 			scale = 0.8
 			name = "help"
 			spriteType = "GFX_corp_help"
-			position = { x = 430 y = -10 }
+			position = { x = 430 y = 0 }
 			pdx_tooltip = l_YFC_trade_help_tt
 			pdx_tooltip_delayed = l_YFC_other_trade_help_tt_d
 		}
