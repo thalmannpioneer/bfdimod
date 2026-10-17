@@ -1559,7 +1559,7 @@ country_event = { #YFC Sell
 		 	}
 			modifier = {
 				check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var < 1 }
-				add = 0.5
+				add = 0.75
 		 	}
 		}	
 	}
@@ -1582,21 +1582,21 @@ country_event = { #YFC Sell
 					YFC = {check_variable = { tradeable_relation^selected = 0 }}
 					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var > 1 }
 				}
-				add = 3
+				add = 2
 		 	}
 			modifier = {
 				AND = {
 					YFC = {check_variable = { tradeable_relation^selected = 1 }}
 					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var > 1.2 }
 				}
-				add = 1.5
+				add = 1
 		 	}
 			modifier = {
 				AND = {
 					YFC = {check_variable = { tradeable_relation^selected = 2 }}
 					check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var = 1.5 }
 				}
-				add = 1
+				add = 0.5
 		 	}
 		}
 	}
@@ -1743,8 +1743,8 @@ country_event = { #YFC trade event other country POV buying
 				add = 2
 		 	}
 			modifier = {
-				check_variable = {YFC.selling_X^ROOT.YFC_trade_nation_pos_var < 1 }
-				add = 0.5
+				check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var > 1 }
+				add = 0.75
 		 	}
 		}	
 	}
@@ -1767,21 +1767,21 @@ country_event = { #YFC trade event other country POV buying
 					YFC = {check_variable = { tradeable_relation^selected = 0 }}
 					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var < 1 }
 				}
-				add = 3
+				add = 2
 		 	}
 			modifier = {
 				AND = {
 					YFC = {check_variable = { tradeable_relation^selected = 1 }}
 					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var < 0.8 }
 				}
-				add = 1.5
+				add = 1
 		 	}
 			modifier = {
 				AND = {
 					YFC = {check_variable = { tradeable_relation^selected = 2 }}
 					check_variable = {YFC.buying_X^ROOT.YFC_trade_nation_pos_var = 0.5 }
 				}
-				add = 1
+				add = 0.5
 		 	}
 		}
 	}
@@ -3497,7 +3497,7 @@ country_event = { #YFC_focus_march_on_footpathburg
                     }
 				}
 
-				set_variable = { var_Sector_remove_timer = 450 }
+				set_variable = { var_Sector_remove_timer = 500 }
                 IF = {
                     limit = {has_completed_focus = YFC_focus_hoard_gold}
                     add_to_variable = {var_Sector_remove_timer = 250}
@@ -4244,7 +4244,26 @@ country_event = { #YFC_focus_meet_with_numismatia
 				relation = embargo
 				active = no
 			}
+			remove_opinion_modifier = {
+				target = YFC
+				modifier = large_decrease
+            }
+			add_opinion_modifier = {
+                target = YFC
+                modifier = large_increase
+            }
 		}
+		every_country_with_original_tag = {
+            original_tag_to_check = YFC
+            remove_opinion_modifier = {
+                target = CRN
+                modifier = large_decrease
+            }
+			add_opinion_modifier = {
+                target = CRN
+                modifier = large_increase
+            }
+        }
 
 		hidden_effect = {
 			CRN = {subtract_from_variable = { money_amount = 4 }}
@@ -4476,6 +4495,17 @@ country_event = { #Top Hat askes other to reopen trade
                     random_hours = 100
                 }
 			}
+			remove_opinion_modifier = {
+				target = YFC
+				modifier = large_decrease
+            }
+            every_country_with_original_tag = {
+                original_tag_to_check = YFC
+                remove_opinion_modifier = {
+                	target = ROOT
+                    modifier = large_decrease
+                }
+            }
 		}
 
 		ai_chance = {
@@ -4949,6 +4979,13 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL A
 	is_triggered_only = yes
 
 	immediate = {
+		hidden_effect = {
+			IF = {
+				limit = {has_country_flag = YFC_east_occupy_unlock}
+				clr_country_flag = YFC_east_occupy_unlock
+			}
+		}
+		
 		IF = {
 			limit = {check_variable = {var_east_britain_chance > 99}}
 			set_variable = {var_east_britain_chance = 100}
@@ -5011,6 +5048,13 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL A
 					active = no
 				}
 			}
+			set_variable = {tradeable^21 = 0}
+			IF = {
+				limit = {
+					NOT = {check_variable = {tradeable^20 = 0}}
+				}
+				subtract_from_variable = {tradeable^20 = 1}
+			}
 			YFC_ending_a_eastern_states = yes
 		}
 	}
@@ -5024,6 +5068,15 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL B
 
 	fire_only_once = no
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			IF = {
+				limit = {has_country_flag = YFC_east_occupy_unlock}
+				clr_country_flag = YFC_east_occupy_unlock
+			}
+		}
+	}	
 
 	option = { 
 		name = YFC_event.114.a
@@ -5045,7 +5098,12 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL C
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { 
+		hidden_effect = {
+			IF = {
+				limit = {has_country_flag = YFC_east_occupy_unlock}
+				clr_country_flag = YFC_east_occupy_unlock
+			}
+
 			every_state = {
 				limit = {
 					OR = {
@@ -5070,6 +5128,13 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL C
 					remove_core_of = EMP
 				}
 			}
+			set_variable = {tradeable^21 = 0}
+			IF = {
+				limit = {
+					NOT = {check_variable = {tradeable^20 = 0}}
+				}
+				subtract_from_variable = {tradeable^20 = 1}
+			}
 		}
 	}
 
@@ -5093,6 +5158,15 @@ country_event = { #YFC_focus_teardrop_diplomacy FINAL D
 
 	fire_only_once = no
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			IF = {
+				limit = {has_country_flag = YFC_east_occupy_unlock}
+				clr_country_flag = YFC_east_occupy_unlock
+			}
+		}
+	}	
 
 	option = { 
 		name = YFC_event.116.a

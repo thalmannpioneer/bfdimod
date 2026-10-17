@@ -493,7 +493,7 @@ economy_decisions = {
 
 		fire_only_once = no
 		days_remove = -1
-		days_re_enable = 1000
+		days_re_enable = 600
 
 		ai_will_do = {
 			base = 1000 #Buddy save yourself	

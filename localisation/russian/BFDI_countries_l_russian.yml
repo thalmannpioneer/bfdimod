@@ -107,7 +107,13 @@
  
  YFC: "Корпорация Йелоу Фейс"
  YFC_ADJ: "Корпорация"
- YFC_DEF: "Корп."
+ YFC_DEF: "Корп." #Thal this was updated
+ YFC_TopHat_clan: "Клан Топхэта"
+ YFC_TopHat_clan_ADJ: "Клан"
+ YFC_TopHat_clan_DEF: "Клан." #Thal this was updated
+ YFC_raiders: "Рейдеры Йелоу Фейса"
+ YFC_raiders_ADJ: "Рейдеры"
+ YFC_raiders_DEF: "Рейдерск." #Thal this was updated
  
  SOS: "Свободное Государство Обджектбурга"
  SOS_ADJ: "Свободное Государство Обджектбурга"
@@ -134,12 +140,6 @@
  BUN_republic: "Республика Банд"
  BUN_republic_DEF: "Банда"
  BUN_republic_ADJ: "Бандитск."
- YFC_TopHat_clan: "Клан Топхэта"
- YFC_TopHat_clan_ADJ: "Клан"
- YFC_TopHat_clan_DEF: "Клан."
- YFC_raiders: "Рейдеры Йелоу Фейса"
- YFC_raiders_ADJ: "Рейдеры"
- YFC_raiders_DEF: "Рейдерск."
  CRN: "Капиталистическая Республика Нумизматия"
  CRN_ADJ: "Нумизматийск."
  CRN_DEF: "Нумизматия"

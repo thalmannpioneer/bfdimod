@@ -118,13 +118,13 @@
  
  YFC: "Yellow Face Corporation"
  YFC_ADJ: "Corporate"
- YFC_DEF: "Corp"
+ YFC_DEF: "Yellow Face" #Was corp
  YFC_TopHat_clan: "TopHat Clan"
  YFC_TopHat_clan_ADJ: "Hatter"
- YFC_TopHat_clan_DEF: "Clan"
+ YFC_TopHat_clan_DEF: "Top Hat Clan" #Was clan
  YFC_raiders: "Yellow Face Raiders"
  YFC_raiders_ADJ: "Scammer"
- YFC_raiders_DEF: "Scam"
+ YFC_raiders_DEF: "Yellow Face" #Was scam
  
  SOS: "Objectburg Free State"
  SOS_ADJ: "Objectburger"

@@ -201,7 +201,7 @@
  decision_YFC_trade_category_th: "§0The Top Hat Market§!"
 
  YFC_Trade_info: "§GAdditional Export Information§!"
- YFC_Trade_info_desc: "Along with the normal military equipment, you can also export:\n\n§YFood:§! Provides minor buffs to purchasing country. Cooldown is dependent on stability.[trade_drug_info] [trade_manpower_info] [trade_spies_info]\n\n§GAll the following come at no cost to export so sell away!§!"
+ YFC_Trade_info_desc: "Along with the normal military equipment, you can also export:\n\n§YFood:§! Provides minor buffs to purchasing country. Cooldown is dependent on stability. There are [?var_YFC_food_amount|Y0] shipments ready.[trade_drug_info] [trade_manpower_info] [trade_spies_info]\n\n§GAll the following come at no cost to export so sell away!§!"
 
  l_decisions_trade_title: "[YFC_MARKET_DECISIONS_CATEGORY]"
  l_decisions_trade_buytext_tooltip: "[BUY_BUTTON]"
