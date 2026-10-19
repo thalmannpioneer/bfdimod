@@ -149,7 +149,7 @@
  l_YFC_trade_buying_food: "Food Shipments"
  l_YFC_trade_buying_manpower: "Militias"
  l_YFC_trade_buying_spies: "Spies"
- l_YFC_trade_get_food: "§YIncreases amount of ready food shipments by 1.§! Current Amount: [?var_YFC_food_amount|Y0])"
+ l_YFC_trade_get_food: "§YIncreases amount of ready food shipments by 1.§! (Current Amount: [?var_YFC_food_amount|Y0])"
  l_YFC_trade_get_drugs_unlock: "§YEnables drug selling to any nations that have embargoed us and/or we have embargoed.§! §LActs similar to food just more... forced. The chance for failed delivery with drugs is increased by 10%§!\n\n§YTake a look in the YFC trade menu!§!"
  l_YFC_trade_get_drugs: "§YAllows for another export of drugs.§!"
  l_YFC_trade_get_manpower: "§YAllows for another sending of militias.§!"

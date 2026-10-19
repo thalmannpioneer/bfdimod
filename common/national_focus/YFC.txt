@@ -2420,6 +2420,7 @@ focus_tree = {
                 add_state_core = 212
             }
             remove_ideas = idea_YFC_Bunch_Insurgency
+            unlock_decision_tooltip = YFC_Trade_bunch_steal
             mark_focus_tree_layout_dirty = yes
             hidden_effect = {
                 set_variable = {tradeable^16 = 0}

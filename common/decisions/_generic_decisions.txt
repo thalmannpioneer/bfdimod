@@ -501,12 +501,18 @@ economy_decisions = {
 
 		modifier = {
 			political_power_gain = -1
-			stability_weekly = 0.02
+			stability_weekly = 0.01
+			consumer_goods_factor = 0.25
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = l_money_gain_100K
+            add_to_variable = { money_amount = 1 }
 		}
 
 		remove_effect = {
-			custom_effect_tooltip = l_money_gain_200K
-            add_to_variable = { money_amount = 2 }
+			custom_effect_tooltip = l_money_gain_300K
+            add_to_variable = { money_amount = 3 }
 		}
 	}
 

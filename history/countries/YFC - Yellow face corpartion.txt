@@ -126,7 +126,7 @@ set_variable = { var_merc_timer = 180 } #Base merc timer
 
 #TRADE
 set_variable = { var_YFC_food_amount = 1 } #For Food
-set_variable = { var_YFC_food_timer = 90 }
+set_variable = { var_YFC_food_timer = 120 }
 set_variable = { selected = 0 }
 
 set_variable = {trade_buying_manpower_var = 0} #No fucking clue where this is

@@ -101,8 +101,8 @@ decision_YFC_trade_category = {
 		timeout_effect = {
 			custom_effect_tooltip = l_YFC_trade_get_food
             add_to_variable = {var_YFC_food_amount = 1}
-            set_temp_variable = {temp_food_amount_var = {value = var_YFC_food_amount = multiply = 0.25}}
-            set_temp_variable = {temp_timer_var = {value = 2.2 subtract = YFC.stability add = var_YFC_food_amount multiply = 100}}
+            set_temp_variable = {temp_food_amount_var = {value = var_YFC_food_amount multiply = 0.2}}
+            set_temp_variable = {temp_timer_var = {value = 2 add = temp_food_amount_var subtract = YFC.stability multiply = 100}}
             set_variable = {var_YFC_food_timer = temp_timer_var}
 		}
 	}

@@ -4305,6 +4305,29 @@ country_event = { #YFC_focus_city_council_compromise TWO
 	option = { 
 		name = YFC_event.96.a
 
+		trigger = {
+			NOT = {
+				has_country_flag = YFC_Allow_Beaker
+				has_country_flag = YFC_Beaker_stuck_in_school
+			}
+		}
+
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+
+	option = { 
+		name = YFC_event.96.b
+
+		trigger = {
+			OR = {
+                has_country_flag = YFC_Allow_Beaker
+                has_country_flag = YFC_Beaker_stuck_in_school
+            }
+		}
+
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.05
