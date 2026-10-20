@@ -437,7 +437,7 @@ decision_YFC_stabilization_category = {
 	}
 
 	YFC_stabilization_eastern_core = { 
-		icon = GFX_decision_SWE_set_army_budget #Update later!
+		icon = GFX_decisions_YFC_stabilization_eastern_core
 		state_target = yes
         targets = { 229 232 230 228 225 230 226 192 231 227 }
         on_map_mode = map_and_decisions_view

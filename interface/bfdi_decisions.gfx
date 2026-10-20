@@ -929,6 +929,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_research_aircraft.dds"
 	}	
 
+		spriteType = {
+		name = "GFX_decisions_YFC_stabilization_eastern_core"
+		textureFile = "gfx/interface/decisions/GFX_decisions_YFC_stabilization_eastern_core.dds"
+	}	
+
 	#BUN
 
 	spriteType = {

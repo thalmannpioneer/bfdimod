@@ -72,6 +72,19 @@ ideas = {
 				request_lease_tension = 100
 				lend_lease_tension = 100
 				join_faction_tension = 100
+				resistance_target = 0.2
+				local_non_core_manpower = -0.75
+			}
+		}
+		idea_LSS_human_race_DLC = { #Move later 
+			picture = chi_army_corruption
+			modifier = {
+				improve_relations_maintain_cost_factor = 5
+				opinion_gain_monthly_factor = -0.85
+				send_volunteers_tension = 100
+				request_lease_tension = 100
+				lend_lease_tension = 100
+				join_faction_tension = 100
 				own_operative_detection_chance = 100
 				enemy_operative_detection_chance = 100
 				resistance_target = 0.2

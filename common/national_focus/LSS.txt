@@ -265,6 +265,10 @@ focus_tree = {
 		
 		prerequisite = { focus = LSS_focus_expand_rationing focus = LSS_focus_repurpose_vehicles }
 		
+		available = {
+			has_completed_focus = LSS_focus_encourage_local_growing
+		}
+
 		cost = 2
 
 		ai_will_do = {

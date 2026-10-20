@@ -104,6 +104,17 @@ IF = {
             tank_reliability_upgrade = 4
         }
     }
+
+    create_equipment_variant = {
+        name = "M109A6 Paladin"
+        type = modern_tank_artillery_equipment_1
+        upgrades = {
+            tank_art_upgrade = 4
+            tank_armor_upgrade = 4
+            tank_engine_upgrade = 4
+            tank_reliability_upgrade = 4
+        }
+    }
 }
 IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
     limit = {has_dlc = "No Step Back" }
@@ -140,6 +151,27 @@ IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to wo
 			engine_type_slot = tank_gas_turbine_engine
 			special_type_slot_1 = tank_radio_3
             special_type_slot_2 = stabilizer
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = smoke_launchers
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+
+    create_equipment_variant = {
+		name = "M109A6 Paladin"
+		type = main_battle_tank_chassis
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_howitzer
+			turret_type_slot = tank_modern_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gas_turbine_engine
+			special_type_slot_1 = tank_radio_3
+            special_type_slot_2 = extra_ammo_storage
 			special_type_slot_3 = easy_maintenance
 			special_type_slot_4 = smoke_launchers
 		}
@@ -390,6 +422,7 @@ set_technology = { advanced_computing_machine = 1 }
 IF = {
     limit = { NOT = { has_dlc = "La Resistance" } }
 
+    add_ideas = idea_LSS_human_race
     set_technology = { basic_encryption = 1 }
     set_technology = { improved_encryption = 1 }
     set_technology = { advanced_encryption = 1 }
@@ -400,6 +433,7 @@ IF = {
 IF = { #Would do else/if but Hoi4 is on fucking crack code and not wanting to work
     limit = { has_dlc = "La Resistance" } 
 
+    add_ideas = idea_LSS_human_race_DLC
     create_intelligence_agency = yes
     upgrade_intelligence_agency = upgrade_economy_civilian
     upgrade_intelligence_agency = upgrade_army_department
@@ -538,7 +572,6 @@ add_ideas = isolation
 add_ideas = closed_economy
 add_ideas = idea_LSS_political_chaos
 add_ideas = idea_LSS_texas_blood
-add_ideas = idea_LSS_human_race
 
 recruit_character = LSS_Leader
 recruit_character = LSS_Rodriguez
