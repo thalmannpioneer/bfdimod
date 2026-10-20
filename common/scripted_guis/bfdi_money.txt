@@ -147,7 +147,6 @@ scripted_gui = {
 				OR = {
 					has_idea = idea_common_bankruptcy
 					has_country_flag = disable_money_politics
-					has_country_flag = money_change_politics_block
 				}
 			}
             slider_decrease__tax_click_enabled = {

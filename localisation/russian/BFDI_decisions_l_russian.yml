@@ -322,7 +322,7 @@
  LSS_robots_for_the_wealthy: "Продать Роботов Богатым"
  decision_other_trade_category: "[YFC_MARKET_DECISIONS_CATEGORY]"
  decision_YFC_trade_category: "[YFC_MARKET_DECISIONS_CATEGORY]"
- decision_YFC_trade_category_yf: "§YРынок Йелоу Фейсаt§!"
+ decision_YFC_trade_category_yf: "§YРынок Йелоу Фейса§!"
  decision_YFC_trade_category_th: "§0Рынок Топхэта§!"
  l_decisions_trade_title: "[YFC_MARKET_DECISIONS_CATEGORY]"
  l_decisions_trade_buytext_tooltip: "[BUY_BUTTON]"
@@ -528,7 +528,7 @@
  LSS_placeholder_decision: "...?"
  LSS_placeholder_decision_desc: "Поверь мне! Я добавлял систему баланса сил не просто так!!!!"
  YFC_Trade_info: "§GДоп. информация об экспорте§!"
- YFC_Trade_info_desc: "Вместе с нормальным военным снаряжением, мы экспортируем:\n\n§YЕду:§! Даёт небольшие бонусы стране-покупательнице. Задержка повторной продажи зависит от стабильности. Доступно [?var_YFC_food_amount|Y0] поставок еды.[trade_drug_info] [trade_manpower_info] [trade_spies_info]\n\n§GОт продажи еды не будет никаких дебаффов, поэтому не бойтесь этого делать!§!" #Thal this was slightly updated
+ YFC_Trade_info_desc: "Вместе с нормальным военным снаряжением, мы экспортируем:\n\n§YЕду:§! Даёт небольшие бонусы стране-покупательнице. Задержка повторной продажи зависит от стабильности. Доступно [?var_YFC_food_amount|Y0] поставок еды.[trade_drug_info] [trade_manpower_info] [trade_spies_info]\n\n§GОт продажи еды не будет никаких дебаффов, поэтому не бойтесь этого делать!§!"
  YFC_stabilization_east_take: "Оккупировать §Yвнутренние пребрежные территории§!"
  invest_stabilization: "§YПрименить меры стабилизации§!"
  invest_stabilization_desc: "В условиях стремительного падения нашей экономики мы должны предпринять решительные действия для ее спасения!"
@@ -536,3 +536,5 @@
  other_trade_info: "§GДоп. информация об импорте§!"
  other_trade_info_desc: "Вместе с обычным военным снаряжением, можно также импортировать:\n\n§YЕда:§! Дает:\nЕжемес. прирост населения: §G+10%§!\nФактор фабрик народного потребления: §Y-10%§!\nСтабильность: §G+5%§!\nВозвращение потерь: §G+10%§![trade_drug_info] [trade_manpower_info] [trade_spies_info]"
  YFC_stabilization_eastern_core: "§YНационализировать§! §Y[FROM.GetName]§!"
+ 
+ ###TO TRANSLATE###
