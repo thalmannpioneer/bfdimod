@@ -15,14 +15,6 @@ characters = {
 				large = GFX_GMD_cary			
 			} 
 		}
-		corps_commander = {
-			skill = 4
-			attack_skill = 2
-			defense_skill = 7
-			planning_skill = 6
-			logistics_skill = 3
-			traits = { media_personality politically_connected cavalry_expert }
-		}
 	}
 
 	GMD_dinar = { #From @mryeet6000

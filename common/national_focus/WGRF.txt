@@ -533,7 +533,15 @@ focus_tree = {
                 GMD = { #Maybe move later idk
                     random = {
                         chance = 3 #For 3 mil subs <3
-                        recruit_character = GMD_joke_cary
+                        add_corps_commander_role = {
+                            character = GMD_joke_cary
+                            skill = 4
+                            attack_skill = 2
+                            defense_skill = 7
+                            planning_skill = 6
+                            logistics_skill = 3
+                            traits = { media_personality politically_connected cavalry_expert unlucky }
+                        }
                     }
                 }
             }

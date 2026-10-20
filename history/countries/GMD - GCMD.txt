@@ -43,6 +43,7 @@ add_ideas = idea_common_unplayable
 
 recruit_character = GMD_coiny
 recruit_character = GMD_dinar
+recruit_character = GMD_joke_cary
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment

@@ -1250,6 +1250,7 @@ country_event = {
 
     option = {
         name = GTR_event.45.a
+        add_war_support = 0.05
         swap_ideas = {
             remove_idea = idea_GTR_destroyed_university
             add_idea = idea_GTR_goiky_university
