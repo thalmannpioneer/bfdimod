@@ -3486,6 +3486,12 @@ country_event = { #YFC_focus_march_on_footpathburg
 			unlock_decision_category_tooltip = decision_YFC_stabilization_category	
 			custom_effect_tooltip = l_GOI_unlock_focus
 			hidden_effect = {
+				set_party_name = {
+					ideology = neutrality
+					long_name = YFC_neutrality_party_TopHat
+					name = YFC_neutrality_party_TopHat
+				}
+
 				YFC_tophat = {
 			        add_trait = {
                         character = FROM
