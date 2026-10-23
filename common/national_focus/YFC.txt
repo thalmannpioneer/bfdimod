@@ -2412,8 +2412,8 @@ focus_tree = {
 
         cost = 8
         completion_reward = {
-            add_stability = 0.05
-            add_political_power = 50
+            add_stability = 0.08
+            add_political_power = 75
             add_manpower = 10000
             YFC = {
                 add_state_core = 85
@@ -2454,8 +2454,6 @@ focus_tree = {
                     }
                 }
             }
-
-            #Maybe an event idk
         }
 
         ai_will_do = {
@@ -2646,6 +2644,10 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_see_to_the_eastern_front }
         mutually_exclusive  = { focus = YFC_focus_play_smart }
 
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         cost = 5
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_gainall_5
@@ -2688,6 +2690,10 @@ focus_tree = {
 
         allow_branch = { has_completed_focus = YFC_focus_play_fast }
 
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         prerequisite = { focus = YFC_focus_play_fast }
         cost = 5
         completion_reward = {
@@ -2714,6 +2720,10 @@ focus_tree = {
 
         available = {
             has_political_power > 50
+        }
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
         }
 
         cost = 5
@@ -2753,6 +2763,11 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_anger_teardrop }
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             add_manpower = 5000
             custom_effect_tooltip = l_YFC_eastern_gainall_5
@@ -2791,6 +2806,7 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_procure_funds }
 
         cost = 5
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_statebuild
         }
@@ -2810,6 +2826,7 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_play_fast }
         cost = 5
+
         completion_reward = {
             country_event = {
                 id = YFC_event.46
@@ -2863,6 +2880,11 @@ focus_tree = {
 
         prerequisite = { focus = YFC_focus_claim_excessive_land }
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_gainall_10
             hidden_effect = {
@@ -2936,6 +2958,11 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_buy_ships focus = YFC_focus_invest_into_infrastructure }
         prerequisite = { focus = YFC_focus_build_ports focus = YFC_focus_undermine_legitimacy }
         cost = 7
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_gainall_10
             unlock_decision_tooltip = YFC_eastern_block
@@ -2974,6 +3001,11 @@ focus_tree = {
         mutually_exclusive  = { focus = YFC_focus_play_fast }
 
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             add_political_power = 50
             mark_focus_tree_layout_dirty = yes
@@ -2995,6 +3027,11 @@ focus_tree = {
         allow_branch = { has_completed_focus = YFC_focus_play_smart }
 
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             add_opinion_modifier = { target = TBT modifier = large_increase }
             every_country_with_original_tag = {
@@ -3058,6 +3095,11 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_negotiate_with_teardrop focus = YFC_focus_shuffle_around_funds }
 
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             add_manpower = 5000
             custom_effect_tooltip = l_YFC_eastern_gainall_5
@@ -3102,6 +3144,11 @@ focus_tree = {
         }
 
         cost = 5
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             subtract_from_variable = { money_amount = 3 }
             BFDI_money_diplay_update = yes
@@ -3224,6 +3271,11 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_build_ports_other focus = YFC_focus_bribe_village_leaders focus = YFC_focus_prospect_the_lands }
 
         cost = 7
+
+        bypass = {
+            has_completed_focus = YFC_focus_who_dares_wins
+        }
+
         completion_reward = {
             add_political_power = 50
             custom_effect_tooltip = l_YFC_eastern_borderwar_enable
@@ -6991,6 +7043,13 @@ focus_tree = {
 
         cost = 4
 
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_to_portland
             hidden_effect = {
@@ -7048,6 +7107,13 @@ focus_tree = {
 
         cost = 4
 
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
+
         completion_reward = {
             add_political_power = 25
             country_event = {
@@ -7073,6 +7139,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_distract_teardrop }
 
         cost = 4
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
 
         completion_reward = {
             add_manpower = 5000
@@ -7159,6 +7232,13 @@ focus_tree = {
 
         cost = 4
 
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_gainall_5
             hidden_effect = {
@@ -7197,6 +7277,13 @@ focus_tree = {
 
         cost = 4
 
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
+
         completion_reward = {
             custom_effect_tooltip = l_YFC_eastern_borderwar_buff
             army_experience = 25
@@ -7218,6 +7305,13 @@ focus_tree = {
         prerequisite = { focus = YFC_focus_plunder_the_wealth focus = YFC_focus_dispatch_the_forces }
 
         cost = 6
+
+        bypass = {
+            OR = {
+                has_completed_focus = YFC_focus_way_to_seas
+                has_completed_focus = YFC_focus_locked_on_land
+            }
+        }
 
         completion_reward = {
             country_event = {
