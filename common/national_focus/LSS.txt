@@ -624,9 +624,18 @@ focus_tree = {
 			add_to_variable = { var_idea_LSS_lackof_monthly_population = 0.25 }
 			add_to_variable = { var_idea_LSS_lackof_stability_factor = 0.1 }
 
-			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = 45}
-			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = 30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = 15}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_1}
+				add_days_mission_timeout = {mission = LSS_Mobilization_76 days = 45}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_76}
+				add_days_mission_timeout = {mission = LSS_Mobilization_76 days = 45}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_56}
+				add_days_mission_timeout = {mission = LSS_Mobilization_56 days = 45}
+			}
 
 			hidden_effect = {
 				LSS_lack_check = yes

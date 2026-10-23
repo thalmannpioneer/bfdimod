@@ -8,7 +8,7 @@ strategic_region={
 	weather={
 		period={ #Redone by Pun, we shall see how this goes...
 			between={ 0.0 30.0 } #Jan
-			temperature={ -12.0 6.0 }
+			temperature={ -12.0 2.0 }
 			no_phenomenon=0.500
 			rain_light=0.000
 			rain_heavy=0.000
@@ -21,7 +21,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.1 27.1 } #Feb
-			temperature={ -14.0 4.0 }
+			temperature={ -14.0 1.0 }
 			no_phenomenon=0.500
 			rain_light=0.000
 			rain_heavy=0.000
@@ -34,7 +34,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.2 30.2 } #Mar
-			temperature={ -1.0 10.0 }
+			temperature={ -1.0 8.0 }
 			no_phenomenon=0.500
 			rain_light=0.500
 			rain_heavy=0.050
@@ -138,7 +138,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.10 29.10 } #Nov
-			temperature={ -1.0 12.0 }
+			temperature={ -1.0 6.0 }
 			no_phenomenon=0.500
 			rain_light=0.500
 			rain_heavy=0.150
@@ -151,7 +151,7 @@ strategic_region={
 		}
 		period={
 			between={ 0.11 30.11 } #Dec
-			temperature={ -6.0 6.0 }
+			temperature={ -6.0 4.0 }
 			no_phenomenon=0.500
 			rain_light=0.050
 			rain_heavy=0.000

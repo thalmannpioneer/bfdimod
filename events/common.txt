@@ -101,9 +101,10 @@ country_event = {
         IF = {
             limit = {tag = LSS}
 
-            add_stability = 0.5
+            add_stability = 0.75
             army_experience = 200
             add_manpower = 100000
+            add_offsite_building = { type = industrial_complex level = 4 }
             add_offsite_building = { type = arms_factory level = 2 }
 
             add_equipment_to_stockpile = {
@@ -120,6 +121,19 @@ country_event = {
 			}
 
             hidden_effect = {
+                IF = {
+                    limit = {
+                        country_exists = DPZ
+                    }
+                    DPZ = {
+                        add_manpower = 10000
+                        add_equipment_to_stockpile = {
+                            type = infantry_equipment_0
+                            amount = 2000
+                        } 
+                    }
+                }
+
                 set_country_flag = LSS_attack_losers
 
                 division_template = {

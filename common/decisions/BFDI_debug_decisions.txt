@@ -127,7 +127,7 @@ decisions_BFDI_debug = {
             hidden_effect = {
                 add_timed_idea = {
                     idea = idea_debug_battle_royale
-                    days = 720
+                    days = 600
                 }
                 GOI = {
                     create_faction = "United Goiky"
@@ -137,9 +137,9 @@ decisions_BFDI_debug = {
                     limit = {
                         NOT = {
                             tag = EMP
-                        }
-                        NOT = {
                             tag = GOI
+                            has_war = yes
+                            is_in_faction = yes
                         }
                     }
                     set_major = yes

@@ -74,10 +74,23 @@ decision_LSS_Military_category = {
 		remove_effect = {
 			custom_effect_tooltip = l_money_lose_300K
 			subtract_from_variable = { money_amount = 3 }
+
+
+
 			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_Air days = -30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_76}
+				add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_56}
+				add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_Air}
+				add_days_mission_timeout = {mission = LSS_Mobilization_Air days = -30}
+			}
         }
 
 		ai_will_do = {
@@ -107,8 +120,14 @@ decision_LSS_Military_category = {
 
 		remove_effect = {
 			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
-			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_76}
+				add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -30}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_56}
+				add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -30}
+			}
         }
 
 		ai_will_do = {
@@ -160,8 +179,14 @@ decision_LSS_Military_category = {
 		remove_effect = {
 			retire_character = LSS_Steven
 			add_days_mission_timeout = {mission = LSS_Mobilization_1 days = -200}
-			add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -200}
-			add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -200}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_76}
+				add_days_mission_timeout = {mission = LSS_Mobilization_76 days = -200}
+			}
+			IF = {
+				limit = {has_active_mission = LSS_Mobilization_56}
+				add_days_mission_timeout = {mission = LSS_Mobilization_56 days = -200}
+			}
         }
 
 		ai_will_do = {
@@ -282,7 +307,11 @@ decision_LSS_Military_category = {
 				}
 				every_possible_country = {
 					limit = { is_ai = yes }
-					add_manpower = 15000
+					add_manpower = 10000
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 2000
+					}
 					army_experience = 25
 					add_war_support = 0.1
 				}
@@ -395,12 +424,12 @@ decision_LSS_Military_category = {
 		
 		fire_only_once = no
 		cost = 0
-		days_remove = 90
-		days_re_enable = 360
-
+		days_remove = 120
+		days_re_enable = 60
+ 
 		modifier = {
-			resistance_growth = -1.5
-			resistance_target = -0.25
+			resistance_growth = -2
+			resistance_target = -0.3
 			compliance_growth = -0.25
 		}
 
@@ -409,7 +438,7 @@ decision_LSS_Military_category = {
 			add_war_support = -0.1
 			IF = {
 				limit = {is_ai = yes}
-				add_stability = 0.25
+				add_stability = 0.05
 			}
         }
 
