@@ -319,8 +319,8 @@ on_actions = {
                 set_global_flag = cap_rocky
                 news_event = {
                     id = bfdinews.9
-                    days = 5
-                    random_hours = 6
+                    days = 2
+                    random_hours = 12
                 }
                 if = {
                     limit = {

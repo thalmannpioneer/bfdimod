@@ -37,15 +37,21 @@ leader_traits = {
     staunch_liberal = {
         stability_factor = 0.05
         consumer_goods_factor = -0.05
+        ai_focus_peaceful_factor = 0.25
+        ai_focus_defense_factor = 0.25
     }
 
     well_read = {
         stability_factor = 0.05
         research_speed_factor = 0.05
+        ai_focus_peaceful_factor = 0.25
+        ai_focus_defense_factor = 0.25
     }
 
     conservative_trait = {
         stability_factor = 0.1
+        ai_focus_peaceful_factor = 0.25
+        ai_focus_defense_factor = 0.25
     }
 
     abusive_relationships = {
@@ -190,7 +196,7 @@ leader_traits = {
         stability_factor = 0.01
     }
 
-    YFC_real_estate_agent  = {
+    YFC_real_estate_agent = {
         sprite = 13
 
         weekly_manpower = 100

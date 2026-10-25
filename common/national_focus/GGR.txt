@@ -1233,14 +1233,15 @@ focus_tree = {
 					FFT = { add_ideas = idea_FFT_freedom_or_death }
 				}
 				add_threat = 2
+				news_event = {
+					id = bfdinews.8
+					hours = 6
+					random_hours = 12
+				}
 				country_event = {
 					id = GGR_event.13
 					days = 15
 					random_hours = 12
-				}
-				news_event = {
-					id = bfdinews.8
-					days = 2
 				}
 				WGF = { 
 					if = {
