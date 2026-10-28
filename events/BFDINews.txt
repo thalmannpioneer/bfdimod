@@ -93,7 +93,10 @@ news_event = {
     option = {
         name = bfdinews.6.a
         if = {
-            limit = { WGF = { is_ai = no } }
+            limit = { 
+                original_tag = WGF
+                WGF = { is_ai = no } 
+            }
             set_variable = { var_demo_end = 1 }
             set_global_flag = demo_ended
             hidden_effect = { play_song = "demo_end" }
@@ -113,7 +116,10 @@ news_event = {
     option = {
         name = bfdinews.7.a
         if = {
-            limit = { SMG = { is_ai = no } }
+            limit = { 
+                SMG = { is_ai = no } 
+                original_tag = SMG
+            }
             set_variable = { var_demo_end = 2 }
             set_global_flag = demo_ended
             hidden_effect = { play_song = "demo_end" }
@@ -151,7 +157,10 @@ news_event = {
     option = {
         name = bfdinews.9.a
         if = {
-            limit = { GGR = { is_ai = no } }
+            limit = { 
+                GGR = { is_ai = no } 
+                original_tag = GGR
+            }
             set_variable = { var_demo_end = 3 }
             set_global_flag = demo_ended
             hidden_effect = { play_song = "demo_end" }
@@ -638,7 +647,10 @@ news_event = {
     option = {
         name = bfdinews.25.a
         if = {
-            limit = { GDR = { is_ai = no } }
+            limit = {
+                original_tag = GDR
+                GDR = { is_ai = no } 
+            }
             set_variable = { var_demo_end = 8 }
             set_global_flag = demo_ended
             hidden_effect = { play_song = "demo_end" }
