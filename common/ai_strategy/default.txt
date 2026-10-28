@@ -79,11 +79,6 @@ BFDI_EMP_chill = {
 		value = 2000
 	}
 	ai_strategy = {
-		type = alliance
-		id = EMP
-		value = 2000
-	}
-	ai_strategy = {
 		type = befriend
 		id = EMP
 		value = 2000
