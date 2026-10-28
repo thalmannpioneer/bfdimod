@@ -2047,5 +2047,71 @@ technologies = {
 				}
 			}
 		}
-	}			
+	}
+
+
+	#BFDI Tax tech	
+	taxes1 = {
+	
+		custom_modifier_tooltip = l_modifier_tax_increase
+
+		path = {
+			leads_to_tech = taxes2 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2013
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 40
+						
+			modifier = {
+				factor = 10
+				date > "2013.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+			cat_taxes
+		}
+	}	
+	
+	taxes2 = {
+		
+		custom_modifier_tooltip = l_modifier_tax_increase
+
+		path = {
+			#leads_to_tech = advanced_machine_tools 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2015
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 40
+						
+			modifier = {
+				factor = 10
+				date > "2013.1.1"
+			}
+		}
+		
+		categories = {
+			industry
+			cat_taxes
+		}
+	}	
 }

@@ -1,7 +1,9 @@
 ﻿l_english:
+#State
  l_GTR_modifier_cant_repair_nf: "§tCan't repair Nuclear Facility.§!"
  l_GTR_yoylite_deposits_tt: "We could use §0Yoylite§! in our §YExperiments§!"
 
+#Idea
  l_modifier_gain_25_guns_weekly: "Infantry Equipment per Week: §G+25§!"
  l_modifier_gain_100_guns_weekly: "Infantry Equipment per Week: §G+100§!"
  l_modifier_250_MP_state: "Weekly Manpower per Controlled State: §G+250§!"
@@ -11,3 +13,6 @@
 
  l_modifier_lock_divisions: "§tLocks division training§!"
  l_bankruptcy_block_eco: "§tLocks economic policies.§! We can get out of a bankruptcy by making a §7Positive Balance§!."
+
+#Tech
+ l_modifier_tax_increase: "Tax Money Gained From Population: §G+10%§!"
