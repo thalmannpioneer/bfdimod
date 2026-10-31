@@ -122,3 +122,43 @@ CRN_friend_BUN = {
 		value = 2000
 	}
 }
+
+## FORTS ##
+
+CRN_fortnite_yoyalia = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = CRN
+    }
+    enable = {
+        has_war = yes
+        controls_state = 224
+        OR = {
+            NOT = {controls_state = 222}
+            NOT = {controls_state = 178}
+			NOT = {controls_state = 223}
+            has_contested_owner = 222
+			has_contested_owner = 178
+            has_contested_owner = 223
+            surrender_progress > 0.1
+        }
+        224 = {
+			any_province_building_level = {
+				province = {
+					id = 51
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 51
+        value = 3000
+    }
+}

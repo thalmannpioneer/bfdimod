@@ -1,7 +1,12 @@
 characters = {
 	FFT_rocky = {
 		name = FFT_rocky
-		portraits = { civilian = { large = GFX_FFT_rocky } }
+		portraits = { 
+			civilian = { 
+				large = GFX_FFT_rocky 
+				small = GFX_idea_FFT_rocky
+			} 
+		}
 		country_leader = {
 			desc = FFT_rocky_desc
 			ideology = anarchist_communism
@@ -20,6 +25,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_FFT_molotov	
+				small = GFX_idea_FFT_molotov
 			} 
 		}
 		corps_commander = {

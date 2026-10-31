@@ -16,7 +16,8 @@ FFT_fortnite_gorge_town = {
         original_tag = FFT
     }
     enable = {
-        has_contested_owner = 169
+        controls_state = 169
+        surrender_progress > 0.05
         has_war = yes
         169 = {
 			any_province_building_level = {

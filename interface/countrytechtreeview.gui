@@ -3127,7 +3127,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "industry_year_right"
-				position = { x=1500 y=40 }
+				position = { x=1700 y=40 } #Was 1500
 				size = { width = 80 height = 100% }
 				orientation = upper_left
 
@@ -3281,12 +3281,12 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "taxes_subtitle_construction"
-					position = { x = 1600 y = 255  }
+					name = "industry_subtitle_taxes"
+					position = { x = 1450 y = 255  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
-					text = "INDUSTRY_TITLE_CONSTRUCTION" #Taxes
+					text = "INDUSTRY_TITLE_TAXES" #Taxes
 					maxWidth = 250
 					maxHeight = 62
 					format = center
@@ -3327,7 +3327,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "taxes1_tree"
-				position = { x = 1684 y = 312 } #X was 1150
+				position = { x = 1540 y = 312 } #X was 1150
 				size = { width =72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"

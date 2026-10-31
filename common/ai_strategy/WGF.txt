@@ -219,35 +219,6 @@ WGF_GSR_aid = {
 	}
 }
 
-WGF_supply = {
-    #Until Thal or ZDubbz add a supply depot to Lintle just have the AI build one
-	allowed = {
-		original_tag = WGF
-	}
-	enable = {
-		NOT = { country_exists = GMD }
-		has_completed_focus = WGF_focus_flip_the_coin
-		177 = {
-			any_province_building_level = {
-				province = {
-					id = 5207
-					limit_to_border = no
-				}
-				building = supply_node
-				level < 1
-			}
-		}
-	}
-	abort_when_not_enabled = yes
-
-    ai_strategy = {
-        type = build_building
-        id = supply_node
-        target = 5207
-        value = 1000
-    }
-}
-
 ## Builds ##
 
 WGF_our_army = {
@@ -327,14 +298,53 @@ WGF_fortnite_north_goikyland = {
     }
     enable = {
         has_war = yes
+		controls_state = 177
         OR = {
             has_contested_owner = 177
             has_contested_owner = 167
+			NOT = {controls_state = 167}
+			surrender_progress > 0.1
         }
         177 = {
 			any_province_building_level = {
 				province = {
 					id = 2533
+					limit_to_border = no
+				}
+				building = bunker
+				level < 3
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 2533
+        value = 3000
+    }
+}
+
+
+WGF_fortnite_cary = {
+    #Build forts in major city when at war
+    allowed = {
+        original_tag = WGF
+    }
+    enable = {
+        has_war = yes
+		controls_state = 173
+        OR = {
+            has_contested_owner = 173
+            has_contested_owner = 11
+			NOT = {controls_state = 11}
+			surrender_progress > 0.1
+        }
+        173 = {
+			any_province_building_level = {
+				province = {
+					id = 5824
 					limit_to_border = no
 				}
 				building = bunker
@@ -347,7 +357,7 @@ WGF_fortnite_north_goikyland = {
     ai_strategy = {
         type = build_building
         id = bunker
-        target = 2533
+        target = 5824
         value = 3000
     }
 }

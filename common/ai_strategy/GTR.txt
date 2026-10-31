@@ -360,6 +360,25 @@ GTR_bombers = {
     }
 }
 
+GTR_nukes = {
+    allowed = {
+        original_tag = GTR
+    }
+    enable = {
+        has_completed_focus = GTR_focus_power_of_yoylelite
+        num_of_nukes < 0
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = research_weight_factor
+        id = atomic_research
+        value = 10000
+    }
+}
+
+## BUILDS ##
+
 GTR_build = {
     #GTR's Build
     allowed = {
@@ -454,22 +473,7 @@ GTR_build = {
     }
 }
 
-GTR_nukes = {
-    allowed = {
-        original_tag = GTR
-    }
-    enable = {
-        has_completed_focus = GTR_focus_power_of_yoylelite
-        num_of_nukes < 0
-    }
-    abort_when_not_enabled = yes
-
-    ai_strategy = {
-        type = research_weight_factor
-        id = atomic_research
-        value = 10000
-    }
-}
+    ## SPIES ##
 
 GTR_spying_casland = {
     allowed = {
@@ -573,5 +577,83 @@ GTR_spying_gpr = {
         value = 70
         mission = BUILD_INTEL_NETWORK
         mission_target = GPR
+    }
+}
+
+## FORTS ##
+
+GTR_fortnite_announcergrad = {
+    #Build forts in major city when at war
+    allowed = {
+        original_tag = GTR
+    }
+    enable = {
+        has_war = yes
+        controls_state = 209
+        OR = {
+            NOT = {controls_state = 82}
+            NOT = {controls_state = 75}
+            NOT = {controls_state = 77}
+            has_contested_owner = 82
+            has_contested_owner = 75
+            has_contested_owner = 77
+            surrender_progress > 0.1
+        }
+        209 = {
+			any_province_building_level = {
+				province = {
+					id = 2737
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 2737
+        value = 3000
+    }
+}
+
+GTR_fortnite_university = {
+    #Build forts in major city when at war
+    allowed = {
+        original_tag = GTR
+    }
+    enable = {
+        has_war = yes
+        controls_state = 89
+        OR = {
+            NOT = {controls_state = 82}
+            NOT = {controls_state = 75}
+            NOT = {controls_state = 77}
+            has_contested_owner = 82
+            has_contested_owner = 75
+            has_contested_owner = 77
+            surrender_progress > 0.1
+        }
+        89 = {
+			any_province_building_level = {
+				province = {
+					id = 3545
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 3545
+        value = 3000
     }
 }

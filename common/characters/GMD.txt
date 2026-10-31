@@ -1,7 +1,12 @@
 characters = {
     GMD_coiny = {
 		name = GMD_coiny
-		portraits = { civilian = { large = GFX_GMD_coiny } }
+		portraits = { 
+			civilian = { 
+				large = GFX_GMD_coiny 
+				small = GFX_idea_YFC_coiny
+			} 
+		}
 		country_leader = {
 			ideology = despotism
 			desc = GMD_coiny_desc
@@ -21,7 +26,8 @@ characters = {
 		name = GMD_dinar
 		portraits = { 
 			army = { 
-				large = GFX_GMD_dinar			
+				large = GFX_GMD_dinar	
+				small = GFX_idea_GMD_dinar
 			} 
 		}
 		corps_commander = {

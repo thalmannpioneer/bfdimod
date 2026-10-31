@@ -493,7 +493,8 @@ BFDI_calculate_money_stats = {
 
     set_variable = { var_display_pop_profit = ROOT.max_manpower_k }
     divide_variable = { var_display_pop_profit = 1000 }
-    multiply_variable = { var_display_pop_profit = var_taxation_mgfp }
+    multiply_variable = { var_display_pop_profit = var_taxation_mgfp } #Taxes
+    multiply_variable = { var_display_pop_profit = var_tech_taxes_bonus } #Tech
     add_to_variable = { var_display_final_profit = var_display_pop_profit }
 
     if = {
@@ -740,6 +741,8 @@ BFDI_economics_init = {
     set_variable = { var_healthcare_mc = 0.2 }
     set_variable = { var_healthcare_mc_display = 20 }
     add_dynamic_modifier = { modifier = idea_common_healthcare }
+
+    set_variable = { var_tech_taxes_bonus = 1 }
 }
 
 YFC_pirates_DAV = {

@@ -45,11 +45,11 @@ ideas = {
 				economy_cost_factor = 5
 				trade_laws_cost_factor = 5
 				mobilization_laws_cost_factor = 5
-				army_chief_cost_factor = 1
-				navy_chief_cost_factor = 1
-				air_chief_cost_factor = 1
-				high_command_cost_factor = 1
-				theorist_cost_factor = 1
+				army_chief_cost_factor = 5
+				navy_chief_cost_factor = 5
+				air_chief_cost_factor = 5
+				high_command_cost_factor = 5
+				theorist_cost_factor = 5
 			}
 		}
 		idea_LSS_texas_blood = { #Move later 

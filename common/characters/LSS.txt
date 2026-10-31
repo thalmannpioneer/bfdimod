@@ -1,7 +1,12 @@
 characters = {
 	LSS_Leader = {
 		name = LSS_Leader
-		portraits = { civilian = { large = GFX_LSS_Leader } }
+		portraits = { 
+			civilian = { 
+				large = GFX_LSS_Leader 
+				small = GFX_idea_LSS_Leader
+			} 
+		}
 		country_leader = {
 			ideology = conservatism
 			traits = { SHX_model_governor conservative_nationalist }
@@ -22,6 +27,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_LSS_Rodriguez
+				small = GFX_idea_LSS_Rodriguez
 			} 
 		}
 		corps_commander = {
@@ -32,6 +38,13 @@ characters = {
 			logistics_skill = 7
 			traits = { infantry_officer armor_officer organizer commando medical_experience trained }
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = idea_LSS_Rodriguez
+			ledger = army
+			traits = { army_chief_organizational_3 }
+			cost = 150
+		}
 	}
 
 	LSS_Milley = {
@@ -39,6 +52,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_LSS_Milley
+				small = GFX_idea_LSS_Milley
 			} 
 		}
 		field_marshal = {
@@ -49,6 +63,13 @@ characters = {
 			logistics_skill = 5
 			traits = { armor_officer organizer commando panzer_leader fast_planner skilled_staffer trained }
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = idea_LSS_Milley
+			ledger = army
+			traits = { army_chief_offensive_3 }
+			cost = 150
+		}
 	}
 
 	LSS_Ierardi = {
@@ -56,6 +77,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_LSS_Ierardi
+				small = GFX_idea_LSS_Ierardi
 			} 
 		}
 		corps_commander = {
@@ -66,6 +88,13 @@ characters = {
 			logistics_skill = 7
 			traits = { armor_officer organizer commando panzer_leader cavalry_officer trained }
 		}
+		advisor = {
+			slot = high_command
+			idea_token = idea_LSS_Ierardi
+			ledger = army
+			traits = { army_armored_2 }
+			cost = 150
+		}
 	}
 
 	LSS_Norris = {
@@ -73,6 +102,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_LSS_Norris
+				small = GFX_idea_LSS_Norris
 			} 
 		}
 		corps_commander = {
@@ -83,6 +113,13 @@ characters = {
 			logistics_skill = 5
 			traits = { engineer_officer trait_engineer trained }
 		}
+		advisor = {
+			slot = high_command
+			idea_token = idea_LSS_Norris
+			ledger = army
+			traits = { army_entrenchment_2 }
+			cost = 150
+		}
 	}
 
 	LSS_Thomas = {
@@ -90,6 +127,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_LSS_Thomas
+				small = GFX_idea_LSS_Thomas
 			} 
 		}
 		corps_commander = {
@@ -99,6 +137,13 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 8
 			traits = { commando paratrooper trained  }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = idea_LSS_Thomas
+			ledger = army
+			traits = { army_commando_2 }
+			cost = 150
 		}
 	}
 

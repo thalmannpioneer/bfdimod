@@ -1,7 +1,12 @@
 characters = {
 	GGR_snowball = {
 		name = GGR_snowball
-		portraits = { civilian = { large = GFX_GGR_snowball } }
+		portraits = { 
+			civilian = { 
+				large = GFX_GGR_snowball 
+				small = GFX_idea_GGR_snowball
+			} 
+		}
 		country_leader = {
 			ideology = gen_nazism
 			traits = { warmonger }
@@ -41,6 +46,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_SRR_sidewalky #shhh
+				small = GFX_idea_GGR_sidewalky
 			} 
 		}
 	}

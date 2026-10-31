@@ -1,7 +1,12 @@
 characters = {
 	SOS_anchor = {
 		name = SOS_anchor
-		portraits = { civilian = { large = GFX_SOS_anchor } }
+		portraits = { 
+			civilian = { 
+				large = GFX_SOS_anchor 
+				small = GFX_idea_SOS_anchor
+			} 
+		}
 		country_leader = {
 			ideology = interim_government #Maybe change later?
 			desc = SOS_anchor_desc

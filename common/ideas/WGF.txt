@@ -45,7 +45,7 @@ ideas = {
 			picture = WGF_coinflip
 			targeted_modifier = {
 				tag = GMD
-				attack_bonus_against = 0.5 
+				attack_bonus_against = 0.25 
 			}
 			on_remove = {
 				if = {
@@ -62,7 +62,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GMD
-				attack_bonus_against = 0.5 
+				attack_bonus_against = 0.25 
 			}
 			on_remove = {
 				if = {
