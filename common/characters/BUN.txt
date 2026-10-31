@@ -29,7 +29,12 @@ characters = {
 
 	BUN_shackles = {
 		name = BUN_shackles
-		portraits = { civilian = { large = GFX_BUN_shackles } }
+		portraits = { 
+			civilian = { 
+				large = GFX_BUN_shackles 
+				small = GFX_idea_BUN_shackles
+			} 
+		}
 		country_leader = {
 			desc = BUN_shackles_desc
 			ideology = despotism

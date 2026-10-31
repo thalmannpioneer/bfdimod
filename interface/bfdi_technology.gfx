@@ -1,0 +1,16 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_taxes1_medium
+        texturefile = gfx/interface/technologies/taxes1.dds
+    }
+
+    spriteType = {
+        name = GFX_taxes2_medium
+        texturefile = gfx/interface/technologies/taxes2.dds
+    }
+
+    spriteType = {
+        name = GFX_taxes3_medium
+        texturefile = gfx/interface/technologies/taxes3.dds
+    }
+}   

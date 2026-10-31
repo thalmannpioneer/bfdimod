@@ -4,6 +4,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_YFC_yellow_face
+				small = GFX_idea_YFC_yellow_face
 			} 
 		}
 		country_leader = {
@@ -25,6 +26,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_YFC_david
+				small = GFX_idea_YFC_david
 			} 
 		}
 		corps_commander = {
@@ -41,6 +43,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_YFC_price_tag
+				small = GFX_idea_YFC_price_tag
 			} 
 		}
 		corps_commander = {

@@ -12,6 +12,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_NRR_bagged_milk	
+				small = GFX_idea_NRR_bagged_milk
 			} 
 		}
 		corps_commander = {

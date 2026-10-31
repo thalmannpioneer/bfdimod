@@ -2,8 +2,6 @@
 
 capital = 181
 
-set_variable = { var_YCF_tradeSell_index = 6 } #WIP
-
 set_research_slots = 1
 
 #Inf
@@ -490,6 +488,9 @@ set_technology = { construction3 = 1 }
 set_technology = { excavation3 = 1 }
 set_technology = { construction4 = 1 }
 set_technology = { excavation4 = 1 }
+set_technology = { taxes1 = 1 }
+set_technology = { taxes2 = 1 }
+set_technology = { taxes3 = 1 }
 
 set_stability = 0.15
 set_war_support = 0.1

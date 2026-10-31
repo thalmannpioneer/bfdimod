@@ -171,10 +171,18 @@ spriteTypes = {
 		name = "GFX_Portrait_LSS_Generic_land_male_1"
 		textureFile = "gfx/leaders/LSS/Portrait_LSS_Generic_land_male_1.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_LSS_Generic_land_male_1_small"
+		texturefile = "gfx/interface/ideas/idea_LSS_Generic_land_male_1.dds"
+	}
 
 	spriteType = {
 		name = "GFX_Portrait_LSS_Generic_land_female_1"
 		textureFile = "gfx/leaders/LSS/Portrait_LSS_Generic_land_female_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_LSS_Generic_land_female_1_small"
+		texturefile = "gfx/interface/ideas/idea_LSS_Generic_land_female_1.dds"
 	}
 
 	spriteType = {

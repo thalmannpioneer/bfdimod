@@ -465,15 +465,20 @@ GGR_build_after_FFT = {
 GGR_fortnite_schneehorn = {
     #Build forts in captial when at war
     allowed = {
-        original_tag = GGR
+        OR = {
+            original_tag = GGR
+            original_tag = SMG
+        } 
     }
     enable = {
         has_war = yes
+        controls_state = 15
         OR = {
-            has_contested_owner = 33
-            has_contested_owner = 24
-            has_contested_owner = 143
+            NOT = {controls_state = 33}
+            NOT = {controls_state = 24}
+            NOT = {controls_state = 143}
             has_contested_owner = 15
+            surrender_progress > 0.1
         }
         15 = {
 			any_province_building_level = {
@@ -482,7 +487,7 @@ GGR_fortnite_schneehorn = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
@@ -495,3 +500,43 @@ GGR_fortnite_schneehorn = {
         value = 3000
     }
 }
+
+GGR_fortnite_wohnungmeerstadt = {
+    #Build forts in major port city when at war
+    allowed = {
+        OR = {
+            original_tag = GGR
+            original_tag = SPL
+        }   
+    }
+    enable = {
+        has_war = yes
+        controls_state = 172
+        OR = {
+            NOT = {controls_state = 33}
+            NOT = {controls_state = 15}
+            NOT = {controls_state = 143}
+            has_contested_owner = 172
+            surrender_progress > 0.1
+        }
+        172 = {
+			any_province_building_level = {
+				province = {
+					id = 5051
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 5051
+        value = 2000
+    }
+}
+

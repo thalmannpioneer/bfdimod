@@ -2055,13 +2055,17 @@ technologies = {
 	
 		custom_modifier_tooltip = l_modifier_tax_increase
 
+        on_research_complete = {
+			add_to_variable = {var_tech_taxes_bonus = 0.1}
+        }
+
 		path = {
 			leads_to_tech = taxes2 
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 2013
+		research_cost = 1.5
+		start_year = 2012
 		
 		folder = {
 			name = industry_folder
@@ -2069,11 +2073,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 40
+			factor = 1
 						
 			modifier = {
+				factor = 2
+				date > "2014.1.1"
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 30000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 10000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {money_amount < 10}
+			}
+			modifier = {
 				factor = 10
-				date > "2013.1.1"
+				check_variable = {money_amount < 2}
 			}
 		}
 		
@@ -2087,25 +2107,97 @@ technologies = {
 		
 		custom_modifier_tooltip = l_modifier_tax_increase
 
+        on_research_complete = {
+			add_to_variable = {var_tech_taxes_bonus = 0.1}
+        }
+
+		path = {
+			leads_to_tech = taxes3 
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2015
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+						
+			modifier = {
+				factor = 2
+				date > "2014.1.1"
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 30000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 10000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {money_amount < 10}
+			}
+			modifier = {
+				factor = 10
+				check_variable = {money_amount < 2}
+			}
+		}
+		
+		categories = {
+			industry
+			cat_taxes
+		}
+	}	
+
+	taxes3 = {
+		
+		custom_modifier_tooltip = l_modifier_tax_increase
+
+        on_research_complete = {
+			add_to_variable = {var_tech_taxes_bonus = 0.1}
+        }
+
 		path = {
 			#leads_to_tech = advanced_machine_tools 
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 2015
+		research_cost = 1.5
+		start_year = 2019
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
-			factor = 40
+			factor = 1
 						
 			modifier = {
+				factor = 2
+				date > "2014.1.1"
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 30000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {var_display_final_change < 10000}
+			}
+			modifier = {
+				factor = 2
+				check_variable = {money_amount < 10}
+			}
+			modifier = {
 				factor = 10
-				date > "2013.1.1"
+				check_variable = {money_amount < 2}
 			}
 		}
 		

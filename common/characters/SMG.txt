@@ -1,7 +1,12 @@
 characters = {
 	SMG_grassy = {
 		name = SMG_grassy
-		portraits = { civilian = { large = GFX_SMG_grassy } }
+		portraits = { 
+			civilian = { 
+				large = GFX_SMG_grassy 
+				small = GFX_idea_GGR_grassy
+			} 
+		}
 		country_leader = {
 			ideology = gen_nazism
 			traits = { anarchist_annihilator }
@@ -35,6 +40,7 @@ characters = {
 		portraits = { 
 			army = { 
 				large = GFX_SRR_sidewalky #shhh
+				small = GFX_idea_GGR_sidewalky
 			} 
 		}
 		corps_commander = {

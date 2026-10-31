@@ -93,6 +93,10 @@ spriteTypes = {
 		name = GFX_idea_GMD_coinys_domain
 		texturefile = gfx/interface/ideas/idea_GMD_coinys_domain.dds
 	}
+	spriteType = {
+		name = GFX_idea_GMD_dinar
+		texturefile= gfx/interface/ideas/idea_GMD_dinar.dds
+	}
 	
 	spriteType = {
 		name = GFX_idea_GPR_old_alliance
@@ -261,7 +265,30 @@ spriteTypes = {
 		name = GFX_idea_LSS_ExxonMobil
 		texturefile = gfx/interface/ideas/idea_LSS_ExxonMobil.dds
 	}
-
+	spriteType = {
+		name = GFX_idea_LSS_Leader
+		texturefile = gfx/interface/ideas/idea_LSS_Leader.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Rodriguez
+		texturefile = gfx/interface/ideas/idea_LSS_Rodriguez.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Milley
+		texturefile = gfx/interface/ideas/idea_LSS_Milley.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Ierardi
+		texturefile = gfx/interface/ideas/idea_LSS_Ierardi.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Norris
+		texturefile = gfx/interface/ideas/idea_LSS_Norris.dds
+	}
+	spriteType = {
+		name = GFX_idea_LSS_Thomas
+		texturefile = gfx/interface/ideas/idea_LSS_Thomas.dds
+	}
 	spriteType = {
 		name = GFX_idea_LSS_Todd
 		texturefile = gfx/interface/ideas/idea_LSS_Todd.dds
@@ -396,6 +423,10 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_GFG_we_are_yoylese
 		texturefile = gfx/interface/ideas/idea_GFG_we_are_yoylese.dds
+	}
+	spriteType = {
+		name = GFX_idea_GFG_yoyle_berry
+		texturefile= gfx/interface/ideas/idea_GFG_yoyle_berry.dds
 	}
 	
 	spriteType = {
@@ -576,14 +607,6 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_GGR_anarchist_resistance.dds
 	}
 	spriteType = {
-		name = GFX_idea_GGR_grassy
-		texturefile = gfx/interface/ideas/idea_GGR_grassy.dds
-	}
-	spriteType = {
-		name = GFX_idea_GGR_woody
-		texturefile = gfx/interface/ideas/idea_GGR_woody.dds
-	}
-	spriteType = {
 		name = GFX_idea_GGR_snowy_industry
 		texturefile = gfx/interface/ideas/idea_GGR_snowy_industry.dds
 	}
@@ -596,6 +619,14 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_GGR_snowy_vexels.dds
 	}
 	spriteType = {
+		name = GFX_idea_GGR_peoples_support
+		texturefile = gfx/interface/ideas/idea_GGR_peoples_support.dds
+	}
+	spriteType = {
+		name = GFX_idea_GGR_verschneitwehr
+		texturefile = gfx/interface/ideas/idea_GGR_verschneitwehr.dds
+	}
+	spriteType = {
 		name = GFX_idea_GGR_crayon
 		texturefile = gfx/interface/ideas/idea_GGR_crayon.dds
 	}
@@ -604,13 +635,22 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_GGR_stick_grenade.dds
 	}
 	spriteType = {
-		name = GFX_idea_GGR_peoples_support
-		texturefile = gfx/interface/ideas/idea_GGR_peoples_support.dds
+		name = GFX_idea_GGR_grassy
+		texturefile = gfx/interface/ideas/idea_GGR_grassy.dds
 	}
 	spriteType = {
-		name = GFX_idea_GGR_verschneitwehr
-		texturefile = gfx/interface/ideas/idea_GGR_verschneitwehr.dds
+		name = GFX_idea_GGR_woody
+		texturefile = gfx/interface/ideas/idea_GGR_woody.dds
 	}
+	spriteType = {
+		name = GFX_idea_GGR_sidewalky
+		texturefile = gfx/interface/ideas/idea_GGR_sidewalky.dds
+	}
+	spriteType = {
+		name = GFX_idea_GGR_snowball
+		texturefile = gfx/interface/ideas/idea_GGR_snowball.dds
+	}
+
 	
 	spriteType = {
 		name = GFX_idea_FFT_mother_anarchy
@@ -619,6 +659,14 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_idea_FFT_freedom_or_death
 		texturefile = gfx/interface/ideas/idea_FFT_freedom_or_death.dds
+	}
+	spriteType = {
+		name = GFX_idea_FFT_rocky
+		texturefile = gfx/interface/ideas/idea_FFT_rocky.dds
+	}
+	spriteType = {
+		name = GFX_idea_FFT_molotov
+		texturefile = gfx/interface/ideas/idea_FFT_molotov.dds
 	}
 	
 	spriteType = {
@@ -691,6 +739,10 @@ spriteTypes = {
 		name = GFX_modifier_BUN_rampant_raids
 		textureFile = gfx/interface/ideas/modifier_BUN_rampant_raids.dds
 	}
+	spriteType = {
+		name = GFX_idea_BUN_shackles
+		texturefile = gfx/interface/ideas/idea_BUN_shackles.dds
+	}
 
 	spriteType = {
 		name = GFX_idea_NRR_between_two_fires
@@ -698,8 +750,25 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = GFX_idea_NRR_bagged_milk
+		texturefile = gfx/interface/ideas/idea_NRR_bagged_milk.dds
+	}
+
+	spriteType = {
 		name = GFX_idea_CRN_city_on_a_shining_hill
 		texturefile = gfx/interface/ideas/idea_CRN_city_on_a_shining_hill.dds
+	}
+	spriteType = {
+		name = GFX_idea_CRN_pineapple
+		texturefile = gfx/interface/ideas/idea_CRN_pineapple.dds
+	}
+	spriteType = {
+		name = GFX_idea_CRN_mirror
+		texturefile = gfx/interface/ideas/idea_CRN_mirror.dds
+	}
+	spriteType = {
+		name = GFX_idea_CRN_credit_card
+		texturefile = gfx/interface/ideas/idea_CRN_credit_card.dds
 	}
 
 	spriteType = {
@@ -874,6 +943,18 @@ spriteTypes = {
 		texturefile = gfx/interface/ideas/idea_YFC_dora.dds
 	}
 	spriteType = {
+		name = GFX_idea_YFC_yellow_face
+		texturefile = gfx/interface/ideas/idea_YFC_yellow_face.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_david
+		texturefile = gfx/interface/ideas/idea_YFC_david.dds
+	}
+	spriteType = {
+		name = GFX_idea_YFC_price_tag
+		texturefile = gfx/interface/ideas/idea_YFC_price_tag.dds
+	}
+	spriteType = {
 		name = GFX_idea_YFC_TopHat
 		texturefile = gfx/interface/ideas/idea_YFC_TopHat.dds
 	}
@@ -918,15 +999,12 @@ spriteTypes = {
 		name = GFX_idea_SOS_goiky_fleet
 		texturefile = gfx/interface/ideas/idea_SOS_goiky_fleet.dds
 	}
+
 	spriteType = {
-		name = GFX_idea_CRN_pineapple
-		texturefile = gfx/interface/ideas/idea_CRN_pineapple.dds
+		name = GFX_idea_SOS_anchor
+		texturefile = gfx/interface/ideas/idea_SOS_anchor.dds
 	}
-	spriteType = {
-		name = GFX_idea_CRN_mirror
-		texturefile = gfx/interface/ideas/idea_CRN_mirror.dds
-	}
-	
+
 	spriteType = {
 		name = GFX_idea_generic_militarization
 		texturefile = gfx/interface/ideas/idea_generic_militarization.dds

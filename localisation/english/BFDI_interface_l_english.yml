@@ -187,3 +187,7 @@
  YFC_eastern_influence_tbt: "§5Teardrop§! is Leading - [?target_eastern_state.eastern_support_var|%+0..0]"
  YFC_eastern_owns_tbt: "§5Teardrop§! Owns This Land"
  YFC_eastern_influence_neutral: "§gNeutral Territory§!"
+
+#Tech stuff maybe move later
+
+ INDUSTRY_TITLE_TAXES: "MONETARY"

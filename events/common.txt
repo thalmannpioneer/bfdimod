@@ -104,6 +104,7 @@ country_event = {
             add_stability = 0.75
             army_experience = 200
             add_manpower = 100000
+            remove_ideas = idea_LSS_political_chaos 
             add_offsite_building = { type = industrial_complex level = 4 }
             add_offsite_building = { type = arms_factory level = 2 }
 

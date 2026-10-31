@@ -80,7 +80,12 @@ characters = {
 
 	GFG_yoyle_berry = { #From @papipipo12, designed by @antotallynot_insanetagalog 
 		name = GFG_yoyle_berry
-		portraits = { army = { large = GFX_GFG_yoyle_berry} }
+		portraits = { 
+			army = { 
+				large = GFX_GFG_yoyle_berry
+				small = GFX_idea_GFG_yoyle_berry
+			} 
+		}
 	}
 	
 	GFG_basketball = {

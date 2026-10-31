@@ -2,8 +2,9 @@ characters={
 	CRN_credit_card = {
 		name = CRN_credit_card
 		portraits={
-			civilian={
-				large=GFX_CRN_credit_card
+			civilian = {
+				large = GFX_CRN_credit_card
+				small = GFX_idea_CRN_credit_card
 			}
 		}
 		country_leader={
