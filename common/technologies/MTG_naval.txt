@@ -1949,3 +1949,81 @@ early_ship_hull_carrier = {
 		}
 	}
 }
+
+
+
+
+#ZDUBBZ DONT FORGET ABOUT THESE ZDUBBZ UPDATE LATER ZDUBBZ!!!!
+
+
+    amphibious_mechanized_infantry = {
+
+        enable_equipments = {
+            amphibious_mechanized_equipment_1
+        }
+
+        allow_branch = {
+            has_dlc = "Man the Guns"
+        }
+
+        enable_subunits = {
+            amphibious_mechanized
+        }
+
+        path = {
+            leads_to_tech = amphibious_mechanized_infantry_2
+            research_cost_coeff = 1
+        }
+
+        research_cost = 2
+        start_year = 2017
+        folder = {
+            name = artillery_folder
+            position = { x = 2 y = @1941 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+            cat_mechanized_equipment
+            tp_tech
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 2
+            modifier = {
+                tag = SOS
+                factor = 2
+            }
+        }
+    }
+
+    amphibious_mechanized_infantry_2 = {
+
+        enable_equipments = {
+            amphibious_mechanized_equipment_2
+        }
+
+        research_cost = 2
+        start_year = 2019
+        folder = {
+            name = artillery_folder
+            position = { x = 2 y = @1943 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+            cat_mechanized_equipment
+            tp_tech
+        }
+
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 2
+        }
+    }

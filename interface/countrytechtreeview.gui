@@ -271,14 +271,6 @@ guiTypes = {
 				position = { x = 140 y = 325 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
-
-			}
-
-			gridboxtype = {
-				name = "tech_trucks_tree"
-				position = { x = 140 y = 620 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
 			}
 
 			gridboxtype = {
@@ -1177,7 +1169,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x=0 y=0 }
 				size = {
-					width = 1515 height = 1390
+					width = 2500 height = 1390
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -1256,8 +1248,8 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "artillery_year_left"
-					position = { x = 30 y = 45 }
-					size = { width = 130 height = 100% }
+					position = { x = 30 y = -90 }
+					size = { width = 130 height = 0 }
 					orientation = upper_left
 
 					instantTextBoxType = {
@@ -1266,7 +1258,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2010"
+						text = "1996"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1279,7 +1271,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2012"
+						text = "2005"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1292,7 +1284,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2015"
+						text = "2012"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1305,7 +1297,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2016"
+						text = "2015"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1318,7 +1310,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2017"
+						text = "2018"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1331,7 +1323,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2018"
+						text = "2022"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1344,7 +1336,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2019"
+						text = "2026"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1357,7 +1349,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2020"
+						text = "2030"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1370,7 +1362,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2021"
+						text = "2032"
 						maxWidth = 170
 						maxHeight = 32
 						format = left
@@ -1380,7 +1372,7 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "artillery_year_right"
-					position = { x = -100 y = 45 }
+					position = { x = -100 y = -90 }
 					size = { width = 130 height = 100% }
 					orientation = upper_right
 
@@ -1390,7 +1382,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2010"
+						text = "1996"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1403,7 +1395,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2012"
+						text = "2005"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1416,7 +1408,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2015"
+						text = "2012"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1429,7 +1421,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2016"
+						text = "2015"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1442,7 +1434,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2017"
+						text = "2018"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1455,7 +1447,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2018"
+						text = "2022"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1468,7 +1460,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2019"
+						text = "2026"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1481,7 +1473,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2020"
+						text = "2030"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1494,7 +1486,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = { x = 0 y = 4 }
-						text = "2021"
+						text = "2032"
 						maxWidth = 130
 						maxHeight = 32
 						format = left
@@ -1504,7 +1496,15 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "gw_artillery_tree"
+				name = "catapult_tree"
+				position = { x = 300 y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "tech_trucks_tree"
 				position = { x = 300 y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

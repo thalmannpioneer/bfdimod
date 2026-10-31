@@ -3,6 +3,46 @@ technologies = {
 	@anti_tank = 7
 	@rocket_artillery = 3
 
+	catapult = {
+		path = {
+			leads_to_tech = trebuchet
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1996
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = -2 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	trebuchet = {
+		path = {
+			leads_to_tech = gw_artillery
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2005
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
 	gw_artillery = {
 
 		enable_equipments = {
@@ -50,7 +90,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 2 }
 		}
 
 		categories = {
@@ -115,7 +155,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {
@@ -188,7 +228,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 
 		categories = {
@@ -252,7 +292,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 8 }
 		}
 
 		categories = {
@@ -314,7 +354,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 10 }
 		}
 
 		categories = {
@@ -363,7 +403,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = 12 }
 		}
 
 		categories = {
@@ -422,7 +462,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 14 }
 		}
 
 		categories = {
@@ -501,7 +541,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 6 }
+			position = { x = @rocket_artillery y = 8 }
 		}
 
 		ai_will_do = {
@@ -541,7 +581,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 8 }
+			position = { x = @rocket_artillery y = 10 }
 		}
 
 		ai_will_do = {
@@ -580,7 +620,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 10 }
+			position = { x = @rocket_artillery y = 12 }
 		}
 
 		ai_will_do = {
@@ -616,7 +656,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 12 }
+			position = { x = @rocket_artillery y = 14 }
 		}
 
 		ai_will_do = {
@@ -634,6 +674,580 @@ technologies = {
 		}
 		special_project_specialization = { specialization_air }
 	}
+
+    tech_trucks = {
+
+        enable_subunits = {
+            mot_anti_tank_brigade
+            mot_artillery_brigade
+            mot_anti_air_brigade
+        }
+        enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_motorized
+		}
+
+        enable_equipments = {
+            motorized_equipment_0
+        }
+
+        enable_equipment_modules = {
+            tank_wheeled_suspension
+        }
+
+
+        path = {
+            leads_to_tech = motorised_infantry
+            research_cost_coeff = 1
+        }
+
+        path = {
+            leads_to_tech = armored_car1
+            research_cost_coeff = 1
+        }
+
+        research_cost = 1.5
+        start_year = 2012
+        folder = {
+            name = artillery_folder 
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1.2
+
+            modifier = {
+                factor = 2
+                date > "2013.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2014.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2015.1.1"
+            }
+        }
+    }
+
+    motorised_infantry = {
+
+        enable_subunits = {
+            motorized
+        }
+
+        enable_equipments = {
+            motorized_equipment_1
+        }
+
+        #enable_equipment_modules = {
+        #	tank_wheeled_suspension
+        #}
+
+        on_research_complete_limit = {
+            NOT = {
+                has_template_containing_unit = motorized
+            }
+        }
+        on_research_complete = {
+            hidden_effect = {
+                load_oob = "unlock_motorized"
+            }
+            custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+        }
+
+        path = {
+            leads_to_tech = mechanised_infantry
+            research_cost_coeff = 1
+        }
+
+        path = {
+
+        }
+
+        research_cost = 2
+        start_year = 2012
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        folder = {
+            name = support_folder
+            position = { x = 7 y = 9 }
+        }
+
+        sub_technologies = {
+            motorized_rocket_unit
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1.2
+
+            modifier = {
+                factor = 2
+                date > "2013.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2014.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2015.1.1"
+            }
+        }
+    }
+    motorized_rocket_unit = {
+
+        enable_subunits = {
+            motorized_rocket_brigade
+        }
+        enable_equipments = {
+            motorized_rocket_equipment_1
+        }
+        dependencies = {
+            rocket_artillery = 1
+        }
+
+        research_cost = 1.5
+        start_year = 2015
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 2
+                tag = SOV
+            }
+        }
+
+        categories = {
+            mot_rockets
+            mio_cat_tech_all_motorized_mechanized
+        }
+        special_project_specialization = { specialization_land }
+    }
+
+    armored_car1 = {
+
+        enable_subunits = {
+            armored_car
+        }
+
+        enable_equipments = {
+            gw_armored_car_equipment
+        }
+        allow_branch = { has_dlc = "La Resistance" }
+        path = {
+            leads_to_tech = armored_car2
+            research_cost_coeff = 1
+        }
+
+        research_cost = 2
+        start_year = 1990
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            armor
+            cat_armored_cars
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 2
+                date > "2013.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2014.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2015.1.1"
+            }
+            modifier = {
+                is_major = no
+                factor = 0.5
+            }
+        }
+    }
+
+    armored_car2 = {
+
+        enable_equipments = {
+            armored_car_equipment_1
+        }
+
+        path = {
+            leads_to_tech = armored_car3
+            research_cost_coeff = 1
+        }
+
+        research_cost = 2
+        start_year = 2016
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            armor
+            cat_armored_cars
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 2
+                date > "2016.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2017.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2018.1.1"
+            }
+            modifier = {
+                is_major = no
+                factor = 0.5
+            }
+        }
+    }
+
+    armored_car3 = {
+
+        enable_equipments = {
+            armored_car_equipment_2
+        }
+
+        research_cost = 2
+        start_year = 2018
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            armor
+            cat_armored_cars
+        }
+        special_project_specialization = { specialization_land }
+
+        sub_technologies = {
+            armored_car_at_upgrade
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 2
+                date > "2018.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2019.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2020.1.1"
+            }
+            modifier = {
+                is_major = no
+                factor = 0.5
+            }
+        }
+    }
+
+    armored_car_at_upgrade = {
+
+        enable_equipments = {
+            armored_car_at_equipment
+        }
+        special_project_specialization = { specialization_land }
+
+        research_cost = 1
+        start_year = 2018
+        sub_tech_index = 1
+
+        categories = {
+            motorized_equipment
+            armor
+            cat_armored_cars
+        }
+
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 2
+                date > "2018.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2019.1.1"
+            }
+
+            modifier = {
+                factor = 2
+                date > "2020.1.1"
+            }
+            modifier = {
+                is_major = no
+                factor = 0.5
+            }
+        }
+    }
+
+    SWE_lynx_armored_car = {
+        allow = { always = no }
+        enable_equipments = {
+            #armored_car_at_equipment
+        }
+
+        research_cost = 1
+        start_year = 2018
+        sub_tech_index = 1
+
+        categories = {
+            motorized_equipment
+            armor
+            cat_armored_cars
+        }
+        special_project_specialization = { specialization_land }
+
+        armored_car = {
+            max_organisation = 5
+            ap_attack = 0.1
+            hard_attack = 0.1
+            #hardness = 1
+            forest = {
+                attack = 0.2
+                movement = 0.55
+            }
+            desert = {
+                attack = -0.2
+                movement = -0.55
+            }
+
+            snow = {
+                attack = 0.2
+                movement = 0.35
+            }
+        }
+
+        armored_car_recon = {
+            max_organisation = 3
+            ap_attack = 0.1
+            hard_attack = 0.1
+            #hardness = 1
+            forest = {
+                attack = 0.05
+                movement = 0.05
+            }
+            desert = {
+                attack = -0.15
+                movement = -0.15
+            }
+
+            snow = {
+                attack = 0.05
+                movement = 0.08
+            }
+        }
+    }
+
+    mechanised_infantry = {
+
+        enable_subunits = {
+            mechanized
+        }
+
+        enable_equipments = {
+            mechanized_equipment_1
+        }
+
+        enable_equipment_modules = {
+            tank_half_track_suspension
+        }
+
+        motorized = {
+            hardness = 1.0
+        }
+        mot_artillery_brigade = {
+            hardness = 1.0
+        }
+        mot_anti_tank_brigade = {
+            hardness = 1.0
+        }
+        mot_anti_air_brigade = {
+            hardness = 1.0
+        }
+        mot_rocket_artillery_brigade = {
+            hardness = 1.0
+        }
+
+        path = {
+            leads_to_tech = mechanised_infantry2
+            research_cost_coeff = 1
+        }
+
+        research_cost = 2
+        start_year = 2016
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+            cat_mechanized_equipment
+        }
+        special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			base = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 3
+				tag = GGR #Later...
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 2017.1.1
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 2018.1.1
+			}
+
+			modifier = {
+				factor = 1.5
+				date > 2019.1.1
+			}
+		}
+    }
+
+    militia_tech = {
+        allow = { always = no }
+        enable_subunits = {
+            militia
+        }
+    }
+
+    mechanised_infantry2 = {
+
+        enable_equipments = {
+            mechanized_equipment_2
+        }
+
+        path = {
+            leads_to_tech = mechanised_infantry3
+            research_cost_coeff = 1
+        }
+
+        research_cost = 2
+        start_year = 2018
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 16 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+            cat_mechanized_equipment
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    mechanised_infantry3 = {
+
+        enable_equipments = {
+            mechanized_equipment_3
+        }
+
+        mechanized = {
+            soft_attack = 0.15
+            hard_attack = 0.15
+        }
+
+        research_cost = 3
+        start_year = 2020
+        folder = {
+            name = artillery_folder
+            position = { x = 14 y = 14 }
+        }
+
+        categories = {
+            motorized_equipment
+            mio_cat_tech_all_motorized_mechanized
+            infantry_tech
+            cat_mechanized_equipment
+        }
+        special_project_specialization = { specialization_land }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
 
 	interwar_antiair = {
 
@@ -673,7 +1287,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 2 }
+			position = { x = @anti_air y = 4 }
 		}
 
 		ai_will_do = {
@@ -740,7 +1354,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 4 }
+			position = { x = @anti_air y = 6 }
 		}
 
 		ai_will_do = {
@@ -788,7 +1402,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 6 }
+			position = { x = @anti_air y = 8 }
 		}
 
 		ai_will_do = {
@@ -844,7 +1458,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 8 }
+			position = { x = @anti_air y = 10 }
 		}
 
 		ai_will_do = {
@@ -897,7 +1511,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 10 }
+			position = { x = @anti_air y = 12 }
 		}
 
 		ai_will_do = {
@@ -949,7 +1563,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_air y = 12 }
+			position = { x = @anti_air y = 14 }
 		}
 
 		ai_will_do = {
@@ -1006,7 +1620,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 2 }
+			position = { x = @anti_tank y = 4 }
 		}
 
 		ai_will_do = {
@@ -1082,7 +1696,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 4 }
+			position = { x = @anti_tank y = 6 }
 		}
 
 		ai_will_do = {
@@ -1144,7 +1758,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 6 }
+			position = { x = @anti_tank y = 8 }
 		}
 
 		ai_will_do = {
@@ -1218,7 +1832,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 8 }
+			position = { x = @anti_tank y = 10 }
 		}
 
 		categories = {
@@ -1289,7 +1903,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 10 }
+			position = { x = @anti_tank y = 12 }
 		}
 
 		ai_will_do = {
@@ -1345,7 +1959,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 12 }
+			position = { x = @anti_tank y = 14 }
 		}
 
 		ai_will_do = {
@@ -1478,7 +2092,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 6 }
+			position = { x = -2 y = 8 }
 		}
 
 		categories = {
@@ -1532,7 +2146,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = 8 }
 		}
 
 		categories = {
@@ -1581,7 +2195,7 @@ technologies = {
 		start_year = 2017
 		folder = {
 			name = artillery_folder
-			position = { x = -9 y = 8 }
+			position = { x = -9 y = 10 }
 		}
 
 		categories = {
@@ -1624,7 +2238,7 @@ technologies = {
 			
 		folder = {
 			name = artillery_folder
-			position = { x = -9 y = 10 }
+			position = { x = -9 y = 12 }
 		}
 
 		categories = {
@@ -1782,7 +2396,7 @@ technologies = {
 			
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 10 }
+			position = { x = 5 y = 14 }
 		}
 
 		categories = {
