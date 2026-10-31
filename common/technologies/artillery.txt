@@ -1,7 +1,17 @@
 technologies = {
-	@anti_air = -7
-	@anti_tank = 7
-	@rocket_artillery = 3
+	@anti_air = 17
+	@anti_tank = 8
+	@rocket_artillery = 0
+
+	@1996 = -2
+	@2005 = 2
+	@2012 = 6
+	@2015 = 10
+	@2018 = 14
+	@2022 = 18
+	@2026 = 22
+	@2030 = 26
+	@2032 = 30
 
 	catapult = {
 		path = {
@@ -14,7 +24,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -2 }
+			position = { x = 0 y = @1996 }
 		}
 
 		categories = {
@@ -25,7 +35,7 @@ technologies = {
 
 	trebuchet = {
 		path = {
-			leads_to_tech = gw_artillery
+			leads_to_tech = gunpowder_cannon
 			research_cost_coeff = 1
 		}
 
@@ -34,7 +44,28 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = @2005 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+
+	gunpowder_cannon = {
+		path = {
+			leads_to_tech = gw_artillery
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2012
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = @2012 }
 		}
 
 		categories = {
@@ -63,15 +94,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = interwar_antiair
-			research_cost_coeff = 1
-		}
-
 		enable_equipment_modules = {
 			ship_anti_air_1
 			tank_small_cannon
 			secondary_turret_small_cannon
+		}
+
+		path = {
+			leads_to_tech = artillery2
+			research_cost_coeff = 1
 		}
 
 		on_research_complete = {
@@ -87,10 +118,11 @@ technologies = {
 		}
 
 		research_cost = 1.5
+		start_year = 2015
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 2 }
+			position = { x = 3 y = @2015 }
 		}
 
 		categories = {
@@ -144,18 +176,13 @@ technologies = {
 			#secondary_turret_close_support_gun #MM: Has art and loc but no module definition
 		}
 
-		path = {
-			leads_to_tech = artillery1
-			research_cost_coeff = 1
-		}
-
 		research_cost = 1.5
 
-		start_year = 2012
+		start_year = 2015
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 4 }
+			position = { x = 6 y = @2015 }
 		}
 
 		categories = {
@@ -208,7 +235,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = artillery2
+			leads_to_tech = artillery4
 			research_cost_coeff = 1
 		}
 
@@ -224,11 +251,11 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 2015
+		start_year = 2020
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 6 }
+			position = { x = 3 y = 16 }
 		}
 
 		categories = {
@@ -275,14 +302,8 @@ technologies = {
 		field_guns = {
 			soft_attack = 0.05
 		}
-
 		path = {
-			leads_to_tech = artillery3
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery
+			leads_to_tech = artillery1
 			research_cost_coeff = 1
 		}
 
@@ -292,7 +313,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = 3 y = 12 }
 		}
 
 		categories = {
@@ -343,8 +364,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
 		}
+
+		
 		path = {
-			leads_to_tech = artillery4
+			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
 		}
 
@@ -354,7 +377,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = @2026 }
 		}
 
 		categories = {
@@ -397,13 +420,18 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = artillery3
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 
 		start_year = 2018
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = 3 y = 20 }
 		}
 
 		categories = {
@@ -462,7 +490,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 14 }
+			position = { x = 3 y = 24 }
 		}
 
 		categories = {
@@ -541,7 +569,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 8 }
+			position = { x = @rocket_artillery y = 24 }
 		}
 
 		ai_will_do = {
@@ -581,7 +609,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 10 }
+			position = { x = @rocket_artillery y = @2030 }
 		}
 
 		ai_will_do = {
@@ -620,7 +648,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 12 }
+			position = { x = @rocket_artillery y = 28 }
 		}
 
 		ai_will_do = {
@@ -656,7 +684,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @rocket_artillery y = 14 }
+			position = { x = @rocket_artillery y = @2032 }
 		}
 
 		ai_will_do = {
@@ -701,16 +729,11 @@ technologies = {
             research_cost_coeff = 1
         }
 
-        path = {
-            leads_to_tech = armored_car1
-            research_cost_coeff = 1
-        }
-
         research_cost = 1.5
-        start_year = 2012
+        start_year = 2005
         folder = {
             name = artillery_folder 
-            position = { x = 14 y = 16 }
+            position = { x = -3 y = @2005 }
         }
 
         categories = {
@@ -779,7 +802,7 @@ technologies = {
         start_year = 2012
         folder = {
             name = artillery_folder
-            position = { x = 14 y = 16 }
+            position = { x = -3 y = @2012 }
         }
 
         folder = {
@@ -858,16 +881,12 @@ technologies = {
             gw_armored_car_equipment
         }
         allow_branch = { has_dlc = "La Resistance" }
-        path = {
-            leads_to_tech = armored_car2
-            research_cost_coeff = 1
-        }
 
         research_cost = 2
         start_year = 1990
         folder = {
             name = artillery_folder
-            position = { x = 14 y = 16 }
+            position = { x = -4 y = @2018 }
         }
 
         categories = {
@@ -902,6 +921,14 @@ technologies = {
     }
 
     armored_car2 = {
+
+
+		allow = {
+			always = no
+		}
+		allow_branch = {
+			always = no
+		}
 
         enable_equipments = {
             armored_car_equipment_1
@@ -1134,11 +1161,16 @@ technologies = {
             research_cost_coeff = 1
         }
 
+        path = {
+            leads_to_tech = armored_car1
+            research_cost_coeff = 1
+        }
+
         research_cost = 2
         start_year = 2016
         folder = {
             name = artillery_folder
-            position = { x = 14 y = 16 }
+            position = { x = -3 y = @2015 }
         }
 
         categories = {
@@ -1192,16 +1224,11 @@ technologies = {
             mechanized_equipment_2
         }
 
-        path = {
-            leads_to_tech = mechanised_infantry3
-            research_cost_coeff = 1
-        }
-
         research_cost = 2
         start_year = 2018
         folder = {
             name = artillery_folder
-            position = { x = 14 y = 16 }
+            position = { x = -2 y = @2018 }
         }
 
         categories = {
@@ -1218,6 +1245,14 @@ technologies = {
     }
 
     mechanised_infantry3 = {
+
+		allow = {
+			always = no
+		}
+
+		allow_branch = {
+			always = no
+		}
 
         enable_equipments = {
             mechanized_equipment_3
@@ -1250,31 +1285,6 @@ technologies = {
 
 
 	interwar_antiair = {
-
-		enable_equipments = {
-			anti_air_equipment_1
-		}
-
-		armored_car = {
-			hard_attack = 0.1
-		}
-
-		enable_equipment_modules = {
-			ship_anti_air_2
-			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_heavy_cannon
-			lc_light_anti_air_battery #Module for Land Cruiser
-		}
-
-		enable_building = {
-			building = anti_air_building
-			level = 5
-		}
-
-		enable_subunits = {
-			anti_air_battery
-		}
 
 		path = {
 			leads_to_tech = antiair1
@@ -1319,30 +1329,13 @@ technologies = {
 
 	antiair1 = {
 
-		category_anti_air = { #THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
-			air_attack = 0.1
+		allow = {
+			always = no
 		}
-
-		#anti_air = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_battery = {
-		#	air_attack = 0.1
-		#}
-		#mot_anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		category_self_propelled_anti_air = {
-			air_attack = 0.15
+		
+		allow_branch = {
+			always = no
 		}
-		category_self_propelled_anti_air_regimental_support = {
-			air_attack = 0.05
-		}
-		tech_air_damage_factor = -0.02
-
 		path = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
@@ -1370,21 +1363,6 @@ technologies = {
 	}
 
 	antiair2 = {
-
-		enable_equipments = {
-			anti_air_equipment_2
-		}
-		armored_car = {
-			hard_attack = 0.1
-		}
-		static_anti_air_damage_factor = 0.1
-
-		enable_equipment_modules = {
-			ship_anti_air_3
-			tank_auto_cannon_2
-			tank_anti_air_cannon_2
-			lc_heavy_anti_air_battery #Module for Land Cruiser
-		}
 
 		path = {
 			leads_to_tech = antiair3
@@ -1419,34 +1397,6 @@ technologies = {
 
 	antiair3 = {
 
-		category_anti_air = {	#THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
-			air_attack = 0.1
-		}
-
-		#anti_air = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_battery = {
-		#	air_attack = 0.1
-		#}
-		#mot_anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		category_self_propelled_anti_air = {
-			air_attack = 0.1
-		}
-		category_self_propelled_anti_air_regimental_support = {
-			air_attack = 0.05
-		}
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
-		}
-
-		tech_air_damage_factor = -0.02
-
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
@@ -1474,31 +1424,6 @@ technologies = {
 	}
 
 	antiair4 = {
-
-		category_anti_air = { #THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
-			air_attack = 0.1
-		}
-
-		#anti_air = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_battery = {
-		#	air_attack = 0.1
-		#}
-		#mot_anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
-		category_self_propelled_anti_air = {
-			air_attack = 0.05
-		}
-		category_self_propelled_anti_air_regimental_support = {
-			air_attack = 0.05
-		}
-
-		tech_air_damage_factor = -0.02
 
 		path = {
 			leads_to_tech = antiair5
@@ -1541,21 +1466,6 @@ technologies = {
 
 	antiair5 = {
 
-		enable_equipments = {
-			anti_air_equipment_3
-		}
-		armored_car = {
-			hard_attack = 0.1
-		}
-		static_anti_air_damage_factor = 0.1
-
-		enable_equipment_modules = {
-			ship_anti_air_4
-			tank_heavy_cannon_3
-			tank_anti_air_cannon_3
-			auto_loader
-			lc_heavy_anti_air_platform #Module for Land Cruiser
-		}
 
 		research_cost = 1
 
@@ -1581,14 +1491,42 @@ technologies = {
 	interwar_antitank = {
 
 		enable_equipments = {
+			anti_air_equipment_1
+		}
+
+		armored_car = {
+			hard_attack = 0.1
+		}
+
+		enable_equipment_modules = {
+			ship_anti_air_2
+			tank_auto_cannon
+			tank_anti_air_cannon
+			tank_heavy_cannon
+			lc_light_anti_air_battery #Module for Land Cruiser
+		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 5
+		}
+
+		enable_subunits = {
+			anti_air_battery
+		}
+
+#TANK STUFF
+
+		enable_equipments = {
 			anti_tank_equipment_1
 		}
+
 		armored_car = {
 			ap_attack = 0.1
-		}	
+		}
+
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
-			tank_heavy_cannon
 			tank_buster_1
 			lc_high_velocity_cannon_turret #Module for Land Cruiser
 		}
@@ -1596,6 +1534,7 @@ technologies = {
 		enable_subunits = {
 			anti_tank_battery
 		}
+
 
 		on_research_complete = {
 			if = {
@@ -1620,7 +1559,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 4 }
+			position = { x = @anti_tank y = @2022 }
 		}
 
 		ai_will_do = {
@@ -1666,7 +1605,37 @@ technologies = {
 	}
 
 	antitank1 = {
+		
+		category_anti_air = { #THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
+			air_attack = 0.1
+		}
 
+		#anti_air = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_battery = {
+		#	air_attack = 0.1
+		#}
+		#mot_anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		category_self_propelled_anti_air = {
+			air_attack = 0.15
+		}
+		category_self_propelled_anti_air_regimental_support = {
+			air_attack = 0.05
+		}
+		tech_air_damage_factor = -0.02
+
+
+
+
+
+
+		#TANK STUFF
 		category_anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.2
@@ -1696,7 +1665,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 6 }
+			position = { x = @anti_tank y = 20 }
 		}
 
 		ai_will_do = {
@@ -1732,7 +1701,24 @@ technologies = {
 	}
 
 	antitank2 = {
+		enable_equipments = {
+			anti_air_equipment_2
+		}
+		armored_car = {
+			hard_attack = 0.1
+		}
+		static_anti_air_damage_factor = 0.1
 
+		enable_equipment_modules = {
+			ship_anti_air_3
+			tank_auto_cannon_2
+			tank_anti_air_cannon_2
+			lc_heavy_anti_air_battery #Module for Land Cruiser
+		}
+
+
+
+		#TANK STUFF
 		#mot_anti_tank_brigade = {
 		#	hard_attack = 0.1
 		#	ap_attack = 0.1
@@ -1758,7 +1744,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 8 }
+			position = { x = @anti_tank y = @2026 }
 		}
 
 		ai_will_do = {
@@ -1798,6 +1784,42 @@ technologies = {
 	}
 
 	antitank3 = {
+
+
+
+
+
+
+		category_anti_air = {	#THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
+			air_attack = 0.1
+		}
+
+		#anti_air = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_battery = {
+		#	air_attack = 0.1
+		#}
+		#mot_anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		category_self_propelled_anti_air = {
+			air_attack = 0.1
+		}
+		category_self_propelled_anti_air_regimental_support = {
+			air_attack = 0.05
+		}
+		enable_equipment_modules = {
+			tank_heavy_cannon_2
+		}
+
+		tech_air_damage_factor = -0.02
+
+
+		#TANK STUFF
 		enable_equipment_modules = {
 			tank_medium_cannon_2
 		}
@@ -1832,7 +1854,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 10 }
+			position = { x = @anti_tank y = @2030 }
 		}
 
 		categories = {
@@ -1874,6 +1896,45 @@ technologies = {
 	}
 
 	antitank4 = {
+
+
+
+
+
+
+
+		category_anti_air = { #THIS CATEGORY NOW INCLUDES FOLLOWING COMMENTED OUT UNITS
+			air_attack = 0.1
+		}
+
+		#anti_air = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		#anti_air_battery = {
+		#	air_attack = 0.1
+		#}
+		#mot_anti_air_brigade = {
+		#	air_attack = 0.1
+		#}
+		category_self_propelled_anti_air = {
+			air_attack = 0.05
+		}
+		category_self_propelled_anti_air_regimental_support = {
+			air_attack = 0.05
+		}
+
+		tech_air_damage_factor = -0.02
+
+
+
+
+
+
+		
+#TANK STUFF
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_2
 		}
@@ -1903,7 +1964,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 12 }
+			position = { x = @anti_tank y = @2032 }
 		}
 
 		ai_will_do = {
@@ -1939,7 +2000,41 @@ technologies = {
 	}
 
 	antitank5 = {
+		enable_equipments = {
+			anti_air_equipment_3
+		}
+		armored_car = {
+			hard_attack = 0.1
+		}
+		static_anti_air_damage_factor = 0.1
 
+		enable_equipment_modules = {
+			ship_anti_air_4
+			tank_heavy_cannon_3
+			tank_anti_air_cannon_3
+			auto_loader
+			lc_heavy_anti_air_platform #Module for Land Cruiser
+		}
+
+		enable_equipments = {
+			anti_tank_equipment_1
+		}
+		armored_car = {
+			ap_attack = 0.1
+		}	
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_heavy_cannon
+			tank_buster_1
+			lc_high_velocity_cannon_turret #Module for Land Cruiser
+		}
+
+		enable_subunits = {
+			anti_tank_battery
+		}
+
+
+		#TANK STUFF
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
@@ -1959,7 +2054,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = @anti_tank y = 14 }
+			position = { x = @anti_tank y = 28 }
 		}
 
 		ai_will_do = {
@@ -2092,7 +2187,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -2 y = 8 }
+			position = { x = 6 y = @2022 }
 		}
 
 		categories = {
@@ -2146,7 +2241,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 8 }
+			position = { x = 0 y = @2022 }
 		}
 
 		categories = {
