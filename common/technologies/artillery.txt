@@ -13,9 +13,18 @@ technologies = {
 	@2030 = 26
 	@2032 = 30
 
-	catapult = {
+	trebuchet = {
+
+		enable_equipments = {
+			artillery_equipment_old_1
+		}
+
+		enable_subunits = {
+			field_guns
+		}
+
 		path = {
-			leads_to_tech = trebuchet
+			leads_to_tech = cannon
 			research_cost_coeff = 1
 		}
 
@@ -33,9 +42,13 @@ technologies = {
 		}
 	}
 
-	trebuchet = {
+	cannon = {
+		enable_equipments = {
+			artillery_equipment_old_2
+		}
+
 		path = {
-			leads_to_tech = gunpowder_cannon
+			leads_to_tech = breech_artillery
 			research_cost_coeff = 1
 		}
 
@@ -54,7 +67,11 @@ technologies = {
 	}
 
 
-	gunpowder_cannon = {
+	breech_artillery = {
+		enable_equipments = {
+			artillery_equipment_old_3
+		}
+
 		path = {
 			leads_to_tech = gw_artillery
 			research_cost_coeff = 1
@@ -78,10 +95,6 @@ technologies = {
 
 		enable_equipments = {
 			artillery_equipment_1
-		}
-
-		enable_subunits = {
-			field_guns
 		}
 
 		path = {

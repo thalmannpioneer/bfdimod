@@ -1,4 +1,19 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_trebuchet_medium"
+		texturefile = "gfx/interface/technologies/Art_trebuchet.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_cannon_medium"
+		texturefile = "gfx/interface/technologies/Art_cannon.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_breech_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_breech_artillery.dds"
+	}	
+
     spriteType = {
         name = GFX_taxes1_medium
         texturefile = gfx/interface/technologies/taxes1.dds
