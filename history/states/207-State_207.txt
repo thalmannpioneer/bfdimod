@@ -10,6 +10,7 @@ state={
 		add_core_of = GOI
 		victory_points = { 5212 5 }
 		victory_points = { 3880 5 }
+		victory_points = { 939 10 } #VP ZDubbz wanted, no idea if this idea will live in 0.5
 		buildings = {
             infrastructure = 2
         }

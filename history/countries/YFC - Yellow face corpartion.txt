@@ -12,7 +12,9 @@ set_technology = { taxes1 = 1 }
 set_technology = { taxes2 = 1 }
 set_technology = { electronic_mechanical_engineering = 1 }
 set_technology = { radio = 1 }
-set_technology = { gw_artillery = 1 }
+set_technology = { trebuchet = 1 }
+set_technology = { cannon = 1 }
+#set_technology = { gw_artillery = 1 }
 
 if = {
     limit = { NOT = { has_dlc = "Man the Guns" } }
