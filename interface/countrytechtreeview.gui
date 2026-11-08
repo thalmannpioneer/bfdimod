@@ -243,13 +243,13 @@ guiTypes = {
 			}
 
 
-			gridboxtype = {
-				name = "support_weapons_tree"
-				position = { x = 140 y = 210 }
-				#size = { width = 420 height = 500 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
+			#gridboxtype = {
+			#	name = "support_weapons_tree"
+			#	position = { x = 140 y = 210 }
+			#	#size = { width = 420 height = 500 }
+			#	slotsize = { width = 70 height = 70 }
+			#	format = "LEFT"
+			#}
 
 			iconType = {
 				name = "highlight_infantry_1"
@@ -259,16 +259,16 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-			gridboxtype = {
-				name = "night_vision_tree"
-				position = { x = 140 y = 210 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
+			#gridboxtype = {
+			#	name = "night_vision_tree"
+			#	position = { x = 140 y = 325 } #210
+			#	slotsize = { width = 70 height = 70 }
+			#	format = "LEFT"
+			#}
 
 			gridboxtype = {
-				name = "infantry_weapons_tree"
-				position = { x = 140 y = 325 }
+				name = "infantry_weapons_old_tree"
+				position = { x = 140 y = 600 } #325
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

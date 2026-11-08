@@ -1,4 +1,7 @@
 ﻿l_english:
+
+ #ANY TIG TECH HAS (BFDI) IN COMMENTS!
+
  RESEARCH_BONUSES_TOOLTIP: "Limited technology bonuses we have:"
  RESEARCH_BONUSES_EMPTY_TOOLTIP: "Limited technology bonuses will be listed here."
  RESEARCH_BONUS_SPEED_DESC: "§Y$COUNT$x§! $VALUE|G%0$ research speed from $NAME$"
@@ -208,16 +211,32 @@
  peoples_army_desc: "The People's Army believes in the primacy of men over weapons, with superior motivation compensating for inferior technology, and enjoys widespread support from the civilian population.\n\n"
  guerilla_warfare: "Guerrilla Warfare"
  guerilla_warfare_desc: "The enemy advances, we retreat; the enemy camps, we harass; the enemy tires, we attack; the enemy retreats, we pursue."
- infantry_weapons2: "Improved Infantry Equipment I"
+ infantry_weapons_old2: "Improved Infantry Equipment I" #BFDI
+ infantry_weapons_old2_desc: "idk like pouches/belt to hold ammo" #BFDI
+ infantry_weapons_middle1: "Improved Infantry Equipment II" #BFDI
+ infantry_weapons_middle1_desc: "backpacks, better belts, and other cool equipment" #BFDI
+ infantry_weapons2: "Improved Infantry Equipment III" #was I
  infantry_weapons2_desc: "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
- improved_infantry_weapons_2: "Improved Infantry Equipment II"
+ improved_infantry_weapons_middle1: "Improved Infantry Equipment IV" #BFDI
+ improved_infantry_weapons_middle1_desc: "Lv 50 belt" #BFDI
+ improved_infantry_weapons_2: "Improved Infantry Equipment V" #was II
  improved_infantry_weapons_2_desc: "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Improved weapon models and more specialized equipment."
- advanced_infantry_weapons2: "Improved Infantry Equipment III"
+ advanced_infantry_weapons_middle2: "Improved Infantry Equipment VI" #BFDI
+ advanced_infantry_weapons_middle2_desc: "Lv 100 belt!!!!!" #BFDI
+ advanced_infantry_weapons2: "Improved Infantry Equipment VII" #was III
  advanced_infantry_weapons2_desc: "Personal and crew served weapons for infantry as well as the various other bits of kit a soldier needs. Further Modernized to include personal Assault Rifles and anti-tank rockets. Improved availability of weapons previously distributed to a limited extent."
  infantry_at: "Infantry Anti-Tank I"
  infantry_at_desc: "Arming our infantry units with anti-tank rifles will allow them to take out lighter armored vehicles while maintaining mobility."
  infantry_at2: "Infantry Anti-Tank II"
  infantry_at2_desc: "For infantry to effectively engage heavier armored units, high-explosive anti-tank weapons need to be made smaller and lighter."
+ infantry_at3: "Infantry Anti-Tank III" #BFDI
+ infantry_at3_desc: "meta players are crying" #BFDI
+ infantry_at4: "Infantry Anti-Tank IV" #BFDI
+ infantry_at4_desc: "meta players are crying\n\npart 2" #BFDI
+ infantry_aa: "Infantry Anti-Air" #BFDI
+ infantry_aa_desc: "meta players are shitting themselves seeing their meta be ruined" #BFDI
+ machine_gun: "Machine Gun" #BFDI
+ machine_gun_desc: "Remember the guy who made it said it would end wars? Does he know?" #BFDI
  support_weapons: "Support Weapons I"
  support_weapons_desc: "Automatic weapons are becoming more portable. Submachine guns have already proven effective and the development of hand-held support weapons must continue."
  support_weapons2: "Support Weapons II"
@@ -338,10 +357,18 @@
  tech_maintenance_company4_desc: "Experiences with designing for active redundancy in the Great War can be renewed to work with more modern equipment to make maintenance easier."
  motorised_infantry: "Motorized Infantry"
  motorised_infantry_desc: "By extending the use of motor vehicles in infantry transports in the field, the mobility of otherwise slow-moving infantry units can be greatly improved, enabling faster responses and new strategies."
+ uniform: "Early Uniforms" #BFDI
+ uniform_desc: "we should all wear red and blue like the french!" #BFDI
+ uniform1: "Advanced Uniforms" #BFDI
+ uniform_desc1: "cold and hot larp" #BFDI
+ uniform2: "Camo Uniforms" #BFDI
+ uniform_desc2: "Where did he go...?\n\n\n\nhmmm" #BFDI
  night_vision: "Night Vision I"
  night_vision_desc: "Being able to see the enemy without being seen is key to night operations. With the invention of infra-red technology, we can outfit our army with devices which, though unwieldy, makes this possible."
  night_vision2: "Night Vision II"
  night_vision2_desc: "Early infra-red scopes, although initially intended for use by snipers, had a limited vision range. As both portability and vision improves, these devices can be used by more troops operating at night."
+ night_vision3: "Night Vision III" #BFDI
+ night_vision3_desc: "Bravo six going dark" #BFDI
  basic_machine_tools: "Basic Machine Tools"
  basic_machine_tools_desc: "A variety of newly developed milling machines can be used in military production, from the small and versatile types available to any machine shop to the large scale, advanced models that push the technological limits."
  improved_machine_tools: "Improved Machine Tools"
@@ -422,12 +449,12 @@
  excavation5: "Excavation V"
  excavation5_desc: "Advancements in fields such as surface mining gives us a greater yield of resources from our current extraction sites."
 
- taxes1: "Taxes1 placeholder title"
- taxes1_desc: "placeholder"
- taxes2: "taxes2 placeholder title"
- taxes2_desc: "placeholder"
- taxes3: "taxes3 placeholder title"
- taxes3_desc: "placeholder"
+ taxes1: "Taxes1 placeholder title" #BFDI
+ taxes1_desc: "placeholder" #BFDI
+ taxes2: "taxes2 placeholder title" #BFDI
+ taxes2_desc: "placeholder" #BFDI
+ taxes3: "taxes3 placeholder title" #BFDI
+ taxes3_desc: "placeholder" #BFDI
 
  excavation_tech: "Excavation Technologies"
  electronic_mechanical_engineering: "Electronic Mechanical Engineering"

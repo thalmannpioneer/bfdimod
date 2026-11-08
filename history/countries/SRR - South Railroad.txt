@@ -2,13 +2,12 @@
 
 capital = 202
 
-set_variable = { var_YCF_raid_attacks = 0 }
-
 set_research_slots = 1
 
 set_technology = { basic_train = 1 }
 set_technology = { wartime_train = 1 }
-set_technology = { infantry_weapons = 1 }
+set_technology = { infantry_weapons_old = 1 }
+set_technology = { infantry_weapons_old1 = 1 }
 set_technology = { trebuchet = 1 }
 set_technology = { cannon = 1 }
 if = {

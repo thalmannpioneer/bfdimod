@@ -7,6 +7,15 @@
  artillery_equipment_old_3_short: "BL Artillery"
  artillery_equipment_old_3_desc: "Breech Loading slop placeholder"
 
+ infantry_equipment_old_0: "Ancient Weapons"
+ infantry_equipment_old_0_desc: "A fucking spear"
+ infantry_equipment_old_1: "Musket Weapons"
+ infantry_equipment_old_1_desc: "We learned what a gun is!!!! so peak!!!!!!!!"
+ infantry_equipment_old_2: "Muzzleloader Weapons"
+ infantry_equipment_old_2_desc: "Better guns slop"
+ infantry_equipment_new_0: "Modern Weapons"
+ infantry_equipment_new_0_desc: "gasp"
+
  #Taken from HOI4, does not override however :(
  artillery_equipment_1: "Towed Artillery"
  artillery_equipment_1_short: "Artillery"

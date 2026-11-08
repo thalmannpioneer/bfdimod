@@ -271,10 +271,14 @@ script_enum_equipment_bonus_type = {
 	repair_ship_hull
 	repair_ship_1
 	repair_ship_2
+	infantry_equipment_old_0
+	infantry_equipment_old_1
+	infantry_equipment_old_2
 	infantry_equipment_0
 	infantry_equipment_1
 	infantry_equipment_2
 	infantry_equipment_3
+	infantry_equipment_new_0
 	mechanized_equipment
 	mechanized_equipment_1
 	mechanized_equipment_2

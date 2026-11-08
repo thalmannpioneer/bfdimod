@@ -15,6 +15,26 @@ spriteTypes = {
 	}	
 
     spriteType = {
+		name = "GFX_infantry_weapons_old_medium"
+		texturefile = "gfx/interface/technologies/Inf_ancient.dds"
+	}	
+
+    spriteType = {
+		name = "GFX_infantry_weapons_old1_medium"
+		texturefile = "gfx/interface/technologies/Inf_musket.dds"
+	}
+
+    spriteType = {
+		name = "GFX_infantry_weapons_old3_medium"
+		texturefile = "gfx/interface/technologies/Inf_muzzleloader.dds"
+	}
+
+    spriteType = {
+		name = "GFX_advanced_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/Inf_modern.dds"
+	}
+
+    spriteType = {
         name = GFX_taxes1_medium
         texturefile = gfx/interface/technologies/taxes1.dds
     }
