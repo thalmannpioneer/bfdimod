@@ -407,7 +407,7 @@ focus_tree = {
                 country_event = {
                     id = GTR_event.10
                     days = 14
-                    random_days = 2
+                    random_days = 4
                     random_hours = 12
                 }
             }

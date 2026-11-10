@@ -26,3 +26,38 @@ SOS_army = {
 }
 
 ## FORTS ##
+
+GTR_fortnite_objectburg = {
+    #Build forts in captial when at war
+    allowed = {
+        original_tag = SOS
+    }
+    enable = {
+        has_war = yes
+        controls_state = 204
+        OR = {
+            NOT = {controls_state = 205}
+            NOT = {controls_state = 207}
+            has_contested_owner = 204
+            surrender_progress > 0.25
+        }
+        204 = {
+			any_province_building_level = {
+				province = {
+					id = 11101
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 11101
+        value = 3000
+    }
+}

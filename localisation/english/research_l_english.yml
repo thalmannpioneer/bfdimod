@@ -251,24 +251,38 @@
  paratroopers2_desc: "Transitioning from small operations with only a few paratroopers to larger airborne divisions paves way for massive airborne landings, taking these forces beyond a novelty to a natural part of warfare."
  paratroopers3: "Paratroopers III"
  paratroopers3_desc: "Learning to adapt paradrop operations according to weather, standardizing equipment such as jump boots and extended specialized training will minimize the confusion and risks involved in these dangerous missions."
+ paratroopers4: "Paratroopers IV" #BFDI
+ paratroopers4_desc: "helldivers" #BFDI
  marines: "Marines I"
  marines_desc: "Troops specializing in amphibious warfare are growing ever more indispensable. Improvised methods and equipment become things of the past as our naval infantry is supported by specialized landing craft and training."
  marines2: "Marines II"
  marines2_desc: "Amphibious warfare requires constant innovation. Improved logistical support and portable harbors can enable our marines to perform landings that may otherwise have been impossible."
  marines3: "Marines III"
  marines3_desc: "Marines can be more than just amphibious infantry. In the future, our marine corps will be among the most disciplined and organized special forces."
+ marines4: "Marines IV" #BFDI
+ marines4_desc: "better boats" #BFDI
+ marines5: "Marines V" #BFDI
+ marines5_desc: "better boats part 2" #BFDI
  tech_mountaineers: "Mountain Infantry I"
  tech_mountaineers_desc: "Combat in mountain ranges exposes troops to many perils, but sometimes cannot be avoided. We can minimize these risks by providing our soldiers with specialized training for this environment."
  tech_mountaineers2: "Mountain Infantry II"
  tech_mountaineers2_desc: "Going beyond survival, our forces can be trained to use mountains to their advantage. With light equipment and mule transports, they can maneuver this terrain better than other infantry."
  tech_mountaineers3: "Mountain Infantry III"
  tech_mountaineers3_desc: "Preparing for the most arduous mountain missions in high altitudes and low temperatures will require extraordinary training and discipline from our mountain troops."
+ tech_mountaineers4: "Mountain Infantry IV" #BFDI
+ tech_mountaineers4_desc: "cold boys" #BFDI
+ tech_mountaineers5: "Mountain Infantry V" #BFDI
+ tech_mountaineers5_desc: "cold placeholder idk send help" #BFDI
  rangers_tech: "Rangers I"
  rangers_tech_desc: "By specializing in woodland combat, training our light infantry to adapt to terrain and vegetation, we can economize on troops in defense, or even push through enemy lines where they least expect us."
  rangers_tech2: "Rangers II"
  rangers_tech2_desc: "Using woodland specialists en masse rather than as small recon units gives us the opportunity to conduct massive assaults against lightly defended sectors."
  rangers_tech3: "Rangers III"
  rangers_tech3_desc: "Operating in difficult areas require special equipment and special training methods. We need to ensure our troops are equipped with the latest tools, and trained using the latest methods."
+ rangers_tech4: "Rangers IV" #BFDI
+ rangers_tech4_desc: "into evil forest we go!" #BFDI
+ rangers_tech5: "Rangers V" #BFDI
+ rangers_tech5_desc: "evil forest scary :(" #BFDI
 
  tech_special_forces: "Special Forces"
  tech_special_forces_desc: "Unconventional fighting requires specialist training. We need to ensure that our troops are prepared and able to adapt to harsh conditions."

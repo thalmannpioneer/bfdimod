@@ -6,6 +6,9 @@ division_template = {
 		marine = { x = 1 y = 0 }
 		marine = { x = 1 y = 1 }
 	}
+    support = {
+        artillery = { x = 0 y = 0 }		
+    }
 }
 
 division_template = {
@@ -22,7 +25,7 @@ units = {
         name = "Sailors"
         location = 11102 # Saint-Objectburg Port
         division_template = "Sailors"
-        start_experience_factor = 0.4
+        start_experience_factor = 0.5
         start_equipment_factor = 0.8
     }
 	division= {

@@ -477,8 +477,11 @@ GGR_fortnite_schneehorn = {
             NOT = {controls_state = 33}
             NOT = {controls_state = 24}
             NOT = {controls_state = 143}
+            NOT = {controls_province = 2059}
+            NOT = {controls_province = 3797}
+            NOT = {controls_province = 3291}
             has_contested_owner = 15
-            surrender_progress > 0.1
+            surrender_progress > 0.05
         }
         15 = {
 			any_province_building_level = {
@@ -487,7 +490,7 @@ GGR_fortnite_schneehorn = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 3
+				level < 5
 			}
 		}
     }
@@ -498,6 +501,84 @@ GGR_fortnite_schneehorn = {
         id = bunker
         target = 4731
         value = 3000
+    }
+}
+
+GGR_fortnite_kaltstadt = {
+    #Build forts in town city when at war
+    allowed = {
+        OR = {
+            original_tag = GGR
+            original_tag = SPL
+        }   
+    }
+    enable = {
+        has_war = yes
+        controls_state = 143
+        OR = {
+            NOT = {controls_state = 33}
+            NOT = {controls_state = 15}
+            NOT = {controls_state = 24}
+            has_contested_owner = 143
+            surrender_progress > 0.25
+        }
+        172 = {
+			any_province_building_level = {
+				province = {
+					id = 5505
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 5505
+        value = 2000
+    }
+}
+
+GGR_fortnite_weißfeld = {
+    #Build forts in town city when at war
+    allowed = {
+        OR = {
+            original_tag = GGR
+            original_tag = SPL
+        }   
+    }
+    enable = {
+        has_war = yes
+        controls_state = 172
+        OR = {
+            NOT = {controls_state = 33}
+            NOT = {controls_state = 15}
+            NOT = {controls_state = 143}
+            has_contested_owner = 172
+            surrender_progress > 0.25
+        }
+        172 = {
+			any_province_building_level = {
+				province = {
+					id = 4393
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 4393
+        value = 2000
     }
 }
 
@@ -526,7 +607,7 @@ GGR_fortnite_wohnungmeerstadt = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 1
+				level < 4
 			}
 		}
     }
@@ -539,4 +620,3 @@ GGR_fortnite_wohnungmeerstadt = {
         value = 2000
     }
 }
-

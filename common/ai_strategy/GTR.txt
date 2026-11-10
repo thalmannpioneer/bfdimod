@@ -597,7 +597,7 @@ GTR_fortnite_announcergrad = {
             has_contested_owner = 82
             has_contested_owner = 75
             has_contested_owner = 77
-            surrender_progress > 0.1
+            surrender_progress > 0.05
         }
         209 = {
 			any_province_building_level = {
@@ -606,7 +606,7 @@ GTR_fortnite_announcergrad = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
@@ -635,7 +635,7 @@ GTR_fortnite_university = {
             has_contested_owner = 82
             has_contested_owner = 75
             has_contested_owner = 77
-            surrender_progress > 0.1
+            surrender_progress > 0.05
         }
         89 = {
 			any_province_building_level = {
@@ -644,7 +644,7 @@ GTR_fortnite_university = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
