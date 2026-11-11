@@ -598,7 +598,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_subtitle_trains"
-					position = { x = 40 y = 1280 }
+					position = { x = 40 y = 1380 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -656,7 +656,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_train_tree"
-				position = { x = 100 y = 1380 }
+				position = { x = 100 y = 1480 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

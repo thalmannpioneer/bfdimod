@@ -39,12 +39,28 @@
  motorized_equipment_0_desc: "During the Great War the armies starting using basic civilian trucks for transporting supplies and hauling equipment. These have since become an integral part of most armies."
  motorized_equipment_1: "Truck"
  motorized_equipment_1_desc: "Motorizing infantry is the first stage towards the mechanization of an army. Civilian trucks are readily adaptable to military uses of transporting soldiers, towing guns, and carrying equipment and supplies. This greatly increases the strategic mobility of infantry units, which would otherwise rely on marching."
+
  support_equipment_short: "Support Eq."
  support_equipment: "Support Equipment"
  support_equipment_desc: "Radios, Jeeps, Pontoons & other equipment used to support troops."
  tech_support: "Support Equipment"
- support_equipment_1: "Support Equipment"
- support_equipment_1_desc: "Radios, Jeeps, Pontoons & other equipment used to support troops."
+
+ support_equipment_1: "Ancient Support Equipment"
+ support_equipment_1_short: "Ancient Support"
+ support_equipment_1_desc: "placeholder slop"
+
+ support_equipment_2: "Improved Support Equipment"
+ support_equipment_2_short: "Improved Support"
+ support_equipment_2_desc: "placeholder slop"
+
+ support_equipment_3: "Advanced Support Equipment"
+ support_equipment_3_short: "Advanced Support"
+ support_equipment_3_desc: "placeholder slop"
+
+ support_equipment_4: "Modern Support Equipment"
+ support_equipment_4_short: "Modern Support"
+ support_equipment_4_desc: "placeholder slop"
+
  EQUIPMENT_DESIGNER_DESC: "Designed by: $DESIGNER|Y$"
  EQUIPMENT_ARMOR: "Armor"
  EQUIPMENT_MOTORIZED: "Truck"

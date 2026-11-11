@@ -309,6 +309,10 @@
  mountain_warfare_desc: "Special training to make our soldiers effective in mountain ranges."
  mountain_defensive_training: "Mountain Defensive Training"
  mountain_defensive_training_desc: "Special training will allow our troops to better defend in mountainous terrain."
+ tech_springy_shoes: "Springy Shoes" #BFDI
+ tech_springy_shoes_desc: "Leafy's great gift." #BFDI
+ tech_flamethrower: "Flamethrower I" #BFDI
+ tech_flamethrower_desc: "Burn all" #BFDI
  tech_recon: "Recon Company I"
  tech_recon_desc: "Sending smaller groups to scout ahead before moving in the main force allows us to gather intelligence about where the enemy is and how many we are facing."
  tech_recon2: "Recon Company II"
