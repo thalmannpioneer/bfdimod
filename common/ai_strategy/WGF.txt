@@ -312,7 +312,7 @@ WGF_fortnite_north_goikyland = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 3
+				level < 5
 			}
 		}
     }
@@ -325,7 +325,6 @@ WGF_fortnite_north_goikyland = {
         value = 3000
     }
 }
-
 
 WGF_fortnite_cary = {
     #Build forts in major city when at war
@@ -348,7 +347,7 @@ WGF_fortnite_cary = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 4
 			}
 		}
     }
@@ -358,6 +357,73 @@ WGF_fortnite_cary = {
         type = build_building
         id = bunker
         target = 5824
-        value = 3000
+        value = 2000
+    }
+}
+
+WGF_fortnite_lintle = {
+    #Build forts in town when at war
+    allowed = {
+        original_tag = WGF
+    }
+    enable = {
+        has_war = yes
+		controls_state = 11
+        OR = {
+			NOT = {controls_state = 177}
+			NOT = {controls_state = 173}
+			surrender_progress > 0.2
+        }
+        11 = {
+			any_province_building_level = {
+				province = {
+					id = 10228
+					limit_to_border = no
+				}
+				building = bunker
+				level < 2
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 10228
+        value = 2000
+    }
+}
+
+WGF_fortnite_lintle = {
+    #Build forts in supply depot when at war
+    allowed = {
+        original_tag = WGF
+    }
+    enable = {
+        has_war = yes
+		controls_state = 177
+        OR = {
+			NOT = {country_exists = GMD}
+			surrender_progress > 0.1
+        }
+        177 = {
+			any_province_building_level = {
+				province = {
+					id = 5207
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 5207
+        value = 2000
     }
 }

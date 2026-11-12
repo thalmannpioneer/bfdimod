@@ -27,7 +27,7 @@ SOS_army = {
 
 ## FORTS ##
 
-GTR_fortnite_objectburg = {
+SOS_fortnite_objectburg = {
     #Build forts in captial when at war
     allowed = {
         original_tag = SOS

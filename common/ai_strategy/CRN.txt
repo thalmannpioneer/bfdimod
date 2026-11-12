@@ -149,7 +149,7 @@ CRN_fortnite_yoyalia = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 1
+				level < 2
 			}
 		}
     }

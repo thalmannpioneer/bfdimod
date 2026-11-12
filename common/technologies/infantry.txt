@@ -1001,6 +1001,10 @@ technologies = {
             soft_attack = 0.05
         }
 
+        path = {
+            leads_to_tech = paratroopers4
+            research_cost_coeff = 1
+        }
 
         research_cost = 2.0
         start_year = 2023
@@ -1140,6 +1144,11 @@ technologies = {
             soft_attack = 0.05
         }
 
+        path = {
+            leads_to_tech = marines4
+            research_cost_coeff = 1
+        }
+
         research_cost = 2.0
         start_year = 2020
         folder = {
@@ -1172,6 +1181,11 @@ technologies = {
         marine = {
             max_organisation = 5
             soft_attack = 0.05
+        }
+
+        path = {
+            leads_to_tech = marines5
+            research_cost_coeff = 1
         }
 
         research_cost = 2.0
@@ -1315,6 +1329,11 @@ technologies = {
             soft_attack = 0.05
         }
 
+        path = {
+            leads_to_tech = tech_mountaineers4
+            research_cost_coeff = 1
+        }
+
         research_cost = 2.0
         start_year = 2020
         folder = {
@@ -1337,6 +1356,11 @@ technologies = {
         mountaineers = {
             max_organisation = 5
             soft_attack = 0.05
+        }
+
+        path = {
+            leads_to_tech = tech_mountaineers5
+            research_cost_coeff = 1
         }
 
         research_cost = 2.0
@@ -1467,6 +1491,11 @@ technologies = {
             soft_attack = 0.05
         }
 
+        path = {
+            leads_to_tech = rangers_tech4
+            research_cost_coeff = 1
+        }
+
         research_cost = 1.5
         start_year = 2020
         folder = {
@@ -1490,6 +1519,11 @@ technologies = {
         ranger_battalion = {
             max_organisation = 5
             soft_attack = 0.05
+        }
+
+        path = {
+            leads_to_tech = rangers_tech5
+            research_cost_coeff = 1
         }
 
         research_cost = 1.5

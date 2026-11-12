@@ -451,6 +451,11 @@ focus_tree = {
             add_to_variable = { var_WGF_war_closeness = 10 }
             custom_effect_tooltip = l_WGF_better_situation_with_crisis
             add_to_variable = { var_WGF_economical_devastation_egf = 0.1 }
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
             177 = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -597,6 +602,11 @@ focus_tree = {
         completion_reward = {
             custom_effect_tooltip = l_WGF_better_situation_with_crisis
             add_to_variable = { var_WGF_economical_devastation_cgf = -0.05 }
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
             custom_effect_tooltip = l_money_gain_50K
             add_to_variable = { money_amount = 0.5 }
             BFDI_money_diplay_update = yes

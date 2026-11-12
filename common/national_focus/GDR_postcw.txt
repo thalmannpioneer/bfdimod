@@ -260,6 +260,16 @@ focus_tree = {
                 custom_effect_tooltip = l_money_gain_500K
                 add_to_variable = { money_amount = 5 }
             }
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
             add_to_variable = { var_GDR_payments_to_gpr_cgf = -0.1 }
             add_to_variable = { var_GDR_payments_to_gpr_psbf = 0.2 }
             add_to_variable = { var_GDR_payments_to_gpr_pegf = 0.2 }

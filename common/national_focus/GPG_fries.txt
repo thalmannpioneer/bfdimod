@@ -220,6 +220,16 @@ focus_tree = {
             custom_effect_tooltip = l_GPG_improves_crisis
             add_to_variable = { var_GPG_postcw_bs = 0.1 }
             add_to_variable = { var_GPG_postcw_cg = -0.2 }
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+            add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
             random_owned_state = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {

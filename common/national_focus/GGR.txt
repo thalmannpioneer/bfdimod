@@ -295,6 +295,11 @@ focus_tree = {
 			custom_effect_tooltip = l_GGR_focus_improves_industry
 			add_research_slot = 1
 			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 			add_to_variable = { var_GGR_industry_rs = 0.15 }
 		}
 	}
@@ -684,6 +689,11 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = l_GGR_improves_vsnw
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
 			army_experience = 25
 			add_to_variable = { var_GGR_vsnw_ra = 0.05 }
 			add_corps_commander_role = {

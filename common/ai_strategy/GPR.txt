@@ -139,14 +139,13 @@ GPR_army = {
         has_army_size = {
             size < 15
         }
-        has_war = no
     }
 	abort_when_not_enabled = yes
 
     ai_strategy = {
         type = build_army
         id = infantry
-        value = 250
+        value = 1000
     }
 }
 

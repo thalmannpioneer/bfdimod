@@ -313,6 +313,11 @@
  tech_springy_shoes_desc: "Leafy's great gift." #BFDI
  tech_flamethrower: "Flamethrower I" #BFDI
  tech_flamethrower_desc: "Burn all" #BFDI
+ tech_flamethrower2: "Flamethrower II" #BFDI
+ tech_flamethrower2_desc: "no more village" #BFDI
+ tech_flamethrower3: "Flamethrower III" #BFDI
+ tech_flamethrower3_desc: "scary" #BFDI
+
  tech_recon: "Recon Company I"
  tech_recon_desc: "Sending smaller groups to scout ahead before moving in the main force allows us to gather intelligence about where the enemy is and how many we are facing."
  tech_recon2: "Recon Company II"
@@ -321,6 +326,13 @@
  tech_recon3_desc: "Improvements in radio technology change the way reconnaissance missions can be executed, enabling rapid communication of the gathered intelligence."
  tech_recon4: "Recon Company IV"
  tech_recon4_desc: "Deep reconnaissance operations, mixing espionage, guerilla operations and commando training, will aid our tactical choices and allow us to adapt our decision-making rapidly."
+ tech_recon5: "Recon Company V" #BFDI
+ tech_recon5_desc: "I see some" #BFDI
+ tech_recon6: "Recon Company VI" #BFDI
+ tech_recon6_desc: "I see most" #BFDI
+ tech_recon7: "Recon Company VII" #BFDI
+ tech_recon7_desc: "I see all" #BFDI
+
  tech_engineers: "Engineer Company I"
  tech_engineers_desc: "Construction of fortifications and breaching obstacles make combat engineers vital in the field. Giving our engineers a versatile role enables us to deploy them in the diverse situations where they will be needed."
  tech_engineers2: "Engineer Company II"
@@ -329,6 +341,13 @@
  tech_engineers3_desc: "Military engineering projects are approaching a larger scale. The construction of advanced infrastructural aid enables operations requiring supplies beyond what is normally available in the field."
  tech_engineers4: "Engineer Company IV"
  tech_engineers4_desc: "Maintaining local mobility while constructing what would previously have been considered permanent fortifications and supply systems, combat engineers of the future will ensure that no matter where our troops are attacked, they will be prepared."
+ tech_engineers5: "Engineer Company V" #BFDI
+ tech_engineers5_desc: "grab ye shovels" #BFDI
+ tech_engineers6: "Engineer Company VI" #BFDI
+ tech_engineers6_desc: "trench warfare" #BFDI
+ tech_engineers6: "Engineer Company VII" #BFDI
+ tech_engineers6_desc: "trench warfare part -1" #BFDI
+
  hospital_tech: "Field Hospitals"
  helicopter_tech: "Helicopters"
  logistics_tech: "Logistics Company"
@@ -341,6 +360,11 @@
  tech_field_hospital3_desc: "Surgery is among the most common emergency procedures needed in the field. Procedures and tools for this must be available closer to the front, and we must ensure that skilled surgeons are part of the military medical units."
  tech_field_hospital4: "Field Hospital IV"
  tech_field_hospital4_desc: "Although many improvements have been made in field medicine, many advances are improvised and we lack an established doctrine. With more experience, we can explain the role of these units more clearly and make improvised innovations permanent fixtures."
+ tech_field_hospital5: "Field Hospital V" #BFDI
+ tech_field_hospital5_desc: "wee woo" #BFDI
+ tech_field_hospital6: "Field Hospital VI" #BFDI
+ tech_field_hospital6_desc: "I need a medic bag" #BFDI
+
  tech_logistics_company: "Logistics Company I"
  tech_logistics_company_desc: "Having specialized Logistics Officers among our ranks will ensure that support networks are leveraged to minimize waste."
  tech_logistics_company2: "Logistics Company II"
@@ -349,6 +373,11 @@
  tech_logistics_company3_desc: "Continued statistical evaluation of troop supply needs contribute to maximizing the utility of our resources."
  tech_logistics_company4: "Logistics Company IV"
  tech_logistics_company4_desc: "Developing standardized classifications for supplies will minimize confusion and make planning more efficient."
+ tech_logistics_company5: "Logistics Company V" #BFDI
+ tech_logistics_company5_desc: "Box stacking goes crazy" #BFDI
+ tech_logistics_company6: "Logistics Company VI" #BFDI
+ tech_logistics_company6_desc: "Box packing goes crazy" #BFDI
+
  tech_military_police: "Military Police I"
  tech_military_police_desc: "Regular troops may be able to manage occupation for a shorter period of time, but they are first and foremost soldiers. Integrating military police into our forces will ensure we have people on the ground to respond to resistance and investigate sabotage."
  tech_military_police2: "Military Police II"
@@ -357,6 +386,13 @@
  tech_military_police3_desc: "Cooperating with local spy networks and informers established before occupation, our military police can proactively prepare for where resistance is likely to arise."
  tech_military_police4: "Military Police IV"
  tech_military_police4_desc: "Safely policing occupied territory is as much about returning to normalcy as it is about ruthlessly eliminating opposition. Our military police must ensure that this process starts early, to ensure safety for soldiers and civilians alike."
+ tech_military_police5: "Military Police V" #BFDI
+ tech_military_police5_desc: "red and blue" #BFDI
+ tech_military_police6: "Military Police VI" #BFDI
+ tech_military_police6_desc: "swat van" #BFDI
+ tech_military_police7: "Military Police VII" #BFDI
+ tech_military_police7_desc: "wall hacks" #BFDI
+
  tech_signal_company: "Signal Company I"
  tech_signal_company_desc: "Establishing and maintaining communications in the field has always required special skills. With the advent of new communications and detection technology in the Great War, new possibilities for the practice lie ahead."
  tech_signal_company2: "Signal Company II"
@@ -365,6 +401,11 @@
  tech_signal_company3_desc: "Increasingly portable communications technology is more viable to be personally carried as a backpack. This increased mobility of signal corps must be utilized."
  tech_signal_company4: "Signal Company IV"
  tech_signal_company4_desc: "Among our signal specialists are people with unparalleled first-hand knowledge of field use of this equipment. By involving them in the research of new communication technologies, we can make use of their expertise."
+ tech_signal_company5: "Signal Company V" #BFDI
+ tech_signal_company5_desc: "5G raido slop" #BFDI
+ tech_signal_company6: "Signal Company VI" #BFDI
+ tech_signal_company6_desc: "just buy an apple phone at this rate" #BFDI
+
  tech_maintenance_company: "Maintenance Company I"
  tech_maintenance_company_desc: "Maintenance, repair and overhaul are important to keep military equipment reliable and safe to use. Having companies dedicated to this will ensure that it's given appropriate attention."
  tech_maintenance_company2: "Maintenance Company II"
@@ -373,6 +414,11 @@
  tech_maintenance_company3_desc: "Making sure that our troops always have the basic materials in the field to perform common repairs will prevent the continued use of equipment known to be damaged."
  tech_maintenance_company4: "Maintenance Company IV"
  tech_maintenance_company4_desc: "Experiences with designing for active redundancy in the Great War can be renewed to work with more modern equipment to make maintenance easier."
+ tech_maintenance_company5: "Maintenance Company V" #BFDI
+ tech_maintenance_company5_desc: "we love stealing" #BFDI
+ tech_maintenance_company6: "Maintenance Company VI" #BFDI
+ tech_maintenance_company6_desc: "steal 24/7" #BFDI
+
  motorised_infantry: "Motorized Infantry"
  motorised_infantry_desc: "By extending the use of motor vehicles in infantry transports in the field, the mobility of otherwise slow-moving infantry units can be greatly improved, enabling faster responses and new strategies."
  uniform: "Early Uniforms" #BFDI
