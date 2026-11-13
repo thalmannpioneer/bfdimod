@@ -35,6 +35,26 @@ spriteTypes = {
 	}
 
     spriteType = {
+		name = "GFX_tech_support_medium"
+		texturefile = "gfx/interface/technologies/Support_ancient.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_support2_medium"
+		texturefile = "gfx/interface/technologies/Support_improved.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_support3_medium"
+		texturefile = "gfx/interface/technologies/Support_advanced.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tech_support4_medium"
+		texturefile = "gfx/interface/technologies/Support_modern.dds"
+	}
+
+    spriteType = {
         name = GFX_taxes1_medium
         texturefile = gfx/interface/technologies/taxes1.dds
     }

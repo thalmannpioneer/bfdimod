@@ -17,6 +17,9 @@ equipments = {
 		
 		reliability = 0.65
 
+		#Offensive Abilities
+		soft_attack = 0
+
 		#Space taken in convoy
 		lend_lease_cost = 1
 
@@ -62,9 +65,11 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.85
 
+		soft_attack = 1
+
 		resources = {
 			aluminium = 1
-			steel = 2
+			steel = 3
 		}
 	}
 
@@ -79,9 +84,11 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.95
 
+		soft_attack = 3
+
 		resources = {
-			aluminium = 1
-			steel = 3
+			aluminium = 2
+			steel = 4
 		}
 	}
 }

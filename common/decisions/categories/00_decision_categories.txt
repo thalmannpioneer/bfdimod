@@ -141,7 +141,7 @@ decision_other_trade_category = { #I am going to kill Hoi4 my fucking god
 		}
 	}
 	priority = 5
-	icon = decision_category_operation_coinflip
+	icon = GFX_decision_category_YFC_trade
 	visible_when_empty = yes
 	scripted_gui = bfdi_other_trade_scriptedgui
 }

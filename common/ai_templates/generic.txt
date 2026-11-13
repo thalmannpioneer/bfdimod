@@ -327,13 +327,36 @@ infantry_generic = {
 		base = 5
 	}
 	
-	infantry_early = {
+	infantry_very_early = {
 	
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
 				factor = 2
+			}
+		}
+		
+		target_template = {
+			
+			regiments = {
+				infantry = 4
+			}
+		}
+
+		replace_at_match = 1.5  # value higher than 1.0 means it will only upgrade/replace when upgrade_prio takes over
+		replace_with = infantry_early
+		target_min_match = 0.9
+	}
+
+	infantry_early = {
+	
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > 2014.1.1
 			}
 		}
 		
@@ -366,7 +389,7 @@ infantry_generic = {
 			base = 1
 
 			modifier = {
-				factor = 3
+				factor = 4
 				date > 2016.1.1
 			}
 		}
@@ -402,7 +425,7 @@ infantry_generic = {
 			base = 1
 
 			modifier = {
-				factor = 4
+				factor = 5
 				date > 2016.1.1	
 				has_army_manpower = {size > 150000}
 			}

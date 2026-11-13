@@ -158,6 +158,7 @@ GPR_fortnite_greenport = {
     }
     enable = {
         has_war = yes
+        surrender_progress > 0
         193 = {
             is_controlled_by = GPR
 			any_province_building_level = {
@@ -178,11 +179,6 @@ GPR_fortnite_greenport = {
         target = 1891
         value = 2000
     }
-    ai_strategy = {
-        type = build_army
-        id = infantry
-        value = 20
-    }
 }
 
 GPR_fortnite_greenport_outskirts_north = {
@@ -192,6 +188,11 @@ GPR_fortnite_greenport_outskirts_north = {
     }
     enable = {
         has_war = yes
+        surrender_progress > 0
+        #OR = {
+        #    NOT = {controls_state = 203}
+        #    surrender_progress > 0.05
+        #}
         193 = {
             is_controlled_by = GPR
 			any_province_building_level = {
@@ -200,7 +201,7 @@ GPR_fortnite_greenport_outskirts_north = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
@@ -212,11 +213,6 @@ GPR_fortnite_greenport_outskirts_north = {
         target = 5253
         value = 1000
     }
-    ai_strategy = {
-        type = build_army
-        id = infantry
-        value = 5
-    }
 }
 
 GPR_fortnite_greenport_outskirts_south = {
@@ -226,6 +222,11 @@ GPR_fortnite_greenport_outskirts_south = {
     }
     enable = {
         has_war = yes
+        surrender_progress > 0
+        #OR = {
+        #    NOT = {controls_state = 203}
+        #    surrender_progress > 0.05
+        #}
         193 = {
             is_controlled_by = GPR
 			any_province_building_level = {
@@ -234,7 +235,7 @@ GPR_fortnite_greenport_outskirts_south = {
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
@@ -246,11 +247,6 @@ GPR_fortnite_greenport_outskirts_south = {
         target = 10856
         value = 1000
     }
-    ai_strategy = {
-        type = build_army
-        id = infantry
-        value = 5
-    }
 }
 
 GPR_fortnite_greenport_outskirts_river = {
@@ -260,6 +256,11 @@ GPR_fortnite_greenport_outskirts_river = {
     }
     enable = {
         has_war = yes
+        surrender_progress > 0
+        #OR = {
+        #    NOT = {controls_state = 203}
+        #    surrender_progress > 0.05
+        #}
         193 = {
             is_controlled_by = GPR
 			any_province_building_level = {
@@ -280,9 +281,33 @@ GPR_fortnite_greenport_outskirts_river = {
         target = 1010
         value = 1000
     }
+}
+
+GPR_fortnite_nuerm = {
+    #Build forts on town when at war
+    allowed = {
+        original_tag = GPR
+    }
+    enable = {
+        has_war = yes
+        193 = {
+            is_controlled_by = GPR
+			any_province_building_level = {
+				province = {
+					id = 10933
+					limit_to_border = no
+				}
+				building = bunker
+				level < 1
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
     ai_strategy = {
-        type = build_army
-        id = infantry
-        value = 5
+        type = build_building
+        id = bunker
+        target = 10933
+        value = 2000
     }
 }

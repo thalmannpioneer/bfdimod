@@ -71,7 +71,7 @@ SGD_Scare_GFG = {
 
 ## FORTS ##
 
-SGD_fortnite_gorge_town = {
+SGD_fortnite_faraway = {
     #Build forts in frontline city when at war
     allowed = {
         original_tag = SGD
@@ -80,13 +80,14 @@ SGD_fortnite_gorge_town = {
         has_war = yes
 		NOT = {has_war_with = AGG}
         183 = {
+			is_controlled_by = SGD
 			any_province_building_level = {
 				province = {
 					id = 11304
 					limit_to_border = no
 				}
 				building = bunker
-				level < 2
+				level < 3
 			}
 		}
     }
@@ -96,6 +97,40 @@ SGD_fortnite_gorge_town = {
         type = build_building
         id = bunker
         target = 11304
+        value = 3000
+    }
+}
+
+SGD_fortnite_cakestake = {
+    #Build forts in final city when at war
+    allowed = {
+        original_tag = SGD
+    }
+    enable = {
+        has_war = yes
+		NOT = {has_war_with = AGG}
+		OR = {
+			surrender_progress > 0.25
+			NOT = {controls_state = 183}
+		}
+        175 = {
+			is_controlled_by = SGD
+			any_province_building_level = {
+				province = {
+					id = 3110
+					limit_to_border = no
+				}
+				building = bunker
+				level < 5
+			}
+		}
+    }
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = build_building
+        id = bunker
+        target = 3110
         value = 3000
     }
 }
