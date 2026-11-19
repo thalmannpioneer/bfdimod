@@ -335,7 +335,7 @@ technologies = {
         }
 
         research_cost = 1.5
-        start_year = 2014
+        start_year = 2020
         folder = {
             name = infantry_folder
             position = { x = 0 y = @2020 }
@@ -2292,7 +2292,7 @@ technologies = {
 
     night_vision3 = {
 
-        land_night_attack = 0.25
+        land_night_attack = 0.2
 
         research_cost = 2.5
         start_year = 2030

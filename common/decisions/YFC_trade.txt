@@ -492,6 +492,11 @@ decision_YFC_trade_category = {
             }
         }
 
+        modifier = {
+            production_factory_efficiency_gain_factor = 0.25
+            production_lack_of_resource_penalty_factor = -0.1
+        }
+
         remove_effect = {
             add_offsite_building = { type = arms_factory level = -2 }
 

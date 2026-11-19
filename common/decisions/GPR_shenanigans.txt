@@ -1,0 +1,870 @@
+decision_GPR_shenanigans_category = {
+	GPR_take_pill = {
+		icon = GFX_decision_generic_USA_flag
+        
+		visible = {
+			NOT = {has_country_flag = GPR_allowed_funny}
+		}
+
+		available = {
+			date < 2013.1.01
+		}
+
+		cost = 5
+
+		fire_only_once = yes
+        days_remove = -1
+        remove_trigger = {
+			always = no
+        }
+        modifier = {
+            conscription = -0.1
+			mobilization_laws_cost_factor = 10
+			industrial_capacity_factory = 0.3
+			training_time_army_factor = 0.9
+			mobilization_speed = -0.5
+            stability_factor = 0.1
+			consumer_goods_factor = -0.25
+			army_attack_factor = -0.65
+			army_defence_factor = -0.15
+			war_support_factor = -0.3
+			army_org_factor = -0.25
+			max_command_power = 75
+			send_volunteer_divisions_required = -0.5
+			send_volunteers_tension = -0.75
+        }
+
+		complete_effect = {
+			set_country_flag = GPR_allowed_funny
+			add_command_power = 65
+			set_rule = {can_send_volunteers = yes}
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+            	amount = 4000
+            }
+			custom_effect_tooltip = l_money_gain_500K
+			add_to_variable = { money_amount = 5 }
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	GPR_defence_line_casland = {
+        icon = GFX_decision_generic_fortification
+		fire_only_once = yes
+        days_remove = 250
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			has_war = no
+			controls_state = 28
+			OR = {
+				AND = {
+					country_exists = GPG
+					OR = {
+						GPG = {has_completed_focus = GPG_focus_republic_lawnland_question}
+						GPG = {has_completed_focus = GPG_focus_lawnland_question}
+					}
+				}
+				AND = {
+					country_exists = GSR
+					OR = {
+						GSR = {has_completed_focus = GSR_focus_take_what_ours}
+						GSR = {has_completed_focus = GSR_focus_deconstruction}
+					}
+				}
+				AND = {
+					country_exists = GFG
+					GFG = {has_completed_focus = GFG_focus_trial_over_traitors}
+				}
+			}
+		}
+
+		cost = 300
+
+		remove_trigger = {
+			OR = {
+				NOT = {controls_state = 28}
+				has_war = yes
+			}
+		}
+
+        remove_effect = {
+            203 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 11104
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 721
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 661
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 4711
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 11074
+                }
+            }
+			28 = {
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 311
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 11107
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 1261
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 11062
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 827
+                }
+				add_building_construction = {
+                    type = bunker
+                    level = 1
+                    instant_build = yes
+                    province = 4562
+                }
+			}
+        }
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_at_any_costs = {
+		icon = GFX_decision_SWE_set_army_budget
+        
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			has_defensive_war = yes
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+        days_remove = 450
+
+        modifier = {
+			weekly_manpower = 1000
+			training_time_army_factor = -0.35
+			war_support_factor = 0.25
+			stability_factor = -0.25
+			ai_focus_defense_factor = 2
+        }
+
+		complete_effect = {
+			set_country_flag = GPR_any_costs
+			add_manpower = 5000
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+
+		remove_effect = {
+			set_country_flag = GPR_all_actions
+			unlock_decision_tooltip = GPR_reforms
+			add_manpower = 40000
+			add_war_support = 0.25
+			add_offsite_building = { type = arms_factory level = 1 }
+			army_experience = 150
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	GPR_reforms = {
+		icon = GFX_decision_generic_army_support
+        
+		visible = {
+			has_country_flag = GPR_all_actions
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+        days_remove = 180
+
+		modifier = {
+			army_org_factor = -0.05
+			army_attack_factor = -0.15
+			army_defence_factor = 0.25
+			ai_focus_defense_factor = 2
+		}
+
+		remove_trigger = {
+			has_war = no
+		}
+
+		remove_effect = {
+			set_country_flag = GPR_reforms_done
+			unlock_decision_tooltip = GPR_reforms_done
+			army_experience = 250
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	GPR_reforms_done = {
+		icon = GFX_decision_generic_army_support
+        
+		visible = {
+			has_country_flag = GPR_reforms_done
+		}
+
+		cost = 5
+
+		fire_only_once = yes
+        days_remove = -1
+        remove_trigger = {
+			always = no
+        }
+
+		complete_effect = {
+			add_manpower = 20000
+			IF = {
+				limit = {is_ai = yes}
+				add_manpower = 100000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+				}
+			}
+		}
+
+        modifier = {
+            conscription = 0.07
+			mobilization_laws_cost_factor = -10
+			training_time_army_factor = -0.9
+			mobilization_speed = 1
+			army_attack_factor = 1
+			army_defence_factor = 0.25
+			army_org_factor = 0.35
+			max_command_power = 10
+			ai_focus_aggressive_factor = 2
+        }
+
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	GPR_militia_1 = {
+        icon = GFX_decision_SWE_set_army_budget
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = GPR_any_costs
+			has_war = yes
+		}
+
+		available = {
+			surrender_progress > 0.25
+		}
+
+		cost = 50
+
+        complete_effect = {
+			add_manpower = 5000
+			unlock_decision_tooltip = GPR_militia_2
+			set_country_flag = GPR_made_militia
+			division_template = {
+                name = "Militia"
+                is_locked = yes
+                division_cap = 1
+                priority = 0
+                template_counter = 0
+                regiments = {
+                    militia = { x = 0 y = 0 }
+                    militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+                    militia = { x = 1 y = 0 }
+                    militia = { x = 1 y = 1 }
+                }
+            }
+
+			IF = {
+				limit = {
+					is_ai = yes
+					NOT = {any_enemy_country = {is_ai = no}}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 7
+						owner = GPR
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					is_ai = yes
+					any_enemy_country = {is_ai = yes}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 10 #Fuck you player
+						owner = GPR
+					}
+				}
+			}
+			ELSE = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 5
+						owner = GPR
+					}
+				}	
+			}
+			add_war_support = -0.1
+		}
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_militia_2 = {
+        icon = GFX_decision_SWE_set_army_budget
+		fire_only_once = yes
+
+		visible = {
+			has_country_flag = GPR_any_costs
+			has_country_flag = GPR_made_militia
+			has_war = yes
+		}
+
+		available = {
+			surrender_progress > 0.65
+		}
+
+		cost = 50
+
+        complete_effect = {
+			add_manpower = 10000
+			IF = {
+				limit = {
+					is_ai = yes
+					NOT = {any_enemy_country = {is_ai = no}}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 10
+						owner = GPR
+					}
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					is_ai = yes
+					any_enemy_country = {is_ai = yes}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 15 #Fuck you player
+						owner = GPR
+					}
+				}
+			}
+			ELSE = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia\" start_experience_factor = 0.01"
+						count = 7
+						owner = GPR
+					}
+				}	
+			}
+			add_war_support = -0.1
+		}
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_spawn_GDR = {
+        icon = GFX_decision_generic_form_nation
+
+		fire_only_once = no
+        days_remove = 60
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			has_war = no
+			NOT = {
+				OR = {
+					country_exists = GDR
+					country_exists = GPG
+					country_exists = GSR
+					country_exists = GFG
+				}
+			}
+			OR = {
+				controls_state = 28
+				controls_state = 8
+				controls_state = 206
+				controls_state = 145
+				controls_state = 10
+				controls_state = 158
+			}
+		}
+
+		cost = 250
+
+        remove_effect = {
+			28 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			8 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			206 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			145 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			10 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			158 = {
+				IF = {
+					limit = {is_controlled_by = GPR}
+					transfer_state_to = GDR
+				}
+				IF = {
+					limit = {NOT = {is_core_of = GDR}}
+					add_core_of = GDR
+				}
+			}
+			hidden_effect = {
+				puppet = GDR
+				GDR = {
+					load_focus_tree = generic_focus_tree
+					set_cosmetic_tag = GDR_republic
+					country_lock_all_division_template = no
+					add_popularity = {
+						ideology = democratic 
+						popularity = 0.35
+					}
+				}
+				
+			}
+        }
+
+		ai_will_do = {
+            base = 250
+        }
+    }
+
+	GPR_build_up = {
+        icon = GFX_decision_generic_construction
+		fire_only_once = yes
+        days_remove = 180
+
+		visible = {has_country_flag = GPR_allowed_funny}
+
+		cost = 25
+
+        remove_effect = {
+			set_country_flag = GPR_build_1
+			unlock_decision_tooltip = GPR_build_up_2
+            capital_scope = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_build_up_2 = {
+        icon = GFX_decision_generic_construction
+		fire_only_once = yes
+        days_remove = 180
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			has_country_flag = GPR_build_1
+		}
+
+		cost = 750
+
+        remove_effect = {
+			set_country_flag = GPR_build_2
+            capital_scope = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_build_up_3 = {
+        icon = GFX_decision_generic_construction
+		fire_only_once = yes
+        days_remove = 180
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			has_country_flag = GPR_build_2
+		}
+
+		cost = 1500
+
+        remove_effect = {
+            capital_scope = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+				add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_tech = {
+        icon = GFX_decision_generic_research
+		fire_only_once = yes
+
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+		}
+
+		cost = 750
+
+        complete_effect = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+        }
+
+		ai_will_do = {
+            base = 1000
+        }
+    }
+
+	GPR_send_guns = {
+
+		icon = GFX_decision_generic_motorized
+
+		fire_only_once = no
+
+		cost = 100
+		days_re_enable = 180
+		days_remove = 0
+
+		available = {
+			has_equipment = {infantry_equipment > 1000}
+		}
+
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+				has_war = yes
+			}
+		}
+
+		visible = {
+			has_war = no
+			has_country_flag = GPR_allowed_funny
+			FROM = {
+				has_war = yes
+			}
+		}
+
+		complete_effect = {
+			army_experience = 25
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = FROM
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_equipment = {infantry_equipment < 1500}
+				add = -1000 #Don't waste our guns
+			}
+			modifier = {
+				FROM = {has_equipment = {infantry_equipment > 3000}}
+				add = -1000 #Waste of guns
+			}
+			modifier = {
+				FROM = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				add = 5
+			}
+			modifier = {
+				FROM = {surrender_progress > 0.35}
+				add = 5
+			}
+			modifier = {
+				FROM = {has_defensive_war = yes}
+				add = 5
+			}
+		}
+	}
+
+	GPR_send_money = {
+
+		icon = GFX_decision_generic_fundraising
+
+		fire_only_once = no
+
+		custom_cost_trigger = {
+			check_variable = {money_amount > 5}
+		}
+		custom_cost_text = decisions_cost_money_500k
+
+		days_re_enable = 120
+		days_remove = 0
+
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+				OR = {
+					has_war = yes
+					check_variable = {money_amount < 5}
+				}
+			}
+		}
+
+		visible = {
+			has_war = no
+			has_country_flag = GPR_allowed_funny
+			FROM = {
+				NOT = {original_tag = GOI}
+				NOT = {original_tag = EMP}
+				OR = {
+					has_war = yes
+					check_variable = {money_amount < 2}
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				subtract_from_variable = {money_amount = 5}
+				FROM = {add_to_variable = {money_amount = 5}}
+			}
+			add_political_power = 65
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				check_variable = {money_amount < 20}
+				add = -1000 #Don't waste our money
+			}
+			modifier = {
+				FROM = {check_variable = {money_amount > 10}}
+				add = -1000 #Waste of money
+			}
+			modifier = {
+				FROM = {
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				add = 5
+			}
+			modifier = {
+				FROM = {surrender_progress > 0.35}
+				add = 5
+			}
+			modifier = {
+				FROM = {has_defensive_war = yes}
+				add = 5
+			}
+		}
+	}
+
+	GPR_aid_GDR = {
+        icon = GFX_decision_generic_intelligence_operation
+		fire_only_once = yes
+        days_remove = 20
+
+		visible = {
+			has_country_flag = GPR_allowed_funny
+			country_exists = GDR
+			GDR = {
+				OR = {
+					has_war_with = GPG
+					has_war_with = GSR
+					has_war_with = GFG
+				}
+			}
+		}
+
+		cost = 200
+
+        remove_effect = {
+			GDR = {
+				add_manpower = 5000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = GPR
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 250
+					producer = GPR
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 250
+					producer = GPR
+				}
+			}
+        }
+
+		ai_will_do = {
+            base = 1
+			modifier = {
+				OR = {
+					GPG = {is_ai = no}
+					GFG = {is_ai = no}
+					GSR = {is_ai = no}
+				}
+				add = -1000 #Really silly
+			}
+			modifier = {
+				GDR = {is_ai = no}
+				add = 100 #Millions must help
+			}
+        }
+    }
+}

@@ -256,38 +256,49 @@ country_event = {
 	option = {
 		name = GDR_event.13.a
 		
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
 		hidden_effect = {
-			add_threat = -2
-			GPR = {
-				every_owned_state = {
-					add_core_of = GDR
+			IF = {
+				limit = {GPR = {is_ai = yes}}
+				GPR = {
+					every_core_state = {
+						add_core_of = GDR
+						remove_core_of = GPR
+					}
+				}
+				annex_country = {
+					target = GPR
+					transfer_troops = no
+				}
+				
+				set_cosmetic_tag = GDR_federation
+
+				division_template = {
+					name = "Freesmart Van"
+					regiments = {
+						bus = { x = 0 y = 0 }
+					}
+					is_locked = yes
+					override_model = SWE_bus_vehicle_entity
+				}
+
+				193 = {
+					create_unit = {
+						division = "name = \"Freesmart Van\" division_template = \"Freesmart Van\" start_equipment_factor = 1 start_experience_factor = 1 "
+						owner = GDR
+					}
 				}
 			}
-			annex_country = {
-				target = GPR
-				transfer_troops = no
-			}
-			
-			set_cosmetic_tag = GDR_federation
-
-			division_template = {
-				name = "Freesmart Van"
-				regiments = {
-					bus = { x = 0 y = 0 }
-				}
-				is_locked = yes
-				override_model = SWE_bus_vehicle_entity
-			}
-
-			193 = {
-				create_unit = {
-					division = "name = \"Freesmart Van\" division_template = \"Freesmart Van\" start_equipment_factor = 1 start_experience_factor = 1 "
-					owner = GDR
+			ELSE = {
+				ROOT = {
+					set_autonomy = {
+						target = GPR
+						autonomous_state = autonomy_integrated_puppet
+					}
 				}
 			}
 
-			set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
-			
 			news_event = {
 				id = bfdinews.25
 				days = 2
@@ -307,8 +318,10 @@ country_event = {
 	
 	option = {
 		name = GDR_event.14.a
+
+		set_rule = {can_send_volunteers = yes} #To add a bit more fun remove later
+
 		hidden_effect = {
-			add_threat = -2
 			GPR = {
 				set_autonomy = {
 					target = ROOT

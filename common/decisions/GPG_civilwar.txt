@@ -27,6 +27,7 @@ decision_GPG_civilwar_category = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = l_GPG_cw_victory_trigger
+				is_puppet = no
 				has_war = no
 				owns_state = 158
 				owns_state = 8

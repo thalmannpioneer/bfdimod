@@ -97,7 +97,7 @@ technologies = {
             research_cost_coeff = 1
         }
 
-        research_cost = 1.5
+        research_cost = 1
         start_year = 2012
         folder = {
             name = support_folder
@@ -146,7 +146,7 @@ technologies = {
             research_cost_coeff = 1
         }
 
-        research_cost = 1.5
+        research_cost = 1
         start_year = 2012
         folder = {
             name = support_folder

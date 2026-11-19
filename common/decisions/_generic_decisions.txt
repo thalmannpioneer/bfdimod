@@ -597,7 +597,7 @@ economy_decisions = {
 		}
 
 		modifier = {
-			production_speed_buildings_factor = 0.10
+			production_speed_buildings_factor = 0.2
 		}
 
 		complete_effect = {
@@ -1248,6 +1248,49 @@ war_measures = {
 		}
 	}
 
+	swords_and_spears = {
+		icon = GFX_decision_FIN_weapon_caches
+
+		visible = { 
+			has_war = yes
+			longest_war_length > 6
+		}
+
+		available = {
+			surrender_progress > 0.25
+			OR = {
+				surrender_progress > 0.65
+				has_equipment = {infantry_equipment < 1000}
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 1000 #Any equipment is liked, even if dogshit
+		}
+
+		complete_effect = {
+			add_war_support = -0.05
+			add_equipment_to_stockpile = {
+                type = infantry_equipment_old_0
+                amount = 2000
+            }
+			IF = {
+				limit = {
+					is_ai = yes
+					any_enemy_country = {is_ai = no}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_old_0
+					amount = 3000
+				}
+			}
+		}
+	}
+
 	emergency_factory_conversion_defensive = {
 
 		icon = generic_industry
@@ -1343,7 +1386,7 @@ war_measures = {
 
 	women_in_the_workforce = {
 
-		icon = generic_industry
+		icon = GFX_decision_generic_prepare_civil_war
 
         allowed = {
             always = yes

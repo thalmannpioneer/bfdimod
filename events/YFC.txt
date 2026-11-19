@@ -7493,6 +7493,10 @@ country_event = { #Debate event #2
 	option = { #Only use police forces (Mild Support but keeps a small army)
 		name = YFC_BUN.29.a
 
+		trigger = {
+			has_equipment = {infantry_equipment > 900}
+		}
+
 		custom_effect_tooltip = l_YFC_BUN_foster_gain
 		add_equipment_to_stockpile = {
 			type = infantry_equipment

@@ -44,13 +44,13 @@ add_equipment_to_stockpile = {
     producer = YFC
 }
 add_equipment_to_stockpile = {
-    type = artillery_equipment_1
-    amount = 300
+    type = artillery_equipment
+    amount = 305
     producer = YFC
 }
 add_equipment_to_stockpile = {
-    type = support_equipment_1
-    amount = 400
+    type = support_equipment
+    amount = 405
     producer = YFC
 }
 
